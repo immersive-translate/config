@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'default_config.json'
+      - 'dist/**'
 jobs:
   deploy:
     name: Deploy to Cloudflare Pages
