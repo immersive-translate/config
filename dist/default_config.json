@@ -2620,6 +2620,31 @@
       "matches": "https://www.newsminimalist.com/",
       "extraBlockSelectors": [
         ".inline-flex"
+      ],
+      "excludeTags": [
+        "TITLE",
+        "LINK",
+        "SCRIPT",
+        "STYLE",
+        "TEXTAREA",
+        "SVG",
+        "svg",
+        "G",
+        "NOSCRIPT",
+        "INPUT",
+        "BASE",
+        "SELECT",
+        "OPTION",
+        "HR",
+        "PRE",
+        "KBD",
+        "WBR",
+        "RT",
+        "RP",
+        "META",
+        "MATH",
+        "TTS-SENTENCE",
+        "AIO-CODE"
       ]
     },
     {
@@ -2862,6 +2887,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-07T12:35:27.999Z",
+  "buildinConfigUpdatedAt": "2023-06-07T12:55:50.371Z",
   "latestVersion": "0.6.0"
 }
