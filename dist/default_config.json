@@ -6,10 +6,22 @@
   "cache": true,
   "translationMode": "dual",
   "enabled": true,
-  "donateUrl": "https://immersive-translate.owenyoung.com/donate.html",
+  "donateUrl": "https://immersivetranslate.com/docs/donate/",
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
   "isShowContextMenu": true,
   "blockUrls": [
+    "https://dash.immersivetranslate.com/*",
+    "https://immersive-translate.owenyoung.com/options/",
+    "https://immersive-translate.owenyoung.com/auth-done/",
+    "https://dash.immersivetranslate.com/",
+    "https://dash.immersivetranslate.com/auth-done/",
+    "http://localhost:8000/dist/userscript/options/",
+    "http://localhost:8000/auth-done/",
+    "http://192.168.50.9:8000/dist/userscript/options/",
+    "https://www.deepl.com/translator",
+    "translate.google.com",
+    "http://localhost:8000/options/",
+    "http://192.168.50.9:8000/options/",
     "googleads.g.doubleclick.net",
     "s1.hdslb.com",
     "oapi.dingtalk.com",
@@ -915,6 +927,7 @@
     },
     {
       "matches": "www.facebook.com",
+      "excludeMatches": "https://www.facebook.com/business/*",
       "selectors": [
         "div[dir=auto][style]",
         "div[dir=auto][class]",
@@ -2813,8 +2826,41 @@
       "excludeSelectors": [
         ".focus-menu-shown"
       ]
+    },
+    {
+      "matches": "docs.sentry.io",
+      "initialSelectorGlobalAttributes": {
+        "footer:last-of-type": {
+          "translate": "no"
+        },
+        ".navbar": {
+          "translate": "no"
+        }
+      }
+    },
+    {
+      "matches": "https://platform.openai.com/docs/*",
+      "urlChangeDelay": 0
+    },
+    {
+      "selectorMatches": [
+        "meta[name='generator'][content^='Discourse']"
+      ],
+      "urlChangeDelay": 0,
+      "_comment": "解决url变化但是页面不变的问题"
+    },
+    {
+      "matches": "feedly.com",
+      "globalStyles": {
+        ".TitleOnlyLayout": "height:unset !important;",
+        ".EntrySummary--u4": "-webkit-line-clamp: unset;max-height:unset;",
+        ".EntrySummary--u5": "-webkit-line-clamp: unset;max-height:unset;"
+      },
+      "excludeSelectors": [
+        ".Leftnav"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-05T15:41:20.913Z",
-  "latestVersion": "0.5.16"
+  "buildinConfigUpdatedAt": "2023-06-07T10:07:23.690Z",
+  "latestVersion": "0.6.0"
 }
