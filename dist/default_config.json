@@ -7,6 +7,7 @@
   "translationMode": "dual",
   "enabled": true,
   "donateUrl": "https://immersivetranslate.com/docs/donate/",
+  "uninstallUrl": "https://wj.qq.com/s2/12328372/04e0/",
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
   "isShowContextMenu": true,
   "blockUrls": [
@@ -2861,6 +2862,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-07T10:07:23.690Z",
+  "buildinConfigUpdatedAt": "2023-06-07T12:35:27.999Z",
   "latestVersion": "0.6.0"
 }
