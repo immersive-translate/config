@@ -1436,7 +1436,8 @@
         ".CEMjEf",
         ".MgUUmf.NUnG9d",
         "#result-stats",
-        "[role=navigation]"
+        "[role=navigation]",
+        "div.sCuL3"
       ],
       "wrapperSuffix": "",
       "globalStyles": {
@@ -2889,6 +2890,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-08T16:15:04.451Z",
+  "buildinConfigUpdatedAt": "2023-06-08T18:22:01.318Z",
   "latestVersion": "0.6.1"
 }
