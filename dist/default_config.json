@@ -2383,7 +2383,8 @@
         "#drop-target h1",
         "#side-bar",
         "h1#side-bar-title",
-        "#tool"
+        "#tool",
+        ".Code"
       ],
       "paragraphMinTextCount": 1,
       "paragraphMinWordCount": 1,
@@ -2887,6 +2888,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-07T13:32:57.532Z",
+  "buildinConfigUpdatedAt": "2023-06-08T05:54:38.927Z",
   "latestVersion": "0.6.1"
 }
