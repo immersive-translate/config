@@ -10,6 +10,75 @@
   "uninstallUrl": "https://wj.qq.com/s2/12328372/04e0/",
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
   "isShowContextMenu": true,
+  "enableInputTranslation": true,
+  "inputTranslationUrlPattern": {
+    "matches": [],
+    "excludeMatches": []
+  },
+  "inputTranslationBlockUrls": [
+    "www.feishu.cn",
+    "www.notion.so"
+  ],
+  "inputTargetLanguage": "en",
+  "inputStartingTriggerKey": "/",
+  "inputTrailingTriggerKey": "space",
+  "inputTrailingTriggerKeyRepeatTimes": 3,
+  "inputTrailingTriggerKeyTimeout": 500,
+  "inputLanguageCodeAlias": {
+    "en": [
+      "英文",
+      "英语"
+    ],
+    "zh-CN": [
+      "zh",
+      "zh-Hant",
+      "中文"
+    ],
+    "zh-TW": [
+      "zh-Hant",
+      "繁中"
+    ],
+    "ja": [
+      "日语",
+      "日文"
+    ],
+    "ko": [
+      "韩语",
+      "韩文"
+    ],
+    "fr": [
+      "法语",
+      "发文"
+    ],
+    "es": [
+      "西班牙语",
+      "西语"
+    ],
+    "ru": [
+      "俄语",
+      "俄文"
+    ]
+  },
+  "inputStartingTriggerKeyAlias": {
+    "/": [
+      "、"
+    ],
+    ".": [
+      "。"
+    ],
+    ",": [
+      "，"
+    ],
+    "space": [
+      " "
+    ],
+    ";": [
+      "；"
+    ],
+    ":": [
+      "："
+    ]
+  },
   "blockUrls": [
     "https://dash.immersivetranslate.com/*",
     "https://immersive-translate.owenyoung.com/options/",
@@ -255,6 +324,7 @@
     "waitForSelectors": [],
     "waitForSelectorsTimeout": 3000,
     "pairs": {},
+    "aiRule": {},
     "isSubtitleBuilder": false,
     "minZIndex": 0,
     "initTranslationServiceAsSoonAsPossible": true,
@@ -2096,8 +2166,49 @@
       "excludeSelectors": [
         "div.absolute.bottom-0.left-0.w-full",
         "h1",
-        "div#headlessui-portal-root"
-      ]
+        "div#headlessui-portal-root",
+        "nav",
+        "div[data-radix-popper-content-wrapper]",
+        "ul[aria-multiselectable]",
+        ".markdown *",
+        "div[class='flex flex-col items-start']",
+        "div[class='flex items-center justify-center gap-1 border-b border-black/10 bg-gray-50 p-3 text-gray-500 dark:border-gray-900/50 dark:bg-gray-700 dark:text-gray-300']"
+      ],
+      "isTranslateTitle": false,
+      "wrapperPrefix": "",
+      "aiRule": {
+        "streamingSelector": ".result-streaming.markdown",
+        "messageWrapperSelector": ".markdown",
+        "streamingChange": true
+      }
+    },
+    {
+      "matches": [
+        "chat.newstop.asia",
+        "chat.waixingyun.cn"
+      ],
+      "excludeSelectors": [
+        ".markdown-body *"
+      ],
+      "aiRule": {
+        "streamingSelector": ".n-button.n-button--warning-type.n-button--medium-type",
+        "messageWrapperSelector": ".markdown-body",
+        "streamingChange": false
+      }
+    },
+    {
+      "matches": [
+        "askgpt.cn",
+        "chatcat.zhaoyoung.me"
+      ],
+      "excludeSelectors": [
+        ".markdown-body *"
+      ],
+      "aiRule": {
+        "streamingSelector": ".home_chat-message-status__EsVNi",
+        "messageWrapperSelector": ".markdown-body",
+        "streamingChange": true
+      }
     },
     {
       "matches": "glasp.co",
@@ -2891,6 +3002,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-09T02:40:18.644Z",
-  "latestVersion": "0.6.1"
+  "buildinConfigUpdatedAt": "2023-06-09T16:37:08.875Z",
+  "latestVersion": "0.6.2"
 }
