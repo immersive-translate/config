@@ -1024,7 +1024,8 @@
       ],
       "detectParagraphLanguage": true,
       "injectedCss": [
-        ".immersive-translate-target-wrapper img { width: 16px; height: 16px }"
+        ".immersive-translate-target-wrapper img { width: 16px; height: 16px }",
+        ".metadata-snippet-container {max-height: unset !important;}"
       ]
     },
     {
@@ -2890,6 +2891,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-08T18:22:01.318Z",
+  "buildinConfigUpdatedAt": "2023-06-09T02:40:18.644Z",
   "latestVersion": "0.6.1"
 }
