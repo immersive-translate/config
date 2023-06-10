@@ -35,6 +35,7 @@
       "中文"
     ],
     "zh-TW": [
+      "zht",
       "zh-Hant",
       "繁中"
     ],
@@ -3000,8 +3001,41 @@
       "excludeSelectors": [
         ".Leftnav"
       ]
+    },
+    {
+      "matches": "bard.google.com",
+      "excludeSelectors": [
+        "mat-sidenav",
+        "div.capabilities-disclaimer"
+      ],
+      "isTranslateTitle": false,
+      "excludeTags": [
+        "TITLE",
+        "LINK",
+        "SCRIPT",
+        "STYLE",
+        "TEXTAREA",
+        "SVG",
+        "svg",
+        "G",
+        "NOSCRIPT",
+        "INPUT",
+        "BASE",
+        "SELECT",
+        "OPTION",
+        "HR",
+        "PRE",
+        "KBD",
+        "WBR",
+        "RT",
+        "RP",
+        "META",
+        "MATH",
+        "TTS-SENTENCE",
+        "AIO-CODE"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-09T16:37:08.875Z",
-  "latestVersion": "0.6.2"
+  "buildinConfigUpdatedAt": "2023-06-10T11:21:48.587Z",
+  "latestVersion": "0.6.5"
 }
