@@ -1,5 +1,5 @@
 {
-  "minVersion": "0.5.15",
+  "minVersion": "0.6.2",
   "immediateTranslationTextCount": 5000,
   "interval": 3600000,
   "beta": false,
@@ -3039,6 +3039,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-10T12:36:28.004Z",
+  "buildinConfigUpdatedAt": "2023-06-10T14:10:42.099Z",
   "latestVersion": "0.6.5"
 }
