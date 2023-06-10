@@ -58,6 +58,9 @@
     "ru": [
       "俄语",
       "俄文"
+    ],
+    "bo": [
+      "藏语"
     ]
   },
   "inputStartingTriggerKeyAlias": {
@@ -3036,6 +3039,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-10T11:21:48.587Z",
+  "buildinConfigUpdatedAt": "2023-06-10T11:56:17.531Z",
   "latestVersion": "0.6.5"
 }
