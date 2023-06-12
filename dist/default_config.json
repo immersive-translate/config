@@ -363,8 +363,8 @@
     "shadowRootSelectors": [],
     "blockMinTextCount": 24,
     "blockMinWordCount": 4,
-    "containerMinTextCount": 18,
-    "containerMinWordCount": 3,
+    "asideMaxTextCount": 1000,
+    "asideMaxWordCount": 200,
     "lineBreakMaxTextCount": 0,
     "globalAttributes": {},
     "globalMeta": {},
@@ -3038,6 +3038,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-12T10:33:45.352Z",
-  "latestVersion": "0.6.6"
+  "buildinConfigUpdatedAt": "2023-06-12T17:23:13.921Z",
+  "latestVersion": "0.6.7"
 }
