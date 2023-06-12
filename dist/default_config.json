@@ -2615,8 +2615,7 @@
     {
       "matches": "chat.google.com",
       "selectors": [
-        "[jsname=bgckF]",
-        "[dir=ltr]"
+        "[jsname=bgckF]"
       ]
     },
     {
@@ -3039,6 +3038,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-10T14:10:42.099Z",
+  "buildinConfigUpdatedAt": "2023-06-12T05:00:26.279Z",
   "latestVersion": "0.6.5"
 }
