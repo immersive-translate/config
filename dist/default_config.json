@@ -326,6 +326,8 @@
       "^\\d+\\s+MIN\\s+READ$"
     ],
     "waitForSelectors": [],
+    "isInjectOptionsUrl": false,
+    "isInjectVersion": false,
     "waitForSelectorsTimeout": 3000,
     "pairs": {},
     "aiRule": {},
@@ -2885,7 +2887,9 @@
         "input#immersiveTranslateDetectedSlot": {
           "value": "true"
         }
-      }
+      },
+      "isInjectOptionsUrl": true,
+      "isInjectVersion": true
     },
     {
       "globalAttributes": {
@@ -3038,6 +3042,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-12T17:23:13.921Z",
+  "buildinConfigUpdatedAt": "2023-06-13T14:34:22.698Z",
   "latestVersion": "0.6.7"
 }
