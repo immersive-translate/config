@@ -17,7 +17,8 @@
   },
   "inputTranslationBlockUrls": [
     "www.feishu.cn",
-    "www.notion.so"
+    "www.notion.so",
+    "www.figma.com/file/*"
   ],
   "inputStyleBlockUrls": [],
   "inputTargetLanguage": "en",
@@ -215,7 +216,6 @@
       ],
       "immediateTranslationTextCount": 3000,
       "translationDebounce": 300,
-      "limit": 5,
       "interval": 1350,
       "prompt": "Translate the text to {{to}}:\n\n{{text}}",
       "maxTextGroupLengthPerRequest": 1,
@@ -368,6 +368,8 @@
     "blockMinWordCount": 4,
     "asideMaxTextCount": 1000,
     "asideMaxWordCount": 200,
+    "asideMaxTextCountPerParagraph": 67,
+    "asideMaxWordCountPerParagraph": 12,
     "lineBreakMaxTextCount": 0,
     "globalAttributes": {},
     "globalMeta": {},
@@ -3056,8 +3058,14 @@
         "a",
         "i"
       ]
+    },
+    {
+      "matches": "news.yahoo.com",
+      "excludeSelectors": [
+        "#ybar-inner-wrap"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-14T09:04:27.496Z",
-  "latestVersion": "0.6.8"
+  "buildinConfigUpdatedAt": "2023-06-14T09:51:40.802Z",
+  "latestVersion": "0.6.10"
 }
