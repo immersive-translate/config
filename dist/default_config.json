@@ -3075,8 +3075,16 @@
         "nav",
         "[aria-label='Markets summary']"
       ]
+    },
+    {
+      "matches": "www.businessinsider.com",
+      "excludeSelectors": [
+        "header",
+        "nav",
+        "section.live-updates-module "
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-14T12:17:09.374Z",
+  "buildinConfigUpdatedAt": "2023-06-14T12:52:45.644Z",
   "latestVersion": "0.6.10"
 }
