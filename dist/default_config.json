@@ -3049,8 +3049,15 @@
       ],
       "wrapperPrefix": "\n",
       "wrapperSuffix": "<br/>"
+    },
+    {
+      "matches": "https://cn.bing.com/search*",
+      "extraInlineSelectors": [
+        "a",
+        "i"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-14T04:57:19.311Z",
+  "buildinConfigUpdatedAt": "2023-06-14T09:04:27.496Z",
   "latestVersion": "0.6.8"
 }
