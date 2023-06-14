@@ -953,7 +953,9 @@
       "excludeMatches": [
         "https://github.com/*/*/settings",
         "https://github.com/settings/*",
-        "https://github.com/sponsors/*"
+        "https://github.com/sponsors/*",
+        "https://github.com/readme/*",
+        "https://github.com/readme/"
       ],
       "selectors": [
         "h1",
@@ -3075,6 +3077,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-14T12:15:43.029Z",
+  "buildinConfigUpdatedAt": "2023-06-14T12:17:09.374Z",
   "latestVersion": "0.6.10"
 }
