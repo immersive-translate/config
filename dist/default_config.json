@@ -19,6 +19,7 @@
     "www.feishu.cn",
     "www.notion.so"
   ],
+  "inputStyleBlockUrls": [],
   "inputTargetLanguage": "en",
   "inputStartingTriggerKey": "/",
   "inputTrailingTriggerKey": "space",
@@ -3040,8 +3041,16 @@
         "TTS-SENTENCE",
         "AIO-CODE"
       ]
+    },
+    {
+      "matches": "web.whatsapp.com",
+      "selectors": [
+        ".copyable-text"
+      ],
+      "wrapperPrefix": "\n",
+      "wrapperSuffix": "<br/>"
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-13T15:21:38.861Z",
+  "buildinConfigUpdatedAt": "2023-06-14T04:57:19.311Z",
   "latestVersion": "0.6.8"
 }
