@@ -3064,8 +3064,17 @@
       "excludeSelectors": [
         "#ybar-inner-wrap"
       ]
+    },
+    {
+      "matches": "www.wsj.com",
+      "excludeSelectors": [
+        "header",
+        "footer",
+        "nav",
+        "[aria-label='Markets summary']"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-14T09:54:01.411Z",
+  "buildinConfigUpdatedAt": "2023-06-14T12:15:43.029Z",
   "latestVersion": "0.6.10"
 }
