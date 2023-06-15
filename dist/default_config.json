@@ -1387,7 +1387,9 @@
       },
       "detectParagraphLanguage": true,
       "wrapperPrefix": "<br />",
-      "wrapperSuffix": ""
+      "wrapperSuffix": "",
+      "paragraphMinTextCount": 1,
+      "paragraphMinWordCount": 1
     },
     {
       "matches": [
@@ -3085,6 +3087,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-14T12:52:45.644Z",
-  "latestVersion": "0.6.10"
+  "buildinConfigUpdatedAt": "2023-06-15T04:43:34.046Z",
+  "latestVersion": "0.6.11"
 }
