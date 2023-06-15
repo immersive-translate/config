@@ -356,7 +356,9 @@
       ".mwe-math-element",
       "span[translate=no]",
       "span.math.inline",
-      "span.math.display"
+      "span.math.display",
+      ".ltx_Math",
+      ".mathjax-block"
     ],
     "translationBlockStyle": "",
     "isShowUserscriptPagePopup": true,
@@ -3087,6 +3089,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-15T05:46:09.374Z",
+  "buildinConfigUpdatedAt": "2023-06-15T11:33:08.656Z",
   "latestVersion": "0.6.12"
 }
