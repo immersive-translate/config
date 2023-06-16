@@ -321,6 +321,7 @@
     "injectedCss": [],
     "isEbook": false,
     "isEbookBuilder": false,
+    "ignoreZhCNandZhTW": false,
     "showSponsorOnSafari": false,
     "noTranslateRegexp": [
       "^\\d+.+ago$",
@@ -763,6 +764,7 @@
         "tweetdeck.twitter.com",
         "https://platform.twitter.com/embed*"
       ],
+      "ignoreZhCNandZhTW": true,
       "isTranslateTitle": false,
       "selectors": [
         "[data-testid=\"tweetText\"]",
@@ -3089,6 +3091,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-15T13:01:39.024Z",
-  "latestVersion": "0.6.13"
+  "buildinConfigUpdatedAt": "2023-06-16T14:20:15.926Z",
+  "latestVersion": "0.6.14"
 }
