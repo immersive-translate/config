@@ -1175,7 +1175,8 @@
         ".post-preview-title",
         ".post-preview-description",
         ".post",
-        ".comment-body"
+        ".comment-body",
+        "[data-testid=post-preview-title]"
       ],
       "excludeSelectors": [
         ".captioned-button-wrap",
@@ -3091,6 +3092,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-16T14:20:15.926Z",
+  "buildinConfigUpdatedAt": "2023-06-17T18:18:47.823Z",
   "latestVersion": "0.6.14"
 }
