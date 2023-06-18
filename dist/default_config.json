@@ -1895,12 +1895,10 @@
         "*.annas-archive.org",
         "annas-archive.org"
       ],
-      "selectors": [
-        "h3.text-xl.font-bold",
-        "div[class='truncate text-sm']"
-      ],
+      "selectors": [],
       "globalStyles": {
-        "div[id^='link-index-']": "height: unset; max-height: unset;"
+        "div[id^='link-index-']": "height: unset; max-height: unset;",
+        "main > div > div[class*='h-[125]']": "height:auto"
       },
       "normalizeBody": "body",
       "extraBlockSelectors": [
@@ -3092,6 +3090,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-17T18:29:05.908Z",
+  "buildinConfigUpdatedAt": "2023-06-18T08:54:43.535Z",
   "latestVersion": "0.6.15"
 }
