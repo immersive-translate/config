@@ -777,17 +777,21 @@
         "[data-testid='UserDescription']",
         "[data-testid='HoverCard'] div[dir=auto]"
       ],
+      "excludeSelectors": [
+        "[aria-describedby][role=button]",
+        "header"
+      ],
       "paragraphMinTextCount": 3,
       "paragraphMinWordCount": 1,
       "additionalStayOriginalSelectors": [
         "[data-testid=\"tweetText\"] a"
       ],
-      "excludeSelectors": [
-        "header"
-      ],
       "observeUrlChange": false,
+      "extraBlockSelectors": [
+        "[data-testid=\"tweetText\"] div.r-6koalj"
+      ],
       "extraInlineSelectors": [
-        "[data-testid=\"tweetText\"] div",
+        "[data-testid=\"tweetText\"] div.r-xoduu5",
         "[data-testid=\"tweetText\"] span",
         "[data-testid=\"UserDescription\"] div",
         "[data-testid='HoverCard'] div[dir=auto] div"
@@ -1526,7 +1530,10 @@
         ".MgUUmf.NUnG9d",
         "#result-stats",
         "[role=navigation]",
-        "div.sCuL3"
+        "div.sCuL3",
+        "div.eFM0qc.BCF2pd",
+        "div.WZ8Tjf",
+        "div.adDDi"
       ],
       "wrapperSuffix": "",
       "globalStyles": {
@@ -3110,6 +3117,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-19T07:44:12.201Z",
+  "buildinConfigUpdatedAt": "2023-06-19T11:52:43.826Z",
   "latestVersion": "0.6.15"
 }
