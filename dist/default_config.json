@@ -185,7 +185,8 @@
       "placeholderDelimiters": [
         "{{",
         "}}"
-      ]
+      ],
+      "limit": 10
     },
     "bing": {
       "maxTextLengthPerRequest": 1800,
@@ -3115,6 +3116,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-19T16:57:54.759Z",
+  "buildinConfigUpdatedAt": "2023-06-19T19:02:39.297Z",
   "latestVersion": "0.6.16"
 }
