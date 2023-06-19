@@ -3073,6 +3073,26 @@
       ]
     },
     {
+      "matches": "*.yahoo.com",
+      "excludeSelectors": [
+        "._ys_jiqava"
+      ],
+      "globalAttributes": {
+        "#atomic .Mt\\(20px\\)": {
+          "style": "margin-top: 100px;"
+        },
+        "[class*='LineClamp']": {
+          "style": "-webkit-line-clamp:unset;max-height:unset;"
+        },
+        "a[class*='js-content-viewer']> div[class*='Td\\(n\\)']": {
+          "style": "overflow: scroll;"
+        },
+        "[class*='_ys_24482e']": {
+          "style": "-webkit-line-clamp:unset;"
+        }
+      }
+    },
+    {
       "matches": "www.wsj.com",
       "excludeSelectors": [
         "header",
@@ -3090,6 +3110,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-18T08:54:43.535Z",
+  "buildinConfigUpdatedAt": "2023-06-19T07:44:12.201Z",
   "latestVersion": "0.6.15"
 }
