@@ -1,11 +1,11 @@
 {
-  "minVersion": "0.6.16",
   "immediateTranslationTextCount": 5000,
   "interval": 3600000,
   "beta": false,
   "cache": true,
   "translationMode": "dual",
   "enabled": true,
+  "minVersion": "0.6.2",
   "donateUrl": "https://immersivetranslate.com/docs/donate/",
   "uninstallUrl": "https://wj.qq.com/s2/12328372/04e0/",
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
@@ -3117,6 +3117,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-19T16:00:28.448Z",
-  "latestVersion": "0.6.15"
+  "buildinConfigUpdatedAt": "2023-06-19T16:10:24.170Z",
+  "latestVersion": "0.6.16"
 }
