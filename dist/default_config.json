@@ -734,8 +734,8 @@
     },
     {
       "matches": "*.wikipedia.org",
-      "paragraphMinWordCount": 1,
-      "paragraphMinTextCount": 3,
+      "paragraphMinWordCount": 2,
+      "paragraphMinTextCount": 4,
       "excludeSelectors": [
         ".mw-editsection",
         ".mw-cite-backlink",
@@ -781,8 +781,8 @@
         "[aria-describedby][role=button]",
         "header"
       ],
-      "paragraphMinTextCount": 3,
-      "paragraphMinWordCount": 1,
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
       "additionalStayOriginalSelectors": [
         "[data-testid=\"tweetText\"] a"
       ],
@@ -816,7 +816,7 @@
         "div[data-campaign-name=stk]"
       ],
       "paragraphMinTextCount": 4,
-      "paragraphMinWordCount": 1
+      "paragraphMinWordCount": 2
     },
     {
       "matches": "developer.apple.com/documentation/*",
@@ -932,7 +932,7 @@
         "[role=main] .md-container"
       ],
       "paragraphMinTextCount": 5,
-      "paragraphMinWordCount": 1,
+      "paragraphMinWordCount": 2,
       "excludeMatches": [
         "https://www.reddit.com/r/*/wiki/*",
         "https://www.reddit.com/settings/*"
@@ -1397,8 +1397,8 @@
       "detectParagraphLanguage": true,
       "wrapperPrefix": "<br />",
       "wrapperSuffix": "",
-      "paragraphMinTextCount": 1,
-      "paragraphMinWordCount": 1
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2
     },
     {
       "matches": [
@@ -1796,8 +1796,8 @@
         "[itemprop=offers]",
         ".dne-itemtile-original-price"
       ],
-      "paragraphMinTextCount": 3,
-      "paragraphMinWordCount": 1,
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
       "globalStyles": {
         "[itemprop=name]": "-webkit-line-clamp: unset;max-height: unset;",
         ".merch-item-title": "-webkit-line-clamp: unset;max-height: unset;"
@@ -1808,18 +1808,18 @@
       "excludeSelectors": [
         ".responsiveFlyoutMenu_levelOneLink"
       ],
-      "paragraphMinTextCount": 3,
-      "paragraphMinWordCount": 1
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2
     },
     {
       "matches": "www.tripadvisor.com",
-      "paragraphMinTextCount": 3,
-      "paragraphMinWordCount": 1
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2
     },
     {
       "matches": "www.amazon.com",
-      "paragraphMinTextCount": 3,
-      "paragraphMinWordCount": 1,
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
       "globalStyles": {
         ".s-line-clamp-2": "-webkit-line-clamp: unset;max-height: unset;",
         ".s-line-clamp-4": "-webkit-line-clamp: unset;max-height: unset;",
@@ -2498,8 +2498,8 @@
       "extraInlineSelectors": [
         "span.dropcaps"
       ],
-      "paragraphMinTextCount": 1,
-      "paragraphMinWordCount": 1,
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
       "blockMinTextCount": 1,
       "blockMinWordCount": 1,
       "containerMinTextCount": 1,
@@ -2523,8 +2523,8 @@
         "#tool",
         ".Code"
       ],
-      "paragraphMinTextCount": 1,
-      "paragraphMinWordCount": 1,
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
       "blockMinTextCount": 1,
       "blockMinWordCount": 1,
       "containerMinTextCount": 1,
@@ -2613,8 +2613,8 @@
       "pairs": {
         ".source-text": ".target-text"
       },
-      "paragraphMinTextCount": 2,
-      "paragraphMinWordCount": 1,
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
       "isTranslateTitle": false,
       "wrapperPrefix": "",
       "wrapperSuffix": ""
@@ -2845,8 +2845,6 @@
       "selectors": [
         "p"
       ],
-      "containerMinTextCount": 2,
-      "containerMinWordCount": 1,
       "paragraphMinTextCount": 2,
       "paragraphMinWordCount": 1
     },
@@ -3117,6 +3115,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-19T16:12:46.958Z",
+  "buildinConfigUpdatedAt": "2023-06-19T16:57:54.759Z",
   "latestVersion": "0.6.16"
 }
