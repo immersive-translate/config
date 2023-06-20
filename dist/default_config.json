@@ -1625,7 +1625,21 @@
       "additionalSelectors": [
         ".info__subHeadline",
         ".section-content h2"
-      ]
+      ],
+      "globalAttributes": {
+        ".topic__article-list": {
+          "style": "height: unset;"
+        },
+        ".title__text": {
+          "style": "max-height:unset; -webkit-line-clamp:unset;"
+        },
+        ".news-list-item__news-title": {
+          "style": "max-height:unset; -webkit-line-clamp:unset;"
+        },
+        "a[class*='link'] > .link__headline": {
+          "style": "max-height:unset; -webkit-line-clamp:unset;"
+        }
+      }
     },
     {
       "matches": "www.lesswrong.com",
@@ -3116,6 +3130,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-19T19:02:39.297Z",
+  "buildinConfigUpdatedAt": "2023-06-20T15:48:53.130Z",
   "latestVersion": "0.6.16"
 }
