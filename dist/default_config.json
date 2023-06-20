@@ -1626,19 +1626,14 @@
         ".info__subHeadline",
         ".section-content h2"
       ],
-      "globalAttributes": {
-        ".topic__article-list": {
-          "style": "height: unset;"
-        },
-        ".title__text": {
-          "style": "max-height:unset; -webkit-line-clamp:unset;"
-        },
-        ".news-list-item__news-title": {
-          "style": "max-height:unset; -webkit-line-clamp:unset;"
-        },
-        "a[class*='link'] > .link__headline": {
-          "style": "max-height:unset; -webkit-line-clamp:unset;"
-        }
+      "globalStyles": {
+        ".topic__article-list": "height: unset;",
+        ".adverisers__adveriser": "height: unset;",
+        ".advertiser__content": "height: unset;",
+        ".content-title__link": "display:unset;overflow:unset;-webkit-line-clamp:unset;",
+        ".title__text": "max-height:unset; -webkit-line-clamp:unset;",
+        ".news-list-item__news-title": "max-height:unset; -webkit-line-clamp:unset;",
+        "a[class*='link'] > .link__headline": "max-height:unset; -webkit-line-clamp:unset;"
       }
     },
     {
@@ -3130,6 +3125,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-20T15:48:53.130Z",
+  "buildinConfigUpdatedAt": "2023-06-20T16:36:50.088Z",
   "latestVersion": "0.6.16"
 }
