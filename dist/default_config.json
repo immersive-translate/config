@@ -186,7 +186,7 @@
         "{{",
         "}}"
       ],
-      "limit": 10
+      "limit": 25
     },
     "bing": {
       "maxTextLengthPerRequest": 1800,
@@ -1830,7 +1830,11 @@
       "matches": "www.amazon.com",
       "paragraphMinTextCount": 4,
       "paragraphMinWordCount": 2,
+      "extraBlockSelectors": [
+        ".a-size-small.a-link-normal.page-banner-link.a-nowrap"
+      ],
       "globalStyles": {
+        ".a-carousel-viewport": "height:unset;",
         ".s-line-clamp-2": "-webkit-line-clamp: unset;max-height: unset;",
         ".s-line-clamp-4": "-webkit-line-clamp: unset;max-height: unset;",
         "[data-rows]": "max-height: unset;-webkit-line-clamp: unset;",
@@ -1839,7 +1843,10 @@
       "excludeSelectors": [
         "#navFooter",
         "#navbar-main",
-        ".s-price-instructions-style"
+        ".s-price-instructions-style",
+        "[class*='star']",
+        "[data-hook='acr-average-stars-rating-text']",
+        ".a-color-price"
       ]
     },
     {
@@ -1940,7 +1947,14 @@
       "matches": "play.google.com",
       "additionalSelectors": [
         "header[data-review-id] + div"
-      ]
+      ],
+      "excludeSelectors": [
+        ".vlGucd",
+        ".ubGTjb"
+      ],
+      "globalStyles": {
+        ".Epkrse": "-webkit-line-clamp:unset;"
+      }
     },
     {
       "matches": [
@@ -3123,8 +3137,28 @@
         "nav",
         "section.live-updates-module "
       ]
+    },
+    {
+      "matches": "www.goodreads.com",
+      "excludeSelectors": [
+        ".badgeYear",
+        ".gr-mediaBox__desc",
+        ".bookVotedRow",
+        ".minirating",
+        "div[itemprop='aggregateRating']",
+        ".wtrButtonContainer",
+        ".RatingsHistogram__labelTitle",
+        ".FollowButton",
+        ".siteHeader__topLevelLink",
+        "#books > thead",
+        "td[class*='rating']",
+        "td[class*='shelves']",
+        "td[class*='date_read']",
+        "td[class*='date_added']",
+        "td[class*='actions']"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-20T16:36:50.088Z",
-  "latestVersion": "0.6.16"
+  "buildinConfigUpdatedAt": "2023-06-21T18:56:55.482Z",
+  "latestVersion": "0.6.17"
 }
