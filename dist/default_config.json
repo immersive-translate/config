@@ -1161,10 +1161,15 @@
         "*.substack.com",
         "newsletter.rootsofprogress.org"
       ],
+      "selectorMatches": [
+        "link[href^='https://substackcdn.com/bundle/'][rel=preload]"
+      ],
       "excludeSelectors": [
         ".publication-footer",
         ".subscribe-footer",
         ".main-menu",
+        ".navbar-title-link",
+        "[data-testid='navbar']",
         ".navbar-title",
         ".captioned-button-wrap",
         ".subscription-widget-wrap",
@@ -3152,6 +3157,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-23T13:17:34.266Z",
+  "buildinConfigUpdatedAt": "2023-06-23T14:46:39.603Z",
   "latestVersion": "0.6.18"
 }
