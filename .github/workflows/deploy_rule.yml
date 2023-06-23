@@ -4,9 +4,6 @@ on:
     types:
       - deploy-rule
   workflow_dispatch:
-  push:
-    branches:
-      - "main"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -44,6 +41,8 @@ jobs:
           # if not then create a new tag
           git add dist/default_config.json
           git commit -m "update default_config.json"
+          echo v${{ steps.set_var.outputs.version }}
           git tag -l | grep v${{ steps.set_var.outputs.version }} || git tag -a v${{ steps.set_var.outputs.version }} -m "v${{ steps.set_var.outputs.version }}"
+          git tag -l
           git remote -v
-          git push
+          git push origin --follow-tags
