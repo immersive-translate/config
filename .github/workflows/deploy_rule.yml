@@ -44,6 +44,6 @@ jobs:
           # if not then create a new tag
           git add dist/default_config.json
           git commit -m "update default_config.json"
-          git tag -l | grep v${{ steps.set_var.outputs.version }} || git tag -a v${{ steps.set_var.outputs.version }}
+          git tag -l | grep v${{ steps.set_var.outputs.version }} || git tag -a v${{ steps.set_var.outputs.version }} -m "v${{ steps.set_var.outputs.version }}"
           git remote -v
           git push
