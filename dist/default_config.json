@@ -156,6 +156,12 @@
         "}"
       ]
     },
+    "google": {
+      "placeholderDelimiters": [
+        "🚠",
+        "🚠"
+      ]
+    },
     "transmart": {
       "placeholderDelimiters": [
         "#",
@@ -360,7 +366,8 @@
       "span.math.inline",
       "span.math.display",
       ".ltx_Math",
-      ".mathjax-block"
+      ".mathjax-block",
+      ".MathJax_CHTML"
     ],
     "translationBlockStyle": "",
     "isShowUserscriptPagePopup": true,
@@ -2865,6 +2872,13 @@
       "insertPosition": "afterend"
     },
     {
+      "matches": "https://www.perplexity.ai",
+      "globalStyles": {
+        ".line-clamp-1": "-webkit-line-clamp: unset !important;",
+        ".line-clamp-2": "-webkit-line-clamp: unset !important;"
+      }
+    },
+    {
       "matches": "https://allmyfaves.com/",
       "selectors": [
         "p"
@@ -3159,6 +3173,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-21T18:59:21.757Z",
+  "buildinConfigUpdatedAt": "2023-06-23T10:00:37.041Z",
   "latestVersion": "0.6.17"
 }
