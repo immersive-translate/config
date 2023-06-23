@@ -1096,7 +1096,7 @@
         ".caption-window",
         ".caption-visual-line"
       ],
-      "wrapperPrefix": "",
+      "wrapperPrefix": "<br/>",
       "wrapperSuffix": "",
       "globalStyles": {
         "ytd-expander.ytd-comment-renderer": "--ytd-expander-max-lines: 1000;",
@@ -1158,15 +1158,14 @@
     },
     {
       "matches": [
-        "https://substack.com/",
-        "https://substack.com/inbox*",
-        "https://substack.com/account*",
-        "https://substack.com/browse*"
-      ],
-      "extraBlockSelectors": [
-        ".reader2-post-title"
+        "*.substack.com",
+        "newsletter.rootsofprogress.org"
       ],
       "excludeSelectors": [
+        ".publication-footer",
+        ".subscribe-footer",
+        ".main-menu",
+        ".navbar-title",
         ".captioned-button-wrap",
         ".subscription-widget-wrap",
         ".tweet-header",
@@ -1176,29 +1175,9 @@
       ],
       "globalStyles": {
         ".reader2-clamp-lines": "max-height: unset; -webkit-line-clamp: unset;"
-      }
-    },
-    {
-      "matches": [
-        "*.substack.com",
-        "newsletter.rootsofprogress.org"
-      ],
-      "selectors": [
-        ".post-preview-title",
-        ".post-preview-description",
-        ".post",
-        ".comment-body",
-        "[data-testid=post-preview-title]"
-      ],
-      "excludeSelectors": [
-        ".captioned-button-wrap",
-        ".subscription-widget-wrap",
-        ".tweet-header",
-        ".tweet-link-bottom",
-        ".expanded-link",
-        ".meta-subheader"
-      ],
+      },
       "extraBlockSelectors": [
+        ".reader2-post-title",
         ".tweet-link-top",
         ".tweet-link-bottom",
         ".expanded-link"
@@ -3173,7 +3152,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-23T11:57:08.423Z",
+  "buildinConfigUpdatedAt": "2023-06-23T13:17:34.266Z",
   "latestVersion": "0.6.18"
 }
-
