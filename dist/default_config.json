@@ -1,15 +1,103 @@
 {
-  "minVersion": "0.5.15",
   "immediateTranslationTextCount": 5000,
   "interval": 3600000,
   "beta": false,
   "cache": true,
   "translationMode": "dual",
   "enabled": true,
-  "donateUrl": "https://immersive-translate.owenyoung.com/donate.html",
+  "minVersion": "0.6.2",
+  "donateUrl": "https://immersivetranslate.com/docs/donate/",
+  "uninstallUrl": "https://wj.qq.com/s2/12328372/04e0/",
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
   "isShowContextMenu": true,
+  "enableInputTranslation": true,
+  "inputTranslationUrlPattern": {
+    "matches": [],
+    "excludeMatches": []
+  },
+  "inputTranslationBlockUrls": [
+    "www.feishu.cn",
+    "www.notion.so",
+    "www.figma.com/file/*"
+  ],
+  "inputStyleBlockUrls": [],
+  "inputTargetLanguage": "en",
+  "inputStartingTriggerKey": "/",
+  "inputTrailingTriggerKey": "space",
+  "inputTrailingTriggerKeyRepeatTimes": 3,
+  "inputTrailingTriggerKeyTimeout": 500,
+  "inputLanguageCodeAlias": {
+    "en": [
+      "英文",
+      "英语"
+    ],
+    "zh-CN": [
+      "zh",
+      "zh-Hant",
+      "中文"
+    ],
+    "zh-TW": [
+      "zht",
+      "zh-Hant",
+      "繁中"
+    ],
+    "ja": [
+      "日语",
+      "日文"
+    ],
+    "ko": [
+      "韩语",
+      "韩文"
+    ],
+    "fr": [
+      "法语",
+      "发文"
+    ],
+    "es": [
+      "西班牙语",
+      "西语"
+    ],
+    "ru": [
+      "俄语",
+      "俄文"
+    ],
+    "bo": [
+      "藏语"
+    ]
+  },
+  "inputStartingTriggerKeyAlias": {
+    "/": [
+      "、"
+    ],
+    ".": [
+      "。"
+    ],
+    ",": [
+      "，"
+    ],
+    "space": [
+      " "
+    ],
+    ";": [
+      "；"
+    ],
+    ":": [
+      "："
+    ]
+  },
   "blockUrls": [
+    "https://dash.immersivetranslate.com/*",
+    "https://immersive-translate.owenyoung.com/options/",
+    "https://immersive-translate.owenyoung.com/auth-done/",
+    "https://dash.immersivetranslate.com/",
+    "https://dash.immersivetranslate.com/auth-done/",
+    "http://localhost:8000/dist/userscript/options/",
+    "http://localhost:8000/auth-done/",
+    "http://192.168.50.9:8000/dist/userscript/options/",
+    "https://www.deepl.com/translator",
+    "translate.google.com",
+    "http://localhost:8000/options/",
+    "http://192.168.50.9:8000/options/",
     "googleads.g.doubleclick.net",
     "s1.hdslb.com",
     "oapi.dingtalk.com",
@@ -97,7 +185,8 @@
       "placeholderDelimiters": [
         "{{",
         "}}"
-      ]
+      ],
+      "limit": 25
     },
     "bing": {
       "maxTextLengthPerRequest": 1800,
@@ -128,8 +217,8 @@
       ],
       "immediateTranslationTextCount": 3000,
       "translationDebounce": 300,
-      "limit": 5,
       "interval": 1350,
+      "prompt": "Translate the text to {{to}}:\n\n{{text}}",
       "maxTextGroupLengthPerRequest": 1,
       "newlinePlaceholderDelimiters": [
         "\n\n-|",
@@ -233,14 +322,18 @@
     "injectedCss": [],
     "isEbook": false,
     "isEbookBuilder": false,
+    "ignoreZhCNandZhTW": false,
     "showSponsorOnSafari": false,
     "noTranslateRegexp": [
       "^\\d+.+ago$",
       "^\\d+\\s+MIN\\s+READ$"
     ],
     "waitForSelectors": [],
+    "isInjectOptionsUrl": false,
+    "isInjectVersion": false,
     "waitForSelectorsTimeout": 3000,
     "pairs": {},
+    "aiRule": {},
     "isSubtitleBuilder": false,
     "minZIndex": 0,
     "initTranslationServiceAsSoonAsPossible": true,
@@ -265,7 +358,9 @@
       ".mwe-math-element",
       "span[translate=no]",
       "span.math.inline",
-      "span.math.display"
+      "span.math.display",
+      ".ltx_Math",
+      ".mathjax-block"
     ],
     "translationBlockStyle": "",
     "isShowUserscriptPagePopup": true,
@@ -275,8 +370,10 @@
     "shadowRootSelectors": [],
     "blockMinTextCount": 24,
     "blockMinWordCount": 4,
-    "containerMinTextCount": 18,
-    "containerMinWordCount": 3,
+    "asideMaxTextCount": 1000,
+    "asideMaxWordCount": 200,
+    "asideMaxTextCountPerParagraph": 67,
+    "asideMaxWordCountPerParagraph": 12,
     "lineBreakMaxTextCount": 0,
     "globalAttributes": {},
     "globalMeta": {},
@@ -638,8 +735,8 @@
     },
     {
       "matches": "*.wikipedia.org",
-      "paragraphMinWordCount": 1,
-      "paragraphMinTextCount": 3,
+      "paragraphMinWordCount": 2,
+      "paragraphMinTextCount": 4,
       "excludeSelectors": [
         ".mw-editsection",
         ".mw-cite-backlink",
@@ -668,6 +765,7 @@
         "tweetdeck.twitter.com",
         "https://platform.twitter.com/embed*"
       ],
+      "ignoreZhCNandZhTW": true,
       "isTranslateTitle": false,
       "selectors": [
         "[data-testid=\"tweetText\"]",
@@ -680,17 +778,21 @@
         "[data-testid='UserDescription']",
         "[data-testid='HoverCard'] div[dir=auto]"
       ],
-      "paragraphMinTextCount": 3,
-      "paragraphMinWordCount": 1,
+      "excludeSelectors": [
+        "[aria-describedby][role=button]",
+        "header"
+      ],
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
       "additionalStayOriginalSelectors": [
         "[data-testid=\"tweetText\"] a"
       ],
-      "excludeSelectors": [
-        "header"
-      ],
       "observeUrlChange": false,
+      "extraBlockSelectors": [
+        "[data-testid=\"tweetText\"] div.r-6koalj"
+      ],
       "extraInlineSelectors": [
-        "[data-testid=\"tweetText\"] div",
+        "[data-testid=\"tweetText\"] div.r-xoduu5",
         "[data-testid=\"tweetText\"] span",
         "[data-testid=\"UserDescription\"] div",
         "[data-testid='HoverCard'] div[dir=auto] div"
@@ -715,7 +817,7 @@
         "div[data-campaign-name=stk]"
       ],
       "paragraphMinTextCount": 4,
-      "paragraphMinWordCount": 1
+      "paragraphMinWordCount": 2
     },
     {
       "matches": "developer.apple.com/documentation/*",
@@ -831,7 +933,7 @@
         "[role=main] .md-container"
       ],
       "paragraphMinTextCount": 5,
-      "paragraphMinWordCount": 1,
+      "paragraphMinWordCount": 2,
       "excludeMatches": [
         "https://www.reddit.com/r/*/wiki/*",
         "https://www.reddit.com/settings/*"
@@ -860,7 +962,9 @@
       "excludeMatches": [
         "https://github.com/*/*/settings",
         "https://github.com/settings/*",
-        "https://github.com/sponsors/*"
+        "https://github.com/sponsors/*",
+        "https://github.com/readme/*",
+        "https://github.com/readme/"
       ],
       "selectors": [
         "h1",
@@ -915,6 +1019,7 @@
     },
     {
       "matches": "www.facebook.com",
+      "excludeMatches": "https://www.facebook.com/business/*",
       "selectors": [
         "div[dir=auto][style]",
         "div[dir=auto][class]",
@@ -1009,7 +1114,8 @@
       ],
       "detectParagraphLanguage": true,
       "injectedCss": [
-        ".immersive-translate-target-wrapper img { width: 16px; height: 16px }"
+        ".immersive-translate-target-wrapper img { width: 16px; height: 16px }",
+        ".metadata-snippet-container {max-height: unset !important;}"
       ]
     },
     {
@@ -1074,7 +1180,8 @@
         ".post-preview-title",
         ".post-preview-description",
         ".post",
-        ".comment-body"
+        ".comment-body",
+        "[data-testid=post-preview-title]"
       ],
       "excludeSelectors": [
         ".captioned-button-wrap",
@@ -1290,7 +1397,9 @@
       },
       "detectParagraphLanguage": true,
       "wrapperPrefix": "<br />",
-      "wrapperSuffix": ""
+      "wrapperSuffix": "",
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2
     },
     {
       "matches": [
@@ -1421,7 +1530,11 @@
         ".CEMjEf",
         ".MgUUmf.NUnG9d",
         "#result-stats",
-        "[role=navigation]"
+        "[role=navigation]",
+        "div.sCuL3",
+        "div.eFM0qc.BCF2pd",
+        "div.WZ8Tjf",
+        "div.adDDi"
       ],
       "wrapperSuffix": "",
       "globalStyles": {
@@ -1512,7 +1625,16 @@
       "additionalSelectors": [
         ".info__subHeadline",
         ".section-content h2"
-      ]
+      ],
+      "globalStyles": {
+        ".topic__article-list": "height: unset;",
+        ".adverisers__adveriser": "height: unset;",
+        ".advertiser__content": "height: unset;",
+        ".content-title__link": "display:unset;overflow:unset;-webkit-line-clamp:unset;",
+        ".title__text": "max-height:unset; -webkit-line-clamp:unset;",
+        ".news-list-item__news-title": "max-height:unset; -webkit-line-clamp:unset;",
+        "a[class*='link'] > .link__headline": "max-height:unset; -webkit-line-clamp:unset;"
+      }
     },
     {
       "matches": "www.lesswrong.com",
@@ -1684,8 +1806,8 @@
         "[itemprop=offers]",
         ".dne-itemtile-original-price"
       ],
-      "paragraphMinTextCount": 3,
-      "paragraphMinWordCount": 1,
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
       "globalStyles": {
         "[itemprop=name]": "-webkit-line-clamp: unset;max-height: unset;",
         ".merch-item-title": "-webkit-line-clamp: unset;max-height: unset;"
@@ -1696,19 +1818,23 @@
       "excludeSelectors": [
         ".responsiveFlyoutMenu_levelOneLink"
       ],
-      "paragraphMinTextCount": 3,
-      "paragraphMinWordCount": 1
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2
     },
     {
       "matches": "www.tripadvisor.com",
-      "paragraphMinTextCount": 3,
-      "paragraphMinWordCount": 1
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2
     },
     {
       "matches": "www.amazon.com",
-      "paragraphMinTextCount": 3,
-      "paragraphMinWordCount": 1,
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
+      "extraBlockSelectors": [
+        ".a-size-small.a-link-normal.page-banner-link.a-nowrap"
+      ],
       "globalStyles": {
+        ".a-carousel-viewport": "height:unset;",
         ".s-line-clamp-2": "-webkit-line-clamp: unset;max-height: unset;",
         ".s-line-clamp-4": "-webkit-line-clamp: unset;max-height: unset;",
         "[data-rows]": "max-height: unset;-webkit-line-clamp: unset;",
@@ -1717,7 +1843,10 @@
       "excludeSelectors": [
         "#navFooter",
         "#navbar-main",
-        ".s-price-instructions-style"
+        ".s-price-instructions-style",
+        "[class*='star']",
+        "[data-hook='acr-average-stars-rating-text']",
+        ".a-color-price"
       ]
     },
     {
@@ -1790,12 +1919,10 @@
         "*.annas-archive.org",
         "annas-archive.org"
       ],
-      "selectors": [
-        "h3.text-xl.font-bold",
-        "div[class='truncate text-sm']"
-      ],
+      "selectors": [],
       "globalStyles": {
-        "div[id^='link-index-']": "height: unset; max-height: unset;"
+        "div[id^='link-index-']": "height: unset; max-height: unset;",
+        "main > div > div[class*='h-[125]']": "height:auto"
       },
       "normalizeBody": "body",
       "extraBlockSelectors": [
@@ -1820,7 +1947,14 @@
       "matches": "play.google.com",
       "additionalSelectors": [
         "header[data-review-id] + div"
-      ]
+      ],
+      "excludeSelectors": [
+        ".vlGucd",
+        ".ubGTjb"
+      ],
+      "globalStyles": {
+        ".Epkrse": "-webkit-line-clamp:unset;"
+      }
     },
     {
       "matches": [
@@ -2079,8 +2213,49 @@
       "excludeSelectors": [
         "div.absolute.bottom-0.left-0.w-full",
         "h1",
-        "div#headlessui-portal-root"
-      ]
+        "div#headlessui-portal-root",
+        "nav",
+        "div[data-radix-popper-content-wrapper]",
+        "ul[aria-multiselectable]",
+        ".markdown *",
+        "div[class='flex flex-col items-start']",
+        "div[class='flex items-center justify-center gap-1 border-b border-black/10 bg-gray-50 p-3 text-gray-500 dark:border-gray-900/50 dark:bg-gray-700 dark:text-gray-300']"
+      ],
+      "isTranslateTitle": false,
+      "wrapperPrefix": "",
+      "aiRule": {
+        "streamingSelector": ".result-streaming.markdown",
+        "messageWrapperSelector": ".markdown",
+        "streamingChange": true
+      }
+    },
+    {
+      "matches": [
+        "chat.newstop.asia",
+        "chat.waixingyun.cn"
+      ],
+      "excludeSelectors": [
+        ".markdown-body *"
+      ],
+      "aiRule": {
+        "streamingSelector": ".n-button.n-button--warning-type.n-button--medium-type",
+        "messageWrapperSelector": ".markdown-body",
+        "streamingChange": false
+      }
+    },
+    {
+      "matches": [
+        "askgpt.cn",
+        "chatcat.zhaoyoung.me"
+      ],
+      "excludeSelectors": [
+        ".markdown-body *"
+      ],
+      "aiRule": {
+        "streamingSelector": ".home_chat-message-status__EsVNi",
+        "messageWrapperSelector": ".markdown-body",
+        "streamingChange": true
+      }
     },
     {
       "matches": "glasp.co",
@@ -2347,8 +2522,8 @@
       "extraInlineSelectors": [
         "span.dropcaps"
       ],
-      "paragraphMinTextCount": 1,
-      "paragraphMinWordCount": 1,
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
       "blockMinTextCount": 1,
       "blockMinWordCount": 1,
       "containerMinTextCount": 1,
@@ -2369,10 +2544,11 @@
         "#drop-target h1",
         "#side-bar",
         "h1#side-bar-title",
-        "#tool"
+        "#tool",
+        ".Code"
       ],
-      "paragraphMinTextCount": 1,
-      "paragraphMinWordCount": 1,
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
       "blockMinTextCount": 1,
       "blockMinWordCount": 1,
       "containerMinTextCount": 1,
@@ -2461,8 +2637,8 @@
       "pairs": {
         ".source-text": ".target-text"
       },
-      "paragraphMinTextCount": 2,
-      "paragraphMinWordCount": 1,
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
       "isTranslateTitle": false,
       "wrapperPrefix": "",
       "wrapperSuffix": ""
@@ -2482,8 +2658,7 @@
     {
       "matches": "chat.google.com",
       "selectors": [
-        "[jsname=bgckF]",
-        "[dir=ltr]"
+        "[jsname=bgckF]"
       ]
     },
     {
@@ -2606,6 +2781,31 @@
       "matches": "https://www.newsminimalist.com/",
       "extraBlockSelectors": [
         ".inline-flex"
+      ],
+      "excludeTags": [
+        "TITLE",
+        "LINK",
+        "SCRIPT",
+        "STYLE",
+        "TEXTAREA",
+        "SVG",
+        "svg",
+        "G",
+        "NOSCRIPT",
+        "INPUT",
+        "BASE",
+        "SELECT",
+        "OPTION",
+        "HR",
+        "PRE",
+        "KBD",
+        "WBR",
+        "RT",
+        "RP",
+        "META",
+        "MATH",
+        "TTS-SENTENCE",
+        "AIO-CODE"
       ]
     },
     {
@@ -2669,8 +2869,6 @@
       "selectors": [
         "p"
       ],
-      "containerMinTextCount": 2,
-      "containerMinWordCount": 1,
       "paragraphMinTextCount": 2,
       "paragraphMinWordCount": 1
     },
@@ -2728,7 +2926,9 @@
         "input#immersiveTranslateDetectedSlot": {
           "value": "true"
         }
-      }
+      },
+      "isInjectOptionsUrl": true,
+      "isInjectVersion": true
     },
     {
       "globalAttributes": {
@@ -2813,8 +3013,152 @@
       "excludeSelectors": [
         ".focus-menu-shown"
       ]
+    },
+    {
+      "matches": "docs.sentry.io",
+      "initialSelectorGlobalAttributes": {
+        "footer:last-of-type": {
+          "translate": "no"
+        },
+        ".navbar": {
+          "translate": "no"
+        }
+      }
+    },
+    {
+      "matches": "https://platform.openai.com/docs/*",
+      "urlChangeDelay": 0
+    },
+    {
+      "selectorMatches": [
+        "meta[name='generator'][content^='Discourse']"
+      ],
+      "urlChangeDelay": 0,
+      "_comment": "解决url变化但是页面不变的问题"
+    },
+    {
+      "matches": "feedly.com",
+      "globalStyles": {
+        ".TitleOnlyLayout": "height:unset !important;",
+        ".EntrySummary--u4": "-webkit-line-clamp: unset;max-height:unset;",
+        ".EntrySummary--u5": "-webkit-line-clamp: unset;max-height:unset;"
+      },
+      "excludeSelectors": [
+        ".Leftnav"
+      ]
+    },
+    {
+      "matches": "bard.google.com",
+      "excludeSelectors": [
+        "mat-sidenav",
+        "div.capabilities-disclaimer"
+      ],
+      "isTranslateTitle": false,
+      "excludeTags": [
+        "TITLE",
+        "LINK",
+        "SCRIPT",
+        "STYLE",
+        "TEXTAREA",
+        "SVG",
+        "svg",
+        "G",
+        "NOSCRIPT",
+        "INPUT",
+        "BASE",
+        "SELECT",
+        "OPTION",
+        "HR",
+        "PRE",
+        "KBD",
+        "WBR",
+        "RT",
+        "RP",
+        "META",
+        "MATH",
+        "TTS-SENTENCE",
+        "AIO-CODE"
+      ]
+    },
+    {
+      "matches": "web.whatsapp.com",
+      "selectors": [
+        ".copyable-text"
+      ],
+      "wrapperPrefix": "\n",
+      "wrapperSuffix": "<br/>"
+    },
+    {
+      "matches": "https://cn.bing.com/search*",
+      "extraInlineSelectors": [
+        "a",
+        "i"
+      ]
+    },
+    {
+      "matches": "news.yahoo.com",
+      "excludeSelectors": [
+        "#ybar-inner-wrap"
+      ]
+    },
+    {
+      "matches": "*.yahoo.com",
+      "excludeSelectors": [
+        "._ys_jiqava"
+      ],
+      "globalAttributes": {
+        "#atomic .Mt\\(20px\\)": {
+          "style": "margin-top: 100px;"
+        },
+        "[class*='LineClamp']": {
+          "style": "-webkit-line-clamp:unset;max-height:unset;"
+        },
+        "a[class*='js-content-viewer']> div[class*='Td\\(n\\)']": {
+          "style": "overflow: scroll;"
+        },
+        "[class*='_ys_24482e']": {
+          "style": "-webkit-line-clamp:unset;"
+        }
+      }
+    },
+    {
+      "matches": "www.wsj.com",
+      "excludeSelectors": [
+        "header",
+        "footer",
+        "nav",
+        "[aria-label='Markets summary']"
+      ]
+    },
+    {
+      "matches": "www.businessinsider.com",
+      "excludeSelectors": [
+        "header",
+        "nav",
+        "section.live-updates-module "
+      ]
+    },
+    {
+      "matches": "www.goodreads.com",
+      "excludeSelectors": [
+        ".badgeYear",
+        ".gr-mediaBox__desc",
+        ".bookVotedRow",
+        ".minirating",
+        "div[itemprop='aggregateRating']",
+        ".wtrButtonContainer",
+        ".RatingsHistogram__labelTitle",
+        ".FollowButton",
+        ".siteHeader__topLevelLink",
+        "#books > thead",
+        "td[class*='rating']",
+        "td[class*='shelves']",
+        "td[class*='date_read']",
+        "td[class*='date_added']",
+        "td[class*='actions']"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-05T15:41:20.913Z",
-  "latestVersion": "0.5.16"
+  "buildinConfigUpdatedAt": "2023-06-21T18:59:21.757Z",
+  "latestVersion": "0.6.17"
 }
