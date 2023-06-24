@@ -1600,6 +1600,10 @@
         "h1",
         "[data-testid=SummaryItemHed]"
       ],
+      "excludeSelectors": [
+        "[data-testid=PersistentTop]",
+        "[data-testid=StackedNavigationHeader]"
+      ],
       "urlChangeDelay": 2000
     },
     {
@@ -3157,6 +3161,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-23T14:46:39.603Z",
+  "buildinConfigUpdatedAt": "2023-06-24T14:34:29.054Z",
   "latestVersion": "0.6.18"
 }
