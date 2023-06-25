@@ -1,3 +1,4 @@
+use env build time 2023-06-25T15:28:39.000Z
 {
   "immediateTranslationTextCount": 5000,
   "interval": 3600000,
@@ -3191,6 +3192,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-25T14:35:21.687Z",
-  "latestVersion": "0.6.18"
+  "buildinConfigUpdatedAt": "2023-06-25T15:28:39.000Z",
+  "latestVersion": "0.6.19"
 }
