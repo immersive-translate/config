@@ -26,6 +26,9 @@
   "inputTrailingTriggerKey": "space",
   "inputTrailingTriggerKeyRepeatTimes": 3,
   "inputTrailingTriggerKeyTimeout": 500,
+  "mutationBlockUrls": [
+    "www.feishu.cn"
+  ],
   "inputLanguageCodeAlias": {
     "en": [
       "英文",
@@ -141,31 +144,36 @@
     "volcAlpha": {
       "placeholderDelimiters": [
         "{",
-        "}"
+        "}",
+        "b"
       ]
     },
     "volc": {
       "placeholderDelimiters": [
         "{",
-        "}"
+        "}",
+        "b"
       ]
     },
     "tencent": {
       "placeholderDelimiters": [
         "{",
-        "}"
+        "}",
+        "b"
       ]
     },
     "google": {
       "placeholderDelimiters": [
         "🚠",
-        "🚠"
+        "🚠",
+        "b"
       ]
     },
     "transmart": {
       "placeholderDelimiters": [
         "#",
-        "#"
+        "#",
+        "b"
       ]
     },
     "baidu": {
@@ -190,7 +198,8 @@
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
       "placeholderDelimiters": [
         "{{",
-        "}}"
+        "}}",
+        "b"
       ],
       "limit": 25
     },
@@ -198,7 +207,8 @@
       "maxTextLengthPerRequest": 1800,
       "placeholderDelimiters": [
         "<code>",
-        "</code>"
+        "</code>",
+        "b"
       ]
     },
     "deeplx": {
@@ -219,7 +229,8 @@
     "openai": {
       "placeholderDelimiters": [
         "{{",
-        "}}"
+        "}}",
+        "b"
       ],
       "immediateTranslationTextCount": 3000,
       "translationDebounce": 300,
@@ -235,7 +246,8 @@
     "chatgpt": {
       "placeholderDelimiters": [
         "{{",
-        "}}"
+        "}}",
+        "b"
       ],
       "immediateTranslationTextCount": 2000,
       "maxTextGroupLengthPerRequest": 1,
@@ -363,6 +375,8 @@
       ".MathJax",
       ".mwe-math-element",
       "span[translate=no]",
+      "em[translate=no]",
+      "code[translate=no]",
       "span.math.inline",
       "span.math.display",
       ".ltx_Math",
@@ -623,6 +637,7 @@
       "TURBO-FRAME",
       "README-TOC"
     ],
+    "mutationObserverContainerSelectors": [],
     "pdfNewParagraphLineHeight": 2.4,
     "pdfNewParagraphIndent": 1.2,
     "pdfNewParagraphIndentRightIndentPx": 130,
@@ -2434,7 +2449,7 @@
       ]
     },
     {
-      "matches": "https://www.webofscience.com/wos/woscc/summary/*",
+      "matches": "https://www.webofscience.com/*",
       "globalStyles": {
         ".abstract": "height:auto !important;",
         ".show-more-lines": "height:unset !important;"
@@ -2442,9 +2457,18 @@
       "excludeSelectors": [
         ".summary-left-panel",
         ".authors",
-        "app-summary-authors + div"
+        "app-full-record-keywords mark"
+      ],
+      "mutationObserverContainerSelectors": [
+        "[data-ta='summary-record-title-link']",
+        "#FullRTa-fullRecordtitle-0"
+      ],
+      "extraBlockSelectors": [
+        "app-summary-authors + div",
+        "app-full-record-keywords span span"
       ],
       "observeUrlChange": true,
+      "urlChangeDelay": 600,
       "mutationChangeDelay": 600
     },
     {
@@ -3161,6 +3185,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-24T14:34:29.054Z",
+  "buildinConfigUpdatedAt": "2023-06-25T11:17:29.713Z",
   "latestVersion": "0.6.18"
 }
