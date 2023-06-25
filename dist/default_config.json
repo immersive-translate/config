@@ -3183,8 +3183,14 @@
         "td[class*='date_added']",
         "td[class*='actions']"
       ]
+    },
+    {
+      "matches": "https://feeder.co/*",
+      "globalStyles": {
+        ".item-summary": "-webkit-line-clamp:unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-25T11:17:29.713Z",
+  "buildinConfigUpdatedAt": "2023-06-25T14:35:21.687Z",
   "latestVersion": "0.6.18"
 }
