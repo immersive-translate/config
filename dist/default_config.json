@@ -1180,6 +1180,7 @@
         "link[href^='https://substackcdn.com/bundle/'][rel=preload]"
       ],
       "excludeSelectors": [
+        "[style^=top]",
         ".publication-footer",
         ".subscribe-footer",
         ".main-menu",
@@ -3191,6 +3192,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-25T15:28:39.000Z",
+  "buildinConfigUpdatedAt": "2023-06-25T17:02:06.595Z",
   "latestVersion": "0.6.19"
 }
