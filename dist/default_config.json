@@ -1709,18 +1709,96 @@
         "*.pornhub.com/insights/*",
         "pornhub.com/insights/*"
       ],
-      "selectors": [
-        ".title",
-        ".commentMessage > span",
-        "h1.floatLeft",
-        ".commentText"
+      "extraBlockSelectors": [
+        ".trendingNow",
+        ".searchItem",
+        ".tagcloud > a"
       ],
       "detectParagraphLanguage": true,
       "wrapperPrefix": "<br/>",
       "wrapperSuffix": "\n",
       "globalStyles": {
-        "span.title": "height: unset; max-height: unset;"
+        "span.title": "height:unset; max-height:unset;",
+        ".detailedInfo": "max-height:unset;",
+        ".pcVideoListItem": "max-height:unset;",
+        ".wrap": "height:unset;",
+        ".entry-header": "height:unset;",
+        ".entry-title > a": "height:unset;-webkit-line-clamp:unset;"
       }
+    },
+    {
+      "matches": "https://www.youporn.com/*",
+      "extraBlockSelectors": [
+        ".button"
+      ],
+      "globalStyles": {
+        ".video-box": "max-height:unset;",
+        ".video-box-title": "white-space:unset;"
+      }
+    },
+    {
+      "matches": "https://www.modelhub.com/*",
+      "globalStyles": {
+        ".videoTitle": "height:unset;",
+        "a": "height:unset;"
+      }
+    },
+    {
+      "matches": "https://www.xvideos.com/*",
+      "globalStyles": {
+        ".title": "-webkit-line-clamp:unset;max-height:unset;",
+        ".mozaique": "display:flex; flex-wrap:wrap;"
+      },
+      "excludeSelectors": [
+        ".video-hd-mark"
+      ]
+    },
+    {
+      "matches": "https://missav.com/*",
+      "globalStyles": {
+        ".truncate": "white-space:unset;",
+        ".overflow-y-hidden": "max-height:unset;overflow-y:unset;"
+      }
+    },
+    {
+      "matches": "https://www.javbus.com/*",
+      "globalStyles": {
+        "#waterfall[class='masonry']": "height: unset;",
+        "#waterfall[class='masonry'] > div": "display: flex;flex-direction: row;flex-wrap: wrap;",
+        "#waterfall[class='masonry'] > div > div": "position:relative;",
+        ".photo-info": "height:unset;"
+      },
+      "excludeSelectors": [
+        ".item-tag",
+        "date"
+      ]
+    },
+    {
+      "matches": "https://spankbang.com/*",
+      "globalStyles": {
+        ".video-item > a": "white-space:unset;"
+      },
+      "excludeSelectors": [
+        ".stats",
+        ".thumb"
+      ],
+      "extraBlockSelectors": [
+        ".searches > a",
+        ".tag > a",
+        ".extra > a",
+        ".positions > li"
+      ]
+    },
+    {
+      "matches": "https://javdb.com/*",
+      "globalStyles": {
+        ".video-title": "white-space:unset;"
+      },
+      "excludeSelectors": [
+        ".video-number",
+        ".score",
+        ".has-addons"
+      ]
     },
     {
       "matches": [
@@ -3192,6 +3270,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-25T17:02:06.595Z",
+  "buildinConfigUpdatedAt": "2023-06-26T12:23:04.839Z",
   "latestVersion": "0.6.19"
 }
