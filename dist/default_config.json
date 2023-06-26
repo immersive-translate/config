@@ -1667,7 +1667,11 @@
         "div#mastodon"
       ],
       "selectors": [
-        "div.status__content__text"
+        "div.status__content__text",
+        ".about__section__body"
+      ],
+      "stayOriginalSelectors": [
+        ".notranslate"
       ],
       "detectLanguage": true
     },
@@ -3270,6 +3274,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-26T12:23:04.839Z",
+  "buildinConfigUpdatedAt": "2023-06-26T15:31:02.163Z",
   "latestVersion": "0.6.19"
 }
