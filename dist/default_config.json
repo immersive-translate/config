@@ -1668,11 +1668,16 @@
       ],
       "selectors": [
         "div.status__content__text",
-        ".about__section__body"
+        ".about__section__body",
+        ".content",
+        ".form-container",
+        ".account__header__extra"
       ],
-      "stayOriginalSelectors": [
-        ".notranslate"
-      ],
+      "globalAttributes": {
+        "[class='notranslate app-holder']": {
+          "class": "app-holder"
+        }
+      },
       "detectLanguage": true
     },
     {
@@ -3282,6 +3287,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-27T06:18:04.878Z",
+  "buildinConfigUpdatedAt": "2023-06-27T08:11:50.963Z",
   "latestVersion": "0.6.19"
 }
