@@ -1827,6 +1827,18 @@
       ]
     },
     {
+      "matches": "https://czechvideo.co/*",
+      "globalStyles": {
+        ".short-story": "height:unset;",
+        ".short-title": "height:unset;"
+      },
+      "globalAttributes": {
+        "header": {
+          "translate": "unset;"
+        }
+      }
+    },
+    {
       "matches": [
         "weibo.com"
       ],
@@ -3304,6 +3316,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-27T14:40:33.000Z",
+  "buildinConfigUpdatedAt": "2023-06-27T15:13:45.931Z",
   "latestVersion": "0.6.20"
 }
