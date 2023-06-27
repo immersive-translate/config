@@ -3272,8 +3272,16 @@
       "globalStyles": {
         ".item-summary": "-webkit-line-clamp:unset;"
       }
+    },
+    {
+      "matches": "https://www.elektrotechnik.rwth-aachen.de/*",
+      "globalAttributes": {
+        "[class='notranslate']": {
+          "class": ""
+        }
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-26T15:31:02.163Z",
+  "buildinConfigUpdatedAt": "2023-06-27T06:18:04.878Z",
   "latestVersion": "0.6.19"
 }
