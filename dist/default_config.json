@@ -1799,7 +1799,7 @@
       ]
     },
     {
-      "matches": "https://javdb.com/*",
+      "matches": "https://javdb*.com/*",
       "globalStyles": {
         ".video-title": "white-space:unset;"
       },
@@ -1807,6 +1807,23 @@
         ".video-number",
         ".score",
         ".has-addons"
+      ]
+    },
+    {
+      "matches": "https://jable.tv/*",
+      "globalStyles": {
+        ".title": "white-space:unset;max-height:unset;",
+        ".img-box > a": "position:relative;"
+      }
+    },
+    {
+      "matches": "https://netflav*.com/*",
+      "globalStyles": {
+        ".grid_title": "max-height:unset;"
+      },
+      "extraBlockSelectors": [
+        ".genre_filter_item",
+        "button"
       ]
     },
     {
@@ -3287,6 +3304,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-27T08:11:50.963Z",
+  "buildinConfigUpdatedAt": "2023-06-27T09:32:41.663Z",
   "latestVersion": "0.6.19"
 }
