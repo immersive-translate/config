@@ -3314,8 +3314,14 @@
           "class": ""
         }
       }
+    },
+    {
+      "matches": "www.nytimes.com",
+      "excludeSelectors": [
+        "header"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-28T02:45:11.459Z",
+  "buildinConfigUpdatedAt": "2023-06-28T03:15:31.251Z",
   "latestVersion": "0.6.20"
 }
