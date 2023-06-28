@@ -140,6 +140,10 @@
   "loadingTheme": "spinner",
   "canary": false,
   "translationThemePatterns": {},
+  "translationLanguagePattern": {
+    "matches": [],
+    "excludeMatches": []
+  },
   "translationServices": {
     "volcAlpha": {
       "placeholderDelimiters": [
@@ -3320,8 +3324,40 @@
       "excludeSelectors": [
         "header"
       ]
+    },
+    {
+      "matches": "bugs.kde.org",
+      "excludeTags": [
+        "TITLE",
+        "LINK",
+        "SCRIPT",
+        "STYLE",
+        "TEXTAREA",
+        "SVG",
+        "G",
+        "NOSCRIPT",
+        "INPUT",
+        "BUTTON",
+        "BASE",
+        "SELECT",
+        "OPTION",
+        "HR",
+        "KBD",
+        "WBR",
+        "RT",
+        "RP",
+        "META",
+        "MATH",
+        "TTS-SENTENCE",
+        "AIO-CODE"
+      ],
+      "additionalExcludeSelectors": [
+        ".bz_first_comment_head",
+        ".bz_comment_head",
+        ".related_actions"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-28T03:15:31.251Z",
+  "buildinConfigUpdatedAt": "2023-06-28T21:00:49.242Z",
   "latestVersion": "0.6.20"
 }
