@@ -235,7 +235,7 @@
       "immediateTranslationTextCount": 3000,
       "translationDebounce": 300,
       "interval": 1350,
-      "prompt": "Translate the text to {{to}}:\n\n{{text}}",
+      "prompt": "Translate the text to {{to}}, please do not explain any sentences, just translate or leave them as they are.:\n\n{{text}}",
       "maxTextGroupLengthPerRequest": 1,
       "newlinePlaceholderDelimiters": [
         "\n\n-|",
@@ -3316,6 +3316,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-27T15:13:45.931Z",
+  "buildinConfigUpdatedAt": "2023-06-28T02:45:11.459Z",
   "latestVersion": "0.6.20"
 }
