@@ -362,6 +362,8 @@
     "targetWrapperTag": "font",
     "additionalInjectedCss": [],
     "isTranslateTitle": true,
+    "enableSearchEnhancement": true,
+    "searchEnhancementSelector": "#rhs",
     "languageDetectMinTextCount": 50,
     "wrapperPrefix": "smart",
     "wrapperSuffix": "smart",
@@ -3359,6 +3361,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-30T08:05:29.039Z",
-  "latestVersion": "0.6.21"
+  "buildinConfigUpdatedAt": "2023-06-30T14:29:50.078Z",
+  "latestVersion": "0.6.22"
 }
