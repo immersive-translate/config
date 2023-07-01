@@ -1308,7 +1308,8 @@
     {
       "matches": "news.google.com",
       "globalStyles": {
-        ".To2ZZb.DbQnIe": "height:unset;"
+        ".To2ZZb.DbQnIe": "height:unset;",
+        ".cp7Yvc > h2": "display:block;"
       }
     },
     {
@@ -3381,6 +3382,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-01T04:01:46.487Z",
+  "buildinConfigUpdatedAt": "2023-07-01T04:16:37.625Z",
   "latestVersion": "0.7.1"
 }
