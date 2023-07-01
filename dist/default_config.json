@@ -1337,10 +1337,15 @@
         "a[href^='/discussions/'].fontWeight-600",
         "button[class^='styles_textButton'] > div > span",
         "h5 + p",
-        "div[data-test=product-item-name] + div"
+        "div[data-test=product-item-name] + div",
+        ".noOfLines-1,.noOfLines-2,.noOfLines-3",
+        ".fontWeight-600",
+        "[class*='styles_dropdown']",
+        "[class*='styles_aboutText']"
       ],
       "globalStyles": {
-        "h5 + p": "height:unset;"
+        "h5 + p": "height:unset;",
+        ".noOfLines-1,.noOfLines-2,.noOfLines-3": "-webkit-line-clamp:unset;"
       },
       "excludeTags": [
         "TITLE",
@@ -3386,6 +3391,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-01T06:26:38.879Z",
+  "buildinConfigUpdatedAt": "2023-07-01T10:24:52.967Z",
   "latestVersion": "0.7.1"
 }
