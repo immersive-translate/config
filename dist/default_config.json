@@ -1306,6 +1306,12 @@
       ]
     },
     {
+      "matches": "news.google.com",
+      "globalStyles": {
+        ".To2ZZb.DbQnIe": "height:unset;"
+      }
+    },
+    {
       "matches": "outlook.live.com",
       "excludeSelectors": [
         ".jHAG3.XG5Jd",
@@ -3375,6 +3381,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-06-30T17:37:40.000Z",
+  "buildinConfigUpdatedAt": "2023-07-01T04:01:46.487Z",
   "latestVersion": "0.7.1"
 }
