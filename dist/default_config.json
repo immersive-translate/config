@@ -1309,8 +1309,12 @@
       "matches": "news.google.com",
       "globalStyles": {
         ".To2ZZb.DbQnIe": "height:unset;",
-        ".cp7Yvc > h2": "display:block;"
-      }
+        ".cp7Yvc > h2": "display:block;",
+        "h4": "-webkit-line-clamp:unset;"
+      },
+      "excludeSelectors": [
+        ".EyERq"
+      ]
     },
     {
       "matches": "outlook.live.com",
@@ -3382,6 +3386,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-01T04:16:37.625Z",
+  "buildinConfigUpdatedAt": "2023-07-01T06:26:38.879Z",
   "latestVersion": "0.7.1"
 }
