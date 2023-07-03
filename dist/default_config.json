@@ -3090,6 +3090,13 @@
         "li { height: unset !important; }",
         "div { height: unset !important; }",
         ".immersive-translate-target-inner {color:black;}"
+      ],
+      "excludeSelectors": [
+        ".topNav",
+        ".topNav2_art > span",
+        ".topNav_art2 > .dropdown",
+        ".dibu-three",
+        ".topBar"
       ]
     },
     {
@@ -3391,6 +3398,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-01T10:24:52.967Z",
+  "buildinConfigUpdatedAt": "2023-07-03T16:09:38.756Z",
   "latestVersion": "0.7.1"
 }
