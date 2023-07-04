@@ -11,6 +11,7 @@
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
   "isShowContextMenu": true,
   "enableInputTranslation": true,
+  "enableInputTranslationWithoutTriggerKey": true,
   "inputTranslationUrlPattern": {
     "matches": [],
     "excludeMatches": []
@@ -1550,9 +1551,20 @@
       "stayOriginalSelectors": "[data-tooltip='tooltip-user-info']"
     },
     {
+      "matches": [
+        "https://www.google.com/"
+      ],
+      "excludeSelectors": [
+        "#gb",
+        "#SIvCob"
+      ]
+    },
+    {
       "matches": "www.google.*/search*",
       "detectParagraphLanguage": true,
+      "isTranslateTitle": false,
       "excludeSelectors": [
+        "#gb",
         "a h3 + div",
         "div#sfooter",
         "a[role=presentation] > div > div:first-child",
@@ -3398,6 +3410,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-03T16:09:38.756Z",
+  "buildinConfigUpdatedAt": "2023-07-04T11:55:31.644Z",
   "latestVersion": "0.7.1"
 }
