@@ -342,6 +342,7 @@
     "_comment": "",
     "normalizeBody": "",
     "useIframePostMessage": true,
+    "searchEnhancementConfig": [],
     "injectedCss": [],
     "isEbook": false,
     "isEbookBuilder": false,
@@ -1590,6 +1591,29 @@
       },
       "extraBlockSelectors": [
         ".MUFPAc"
+      ],
+      "searchEnhancementConfig": [
+        {
+          "id": "google",
+          "urlMatch": "https://www\\.google\\..+/search",
+          "style": {
+            "source": "font-size:12px; margin-bottom: 6px;",
+            "enTitle": "margin-top:6px;font-size:14px;",
+            "searchTitle": "margin-top:6px;position:relative;padding-right:24px;",
+            "more": "color:#1a0dab;margin-top:8px;",
+            "enTitleClassName": "immersive-translate-search-enhancement-en-title"
+          },
+          "keyword": {
+            "value": "[0]$1",
+            "matches": [
+              {
+                "source": "url",
+                "matchRegex": "q=(.+?)&"
+              }
+            ]
+          },
+          "showCount": 5
+        }
       ]
     },
     {
@@ -3408,8 +3432,167 @@
         ".bz_comment_head",
         ".related_actions"
       ]
+    },
+    {
+      "matches": "guba.eastmoney.com",
+      "searchEnhancementConfig": [
+        {
+          "id": "eastmoney",
+          "urlMatch": "guba.eastmoney.com/news,us\\w+,\\w+.html",
+          "delayTime": 0,
+          "selector": ".moneyFlowContainer",
+          "selectorAction": "insertBefore",
+          "style": {
+            "container": "background:white;border:none;border-radius: 4px;box-shadow: 0 2px 4px hsla(216,5%,62%,.14);",
+            "source": "font-size:12px; margin-bottom: 0px;",
+            "keyword": "color:#294688",
+            "title": "font-size:14px;color:#294688;",
+            "enTitle": "margin-top:4px;font-size:12px;",
+            "searchTitle": "margin:4px 0 16px;position:relative;padding-right:24px;font-size: 16px;",
+            "time": "margin: 0px 0 16px;",
+            "more": "color:#294688;margin-top:8px;"
+          },
+          "keyword": {
+            "value": "[0]$1 stock",
+            "matches": [
+              {
+                "source": "url",
+                "matchRegex": "guba.eastmoney.com/news,us(\\w+?),\\S+.html"
+              }
+            ]
+          },
+          "showCount": 8
+        },
+        {
+          "id": "eastmoney",
+          "urlMatch": "guba.eastmoney.com/list,us\\w+.*.html",
+          "delayTime": 0,
+          "selector": ".qualityContentContainer",
+          "selectorAction": "insertBefore",
+          "style": {
+            "container": "background:white;border:none;border-radius: 4px;box-shadow: 0 2px 4px hsla(216,5%,62%,.14);",
+            "source": "font-size:12px; margin-bottom: 0px;",
+            "keyword": "color:#294688",
+            "title": "font-size:14px;color:#294688;",
+            "enTitle": "margin-top:4px;font-size:12px;",
+            "searchTitle": "margin:4px 0 16px;position:relative;padding-right:24px;font-size: 16px;",
+            "time": "margin:0px 0 16px;",
+            "more": "color:#294688;margin-top:8px;"
+          },
+          "keyword": {
+            "value": "[0]$1:[0]$2",
+            "matches": [
+              {
+                "source": {
+                  "type": "selector",
+                  "attribute": "href"
+                },
+                "matchRegex": "code=(\\w+)_(\\w+)",
+                "match": "a[href*='rank/stock?code=']"
+              }
+            ]
+          },
+          "showCount": 8
+        }
+      ]
+    },
+    {
+      "matches": "xueqiu.com",
+      "searchEnhancementConfig": [
+        {
+          "id": "xueqiu",
+          "urlMatch": "xueqiu.com/S/[a-zA-Z]+/?$",
+          "delayTime": 0,
+          "selector": ".container-side-sm.float-right.stock__side",
+          "selectorAction": "appendChild",
+          "style": {
+            "container": "background:white;border:none;border-radius: 4px;padding:0;",
+            "source": "font-size:12px; margin-bottom: 0px;",
+            "keyword": "color:#06c",
+            "title": "font-size:14px;color:#06c;",
+            "enTitle": "margin-top:4px;font-size:12px;",
+            "searchTitle": "margin:4px 0 16px;position:relative;padding-right:24px;font-size: 16px;font-weight: bold;",
+            "time": "margin:0px 0 16px;",
+            "more": "color:#06c;margin-top:8px;"
+          },
+          "showCount": 8,
+          "keyword": {
+            "value": "[0]$1",
+            "matches": [
+              {
+                "source": {
+                  "type": "selector",
+                  "attribute": "text"
+                },
+                "matchRegex": "\\((.+)\\)",
+                "match": ".stock-name"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "matches": "www.laohu8.com",
+      "searchEnhancementConfig": [
+        {
+          "id": "laohu8",
+          "urlMatch": "www.laohu8.com/stock/[a-zA-Z]+/?$",
+          "delayTime": 0,
+          "selector": ".hot-stocks-root",
+          "selectorAction": "insertBefore",
+          "style": {
+            "container": "background:white;border:none;border-radius: 4px;box-shadow: 0 2px 4px hsla(216,5%,62%,.14);",
+            "source": "font-size:12px; margin-bottom: 0px;",
+            "title": "font-size:14px;color: #007bff;",
+            "enTitle": "margin-top:4px;color: #4d5156;font-size:12px;",
+            "searchTitle": "margin:4px 0 16px;position:relative;padding-right:24px;font-size: 16px;",
+            "time": "margin: 0px 0 16px;"
+          },
+          "keyword": {
+            "value": "[0]$1 stock",
+            "matches": [
+              {
+                "source": "url",
+                "matchRegex": "stock/([a-zA-Z]+)"
+              }
+            ]
+          },
+          "showCount": 8
+        }
+      ]
+    },
+    {
+      "matches": "www.futunn.com",
+      "searchEnhancementConfig": [
+        {
+          "id": "futunn",
+          "urlMatch": "www.futunn.com/stock/\\w+-US",
+          "delayTime": 0,
+          "selector": ".right",
+          "selectorAction": "appendChild",
+          "style": {
+            "container": "background:white;border:none;border-radius: 4px;box-shadow: 0 2px 4px hsla(216,5%,62%,.14);",
+            "source": "font-size:12px; margin-bottom: 4px;",
+            "title": "font-size:14px;color: #007bff;",
+            "enTitle": "margin-top:4px;color: #4d5156;font-size:12px;",
+            "searchTitle": "margin:4px 0 16px;position:relative;padding-right:24px;font-size: 16px;",
+            "time": "margin: 4px 0 20px;"
+          },
+          "keyword": {
+            "value": "[0]$1 stock",
+            "matches": [
+              {
+                "source": "url",
+                "matchRegex": "stock/([a-zA-Z]+)-US"
+              }
+            ]
+          },
+          "showCount": 8
+        }
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-04T11:55:31.644Z",
-  "latestVersion": "0.7.1"
+  "buildinConfigUpdatedAt": "2023-07-04T17:36:31.000Z",
+  "latestVersion": "0.7.2"
 }
