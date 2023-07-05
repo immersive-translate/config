@@ -1315,7 +1315,8 @@
         "h4": "-webkit-line-clamp:unset;"
       },
       "excludeSelectors": [
-        ".EyERq"
+        ".EyERq",
+        ".AOl7G.eejsDc"
       ]
     },
     {
@@ -3593,6 +3594,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-04T17:36:31.000Z",
+  "buildinConfigUpdatedAt": "2023-07-05T03:04:03.219Z",
   "latestVersion": "0.7.2"
 }
