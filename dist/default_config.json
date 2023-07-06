@@ -1169,7 +1169,8 @@
       "wrapperPrefix": "",
       "wrapperSuffix": "",
       "selectors": [
-        "h1"
+        "h1",
+        "div[role='button']"
       ],
       "paragraphMinTextCount": 2,
       "blockMinTextCount": 2
@@ -3641,6 +3642,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-06T12:14:45.027Z",
+  "buildinConfigUpdatedAt": "2023-07-06T12:29:45.725Z",
   "latestVersion": "0.7.2"
 }
