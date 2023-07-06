@@ -3592,8 +3592,49 @@
           "showCount": 8
         }
       ]
+    },
+    {
+      "matches": "www.bmvr.marseille.fr",
+      "globalStyles": {
+        "a > div": "display:block;",
+        "[style*='358px;']": "width: 33.3333%; height: auto; padding: 0px; position: relative; margin: 0px;"
+      },
+      "globalAttributes": {
+        "#app": {
+          "class": ""
+        }
+      }
+    },
+    {
+      "matches": "docs.haproxy.org",
+      "excludeTags": [
+        "TITLE",
+        "LINK",
+        "SCRIPT",
+        "STYLE",
+        "TEXTAREA",
+        "SVG",
+        "svg",
+        "G",
+        "NOSCRIPT",
+        "INPUT",
+        "BUTTON",
+        "BASE",
+        "SELECT",
+        "OPTION",
+        "HR",
+        "KBD",
+        "WBR",
+        "RT",
+        "RP",
+        "META",
+        "MATH",
+        "TTS-SENTENCE",
+        "AIO-CODE"
+      ],
+      "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-05T03:04:03.219Z",
+  "buildinConfigUpdatedAt": "2023-07-06T07:29:17.085Z",
   "latestVersion": "0.7.2"
 }
