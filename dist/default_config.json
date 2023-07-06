@@ -829,6 +829,12 @@
       ]
     },
     {
+      "matches": "www.threads.net",
+      "selectors": [
+        "p"
+      ]
+    },
+    {
       "matches": [
         "stackoverflow.com",
         "*.stackexchange.com",
@@ -3635,6 +3641,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-06T07:29:17.085Z",
+  "buildinConfigUpdatedAt": "2023-07-06T10:07:25.297Z",
   "latestVersion": "0.7.2"
 }
