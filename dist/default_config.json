@@ -1140,6 +1140,7 @@
         "yt-formatted-string.ytd-transcript-segment-renderer",
         "#description-inline-expander > yt-attributed-string > span",
         "ytd-notification-renderer .message",
+        "#message",
         ".caption-window",
         ".caption-visual-line"
       ],
@@ -3643,6 +3644,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-07T16:42:21.418Z",
+  "buildinConfigUpdatedAt": "2023-07-07T16:46:31.951Z",
   "latestVersion": "0.7.3"
 }
