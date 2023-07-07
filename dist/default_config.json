@@ -340,6 +340,8 @@
   "sourceLanguageUrlPattern": {},
   "generalRule": {
     "_comment": "",
+    "enableSubtitle": false,
+    "condition": {},
     "normalizeBody": "",
     "useIframePostMessage": true,
     "searchEnhancementConfig": [],
@@ -1087,10 +1089,16 @@
       "selectors": [
         ".comment-text",
         ".media-item-headline",
-        ".slim-video-information-title",
-        ".caption-window",
-        ".caption-visual-line"
+        ".slim-video-information-title"
       ],
+      "condition": {
+        "enableSubtitle": {
+          "selectors.add": [
+            ".caption-window",
+            ".caption-visual-line"
+          ]
+        }
+      },
       "wrapperPrefix": "",
       "wrapperSuffix": "",
       "observeUrlChange": true,
@@ -1121,10 +1129,16 @@
         "a#video-title",
         "yt-formatted-string.ytd-transcript-segment-renderer",
         "#description-inline-expander > yt-attributed-string > span",
-        "ytd-notification-renderer .message",
-        ".caption-window",
-        ".caption-visual-line"
+        "ytd-notification-renderer .message"
       ],
+      "condition": {
+        "enableSubtitle": {
+          "selectors.add": [
+            ".caption-window",
+            ".caption-visual-line"
+          ]
+        }
+      },
       "wrapperPrefix": "<br/>",
       "wrapperSuffix": "",
       "globalStyles": {
@@ -3615,6 +3629,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-07T04:55:57.850Z",
-  "latestVersion": "0.7.2"
+  "buildinConfigUpdatedAt": "2023-07-07T11:46:38.061Z",
+  "latestVersion": "0.7.3"
 }
