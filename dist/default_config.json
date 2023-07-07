@@ -2531,7 +2531,10 @@
       ]
     },
     {
-      "matches": "www.rfc-editor.org",
+      "matches": [
+        "www.rfc-editor.org",
+        "docs.haproxy.org"
+      ],
       "isTransformPreTagNewLine": true,
       "excludeTags": [
         "TITLE",
@@ -3602,35 +3605,16 @@
       }
     },
     {
-      "matches": "docs.haproxy.org",
-      "excludeTags": [
-        "TITLE",
-        "LINK",
-        "SCRIPT",
-        "STYLE",
-        "TEXTAREA",
-        "SVG",
-        "svg",
-        "G",
-        "NOSCRIPT",
-        "INPUT",
-        "BUTTON",
-        "BASE",
-        "SELECT",
-        "OPTION",
-        "HR",
-        "KBD",
-        "WBR",
-        "RT",
-        "RP",
-        "META",
-        "MATH",
-        "TTS-SENTENCE",
-        "AIO-CODE"
+      "matches": [
+        "docs.haproxy.org",
+        "www.oreilly.com/openbook/opensources/book/*"
       ],
+      "excludeTags": [],
+      "stayOriginalSelectors": [],
+      "stayOriginalTags": [],
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-07T01:27:39.601Z",
+  "buildinConfigUpdatedAt": "2023-07-07T04:55:57.850Z",
   "latestVersion": "0.7.2"
 }
