@@ -208,6 +208,12 @@
       ],
       "limit": 25
     },
+    "mock": {
+      "placeholderDelimiters": [
+        "<code>",
+        "</code>"
+      ]
+    },
     "bing": {
       "maxTextLengthPerRequest": 1800,
       "placeholderDelimiters": [
@@ -340,7 +346,7 @@
   "sourceLanguageUrlPattern": {},
   "generalRule": {
     "_comment": "",
-    "enableSubtitle": false,
+    "enableSubtitle": true,
     "condition": {},
     "normalizeBody": "",
     "useIframePostMessage": true,
@@ -1089,14 +1095,18 @@
       "selectors": [
         ".comment-text",
         ".media-item-headline",
-        ".slim-video-information-title"
+        ".slim-video-information-title",
+        ".caption-window",
+        ".caption-visual-line"
       ],
       "condition": {
         "enableSubtitle": {
-          "selectors.add": [
-            ".caption-window",
-            ".caption-visual-line"
-          ]
+          "false": {
+            "selectors.remove": [
+              ".caption-window",
+              ".caption-visual-line"
+            ]
+          }
         }
       },
       "wrapperPrefix": "",
@@ -1129,14 +1139,18 @@
         "a#video-title",
         "yt-formatted-string.ytd-transcript-segment-renderer",
         "#description-inline-expander > yt-attributed-string > span",
-        "ytd-notification-renderer .message"
+        "ytd-notification-renderer .message",
+        ".caption-window",
+        ".caption-visual-line"
       ],
       "condition": {
         "enableSubtitle": {
-          "selectors.add": [
-            ".caption-window",
-            ".caption-visual-line"
-          ]
+          "false": {
+            "selectors.remove": [
+              ".caption-window",
+              ".caption-visual-line"
+            ]
+          }
         }
       },
       "wrapperPrefix": "<br/>",
@@ -3629,6 +3643,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-07T11:46:38.061Z",
+  "buildinConfigUpdatedAt": "2023-07-07T16:42:21.418Z",
   "latestVersion": "0.7.3"
 }
