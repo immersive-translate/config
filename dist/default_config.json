@@ -3642,8 +3642,22 @@
       "stayOriginalSelectors": [],
       "stayOriginalTags": [],
       "isTransformPreTagNewLine": true
+    },
+    {
+      "matches": "pi.ai/talk",
+      "selectors": [
+        ".whitespace-pre-wrap"
+      ],
+      "excludeSelectors": [
+        ".space-y-4 *"
+      ],
+      "aiRule": {
+        "streamingSelector": ".snap-start > [style='height: 10rem;']+[style='opacity: 0;']",
+        "messageWrapperSelector": ".space-y-4",
+        "streamingChange": false
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-07T16:46:31.951Z",
+  "buildinConfigUpdatedAt": "2023-07-07T16:58:54.521Z",
   "latestVersion": "0.7.3"
 }
