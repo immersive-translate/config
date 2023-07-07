@@ -3327,15 +3327,10 @@
       ]
     },
     {
-      "matches": "news.yahoo.com",
-      "excludeSelectors": [
-        "#ybar-inner-wrap"
-      ]
-    },
-    {
       "matches": "*.yahoo.com",
       "excludeSelectors": [
-        "._ys_jiqava"
+        "._ys_jiqava",
+        "#ybar-inner-wrap"
       ],
       "globalAttributes": {
         "#atomic .Mt\\(20px\\)": {
@@ -3642,6 +3637,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-06T12:29:45.725Z",
+  "buildinConfigUpdatedAt": "2023-07-07T01:13:35.757Z",
   "latestVersion": "0.7.2"
 }
