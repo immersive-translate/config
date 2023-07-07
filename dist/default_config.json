@@ -3330,21 +3330,15 @@
       "matches": "*.yahoo.com",
       "excludeSelectors": [
         "._ys_jiqava",
-        "#ybar-inner-wrap"
+        "#ybar-inner-wrap",
+        "#Col2-5-Rmp-Proxy"
       ],
-      "globalAttributes": {
-        "#atomic .Mt\\(20px\\)": {
-          "style": "margin-top: 100px;"
-        },
-        "[class*='LineClamp']": {
-          "style": "-webkit-line-clamp:unset;max-height:unset;"
-        },
-        "a[class*='js-content-viewer']> div[class*='Td\\(n\\)']": {
-          "style": "overflow: scroll;"
-        },
-        "[class*='_ys_24482e']": {
-          "style": "-webkit-line-clamp:unset;"
-        }
+      "globalStyles": {
+        "#atomic .Mt\\(20px\\)": "margin-top: 100px;",
+        "[class*='LineClamp']": "-webkit-line-clamp:unset;max-height:unset;",
+        "a[class*='js-content-viewer']> div[class*='Td\\(n\\)']": "overflow: scroll;",
+        "[class*='_ys_24482e']": "-webkit-line-clamp:unset;",
+        "#Aside > :first-child": "overflow:scroll;"
       }
     },
     {
@@ -3637,6 +3631,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-07T01:13:35.757Z",
+  "buildinConfigUpdatedAt": "2023-07-07T01:27:39.601Z",
   "latestVersion": "0.7.2"
 }
