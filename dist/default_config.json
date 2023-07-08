@@ -3443,7 +3443,9 @@
     {
       "matches": "www.nytimes.com",
       "excludeSelectors": [
-        "header"
+        "#app > div > div > header",
+        "#app > div > div > div > div > header",
+        "#in-story-masthead"
       ]
     },
     {
@@ -3674,6 +3676,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-08T05:17:24.000Z",
+  "buildinConfigUpdatedAt": "2023-07-08T07:49:45.556Z",
   "latestVersion": "0.7.5"
 }
