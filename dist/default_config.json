@@ -745,7 +745,9 @@
         "ad.doubanio.com"
       ],
       "useIframePostMessage": false,
-      "selectors": "#notexistforimmersivetranslate"
+      "selectors": [
+        "#notexistforimmersivetranslate"
+      ]
     },
     {
       "matches": [
@@ -1206,7 +1208,9 @@
     },
     {
       "matches": "1paragraph.app",
-      "selectors": "#book"
+      "selectors": [
+        "#book"
+      ]
     },
     {
       "matches": "https://poeditor.com/projects/*",
@@ -1541,7 +1545,6 @@
         ".project-description",
         "div.project-comment-text"
       ],
-      "atomicBlockSelectors": "div.project-comment-text",
       "detectParagraphLanguage": true
     },
     {
@@ -1549,7 +1552,9 @@
       "additionalSelectors": [
         "footer.learning-course-description.ng-star-inserted > span"
       ],
-      "excludeSelectors": ".learning-card-meta"
+      "excludeSelectors": [
+        ".learning-card-meta"
+      ]
     },
     {
       "matches": [
@@ -1584,9 +1589,12 @@
       "globalStyles": {
         "div[class*='mini_cardBottomRowSizing']": "height: 3em;"
       },
-      "additionalSelectors": "div[class*='mini_cardBottomRow_Metadata']",
-      "atomicBlockSelectors": "div[class*='mini_cardBottomRow_Metadata']",
-      "stayOriginalSelectors": "[data-tooltip='tooltip-user-info']"
+      "additionalSelectors": [
+        "div[class*='mini_cardBottomRow_Metadata']"
+      ],
+      "stayOriginalSelectors": [
+        "[data-tooltip='tooltip-user-info']"
+      ]
     },
     {
       "matches": [
@@ -2016,11 +2024,15 @@
     },
     {
       "matches": "www.economist.com",
-      "extraInlineSelectors": "span[data-caps='initial']"
+      "extraInlineSelectors": [
+        "span[data-caps='initial']"
+      ]
     },
     {
       "matches": "www.healthline.com",
-      "excludeSelectors": ".icon-hl-trusted-source-after"
+      "excludeSelectors": [
+        ".icon-hl-trusted-source-after"
+      ]
     },
     {
       "matches": "www.ebay.com",
@@ -2413,7 +2425,9 @@
       "globalStyles": {
         "span.slide-contents-item-label": "overflow:visible;max-height:unset;white-space:normal;"
       },
-      "atomicBlockSelectors": "div.slide-contents-item"
+      "atomicBlockSelectors": [
+        "div.slide-contents-item"
+      ]
     },
     {
       "matches": "https://you.com/search",
@@ -2422,7 +2436,9 @@
         ".caKYaC": "max-height:unset;-webkit-line-clamp:unset;",
         ".dDwDsu": "max-height:unset;-webkit-line-clamp:unset;"
       },
-      "excludeSelectors": "div.hpIWZO"
+      "excludeSelectors": [
+        "div.hpIWZO"
+      ]
     },
     {
       "matches": "auth0.openai.com",
@@ -3658,6 +3674,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-07T17:35:44.000Z",
+  "buildinConfigUpdatedAt": "2023-07-08T05:01:09.282Z",
   "latestVersion": "0.7.4"
 }
