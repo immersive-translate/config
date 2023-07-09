@@ -777,6 +777,9 @@
       "matches": "*.wikipedia.org",
       "paragraphMinWordCount": 2,
       "paragraphMinTextCount": 4,
+      "injectedCss": [
+        ".immersive-translate-target-translation-block-wrapper { display: block; }"
+      ],
       "excludeSelectors": [
         ".mw-editsection",
         ".mw-cite-backlink",
@@ -3676,6 +3679,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-08T07:49:45.556Z",
+  "buildinConfigUpdatedAt": "2023-07-09T06:59:03.232Z",
   "latestVersion": "0.7.5"
 }
