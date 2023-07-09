@@ -347,6 +347,7 @@
   "generalRule": {
     "_comment": "",
     "enableSubtitle": true,
+    "mutationObserverLimitTargetSelectors": [],
     "condition": {},
     "normalizeBody": "",
     "useIframePostMessage": true,
@@ -2468,7 +2469,8 @@
       "aiRule": {
         "streamingSelector": ".result-streaming.markdown",
         "messageWrapperSelector": ".markdown",
-        "streamingChange": true
+        "streamingChange": true,
+        "streamingDeepChild": true
       }
     },
     {
@@ -2482,7 +2484,8 @@
       "aiRule": {
         "streamingSelector": ".n-button.n-button--warning-type.n-button--medium-type",
         "messageWrapperSelector": ".markdown-body",
-        "streamingChange": false
+        "streamingChange": false,
+        "streamingDeepChild": true
       }
     },
     {
@@ -2496,7 +2499,8 @@
       "aiRule": {
         "streamingSelector": ".home_chat-message-status__EsVNi",
         "messageWrapperSelector": ".markdown-body",
-        "streamingChange": true
+        "streamingChange": true,
+        "streamingDeepChild": true
       }
     },
     {
@@ -2510,7 +2514,8 @@
       "aiRule": {
         "streamingSelector": ".ChatStopMessageButton_stopButton__LWNj6",
         "messageWrapperSelector": ".Markdown_markdownContainer__UyYrv",
-        "streamingChange": false
+        "streamingChange": false,
+        "streamingDeepChild": true
       }
     },
     {
@@ -3666,19 +3671,32 @@
     },
     {
       "matches": "pi.ai/talk",
-      "selectors": [
-        ".whitespace-pre-wrap"
-      ],
       "excludeSelectors": [
         ".space-y-4 *"
       ],
       "aiRule": {
-        "streamingSelector": ".snap-start > [style='height: 10rem;']+[style='opacity: 0;']",
+        "streamingSelector": ".snap-start > [style^='height']+[style='opacity: 0;']",
         "messageWrapperSelector": ".space-y-4",
-        "streamingChange": false
+        "streamingChange": false,
+        "streamingDeepChild": false
       }
+    },
+    {
+      "matches": "*.feishu.cn",
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
+      "mutationObserverLimitTargetSelectors": [
+        ".maindocbody",
+        "div[class*='render']",
+        "div[class*='block']"
+      ],
+      "excludeSelectors": [
+        ".catalogue__list"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-09T06:59:03.232Z",
+  "buildinConfigUpdatedAt": "2023-07-09T10:45:35.211Z",
   "latestVersion": "0.7.5"
 }
