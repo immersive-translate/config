@@ -17,7 +17,7 @@
     "excludeMatches": []
   },
   "inputTranslationBlockUrls": [
-    "www.feishu.cn",
+    "*.feishu.cn",
     "www.notion.so",
     "www.figma.com/file/*"
   ],
@@ -3697,6 +3697,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-11T03:54:17.395Z",
+  "buildinConfigUpdatedAt": "2023-07-11T04:01:26.657Z",
   "latestVersion": "0.7.6"
 }
