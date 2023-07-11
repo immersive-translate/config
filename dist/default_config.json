@@ -26,7 +26,7 @@
   "inputStartingTriggerKey": "/",
   "inputTrailingTriggerKey": "space",
   "inputTrailingTriggerKeyRepeatTimes": 3,
-  "inputTrailingTriggerKeyTimeout": 300,
+  "inputTrailingTriggerKeyTimeout": 200,
   "mutationBlockUrls": [
     "www.feishu.cn"
   ],
@@ -3697,6 +3697,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-09T10:47:02.000Z",
+  "buildinConfigUpdatedAt": "2023-07-11T03:54:17.395Z",
   "latestVersion": "0.7.6"
 }
