@@ -1436,13 +1436,6 @@
       ]
     },
     {
-      "matches": "*.gitbook.io",
-      "additionalSelectors": [
-        "main"
-      ],
-      "_comment": "https://midjourney.gitbook.io/docs/user-manual"
-    },
-    {
       "matches": "https://codeforces.com/*",
       "stayOriginalTags": [
         "[class^='MathJax']"
@@ -3752,8 +3745,20 @@
       "excludeSelectors": [
         ".catalogue__list"
       ]
+    },
+    {
+      "selectorMatches": [
+        ".gitbook-root"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
+      "additionalExcludeSelectors.add": [
+        "[spellcheck='false']"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-12T08:30:27.000Z",
+  "buildinConfigUpdatedAt": "2023-07-12T10:08:46.679Z",
   "latestVersion": "0.7.7"
 }
