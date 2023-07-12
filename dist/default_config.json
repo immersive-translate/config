@@ -11,7 +11,24 @@
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
   "isShowContextMenu": true,
   "enableInputTranslation": true,
+  "inactiveDays": 21,
   "enableInputTranslationWithoutTriggerKey": true,
+  "defaultAlwaysTranslatedUrls": [
+    "twitter.com",
+    "www.reddit.com",
+    "www.kadaza.com",
+    "en.wikipedia.org",
+    "www.reuters.com",
+    "www.bloomberg.com",
+    "*.medium.com",
+    "news.ycombinator.com",
+    "edition.cnn.com",
+    "www.wsj.com",
+    "www.goodreads.com"
+  ],
+  "modifiedBySystem": false,
+  "enableDefaultAlwaysTranslatedUrls": true,
+  "isChangedAlwaysTranslatedUrls": false,
   "inputTranslationUrlPattern": {
     "matches": [],
     "excludeMatches": []
@@ -353,6 +370,7 @@
     "useIframePostMessage": true,
     "searchEnhancementConfig": [],
     "injectedCss": [],
+    "isOnBoardingPage": false,
     "isEbook": false,
     "isEbookBuilder": false,
     "ignoreZhCNandZhTW": false,
@@ -414,6 +432,8 @@
     "asideMaxWordCountPerParagraph": 12,
     "lineBreakMaxTextCount": 0,
     "globalAttributes": {},
+    "inputTutorialsText": "",
+    "inputTutorialsSelectors": [],
     "globalMeta": {},
     "globalStyles": {
       ".sr-only": "display:none"
@@ -997,7 +1017,9 @@
       "matches": "www.reuters.com",
       "excludeSelectors": [
         "[promotext]",
-        "[data-testid=Leaderboard]"
+        "[data-testid=Leaderboard]",
+        "[data-testid=HomeTickerV2]",
+        "[data-testid=SiteFooter]"
       ]
     },
     {
@@ -1602,11 +1624,16 @@
     },
     {
       "matches": [
-        "https://www.google.com/"
+        "https://www.google.com/",
+        "https://www.google.com.hk/"
       ],
       "excludeSelectors": [
         "#gb",
         "#SIvCob"
+      ],
+      "inputTutorialsText": "试试输入中文后快速连击 3 次空格键翻译（仅提示一次）",
+      "inputTutorialsSelectors": [
+        "textarea#APjFqb"
       ]
     },
     {
@@ -2030,6 +2057,9 @@
       "matches": "www.economist.com",
       "extraInlineSelectors": [
         "span[data-caps='initial']"
+      ],
+      "excludeSelectors": [
+        "footer.ds-footer"
       ]
     },
     {
@@ -2117,7 +2147,9 @@
         ".ticker-bar",
         "nav",
         "[aria-label=Banner]",
-        "aside"
+        "aside",
+        "[data-component=ticker-bar]",
+        "footer.bb-global-footer"
       ]
     },
     {
@@ -3218,6 +3250,14 @@
       "isInjectVersion": true
     },
     {
+      "selectorMatches": [
+        "meta[name=immersiveTranslateIosOnBoardingStep1]"
+      ],
+      "isOnBoardingPage": true,
+      "isInjectOptionsUrl": true,
+      "isInjectVersion": true
+    },
+    {
       "globalAttributes": {
         "#stimulus": {
           "translate": "off",
@@ -3682,6 +3722,23 @@
       }
     },
     {
+      "matches": "claude.ai",
+      "excludeSelectors": [
+        ".contents *"
+      ],
+      "excludeTags.remove": [
+        "PRE"
+      ],
+      "injectedCss": "[data-testid='chat-menu-trigger'] br {display:none;}",
+      "aiRule": {
+        "messageWrapperSelector": ".contents",
+        "messageContainerSelector": ".ReactMarkdown",
+        "messageStreamEndSelector": ".contents > button",
+        "streamingChange": true,
+        "streamingDeepChild": false
+      }
+    },
+    {
       "matches": "*.feishu.cn",
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -3697,6 +3754,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-11T09:31:07.968Z",
-  "latestVersion": "0.7.6"
+  "buildinConfigUpdatedAt": "2023-07-12T08:30:54.341Z",
+  "latestVersion": "0.7.7"
 }
