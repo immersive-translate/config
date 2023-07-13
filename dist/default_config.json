@@ -416,7 +416,8 @@
       "span.math.display",
       ".ltx_Math",
       ".mathjax-block",
-      ".MathJax_CHTML"
+      ".MathJax_CHTML",
+      "kbd"
     ],
     "translationBlockStyle": "",
     "isShowUserscriptPagePopup": true,
@@ -3759,6 +3760,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-12T10:08:46.679Z",
-  "latestVersion": "0.7.7"
+  "buildinConfigUpdatedAt": "2023-07-13T06:04:07.937Z",
+  "latestVersion": "0.7.8"
 }
