@@ -1078,6 +1078,7 @@
     {
       "id": "githubNotebook",
       "matches": "notebooks.githubusercontent.com",
+      "useIframePostMessage": false,
       "excludeSelectors": [
         "div.jp-CodeCell"
       ]
@@ -3924,6 +3925,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-14T13:20:08.255Z",
+  "buildinConfigUpdatedAt": "2023-07-14T13:46:50.445Z",
   "latestVersion": "0.7.9"
 }
