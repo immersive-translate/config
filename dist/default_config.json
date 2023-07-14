@@ -821,7 +821,7 @@
         "[data-testid='card.layoutSmall.detail'] > div:nth-child(2)": "-webkit-line-clamp: unset;",
         "[data-testid='tweetText']": "-webkit-line-clamp: unset;"
       },
-      "ignoreZhCNandZhTW": false,
+      "ignoreZhCNandZhTW": true,
       "isTranslateTitle": false,
       "useIframePostMessage": false,
       "observeUrlChange": false,
@@ -3915,8 +3915,15 @@
       "id": "bugsWebkit",
       "matches": "bugs.webkit.org",
       "isTransformPreTagNewLine": true
+    },
+    {
+      "id": "mitre",
+      "matches": "cwe.mitre.org",
+      "globalStyles": {
+        "span.list_entry": "height: unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-14T05:40:32.159Z",
+  "buildinConfigUpdatedAt": "2023-07-14T09:46:48.123Z",
   "latestVersion": "0.7.9"
 }
