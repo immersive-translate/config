@@ -804,7 +804,9 @@
       "excludeSelectors": [
         "[aria-describedby][role=button]",
         "header",
-        "[data-testid='radioGroupplayback_rate'] div"
+        "[data-testid='radioGroupplayback_rate'] div",
+        "[data-testid='userFollowIndicator']",
+        "[class='css-901oao r-14j79pv r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-bcqeeo r-qvutc0']"
       ],
       "extraBlockSelectors": [
         "[data-testid=\"tweetText\"] div.r-6koalj"
@@ -3925,6 +3927,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-14T13:46:50.445Z",
+  "buildinConfigUpdatedAt": "2023-07-14T15:27:23.767Z",
   "latestVersion": "0.7.9"
 }
