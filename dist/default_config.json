@@ -2536,6 +2536,9 @@
         "div[class='flex flex-col items-start']",
         "div[class='flex items-center justify-center gap-1 border-b border-black/10 bg-gray-50 p-3 text-gray-500 dark:border-gray-900/50 dark:bg-gray-700 dark:text-gray-300']"
       ],
+      "excludeTags.remove": [
+        "BUTTON"
+      ],
       "isTranslateTitle": false,
       "wrapperPrefix": "",
       "aiRule": {
@@ -3914,6 +3917,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-14T04:42:02.172Z",
+  "buildinConfigUpdatedAt": "2023-07-14T05:40:32.159Z",
   "latestVersion": "0.7.9"
 }
