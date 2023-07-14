@@ -1022,7 +1022,7 @@
     {
       "id": "github",
       "matches": "github.com",
-      "observeUrlChange": true,
+      "useIframePostMessage": false,
       "excludeMatches": [
         "https://github.com/*/*/settings",
         "https://github.com/settings/*",
@@ -3924,6 +3924,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-14T09:46:48.123Z",
+  "buildinConfigUpdatedAt": "2023-07-14T13:20:08.255Z",
   "latestVersion": "0.7.9"
 }
