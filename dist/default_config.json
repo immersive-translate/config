@@ -3925,8 +3925,16 @@
       "globalStyles": {
         "span.list_entry": "height: unset;"
       }
+    },
+    {
+      "id": "kaggle",
+      "matches": "www.kaggle.com",
+      "excludeTags": [
+        "i",
+        "button"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-14T15:27:23.767Z",
+  "buildinConfigUpdatedAt": "2023-07-17T02:17:16.149Z",
   "latestVersion": "0.7.9"
 }
