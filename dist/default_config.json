@@ -3944,8 +3944,15 @@
       "extraBlockSelectors": [
         "small"
       ]
+    },
+    {
+      "id": "cnn",
+      "matches": "www.cnn.com",
+      "excludeSelectors": [
+        ".ad-slot-header__wrapper"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-17T12:56:57.189Z",
+  "buildinConfigUpdatedAt": "2023-07-17T15:53:42.346Z",
   "latestVersion": "0.7.9"
 }
