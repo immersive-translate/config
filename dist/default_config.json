@@ -3937,8 +3937,15 @@
         "i",
         "button"
       ]
+    },
+    {
+      "id": "ieee",
+      "matches": "spectrum.ieee.org",
+      "extraBlockSelectors": [
+        "small"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-17T04:31:51.024Z",
+  "buildinConfigUpdatedAt": "2023-07-17T12:56:57.189Z",
   "latestVersion": "0.7.9"
 }
