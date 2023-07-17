@@ -1120,10 +1120,14 @@
       "matches": "m.youtube.com",
       "selectors": [
         ".comment-text",
+        "#content-text",
         ".media-item-headline",
         ".slim-video-information-title",
         ".caption-window",
         ".caption-visual-line"
+      ],
+      "excludeTags.remove": [
+        "BUTTON"
       ],
       "condition": {
         "enableSubtitle": {
@@ -3935,6 +3939,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-17T02:17:16.149Z",
+  "buildinConfigUpdatedAt": "2023-07-17T04:31:51.024Z",
   "latestVersion": "0.7.9"
 }
