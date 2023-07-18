@@ -1280,7 +1280,9 @@
         ".meta-subheader"
       ],
       "globalStyles": {
-        ".reader2-clamp-lines": "max-height: unset; -webkit-line-clamp: unset;"
+        ".reader2-clamp-lines": "max-height: unset; -webkit-line-clamp: unset;",
+        "[class*='clamp-']": "max-height: unset; -webkit-line-clamp:unset;",
+        ".blurb-text": "max-height: unset;"
       },
       "extraBlockSelectors": [
         ".reader2-post-title",
@@ -3953,6 +3955,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-17T15:53:42.346Z",
+  "buildinConfigUpdatedAt": "2023-07-18T06:38:07.813Z",
   "latestVersion": "0.7.9"
 }
