@@ -3953,8 +3953,17 @@
       "excludeSelectors": [
         ".ad-slot-header__wrapper"
       ]
+    },
+    {
+      "id": "marginalrevolution",
+      "matches": "marginalrevolution.com",
+      "globalAttributes": {
+        "header": {
+          "translate": "unset;"
+        }
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-18T06:38:07.813Z",
+  "buildinConfigUpdatedAt": "2023-07-18T08:50:59.263Z",
   "latestVersion": "0.7.9"
 }
