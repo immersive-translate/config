@@ -2139,8 +2139,7 @@
       ],
       "globalStyles": {
         ".a-carousel-viewport": "height:unset;",
-        ".s-line-clamp-2": "-webkit-line-clamp: unset;max-height: unset;",
-        ".s-line-clamp-4": "-webkit-line-clamp: unset;max-height: unset;",
+        "[class*='clamp']": "max-height: unset;-webkit-line-clamp: unset;",
         "[data-rows]": "max-height: unset;-webkit-line-clamp: unset;",
         "[data-a-expander-name='review_text_read_more']": " max-height: unset;"
       },
@@ -3964,6 +3963,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-18T08:50:59.263Z",
+  "buildinConfigUpdatedAt": "2023-07-18T10:03:05.534Z",
   "latestVersion": "0.7.9"
 }
