@@ -1322,6 +1322,10 @@
         "div[class^='_description_']",
         "#document-text-content"
       ],
+      "injectedCss": [
+        "[id^=document-row-] {height: unset !important; position: unset !important;}",
+        ".listRoot ol {height: unset !important;position !important;}"
+      ],
       "detectParagraphLanguage": true
     },
     {
@@ -1755,7 +1759,8 @@
         ".content",
         "h1",
         "h3.story__title",
-        ".feed-item__title-link"
+        ".feed-item__title-link",
+        ".article-body"
       ]
     },
     {
@@ -3966,6 +3971,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-19T01:21:46.099Z",
+  "buildinConfigUpdatedAt": "2023-07-19T06:39:32.836Z",
   "latestVersion": "0.7.11"
 }
