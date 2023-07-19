@@ -3972,8 +3972,15 @@
           "translate": "unset;"
         }
       }
+    },
+    {
+      "id": "highfrequencyelectronics",
+      "matches": "www.highfrequencyelectronics.com",
+      "globalStyles": {
+        "#main-content": "overflow:unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-19T07:58:29.686Z",
+  "buildinConfigUpdatedAt": "2023-07-19T10:12:10.949Z",
   "latestVersion": "0.7.11"
 }
