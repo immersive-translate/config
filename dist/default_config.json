@@ -1059,7 +1059,6 @@
         "div.jp-CodeCell",
         "[aria-label=\"Account\"] .markdown-title",
         ".js-repos-container .markdown-title",
-        "[data-view-component=true] .markdown-title",
         "a.anchor",
         "div.file-navigation + div.Box"
       ],
@@ -3982,6 +3981,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-19T12:57:32.663Z",
+  "buildinConfigUpdatedAt": "2023-07-19T13:07:50.566Z",
   "latestVersion": "0.7.11"
 }
