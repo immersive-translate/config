@@ -3560,11 +3560,14 @@
     },
     {
       "id": "yahoo",
-      "matches": "*.yahoo.com",
+      "matches": "*.yahoo.*",
       "excludeSelectors": [
         "._ys_jiqava",
         "#ybar-inner-wrap",
         "#Col2-5-Rmp-Proxy"
+      ],
+      "extraBlockSelectors": [
+        ".SIPGg"
       ],
       "globalStyles": {
         "#atomic .Mt\\(20px\\)": "margin-top: 100px;",
@@ -3963,6 +3966,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-18T19:28:11.000Z",
+  "buildinConfigUpdatedAt": "2023-07-19T01:21:46.099Z",
   "latestVersion": "0.7.11"
 }
