@@ -1277,12 +1277,15 @@
         ".tweet-header",
         ".tweet-link-bottom",
         ".expanded-link",
-        ".meta-subheader"
+        ".meta-subheader",
+        ".comment-meta",
+        ".comment-actions"
       ],
       "globalStyles": {
         ".reader2-clamp-lines": "max-height: unset; -webkit-line-clamp: unset;",
         "[class*='clamp-']": "max-height: unset; -webkit-line-clamp:unset;",
-        ".blurb-text": "max-height: unset;"
+        ".blurb-text": "max-height: unset;",
+        ".comment-body": "max-height: unset;"
       },
       "extraBlockSelectors": [
         ".reader2-post-title",
@@ -3971,6 +3974,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-19T06:39:32.836Z",
+  "buildinConfigUpdatedAt": "2023-07-19T07:58:29.686Z",
   "latestVersion": "0.7.11"
 }
