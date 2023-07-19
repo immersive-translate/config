@@ -1036,6 +1036,7 @@
         "h1",
         "[aria-label=Issues] .markdown-title",
         "[aria-labelledby=discussions-list] .markdown-title",
+        "h3 .markdown-title",
         ".markdown-body",
         ".Layout-sidebar p",
         "div > span.search-match",
@@ -3981,6 +3982,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-19T10:12:10.949Z",
+  "buildinConfigUpdatedAt": "2023-07-19T12:57:32.663Z",
   "latestVersion": "0.7.11"
 }
