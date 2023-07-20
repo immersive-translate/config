@@ -1322,12 +1322,7 @@
       "matches": "read.readwise.io",
       "selectors": [
         "div[class^='_titleRow_']",
-        "div[class^='_description_']",
         "#document-text-content"
-      ],
-      "injectedCss": [
-        "[id^=document-row-] {height: unset !important; position: unset !important;}",
-        ".listRoot ol {height: unset !important;position !important;}"
       ],
       "detectParagraphLanguage": true
     },
@@ -3981,6 +3976,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-19T13:07:50.566Z",
+  "buildinConfigUpdatedAt": "2023-07-20T14:31:54.153Z",
   "latestVersion": "0.7.11"
 }
