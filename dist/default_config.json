@@ -1685,7 +1685,9 @@
         ".EbH0bb",
         ".Wr0c6d",
         ".jleFbf",
-        "#searchform"
+        "#searchform",
+        ".yg51vc",
+        ".CbAZb"
       ],
       "extraBlockSelectors": [
         ".MUFPAc"
@@ -3977,6 +3979,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-20T14:37:33.546Z",
+  "buildinConfigUpdatedAt": "2023-07-20T17:08:47.481Z",
   "latestVersion": "0.7.11"
 }
