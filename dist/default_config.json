@@ -571,7 +571,8 @@
       "TT",
       "IMG",
       "SUP",
-      "SUB"
+      "SUB",
+      "SAMP"
     ],
     "additionalStayOriginalTags": [],
     "inlineTags": [
@@ -2647,9 +2648,10 @@
       "id": "ft",
       "matches": "www.ft.com",
       "excludeSelectors": [
-        "headers",
+        "header",
         "[aria-labelledby=cookie-banner-aria-label]",
-        "footer"
+        "footer",
+        "[aria-label='Primary navigation']"
       ]
     },
     {
@@ -3985,6 +3987,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-21T06:35:40.367Z",
+  "buildinConfigUpdatedAt": "2023-07-21T07:38:52.224Z",
   "latestVersion": "0.7.11"
 }
