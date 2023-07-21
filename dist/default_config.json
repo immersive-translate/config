@@ -903,9 +903,15 @@
         "*.quora.com",
         "quora.com"
       ],
-      "additionalSelectors": [
-        ".puppeteer_test_question_title",
-        "p.q-text"
+      "excludeSelectors": [
+        ".dom_annotate_multifeed_bundle_AskQuestionPromptBundle",
+        ".dom_annotate_feed_switcher",
+        "[class='q-box qu-py--small qu-color--gray_light']",
+        "[class='q-box spacing_log_answer_header']",
+        "[class='q-box qu-flex--auto']",
+        "[class='q-text qu-dynamicFontSize--small qu-mt--small qu-color--gray_light qu-passColorToLinks']",
+        ".AnswerFooter___StyledFlex-sc-2xbo88-0",
+        "[class='q-box qu-mb--small']"
       ],
       "globalStyles": {
         ".qu-truncateLines--3": "-webkit-line-clamp: unset;"
@@ -3979,6 +3985,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-20T17:08:47.481Z",
+  "buildinConfigUpdatedAt": "2023-07-21T06:35:40.367Z",
   "latestVersion": "0.7.11"
 }
