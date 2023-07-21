@@ -3985,8 +3985,15 @@
       "globalStyles": {
         "#main-content": "overflow:unset;"
       }
+    },
+    {
+      "id": "githubBlog",
+      "matches": "github.blog",
+      "globalStyles": {
+        ".font-mktg": "word-break:normal;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-21T07:38:52.224Z",
+  "buildinConfigUpdatedAt": "2023-07-21T08:04:33.017Z",
   "latestVersion": "0.7.11"
 }
