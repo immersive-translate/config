@@ -522,7 +522,8 @@
       "i[class^=fa-]",
       ".notranslate",
       "[translate=no]",
-      ".navmenu-container"
+      ".navmenu-container",
+      ".google-symbols"
     ],
     "translationClasses": [],
     "atomicBlockSelectors": [],
@@ -3994,6 +3995,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-21T08:04:33.017Z",
-  "latestVersion": "0.7.11"
+  "buildinConfigUpdatedAt": "2023-07-21T09:31:39.713Z",
+  "latestVersion": "0.7.12"
 }
