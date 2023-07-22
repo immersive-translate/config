@@ -1096,7 +1096,10 @@
     {
       "id": "facebook",
       "matches": "www.facebook.com",
-      "excludeMatches": "https://www.facebook.com/business/*",
+      "excludeMatches": [
+        "https://www.facebook.com/business/*",
+        "https://www.facebook.com/help*"
+      ],
       "selectors": [
         "div[dir=auto][style]",
         "div[dir=auto][class]",
@@ -3994,6 +3997,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-21T11:14:23.717Z",
+  "buildinConfigUpdatedAt": "2023-07-22T04:09:22.126Z",
   "latestVersion": "0.7.12"
 }
