@@ -3995,8 +3995,20 @@
       "globalStyles": {
         ".font-mktg": "word-break:normal;"
       }
+    },
+    {
+      "id": "bilibili",
+      "condition": {
+        "enableSubtitle": {
+          "false": {
+            "excludeSelectors.add": [
+              ".bpx-player-subtitle-panel-text"
+            ]
+          }
+        }
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-22T04:09:22.126Z",
+  "buildinConfigUpdatedAt": "2023-07-23T03:17:34.303Z",
   "latestVersion": "0.7.12"
 }
