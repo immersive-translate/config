@@ -3997,6 +3997,31 @@
       }
     },
     {
+      "id": "semanticscholar",
+      "matches": "www.semanticscholar.org",
+      "selectors": [
+        ".cl-paper-title",
+        ".cl-paper-abstract",
+        ".tldr-abstract-replacement",
+        ".text-truncator",
+        ".paper-detail-title"
+      ]
+    },
+    {
+      "id": "uni-trier",
+      "matches": "dblp.uni-trier.de",
+      "selectors": [
+        "h1",
+        "h2",
+        ".title",
+        ".external",
+        "dd p"
+      ],
+      "excludeSelectors": [
+        ".side-column"
+      ]
+    },
+    {
       "id": "bilibili",
       "condition": {
         "enableSubtitle": {
@@ -4009,6 +4034,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-23T03:17:34.303Z",
+  "buildinConfigUpdatedAt": "2023-07-23T08:15:46.262Z",
   "latestVersion": "0.7.12"
 }
