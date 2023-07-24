@@ -551,7 +551,8 @@
       "META",
       "MATH",
       "TTS-SENTENCE",
-      "AIO-CODE"
+      "AIO-CODE",
+      "msreadoutspan"
     ],
     "bodyTranslateTags": [
       "FOOTER",
@@ -4034,6 +4035,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-23T08:15:46.262Z",
+  "buildinConfigUpdatedAt": "2023-07-24T04:51:16.050Z",
   "latestVersion": "0.7.12"
 }
