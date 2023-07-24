@@ -1135,7 +1135,10 @@
         ".media-item-headline",
         ".slim-video-information-title",
         ".caption-window",
-        ".caption-visual-line"
+        ".caption-visual-line",
+        ".yt-spec-button-view-model",
+        ".yt-core-attributed-string > span",
+        ".title"
       ],
       "excludeTags.remove": [
         "BUTTON"
@@ -4034,6 +4037,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-24T04:56:28.675Z",
+  "buildinConfigUpdatedAt": "2023-07-24T16:27:05.579Z",
   "latestVersion": "0.7.12"
 }
