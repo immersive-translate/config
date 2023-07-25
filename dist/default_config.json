@@ -4035,8 +4035,20 @@
           }
         }
       }
+    },
+    {
+      "id": "time",
+      "matches": "time.com",
+      "excludeSelectors": [
+        ".date-and-duration"
+      ],
+      "globalStyles": {
+        ".headline": "-webkit-line-clamp:unset;overflow:unset;height:unset;",
+        "h3": "-webkit-line-clamp:unset;overflow:unset;",
+        "p": "-webkit-line-clamp:unset;overflow:unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-24T16:27:05.579Z",
+  "buildinConfigUpdatedAt": "2023-07-25T16:03:00.655Z",
   "latestVersion": "0.7.12"
 }
