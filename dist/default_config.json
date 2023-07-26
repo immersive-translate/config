@@ -4070,8 +4070,13 @@
         ".content",
         "#menu"
       ]
+    },
+    {
+      "id": "docs-oracle",
+      "matches": "docs.oracle.com",
+      "urlChangeDelay": 0
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-26T02:07:08.773Z",
+  "buildinConfigUpdatedAt": "2023-07-26T02:31:40.396Z",
   "latestVersion": "0.7.12"
 }
