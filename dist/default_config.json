@@ -4076,8 +4076,15 @@
       "id": "docs-oracle",
       "matches": "docs.oracle.com",
       "urlChangeDelay": 0
+    },
+    {
+      "id": "uzh",
+      "matches": "www.uzh.ch",
+      "injectedCss": [
+        ".TextImage--inner {overflow:auto !important;}"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-26T07:09:03.746Z",
+  "buildinConfigUpdatedAt": "2023-07-26T12:28:05.326Z",
   "latestVersion": "0.7.12"
 }
