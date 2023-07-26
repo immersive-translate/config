@@ -3085,6 +3085,20 @@
       ]
     },
     {
+      "id": "fiverr-main",
+      "matches": "*.fiverr.com",
+      "globalStyles": {
+        "h3 > a": "-webkit-line-clamp:unset;overflow:unset;",
+        "h3": "-webkit-line-clamp:unset;overflow:unset;",
+        "h5": "-webkit-line-clamp:unset;overflow:unset;",
+        "p": "-webkit-line-clamp:unset;overflow:unset;",
+        ".YLycza2.u9KHmsf": "height:unset;max-height:unset;"
+      },
+      "excludeSelectors": [
+        ".popular"
+      ]
+    },
+    {
       "id": "jira",
       "matches": [
         "jira.*.com/browse/*",
@@ -4049,6 +4063,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-25T16:03:00.655Z",
+  "buildinConfigUpdatedAt": "2023-07-26T01:05:02.099Z",
   "latestVersion": "0.7.12"
 }
