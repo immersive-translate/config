@@ -4061,8 +4061,16 @@
         "h3": "-webkit-line-clamp:unset;overflow:unset;",
         "p": "-webkit-line-clamp:unset;overflow:unset;"
       }
+    },
+    {
+      "id": "docs-swift",
+      "matches": "docs.swift.org",
+      "selectors": [
+        ".content",
+        "#menu"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-26T01:05:02.099Z",
+  "buildinConfigUpdatedAt": "2023-07-26T01:44:42.024Z",
   "latestVersion": "0.7.12"
 }
