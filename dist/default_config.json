@@ -1573,7 +1573,8 @@
       ],
       "selectors": [
         ".u-repost-of",
-        ".comment_text"
+        ".comment_text",
+        ".story_text"
       ]
     },
     {
@@ -4077,6 +4078,6 @@
       "urlChangeDelay": 0
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-26T02:31:40.396Z",
+  "buildinConfigUpdatedAt": "2023-07-26T07:09:03.746Z",
   "latestVersion": "0.7.12"
 }
