@@ -1715,7 +1715,8 @@
         "div[style='-webkit-line-clamp:2']": "-webkit-line-clamp: unset;max-height: unset;",
         "div[style='-webkit-line-clamp:3']": "-webkit-line-clamp: unset;max-height: unset;",
         "div[style='-webkit-line-clamp:4']": "-webkit-line-clamp: unset;max-height: unset;",
-        ".Pw4Ldf.RsCEN": "height:unset;"
+        ".Pw4Ldf.RsCEN": "height:unset;",
+        ".related-question-pair": "overflow:auto;"
       },
       "ignoreZhCNandZhTW": true,
       "isTranslateTitle": false,
@@ -4071,6 +4072,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-26T01:44:42.024Z",
+  "buildinConfigUpdatedAt": "2023-07-26T02:07:08.773Z",
   "latestVersion": "0.7.12"
 }
