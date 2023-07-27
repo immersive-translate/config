@@ -4097,8 +4097,16 @@
         ".mail-MessageSnippet": "height: unset; line-height:unset;",
         ".immersive-translate-target-translation-block-wrapper": "margin:unset;"
       }
+    },
+    {
+      "id": "edstem",
+      "matches": "edstem.org",
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-27T06:44:30.000Z",
+  "buildinConfigUpdatedAt": "2023-07-27T08:37:06.122Z",
   "latestVersion": "0.7.14"
 }
