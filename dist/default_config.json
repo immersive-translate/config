@@ -4083,8 +4083,21 @@
       "injectedCss": [
         ".TextImage--inner {overflow:auto !important;}"
       ]
+    },
+    {
+      "id": "mail-yandex",
+      "matches": "mail.yandex.com",
+      "selectors": [
+        "article",
+        ".Text_color_primary",
+        ".mail-MessageSnippet-Item_subject"
+      ],
+      "globalStyles": {
+        ".mail-MessageSnippet": "height: unset; line-height:unset;",
+        ".immersive-translate-target-translation-block-wrapper": "margin:unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-26T13:06:42.000Z",
+  "buildinConfigUpdatedAt": "2023-07-27T05:38:43.813Z",
   "latestVersion": "0.7.13"
 }
