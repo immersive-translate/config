@@ -4106,8 +4106,16 @@
         ".notranslate",
         "[translate=no]"
       ]
+    },
+    {
+      "id": "forums.zotero",
+      "matches": "forums.zotero.org",
+      "selectors": [
+        ".page-sidebar",
+        ".page-content"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-28T06:58:40.000Z",
+  "buildinConfigUpdatedAt": "2023-07-30T08:12:24.368Z",
   "latestVersion": "0.7.15"
 }
