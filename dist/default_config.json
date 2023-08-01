@@ -4116,8 +4116,24 @@
         ".page-sidebar",
         ".page-content"
       ]
+    },
+    {
+      "id": "pubmed.ncbi.nlm.nih.gov",
+      "matches": "pubmed.ncbi.nlm.nih.gov",
+      "urlChangeDelay": 0,
+      "excludeSelectors": [
+        ".docsum-journal-citation",
+        ".citation-part",
+        ".docsum-authors",
+        ".top-wrapper",
+        ".article-source",
+        ".citation-doi",
+        ".identifiers",
+        ".cite",
+        ".share"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-01T11:18:01.488Z",
+  "buildinConfigUpdatedAt": "2023-08-01T11:44:48.702Z",
   "latestVersion": "0.7.15"
 }
