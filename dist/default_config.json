@@ -37,7 +37,8 @@
   "inputTranslationBlockUrls": [
     "*.feishu.cn",
     "www.notion.so",
-    "www.figma.com"
+    "www.figma.com",
+    "*.lanhuapp.com"
   ],
   "inputStyleBlockUrls": [],
   "inputTargetLanguage": "en",
@@ -4117,6 +4118,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-01T03:07:59.901Z",
+  "buildinConfigUpdatedAt": "2023-08-01T11:18:01.488Z",
   "latestVersion": "0.7.15"
 }
