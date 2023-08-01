@@ -525,7 +525,8 @@
       ".notranslate",
       "[translate=no]",
       ".navmenu-container",
-      ".google-symbols"
+      ".google-symbols",
+      "markerow8"
     ],
     "translationClasses": [],
     "atomicBlockSelectors": [],
@@ -4116,6 +4117,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-07-30T08:12:24.368Z",
+  "buildinConfigUpdatedAt": "2023-08-01T03:07:59.901Z",
   "latestVersion": "0.7.15"
 }
