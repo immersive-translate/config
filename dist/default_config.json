@@ -713,21 +713,7 @@
       "matches": [
         "moz-extension://*/pdf/index.html*"
       ],
-      "isPdf": true,
-      "isTranslateTitle": false,
-      "wrapperPrefix": "",
-      "wrapperSuffix": "",
-      "urlChangeDelay": 0,
-      "selectors": [
-        ".textLayer"
-      ],
-      "excludeSelectors": [
-        ".annotationLayer"
-      ],
-      "globalStyles": {
-        "div.page": "width: 98%;",
-        ".textLayer": "overflow:visible;opacity: 1;"
-      }
+      "isPdf": true
     },
     {
       "id": "txt",
@@ -4139,6 +4125,6 @@
       "injectedCss": "body {word-break: unset!important;}"
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-02T13:24:18.777Z",
+  "buildinConfigUpdatedAt": "2023-08-02T16:44:39.365Z",
   "latestVersion": "0.7.15"
 }
