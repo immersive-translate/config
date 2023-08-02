@@ -4132,8 +4132,15 @@
         ".cite",
         ".share"
       ]
+    },
+    {
+      "id": "chosun",
+      "matches": "www.chosun.com",
+      "globalStyles": {
+        "body": "word-break: unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-01T13:22:08.000Z",
+  "buildinConfigUpdatedAt": "2023-08-02T13:06:13.170Z",
   "latestVersion": "0.7.15"
 }
