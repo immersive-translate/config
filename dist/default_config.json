@@ -4123,8 +4123,23 @@
       "id": "chosun",
       "matches": "www.chosun.com",
       "injectedCss": "body {word-break: unset!important;}"
+    },
+    {
+      "id": "yna",
+      "matches": "*.yna*",
+      "injectedCss": [
+        "font > br {display:none}"
+      ],
+      "globalStyles": {
+        "a,strong": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;",
+        "div,p,li,.item-box01,.news-con": "height:unset;max-height:unset;"
+      },
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-03T08:50:53.000Z",
+  "buildinConfigUpdatedAt": "2023-08-03T15:14:59.314Z",
   "latestVersion": "0.7.16"
 }
