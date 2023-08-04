@@ -4138,8 +4138,15 @@
         ".notranslate",
         "[translate=no]"
       ]
+    },
+    {
+      "id": "cnet",
+      "matches": "www.cnet.com",
+      "globalStyles": {
+        "h3,div,span,p": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-03T15:18:15.451Z",
+  "buildinConfigUpdatedAt": "2023-08-04T08:21:10.463Z",
   "latestVersion": "0.7.16"
 }
