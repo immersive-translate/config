@@ -3669,6 +3669,9 @@
         "#app > div > div > header",
         "#app > div > div > div > div > header",
         "#in-story-masthead"
+      ],
+      "injectedCss": [
+        "a::after {position:relative!important;}"
       ]
     },
     {
@@ -4150,6 +4153,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-05T07:16:45.624Z",
+  "buildinConfigUpdatedAt": "2023-08-07T03:19:21.045Z",
   "latestVersion": "0.7.16"
 }
