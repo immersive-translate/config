@@ -1399,7 +1399,11 @@
         "div[data-message-id] div[class='']",
         ".messageBody",
         "#views"
-      ]
+      ],
+      "globalStyles": {
+        ".Nk": "height:auto!important;",
+        ".kf": "white-space:unset!important;"
+      }
     },
     {
       "id": "googleNews",
@@ -4162,6 +4166,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-10T08:43:08.100Z",
+  "buildinConfigUpdatedAt": "2023-08-10T09:14:00.129Z",
   "latestVersion": "0.7.16"
 }
