@@ -4169,11 +4169,13 @@
       "id": "digitimes",
       "matches": "www.digitimes.com",
       "globalStyles": {
-        "a,div": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;"
+        "a,.title,.abstract,.display-5,.top": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;"
       },
       "excludeSelectors.add": [
         ".main-nav-frame",
-        ".sub-header-wrapper"
+        ".sub-header-wrapper",
+        ".footer",
+        ".date"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -4181,6 +4183,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-12T02:02:49.717Z",
+  "buildinConfigUpdatedAt": "2023-08-12T08:20:27.573Z",
   "latestVersion": "0.7.16"
 }
