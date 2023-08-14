@@ -1960,9 +1960,6 @@
       "id": "javbus",
       "matches": "https://www.javbus.com/*",
       "globalStyles": {
-        "#waterfall[class='masonry']": "height: unset;",
-        "#waterfall[class='masonry'] > div": "display: flex;flex-direction: row;flex-wrap: wrap;",
-        "#waterfall[class='masonry'] > div > div": "position:relative;",
         ".photo-info": "height:unset;"
       },
       "excludeSelectors": [
@@ -4183,6 +4180,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-12T08:20:27.573Z",
+  "buildinConfigUpdatedAt": "2023-08-14T04:43:07.021Z",
   "latestVersion": "0.7.16"
 }
