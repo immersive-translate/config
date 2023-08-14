@@ -2218,7 +2218,8 @@
       "matches": "www.sciencedirect.com",
       "urlChangeDelay": 2000,
       "stayOriginalSelectors": [
-        "span.display"
+        "span.display",
+        "span.math"
       ],
       "extraBlockSelectors": [
         "span.captions",
@@ -4180,6 +4181,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-14T04:43:07.021Z",
+  "buildinConfigUpdatedAt": "2023-08-14T10:29:23.272Z",
   "latestVersion": "0.7.16"
 }
