@@ -223,6 +223,13 @@
         "🚠"
       ]
     },
+    "aliyun": {
+      "placeholderDelimiters": [
+        "{{",
+        "}}",
+        "b"
+      ]
+    },
     "deepl": {
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
       "placeholderDelimiters": [
@@ -236,6 +243,12 @@
       "placeholderDelimiters": [
         "<code>",
         "</code>"
+      ]
+    },
+    "standard": {
+      "placeholderDelimiters": [
+        "{",
+        "}"
       ]
     },
     "bing": {
@@ -4185,8 +4198,25 @@
         ".notranslate",
         "[translate=no]"
       ]
+    },
+    {
+      "id": "vdi-nachrichten",
+      "matches": "www.vdi-nachrichten.com",
+      "excludeSelectors.add": [
+        ".header-menu__item > a",
+        ".linkbar__item",
+        ".header__button-group"
+      ]
+    },
+    {
+      "id": "tldrnewsletter",
+      "matches": "actions.tldrnewsletter.com",
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-15T06:16:34.000Z",
+  "buildinConfigUpdatedAt": "2023-08-18T10:49:45.487Z",
   "latestVersion": "0.8.0"
 }
