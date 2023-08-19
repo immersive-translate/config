@@ -245,7 +245,7 @@
         "</code>"
       ]
     },
-    "standard": {
+    "custom": {
       "placeholderDelimiters": [
         "{",
         "}"
@@ -4217,6 +4217,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-18T10:49:45.487Z",
+  "buildinConfigUpdatedAt": "2023-08-19T03:47:28.641Z",
   "latestVersion": "0.8.0"
 }
