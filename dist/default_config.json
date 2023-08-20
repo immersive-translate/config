@@ -2586,6 +2586,9 @@
       ],
       "isTranslateTitle": false,
       "wrapperPrefix": "",
+      "globalStyles": {
+        "[class*='line-clamp']": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;"
+      },
       "aiRule": {
         "streamingSelector": ".result-streaming.markdown",
         "messageWrapperSelector": ".markdown",
@@ -4227,6 +4230,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-20T11:19:14.000Z",
+  "buildinConfigUpdatedAt": "2023-08-20T13:03:04.553Z",
   "latestVersion": "0.8.3"
 }
