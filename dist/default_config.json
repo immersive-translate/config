@@ -6,7 +6,7 @@
   "translationMode": "dual",
   "enabled": true,
   "minVersion": "0.6.2",
-  "showOpenaiOnSafari": false,
+  "showOpenaiOnSafari": true,
   "donateUrl": "https://immersivetranslate.com/docs/donate/",
   "uninstallUrl": "https://wj.qq.com/s2/12328372/04e0/",
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
@@ -4230,6 +4230,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-20T13:03:04.553Z",
+  "buildinConfigUpdatedAt": "2023-08-21T02:17:12.025Z",
   "latestVersion": "0.8.3"
 }
