@@ -4229,8 +4229,16 @@
       "stayOriginalSelectors": [
         ".RktIn"
       ]
+    },
+    {
+      "id": "bugzilla",
+      "matches": "bugzilla.mozilla.org",
+      "excludeTags.remove": [
+        "PRE"
+      ],
+      "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-21T05:58:05.609Z",
+  "buildinConfigUpdatedAt": "2023-08-21T11:19:34.165Z",
   "latestVersion": "0.8.4"
 }
