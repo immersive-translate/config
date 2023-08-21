@@ -352,6 +352,7 @@
   },
   "translationParagraphLanguagePattern": {
     "matches": [
+      "onboarding.immersivetranslate.com",
       "www.reddit.com",
       "old.reddit.com",
       "twitter.com",
@@ -4230,6 +4231,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-21T04:34:28.000Z",
+  "buildinConfigUpdatedAt": "2023-08-21T05:58:05.609Z",
   "latestVersion": "0.8.4"
 }
