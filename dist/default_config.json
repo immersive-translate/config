@@ -409,6 +409,7 @@
     "waitForSelectors": [],
     "isInjectOptionsUrl": false,
     "isInjectVersion": false,
+    "isInjectMeta": false,
     "waitForSelectorsTimeout": 3000,
     "pairs": {},
     "aiRule": {},
@@ -720,7 +721,8 @@
     {
       "id": "immersive",
       "matches": "immersivetranslate.com",
-      "isInjectVersion": true
+      "isInjectVersion": true,
+      "isInjectMeta": true
     },
     {
       "id": "simpread",
@@ -4239,6 +4241,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-21T11:19:34.165Z",
+  "buildinConfigUpdatedAt": "2023-08-22T09:09:15.902Z",
   "latestVersion": "0.8.4"
 }
