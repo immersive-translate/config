@@ -861,8 +861,17 @@
       "id": "threads",
       "matches": "www.threads.net",
       "selectors": [
-        "p"
-      ]
+        "p",
+        ".x1npkx4u.x1exu5d8",
+        ".xw7yly9",
+        ".xgkxs2y"
+      ],
+      "stayOriginalSelectors": [
+        ".x1rg5ohu"
+      ],
+      "globalStyles": {
+        "span": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;"
+      }
     },
     {
       "id": "stackoverflow",
@@ -4241,6 +4250,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-22T09:09:30.000Z",
+  "buildinConfigUpdatedAt": "2023-08-22T14:20:49.817Z",
   "latestVersion": "0.8.5"
 }
