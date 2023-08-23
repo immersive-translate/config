@@ -4284,8 +4284,15 @@
         "aside",
         ".DocSearch-Modal"
       ]
+    },
+    {
+      "id": "mercari",
+      "matches": "*.mercari.com",
+      "excludeTags.remove": [
+        "PRE"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-23T08:27:51.506Z",
+  "buildinConfigUpdatedAt": "2023-08-23T11:55:54.890Z",
   "latestVersion": "0.8.5"
 }
