@@ -2083,30 +2083,12 @@
         "meta[property='al:ios:url'][content^='medium://']"
       ],
       "urlChangeDelay": 20,
-      "additionalExcludeSelectors": [
-        ".social-share",
-        ".breadcrumbs",
-        ".post__footer",
-        ".btn",
-        ".reference-citations",
-        ".share-nav",
-        ".o-share",
-        "[data-toolbar=share]",
-        "rp",
-        "rt",
-        ".prism-code",
-        "[role=code]",
-        "#omni-extension",
-        ".omni-item",
-        "div[data-paste-markdown-skip]",
-        "table.highlight",
-        "div[class^=codeBlockContent]",
-        "div[class^=codeBlockLines]",
-        "div[class^=token-line]",
-        "#liuchan-window > .liuchan-container > *",
-        ".material-icons",
-        ".notranslate",
-        "[translate=no]"
+      "additionalExcludeSelectors.remove": [
+        "i.fa",
+        "i[class^=fa-]",
+        ".navmenu-container",
+        ".google-symbols",
+        "markerow8"
       ],
       "selectors": [
         "h1",
@@ -2116,7 +2098,9 @@
         "article p"
       ],
       "excludeSelectors": [
-        "[aria-label='Post Preview Reading Time']"
+        "[aria-label='Post Preview Reading Time']",
+        ".al.b.bl.ag.bp",
+        ".al.b.bl.ag.ai"
       ],
       "globalStyles": {
         "h2": "-webkit-line-clamp: unset;max-height:unset;",
@@ -2367,38 +2351,14 @@
       "shadowRootSelectors": [
         "[data-spot-im-module-default-area='conversation'] > div"
       ],
-      "excludeTags": [
-        "TITLE",
-        "LINK",
-        "SCRIPT",
-        "STYLE",
-        "TEXTAREA",
-        "SVG",
-        "svg",
-        "G",
+      "excludeTags.add": [
         "TEXT",
-        "NOSCRIPT",
-        "INPUT",
-        "BUTTON",
-        "BASE",
-        "SELECT",
-        "OPTION",
         "IMG",
         "SUB",
         "SUP",
-        "HR",
-        "PRE",
         "CODE",
-        "KBD",
-        "WBR",
         "TT",
-        "RT",
-        "RP",
-        "META",
-        "ASIDE",
-        "MATH",
-        "TTS-SENTENCE",
-        "AIO-CODE"
+        "ASIDE"
       ],
       "excludeSelectors": [
         ".site-footer",
@@ -2419,32 +2379,20 @@
     {
       "id": "opennet",
       "matches": "opennet.ru",
-      "excludeTags": [
-        "TITLE",
-        "SCRIPT",
-        "STYLE",
-        "TEXTAREA",
-        "SVG",
-        "svg",
-        "NOSCRIPT",
-        "INPUT",
-        "BUTTON",
-        "BASE",
+      "excludeTags.add": [
         "LABEL",
-        "SELECT",
-        "OPTION",
         "IMG",
         "SUB",
         "SUP",
-        "HR",
-        "PRE",
         "CODE",
-        "KBD",
-        "WBR",
-        "TT",
-        "RT",
-        "RP",
-        "META"
+        "TT"
+      ],
+      "excludeTags.remove": [
+        "LINK",
+        "G",
+        "MATH",
+        "TTS-SENTENCE",
+        "AIO-CODE"
       ]
     },
     {
@@ -2742,33 +2690,21 @@
         "docs.haproxy.org"
       ],
       "isTransformPreTagNewLine": true,
-      "excludeTags": [
-        "TITLE",
-        "SCRIPT",
-        "STYLE",
-        "TEXTAREA",
-        "SVG",
-        "svg",
-        "NOSCRIPT",
-        "INPUT",
-        "BUTTON",
-        "BASE",
-        "SELECT",
-        "OPTION",
+      "excludeTags.add": [
         "IMG",
         "SUB",
         "SUP",
-        "HR",
         "CODE",
-        "KBD",
-        "WBR",
         "TT",
-        "RT",
-        "RP",
-        "META",
         "ASIDE",
-        "FOOTER",
-        "MATH"
+        "FOOTER"
+      ],
+      "excludeTags.remove": [
+        "LINK",
+        "G",
+        "PRE",
+        "TTS-SENTENCE",
+        "AIO-CODE"
       ]
     },
     {
@@ -3193,37 +3129,17 @@
     {
       "id": "spiedigitallibrary",
       "matches": "www.spiedigitallibrary.org",
-      "excludeTags": [
-        "TITLE",
-        "SCRIPT",
-        "STYLE",
-        "TEXTAREA",
-        "SVG",
-        "svg",
-        "G",
-        "NOSCRIPT",
-        "INPUT",
-        "BUTTON",
-        "BASE",
-        "SELECT",
-        "OPTION",
+      "excludeTags.add": [
         "IMG",
         "SUB",
         "SUP",
-        "HR",
-        "PRE",
         "CODE",
-        "KBD",
-        "WBR",
         "TT",
-        "RT",
-        "RP",
-        "META",
         "ASIDE",
-        "FOOTER",
-        "MATH",
-        "TTS-SENTENCE",
-        "AIO-CODE"
+        "FOOTER"
+      ],
+      "excludeTags.remove": [
+        "LINK"
       ]
     },
     {
@@ -3260,30 +3176,8 @@
       "extraBlockSelectors": [
         ".inline-flex"
       ],
-      "excludeTags": [
-        "TITLE",
-        "LINK",
-        "SCRIPT",
-        "STYLE",
-        "TEXTAREA",
-        "SVG",
-        "svg",
-        "G",
-        "NOSCRIPT",
-        "INPUT",
-        "BASE",
-        "SELECT",
-        "OPTION",
-        "HR",
-        "PRE",
-        "KBD",
-        "WBR",
-        "RT",
-        "RP",
-        "META",
-        "MATH",
-        "TTS-SENTENCE",
-        "AIO-CODE"
+      "excludeTags.remove": [
+        "BUTTON"
       ]
     },
     {
@@ -3586,31 +3480,11 @@
         ".mdc-list-item__primary-text"
       ],
       "isTranslateTitle": false,
-      "excludeTags": [
-        "TITLE",
-        "LINK",
-        "SCRIPT",
-        "STYLE",
-        "TEXTAREA",
-        "SVG",
-        "svg",
-        "G",
-        "NOSCRIPT",
-        "INPUT",
-        "BASE",
-        "SELECT",
-        "OPTION",
-        "HR",
-        "PRE",
-        "KBD",
-        "WBR",
-        "RT",
-        "RP",
-        "META",
-        "MATH",
-        "TTS-SENTENCE",
-        "AIO-CODE",
+      "excludeTags.add": [
         "mat-tooltip-component"
+      ],
+      "excludeTags.remove": [
+        "BUTTON"
       ]
     },
     {
@@ -3720,29 +3594,9 @@
     {
       "id": "bugsKde",
       "matches": "bugs.kde.org",
-      "excludeTags": [
-        "TITLE",
-        "LINK",
-        "SCRIPT",
-        "STYLE",
-        "TEXTAREA",
-        "SVG",
-        "G",
-        "NOSCRIPT",
-        "INPUT",
-        "BUTTON",
-        "BASE",
-        "SELECT",
-        "OPTION",
-        "HR",
-        "KBD",
-        "WBR",
-        "RT",
-        "RP",
-        "META",
-        "MATH",
-        "TTS-SENTENCE",
-        "AIO-CODE"
+      "excludeTags.remove": [
+        "svg",
+        "PRE"
       ],
       "additionalExcludeSelectors": [
         ".bz_first_comment_head",
@@ -4293,6 +4147,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-23T11:55:54.890Z",
+  "buildinConfigUpdatedAt": "2023-08-24T05:45:42.235Z",
   "latestVersion": "0.8.5"
 }
