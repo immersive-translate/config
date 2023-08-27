@@ -372,6 +372,7 @@
       "*.instagram.com",
       "instagram.com",
       "web.telegram.org",
+      "web.whatsapp.com",
       "*.slack.com"
     ],
     "excludeMatches": [],
@@ -4151,6 +4152,6 @@
       "useIframePostMessage": false
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-27T03:45:59.095Z",
+  "buildinConfigUpdatedAt": "2023-08-27T16:43:50.373Z",
   "latestVersion": "0.8.7"
 }
