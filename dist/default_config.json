@@ -1077,7 +1077,8 @@
         "#responsive-meta-container p",
         "article p",
         "div.repo-description p",
-        "[itemprop=description]"
+        "[itemprop=description]",
+        ".repository-content"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -4152,6 +4153,6 @@
       "useIframePostMessage": false
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-27T16:46:17.000Z",
+  "buildinConfigUpdatedAt": "2023-08-28T06:31:39.562Z",
   "latestVersion": "0.8.8"
 }
