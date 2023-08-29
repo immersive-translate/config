@@ -4155,8 +4155,18 @@
       "globalStyles": {
         "h3,div,span,p": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;"
       }
+    },
+    {
+      "id": "pubs.rsc.org",
+      "matches": "pubs.rsc.org",
+      "stayOriginalSelectors": [
+        "a[href^='#']"
+      ],
+      "excludeSelectors": [
+        ".eqn"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-29T05:24:51.467Z",
+  "buildinConfigUpdatedAt": "2023-08-29T06:05:59.291Z",
   "latestVersion": "0.8.8"
 }
