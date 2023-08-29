@@ -1077,8 +1077,7 @@
         "#responsive-meta-container p",
         "article p",
         "div.repo-description p",
-        "[itemprop=description]",
-        ".repository-content"
+        "[itemprop=description]"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -4151,8 +4150,15 @@
       "id": "qqMail",
       "matches": "mail.qq.com",
       "useIframePostMessage": false
+    },
+    {
+      "id": "nikkei",
+      "matches": "www.nikkei.com",
+      "globalStyles": {
+        "h3,div,span,p": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-28T06:31:39.562Z",
+  "buildinConfigUpdatedAt": "2023-08-29T03:31:45.986Z",
   "latestVersion": "0.8.8"
 }
