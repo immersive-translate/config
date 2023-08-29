@@ -1256,14 +1256,12 @@
         "https://www.instagram.com/reels/*"
       ],
       "atomicBlockSelectors": [
-        "div._a9zs h1",
-        "h3 + div._a9zs > span"
+        "div.x5yr21d span"
       ],
       "blockMinTextCount": 1,
       "paragraphMinTextCount": 2,
       "selectors": [
-        "div._a9zs h1",
-        "h3 + div._a9zs > span"
+        "div.x5yr21d span"
       ],
       "wrapperPrefix": "<br/>"
     },
@@ -4159,6 +4157,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-29T03:31:45.986Z",
+  "buildinConfigUpdatedAt": "2023-08-29T05:24:51.467Z",
   "latestVersion": "0.8.8"
 }
