@@ -1077,7 +1077,8 @@
         "#responsive-meta-container p",
         "article p",
         "div.repo-description p",
-        "[itemprop=description]"
+        "[itemprop=description]",
+        ".integrations-auth-wrapper"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -4167,6 +4168,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-29T08:15:09.319Z",
+  "buildinConfigUpdatedAt": "2023-08-29T12:32:58.458Z",
   "latestVersion": "0.8.8"
 }
