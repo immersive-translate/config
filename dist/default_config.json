@@ -1272,7 +1272,8 @@
       "paragraphMinTextCount": 2,
       "selectors": [
         "h1",
-        "article span[dir=auto] > span[dir=auto]"
+        "article span[dir=auto] > span[dir=auto]",
+        "._ab1y"
       ],
       "wrapperSuffix": ""
     },
@@ -4166,6 +4167,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-08-30T10:30:54.256Z",
+  "buildinConfigUpdatedAt": "2023-08-30T11:09:21.375Z",
   "latestVersion": "0.8.9"
 }
