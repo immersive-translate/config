@@ -721,7 +721,7 @@
   "rules": [
     {
       "id": "immersive",
-      "matches": "immersivetranslate.com",
+      "matches": "*immersivetranslate.com",
       "isInjectVersion": true,
       "isInjectMeta": true
     },
@@ -4178,6 +4178,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-01T11:02:51.493Z",
+  "buildinConfigUpdatedAt": "2023-09-04T16:25:33.653Z",
   "latestVersion": "0.8.10"
 }
