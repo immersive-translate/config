@@ -721,7 +721,10 @@
   "rules": [
     {
       "id": "immersive",
-      "matches": "*immersivetranslate.com",
+      "matches": [
+        "https://immersivetranslate.com",
+        "https://onboarding.immersivetranslate.com"
+      ],
       "isInjectVersion": true,
       "isInjectMeta": true
     },
@@ -1480,9 +1483,6 @@
         ".jHAG3.XG5Jd",
         ".OZZZK",
         ".lDdSm"
-      ],
-      "selectors": [
-        "[role=region]"
       ]
     },
     {
@@ -4179,6 +4179,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-05T06:15:31.913Z",
+  "buildinConfigUpdatedAt": "2023-09-05T07:51:32.140Z",
   "latestVersion": "0.9.0"
 }
