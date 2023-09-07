@@ -4178,8 +4178,15 @@
       "excludeTags.remove": [
         "BUTTON"
       ]
+    },
+    {
+      "id": "brutalist",
+      "matches": "brutalist.report",
+      "extraBlockSelectors": [
+        "li > a"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-05T10:57:02.000Z",
+  "buildinConfigUpdatedAt": "2023-09-07T01:37:12.039Z",
   "latestVersion": "0.9.1"
 }
