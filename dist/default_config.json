@@ -4182,11 +4182,20 @@
     {
       "id": "brutalist",
       "matches": "brutalist.report",
-      "extraBlockSelectors": [
-        "li > a"
+      "selectors": [
+        "li > a:first-child",
+        "aside",
+        "nav > a",
+        "h1 > a",
+        "h3 > a",
+        "h2 >a"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-07T01:37:12.039Z",
+  "buildinConfigUpdatedAt": "2023-09-07T01:49:17.647Z",
   "latestVersion": "0.9.1"
 }
