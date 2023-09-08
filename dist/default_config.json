@@ -387,6 +387,7 @@
   "generalRule": {
     "_comment": "",
     "enableSubtitle": true,
+    "skipEditableCheck": false,
     "mutationObserverLimitTargetSelectors": [],
     "condition": {},
     "normalizeBody": "",
@@ -736,9 +737,16 @@
     },
     {
       "id": "pdf",
-      "matches": [
-        "moz-extension://*/pdf/index.html*"
+      "selectorMatches": [
+        "meta[name='immersive-translate-pdf-viewer'][content='true']"
       ],
+      "translationMode": "translation",
+      "skipEditableCheck": true,
+      "selectors": [
+        "p"
+      ],
+      "wrapperPrefix": "",
+      "isInjectVersion": true,
       "isPdf": true
     },
     {
@@ -4196,6 +4204,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-07T01:49:17.647Z",
+  "buildinConfigUpdatedAt": "2023-09-08T06:28:09.527Z",
   "latestVersion": "0.9.1"
 }
