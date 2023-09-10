@@ -12,6 +12,7 @@
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
   "isShowContextMenu": true,
   "enableInputTranslation": true,
+  "isShowInputTranslationConsent": true,
   "inactiveDays": 21,
   "enableInputTranslationWithoutTriggerKey": true,
   "defaultAlwaysTranslatedUrls": [
@@ -4203,8 +4204,27 @@
         ".notranslate",
         "[translate=no]"
       ]
+    },
+    {
+      "id": "maxroll",
+      "matches": [
+        "maxroll.gg"
+      ],
+      "extraInlineSelectors": [
+        ".d4t-sprite-icon",
+        ".d4t-icon"
+      ]
+    },
+    {
+      "id": "microsoftTeams",
+      "matches": [
+        "teams.live.com"
+      ],
+      "stayOriginalSelectors.add": [
+        "span[title][style='min-width: 20px; height: 20px;']"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-08T06:41:51.000Z",
+  "buildinConfigUpdatedAt": "2023-09-10T20:35:14.220Z",
   "latestVersion": "0.9.2"
 }
