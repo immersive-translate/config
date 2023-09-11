@@ -343,7 +343,8 @@
       "https://www.reddit.com/hot/",
       "https://www.reddit.com/new/",
       "https://www.reddit.com/top/",
-      "https://www.reddit.com/.compact"
+      "https://www.reddit.com/.compact",
+      "https://app.immersivetranslate.com/pdf*"
     ],
     "excludeMatches": [],
     "selectorMatches": [
@@ -4225,6 +4226,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-10T20:35:23.000Z",
+  "buildinConfigUpdatedAt": "2023-09-11T04:21:47.606Z",
   "latestVersion": "0.9.3"
 }
