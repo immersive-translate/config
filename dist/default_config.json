@@ -3455,6 +3455,13 @@
       }
     },
     {
+      "id": "openai-blog",
+      "matches": "https://openai.com/blog/*",
+      "stayOriginalTags.remove": [
+        "CODE"
+      ]
+    },
+    {
       "id": "openai",
       "matches": "https://platform.openai.com/docs/*",
       "urlChangeDelay": 0
@@ -4226,6 +4233,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-11T04:21:47.606Z",
+  "buildinConfigUpdatedAt": "2023-09-11T05:15:29.035Z",
   "latestVersion": "0.9.3"
 }
