@@ -3817,11 +3817,11 @@
       "id": "piAi",
       "matches": "pi.ai/talk",
       "excludeSelectors": [
-        ".space-y-4 *"
+        ".whitespace-pre-wrap > span *"
       ],
       "aiRule": {
-        "streamingSelector": ".snap-start > [style^='height']+[style='opacity: 0;']",
-        "messageWrapperSelector": ".space-y-4",
+        "streamingSelector": "button[class*='fixed'][disabled]",
+        "messageWrapperSelector": ".whitespace-pre-wrap",
         "streamingChange": false,
         "streamingDeepChild": false
       },
@@ -4233,6 +4233,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-11T05:15:29.035Z",
+  "buildinConfigUpdatedAt": "2023-09-11T06:11:11.297Z",
   "latestVersion": "0.9.3"
 }
