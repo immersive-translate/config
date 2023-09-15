@@ -232,7 +232,7 @@
     },
     "deepl": {
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
-      "qualityDelimiterBeta": "",
+      "qualityDelimiterBeta": "<br />",
       "placeholderDelimiters": [
         "{{",
         "}}",
@@ -4233,6 +4233,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-11T06:11:11.297Z",
+  "buildinConfigUpdatedAt": "2023-09-15T09:55:11.740Z",
   "latestVersion": "0.9.3"
 }
