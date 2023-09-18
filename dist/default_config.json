@@ -2285,7 +2285,7 @@
       "selectors": [],
       "globalStyles": {
         "div[id^='link-index-']": "height: unset; max-height: unset;",
-        "main > div > div[class*='h-[125]']": "height:auto"
+        "main div[class*='h-[125]']": "height:auto"
       },
       "normalizeBody": "body",
       "extraBlockSelectors": [
@@ -4243,6 +4243,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-18T02:50:30.151Z",
+  "buildinConfigUpdatedAt": "2023-09-18T02:52:14.569Z",
   "latestVersion": "0.9.5"
 }
