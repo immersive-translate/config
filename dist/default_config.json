@@ -4231,8 +4231,18 @@
       "stayOriginalSelectors.add": [
         "span[title][style='min-width: 20px; height: 20px;']"
       ]
+    },
+    {
+      "id": "gradioappdocs",
+      "matches": "www.gradio.app/docs/*",
+      "selectors": [
+        "div.obj"
+      ],
+      "excludeSelectors": [
+        "div#examples"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-17T09:32:32.000Z",
+  "buildinConfigUpdatedAt": "2023-09-18T02:50:30.151Z",
   "latestVersion": "0.9.5"
 }
