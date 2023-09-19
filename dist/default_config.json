@@ -244,7 +244,8 @@
       "placeholderDelimiters": [
         "<code>",
         "</code>"
-      ]
+      ],
+      "limit": 5000
     },
     "custom": {
       "placeholderDelimiters": [
@@ -4243,6 +4244,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-18T02:52:14.569Z",
+  "buildinConfigUpdatedAt": "2023-09-19T05:41:32.395Z",
   "latestVersion": "0.9.5"
 }
