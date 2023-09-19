@@ -785,7 +785,8 @@
       "id": "preSites",
       "matches": [
         "mail.jabber.org",
-        "antirez.com"
+        "antirez.com",
+        "patchwork.kernel.org"
       ],
       "isTransformPreTagNewLine": true
     },
@@ -4248,6 +4249,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-19T07:46:36.000Z",
+  "buildinConfigUpdatedAt": "2023-09-19T11:47:39.160Z",
   "latestVersion": "0.9.6"
 }
