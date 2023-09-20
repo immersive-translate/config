@@ -403,7 +403,8 @@
       "span.highlighter--highlighted",
       "span.highlighter-ext",
       "mark",
-      "msreadoutspan"
+      "msreadoutspan",
+      "rw-highlight"
     ],
     "useIframePostMessage": true,
     "searchEnhancementConfig": [],
@@ -651,14 +652,16 @@
       "RELIN-ORIGIN",
       "RELIN-TARGET",
       "XQDD_HIGHLIGHT_NEW_WORD",
-      "NOBR"
+      "NOBR",
+      "RW-HIGHLIGHT"
     ],
     "additionalInlineTags": [],
     "extraInlineSelectors": [],
     "additionalInlineSelectors": [
       ".MathJax_Preview",
       ".MathJax",
-      ".highlighter--highlighted"
+      ".highlighter--highlighted",
+      ".rw-highlight"
     ],
     "extraBlockSelectors": [
       "turbo-frame",
@@ -4249,6 +4252,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-19T11:47:39.160Z",
+  "buildinConfigUpdatedAt": "2023-09-20T15:34:15.836Z",
   "latestVersion": "0.9.6"
 }
