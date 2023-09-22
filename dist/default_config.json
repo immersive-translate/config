@@ -394,6 +394,7 @@
   "sourceLanguageUrlPattern": {},
   "generalRule": {
     "_comment": "",
+    "paragraphFirstLetterFontSize": 35,
     "enableSubtitle": true,
     "skipEditableCheck": false,
     "mutationObserverLimitTargetSelectors": [],
@@ -4255,6 +4256,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-20T18:34:58.000Z",
+  "buildinConfigUpdatedAt": "2023-09-22T10:57:56.176Z",
   "latestVersion": "0.9.7"
 }
