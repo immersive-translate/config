@@ -734,6 +734,86 @@
   },
   "rules": [
     {
+      "id": "isSubtitleBuilder",
+      "isSubtitleBuilder": true,
+      "selectorMatches": [
+        "meta[name='immersive-translate-subtitle-builder'][content='true']"
+      ],
+      "pairs": {
+        ".source-text": ".target-text"
+      },
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
+      "isTranslateTitle": false,
+      "wrapperPrefix": "",
+      "wrapperSuffix": ""
+    },
+    {
+      "id": "isEbook",
+      "isEbook": true,
+      "isTranslateTitle": false,
+      "urlChangeDelay": 200,
+      "selectorMatches": [
+        "meta[name='immersive-translate-ebook-viewer'][content='true']"
+      ],
+      "excludeSelectors": [
+        "#drop-target",
+        "#drop-target h1",
+        "#side-bar",
+        "h1#side-bar-title"
+      ],
+      "extraInlineSelectors": [
+        "span.dropcaps"
+      ],
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
+      "blockMinTextCount": 1,
+      "blockMinWordCount": 1,
+      "containerMinTextCount": 1,
+      "wrapperPrefix": "<br />",
+      "targetWrapperTag": "span"
+    },
+    {
+      "id": "pdf",
+      "selectorMatches": [
+        "meta[name='immersive-translate-pdf-viewer'][content='true']"
+      ],
+      "translationMode": "translation",
+      "skipEditableCheck": true,
+      "selectors": [
+        "p"
+      ],
+      "wrapperPrefix": "",
+      "isInjectVersion": true,
+      "isPdf": true
+    },
+    {
+      "id": "isEbookBuilder",
+      "isEbookBuilder": true,
+      "isTranslateTitle": false,
+      "targetWrapperTag": "span",
+      "selectorMatches": [
+        "meta[name='immersive-translate-ebook-builder'][content='true']"
+      ],
+      "globalMeta": {},
+      "excludeSelectors": [
+        "h1.notranslate",
+        "#drop-target",
+        "#drop-target h1",
+        "#side-bar",
+        "h1#side-bar-title",
+        "#tool",
+        ".Code"
+      ],
+      "isInjectMeta": true,
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
+      "blockMinTextCount": 1,
+      "blockMinWordCount": 1,
+      "containerMinTextCount": 1,
+      "wrapperPrefix": "<br />"
+    },
+    {
       "id": "immersiveTranslateIosOnBoarding",
       "selectorMatches": [
         "meta[name=immersiveTranslateIosOnBoarding]"
@@ -761,7 +841,8 @@
       "id": "immersive",
       "matches": [
         "https://immersivetranslate.com",
-        "https://onboarding.immersivetranslate.com"
+        "https://onboarding.immersivetranslate.com",
+        "https://app.immersivetranslate.com"
       ],
       "isInjectVersion": true,
       "isInjectMeta": true
@@ -770,20 +851,6 @@
       "id": "simpread",
       "selectorMatches": "div.simpread-read-root.simpread-read-root-show > sr-read",
       "mainFrameSelector": "div.simpread-read-root.simpread-read-root-show > sr-read"
-    },
-    {
-      "id": "pdf",
-      "selectorMatches": [
-        "meta[name='immersive-translate-pdf-viewer'][content='true']"
-      ],
-      "translationMode": "translation",
-      "skipEditableCheck": true,
-      "selectors": [
-        "p"
-      ],
-      "wrapperPrefix": "",
-      "isInjectVersion": true,
-      "isPdf": true
     },
     {
       "id": "txt",
@@ -2927,56 +2994,6 @@
       ]
     },
     {
-      "id": "isEbook",
-      "isEbook": true,
-      "isTranslateTitle": false,
-      "urlChangeDelay": 200,
-      "selectorMatches": [
-        "meta[name='immersive-translate-ebook-viewer'][content='true']"
-      ],
-      "excludeSelectors": [
-        "#drop-target",
-        "#drop-target h1",
-        "#side-bar",
-        "h1#side-bar-title"
-      ],
-      "extraInlineSelectors": [
-        "span.dropcaps"
-      ],
-      "paragraphMinTextCount": 4,
-      "paragraphMinWordCount": 2,
-      "blockMinTextCount": 1,
-      "blockMinWordCount": 1,
-      "containerMinTextCount": 1,
-      "wrapperPrefix": "<br />",
-      "targetWrapperTag": "span"
-    },
-    {
-      "id": "isEbookBuilder",
-      "isEbookBuilder": true,
-      "isTranslateTitle": false,
-      "targetWrapperTag": "span",
-      "selectorMatches": [
-        "meta[name='immersive-translate-ebook-builder'][content='true']"
-      ],
-      "globalMeta": {},
-      "excludeSelectors": [
-        "h1.notranslate",
-        "#drop-target",
-        "#drop-target h1",
-        "#side-bar",
-        "h1#side-bar-title",
-        "#tool",
-        ".Code"
-      ],
-      "paragraphMinTextCount": 4,
-      "paragraphMinWordCount": 2,
-      "blockMinTextCount": 1,
-      "blockMinWordCount": 1,
-      "containerMinTextCount": 1,
-      "wrapperPrefix": "<br />"
-    },
-    {
       "id": "explainpaper",
       "matches": [
         "https://www.explainpaper.com/reader*"
@@ -3060,21 +3077,6 @@
       "additionalSelectors": [
         ".pop-title"
       ]
-    },
-    {
-      "id": "isSubtitleBuilder",
-      "isSubtitleBuilder": true,
-      "selectorMatches": [
-        "meta[name='immersive-translate-subtitle-builder'][content='true']"
-      ],
-      "pairs": {
-        ".source-text": ".target-text"
-      },
-      "paragraphMinTextCount": 4,
-      "paragraphMinWordCount": 2,
-      "isTranslateTitle": false,
-      "wrapperPrefix": "",
-      "wrapperSuffix": ""
     },
     {
       "id": "brown",
@@ -4256,6 +4258,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-22T10:57:56.176Z",
+  "buildinConfigUpdatedAt": "2023-09-22T11:10:58.685Z",
   "latestVersion": "0.9.7"
 }
