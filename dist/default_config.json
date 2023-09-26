@@ -1552,8 +1552,8 @@
         "#views"
       ],
       "globalStyles": {
-        ".Nk": "height:auto!important;",
-        ".kf": "white-space:unset!important;"
+        ".Nk,.Pk": "height:auto!important;",
+        ".kf,.mf": "white-space:unset!important;"
       }
     },
     {
@@ -4258,6 +4258,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-22T11:19:48.000Z",
+  "buildinConfigUpdatedAt": "2023-09-26T14:44:48.474Z",
   "latestVersion": "0.9.8"
 }
