@@ -239,8 +239,7 @@
       "qualityDelimiterBeta": "",
       "placeholderDelimiters": [
         "{{",
-        "}}",
-        "b"
+        "}}"
       ],
       "limit": 25
     },
@@ -4265,6 +4264,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-27T02:53:31.197Z",
+  "buildinConfigUpdatedAt": "2023-09-27T04:45:12.695Z",
   "latestVersion": "0.9.8"
 }
