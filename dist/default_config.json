@@ -2304,7 +2304,7 @@
         "#navFooter",
         "#navbar-main",
         ".s-price-instructions-style",
-        "[class*='star']",
+        "[class*='-star ']",
         "[data-hook='acr-average-stars-rating-text']",
         ".a-color-price"
       ]
@@ -4264,6 +4264,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-27T04:45:12.695Z",
+  "buildinConfigUpdatedAt": "2023-09-27T06:28:21.375Z",
   "latestVersion": "0.9.8"
 }
