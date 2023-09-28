@@ -4242,6 +4242,9 @@
       "extraInlineSelectors": [
         ".d4t-sprite-icon",
         ".d4t-icon"
+      ],
+      "injectedCss": [
+        "font {font-family: sans-serif !important;}"
       ]
     },
     {
@@ -4264,6 +4267,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-27T06:28:21.375Z",
+  "buildinConfigUpdatedAt": "2023-09-28T03:02:35.596Z",
   "latestVersion": "0.9.8"
 }
