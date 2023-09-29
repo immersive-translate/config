@@ -2223,19 +2223,27 @@
       "selectors": [
         "h1",
         "h2",
+        "h3",
         "article section",
         "[aria-hidden='false'] pre",
-        "article p"
+        "article p",
+        ".postMetaInline",
+        "a .u-fontSize24"
       ],
       "excludeSelectors": [
         "[aria-label='Post Preview Reading Time']",
         ".al.b.bl.ag.bp",
-        ".al.b.bl.ag.ai"
+        ".al.b.bl.ag.ai",
+        ".hx.hy.hz.ia.ib.ab",
+        ".qb.ab"
       ],
       "globalStyles": {
-        "h2": "-webkit-line-clamp: unset;max-height:unset;",
+        "h2,h3": "-webkit-line-clamp: unset;max-height:unset;",
         "article p": "-webkit-line-clamp: unset;max-height:unset;"
-      }
+      },
+      "injectedCss": [
+        ".u-lineClamp4,.u-lineClamp3,.u-lineClamp2 {-webkit-line-clamp:unset!important;max-height:unset!important;}"
+      ]
     },
     {
       "id": "nitter",
@@ -4278,6 +4286,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-29T05:49:43.281Z",
+  "buildinConfigUpdatedAt": "2023-09-29T07:51:57.991Z",
   "latestVersion": "0.9.8"
 }
