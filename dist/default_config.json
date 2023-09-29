@@ -1951,6 +1951,15 @@
       ]
     },
     {
+      "id": "notion_so",
+      "matches": [
+        "www.notion.so"
+      ],
+      "injectedCss": [
+        "[aria-label='Templates'] font br {display:none;}"
+      ]
+    },
+    {
       "id": "newyorker",
       "matches": "www.newyorker.com",
       "additionalSelectors": [
@@ -4267,6 +4276,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-28T03:02:35.596Z",
+  "buildinConfigUpdatedAt": "2023-09-29T04:58:10.698Z",
   "latestVersion": "0.9.8"
 }
