@@ -449,6 +449,7 @@
       "span.notranslate",
       ".MathJax_Preview",
       ".MathJax",
+      ".MathJax_SVG",
       ".mwe-math-element",
       "span[translate=no]",
       "em[translate=no]",
@@ -4286,13 +4287,13 @@
       ]
     },
     {
-      "id": "thegradient",
-      "matches": "thegradient.pub",
-      "stayOriginalSelectors.add": [
-        ".MathJax_SVG"
+      "id": "arca",
+      "matches": "arca.live",
+      "excludeTags.remove": [
+        "PRE"
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-29T08:07:39.038Z",
+  "buildinConfigUpdatedAt": "2023-09-29T14:29:45.868Z",
   "latestVersion": "0.9.8"
 }
