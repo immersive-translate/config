@@ -4284,8 +4284,15 @@
       "excludeSelectors": [
         "div#examples"
       ]
+    },
+    {
+      "id": "thegradient",
+      "matches": "thegradient.pub",
+      "stayOriginalSelectors.add": [
+        ".MathJax_SVG"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-29T07:51:57.991Z",
+  "buildinConfigUpdatedAt": "2023-09-29T08:07:39.038Z",
   "latestVersion": "0.9.8"
 }
