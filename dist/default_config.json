@@ -1201,7 +1201,9 @@
         "article p",
         "div.repo-description p",
         "[itemprop=description]",
-        ".integrations-auth-wrapper"
+        ".integrations-auth-wrapper",
+        ".new-feed-onboarding-notice",
+        "article section[aria-label='card content'] > div > div > div  > div:nth-child(2)"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -4276,6 +4278,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-29T04:58:10.698Z",
+  "buildinConfigUpdatedAt": "2023-09-29T05:49:43.281Z",
   "latestVersion": "0.9.8"
 }
