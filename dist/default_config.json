@@ -4292,8 +4292,27 @@
       "excludeTags.remove": [
         "PRE"
       ]
+    },
+    {
+      "id": "chatpdf",
+      "matches": [
+        "www.chatpdf.com"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate"
+      ],
+      "excludeSelectors": [
+        ".chat-message-row.ai *",
+        ".pdf-viewer"
+      ],
+      "aiRule": {
+        "streamingSelector": "",
+        "messageWrapperSelector": ".chat-message-row.ai",
+        "streamingChange": false,
+        "streamingDeepChild": true
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-29T14:29:45.868Z",
+  "buildinConfigUpdatedAt": "2023-09-30T05:12:41.624Z",
   "latestVersion": "0.9.8"
 }
