@@ -4311,8 +4311,17 @@
         "streamingChange": false,
         "streamingDeepChild": true
       }
+    },
+    {
+      "id": "inciteful",
+      "matches": [
+        "inciteful.xyz"
+      ],
+      "excludeTags.remove": [
+        "BUTTON"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-09-30T05:12:41.624Z",
+  "buildinConfigUpdatedAt": "2023-10-02T14:00:13.587Z",
   "latestVersion": "0.9.8"
 }
