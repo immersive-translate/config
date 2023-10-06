@@ -4320,8 +4320,22 @@
       "excludeTags.remove": [
         "BUTTON"
       ]
+    },
+    {
+      "id": "app.element.io",
+      "matches": [
+        "app.element.io"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate"
+      ],
+      "excludeSelectors.add": [
+        ".mx_DisambiguatedProfile",
+        ".mx_ReplyChain_wrapper",
+        ".mx_ThreadSummary_replies_amount"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-03T12:09:43.000Z",
+  "buildinConfigUpdatedAt": "2023-10-06T01:16:27.086Z",
   "latestVersion": "0.9.9"
 }
