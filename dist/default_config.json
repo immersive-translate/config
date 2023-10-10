@@ -4349,8 +4349,15 @@
         ".mx_ReplyChain_wrapper",
         ".mx_ThreadSummary_replies_amount"
       ]
+    },
+    {
+      "id": "lwn.net",
+      "matches": [
+        "lwn.net/Articles/*"
+      ],
+      "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-08T07:23:29.000Z",
+  "buildinConfigUpdatedAt": "2023-10-10T05:30:22.006Z",
   "latestVersion": "0.10.1"
 }
