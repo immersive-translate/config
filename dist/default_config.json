@@ -799,7 +799,7 @@
       ],
       "wrapperPrefix": "",
       "isInjectVersion": true,
-      "isPdf": true
+      "isPdf": false
     },
     {
       "id": "isEbookBuilder",
@@ -4358,6 +4358,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-10T05:30:22.006Z",
+  "buildinConfigUpdatedAt": "2023-10-10T17:22:46.477Z",
   "latestVersion": "0.10.1"
 }
