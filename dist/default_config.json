@@ -236,7 +236,8 @@
     },
     "deepl": {
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
-      "qualityDelimiterBeta": "",
+      "qualityDelimiterBetaV2": "<br />",
+      "qualityNoSymoblBetaV2": "{{",
       "placeholderDelimiters": [
         "{{",
         "}}"
@@ -289,11 +290,12 @@
       "translationDebounce": 300,
       "interval": 1350,
       "prompt": "Translate the text to {{to}}, please do not explain any sentences, just translate or leave them as they are.:\n\n{{text}}",
+      "multiplePrompt": "Translate the following subtitles into {{to}}, you may resort them, and do not explain any sentences:\n\n{{text}}",
       "maxTextGroupLengthPerRequest": 1,
+      "maxTextGroupLengthPerRequestForSubtitle": 8,
+      "translationTextSeparator": "\n",
       "newlinePlaceholderDelimiters": [
-        "\n\n-|",
-        "|-\n\n",
-        "\n?\n?-\\|\\d+\\|-\n?\n?"
+        "\n<br>\n"
       ]
     },
     "chatgpt": {
@@ -394,7 +396,8 @@
   "generalRule": {
     "_comment": "",
     "paragraphFirstLetterFontSize": 35,
-    "enableSubtitle": true,
+    "enableSubtitle": false,
+    "subtitle.autoEnableSubtitle": false,
     "disableNewTextTranslate": false,
     "skipEditableCheck": false,
     "mutationObserverLimitTargetSelectors": [],
@@ -427,6 +430,12 @@
     "waitForSelectorsTimeout": 3000,
     "pairs": {},
     "aiRule": {},
+    "subtitleRule": {
+      "autoEnableSubtitle": false,
+      "preTranslation": true,
+      "humanPreferred": true,
+      "enable": false
+    },
     "bodyRule": {
       "enable": true,
       "maxBodyScreenLength": 25,
@@ -434,7 +443,10 @@
         "P"
       ],
       "articleChildTagsNum": 4,
-      "bodyIsRoot": false
+      "bodyIsRoot": false,
+      "humanPreferred": true,
+      "preTranslation": true,
+      "xpathRule": []
     },
     "isSubtitleBuilder": false,
     "minZIndex": 0,
@@ -757,7 +769,10 @@
       "paragraphMinWordCount": 2,
       "isTranslateTitle": false,
       "wrapperPrefix": "",
-      "wrapperSuffix": ""
+      "wrapperSuffix": "",
+      "bodyRule.add": {
+        "enable": false
+      }
     },
     {
       "id": "isEbook",
@@ -779,6 +794,9 @@
       "extraInlineSelectors": [
         "span.dropcaps"
       ],
+      "bodyRule.add": {
+        "enable": false
+      },
       "paragraphMinTextCount": 4,
       "paragraphMinWordCount": 2,
       "blockMinTextCount": 1,
@@ -797,6 +815,9 @@
       "selectors": [
         "p"
       ],
+      "bodyRule.add": {
+        "enable": false
+      },
       "wrapperPrefix": "",
       "isInjectVersion": true,
       "isPdf": true
@@ -822,6 +843,9 @@
         "#tool",
         ".Code"
       ],
+      "bodyRule.add": {
+        "enable": false
+      },
       "isInjectMeta": true,
       "paragraphMinTextCount": 4,
       "paragraphMinWordCount": 2,
@@ -1300,8 +1324,6 @@
         "#content-text",
         ".media-item-headline",
         ".slim-video-information-title",
-        ".caption-window",
-        ".caption-visual-line",
         ".yt-spec-button-view-model",
         ".yt-core-attributed-string > span",
         ".title"
@@ -1309,15 +1331,15 @@
       "excludeTags.remove": [
         "BUTTON"
       ],
-      "condition": {
-        "enableSubtitle": {
-          "false": {
-            "selectors.remove": [
-              ".caption-window",
-              ".caption-visual-line"
-            ]
-          }
-        }
+      "subtitleRule.add": {
+        "type": "youtube",
+        "translateSelectors": [
+          ".caption-window",
+          ".caption-visual-line"
+        ],
+        "videoPlayerSelector": ".html5-video-player",
+        "loadingContainerSelector": ".ytp-caption-window-container",
+        "videoADSelector": ".ytp-ad-player-overlay"
       },
       "wrapperPrefix": "",
       "wrapperSuffix": "",
@@ -1368,23 +1390,27 @@
         "yt-formatted-string.ytd-transcript-segment-renderer",
         "#description-inline-expander > yt-attributed-string > span",
         "ytd-notification-renderer .message",
-        "#message",
-        ".caption-window",
-        ".caption-visual-line"
+        "#message"
       ],
       "extraBlockSelectors": [
         "yt-formatted-string.ytd-transcript-segment-renderer",
         ".caption-visual-line"
       ],
-      "condition": {
-        "enableSubtitle": {
-          "false": {
-            "selectors.remove": [
-              ".caption-window",
-              ".caption-visual-line"
-            ]
-          }
-        }
+      "subtitleRule.add": {
+        "type": "youtube",
+        "translateSelectors": [
+          ".caption-window",
+          ".caption-visual-line"
+        ],
+        "videoPlayerSelector": ".html5-video-player",
+        "loadingContainerSelector": ".ytp-caption-window-container",
+        "videoADSelector": ".ytp-ad-player-overlay",
+        "translationOnlyPattern": [
+          "www.youtube.com/watch*",
+          "www.youtube.com/embed*"
+        ],
+        "subtitleButtonSelector": ".ytp-subtitles-button",
+        "languageSelector": ".ytp-menuitem-label"
       },
       "urlChangeDelay": 2000,
       "wrapperPrefix": "<br/>",
@@ -2014,6 +2040,13 @@
         ".title__text": "max-height:unset; -webkit-line-clamp:unset;",
         ".news-list-item__news-title": "max-height:unset; -webkit-line-clamp:unset;",
         "a[class*='link'] > .link__headline": "max-height:unset; -webkit-line-clamp:unset;"
+      },
+      "bodyRule.add": {
+        "bodySelector": "[data-qa='ArticleList-Item']",
+        "articleSelector": "[data-qa='GenericArticle-Content']",
+        "xpathRule": [
+          "datatype:p"
+        ]
       }
     },
     {
@@ -3970,10 +4003,14 @@
     },
     {
       "id": "cnn",
-      "matches": "www.cnn.com",
+      "matches": "*.cnn.com",
       "excludeSelectors": [
         ".ad-slot-header__wrapper"
-      ]
+      ],
+      "bodyRule.add": {
+        "bodySelector": ".layout__content-wrapper",
+        "articleSelector": ".article__content-container"
+      }
     },
     {
       "id": "marginalrevolution",
@@ -4025,15 +4062,9 @@
     },
     {
       "id": "bilibili",
-      "condition": {
-        "enableSubtitle": {
-          "false": {
-            "excludeSelectors.add": [
-              ".bpx-player-subtitle-panel-text"
-            ]
-          }
-        }
-      }
+      "excludeSelectors.add": [
+        ".bpx-player-subtitle-panel-text"
+      ]
     },
     {
       "id": "time",
@@ -4358,6 +4389,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-10T20:38:07.389Z",
-  "latestVersion": "0.10.1"
+  "buildinConfigUpdatedAt": "2023-10-13T16:15:30.000Z",
+  "latestVersion": "0.10.2"
 }
