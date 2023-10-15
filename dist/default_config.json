@@ -290,10 +290,10 @@
       "translationDebounce": 300,
       "interval": 1350,
       "prompt": "Translate the text to {{to}}, please do not explain any sentences, just translate or leave them as they are.:\n\n{{text}}",
-      "multiplePrompt": "Translate the following subtitles into {{to}}, you may resort them, and do not explain any sentences:\n\n{{text}}",
+      "multiplePrompt": "Translate the following subtitles into {{to}}, keep 5 paragraphs, and do not explain any sentences:\n\n{{text}}",
       "maxTextGroupLengthPerRequest": 1,
-      "maxTextGroupLengthPerRequestForSubtitle": 8,
-      "translationTextSeparator": "\n",
+      "maxTextGroupLengthPerRequestForSubtitle": 5,
+      "translationTextSeparator": "\n\n%%\n\n",
       "newlinePlaceholderDelimiters": [
         "\n<br>\n"
       ]
@@ -432,9 +432,9 @@
     "aiRule": {},
     "subtitleRule": {
       "autoEnableSubtitle": false,
-      "preTranslation": true,
+      "preTranslation": false,
       "humanPreferred": true,
-      "enable": false
+      "disabled": false
     },
     "bodyRule": {
       "enable": true,
@@ -1331,6 +1331,9 @@
       "excludeTags.remove": [
         "BUTTON"
       ],
+      "additionalExcludeSelectors": [
+        ".ytp-caption-window-container"
+      ],
       "subtitleRule.add": {
         "type": "youtube",
         "translateSelectors": [
@@ -1339,7 +1342,10 @@
         ],
         "videoPlayerSelector": ".html5-video-player",
         "loadingContainerSelector": ".ytp-caption-window-container",
-        "videoADSelector": ".ytp-ad-player-overlay"
+        "videoADSelector": ".ytp-ad-player-overlay",
+        "injectedCss": [
+          "#player-shorts-container .ytp-caption-window-bottom {top: 40px; bottom: unset!important;}"
+        ]
       },
       "wrapperPrefix": "",
       "wrapperSuffix": "",
@@ -1366,6 +1372,9 @@
       "detectParagraphLanguage": true,
       "excludeSelectors": [
         "[class^='lln-']"
+      ],
+      "additionalExcludeSelectors.add": [
+        ".ytp-caption-window-container"
       ],
       "globalStyles": {
         "#video-title": "-webkit-line-clamp: unset;max-height: unset;",
@@ -1407,10 +1416,14 @@
         "videoADSelector": ".ytp-ad-player-overlay",
         "translationOnlyPattern": [
           "www.youtube.com/watch*",
-          "www.youtube.com/embed*"
+          "www.youtube.com/embed*",
+          "www.youtube.com/shorts*"
         ],
         "subtitleButtonSelector": ".ytp-subtitles-button",
-        "languageSelector": ".ytp-menuitem-label"
+        "languageSelector": ".ytp-menuitem-label",
+        "injectedCss": [
+          "#shorts-player .ytp-caption-window-bottom {top: 2%; bottom: unset!important;}"
+        ]
       },
       "urlChangeDelay": 2000,
       "wrapperPrefix": "<br/>",
@@ -4389,6 +4402,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-14T13:17:59.000Z",
-  "latestVersion": "0.10.3"
+  "buildinConfigUpdatedAt": "2023-10-15T12:43:33.000Z",
+  "latestVersion": "0.10.4"
 }
