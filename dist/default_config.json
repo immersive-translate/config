@@ -1154,6 +1154,7 @@
         ".post-content",
         ".Comment__body",
         "faceplate-batch .md",
+        "div[slot=comment]",
         ".RichTextJSON-root",
         "div[slot=title]",
         "div[slot=text-body]",
@@ -1178,6 +1179,7 @@
         "[data-click-id=background] h3",
         "[data-testid=comment]",
         "[data-adclicklocation='title'] h3",
+        "div[slot=comment]",
         "[data-adclicklocation=media]",
         ".PostContent",
         ".post-content",
@@ -4402,6 +4404,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-15T12:43:33.000Z",
+  "buildinConfigUpdatedAt": "2023-10-15T14:53:13.995Z",
   "latestVersion": "0.10.4"
 }
