@@ -2446,7 +2446,12 @@
       "extraBlockSelectors": [
         "span.captions",
         "span[id^=cap]"
-      ]
+      ],
+      "globalAttributes": {
+        "#abspara0010 br": {
+          "style": "display:none;"
+        }
+      }
     },
     {
       "id": "thehighestofthemountains",
@@ -4404,6 +4409,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-15T14:53:13.995Z",
+  "buildinConfigUpdatedAt": "2023-10-16T08:34:15.990Z",
   "latestVersion": "0.10.4"
 }
