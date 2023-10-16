@@ -240,7 +240,8 @@
       "qualityNoSymoblBetaV2": "{{",
       "placeholderDelimiters": [
         "{{",
-        "}}"
+        "}}",
+        "b"
       ],
       "limit": 25
     },
@@ -4409,6 +4410,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-16T11:17:44.000Z",
+  "buildinConfigUpdatedAt": "2023-10-16T13:22:07.152Z",
   "latestVersion": "0.10.5"
 }
