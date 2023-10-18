@@ -1987,7 +1987,8 @@
         "h1",
         "h3.story__title",
         ".feed-item__title-link",
-        ".article-body"
+        ".article-body",
+        ".interview-body"
       ]
     },
     {
@@ -4410,6 +4411,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-16T13:22:07.152Z",
+  "buildinConfigUpdatedAt": "2023-10-18T13:55:03.496Z",
   "latestVersion": "0.10.5"
 }
