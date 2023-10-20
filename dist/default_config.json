@@ -4409,8 +4409,17 @@
         "lwn.net/Articles/*"
       ],
       "isTransformPreTagNewLine": true
+    },
+    {
+      "id": "termynal",
+      "selectorMatches": [
+        "link[href*='termynal.css']"
+      ],
+      "stayOriginalSelectors.add": [
+        ".termy"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-18T13:55:03.496Z",
+  "buildinConfigUpdatedAt": "2023-10-20T16:51:55.834Z",
   "latestVersion": "0.10.5"
 }
