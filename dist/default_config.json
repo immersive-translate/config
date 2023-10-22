@@ -447,7 +447,9 @@
       "bodyIsRoot": false,
       "humanPreferred": true,
       "preTranslation": true,
-      "xpathRule": []
+      "xpathRule": [
+        "name:P"
+      ]
     },
     "isSubtitleBuilder": false,
     "minZIndex": 0,
@@ -4420,6 +4422,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-20T16:51:55.834Z",
+  "buildinConfigUpdatedAt": "2023-10-22T14:41:18.117Z",
   "latestVersion": "0.10.5"
 }
