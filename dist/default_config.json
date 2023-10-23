@@ -4413,6 +4413,13 @@
       "isTransformPreTagNewLine": true
     },
     {
+      "id": "fastapi.tiangolo.com",
+      "matches": "fastapi.tiangolo.com",
+      "selectors": [
+        "article"
+      ]
+    },
+    {
       "id": "termynal",
       "selectorMatches": [
         "link[href*='termynal.css']"
@@ -4422,6 +4429,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-23T10:44:18.000Z",
+  "buildinConfigUpdatedAt": "2023-10-23T12:28:56.373Z",
   "latestVersion": "0.10.6"
 }
