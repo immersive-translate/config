@@ -413,7 +413,7 @@
       "rw-highlight",
       "web-highlight"
     ],
-    "useIframePostMessage": true,
+    "useIframePostMessage": false,
     "searchEnhancementConfig": [],
     "injectedCss": [],
     "isOnBoardingPage": false,
@@ -4430,6 +4430,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-24T11:09:23.000Z",
+  "buildinConfigUpdatedAt": "2023-10-24T11:54:06.684Z",
   "latestVersion": "0.10.7"
 }
