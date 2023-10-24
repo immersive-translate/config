@@ -236,8 +236,9 @@
     },
     "deepl": {
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
-      "qualityDelimiterBetaV2": "",
-      "qualityNoSymoblBetaV2": "{{",
+      "maxTextLengthPerRequest": 2800,
+      "qualityDelimiterBetaV3": "<br />",
+      "qualityNoSymoblBetaV3": "</b",
       "placeholderDelimiters": [
         "{{",
         "}}",
@@ -4429,6 +4430,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-24T08:44:36.667Z",
+  "buildinConfigUpdatedAt": "2023-10-24T09:48:01.378Z",
   "latestVersion": "0.10.6"
 }
