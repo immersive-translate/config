@@ -681,7 +681,8 @@
       "RELIN-TARGET",
       "XQDD_HIGHLIGHT_NEW_WORD",
       "NOBR",
-      "RW-HIGHLIGHT"
+      "RW-HIGHLIGHT",
+      "HYPOTHESIS-HIGHLIGHT"
     ],
     "additionalInlineTags": [],
     "extraInlineSelectors": [],
@@ -4430,6 +4431,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-24T11:54:06.684Z",
+  "buildinConfigUpdatedAt": "2023-10-24T17:44:15.624Z",
   "latestVersion": "0.10.7"
 }
