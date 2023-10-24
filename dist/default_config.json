@@ -236,7 +236,7 @@
     },
     "deepl": {
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
-      "qualityDelimiterBetaV2": "<br />",
+      "qualityDelimiterBetaV2": "",
       "qualityNoSymoblBetaV2": "{{",
       "placeholderDelimiters": [
         "{{",
@@ -4429,6 +4429,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-23T12:28:56.373Z",
+  "buildinConfigUpdatedAt": "2023-10-24T08:44:36.667Z",
   "latestVersion": "0.10.6"
 }
