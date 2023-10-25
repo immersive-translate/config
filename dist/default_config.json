@@ -3567,7 +3567,11 @@
         ".navbar": {
           "translate": "no"
         }
-      }
+      },
+      "extraInlineSelectors.add": [
+        ".term-wrapper",
+        "span.description"
+      ]
     },
     {
       "id": "openai-blog",
@@ -4440,6 +4444,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-25T07:03:23.579Z",
+  "buildinConfigUpdatedAt": "2023-10-25T08:54:21.034Z",
   "latestVersion": "0.10.7"
 }
