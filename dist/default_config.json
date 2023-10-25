@@ -4429,8 +4429,17 @@
       "stayOriginalSelectors.add": [
         ".termy"
       ]
+    },
+    {
+      "id": "cpb-nl",
+      "matches": [
+        "www.cpb.nl"
+      ],
+      "bodyRule.add": {
+        "enable": false
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-24T17:44:15.624Z",
+  "buildinConfigUpdatedAt": "2023-10-25T07:03:23.579Z",
   "latestVersion": "0.10.7"
 }
