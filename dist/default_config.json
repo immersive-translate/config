@@ -4442,8 +4442,17 @@
       "bodyRule.add": {
         "enable": false
       }
+    },
+    {
+      "id": "hub.logseq",
+      "matches": [
+        "hub.logseq.com"
+      ],
+      "globalStyles": {
+        "[class*=':h-[']": "height:unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-25T08:54:21.034Z",
+  "buildinConfigUpdatedAt": "2023-10-26T01:32:14.117Z",
   "latestVersion": "0.10.7"
 }
