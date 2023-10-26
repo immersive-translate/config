@@ -1193,7 +1193,8 @@
         "div[slot=title]",
         "div[slot=text-body]",
         "p.title > a",
-        "[role=main] .md-container"
+        "[role=main] .md-container",
+        "#-post-rtjson-content"
       ],
       "paragraphMinTextCount": 5,
       "paragraphMinWordCount": 2,
@@ -4453,6 +4454,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-26T11:38:17.029Z",
+  "buildinConfigUpdatedAt": "2023-10-26T15:17:43.326Z",
   "latestVersion": "0.10.7"
 }
