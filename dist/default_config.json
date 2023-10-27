@@ -56,6 +56,18 @@
   "mutationBlockUrls": [
     "www.feishu.cn"
   ],
+  "monkeyH5FloatBall": {
+    "enable": true,
+    "blockUrls": [],
+    "clickType": "translate",
+    "afterInstalledAt": ""
+  },
+  "pcFloatBall": {
+    "enable": true,
+    "blockUrls": [],
+    "clickType": "translate",
+    "afterInstalledAt": "2023-10-28"
+  },
   "inputLanguageCodeAlias": {
     "en": [
       "英文",
@@ -4454,6 +4466,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-26T15:17:43.326Z",
+  "buildinConfigUpdatedAt": "2023-10-27T14:47:58.144Z",
   "latestVersion": "0.10.7"
 }
