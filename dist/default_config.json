@@ -1573,7 +1573,8 @@
         ".article_title_link",
         ".article_content",
         ".article_magazine_title_link",
-        ".blog-post-page"
+        ".blog-post-page",
+        "#welcome_center"
       ],
       "excludeMatches": [
         "https://www.inoreader.com/features/"
@@ -4467,8 +4468,17 @@
       "globalStyles": {
         "[class*=':h-[']": "height:unset;"
       }
+    },
+    {
+      "id": "chat.zalo",
+      "matches": [
+        "chat.zalo.me"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-30T03:11:38.531Z",
+  "buildinConfigUpdatedAt": "2023-10-30T09:58:50.789Z",
   "latestVersion": "0.10.8"
 }
