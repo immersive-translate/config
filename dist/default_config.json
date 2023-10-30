@@ -304,7 +304,7 @@
       "translationDebounce": 300,
       "interval": 1350,
       "prompt": "Translate the text to {{to}}, please do not explain any sentences, just translate or leave them as they are.:\n\n{{text}}",
-      "multiplePrompt": "Translate the following subtitles into {{to}}, keep 5 paragraphs, and do not explain any sentences:\n\n{{text}}",
+      "multiplePrompt": "Translate the following subtitles into {{to}}, keep the order, and do not explain any sentences:\n\n{{text}}",
       "maxTextGroupLengthPerRequest": 1,
       "maxTextGroupLengthPerRequestForSubtitle": 5,
       "translationTextSeparator": "\n\n%%\n\n",
@@ -4479,6 +4479,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-30T09:58:50.789Z",
+  "buildinConfigUpdatedAt": "2023-10-30T14:46:15.627Z",
   "latestVersion": "0.10.8"
 }
