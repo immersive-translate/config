@@ -4105,8 +4105,11 @@
     },
     {
       "id": "bilibili",
+      "matches": "www.bilibili.com",
       "excludeSelectors.add": [
-        ".bpx-player-subtitle-panel-text"
+        ".bpx-player-subtitle-panel-text",
+        ".playinfo",
+        ".bpx-player-ctrl-playbackrate-menu-item"
       ]
     },
     {
@@ -4466,6 +4469,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-27T14:56:34.000Z",
+  "buildinConfigUpdatedAt": "2023-10-30T03:11:38.531Z",
   "latestVersion": "0.10.8"
 }
