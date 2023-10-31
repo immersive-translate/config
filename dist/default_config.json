@@ -2322,7 +2322,9 @@
         ".al.b.bl.ag.ai",
         ".hx.hy.hz.ia.ib.ab",
         ".qb.ab",
-        ".speechify-ignore.ab.co"
+        ".ai.bn.n.mj",
+        ".speechify-ignore",
+        "mark"
       ],
       "globalStyles": {
         "h2,h3": "-webkit-line-clamp: unset;max-height:unset;",
@@ -4476,6 +4478,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-31T01:58:36.587Z",
+  "buildinConfigUpdatedAt": "2023-10-31T02:08:49.117Z",
   "latestVersion": "0.10.9"
 }
