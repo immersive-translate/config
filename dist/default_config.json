@@ -1574,14 +1574,17 @@
         ".article_content",
         ".article_magazine_title_link",
         ".blog-post-page",
-        "#welcome_center"
+        "#welcome_center",
+        ".gad_overview_articles_wrapper",
+        ".library_article_text h4",
+        ".header_name"
       ],
       "excludeMatches": [
         "https://www.inoreader.com/features/"
       ],
       "observeUrlChange": false,
       "globalStyles": {
-        ".article_title_link": "-webkit-line-clamp: unset;max-height: unset;"
+        ".article_title_link,.library_article_text h4,.gadget_overview_article_title": "-webkit-line-clamp: unset;max-height: unset;"
       }
     },
     {
@@ -4482,6 +4485,6 @@
       "urlChangeDelay": 0
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-30T15:45:58.000Z",
+  "buildinConfigUpdatedAt": "2023-10-31T01:29:10.321Z",
   "latestVersion": "0.10.9"
 }
