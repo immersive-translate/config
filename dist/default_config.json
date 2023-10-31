@@ -3444,12 +3444,18 @@
       "paragraphMinWordCount": 1
     },
     {
-      "id": "babelnovel",
+      "id": "urlChangeDelay",
       "matches": [
         "https://babelnovel.com/books/*",
-        "https://www.webnovel.com/book/*"
+        "https://www.webnovel.com/book/*",
+        "https://platform.openai.com/docs/*",
+        "docs.oracle.com",
+        "docs-cortex.paloaltonetworks.com",
+        "forum.m5stack.com/topic/*",
+        "community.m5stack.com/topic/*"
       ],
-      "urlChangeDelay": 0
+      "urlChangeDelay": 0,
+      "_comment": "解决url变化重复翻译问题"
     },
     {
       "id": "genuine",
@@ -3596,11 +3602,6 @@
       "stayOriginalTags.remove": [
         "CODE"
       ]
-    },
-    {
-      "id": "openai",
-      "matches": "https://platform.openai.com/docs/*",
-      "urlChangeDelay": 0
     },
     {
       "id": "urlComment",
@@ -4135,11 +4136,6 @@
       ]
     },
     {
-      "id": "docs-oracle",
-      "matches": "docs.oracle.com",
-      "urlChangeDelay": 0
-    },
-    {
       "id": "uzh",
       "matches": "www.uzh.ch",
       "injectedCss": [
@@ -4478,13 +4474,8 @@
       "additionalExcludeSelectors.remove": [
         ".notranslate"
       ]
-    },
-    {
-      "id": "paloaltonetworks",
-      "matches": "docs-cortex.paloaltonetworks.com",
-      "urlChangeDelay": 0
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-31T01:29:10.321Z",
+  "buildinConfigUpdatedAt": "2023-10-31T01:58:36.587Z",
   "latestVersion": "0.10.9"
 }
