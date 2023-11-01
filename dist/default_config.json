@@ -4476,8 +4476,21 @@
       "additionalExcludeSelectors.remove": [
         ".notranslate"
       ]
+    },
+    {
+      "id": "epam",
+      "matches": "*.epam.com",
+      "globalStyles": {
+        "[class*='ContentAnchorLinkList']": "word-break:unset;"
+      },
+      "excludeSelectors.add": [
+        "#blog-page-sidebar-wrapper"
+      ],
+      "excludeTags.remove": [
+        "BUTTON"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-31T02:08:49.117Z",
+  "buildinConfigUpdatedAt": "2023-11-01T01:49:28.385Z",
   "latestVersion": "0.10.9"
 }
