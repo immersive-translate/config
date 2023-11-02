@@ -4490,8 +4490,21 @@
       "excludeSelectors.add": [
         ".page-number"
       ]
+    },
+    {
+      "id": "www.sixthtone.com",
+      "matches": [
+        "www.sixthtone.com"
+      ],
+      "excludeSelectors.add": [
+        "#footer",
+        "[class^=index_time]",
+        "[class^=index_anthorList]",
+        "[class^=index_node]",
+        "[class^=index_popupWrapper]"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-02T06:05:14.817Z",
+  "buildinConfigUpdatedAt": "2023-11-02T08:45:45.906Z",
   "latestVersion": "0.10.9"
 }
