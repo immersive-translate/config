@@ -4494,8 +4494,15 @@
       "excludeTags.remove": [
         "BUTTON"
       ]
+    },
+    {
+      "id": "discussions.apple",
+      "matches": "discussions.apple.com",
+      "excludeSelectors.add": [
+        ".page-number"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-02T01:55:11.498Z",
+  "buildinConfigUpdatedAt": "2023-11-02T02:06:40.989Z",
   "latestVersion": "0.10.9"
 }
