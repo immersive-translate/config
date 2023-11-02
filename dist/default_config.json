@@ -1078,7 +1078,17 @@
       "extraBlockSelectors": [
         "span.comment-copy"
       ],
-      "excludeSelectors": [
+      "excludeSelectors.add": [
+        "header",
+        "#footer",
+        "#question-header + div",
+        "div.postcell div.mb0",
+        "div[id^=comments-link-]",
+        "#answers-header",
+        ".new-post-login",
+        ".form-submit",
+        "a[href='/questions/ask']",
+        "#left-sidebar",
         "a.comment-user",
         "span.comment-date",
         "div.s-prose.js-post-body + div",
@@ -3527,6 +3537,11 @@
         "www.theatlantic.com",
         "https://mashable.com/*"
       ],
+      "excludeSelectors.add": [
+        "footer:last-of-type",
+        "nav",
+        "header div.subtitle-2.w-full"
+      ],
       "initialSelectorGlobalAttributes": {
         "footer:last-of-type": {
           "translate": "no"
@@ -4505,6 +4520,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-02T08:45:45.906Z",
+  "buildinConfigUpdatedAt": "2023-11-02T16:30:33.246Z",
   "latestVersion": "0.10.9"
 }
