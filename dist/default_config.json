@@ -644,7 +644,16 @@
       "IMG",
       "SUP",
       "SUB",
-      "SAMP"
+      "SAMP",
+      "math",
+      "semantics",
+      "mrow",
+      "mo",
+      "mfrac",
+      "msup",
+      "mi",
+      "mn",
+      "msqrt"
     ],
     "additionalStayOriginalTags": [],
     "inlineTags": [
@@ -1712,29 +1721,9 @@
     {
       "id": "codeforces",
       "matches": "https://codeforces.com/*",
-      "stayOriginalTags": [
+      "stayOriginalTags.add": [
         "[class^='MathJax']"
       ]
-    },
-    {
-      "id": "arxivLabs",
-      "matches": [
-        "*.labs.arxiv.org/*",
-        "ncatlab.org",
-        "math.stackexchange.com"
-      ],
-      "stayOriginalTags": [
-        "math",
-        "semantics",
-        "mrow",
-        "mo",
-        "mfrac",
-        "msup",
-        "mi",
-        "mn",
-        "msqrt"
-      ],
-      "_comment": "学术类公式类网站"
     },
     {
       "id": "discord",
@@ -4503,6 +4492,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-02T02:06:40.989Z",
+  "buildinConfigUpdatedAt": "2023-11-02T06:05:14.817Z",
   "latestVersion": "0.10.9"
 }
