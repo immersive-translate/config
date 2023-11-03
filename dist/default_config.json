@@ -622,7 +622,8 @@
       "META",
       "MATH",
       "TTS-SENTENCE",
-      "AIO-CODE"
+      "AIO-CODE",
+      "RELIN-TARGET"
     ],
     "bodyTranslateTags": [
       "FOOTER",
@@ -4520,6 +4521,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-02T16:30:33.246Z",
+  "buildinConfigUpdatedAt": "2023-11-03T10:21:47.842Z",
   "latestVersion": "0.10.9"
 }
