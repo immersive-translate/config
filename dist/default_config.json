@@ -1470,6 +1470,16 @@
       "wrapperSuffix": ""
     },
     {
+      "id": "instagramMessage",
+      "matches": [
+        "https://www.instagram.com/direct/*"
+      ],
+      "wrapperPrefix": "<br/>",
+      "selectors": [
+        "div[dir=auto][role=none]"
+      ]
+    },
+    {
       "id": "instagramPost",
       "matches": [
         "https://www.instagram.com/p/*",
@@ -4521,6 +4531,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-03T10:21:47.842Z",
+  "buildinConfigUpdatedAt": "2023-11-03T10:31:52.124Z",
   "latestVersion": "0.10.9"
 }
