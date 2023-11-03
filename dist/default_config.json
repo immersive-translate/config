@@ -11,6 +11,7 @@
   "enabled": true,
   "minVersion": "0.6.2",
   "showOpenaiOnSafari": true,
+  "showUnconfiguredTranslationServiceInPopup": true,
   "donateUrl": "https://immersivetranslate.com/pricing",
   "uninstallUrl": "https://wj.qq.com/s2/12328372/04e0/",
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
@@ -4531,6 +4532,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-03T10:31:52.124Z",
+  "buildinConfigUpdatedAt": "2023-11-03T11:34:19.806Z",
   "latestVersion": "0.10.9"
 }
