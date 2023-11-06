@@ -596,7 +596,11 @@
       "[translate=no]",
       ".navmenu-container",
       ".google-symbols",
-      "markerow8"
+      "markerow8",
+      "h1 br",
+      "h2 br",
+      "h3 br",
+      "h4 br"
     ],
     "translationClasses": [],
     "atomicBlockSelectors": [],
@@ -4539,6 +4543,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-06T11:04:06.642Z",
+  "buildinConfigUpdatedAt": "2023-11-06T13:02:33.767Z",
   "latestVersion": "0.11.0"
 }
