@@ -568,6 +568,7 @@
     "atomicBlockTags": [],
     "excludeSelectors": [],
     "additionalExcludeSelectors": [
+      "#immersive-translate-popup",
       ".social-share",
       ".breadcrumbs",
       ".post__footer",
@@ -4538,6 +4539,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-06T06:11:41.054Z",
+  "buildinConfigUpdatedAt": "2023-11-06T11:04:06.642Z",
   "latestVersion": "0.11.0"
 }
