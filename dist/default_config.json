@@ -306,7 +306,7 @@
       "immediateTranslationTextCount": 3000,
       "translationDebounce": 300,
       "interval": 1350,
-      "systemPrompt": "You are a professional, authentic human translator and only translate the content without any interpreting.",
+      "systemPrompt": "You are a professional, authentic translation engine and only translate the content without any interpreting.",
       "prompt": "Translate the text to {{to}}, please do not explain any sentences:\n\n{{text}}",
       "multiplePrompt": "Translate the following subtitles into {{to}}, keep the order, and do not explain any sentences:\n\n{{text}}",
       "model": "gpt-3.5-turbo-1106",
@@ -4564,6 +4564,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-07T18:05:33.000Z",
+  "buildinConfigUpdatedAt": "2023-11-07T19:20:37.080Z",
   "latestVersion": "0.11.1"
 }
