@@ -308,18 +308,20 @@
       "interval": 1350,
       "systemPrompt": "You are a professional, authentic human translator and only translate the content without any interpreting.",
       "prompt": "Translate the text to {{to}}, please do not explain any sentences:\n\n{{text}}",
+      "multiplePrompt": "Translate the following subtitles into {{to}}, keep the order, and do not explain any sentences:\n\n{{text}}",
       "model": "gpt-3.5-turbo-1106",
       "overrides": [
         {
           "if": "targetLanguage == zh-CN",
-          "prompt": "翻译为简体中文，不要有任何解释:\n\n{{text}}"
+          "prompt": "翻译为简体中文，不要有任何解释:\n\n{{text}}",
+          "multiplePrompt": "请把这几句字幕翻译为简体中文，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段中文\n\n{{text}}"
         },
         {
           "if": "targetLanguage == zh-TW",
-          "prompt": "翻譯為繁體中文，不要有任何解釋:\n\n{{text}}"
+          "prompt": "翻譯為繁體中文，不要有任何解釋:\n\n{{text}}",
+          "multiplePrompt": "請把這幾句字幕翻譯為繁體中文，為了通順，你可能需要在下一句中包含上一句的部分內容，比如我給了你 5 段英文，你就必須返回 5 段繁體\n\n{{text}}"
         }
       ],
-      "multiplePrompt": "Translate the following subtitles into {{to}}, keep the order, and do not explain any sentences:\n\n{{text}}",
       "maxTextGroupLengthPerRequest": 1,
       "maxTextGroupLengthPerRequestForSubtitle": 5,
       "translationTextSeparator": "\n\n%%\n\n",
@@ -4562,6 +4564,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-07T17:03:54.429Z",
+  "buildinConfigUpdatedAt": "2023-11-07T18:03:57.027Z",
   "latestVersion": "0.11.0"
 }
