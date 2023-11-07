@@ -1105,6 +1105,7 @@
         ".s-post-summary--content-excerpt": "-webkit-line-clamp:unset;"
       },
       "excludeSelectors.add": [
+        ".votecell",
         "header",
         "#footer",
         "#question-header + div",
@@ -4564,6 +4565,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-07T19:20:37.080Z",
-  "latestVersion": "0.11.1"
+  "buildinConfigUpdatedAt": "2023-11-07T20:33:49.306Z",
+  "latestVersion": "0.11.2"
 }
