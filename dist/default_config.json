@@ -5,7 +5,8 @@
   "cache": true,
   "proOpenaiModels": [
     "gpt-3.5-turbo",
-    "gpt-3.5-turbo-0613"
+    "gpt-3.5-turbo-0613",
+    "gpt-3.5-turbo-1106"
   ],
   "translationMode": "dual",
   "enabled": true,
@@ -305,6 +306,7 @@
       "immediateTranslationTextCount": 3000,
       "translationDebounce": 300,
       "interval": 1350,
+      "systemPrompt": "You are a professional, authentic human translator and only translate the content without any interpreting.",
       "prompt": "Translate the text to {{to}}, please do not explain any sentences, just translate or leave them as they are.:\n\n{{text}}",
       "multiplePrompt": "Translate the following subtitles into {{to}}, keep the order, and do not explain any sentences:\n\n{{text}}",
       "maxTextGroupLengthPerRequest": 1,
@@ -4549,6 +4551,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-07T08:18:12.756Z",
+  "buildinConfigUpdatedAt": "2023-11-07T12:11:17.259Z",
   "latestVersion": "0.11.0"
 }
