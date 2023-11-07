@@ -252,6 +252,7 @@
       "maxTextLengthPerRequest": 2800,
       "qualityDelimiterBetaV3": "<br />",
       "qualityNoSymoblBetaV3": "</b",
+      "qualityMinTextLengthV3": 40,
       "placeholderDelimiters": [
         "{{",
         "}}",
@@ -4548,6 +4549,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-07T06:34:33.008Z",
+  "buildinConfigUpdatedAt": "2023-11-07T08:18:12.756Z",
   "latestVersion": "0.11.0"
 }
