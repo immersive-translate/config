@@ -1397,6 +1397,11 @@
         "videoADSelector": ".ytp-ad-player-overlay",
         "injectedCss": [
           "#player-shorts-container .ytp-caption-window-bottom {top: 40px; bottom: unset!important;}"
+        ],
+        "translationOnlyPattern": [
+          "m.youtube.com/watch*",
+          "m.youtube.com/embed*",
+          "m.youtube.com/shorts*"
         ]
       },
       "wrapperPrefix": "",
@@ -4543,6 +4548,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-06T13:02:13.000Z",
+  "buildinConfigUpdatedAt": "2023-11-07T06:34:33.008Z",
   "latestVersion": "0.11.0"
 }
