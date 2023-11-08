@@ -313,7 +313,7 @@
       "overrides": [
         {
           "if": "targetLanguage == zh-CN",
-          "prompt": "翻译为简体中文，不要解释，需要解释的话就返回原文:\n\n{{text}}",
+          "prompt": "翻译为 {{to}}，不要解释，需要解释的话就返回原文:\n\n{{text}}",
           "multiplePrompt": "请把这几句字幕翻译为 {{to}}，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段中文\n\n{{text}}"
         },
         {
@@ -424,6 +424,11 @@
     "selectorExcludeMatches": []
   },
   "sourceLanguageUrlPattern": {},
+  "openaiErrorResponses": [
+    [
+      "抱歉"
+    ]
+  ],
   "generalRule": {
     "_comment": "",
     "paragraphFirstLetterFontSize": 35,
@@ -4565,6 +4570,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-08T12:28:00.642Z",
+  "buildinConfigUpdatedAt": "2023-11-08T12:40:25.381Z",
   "latestVersion": "0.11.2"
 }
