@@ -303,6 +303,11 @@
         "}}",
         "b"
       ],
+      "ignoreResRegexs": [
+        "^抱歉.*要求",
+        "^抱歉.*翻译",
+        "^I'm sorry, but I cannot provide"
+      ],
       "immediateTranslationTextCount": 3000,
       "translationDebounce": 300,
       "interval": 1350,
@@ -424,11 +429,6 @@
     "selectorExcludeMatches": []
   },
   "sourceLanguageUrlPattern": {},
-  "openaiErrorResponses": [
-    [
-      "抱歉"
-    ]
-  ],
   "generalRule": {
     "_comment": "",
     "paragraphFirstLetterFontSize": 35,
@@ -4570,6 +4570,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-08T12:40:25.381Z",
+  "buildinConfigUpdatedAt": "2023-11-08T13:14:38.426Z",
   "latestVersion": "0.11.2"
 }
