@@ -314,12 +314,12 @@
         {
           "if": "targetLanguage == zh-CN",
           "prompt": "翻译为简体中文，不要解释，需要解释的话就返回原文:\n\n{{text}}",
-          "multiplePrompt": "请把这几句字幕翻译为简体中文，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段中文\n\n{{text}}"
+          "multiplePrompt": "请把这几句字幕翻译为 {{to}}，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段中文\n\n{{text}}"
         },
         {
           "if": "targetLanguage == zh-TW",
-          "prompt": "翻譯為簡體中文，不要解釋，需要解釋則返回原文:\n\n{{text}}",
-          "multiplePrompt": "請把這幾句字幕翻譯為繁體中文，為了通順，你可能需要在下一句中包含上一句的部分內容，比如我給了你 5 段英文，你就必須返回 5 段繁體\n\n{{text}}"
+          "prompt": "翻譯為 {{to}}，不要解釋，需要解釋則返回原文:\n\n{{text}}",
+          "multiplePrompt": "請把這幾句字幕翻譯為 {{to}}，為了通順，你可能需要在下一句中包含上一句的部分內容，比如我給了你 5 段英文，你就必須返回 5 段繁體\n\n{{text}}"
         }
       ],
       "maxTextGroupLengthPerRequest": 1,
@@ -4565,6 +4565,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-08T05:09:13.872Z",
+  "buildinConfigUpdatedAt": "2023-11-08T12:28:00.642Z",
   "latestVersion": "0.11.2"
 }
