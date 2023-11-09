@@ -4127,8 +4127,9 @@
     {
       "id": "cnn",
       "matches": "*.cnn.com",
-      "excludeSelectors": [
-        ".ad-slot-header__wrapper"
+      "excludeSelectors.add": [
+        ".ad-slot-header__wrapper",
+        "#pageFooter"
       ],
       "bodyRule.add": {
         "bodySelector": ".layout__content-wrapper",
@@ -4584,6 +4585,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-09T05:25:05.491Z",
+  "buildinConfigUpdatedAt": "2023-11-09T05:30:17.221Z",
   "latestVersion": "0.11.3"
 }
