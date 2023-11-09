@@ -313,7 +313,7 @@
       "immediateTranslationTextCount": 3000,
       "translationDebounce": 300,
       "interval": 1350,
-      "systemPrompt": "You are a professional, authentic translation engine and only translate the content without any interpreting.",
+      "systemPrompt": "You are a professional, authentic translation engine that only returns translations.",
       "prompt": "Translate the text to {{to}}, do not explain, return the original text if an explanation is needed.:\n\n{{text}}",
       "multiplePrompt": "Translate the following subtitles into {{to}}, keep the order, and do not explain any sentences:\n\n{{text}}",
       "model": "gpt-3.5-turbo-1106",
@@ -321,11 +321,13 @@
         {
           "if": "targetLanguage == zh-CN",
           "prompt": "翻译为 {{to}}，不要解释，需要解释的话就返回原文:\n\n{{text}}",
+          "systemPrompt": "你是一个专业,地道的翻译引擎，你只返回译文",
           "multiplePrompt": "请把这几句字幕翻译为 {{to}}，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段中文\n\n{{text}}"
         },
         {
           "if": "targetLanguage == zh-TW",
           "prompt": "翻譯為 {{to}}，不要解釋，需要解釋則返回原文:\n\n{{text}}",
+          "systemPrompt": "你是一個專業,道地的翻譯引擎，你只會回譯文",
           "multiplePrompt": "請把這幾句字幕翻譯為 {{to}}，為了通順，你可能需要在下一句中包含上一句的部分內容，比如我給了你 5 段英文，你就必須返回 5 段繁體\n\n{{text}}"
         }
       ],
@@ -4582,6 +4584,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-09T02:10:21.227Z",
+  "buildinConfigUpdatedAt": "2023-11-09T03:28:06.400Z",
   "latestVersion": "0.11.3"
 }
