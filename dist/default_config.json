@@ -1826,6 +1826,11 @@
         ".reply-markup-button-text",
         ".bot-commands-list-element-description"
       ],
+      "excludeSelectors": [
+        ".time",
+        ".peer-title",
+        ".document-wrapper"
+      ],
       "detectParagraphLanguage": true
     },
     {
@@ -1838,6 +1843,11 @@
         ".message",
         ".reply-markup-button-text",
         ".bot-commands-list-element-description"
+      ],
+      "excludeSelectors": [
+        ".time",
+        ".peer-title",
+        ".document-wrapper"
       ],
       "detectParagraphLanguage": true
     },
@@ -4572,6 +4582,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-09T01:38:46.135Z",
+  "buildinConfigUpdatedAt": "2023-11-09T02:10:21.227Z",
   "latestVersion": "0.11.3"
 }
