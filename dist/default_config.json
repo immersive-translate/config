@@ -320,15 +320,15 @@
       "overrides": [
         {
           "if": "targetLanguage == zh-CN",
-          "prompt": "翻译为 {{to}}，不要解释，需要解释的话就返回原文:\n\n{{text}}",
-          "systemPrompt": "你是一个专业,地道的翻译引擎，你只返回译文",
-          "multiplePrompt": "请把这几句字幕翻译为 {{to}}，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段中文\n\n{{text}}"
+          "prompt": "翻译为简体中文，请不要解释我的原文:\n\n{{text}}",
+          "systemPrompt": "你是一个专业,地道的翻译引擎，你只返回译文，不含任何解释",
+          "multiplePrompt": "请把这几句字幕翻译为简体中文，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段中文\n\n{{text}}"
         },
         {
           "if": "targetLanguage == zh-TW",
-          "prompt": "翻譯為 {{to}}，不要解釋，需要解釋則返回原文:\n\n{{text}}",
+          "prompt": "翻譯為繁體中文，請不要解釋我的原文::\n\n{{text}}",
           "systemPrompt": "你是一個專業,道地的翻譯引擎，你只會回譯文",
-          "multiplePrompt": "請把這幾句字幕翻譯為 {{to}}，為了通順，你可能需要在下一句中包含上一句的部分內容，比如我給了你 5 段英文，你就必須返回 5 段繁體\n\n{{text}}"
+          "multiplePrompt": "請把這幾句字幕翻譯為繁體中文，為了通順，你可能需要在下一句中包含上一句的部分內容，比如我給了你 5 段英文，你就必須返回 5 段繁體中文\n\n{{text}}"
         }
       ],
       "maxTextGroupLengthPerRequest": 1,
@@ -4584,6 +4584,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-09T03:28:06.400Z",
+  "buildinConfigUpdatedAt": "2023-11-09T05:25:05.491Z",
   "latestVersion": "0.11.3"
 }
