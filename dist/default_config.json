@@ -314,7 +314,7 @@
       "translationDebounce": 300,
       "interval": 1350,
       "systemPrompt": "You are a professional, authentic translation engine that only returns translations.",
-      "prompt": "Translate the text to {{to}}, do not explain, return the original text if an explanation is needed.:\n\n{{text}}",
+      "prompt": "Translate the text to {{to}}, please do not explain my original text.:\n\n{{text}}",
       "multiplePrompt": "Translate the following subtitles into {{to}}, keep the order, and do not explain any sentences:\n\n{{text}}",
       "model": "gpt-3.5-turbo-1106",
       "overrides": [
@@ -4585,6 +4585,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-09T05:30:17.221Z",
+  "buildinConfigUpdatedAt": "2023-11-09T09:04:25.145Z",
   "latestVersion": "0.11.3"
 }
