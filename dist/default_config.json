@@ -335,6 +335,12 @@
           "prompt": "Traduisez le texte en français, s'il vous plaît ne pas expliquer mon texte d'origine.:\n\n{{text}}",
           "systemPrompt": "Vous êtes un moteur de traduction professionnel et authentique qui ne renvoie que des traductions.",
           "multiplePrompt": "Veuillez traduire ces sous-titres en chinois simplifié. Pour plus de fluidité, vous devrez peut-être inclure une partie de la phrase précédente dans la phrase suivante. Par exemple, si je vous donne 5 paragraphes en anglais, vous devez renvoyer 5 paragraphes de traduction:\n\n{{text}}"
+        },
+        {
+          "if": "targetLanguage == en",
+          "prompt": "Translate the text to {{to}} Language, please do not explain my original text.:\n\n{{text}}",
+          "systemPrompt": "You are a professional, authentic translation engine that only returns translations.",
+          "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}"
         }
       ],
       "maxTextGroupLengthPerRequest": 1,
@@ -4592,6 +4598,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-10T02:53:55.286Z",
+  "buildinConfigUpdatedAt": "2023-11-10T02:57:56.749Z",
   "latestVersion": "0.11.3"
 }
