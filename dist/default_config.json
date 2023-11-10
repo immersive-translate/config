@@ -1250,7 +1250,8 @@
       ],
       "detectParagraphLanguage": true,
       "globalStyles": {
-        "div.XPromoBottomBar": "display:none"
+        "div.XPromoBottomBar": "display:none",
+        "[class*='line-clamp']": "-webkit-line-clamp: unset"
       },
       "waitForSelectors": [
         "[data-testid=post_author_link]"
@@ -1260,6 +1261,7 @@
       "id": "reddit",
       "matches": "www.reddit.com",
       "selectors": [
+        "#search-results-tab-slot",
         "h1",
         ".PostHeader__post-title-line",
         "[data-click-id=body] h3",
@@ -1278,6 +1280,9 @@
         "[role=main] .md-container",
         "#-post-rtjson-content",
         ".RichTextJSON-root"
+      ],
+      "excludeSelectors": [
+        ".text-neutral-content-weak"
       ],
       "paragraphMinTextCount": 5,
       "paragraphMinWordCount": 2,
@@ -4598,6 +4603,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-10T03:10:38.000Z",
+  "buildinConfigUpdatedAt": "2023-11-10T09:28:08.827Z",
   "latestVersion": "0.11.4"
 }
