@@ -18,6 +18,7 @@
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
   "isShowContextMenu": true,
   "enableInputTranslation": true,
+  "enableFloatShare": true,
   "isShowInputTranslationConsent": true,
   "inactiveDays": 21,
   "enableInputTranslationWithoutTriggerKey": true,
@@ -372,7 +373,8 @@
     "toggleTranslateTheWholePage": "Alt+W",
     "toggleOnlyTransation": "",
     "toggleTranslateToThePageEndImmediately": "",
-    "toggleTranslationMask": ""
+    "toggleTranslationMask": "",
+    "shareToDraft": ""
   },
   "tempTranslateDomainMinutes": 0,
   "immediateTranslationPattern": {
@@ -455,6 +457,7 @@
     "mutationObserverLimitTargetSelectors": [],
     "condition": {},
     "normalizeBody": "",
+    "inputExecCommandDeleteEnable": false,
     "mutationExcludeSelectors": [
       "span.highlighter--highlighted",
       "span.highlighter-ext",
@@ -463,6 +466,14 @@
       "rw-highlight",
       "web-highlight"
     ],
+    "shareConfig": {
+      "removeTags": [
+        "style",
+        "iframe",
+        "link",
+        "noscript"
+      ]
+    },
     "useIframePostMessage": false,
     "searchEnhancementConfig": [],
     "injectedCss": [],
@@ -2537,7 +2548,11 @@
         "aside",
         "[data-component=ticker-bar]",
         "footer.bb-global-footer"
-      ]
+      ],
+      "bodyRule.add": {
+        "bodySelector": "main article",
+        "articleSelector": ".body-content"
+      }
     },
     {
       "id": "baiduXueshu",
@@ -4574,7 +4589,8 @@
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate"
-      ]
+      ],
+      "inputExecCommandDeleteEnable": true
     },
     {
       "id": "epam",
@@ -4610,6 +4626,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-13T12:48:19.239Z",
+  "buildinConfigUpdatedAt": "2023-11-13T17:10:13.313Z",
   "latestVersion": "0.11.4"
 }
