@@ -3185,6 +3185,13 @@
       "urlChangeDelay": 1500
     },
     {
+      "id": "openaiDocs",
+      "matches": "https://platform.openai.com/docs*",
+      "excludeSelectors.add": [
+        ".pheader"
+      ]
+    },
+    {
       "id": "pkgStd",
       "matches": "https://pkg.go.dev/std",
       "selectors": [
@@ -4603,6 +4610,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-12T05:52:01.076Z",
+  "buildinConfigUpdatedAt": "2023-11-13T12:48:19.239Z",
   "latestVersion": "0.11.4"
 }
