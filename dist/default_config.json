@@ -547,7 +547,8 @@
       ".mathjax-block",
       ".MathJax_CHTML",
       "kbd",
-      "span.pretex-inline"
+      "span.pretex-inline",
+      "span.math-inline"
     ],
     "translationBlockStyle": "",
     "isShowUserscriptPagePopup": true,
@@ -4626,6 +4627,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-14T05:19:44.252Z",
+  "buildinConfigUpdatedAt": "2023-11-14T15:18:54.790Z",
   "latestVersion": "0.11.5"
 }
