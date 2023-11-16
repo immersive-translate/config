@@ -3342,7 +3342,8 @@
         "h3": "-webkit-line-clamp:unset;overflow:unset;",
         "h5": "-webkit-line-clamp:unset;overflow:unset;",
         "p": "-webkit-line-clamp:unset;overflow:unset;",
-        ".YLycza2.u9KHmsf": "height:unset;max-height:unset;"
+        ".YLycza2.u9KHmsf": "height:unset;max-height:unset;",
+        ".lt2ar2q.EhHcMiw": "height:unset; max-height: unset;"
       },
       "excludeSelectors": [
         ".popular"
@@ -4627,6 +4628,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-14T15:18:54.790Z",
+  "buildinConfigUpdatedAt": "2023-11-16T14:42:48.509Z",
   "latestVersion": "0.11.5"
 }
