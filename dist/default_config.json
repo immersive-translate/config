@@ -2226,7 +2226,13 @@
       "urlChangeDelay": 1000,
       "globalStyles": {
         "div.Card-titleContainer > div": "-webkit-line-clamp: unset;max-height: unset;"
-      }
+      },
+      "excludeSelectors.add": [
+        "#GlobalNavigation",
+        "#GlobalFooter",
+        ".LiveBlogHeader-timestampAndShareBarContainer",
+        ".LiveBlogHeader-liveUpdatesPill"
+      ]
     },
     {
       "id": "dailyDev",
@@ -4628,6 +4634,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-17T06:42:46.055Z",
+  "buildinConfigUpdatedAt": "2023-11-17T11:26:47.750Z",
   "latestVersion": "0.11.5"
 }
