@@ -260,7 +260,7 @@
         "}}",
         "b"
       ],
-      "limit": 25
+      "limit": 10
     },
     "mock": {
       "placeholderDelimiters": [
@@ -4628,6 +4628,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-16T14:42:48.509Z",
+  "buildinConfigUpdatedAt": "2023-11-17T06:42:46.055Z",
   "latestVersion": "0.11.5"
 }
