@@ -4308,7 +4308,8 @@
         ".citation-doi",
         ".identifiers",
         ".cite",
-        ".share"
+        ".share",
+        ".arrow-link"
       ]
     },
     {
@@ -4634,6 +4635,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-17T17:51:57.710Z",
+  "buildinConfigUpdatedAt": "2023-11-19T03:04:33.791Z",
   "latestVersion": "0.11.5"
 }
