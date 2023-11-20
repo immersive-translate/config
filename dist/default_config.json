@@ -2395,6 +2395,17 @@
       ]
     },
     {
+      "id": "weiboMobile",
+      "matches": [
+        "m.weibo.cn"
+      ],
+      "selectors": [
+        ".weibo-text",
+        ".m-text-box h3",
+        ".cmt-sub-txt p span"
+      ]
+    },
+    {
       "id": "medium",
       "matches": [
         "medium.com",
@@ -4645,6 +4656,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-20T03:51:59.252Z",
+  "buildinConfigUpdatedAt": "2023-11-20T08:14:59.924Z",
   "latestVersion": "0.11.5"
 }
