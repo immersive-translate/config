@@ -252,7 +252,7 @@
     "deepl": {
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
       "maxTextLengthPerRequest": 2800,
-      "qualityDelimiterBetaV3": "",
+      "qualityDelimiterBetaV3": "<br />",
       "qualityNoSymoblBetaV3": "</b",
       "qualityMinTextLengthV3": 40,
       "placeholderDelimiters": [
@@ -2392,17 +2392,6 @@
       ],
       "selectors": [
         "div[class^='detail_wbtext']"
-      ]
-    },
-    {
-      "id": "weiboMobile",
-      "matches": [
-        "m.weibo.cn"
-      ],
-      "selectors": [
-        ".weibo-text",
-        ".m-text-box h3",
-        ".cmt-sub-txt p span"
       ]
     },
     {
@@ -4656,6 +4645,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-21T02:30:26.497Z",
+  "buildinConfigUpdatedAt": "2023-11-21T02:45:48.337Z",
   "latestVersion": "0.11.5"
 }
