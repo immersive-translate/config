@@ -4661,9 +4661,17 @@
       ],
       "excludeTags.remove": [
         "PRE"
-      ]
+      ],
+      "globalAttributes": {
+        "header": {
+          "translate": "unset;"
+        }
+      },
+      "globalStyles": {
+        ".story-info .item-description": "overflow: scroll;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-21T11:07:22.812Z",
+  "buildinConfigUpdatedAt": "2023-11-21T11:16:05.155Z",
   "latestVersion": "0.11.5"
 }
