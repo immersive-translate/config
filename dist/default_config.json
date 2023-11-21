@@ -473,11 +473,10 @@
       "web-highlight"
     ],
     "shareConfig": {
-      "removeTags": [
-        "style",
-        "iframe",
-        "link",
-        "noscript"
+      "injectCss": true,
+      "removeSelectors": [
+        "noscript",
+        "script"
       ]
     },
     "useIframePostMessage": false,
@@ -1443,6 +1442,16 @@
         ".yt-core-attributed-string > span",
         ".title"
       ],
+      "shareConfig": {
+        "injectCss": false,
+        "removeSelectors": [
+          "iron-iconset-svg",
+          "iframe",
+          "ytd-watch-next-secondary-results-renderer",
+          "noscript",
+          "script"
+        ]
+      },
       "excludeTags.remove": [
         "BUTTON"
       ],
@@ -1493,6 +1502,16 @@
       "excludeSelectors": [
         "[class^='lln-']"
       ],
+      "shareConfig": {
+        "injectCss": false,
+        "removeSelectors": [
+          "iron-iconset-svg",
+          "iframe",
+          "ytd-watch-next-secondary-results-renderer",
+          "noscript",
+          "script"
+        ]
+      },
       "additionalExcludeSelectors.add": [
         ".ytp-caption-window-container"
       ],
@@ -4672,6 +4691,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-21T11:38:04.733Z",
-  "latestVersion": "0.11.5"
+  "buildinConfigUpdatedAt": "2023-11-21T13:54:58.612Z",
+  "latestVersion": "0.11.6"
 }
