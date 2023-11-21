@@ -971,6 +971,17 @@
       "isInjectMeta": true
     },
     {
+      "id": "immersivePreview",
+      "matches": [
+        "https://immersivetranslate.com/preview*",
+        "https://test.immersivetranslate.com/preview*",
+        "https://immersivetranslate.com/drafts*",
+        "https://test.immersivetranslate.com/drafts*"
+      ],
+      "isInjectVersion": true,
+      "isInjectMeta": true
+    },
+    {
       "id": "immersive",
       "matches": [
         "https://immersivetranslate.com",
@@ -4695,6 +4706,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-21T15:15:12.793Z",
+  "buildinConfigUpdatedAt": "2023-11-21T17:13:04.771Z",
   "latestVersion": "0.11.6"
 }
