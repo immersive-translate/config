@@ -48,7 +48,7 @@
     "*.larkoffice.com",
     "*.larksuite.com",
     "www.notion.so",
-    "www.figma.com",
+    "www.figma.com/file/*",
     "*.lanhuapp.com"
   ],
   "inputStyleBlockUrls": [],
@@ -4672,6 +4672,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-21T11:16:05.155Z",
+  "buildinConfigUpdatedAt": "2023-11-21T11:38:04.733Z",
   "latestVersion": "0.11.5"
 }
