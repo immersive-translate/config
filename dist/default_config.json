@@ -45,6 +45,8 @@
   "inputTranslationService": "inherit",
   "inputTranslationBlockUrls": [
     "*.feishu.cn",
+    "*.larkoffice.com",
+    "*.larksuite.com",
     "www.notion.so",
     "www.figma.com",
     "*.lanhuapp.com"
@@ -57,7 +59,9 @@
   "inputTrailingTriggerKeyTimeout": 200,
   "inputTrailingMobileTriggerKeyTimeout": 300,
   "mutationBlockUrls": [
-    "www.feishu.cn"
+    "*.feishu.cn",
+    "*.larkoffice.com",
+    "*.larksuite.com"
   ],
   "monkeyH5FloatBall": {
     "enable": true,
@@ -4112,7 +4116,11 @@
     },
     {
       "id": "feishu",
-      "matches": "*.feishu.cn",
+      "matches": [
+        "*.feishu.cn",
+        "*.larkoffice.com",
+        "*.larksuite.com"
+      ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
         "[translate=no]"
@@ -4647,6 +4655,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-21T08:59:45.715Z",
+  "buildinConfigUpdatedAt": "2023-11-21T09:00:31.014Z",
   "latestVersion": "0.11.5"
 }
