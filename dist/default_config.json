@@ -252,7 +252,7 @@
     "deepl": {
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
       "maxTextLengthPerRequest": 2800,
-      "qualityDelimiterBetaV3": "<br />",
+      "qualityDelimiterBetaV3": "",
       "qualityNoSymoblBetaV3": "</b",
       "qualityMinTextLengthV3": 40,
       "placeholderDelimiters": [
@@ -4656,6 +4656,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-20T08:14:59.924Z",
+  "buildinConfigUpdatedAt": "2023-11-21T02:30:26.497Z",
   "latestVersion": "0.11.5"
 }
