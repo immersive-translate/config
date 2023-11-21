@@ -4653,8 +4653,17 @@
       "excludeSelectors.add": [
         ".bbCodeCode"
       ]
+    },
+    {
+      "id": "wattpad",
+      "matches": [
+        "www.wattpad.com"
+      ],
+      "excludeTags.remove": [
+        "PRE"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-21T09:00:31.014Z",
+  "buildinConfigUpdatedAt": "2023-11-21T11:07:22.812Z",
   "latestVersion": "0.11.5"
 }
