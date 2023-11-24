@@ -4704,8 +4704,17 @@
       "globalStyles": {
         ".story-info .item-description": "overflow: scroll;"
       }
+    },
+    {
+      "id": "boringreport",
+      "matches": [
+        "www.boringreport.org"
+      ],
+      "excludeTags.remove": [
+        "BUTTON"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-21T17:13:04.771Z",
+  "buildinConfigUpdatedAt": "2023-11-24T02:29:07.720Z",
   "latestVersion": "0.11.6"
 }
