@@ -1130,7 +1130,8 @@
         ".x1npkx4u.x1exu5d8",
         ".xw7yly9",
         ".xgkxs2y",
-        ".x1xdureb.xqti54a.x13vxnyz"
+        ".x1xdureb.xqti54a.x13vxnyz",
+        ".xqti54a.x13vxnyz.x49hn82.xcrlgei.x889kno"
       ],
       "stayOriginalSelectors": [
         ".x1rg5ohu",
@@ -4715,6 +4716,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-24T07:38:49.177Z",
+  "buildinConfigUpdatedAt": "2023-11-24T12:18:37.293Z",
   "latestVersion": "0.11.6"
 }
