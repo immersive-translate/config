@@ -331,13 +331,13 @@
       "overrides": [
         {
           "if": "targetLanguage == zh-CN",
-          "prompt": "请翻译为简体中文（避免解释原文）:\n\n{{text}}",
+          "prompt": "请翻译为简体中文（避免解释原文）:\n\n {{text}}",
           "systemPrompt": "你是一个专业,地道的翻译引擎，你只返回译文，不含任何解释",
           "multiplePrompt": "请把这几句字幕翻译为简体中文，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段译文\n\n{{text}}"
         },
         {
           "if": "targetLanguage == zh-TW",
-          "prompt": "請翻譯為簡體中文（避免解釋原文）\n\n{{text}}",
+          "prompt": "請翻譯為簡體中文（避免解釋原文）:\n\n {{text}}",
           "systemPrompt": "你是一個專業,道地的翻譯引擎，你只會回譯文",
           "multiplePrompt": "請把這幾句字幕翻譯為繁體中文，為了通順，你可能需要在下一句中包含上一句的部分內容，比如我給了你 5 段英文，你就必須返回 5 段譯文\n\n{{text}}"
         },
@@ -4715,6 +4715,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-24T02:29:07.720Z",
+  "buildinConfigUpdatedAt": "2023-11-24T07:38:49.177Z",
   "latestVersion": "0.11.6"
 }
