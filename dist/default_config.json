@@ -1913,10 +1913,15 @@
         ".reply-markup-button-text",
         ".bot-commands-list-element-description"
       ],
+      "extraBlockSelectors.add": [
+        ".message.spoilers-container em",
+        ".message.spoilers-container strong"
+      ],
       "excludeSelectors": [
         ".time",
         ".peer-title",
-        ".document-wrapper"
+        ".document-wrapper",
+        ".message.spoilers-container custom-emoji-element"
       ],
       "detectParagraphLanguage": true
     },
@@ -1931,10 +1936,15 @@
         ".reply-markup-button-text",
         ".bot-commands-list-element-description"
       ],
+      "extraBlockSelectors.add": [
+        ".message.spoilers-container em",
+        ".message.spoilers-container strong"
+      ],
       "excludeSelectors": [
         ".time",
         ".peer-title",
-        ".document-wrapper"
+        ".document-wrapper",
+        ".message.spoilers-container custom-emoji-element"
       ],
       "detectParagraphLanguage": true
     },
@@ -4729,6 +4739,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-27T07:04:04.791Z",
+  "buildinConfigUpdatedAt": "2023-11-27T12:30:58.098Z",
   "latestVersion": "0.11.6"
 }
