@@ -910,6 +910,19 @@
       "bodyRule.add": {
         "enable": false
       },
+      "shareConfig.add": {
+        "removeSelectors": [
+          "noscript",
+          "script",
+          ".toolbar",
+          "#sidebarContainer",
+          "[class=\"page\"]",
+          ".editorParamsToolbar",
+          ".image-mode",
+          ".im_db",
+          ".im_cb"
+        ]
+      },
       "wrapperPrefix": "",
       "isInjectVersion": true,
       "isPdf": true
@@ -4716,6 +4729,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-24T12:18:37.293Z",
+  "buildinConfigUpdatedAt": "2023-11-27T07:04:04.791Z",
   "latestVersion": "0.11.6"
 }
