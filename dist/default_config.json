@@ -1081,6 +1081,7 @@
         "twitter.com",
         "mobile.twitter.com",
         "tweetdeck.twitter.com",
+        "pro.twitter.com",
         "https://platform.twitter.com/embed*"
       ],
       "additionalStayOriginalSelectors": [
@@ -1097,7 +1098,8 @@
         "header",
         "[data-testid='radioGroupplayback_rate'] div",
         "[data-testid='userFollowIndicator']",
-        "[class='css-901oao r-14j79pv r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-bcqeeo r-qvutc0']"
+        "[class='css-901oao r-14j79pv r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-bcqeeo r-qvutc0']",
+        "[class='css-175oi2r r-1wbh5a2 r-dnmrzs']"
       ],
       "extraBlockSelectors": [
         "[data-testid=\"tweetText\"] div.r-6koalj"
@@ -4739,6 +4741,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-27T12:30:58.098Z",
+  "buildinConfigUpdatedAt": "2023-11-28T07:10:24.900Z",
   "latestVersion": "0.11.6"
 }
