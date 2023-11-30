@@ -928,6 +928,12 @@
       "isPdf": true
     },
     {
+      "id": "pdfWebPage",
+      "selectorMatches": [
+        "embed[type='application/pdf']"
+      ]
+    },
+    {
       "id": "isEbookBuilder",
       "isEbookBuilder": true,
       "isTranslateTitle": false,
@@ -4741,6 +4747,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-28T07:10:24.900Z",
+  "buildinConfigUpdatedAt": "2023-11-30T11:39:46.397Z",
   "latestVersion": "0.11.6"
 }
