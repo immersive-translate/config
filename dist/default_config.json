@@ -16,6 +16,25 @@
   "donateUrl": "https://immersivetranslate.com/pricing",
   "uninstallUrl": "https://wj.qq.com/s2/12328372/04e0/",
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
+  "arxivRule": {
+    "injectContainerSelector": ".extra-services .full-text ul",
+    "validBefore": "2023-10-31",
+    "validOnlySelector": ".download-format",
+    "matches": [
+      "https://arxiv.org/abs/*"
+    ]
+  },
+  "supportedVideoSubtitleSites": [
+    "https://www.youtube.com[Youtube]",
+    "https://www.netflix.com[NetFlix]",
+    "https://vimeo.com/watch[Vimeo]",
+    "https://www.khanacademy.org/[Khan Academy]",
+    "https://www.coursera.org/[Coursera]",
+    "https://www.udemy.com/[Udemy]",
+    "https://www.bloomberg.com[Bloomberg]",
+    "https://nebula.tv/videos[Nebula]",
+    "https://www.bilibili.com[Bilibili]"
+  ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
   "enableFloatShare": true,
@@ -506,7 +525,8 @@
       "autoEnableSubtitle": false,
       "preTranslation": false,
       "humanPreferred": true,
-      "disabled": false
+      "disabled": false,
+      "hookType": "xhr"
     },
     "bodyRule": {
       "enable": true,
@@ -1497,6 +1517,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
+        "subtitleUrlRegExp": "/api/timedtext",
         "translateSelectors": [
           ".caption-window",
           ".caption-visual-line"
@@ -1583,6 +1604,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
+        "subtitleUrlRegExp": "/api/timedtext",
         "translateSelectors": [
           ".caption-window",
           ".caption-visual-line"
@@ -1604,6 +1626,33 @@
       "urlChangeDelay": 2000,
       "wrapperPrefix": "<br/>",
       "wrapperSuffix": ""
+    },
+    {
+      "id": "youtube-nocookie",
+      "matches": "www.youtube-nocookie.com",
+      "extraBlockSelectors": [
+        ".caption-visual-line"
+      ],
+      "mainFrameMinTextCount": 0,
+      "subtitleRule.add": {
+        "type": "youtube",
+        "subtitleUrlRegExp": "/api/timedtext",
+        "translateSelectors": [
+          ".caption-window",
+          ".caption-visual-line"
+        ],
+        "videoPlayerSelector": ".html5-video-player",
+        "loadingContainerSelector": ".ytp-caption-window-container",
+        "videoADSelector": ".ytp-ad-player-overlay",
+        "translationOnlyPattern": [
+          "www.youtube-nocookie.com/embed*"
+        ],
+        "subtitleButtonSelector": ".ytp-subtitles-button",
+        "languageSelector": ".ytp-menuitem-label",
+        "injectedCss": [
+          "#shorts-player .ytp-caption-window-bottom {top: 2%; bottom: unset!important;}"
+        ]
+      }
     },
     {
       "id": "instagramMessage",
@@ -2627,11 +2676,17 @@
         "[aria-label=Banner]",
         "aside",
         "[data-component=ticker-bar]",
-        "footer.bb-global-footer"
+        "footer.bb-global-footer",
+        ".vjs-text-track-display"
       ],
       "bodyRule.add": {
         "bodySelector": "main article",
         "articleSelector": ".body-content"
+      },
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "webvtt$",
+        "loadingContainerSelector": ".vjs-text-track-display"
       }
     },
     {
@@ -3537,14 +3592,6 @@
       ]
     },
     {
-      "id": "vimeo",
-      "matches": "https://player.vimeo.com/video/*",
-      "extraBlockSelectors": [
-        "span.vp-captions-line",
-        "span[class^=CaptionsRenderer_]"
-      ]
-    },
-    {
       "id": "yandexIndex",
       "matches": "https://yandex.com/",
       "selectors": [
@@ -4314,7 +4361,11 @@
       "matches": "www.bilibili.com",
       "excludeSelectors.add": [
         ".bpx-player-subtitle-panel-text br"
-      ]
+      ],
+      "subtitleRule.add": {
+        "type": "bilibili",
+        "subtitleUrlRegExp": "aisubtitle.hdslb.com/bfs"
+      }
     },
     {
       "id": "time",
@@ -4738,6 +4789,34 @@
       }
     },
     {
+      "id": "netflix",
+      "matches": [
+        "www.netflix.com"
+      ],
+      "excludeSelectors.add": [
+        ".player-timedtext-text-container"
+      ],
+      "subtitleRule.add": {
+        "type": "netflix",
+        "loadingContainerSelector": ".watch-video",
+        "subtitleUrlRegExp": "^https://.+?.oca.nflxvideo.net/\\?([ovet]=[^=]+){4}$",
+        "loadingStyle": "bottom: 15%;"
+      }
+    },
+    {
+      "id": "udemy",
+      "matches": [
+        "www.udemy.com"
+      ],
+      "subtitleRule.add": {
+        "type": "udemy",
+        "subtitleUrlRegExp": "^https://.*\\.udemycdn\\.com/.*\\.vtt",
+        "humanTrust": 85,
+        "loadingContainerSelector": ".video-player--video-wrapper--2mFBT",
+        "loadingStyle": "bottom: 15%;"
+      }
+    },
+    {
       "id": "boringreport",
       "matches": [
         "www.boringreport.org"
@@ -4745,8 +4824,65 @@
       "excludeTags.remove": [
         "BUTTON"
       ]
+    },
+    {
+      "id": "khanacademy",
+      "matches": [
+        "www.khanacademy.org"
+      ],
+      "subtitleRule.add": {
+        "type": "khanacademy",
+        "subtitleUrlRegExp": "GetSubtitles",
+        "hookType": "fetch"
+      }
+    },
+    {
+      "id": "nebula",
+      "matches": [
+        "nebula.tv"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "loadingContainerSelector": ".video-poster"
+      }
+    },
+    {
+      "id": "coursera",
+      "matches": [
+        "www.coursera.org"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": ".vjs-tech",
+        "loadingContainerSelector": ".rc-VideoControlsContainer"
+      }
+    },
+    {
+      "id": "vimeo",
+      "matches": [
+        "vimeo.com"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".player_container"
+      }
+    },
+    {
+      "id": "player.vimeo",
+      "matches": "https://player.vimeo.com/video/*",
+      "extraBlockSelectors": [
+        "span.vp-captions-line",
+        "span[class^=CaptionsRenderer_]"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".vp-telecine"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-11-30T11:39:46.397Z",
-  "latestVersion": "0.11.6"
+  "buildinConfigUpdatedAt": "2023-12-01T08:36:23.747Z",
+  "latestVersion": "0.12.1"
 }
