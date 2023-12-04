@@ -4367,7 +4367,8 @@
       ],
       "subtitleRule.add": {
         "type": "bilibili",
-        "subtitleUrlRegExp": "aisubtitle.hdslb.com/bfs"
+        "subtitleUrlRegExp": "aisubtitle.hdslb.com/bfs",
+        "loadingContainerSelector": ".bpx-player-subtitle-panel"
       }
     },
     {
@@ -4886,6 +4887,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-03T10:44:36.000Z",
+  "buildinConfigUpdatedAt": "2023-12-04T11:02:37.054Z",
   "latestVersion": "0.12.3"
 }
