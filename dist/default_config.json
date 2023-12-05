@@ -1018,7 +1018,9 @@
         "https://test.immersivetranslate.com/drafts*"
       ],
       "isInjectVersion": true,
-      "isInjectMeta": true
+      "isInjectMeta": true,
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0
     },
     {
       "id": "immersive",
@@ -1028,7 +1030,9 @@
         "https://app.immersivetranslate.com"
       ],
       "isInjectVersion": true,
-      "isInjectMeta": true
+      "isInjectMeta": true,
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0
     },
     {
       "id": "simpread",
@@ -3702,8 +3706,7 @@
         "docs.oracle.com",
         "docs-cortex.paloaltonetworks.com",
         "forum.m5stack.com/topic/*",
-        "community.m5stack.com/topic/*",
-        "forum.vivaldi.net/topic/*"
+        "community.m5stack.com/topic/*"
       ],
       "urlChangeDelay": 0,
       "_comment": "解决url变化重复翻译问题"
@@ -4373,7 +4376,7 @@
       "id": "bilibili",
       "matches": "www.bilibili.com",
       "excludeSelectors.add": [
-        ".bpx-player-subtitle-panel-text"
+        ".bpx-player-subtitle-panel-text br"
       ],
       "subtitleRule.add": {
         "type": "bilibili",
@@ -4822,9 +4825,6 @@
       "matches": [
         "www.udemy.com"
       ],
-      "excludeSelectors.add": [
-        "[data-purpose='captions-cue-text']"
-      ],
       "subtitleRule.add": {
         "type": "udemy",
         "subtitleUrlRegExp": "^https://.*\\.udemycdn\\.com/.*\\.vtt",
@@ -4858,9 +4858,6 @@
       "matches": [
         "nebula.tv"
       ],
-      "excludeSelectors.add": [
-        "[data-subtitles-container='true']"
-      ],
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.vtt$",
@@ -4882,9 +4879,6 @@
       "id": "vimeo",
       "matches": [
         "vimeo.com"
-      ],
-      "excludeSelectors.add": [
-        ".vp-captions"
       ],
       "subtitleRule.add": {
         "type": "text_track",
@@ -4916,6 +4910,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-05T10:18:43.785Z",
+  "buildinConfigUpdatedAt": "2023-12-05T12:41:56.717Z",
   "latestVersion": "0.12.3"
 }
