@@ -3693,7 +3693,8 @@
         "docs.oracle.com",
         "docs-cortex.paloaltonetworks.com",
         "forum.m5stack.com/topic/*",
-        "community.m5stack.com/topic/*"
+        "community.m5stack.com/topic/*",
+        "forum.vivaldi.net/topic/*"
       ],
       "urlChangeDelay": 0,
       "_comment": "解决url变化重复翻译问题"
@@ -4897,6 +4898,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-05T06:27:09.748Z",
+  "buildinConfigUpdatedAt": "2023-12-05T06:51:32.705Z",
   "latestVersion": "0.12.3"
 }
