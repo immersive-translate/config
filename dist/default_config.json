@@ -1450,6 +1450,15 @@
       "detectParagraphLanguage": true
     },
     {
+      "id": "github-blog",
+      "matches": [
+        "github.blog"
+      ],
+      "injectedCss": [
+        "font {word-break: break-all !important;}"
+      ]
+    },
+    {
       "id": "githubNotebook",
       "matches": "notebooks.githubusercontent.com",
       "useIframePostMessage": false,
@@ -4907,6 +4916,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-05T07:06:30.268Z",
+  "buildinConfigUpdatedAt": "2023-12-05T10:18:43.785Z",
   "latestVersion": "0.12.3"
 }
