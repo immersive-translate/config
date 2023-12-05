@@ -4880,13 +4880,23 @@
         "span.vp-captions-line",
         "span[class^=CaptionsRenderer_]"
       ],
+      "excludeSelectors.add": [
+        ".vp-captions-line"
+      ],
       "subtitleRule.add": {
         "type": "text_track",
         "videoPlayerSelector": "video",
         "loadingContainerSelector": ".vp-telecine"
       }
+    },
+    {
+      "id": "linkingyourthinking",
+      "matches": "community.linkingyourthinking.com",
+      "additionalExcludeSelectors.remove": [
+        "[translate=no]"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-04T11:02:37.054Z",
+  "buildinConfigUpdatedAt": "2023-12-05T06:27:09.748Z",
   "latestVersion": "0.12.3"
 }
