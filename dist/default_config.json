@@ -4908,8 +4908,20 @@
       "additionalExcludeSelectors.remove": [
         "[translate=no]"
       ]
+    },
+    {
+      "id": "archiveToday",
+      "matches": [
+        "archive.today",
+        "archive.ph",
+        "archive.is",
+        "archive.md"
+      ],
+      "excludeSelectors.add": [
+        "#HEADER"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-05T12:41:56.717Z",
+  "buildinConfigUpdatedAt": "2023-12-05T16:14:24.739Z",
   "latestVersion": "0.12.3"
 }
