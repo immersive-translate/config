@@ -4922,8 +4922,17 @@
       "excludeSelectors.add": [
         "#HEADER"
       ]
+    },
+    {
+      "id": "arxiv-vanity.com",
+      "matches": [
+        "www.arxiv-vanity.com"
+      ],
+      "excludeSelectors.add": [
+        ".arxiv-vanity-wrapper"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-06T13:49:53.620Z",
-  "latestVersion": "0.12.3"
+  "buildinConfigUpdatedAt": "2023-12-06T16:38:10.431Z",
+  "latestVersion": "0.12.4"
 }
