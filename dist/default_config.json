@@ -4932,8 +4932,22 @@
       "excludeSelectors.add": [
         ".arxiv-vanity-wrapper"
       ]
+    },
+    {
+      "id": "frontendmasters",
+      "matches": [
+        "frontendmasters.com"
+      ],
+      "excludeSelectors.add": [
+        ".vjs-text-track-display"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "captions.vtt$",
+        "loadingContainerSelector": ".vjs-text-track-display"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-07T03:15:28.584Z",
+  "buildinConfigUpdatedAt": "2023-12-07T12:11:35.767Z",
   "latestVersion": "0.12.5"
 }
