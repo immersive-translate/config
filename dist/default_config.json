@@ -1028,6 +1028,7 @@
       "id": "immersive",
       "matches": [
         "https://immersivetranslate.com",
+        "https://test.immersivetranslate.com",
         "https://onboarding.immersivetranslate.com",
         "https://app.immersivetranslate.com"
       ],
@@ -4933,6 +4934,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-06T20:36:52.000Z",
+  "buildinConfigUpdatedAt": "2023-12-07T03:15:28.584Z",
   "latestVersion": "0.12.5"
 }
