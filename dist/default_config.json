@@ -336,6 +336,8 @@
       "ignoreResRegexs": [
         "^抱歉.*要求",
         "^抱歉.*翻译",
+        "^很抱歉.*翻译",
+        "^我很抱歉.*翻译",
         "^抱歉.*我无法",
         "^I'm sorry, but I cannot",
         "^I'm sorry, but I cannot provide"
@@ -4948,6 +4950,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-07T12:11:35.767Z",
+  "buildinConfigUpdatedAt": "2023-12-08T13:26:40.847Z",
   "latestVersion": "0.12.5"
 }
