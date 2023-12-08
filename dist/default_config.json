@@ -581,7 +581,8 @@
       ".MathJax_CHTML",
       "kbd",
       "span.pretex-inline",
-      "span.math-inline"
+      "span.math-inline",
+      ".reference-citations"
     ],
     "translationBlockStyle": "",
     "isShowUserscriptPagePopup": true,
@@ -656,7 +657,6 @@
       ".breadcrumbs",
       ".post__footer",
       ".btn",
-      ".reference-citations",
       ".share-nav",
       ".o-share",
       "[data-toolbar=share]",
@@ -4950,6 +4950,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-08T13:26:40.847Z",
+  "buildinConfigUpdatedAt": "2023-12-08T16:42:50.571Z",
   "latestVersion": "0.12.5"
 }
