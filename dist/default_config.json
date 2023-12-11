@@ -967,7 +967,7 @@
       ],
       "injectedCss": [
         ".immersive-translate-target-translation-block-wrapper {display:block;}",
-        ".immersive-translate-target-wrapper span { font-size: unset; }"
+        ".immersive-translate-target-wrapper,.immersive-translate-target-wrapper span { font-size: unset; }"
       ],
       "globalMeta": {},
       "excludeSelectors": [
@@ -4951,6 +4951,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-11T03:06:02.856Z",
+  "buildinConfigUpdatedAt": "2023-12-11T03:19:25.553Z",
   "latestVersion": "0.12.5"
 }
