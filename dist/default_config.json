@@ -360,7 +360,7 @@
         },
         {
           "if": "targetLanguage == zh-TW",
-          "prompt": "請翻譯為簡體中文（避免解釋原文）:\n\n {{text}}",
+          "prompt": "請翻譯為繁體中文（避免解釋原文）:\n\n {{text}}",
           "systemPrompt": "你是一個專業,道地的翻譯引擎，你只會回譯文",
           "multiplePrompt": "請把這幾句字幕翻譯為繁體中文，為了通順，你可能需要在下一句中包含上一句的部分內容，比如我給了你 5 段英文，你就必須返回 5 段譯文\n\n{{text}}"
         },
@@ -4951,6 +4951,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-11T03:19:25.553Z",
+  "buildinConfigUpdatedAt": "2023-12-11T06:36:50.771Z",
   "latestVersion": "0.12.5"
 }
