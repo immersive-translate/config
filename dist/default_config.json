@@ -966,7 +966,8 @@
         "meta[name='immersive-translate-ebook-builder'][content='true']"
       ],
       "injectedCss": [
-        ".immersive-translate-target-translation-block-wrapper {display:block;}"
+        ".immersive-translate-target-translation-block-wrapper {display:block;}",
+        ".immersive-translate-target-wrapper span { font-size: unset; }"
       ],
       "globalMeta": {},
       "excludeSelectors": [
@@ -4950,6 +4951,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-08T16:42:50.571Z",
+  "buildinConfigUpdatedAt": "2023-12-11T03:06:02.856Z",
   "latestVersion": "0.12.5"
 }
