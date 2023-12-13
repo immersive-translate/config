@@ -4890,6 +4890,20 @@
       }
     },
     {
+      "id": "frontendmasters",
+      "matches": [
+        "frontendmasters.com"
+      ],
+      "excludeSelectors.add": [
+        ".vjs-text-track-display"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "captions.vtt$",
+        "loadingContainerSelector": ".vjs-text-track-display"
+      }
+    },
+    {
       "id": "coursera",
       "matches": [
         "www.coursera.org"
@@ -4912,6 +4926,20 @@
         "type": "text_track",
         "videoPlayerSelector": "video",
         "loadingContainerSelector": ".player_container"
+      }
+    },
+    {
+      "id": "ted",
+      "matches": [
+        "www.ted.com"
+      ],
+      "excludeSelectors.add": [
+        ".text-textPrimary-onDark.tracking-tui-tight"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": "#ted-player > div"
       }
     },
     {
@@ -4957,22 +4985,8 @@
       "excludeSelectors.add": [
         ".arxiv-vanity-wrapper"
       ]
-    },
-    {
-      "id": "frontendmasters",
-      "matches": [
-        "frontendmasters.com"
-      ],
-      "excludeSelectors.add": [
-        ".vjs-text-track-display"
-      ],
-      "subtitleRule.add": {
-        "type": "webvtt",
-        "subtitleUrlRegExp": "captions.vtt$",
-        "loadingContainerSelector": ".vjs-text-track-display"
-      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-13T10:24:38.254Z",
+  "buildinConfigUpdatedAt": "2023-12-13T10:32:50.142Z",
   "latestVersion": "0.12.6"
 }
