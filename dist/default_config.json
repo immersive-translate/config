@@ -1,5 +1,5 @@
 {
-  "immediateTranslationTextCount": 5000,
+  "immediateTranslationTextCount": 4999,
   "interval": 3600000,
   "beta": false,
   "cache": true,
@@ -4987,6 +4987,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-13T11:12:07.492Z",
+  "buildinConfigUpdatedAt": "2023-12-13T11:17:58.770Z",
   "latestVersion": "0.12.6"
 }
