@@ -5,17 +5,39 @@
   "cache": true,
   "proOpenaiModels": [
     "gpt-3.5-turbo",
-    "gpt-3.5-turbo-0613"
+    "gpt-3.5-turbo-0613",
+    "gpt-3.5-turbo-1106"
   ],
   "translationMode": "dual",
   "enabled": true,
   "minVersion": "0.6.2",
   "showOpenaiOnSafari": true,
+  "showUnconfiguredTranslationServiceInPopup": true,
   "donateUrl": "https://immersivetranslate.com/pricing",
   "uninstallUrl": "https://wj.qq.com/s2/12328372/04e0/",
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
+  "arxivRule": {
+    "injectContainerSelector": ".extra-services .full-text ul",
+    "validBefore": "2023-10-31",
+    "validOnlySelector": ".download-format",
+    "matches": [
+      "https://arxiv.org/abs/*"
+    ]
+  },
+  "supportedVideoSubtitleSites": [
+    "https://www.youtube.com[Youtube]",
+    "https://www.netflix.com[NetFlix]",
+    "https://vimeo.com/watch[Vimeo]",
+    "https://www.khanacademy.org/[Khan Academy]",
+    "https://www.coursera.org/[Coursera]",
+    "https://www.udemy.com/[Udemy]",
+    "https://www.bloomberg.com[Bloomberg]",
+    "https://nebula.tv/videos[Nebula]",
+    "https://www.bilibili.com[Bilibili]"
+  ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
+  "enableFloatShare": true,
   "isShowInputTranslationConsent": true,
   "inactiveDays": 21,
   "enableInputTranslationWithoutTriggerKey": true,
@@ -42,8 +64,10 @@
   "inputTranslationService": "inherit",
   "inputTranslationBlockUrls": [
     "*.feishu.cn",
+    "*.larkoffice.com",
+    "*.larksuite.com",
     "www.notion.so",
-    "www.figma.com",
+    "www.figma.com/file/*",
     "*.lanhuapp.com"
   ],
   "inputStyleBlockUrls": [],
@@ -54,8 +78,28 @@
   "inputTrailingTriggerKeyTimeout": 200,
   "inputTrailingMobileTriggerKeyTimeout": 300,
   "mutationBlockUrls": [
-    "www.feishu.cn"
+    "*.feishu.cn",
+    "*.larkoffice.com",
+    "*.larksuite.com"
   ],
+  "monkeyH5FloatBall": {
+    "enable": true,
+    "blockUrls": [
+      "*immersivetranslate.com/preview"
+    ],
+    "clickType": "translate",
+    "afterInstalledAt": "",
+    "fixedPosition": "right"
+  },
+  "pcFloatBall": {
+    "enable": true,
+    "blockUrls": [
+      "*immersivetranslate.com/preview"
+    ],
+    "clickType": "translate",
+    "afterInstalledAt": "2023-10-28",
+    "fixedPosition": "right"
+  },
   "inputLanguageCodeAlias": {
     "en": [
       "英文",
@@ -236,20 +280,23 @@
     },
     "deepl": {
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
-      "qualityDelimiterBetaV2": "<br />",
-      "qualityNoSymoblBetaV2": "{{",
+      "maxTextLengthPerRequest": 2800,
+      "qualityDelimiterBetaV3": "<br />",
+      "qualityNoSymoblBetaV3": "</b",
+      "qualityMinTextLengthV3": 40,
       "placeholderDelimiters": [
         "{{",
-        "}}"
+        "}}",
+        "b"
       ],
-      "limit": 25
+      "limit": 10
     },
     "mock": {
       "placeholderDelimiters": [
         "<code>",
         "</code>"
       ],
-      "limit": 5000
+      "limit": 50000
     },
     "custom": {
       "placeholderDelimiters": [
@@ -286,11 +333,50 @@
         "}}",
         "b"
       ],
+      "ignoreResRegexs": [
+        "^抱歉.*要求",
+        "^抱歉.*翻译",
+        "^很抱歉.*翻译",
+        "^我很抱歉.*翻译",
+        "^抱歉.*我无法",
+        "^I'm sorry, but I cannot",
+        "^I'm sorry, but I cannot provide"
+      ],
       "immediateTranslationTextCount": 3000,
       "translationDebounce": 300,
       "interval": 1350,
-      "prompt": "Translate the text to {{to}}, please do not explain any sentences, just translate or leave them as they are.:\n\n{{text}}",
-      "multiplePrompt": "Translate the following subtitles into {{to}}, keep 5 paragraphs, and do not explain any sentences:\n\n{{text}}",
+      "systemPrompt": "You are a professional, authentic translation engine, only returns translations.",
+      "prompt": "Translate the text to {{to}} Language, please do not explain my original text.:\n\n{{text}}",
+      "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}",
+      "model": "gpt-3.5-turbo-0613",
+      "proModel": "gpt-3.5-turbo-0613",
+      "proLimit": 10,
+      "overrides": [
+        {
+          "if": "targetLanguage == zh-CN",
+          "prompt": "请翻译为简体中文（避免解释原文）:\n\n {{text}}",
+          "systemPrompt": "你是一个专业,地道的翻译引擎，你只返回译文，不含任何解释",
+          "multiplePrompt": "请把这几句字幕翻译为简体中文，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段译文\n\n{{text}}"
+        },
+        {
+          "if": "targetLanguage == zh-TW",
+          "prompt": "請翻譯為繁體中文（避免解釋原文）:\n\n {{text}}",
+          "systemPrompt": "你是一個專業,道地的翻譯引擎，你只會回譯文",
+          "multiplePrompt": "請把這幾句字幕翻譯為繁體中文，為了通順，你可能需要在下一句中包含上一句的部分內容，比如我給了你 5 段英文，你就必須返回 5 段譯文\n\n{{text}}"
+        },
+        {
+          "if": "targetLanguage == fr",
+          "prompt": "Traduisez le texte en français, s'il vous plaît ne pas expliquer mon texte d'origine.:\n\n{{text}}",
+          "systemPrompt": "Vous êtes un moteur de traduction professionnel et authentique qui ne renvoie que des traductions.",
+          "multiplePrompt": "Veuillez traduire ces sous-titres en chinois simplifié. Pour plus de fluidité, vous devrez peut-être inclure une partie de la phrase précédente dans la phrase suivante. Par exemple, si je vous donne 5 paragraphes en anglais, vous devez renvoyer 5 paragraphes de traduction:\n\n{{text}}"
+        },
+        {
+          "if": "targetLanguage == en",
+          "prompt": "Translate the text to {{to}} Language, please do not explain my original text.:\n\n{{text}}",
+          "systemPrompt": "You are a professional, authentic translation engine that only returns translations.",
+          "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}"
+        }
+      ],
       "maxTextGroupLengthPerRequest": 1,
       "maxTextGroupLengthPerRequestForSubtitle": 5,
       "translationTextSeparator": "\n\n%%\n\n",
@@ -320,7 +406,8 @@
     "toggleTranslateTheWholePage": "Alt+W",
     "toggleOnlyTransation": "",
     "toggleTranslateToThePageEndImmediately": "",
-    "toggleTranslationMask": ""
+    "toggleTranslationMask": "",
+    "shareToDraft": ""
   },
   "tempTranslateDomainMinutes": 0,
   "immediateTranslationPattern": {
@@ -403,6 +490,7 @@
     "mutationObserverLimitTargetSelectors": [],
     "condition": {},
     "normalizeBody": "",
+    "inputExecCommandDeleteEnable": false,
     "mutationExcludeSelectors": [
       "span.highlighter--highlighted",
       "span.highlighter-ext",
@@ -411,7 +499,19 @@
       "rw-highlight",
       "web-highlight"
     ],
-    "useIframePostMessage": true,
+    "shareConfig": {
+      "injectCss": true,
+      "removeSelectors": [
+        "noscript",
+        "script"
+      ]
+    },
+    "mutationConfig": {
+      "consumeTimeout": 100,
+      "buildTimeout": 100,
+      "checkSelfUpdate": true
+    },
+    "useIframePostMessage": false,
     "searchEnhancementConfig": [],
     "injectedCss": [],
     "isOnBoardingPage": false,
@@ -434,7 +534,8 @@
       "autoEnableSubtitle": false,
       "preTranslation": false,
       "humanPreferred": true,
-      "disabled": false
+      "disabled": false,
+      "hookType": "xhr"
     },
     "bodyRule": {
       "enable": true,
@@ -446,7 +547,9 @@
       "bodyIsRoot": false,
       "humanPreferred": true,
       "preTranslation": true,
-      "xpathRule": []
+      "xpathRule": [
+        "name:P"
+      ]
     },
     "isSubtitleBuilder": false,
     "minZIndex": 0,
@@ -454,7 +557,7 @@
     "targetWrapperTag": "font",
     "additionalInjectedCss": [],
     "isTranslateTitle": true,
-    "enableSearchEnhancement": true,
+    "enableSearchEnhancement": false,
     "searchEnhancementSelector": "#rhs",
     "languageDetectMinTextCount": 50,
     "wrapperPrefix": "smart",
@@ -482,7 +585,9 @@
       ".mathjax-block",
       ".MathJax_CHTML",
       "kbd",
-      "span.pretex-inline"
+      "span.pretex-inline",
+      "span.math-inline",
+      ".reference-citations"
     ],
     "translationBlockStyle": "",
     "isShowUserscriptPagePopup": true,
@@ -551,11 +656,12 @@
     "atomicBlockTags": [],
     "excludeSelectors": [],
     "additionalExcludeSelectors": [
+      "#monica-content-root",
+      "#immersive-translate-popup",
       ".social-share",
       ".breadcrumbs",
       ".post__footer",
       ".btn",
-      ".reference-citations",
       ".share-nav",
       ".o-share",
       "[data-toolbar=share]",
@@ -578,7 +684,11 @@
       "[translate=no]",
       ".navmenu-container",
       ".google-symbols",
-      "markerow8"
+      "markerow8",
+      "h1 br",
+      "h2 br",
+      "h3 br",
+      "h4 br"
     ],
     "translationClasses": [],
     "atomicBlockSelectors": [],
@@ -606,7 +716,8 @@
       "META",
       "MATH",
       "TTS-SENTENCE",
-      "AIO-CODE"
+      "AIO-CODE",
+      "RELIN-TARGET"
     ],
     "bodyTranslateTags": [
       "FOOTER",
@@ -628,7 +739,16 @@
       "IMG",
       "SUP",
       "SUB",
-      "SAMP"
+      "SAMP",
+      "math",
+      "semantics",
+      "mrow",
+      "mo",
+      "mfrac",
+      "msup",
+      "mi",
+      "mn",
+      "msqrt"
     ],
     "additionalStayOriginalTags": [],
     "inlineTags": [
@@ -677,7 +797,8 @@
       "RELIN-TARGET",
       "XQDD_HIGHLIGHT_NEW_WORD",
       "NOBR",
-      "RW-HIGHLIGHT"
+      "RW-HIGHLIGHT",
+      "HYPOTHESIS-HIGHLIGHT"
     ],
     "additionalInlineTags": [],
     "extraInlineSelectors": [],
@@ -818,9 +939,28 @@
       "bodyRule.add": {
         "enable": false
       },
+      "shareConfig.add": {
+        "removeSelectors": [
+          "noscript",
+          "script",
+          ".toolbar",
+          "#sidebarContainer",
+          "[class=\"page\"]",
+          ".editorParamsToolbar",
+          ".image-mode",
+          ".im_db",
+          ".im_cb"
+        ]
+      },
       "wrapperPrefix": "",
       "isInjectVersion": true,
       "isPdf": true
+    },
+    {
+      "id": "pdfWebPage",
+      "selectorMatches": [
+        "embed[type='application/pdf']"
+      ]
     },
     {
       "id": "isEbookBuilder",
@@ -831,7 +971,8 @@
         "meta[name='immersive-translate-ebook-builder'][content='true']"
       ],
       "injectedCss": [
-        ".immersive-translate-target-translation-block-wrapper {display:block;}"
+        ".immersive-translate-target-translation-block-wrapper {display:block;}",
+        ".immersive-translate-target-wrapper,.immersive-translate-target-wrapper span { font-size: unset; }"
       ],
       "globalMeta": {},
       "excludeSelectors": [
@@ -879,14 +1020,30 @@
       "isInjectMeta": true
     },
     {
+      "id": "immersivePreview",
+      "matches": [
+        "https://immersivetranslate.com/preview*",
+        "https://test.immersivetranslate.com/preview*",
+        "https://immersivetranslate.com/drafts*",
+        "https://test.immersivetranslate.com/drafts*"
+      ],
+      "isInjectVersion": true,
+      "isInjectMeta": true,
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0
+    },
+    {
       "id": "immersive",
       "matches": [
         "https://immersivetranslate.com",
+        "https://test.immersivetranslate.com",
         "https://onboarding.immersivetranslate.com",
         "https://app.immersivetranslate.com"
       ],
       "isInjectVersion": true,
-      "isInjectMeta": true
+      "isInjectMeta": true,
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0
     },
     {
       "id": "simpread",
@@ -965,6 +1122,7 @@
         "twitter.com",
         "mobile.twitter.com",
         "tweetdeck.twitter.com",
+        "pro.twitter.com",
         "https://platform.twitter.com/embed*"
       ],
       "additionalStayOriginalSelectors": [
@@ -981,7 +1139,8 @@
         "header",
         "[data-testid='radioGroupplayback_rate'] div",
         "[data-testid='userFollowIndicator']",
-        "[class='css-901oao r-14j79pv r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-bcqeeo r-qvutc0']"
+        "[class='css-901oao r-14j79pv r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-bcqeeo r-qvutc0']",
+        "[class='css-175oi2r r-1wbh5a2 r-dnmrzs']"
       ],
       "extraBlockSelectors": [
         "[data-testid=\"tweetText\"] div.r-6koalj"
@@ -1026,7 +1185,9 @@
         "p",
         ".x1npkx4u.x1exu5d8",
         ".xw7yly9",
-        ".xgkxs2y"
+        ".xgkxs2y",
+        ".x1xdureb.xqti54a.x13vxnyz",
+        ".xqti54a.x13vxnyz.x49hn82.xcrlgei.x889kno"
       ],
       "stayOriginalSelectors": [
         ".x1rg5ohu",
@@ -1052,12 +1213,28 @@
       "extraBlockSelectors": [
         "span.comment-copy"
       ],
-      "excludeSelectors": [
+      "globalStyles": {
+        ".s-post-summary--content-excerpt": "-webkit-line-clamp:unset;"
+      },
+      "excludeSelectors.add": [
+        ".votecell",
+        "header",
+        "#footer",
+        "#question-header + div",
+        "div.postcell div.mb0",
+        "div[id^=comments-link-]",
+        "#answers-header",
+        ".new-post-login",
+        ".form-submit",
+        "a[href='/questions/ask']",
+        "#left-sidebar",
         "a.comment-user",
         "span.comment-date",
         "div.s-prose.js-post-body + div",
         ".bottom-notice",
-        "div[data-campaign-name=stk]"
+        "div[data-campaign-name=stk]",
+        ".s-post-summary--stats",
+        ".s-post-summary--meta"
       ],
       "paragraphMinTextCount": 4,
       "paragraphMinWordCount": 2
@@ -1150,19 +1327,22 @@
         "[data-testid=comment]",
         "[data-adclicklocation='title'] h3",
         "[data-adclicklocation=media]",
+        "[data-testid='post-title-text']",
         ".PostContent",
         ".post-content",
         ".Comment__body",
         "faceplate-batch .md",
+        "[slot=comment]",
         ".RichTextJSON-root",
-        "div[slot=title]",
-        "div[slot=text-body]",
+        "[slot=title]",
+        "[slot=text-body]",
         "p.title > a",
         "[role=main] .md-container"
       ],
       "detectParagraphLanguage": true,
       "globalStyles": {
-        "div.XPromoBottomBar": "display:none"
+        "div.XPromoBottomBar": "display:none",
+        "[class*='line-clamp']": "-webkit-line-clamp: unset"
       },
       "waitForSelectors": [
         "[data-testid=post_author_link]"
@@ -1172,21 +1352,29 @@
       "id": "reddit",
       "matches": "www.reddit.com",
       "selectors": [
+        "#search-results-tab-slot",
         "h1",
         ".PostHeader__post-title-line",
         "[data-click-id=body] h3",
         "[data-click-id=background] h3",
         "[data-testid=comment]",
         "[data-adclicklocation='title'] h3",
+        "[data-testid='post-title-text']",
+        "[slot=comment]",
         "[data-adclicklocation=media]",
         ".PostContent",
         ".post-content",
         ".Comment__body",
         "faceplate-batch .md",
-        "div[slot=title]",
-        "div[slot=text-body]",
+        "[slot=text-body]",
         "p.title > a",
-        "[role=main] .md-container"
+        "[role=main] .md-container",
+        "#-post-rtjson-content",
+        ".RichTextJSON-root",
+        "[slot='title']"
+      ],
+      "excludeSelectors": [
+        ".text-neutral-content-weak"
       ],
       "paragraphMinTextCount": 5,
       "paragraphMinWordCount": 2,
@@ -1196,7 +1384,8 @@
       ],
       "detectParagraphLanguage": true,
       "globalStyles": {
-        "div.XPromoBottomBar": "display:none"
+        "div.XPromoBottomBar": "display:none",
+        "[class*='line-clamp']": "-webkit-line-clamp: unset"
       }
     },
     {
@@ -1276,6 +1465,15 @@
       "detectParagraphLanguage": true
     },
     {
+      "id": "github-blog",
+      "matches": [
+        "github.blog"
+      ],
+      "injectedCss": [
+        "font {word-break: break-all !important;}"
+      ]
+    },
+    {
       "id": "githubNotebook",
       "matches": "notebooks.githubusercontent.com",
       "useIframePostMessage": false,
@@ -1328,6 +1526,19 @@
         ".yt-core-attributed-string > span",
         ".title"
       ],
+      "shareConfig": {
+        "injectCss": false,
+        "removeSelectors": [
+          "iron-iconset-svg",
+          "iframe",
+          "ytd-watch-next-secondary-results-renderer",
+          "noscript",
+          "script"
+        ]
+      },
+      "mutationConfig.add": {
+        "checkSelfUpdate": false
+      },
       "excludeTags.remove": [
         "BUTTON"
       ],
@@ -1336,6 +1547,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
+        "subtitleUrlRegExp": "/api/timedtext",
         "translateSelectors": [
           ".caption-window",
           ".caption-visual-line"
@@ -1345,6 +1557,11 @@
         "videoADSelector": ".ytp-ad-player-overlay",
         "injectedCss": [
           "#player-shorts-container .ytp-caption-window-bottom {top: 40px; bottom: unset!important;}"
+        ],
+        "translationOnlyPattern": [
+          "m.youtube.com/watch*",
+          "m.youtube.com/embed*",
+          "m.youtube.com/shorts*"
         ]
       },
       "wrapperPrefix": "",
@@ -1373,6 +1590,16 @@
       "excludeSelectors": [
         "[class^='lln-']"
       ],
+      "shareConfig": {
+        "injectCss": false,
+        "removeSelectors": [
+          "iron-iconset-svg",
+          "iframe",
+          "ytd-watch-next-secondary-results-renderer",
+          "noscript",
+          "script"
+        ]
+      },
       "additionalExcludeSelectors.add": [
         ".ytp-caption-window-container"
       ],
@@ -1407,6 +1634,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
+        "subtitleUrlRegExp": "/api/timedtext",
         "translateSelectors": [
           ".caption-window",
           ".caption-visual-line"
@@ -1430,6 +1658,43 @@
       "wrapperSuffix": ""
     },
     {
+      "id": "youtube-nocookie",
+      "matches": "www.youtube-nocookie.com",
+      "extraBlockSelectors": [
+        ".caption-visual-line"
+      ],
+      "mainFrameMinTextCount": 0,
+      "subtitleRule.add": {
+        "type": "youtube",
+        "subtitleUrlRegExp": "/api/timedtext",
+        "translateSelectors": [
+          ".caption-window",
+          ".caption-visual-line"
+        ],
+        "videoPlayerSelector": ".html5-video-player",
+        "loadingContainerSelector": ".ytp-caption-window-container",
+        "videoADSelector": ".ytp-ad-player-overlay",
+        "translationOnlyPattern": [
+          "www.youtube-nocookie.com/embed*"
+        ],
+        "subtitleButtonSelector": ".ytp-subtitles-button",
+        "languageSelector": ".ytp-menuitem-label",
+        "injectedCss": [
+          "#shorts-player .ytp-caption-window-bottom {top: 2%; bottom: unset!important;}"
+        ]
+      }
+    },
+    {
+      "id": "instagramMessage",
+      "matches": [
+        "https://www.instagram.com/direct/*"
+      ],
+      "wrapperPrefix": "<br/>",
+      "selectors": [
+        "div[dir=auto][role=none]"
+      ]
+    },
+    {
       "id": "instagramPost",
       "matches": [
         "https://www.instagram.com/p/*",
@@ -1437,10 +1702,13 @@
       ],
       "blockMinTextCount": 1,
       "paragraphMinTextCount": 2,
+      "excludeSelectors": [
+        "hr+div span[dir=auto][style] > span"
+      ],
       "selectors": [
         "h1",
-        "div[class='x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1cy8zhl x1oa3qoh x1nhvcw1'] > span[class='x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x5n08af x10wh9bi x1wdrske x8viiok x18hxmgj']",
-        "h3 div > span[dir=auto]"
+        "ul li h3+div span[dir=auto]",
+        "hr+div span[dir=auto][style]"
       ],
       "wrapperPrefix": "<br/>"
     },
@@ -1452,7 +1720,9 @@
       "selectors": [
         "h1",
         "article span[dir=auto] > span[dir=auto]",
-        "._ab1y"
+        "._ab1y",
+        "ul li h3+div span[dir=auto]",
+        "hr+div span[dir=auto][style]"
       ],
       "wrapperSuffix": ""
     },
@@ -1553,14 +1823,18 @@
         ".article_title_link",
         ".article_content",
         ".article_magazine_title_link",
-        ".blog-post-page"
+        ".blog-post-page",
+        "#welcome_center",
+        ".gad_overview_articles_wrapper",
+        ".library_article_text h4",
+        ".header_name"
       ],
       "excludeMatches": [
         "https://www.inoreader.com/features/"
       ],
       "observeUrlChange": false,
       "globalStyles": {
-        ".article_title_link": "-webkit-line-clamp: unset;max-height: unset;"
+        ".article_title_link,.library_article_text h4,.gadget_overview_article_title": "-webkit-line-clamp: unset;max-height: unset;"
       }
     },
     {
@@ -1688,23 +1962,8 @@
     {
       "id": "codeforces",
       "matches": "https://codeforces.com/*",
-      "stayOriginalTags": [
+      "stayOriginalTags.add": [
         "[class^='MathJax']"
-      ]
-    },
-    {
-      "id": "arxivLabs",
-      "matches": "*.labs.arxiv.org/*",
-      "stayOriginalTags": [
-        "math",
-        "semantics",
-        "mrow",
-        "mo",
-        "mfrac",
-        "msup",
-        "mi",
-        "mn",
-        "msqrt"
       ]
     },
     {
@@ -1746,6 +2005,16 @@
         ".reply-markup-button-text",
         ".bot-commands-list-element-description"
       ],
+      "extraBlockSelectors.add": [
+        ".message.spoilers-container em",
+        ".message.spoilers-container strong"
+      ],
+      "excludeSelectors": [
+        ".time",
+        ".peer-title",
+        ".document-wrapper",
+        ".message.spoilers-container custom-emoji-element"
+      ],
       "detectParagraphLanguage": true
     },
     {
@@ -1758,6 +2027,16 @@
         ".message",
         ".reply-markup-button-text",
         ".bot-commands-list-element-description"
+      ],
+      "extraBlockSelectors.add": [
+        ".message.spoilers-container em",
+        ".message.spoilers-container strong"
+      ],
+      "excludeSelectors": [
+        ".time",
+        ".peer-title",
+        ".document-wrapper",
+        ".message.spoilers-container custom-emoji-element"
       ],
       "detectParagraphLanguage": true
     },
@@ -1984,7 +2263,8 @@
         "h1",
         "h3.story__title",
         ".feed-item__title-link",
-        ".article-body"
+        ".article-body",
+        ".interview-body"
       ]
     },
     {
@@ -2103,7 +2383,13 @@
       "urlChangeDelay": 1000,
       "globalStyles": {
         "div.Card-titleContainer > div": "-webkit-line-clamp: unset;max-height: unset;"
-      }
+      },
+      "excludeSelectors.add": [
+        "#GlobalNavigation",
+        "#GlobalFooter",
+        ".LiveBlogHeader-timestampAndShareBarContainer",
+        ".LiveBlogHeader-liveUpdatesPill"
+      ]
     },
     {
       "id": "dailyDev",
@@ -2297,7 +2583,9 @@
         ".al.b.bl.ag.ai",
         ".hx.hy.hz.ia.ib.ab",
         ".qb.ab",
-        ".speechify-ignore.ab.co"
+        ".ai.bn.n.mj",
+        ".speechify-ignore",
+        "mark"
       ],
       "globalStyles": {
         "h2,h3": "-webkit-line-clamp: unset;max-height:unset;",
@@ -2423,8 +2711,18 @@
         "[aria-label=Banner]",
         "aside",
         "[data-component=ticker-bar]",
-        "footer.bb-global-footer"
-      ]
+        "footer.bb-global-footer",
+        ".vjs-text-track-display"
+      ],
+      "bodyRule.add": {
+        "bodySelector": "main article",
+        "articleSelector": ".body-content"
+      },
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "webvtt$",
+        "loadingContainerSelector": ".vjs-text-track-display"
+      }
     },
     {
       "id": "baiduXueshu",
@@ -2444,7 +2742,12 @@
       "extraBlockSelectors": [
         "span.captions",
         "span[id^=cap]"
-      ]
+      ],
+      "globalAttributes": {
+        "#abspara0010 br": {
+          "style": "display:none;"
+        }
+      }
     },
     {
       "id": "thehighestofthemountains",
@@ -3067,6 +3370,13 @@
       "urlChangeDelay": 1500
     },
     {
+      "id": "openaiDocs",
+      "matches": "https://platform.openai.com/docs*",
+      "excludeSelectors.add": [
+        ".pheader"
+      ]
+    },
+    {
       "id": "pkgStd",
       "matches": "https://pkg.go.dev/std",
       "selectors": [
@@ -3201,7 +3511,8 @@
         "h3": "-webkit-line-clamp:unset;overflow:unset;",
         "h5": "-webkit-line-clamp:unset;overflow:unset;",
         "p": "-webkit-line-clamp:unset;overflow:unset;",
-        ".YLycza2.u9KHmsf": "height:unset;max-height:unset;"
+        ".YLycza2.u9KHmsf": "height:unset;max-height:unset;",
+        ".lt2ar2q.EhHcMiw": "height:unset; max-height: unset;"
       },
       "excludeSelectors": [
         ".popular"
@@ -3316,14 +3627,6 @@
       ]
     },
     {
-      "id": "vimeo",
-      "matches": "https://player.vimeo.com/video/*",
-      "extraBlockSelectors": [
-        "span.vp-captions-line",
-        "span[class^=CaptionsRenderer_]"
-      ]
-    },
-    {
       "id": "yandexIndex",
       "matches": "https://yandex.com/",
       "selectors": [
@@ -3414,12 +3717,18 @@
       "paragraphMinWordCount": 1
     },
     {
-      "id": "babelnovel",
+      "id": "urlChangeDelay",
       "matches": [
         "https://babelnovel.com/books/*",
-        "https://www.webnovel.com/book/*"
+        "https://www.webnovel.com/book/*",
+        "https://platform.openai.com/docs/*",
+        "docs.oracle.com",
+        "docs-cortex.paloaltonetworks.com",
+        "forum.m5stack.com/topic/*",
+        "community.m5stack.com/topic/*"
       ],
-      "urlChangeDelay": 0
+      "urlChangeDelay": 0,
+      "_comment": "解决url变化重复翻译问题"
     },
     {
       "id": "genuine",
@@ -3495,6 +3804,11 @@
         "www.theatlantic.com",
         "https://mashable.com/*"
       ],
+      "excludeSelectors.add": [
+        "footer:last-of-type",
+        "nav",
+        "header div.subtitle-2.w-full"
+      ],
       "initialSelectorGlobalAttributes": {
         "footer:last-of-type": {
           "translate": "no"
@@ -3554,7 +3868,11 @@
         ".navbar": {
           "translate": "no"
         }
-      }
+      },
+      "extraInlineSelectors.add": [
+        ".term-wrapper",
+        "span.description"
+      ]
     },
     {
       "id": "openai-blog",
@@ -3562,11 +3880,6 @@
       "stayOriginalTags.remove": [
         "CODE"
       ]
-    },
-    {
-      "id": "openai",
-      "matches": "https://platform.openai.com/docs/*",
-      "urlChangeDelay": 0
     },
     {
       "id": "urlComment",
@@ -3951,7 +4264,11 @@
     },
     {
       "id": "feishu",
-      "matches": "*.feishu.cn",
+      "matches": [
+        "*.feishu.cn",
+        "*.larkoffice.com",
+        "*.larksuite.com"
+      ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
         "[translate=no]"
@@ -4017,8 +4334,9 @@
     {
       "id": "cnn",
       "matches": "*.cnn.com",
-      "excludeSelectors": [
-        ".ad-slot-header__wrapper"
+      "excludeSelectors.add": [
+        ".ad-slot-header__wrapper",
+        "#pageFooter"
       ],
       "bodyRule.add": {
         "bodySelector": ".layout__content-wrapper",
@@ -4075,9 +4393,15 @@
     },
     {
       "id": "bilibili",
+      "matches": "www.bilibili.com",
       "excludeSelectors.add": [
         ".bpx-player-subtitle-panel-text"
-      ]
+      ],
+      "subtitleRule.add": {
+        "type": "bilibili",
+        "subtitleUrlRegExp": "aisubtitle.hdslb.com/bfs",
+        "loadingContainerSelector": ".bpx-player-subtitle-panel"
+      }
     },
     {
       "id": "time",
@@ -4098,11 +4422,6 @@
         ".content",
         "#menu"
       ]
-    },
-    {
-      "id": "docs-oracle",
-      "matches": "docs.oracle.com",
-      "urlChangeDelay": 0
     },
     {
       "id": "uzh",
@@ -4153,7 +4472,8 @@
         ".citation-doi",
         ".identifiers",
         ".cite",
-        ".share"
+        ".share",
+        ".arrow-link"
       ]
     },
     {
@@ -4400,8 +4720,273 @@
         "lwn.net/Articles/*"
       ],
       "isTransformPreTagNewLine": true
+    },
+    {
+      "id": "fastapi.tiangolo.com",
+      "matches": "fastapi.tiangolo.com",
+      "selectors": [
+        "article"
+      ]
+    },
+    {
+      "id": "termynal",
+      "selectorMatches": [
+        "link[href*='termynal.css']"
+      ],
+      "stayOriginalSelectors.add": [
+        ".termy"
+      ]
+    },
+    {
+      "id": "cpb-nl",
+      "matches": [
+        "www.cpb.nl"
+      ],
+      "bodyRule.add": {
+        "enable": false
+      }
+    },
+    {
+      "id": "hub.logseq",
+      "matches": [
+        "hub.logseq.com"
+      ],
+      "globalStyles": {
+        "[class*=':h-[']": "height:unset;"
+      }
+    },
+    {
+      "id": "chat.zalo",
+      "matches": [
+        "chat.zalo.me"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate"
+      ],
+      "inputExecCommandDeleteEnable": true
+    },
+    {
+      "id": "epam",
+      "matches": "*.epam.com",
+      "globalStyles": {
+        "[class*='ContentAnchorLinkList']": "word-break:unset;"
+      },
+      "excludeSelectors.add": [
+        "#blog-page-sidebar-wrapper"
+      ],
+      "excludeTags.remove": [
+        "BUTTON"
+      ]
+    },
+    {
+      "id": "discussions.apple",
+      "matches": "discussions.apple.com",
+      "excludeSelectors.add": [
+        ".page-number"
+      ]
+    },
+    {
+      "id": "www.sixthtone.com",
+      "matches": [
+        "www.sixthtone.com"
+      ],
+      "excludeSelectors.add": [
+        "#footer",
+        "[class^=index_time]",
+        "[class^=index_anthorList]",
+        "[class^=index_node]",
+        "[class^=index_popupWrapper]"
+      ]
+    },
+    {
+      "id": "forum.unity",
+      "matches": [
+        "forum.unity.com"
+      ],
+      "excludeSelectors.add": [
+        ".bbCodeCode"
+      ]
+    },
+    {
+      "id": "wattpad",
+      "matches": [
+        "www.wattpad.com"
+      ],
+      "excludeTags.remove": [
+        "PRE"
+      ],
+      "globalAttributes": {
+        "header": {
+          "translate": "unset;"
+        }
+      },
+      "globalStyles": {
+        ".story-info .item-description": "overflow: scroll;"
+      }
+    },
+    {
+      "id": "netflix",
+      "matches": [
+        "www.netflix.com"
+      ],
+      "excludeSelectors.add": [
+        ".player-timedtext-text-container"
+      ],
+      "subtitleRule.add": {
+        "type": "netflix",
+        "loadingContainerSelector": ".watch-video",
+        "subtitleUrlRegExp": "^https://.+?.oca.nflxvideo.net/\\?([ovet]=[^=]+){4}$",
+        "loadingStyle": "bottom: 15%;"
+      }
+    },
+    {
+      "id": "udemy",
+      "matches": [
+        "www.udemy.com"
+      ],
+      "excludeSelectors.add": [
+        "[data-purpose='captions-cue-text']"
+      ],
+      "subtitleRule.add": {
+        "type": "udemy",
+        "subtitleUrlRegExp": "^https://.*\\.udemycdn\\.com/.*\\.vtt",
+        "humanTrust": 85,
+        "loadingContainerSelector": ".video-player--video-wrapper--2mFBT",
+        "loadingStyle": "bottom: 15%;"
+      }
+    },
+    {
+      "id": "boringreport",
+      "matches": [
+        "www.boringreport.org"
+      ],
+      "excludeTags.remove": [
+        "BUTTON"
+      ]
+    },
+    {
+      "id": "khanacademy",
+      "matches": [
+        "www.khanacademy.org"
+      ],
+      "subtitleRule.add": {
+        "type": "khanacademy",
+        "subtitleUrlRegExp": "GetSubtitles",
+        "hookType": "fetch"
+      }
+    },
+    {
+      "id": "nebula",
+      "matches": [
+        "nebula.tv"
+      ],
+      "excludeSelectors.add": [
+        "[data-subtitles-container='true']"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "loadingContainerSelector": ".video-poster"
+      }
+    },
+    {
+      "id": "frontendmasters",
+      "matches": [
+        "frontendmasters.com"
+      ],
+      "excludeSelectors.add": [
+        ".vjs-text-track-display"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "captions.vtt$",
+        "loadingContainerSelector": ".vjs-text-track-display"
+      }
+    },
+    {
+      "id": "coursera",
+      "matches": [
+        "www.coursera.org"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": ".vjs-tech",
+        "loadingContainerSelector": ".rc-VideoControlsContainer"
+      }
+    },
+    {
+      "id": "vimeo",
+      "matches": [
+        "vimeo.com"
+      ],
+      "excludeSelectors.add": [
+        ".vp-captions"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".player_container"
+      }
+    },
+    {
+      "id": "ted",
+      "matches": [
+        "www.ted.com"
+      ],
+      "excludeSelectors.add": [
+        ".text-textPrimary-onDark.tracking-tui-tight"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": "#ted-player > div"
+      }
+    },
+    {
+      "id": "player.vimeo",
+      "matches": "https://player.vimeo.com/video/*",
+      "extraBlockSelectors": [
+        "span.vp-captions-line",
+        "span[class^=CaptionsRenderer_]"
+      ],
+      "excludeSelectors.add": [
+        ".vp-captions-line"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".vp-telecine"
+      }
+    },
+    {
+      "id": "linkingyourthinking",
+      "matches": "community.linkingyourthinking.com",
+      "additionalExcludeSelectors.remove": [
+        "[translate=no]"
+      ]
+    },
+    {
+      "id": "archiveToday",
+      "matches": [
+        "archive.today",
+        "archive.ph",
+        "archive.is",
+        "archive.md"
+      ],
+      "excludeSelectors.add": [
+        "#HEADER"
+      ]
+    },
+    {
+      "id": "arxiv-vanity.com",
+      "matches": [
+        "www.arxiv-vanity.com"
+      ],
+      "excludeSelectors.add": [
+        ".arxiv-vanity-wrapper"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-10-15T12:43:33.000Z",
-  "latestVersion": "0.10.4"
+  "buildinConfigUpdatedAt": "2023-12-13T11:12:07.492Z",
+  "latestVersion": "0.12.6"
 }
