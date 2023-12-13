@@ -4395,7 +4395,7 @@
       "id": "bilibili",
       "matches": "www.bilibili.com",
       "excludeSelectors.add": [
-        ".bpx-player-subtitle-panel-text br"
+        ".bpx-player-subtitle-panel-text"
       ],
       "subtitleRule.add": {
         "type": "bilibili",
@@ -4844,6 +4844,9 @@
       "matches": [
         "www.udemy.com"
       ],
+      "excludeSelectors.add": [
+        "[data-purpose='captions-cue-text']"
+      ],
       "subtitleRule.add": {
         "type": "udemy",
         "subtitleUrlRegExp": "^https://.*\\.udemycdn\\.com/.*\\.vtt",
@@ -4877,6 +4880,9 @@
       "matches": [
         "nebula.tv"
       ],
+      "excludeSelectors.add": [
+        "[data-subtitles-container='true']"
+      ],
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.vtt$",
@@ -4898,6 +4904,9 @@
       "id": "vimeo",
       "matches": [
         "vimeo.com"
+      ],
+      "excludeSelectors.add": [
+        ".vp-captions"
       ],
       "subtitleRule.add": {
         "type": "text_track",
@@ -4964,6 +4973,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-13T08:50:25.000Z",
+  "buildinConfigUpdatedAt": "2023-12-13T10:24:38.254Z",
   "latestVersion": "0.12.6"
 }
