@@ -12,7 +12,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
         with:
-          repository: immersive-translate/next-translator
+          repository: immersive-translate/extension
           token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
       - name: Clone repo
         run: git clone https://$PERSONAL_GITHUB_TOKEN@github.com/immersive-translate/config repo
