@@ -33,7 +33,9 @@
     "https://www.udemy.com/[Udemy]",
     "https://www.bloomberg.com[Bloomberg]",
     "https://nebula.tv/videos[Nebula]",
-    "https://www.bilibili.com[Bilibili]"
+    "https://www.bilibili.com[Bilibili]",
+    "https://www.ted.com/[TED]",
+    "https://frontendmasters.com[FrontendMasters]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -4987,6 +4989,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-13T11:17:58.770Z",
+  "buildinConfigUpdatedAt": "2023-12-13T12:28:21.856Z",
   "latestVersion": "0.12.6"
 }
