@@ -3176,7 +3176,7 @@
     {
       "id": "newthingsunderthesun",
       "matches": "www.newthingsunderthesun.com",
-      "additionalSelectors": [
+      "additionalExcludeSelectors.remove": [
         "[translate=no]"
       ]
     },
@@ -4992,6 +4992,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-13T14:17:40.790Z",
+  "buildinConfigUpdatedAt": "2023-12-13T14:33:43.693Z",
   "latestVersion": "0.12.6"
 }
