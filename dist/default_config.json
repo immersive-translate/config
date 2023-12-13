@@ -3676,6 +3676,9 @@
       "extraBlockSelectors": [
         ".prose > span"
       ],
+      "mutationConfig.add": {
+        "consumeTimeout": 500
+      },
       "additionalStayOriginalSelectors": [
         "a.citation"
       ],
@@ -4989,6 +4992,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-13T12:28:21.856Z",
+  "buildinConfigUpdatedAt": "2023-12-13T14:17:40.790Z",
   "latestVersion": "0.12.6"
 }
