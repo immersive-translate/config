@@ -1113,6 +1113,9 @@
         "[role=math]",
         ".nowrap"
       ],
+      "extraBlockSelectors": [
+        ".autonym"
+      ],
       "bodyRule.add": {
         "bodySelector": "#content",
         "articleSelector": "#bodyContent"
@@ -4992,6 +4995,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-13T14:33:43.693Z",
+  "buildinConfigUpdatedAt": "2023-12-14T03:47:07.359Z",
   "latestVersion": "0.12.6"
 }
