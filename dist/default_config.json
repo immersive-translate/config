@@ -4916,6 +4916,20 @@
       }
     },
     {
+      "id": "skillshare",
+      "matches": [
+        "www.skillshare.com"
+      ],
+      "excludeSelectors.add": [
+        ".vjs-text-track-display"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt\\?",
+        "loadingContainerSelector": ".vjs-text-track-display"
+      }
+    },
+    {
       "id": "coursera",
       "matches": [
         "www.coursera.org"
@@ -4999,6 +5013,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-14T08:57:29.556Z",
+  "buildinConfigUpdatedAt": "2023-12-14T13:02:15.491Z",
   "latestVersion": "0.12.6"
 }
