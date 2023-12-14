@@ -823,6 +823,8 @@
       "ASIDE",
       "DETAILS",
       "BLOCKQUOTE",
+      "SELECT",
+      "OPTION",
       "CANVAS",
       "DD",
       "DL",
@@ -4997,6 +4999,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-14T08:04:46.498Z",
+  "buildinConfigUpdatedAt": "2023-12-14T08:57:29.556Z",
   "latestVersion": "0.12.6"
 }
