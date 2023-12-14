@@ -493,6 +493,10 @@
     "condition": {},
     "normalizeBody": "",
     "inputExecCommandDeleteEnable": false,
+    "inputConfig": {
+      "clearContentEnable": true,
+      "execCommandDeleteEnable": false
+    },
     "mutationExcludeSelectors": [
       "span.highlighter--highlighted",
       "span.highlighter-ext",
@@ -1351,7 +1355,10 @@
       },
       "waitForSelectors": [
         "[data-testid=post_author_link]"
-      ]
+      ],
+      "inputConfig.add": {
+        "clearContentEnable": false
+      }
     },
     {
       "id": "reddit",
@@ -2160,7 +2167,13 @@
       "inputTutorialsText": "试试输入中文后快速连击 3 次空格键翻译（仅提示一次）",
       "inputTutorialsSelectors": [
         "textarea#APjFqb"
-      ]
+      ],
+      "inputConfig.add": {
+        "tutorialsText": "试试输入中文后快速连击 3 次空格键翻译（仅提示一次）",
+        "tutorialsSelectors": [
+          "textarea#APjFqb"
+        ]
+      }
     },
     {
       "id": "googleSearch",
@@ -4775,7 +4788,10 @@
       "additionalExcludeSelectors.remove": [
         ".notranslate"
       ],
-      "inputExecCommandDeleteEnable": true
+      "inputExecCommandDeleteEnable": true,
+      "inputConfig.add": {
+        "execCommandDeleteEnable": true
+      }
     },
     {
       "id": "epam",
@@ -5013,6 +5029,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-14T13:02:15.491Z",
+  "buildinConfigUpdatedAt": "2023-12-14T14:46:22.960Z",
   "latestVersion": "0.12.6"
 }
