@@ -1669,6 +1669,9 @@
         ".caption-visual-line"
       ],
       "mainFrameMinTextCount": 0,
+      "excludeSelectors.add": [
+        ".captions-text"
+      ],
       "subtitleRule.add": {
         "type": "youtube",
         "subtitleUrlRegExp": "/api/timedtext",
@@ -4995,6 +4998,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-14T03:47:07.359Z",
+  "buildinConfigUpdatedAt": "2023-12-14T06:28:49.251Z",
   "latestVersion": "0.12.6"
 }
