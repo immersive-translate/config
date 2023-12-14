@@ -1670,7 +1670,8 @@
       ],
       "mainFrameMinTextCount": 0,
       "excludeSelectors.add": [
-        ".captions-text"
+        ".captions-text",
+        ".ytp-caption-segment"
       ],
       "subtitleRule.add": {
         "type": "youtube",
@@ -4998,6 +4999,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-14T06:28:49.251Z",
+  "buildinConfigUpdatedAt": "2023-12-14T07:01:42.318Z",
   "latestVersion": "0.12.6"
 }
