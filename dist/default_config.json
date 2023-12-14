@@ -707,8 +707,6 @@
       "INPUT",
       "BUTTON",
       "BASE",
-      "SELECT",
-      "OPTION",
       "HR",
       "PRE",
       "KBD",
@@ -4999,6 +4997,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-14T07:01:42.318Z",
+  "buildinConfigUpdatedAt": "2023-12-14T08:04:46.498Z",
   "latestVersion": "0.12.6"
 }
