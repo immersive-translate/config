@@ -819,7 +819,8 @@
       "turbo-frame",
       "readme-toc",
       "#hs_cos_wrapper_post_body",
-      "#hs_cos_wrapper_post_body"
+      "#hs_cos_wrapper_post_body",
+      "option"
     ],
     "allBlockTags": [
       "BODY",
@@ -5122,6 +5123,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-15T10:47:24.801Z",
+  "buildinConfigUpdatedAt": "2023-12-15T11:22:59.057Z",
   "latestVersion": "0.12.6"
 }
