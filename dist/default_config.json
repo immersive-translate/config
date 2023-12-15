@@ -505,6 +505,9 @@
       "rw-highlight",
       "web-highlight"
     ],
+    "mutationExcludeContainsSelectors": [
+      "msreadoutspan"
+    ],
     "shareConfig": {
       "injectCss": true,
       "removeSelectors": [
@@ -1062,6 +1065,13 @@
       "mainFrameSelector": "div.simpread-read-root.simpread-read-root-show > sr-read"
     },
     {
+      "id": "pdos.csail.mit.edu",
+      "matches": "pdos.csail.mit.edu",
+      "mutationExcludeSelectors": [
+        "body"
+      ]
+    },
+    {
       "id": "txt",
       "matches": [
         "*://*/*.txt",
@@ -1069,6 +1079,9 @@
       ],
       "selectorMatches": [
         "body > pre"
+      ],
+      "mutationExcludeSelectors": [
+        "body"
       ],
       "isTransformPreTagNewLine": true,
       "excludeTags.remove": [
@@ -4504,6 +4517,25 @@
         ".cite",
         ".share",
         ".arrow-link"
+      ],
+      "globalAttributes": {
+        "#Scholarscope_HighlightContent": {
+          "class": ""
+        },
+        "#Scholarscope_HighlightOrigin": {
+          "class": "Scholarscope_HighlightContents"
+        }
+      },
+      "mutationExcludeContainsSelectors": [
+        "#Scholarscope_HighlightContent highlight"
+      ],
+      "mutationExcludeSelectors": [
+        "#Scholarscope_HighlightContent",
+        "#Scholarscope_HighlightContent span"
+      ],
+      "injectedCss": [
+        "#Scholarscope_HighlightOrigin > p font,#Scholarscope_HighlightContent > p font {display: inline!important;}",
+        "#Scholarscope_HighlightOrigin > p font br,#Scholarscope_HighlightContent > p font br {display: none!important;}"
       ]
     },
     {
@@ -5034,6 +5066,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-15T03:36:09.242Z",
+  "buildinConfigUpdatedAt": "2023-12-15T10:42:18.837Z",
   "latestVersion": "0.12.6"
 }
