@@ -4969,6 +4969,20 @@
       }
     },
     {
+      "id": "udacity",
+      "matches": [
+        "learn.udacity.com"
+      ],
+      "excludeSelectors.add": [
+        ".vjs-text-track-display"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": ".vtt$",
+        "loadingContainerSelector": ".vjs-text-track-display"
+      }
+    },
+    {
       "id": "skillshare",
       "matches": [
         "www.skillshare.com"
@@ -5038,6 +5052,48 @@
       }
     },
     {
+      "id": "codewithchris",
+      "matches": [
+        "learn.codewithchris.com"
+      ],
+      "excludeSelectors.add": [
+        ".w-captions",
+        ".w-captions-line > div > span"
+      ],
+      "subtitleRule.add": {
+        "type": "general",
+        "subtitleUrlRegExp": "/embed/captions/",
+        "loadingContainerSelector": ".w-captions",
+        "hookType": "fetch",
+        "generalSetting": {
+          "captionsPath": "captions",
+          "itemsPath": "hash.lines",
+          "textKey": "text"
+        }
+      }
+    },
+    {
+      "id": "edx",
+      "matches": [
+        "*.edx.org"
+      ],
+      "excludeSelectors.add": [
+        ".closed-captions",
+        ".subtitles-menu"
+      ],
+      "subtitleRule.add": {
+        "type": "general",
+        "subtitleUrlRegExp": "/transcript/translation/",
+        "loadingContainerSelector": ".tc-wrapper",
+        "generalSetting": {
+          "itemsPath": "text"
+        },
+        "injectedCss": [
+          ".subtitles-menu span,.closed-captions {white-space: pre-line;}"
+        ]
+      }
+    },
+    {
       "id": "linkingyourthinking",
       "matches": "community.linkingyourthinking.com",
       "additionalExcludeSelectors.remove": [
@@ -5066,6 +5122,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-15T10:42:18.837Z",
+  "buildinConfigUpdatedAt": "2023-12-15T10:47:24.801Z",
   "latestVersion": "0.12.6"
 }
