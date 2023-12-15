@@ -945,6 +945,11 @@
       "bodyRule.add": {
         "enable": false
       },
+      "globalAttributes": {
+        "[class='textLayer']": {
+          "translate": "no"
+        }
+      },
       "shareConfig.add": {
         "removeSelectors": [
           "noscript",
@@ -5029,6 +5034,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-14T14:46:22.960Z",
+  "buildinConfigUpdatedAt": "2023-12-15T03:36:09.242Z",
   "latestVersion": "0.12.6"
 }
