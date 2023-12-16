@@ -1621,6 +1621,7 @@
       "excludeSelectors": [
         "[class^='lln-']"
       ],
+      "lineBreakMaxTextCount": 0,
       "shareConfig": {
         "injectCss": false,
         "removeSelectors": [
@@ -5123,6 +5124,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-15T16:46:59.000Z",
+  "buildinConfigUpdatedAt": "2023-12-16T14:15:35.538Z",
   "latestVersion": "0.12.7"
 }
