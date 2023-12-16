@@ -5122,8 +5122,20 @@
       "excludeSelectors.add": [
         ".arxiv-vanity-wrapper"
       ]
+    },
+    {
+      "id": "fibery",
+      "matches": [
+        "the.fibery.io"
+      ],
+      "additionalExcludeSelectors.remove": [
+        "[translate=no]"
+      ],
+      "additionalStayOriginalSelectors.add": [
+        ".entity-node-view-container"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-16T14:15:35.538Z",
+  "buildinConfigUpdatedAt": "2023-12-16T15:42:12.583Z",
   "latestVersion": "0.12.7"
 }
