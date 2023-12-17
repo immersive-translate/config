@@ -956,6 +956,9 @@
           "translate": "no"
         }
       },
+      "mutationExcludeContainsSelectors": [
+        "font.immersive-translate-target-wrapper"
+      ],
       "shareConfig.add": {
         "removeSelectors": [
           "noscript",
@@ -5138,6 +5141,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-17T12:23:30.550Z",
+  "buildinConfigUpdatedAt": "2023-12-17T12:39:55.437Z",
   "latestVersion": "0.12.7"
 }
