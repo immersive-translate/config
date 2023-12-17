@@ -508,7 +508,8 @@
     ],
     "mutationExcludeContainsSelectors": [
       "msreadoutspan",
-      "[class*='rgh-seen-']"
+      "[class*='rgh-seen-']",
+      "[isInvalidTag]"
     ],
     "shareConfig": {
       "injectCss": true,
@@ -5141,6 +5142,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-17T12:39:55.437Z",
+  "buildinConfigUpdatedAt": "2023-12-17T14:13:05.654Z",
   "latestVersion": "0.12.7"
 }
