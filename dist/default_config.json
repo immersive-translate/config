@@ -4946,7 +4946,10 @@
         "type": "khanacademy",
         "subtitleUrlRegExp": "GetSubtitles",
         "hookType": "fetch"
-      }
+      },
+      "stayOriginalSelectors.add": [
+        ".mathjax-wrapper"
+      ]
     },
     {
       "id": "nebula",
@@ -5142,6 +5145,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-17T14:13:05.654Z",
+  "buildinConfigUpdatedAt": "2023-12-17T15:00:26.548Z",
   "latestVersion": "0.12.7"
 }
