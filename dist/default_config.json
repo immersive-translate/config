@@ -506,7 +506,8 @@
       "web-highlight"
     ],
     "mutationExcludeContainsSelectors": [
-      "msreadoutspan"
+      "msreadoutspan",
+      "[data-rgh-whitespace]"
     ],
     "shareConfig": {
       "injectCss": true,
@@ -5136,6 +5137,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-16T15:42:12.583Z",
+  "buildinConfigUpdatedAt": "2023-12-17T05:15:49.607Z",
   "latestVersion": "0.12.7"
 }
