@@ -503,11 +503,12 @@
       "mark",
       "msreadoutspan",
       "rw-highlight",
-      "web-highlight"
+      "web-highlight",
+      "font.immersive-translate-target-wrapper *"
     ],
     "mutationExcludeContainsSelectors": [
       "msreadoutspan",
-      "[data-rgh-whitespace]"
+      "[class*='rgh-seen-']"
     ],
     "shareConfig": {
       "injectCss": true,
@@ -5137,6 +5138,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-17T05:15:49.607Z",
+  "buildinConfigUpdatedAt": "2023-12-17T12:23:30.550Z",
   "latestVersion": "0.12.7"
 }
