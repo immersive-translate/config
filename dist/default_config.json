@@ -5018,7 +5018,8 @@
       "subtitleRule.add": {
         "type": "text_track",
         "videoPlayerSelector": ".vjs-tech",
-        "loadingContainerSelector": ".rc-VideoControlsContainer"
+        "loadingContainerSelector": ".rc-VideoControlsContainer",
+        "loadingStyle": "bottom: unset; top: 5%;"
       }
     },
     {
@@ -5032,7 +5033,8 @@
       "subtitleRule.add": {
         "type": "text_track",
         "videoPlayerSelector": "video",
-        "loadingContainerSelector": ".player_container"
+        "loadingContainerSelector": ".player_container",
+        "loadingStyle": "bottom: unset; top: 5%;"
       }
     },
     {
@@ -5046,7 +5048,8 @@
       "subtitleRule.add": {
         "type": "text_track",
         "videoPlayerSelector": "video",
-        "loadingContainerSelector": "#ted-player > div"
+        "loadingContainerSelector": "#ted-player > div",
+        "loadingStyle": "bottom: unset; top: 5%;"
       }
     },
     {
@@ -5062,7 +5065,8 @@
       "subtitleRule.add": {
         "type": "text_track",
         "videoPlayerSelector": "video",
-        "loadingContainerSelector": ".vp-telecine"
+        "loadingContainerSelector": ".vp-telecine",
+        "loadingStyle": "bottom: unset; top: 5%; font-size: 12px;"
       }
     },
     {
@@ -5155,6 +5159,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-18T10:00:44.677Z",
+  "buildinConfigUpdatedAt": "2023-12-18T11:13:50.900Z",
   "latestVersion": "0.12.7"
 }
