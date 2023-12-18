@@ -5146,8 +5146,15 @@
       "additionalStayOriginalSelectors.add": [
         ".entity-node-view-container"
       ]
+    },
+    {
+      "id": "makersuite.google",
+      "matches": "makersuite.google.com",
+      "excludeSelectors.add": [
+        ".material-symbols-outlined"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-18T03:16:45.910Z",
+  "buildinConfigUpdatedAt": "2023-12-18T10:00:44.677Z",
   "latestVersion": "0.12.7"
 }
