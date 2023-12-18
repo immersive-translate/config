@@ -1453,6 +1453,9 @@
         "https://github.com/readme/*",
         "https://github.com/readme/"
       ],
+      "mutationExcludeSelectors": [
+        ".react-blob-sticky-header *"
+      ],
       "selectors": [
         "h1",
         "[aria-label=Issues] .markdown-title",
@@ -5145,6 +5148,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-17T15:00:26.548Z",
+  "buildinConfigUpdatedAt": "2023-12-18T03:16:45.910Z",
   "latestVersion": "0.12.7"
 }
