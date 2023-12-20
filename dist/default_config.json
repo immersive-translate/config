@@ -330,6 +330,49 @@
     "dpro": {
       "apiUrl": "https://api.deepl.com/jsonrpc"
     },
+    "gemini": {
+      "placeholderDelimiters": [
+        "{{",
+        "}}",
+        "b"
+      ],
+      "immediateTranslationTextCount": 5000,
+      "translationDebounce": 300,
+      "interval": 1050,
+      "prompt": "You are a professional,authentic translation engine,only returns translations.\nTranslate the content to {{to}} Language:\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\nThe translation is:\n<Start>\n你好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\nTranslate the content to {{to}} Language:\n\n<Start>{{text}}<End>",
+      "model": "gemini-pro",
+      "maxTextGroupLengthPerRequest": 10,
+      "maxTextLengthPerRequest": 1200,
+      "maxTextGroupLengthPerRequestForSubtitle": 5,
+      "translationTextSeparator": "<Keep This Symbol>",
+      "bodyConfigs": {
+        "generationConfig": {
+          "temperature": 0.1,
+          "topK": 1,
+          "topP": 1,
+          "maxOutputTokens": 2048,
+          "stopSequences": []
+        },
+        "safetySettings": [
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "threshold": "BLOCK_NONE"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "threshold": "BLOCK_NONE"
+          },
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "threshold": "BLOCK_NONE"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "threshold": "BLOCK_NONE"
+          }
+        ]
+      }
+    },
     "openai": {
       "placeholderDelimiters": [
         "{{",
@@ -5173,6 +5216,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-20T10:14:36.161Z",
+  "buildinConfigUpdatedAt": "2023-12-20T16:35:51.167Z",
   "latestVersion": "0.12.8"
 }
