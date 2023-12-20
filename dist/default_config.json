@@ -5159,8 +5159,20 @@
       "excludeSelectors.add": [
         ".material-symbols-outlined"
       ]
+    },
+    {
+      "id": "etymonline",
+      "matches": "www.etymonline.com",
+      "globalAttributes": {
+        ".crossreference.notranslate": {
+          "class": "crossreference"
+        },
+        ".foreign.notranslate": {
+          "class": "foreign"
+        }
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-20T04:16:17.036Z",
+  "buildinConfigUpdatedAt": "2023-12-20T10:14:36.161Z",
   "latestVersion": "0.12.8"
 }
