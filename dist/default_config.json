@@ -38,7 +38,8 @@
     "https://frontendmasters.com[FrontendMasters]",
     "https://learn.codewithchris.com[CodeWithChris]",
     "https://www.edx.org[edX]",
-    "https://www.skillshare.com/[Skillshare]"
+    "https://www.skillshare.com/[Skillshare]",
+    "https://twitter.com[Twitter Spaces]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -5234,6 +5235,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-21T14:19:37.643Z",
+  "buildinConfigUpdatedAt": "2023-12-21T14:21:56.411Z",
   "latestVersion": "0.12.9"
 }
