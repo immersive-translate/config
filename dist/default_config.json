@@ -35,7 +35,10 @@
     "https://nebula.tv/videos[Nebula]",
     "https://www.bilibili.com[Bilibili]",
     "https://www.ted.com/[TED]",
-    "https://frontendmasters.com[FrontendMasters]"
+    "https://frontendmasters.com[FrontendMasters]",
+    "https://learn.codewithchris.com[CodeWithChris]",
+    "https://www.edx.org[edX]",
+    "https://www.skillshare.com/[Skillshare]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -589,6 +592,7 @@
     "pairs": {},
     "aiRule": {},
     "subtitleRule": {
+      "isInject": true,
       "autoEnableSubtitle": false,
       "preTranslation": false,
       "humanPreferred": true,
@@ -1256,7 +1260,21 @@
         "[data-testid='HoverCard'] span[dir=auto]",
         "[data-testid='HoverCard'] [role='dialog'] div[dir=ltr]",
         "[data-testid='birdwatch-pivot'] div[dir=ltr]"
-      ]
+      ],
+      "subtitleRule.add": {
+        "type": "live",
+        "isInject": false,
+        "injectedCss": [
+          "[style*='height: 100px'] { height: 400px !important; }"
+        ],
+        "liveSubtitleRule": {
+          "containerSelector": "[role='listbox']",
+          "textSelectors": [
+            ".css-1rynq56.r-bcqeeo.r-qvutc0.r-37j5jr.r-a023e6.r-16dba41.r-dhbnww.r-1pb70le"
+          ],
+          "mutationChangeDelay": 1000
+        }
+      }
     },
     {
       "id": "threads",
@@ -5030,7 +5048,7 @@
     {
       "id": "udacity",
       "matches": [
-        "learn.udacity.com"
+        "*.udacity.com"
       ],
       "excludeSelectors.add": [
         ".vjs-text-track-display"
@@ -5216,6 +5234,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-20T21:05:28.426Z",
+  "buildinConfigUpdatedAt": "2023-12-21T14:19:37.643Z",
   "latestVersion": "0.12.9"
 }
