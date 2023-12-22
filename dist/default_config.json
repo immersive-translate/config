@@ -3327,9 +3327,9 @@
     },
     {
       "id": "steamcommunity",
-      "matches": "https://steamcommunity.com/app/*",
+      "matches": "steamcommunity.com",
       "globalStyles": {
-        ".forum_topic": "height:auto;",
+        ".forum_topic,.rightbox_list_option": "height:auto;",
         ".forum_topic_name": "white-space:normal;"
       },
       "excludeSelectors": [
@@ -5236,6 +5236,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-22T02:19:29.500Z",
+  "buildinConfigUpdatedAt": "2023-12-22T12:27:17.380Z",
   "latestVersion": "0.12.10"
 }
