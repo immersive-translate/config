@@ -27,6 +27,8 @@
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
     "https://www.netflix.com[NetFlix]",
+    "https://twitter.com[Twitter Spaces]",
+    "https://play.max.com[HBO Max]",
     "https://vimeo.com/watch[Vimeo]",
     "https://www.khanacademy.org/[Khan Academy]",
     "https://www.coursera.org/[Coursera]",
@@ -39,7 +41,11 @@
     "https://learn.codewithchris.com[CodeWithChris]",
     "https://www.edx.org[edX]",
     "https://www.skillshare.com/[Skillshare]",
-    "https://twitter.com[Twitter Spaces]"
+    "https://www.bbc.com/[BBC]",
+    "https://www.disneyplus.com/[Disney+]",
+    "https://www.ardmediathek.de/[ARD Mediathek]",
+    "https://www.itv.com/[ITV]",
+    "https://www.domestika.org/[Domestika]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -3962,14 +3968,6 @@
       ]
     },
     {
-      "id": "bbc",
-      "matches": "www.bbc.com",
-      "excludeSelectors": [
-        "section.module--languages",
-        ".drop-capped"
-      ]
-    },
-    {
       "id": "dw",
       "matches": "www.dw.com",
       "initialSelectorGlobalAttributes": {
@@ -5086,6 +5084,31 @@
       }
     },
     {
+      "id": "domestika",
+      "matches": [
+        "www.domestika.org"
+      ],
+      "excludeSelectors.add": [
+        ".vjs-text-track-display"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": ".*subtitles.*\\.vtt"
+      }
+    },
+    {
+      "id": "itv",
+      "matches": [
+        "www.itv.com"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": ".genie-video",
+        "loadingContainerSelector": ".genie-container",
+        "loadingStyle": "bottom: unset; top: 5%;"
+      }
+    },
+    {
       "id": "coursera",
       "matches": [
         "www.coursera.org"
@@ -5095,6 +5118,20 @@
         "videoPlayerSelector": ".vjs-tech",
         "loadingContainerSelector": ".rc-VideoControlsContainer",
         "loadingStyle": "bottom: unset; top: 5%;"
+      }
+    },
+    {
+      "id": "hbomax",
+      "matches": [
+        "https://play.max.com"
+      ],
+      "excludeSelectors.add": [
+        "[data-testid='playerContainer']"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "loadingContainerSelector": "[data-testid='playerContainer']"
       }
     },
     {
@@ -5187,6 +5224,55 @@
       }
     },
     {
+      "id": "ardmediathek",
+      "matches": [
+        "www.ardmediathek.*"
+      ],
+      "excludeSelectors.add": [
+        ".ardplayer-viewport-addon-overlays"
+      ],
+      "subtitleRule.add": {
+        "type": "ebutt",
+        "hookType": "fetch",
+        "subtitleUrlRegExp": "subtitle/ebutt",
+        "loadingContainerSelector": ".ardplayer-viewport-addon-overlays"
+      }
+    },
+    {
+      "id": "bbc",
+      "matches": [
+        "*.bbc.*"
+      ],
+      "excludeSelectors.add": [
+        "section.module--languages",
+        ".drop-capped",
+        ".smp-toucan-player",
+        "smp-subtitles",
+        "#subtitle_subtitle2"
+      ],
+      "subtitleRule.add": {
+        "type": "ebutt",
+        "hookType": "fetch",
+        "subtitleUrlRegExp": "iplayer/subtitles/.*.xml",
+        "loadingContainerSelector": ".smp-toucan-player"
+      }
+    },
+    {
+      "id": "disneyplus",
+      "matches": [
+        "www.disneyplus.com"
+      ],
+      "excludeSelectors.add": [
+        ".dss-hls-subtitle-overlay"
+      ],
+      "subtitleRule.add": {
+        "type": "disneyplus",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "loadingContainerSelector": ".dss-hls-subtitle-overlay",
+        "loadingStyle": "bottom: 15%;"
+      }
+    },
+    {
       "id": "linkingyourthinking",
       "matches": "community.linkingyourthinking.com",
       "additionalExcludeSelectors.remove": [
@@ -5246,6 +5332,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-22T14:39:08.273Z",
+  "buildinConfigUpdatedAt": "2023-12-22T15:32:02.533Z",
   "latestVersion": "0.12.10"
 }
