@@ -3347,7 +3347,8 @@
         ".game_description_snippet",
         ".game_area_description",
         "#earlyAccessHeader",
-        "[id^='ReviewContent'] .content"
+        "[id^='ReviewContent'] .content",
+        ".ModalOverlayContent"
       ],
       "excludeSelectors": [
         "#global_actions",
@@ -5235,6 +5236,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-22T01:44:01.199Z",
+  "buildinConfigUpdatedAt": "2023-12-22T02:19:29.500Z",
   "latestVersion": "0.12.10"
 }
