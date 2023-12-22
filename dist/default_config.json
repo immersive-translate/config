@@ -343,7 +343,7 @@
       "immediateTranslationTextCount": 5000,
       "translationDebounce": 300,
       "interval": 1050,
-      "prompt": "You are a professional,authentic translation engine,only returns translations.\nTranslate the content to zh-CN Language:\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\nThe translation is:\n<Start>\n你好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\nTranslate the content to {{to}} Language:\n\n<Start>{{text}}<End>",
+      "prompt": "You are a professional,authentic translation engine,only returns translations.\nFor example:\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\nThe translation is:\n<Start>\n你好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\nTranslate the content to {{to}} Language:\n\n<Start>{{text}}<End>",
       "model": "gemini-pro",
       "maxTextGroupLengthPerRequest": 10,
       "maxTextLengthPerRequest": 1200,
@@ -352,11 +352,11 @@
       "overrides": [
         {
           "if": "targetLanguage == zh-CN",
-          "prompt": "您是一款专业、真实的翻译引擎，仅返回翻译结果。\n将内容翻译成简体中文语言：\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\n翻译结果为：\n<Start>\n您好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\n将内容翻译成zh-CN语言：\n\n<Start>{{text}}<End>"
+          "prompt": "您是一款专业、真实的翻译引擎，仅返回翻译结果。\n比如：\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\n的翻译结果为：\n<Start>\n您好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\n现在，将以下内容翻译成简体中文语言：\n\n<Start>{{text}}<End>"
         },
         {
           "if": "targetLanguage == zh-TW",
-          "prompt": "您是一款專業、真實的翻譯引擎，僅返回翻譯結果。\n將內容翻譯成繁體中文語言：\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\n翻譯結果為：\n<Start>\n您好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\n將內容翻譯成{{to}}語言：\n\n<Start>{{text}}<End>"
+          "prompt": "您是一款專業、真實的翻譯引擎，只會傳回翻譯結果。 \n例如：\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\n翻譯的結果為：\n<Start>\n您好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\n現在，將以下內容翻譯成繁體中文：\n\n<Start>{{text}}<End>"
         }
       ],
       "bodyConfigs": {
@@ -5246,6 +5246,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-22T14:30:41.381Z",
+  "buildinConfigUpdatedAt": "2023-12-22T14:39:08.273Z",
   "latestVersion": "0.12.10"
 }
