@@ -1286,7 +1286,7 @@
           "[style*='height: 100px'] { height: 400px !important; }"
         ],
         "liveSubtitleRule": {
-          "containerSelector": "[role='listbox']",
+          "containerSelector": ".css-175oi2r.r-13awgt0.r-1pi2tsx.r-13qz1uu > [role='listbox']",
           "textSelectors": [
             ".css-1rynq56.r-bcqeeo.r-qvutc0.r-37j5jr.r-a023e6.r-16dba41.r-dhbnww.r-1pb70le"
           ],
@@ -5339,6 +5339,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-25T02:18:41.980Z",
+  "buildinConfigUpdatedAt": "2023-12-25T06:26:02.692Z",
   "latestVersion": "0.12.11"
 }
