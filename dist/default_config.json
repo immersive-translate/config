@@ -18,6 +18,7 @@
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
   "arxivRule": {
     "injectContainerSelector": ".extra-services .full-text ul",
+    "officialHtmlSelector": "#latexml-download-link",
     "validBefore": "2023-10-31",
     "validOnlySelector": ".download-format",
     "matches": [
@@ -5337,8 +5338,15 @@
           "class": "foreign"
         }
       }
+    },
+    {
+      "id": "https://browse.arxiv.org/",
+      "matches": "https://browse.arxiv.org",
+      "excludeSelectors.add": [
+        ".desktop_header"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-25T06:26:02.692Z",
+  "buildinConfigUpdatedAt": "2023-12-25T18:47:30.496Z",
   "latestVersion": "0.12.11"
 }
