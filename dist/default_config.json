@@ -45,7 +45,8 @@
     "https://www.disneyplus.com/[Disney+]",
     "https://www.ardmediathek.de/[ARD Mediathek]",
     "https://www.itv.com/[ITV]",
-    "https://www.domestika.org/[Domestika]"
+    "https://www.domestika.org/[Domestika]",
+    "https://www.artstation.com/learning[ArtStation]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -2219,8 +2220,14 @@
         "footer.learning-course-description.ng-star-inserted > span"
       ],
       "excludeSelectors": [
-        ".learning-card-meta"
-      ]
+        ".learning-card-meta",
+        ".vjs-text-track-display"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "/subtitles/.*\\.vtt$",
+        "loadingContainerSelector": ".vjs-text-track-display"
+      }
     },
     {
       "id": "artstationBlog",
@@ -5332,6 +5339,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-22T22:32:34.989Z",
+  "buildinConfigUpdatedAt": "2023-12-25T02:18:41.980Z",
   "latestVersion": "0.12.11"
 }
