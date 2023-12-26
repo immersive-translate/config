@@ -4989,7 +4989,10 @@
         "www.netflix.com"
       ],
       "excludeSelectors.add": [
-        ".player-timedtext-text-container"
+        ".player-timedtext"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".player-timedtext *"
       ],
       "subtitleRule.add": {
         "type": "netflix",
@@ -5005,6 +5008,9 @@
       ],
       "excludeSelectors.add": [
         "[data-purpose='captions-cue-text']"
+      ],
+      "mutationExcludeSelectors.add": [
+        "[data-purpose='captions-cue-text'] *"
       ],
       "subtitleRule.add": {
         "type": "udemy",
@@ -5045,6 +5051,9 @@
       "excludeSelectors.add": [
         "[data-subtitles-container='true']"
       ],
+      "mutationExcludeSelectors.add": [
+        "[data-subtitles-container='true'] *"
+      ],
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.vtt$",
@@ -5058,6 +5067,9 @@
       ],
       "excludeSelectors.add": [
         ".vjs-text-track-display"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".vjs-text-track-display *"
       ],
       "subtitleRule.add": {
         "type": "webvtt",
@@ -5073,6 +5085,9 @@
       "excludeSelectors.add": [
         ".vjs-text-track-display"
       ],
+      "mutationExcludeSelectors.add": [
+        ".vjs-text-track-display *"
+      ],
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": ".vtt$",
@@ -5087,6 +5102,9 @@
       "excludeSelectors.add": [
         ".vjs-text-track-display"
       ],
+      "mutationExcludeSelectors.add": [
+        ".vjs-text-track-display *"
+      ],
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.vtt\\?",
@@ -5100,6 +5118,9 @@
       ],
       "excludeSelectors.add": [
         ".vjs-text-track-display"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".vjs-text-track-display *"
       ],
       "subtitleRule.add": {
         "type": "webvtt",
@@ -5138,6 +5159,9 @@
       "excludeSelectors.add": [
         "[data-testid='playerContainer']"
       ],
+      "mutationExcludeSelectors.add": [
+        "[data-testid='playerContainer'] *"
+      ],
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.vtt$",
@@ -5165,7 +5189,10 @@
         "www.ted.com"
       ],
       "excludeSelectors.add": [
-        ".text-textPrimary-onDark.tracking-tui-tight"
+        "#video"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#video *"
       ],
       "subtitleRule.add": {
         "type": "text_track",
@@ -5349,6 +5376,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-26T08:37:52.219Z",
+  "buildinConfigUpdatedAt": "2023-12-26T14:21:51.753Z",
   "latestVersion": "0.12.11"
 }
