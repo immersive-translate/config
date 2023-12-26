@@ -5287,6 +5287,9 @@
         "smp-subtitles",
         "#subtitle_subtitle2"
       ],
+      "mutationExcludeSelectors.add": [
+        "[data-testid='media-player-container-landscape'] *"
+      ],
       "subtitleRule.add": {
         "type": "ebutt",
         "hookType": "fetch",
@@ -5376,6 +5379,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-26T14:21:51.753Z",
+  "buildinConfigUpdatedAt": "2023-12-26T14:31:21.426Z",
   "latestVersion": "0.12.11"
 }
