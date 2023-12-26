@@ -570,7 +570,8 @@
       "msreadoutspan",
       "rw-highlight",
       "web-highlight",
-      "font.immersive-translate-target-wrapper *"
+      "font.immersive-translate-target-wrapper *",
+      "pre"
     ],
     "mutationExcludeContainsSelectors": [
       "msreadoutspan",
@@ -1144,7 +1145,7 @@
     {
       "id": "pdos.csail.mit.edu",
       "matches": "pdos.csail.mit.edu",
-      "mutationExcludeSelectors": [
+      "mutationExcludeSelectors.add": [
         "body"
       ]
     },
@@ -1157,7 +1158,7 @@
       "selectorMatches": [
         "body > pre"
       ],
-      "mutationExcludeSelectors": [
+      "mutationExcludeSelectors.add": [
         "body"
       ],
       "isTransformPreTagNewLine": true,
@@ -5348,6 +5349,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-26T07:08:42.362Z",
+  "buildinConfigUpdatedAt": "2023-12-26T07:51:57.729Z",
   "latestVersion": "0.12.11"
 }
