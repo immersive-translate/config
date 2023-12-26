@@ -827,7 +827,8 @@
       "msup",
       "mi",
       "mn",
-      "msqrt"
+      "msqrt",
+      "d-math"
     ],
     "additionalStayOriginalTags": [],
     "inlineTags": [
@@ -5347,6 +5348,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-25T18:47:30.496Z",
+  "buildinConfigUpdatedAt": "2023-12-26T07:08:42.362Z",
   "latestVersion": "0.12.11"
 }
