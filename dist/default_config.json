@@ -5176,6 +5176,9 @@
       "excludeSelectors.add": [
         ".vp-captions"
       ],
+      "mutationExcludeSelectors.add": [
+        ".vp-captions *"
+      ],
       "subtitleRule.add": {
         "type": "text_track",
         "videoPlayerSelector": "video",
@@ -5211,6 +5214,10 @@
       "excludeSelectors.add": [
         ".vp-captions-line"
       ],
+      "mutationExcludeSelectors.add": [
+        ".vp-captions *",
+        ".vp-captions-line *"
+      ],
       "subtitleRule.add": {
         "type": "text_track",
         "videoPlayerSelector": "video",
@@ -5226,6 +5233,9 @@
       "excludeSelectors.add": [
         ".w-captions",
         ".w-captions-line > div > span"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".w-captions *"
       ],
       "subtitleRule.add": {
         "type": "general",
@@ -5268,6 +5278,9 @@
       "excludeSelectors.add": [
         ".ardplayer-viewport-addon-overlays"
       ],
+      "mutationExcludeSelectors.add": [
+        ".ardplayer-viewport-addon-overlays *"
+      ],
       "subtitleRule.add": {
         "type": "ebutt",
         "hookType": "fetch",
@@ -5304,6 +5317,9 @@
       ],
       "excludeSelectors.add": [
         ".dss-hls-subtitle-overlay"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".dss-hls-subtitle-overlay *"
       ],
       "subtitleRule.add": {
         "type": "disneyplus",
@@ -5379,6 +5395,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-26T14:31:21.426Z",
+  "buildinConfigUpdatedAt": "2023-12-26T14:39:54.639Z",
   "latestVersion": "0.12.11"
 }
