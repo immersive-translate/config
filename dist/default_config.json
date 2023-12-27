@@ -47,7 +47,8 @@
     "https://www.ardmediathek.de/[ARD Mediathek]",
     "https://www.itv.com/[ITV]",
     "https://www.domestika.org/[Domestika]",
-    "https://www.artstation.com/learning[ArtStation]"
+    "https://www.artstation.com/learning[ArtStation]",
+    "https://www.zdf.de[ZDF]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -55,6 +56,7 @@
   "isShowInputTranslationConsent": true,
   "inactiveDays": 21,
   "enableInputTranslationWithoutTriggerKey": true,
+  "autoSelectTargetLanguageAfterInstalledAt": "2023-12-28",
   "defaultAlwaysTranslatedUrls": [
     "twitter.com",
     "www.reddit.com",
@@ -1290,6 +1292,7 @@
         ],
         "liveSubtitleRule": {
           "containerSelector": ".css-175oi2r.r-13awgt0.r-1pi2tsx.r-13qz1uu > [role='listbox']",
+          "reportSelector": ".css-175oi2r.r-1awozwy.r-173mn98.r-1mf7evn.r-7e3msg",
           "textSelectors": [
             ".css-1rynq56.r-bcqeeo.r-qvutc0.r-37j5jr.r-a023e6.r-16dba41.r-dhbnww.r-1pb70le"
           ],
@@ -5270,6 +5273,21 @@
       }
     },
     {
+      "id": "zdf.de",
+      "matches": [
+        "www.zdf.de"
+      ],
+      "excludeSelectors.add": [
+        ".zdfplayer-cue-region"
+      ],
+      "subtitleRule.add": {
+        "type": "ebutt",
+        "subtitleUrlRegExp": "mtt/.*.xml",
+        "loadingContainerSelector": ".zdfplayer-video-container",
+        "responseType": "document"
+      }
+    },
+    {
       "id": "disneyplus",
       "matches": [
         "www.disneyplus.com"
@@ -5367,6 +5385,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-27T08:06:18.051Z",
+  "buildinConfigUpdatedAt": "2023-12-27T14:24:46.233Z",
   "latestVersion": "0.12.11"
 }
