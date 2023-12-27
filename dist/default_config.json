@@ -5393,8 +5393,21 @@
       "excludeSelectors.add": [
         ".desktop_header"
       ]
+    },
+    {
+      "id": "jstor",
+      "matches": "www.jstor.org",
+      "excludeSelectors.add": [
+        ".audio-duration",
+        "[data-qa='card-item-count']"
+      ],
+      "globalStyles": {
+        ".card__heading": "-webkit-line-clamp:unset;",
+        "search-results-vue-pharos-image-card": "display:flex;",
+        "search-results-vue-pharos-link": "display:inline;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-26T14:39:54.639Z",
+  "buildinConfigUpdatedAt": "2023-12-27T07:22:45.382Z",
   "latestVersion": "0.12.11"
 }
