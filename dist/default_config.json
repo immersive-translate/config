@@ -4368,15 +4368,6 @@
     {
       "id": "piAi",
       "matches": "pi.ai/talk",
-      "excludeSelectors": [
-        ".whitespace-pre-wrap > span *"
-      ],
-      "aiRule": {
-        "streamingSelector": "button[class*='fixed'][disabled]",
-        "messageWrapperSelector": ".whitespace-pre-wrap",
-        "streamingChange": false,
-        "streamingDeepChild": false
-      },
       "globalStyles": {
         "[class*='text-brand-green']": "flex-direction:column;"
       }
@@ -5408,6 +5399,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-27T07:29:12.812Z",
+  "buildinConfigUpdatedAt": "2023-12-27T07:44:47.272Z",
   "latestVersion": "0.12.11"
 }
