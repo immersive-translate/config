@@ -5403,11 +5403,11 @@
       ],
       "globalStyles": {
         ".card__heading": "-webkit-line-clamp:unset;",
-        "search-results-vue-pharos-image-card": "display:flex;",
+        "search-results-vue-pharos-image-card,search-ui-pharos-image-card": "display:flex;",
         "search-results-vue-pharos-link": "display:inline;"
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-27T07:22:45.382Z",
+  "buildinConfigUpdatedAt": "2023-12-27T07:29:12.812Z",
   "latestVersion": "0.12.11"
 }
