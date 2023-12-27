@@ -3206,38 +3206,6 @@
       }
     },
     {
-      "id": "newstop",
-      "matches": [
-        "chat.newstop.asia",
-        "chat.waixingyun.cn"
-      ],
-      "excludeSelectors": [
-        ".markdown-body *"
-      ],
-      "aiRule": {
-        "streamingSelector": ".n-button.n-button--warning-type.n-button--medium-type",
-        "messageWrapperSelector": ".markdown-body",
-        "streamingChange": false,
-        "streamingDeepChild": true
-      }
-    },
-    {
-      "id": "askgpt",
-      "matches": [
-        "askgpt.cn",
-        "chatcat.zhaoyoung.me"
-      ],
-      "excludeSelectors": [
-        ".markdown-body *"
-      ],
-      "aiRule": {
-        "streamingSelector": ".home_chat-message-status__EsVNi",
-        "messageWrapperSelector": ".markdown-body",
-        "streamingChange": true,
-        "streamingDeepChild": true
-      }
-    },
-    {
       "id": "poe",
       "matches": [
         "https://poe.com/*"
@@ -5399,6 +5367,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-27T07:44:47.272Z",
+  "buildinConfigUpdatedAt": "2023-12-27T08:06:18.051Z",
   "latestVersion": "0.12.11"
 }
