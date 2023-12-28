@@ -70,7 +70,7 @@
     "www.wsj.com",
     "www.goodreads.com"
   ],
-  "spVersion": "0.12.12",
+  "spVersion": "0.12.13",
   "modifiedBySystem": false,
   "enableDefaultAlwaysTranslatedUrls": true,
   "isChangedAlwaysTranslatedUrls": false,
@@ -5385,6 +5385,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-27T14:24:57.000Z",
+  "buildinConfigUpdatedAt": "2023-12-28T01:54:39.985Z",
   "latestVersion": "0.12.12"
 }
