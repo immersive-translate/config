@@ -496,7 +496,6 @@
       "facebook.com",
       "*.facebook.com",
       "web.telegram.org",
-      "github.com",
       "*.instagram.com",
       "instagram.com",
       "*.slack.com",
@@ -5385,6 +5384,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-28T01:54:39.985Z",
+  "buildinConfigUpdatedAt": "2023-12-28T06:52:23.912Z",
   "latestVersion": "0.12.12"
 }
