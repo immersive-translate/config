@@ -443,6 +443,7 @@
         "^抱歉.*翻译",
         "^很抱歉.*翻译",
         "^我很抱歉.*翻译",
+        "^对不起，我无法直接翻译",
         "^抱歉.*我无法",
         "^I'm sorry, but I cannot",
         "^I'm sorry, but I cannot provide"
@@ -5385,6 +5386,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-28T07:27:53.971Z",
+  "buildinConfigUpdatedAt": "2023-12-28T15:00:02.699Z",
   "latestVersion": "0.12.12"
 }
