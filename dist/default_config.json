@@ -1,5 +1,40 @@
 {
   "immediateTranslationTextCount": 4999,
+  "translationStartMode": "dynamic",
+  "immediateTranslationPattern": {
+    "matches": [
+      "www.tumblr.com",
+      "twitter.com",
+      "*.twitter.com",
+      "medium.com",
+      "*.medium.com",
+      "www.facebook.com",
+      "www.youtube.com",
+      "m.youtube.com",
+      "mail.google.com",
+      "discord.com",
+      "google.com",
+      "facebook.com",
+      "*.facebook.com",
+      "web.telegram.org",
+      "*.instagram.com",
+      "instagram.com",
+      "*.slack.com",
+      "https://old.reddit.com/",
+      "https://www.reddit.com/r/popular/",
+      "https://www.reddit.com/",
+      "https://www.reddit.com/hot/",
+      "https://www.reddit.com/new/",
+      "https://www.reddit.com/top/",
+      "https://www.reddit.com/.compact",
+      "https://app.immersivetranslate.com/pdf*"
+    ],
+    "excludeMatches": [],
+    "selectorMatches": [
+      "meta[property='al:ios:url'][content^='medium://']"
+    ],
+    "selectorExcludeMatches": []
+  },
   "interval": 3600000,
   "beta": false,
   "cache": true,
@@ -480,40 +515,6 @@
     "shareToDraft": ""
   },
   "tempTranslateDomainMinutes": 0,
-  "immediateTranslationPattern": {
-    "matches": [
-      "www.tumblr.com",
-      "twitter.com",
-      "*.twitter.com",
-      "medium.com",
-      "*.medium.com",
-      "www.facebook.com",
-      "www.youtube.com",
-      "m.youtube.com",
-      "mail.google.com",
-      "discord.com",
-      "google.com",
-      "facebook.com",
-      "*.facebook.com",
-      "web.telegram.org",
-      "*.instagram.com",
-      "instagram.com",
-      "*.slack.com",
-      "https://old.reddit.com/",
-      "https://www.reddit.com/r/popular/",
-      "https://www.reddit.com/",
-      "https://www.reddit.com/hot/",
-      "https://www.reddit.com/new/",
-      "https://www.reddit.com/top/",
-      "https://www.reddit.com/.compact",
-      "https://app.immersivetranslate.com/pdf*"
-    ],
-    "excludeMatches": [],
-    "selectorMatches": [
-      "meta[property='al:ios:url'][content^='medium://']"
-    ],
-    "selectorExcludeMatches": []
-  },
   "translationParagraphLanguagePattern": {
     "matches": [
       "onboarding.immersivetranslate.com",
@@ -5384,6 +5385,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-28T06:52:23.912Z",
+  "buildinConfigUpdatedAt": "2023-12-28T07:27:53.971Z",
   "latestVersion": "0.12.12"
 }
