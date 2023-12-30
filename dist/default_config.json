@@ -1289,7 +1289,7 @@
         "type": "live",
         "isInject": false,
         "injectedCss": [
-          "[style*='height: 100px'] { height: 400px !important; }"
+          "#layers[style='z-index: 1;'] [style='height: 100px;'] { height: 400px !important; }"
         ],
         "liveSubtitleRule": {
           "containerSelector": ".css-175oi2r.r-13awgt0.r-1pi2tsx.r-13qz1uu > [role='listbox']",
@@ -5386,6 +5386,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-28T20:00:37.000Z",
+  "buildinConfigUpdatedAt": "2023-12-30T18:39:40.959Z",
   "latestVersion": "0.12.13"
 }
