@@ -3328,7 +3328,8 @@
       "matches": "steamcommunity.com",
       "globalStyles": {
         ".forum_topic,.rightbox_list_option": "height:auto;",
-        ".forum_topic_name": "white-space:normal;"
+        ".forum_topic_name": "white-space:normal;line-height: 1.25rem; padding: 6px 20px 0 0;",
+        ".forum_topic_op": "clear: left; padding: 0 0 6px 2rem;"
       },
       "excludeSelectors": [
         ".forum_paging",
@@ -5386,6 +5387,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2023-12-30T18:39:40.959Z",
+  "buildinConfigUpdatedAt": "2024-01-01T05:36:37.247Z",
   "latestVersion": "0.12.13"
 }
