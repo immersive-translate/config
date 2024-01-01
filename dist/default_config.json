@@ -769,7 +769,6 @@
       "[translate=no]",
       ".navmenu-container",
       ".google-symbols",
-      "markerow8",
       "h1 br",
       "h2 br",
       "h3 br",
@@ -2710,8 +2709,7 @@
         "i.fa",
         "i[class^=fa-]",
         ".navmenu-container",
-        ".google-symbols",
-        "markerow8"
+        ".google-symbols"
       ],
       "selectors": [
         "h1",
@@ -5387,6 +5385,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-01T05:36:37.247Z",
+  "buildinConfigUpdatedAt": "2024-01-01T13:04:40.829Z",
   "latestVersion": "0.12.13"
 }
