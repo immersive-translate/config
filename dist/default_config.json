@@ -212,6 +212,7 @@
     ]
   },
   "blockUrls": [
+    "https://immersivetranslate.com/preview",
     "https://dash.immersivetranslate.com/*",
     "https://immersive-translate.owenyoung.com/options/",
     "https://immersive-translate.owenyoung.com/auth-done/",
@@ -387,7 +388,7 @@
       ],
       "immediateTranslationTextCount": 5000,
       "translationDebounce": 300,
-      "interval": 1050,
+      "interval": 1650,
       "prompt": "You are a professional,authentic translation engine,only returns translations.\nFor example:\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\nThe translation is:\n<Start>\n你好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\nTranslate the content to {{to}} Language:\n\n<Start>{{text}}<End>",
       "model": "gemini-pro",
       "maxTextGroupLengthPerRequest": 10,
@@ -5385,6 +5386,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-01T13:04:40.829Z",
+  "buildinConfigUpdatedAt": "2024-01-02T05:30:32.649Z",
   "latestVersion": "0.12.13"
 }
