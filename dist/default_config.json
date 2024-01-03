@@ -212,7 +212,6 @@
     ]
   },
   "blockUrls": [
-    "https://immersivetranslate.com/preview",
     "https://dash.immersivetranslate.com/*",
     "https://immersive-translate.owenyoung.com/options/",
     "https://immersive-translate.owenyoung.com/auth-done/",
@@ -5427,6 +5426,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-03T04:10:08.690Z",
+  "buildinConfigUpdatedAt": "2024-01-03T06:35:36.503Z",
   "latestVersion": "0.12.13"
 }
