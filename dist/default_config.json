@@ -5384,8 +5384,15 @@
         "search-results-vue-pharos-image-card,search-ui-pharos-image-card": "display:flex;",
         "search-results-vue-pharos-link": "display:inline;"
       }
+    },
+    {
+      "id": "tandfonline",
+      "matches": "*.tandfonline.com",
+      "extraInlineSelectors.add": [
+        "span.off-screen"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-02T05:30:32.649Z",
+  "buildinConfigUpdatedAt": "2024-01-03T03:08:13.402Z",
   "latestVersion": "0.12.13"
 }
