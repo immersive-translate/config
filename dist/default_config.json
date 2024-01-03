@@ -2232,7 +2232,7 @@
       ],
       "subtitleRule.add": {
         "type": "webvtt",
-        "subtitleUrlRegExp": "/subtitles/.*\\.webvtt$",
+        "subtitleUrlRegExp": "/subtitles/.*\\.(vtt|webvtt)$",
         "loadingContainerSelector": ".vjs-text-track-display"
       }
     },
@@ -5427,6 +5427,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-03T04:06:32.355Z",
+  "buildinConfigUpdatedAt": "2024-01-03T04:10:08.690Z",
   "latestVersion": "0.12.13"
 }
