@@ -5091,6 +5091,57 @@
       }
     },
     {
+      "id": "hbomax",
+      "matches": [
+        "https://play.max.com"
+      ],
+      "excludeSelectors.add": [
+        "[data-testid='playerContainer']"
+      ],
+      "mutationExcludeSelectors.add": [
+        "[data-testid='playerContainer'] *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "loadingContainerSelector": "[data-testid='playerContainer']"
+      }
+    },
+    {
+      "id": "mindvalley",
+      "matches": [
+        "home.mindvalley.com"
+      ],
+      "excludeSelectors.add": [
+        ".vjs-text-track-display"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".vjs-text-track-display *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.webvtt$",
+        "loadingContainerSelector": ".vjs-text-track-display"
+      }
+    },
+    {
+      "id": "masterclass",
+      "matches": [
+        "www.masterclass.com"
+      ],
+      "excludeSelectors.add": [
+        ".vjs-text-track-display"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".vjs-text-track-display *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt\\?",
+        "loadingContainerSelector": ".vjs-text-track-display"
+      }
+    },
+    {
       "id": "itv",
       "matches": [
         "www.itv.com"
@@ -5112,23 +5163,6 @@
         "videoPlayerSelector": ".vjs-tech",
         "loadingContainerSelector": ".rc-VideoControlsContainer",
         "loadingStyle": "bottom: unset; top: 5%;"
-      }
-    },
-    {
-      "id": "hbomax",
-      "matches": [
-        "https://play.max.com"
-      ],
-      "excludeSelectors.add": [
-        "[data-testid='playerContainer']"
-      ],
-      "mutationExcludeSelectors.add": [
-        "[data-testid='playerContainer'] *"
-      ],
-      "subtitleRule.add": {
-        "type": "webvtt",
-        "subtitleUrlRegExp": "\\.vtt$",
-        "loadingContainerSelector": "[data-testid='playerContainer']"
       }
     },
     {
@@ -5393,6 +5427,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-03T03:08:13.402Z",
+  "buildinConfigUpdatedAt": "2024-01-03T03:42:46.135Z",
   "latestVersion": "0.12.13"
 }
