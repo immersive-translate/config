@@ -91,7 +91,7 @@
   "isShowInputTranslationConsent": true,
   "inactiveDays": 21,
   "enableInputTranslationWithoutTriggerKey": true,
-  "autoSelectTargetLanguageAfterInstalledAt": "",
+  "autoSelectTargetLanguageAfterInstalledAt": "2024-01-04",
   "defaultAlwaysTranslatedUrls": [
     "twitter.com",
     "www.reddit.com",
@@ -5426,6 +5426,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-04T13:30:40.407Z",
-  "latestVersion": "0.12.13"
+  "buildinConfigUpdatedAt": "2024-01-04T14:00:46.715Z",
+  "latestVersion": "0.12.14"
 }
