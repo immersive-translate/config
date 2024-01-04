@@ -5402,7 +5402,8 @@
       "id": "https://browse.arxiv.org/",
       "matches": "https://browse.arxiv.org",
       "excludeSelectors.add": [
-        ".desktop_header"
+        ".desktop_header",
+        "[class*='ltx_lst_language_']"
       ]
     },
     {
@@ -5426,6 +5427,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-04T14:00:21.000Z",
+  "buildinConfigUpdatedAt": "2024-01-04T15:12:09.025Z",
   "latestVersion": "0.12.14"
 }
