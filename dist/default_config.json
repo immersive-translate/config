@@ -1,6 +1,7 @@
 {
   "immediateTranslationTextCount": 4999,
   "translationStartMode": "dynamic",
+  "domReadyDetectTimeout": 3000,
   "immediateTranslationPattern": {
     "matches": [
       "www.tumblr.com",
@@ -60,6 +61,10 @@
       "https://arxiv.org/abs/*"
     ]
   },
+  "translationGeneralConfig": {
+    "engine": "bing",
+    "_systemExcludeWordRegex": "\\b({word})\\b"
+  },
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
     "https://www.netflix.com[NetFlix]",
@@ -83,12 +88,15 @@
     "https://www.itv.com/[ITV]",
     "https://www.domestika.org/[Domestika]",
     "https://www.artstation.com/learning[ArtStation]",
-    "https://www.zdf.de[ZDF]"
+    "https://www.zdf.de[ZDF]",
+    "https://www.masterclass.com[MasterClass]",
+    "https://home.mindvalley.com[Mindvalley]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
   "enableFloatShare": true,
   "isShowInputTranslationConsent": true,
+  "enableShowFloatingBallGuide": true,
   "inactiveDays": 21,
   "enableInputTranslationWithoutTriggerKey": true,
   "autoSelectTargetLanguageAfterInstalledAt": "2024-01-04",
@@ -105,7 +113,7 @@
     "www.wsj.com",
     "www.goodreads.com"
   ],
-  "spVersion": "0.12.15",
+  "spVersion": "1.1.0",
   "modifiedBySystem": false,
   "enableDefaultAlwaysTranslatedUrls": true,
   "isChangedAlwaysTranslatedUrls": false,
@@ -113,6 +121,19 @@
     "matches": [],
     "excludeMatches": []
   },
+  "excludeTranslationHtmlTags": [
+    "textarea",
+    "input",
+    "button",
+    "select",
+    "option",
+    "iframe",
+    "strong",
+    "form",
+    "body",
+    "b",
+    "i"
+  ],
   "inputTranslationService": "inherit",
   "inputTranslationBlockUrls": [
     "*.feishu.cn",
@@ -152,6 +173,13 @@
     "afterInstalledAt": "2023-10-28",
     "fixedPosition": "right"
   },
+  "floatBallTooltipRule": {
+    "mainBtnTooltipImmediateShowCount": 5,
+    "mainBtnTooltipDelayTime": 1800,
+    "h5MainBtnTooltipMaxShowCount": 2
+  },
+  "pcFloatBallMainBtnTooltipShownCount": 0,
+  "h5FloatBallMainBtnTooltipShownCount": 0,
   "inputLanguageCodeAlias": {
     "en": [
       "英文",
@@ -513,7 +541,8 @@
     "toggleOnlyTransation": "",
     "toggleTranslateToThePageEndImmediately": "",
     "toggleTranslationMask": "",
-    "shareToDraft": ""
+    "shareToDraft": "",
+    "toggleMouseHoverTranslateDirectly": ""
   },
   "tempTranslateDomainMinutes": 0,
   "translationParagraphLanguagePattern": {
@@ -553,7 +582,18 @@
   "sourceLanguageUrlPattern": {},
   "generalRule": {
     "_comment": "",
+    "glossaries": [
+      {
+        "k": "LLM",
+        "v": ""
+      }
+    ],
+    "excludeRegexps": [
+      "(&lt;\\\\/?[a-zA-Z0-9]+(?:[^&gt;]*?)&gt;)",
+      "(<form>|<body>|<strong>|<em>|<b>|<i>|<u>|<br>|<br/>)"
+    ],
     "paragraphFirstLetterFontSize": 35,
+    "toastErrorMinTimes": 9,
     "enableSubtitle": false,
     "subtitle.autoEnableSubtitle": false,
     "disableNewTextTranslate": false,
@@ -620,7 +660,8 @@
       "preTranslation": false,
       "humanPreferred": true,
       "disabled": false,
-      "hookType": "xhr"
+      "hookType": "xhr",
+      "showQuickButton": true
     },
     "bodyRule": {
       "enable": true,
@@ -1025,6 +1066,13 @@
       "bodyRule.add": {
         "enable": false
       },
+      "injectedCss": [
+        ".immersive-translate-target-wrapper {display: contents!important;position:absolute;}",
+        ".immersive-translate-target-wrapper br {display: none;!important;}",
+        ".immersive-translate-target-wrapper span {position: relative;!important;}",
+        ".immersive-translate-error-wrapper {padding:0px !important;margin:0px !important;}",
+        "font {line-height: 0!important;}"
+      ],
       "globalAttributes": {
         "[class='textLayer']": {
           "translate": "no"
@@ -1780,7 +1828,10 @@
         "languageSelector": ".ytp-menuitem-label",
         "injectedCss": [
           "#shorts-player .ytp-caption-window-bottom {top: 2%; bottom: unset!important;}"
-        ]
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".ytp-chrome-controls"
+        }
       },
       "urlChangeDelay": 2000,
       "wrapperPrefix": "<br/>",
@@ -1814,7 +1865,10 @@
         "languageSelector": ".ytp-menuitem-label",
         "injectedCss": [
           "#shorts-player .ytp-caption-window-bottom {top: 2%; bottom: unset!important;}"
-        ]
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".ytp-chrome-controls"
+        }
       }
     },
     {
@@ -5427,6 +5481,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-04T17:35:32.090Z",
+  "buildinConfigUpdatedAt": "2024-01-05T18:56:26.226Z",
   "latestVersion": "0.12.14"
 }
