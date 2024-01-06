@@ -582,6 +582,7 @@
   "sourceLanguageUrlPattern": {},
   "generalRule": {
     "_comment": "",
+    "isTranslateWhenServiceChanged": true,
     "glossaries": [
       {
         "k": "LLM",
@@ -1106,7 +1107,11 @@
     },
     {
       "id": "isEbookBuilder",
+      "matches": [
+        "https://app.immersivetranslate.com/ebook/make/"
+      ],
       "isEbookBuilder": true,
+      "isTranslateWhenServiceChanged": false,
       "isTranslateTitle": false,
       "targetWrapperTag": "span",
       "selectorMatches": [
@@ -5481,6 +5486,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-06T11:23:44.627Z",
+  "buildinConfigUpdatedAt": "2024-01-06T13:50:58.376Z",
   "latestVersion": "1.1.1"
 }
