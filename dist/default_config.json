@@ -1060,8 +1060,10 @@
         "meta[name='immersive-translate-pdf-viewer'][content='true']"
       ],
       "matches": [
-        "https://app.immersivetranslate.com/pdf*"
+        "https://app.immersivetranslate.com/pdf*",
+        "http://localhost:8000/pdf*"
       ],
+      "isTranslateWhenServiceChanged": false,
       "translationMode": "translation",
       "skipEditableCheck": true,
       "selectors": [
@@ -1111,7 +1113,8 @@
     {
       "id": "isEbookBuilder",
       "matches": [
-        "https://app.immersivetranslate.com/ebook/make/"
+        "https://app.immersivetranslate.com/ebook/make/",
+        "http://localhost:8000/ebook/make/"
       ],
       "isEbookBuilder": true,
       "isTranslateWhenServiceChanged": false,
@@ -5489,6 +5492,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-06T14:19:02.972Z",
+  "buildinConfigUpdatedAt": "2024-01-06T14:58:06.993Z",
   "latestVersion": "1.1.1"
 }
