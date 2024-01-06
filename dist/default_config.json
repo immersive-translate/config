@@ -1827,7 +1827,7 @@
         "subtitleButtonSelector": ".ytp-subtitles-button",
         "languageSelector": ".ytp-menuitem-label",
         "injectedCss": [
-          "#shorts-player .ytp-caption-window-bottom {top: 2%; bottom: unset!important;}"
+          "#shorts-player .ytp-caption-window-bottom {top: 2%; bottom: unset!important;} #immersive-translate-quick-button-container {font-size: 12px;}"
         ],
         "quickButtonRule": {
           "appendSelector": ".ytp-chrome-controls"
@@ -5481,6 +5481,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-05T20:34:13.000Z",
+  "buildinConfigUpdatedAt": "2024-01-06T04:57:09.814Z",
   "latestVersion": "1.1.1"
 }
