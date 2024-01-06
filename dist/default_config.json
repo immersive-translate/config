@@ -339,6 +339,12 @@
         "#"
       ]
     },
+    "cai": {
+      "placeholderDelimiters": [
+        "{",
+        "}"
+      ]
+    },
     "caiyun": {
       "placeholderDelimiters": [
         "{",
@@ -371,6 +377,12 @@
       ],
       "limit": 10
     },
+    "tenAlpha": {
+      "placeholderDelimiters": [
+        "@",
+        "#"
+      ]
+    },
     "mock": {
       "placeholderDelimiters": [
         "<code>",
@@ -393,10 +405,18 @@
       ]
     },
     "deeplx": {
-      "limit": 3
+      "limit": 3,
+      "placeholderDelimiters": [
+        "@",
+        "#"
+      ]
     },
     "d": {
-      "immediateTranslationTextCount": 0
+      "immediateTranslationTextCount": 0,
+      "placeholderDelimiters": [
+        "@",
+        "#"
+      ]
     },
     "papago": {
       "placeholderDelimiters": [
@@ -532,6 +552,30 @@
         "\n\n-|",
         "|-\n\n",
         "\n?\n?-\\|\\d+\\|-\n?\n?"
+      ]
+    },
+    "azure": {
+      "placeholderDelimiters": [
+        "@",
+        "#"
+      ]
+    },
+    "you": {
+      "placeholderDelimiters": [
+        "@",
+        "#"
+      ]
+    },
+    "openl": {
+      "placeholderDelimiters": [
+        "@",
+        "#"
+      ]
+    },
+    "niu": {
+      "placeholderDelimiters": [
+        "@",
+        "#"
       ]
     }
   },
@@ -5492,6 +5536,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-06T15:19:22.000Z",
+  "buildinConfigUpdatedAt": "2024-01-06T16:31:55.202Z",
   "latestVersion": "1.1.2"
 }
