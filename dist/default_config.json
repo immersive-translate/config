@@ -5205,10 +5205,12 @@
         "play.hbomax.com"
       ],
       "excludeSelectors.add": [
-        "[data-testid='playerContainer']"
+        "[data-testid='playerContainer']",
+        "[data-testid='CueBoxContainer']"
       ],
       "mutationExcludeSelectors.add": [
-        "[data-testid='playerContainer'] *"
+        "[data-testid='playerContainer'] *",
+        "[data-testid='CueBoxContainer'] *"
       ],
       "subtitleRule.add": {
         "type": "webvtt",
@@ -5537,6 +5539,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-07T10:02:30.544Z",
+  "buildinConfigUpdatedAt": "2024-01-07T10:24:43.917Z",
   "latestVersion": "1.1.2"
 }
