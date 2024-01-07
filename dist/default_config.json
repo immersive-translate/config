@@ -3407,6 +3407,13 @@
       ]
     },
     {
+      "id": "otherTiktok",
+      "matches": "*.tiktok.com",
+      "additionalExcludeSelectors.remove": [
+        ".notranslate"
+      ]
+    },
+    {
       "id": "rfcEditor",
       "matches": [
         "www.rfc-editor.org",
@@ -5539,6 +5546,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-07T10:24:43.917Z",
+  "buildinConfigUpdatedAt": "2024-01-07T14:10:04.555Z",
   "latestVersion": "1.1.2"
 }
