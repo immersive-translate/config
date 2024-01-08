@@ -631,6 +631,10 @@
       {
         "k": "LLM",
         "v": ""
+      },
+      {
+        "k": "LLMs",
+        "v": ""
       }
     ],
     "excludeRegexps": [
@@ -5546,6 +5550,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-08T01:39:21.452Z",
+  "buildinConfigUpdatedAt": "2024-01-08T10:32:25.808Z",
   "latestVersion": "1.1.2"
 }
