@@ -1897,8 +1897,11 @@
       "wrapperSuffix": ""
     },
     {
-      "id": "youtube-nocookie",
-      "matches": "www.youtube-nocookie.com",
+      "id": "youtube-subtitle",
+      "matches": [
+        "www.youtube-nocookie.com",
+        "music.youtube.com"
+      ],
       "extraBlockSelectors": [
         ".caption-visual-line"
       ],
@@ -1918,7 +1921,8 @@
         "loadingContainerSelector": ".ytp-caption-window-container",
         "videoADSelector": ".ytp-ad-player-overlay",
         "translationOnlyPattern": [
-          "www.youtube-nocookie.com/embed*"
+          "www.youtube-nocookie.com/embed*",
+          "music.youtube.com/watch*"
         ],
         "subtitleButtonSelector": ".ytp-subtitles-button",
         "languageSelector": ".ytp-menuitem-label",
@@ -5550,6 +5554,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-08T10:32:25.808Z",
+  "buildinConfigUpdatedAt": "2024-01-09T02:23:56.721Z",
   "latestVersion": "1.1.2"
 }
