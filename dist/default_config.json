@@ -247,6 +247,7 @@
     "https://dash.immersivetranslate.com/auth-done/",
     "http://localhost:8000/dist/userscript/options/",
     "http://localhost:8000/auth-done/",
+    "http://localhost:38001/",
     "http://192.168.50.9:8000/dist/userscript/options/",
     "https://www.deepl.com/translator",
     "translate.google.com",
@@ -1109,7 +1110,7 @@
       ],
       "matches": [
         "https://app.immersivetranslate.com/pdf*",
-        "http://localhost:8000/pdf*"
+        "http://localhost:38001/pdf*"
       ],
       "isTranslateWhenServiceChanged": false,
       "translationMode": "translation",
@@ -3321,7 +3322,8 @@
         "streamingSelector": ".result-streaming.markdown",
         "messageWrapperSelector": ".markdown",
         "streamingChange": true,
-        "streamingDeepChild": true
+        "streamingDeepChild": true,
+        "streamingDelayTime": 1000
       }
     },
     {
@@ -3330,14 +3332,17 @@
         "https://poe.com/*"
       ],
       "excludeSelectors": [
-        ".Markdown_markdownContainer__UyYrv *",
-        ".MarkdownLink_linkifiedLink__KxC9G"
+        ".Markdown_markdownContainer__Tz3HQ *",
+        ".MarkdownLink_linkifiedLink__KxC9G",
+        "menu",
+        "aside"
       ],
       "aiRule": {
         "streamingSelector": ".ChatStopMessageButton_stopButton__LWNj6",
-        "messageWrapperSelector": ".Markdown_markdownContainer__UyYrv",
+        "messageWrapperSelector": ".Markdown_markdownContainer__Tz3HQ",
         "streamingChange": false,
-        "streamingDeepChild": true
+        "streamingDeepChild": true,
+        "streamingDelayTime": 1000
       }
     },
     {
@@ -4482,7 +4487,8 @@
         "messageContainerSelector": ".ReactMarkdown",
         "messageStreamEndSelector": ".contents > button",
         "streamingChange": true,
-        "streamingDeepChild": false
+        "streamingDeepChild": false,
+        "streamingDelayTime": 1000
       }
     },
     {
@@ -4930,7 +4936,8 @@
         "streamingSelector": "",
         "messageWrapperSelector": ".chat-message-row.ai",
         "streamingChange": false,
-        "streamingDeepChild": true
+        "streamingDeepChild": true,
+        "streamingDelayTime": 1000
       }
     },
     {
@@ -5292,6 +5299,24 @@
       }
     },
     {
+      "id": "ocrtraining",
+      "matches": [
+        "ocrtraining.cit.nih.gov",
+        "videocast.nih.gov"
+      ],
+      "excludeSelectors.add": [
+        "#videocastPlayer"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#videocastPlayer *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.srt$",
+        "loadingContainerSelector": "#videocastPlayer"
+      }
+    },
+    {
       "id": "vimeo",
       "matches": [
         "vimeo.com"
@@ -5554,6 +5579,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-09T04:13:57.689Z",
-  "latestVersion": "1.1.2"
+  "buildinConfigUpdatedAt": "2024-01-10T13:07:46.622Z",
+  "latestVersion": "1.1.3"
 }
