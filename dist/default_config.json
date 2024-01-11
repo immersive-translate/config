@@ -91,7 +91,8 @@
     "https://www.zdf.de[ZDF]",
     "https://www.masterclass.com[MasterClass]",
     "https://home.mindvalley.com[Mindvalley]",
-    "https://iview.abc.net.au/[iview]"
+    "https://iview.abc.net.au/[iview]",
+    "https://www.nma.art/[nmaArt]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -5133,6 +5134,21 @@
       }
     },
     {
+      "id": "nmaart",
+      "matches": "www.nma.art",
+      "excludeSelectors": [
+        ".video-container"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".video-container *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "/texttrack/.*\\.(vtt|webvtt)",
+        "loadingContainerSelector": ".video-container"
+      }
+    },
+    {
       "id": "boringreport",
       "matches": [
         "www.boringreport.org"
@@ -5598,6 +5614,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-11T03:44:35.646Z",
+  "buildinConfigUpdatedAt": "2024-01-11T04:00:36.675Z",
   "latestVersion": "1.1.3"
 }
