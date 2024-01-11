@@ -1627,7 +1627,8 @@
         "[data-testid=Leaderboard]",
         "[data-testid=HomeTickerV2]",
         "[data-testid=SiteFooter]",
-        "[class=^refinitiv-promo-bar]"
+        "[class^=refinitiv-promo-bar__container]",
+        "[data-testid=ResponsiveAdSlot]"
       ]
     },
     {
@@ -5626,6 +5627,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-11T17:19:34.579Z",
+  "buildinConfigUpdatedAt": "2024-01-11T17:23:44.020Z",
   "latestVersion": "1.1.3"
 }
