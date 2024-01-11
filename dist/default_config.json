@@ -90,7 +90,8 @@
     "https://www.artstation.com/learning[ArtStation]",
     "https://www.zdf.de[ZDF]",
     "https://www.masterclass.com[MasterClass]",
-    "https://home.mindvalley.com[Mindvalley]"
+    "https://home.mindvalley.com[Mindvalley]",
+    "https://iview.abc.net.au/[iview]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -2346,6 +2347,9 @@
       "excludeSelectors": [
         ".learning-card-meta",
         ".vjs-text-track-display"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".vjs-text-track-display *"
       ],
       "subtitleRule.add": {
         "type": "webvtt",
@@ -5114,6 +5118,21 @@
       }
     },
     {
+      "id": "iview",
+      "matches": "iview.abc.net.au",
+      "excludeSelectors": [
+        ".jwplayer"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".jwplayer *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "/cc/.*\\.(vtt|webvtt)$",
+        "loadingContainerSelector": ".jwplayer"
+      }
+    },
+    {
       "id": "boringreport",
       "matches": [
         "www.boringreport.org"
@@ -5579,6 +5598,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-10T19:49:03.672Z",
+  "buildinConfigUpdatedAt": "2024-01-11T03:44:35.646Z",
   "latestVersion": "1.1.3"
 }
