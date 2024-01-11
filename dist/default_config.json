@@ -1166,7 +1166,7 @@
       "id": "isEbookBuilder",
       "matches": [
         "https://app.immersivetranslate.com/ebook/make/",
-        "http://localhost:8000/ebook/make/"
+        "http://localhost:38001/ebook/make/"
       ],
       "isEbookBuilder": true,
       "isTranslateWhenServiceChanged": false,
@@ -5630,6 +5630,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-11T04:11:29.839Z",
+  "buildinConfigUpdatedAt": "2024-01-11T10:49:30.342Z",
   "latestVersion": "1.1.3"
 }
