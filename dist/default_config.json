@@ -5625,8 +5625,16 @@
       "extraInlineSelectors.add": [
         "span.off-screen"
       ]
+    },
+    {
+      "id": "apache.org",
+      "matches": "lists.apache.org",
+      "excludeTags.remove": [
+        "PRE"
+      ],
+      "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-11T17:23:44.020Z",
+  "buildinConfigUpdatedAt": "2024-01-12T07:08:18.857Z",
   "latestVersion": "1.1.3"
 }
