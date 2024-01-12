@@ -671,6 +671,9 @@
       "mh",
       "body"
     ],
+    "atomicBlockSelectors": [
+      "relin-hc"
+    ],
     "shareConfig": {
       "injectCss": true,
       "removeSelectors": [
@@ -862,7 +865,6 @@
       "h4 br"
     ],
     "translationClasses": [],
-    "atomicBlockSelectors": [],
     "excludeTags": [
       "TITLE",
       "LINK",
@@ -1047,7 +1049,8 @@
     "fingerCountToToggleTranslagePageWhenTouching": 4,
     "fingerCountToToggleTranslationMaskWhenTouching": 0,
     "fingerCountToToggleTranslagePageOnlyTranslationWhenTouching": 0,
-    "mouseHoverHoldKey": "Off"
+    "mouseHoverHoldKey": "Off",
+    "mouseHoverPreferenceKey": "Ctrl"
   },
   "rules": [
     {
@@ -5633,6 +5636,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-12T10:59:50.893Z",
+  "buildinConfigUpdatedAt": "2024-01-12T11:17:18.917Z",
   "latestVersion": "1.1.3"
 }
