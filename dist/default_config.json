@@ -669,7 +669,8 @@
       "[class*='rgh-seen-']",
       "[isInvalidTag]",
       "mh",
-      "body"
+      "body",
+      "relin-hc"
     ],
     "atomicBlockSelectors": [
       "relin-hc"
@@ -5636,6 +5637,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-13T01:42:32.990Z",
+  "buildinConfigUpdatedAt": "2024-01-13T07:36:30.009Z",
   "latestVersion": "1.1.4"
 }
