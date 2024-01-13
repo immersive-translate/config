@@ -1173,8 +1173,7 @@
         "meta[name='immersive-translate-ebook-builder'][content='true']"
       ],
       "injectedCss": [
-        ".immersive-translate-target-translation-block-wrapper {display:block;}",
-        ".immersive-translate-target-wrapper,.immersive-translate-target-wrapper span { font-size: unset; }"
+        ".immersive-translate-target-translation-block-wrapper {display:block;}"
       ],
       "globalMeta": {},
       "excludeSelectors": [
@@ -5637,6 +5636,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-13T07:36:30.009Z",
+  "buildinConfigUpdatedAt": "2024-01-13T11:55:01.095Z",
   "latestVersion": "1.1.4"
 }
