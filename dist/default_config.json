@@ -153,7 +153,8 @@
   "monkeyH5FloatBall": {
     "enable": true,
     "blockUrls": [
-      "*immersivetranslate.com/preview"
+      "*immersivetranslate.com/preview",
+      "https://app.immersivetranslate.com/"
     ],
     "clickType": "translate",
     "afterInstalledAt": "",
@@ -162,7 +163,8 @@
   "pcFloatBall": {
     "enable": true,
     "blockUrls": [
-      "*immersivetranslate.com/preview"
+      "*immersivetranslate.com/preview",
+      "https://app.immersivetranslate.com/"
     ],
     "clickType": "translate",
     "afterInstalledAt": "2023-10-28",
@@ -243,7 +245,6 @@
     "http://localhost:8000/dist/userscript/options/",
     "http://localhost:8000/auth-done/",
     "http://localhost:38001/",
-    "https://app.immersivetranslate.com/",
     "http://192.168.50.9:8000/dist/userscript/options/",
     "https://www.deepl.com/translator",
     "translate.google.com",
@@ -5634,6 +5635,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-15T11:11:05.663Z",
+  "buildinConfigUpdatedAt": "2024-01-15T14:45:07.556Z",
   "latestVersion": "1.1.5"
 }
