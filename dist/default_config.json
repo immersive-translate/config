@@ -126,11 +126,8 @@
     "select",
     "option",
     "iframe",
-    "strong",
     "form",
-    "body",
-    "b",
-    "i"
+    "body"
   ],
   "inputTranslationService": "inherit",
   "inputTranslationBlockUrls": [
@@ -5637,6 +5634,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-15T02:42:04.631Z",
+  "buildinConfigUpdatedAt": "2024-01-15T11:11:05.663Z",
   "latestVersion": "1.1.5"
 }
