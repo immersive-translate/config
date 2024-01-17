@@ -93,7 +93,8 @@
     "https://home.mindvalley.com[Mindvalley]",
     "https://iview.abc.net.au/[iview]",
     "https://www.nma.art/[nmaArt]",
-    "https://creativecloud.adobe.com/[CreativeCloudAdobe]"
+    "https://creativecloud.adobe.com/[CreativeCloudAdobe]",
+    "https://developer.apple.com[Developer Apple]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -5147,6 +5148,20 @@
       }
     },
     {
+      "id": "apple",
+      "matches": "developer.apple.com",
+      "excludeSelectors": [
+        ".developer-video-player"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".developer-video-player *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.(vtt|webvtt)"
+      }
+    },
+    {
       "id": "boringreport",
       "matches": [
         "www.boringreport.org"
@@ -5635,6 +5650,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-15T14:45:07.556Z",
+  "buildinConfigUpdatedAt": "2024-01-17T04:05:07.282Z",
   "latestVersion": "1.1.5"
 }
