@@ -1629,7 +1629,9 @@
         "[data-testid=HomeTickerV2]",
         "[data-testid=SiteFooter]",
         "[class^=refinitiv-promo-bar__container]",
-        "[data-testid=ResponsiveAdSlot]"
+        "[data-testid=ResponsiveAdSlot]",
+        "[data-testid=SiteHeader]",
+        "[data-testid=HomeTickerV2]"
       ]
     },
     {
@@ -5650,6 +5652,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-17T04:05:07.282Z",
+  "buildinConfigUpdatedAt": "2024-01-17T08:03:55.422Z",
   "latestVersion": "1.1.5"
 }
