@@ -512,6 +512,16 @@
           "multiplePrompt": "请把这几句字幕翻译为简体中文，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段译文\n\n{{text}}"
         },
         {
+          "if": "targetLanguage == zh-CN && sourceLanguage == wyw",
+          "systemPrompt": "你是一个精通古文的学者，只返回白话文",
+          "prompt": "请将文言文用白话文解释:\n\n {{text}}"
+        },
+        {
+          "if": "targetLanguage == zh-CN && sourceLanguage == ja",
+          "systemPrompt": "你是一个日语翻译专家，精通中日两种文化，只返回中文",
+          "prompt": "请将日语翻译成中文（避免解释原文）:\n\n {{text}}"
+        },
+        {
           "if": "targetLanguage == zh-TW",
           "prompt": "請翻譯為繁體中文（避免解釋原文）:\n\n {{text}}",
           "systemPrompt": "你是一個專業,道地的翻譯引擎，你只會回譯文",
@@ -1050,6 +1060,10 @@
     "fingerCountToToggleTranslagePageWhenTouching": 4,
     "fingerCountToToggleTranslationMaskWhenTouching": 0,
     "fingerCountToToggleTranslagePageOnlyTranslationWhenTouching": 0,
+    "touchShortcutsToggleTranslatePage": "fingers.4",
+    "touchShortcutsToggleTranslationMask": "touchShortcutsOff",
+    "touchShortcutsToggleTranslatePageOnlyTranslation": "touchShortcutsOff",
+    "touchShortcutsToggleTranslateTouchElement": "touchShortcutsOff",
     "mouseHoverHoldKey": "Off",
     "mouseHoverPreferenceKey": "Ctrl"
   },
@@ -1893,7 +1907,8 @@
           "#shorts-player .ytp-caption-window-bottom {top: 2%; bottom: unset!important;} #immersive-translate-quick-button-container {font-size: 12px;z-index:1001;}"
         ],
         "quickButtonRule": {
-          "appendSelector": ".ytp-chrome-controls"
+          "appendSelector": ".ytp-chrome-controls",
+          "insertBeforeSelector": ".ytp-right-controls"
         }
       },
       "urlChangeDelay": 2000,
@@ -5652,6 +5667,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-17T08:03:55.422Z",
+  "buildinConfigUpdatedAt": "2024-01-17T11:17:31.439Z",
   "latestVersion": "1.1.5"
 }
