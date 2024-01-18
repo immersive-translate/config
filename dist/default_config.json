@@ -3447,6 +3447,15 @@
       ]
     },
     {
+      "id": "gumroad.com",
+      "matches": [
+        "*.gumroad.com"
+      ],
+      "additionalExcludeSelectors.remove": [
+        "[translate=no]"
+      ]
+    },
+    {
       "id": "otherTiktok",
       "matches": "*.tiktok.com",
       "additionalExcludeSelectors.remove": [
@@ -5673,6 +5682,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-18T06:22:08.525Z",
+  "buildinConfigUpdatedAt": "2024-01-18T13:00:29.834Z",
   "latestVersion": "1.1.6"
 }
