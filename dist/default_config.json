@@ -129,7 +129,8 @@
     "option",
     "iframe",
     "form",
-    "body"
+    "body",
+    "marquee"
   ],
   "inputTranslationService": "inherit",
   "inputTranslationBlockUrls": [
@@ -5762,6 +5763,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-19T12:45:38.934Z",
+  "buildinConfigUpdatedAt": "2024-01-19T18:22:39.997Z",
   "latestVersion": "1.1.7"
 }
