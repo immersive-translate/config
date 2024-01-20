@@ -113,7 +113,7 @@
     "*.medium.com",
     "news.ycombinator.com"
   ],
-  "spVersion": "1.1.7",
+  "spVersion": "1.1.8",
   "modifiedBySystem": false,
   "enableDefaultAlwaysTranslatedUrls": true,
   "isChangedAlwaysTranslatedUrls": false,
@@ -5766,6 +5766,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-20T07:26:15.235Z",
+  "buildinConfigUpdatedAt": "2024-01-20T12:18:36.153Z",
   "latestVersion": "1.1.7"
 }
