@@ -5516,6 +5516,9 @@
         "https://player.vimeo.com/video/*",
         "laracasts.com"
       ],
+      "selectorMatches": [
+        "iframe[src*='player.vimeo.com']"
+      ],
       "extraBlockSelectors": [
         "span.vp-captions-line",
         "span[class^=CaptionsRenderer_]"
@@ -5763,6 +5766,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-19T18:22:39.997Z",
+  "buildinConfigUpdatedAt": "2024-01-20T07:26:15.235Z",
   "latestVersion": "1.1.7"
 }
