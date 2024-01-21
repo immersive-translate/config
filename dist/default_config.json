@@ -442,7 +442,7 @@
       "maxTextGroupLengthPerRequest": 10,
       "maxTextLengthPerRequest": 1200,
       "maxTextGroupLengthPerRequestForSubtitle": 5,
-      "translationTextSeparator": "<Keep This Symbol>",
+      "translationTextSeparator": "\n<Keep This Symbol>\n",
       "overrides": [
         {
           "if": "targetLanguage == zh-CN",
@@ -5766,6 +5766,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-20T12:18:36.153Z",
+  "buildinConfigUpdatedAt": "2024-01-21T12:08:09.011Z",
   "latestVersion": "1.1.7"
 }
