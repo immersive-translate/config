@@ -95,7 +95,8 @@
     "https://iview.abc.net.au/[iview]",
     "https://www.nma.art/[nmaArt]",
     "https://creativecloud.adobe.com/[CreativeCloudAdobe]",
-    "https://developer.apple.com[Developer Apple]"
+    "https://developer.apple.com[Developer Apple]",
+    "https://egghead.io/[egghead.io]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -5445,6 +5446,18 @@
       }
     },
     {
+      "id": "egghead",
+      "matches": [
+        "egghead.io"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": ".cueplayer-react-video",
+        "loadingContainerSelector": ".cueplayer-react-video-holder",
+        "loadingStyle": "bottom: unset; top: 5%;"
+      }
+    },
+    {
       "id": "coursera",
       "matches": [
         "www.coursera.org"
@@ -5766,6 +5779,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-21T12:08:09.011Z",
+  "buildinConfigUpdatedAt": "2024-01-21T13:22:26.046Z",
   "latestVersion": "1.1.7"
 }
