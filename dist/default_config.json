@@ -464,34 +464,6 @@
         },
         "safetySettings": [
           {
-            "category": "HARM_CATEGORY_UNSPECIFIED",
-            "threshold": "BLOCK_NONE"
-          },
-          {
-            "category": "HARM_CATEGORY_DEROGATORY",
-            "threshold": "BLOCK_NONE"
-          },
-          {
-            "category": "HARM_CATEGORY_TOXICITY",
-            "threshold": "BLOCK_NONE"
-          },
-          {
-            "category": "HARM_CATEGORY_VIOLENCE",
-            "threshold": "BLOCK_NONE"
-          },
-          {
-            "category": "HARM_CATEGORY_SEXUAL",
-            "threshold": "BLOCK_NONE"
-          },
-          {
-            "category": "HARM_CATEGORY_MEDICAL",
-            "threshold": "BLOCK_NONE"
-          },
-          {
-            "category": "HARM_CATEGORY_DANGEROUS",
-            "threshold": "BLOCK_NONE"
-          },
-          {
             "category": "HARM_CATEGORY_HARASSMENT",
             "threshold": "BLOCK_NONE"
           },
@@ -5808,6 +5780,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-22T15:01:42.424Z",
+  "buildinConfigUpdatedAt": "2024-01-22T15:42:13.698Z",
   "latestVersion": "1.1.7"
 }
