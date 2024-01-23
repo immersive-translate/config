@@ -1,6 +1,7 @@
 {
   "immediateTranslationTextCount": 4999,
   "translationStartMode": "dynamic",
+  "translationService": "transmart",
   "domReadyDetectTimeout": 3000,
   "mouseModifierKeyPressTimeout": 400,
   "immediateTranslationPattern": {
@@ -5780,6 +5781,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-22T15:42:13.698Z",
+  "buildinConfigUpdatedAt": "2024-01-23T12:50:32.646Z",
   "latestVersion": "1.1.7"
 }
