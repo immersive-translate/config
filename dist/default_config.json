@@ -1264,6 +1264,7 @@
       "matches": [
         "sci-hub.*"
       ],
+      "waitForSelectorsTimeout": 1,
       "pdfUrlExtractRule": {
         "selector": "#pdf",
         "attribute": "src"
@@ -1271,6 +1272,7 @@
     },
     {
       "id": "common.pdfWebPage",
+      "waitForSelectorsTimeout": 1,
       "selectorMatches": [
         "embed[type='application/pdf']"
       ]
@@ -5833,6 +5835,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-23T16:38:10.663Z",
+  "buildinConfigUpdatedAt": "2024-01-23T16:39:32.717Z",
   "latestVersion": "1.1.7"
 }
