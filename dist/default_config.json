@@ -735,6 +735,11 @@
       "(&lt;\\\\/?[a-zA-Z0-9]+(?:[^&gt;]*?)&gt;)",
       "(<form>|<body>|<strong>|<em>|<b>|<i>|<u>|<br>|<br/>)"
     ],
+    "detectionServiceOrder": [
+      "google",
+      "bing",
+      "transmart"
+    ],
     "paragraphFirstLetterFontSize": 35,
     "toastErrorMinTimes": 9,
     "enableSubtitle": false,
@@ -836,6 +841,7 @@
     "wrapperPrefix": "smart",
     "wrapperSuffix": "smart",
     "isPdf": false,
+    "pdfUrlExtractRule": {},
     "isTransformPreTagNewLine": false,
     "urlChangeDelay": 50,
     "mutationChangeDelay": 10,
@@ -1262,6 +1268,12 @@
         "selector": "#pdf",
         "attribute": "src"
       }
+    },
+    {
+      "id": "common.pdfWebPage",
+      "selectorMatches": [
+        "embed[type='application/pdf']"
+      ]
     },
     {
       "id": "isEbookBuilder",
@@ -5635,6 +5647,24 @@
       }
     },
     {
+      "id": "bbc-iplayer",
+      "matches": [
+        "https://www.bbc.*/iplayer*"
+      ],
+      "excludeSelectors.add": [
+        ".player"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".player *"
+      ],
+      "subtitleRule.add": {
+        "type": "ebutt",
+        "hookType": "fetch",
+        "subtitleUrlRegExp": "iplayer/subtitles/.*.xml",
+        "loadingContainerSelector": ".player__container"
+      }
+    },
+    {
       "id": "bbc",
       "matches": [
         "*.bbc.*"
@@ -5654,6 +5684,24 @@
         "hookType": "fetch",
         "subtitleUrlRegExp": "iplayer/subtitles/.*.xml",
         "loadingContainerSelector": ".smp-toucan-player"
+      }
+    },
+    {
+      "id": "primevideo",
+      "matches": [
+        "www.primevideo.com"
+      ],
+      "excludeSelectors.add": [
+        "#dv-web-player"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#dv-web-player *"
+      ],
+      "subtitleRule.add": {
+        "type": "ebutt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "\\.ttml2$",
+        "loadingContainerSelector": "#dv-web-player"
       }
     },
     {
@@ -5785,6 +5833,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-23T15:46:52.375Z",
+  "buildinConfigUpdatedAt": "2024-01-23T16:38:10.663Z",
   "latestVersion": "1.1.7"
 }
