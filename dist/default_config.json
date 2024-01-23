@@ -1254,10 +1254,14 @@
       "isPdf": true
     },
     {
-      "id": "pdfWebPage",
-      "selectorMatches": [
-        "embed[type='application/pdf']"
-      ]
+      "id": "sci-hub.pdfWebPage",
+      "matches": [
+        "sci-hub.*"
+      ],
+      "pdfUrlExtractRule": {
+        "selector": "#pdf",
+        "attribute": "src"
+      }
     },
     {
       "id": "isEbookBuilder",
@@ -5781,6 +5785,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-23T12:56:37.337Z",
+  "buildinConfigUpdatedAt": "2024-01-23T15:46:52.375Z",
   "latestVersion": "1.1.7"
 }
