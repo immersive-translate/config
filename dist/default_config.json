@@ -3054,7 +3054,7 @@
       "id": "primevideo",
       "matches": [
         "www.primevideo.com",
-        "www.amazon.co*"
+        "https://*.amazon.co.*/*video*"
       ],
       "excludeSelectors.add": [
         "#dv-web-player"
@@ -5805,6 +5805,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-24T11:55:11.478Z",
+  "buildinConfigUpdatedAt": "2024-01-24T12:03:22.439Z",
   "latestVersion": "1.1.8"
 }
