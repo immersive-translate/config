@@ -3051,6 +3051,25 @@
       "paragraphMinWordCount": 2
     },
     {
+      "id": "primevideo",
+      "matches": [
+        "www.primevideo.com",
+        "www.amazon.co*"
+      ],
+      "excludeSelectors.add": [
+        "#dv-web-player"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#dv-web-player *"
+      ],
+      "subtitleRule.add": {
+        "type": "ebutt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "\\.ttml2$",
+        "loadingContainerSelector": "#dv-web-player"
+      }
+    },
+    {
       "id": "amazon",
       "matches": "www.amazon.com",
       "paragraphMinTextCount": 4,
@@ -5666,24 +5685,6 @@
       }
     },
     {
-      "id": "primevideo",
-      "matches": [
-        "www.primevideo.com"
-      ],
-      "excludeSelectors.add": [
-        "#dv-web-player"
-      ],
-      "mutationExcludeSelectors.add": [
-        "#dv-web-player *"
-      ],
-      "subtitleRule.add": {
-        "type": "ebutt",
-        "hookType": "xhr",
-        "subtitleUrlRegExp": "\\.ttml2$",
-        "loadingContainerSelector": "#dv-web-player"
-      }
-    },
-    {
       "id": "zdf.de",
       "matches": [
         "www.zdf.de"
@@ -5804,6 +5805,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-24T10:42:05.692Z",
+  "buildinConfigUpdatedAt": "2024-01-24T11:55:11.478Z",
   "latestVersion": "1.1.8"
 }
