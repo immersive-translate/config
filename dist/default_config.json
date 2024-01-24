@@ -2,6 +2,7 @@
   "immediateTranslationTextCount": 4999,
   "translationStartMode": "dynamic",
   "domReadyDetectTimeout": 3000,
+  "translationService": "bing",
   "mouseModifierKeyPressTimeout": 400,
   "immediateTranslationPattern": {
     "matches": [
@@ -5834,6 +5835,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-24T07:33:31.344Z",
+  "buildinConfigUpdatedAt": "2024-01-24T10:01:36.412Z",
   "latestVersion": "1.1.8"
 }
