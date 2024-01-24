@@ -933,6 +933,7 @@
     "atomicBlockTags": [],
     "excludeSelectors": [],
     "additionalExcludeSelectors": [
+      "text",
       "#monica-content-root",
       "#immersive-translate-popup",
       ".social-share",
@@ -5835,6 +5836,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-24T10:01:36.412Z",
+  "buildinConfigUpdatedAt": "2024-01-24T10:25:26.626Z",
   "latestVersion": "1.1.8"
 }
