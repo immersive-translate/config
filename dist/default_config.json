@@ -1410,7 +1410,14 @@
       "matches": [
         "mail.jabber.org",
         "antirez.com",
-        "patchwork.kernel.org"
+        "patchwork.kernel.org",
+        "lists.apache.org",
+        "manned.org",
+        "bugs.webkit.org",
+        "bugzilla.mozilla.org",
+        "lwn.net/Articles/*",
+        "docs.haproxy.org",
+        "www.oreilly.com/openbook/opensources/book/*"
       ],
       "isTransformPreTagNewLine": true
     },
@@ -4591,17 +4598,6 @@
       }
     },
     {
-      "id": "haproxy",
-      "matches": [
-        "docs.haproxy.org",
-        "www.oreilly.com/openbook/opensources/book/*"
-      ],
-      "excludeTags": [],
-      "stayOriginalSelectors": [],
-      "stayOriginalTags": [],
-      "isTransformPreTagNewLine": true
-    },
-    {
       "id": "piAi",
       "matches": "pi.ai/talk",
       "globalStyles": {
@@ -4659,11 +4655,6 @@
       "additionalExcludeSelectors.add": [
         "[spellcheck='false']"
       ]
-    },
-    {
-      "id": "bugsWebkit",
-      "matches": "bugs.webkit.org",
-      "isTransformPreTagNewLine": true
     },
     {
       "id": "mitre",
@@ -4939,14 +4930,6 @@
       ]
     },
     {
-      "id": "bugzilla",
-      "matches": "bugzilla.mozilla.org",
-      "excludeTags.remove": [
-        "PRE"
-      ],
-      "isTransformPreTagNewLine": true
-    },
-    {
       "id": "newsletterss",
       "matches": "newsletterss.com",
       "initialGlobalAttributes": {
@@ -5098,13 +5081,6 @@
         ".mx_ReplyChain_wrapper",
         ".mx_ThreadSummary_replies_amount"
       ]
-    },
-    {
-      "id": "lwn.net",
-      "matches": [
-        "lwn.net/Articles/*"
-      ],
-      "isTransformPreTagNewLine": true
     },
     {
       "id": "fastapi.tiangolo.com",
@@ -5826,16 +5802,8 @@
       "extraInlineSelectors.add": [
         "span.off-screen"
       ]
-    },
-    {
-      "id": "apache.org",
-      "matches": "lists.apache.org",
-      "excludeTags.remove": [
-        "PRE"
-      ],
-      "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-24T10:25:26.626Z",
+  "buildinConfigUpdatedAt": "2024-01-24T10:42:05.692Z",
   "latestVersion": "1.1.8"
 }
