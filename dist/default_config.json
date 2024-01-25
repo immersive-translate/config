@@ -1988,6 +1988,7 @@
         "yt-formatted-string#content-text",
         "h1",
         "yt-formatted-string#video-title",
+        "yt-formatted-string.span",
         "span#video-title",
         "a#video-title",
         "yt-formatted-string.ytd-transcript-segment-renderer",
@@ -2923,7 +2924,13 @@
       "extraBlockSelectors": [
         ".genre_filter_item",
         "button"
-      ]
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": ".genie-video",
+        "loadingContainerSelector": ".genie-container",
+        "loadingStyle": "bottom: unset; top: 5%;"
+      }
     },
     {
       "id": "czechvideo",
@@ -5805,6 +5812,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-24T12:03:22.439Z",
+  "buildinConfigUpdatedAt": "2024-01-25T06:39:28.788Z",
   "latestVersion": "1.1.8"
 }
