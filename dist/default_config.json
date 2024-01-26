@@ -2271,8 +2271,7 @@
         "#views"
       ],
       "globalStyles": {
-        ".Nk,.Pk": "height:auto!important;",
-        ".kf,.mf": "white-space:unset!important;"
+        "[role='listitem'] > div": "height:auto!important;white-space:unset!important;"
       }
     },
     {
@@ -5812,6 +5811,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-26T11:10:45.871Z",
+  "buildinConfigUpdatedAt": "2024-01-26T11:59:54.787Z",
   "latestVersion": "1.1.8"
 }
