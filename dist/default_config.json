@@ -741,7 +741,7 @@
       "transmart"
     ],
     "paragraphFirstLetterFontSize": 35,
-    "toastErrorMinTimes": 9,
+    "toastErrorMinTimes": 20,
     "enableSubtitle": false,
     "subtitle.autoEnableSubtitle": false,
     "disableNewTextTranslate": false,
@@ -5812,6 +5812,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-25T06:39:28.788Z",
+  "buildinConfigUpdatedAt": "2024-01-26T11:10:45.871Z",
   "latestVersion": "1.1.8"
 }
