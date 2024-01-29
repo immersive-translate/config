@@ -5806,8 +5806,15 @@
       "extraInlineSelectors.add": [
         "span.off-screen"
       ]
+    },
+    {
+      "id": "ethereum",
+      "matches": "ethereum.org",
+      "extraInlineSelectors.add": [
+        ".chakra-link span"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-28T10:17:20.090Z",
+  "buildinConfigUpdatedAt": "2024-01-29T08:22:55.275Z",
   "latestVersion": "1.1.8"
 }
