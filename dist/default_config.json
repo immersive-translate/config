@@ -97,7 +97,8 @@
     "https://www.nma.art/[nmaArt]",
     "https://creativecloud.adobe.com/[CreativeCloudAdobe]",
     "https://developer.apple.com[Developer Apple]",
-    "https://egghead.io/[egghead.io]"
+    "https://egghead.io/[egghead.io]",
+    "https://mubi.com/[Mubi]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -116,6 +117,7 @@
     "news.ycombinator.com"
   ],
   "spVersion": "1.1.9",
+  "ispVersion": "1.0.0",
   "modifiedBySystem": false,
   "enableDefaultAlwaysTranslatedUrls": true,
   "isChangedAlwaysTranslatedUrls": false,
@@ -1913,7 +1915,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
-        "subtitleUrlRegExp": "/api/timedtext",
+        "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
         "translateSelectors": [
           ".caption-window",
           ".caption-visual-line"
@@ -2001,7 +2003,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
-        "subtitleUrlRegExp": "/api/timedtext",
+        "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
         "translateSelectors": [
           ".caption-window",
           ".caption-visual-line"
@@ -3140,7 +3142,11 @@
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "webvtt$",
-        "loadingContainerSelector": ".vjs-text-track-display"
+        "loadingContainerSelector": ".vjs-text-track-display",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-playback-rate"
+        }
       }
     },
     {
@@ -4341,7 +4347,7 @@
         "i"
       ],
       "globalStyles": {
-        "[class*='lineclamp']": "-webkit-line-clamp:unset;"
+        "[class*='lineclamp'],.b_title": "-webkit-line-clamp:unset;"
       }
     },
     {
@@ -5227,7 +5233,12 @@
         "type": "netflix",
         "loadingContainerSelector": ".watch-video",
         "subtitleUrlRegExp": "^https://.+?.oca.nflxvideo.net/\\?([ovet]=[^=]+){4}$",
-        "loadingStyle": "bottom: 15%;"
+        "loadingStyle": "bottom: 15%;",
+        "quickButtonRule": {
+          "appendSelector": "[data-uia=\"control-next\"]",
+          "insertBeforeSelector": "[data-uia=\"control-next\"]",
+          "injectCSS": ".imt-quick-subtitle-button {height: 60%; margin-right: 50px; font-size: 20px; } .logo,.logo svg { height: 36px; width: 36px} .label { display: none; } .imt-quick-subtitle-pop-content {transform: translateX(50%); right: 0}"
+        }
       }
     },
     {
@@ -5246,7 +5257,10 @@
         "subtitleUrlRegExp": "^https://vtt.*\\.udemycdn\\.com/.*\\.vtt",
         "humanTrust": 85,
         "loadingContainerSelector": ".video-player--video-wrapper--2mFBT",
-        "loadingStyle": "bottom: 15%;"
+        "loadingStyle": "bottom: 15%;",
+        "quickButtonRule": {
+          "appendSelector": "[data-purpose=\"video-controls\"]"
+        }
       }
     },
     {
@@ -5487,7 +5501,10 @@
         "type": "text_track",
         "videoPlayerSelector": ".vjs-tech",
         "loadingContainerSelector": ".rc-VideoControlsContainer",
-        "loadingStyle": "bottom: unset; top: 5%;"
+        "loadingStyle": "bottom: unset; top: 5%;",
+        "quickButtonRule": {
+          "appendSelector": "[role=\"presentation\"] > .rc-ControlBar"
+        }
       }
     },
     {
@@ -5541,7 +5558,10 @@
         "type": "text_track",
         "videoPlayerSelector": "video",
         "loadingContainerSelector": "#ted-player > div",
-        "loadingStyle": "bottom: unset; top: 5%;"
+        "loadingStyle": "bottom: unset; top: 5%;",
+        "quickButtonRule": {
+          "appendSelector": "section.bg-gradient-to-b.from-transparent"
+        }
       }
     },
     {
@@ -5723,6 +5743,15 @@
       }
     },
     {
+      "id": "mubi",
+      "matches": "https://mubi.com",
+      "subtitleRule.add": {
+        "type": "fmp4.xml",
+        "subtitleUrlRegExp": "textstream",
+        "hookType": "fetch"
+      }
+    },
+    {
       "id": "linkingyourthinking",
       "matches": "community.linkingyourthinking.com",
       "additionalExcludeSelectors.remove": [
@@ -5817,6 +5846,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-30T05:15:52.448Z",
-  "latestVersion": "1.1.8"
+  "buildinConfigUpdatedAt": "2024-01-30T14:52:41.000Z",
+  "latestVersion": "1.1.9"
 }
