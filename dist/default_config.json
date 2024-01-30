@@ -933,7 +933,6 @@
     "atomicBlockTags": [],
     "excludeSelectors": [],
     "additionalExcludeSelectors": [
-      "text",
       "#monica-content-root",
       "#immersive-translate-popup",
       ".social-share",
@@ -1909,7 +1908,8 @@
         "BUTTON"
       ],
       "additionalExcludeSelectors": [
-        ".ytp-caption-window-container"
+        ".ytp-caption-window-container",
+        "text"
       ],
       "subtitleRule.add": {
         "type": "youtube",
@@ -1965,7 +1965,8 @@
         ]
       },
       "additionalExcludeSelectors.add": [
-        ".ytp-caption-window-container"
+        ".ytp-caption-window-container",
+        "text"
       ],
       "globalStyles": {
         "#video-title": "-webkit-line-clamp: unset;max-height: unset;",
@@ -5815,6 +5816,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-29T08:22:55.275Z",
+  "buildinConfigUpdatedAt": "2024-01-30T05:08:47.004Z",
   "latestVersion": "1.1.8"
 }
