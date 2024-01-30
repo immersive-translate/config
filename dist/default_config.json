@@ -1991,6 +1991,7 @@
         "a#video-title",
         "yt-formatted-string.ytd-transcript-segment-renderer",
         "#description-inline-expander > yt-attributed-string > span",
+        "yt-attributed-string > span",
         "ytd-notification-renderer .message",
         "#message"
       ],
@@ -5816,6 +5817,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-30T05:08:47.004Z",
+  "buildinConfigUpdatedAt": "2024-01-30T05:15:52.448Z",
   "latestVersion": "1.1.8"
 }
