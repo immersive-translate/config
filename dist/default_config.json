@@ -5539,6 +5539,9 @@
         "subtitleUrlRegExp": "https?://[^/]+\\.cloudfront\\.net/[^/]+/[^/]+$",
         "loadingContainerSelector": ".bmpui-container-wrapper",
         "loadingStyle": "bottom: 20%;",
+        "injectedCss": [
+          ".bmpui-controls-hidden #immersive-translate-quick-button-container {display: none;}"
+        ],
         "quickButtonRule": {
           "appendSelector": ".bmpui-ui-container.bmpui-ui-viu-subtitle > .bmpui-container-wrapper",
           "injectCSS": ".imt-quick-subtitle-button {margin-bottom: 8px}"
@@ -5959,6 +5962,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-01T09:32:19.288Z",
+  "buildinConfigUpdatedAt": "2024-02-01T09:58:11.270Z",
   "latestVersion": "1.1.9"
 }
