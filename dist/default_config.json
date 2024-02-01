@@ -5273,7 +5273,12 @@
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "/cc/.*\\.(vtt|webvtt)$",
-        "loadingContainerSelector": ".jwplayer"
+        "loadingContainerSelector": ".jwplayer",
+        "quickButtonRule": {
+          "appendSelector": ".jw-reset.jw-button-container",
+          "insertBeforeSelector": ".jw-settings-submenu-button",
+          "injectCSS": ".imt-quick-subtitle-pop-content {z-index: 999999;}"
+        }
       }
     },
     {
@@ -5288,7 +5293,11 @@
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "/texttrack/.*\\.(vtt|webvtt)",
-        "loadingContainerSelector": ".video-container"
+        "loadingContainerSelector": ".video-container",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-playback-rate"
+        }
       }
     },
     {
@@ -5848,6 +5857,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-01T02:51:45.497Z",
+  "buildinConfigUpdatedAt": "2024-02-01T06:42:02.486Z",
   "latestVersion": "1.1.9"
 }
