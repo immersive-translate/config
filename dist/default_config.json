@@ -2483,7 +2483,12 @@
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "/subtitles/.*\\.(vtt|webvtt)$",
-        "loadingContainerSelector": ".vjs-text-track-display"
+        "loadingContainerSelector": ".vjs-text-track-display",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-playback-rate",
+          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 38px !important;}"
+        }
       }
     },
     {
@@ -5483,7 +5488,11 @@
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.webvtt$",
-        "loadingContainerSelector": ".vjs-text-track-display"
+        "loadingContainerSelector": ".vjs-text-track-display",
+        "subtitleButtonSelector": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-playback-rate"
+        }
       }
     },
     {
@@ -5500,7 +5509,11 @@
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.vtt\\?",
-        "loadingContainerSelector": ".vjs-text-track-display"
+        "loadingContainerSelector": ".vjs-text-track-display",
+        "subtitleButtonSelector": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-playback-rate"
+        }
       }
     },
     {
@@ -5781,7 +5794,14 @@
         "type": "ebutt",
         "subtitleUrlRegExp": "mtt/.*.xml",
         "loadingContainerSelector": ".zdfplayer-video-container",
-        "responseType": "document"
+        "responseType": "document",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container {display:inline-block;vertical-align:middle;margin-right:-16px;}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".right-controls-1FfJUp.svelte-inzdbf",
+          "insertBeforeSelector": ".right-controls-1FfJUp.svelte-inzdbf button"
+        }
       }
     },
     {
@@ -5910,6 +5930,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-01T07:44:41.996Z",
+  "buildinConfigUpdatedAt": "2024-02-01T08:05:57.523Z",
   "latestVersion": "1.1.9"
 }
