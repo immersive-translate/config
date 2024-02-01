@@ -1351,8 +1351,7 @@
       ],
       "isInjectVersion": true,
       "isInjectMeta": true,
-      "mainFrameMinTextCount": 0,
-      "mainFrameMinWordCount": 0
+      "waitForSelectorsTimeout": 1
     },
     {
       "id": "immersive",
@@ -1364,8 +1363,7 @@
       ],
       "isInjectVersion": true,
       "isInjectMeta": true,
-      "mainFrameMinTextCount": 0,
-      "mainFrameMinWordCount": 0
+      "waitForSelectorsTimeout": 1
     },
     {
       "id": "simpread",
@@ -5748,7 +5746,11 @@
       "subtitleRule.add": {
         "type": "fmp4.xml",
         "subtitleUrlRegExp": "textstream",
-        "hookType": "fetch"
+        "hookType": "fetch",
+        "quickButtonRule": {
+          "appendSelector": ".css-1k6yql2.e1b63bld4",
+          "insertBeforeSelector": ".css-1ce7rqp.e7f2hfl0"
+        }
       }
     },
     {
@@ -5846,6 +5848,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-01-31T01:36:06.571Z",
+  "buildinConfigUpdatedAt": "2024-02-01T02:51:45.497Z",
   "latestVersion": "1.1.9"
 }
