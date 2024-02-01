@@ -98,7 +98,8 @@
     "https://creativecloud.adobe.com/[CreativeCloudAdobe]",
     "https://developer.apple.com[Developer Apple]",
     "https://egghead.io/[egghead.io]",
-    "https://mubi.com/[Mubi]"
+    "https://mubi.com/[Mubi]",
+    "https://www.viu.com/[Viu]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -5490,9 +5491,13 @@
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.webvtt$",
         "loadingContainerSelector": ".vjs-text-track-display",
-        "subtitleButtonSelector": {
-          "appendSelector": ".vjs-control-bar",
-          "insertBeforeSelector": ".vjs-playback-rate"
+        "injectedCss": [
+          "#immersive-translate-quick-button-container {order: 6}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": "[data-testid=\"video-section\"]  .vjs-control-bar",
+          "insertBeforeSelector": "[data-testid=\"video-section\"] .vjs-volume-panel",
+          "injectCSS": ".imt-quick-subtitle-pop-content {z-index: 999999;}"
         }
       }
     },
@@ -5511,9 +5516,32 @@
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.vtt\\?",
         "loadingContainerSelector": ".vjs-text-track-display",
-        "subtitleButtonSelector": {
+        "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
           "insertBeforeSelector": ".vjs-playback-rate"
+        }
+      }
+    },
+    {
+      "id": "viu",
+      "matches": [
+        "www.viu.com"
+      ],
+      "excludeSelectors.add": [
+        ".bmpui-ui-viu-subtitle-overlay"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".bmpui-ui-viu-subtitle-overlay *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "https?://[^/]+\\.cloudfront\\.net/[^/]+/[^/]+$",
+        "loadingContainerSelector": ".bmpui-container-wrapper",
+        "loadingStyle": "bottom: 20%;",
+        "quickButtonRule": {
+          "appendSelector": ".bmpui-ui-container.bmpui-ui-viu-subtitle > .bmpui-container-wrapper",
+          "injectCSS": ".imt-quick-subtitle-button {margin-bottom: 8px}"
         }
       }
     },
@@ -5931,6 +5959,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-01T08:16:22.624Z",
+  "buildinConfigUpdatedAt": "2024-02-01T09:32:19.288Z",
   "latestVersion": "1.1.9"
 }
