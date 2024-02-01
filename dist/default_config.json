@@ -2062,7 +2062,8 @@
           "#shorts-player .ytp-caption-window-bottom {top: 2%; bottom: unset!important;}"
         ],
         "quickButtonRule": {
-          "appendSelector": ".ytp-chrome-controls"
+          "appendSelector": ".ytp-chrome-controls",
+          "insertBeforeSelector": ".ytp-right-controls"
         }
       }
     },
@@ -5930,6 +5931,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-01T08:05:57.523Z",
+  "buildinConfigUpdatedAt": "2024-02-01T08:16:22.624Z",
   "latestVersion": "1.1.9"
 }
