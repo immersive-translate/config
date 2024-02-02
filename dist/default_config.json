@@ -5569,7 +5569,11 @@
         "type": "text_track",
         "videoPlayerSelector": ".cueplayer-react-video",
         "loadingContainerSelector": ".cueplayer-react-video-holder",
-        "loadingStyle": "bottom: unset; top: 5%;"
+        "loadingStyle": "bottom: unset; top: 5%;",
+        "quickButtonRule": {
+          "appendSelector": ".cueplayer-react-control-bar-right-part",
+          "insertBeforeSelector": ".cueplayer-react-closed-caption"
+        }
       }
     },
     {
@@ -5962,6 +5966,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-01T09:58:11.270Z",
+  "buildinConfigUpdatedAt": "2024-02-02T03:11:27.953Z",
   "latestVersion": "1.1.9"
 }
