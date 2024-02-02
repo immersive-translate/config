@@ -99,7 +99,8 @@
     "https://developer.apple.com[Developer Apple]",
     "https://egghead.io/[egghead.io]",
     "https://mubi.com/[Mubi]",
-    "https://www.viu.com/[Viu]"
+    "https://www.viu.com/[Viu]",
+    "https://cn.linkedin.com/[LinkedIn]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -5964,8 +5965,21 @@
       "extraInlineSelectors.add": [
         ".chakra-link span"
       ]
+    },
+    {
+      "id": "linkin",
+      "matches": "*.linkedin.com",
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": ".*ambry/\\?x-li-ambry-ep=.*",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-captions-toggle"
+        }
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-02T03:11:27.953Z",
+  "buildinConfigUpdatedAt": "2024-02-02T03:24:40.038Z",
   "latestVersion": "1.1.9"
 }
