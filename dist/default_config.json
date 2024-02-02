@@ -5328,15 +5328,6 @@
       }
     },
     {
-      "id": "boringreport",
-      "matches": [
-        "www.boringreport.org"
-      ],
-      "excludeTags.remove": [
-        "BUTTON"
-      ]
-    },
-    {
       "id": "khanacademy",
       "matches": [
         "www.khanacademy.org"
@@ -5546,6 +5537,19 @@
         "quickButtonRule": {
           "appendSelector": ".bmpui-ui-container.bmpui-ui-viu-subtitle > .bmpui-container-wrapper",
           "injectCSS": ".imt-quick-subtitle-button {margin-bottom: 8px}"
+        }
+      }
+    },
+    {
+      "id": "linkin",
+      "matches": "*.linkedin.com",
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": ".*ambry/\\?x-li-ambry-ep=.*",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-captions-toggle"
         }
       }
     },
@@ -5967,19 +5971,15 @@
       ]
     },
     {
-      "id": "linkin",
-      "matches": "*.linkedin.com",
-      "subtitleRule.add": {
-        "type": "webvtt",
-        "subtitleUrlRegExp": ".*ambry/\\?x-li-ambry-ep=.*",
-        "hookType": "xhr",
-        "quickButtonRule": {
-          "appendSelector": ".vjs-control-bar",
-          "insertBeforeSelector": ".vjs-captions-toggle"
-        }
-      }
+      "id": "boringreport",
+      "matches": [
+        "www.boringreport.org"
+      ],
+      "excludeTags.remove": [
+        "BUTTON"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-02T03:24:40.038Z",
+  "buildinConfigUpdatedAt": "2024-02-02T07:15:28.402Z",
   "latestVersion": "1.1.9"
 }
