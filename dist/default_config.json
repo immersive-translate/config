@@ -47,6 +47,14 @@
     "gpt-3.5-turbo-1106"
   ],
   "translationMode": "dual",
+  "translationModeUrlPattern": {
+    "dualMatches": [],
+    "translationMatches": []
+  },
+  "translationModeLanguagePattern": {
+    "dualMatches": [],
+    "translationMatches": []
+  },
   "enabled": true,
   "minVersion": "0.6.2",
   "showOpenaiOnSafari": true,
@@ -118,7 +126,7 @@
     "*.medium.com",
     "news.ycombinator.com"
   ],
-  "spVersion": "1.1.10",
+  "spVersion": "1.2.0",
   "ispVersion": "1.0.0",
   "modifiedBySystem": false,
   "enableDefaultAlwaysTranslatedUrls": true,
@@ -253,7 +261,6 @@
     "https://dash.immersivetranslate.com/auth-done/",
     "http://localhost:8000/dist/userscript/options/",
     "http://localhost:8000/auth-done/",
-    "http://localhost:38001/",
     "http://192.168.50.9:8000/dist/userscript/options/",
     "https://www.deepl.com/translator",
     "translate.google.com",
@@ -295,7 +302,8 @@
     "eb2.3lift.com",
     "googleads.g.doubleclick.net",
     "https://www.google.com/recaptcha/*",
-    "ad.doubanio.com"
+    "ad.doubanio.com",
+    "http://localhost:38001/"
   ],
   "telemetry": true,
   "loadingTheme": "spinner",
@@ -981,7 +989,6 @@
       "svg",
       "G",
       "NOSCRIPT",
-      "INPUT",
       "BUTTON",
       "BASE",
       "HR",
@@ -1361,7 +1368,8 @@
         "https://immersivetranslate.com",
         "https://test.immersivetranslate.com",
         "https://onboarding.immersivetranslate.com",
-        "https://app.immersivetranslate.com"
+        "https://app.immersivetranslate.com",
+        "http://localhost:38001"
       ],
       "isInjectVersion": true,
       "isInjectMeta": true,
@@ -5562,7 +5570,11 @@
         "type": "text_track",
         "videoPlayerSelector": ".genie-video",
         "loadingContainerSelector": ".genie-container",
-        "loadingStyle": "bottom: unset; top: 5%;"
+        "loadingStyle": "bottom: unset; top: 5%;",
+        "quickButtonRule": {
+          "appendSelector": ".control-bar_right-child-container",
+          "insertBeforeSelector": ".controls-toggle_button--fullscreen"
+        }
       }
     },
     {
@@ -5697,7 +5709,7 @@
     },
     {
       "id": "tv.adobe",
-      "matches": "https://video.tv.adobe.com",
+      "matches": "https://*.tv.adobe.com",
       "excludeSelectors.add": [
         ".mpc-player"
       ],
@@ -5707,7 +5719,10 @@
       "subtitleRule.add": {
         "type": "text_track",
         "videoPlayerSelector": "video",
-        "loadingContainerSelector": ".mpc-player"
+        "loadingContainerSelector": ".mpc-player",
+        "quickButtonRule": {
+          "appendSelector": ".mpc-controls__container"
+        }
       }
     },
     {
@@ -5980,6 +5995,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-02T07:15:28.402Z",
-  "latestVersion": "1.1.9"
+  "buildinConfigUpdatedAt": "2024-02-04T14:26:01.791Z",
+  "latestVersion": "1.2.0"
 }
