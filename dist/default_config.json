@@ -1100,7 +1100,8 @@
       "readme-toc",
       "#hs_cos_wrapper_post_body",
       "#hs_cos_wrapper_post_body",
-      "option"
+      "option",
+      "ul > li"
     ],
     "allBlockTags": [
       "BODY",
@@ -1459,9 +1460,6 @@
         ".mwe-math-element",
         "[role=math]",
         ".nowrap"
-      ],
-      "extraBlockSelectors": [
-        ".autonym"
       ],
       "bodyRule.add": {
         "bodySelector": "#content",
@@ -5990,6 +5988,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-05T06:40:32.452Z",
+  "buildinConfigUpdatedAt": "2024-02-05T07:58:57.418Z",
   "latestVersion": "1.2.0"
 }
