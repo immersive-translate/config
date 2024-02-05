@@ -108,7 +108,8 @@
     "https://egghead.io/[egghead.io]",
     "https://mubi.com/[Mubi]",
     "https://www.viu.com/[Viu]",
-    "https://cn.linkedin.com/[LinkedIn]"
+    "https://cn.linkedin.com/[LinkedIn]",
+    "https://www.kanopy.com/[Kanopy]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -5581,7 +5582,14 @@
         "type": "webvtt",
         "subtitleUrlRegExp": ".*captioncache/webvtt.*",
         "hookType": "xhr",
-        "loadingContainerSelector": ".video-player-container"
+        "loadingContainerSelector": ".video-player-container",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container{height: 40px;display: flex;align-items: center;align-self: flex-end;}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-caption-control"
+        }
       }
     },
     {
@@ -6011,6 +6019,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-05T10:29:44.479Z",
+  "buildinConfigUpdatedAt": "2024-02-05T11:03:37.396Z",
   "latestVersion": "1.2.0"
 }
