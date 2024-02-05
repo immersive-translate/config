@@ -1086,7 +1086,9 @@
       "HYPOTHESIS-HIGHLIGHT"
     ],
     "additionalInlineTags": [],
-    "extraInlineSelectors": [],
+    "extraInlineSelectors": [
+      "p > a span"
+    ],
     "additionalInlineSelectors": [
       ".MathJax_Preview",
       ".MathJax",
@@ -5979,13 +5981,6 @@
       ]
     },
     {
-      "id": "ethereum",
-      "matches": "ethereum.org",
-      "extraInlineSelectors.add": [
-        ".chakra-link span"
-      ]
-    },
-    {
       "id": "boringreport",
       "matches": [
         "www.boringreport.org"
@@ -5995,6 +5990,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-04T14:25:42.000Z",
+  "buildinConfigUpdatedAt": "2024-02-05T06:40:32.452Z",
   "latestVersion": "1.2.0"
 }
