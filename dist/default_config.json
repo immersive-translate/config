@@ -30,7 +30,8 @@
       "https://www.reddit.com/new/",
       "https://www.reddit.com/top/",
       "https://www.reddit.com/.compact",
-      "https://app.immersivetranslate.com/pdf*"
+      "https://app.immersivetranslate.com/pdf*",
+      "https://bsky.app"
     ],
     "excludeMatches": [],
     "selectorMatches": [
@@ -647,7 +648,8 @@
       "web.whatsapp.com",
       "*.slack.com",
       "*.indeed.com",
-      "outlook.live.com"
+      "outlook.live.com",
+      "https://bsky.app"
     ],
     "excludeMatches": [],
     "selectorMatches": [
@@ -6017,8 +6019,16 @@
       "excludeTags.remove": [
         "BUTTON"
       ]
+    },
+    {
+      "id": "https://bsky.app/",
+      "matches": "https://bsky.app",
+      "selectors": [
+        "[data-testid=postText]"
+      ],
+      "isTranslateTitle": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-06T03:47:44.860Z",
+  "buildinConfigUpdatedAt": "2024-02-06T17:22:24.036Z",
   "latestVersion": "1.2.0"
 }
