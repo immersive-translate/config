@@ -780,7 +780,8 @@
       "rw-highlight",
       "web-highlight",
       "font.immersive-translate-target-wrapper *",
-      "pre"
+      "pre",
+      ".uacc-clickable"
     ],
     "mutationExcludeContainsSelectors": [
       "msreadoutspan",
@@ -951,6 +952,7 @@
     "atomicBlockTags": [],
     "excludeSelectors": [],
     "additionalExcludeSelectors": [
+      ".uacc-clickable",
       "#monica-content-root",
       "#immersive-translate-popup",
       ".social-share",
@@ -6078,6 +6080,6 @@
       "isTranslateTitle": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-07T08:33:42.000Z",
+  "buildinConfigUpdatedAt": "2024-02-07T14:27:51.078Z",
   "latestVersion": "1.2.1"
 }
