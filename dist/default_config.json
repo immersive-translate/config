@@ -111,7 +111,8 @@
     "https://www.viu.com/[Viu]",
     "https://cn.linkedin.com/[LinkedIn]",
     "https://www.kanopy.com/[Kanopy]",
-    "https://www.rachelsenglishacademy.com/[RachelsEnglishAcademy]"
+    "https://www.rachelsenglishacademy.com/[RachelsEnglishAcademy]",
+    "https://threejs-journey.com/[three.js journey]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -6057,6 +6058,6 @@
       "isTranslateTitle": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-07T07:21:59.893Z",
+  "buildinConfigUpdatedAt": "2024-02-07T07:25:58.784Z",
   "latestVersion": "1.2.0"
 }
