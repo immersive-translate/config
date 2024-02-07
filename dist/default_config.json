@@ -5760,6 +5760,29 @@
       }
     },
     {
+      "id": "threejs-journey",
+      "matches": "threejs-journey.com",
+      "excludeSelectors.add": [
+        ".video-area"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".video-area *"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".video-area",
+        "injectedCss": [
+          ".js-tracks-text.tracks-text {white-space: pre;}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".js-controls .right",
+          "insertBeforeSelector": ".js-subtitles",
+          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 38px !important;}"
+        }
+      }
+    },
+    {
       "id": "codewithchris",
       "matches": [
         "learn.codewithchris.com",
@@ -6031,6 +6054,6 @@
       "isTranslateTitle": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-07T06:31:52.752Z",
+  "buildinConfigUpdatedAt": "2024-02-07T07:17:27.960Z",
   "latestVersion": "1.2.0"
 }
