@@ -132,6 +132,7 @@
   ],
   "spVersion": "1.2.1",
   "ispVersion": "1.0.1",
+  "gspVersion": "1.0.0",
   "modifiedBySystem": false,
   "enableDefaultAlwaysTranslatedUrls": true,
   "isChangedAlwaysTranslatedUrls": false,
@@ -1939,6 +1940,7 @@
         "injectedCss": [
           "#player-shorts-container .ytp-caption-window-bottom {top: 40px; bottom: unset!important;}"
         ],
+        "videoSelector": "video",
         "translationOnlyPattern": [
           "m.youtube.com/watch*",
           "m.youtube.com/embed*",
@@ -5954,6 +5956,24 @@
       }
     },
     {
+      "id": "hulu",
+      "matches": "https://*.hulu.com",
+      "subtitleRule.add": {
+        "type": "hulu",
+        "hookType": "fetch",
+        "injectedCss": [
+          ".ClosedCaption {display:none!important;}"
+        ],
+        "videoSelector": "#content-video-player",
+        "subtitleUrlRegExp": "play.hulu.com/.*/playlist",
+        "loadingContainerSelector": "#web-player-app",
+        "quickButtonRule": {
+          "appendSelector": ".PlayerSettingsGroup",
+          "insertBeforeSelector": ".PlayerSettingsGroup .PlayerControlsButton"
+        }
+      }
+    },
+    {
       "id": "linkingyourthinking",
       "matches": "community.linkingyourthinking.com",
       "additionalExcludeSelectors.remove": [
@@ -6058,6 +6078,6 @@
       "isTranslateTitle": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-07T07:25:58.784Z",
+  "buildinConfigUpdatedAt": "2024-02-07T08:11:49.726Z",
   "latestVersion": "1.2.0"
 }
