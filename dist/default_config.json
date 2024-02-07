@@ -110,7 +110,8 @@
     "https://mubi.com/[Mubi]",
     "https://www.viu.com/[Viu]",
     "https://cn.linkedin.com/[LinkedIn]",
-    "https://www.kanopy.com/[Kanopy]"
+    "https://www.kanopy.com/[Kanopy]",
+    "https://www.rachelsenglishacademy.com/[RachelsEnglishAcademy]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -5761,7 +5762,8 @@
     {
       "id": "codewithchris",
       "matches": [
-        "learn.codewithchris.com"
+        "learn.codewithchris.com",
+        "*.rachelsenglishacademy.com"
       ],
       "excludeSelectors.add": [
         ".w-captions",
@@ -6029,6 +6031,6 @@
       "isTranslateTitle": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-07T00:00:14.637Z",
+  "buildinConfigUpdatedAt": "2024-02-07T06:31:52.752Z",
   "latestVersion": "1.2.0"
 }
