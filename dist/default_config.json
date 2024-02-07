@@ -5281,6 +5281,9 @@
         "humanTrust": 85,
         "loadingContainerSelector": ".video-player--video-wrapper--2mFBT",
         "loadingStyle": "bottom: 15%;",
+        "injectedCss": [
+          "[class^='well--text'] {white-space: pre;}"
+        ],
         "quickButtonRule": {
           "appendSelector": "[data-purpose=\"video-controls\"]"
         }
@@ -6054,6 +6057,6 @@
       "isTranslateTitle": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-07T07:17:27.960Z",
+  "buildinConfigUpdatedAt": "2024-02-07T07:21:59.893Z",
   "latestVersion": "1.2.0"
 }
