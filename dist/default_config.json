@@ -6094,14 +6094,23 @@
       ]
     },
     {
-      "id": "https://bsky.app/",
+      "id": "bsky.app",
       "matches": "https://bsky.app",
       "selectors": [
         "[data-testid=postText]"
       ],
       "isTranslateTitle": false
+    },
+    {
+      "id": "peacocktv",
+      "matches": [
+        "*.peacocktv.com"
+      ],
+      "injectedCss": [
+        ".video-player__subtitles__line > font,.video-player__subtitles__line:only-child{display:block;}"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-08T03:04:46.468Z",
+  "buildinConfigUpdatedAt": "2024-02-08T04:11:40.569Z",
   "latestVersion": "1.2.1"
 }
