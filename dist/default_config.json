@@ -2049,6 +2049,35 @@
       "wrapperSuffix": ""
     },
     {
+      "id": "tvYoutube",
+      "matches": "tv.youtube.com",
+      "subtitleRule.add": {
+        "type": "youtube",
+        "preTranslation": true,
+        "humanPreferred": false,
+        "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
+        "translateSelectors": [
+          ".caption-window",
+          ".caption-visual-line"
+        ],
+        "videoPlayerSelector": ".html5-video-player",
+        "loadingContainerSelector": ".ytp-caption-window-container",
+        "videoADSelector": ".ytp-ad-player-overlay",
+        "translationOnlyPattern": [
+          "tv.youtube.com/watch*"
+        ],
+        "subtitleButtonSelector": ".ytp-subtitles-button",
+        "languageSelector": ".ytp-menuitem-label",
+        "injectedCss": [
+          "#shorts-player .ytp-caption-window-bottom {top: 2%; bottom: unset!important;} #immersive-translate-quick-button-container {font-size: 12px;z-index:1001;}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".ypcs-control-buttons-right",
+          "insertBeforeSelector": ".ypcs-control-buttons-right .ypcs-volume-control-slot"
+        }
+      }
+    },
+    {
       "id": "youtube-subtitle",
       "matches": [
         "www.youtube-nocookie.com",
@@ -6111,6 +6140,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-08T07:59:18.738Z",
+  "buildinConfigUpdatedAt": "2024-02-08T14:11:00.502Z",
   "latestVersion": "1.2.1"
 }
