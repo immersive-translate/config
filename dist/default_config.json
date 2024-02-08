@@ -78,6 +78,7 @@
   },
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
+    "https://tv.youtube.com[TV Youtube]",
     "https://www.netflix.com[NetFlix]",
     "https://twitter.com[Twitter Spaces]",
     "https://play.max.com[HBO Max]",
@@ -6140,6 +6141,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-08T14:11:00.502Z",
+  "buildinConfigUpdatedAt": "2024-02-08T14:22:27.677Z",
   "latestVersion": "1.2.1"
 }
