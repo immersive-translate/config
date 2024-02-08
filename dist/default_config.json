@@ -112,7 +112,8 @@
     "https://cn.linkedin.com/[LinkedIn]",
     "https://www.kanopy.com/[Kanopy]",
     "https://www.rachelsenglishacademy.com/[RachelsEnglishAcademy]",
-    "https://threejs-journey.com/[three.js journey]"
+    "https://threejs-journey.com/[three.js journey]",
+    "https://www.iflix.com/[WeTV iflix]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -5604,6 +5605,27 @@
       }
     },
     {
+      "id": "iflix",
+      "matches": "www.iflix.com",
+      "excludeSelectors.add": [
+        "#player-wrapper"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#player-wrapper *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt",
+        "hookType": "xhr",
+        "loadingContainerSelector": "#player-wrapper",
+        "loadingStyle": "bottom: 18%;",
+        "quickButtonRule": {
+          "appendSelector": "[data-role=\"wetv-ctrlbar-right\"]",
+          "insertBeforeSelector": "[data-role=\"wetv-player-definition\"]"
+        }
+      }
+    },
+    {
       "id": "itv",
       "matches": [
         "www.itv.com"
@@ -6080,6 +6102,6 @@
       "isTranslateTitle": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-07T14:27:51.078Z",
+  "buildinConfigUpdatedAt": "2024-02-08T03:04:46.468Z",
   "latestVersion": "1.2.1"
 }
