@@ -115,7 +115,8 @@
     "https://www.rachelsenglishacademy.com/[RachelsEnglishAcademy]",
     "https://threejs-journey.com/[three.js journey]",
     "https://www.iflix.com/[WeTV iflix]",
-    "https://www.espn.com/[ESPN]"
+    "https://www.espn.com/[ESPN]",
+    "https://www.imdb.com/[IMDb]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -5659,6 +5660,25 @@
       }
     },
     {
+      "id": "imdb",
+      "matches": "www.imdb.com",
+      "excludeSelectors.add": [
+        ".jw-text-track-container"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".jw-text-track-container *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.srt$",
+        "loadingContainerSelector": "#imdbnext-vp-jw-single",
+        "quickButtonRule": {
+          "appendSelector": ".jw-reset.jw-button-container",
+          "insertBeforeSelector": "[button=\"ttt-button\"]"
+        }
+      }
+    },
+    {
       "id": "itv",
       "matches": [
         "www.itv.com"
@@ -6167,6 +6187,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-09T04:06:29.069Z",
+  "buildinConfigUpdatedAt": "2024-02-09T06:04:08.763Z",
   "latestVersion": "1.2.1"
 }
