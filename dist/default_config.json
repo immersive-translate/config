@@ -80,6 +80,7 @@
     "https://www.youtube.com[Youtube]",
     "https://tv.youtube.com[TV Youtube]",
     "https://www.netflix.com[NetFlix]",
+    "https://www.primevideo.com[PrimeVideo]",
     "https://twitter.com[Twitter Spaces]",
     "https://play.max.com[HBO Max]",
     "https://vimeo.com/watch[Vimeo]",
@@ -6187,6 +6188,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-09T06:04:08.763Z",
+  "buildinConfigUpdatedAt": "2024-02-09T07:17:53.690Z",
   "latestVersion": "1.2.1"
 }
