@@ -5748,7 +5748,7 @@
     {
       "id": "espn",
       "matches": [
-        "*.espn.com"
+        "*.espn2.com"
       ],
       "excludeSelectors.add": [
         "#fittPageContainer"
@@ -5771,8 +5771,8 @@
     {
       "id": "fmoviesz",
       "matches": [
-        "fmoviesz.to",
-        "vidplay.online"
+        "fmoviesz2.to",
+        "vidplay2.online"
       ],
       "excludeSelectors.add": [
         "#player"
@@ -6211,6 +6211,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-09T11:00:58.811Z",
+  "buildinConfigUpdatedAt": "2024-02-09T11:21:21.961Z",
   "latestVersion": "1.2.1"
 }
