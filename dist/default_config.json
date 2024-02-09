@@ -5748,7 +5748,7 @@
     {
       "id": "espn",
       "matches": [
-        "*.espn2.com"
+        "*.espn.com"
       ],
       "excludeSelectors.add": [
         "#fittPageContainer"
@@ -6211,6 +6211,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-09T11:21:21.961Z",
+  "buildinConfigUpdatedAt": "2024-02-09T14:54:41.442Z",
   "latestVersion": "1.2.1"
 }
