@@ -114,7 +114,8 @@
     "https://www.kanopy.com/[Kanopy]",
     "https://www.rachelsenglishacademy.com/[RachelsEnglishAcademy]",
     "https://threejs-journey.com/[three.js journey]",
-    "https://www.iflix.com/[WeTV iflix]"
+    "https://www.iflix.com/[WeTV iflix]",
+    "https://www.espn.com/[ESPN]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -3002,10 +3003,12 @@
     {
       "id": "weibo",
       "matches": [
-        "weibo.com"
+        "weibo.com",
+        "*.weibo.*"
       ],
       "selectors": [
-        "div[class^='detail_wbtext']"
+        "div[class^='detail_wbtext']",
+        ".weibo-text"
       ]
     },
     {
@@ -5721,6 +5724,29 @@
       }
     },
     {
+      "id": "espn",
+      "matches": [
+        "*.espn.com"
+      ],
+      "excludeSelectors.add": [
+        "#fittPageContainer"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#fittPageContainer *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container{margin-top:16px;}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-captions-button"
+        }
+      }
+    },
+    {
       "id": "vimeo",
       "matches": [
         "vimeo.com"
@@ -6141,6 +6167,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-08T14:22:27.677Z",
+  "buildinConfigUpdatedAt": "2024-02-09T04:06:29.069Z",
   "latestVersion": "1.2.1"
 }
