@@ -5769,6 +5769,28 @@
       }
     },
     {
+      "id": "fmoviesz",
+      "matches": [
+        "fmoviesz.to",
+        "vidplay.online"
+      ],
+      "excludeSelectors.add": [
+        "#player"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#player *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "loadingContainerSelector": "#player",
+        "subtitleUrlRegExp": "subtitle/.*\\.vtt$",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "insertBeforeSelector": ".jw-icon-cc"
+        }
+      }
+    },
+    {
       "id": "vimeo",
       "matches": [
         "vimeo.com"
@@ -6189,6 +6211,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-09T07:19:03.389Z",
+  "buildinConfigUpdatedAt": "2024-02-09T11:00:58.811Z",
   "latestVersion": "1.2.1"
 }
