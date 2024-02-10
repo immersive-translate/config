@@ -2017,7 +2017,8 @@
         "#description-inline-expander > yt-attributed-string > span",
         "yt-attributed-string > span",
         "ytd-notification-renderer .message",
-        "#message"
+        "#message",
+        ".yt_to_text_transcript_text"
       ],
       "extraBlockSelectors": [
         "yt-formatted-string.ytd-transcript-segment-renderer",
@@ -6211,6 +6212,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-09T14:54:41.442Z",
+  "buildinConfigUpdatedAt": "2024-02-10T08:20:54.995Z",
   "latestVersion": "1.2.1"
 }
