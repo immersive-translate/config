@@ -2648,6 +2648,9 @@
       "extraBlockSelectors": [
         ".MUFPAc"
       ],
+      "additionalExcludeSelectors.add": [
+        "[jscontroller='UsftYd']"
+      ],
       "globalStyles": {
         ".V82bz": "-webkit-line-clamp: unset;max-height: unset;margin-bottom:30px",
         ".pe7FNb": "-webkit-line-clamp: unset;",
@@ -5783,8 +5786,52 @@
       ],
       "subtitleRule.add": {
         "type": "webvtt",
+        "autoEnableSubtitle": true,
         "loadingContainerSelector": "#player",
         "subtitleUrlRegExp": "subtitle/.*\\.vtt$",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "insertBeforeSelector": ".jw-icon-cc"
+        }
+      }
+    },
+    {
+      "id": "aniwatch",
+      "matches": [
+        "megacloud2.tv",
+        "aniwatch2.to"
+      ],
+      "excludeSelectors.add": [
+        ".jw-wrapper"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".jw-wrapper *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "loadingContainerSelector": ".jw-wrapper",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "insertBeforeSelector": ".jw-icon-cc"
+        }
+      }
+    },
+    {
+      "id": "rottentomatoes",
+      "matches": [
+        "*.rottentomatoes.com"
+      ],
+      "excludeSelectors.add": [
+        ".jw-wrapper"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".jw-wrapper *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "loadingContainerSelector": ".jw-wrapper",
+        "subtitleUrlRegExp": "\\.vtt$",
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
           "insertBeforeSelector": ".jw-icon-cc"
@@ -6212,6 +6259,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-10T08:20:54.995Z",
+  "buildinConfigUpdatedAt": "2024-02-10T10:03:44.153Z",
   "latestVersion": "1.2.1"
 }
