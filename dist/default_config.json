@@ -6257,8 +6257,15 @@
       "injectedCss": [
         ".video-player__subtitles__line > font,.video-player__subtitles__line:only-child{display:block;}"
       ]
+    },
+    {
+      "id": "altis.world",
+      "matches": "altis.world",
+      "additionalExcludeSelectors.remove": [
+        ".notranslate"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-10T10:03:44.153Z",
+  "buildinConfigUpdatedAt": "2024-02-13T15:46:22.659Z",
   "latestVersion": "1.2.1"
 }
