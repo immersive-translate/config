@@ -3633,34 +3633,11 @@
       ]
     },
     {
-      "id": "newthingsunderthesun",
-      "matches": "www.newthingsunderthesun.com",
-      "additionalExcludeSelectors.remove": [
-        "[translate=no]"
-      ]
-    },
-    {
       "id": "tiktok",
       "matches": "https://www.tiktok.com/*/video/*",
       "selectors": [
         "[data-e2e^=comment-level]",
         "[data-e2e=browse-video-desc] > span"
-      ]
-    },
-    {
-      "id": "gumroad.com",
-      "matches": [
-        "*.gumroad.com"
-      ],
-      "additionalExcludeSelectors.remove": [
-        "[translate=no]"
-      ]
-    },
-    {
-      "id": "otherTiktok",
-      "matches": "*.tiktok.com",
-      "additionalExcludeSelectors.remove": [
-        ".notranslate"
       ]
     },
     {
@@ -4899,14 +4876,6 @@
       }
     },
     {
-      "id": "edstem",
-      "matches": "edstem.org",
-      "additionalExcludeSelectors.remove": [
-        ".notranslate",
-        "[translate=no]"
-      ]
-    },
-    {
       "id": "forums.zotero",
       "matches": "forums.zotero.org",
       "selectors": [
@@ -5008,14 +4977,6 @@
         ".header-menu__item > a",
         ".linkbar__item",
         ".header__button-group"
-      ]
-    },
-    {
-      "id": "tldrnewsletter",
-      "matches": "actions.tldrnewsletter.com",
-      "additionalExcludeSelectors.remove": [
-        ".notranslate",
-        "[translate=no]"
       ]
     },
     {
@@ -6146,13 +6107,6 @@
       }
     },
     {
-      "id": "linkingyourthinking",
-      "matches": "community.linkingyourthinking.com",
-      "additionalExcludeSelectors.remove": [
-        "[translate=no]"
-      ]
-    },
-    {
       "id": "archiveToday",
       "matches": [
         "archive.today",
@@ -6259,13 +6213,23 @@
       ]
     },
     {
-      "id": "altis.world",
-      "matches": "altis.world",
+      "id": "noTranslate",
+      "matches": [
+        "*.tiktok.com",
+        "altis.world",
+        "*.newthingsunderthesun.com",
+        "*.gumroad.com",
+        "edstem.org",
+        "actions.tldrnewsletter.com",
+        "community.linkingyourthinking.com",
+        "doc.qt.io"
+      ],
       "additionalExcludeSelectors.remove": [
-        ".notranslate"
+        ".notranslate",
+        "[translate=no]"
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-13T15:46:22.659Z",
+  "buildinConfigUpdatedAt": "2024-02-15T10:07:11.559Z",
   "latestVersion": "1.2.1"
 }
