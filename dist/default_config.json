@@ -970,6 +970,7 @@
       "rp",
       "rt",
       ".prism-code",
+      ".rc-CodeBlock",
       "[role=code]",
       "#omni-extension",
       ".omni-item",
@@ -6230,6 +6231,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-15T10:07:11.559Z",
+  "buildinConfigUpdatedAt": "2024-02-17T13:42:25.118Z",
   "latestVersion": "1.2.1"
 }
