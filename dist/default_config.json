@@ -4828,12 +4828,7 @@
       "subtitleRule.add": {
         "type": "bilibili",
         "subtitleUrlRegExp": "aisubtitle.hdslb.com/bfs",
-        "loadingContainerSelector": ".bpx-player-subtitle-panel",
-        "quickButtonRule": {
-          "appendSelector": ".bpx-player-control-bottom-right",
-          "injectCSS": ".imt-quick-subtitle-button {height: 60%;}",
-          "insertBeforeSelector": ".bpx-player-ctrl-quality"
-        }
+        "loadingContainerSelector": ".bpx-player-subtitle-panel"
       }
     },
     {
@@ -6231,6 +6226,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-17T13:42:25.118Z",
+  "buildinConfigUpdatedAt": "2024-02-18T06:40:23.258Z",
   "latestVersion": "1.2.1"
 }
