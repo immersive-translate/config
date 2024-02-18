@@ -313,7 +313,8 @@
     "googleads.g.doubleclick.net",
     "https://www.google.com/recaptcha/*",
     "ad.doubanio.com",
-    "http://localhost:38001/"
+    "http://localhost:38001/",
+    "datawrapper.dwcdn.net"
   ],
   "telemetry": true,
   "loadingTheme": "spinner",
@@ -6226,6 +6227,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-18T06:40:23.258Z",
+  "buildinConfigUpdatedAt": "2024-02-18T08:03:22.655Z",
   "latestVersion": "1.2.1"
 }
