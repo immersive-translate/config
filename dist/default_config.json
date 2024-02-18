@@ -351,7 +351,8 @@
         "🚠",
         "🚠",
         "b"
-      ]
+      ],
+      "maxTextGroupLengthPerRequest": 50
     },
     "transmart": {
       "placeholderDelimiters": [
@@ -393,6 +394,7 @@
     "deepl": {
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
       "maxTextLengthPerRequest": 2800,
+      "maxTextGroupLengthPerRequest": 50,
       "qualityDelimiterBetaV3": "<br />",
       "qualityNoSymoblBetaV3": "</b",
       "qualityMinTextLengthV3": 40,
@@ -6227,6 +6229,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-18T08:03:22.655Z",
+  "buildinConfigUpdatedAt": "2024-02-18T08:46:24.231Z",
   "latestVersion": "1.2.1"
 }
