@@ -6227,8 +6227,17 @@
         ".notranslate",
         "[translate=no]"
       ]
+    },
+    {
+      "id": "jmir",
+      "matches": [
+        "*.jmir.org"
+      ],
+      "additionalInlineSelectors.add": [
+        ".tooltiptext"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-18T08:46:24.231Z",
+  "buildinConfigUpdatedAt": "2024-02-19T10:35:09.141Z",
   "latestVersion": "1.2.1"
 }
