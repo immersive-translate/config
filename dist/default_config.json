@@ -6069,9 +6069,7 @@
       ],
       "subtitleRule.add": {
         "type": "disneyplus",
-        "subtitleUrlRegExp": "\\.vtt$",
-        "loadingContainerSelector": ".dss-hls-subtitle-overlay",
-        "loadingStyle": "bottom: 15%;"
+        "subtitleUrlRegExp": "\\.vtt$"
       }
     },
     {
@@ -6238,6 +6236,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-19T10:35:09.141Z",
+  "buildinConfigUpdatedAt": "2024-02-19T11:01:08.639Z",
   "latestVersion": "1.2.1"
 }
