@@ -1104,7 +1104,8 @@
     ],
     "additionalInlineTags": [],
     "extraInlineSelectors": [
-      "p > a span"
+      "p > a span",
+      "p > span a span"
     ],
     "additionalInlineSelectors": [
       ".MathJax_Preview",
@@ -6236,6 +6237,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-19T11:01:08.639Z",
+  "buildinConfigUpdatedAt": "2024-02-19T16:05:12.131Z",
   "latestVersion": "1.2.1"
 }
