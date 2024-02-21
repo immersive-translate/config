@@ -759,7 +759,7 @@
     ],
     "excludeRegexps": [
       "(&lt;\\\\/?[a-zA-Z0-9]+(?:[^&gt;]*?)&gt;)",
-      "(<form>|<body>|<strong>|<img|<em>|<b>|</b>|<i>|</i>|<u>|</u>|<br>|<br/>)"
+      "(<form>|<body>|<strong>|<img|<IMG|<Img|<ImG|<iMg|<iMG|||<em>|<b>|</b>|<i>|</i>|<u>|</u>|<br>|<br/>)"
     ],
     "detectionServiceOrder": [
       "google",
@@ -6237,6 +6237,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-21T02:48:02.945Z",
+  "buildinConfigUpdatedAt": "2024-02-21T02:54:26.870Z",
   "latestVersion": "1.2.1"
 }
