@@ -660,7 +660,8 @@
       "*.slack.com",
       "*.indeed.com",
       "outlook.live.com",
-      "https://bsky.app"
+      "https://bsky.app",
+      "store.steampowered.com"
     ],
     "excludeMatches": [],
     "selectorMatches": [
@@ -3686,7 +3687,7 @@
       ]
     },
     {
-      "id": "steampowered",
+      "id": "steampoweredApp",
       "matches": "store.steampowered.com/app/*",
       "selectors": [
         ".game_description_snippet",
@@ -3739,6 +3740,11 @@
         ".div.early_access_banner": "height: 84px",
         ".franchise_notice > *": "height: 84px"
       },
+      "detectParagraphLanguage": true
+    },
+    {
+      "id": "steampowered",
+      "matches": "store.steampowered.com",
       "detectParagraphLanguage": true
     },
     {
@@ -6237,6 +6243,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-21T02:55:23.478Z",
+  "buildinConfigUpdatedAt": "2024-02-21T10:11:50.447Z",
   "latestVersion": "1.2.1"
 }
