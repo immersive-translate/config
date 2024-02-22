@@ -5798,7 +5798,6 @@
       ],
       "subtitleRule.add": {
         "type": "webvtt",
-        "loadingContainerSelector": ".jw-wrapper",
         "subtitleUrlRegExp": "\\.vtt$",
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
@@ -6244,6 +6243,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-21T14:02:24.728Z",
+  "buildinConfigUpdatedAt": "2024-02-22T09:23:36.316Z",
   "latestVersion": "1.2.1"
 }
