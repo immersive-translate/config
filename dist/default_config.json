@@ -6446,8 +6446,39 @@
       "additionalInlineSelectors.add": [
         ".tooltiptext"
       ]
+    },
+    {
+      "id": "smzdm",
+      "matches": [
+        "www.smzdm.com"
+      ],
+      "excludeSelectors.add": [
+        ".z-highlight",
+        ".feed-block-info",
+        ".z-feed-foot",
+        ".feed-block-descripe",
+        "#J_column_tab_box",
+        ".crumbs"
+      ],
+      "globalStyles": {
+        ".feed-block-title": "height:unset"
+      }
+    },
+    {
+      "id": "xiaohongshu.com",
+      "matches": [
+        "www.xiaohongshu.com"
+      ],
+      "excludeSelectors.add": [
+        ".author-wrapper",
+        ".info",
+        ".side-bar"
+      ],
+      "globalStyles": {
+        "a.title": "-webkit-line-clamp:3"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-23T11:33:14.537Z",
-  "latestVersion": "1.2.1"
+  "buildinConfigUpdatedAt": "2024-02-23T13:21:11.000Z",
+  "latestVersion": "1.2.2"
 }
