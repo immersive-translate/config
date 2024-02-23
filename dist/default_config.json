@@ -106,7 +106,6 @@
     "https://home.mindvalley.com[Mindvalley]",
     "https://iview.abc.net.au/[iview]",
     "https://www.nma.art/[nmaArt]",
-    "https://creativecloud.adobe.com/[CreativeCloudAdobe]",
     "https://developer.apple.com[Developer Apple]",
     "https://egghead.io/[egghead.io]",
     "https://mubi.com/[Mubi]",
@@ -116,8 +115,18 @@
     "https://www.rachelsenglishacademy.com/[RachelsEnglishAcademy]",
     "https://threejs-journey.com/[three.js journey]",
     "https://www.iflix.com/[WeTV iflix]",
+    "https://www.hulu.com/[Hulu]",
     "https://www.espn.com/[ESPN]",
-    "https://www.imdb.com/[IMDb]"
+    "https://www.imdb.com/[IMDb]",
+    "https://www.rottentomatoes.com/[Rotten Tomatoes]",
+    "https://fmoviesz.to/[FMovies]",
+    "https://aniwatch.to/[AniWatch]",
+    "https://www.iq.com/[iQIYI]",
+    "https://www.youku.tv/[Youku]",
+    "https://www.dailymotion.com/[Dailymotion]",
+    "https://www.paramountplus.com/[Paramount Plus]",
+    "https://www.starz.com/[starz]",
+    "https://pluto.tv/[pluto]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -347,6 +356,7 @@
       ]
     },
     "google": {
+      "requestTimeout": 10000,
       "placeholderDelimiters": [
         "🚠",
         "🚠",
@@ -461,6 +471,7 @@
         "}}",
         "b"
       ],
+      "requestTimeout": 101000,
       "immediateTranslationTextCount": 5000,
       "translationDebounce": 300,
       "interval": 1650,
@@ -527,6 +538,7 @@
       "immediateTranslationTextCount": 3000,
       "translationDebounce": 300,
       "interval": 1350,
+      "requestTimeout": 101000,
       "systemPrompt": "You are a professional, authentic translation engine, only returns translations.",
       "prompt": "Translate the text to {{to}} Language, please do not explain my original text.:\n\n{{text}}",
       "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}",
@@ -767,6 +779,7 @@
       "bing",
       "transmart"
     ],
+    "detectParagraphLanguage": false,
     "paragraphFirstLetterFontSize": 35,
     "toastErrorMinTimes": 20,
     "enableSubtitle": false,
@@ -1560,6 +1573,15 @@
           ],
           "mutationChangeDelay": 1000
         }
+      },
+      "subtitleRule.add_v.[1.2.1]": {
+        "type": "twitter",
+        "videoPlayerSelector": "video",
+        "loadingStyle": "bottom: unset; top: 5%;",
+        "injectedCss": [
+          "#layers[style='z-index: 1;'] [style='height: 100px;'] { height: 400px !important; }",
+          "video::cue {white-space: pre-line;}"
+        ]
       }
     },
     {
@@ -5408,6 +5430,11 @@
         ],
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar"
+        },
+        "videoSelector": "video",
+        "attachRule": {
+          "appendSelector": ".video-js",
+          "injectedGlobalCSS": ".vjs-text-track-display {display: none;}"
         }
       }
     },
@@ -5610,12 +5637,15 @@
     },
     {
       "id": "iflix",
-      "matches": "www.iflix.com",
+      "matches": [
+        "www.iflix.com",
+        "wetv.vip"
+      ],
       "excludeSelectors.add": [
-        "#player-wrapper"
+        ".text-track"
       ],
       "mutationExcludeSelectors.add": [
-        "#player-wrapper *"
+        ".player-wrapper *"
       ],
       "subtitleRule.add": {
         "type": "webvtt",
@@ -5718,18 +5748,19 @@
       "matches": [
         "*.espn.com"
       ],
+      "mainFrameMinTextCount": 0,
       "excludeSelectors.add": [
         "#fittPageContainer"
       ],
       "mutationExcludeSelectors.add": [
         "#fittPageContainer *"
       ],
-      "mainFrameMinTextCount": 0,
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.vtt$",
         "injectedCss": [
-          "#immersive-translate-quick-button-container{margin-top:16px;}"
+          "#immersive-translate-quick-button-container{margin-top:16px;}",
+          ".vjs-text-track-display > div >div {font:unset!important;}"
         ],
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
@@ -5740,8 +5771,8 @@
     {
       "id": "fmoviesz",
       "matches": [
-        "fmoviesz2.to",
-        "vidplay2.online"
+        "fmoviesz.to",
+        "vidplay.online"
       ],
       "excludeSelectors.add": [
         "#player"
@@ -5750,21 +5781,28 @@
         "#player *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
-        "autoEnableSubtitle": true,
-        "loadingContainerSelector": "#player",
+        "type": "multi_attach_vtt",
         "subtitleUrlRegExp": "subtitle/.*\\.vtt$",
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
           "insertBeforeSelector": ".jw-icon-cc"
+        },
+        "activeLangSelector": "#jw-player-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active",
+        "videoSelector": "video",
+        "attachRule": {
+          "appendSelector": "#player",
+          "injectedGlobalCSS": [
+            ".jw-text-track-container {display: none;}",
+            "@media (min-width: 576px) { video::cue {opacity: 0} }"
+          ]
         }
       }
     },
     {
       "id": "aniwatch",
       "matches": [
-        "megacloud2.tv",
-        "aniwatch2.to"
+        "megacloud.tv",
+        "aniwatch.to"
       ],
       "excludeSelectors.add": [
         ".jw-wrapper"
@@ -5773,12 +5811,20 @@
         ".jw-wrapper *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
-        "loadingContainerSelector": ".jw-wrapper",
-        "subtitleUrlRegExp": "\\.vtt$",
+        "type": "multi_attach_vtt",
+        "subtitleUrlRegExp": "^(?!.*sprite\\.vtt$).*\\.vtt$",
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
           "insertBeforeSelector": ".jw-icon-cc"
+        },
+        "activeLangSelector": "#jw-player-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active",
+        "videoSelector": "video",
+        "attachRule": {
+          "appendSelector": ".jw-wrapper",
+          "injectedGlobalCSS": [
+            ".jw-text-track-container {display: none;}",
+            "@media (min-width: 576px) { video::cue {opacity: 0} }"
+          ]
         }
       }
     },
@@ -5799,6 +5845,70 @@
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
           "insertBeforeSelector": ".jw-icon-cc"
+        }
+      }
+    },
+    {
+      "id": "dailymotion",
+      "matches": [
+        "*.dailymotion.com"
+      ],
+      "excludeSelectors.add": [
+        ".player"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".player *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "srt",
+        "loadingContainerSelector": ".player",
+        "subtitleUrlRegExp": "/video/.*\\.srt",
+        "quickButtonRule": {
+          "appendSelector": ".controls_bottom_right",
+          "insertBeforeSelector": ".subtitles_toggle_button"
+        }
+      }
+    },
+    {
+      "id": "paramountplus",
+      "matches": [
+        "*.paramountplus.com"
+      ],
+      "excludeSelectors.add": [
+        ".aa-player-skin"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".aa-player-skin *"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track_dynamic",
+        "injectedCss": [
+          ".tt-container {white-space: pre-line;}"
+        ],
+        "videoPlayerSelector": "video",
+        "quickButtonRule": {
+          "appendSelector": ".top-menu-container"
+        }
+      }
+    },
+    {
+      "id": "pluto",
+      "matches": [
+        "pluto.tv"
+      ],
+      "excludeSelectors.add": [
+        ".video-player-layout"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".video-player-layout *"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track_dynamic",
+        "videoPlayerSelector": "video",
+        "quickButtonRule": {
+          "appendSelector": ".endControls-0-2-85"
         }
       }
     },
@@ -5875,6 +5985,9 @@
         "videoPlayerSelector": "video",
         "loadingContainerSelector": ".vp-telecine",
         "loadingStyle": "bottom: unset; top: 5%; font-size: 12px;",
+        "injectedCss": [
+          "#immersive-translateQuickButton {visibility: inherit!important;}"
+        ],
         "quickButtonRule": {
           "appendSelector": "[data-control-bar=\"true\"] > div",
           "insertBeforeSelector": "[data-volume-control-container=\"true\"]",
@@ -6108,6 +6221,78 @@
       }
     },
     {
+      "id": "youku.tv",
+      "matches": "www.youku.tv",
+      "excludeSelectors.add": [
+        "#subtitle"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#subtitle *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "hookType": "fetch",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container {display: inline-block; vertical-align: middle;}"
+        ],
+        "subtitleUrlRegExp": "\\.ass$",
+        "subsrtFormat": "ass",
+        "loadingContainerSelector": "#youku-dashboard",
+        "loadingStyle": "bottom: 10%;",
+        "quickButtonRule": {
+          "appendSelector": ".kui-dashboard-dashboard-panel .kui-dashboard-rear-ctn",
+          "insertBeforeSelector": ".kui-rate-control-0"
+        }
+      }
+    },
+    {
+      "id": "starz",
+      "matches": "www.starz.com",
+      "excludeSelectors.add": [
+        "starz-player"
+      ],
+      "mutationExcludeSelectors.add": [
+        "starz-player *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "loadingContainerSelector": "starz-player",
+        "loadingStyle": "bottom: 10%;",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container {display: inline-block;}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": "starz-player .button-group",
+          "insertBeforeSelector": "starz-player .button-group .video-player-icon-md"
+        }
+      }
+    },
+    {
+      "id": "www.iq.com",
+      "matches": "www.iq.com",
+      "excludeSelectors.add": [
+        ".iqp-subtitle"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".iqp-subtitle *"
+      ],
+      "subtitleRule.add": {
+        "type": "xml",
+        "subtitleUrlRegExp": "\\.xml\\?",
+        "loadingContainerSelector": ".intl-video-area",
+        "xmlTextSelector": "sub",
+        "loadingStyle": "bottom: 10%;",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container {float: right; height: 100%;}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".iqp-contrls-right"
+        }
+      }
+    },
+    {
       "id": "archiveToday",
       "matches": [
         "archive.today",
@@ -6240,6 +6425,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-23T03:36:06.579Z",
+  "buildinConfigUpdatedAt": "2024-02-23T11:01:41.031Z",
   "latestVersion": "1.2.1"
 }
