@@ -126,7 +126,8 @@
     "https://www.dailymotion.com/[Dailymotion]",
     "https://www.paramountplus.com/[Paramount Plus]",
     "https://www.starz.com/[starz]",
-    "https://pluto.tv/[pluto]"
+    "https://pluto.tv/[pluto]",
+    "https://movie-web.app/[movie-web]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -5872,6 +5873,28 @@
       }
     },
     {
+      "id": "movie-web",
+      "matches": [
+        "movie-web.app/media*"
+      ],
+      "excludeSelectors.add": [
+        "#root"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#root *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "hookType": "fetch",
+        "subsrtFormat": "vtt",
+        "loadingContainerSelector": ".relative.h-screen.overflow-hidden",
+        "subtitleUrlRegExp": ".*\\.vtt",
+        "quickButtonRule": {
+          "appendSelector": ".hidden.justify-between .flex.items-center.space-x-3"
+        }
+      }
+    },
+    {
       "id": "paramountplus",
       "matches": [
         "*.paramountplus.com"
@@ -6425,6 +6448,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-23T11:01:41.031Z",
+  "buildinConfigUpdatedAt": "2024-02-23T11:33:14.537Z",
   "latestVersion": "1.2.1"
 }
