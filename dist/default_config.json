@@ -4136,26 +4136,23 @@
       }
     },
     {
-      "id": "perplexityAi",
-      "matches": "https://www.perplexity.ai/search/*",
-      "extraBlockSelectors": [
-        ".prose > span"
-      ],
-      "mutationConfig.add": {
-        "consumeTimeout": 500
-      },
-      "additionalStayOriginalSelectors": [
-        "a.citation"
-      ],
-      "insertPosition": "afterend"
-    },
-    {
       "id": "perplexity",
       "matches": "https://www.perplexity.ai",
       "globalStyles": {
         ".line-clamp-1": "-webkit-line-clamp: unset !important;",
         ".line-clamp-2": "-webkit-line-clamp: unset !important;"
-      }
+      },
+      "mutationConfig.add": {
+        "buildTimeout": 1000,
+        "consumeTimeout": 1000
+      },
+      "additionalStayOriginalSelectors": [
+        "a.citation"
+      ],
+      "selectors": [
+        ".prose",
+        ".my-md"
+      ]
     },
     {
       "id": "allmyfaves",
@@ -6243,6 +6240,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-22T09:23:36.316Z",
+  "buildinConfigUpdatedAt": "2024-02-23T03:36:06.579Z",
   "latestVersion": "1.2.1"
 }
