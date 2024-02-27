@@ -367,8 +367,8 @@
     },
     "transmart": {
       "placeholderDelimiters": [
-        "#",
-        "#"
+        "{{",
+        "}}"
       ]
     },
     "baidu": {
@@ -6480,6 +6480,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-26T17:32:08.884Z",
+  "buildinConfigUpdatedAt": "2024-02-27T06:29:54.560Z",
   "latestVersion": "1.2.2"
 }
