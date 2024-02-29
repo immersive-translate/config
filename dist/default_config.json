@@ -6002,6 +6002,9 @@
         "quickButtonRule": {
           "appendSelector": "section.bg-gradient-to-b.from-transparent"
         }
+      },
+      "subtitleRule.add_v.[1.2.2]": {
+        "type": "text_track_dynamic"
       }
     },
     {
@@ -6501,6 +6504,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-29T14:21:09.460Z",
+  "buildinConfigUpdatedAt": "2024-02-29T15:01:16.470Z",
   "latestVersion": "1.2.2"
 }
