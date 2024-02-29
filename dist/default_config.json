@@ -382,6 +382,10 @@
       "placeholderDelimiters": [
         "#",
         "#"
+      ],
+      "translatedPlaceholderDelimiters": [
+        "#\\s?",
+        "\\s?#"
       ]
     },
     "baidu": {
@@ -5739,7 +5743,7 @@
         "loadingContainerSelector": ".rc-VideoControlsContainer",
         "loadingStyle": "bottom: unset; top: 5%;",
         "quickButtonRule": {
-          "appendSelector": "[role=\"presentation\"] > .rc-ControlBar"
+          "appendSelector": "[role=\"presentation\"] > .rc-ControlBar > .icon-container"
         }
       }
     },
@@ -6497,6 +6501,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-02-29T13:45:41.049Z",
+  "buildinConfigUpdatedAt": "2024-02-29T14:21:09.460Z",
   "latestVersion": "1.2.2"
 }
