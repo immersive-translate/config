@@ -103,6 +103,7 @@
     "https://www.artstation.com/learning[ArtStation]",
     "https://www.zdf.de[ZDF]",
     "https://www.masterclass.com[MasterClass]",
+    "https://learn.microsoft.com[Learn Microsoft]",
     "https://home.mindvalley.com[Mindvalley]",
     "https://iview.abc.net.au/[iview]",
     "https://www.nma.art/[nmaArt]",
@@ -5570,7 +5571,8 @@
     {
       "id": "masterclass",
       "matches": [
-        "www.masterclass.com"
+        "www.masterclass.com",
+        "learn.microsoft.com"
       ],
       "excludeSelectors.add": [
         ".vjs-text-track-display"
@@ -5580,7 +5582,7 @@
       ],
       "subtitleRule.add": {
         "type": "webvtt",
-        "subtitleUrlRegExp": "\\.vtt\\?",
+        "subtitleUrlRegExp": "\\.vtt",
         "loadingContainerSelector": ".vjs-text-track-display",
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
@@ -6504,6 +6506,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-01T01:17:09.631Z",
+  "buildinConfigUpdatedAt": "2024-03-01T08:05:23.257Z",
   "latestVersion": "1.2.3"
 }
