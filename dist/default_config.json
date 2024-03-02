@@ -424,7 +424,7 @@
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
       "maxTextLengthPerRequest": 2800,
       "maxTextGroupLengthPerRequest": 50,
-      "qualityDelimiterBetaV3": "<br />",
+      "qualityDelimiterBetaV3": "",
       "qualityNoSymoblBetaV3": "</b",
       "qualityMinTextLengthV3": 40,
       "placeholderDelimiters": [
@@ -6506,6 +6506,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-01T08:05:23.257Z",
+  "buildinConfigUpdatedAt": "2024-03-02T11:44:43.376Z",
   "latestVersion": "1.2.3"
 }
