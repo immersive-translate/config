@@ -141,7 +141,10 @@
     "sampleRate": 0.25,
     "initOptions": {
       "ignoreErrors": [
-        "Extension context invalidated."
+        "Extension context invalidated.",
+        "ResizeObserver loop completed with undelivered notifications.",
+        "ResizeObserver loop limit exceeded",
+        "Non-Error promise rejection captured with keys: currentTarget, isTrusted, target, type"
       ]
     }
   },
@@ -6506,6 +6509,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-02T11:44:43.376Z",
+  "buildinConfigUpdatedAt": "2024-03-04T02:57:24.142Z",
   "latestVersion": "1.2.3"
 }
