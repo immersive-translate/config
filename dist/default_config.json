@@ -128,7 +128,8 @@
     "https://www.paramountplus.com/[Paramount Plus]",
     "https://www.starz.com/[starz]",
     "https://pluto.tv/[pluto]",
-    "https://movie-web.app/[movie-web]"
+    "https://movie-web.app/[movie-web]",
+    "https://www.unrealsenseiacademy.com/[Unreal Sensei]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -338,7 +339,6 @@
     "googleads.g.doubleclick.net",
     "https://www.google.com/recaptcha/*",
     "ad.doubanio.com",
-    "http://localhost:38001/",
     "datawrapper.dwcdn.net"
   ],
   "telemetry": true,
@@ -6519,6 +6519,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-04T08:25:50.092Z",
+  "buildinConfigUpdatedAt": "2024-03-04T15:10:05.643Z",
   "latestVersion": "1.2.3"
 }
