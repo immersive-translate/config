@@ -6508,8 +6508,17 @@
       "globalStyles": {
         "a.title": "-webkit-line-clamp:3"
       }
+    },
+    {
+      "id": "learnopengl",
+      "matches": [
+        "learnopengl.com"
+      ],
+      "globalStyles": {
+        "function": "position:relative;z-index:1000;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-04T08:09:05.964Z",
+  "buildinConfigUpdatedAt": "2024-03-04T08:25:50.092Z",
   "latestVersion": "1.2.3"
 }
