@@ -6093,7 +6093,8 @@
       "id": "codewithchris",
       "matches": [
         "learn.codewithchris.com",
-        "*.rachelsenglishacademy.com"
+        "*.rachelsenglishacademy.com",
+        "www.unrealsenseiacademy.com"
       ],
       "excludeSelectors.add": [
         ".w-captions",
@@ -6105,7 +6106,7 @@
       "subtitleRule.add": {
         "type": "general",
         "subtitleUrlRegExp": "/embed/captions/",
-        "loadingContainerSelector": ".w-captions",
+        "loadingContainerSelector": ".w-ui-container",
         "hookType": "fetch",
         "generalSetting": {
           "captionsPath": "captions",
@@ -6509,6 +6510,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-04T03:22:45.784Z",
+  "buildinConfigUpdatedAt": "2024-03-04T08:09:05.964Z",
   "latestVersion": "1.2.3"
 }
