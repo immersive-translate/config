@@ -136,7 +136,7 @@
   "isShowInputTranslationConsent": true,
   "enableShowFloatingBallGuide": true,
   "sentryConfig": {
-    "enable": true,
+    "enable": false,
     "contentInitTime": "init",
     "sampleRate": 0.25,
     "initOptions": {
@@ -6509,6 +6509,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-04T02:57:24.142Z",
+  "buildinConfigUpdatedAt": "2024-03-04T03:22:45.784Z",
   "latestVersion": "1.2.3"
 }
