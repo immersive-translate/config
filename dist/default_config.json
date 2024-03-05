@@ -431,10 +431,11 @@
       "qualityNoSymoblBetaV3": "</b",
       "qualityMinTextLengthV3": 40,
       "placeholderDelimiters": [
-        "<code>",
-        "</code>"
+        "{{",
+        "}}"
       ],
-      "limit": 10
+      "limit": 10,
+      "tag_handling": "none"
     },
     "tenAlpha": {
       "placeholderDelimiters": [
@@ -6519,6 +6520,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-05T10:35:04.774Z",
+  "buildinConfigUpdatedAt": "2024-03-05T20:07:16.512Z",
   "latestVersion": "1.2.4"
 }
