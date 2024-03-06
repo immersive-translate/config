@@ -1486,6 +1486,7 @@
         "bugzilla.mozilla.org",
         "lwn.net/Articles/*",
         "docs.haproxy.org",
+        "man.freebsd.org",
         "www.oreilly.com/openbook/opensources/book/*"
       ],
       "isTransformPreTagNewLine": true
@@ -6520,6 +6521,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-05T20:07:16.512Z",
+  "buildinConfigUpdatedAt": "2024-03-06T09:35:00.913Z",
   "latestVersion": "1.2.4"
 }
