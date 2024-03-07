@@ -1150,7 +1150,8 @@
       ".MathJax_Preview",
       ".MathJax",
       ".highlighter--highlighted",
-      ".rw-highlight"
+      ".rw-highlight",
+      "ruby *"
     ],
     "extraBlockSelectors": [
       "turbo-frame",
@@ -6521,6 +6522,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-06T09:35:00.913Z",
+  "buildinConfigUpdatedAt": "2024-03-07T02:09:18.368Z",
   "latestVersion": "1.2.4"
 }
