@@ -6520,8 +6520,17 @@
       "globalStyles": {
         "function": "position:relative;z-index:1000;"
       }
+    },
+    {
+      "id": "notateslaapp",
+      "matches": [
+        "www.notateslaapp.com"
+      ],
+      "extraBlockSelectors.add": [
+        ".nav > *"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-07T02:09:18.368Z",
+  "buildinConfigUpdatedAt": "2024-03-09T03:47:59.306Z",
   "latestVersion": "1.2.4"
 }
