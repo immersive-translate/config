@@ -920,6 +920,7 @@
       ".MathJax_Preview",
       ".MathJax",
       ".MathJax_SVG",
+      "[aria-labelledby^=\"MathJax-SVG\"]",
       ".mwe-math-element",
       "span[translate=no]",
       "em[translate=no]",
@@ -6531,6 +6532,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-09T03:47:59.306Z",
+  "buildinConfigUpdatedAt": "2024-03-11T10:34:33.102Z",
   "latestVersion": "1.2.4"
 }
