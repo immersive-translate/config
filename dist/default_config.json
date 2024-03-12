@@ -129,7 +129,8 @@
     "https://www.starz.com/[starz]",
     "https://pluto.tv/[pluto]",
     "https://movie-web.app/[movie-web]",
-    "https://www.unrealsenseiacademy.com/[Unreal Sensei]"
+    "https://www.unrealsenseiacademy.com/[Unreal Sensei]",
+    "https://learn.deeplearning.ai[DeepLearning.ai]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -5927,6 +5928,28 @@
       }
     },
     {
+      "id": "deeplearning",
+      "matches": [
+        "learn.deeplearning.ai"
+      ],
+      "excludeSelectors.add": [
+        "[data-layout=\"video\"]"
+      ],
+      "mutationExcludeSelectors.add": [
+        "[data-layout=\"video\"] *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "loadingContainerSelector": "[data-layout=\"video\"]",
+        "subtitleUrlRegExp": ".*\\.vtt",
+        "quickButtonRule": {
+          "appendSelector": ".vds-controls-group:last-child",
+          "insertBeforeSelector": ".vds-caption-button"
+        }
+      }
+    },
+    {
       "id": "paramountplus",
       "matches": [
         "*.paramountplus.com"
@@ -6536,6 +6559,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-12T07:33:10.467Z",
+  "buildinConfigUpdatedAt": "2024-03-12T09:34:40.334Z",
   "latestVersion": "1.2.4"
 }
