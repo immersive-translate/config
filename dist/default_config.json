@@ -2327,7 +2327,9 @@
       ],
       "observeUrlChange": false,
       "globalStyles": {
-        ".article_title_link,.library_article_text h4,.gadget_overview_article_title": "-webkit-line-clamp: unset;max-height: unset;"
+        ".article_title_link,.library_article_text h4,.gadget_overview_article_title,.article_magazine_title_link,.reader_pane_view_style_2 .column_view_title": "-webkit-line-clamp: unset;max-height: unset;",
+        ".article_tile_content_wraper,div.article_tile": "overflow:auto",
+        ".article_header_title": "white-space:normal"
       }
     },
     {
@@ -6534,6 +6536,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-12T07:29:26.861Z",
+  "buildinConfigUpdatedAt": "2024-03-12T07:33:10.467Z",
   "latestVersion": "1.2.4"
 }
