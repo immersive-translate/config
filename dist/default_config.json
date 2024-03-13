@@ -385,7 +385,7 @@
       ]
     },
     "google": {
-      "requestTimeout": 6000,
+      "requestTimeout": 12000,
       "retry": 1,
       "placeholderDelimiters": [
         "🚠",
@@ -471,7 +471,7 @@
     },
     "bing": {
       "maxTextLengthPerRequest": 1800,
-      "requestTimeout": 6000,
+      "requestTimeout": 10000,
       "retry": 1,
       "placeholderDelimiters": [
         "<code>",
@@ -6564,6 +6564,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-13T08:08:10.373Z",
+  "buildinConfigUpdatedAt": "2024-03-13T08:10:23.709Z",
   "latestVersion": "1.2.4"
 }
