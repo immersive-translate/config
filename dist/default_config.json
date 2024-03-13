@@ -438,6 +438,7 @@
     },
     "deepl": {
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
+      "requestTimeout": 15000,
       "maxTextLengthPerRequest": 2800,
       "maxTextGroupLengthPerRequest": 50,
       "qualityDelimiterBetaV3": "",
@@ -6564,6 +6565,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-13T08:16:19.920Z",
+  "buildinConfigUpdatedAt": "2024-03-13T09:46:09.981Z",
   "latestVersion": "1.2.4"
 }
