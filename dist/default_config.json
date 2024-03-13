@@ -499,8 +499,8 @@
       "requestTimeout": 101000,
       "immediateTranslationTextCount": 5000,
       "translationDebounce": 300,
-      "interval": 2000,
-      "limit": 1,
+      "interval": 1050,
+      "limit": 0.5,
       "prompt": "You are a professional,authentic translation engine,only returns translations.\nFor example:\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\nThe translation is:\n<Start>\n你好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\nTranslate the content to {{to}} Language:\n\n<Start>{{text}}<End>",
       "model": "gemini-1.0-pro-latest",
       "maxTextGroupLengthPerRequest": 10,
@@ -6559,6 +6559,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-13T03:10:38.637Z",
+  "buildinConfigUpdatedAt": "2024-03-13T03:19:52.887Z",
   "latestVersion": "1.2.4"
 }
