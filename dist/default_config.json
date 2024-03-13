@@ -47,6 +47,16 @@
     "gpt-3.5-turbo-0613",
     "gpt-3.5-turbo-1106"
   ],
+  "rtlLanguages": [
+    "ar",
+    "arc",
+    "az",
+    "dv",
+    "he",
+    "ckb",
+    "fa",
+    "ur"
+  ],
   "translationMode": "dual",
   "translationModeUrlPattern": {
     "dualMatches": [],
@@ -150,9 +160,11 @@
       ]
     }
   },
+  "enableSentryReport": true,
   "verifyRequestTimeout": 5000,
   "inactiveDays": 21,
   "enableInputTranslationWithoutTriggerKey": true,
+  "enableRenderHtmlTag": false,
   "autoSelectTargetLanguageAfterInstalledAt": "2024-01-04",
   "defaultAlwaysTranslatedUrls": [
     "twitter.com",
@@ -689,7 +701,9 @@
       "*.indeed.com",
       "outlook.live.com",
       "https://bsky.app",
-      "store.steampowered.com"
+      "store.steampowered.com",
+      "test-app.immersivetranslate.com",
+      "app.immersivetranslate.com"
     ],
     "excludeMatches": [],
     "selectorMatches": [
@@ -1422,6 +1436,7 @@
         "https://test.immersivetranslate.com",
         "https://onboarding.immersivetranslate.com",
         "https://app.immersivetranslate.com",
+        "https://test-app.immersivetranslate.com",
         "http://localhost:38001"
       ],
       "isInjectVersion": true,
@@ -6549,6 +6564,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-13T03:44:48.781Z",
+  "buildinConfigUpdatedAt": "2024-03-13T08:08:10.373Z",
   "latestVersion": "1.2.4"
 }
