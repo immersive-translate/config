@@ -507,16 +507,6 @@
       "maxTextLengthPerRequest": 1200,
       "maxTextGroupLengthPerRequestForSubtitle": 5,
       "translationTextSeparator": "\n<Keep This Symbol>",
-      "overrides": [
-        {
-          "if": "targetLanguage == zh-CN",
-          "prompt": "您是一个专业的翻译引擎，仅返回翻译结果 \n比如：\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\n的翻译结果为：\n<Start>\n您好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\n现在，将以下内容翻译成简体中文语言：\n\n<Start>{{text}}<End>"
-        },
-        {
-          "if": "targetLanguage == zh-TW",
-          "prompt": "您是一個專業的翻譯引擎，只會傳回翻譯結果 \n例如：\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\n翻譯的結果為：\n<Start>\n您好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\n現在，將以下內容翻譯成繁體中文：\n\n<Start>{{text}}<End>"
-        }
-      ],
       "bodyConfigs": {
         "generationConfig": {
           "temperature": 0.1,
@@ -6559,6 +6549,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-13T03:19:52.887Z",
+  "buildinConfigUpdatedAt": "2024-03-13T03:44:48.781Z",
   "latestVersion": "1.2.4"
 }
