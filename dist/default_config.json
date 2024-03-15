@@ -6563,8 +6563,17 @@
       "extraBlockSelectors.add": [
         ".nav > *"
       ]
+    },
+    {
+      "id": "eightfold",
+      "matches": [
+        "*.eightfold.ai"
+      ],
+      "injectedCss": [
+        ".flexbox{width:100%}"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-14T20:44:26.061Z",
+  "buildinConfigUpdatedAt": "2024-03-15T02:48:03.589Z",
   "latestVersion": "1.3.2"
 }
