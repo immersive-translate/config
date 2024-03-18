@@ -1864,7 +1864,8 @@
         "https://github.com/settings/*",
         "https://github.com/sponsors/*",
         "https://github.com/readme/*",
-        "https://github.com/readme/"
+        "https://github.com/readme/",
+        "https://github.com/features/*"
       ],
       "mutationExcludeSelectors": [
         ".react-blob-sticky-header *"
@@ -6576,6 +6577,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-15T16:23:09.100Z",
+  "buildinConfigUpdatedAt": "2024-03-18T14:58:18.112Z",
   "latestVersion": "1.3.2"
 }
