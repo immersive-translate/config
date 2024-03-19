@@ -140,7 +140,8 @@
     "https://pluto.tv/[pluto]",
     "https://movie-web.app/[movie-web]",
     "https://www.unrealsenseiacademy.com/[Unreal Sensei]",
-    "https://learn.deeplearning.ai[DeepLearning.ai]"
+    "https://learn.deeplearning.ai[DeepLearning.ai]",
+    "https://piped.video/[Piped.Video]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -1454,13 +1455,6 @@
       "id": "simpread",
       "selectorMatches": "div.simpread-read-root.simpread-read-root-show > sr-read",
       "mainFrameSelector": "div.simpread-read-root.simpread-read-root-show > sr-read"
-    },
-    {
-      "id": "pdos.csail.mit.edu",
-      "matches": "pdos.csail.mit.edu",
-      "mutationExcludeSelectors.add": [
-        "body"
-      ]
     },
     {
       "id": "txt",
@@ -6272,6 +6266,21 @@
       }
     },
     {
+      "id": "piped.video",
+      "matches": "piped.video",
+      "subtitleRule.add": {
+        "type": "ebutt",
+        "hookType": "fetch",
+        "subtitleUrlRegExp": "api/timedtext",
+        "loadingContainerSelector": ".shaka-video-container",
+        "responseType": "document",
+        "quickButtonRule": {
+          "appendSelector": ".shaka-controls-button-panel",
+          "insertBeforeSelector": ".shaka-mute-button"
+        }
+      }
+    },
+    {
       "id": "disneyplus",
       "matches": [
         "www.disneyplus.com"
@@ -6581,6 +6590,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-18T16:41:03.608Z",
+  "buildinConfigUpdatedAt": "2024-03-19T03:06:23.032Z",
   "latestVersion": "1.3.2"
 }
