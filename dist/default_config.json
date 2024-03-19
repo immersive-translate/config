@@ -221,7 +221,8 @@
     "enable": true,
     "blockUrls": [
       "*immersivetranslate.com/preview",
-      "https://app.immersivetranslate.com/"
+      "https://app.immersivetranslate.com/",
+      "https://app.immersivetranslate.com/pdf-pro*"
     ],
     "clickType": "translate",
     "afterInstalledAt": "",
@@ -231,7 +232,8 @@
     "enable": true,
     "blockUrls": [
       "*immersivetranslate.com/preview",
-      "https://app.immersivetranslate.com/"
+      "https://app.immersivetranslate.com/",
+      "https://app.immersivetranslate.com/pdf-pro*"
     ],
     "clickType": "translate",
     "afterInstalledAt": "2023-10-28",
@@ -1298,7 +1300,9 @@
         "meta[name='immersive-translate-pdf-viewer'][content='true']"
       ],
       "matches": [
-        "https://app.immersivetranslate.com/pdf*",
+        "https://app.immersivetranslate.com/pdf",
+        "https://app.immersivetranslate.com/pdf/",
+        "https://app.immersivetranslate.com/pdf/*",
         "http://localhost:38001/pdf*"
       ],
       "additionalExcludeSelectors.remove": [
@@ -6590,6 +6594,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-19T03:06:23.032Z",
+  "buildinConfigUpdatedAt": "2024-03-19T09:50:42.984Z",
   "latestVersion": "1.3.2"
 }
