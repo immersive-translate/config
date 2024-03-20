@@ -512,6 +512,7 @@
         "}}",
         "b"
       ],
+      "disableWarning": false,
       "requestTimeout": 101000,
       "immediateTranslationTextCount": 5000,
       "translationDebounce": 300,
@@ -587,9 +588,15 @@
           "multiplePrompt": "请把这几句字幕翻译为简体中文，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段译文\n\n{{text}}"
         },
         {
-          "if": "sourceLanguage == zh-CN",
+          "if": "targetLanguage == zh-CN-NE",
+          "systemPrompt": "你是一个东北人翻译，请用东北人的口吻进行翻译，尽可能贴近生活,只返回译文，不含任何解释",
           "prompt": "请翻译为{{to}}（避免解释原文）:\n\n {{text}}",
+          "multiplePrompt": "请把这几句字幕翻译为{{to}}，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段译文\n\n{{text}}"
+        },
+        {
+          "if": "sourceLanguage == zh-CN",
           "systemPrompt": "你是一个专业,地道的翻译引擎，你只返回译文，不含任何解释",
+          "prompt": "请翻译为{{to}}（避免解释原文）:\n\n {{text}}",
           "multiplePrompt": "请把这几句字幕翻译为{{to}}，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段译文\n\n{{text}}"
         },
         {
@@ -6607,8 +6614,17 @@
       "injectedCss": [
         ".flexbox{width:100%}"
       ]
+    },
+    {
+      "id": "deno",
+      "matches": [
+        "deno.com"
+      ],
+      "injectedCss": [
+        ":root {font-feature-settings:unset}"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-20T11:58:37.384Z",
+  "buildinConfigUpdatedAt": "2024-03-20T14:24:21.694Z",
   "latestVersion": "1.3.2"
 }
