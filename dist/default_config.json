@@ -1442,6 +1442,18 @@
       "waitForSelectorsTimeout": 1
     },
     {
+      "id": "pro-pdf",
+      "matches": [
+        "https://*.immersivetranslate.com/pdf-pro*"
+      ],
+      "excludeSelectors.add": [
+        "table"
+      ],
+      "isInjectVersion": true,
+      "isInjectMeta": true,
+      "waitForSelectorsTimeout": 1
+    },
+    {
       "id": "immersive",
       "matches": [
         "https://immersivetranslate.com",
@@ -6594,6 +6606,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-19T09:50:42.984Z",
+  "buildinConfigUpdatedAt": "2024-03-20T02:34:42.182Z",
   "latestVersion": "1.3.2"
 }
