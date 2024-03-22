@@ -241,7 +241,7 @@
   },
   "floatBallTooltipRule": {
     "mainBtnTooltipImmediateShowCount": 5,
-    "mainBtnTooltipDelayTime": 1800,
+    "mainBtnTooltipDelayTime": 1500,
     "h5MainBtnTooltipMaxShowCount": 1
   },
   "pcFloatBallMainBtnTooltipShownCount": 0,
@@ -476,6 +476,17 @@
     "bing": {
       "maxTextLengthPerRequest": 1800,
       "requestTimeout": 10000,
+      "retry": 1,
+      "placeholderDelimiters": [
+        "<code>",
+        "</code>",
+        "b"
+      ]
+    },
+    "yandex": {
+      "maxTextLengthPerRequest": 2000,
+      "requestTimeout": 10000,
+      "limit": 5,
       "retry": 1,
       "placeholderDelimiters": [
         "<code>",
@@ -897,7 +908,8 @@
       "humanPreferred": true,
       "disabled": false,
       "hookType": "xhr",
-      "showQuickButton": true
+      "showQuickButton": true,
+      "translationMode": "dual"
     },
     "bodyRule": {
       "enable": true,
@@ -6627,6 +6639,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-22T09:13:24.753Z",
+  "buildinConfigUpdatedAt": "2024-03-22T13:32:26.012Z",
   "latestVersion": "1.3.3"
 }
