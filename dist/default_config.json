@@ -6638,8 +6638,25 @@
       "injectedCss": [
         ":root {font-feature-settings:unset}"
       ]
+    },
+    {
+      "id": "soundcloud",
+      "matches": "soundcloud.com",
+      "injectedCss": [
+        ".compactTrackListItem {height: unset !important;}"
+      ],
+      "excludeSelectors.add": [
+        ".searchTitle__textContent",
+        ".searchOptions__container",
+        ".compactTrackListItem__additional",
+        ".soundTitle__tagContainer",
+        ".searchResultGroupHeading",
+        ".sc-ministats-group",
+        ".compactTrackList__moreLink",
+        ".sound__soundActions"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-25T13:43:22.660Z",
+  "buildinConfigUpdatedAt": "2024-03-25T15:35:28.759Z",
   "latestVersion": "1.3.4"
 }
