@@ -141,8 +141,7 @@
     "https://movie-web.app/[movie-web]",
     "https://www.unrealsenseiacademy.com/[Unreal Sensei]",
     "https://learn.deeplearning.ai[DeepLearning.ai]",
-    "https://piped.video/[Piped.Video]",
-    "https://southampton.cloud.panopto.eu[University of Southampton]"
+    "https://piped.video/[Piped.Video]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -6193,32 +6192,6 @@
       }
     },
     {
-      "id": "panopto",
-      "matches": [
-        "southampton.cloud.panopto.eu"
-      ],
-      "excludeSelectors.add": [
-        ".primaryPlayer"
-      ],
-      "mutationExcludeSelectors.add": [
-        ".primaryPlayer *"
-      ],
-      "subtitleRule.add": {
-        "type": "general",
-        "subtitleUrlRegExp": "DeliveryInfo.aspx",
-        "disableSubsCache": true,
-        "loadingContainerSelector": "#primaryPlayer",
-        "hookType": "fetch",
-        "generalSetting": {
-          "textKey": "Caption"
-        },
-        "quickButtonRule": {
-          "appendSelector": "#transportControls",
-          "insertBeforeSelector": "#captionsButton"
-        }
-      }
-    },
-    {
       "id": "edx",
       "matches": [
         "*.edx.org"
@@ -6667,6 +6640,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-25T13:40:33.669Z",
+  "buildinConfigUpdatedAt": "2024-03-25T13:43:22.660Z",
   "latestVersion": "1.3.4"
 }
