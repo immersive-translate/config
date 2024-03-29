@@ -6660,8 +6660,22 @@
         ".compactTrackList__moreLink",
         ".sound__soundActions"
       ]
+    },
+    {
+      "id": "section.blog.naver.com",
+      "matches": "section.blog.naver.com",
+      "globalStyles": {
+        ".text,.title_post,.text_post,p,strong,div": "-webkit-line-clamp:unset;max-height:unset;height:unset;"
+      },
+      "extraBlockSelectors.add": [
+        ".item"
+      ],
+      "excludeSelectors.add": [
+        ".comments",
+        ".time"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-28T15:43:32.986Z",
+  "buildinConfigUpdatedAt": "2024-03-29T02:10:00.111Z",
   "latestVersion": "1.3.4"
 }
