@@ -6079,16 +6079,15 @@
         "#video *"
       ],
       "subtitleRule.add": {
-        "type": "text_track",
+        "type": "webvtt",
+        "hookType": "fetch",
+        "subtitleUrlRegExp": "\\.vtt",
         "videoPlayerSelector": "video",
-        "loadingContainerSelector": "#ted-player > div",
-        "loadingStyle": "bottom: unset; top: 5%;",
+        "loadingContainerSelector": "media-controller",
         "quickButtonRule": {
-          "appendSelector": "section.bg-gradient-to-b.from-transparent"
+          "appendSelector": ".pointer-events-none #media-control-bar",
+          "insertBeforeSelector": ".pointer-events-none .media-volume-wrapper"
         }
-      },
-      "subtitleRule.add_v.[1.2.2]": {
-        "type": "text_track_dynamic"
       }
     },
     {
@@ -6680,6 +6679,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-29T03:39:46.996Z",
+  "buildinConfigUpdatedAt": "2024-03-29T09:57:31.919Z",
   "latestVersion": "1.3.4"
 }
