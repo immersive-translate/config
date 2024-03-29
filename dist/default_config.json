@@ -5854,7 +5854,8 @@
       "id": "fmoviesz",
       "matches": [
         "fmoviesz.to",
-        "vidplay.online"
+        "vidplay.online",
+        "c8365730d4.nl"
       ],
       "excludeSelectors.add": [
         "#player"
@@ -6679,6 +6680,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-29T09:57:31.919Z",
+  "buildinConfigUpdatedAt": "2024-03-29T12:23:45.682Z",
   "latestVersion": "1.3.4"
 }
