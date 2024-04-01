@@ -6563,7 +6563,8 @@
         "edstem.org",
         "actions.tldrnewsletter.com",
         "community.linkingyourthinking.com",
-        "doc.qt.io"
+        "doc.qt.io",
+        "winaero.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -6680,6 +6681,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-03-29T12:23:45.682Z",
+  "buildinConfigUpdatedAt": "2024-04-01T08:49:57.148Z",
   "latestVersion": "1.3.4"
 }
