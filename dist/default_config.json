@@ -6680,8 +6680,22 @@
         ".comments",
         ".time"
       ]
+    },
+    {
+      "id": "gradio-app",
+      "selectorMatches": "gradio-app",
+      "excludeTags.remove": [
+        "BUTTON"
+      ],
+      "excludeSelectors.add": [
+        "[data-testid=\"block-label\"]"
+      ],
+      "mutationConfig.add": {
+        "buildTimeout": 1000,
+        "consumeTimeout": 1000
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-02T02:23:18.914Z",
+  "buildinConfigUpdatedAt": "2024-04-02T02:45:11.917Z",
   "latestVersion": "1.3.4"
 }
