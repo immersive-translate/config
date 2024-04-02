@@ -525,9 +525,9 @@
         "imt_sub_source_field": "source",
         "imt_sub_trans_field": "translation",
         "imt_yaml_item": "- id: {{id}}\n  {{imt_source_field}}: {{text}}",
-        "imt_subtitle_yaml_item": "- id: {{id}}\n  {{imt_sub_source_field}}: {{text}}\n  {{imt_sub_trans_field}}: \"\"",
+        "imt_subtitle_yaml_item": "- id: {{id}}\n  {{imt_sub_source_field}}: {{text}}",
         "normal_result_yaml_example": "Example request:\n  - id: 1\n    {{imt_source_field}}: Source\nExample result:\n  - id: 1\n    {{imt_trans_field}}: Translation",
-        "subtitle_result_yaml_example": "Example request:\n  - id: 1\n    {{imt_sub_source_field}}: Source\n    {{imt_sub_trans_field}}: \"\"\nExample result:\n  - id: 1\n    {{imt_sub_source_field}}: source\n    {{imt_sub_trans_field}}: Translation"
+        "subtitle_result_yaml_example": "Example request:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\nExample response:\n  - id: 1\n    {{imt_sub_trans_field}}: Translation...\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_trans_field}}: Translation...\n    {{imt_sub_source_field}}: ..."
       },
       "systemPrompt": "You are a professional, authentic translation engine. You only return the translated text, without any explanations.",
       "prompt": "Please translate into {{to}} (avoid explaining the original text):\n\n{{text}}",
@@ -6940,6 +6940,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-02T15:00:32.058Z",
+  "buildinConfigUpdatedAt": "2024-04-02T19:32:41.563Z",
   "latestVersion": "1.4.2"
 }
