@@ -204,7 +204,8 @@
     "*.larksuite.com",
     "www.notion.so",
     "www.figma.com/file/*",
-    "*.lanhuapp.com"
+    "*.lanhuapp.com",
+    "https://*.immersivetranslate.com/text*"
   ],
   "inputStyleBlockUrls": [],
   "inputTargetLanguage": "en",
@@ -6939,6 +6940,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-02T13:39:02.993Z",
+  "buildinConfigUpdatedAt": "2024-04-02T15:00:32.058Z",
   "latestVersion": "1.4.2"
 }
