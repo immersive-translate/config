@@ -5604,7 +5604,6 @@
       ],
       "subtitleRule.add": {
         "type": "udemy",
-        "hookType": "fetch|xhr",
         "subtitleUrlRegExp": "^https://vtt.*\\.udemycdn\\.com/.*\\.vtt",
         "videoPlayerSelector": "video.shaka-video",
         "humanTrust": 85,
@@ -5616,6 +5615,9 @@
         "quickButtonRule": {
           "appendSelector": "[data-purpose=\"video-controls\"]"
         }
+      },
+      "subtitleRule.add_v.[1.4.1]": {
+        "hookType": "fetch|xhr"
       }
     },
     {
@@ -6937,6 +6939,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-02T13:27:04.000Z",
+  "buildinConfigUpdatedAt": "2024-04-02T13:39:02.993Z",
   "latestVersion": "1.4.2"
 }
