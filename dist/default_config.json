@@ -2022,7 +2022,9 @@
         "[itemprop=description]",
         ".integrations-auth-wrapper",
         ".new-feed-onboarding-notice",
-        "article section[aria-label='card content'] > div > div > div  > div:nth-child(2)"
+        "article section[aria-label='card content'] > div > div > div  > div:nth-child(2)",
+        ".TimelineItem-body .Link--primary",
+        "[role=\"navigation\"] p"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -2053,7 +2055,10 @@
         "SUP",
         "SUB"
       ],
-      "detectParagraphLanguage": true
+      "detectParagraphLanguage": true,
+      "globalStyles": {
+        ".TimelineItem-body .Link--primary": "-webkit-line-clamp: unset;"
+      }
     },
     {
       "id": "github-blog",
@@ -6940,6 +6945,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-02T21:25:02.633Z",
+  "buildinConfigUpdatedAt": "2024-04-03T06:22:14.119Z",
   "latestVersion": "1.4.2"
 }
