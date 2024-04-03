@@ -537,7 +537,7 @@
         {
           "id": "auto2zh-CN",
           "systemPrompt": "你是一个专业,地道的翻译引擎，你只返回译文，不含任何解释",
-          "prompt": "请翻译为简体中文（避免解释原文）:\n\n{{text}}",
+          "prompt": "请翻译为 {{to}}（避免解释原文）:\n\n{{text}}",
           "multiplePrompt": "将下面 YAML 格式的文本中的 {{imt_source_field}} 字段翻译为 {{to}}，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}",
           "subtitlePrompt": "将下面 YAML 格式的视频字幕文本中的 {{imt_sub_source_field}} 字段翻译为 {{to}}，并将翻译结果写在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必须补全每一个 {{imt_sub_trans_field}} 字段，保留每一个 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n开始翻译：\n\n{{yaml}}"
         },
@@ -6949,6 +6949,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-03T08:00:54.615Z",
+  "buildinConfigUpdatedAt": "2024-04-03T11:36:37.226Z",
   "latestVersion": "1.4.2"
 }
