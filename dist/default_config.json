@@ -999,7 +999,7 @@
       "backgroundColor": "#080808",
       "backgroundOpacity": "75",
       "sourceTextColor": "#FFFFFF",
-      "translationTextColor": "#FFFF00",
+      "translationTextColor": "#FFFFFF",
       "sourceFontSize": "100",
       "translationMode": "dual",
       "translationPosition": "bottom",
@@ -6949,6 +6949,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-03T07:37:19.313Z",
+  "buildinConfigUpdatedAt": "2024-04-03T08:00:54.615Z",
   "latestVersion": "1.4.2"
 }
