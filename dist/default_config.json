@@ -2387,7 +2387,7 @@
       ],
       "wrapperPrefix": "<br/>",
       "selectors": [
-        "div[dir=auto][role=none]"
+        "div[dir=auto].html-div"
       ]
     },
     {
@@ -2404,7 +2404,9 @@
       "selectors": [
         "h1",
         "ul li h3+div span[dir=auto]",
-        "hr+div span[dir=auto][style]"
+        "hr+div span[dir=auto][style]",
+        "div > div[dir=auto]",
+        "div:not([class]) > div > div:nth-child(2)"
       ],
       "wrapperPrefix": "<br/>"
     },
@@ -2418,7 +2420,9 @@
         "article span[dir=auto] > span[dir=auto]",
         "._ab1y",
         "ul li h3+div span[dir=auto]",
-        "hr+div span[dir=auto][style]"
+        "hr+div span[dir=auto][style]",
+        "span[dir=auto] > div > span",
+        "div > h1[dir=auto]"
       ],
       "wrapperSuffix": ""
     },
@@ -6945,6 +6949,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-03T06:22:14.119Z",
+  "buildinConfigUpdatedAt": "2024-04-03T07:37:19.313Z",
   "latestVersion": "1.4.2"
 }
