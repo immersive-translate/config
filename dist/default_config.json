@@ -451,7 +451,8 @@
       "qualityMinTextLengthV3": 40,
       "placeholderDelimiters": [
         "{{",
-        "}}"
+        "}}",
+        "b"
       ],
       "limit": 10,
       "tag_handling": "none"
@@ -6954,6 +6955,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-03T13:29:54.735Z",
+  "buildinConfigUpdatedAt": "2024-04-03T13:58:32.439Z",
   "latestVersion": "1.4.3"
 }
