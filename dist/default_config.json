@@ -2029,7 +2029,7 @@
         ".integrations-auth-wrapper",
         ".new-feed-onboarding-notice",
         "article section[aria-label='card content'] > div > div > div  > div:nth-child(2)",
-        ".TimelineItem-body .Link--primary",
+        ".TimelineItem-body > .Link--primary",
         "[role=\"navigation\"] p",
         "[data-testid=\"commit-row-item\"] h4"
       ],
@@ -6969,6 +6969,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-04T12:14:20.719Z",
+  "buildinConfigUpdatedAt": "2024-04-04T13:39:56.560Z",
   "latestVersion": "1.4.6"
 }
