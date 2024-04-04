@@ -2030,7 +2030,8 @@
         ".new-feed-onboarding-notice",
         "article section[aria-label='card content'] > div > div > div  > div:nth-child(2)",
         ".TimelineItem-body .Link--primary",
-        "[role=\"navigation\"] p"
+        "[role=\"navigation\"] p",
+        "[data-testid=\"commit-row-item\"] h4"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -2060,6 +2061,9 @@
         "IMG",
         "SUP",
         "SUB"
+      ],
+      "stayOriginalSelectors.add": [
+        ".issue-link"
       ],
       "detectParagraphLanguage": true,
       "globalStyles": {
@@ -6957,6 +6961,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-04T02:26:17.042Z",
+  "buildinConfigUpdatedAt": "2024-04-04T03:17:17.537Z",
   "latestVersion": "1.4.5"
 }
