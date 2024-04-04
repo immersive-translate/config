@@ -2657,7 +2657,7 @@
         ".fontWeight-600",
         "[class*='styles_dropdown']",
         "[class*='styles_aboutText']",
-        "[class*='styles_titleItem']",
+        "[class*='styles_titleContainer']",
         "[class*='styles_header'] h1"
       ],
       "globalStyles": {
@@ -2666,9 +2666,6 @@
       },
       "excludeTags.remove": [
         "PRE"
-      ],
-      "excludeSelectors.add": [
-        "[class*='styles_underlinedLink']"
       ]
     },
     {
@@ -6960,6 +6957,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-04T01:47:50.765Z",
+  "buildinConfigUpdatedAt": "2024-04-04T02:26:17.042Z",
   "latestVersion": "1.4.5"
 }
