@@ -2656,7 +2656,9 @@
         ".noOfLines-1,.noOfLines-2,.noOfLines-3",
         ".fontWeight-600",
         "[class*='styles_dropdown']",
-        "[class*='styles_aboutText']"
+        "[class*='styles_aboutText']",
+        "[class*='styles_titleItem']",
+        "[class*='styles_header'] h1"
       ],
       "globalStyles": {
         "h5 + p": "height:unset;",
@@ -2664,6 +2666,9 @@
       },
       "excludeTags.remove": [
         "PRE"
+      ],
+      "excludeSelectors.add": [
+        "[class*='styles_underlinedLink']"
       ]
     },
     {
@@ -6955,6 +6960,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-03T20:58:24.885Z",
+  "buildinConfigUpdatedAt": "2024-04-04T01:47:50.765Z",
   "latestVersion": "1.4.5"
 }
