@@ -2150,7 +2150,11 @@
       ],
       "additionalExcludeSelectors": [
         ".ytp-caption-window-container",
-        "text"
+        "text",
+        ".imt-caption-container"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".imt-caption-container *"
       ],
       "subtitleRule.add": {
         "type": "youtube",
@@ -2218,7 +2222,8 @@
       },
       "additionalExcludeSelectors.add": [
         ".ytp-caption-window-container",
-        "text"
+        "text",
+        ".imt-caption-container"
       ],
       "globalStyles": {
         "#video-title": "-webkit-line-clamp: unset;max-height: unset;",
@@ -2253,6 +2258,9 @@
       "extraBlockSelectors": [
         "yt-formatted-string.ytd-transcript-segment-renderer",
         ".caption-visual-line"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".imt-caption-container *"
       ],
       "subtitleRule.add": {
         "type": "youtube",
@@ -6961,6 +6969,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-04T07:37:00.000Z",
+  "buildinConfigUpdatedAt": "2024-04-04T12:14:20.719Z",
   "latestVersion": "1.4.6"
 }
