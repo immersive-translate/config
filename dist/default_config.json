@@ -320,6 +320,7 @@
     "translate.google.com",
     "http://localhost:8000/options/",
     "http://192.168.50.9:8000/options/",
+    "https://silverbullet.md/",
     "googleads.g.doubleclick.net",
     "s1.hdslb.com",
     "oapi.dingtalk.com",
@@ -6969,6 +6970,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-06T11:28:57.000Z",
+  "buildinConfigUpdatedAt": "2024-04-06T14:22:32.798Z",
   "latestVersion": "1.4.7"
 }
