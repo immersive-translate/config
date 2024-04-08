@@ -974,7 +974,8 @@
     "useIframePostMessage": false,
     "searchEnhancementConfig": [],
     "injectedCss": [
-      ".immersive-translate-target-wrapper {white-space: pre-line;}"
+      ".immersive-translate-target-wrapper {white-space: pre-line;}",
+      ".immersive-translate-target-wrapper[dir='rtl'] {text-align: right;}"
     ],
     "isOnBoardingPage": false,
     "isEbook": false,
@@ -6972,6 +6973,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-08T03:37:15.517Z",
+  "buildinConfigUpdatedAt": "2024-04-08T04:03:11.308Z",
   "latestVersion": "1.4.7"
 }
