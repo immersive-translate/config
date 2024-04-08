@@ -973,7 +973,9 @@
     },
     "useIframePostMessage": false,
     "searchEnhancementConfig": [],
-    "injectedCss": [],
+    "injectedCss": [
+      ".immersive-translate-target-wrapper {white-space: pre-line;}"
+    ],
     "isOnBoardingPage": false,
     "isEbook": false,
     "isEbookBuilder": false,
@@ -6970,6 +6972,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-07T01:23:58.762Z",
+  "buildinConfigUpdatedAt": "2024-04-08T03:37:15.517Z",
   "latestVersion": "1.4.7"
 }
