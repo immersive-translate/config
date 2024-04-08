@@ -1282,7 +1282,8 @@
     "additionalInlineTags": [],
     "extraInlineSelectors": [
       "p > a span",
-      "p > span a span"
+      "p > span a span",
+      "a[data-testid=\"Link\"] span"
     ],
     "additionalInlineSelectors": [
       ".MathJax_Preview",
@@ -6973,6 +6974,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-08T04:03:11.308Z",
+  "buildinConfigUpdatedAt": "2024-04-08T07:08:03.052Z",
   "latestVersion": "1.4.7"
 }
