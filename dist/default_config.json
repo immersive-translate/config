@@ -224,7 +224,8 @@
     "blockUrls": [
       "*immersivetranslate.com/preview",
       "https://app.immersivetranslate.com/",
-      "https://app.immersivetranslate.com/pdf-pro*"
+      "https://app.immersivetranslate.com/pdf-pro*",
+      "*.immersivetranslate.com/download-subtitle*"
     ],
     "clickType": "translate",
     "afterInstalledAt": "",
@@ -235,7 +236,8 @@
     "blockUrls": [
       "*immersivetranslate.com/preview",
       "https://app.immersivetranslate.com/",
-      "https://app.immersivetranslate.com/pdf-pro*"
+      "https://app.immersivetranslate.com/pdf-pro*",
+      "*.immersivetranslate.com/download-subtitle*"
     ],
     "clickType": "translate",
     "afterInstalledAt": "2023-10-28",
@@ -316,6 +318,7 @@
     "http://localhost:8000/dist/userscript/options/",
     "http://localhost:8000/auth-done/",
     "http://192.168.50.9:8000/dist/userscript/options/",
+    "http://192.168.31.183:8000/dist/userscript/options/",
     "https://www.deepl.com/translator",
     "translate.google.com",
     "http://localhost:8000/options/",
@@ -469,7 +472,7 @@
         "<code>",
         "</code>"
       ],
-      "limit": 5
+      "limit": 100
     },
     "custom": {
       "placeholderDelimiters": [
@@ -529,7 +532,7 @@
         "imt_yaml_item": "- id: {{id}}\n  {{imt_source_field}}: {{text}}",
         "imt_subtitle_yaml_item": "- id: {{id}}\n  {{imt_sub_source_field}}: {{text}}",
         "normal_result_yaml_example": "Example request:\n  - id: 1\n    {{imt_source_field}}: Source\nExample result:\n  - id: 1\n    {{imt_trans_field}}: Translation",
-        "subtitle_result_yaml_example": "Example request:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\nExample response:\n  - id: 1\n    {{imt_sub_trans_field}}: Translation...\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_trans_field}}: Translation...\n    {{imt_sub_source_field}}: ..."
+        "subtitle_result_yaml_example": "Example request:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\nExample response:\n  - id: 1\n    {{imt_sub_trans_field}}: ...\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_trans_field}}: ...\n    {{imt_sub_source_field}}: ..."
       },
       "systemPrompt": "You are a professional, authentic translation engine. You only return the translated text, without any explanations.",
       "prompt": "Please translate into {{to}} (avoid explaining the original text):\n\n{{text}}",
@@ -566,8 +569,10 @@
         },
         {
           "id": "auto2zh-TW",
-          "extends": "auto2zh-CN",
-          "systemPrompt": "你是一個專業,道地的翻譯引擎，你只會回繁體譯文"
+          "systemPrompt": "你是一個專業,道地的翻譯引擎，你只會回繁體中文譯文，不含任何解釋",
+          "prompt": "請翻譯為繁體中文（避免解釋原文）:\n\n{{text}}",
+          "multiplePrompt": "將下面 YAML 格式的文本中的 {{imt_source_field}} 字段翻譯為繁體中文，並將翻譯結果寫在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n開始翻譯:\n\n{{yaml}}",
+          "subtitlePrompt": "將下面 YAML 格式的視頻字幕文本中的 {{imt_sub_source_field}} 字段翻譯為繁體中文，並將翻譯結果寫在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必須補全每一個 {{imt_sub_trans_field}} 字段，保留每一個 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n開始翻譯：\n\n{{yaml}}"
         },
         {
           "id": "auto2fr",
@@ -814,9 +819,7 @@
       "*.indeed.com",
       "outlook.live.com",
       "https://bsky.app",
-      "store.steampowered.com",
-      "test-app.immersivetranslate.com",
-      "app.immersivetranslate.com"
+      "store.steampowered.com"
     ],
     "excludeMatches": [],
     "selectorMatches": [
@@ -902,7 +905,11 @@
   ],
   "generalRule": {
     "_comment": "",
+    "longBuildDomLength": 3000,
+    "longBuildPageLength": 10,
+    "detectTextBufferLength": 80,
     "isTranslateWhenServiceChanged": true,
+    "excludeSelectorsRegexes": {},
     "glossaries": [
       {
         "k": "LLM",
@@ -1363,6 +1370,7 @@
     "fingerCountToToggleTranslationMaskWhenTouching": 0,
     "fingerCountToToggleTranslagePageOnlyTranslationWhenTouching": 0,
     "touchShortcutsToggleTranslatePage": "fingers.4",
+    "touchShortcutsInputTranslate": "touchShortcutsOff",
     "touchShortcutsToggleTranslationMask": "touchShortcutsOff",
     "touchShortcutsToggleTranslatePageOnlyTranslation": "touchShortcutsOff",
     "touchShortcutsToggleTranslateTouchElement": "touchShortcutsOff",
@@ -1578,9 +1586,31 @@
         "https://*.immersivetranslate.com/pdf-pro*"
       ],
       "pageType": "pdfProReader",
-      "excludeSelectors.add": [
+      "excludeSelectors": [
         "table"
       ],
+      "excludeSelectorsRegexes": {
+        "td": [
+          "^.{0,12}$"
+        ]
+      },
+      "excludeSelectors.remove.[1.4.8]": [
+        "table"
+      ],
+      "detectParagraphLanguage": true,
+      "isInjectVersion": true,
+      "isInjectMeta": true,
+      "toastErrorMinTimes": 500,
+      "waitForSelectorsTimeout": 1,
+      "detectParagraphLanguage.add.[1.4.8]": false
+    },
+    {
+      "id": "download-subtitle",
+      "matches": [
+        "https://*.immersivetranslate.com/download-subtitle*"
+      ],
+      "pageType": "downloadSubtitle",
+      "allowThirdPartyTranslate": true,
       "isInjectVersion": true,
       "isInjectMeta": true,
       "waitForSelectorsTimeout": 1
@@ -2303,7 +2333,8 @@
             "#shorts-player #immersive-translate-caption-window { height: 20%;}",
             ".html5-video-player:not(.ytp-autohide) #immersive-translate-caption-window {bottom: 60px;}"
           ]
-        }
+        },
+        "allowTempEnableSubtitle": true
       },
       "urlChangeDelay": 2000,
       "wrapperPrefix": "<br/>",
@@ -6974,6 +7005,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-08T07:08:03.052Z",
+  "buildinConfigUpdatedAt": "2024-04-09T16:37:09.313Z",
   "latestVersion": "1.4.7"
 }
