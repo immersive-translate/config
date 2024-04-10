@@ -1679,7 +1679,8 @@
         "docs.haproxy.org",
         "man.freebsd.org",
         "www.oreilly.com/openbook/opensources/book/*",
-        "gamefaqs.gamespot.com"
+        "gamefaqs.gamespot.com",
+        "bugs.java.com/bugdatabase/view_bug.do"
       ],
       "isTransformPreTagNewLine": true
     },
@@ -7022,6 +7023,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-10T08:04:39.555Z",
+  "buildinConfigUpdatedAt": "2024-04-10T08:35:34.978Z",
   "latestVersion": "1.4.8"
 }
