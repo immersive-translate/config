@@ -1037,6 +1037,9 @@
         "name:P"
       ]
     },
+    "bodyRule.add.[1.4.8]": {
+      "enable": false
+    },
     "isSubtitleBuilder": false,
     "minZIndex": 0,
     "initTranslationServiceAsSoonAsPossible": true,
@@ -7023,6 +7026,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-10T08:35:34.978Z",
+  "buildinConfigUpdatedAt": "2024-04-10T10:58:39.585Z",
   "latestVersion": "1.4.8"
 }
