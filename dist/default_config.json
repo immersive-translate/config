@@ -2116,6 +2116,10 @@
       ],
       "injectedCss": [
         "font {word-break: break-all !important;}"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
       ]
     },
     {
@@ -7009,6 +7013,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-10T02:10:53.407Z",
+  "buildinConfigUpdatedAt": "2024-04-10T06:40:13.906Z",
   "latestVersion": "1.4.8"
 }
