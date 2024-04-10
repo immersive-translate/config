@@ -909,7 +909,11 @@
     "longBuildPageLength": 10,
     "detectTextBufferLength": 0,
     "isTranslateWhenServiceChanged": true,
-    "excludeSelectorsRegexes": {},
+    "excludeSelectorsRegexes": {
+      "td,th": [
+        "^.{0,12}$"
+      ]
+    },
     "glossaries": [
       {
         "k": "LLM",
@@ -1176,8 +1180,7 @@
       "h1 br",
       "h2 br",
       "h3 br",
-      "h4 br",
-      "table thead"
+      "h4 br"
     ],
     "translationClasses": [],
     "excludeTags": [
@@ -7023,6 +7026,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-10T11:31:58.668Z",
+  "buildinConfigUpdatedAt": "2024-04-10T12:39:29.041Z",
   "latestVersion": "1.4.8"
 }
