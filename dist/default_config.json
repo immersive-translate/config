@@ -7011,8 +7011,17 @@
         "buildTimeout": 1000,
         "consumeTimeout": 1000
       }
+    },
+    {
+      "id": "hadoop.apache.org",
+      "matches": "hadoop.apache.org",
+      "excludeSelectors.add": [
+        ".xleft",
+        ".xright",
+        "#navcolumn"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-10T06:40:13.906Z",
+  "buildinConfigUpdatedAt": "2024-04-10T08:04:39.555Z",
   "latestVersion": "1.4.8"
 }
