@@ -907,7 +907,7 @@
     "_comment": "",
     "longBuildDomLength": 3000,
     "longBuildPageLength": 10,
-    "detectTextBufferLength": 80,
+    "detectTextBufferLength": 0,
     "isTranslateWhenServiceChanged": true,
     "excludeSelectorsRegexes": {},
     "glossaries": [
@@ -1428,7 +1428,8 @@
       "blockMinWordCount": 1,
       "containerMinTextCount": 1,
       "wrapperPrefix": "<br />",
-      "targetWrapperTag": "span"
+      "targetWrapperTag": "span",
+      "detectTextBufferLength": 80
     },
     {
       "id": "pdf",
@@ -1444,6 +1445,7 @@
         "https://app.immersivetranslate.com/pdf/*",
         "http://localhost:38001/pdf*"
       ],
+      "detectTextBufferLength": 80,
       "additionalExcludeSelectors.remove": [
         "[contenteditable=\"true\"]"
       ],
@@ -1516,6 +1518,7 @@
       "toastErrorMinTimes": 500,
       "isTranslateWhenServiceChanged": false,
       "isTranslateTitle": false,
+      "detectTextBufferLength": 80,
       "targetWrapperTag": "span",
       "selectorMatches": [
         "meta[name='immersive-translate-ebook-builder'][content='true']"
@@ -1597,6 +1600,7 @@
       "excludeSelectors.remove.[1.4.8]": [
         "table"
       ],
+      "detectTextBufferLength": 80,
       "detectParagraphLanguage": true,
       "isInjectVersion": true,
       "isInjectMeta": true,
@@ -7005,6 +7009,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-09T16:40:29.000Z",
+  "buildinConfigUpdatedAt": "2024-04-10T02:08:19.211Z",
   "latestVersion": "1.4.8"
 }
