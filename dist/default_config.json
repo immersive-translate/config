@@ -1024,7 +1024,7 @@
       ]
     },
     "bodyRule": {
-      "enable": true,
+      "enable": false,
       "maxBodyScreenLength": 25,
       "articleChildTags": [
         "P"
@@ -1036,9 +1036,6 @@
       "xpathRule": [
         "name:P"
       ]
-    },
-    "bodyRule.add_v.[1.4.8]": {
-      "enable": false
     },
     "isSubtitleBuilder": false,
     "minZIndex": 0,
@@ -7026,6 +7023,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-10T11:10:19.631Z",
+  "buildinConfigUpdatedAt": "2024-04-10T11:31:58.668Z",
   "latestVersion": "1.4.8"
 }
