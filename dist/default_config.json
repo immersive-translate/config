@@ -913,6 +913,9 @@
       "td,th": [
         "^.{0,12}$",
         "^[a-zA-Z_]+$"
+      ],
+      "button": [
+        "^.{0,12}$"
       ]
     },
     "glossaries": [
@@ -1207,6 +1210,9 @@
       "TTS-SENTENCE",
       "AIO-CODE",
       "RELIN-TARGET"
+    ],
+    "excludeTags.remove_v.[1.4.9]": [
+      "BUTTON"
     ],
     "bodyTranslateTags": [
       "FOOTER",
@@ -7030,6 +7036,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-11T09:16:33.222Z",
+  "buildinConfigUpdatedAt": "2024-04-11T10:56:20.512Z",
   "latestVersion": "1.4.8"
 }
