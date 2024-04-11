@@ -1597,7 +1597,7 @@
       "excludeSelectors": [
         "table"
       ],
-      "excludeSelectorsRegexes": {
+      "excludeSelectorsRegexes.add": {
         "td": [
           "^.{0,12}$"
         ]
@@ -7028,6 +7028,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-11T03:54:33.594Z",
+  "buildinConfigUpdatedAt": "2024-04-11T03:55:52.508Z",
   "latestVersion": "1.4.8"
 }
