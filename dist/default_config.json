@@ -911,7 +911,8 @@
     "isTranslateWhenServiceChanged": true,
     "excludeSelectorsRegexes": {
       "td,th": [
-        "^.{0,12}$"
+        "^.{0,12}$",
+        "^[a-zA-Z_]+$"
       ]
     },
     "glossaries": [
@@ -7027,6 +7028,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-11T01:47:34.539Z",
+  "buildinConfigUpdatedAt": "2024-04-11T03:54:33.594Z",
   "latestVersion": "1.4.8"
 }
