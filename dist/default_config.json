@@ -986,7 +986,6 @@
     "useIframePostMessage": false,
     "searchEnhancementConfig": [],
     "injectedCss": [
-      ".immersive-translate-target-wrapper {white-space: pre-line;}",
       ".immersive-translate-target-wrapper[dir='rtl'] {text-align: right;}",
       ".immersive-translate-target-wrapper[dir='rtl'] [data-immersive-translate-class-bak*='block-wrapper'] {display:block;}"
     ],
@@ -7028,6 +7027,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-11T03:55:52.508Z",
+  "buildinConfigUpdatedAt": "2024-04-11T09:07:42.002Z",
   "latestVersion": "1.4.8"
 }
