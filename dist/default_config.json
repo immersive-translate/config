@@ -5818,11 +5818,7 @@
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar"
         },
-        "videoSelector": ".PromoPlayer video",
-        "attachRule": {
-          "appendSelector": ".video-js",
-          "injectedGlobalCSS": ".vjs-text-track-display {display: none;}"
-        }
+        "videoSelector": ".PromoPlayer video"
       }
     },
     {
@@ -7037,6 +7033,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-12T02:49:53.821Z",
+  "buildinConfigUpdatedAt": "2024-04-12T07:38:33.359Z",
   "latestVersion": "1.4.8"
 }
