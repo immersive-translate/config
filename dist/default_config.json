@@ -138,7 +138,7 @@
     "https://www.paramountplus.com/[Paramount Plus]",
     "https://www.starz.com/[starz]",
     "https://pluto.tv/[pluto]",
-    "https://movie-web.app/[movie-web]",
+    "https://movie-web-me.vercel.app/[movie-web]",
     "https://www.unrealsenseiacademy.com/[Unreal Sensei]",
     "https://learn.deeplearning.ai[DeepLearning.ai]",
     "https://piped.video/[Piped.Video]",
@@ -6263,7 +6263,8 @@
     {
       "id": "movie-web",
       "matches": [
-        "movie-web.app/media*"
+        "movie-web.app/media*",
+        "movie-web-me.vercel.app/media*"
       ],
       "excludeSelectors.add": [
         "#root"
@@ -7036,6 +7037,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-11T10:56:20.512Z",
+  "buildinConfigUpdatedAt": "2024-04-12T02:49:53.821Z",
   "latestVersion": "1.4.8"
 }
