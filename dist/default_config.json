@@ -1633,6 +1633,16 @@
       "waitForSelectorsTimeout": 1
     },
     {
+      "id": "immersive_html",
+      "matches": [
+        "https://app.immersivetranslate.com/html"
+      ],
+      "isInjectVersion": true,
+      "isInjectMeta": true,
+      "waitForSelectorsTimeout": 1,
+      "longBuildPageLength": 1000
+    },
+    {
       "id": "immersive",
       "matches": [
         "https://immersivetranslate.com",
@@ -1660,7 +1670,7 @@
       "selectorMatches": [
         "body > pre"
       ],
-      "longBuildPageLength": 200,
+      "longBuildPageLength": 1000,
       "mutationExcludeSelectors.add": [
         "body"
       ],
@@ -1696,7 +1706,8 @@
         "gamefaqs.gamespot.com",
         "bugs.java.com/bugdatabase/view_bug.do"
       ],
-      "isTransformPreTagNewLine": true
+      "isTransformPreTagNewLine": true,
+      "longBuildPageLength": 1000
     },
     {
       "id": "wikipedia",
@@ -7034,6 +7045,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-12T09:00:45.955Z",
+  "buildinConfigUpdatedAt": "2024-04-12T09:14:06.474Z",
   "latestVersion": "1.4.8"
 }
