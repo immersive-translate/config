@@ -906,7 +906,7 @@
   "generalRule": {
     "_comment": "",
     "longBuildDomLength": 3000,
-    "longBuildPageLength": 10,
+    "longBuildPageLength": 20,
     "detectTextBufferLength": 0,
     "isTranslateWhenServiceChanged": true,
     "excludeSelectorsRegexes": {
@@ -1660,6 +1660,7 @@
       "selectorMatches": [
         "body > pre"
       ],
+      "longBuildPageLength": 200,
       "mutationExcludeSelectors.add": [
         "body"
       ],
@@ -7033,6 +7034,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-12T07:38:33.359Z",
+  "buildinConfigUpdatedAt": "2024-04-12T09:00:45.955Z",
   "latestVersion": "1.4.8"
 }
