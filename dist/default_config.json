@@ -549,8 +549,8 @@
           "id": "auto2zh-CN",
           "systemPrompt": "你是一个专业,地道的翻译引擎，你只返回译文，不含任何解释",
           "prompt": "请翻译为 {{to}}（避免解释原文）:\n\n{{text}}",
-          "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段翻译为 {{to}}，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}",
-          "subtitlePrompt": "将下面 YAML 格式的视频字幕文本中所有的 {{imt_sub_source_field}} 字段翻译为 {{to}}，并将翻译结果写在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必须补全每一个 {{imt_sub_trans_field}} 字段，保留每一个 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n开始翻译：\n\n{{yaml}}"
+          "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文本翻译为 {{to}}，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}",
+          "subtitlePrompt": "将下面 YAML 格式的视频字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻译为 {{to}}，并将翻译结果写在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必须补全每一个 {{imt_sub_trans_field}} 字段，保留每一个 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n开始翻译：\n\n{{yaml}}"
         },
         {
           "id": "zh-CN2auto",
@@ -566,7 +566,7 @@
           "id": "wyw2zh-CN",
           "systemPrompt": "你是一个精通古文的学者，只返回白话文",
           "prompt": "请将文言文用白话文解释:\n\n{{text}}",
-          "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段文言文翻译为白话文，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}"
+          "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文言文翻译为白话文，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}"
         },
         {
           "id": "ja2zh-CN",
@@ -575,17 +575,17 @@
         },
         {
           "id": "auto2zh-TW",
-          "systemPrompt": "你是一個專業,道地的翻譯引擎，你只會回繁體中文譯文，不含任何解釋",
-          "prompt": "請翻譯為繁體中文（避免解釋原文）:\n\n{{text}}",
-          "multiplePrompt": "將下面 YAML 格式中所有的 {{imt_source_field}} 字段翻譯為繁體中文，並將翻譯結果寫在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n開始翻譯:\n\n{{yaml}}",
-          "subtitlePrompt": "將下面 YAML 格式的視頻字幕文本中所有的 {{imt_sub_source_field}} 字段翻譯為繁體中文，並將翻譯結果寫在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必須補全每一個 {{imt_sub_trans_field}} 字段，保留每一個 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n開始翻譯：\n\n{{yaml}}"
+          "systemPrompt": "你是一個專業,地道的翻譯引擎，你只返回譯文，不含任何解釋",
+          "prompt": "請翻譯為 {{to}}（避免解釋原文）:\n\n{{text}}",
+          "multiplePrompt": "將下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文本翻譯為 {{to}}，並將翻譯結果寫在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n開始翻譯:\n\n{{yaml}}",
+          "subtitlePrompt": "將下面 YAML 格式的視頻字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻譯為 {{to}}，並將翻譯結果寫在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必須補全每一個 {{imt_sub_trans_field}} 字段，保留每一個 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n開始翻譯：\n\n{{yaml}}"
         },
         {
           "id": "auto2fr",
-          "systemPrompt": "Vous êtes un moteur de traduction professionnel et authentique. Vous ne retournez que le texte traduit, sans aucune explication.",
+          "systemPrompt": "Vous êtes un moteur de traduction professionnel et authentique, vous ne retournez que le texte traduit, sans aucune explication",
           "prompt": "Veuillez traduire en {{to}} (évitez d'expliquer le texte original) :\n\n{{text}}",
-          "multiplePrompt": "Traduisez le champ {{imt_source_field}} dans le texte au format YAML ci-dessous en {{to}}, et écrivez le résultat de la traduction dans le champ {{imt_trans_field}}.\n\n{{normal_result_yaml_example}}\n\nCommencez :\n\n{{yaml}}",
-          "subtitlePrompt": "Traduisez le champ {{imt_sub_source_field}} dans le texte de sous-titres vidéo au format YAML ci-dessous en {{to}}, et écrivez le résultat de la traduction dans le champ {{imt_sub_trans_field}}. Exigences :\n\n1. Vous devez remplir chaque champ {{imt_sub_trans_field}} et conserver chaque champ {{imt_sub_source_field}}.\n2. Retournez du YAML analysable :\n\n{{subtitle_result_yaml_example}}\n\nCommencez :\n\n{{yaml}}"
+          "multiplePrompt": "Traduisez tout le texte des champs {{imt_source_field}} dans le format YAML ci-dessous en {{to}}, et écrivez le résultat de la traduction dans les champs {{imt_trans_field}}\n\n{{normal_result_yaml_example}}\n\nCommencez la traduction :\n\n{{yaml}}",
+          "subtitlePrompt": "Traduisez tout le texte des champs {{imt_sub_source_field}} dans le format YAML des sous-titres vidéo ci-dessous en {{to}}, et écrivez le résultat de la traduction dans les champs {{imt_sub_trans_field}}, avec les exigences suivantes :\n\n1. Vous devez compléter chaque champ {{imt_sub_trans_field}}, tout en conservant chaque champ {{imt_sub_source_field}}.\n2. Retournez du YAML analysable :\n\n{{subtitle_result_yaml_example}}\n\nCommencez la traduction :\n\n{{yaml}}"
         }
       ]
     },
@@ -7064,6 +7064,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-13T02:12:45.663Z",
+  "buildinConfigUpdatedAt": "2024-04-15T09:43:58.240Z",
   "latestVersion": "1.4.9"
 }
