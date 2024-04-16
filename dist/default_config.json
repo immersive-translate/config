@@ -7062,8 +7062,22 @@
         ".xright",
         "#navcolumn"
       ]
+    },
+    {
+      "id": "docs.unity3d",
+      "matches": "docs.unity3d.com",
+      "stayOriginalSelectors": [
+        ".tooltip"
+      ],
+      "mainFrameSelector": [
+        ".tooltip > .tooltiptext"
+      ],
+      "injectedCss.add": [
+        ".immersive-translate-target-inner .tooltiptext {display: none;}",
+        ".immersive-translate-target-inner .tooltip {cursor:pointer;border-bottom:unset;}"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-15T09:43:58.240Z",
+  "buildinConfigUpdatedAt": "2024-04-16T04:49:46.468Z",
   "latestVersion": "1.4.9"
 }
