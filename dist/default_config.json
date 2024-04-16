@@ -1651,7 +1651,9 @@
         "https://onboarding.immersivetranslate.com",
         "https://app.immersivetranslate.com",
         "https://test-app.immersivetranslate.com",
-        "http://localhost:38001"
+        "http://localhost:38001",
+        "https://ai.immersivetranslate.com",
+        "https://test-ai.immersivetranslate.com"
       ],
       "isInjectVersion": true,
       "isInjectMeta": true,
@@ -7069,6 +7071,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-16T12:41:11.280Z",
+  "buildinConfigUpdatedAt": "2024-04-16T12:43:50.209Z",
   "latestVersion": "1.4.9"
 }
