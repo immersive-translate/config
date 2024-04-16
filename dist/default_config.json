@@ -1644,16 +1644,6 @@
       "waitForSelectorsTimeout": 1
     },
     {
-      "id": "immersive_html",
-      "matches": [
-        "https://app.immersivetranslate.com/html"
-      ],
-      "isInjectVersion": true,
-      "isInjectMeta": true,
-      "waitForSelectorsTimeout": 1,
-      "longBuildPageLength": 1000
-    },
-    {
       "id": "immersive",
       "matches": [
         "https://immersivetranslate.com",
@@ -1665,7 +1655,8 @@
       ],
       "isInjectVersion": true,
       "isInjectMeta": true,
-      "waitForSelectorsTimeout": 1
+      "waitForSelectorsTimeout": 1,
+      "longBuildPageLength": 1000
     },
     {
       "id": "simpread",
@@ -7078,6 +7069,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-16T04:49:46.468Z",
+  "buildinConfigUpdatedAt": "2024-04-16T12:41:11.280Z",
   "latestVersion": "1.4.9"
 }
