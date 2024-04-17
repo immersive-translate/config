@@ -1756,7 +1756,8 @@
         "https://platform.twitter.com/embed*"
       ],
       "excludeMatches": [
-        "https://twitter.com/i/premium_sign_up"
+        "https://twitter.com/i/premium_sign_up",
+        "https://twitter.com/settings/subscription"
       ],
       "additionalStayOriginalSelectors": [
         "[data-testid=\"tweetText\"] a",
@@ -7075,6 +7076,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-17T03:14:27.425Z",
+  "buildinConfigUpdatedAt": "2024-04-17T03:15:42.210Z",
   "latestVersion": "1.4.9"
 }
