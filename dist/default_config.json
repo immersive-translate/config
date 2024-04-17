@@ -1030,6 +1030,7 @@
       "sourceFontSize": "100",
       "translationMode": "dual",
       "translationPosition": "bottom",
+      "textShadowType": "none",
       "translationFontSize": "100",
       "translateGroupCount": 5,
       "autoSwitchSubtitleWithSameLanguage": true,
@@ -7076,6 +7077,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-17T06:13:36.603Z",
+  "buildinConfigUpdatedAt": "2024-04-17T10:34:15.533Z",
   "latestVersion": "1.4.9"
 }
