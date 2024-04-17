@@ -1805,8 +1805,7 @@
         "[data-testid='HoverCard'] div[dir=auto]",
         "[data-testid='HoverCard'] span[dir=auto]",
         "[data-testid='HoverCard'] [role='dialog'] div[dir=ltr]",
-        "[data-testid='birdwatch-pivot'] div[dir=ltr]",
-        ""
+        "[data-testid='birdwatch-pivot'] div[dir=ltr]"
       ],
       "subtitleRule.add": {
         "type": "live",
@@ -7072,6 +7071,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-17T04:15:17.346Z",
+  "buildinConfigUpdatedAt": "2024-04-17T04:22:20.711Z",
   "latestVersion": "1.4.9"
 }
