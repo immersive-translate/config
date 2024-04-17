@@ -1755,6 +1755,11 @@
         "pro.twitter.com",
         "https://platform.twitter.com/embed*"
       ],
+      "excludeMatches": [
+        "https://twitter.com/i/premium_sign_up",
+        "https://twitter.com/settings/subscription",
+        "https://twitter.com/jobs/*"
+      ],
       "additionalStayOriginalSelectors": [
         "[data-testid=\"tweetText\"] a",
         "[data-testid='UserDescription'] a",
@@ -7071,6 +7076,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-17T04:22:20.711Z",
+  "buildinConfigUpdatedAt": "2024-04-17T06:13:36.603Z",
   "latestVersion": "1.4.9"
 }
