@@ -1755,6 +1755,9 @@
         "pro.twitter.com",
         "https://platform.twitter.com/embed*"
       ],
+      "excludeMatches": [
+        "https://twitter.com/i/premium_sign_up"
+      ],
       "additionalStayOriginalSelectors": [
         "[data-testid=\"tweetText\"] a",
         "[data-testid='UserDescription'] a",
@@ -1805,7 +1808,8 @@
         "[data-testid='HoverCard'] div[dir=auto]",
         "[data-testid='HoverCard'] span[dir=auto]",
         "[data-testid='HoverCard'] [role='dialog'] div[dir=ltr]",
-        "[data-testid='birdwatch-pivot'] div[dir=ltr]"
+        "[data-testid='birdwatch-pivot'] div[dir=ltr]",
+        ""
       ],
       "subtitleRule.add": {
         "type": "live",
@@ -7071,6 +7075,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-17T00:37:56.482Z",
+  "buildinConfigUpdatedAt": "2024-04-17T03:14:27.425Z",
   "latestVersion": "1.4.9"
 }
