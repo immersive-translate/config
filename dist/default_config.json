@@ -1997,7 +1997,8 @@
         "[slot=title]",
         "[slot=text-body]",
         "p.title > a",
-        "[role=main] .md-container"
+        "[role=main] .md-container",
+        ".room-message-text"
       ],
       "detectParagraphLanguage": true,
       "globalStyles": {
@@ -2034,7 +2035,8 @@
         "[role=main] .md-container",
         "#-post-rtjson-content",
         ".RichTextJSON-root",
-        "[slot='title']"
+        "[slot='title']",
+        ".room-message-text"
       ],
       "excludeSelectors": [
         ".text-neutral-content-weak"
@@ -7077,6 +7079,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-18T02:36:35.000Z",
+  "buildinConfigUpdatedAt": "2024-04-18T03:22:10.049Z",
   "latestVersion": "1.4.11"
 }
