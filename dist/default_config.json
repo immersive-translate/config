@@ -593,7 +593,7 @@
       "placeholderDelimiters": [
         "{{",
         "}}",
-        "b"
+        "code"
       ],
       "disableWarning": false,
       "requestTimeout": 101000,
@@ -644,7 +644,7 @@
       "placeholderDelimiters": [
         "{{",
         "}}",
-        "b"
+        "code"
       ],
       "requestTimeout": 101000,
       "immediateTranslationTextCount": 5000,
@@ -664,7 +664,7 @@
       "placeholderDelimiters": [
         "{{",
         "}}",
-        "b"
+        "code"
       ],
       "ignoreResRegexs": [
         "^抱歉.*要求",
@@ -7079,6 +7079,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-18T03:22:10.049Z",
+  "buildinConfigUpdatedAt": "2024-04-18T09:16:13.873Z",
   "latestVersion": "1.4.11"
 }
