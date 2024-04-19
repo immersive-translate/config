@@ -6358,6 +6358,26 @@
       }
     },
     {
+      "id": "plex.tv",
+      "matches": [
+        "watch.plex.tv"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track_dynamic",
+        "injectedCss": [
+          ".tt-container {white-space: pre-line;}",
+          ".timed-text-css-box-inner {display: none!important;}",
+          ".timed-text-css-box-inner:last-child {display: block!important;}"
+        ],
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": "[data-testid='player']",
+        "quickButtonRule": {
+          "appendSelector": "[class^='PlayerControls_bottomControls'] > div > div:last-child",
+          "insertBeforeSelector": "[class^='PlayerControls_bottomControls'] > div > div:last-child > div:last-child"
+        }
+      }
+    },
+    {
       "id": "pluto",
       "matches": [
         "pluto.tv"
@@ -7079,6 +7099,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-18T09:16:13.873Z",
+  "buildinConfigUpdatedAt": "2024-04-19T03:39:42.957Z",
   "latestVersion": "1.4.11"
 }
