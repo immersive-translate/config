@@ -406,6 +406,7 @@
       "maxTextGroupLengthPerRequest": 50
     },
     "transmart": {
+      "limit": 20,
       "visible": true,
       "requestTimeout": 10000,
       "placeholderDelimiters": [
@@ -7099,6 +7100,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-19T08:54:16.574Z",
+  "buildinConfigUpdatedAt": "2024-04-19T09:12:11.702Z",
   "latestVersion": "1.4.11"
 }
