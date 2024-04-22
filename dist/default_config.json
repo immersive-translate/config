@@ -664,8 +664,7 @@
       "visible": true,
       "placeholderDelimiters": [
         "{{",
-        "}}",
-        "code"
+        "}}"
       ],
       "ignoreResRegexs": [
         "^抱歉.*要求",
@@ -7098,8 +7097,15 @@
         ".immersive-translate-target-inner .tooltiptext {display: none;}",
         ".immersive-translate-target-inner .tooltip {cursor:pointer;border-bottom:unset;}"
       ]
+    },
+    {
+      "id": "icloud-sandbox",
+      "matches": "www-mail.icloud-sandbox.com",
+      "injectedCss.add": [
+        "body{overflow-y:scroll!important;}"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-19T09:12:11.702Z",
+  "buildinConfigUpdatedAt": "2024-04-22T11:47:53.292Z",
   "latestVersion": "1.4.11"
 }
