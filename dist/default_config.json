@@ -3306,7 +3306,7 @@
         ".overflow-y-hidden": "max-height:unset;overflow-y:unset;"
       },
       "subtitleRule.add": {
-        "type": "av",
+        "type": "av2",
         "avSerial": {
           "type": "url",
           "regexStr": ".+/([a-z0-9-]+)$"
@@ -3378,7 +3378,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "subtitleRule.add": {
-        "type": "av",
+        "type": "av2",
         "avSerial": {
           "type": "url",
           "regexStr": "code=([a-z0-9-]+)"
@@ -3406,7 +3406,7 @@
         "button"
       ],
       "subtitleRule.add": {
-        "type": "av",
+        "type": "av2",
         "avSerial": {
           "type": "selector",
           "selector": ".videodetail_2_field_values",
@@ -7109,6 +7109,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-23T03:16:15.580Z",
+  "buildinConfigUpdatedAt": "2024-04-23T10:44:34.253Z",
   "latestVersion": "1.4.11"
 }
