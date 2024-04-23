@@ -919,9 +919,10 @@
     "excludeSelectorsRegexes": {
       "td,th": [
         "^.{0,12}$",
-        "^[a-zA-Z_0-9-]+$",
+        "^[a-zA-Z0-9\\-_.]+$",
         "^[0-9,]+\\s+tokens$",
-        "^Up to [a-zA-Z]*\\s+\\d*$"
+        "^Up to [a-zA-Z]*\\s+\\d*$",
+        "^(/[a-zA-Z0-9\\-_.]+)+$"
       ],
       "button": [
         "^.{0,12}$"
@@ -7108,6 +7109,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-23T02:07:30.671Z",
+  "buildinConfigUpdatedAt": "2024-04-23T03:16:15.580Z",
   "latestVersion": "1.4.11"
 }
