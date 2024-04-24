@@ -2292,6 +2292,8 @@
       "matches": "www.youtube.com",
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
       "detectParagraphLanguage": true,
       "lineBreakMaxTextCount": 0,
       "shareConfig": {
@@ -2392,6 +2394,8 @@
     {
       "id": "tvYoutube",
       "matches": "tv.youtube.com",
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
         "type": "youtube",
         "preTranslation": true,
@@ -2441,6 +2445,7 @@
         ".caption-visual-line"
       ],
       "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
       "excludeSelectors.add": [
         ".captions-text",
         ".ytp-caption-segment"
@@ -7113,6 +7118,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-24T02:02:06.782Z",
+  "buildinConfigUpdatedAt": "2024-04-24T02:09:44.833Z",
   "latestVersion": "1.4.11"
 }
