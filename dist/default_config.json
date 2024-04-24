@@ -1842,6 +1842,21 @@
       }
     },
     {
+      "id": "openrouter",
+      "matches": "openrouter.ai",
+      "excludeSelectors": [
+        ".line-clamp-1.text-lg",
+        ".text-muted-foreground.text-sm.col-span-4.text-right",
+        "div[title='Tokens this week']",
+        ".text-green-600.font-medium",
+        ".text-xl.text-slate-11",
+        "button[role='tab']"
+      ],
+      "globalStyles": {
+        "button.text-primary-foreground": "height: 100%;white-space: normal;word-wrap: break-word;"
+      }
+    },
+    {
       "id": "threads",
       "matches": "www.threads.net",
       "selectors": [
@@ -7119,6 +7134,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-24T03:14:47.603Z",
+  "buildinConfigUpdatedAt": "2024-04-24T04:03:32.848Z",
   "latestVersion": "1.4.11"
 }
