@@ -6400,33 +6400,6 @@
       }
     },
     {
-      "id": "vimeo",
-      "matches": [
-        "vimeo.com"
-      ],
-      "excludeSelectors.add": [
-        ".vp-captions"
-      ],
-      "mutationExcludeSelectors.add": [
-        ".vp-captions *"
-      ],
-      "subtitleRule.add": {
-        "type": "text_track",
-        "videoPlayerSelector": "video",
-        "loadingContainerSelector": ".player_container",
-        "loadingStyle": "bottom: unset; top: 5%;",
-        "injectedCss": [
-          "#immersive-translateQuickButton {visibility: inherit!important;}"
-        ],
-        "quickButtonRule": {
-          "appendSelector": "[data-control-bar=\"true\"] > div",
-          "insertBeforeSelector": "[data-volume-control-container=\"true\"]",
-          "ccEnableSelector": "[data-cc-button=\"true\"]",
-          "injectCSS": ".imt-quick-subtitle-button {margin-right: 0px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}"
-        }
-      }
-    },
-    {
       "id": "ted",
       "matches": [
         "www.ted.com"
@@ -6450,6 +6423,35 @@
       }
     },
     {
+      "id": "vimeo",
+      "matches": [
+        "vimeo.com"
+      ],
+      "excludeSelectors.add": [
+        ".vp-captions"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".vp-captions *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".player_container",
+        "loadingStyle": "bottom: unset; top: 5%;",
+        "injectedCss": [
+          "#immersive-translateQuickButton {visibility: inherit!important;}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": "[data-control-bar=\"true\"] > div",
+          "insertBeforeSelector": "[data-volume-control-container=\"true\"]",
+          "ccEnableSelector": "[data-cc-button=\"true\"]",
+          "injectCSS": ".imt-quick-subtitle-button {margin-right: 0px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}"
+        }
+      }
+    },
+    {
       "id": "player.vimeo",
       "matches": [
         "https://player.vimeo.com/video/*",
@@ -6469,7 +6471,8 @@
         ".vp-captions *",
         ".vp-captions-line *"
       ],
-      "waitForSelectorsTimeout": 1,
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
         "type": "text_track",
         "videoPlayerSelector": "video",
@@ -7110,6 +7113,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-24T01:19:28.869Z",
+  "buildinConfigUpdatedAt": "2024-04-24T02:02:06.782Z",
   "latestVersion": "1.4.11"
 }
