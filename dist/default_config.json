@@ -1861,7 +1861,7 @@
         ".xpvyfi4.x1npkx4u.x1ms6mhf"
       ],
       "globalStyles": {
-        "span": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;"
+        "span,.x569fbc": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;"
       }
     },
     {
@@ -6469,6 +6469,7 @@
         ".vp-captions *",
         ".vp-captions-line *"
       ],
+      "waitForSelectorsTimeout": 1,
       "subtitleRule.add": {
         "type": "text_track",
         "videoPlayerSelector": "video",
@@ -7109,6 +7110,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-23T10:44:34.253Z",
+  "buildinConfigUpdatedAt": "2024-04-24T01:19:28.869Z",
   "latestVersion": "1.4.11"
 }
