@@ -144,7 +144,8 @@
     "https://learn.deeplearning.ai[DeepLearning.ai]",
     "https://piped.video/[Piped.Video]",
     "https://southampton.cloud.panopto.eu[University of Southampton]",
-    "https://vk.com/video[VK Video]"
+    "https://vk.com/video[VK Video]",
+    "https://www.comsol.com/video[COMSOL]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -6571,7 +6572,9 @@
       "matches": [
         "learn.codewithchris.com",
         "*.rachelsenglishacademy.com",
-        "www.unrealsenseiacademy.com"
+        "www.unrealsenseiacademy.com",
+        "www.comsol.com/video/*",
+        "www.comsol.com/blogs/*"
       ],
       "excludeSelectors.add": [
         ".w-captions",
@@ -7150,6 +7153,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-25T09:09:33.000Z",
+  "buildinConfigUpdatedAt": "2024-04-25T14:18:55.240Z",
   "latestVersion": "1.4.12"
 }
