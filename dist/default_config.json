@@ -143,7 +143,8 @@
     "https://www.unrealsenseiacademy.com/[Unreal Sensei]",
     "https://learn.deeplearning.ai[DeepLearning.ai]",
     "https://piped.video/[Piped.Video]",
-    "https://southampton.cloud.panopto.eu[University of Southampton]"
+    "https://southampton.cloud.panopto.eu[University of Southampton]",
+    "https://vk.com/video[VK Video]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -168,6 +169,7 @@
   "inactiveDays": 21,
   "enableInputTranslationWithoutTriggerKey": true,
   "enableRenderHtmlTag": false,
+  "enableEditTranslation": false,
   "autoSelectTargetLanguageAfterInstalledAt": "2024-01-04",
   "defaultAlwaysTranslatedUrls": [
     "twitter.com",
@@ -1037,6 +1039,7 @@
       "translationFontSize": "100",
       "translateGroupCount": 5,
       "autoSwitchSubtitleWithSameLanguage": true,
+      "youtubeAutoEnableSubtitleAfterInstalledAt": "2024-04-25",
       "velocityGroup": [
         1,
         3,
@@ -6126,6 +6129,19 @@
       }
     },
     {
+      "id": "vk.com",
+      "matches": "vk.com/video",
+      "subtitleRule.add_v.[1.4.12]": {
+        "type": "text_track",
+        "videoPlayerSelector": ".videoplayer_media_provider",
+        "loadingContainerSelector": "#video_player",
+        "quickButtonRule": {
+          "appendSelector": ".videoplayer_controls",
+          "insertBeforeSelector": ".videoplayer_btn_subtitles"
+        }
+      }
+    },
+    {
       "id": "egghead",
       "matches": [
         "egghead.io"
@@ -7134,6 +7150,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-25T06:41:10.236Z",
-  "latestVersion": "1.4.11"
+  "buildinConfigUpdatedAt": "2024-04-25T09:09:33.000Z",
+  "latestVersion": "1.4.12"
 }
