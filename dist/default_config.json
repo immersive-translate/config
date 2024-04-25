@@ -6221,13 +6221,15 @@
       "matches": [
         "fmoviesz.to",
         "vidplay.online",
-        "c8365730d4.nl"
+        "c8365730d4.nl",
+        "kerapoxy.cc",
+        "vid41c.site"
       ],
       "excludeSelectors.add": [
-        "#player"
+        ".jw-wrapper"
       ],
       "mutationExcludeSelectors.add": [
-        "#player *"
+        ".jw-wrapper *"
       ],
       "subtitleRule.add": {
         "type": "multi_attach_vtt",
@@ -6236,10 +6238,10 @@
           "appendSelector": ".jw-button-container",
           "insertBeforeSelector": ".jw-icon-cc"
         },
-        "activeLangSelector": "#jw-player-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active",
+        "activeLangSelector": ".jw-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active",
         "videoSelector": "video",
         "attachRule": {
-          "appendSelector": "#player",
+          "appendSelector": ".jw-wrapper",
           "injectedGlobalCSS": [
             ".jw-text-track-container {display: none;}",
             "@media (min-width: 576px) { video::cue {opacity: 0} }"
@@ -7153,6 +7155,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-25T14:18:55.240Z",
+  "buildinConfigUpdatedAt": "2024-04-25T15:04:16.245Z",
   "latestVersion": "1.4.12"
 }
