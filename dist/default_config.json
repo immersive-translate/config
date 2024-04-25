@@ -1864,7 +1864,7 @@
         ".x1npkx4u.x1exu5d8",
         ".xw7yly9",
         ".xgkxs2y",
-        ".x1xdureb.xqti54a.x13vxnyz",
+        ".x1xdureb.x13vxnyz",
         ".xqti54a.x13vxnyz.x49hn82.xcrlgei.x889kno"
       ],
       "stayOriginalSelectors": [
@@ -7134,7 +7134,6 @@
       ]
     }
   ],
-  "crxVersion": "1.4.11",
-  "buildinConfigUpdatedAt": "2024-04-25T02:23:39.913Z",
+  "buildinConfigUpdatedAt": "2024-04-25T06:41:10.236Z",
   "latestVersion": "1.4.11"
 }
