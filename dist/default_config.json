@@ -7134,7 +7134,7 @@
       ]
     }
   ],
-  "crxVersion": "github.event.inputs.chrome",
-  "buildinConfigUpdatedAt": "2024-04-25T02:16:11.656Z",
+  "crxVersion": "1.4.11",
+  "buildinConfigUpdatedAt": "2024-04-25T02:23:39.913Z",
   "latestVersion": "1.4.11"
 }
