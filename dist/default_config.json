@@ -72,7 +72,7 @@
   "showOpenaiOnSafari": true,
   "showUnconfiguredTranslationServiceInPopup": true,
   "donateUrl": "https://immersivetranslate.com/pricing",
-  "uninstallUrl": "https://wj.qq.com/s2/12328372/04e0/",
+  "uninstallUrl": "https://onboarding.immersivetranslate.com/uninstall",
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
   "arxivRule": {
     "injectContainerSelector": ".extra-services .full-text ul",
@@ -7155,6 +7155,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-25T15:24:14.439Z",
+  "buildinConfigUpdatedAt": "2024-04-29T18:59:49.642Z",
   "latestVersion": "1.4.12"
 }
