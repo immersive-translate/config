@@ -39,9 +39,11 @@
     ],
     "selectorExcludeMatches": []
   },
+  "aiAssistantIds": [],
   "interval": 3600000,
   "beta": false,
   "cache": true,
+  "enableAiAssistant": false,
   "proOpenaiModels": [
     "gpt-3.5-turbo",
     "gpt-3.5-turbo-0125",
@@ -641,7 +643,8 @@
     },
     "gemini.add_v.[1.3.4]": {
       "extends": "ai",
-      "translationTextSeparator": "\n\n%%\n\n"
+      "translationTextSeparator": "\n\n%%\n\n",
+      "assistantId": "common"
     },
     "claude": {
       "extends": "ai",
@@ -661,7 +664,8 @@
       "bodyConfigs": {
         "max_tokens": 2048
       },
-      "translationTextSeparator": "\n\n%%\n\n"
+      "translationTextSeparator": "\n\n%%\n\n",
+      "assistantId": "common"
     },
     "openai": {
       "visible": true,
@@ -748,6 +752,7 @@
     },
     "openai.add_v.[1.3.4]": {
       "extends": "ai",
+      "assistantId": "common",
       "maxTextGroupLengthPerRequest": 3
     },
     "chatgpt": {
@@ -6215,7 +6220,8 @@
         "vidplay.online",
         "c8365730d4.nl",
         "kerapoxy.cc",
-        "vid41c.site"
+        "vid41c.site",
+        "https://*/*sub.info=*fmoviesz.to*"
       ],
       "excludeSelectors.add": [
         ".jw-wrapper"
@@ -6558,6 +6564,23 @@
           "appendSelector": ".js-controls .right",
           "insertBeforeSelector": ".js-subtitles",
           "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 38px !important;}"
+        }
+      }
+    },
+    {
+      "id": "comsol",
+      "matches": [
+        "www.comsol.com/"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "videoSelector": "video",
+        "attachRule": {
+          "appendSelector": ".w-video-wrapper",
+          "injectedGlobalCSS": [
+            ".w-captions-line { display: none !important; }"
+          ]
         }
       }
     },
@@ -7148,6 +7171,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-30T13:41:29.158Z",
+  "buildinConfigUpdatedAt": "2024-04-30T15:24:15.617Z",
   "latestVersion": "1.4.12"
 }
