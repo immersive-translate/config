@@ -3101,14 +3101,6 @@
       ]
     },
     {
-      "id": "linkedinJobs",
-      "matches": "www.linkedin.com/jobs/*",
-      "selectors": [
-        "#job-details > span",
-        ".decorated-job-posting__details"
-      ]
-    },
-    {
       "id": "linkedinFeed",
       "matches": "https://linkedin.com/feed/*",
       "selectors": [
@@ -7155,6 +7147,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-29T18:59:49.642Z",
+  "buildinConfigUpdatedAt": "2024-04-30T08:16:31.009Z",
   "latestVersion": "1.4.12"
 }
