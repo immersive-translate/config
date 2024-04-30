@@ -6857,6 +6857,7 @@
         "xmlTextSelector": "sub",
         "loadingStyle": "bottom: 10%;",
         "injectedCss": [
+          ".iqp-player {direction: ltr !important;}",
           "#immersive-translate-quick-button-container {float: right; height: 100%;}"
         ],
         "quickButtonRule": {
@@ -7147,6 +7148,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-04-30T08:16:31.009Z",
+  "buildinConfigUpdatedAt": "2024-04-30T13:41:29.158Z",
   "latestVersion": "1.4.12"
 }
