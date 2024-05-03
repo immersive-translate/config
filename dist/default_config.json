@@ -926,7 +926,7 @@
     "isTranslateWhenServiceChanged": true,
     "excludeSelectorsRegexes": {
       "td,th": [
-        "^.{0,12}$",
+        "^.{0,8}$",
         "^[a-zA-Z0-9\\-_.]+$",
         "^[0-9,]+\\s+tokens$",
         "^Up to [a-zA-Z]*\\s+\\d*$",
@@ -7171,6 +7171,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-01T07:28:23.818Z",
+  "buildinConfigUpdatedAt": "2024-05-03T07:26:52.680Z",
   "latestVersion": "1.5.1"
 }
