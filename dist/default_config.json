@@ -1822,7 +1822,8 @@
         "[data-testid='HoverCard'] div[dir=auto]",
         "[data-testid='HoverCard'] span[dir=auto]",
         "[data-testid='HoverCard'] [role='dialog'] div[dir=ltr]",
-        "[data-testid='birdwatch-pivot'] div[dir=ltr]"
+        "[data-testid='birdwatch-pivot'] div[dir=ltr]",
+        "[data-testid='twitterArticleReadView']"
       ],
       "subtitleRule.add": {
         "type": "live",
@@ -7170,6 +7171,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-03T12:47:14.870Z",
+  "buildinConfigUpdatedAt": "2024-05-04T01:44:07.942Z",
   "latestVersion": "1.5.1"
 }
