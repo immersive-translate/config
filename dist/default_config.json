@@ -6740,6 +6740,7 @@
         "type": "ebutt",
         "subtitleUrlRegExp": "mtt/.*.xml",
         "loadingContainerSelector": ".zdfplayer-video-container",
+        "hookType": "fetch",
         "responseType": "document",
         "injectedCss": [
           "#immersive-translate-quick-button-container {display:inline-block;vertical-align:middle;margin-right:-16px;}"
@@ -6748,6 +6749,9 @@
           "appendSelector": ".right-controls-1FfJUp.svelte-inzdbf",
           "insertBeforeSelector": ".right-controls-1FfJUp.svelte-inzdbf button"
         }
+      },
+      "subtitleRule.add_v.[1.4.1]": {
+        "hookType": "fetch|xhr"
       }
     },
     {
@@ -7171,6 +7175,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-04T01:44:07.942Z",
+  "buildinConfigUpdatedAt": "2024-05-06T02:56:13.800Z",
   "latestVersion": "1.5.1"
 }
