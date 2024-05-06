@@ -603,6 +603,7 @@
       ],
       "disableWarning": false,
       "requestTimeout": 101000,
+      "randomPrefix": " ",
       "immediateTranslationTextCount": 5000,
       "translationDebounce": 300,
       "interval": 1050,
@@ -7187,6 +7188,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-06T07:53:14.023Z",
+  "buildinConfigUpdatedAt": "2024-05-06T13:44:52.942Z",
   "latestVersion": "1.5.1"
 }
