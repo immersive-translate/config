@@ -4355,6 +4355,18 @@
       "extraBlockSelectors": "font[face=verdana]"
     },
     {
+      "id": "im.zendesk",
+      "matches": "https://immersivetranslate.zendesk.com/agent/*",
+      "selectors": [
+        "[data-test-id*=subject]",
+        ".zd-comment",
+        ".title"
+      ],
+      "excludeSelectors.add": [
+        "blockquote"
+      ]
+    },
+    {
       "id": "zendesk",
       "matches": "https://*.zendesk.com/agent/*",
       "selectors": [
@@ -7175,6 +7187,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-06T02:56:13.800Z",
+  "buildinConfigUpdatedAt": "2024-05-06T07:53:14.023Z",
   "latestVersion": "1.5.1"
 }
