@@ -233,6 +233,7 @@
       "https://app.immersivetranslate.com/pdf-pro*",
       "*.immersivetranslate.com/download-subtitle*"
     ],
+    "guideBlockUrls": [],
     "clickType": "translate",
     "afterInstalledAt": "",
     "fixedPosition": "right"
@@ -245,6 +246,7 @@
       "https://app.immersivetranslate.com/pdf-pro*",
       "*.immersivetranslate.com/download-subtitle*"
     ],
+    "guideBlockUrls": [],
     "clickType": "translate",
     "afterInstalledAt": "2023-10-28",
     "fixedPosition": "right"
@@ -7197,6 +7199,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-09T09:17:14.879Z",
+  "buildinConfigUpdatedAt": "2024-05-09T10:18:05.348Z",
   "latestVersion": "1.5.1"
 }
