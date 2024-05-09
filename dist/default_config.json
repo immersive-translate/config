@@ -587,6 +587,13 @@
           "subtitlePrompt": "將下面 YAML 格式的視頻字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻譯為 {{to}}，並將翻譯結果寫在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必須補全每一個 {{imt_sub_trans_field}} 字段，保留每一個 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n開始翻譯：\n\n{{yaml}}"
         },
         {
+          "id": "auto2wyw",
+          "systemPrompt": "你是一个文言文翻译，请用文言文的方式进行翻译，尽可能贴近古风，只返回译文，不含任何解释。",
+          "prompt": "请翻译为文言文（避免解释原文）:\n\n{{text}}",
+          "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}",
+          "subtitlePrompt": "将下面 YAML 格式的视频字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必须补全每一个 {{imt_sub_trans_field}} 字段，保留每一个 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n开始翻译：\n\n{{yaml}}"
+        },
+        {
           "id": "auto2fr",
           "systemPrompt": "Vous êtes un moteur de traduction professionnel et authentique, vous ne retournez que le texte traduit, sans aucune explication",
           "prompt": "Veuillez traduire en {{to}} (évitez d'expliquer le texte original) :\n\n{{text}}",
@@ -7190,6 +7197,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-09T08:44:19.028Z",
+  "buildinConfigUpdatedAt": "2024-05-09T09:17:14.879Z",
   "latestVersion": "1.5.1"
 }
