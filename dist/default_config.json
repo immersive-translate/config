@@ -1652,6 +1652,7 @@
       ],
       "pageType": "downloadSubtitle",
       "allowThirdPartyTranslate": true,
+      "allowInnerInvoke": true,
       "isInjectVersion": true,
       "isInjectMeta": true,
       "waitForSelectorsTimeout": 1
@@ -1668,6 +1669,7 @@
         "https://ai.immersivetranslate.com",
         "https://test-ai.immersivetranslate.com"
       ],
+      "allowInnerInvoke": true,
       "isInjectVersion": true,
       "isInjectMeta": true,
       "waitForSelectorsTimeout": 1,
@@ -2402,7 +2404,7 @@
           "appendSelector": ".html5-video-player.playing-mode,.html5-video-player.paused-mode",
           "injectedCSS": [
             ".imt-caption-container {z-index:40;}",
-            ".imt-caption-window {margin-bottom: 2%}"
+            ".imt-caption-window {margin-bottom: 0; bottom: 2%;}"
           ],
           "injectedGlobalCSS": [
             ".caption-window {display: none;} ",
@@ -7188,6 +7190,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-06T13:44:52.942Z",
+  "buildinConfigUpdatedAt": "2024-05-09T08:44:19.028Z",
   "latestVersion": "1.5.1"
 }
