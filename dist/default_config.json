@@ -1667,6 +1667,15 @@
       "waitForSelectorsTimeout": 1
     },
     {
+      "id": "immersive-word",
+      "matches": "test-app.immersivetranslate.com/word/*",
+      "blockMinTextCount": 0,
+      "blockMinWordCount": 0,
+      "allowInnerInvoke": true,
+      "isInjectVersion": true,
+      "isInjectMeta": true
+    },
+    {
       "id": "immersive",
       "matches": [
         "https://immersivetranslate.com",
@@ -7199,6 +7208,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-10T06:57:44.080Z",
+  "buildinConfigUpdatedAt": "2024-05-10T12:55:29.066Z",
   "latestVersion": "1.5.2"
 }
