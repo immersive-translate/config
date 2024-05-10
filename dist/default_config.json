@@ -1669,8 +1669,8 @@
     {
       "id": "immersive-word",
       "matches": [
-        "test-app.immersivetranslate.com/word/*",
-        "app.immersivetranslate.com/word/*"
+        "test-app.immersivetranslate.com/word*",
+        "app.immersivetranslate.com/word*"
       ],
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
@@ -7211,6 +7211,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-10T12:56:14.529Z",
+  "buildinConfigUpdatedAt": "2024-05-10T13:40:34.983Z",
   "latestVersion": "1.5.2"
 }
