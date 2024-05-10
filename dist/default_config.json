@@ -6770,8 +6770,7 @@
           "#immersive-translate-quick-button-container {display:inline-block;vertical-align:middle;margin-right:-16px;}"
         ],
         "quickButtonRule": {
-          "appendSelector": ".right-controls-1FfJUp.svelte-inzdbf",
-          "insertBeforeSelector": ".right-controls-1FfJUp.svelte-inzdbf button"
+          "appendSelector": "[class^='right-controls-']"
         }
       },
       "subtitleRule.add_v.[1.4.1]": {
@@ -7199,6 +7198,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-09T14:41:22.750Z",
+  "buildinConfigUpdatedAt": "2024-05-10T06:53:34.498Z",
   "latestVersion": "1.5.2"
 }
