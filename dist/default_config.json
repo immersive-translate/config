@@ -7036,7 +7036,8 @@
         "actions.tldrnewsletter.com",
         "community.linkingyourthinking.com",
         "doc.qt.io",
-        "winaero.com"
+        "winaero.com",
+        "community.afforai.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -7198,6 +7199,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-10T06:53:34.498Z",
+  "buildinConfigUpdatedAt": "2024-05-10T06:57:44.080Z",
   "latestVersion": "1.5.2"
 }
