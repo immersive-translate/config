@@ -2832,7 +2832,8 @@
       "selectors": [
         "li[id^=chat-messages] div[id^=message-content]",
         "div[class^=headerText]",
-        "section[aria-label='Search Results'] div[id^=message-content]"
+        "section[aria-label='Search Results'] div[id^=message-content]",
+        "div[class^=messagesPopout]"
       ],
       "extraBlockSelectors": [
         "[class^='embedFieldValue']",
@@ -2840,9 +2841,9 @@
         "[data-list-item-id^='forum-channel-list'] div[class^='headerText']"
       ],
       "globalStyles": {
-        "div[class^=headerText]": "max-height: unset;",
-        "div[class^=message]": "max-height: unset;",
-        "div[class^=text]": "max-height: unset;",
+        "main div[class^=headerText]": "max-height: unset;",
+        "main div[class^=message]": "max-height: unset;",
+        "main div[class^=text]": "max-height: unset;",
         "h3[data-text-variant='heading-lg/semibold']": "-webkit-line-clamp: none;"
       },
       "detectParagraphLanguage": true,
@@ -7211,6 +7212,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-10T13:40:34.983Z",
+  "buildinConfigUpdatedAt": "2024-05-11T04:24:22.877Z",
   "latestVersion": "1.5.2"
 }
