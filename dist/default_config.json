@@ -1017,7 +1017,8 @@
     "searchEnhancementConfig": [],
     "injectedCss": [
       ".immersive-translate-target-wrapper[dir='rtl'] {text-align: right;}",
-      ".immersive-translate-target-wrapper[dir='rtl'] [data-immersive-translate-class-bak*='block-wrapper'] {display:block;}"
+      ".immersive-translate-target-wrapper[dir='rtl'] [data-immersive-translate-class-bak*='block-wrapper'] {display:block;}",
+      ".immersive-translate-target-wrapper {word-break: break-word;}"
     ],
     "isOnBoardingPage": false,
     "isEbook": false,
@@ -7212,6 +7213,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-11T04:24:22.877Z",
+  "buildinConfigUpdatedAt": "2024-05-13T09:55:51.244Z",
   "latestVersion": "1.5.2"
 }
