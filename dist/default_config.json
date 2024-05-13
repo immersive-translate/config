@@ -6491,6 +6491,9 @@
         "subtitleUrlRegExp": "\\.vtt",
         "videoPlayerSelector": "video",
         "loadingContainerSelector": "media-controller",
+        "injectedCss": [
+          "media-controller div.pointer-events-none .flex .flex span.text-textPrimary-onDark span {white-space: pre-line;}"
+        ],
         "quickButtonRule": {
           "appendSelector": ".pointer-events-none #media-control-bar",
           "insertBeforeSelector": ".pointer-events-none .media-volume-wrapper"
@@ -7213,6 +7216,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-13T09:55:51.244Z",
+  "buildinConfigUpdatedAt": "2024-05-13T15:55:30.416Z",
   "latestVersion": "1.5.2"
 }
