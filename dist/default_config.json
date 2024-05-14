@@ -541,30 +541,18 @@
       "env": {
         "imt_source_field": "text",
         "imt_trans_field": "text",
-        "imt_sub_source_field": "source",
-        "imt_sub_trans_field": "translation",
+        "imt_sub_source_field": "text",
+        "imt_sub_trans_field": "text",
         "imt_yaml_item": "- id: {{id}}\n  {{imt_source_field}}: {{text}}",
         "imt_subtitle_yaml_item": "- id: {{id}}\n  {{imt_sub_source_field}}: {{text}}",
-        "normal_result_yaml_example": "Example request:\n  - id: 1\n    {{imt_source_field}}: Source\nExample result:\n  - id: 1\n    {{imt_trans_field}}: Translation",
-        "subtitle_result_yaml_example": "Example request:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\nExample response:\n  - id: 1\n    {{imt_sub_trans_field}}: ...\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_trans_field}}: ...\n    {{imt_sub_source_field}}: ..."
+        "normal_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_source_field}}: Source\nOutput:\n  - id: 1\n    {{imt_trans_field}}: Translation\n</example>",
+        "subtitle_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\nOutput:\n  - id: 1\n    {{imt_sub_trans_field}}: ...\n  - id: 2\n    {{imt_sub_trans_field}}: ...\n</example>"
       },
       "systemPrompt": "You are a professional, authentic translation engine. You only return the translated text, without any explanations.",
-      "prompt": "Please translate into {{to}} (avoid explaining the original text):\n\n{{text}}",
-      "multiplePrompt": "Translate all {{imt_source_field}} field in the YAML-formatted text below into {{to}}, and write the translation result in the {{imt_trans_field}} field.\n\n{{normal_result_yaml_example}}\n\nStart:\n\n{{yaml}}",
-      "subtitlePrompt": "Translate all {{imt_sub_source_field}} field in the YAML-formatted video subtitle text below into {{to}}, and write the translation result in the {{imt_sub_trans_field}} field. Requirements:\n\n1. You must complete each {{imt_sub_trans_field}} field and retain each {{imt_sub_source_field}} field.\n2. Return parsable YAML:\n\n{{subtitle_result_yaml_example}}\n\nStart:\n\n{{yaml}}",
+      "prompt": "Translate the following text to {{to}}:\n\n<content>\n{{text}}\n</content>\n\nOutput the translation text directly, without wrapping <content> tag or include any additional information.",
+      "multiplePrompt": "You will be given a YAML formatted input containing entries with \"id\" and \"{{imt_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_source_field}}\" field into {{to}}. Write the translation back into the \"{{imt_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{normal_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
+      "subtitlePrompt": "You will be translating the \"{{imt_sub_source_field}}\" fields of a set of YAML-formatted video subtitles into {{to}}. Here are the original subtitles in YAML format:\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\nPlease translate ONLY the \"{{imt_sub_source_field}}\" field of each subtitle entry into Simplified Chinese. Do not translate or change the \"id\" fields.\n\nOutput the translated subtitles in the same YAML format, with each subtitle entry on its own line. The \"id\" fields should remain unchanged, and the \"{{imt_sub_source_field}}\" fields should contain your {{to}} translations.\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
       "langOverrides": [
-        {
-          "id": "auto2zh-CN",
-          "systemPrompt": "你是一个专业,地道的翻译引擎，你只返回译文，不含任何解释",
-          "prompt": "请翻译为 {{to}}（避免解释原文）:\n\n{{text}}",
-          "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文本翻译为 {{to}}，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}",
-          "subtitlePrompt": "将下面 YAML 格式的视频字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻译为 {{to}}，并将翻译结果写在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必须补全每一个 {{imt_sub_trans_field}} 字段，保留每一个 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n开始翻译：\n\n{{yaml}}"
-        },
-        {
-          "id": "zh-CN2auto",
-          "extends": "auto2zh-CN",
-          "prompt": "请翻译为{{to}}（避免解释原文）:\n\n{{text}}"
-        },
         {
           "id": "auto2zh-CN-NE",
           "extends": "auto2zh-CN",
@@ -582,13 +570,6 @@
           "prompt": "请将日语翻译成中文（避免解释原文）:\n\n{{text}}"
         },
         {
-          "id": "auto2zh-TW",
-          "systemPrompt": "你是一個專業,地道的翻譯引擎，你只返回譯文，不含任何解釋",
-          "prompt": "請翻譯為 {{to}}（避免解釋原文）:\n\n{{text}}",
-          "multiplePrompt": "將下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文本翻譯為 {{to}}，並將翻譯結果寫在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n開始翻譯:\n\n{{yaml}}",
-          "subtitlePrompt": "將下面 YAML 格式的視頻字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻譯為 {{to}}，並將翻譯結果寫在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必須補全每一個 {{imt_sub_trans_field}} 字段，保留每一個 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n開始翻譯：\n\n{{yaml}}"
-        },
-        {
           "id": "auto2wyw",
           "systemPrompt": "你是一个文言文翻译，请用文言文的方式进行翻译，尽可能贴近古风，只返回译文，不含任何解释。",
           "prompt": "请翻译为文言文（避免解释原文）:\n\n{{text}}",
@@ -596,19 +577,68 @@
           "subtitlePrompt": "将下面 YAML 格式的视频字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必须补全每一个 {{imt_sub_trans_field}} 字段，保留每一个 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n开始翻译：\n\n{{yaml}}"
         },
         {
-          "id": "auto2fr",
-          "systemPrompt": "Vous êtes un moteur de traduction professionnel et authentique, vous ne retournez que le texte traduit, sans aucune explication",
-          "prompt": "Veuillez traduire en {{to}} (évitez d'expliquer le texte original) :\n\n{{text}}",
-          "multiplePrompt": "Traduisez tout le texte des champs {{imt_source_field}} dans le format YAML ci-dessous en {{to}}, et écrivez le résultat de la traduction dans les champs {{imt_trans_field}}\n\n{{normal_result_yaml_example}}\n\nCommencez la traduction :\n\n{{yaml}}",
-          "subtitlePrompt": "Traduisez tout le texte des champs {{imt_sub_source_field}} dans le format YAML des sous-titres vidéo ci-dessous en {{to}}, et écrivez le résultat de la traduction dans les champs {{imt_sub_trans_field}}, avec les exigences suivantes :\n\n1. Vous devez compléter chaque champ {{imt_sub_trans_field}}, tout en conservant chaque champ {{imt_sub_source_field}}.\n2. Retournez du YAML analysable :\n\n{{subtitle_result_yaml_example}}\n\nCommencez la traduction :\n\n{{yaml}}"
+          "id": "auto2yyy",
+          "systemPrompt": "你是一个专业的、地道的翻译引擎。你只返回翻译的文本，不做任何解释。",
+          "prompt": "将以下文本翻译成 {{to}}：\n\n<text>\n{{text}}\n</text>\n\n直接输出翻译结果，不要添加任何额外的文本或标签。",
+          "multiplePrompt": "你将会得到一个包含 \"id\" 和 \"{{imt_source_field}}\" 字段的 YAML 格式输入。以下是输入内容：\n\n<yaml>\n{{yaml}}\n</yaml>\n\n对于 YAML 中的每个条目，将 \"{{imt_source_field}}\" 字段的内容翻译成 {{to}}。将翻译结果写回每个条目的 \"{{imt_source_field}}\" 字段。\n\n以下是期望的输出格式示例：\n\n{{normal_result_yaml_example}}\n\n请直接返回翻译后的 YAML，不要添加任何额外的标签。",
+          "subtitlePrompt": "你将会翻译一组 YAML 格式的视频字幕中的 \"{{imt_sub_source_field}}\" 字段为 {{to}}。以下是原始字幕的 YAML 格式：\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\n请仅翻译每个字幕条目中的 \"{{imt_sub_source_field}}\" 字段为简体中文。不要翻译或更改 \"id\" 字段。\n\n以相同的 YAML 格式输出翻译后的字幕，每个字幕条目各占一行。\"id\" 字段应保持不变，\"{{imt_sub_source_field}}\" 字段应包含你的 {{to}} 翻译结果。\n\n请直接返回翻译后的 YAML，不要添加任何额外的标签。"
+        },
+        {
+          "id": "auto2zzz",
+          "systemPrompt": "あなたはプロフェッショナルで正確な翻訳エンジンです。翻訳されたテキストのみを返し、説明は一切行いません。",
+          "prompt": "次のテキストを{{to}}に翻訳してください：\n\n<text>\n{{text}}\n</text>\n\n翻訳結果を直接出力し、追加のテキストやタグは一切含めないでください。",
+          "multiplePrompt": "\"id\"フィールドと \"{{imt_source_field}}\" フィールドを含むYAML形式の入力が与えられます。以下が入力です：\n\n<yaml>\n{{yaml}}\n</yaml>\n\nYAMLの各エントリについて、\"{{imt_source_field}}\" フィールドの内容を {{to}} に翻訳してください。そのエントリの \"{{imt_source_field}}\" フィールドに翻訳結果を書き戻してください。\n\n以下は期待される形式の例です：\n\n{{normal_result_yaml_example}}\n\n追加のタグを一切含めずに、翻訳されたYAMLを直接返してください。",
+          "subtitlePrompt": "YAML形式のビデオ字幕セットの \"{{imt_sub_source_field}}\" フィールドを {{to}} に翻訳します。以下がYAML形式の元の字幕です：\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\n各字幕エントリの \"{{imt_sub_source_field}}\" フィールドのみを簡体字中国語に翻訳してください。\"id\" フィールドは翻訳や変更をしないでください。\n\n翻訳された字幕を同じYAML形式で出力し、各字幕エントリを一行ずつにしてください。\"id\" フィールドは変更せず、\"{{imt_sub_source_field}}\" フィールドに {{to}} の翻訳を含めてください。\n\n追加のタグを一切含めずに、翻訳されたYAMLを直接返してください。"
+        },
+        {
+          "id": "auto2xxx",
+          "systemPrompt": "你是一個專業的、地道的翻譯引擎。你只返回翻譯的文本，不做任何解釋。",
+          "prompt": "將以下文本翻譯成 {{to}}：\n\n<text>\n{{text}}\n</text>\n\n直接輸出翻譯結果，不要添加任何額外的文本或標籤。",
+          "multiplePrompt": "你將會得到一個包含 \"id\" 和 \"{{imt_source_field}}\" 欄位的 YAML 格式輸入。以下是輸入內容：\n\n<yaml>\n{{yaml}}\n</yaml>\n\n對於 YAML 中的每個條目，將 \"{{imt_source_field}}\" 欄位的內容翻譯成 {{to}}。將翻譯結果寫回每個條目的 \"{{imt_source_field}}\" 欄位。\n\n以下是期望的格式範例：\n\n{{normal_result_yaml_example}}\n\n請直接返回翻譯後的 YAML，不要添加任何額外的標籤。",
+          "subtitlePrompt": "你將會翻譯一組 YAML 格式的視頻字幕中的 \"{{imt_sub_source_field}}\" 欄位為 {{to}}。以下是原始字幕的 YAML 格式：\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\n請僅翻譯每個字幕條目中的 \"{{imt_sub_source_field}}\" 欄位為簡體中文。不要翻譯或更改 \"id\" 欄位。\n\n以相同的 YAML 格式輸出翻譯後的字幕，每個字幕條目各佔一行。\"id\" 欄位應保持不變，\"{{imt_sub_source_field}}\" 欄位應包含你的 {{to}} 翻譯結果。\n\n請直接返回翻譯後的 YAML，不要添加任何額外的標籤。"
         }
       ]
     },
     "gemini": {
+      "visible": true,
       "placeholderDelimiters": [
         "{{",
         "}}",
         "code"
+      ],
+      "glossaries": [
+        {
+          "k": "open.{0,3}ai",
+          "v": ""
+        },
+        {
+          "k": "GPT\\d?",
+          "v": ""
+        },
+        {
+          "k": "gpt.{0,4}turbo",
+          "v": ""
+        },
+        {
+          "k": "gpt.{0,4}o",
+          "v": ""
+        },
+        {
+          "k": "chat.{0,3}gpt",
+          "v": ""
+        },
+        {
+          "k": "palm",
+          "v": ""
+        },
+        {
+          "k": "baidu",
+          "v": ""
+        },
+        {
+          "k": "Ernie Bot",
+          "v": ""
+        }
       ],
       "disableWarning": false,
       "requestTimeout": 101000,
@@ -619,9 +649,11 @@
       "limit": 0.8,
       "prompt": "You are a professional,authentic translation engine,only returns translations.\nFor example:\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\nThe translation is:\n<Start>\n你好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\nTranslate the content to {{to}} Language:\n\n<Start>{{text}}<End>",
       "model": "gemini-1.0-pro-latest",
-      "maxTextGroupLengthPerRequest": 10,
+      "proModel": "gemini-1.0-pro-002",
+      "proLimit": 10,
+      "maxTextGroupLengthPerRequest": 3,
       "maxTextLengthPerRequest": 1200,
-      "maxTextGroupLengthPerRequestForSubtitle": 5,
+      "maxTextGroupLengthPerRequestForSubtitle": 3,
       "translationTextSeparator": "\n<Keep This Symbol>",
       "bodyConfigs": {
         "generationConfig": {
@@ -657,6 +689,7 @@
       "assistantId": "common"
     },
     "claude": {
+      "visible": true,
       "extends": "ai",
       "placeholderDelimiters": [
         "{{",
@@ -670,12 +703,14 @@
       "limit": 0.3,
       "maxTextGroupLengthPerRequest": 20,
       "maxTextLengthPerRequest": 2000,
-      "maxTextGroupLengthPerRequestForSubtitle": 5,
+      "maxTextGroupLengthPerRequestForSubtitle": 3,
       "bodyConfigs": {
         "max_tokens": 2048
       },
       "translationTextSeparator": "\n\n%%\n\n",
-      "assistantId": "common"
+      "assistantId": "common",
+      "proModel": "claude-3-haiku-20240307",
+      "proLimit": 10
     },
     "openai": {
       "visible": true,
@@ -1053,6 +1088,10 @@
       "translationPosition": "bottom",
       "textShadowType": "none",
       "translationFontSize": "100",
+      "sourceFontFamily": "none",
+      "translationFontFamily": "none",
+      "sourceFontWeight": "400",
+      "translationFontWeight": "400",
       "translateGroupCount": 5,
       "autoSwitchSubtitleWithSameLanguage": true,
       "youtubeAutoEnableSubtitleAfterInstalledAt": "2024-04-25",
@@ -1060,6 +1099,80 @@
         1,
         3,
         20
+      ],
+      "fonts": [
+        "Microsoft YaHei",
+        "SimSun",
+        "NSimSun",
+        "SimHei",
+        "Microsoft JhengHei",
+        "KaiTi",
+        "FangSong",
+        "PingFang SC",
+        "STHeiti",
+        "STKaiti",
+        "STSong",
+        "STFangsong",
+        "STZhongsong",
+        "STHupo",
+        "STXinwei",
+        "STLiti",
+        "STXingkai",
+        "Hiragino Sans GB",
+        "Lantinghei SC",
+        "Hanzipen SC",
+        "Hannotate SC",
+        "Songti SC",
+        "Wawati SC",
+        "Weibei SC",
+        "Xingkai SC",
+        "Yapi SC",
+        "Yuanti SC",
+        "Arial Unicode MS",
+        "MingLiU-ExtB",
+        "Malgun Gothic",
+        "Arial",
+        "Calibri",
+        "Cambria",
+        "Candara",
+        "Consolas",
+        "Constantia",
+        "Corbel",
+        "Courier New",
+        "Georgia",
+        "Lucida Console",
+        "MingLiU",
+        "PMingLiU",
+        "MingLiU_HKSCS",
+        "Meiryo",
+        "MS Gothic",
+        "MS PGothic",
+        "MS UI Gothic",
+        "MS Mincho",
+        "MS PMincho",
+        "Segoe UI",
+        "Segoe UI Symbol",
+        "Tahoma",
+        "Times New Roman",
+        "Trebuchet MS",
+        "Verdana",
+        "Gulim",
+        "Dotum",
+        "Batang",
+        "Gungsuh",
+        "San Francisco",
+        "Helvetica Neue",
+        "Hiragino Mincho ProN",
+        "Hiragino Kaku Gothic ProN",
+        "Yu Gothic",
+        "Yu Mincho",
+        "Geeza Pro",
+        "Al Nile",
+        "Tehran",
+        "Devanagari MT",
+        "Kohinoor Devanagari",
+        "Apple SD Gothic Neo",
+        "Nanum Gothic"
       ]
     },
     "bodyRule": {
@@ -1093,6 +1206,9 @@
     "isPdf": false,
     "pdfUrlExtractRule": {},
     "isTransformPreTagNewLine": false,
+    "likePreSelectors": [
+      "pre"
+    ],
     "urlChangeDelay": 50,
     "mutationChangeDelay": 10,
     "mainFrameMinTextCount": 50,
@@ -1132,6 +1248,7 @@
     "asideMaxTextCountPerParagraph": 67,
     "asideMaxWordCountPerParagraph": 12,
     "lineBreakMaxTextCount": 0,
+    "lineBreakRegexStr": "etc\\.|Mr\\.|Mrs\\.|Ms\\.|Dr\\.|Prof\\.|Sr\\.|Jr\\.|U\\.S\\.|U\\.K\\.|Co\\.|Inc\\.|Ltd\\.|St\\.",
     "globalAttributes": {},
     "inputTutorialsText": "",
     "inputTutorialsSelectors": [],
@@ -1749,6 +1866,14 @@
       ],
       "isTransformPreTagNewLine": true,
       "longBuildPageLength": 1000
+    },
+    {
+      "id": "fenoxo",
+      "matches": "www.fenoxo.com",
+      "likePreSelectors.add": [
+        ".mainText"
+      ],
+      "isTransformPreTagNewLine": true
     },
     {
       "id": "wikipedia",
@@ -7208,6 +7333,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-14T01:35:26.072Z",
+  "buildinConfigUpdatedAt": "2024-05-14T12:31:10.773Z",
   "latestVersion": "1.5.2"
 }
