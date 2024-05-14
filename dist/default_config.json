@@ -2232,18 +2232,10 @@
         "div[dir=auto][class]",
         "span[lang]"
       ],
-      "atomicBlockSelectors": [
-        "div[dir=auto][style]",
-        "div[dir=auto][class]",
-        "span[lang]"
-      ],
       "insertPosition": "afterend",
       "preWhitespaceDetectedTags": [
         "DIV",
         "SPAN"
-      ],
-      "extraBlockSelectors": [
-        "span.x1vvkbs"
       ],
       "excludeSelectors": [
         "[role=button]"
@@ -7216,6 +7208,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-13T15:55:30.416Z",
+  "buildinConfigUpdatedAt": "2024-05-14T01:35:26.072Z",
   "latestVersion": "1.5.2"
 }
