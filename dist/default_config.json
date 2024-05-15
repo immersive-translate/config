@@ -2016,6 +2016,13 @@
       }
     },
     {
+      "id": "chatter.hume.ai",
+      "matches": "chatter.hume.ai",
+      "extraInlineSelectors.add": [
+        "[class*=' flex-wrap'] > span"
+      ]
+    },
+    {
       "id": "threads",
       "matches": "www.threads.net",
       "selectors": [
@@ -7333,6 +7340,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-15T02:22:28.877Z",
+  "buildinConfigUpdatedAt": "2024-05-15T05:49:41.802Z",
   "latestVersion": "1.5.4"
 }
