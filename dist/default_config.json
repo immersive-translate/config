@@ -789,7 +789,7 @@
           "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}"
         }
       ],
-      "maxTextGroupLengthPerRequestForSubtitle": 5,
+      "maxTextGroupLengthPerRequestForSubtitle": 3,
       "translationTextSeparator": "\n\n%%\n\n",
       "newlinePlaceholderDelimiters": [
         "\n<br>\n"
@@ -7340,6 +7340,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-15T14:57:43.000Z",
+  "buildinConfigUpdatedAt": "2024-05-15T18:29:06.763Z",
   "latestVersion": "1.5.5"
 }
