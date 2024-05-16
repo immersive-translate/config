@@ -1806,6 +1806,7 @@
         "https://immersivetranslate.com",
         "https://test.immersivetranslate.com",
         "https://onboarding.immersivetranslate.com",
+        "https://test-onboarding.immersivetranslate.com",
         "https://app.immersivetranslate.com",
         "https://test-app.immersivetranslate.com",
         "http://localhost:38001",
@@ -7357,6 +7358,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-16T13:00:09.978Z",
+  "buildinConfigUpdatedAt": "2024-05-16T14:32:40.180Z",
   "latestVersion": "1.5.5"
 }
