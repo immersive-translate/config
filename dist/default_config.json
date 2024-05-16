@@ -7342,8 +7342,21 @@
       "injectedCss.add": [
         "body{overflow-y:scroll!important;}"
       ]
+    },
+    {
+      "id": "pubs.acs.org",
+      "matches": "pubs.acs.org",
+      "mainFrameSelector": [
+        ".article_abstract",
+        ".article_header-title",
+        "[property=\"articleBody\"]"
+      ],
+      "excludeSelectors.add": [
+        ".articleHeaderDropzone2",
+        "header"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-16T09:09:34.143Z",
+  "buildinConfigUpdatedAt": "2024-05-16T13:00:09.978Z",
   "latestVersion": "1.5.5"
 }
