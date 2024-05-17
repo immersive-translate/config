@@ -8,7 +8,9 @@
     "matches": [
       "www.tumblr.com",
       "twitter.com",
+      "x.com",
       "*.twitter.com",
+      "*.x.com",
       "medium.com",
       "*.medium.com",
       "www.facebook.com",
@@ -176,6 +178,7 @@
   "autoSelectTargetLanguageAfterInstalledAt": "2024-01-04",
   "defaultAlwaysTranslatedUrls": [
     "twitter.com",
+    "x.com",
     "www.reddit.com",
     "www.kadaza.com",
     "en.wikipedia.org",
@@ -861,8 +864,10 @@
       "www.reddit.com",
       "old.reddit.com",
       "twitter.com",
+      "x.com",
       "www.tumblr.com",
       "*.twitter.com",
+      "*.x.com",
       "medium.com",
       "*.medium.com",
       "github.com",
@@ -1919,12 +1924,20 @@
         "mobile.twitter.com",
         "tweetdeck.twitter.com",
         "pro.twitter.com",
-        "https://platform.twitter.com/embed*"
+        "https://platform.twitter.com/embed*",
+        "x.com",
+        "mobile.x.com",
+        "tweetdeck.x.com",
+        "pro.x.com",
+        "https://platform.x.com/embed*"
       ],
       "excludeMatches": [
         "https://twitter.com/i/premium_sign_up",
         "https://twitter.com/settings/subscription",
-        "https://twitter.com/jobs/*"
+        "https://twitter.com/jobs/*",
+        "https://x.com/i/premium_sign_up",
+        "https://x.com/settings/subscription",
+        "https://x.com/jobs/*"
       ],
       "additionalStayOriginalSelectors": [
         "[data-testid=\"tweetText\"] a",
@@ -7357,6 +7370,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-16T23:17:35.614Z",
+  "buildinConfigUpdatedAt": "2024-05-17T07:11:37.764Z",
   "latestVersion": "1.5.5"
 }
