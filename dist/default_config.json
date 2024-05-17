@@ -1806,11 +1806,24 @@
       "isInjectMeta": true
     },
     {
+      "id": "onboarding",
+      "matches": [
+        "https://onboarding.immersivetranslate.com",
+        "https://test-onboarding.immersivetranslate.com"
+      ],
+      "allowInnerInvoke": true,
+      "isInjectVersion": true,
+      "isInjectMeta": true,
+      "waitForSelectorsTimeout": 1,
+      "longBuildPageLength": 1000,
+      "blockMinTextCount": 0,
+      "blockMinWordCount": 0
+    },
+    {
       "id": "immersive",
       "matches": [
         "https://immersivetranslate.com",
         "https://test.immersivetranslate.com",
-        "https://onboarding.immersivetranslate.com",
         "https://app.immersivetranslate.com",
         "https://test-app.immersivetranslate.com",
         "http://localhost:38001",
@@ -7370,6 +7383,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-17T07:11:37.764Z",
+  "buildinConfigUpdatedAt": "2024-05-17T08:04:24.288Z",
   "latestVersion": "1.5.5"
 }
