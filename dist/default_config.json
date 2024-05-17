@@ -45,7 +45,7 @@
   "interval": 3600000,
   "beta": false,
   "cache": true,
-  "enableAiAssistant": false,
+  "enableAiAssistant": true,
   "proOpenaiModels": [
     "gpt-3.5-turbo",
     "gpt-3.5-turbo-0125",
@@ -7390,6 +7390,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-17T10:09:01.700Z",
+  "buildinConfigUpdatedAt": "2024-05-17T13:46:20.149Z",
   "latestVersion": "1.5.5"
 }
