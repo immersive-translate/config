@@ -4152,7 +4152,10 @@
     },
     {
       "id": "chatOpenai",
-      "matches": "chat.openai.com",
+      "matches": [
+        "chat.openai.com",
+        "chatgpt.com"
+      ],
       "excludeSelectors": [
         "div.absolute.bottom-0.left-0.w-full",
         "h1",
@@ -7383,6 +7386,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-17T08:04:24.288Z",
+  "buildinConfigUpdatedAt": "2024-05-17T09:29:32.579Z",
   "latestVersion": "1.5.5"
 }
