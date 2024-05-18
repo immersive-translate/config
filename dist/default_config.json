@@ -3387,6 +3387,16 @@
     {
       "id": "lesswrong",
       "matches": "www.lesswrong.com",
+      "excludeSelectors.add": [
+        ".PostsPagePostHeader-authorAndSecondaryInfo",
+        ".Answer-answerHeader",
+        "time",
+        ".CommentsItemMeta-root",
+        ".CommentsListMeta-root",
+        ".CommentsTableOfContents-tocPostedAt",
+        ".CommentsTableOfContents-commentAuthor",
+        ".CommentBottom-bottom"
+      ],
       "extraBlockSelectors": [
         "span.commentOnSelection"
       ]
@@ -7390,6 +7400,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-17T21:05:42.973Z",
+  "buildinConfigUpdatedAt": "2024-05-18T06:15:27.286Z",
   "latestVersion": "1.5.5"
 }
