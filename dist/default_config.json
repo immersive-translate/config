@@ -7225,7 +7225,8 @@
         "community.linkingyourthinking.com",
         "doc.qt.io",
         "winaero.com",
-        "community.afforai.com"
+        "community.afforai.com",
+        "www.perplexity.ai"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -7400,6 +7401,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-18T06:15:27.286Z",
+  "buildinConfigUpdatedAt": "2024-05-18T12:40:40.120Z",
   "latestVersion": "1.5.5"
 }
