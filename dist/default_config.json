@@ -2891,7 +2891,8 @@
       ],
       "atomicBlockSelectors": [
         "h3 a[data-clk]"
-      ]
+      ],
+      "detectParagraphLanguage": true
     },
     {
       "id": "googleMail",
@@ -7401,6 +7402,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-18T12:40:40.120Z",
+  "buildinConfigUpdatedAt": "2024-05-20T03:07:24.398Z",
   "latestVersion": "1.5.5"
 }
