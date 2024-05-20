@@ -4118,7 +4118,11 @@
       "additionalExcludeSelectors": [
         "header.fandom-community-header",
         "div.ph-registration-buttons"
-      ]
+      ],
+      "extraBlockSelectors": [
+        ".mp-nav a"
+      ],
+      "isTransformPreTagNewLine": true
     },
     {
       "id": "huggingface",
@@ -7402,6 +7406,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-20T03:07:24.398Z",
+  "buildinConfigUpdatedAt": "2024-05-20T14:32:14.475Z",
   "latestVersion": "1.5.5"
 }
