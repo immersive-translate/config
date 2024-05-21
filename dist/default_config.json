@@ -2049,6 +2049,22 @@
       }
     },
     {
+      "id": "hoyolab",
+      "matches": "www.hoyolab.com",
+      "excludeTags.remove": [
+        "PRE"
+      ],
+      "excludeSelectors": [
+        ".reply-card__nickname",
+        ".mhy-user-card__name",
+        ".mhy-account-title__name"
+      ],
+      "extraBlockSelectors": [
+        ".reply-card__content__detail p:first-child",
+        ".reply-card-inner-reply__content > p:first-child"
+      ]
+    },
+    {
       "id": "chatter.hume.ai",
       "matches": "chatter.hume.ai",
       "extraInlineSelectors.add": [
@@ -7405,6 +7421,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-21T06:42:44.954Z",
+  "buildinConfigUpdatedAt": "2024-05-21T09:40:24.053Z",
   "latestVersion": "1.5.5"
 }
