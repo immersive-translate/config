@@ -992,6 +992,10 @@
         "^.{0,12}$"
       ]
     },
+    "skipBuildContainerSelectors": [
+      "br",
+      "hr"
+    ],
     "glossaries": [
       {
         "k": "LLM",
@@ -1362,7 +1366,6 @@
       "NOSCRIPT",
       "BUTTON",
       "BASE",
-      "HR",
       "PRE",
       "KBD",
       "WBR",
@@ -7421,6 +7424,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-21T09:40:24.053Z",
+  "buildinConfigUpdatedAt": "2024-05-21T15:05:49.636Z",
   "latestVersion": "1.5.5"
 }
