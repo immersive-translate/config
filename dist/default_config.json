@@ -557,7 +557,7 @@
       "systemPrompt": "You are a professional, authentic machine translation engine. You only return the translated text, without any explanations.",
       "prompt": "Translate the following text into {{to}}, output translation text directly without any extra information:\n\n{{text}}",
       "multiplePrompt": "You will be given a YAML formatted input containing entries with \"id\" and \"{{imt_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_source_field}}\" field into {{to}}. Write the translation back into the \"{{imt_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{normal_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
-      "subtitlePrompt": "You will be translating all \"{{imt_sub_source_field}}\" fields of a set of YAML-formatted video subtitles into {{to}}. Here are the original subtitles in YAML format:\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\nPlease translate ONLY the \"{{imt_sub_source_field}}\" field of each subtitle entry into Simplified Chinese. Do not translate or change the \"id\" fields.\n\nOutput the translated subtitles in the same YAML format, with each subtitle entry on its own line. The \"id\" fields should remain unchanged, and the \"{{imt_sub_source_field}}\" fields should contain your {{to}} translations.\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
+      "subtitlePrompt": "You will be translating all \"{{imt_sub_source_field}}\" fields of a set of YAML-formatted video subtitles into {{to}}. Here are the original subtitles in YAML format:\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\nPlease translate ONLY the \"{{imt_sub_source_field}}\" field of each subtitle entry into {{to}}. Do not translate or change the \"id\" fields.\n\nOutput the translated subtitles in the same YAML format, with each subtitle entry on its own line. The \"id\" fields should remain unchanged, and the \"{{imt_sub_source_field}}\" fields should contain your {{to}} translations.\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
       "langOverrides": [
         {
           "id": "auto2zh-CN-NE",
@@ -7405,6 +7405,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-21T03:00:36.834Z",
+  "buildinConfigUpdatedAt": "2024-05-21T06:42:44.954Z",
   "latestVersion": "1.5.5"
 }
