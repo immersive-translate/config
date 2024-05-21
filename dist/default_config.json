@@ -224,7 +224,6 @@
   "inputTrailingTriggerKeyTimeout": 200,
   "inputTrailingMobileTriggerKeyTimeout": 300,
   "mutationBlockUrls": [
-    "*.feishu.cn",
     "*.larkoffice.com",
     "*.larksuite.com"
   ],
@@ -7406,6 +7405,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-20T14:32:14.475Z",
+  "buildinConfigUpdatedAt": "2024-05-21T03:00:36.834Z",
   "latestVersion": "1.5.5"
 }
