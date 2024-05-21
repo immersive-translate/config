@@ -7422,8 +7422,19 @@
         ".articleHeaderDropzone2",
         "header"
       ]
+    },
+    {
+      "id": "typeset.io",
+      "matches": "typeset.io",
+      "additionalStayOriginalSelectors.remove": [
+        "span.notranslate"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-21T15:05:49.636Z",
+  "buildinConfigUpdatedAt": "2024-05-21T15:38:43.204Z",
   "latestVersion": "1.5.5"
 }
