@@ -1771,13 +1771,21 @@
       "injectedCss.add": [
         ".immersive-translate-target-wrapper {white-space: unset;}"
       ],
-      "excludeSelectorsRegexes.add": {
-        "td": [
-          "^.{0,12}$"
+      "excludeSelectorsRegexes": {
+        "[class='inline-tabular'] > table > tbody > tr > td": [
+          "^[A-Z0-9\\-_.]{0,10}$",
+          "^[0-9,]+\\s+tokens$",
+          "^Up to [a-zA-Z]*\\s+\\d*$",
+          "^(/[A-Z0-9\\-_.]+)+$"
         ]
       },
       "excludeSelectors.remove.[1.4.8]": [
         "table"
+      ],
+      "extraInlineSelectors.add": [
+        ".sub-table",
+        ".sub-table td",
+        ".sub-table tr"
       ],
       "detectTextBufferLength": 80,
       "detectParagraphLanguage": true,
@@ -7435,6 +7443,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-22T07:26:25.728Z",
+  "buildinConfigUpdatedAt": "2024-05-22T08:25:12.997Z",
   "latestVersion": "1.5.6"
 }
