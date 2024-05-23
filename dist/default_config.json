@@ -6163,7 +6163,7 @@
         ".vjs-text-track-display *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
+        "type": "subsrt",
         "subtitleUrlRegExp": ".*subtitles.*\\.vtt",
         "quickButtonRule": {
           "appendSelector": ".controlBar-wrapper .right-wrapper",
@@ -7443,6 +7443,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-22T08:25:12.997Z",
+  "buildinConfigUpdatedAt": "2024-05-23T15:23:22.380Z",
   "latestVersion": "1.5.6"
 }
