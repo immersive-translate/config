@@ -6055,9 +6055,9 @@
         "www.khanacademy.org"
       ],
       "subtitleRule.add": {
-        "type": "khanacademy",
-        "subtitleUrlRegExp": "GetSubtitles",
-        "hookType": "fetch"
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".ka-video-player-container"
       },
       "stayOriginalSelectors.add": [
         ".mathjax-wrapper"
@@ -7443,6 +7443,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-23T15:23:22.380Z",
+  "buildinConfigUpdatedAt": "2024-05-24T13:13:24.949Z",
   "latestVersion": "1.5.6"
 }
