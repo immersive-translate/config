@@ -7441,8 +7441,17 @@
         ".notranslate",
         "[translate=no]"
       ]
+    },
+    {
+      "id": "transformer-circuits.pub",
+      "matches": [
+        "transformer-circuits.pub"
+      ],
+      "stayOriginalSelectors.add": [
+        "d-cite"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-24T13:13:24.949Z",
+  "buildinConfigUpdatedAt": "2024-05-24T15:35:55.112Z",
   "latestVersion": "1.5.6"
 }
