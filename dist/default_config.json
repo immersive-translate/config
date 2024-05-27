@@ -7024,7 +7024,7 @@
       ],
       "subtitleRule.add": {
         "type": "disneyplus",
-        "subtitleUrlRegExp": "\\.vtt$"
+        "subtitleUrlRegExp": "\\.vtt"
       }
     },
     {
@@ -7452,6 +7452,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-24T15:35:55.112Z",
+  "buildinConfigUpdatedAt": "2024-05-27T14:49:23.302Z",
   "latestVersion": "1.5.6"
 }
