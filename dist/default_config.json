@@ -156,20 +156,6 @@
   "enableFloatShare": true,
   "isShowInputTranslationConsent": true,
   "enableShowFloatingBallGuide": true,
-  "sentryConfig": {
-    "enable": false,
-    "contentInitTime": "init",
-    "sampleRate": 0.25,
-    "initOptions": {
-      "ignoreErrors": [
-        "Extension context invalidated.",
-        "ResizeObserver loop completed with undelivered notifications.",
-        "ResizeObserver loop limit exceeded",
-        "Non-Error promise rejection captured with keys: currentTarget, isTrusted, target, type"
-      ]
-    }
-  },
-  "enableSentryReport": true,
   "verifyRequestTimeout": 5000,
   "inactiveDays": 21,
   "enableInputTranslationWithoutTriggerKey": true,
@@ -1774,6 +1760,14 @@
       "excludeSelectorsRegexes": {
         "[class='inline-tabular'] > table > tbody > tr > td": [
           "^[A-Z0-9\\-_.]{0,10}$",
+          "^[0-9,]+\\s+tokens$",
+          "^Up to [a-zA-Z]*\\s+\\d*$",
+          "^(/[A-Z0-9\\-_.]+)+$"
+        ]
+      },
+      "excludeSelectorsRegexes.add_v.[1.5.7]": {
+        "[class='inline-tabular'] > table > tbody > tr > td": [
+          "/^[A-Z0-9\\-_.]+$/g",
           "^[0-9,]+\\s+tokens$",
           "^Up to [a-zA-Z]*\\s+\\d*$",
           "^(/[A-Z0-9\\-_.]+)+$"
@@ -6165,6 +6159,7 @@
       "subtitleRule.add": {
         "type": "subsrt",
         "subtitleUrlRegExp": ".*subtitles.*\\.vtt",
+        "videoPlayerSelector": "video",
         "quickButtonRule": {
           "appendSelector": ".controlBar-wrapper .right-wrapper",
           "insertBeforeSelector": ".vjs-volume-panel"
@@ -6549,6 +6544,7 @@
         ".player *"
       ],
       "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
         "type": "subsrt",
         "subsrtFormat": "srt",
@@ -6557,6 +6553,31 @@
         "quickButtonRule": {
           "appendSelector": ".controls_bottom_right",
           "insertBeforeSelector": ".subtitles_toggle_button"
+        }
+      }
+    },
+    {
+      "id": "crunchyroll",
+      "matches": "*.crunchyroll.com",
+      "excludeSelectors.add": [
+        "#vilos"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#vilos *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "fetch",
+        "loadingContainerSelector": "#vilos",
+        "subtitleUrlRegExp": ".*\\.vtt",
+        "attachRule": {
+          "appendSelector": "#vilos",
+          "injectedGlobalCSS": [
+            ".textTrackLayer{display: none;}"
+          ]
         }
       }
     },
@@ -7461,6 +7482,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-28T06:27:11.912Z",
+  "buildinConfigUpdatedAt": "2024-05-28T13:42:05.917Z",
   "latestVersion": "1.5.6"
 }
