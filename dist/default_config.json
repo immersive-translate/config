@@ -7450,8 +7450,17 @@
       "stayOriginalSelectors.add": [
         "d-cite"
       ]
+    },
+    {
+      "id": "cpaaustralia",
+      "matches": [
+        "*.cpaaustralia.com.*"
+      ],
+      "injectedCss": [
+        "li.expanded > div{ overflow:scroll; }"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-27T14:49:23.302Z",
+  "buildinConfigUpdatedAt": "2024-05-28T06:27:11.912Z",
   "latestVersion": "1.5.6"
 }
