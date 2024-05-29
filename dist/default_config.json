@@ -3138,10 +3138,12 @@
       ],
       "excludeSelectors": [
         ".learning-card-meta",
-        ".vjs-text-track-display"
+        ".vjs-text-track-display",
+        "#immersive-translate-caption-window"
       ],
       "mutationExcludeSelectors.add": [
-        ".vjs-text-track-display *"
+        ".vjs-text-track-display *",
+        "#immersive-translate-caption-window *"
       ],
       "subtitleRule.add": {
         "type": "webvtt",
@@ -6463,10 +6465,12 @@
         "https://*/*sub.info=*fmoviesz.to*"
       ],
       "excludeSelectors.add": [
-        ".jw-wrapper"
+        ".jw-wrapper",
+        "#immersive-translate-caption-window"
       ],
       "mutationExcludeSelectors.add": [
-        ".jw-wrapper *"
+        ".jw-wrapper *",
+        "#immersive-translate-caption-window *"
       ],
       "subtitleRule.add": {
         "type": "multi_attach_vtt",
@@ -6493,10 +6497,12 @@
         "aniwatch.to"
       ],
       "excludeSelectors.add": [
-        ".jw-wrapper"
+        ".jw-wrapper",
+        "#immersive-translate-caption-window"
       ],
       "mutationExcludeSelectors.add": [
-        ".jw-wrapper *"
+        ".jw-wrapper *",
+        "#immersive-translate-caption-window *"
       ],
       "subtitleRule.add": {
         "type": "multi_attach_vtt",
@@ -6564,10 +6570,12 @@
       "id": "crunchyroll",
       "matches": "*.crunchyroll.com",
       "excludeSelectors.add": [
-        "#vilos"
+        "#vilos",
+        "#immersive-translate-caption-window"
       ],
       "mutationExcludeSelectors.add": [
-        "#vilos *"
+        "#vilos *",
+        "#immersive-translate-caption-window *"
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
@@ -6595,6 +6603,12 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "excludeSelectors.add": [
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#immersive-translate-caption-window *"
+      ],
       "subtitleRule.add": {
         "type": "subsrt",
         "subsrtFormat": "vtt",
@@ -6866,6 +6880,12 @@
       "id": "comsol",
       "matches": [
         "www.comsol.com/"
+      ],
+      "excludeSelectors.add": [
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#immersive-translate-caption-window *"
       ],
       "subtitleRule.add": {
         "type": "text_track",
@@ -7513,6 +7533,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-29T16:18:41.582Z",
+  "buildinConfigUpdatedAt": "2024-05-29T16:23:23.822Z",
   "latestVersion": "1.5.7"
 }
