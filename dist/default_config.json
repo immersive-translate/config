@@ -7531,8 +7531,21 @@
       "injectedCss": [
         "li.expanded > div{ overflow:scroll; }"
       ]
+    },
+    {
+      "id": "archiveofourown",
+      "matches": [
+        "archiveofourown.org"
+      ],
+      "excludeSelectors.add": [
+        ".meta",
+        ".navigation",
+        ".byline",
+        "#add_comment",
+        "#footer"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-29T16:23:23.822Z",
+  "buildinConfigUpdatedAt": "2024-05-29T18:38:42.164Z",
   "latestVersion": "1.5.7"
 }
