@@ -149,7 +149,8 @@
     "https://piped.video/[Piped.Video]",
     "https://southampton.cloud.panopto.eu[University of Southampton]",
     "https://vk.com/video[VK Video]",
-    "https://www.comsol.com/video[COMSOL]"
+    "https://www.comsol.com/video[COMSOL]",
+    "https://themotionmagic.com/[The Motion Magic]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -6585,6 +6586,33 @@
       }
     },
     {
+      "id": "themotionmagic",
+      "matches": [
+        "player.hotmart.com"
+      ],
+      "selectorMatches": [
+        "iframe[src*='player.hotmart.com']"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "videoPlayerSelector": ".vjs-tech",
+        "loadingContainerSelector": "[role=\"main\"]",
+        "subtitleUrlRegExp": ".*\\.vtt",
+        "quickButtonRule": {
+          "appendSelector": ".styles_columns__S4HQf:last-child"
+        },
+        "attachRule": {
+          "appendSelector": "[role=\"main\"]",
+          "injectedGlobalCSS": [
+            "[data-testid=\"subtitle-text\"]{display: none;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "movie-web",
       "matches": [
         "movie-web.app/media*",
@@ -7485,6 +7513,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-29T09:19:20.358Z",
+  "buildinConfigUpdatedAt": "2024-05-29T16:18:41.582Z",
   "latestVersion": "1.5.7"
 }
