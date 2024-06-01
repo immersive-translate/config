@@ -1667,13 +1667,6 @@
       }
     },
     {
-      "id": "common.pdfWebPage",
-      "waitForSelectorsTimeout": 1,
-      "selectorMatches": [
-        "embed[type='application/pdf']"
-      ]
-    },
-    {
       "id": "isEbookBuilder",
       "matches": [
         "https://app.immersivetranslate.com/ebook/make/",
@@ -7546,8 +7539,15 @@
         ".summary > h3",
         ".notes > h3"
       ]
+    },
+    {
+      "id": "common.pdfWebPage",
+      "waitForSelectorsTimeout": 1,
+      "selectorMatches": [
+        "embed[type='application/pdf']"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-05-31T15:37:39.000Z",
+  "buildinConfigUpdatedAt": "2024-06-01T01:51:58.417Z",
   "latestVersion": "1.5.8"
 }
