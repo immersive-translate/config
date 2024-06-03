@@ -982,6 +982,17 @@
         "^.{0,12}$"
       ]
     },
+    "excludeSelectorsRegexes.add_v.[1.5.7]": {
+      "td,th": [
+        "/^[A-Z0-9\\-_.]+$/g",
+        "^[0-9,]+\\s+tokens$",
+        "^Up to [a-zA-Z]*\\s+\\d*$",
+        "^(/[a-zA-Z0-9\\-_.]+)+$"
+      ],
+      "button": [
+        "^.{0,12}$"
+      ]
+    },
     "skipBuildContainerSelectors": [
       "br",
       "hr"
@@ -7548,6 +7559,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-01T02:24:44.066Z",
+  "buildinConfigUpdatedAt": "2024-06-03T06:28:29.646Z",
   "latestVersion": "1.5.8"
 }
