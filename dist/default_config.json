@@ -362,7 +362,8 @@
     "googleads.g.doubleclick.net",
     "https://www.google.com/recaptcha/*",
     "ad.doubanio.com",
-    "datawrapper.dwcdn.net"
+    "datawrapper.dwcdn.net",
+    "*://*/*.xml"
   ],
   "telemetry": true,
   "loadingTheme": "spinner",
@@ -7559,6 +7560,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-03T06:28:29.646Z",
+  "buildinConfigUpdatedAt": "2024-06-03T07:52:09.925Z",
   "latestVersion": "1.5.8"
 }
