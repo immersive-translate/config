@@ -3907,6 +3907,9 @@
         "#abspara0010 br": {
           "style": "display:none;"
         }
+      },
+      "bodyRule.add": {
+        "bodySelector": "article"
       }
     },
     {
@@ -7560,6 +7563,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-03T07:52:09.925Z",
+  "buildinConfigUpdatedAt": "2024-06-03T14:20:28.194Z",
   "latestVersion": "1.5.8"
 }
