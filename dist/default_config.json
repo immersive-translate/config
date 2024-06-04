@@ -2032,7 +2032,7 @@
           "containerSelector": ".css-175oi2r.r-13awgt0.r-1pi2tsx.r-13qz1uu > [role='listbox']",
           "reportSelector": ".css-175oi2r.r-1awozwy.r-173mn98.r-1mf7evn.r-7e3msg",
           "textSelectors": [
-            ".css-1rynq56.r-bcqeeo.r-qvutc0.r-37j5jr.r-a023e6.r-16dba41.r-dhbnww.r-1pb70le"
+            ".css-175oi2r.r-13awgt0.r-1pi2tsx.r-13qz1uu > [role='listbox'] .css-175oi2r.r-13awgt0.r-1lzbym2  > [dir=\"ltr\"] > span"
           ],
           "mutationChangeDelay": 1000
         }
@@ -7563,6 +7563,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-03T14:20:28.194Z",
+  "buildinConfigUpdatedAt": "2024-06-04T12:51:19.110Z",
   "latestVersion": "1.5.8"
 }
