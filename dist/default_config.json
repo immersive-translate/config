@@ -1665,7 +1665,12 @@
         ]
       },
       "wrapperPrefix": "",
-      "isInjectVersion": true
+      "isInjectVersion": true,
+      "excludeSelectorsRegexes": {
+        "p": [
+          "/^$/"
+        ]
+      }
     },
     {
       "id": "sci-hub.pdfWebPage",
@@ -7563,6 +7568,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-04T12:51:19.110Z",
+  "buildinConfigUpdatedAt": "2024-06-06T06:24:41.676Z",
   "latestVersion": "1.5.8"
 }
