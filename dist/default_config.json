@@ -6239,18 +6239,17 @@
         "learn.microsoft.com"
       ],
       "excludeSelectors.add": [
-        ".vjs-text-track-display"
+        ".mc-video--text-track"
       ],
       "mutationExcludeSelectors.add": [
-        ".vjs-text-track-display *"
+        ".mc-video--text-track *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
-        "subtitleUrlRegExp": "\\.vtt",
+        "type": "text_track_dynamic",
+        "videoPlayerSelector": "video",
         "loadingContainerSelector": ".vjs-text-track-display",
         "quickButtonRule": {
-          "appendSelector": ".vjs-control-bar",
-          "insertBeforeSelector": ".vjs-playback-rate"
+          "appendSelector": ".mc-video__controls"
         }
       }
     },
@@ -7570,6 +7569,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-06T15:39:07.574Z",
+  "buildinConfigUpdatedAt": "2024-06-07T08:02:06.251Z",
   "latestVersion": "1.5.8"
 }
