@@ -41,7 +41,28 @@
     ],
     "selectorExcludeMatches": []
   },
-  "aiAssistantIds": [],
+  "aiAssistantIds": [
+    "paraphrase",
+    "twitter",
+    "tech",
+    "reddit",
+    "paper",
+    "news",
+    "music",
+    "medical",
+    "legal",
+    "github",
+    "game",
+    "ecommerce",
+    "financial",
+    "fiction",
+    "ao3",
+    "ebook",
+    "fiction",
+    "design",
+    "web3",
+    "bilingual-mix"
+  ],
   "interval": 3600000,
   "beta": false,
   "cache": true,
@@ -363,7 +384,10 @@
     "https://www.google.com/recaptcha/*",
     "ad.doubanio.com",
     "datawrapper.dwcdn.net",
-    "*://*/*.xml"
+    "*://*/*.xml",
+    "*://*/*.svg",
+    "file://*/*.xml",
+    "file://*/*.svg"
   ],
   "telemetry": true,
   "loadingTheme": "spinner",
@@ -533,6 +557,8 @@
     },
     "ai": {
       "env": {
+        "imt_domain": "domain",
+        "imt_title": "title",
         "imt_source_field": "text",
         "imt_trans_field": "text",
         "imt_sub_source_field": "text",
@@ -840,6 +866,43 @@
         "@",
         "#"
       ]
+    },
+    "qianfan": {
+      "extends": "ai",
+      "model": "ernie_speed",
+      "placeholderDelimiters": [
+        "{{",
+        "}}",
+        "code"
+      ],
+      "requestTimeout": 101000,
+      "translationDebounce": 300,
+      "interval": 1050,
+      "limit": 5,
+      "maxTextGroupLengthPerRequest": 1,
+      "maxTextLengthPerRequest": 1200,
+      "maxTextGroupLengthPerRequestForSubtitle": 3,
+      "bodyConfigs": {
+        "max_tokens": 2048
+      },
+      "translationTextSeparator": "\n\n%%\n\n",
+      "assistantId": "common"
+    },
+    "deepseek": {
+      "extends": "openai",
+      "name": "deepseek",
+      "model": "deepseek-chat",
+      "limit": 1,
+      "apiUrl": "https://api.deepseek.com/chat/completions",
+      "provider": "custom"
+    },
+    "aliyun-bailian": {
+      "extends": "openai",
+      "name": "aliyun-bailian",
+      "model": "qwen-long",
+      "provider": "custom",
+      "limit": 1.5,
+      "apiUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
     }
   },
   "shortcuts": {
@@ -7569,6 +7632,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-07T08:02:06.251Z",
+  "buildinConfigUpdatedAt": "2024-06-07T11:54:53.346Z",
   "latestVersion": "1.5.8"
 }
