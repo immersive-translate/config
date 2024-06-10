@@ -710,7 +710,8 @@
     "gemini.add_v.[1.3.4]": {
       "extends": "ai",
       "translationTextSeparator": "\n\n%%\n\n",
-      "assistantId": "common"
+      "assistantId": "common",
+      "provider": "pro"
     },
     "gemini.add_v.[1.5.7]": {
       "randomPrefix": "Hi, "
@@ -825,7 +826,8 @@
     "openai.add_v.[1.3.4]": {
       "extends": "ai",
       "assistantId": "common",
-      "maxTextGroupLengthPerRequest": 1
+      "maxTextGroupLengthPerRequest": 1,
+      "provider": "pro"
     },
     "chatgpt": {
       "placeholderDelimiters": [
@@ -7632,6 +7634,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-08T03:13:24.163Z",
+  "buildinConfigUpdatedAt": "2024-06-10T07:29:58.924Z",
   "latestVersion": "1.6.2"
 }
