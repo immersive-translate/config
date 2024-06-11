@@ -7696,8 +7696,15 @@
       "selectorMatches": [
         "embed[type='application/pdf']"
       ]
+    },
+    {
+      "id": "bitwarden.com",
+      "matches": "bitwarden.com",
+      "excludeSelectors.add": [
+        ".status-widget__state"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-11T02:50:18.103Z",
+  "buildinConfigUpdatedAt": "2024-06-11T06:50:45.937Z",
   "latestVersion": "1.6.2"
 }
