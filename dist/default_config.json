@@ -892,7 +892,7 @@
       "assistantId": "common"
     },
     "deepseek": {
-      "extends": "openai",
+      "extends": "ai",
       "name": "deepseek",
       "model": "deepseek-chat",
       "limit": 1,
@@ -900,11 +900,12 @@
       "provider": "custom"
     },
     "aliyun-bailian": {
-      "extends": "openai",
+      "extends": "ai",
       "name": "aliyun-bailian",
       "model": "qwen-long",
       "provider": "custom",
       "limit": 1.5,
+      "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
     }
   },
@@ -7697,6 +7698,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-11T02:33:47.601Z",
+  "buildinConfigUpdatedAt": "2024-06-11T02:50:18.103Z",
   "latestVersion": "1.6.2"
 }
