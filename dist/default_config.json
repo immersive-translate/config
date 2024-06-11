@@ -7704,8 +7704,17 @@
       "excludeSelectors.add": [
         ".status-widget__state"
       ]
+    },
+    {
+      "id": "ar5iv.labs.arxiv.org",
+      "matches": [
+        "ar5iv.labs.arxiv.org"
+      ],
+      "excludeSelectors.add": [
+        ".ltx_bibliography"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-11T11:42:13.293Z",
+  "buildinConfigUpdatedAt": "2024-06-11T17:19:06.971Z",
   "latestVersion": "1.6.2"
 }
