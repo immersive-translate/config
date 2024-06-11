@@ -171,7 +171,8 @@
     "https://southampton.cloud.panopto.eu[University of Southampton]",
     "https://vk.com/video[VK Video]",
     "https://www.comsol.com/video[COMSOL]",
-    "https://themotionmagic.com/[The Motion Magic]"
+    "https://themotionmagic.com/[The Motion Magic]",
+    "https://www.svtplay.se/[SVT Play]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -7696,6 +7697,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-11T01:09:33.943Z",
+  "buildinConfigUpdatedAt": "2024-06-11T02:33:47.601Z",
   "latestVersion": "1.6.2"
 }
