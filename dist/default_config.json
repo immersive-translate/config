@@ -7547,13 +7547,14 @@
       ]
     },
     {
-      "id": "deno",
+      "id": "simpleZh",
       "matches": [
         "deno.com",
-        "deno.land"
+        "deno.land",
+        "blog.partykit.io"
       ],
       "injectedCss": [
-        ":root {font-feature-settings:unset}"
+        ":root, font {font-feature-settings:normal;}"
       ]
     },
     {
@@ -7705,6 +7706,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-11T06:50:45.937Z",
+  "buildinConfigUpdatedAt": "2024-06-11T11:42:13.293Z",
   "latestVersion": "1.6.2"
 }
