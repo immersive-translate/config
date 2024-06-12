@@ -7707,14 +7707,19 @@
     },
     {
       "id": "ar5iv.labs.arxiv.org",
-      "matches": [
-        "ar5iv.labs.arxiv.org"
-      ],
+      "matches": "ar5iv.labs.arxiv.org",
       "excludeSelectors.add": [
         ".ltx_bibliography"
       ]
+    },
+    {
+      "id": "www.ey.com",
+      "matches": "www.ey.com",
+      "injectedCss.add": [
+        ".up-rich-text__container {height: unset!important;}"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-11T17:19:06.971Z",
+  "buildinConfigUpdatedAt": "2024-06-12T07:26:54.246Z",
   "latestVersion": "1.6.2"
 }
