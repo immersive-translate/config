@@ -156,7 +156,7 @@
     "https://www.espn.com/[ESPN]",
     "https://www.imdb.com/[IMDb]",
     "https://www.rottentomatoes.com/[Rotten Tomatoes]",
-    "https://fmoviesz.to/[FMovies]",
+    "https://fmovies24.to/[FMovies]",
     "https://aniwatch.to/[AniWatch]",
     "https://www.iq.com/[iQIYI]",
     "https://www.youku.tv/[Youku]",
@@ -6563,12 +6563,12 @@
     {
       "id": "fmoviesz",
       "matches": [
-        "fmoviesz.to",
+        "fmovies24.to",
         "vidplay.online",
         "c8365730d4.nl",
         "kerapoxy.cc",
         "vid41c.site",
-        "https://*/*sub.info=*fmoviesz.to*"
+        "https://*/*sub.info=*fmovies24.to*"
       ],
       "excludeSelectors.add": [
         ".jw-wrapper",
@@ -7722,6 +7722,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-12T07:41:05.339Z",
+  "buildinConfigUpdatedAt": "2024-06-12T13:57:48.843Z",
   "latestVersion": "1.6.2"
 }
