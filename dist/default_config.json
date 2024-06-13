@@ -7025,7 +7025,7 @@
     {
       "id": "comsol",
       "matches": [
-        "www.comsol.com/"
+        "*.comsol.com"
       ],
       "excludeSelectors.add": [
         "#immersive-translate-caption-window"
@@ -7723,6 +7723,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-13T13:58:36.406Z",
+  "buildinConfigUpdatedAt": "2024-06-13T15:37:32.429Z",
   "latestVersion": "1.6.2"
 }
