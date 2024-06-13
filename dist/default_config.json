@@ -245,7 +245,8 @@
       "*.immersivetranslate.com/download-subtitle*"
     ],
     "guideBlockUrls": [
-      "https://onboarding.immersivetranslate.com*"
+      "https://onboarding.immersivetranslate.com*",
+      "https://immersivetranslate.com/accounts/login*"
     ],
     "clickType": "translate",
     "afterInstalledAt": "",
@@ -260,7 +261,8 @@
       "*.immersivetranslate.com/download-subtitle*"
     ],
     "guideBlockUrls": [
-      "https://onboarding.immersivetranslate.com*"
+      "https://onboarding.immersivetranslate.com*",
+      "https://immersivetranslate.com/accounts/login*"
     ],
     "clickType": "translate",
     "afterInstalledAt": "2023-10-28",
@@ -7722,6 +7724,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-13T03:40:42.416Z",
+  "buildinConfigUpdatedAt": "2024-06-13T12:44:26.181Z",
   "latestVersion": "1.6.2"
 }
