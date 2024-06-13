@@ -6798,8 +6798,7 @@
         "attachRule": {
           "appendSelector": ".popout-location div.h-screen.select-none",
           "injectedGlobalCSS": [
-            ".popout-location .absolute p.pointer-events-none {display: none;}",
-            "#immersive-translate-caption-window {bottom: 80px}"
+            ".popout-location .absolute p.pointer-events-none {display: none;}"
           ]
         }
       }
@@ -7724,6 +7723,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-13T12:44:26.181Z",
+  "buildinConfigUpdatedAt": "2024-06-13T13:58:36.406Z",
   "latestVersion": "1.6.2"
 }
