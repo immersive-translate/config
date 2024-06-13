@@ -1118,10 +1118,12 @@
       "[isInvalidTag]",
       "mh",
       "body",
-      "relin-hc"
+      "relin-hc",
+      "x-p"
     ],
     "atomicBlockSelectors": [
-      "relin-hc"
+      "relin-hc",
+      "x-p"
     ],
     "shareConfig": {
       "injectCss": true,
@@ -1336,7 +1338,11 @@
     "asideMaxWordCountPerParagraph": 12,
     "lineBreakMaxTextCount": 0,
     "lineBreakRegexStr": "etc\\.|Mr\\.|Mrs\\.|Ms\\.|Dr\\.|Prof\\.|Sr\\.|Jr\\.|U\\.S\\.|U\\.K\\.|Co\\.|Inc\\.|Ltd\\.|St\\.",
-    "globalAttributes": {},
+    "globalAttributes": {
+      "x-p": {
+        "translate": "unset;"
+      }
+    },
     "inputTutorialsText": "",
     "inputTutorialsSelectors": [],
     "globalMeta": {},
@@ -1712,7 +1718,7 @@
         ".immersive-translate-error-wrapper {padding:0px !important;margin:0px !important;}",
         "font {line-height: 0!important;}"
       ],
-      "globalAttributes": {
+      "globalAttributes.add": {
         "[class='textLayer']": {
           "translate": "no"
         }
@@ -3524,7 +3530,7 @@
         ".form-container",
         ".account__header__extra"
       ],
-      "globalAttributes": {
+      "globalAttributes.add": {
         "[class='notranslate app-holder']": {
           "class": "app-holder"
         }
@@ -3738,7 +3744,7 @@
         ".short-story": "height:unset;",
         ".short-title": "height:unset;"
       },
-      "globalAttributes": {
+      "globalAttributes.add": {
         "header": {
           "translate": "unset;"
         }
@@ -3973,7 +3979,7 @@
         "span.captions",
         "span[id^=cap]"
       ],
-      "globalAttributes": {
+      "globalAttributes.add": {
         "#abspara0010 br": {
           "style": "display:none;"
         }
@@ -4988,7 +4994,7 @@
       ]
     },
     {
-      "globalAttributes": {
+      "globalAttributes.add": {
         "#stimulus": {
           "translate": "off",
           "class": "stimulus"
@@ -5228,7 +5234,7 @@
     {
       "id": "elektrotechnik",
       "matches": "https://www.elektrotechnik.rwth-aachen.de/*",
-      "globalAttributes": {
+      "globalAttributes.add": {
         "[class='notranslate']": {
           "class": ""
         }
@@ -5429,7 +5435,7 @@
         "a > div": "display:block;",
         "[style*='358px;']": "width: 33.3333%; height: auto; padding: 0px; position: relative; margin: 0px;"
       },
-      "globalAttributes": {
+      "globalAttributes.add": {
         "#app": {
           "class": ""
         }
@@ -5540,7 +5546,7 @@
     {
       "id": "marginalrevolution",
       "matches": "marginalrevolution.com",
-      "globalAttributes": {
+      "globalAttributes.add": {
         "header": {
           "translate": "unset;"
         }
@@ -5661,7 +5667,7 @@
         ".share",
         ".arrow-link"
       ],
-      "globalAttributes": {
+      "globalAttributes.add": {
         "#Scholarscope_HighlightContent": {
           "class": ""
         },
@@ -6001,7 +6007,7 @@
       "excludeTags.remove": [
         "PRE"
       ],
-      "globalAttributes": {
+      "globalAttributes.add": {
         "header": {
           "translate": "unset;"
         }
@@ -7388,7 +7394,7 @@
     {
       "id": "etymonline",
       "matches": "www.etymonline.com",
-      "globalAttributes": {
+      "globalAttributes.add": {
         ".crossreference.notranslate": {
           "class": "crossreference"
         },
@@ -7716,6 +7722,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-13T01:48:46.718Z",
+  "buildinConfigUpdatedAt": "2024-06-13T03:40:42.416Z",
   "latestVersion": "1.6.2"
 }
