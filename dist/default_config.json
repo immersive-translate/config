@@ -114,9 +114,9 @@
   },
   "supportedMangaSites": [
     "https://www.pixiv.net/manga[Pixiv][chrome,firefox]",
-    "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA][chrome,firefox]",
-    "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA][chrome,firefox]",
-    "https://e-hentai.org/[E-Hentai][chrome,firefox]"
+    "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA][chrome,firefox,userscript]",
+    "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA][chrome,firefox,userscript]",
+    "https://e-hentai.org/[E-Hentai][chrome,firefox,userscript]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -7951,6 +7951,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-14T16:25:20.948Z",
+  "buildinConfigUpdatedAt": "2024-06-14T16:26:10.607Z",
   "latestVersion": "1.6.3"
 }
