@@ -7757,8 +7757,15 @@
       "injectedCss.add": [
         ".up-rich-text__container {height: unset!important;}"
       ]
+    },
+    {
+      "id": "www.france.tv",
+      "matches": "www.france.tv",
+      "injectedCss.add": [
+        ".immersive-translate-target-wrapper { color: #fff; }"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-14T03:56:41.076Z",
+  "buildinConfigUpdatedAt": "2024-06-14T08:12:30.865Z",
   "latestVersion": "1.6.2"
 }
