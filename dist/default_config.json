@@ -6741,6 +6741,42 @@
       }
     },
     {
+      "id": "osmosis",
+      "matches": "*.osmosis.org",
+      "excludeSelectors.add": [
+        "div[data-testid=overlayPlayPause]",
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        "div[data-testid=overlayPlayPause] *",
+        "#immersive-translate-caption-window *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "hookType": "xhr",
+        "loadingContainerSelector": "div[data-testid=overlayPlayPause]",
+        "injectedCss": [],
+        "quickButtonRule": {
+          "appendSelector": "#video-player-container > div:nth-child(3) > div div[cn=gap-2]",
+          "insertBeforeSelector": "#video-player-container > div:nth-child(3) > div div[cn=gap-2] > :first-child",
+          "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: none !important; }"
+        },
+        "attachRule": {
+          "appendSelector": "div[data-testid=overlayPlayPause]",
+          "injectedGlobalCSS": [
+            "div[data-testid=video-subtitles-container] { display: none !important; }",
+            "#video-player-container > div:nth-child(3) > div div[cn=gap-2] { z-index: 21474836471; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-container {z-index:40;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "themotionmagic",
       "matches": [
         "player.hotmart.com"
@@ -7723,6 +7759,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-13T15:37:32.429Z",
+  "buildinConfigUpdatedAt": "2024-06-14T03:56:41.076Z",
   "latestVersion": "1.6.2"
 }
