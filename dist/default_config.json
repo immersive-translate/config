@@ -6458,8 +6458,10 @@
         "attachRule": {
           "appendSelector": "[data-rt=\"video-player-container\"]",
           "injectedGlobalCSS": [
-            "[class^='_video-player__text-tracks'] {display: none !important; }",
-            "#immersive-translate-caption-window {bottom: 60px;}"
+            "[class^='_video-player__text-tracks'] {display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {bottom: 60px;}"
           ]
         }
       }
@@ -7949,6 +7951,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-14T16:08:25.000Z",
+  "buildinConfigUpdatedAt": "2024-06-14T16:21:31.569Z",
   "latestVersion": "1.6.3"
 }
