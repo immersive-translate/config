@@ -112,6 +112,12 @@
     "engine": "bing",
     "_systemExcludeWordRegex": "\\b({word})\\b"
   },
+  "supportedMangaSites": [
+    "https://www.pixiv.net/manga[Pixiv][chrome,firefox]",
+    "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA]",
+    "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA]",
+    "https://e-hentai.org/[E-Hentai]"
+  ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
     "https://tv.youtube.com[TV Youtube]",
@@ -215,6 +221,7 @@
     "body",
     "marquee"
   ],
+  "translationPosition": "after",
   "inputTranslationService": "inherit",
   "inputTranslationBlockUrls": [
     "*.feishu.cn",
@@ -909,6 +916,15 @@
       "limit": 1.5,
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+    },
+    "doubao": {
+      "extends": "ai",
+      "name": "doubao",
+      "model": "",
+      "provider": "custom",
+      "limit": 10,
+      "maxTextGroupLengthPerRequestForSubtitle": 1,
+      "apiUrl": "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
     }
   },
   "shortcuts": {
@@ -1138,6 +1154,13 @@
       "consumeTimeout": 100,
       "buildTimeout": 100,
       "checkSelfUpdate": true
+    },
+    "imageRule": {
+      "enable": true,
+      "concurrency": 2,
+      "queryIntervalTime": 1000,
+      "errorTimes": 3,
+      "errorInterval": 5000
     },
     "useIframePostMessage": false,
     "searchEnhancementConfig": [],
@@ -1718,7 +1741,8 @@
         ".immersive-translate-target-wrapper br {display: none;!important;}",
         ".immersive-translate-target-wrapper span {position: relative;!important;}",
         ".immersive-translate-error-wrapper {padding:0px !important;margin:0px !important;}",
-        "font {line-height: 0!important;}"
+        "font {line-height: 0!important;}",
+        ".immersive-translate-target-translation-block-wrapper {display: unset!important;}"
       ],
       "globalAttributes.add": {
         "[class='textLayer']": {
@@ -6172,6 +6196,165 @@
       }
     },
     {
+      "id": "mangaplus-shueisha",
+      "matches": [
+        "mangaplus.shueisha.*"
+      ],
+      "excludeSelectors.add": [
+        ".zao-surface"
+      ],
+      "injectedCss": {
+        ".zao-image-container": "position: relative;"
+      },
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".zao-surface .zao-image"
+        ],
+        "loadingSelectors": [
+          ".zao-image-container"
+        ]
+      }
+    },
+    {
+      "id": "zebrack-shueisha",
+      "matches": [
+        "zebrack-comic.shueisha.*"
+      ],
+      "excludeSelectors.add": [
+        ".eAvsta_root"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".eAvsta_root img.G54Y0W_page"
+        ],
+        "loadingSelectors": [
+          "[data-testid='placeholder']"
+        ]
+      }
+    },
+    {
+      "id": "hentai",
+      "matches": [
+        "e-hentai.org"
+      ],
+      "excludeSelectors.add": [
+        "#i3"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#i3 #img"
+        ],
+        "loadingSelectors": [
+          "#i3"
+        ],
+        "disableUserScript": true
+      }
+    },
+    {
+      "id": "pixiv",
+      "matches": [
+        "www.pixiv.net"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          "[data-page] > img",
+          "[dir='vert'] img",
+          ".img-wrapper img[class='page']",
+          ".work-thumb",
+          "[role=\"presentation\"] img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox"
+        ],
+        "loadingSelectors": [
+          "[data-page]",
+          ".gtm-manga-viewer-open-button",
+          "[role=\"presentation\"]"
+        ],
+        "disableUserScript": true
+      }
+    },
+    {
+      "id": "newtoki341.com",
+      "matches": [
+        "newtoki*.com"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".view-padding p > img",
+          ".view-padding div > img",
+          ".view-img img"
+        ],
+        "loadingSelectors": [
+          ".view-padding p",
+          ".view-img a"
+        ],
+        "inValidSrcRegex": [
+          "loading-image.gif"
+        ],
+        "disableUserScript": true,
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
+      "id": "nicovideo",
+      "matches": [
+        "seiga.nicovideo.*/watch/mg*"
+      ],
+      "excludeSelectors.add": [
+        ".page"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".stream_comment"
+      ],
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          ".page .note canvas:first-child",
+          ".page .note > img:first-child"
+        ],
+        "inValidSrcRegex": [
+          "placeholder.png"
+        ],
+        "loadingSelectors": [
+          ".note"
+        ],
+        "opImageType": "append",
+        "imageStyle": "position:absolute;z-index:99;width:100%;height:100%;"
+      }
+    },
+    {
+      "id": "h5_nicovideo",
+      "matches": [
+        "sp.seiga.nicovideo.*/watch/mg*"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".stream_comment"
+      ],
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          ".react-swipe-container  canvas",
+          "[role=\"presentation\"] canvas"
+        ],
+        "inValidSrcRegex": [
+          "placeholder.png"
+        ],
+        "loadingSelectors": [
+          "[data-index]",
+          "[id]"
+        ],
+        "imageStyle": "position:absolute;z-index:1;width:100%;height:100%;",
+        "disableMarkSelector": ".react-swipe-container"
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -7766,6 +7949,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-14T08:12:30.865Z",
+  "buildinConfigUpdatedAt": "2024-06-14T15:40:48.737Z",
   "latestVersion": "1.6.2"
 }
