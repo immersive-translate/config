@@ -178,7 +178,9 @@
     "https://vk.com/video[VK Video]",
     "https://www.comsol.com/video[COMSOL]",
     "https://themotionmagic.com/[The Motion Magic]",
-    "https://www.svtplay.se/[SVT Play]"
+    "https://www.svtplay.se/[SVT Play]",
+    "https://www.osmosis.org/[Osmosis]",
+    "https://www.dr.dk/[DR]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -7972,6 +7974,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-16T13:32:12.457Z",
+  "buildinConfigUpdatedAt": "2024-06-16T13:35:10.722Z",
   "latestVersion": "1.6.3"
 }
