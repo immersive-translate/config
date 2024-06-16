@@ -7574,6 +7574,27 @@
       }
     },
     {
+      "id": "dr",
+      "matches": "*.dr.dk",
+      "excludeSelectors.add": [
+        ".vjs-text-track-display > div",
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".vjs-text-track-display > div *",
+        "#immersive-translate-caption-window *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "videoPlayerSelector": "video",
+        "quickButtonRule": {
+          "appendSelector": ".drtv-player-controls__button-row",
+          "insertBeforeSelector": ".drtv-player-button__subtitle"
+        }
+      }
+    },
+    {
       "id": "archiveToday",
       "matches": [
         "archive.today",
@@ -7951,6 +7972,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-15T12:48:52.110Z",
+  "buildinConfigUpdatedAt": "2024-06-16T13:32:12.457Z",
   "latestVersion": "1.6.3"
 }
