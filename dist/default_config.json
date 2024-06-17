@@ -125,6 +125,7 @@
     "https://www.primevideo.com[PrimeVideo]",
     "https://twitter.com[Twitter Spaces]",
     "https://play.max.com[HBO Max]",
+    "https://www.hbogoasia.tw[HBO GO]",
     "https://vimeo.com/watch[Vimeo]",
     "https://www.khanacademy.org/[Khan Academy]",
     "https://www.coursera.org/[Coursera]",
@@ -7989,6 +7990,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-17T14:54:10.969Z",
+  "buildinConfigUpdatedAt": "2024-06-17T15:07:29.549Z",
   "latestVersion": "1.6.3"
 }
