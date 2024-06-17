@@ -6469,6 +6469,21 @@
       }
     },
     {
+      "id": "hbogo",
+      "matches": [
+        "www.hbogoasia.*"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track_dynamic",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".shakaplayer-container",
+        "quickButtonRule": {
+          "appendSelector": ".control_buttons_right",
+          "insertBeforeSelector": ".control_buttons_volume"
+        }
+      }
+    },
+    {
       "id": "hbomax",
       "matches": [
         "play.max.com",
@@ -7974,6 +7989,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-16T13:35:10.722Z",
+  "buildinConfigUpdatedAt": "2024-06-17T14:54:10.969Z",
   "latestVersion": "1.6.3"
 }
