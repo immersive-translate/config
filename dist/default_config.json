@@ -6769,6 +6769,7 @@
         "c8365730d4.nl",
         "kerapoxy.cc",
         "vid41c.site",
+        "vid2faf.site",
         "https://*/*sub.info=*fmovies24.to*"
       ],
       "excludeSelectors.add": [
@@ -8021,6 +8022,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-19T04:15:20.463Z",
+  "buildinConfigUpdatedAt": "2024-06-19T06:34:23.609Z",
   "latestVersion": "1.6.3"
 }
