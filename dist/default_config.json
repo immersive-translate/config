@@ -1431,6 +1431,7 @@
       "rp",
       "rt",
       ".prism-code",
+      ".enlighter-code",
       ".rc-CodeBlock",
       "[role=code]",
       "#omni-extension",
@@ -8020,6 +8021,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-19T03:36:07.627Z",
+  "buildinConfigUpdatedAt": "2024-06-19T04:15:20.463Z",
   "latestVersion": "1.6.3"
 }
