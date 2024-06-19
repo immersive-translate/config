@@ -1284,7 +1284,11 @@
         "Devanagari MT",
         "Kohinoor Devanagari",
         "Apple SD Gothic Neo",
-        "Nanum Gothic"
+        "Nanum Gothic",
+        "Consolas",
+        "Ubuntu Mono",
+        "Inconsolata",
+        "Source Code Pro"
       ]
     },
     "bodyRule": {
@@ -8028,6 +8032,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-19T12:33:58.342Z",
+  "buildinConfigUpdatedAt": "2024-06-19T12:50:47.558Z",
   "latestVersion": "1.6.3"
 }
