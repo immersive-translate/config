@@ -181,7 +181,8 @@
     "https://themotionmagic.com/[The Motion Magic]",
     "https://www.svtplay.se/[SVT Play]",
     "https://www.osmosis.org/[Osmosis]",
-    "https://www.dr.dk/[DR]"
+    "https://www.dr.dk/[DR]",
+    "https://www.pbs.org/[PBS]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -6980,6 +6981,41 @@
       }
     },
     {
+      "id": "pbs",
+      "matches": "*.pbs.org",
+      "excludeSelectors.add": [
+        ".wrapper",
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".wrapper *",
+        "#immersive-translate-caption-window *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": ".*captions.*\\.vtt$",
+        "hookType": "xhr",
+        "loadingContainerSelector": ".wrapper",
+        "injectedCss": [],
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": "div.vjs-subs-caps-button",
+          "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: none !important; }"
+        },
+        "attachRule": {
+          "appendSelector": "#player-videojs",
+          "injectedGlobalCSS": [
+            "div.vjs-text-track-display > div > div { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-cue { font-size: 2vw !important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "themotionmagic",
       "matches": [
         "player.hotmart.com"
@@ -7990,6 +8026,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-17T15:07:29.549Z",
+  "buildinConfigUpdatedAt": "2024-06-19T03:25:53.264Z",
   "latestVersion": "1.6.3"
 }
