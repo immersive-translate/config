@@ -492,7 +492,7 @@
       "visible": true,
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
       "requestTimeout": 15000,
-      "maxTextLengthPerRequest": 2800,
+      "maxTextLengthPerRequest": 1800,
       "maxTextGroupLengthPerRequest": 50,
       "qualityDelimiterBetaV3": "",
       "qualityNoSymoblBetaV3": "</b",
@@ -7523,12 +7523,18 @@
         "https://mubi.de"
       ],
       "subtitleRule.add": {
-        "type": "fmp4.xml",
-        "subtitleUrlRegExp": "textstream",
+        "type": "mubi",
+        "subtitleUrlRegExp": "(textstream_|viewing/secure_url)",
         "hookType": "fetch",
         "quickButtonRule": {
           "appendSelector": ".css-1k6yql2.e1b63bld4",
           "insertBeforeSelector": ".css-1ce7rqp.e7f2hfl0"
+        },
+        "attachRule": {
+          "appendSelector": ".video-player",
+          "injectedGlobalCSS": [
+            ".clpp-text-container {display: none;}"
+          ]
         }
       }
     },
@@ -8022,6 +8028,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-19T06:34:23.609Z",
+  "buildinConfigUpdatedAt": "2024-06-19T12:33:58.342Z",
   "latestVersion": "1.6.3"
 }
