@@ -118,7 +118,7 @@
     "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA]",
     "https://comic-fuz.com/[COMIC FUZ]",
     "https://mangadex.org/[MangaDex]",
-    "https://www.kuaikanmanhua.com/[kuaikanmanhua]",
+    "https://www.kuaikanmanhua.com/[快看漫画]",
     "https://e-hentai.org/[E-Hentai]"
   ],
   "supportedVideoSubtitleSites": [
@@ -8093,6 +8093,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-21T09:45:31.595Z",
+  "buildinConfigUpdatedAt": "2024-06-21T09:46:33.203Z",
   "latestVersion": "1.6.4"
 }
