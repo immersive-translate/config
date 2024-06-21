@@ -5278,7 +5278,8 @@
         "#in-story-masthead"
       ],
       "injectedCss": [
-        "a::after {position:relative!important;}"
+        "a::after {position:relative!important;}",
+        "footer {line-height: unset!important;;}"
       ]
     },
     {
@@ -8032,6 +8033,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-20T02:06:54.334Z",
+  "buildinConfigUpdatedAt": "2024-06-21T03:49:18.086Z",
   "latestVersion": "1.6.4"
 }
