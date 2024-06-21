@@ -116,6 +116,9 @@
     "https://www.pixiv.net/manga[Pixiv][chrome,firefox]",
     "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA]",
     "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA]",
+    "https://comic-fuz.com/[COMIC FUZ]",
+    "https://mangadex.org/[MangaDex]",
+    "https://www.kuaikanmanhua.com/[kuaikanmanhua]",
     "https://e-hentai.org/[E-Hentai]"
   ],
   "supportedVideoSubtitleSites": [
@@ -1158,7 +1161,15 @@
       "concurrency": 2,
       "queryIntervalTime": 1000,
       "errorTimes": 3,
-      "errorInterval": 5000
+      "errorInterval": 5000,
+      "latinLang": [
+        "en",
+        "fr",
+        "es",
+        "pt",
+        "pt-br",
+        "it"
+      ]
     },
     "useIframePostMessage": false,
     "searchEnhancementConfig": [],
@@ -6359,6 +6370,55 @@
       }
     },
     {
+      "id": "comic-fuz",
+      "matches": [
+        "comic-fuz.com"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "opImageType": "append",
+        "imageSelectors": [
+          "[class*='viewer_wrapper'] img"
+        ],
+        "loadingSelectors": [
+          "[data-testid=\"placeholder\"]"
+        ]
+      }
+    },
+    {
+      "id": "mangadex",
+      "matches": [
+        "mangadex.org"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          "[class*='reader-pages'] img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "injectedCss": ".immersive-translate-attach-loading::after {top:10%!important;}"
+      }
+    },
+    {
+      "id": "kuaikanmanhua",
+      "matches": [
+        "www.kuaikanmanhua.com"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".img-box img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -8033,6 +8093,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-21T03:49:18.086Z",
+  "buildinConfigUpdatedAt": "2024-06-21T09:45:31.595Z",
   "latestVersion": "1.6.4"
 }
