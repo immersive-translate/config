@@ -1811,6 +1811,7 @@
       "isTranslateTitle": false,
       "detectTextBufferLength": 80,
       "targetWrapperTag": "span",
+      "isInjectVersion": "true",
       "selectorMatches": [
         "meta[name='immersive-translate-ebook-builder'][content='true']"
       ],
@@ -8093,6 +8094,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-22T03:05:02.726Z",
+  "buildinConfigUpdatedAt": "2024-06-25T02:56:05.612Z",
   "latestVersion": "1.6.5"
 }
