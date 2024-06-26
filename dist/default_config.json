@@ -122,7 +122,7 @@
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
     "https://e-hentai.org/[E-Hentai]",
     "https://hitomi.la[Hitomi]",
-    "https://www.yamibo.com/site/manga[Yamibo]",
+    "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox]",
     "https://www.copymanga.site[Copymanga][chrome,firefox]"
   ],
   "supportedVideoSubtitleSites": [
@@ -6425,7 +6425,8 @@
         "type": "mangaImage",
         "opImageType": "insertFirst",
         "imageSelectors": [
-          "#comicImages img"
+          "#comicImages img",
+          "#mobileImages img"
         ],
         "imageStyle": "margin:auto;",
         "injectedCss": "#comicImages.fitVertical img {margin:auto;}",
@@ -6447,6 +6448,10 @@
           ".needsclick img"
         ],
         "urlFetchType": "img",
+        "platforms": [
+          "chrome",
+          "firefox"
+        ],
         "loadingSelectors": [
           "div"
         ]
@@ -6460,7 +6465,8 @@
       "imageRule.add": {
         "type": "mangaImage",
         "imageSelectors": [
-          ".comicContent-list img"
+          ".comicContent-list img",
+          ".van-image img"
         ],
         "inValidSrcRegex": [
           "loading.jpg"
@@ -8349,6 +8355,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-26T07:06:57.268Z",
-  "latestVersion": "1.6.5"
+  "buildinConfigUpdatedAt": "2024-06-26T08:21:25.000Z",
+  "latestVersion": "1.6.6"
 }
