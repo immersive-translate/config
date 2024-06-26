@@ -119,7 +119,11 @@
     "https://comic-fuz.com/[COMIC FUZ]",
     "https://mangadex.org/[MangaDex]",
     "https://www.kuaikanmanhua.com/[快看漫画]",
-    "https://e-hentai.org/[E-Hentai]"
+    "https://mangabuddy.com/[MANGABUDDY][chrome]",
+    "https://e-hentai.org/[E-Hentai]",
+    "https://hitomi.la[Hitomi]",
+    "https://www.yamibo.com[Yamibo]",
+    "https://www.copymanga.site[Copymanga][chrome,firefox]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -932,6 +936,13 @@
       "limit": 10,
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
+    },
+    "hunyuan": {
+      "extends": "ai",
+      "name": "hunyuan",
+      "provider": "custom",
+      "limit": 2,
+      "model": "hunyuan-standard"
     }
   },
   "shortcuts": {
@@ -1056,7 +1067,10 @@
     "Devanagari MT",
     "Kohinoor Devanagari",
     "Apple SD Gothic Neo",
-    "Nanum Gothic"
+    "Nanum Gothic",
+    "Source Han Serif",
+    "Source Han Sans",
+    "Noto Sans SC"
   ],
   "generalRule": {
     "_comment": "",
@@ -1299,8 +1313,142 @@
         "Consolas",
         "Ubuntu Mono",
         "Inconsolata",
-        "Source Code Pro"
+        "Source Code Pro",
+        "Source Han Serif",
+        "Source Han Sans",
+        "Noto Sans SC"
       ]
+    },
+    "ytAsrConfig": {
+      "enable": true,
+      "wordsRegex": "etc\\.|Mr\\.|Mrs\\.|Ms\\.|Dr\\.|Prof\\.|Sr\\.|Jr\\.|U\\.S\\.|U\\.K\\.|Co\\.|Inc\\.|Ltd\\.|St\\.|p\\.a\\.|\\d+\\.",
+      "langsConfig": {
+        "base": {
+          "isSpaceLang": false,
+          "splitConfig": {
+            "minInterval": 1000,
+            "maxWords": 17
+          },
+          "mergeConfig": {
+            "minInterval": 1500,
+            "maxWords": 19
+          }
+        },
+        "en": {
+          "isSpaceLang": true,
+          "splitConfig": {
+            "symbolBreakWords": [
+              "mhm",
+              "um",
+              ">>",
+              "- "
+            ],
+            "breakMiniTime": 300,
+            "breakWords": [
+              "mhm",
+              "um",
+              ">>",
+              "- ",
+              "in fact",
+              "such as",
+              "or even",
+              "get me",
+              "well i'm",
+              "i didn't",
+              "i know",
+              "i need",
+              "i will",
+              "i'll",
+              "i mean",
+              "you are",
+              "what does",
+              "no problem",
+              "as we",
+              "if you",
+              "hello",
+              "okay",
+              "oh",
+              "yep",
+              "yes",
+              "hey",
+              "hi",
+              "yeah",
+              "essentially",
+              "because",
+              "and",
+              "but",
+              "which",
+              "so",
+              "where",
+              "what",
+              "now",
+              "or",
+              "how",
+              "after"
+            ],
+            "skipWords": [
+              "uh"
+            ]
+          },
+          "mergeConfig": {
+            "endWords": [
+              "in",
+              "is",
+              "and",
+              "are",
+              "not",
+              "an",
+              "a",
+              "some",
+              "the",
+              "but",
+              "our",
+              "for",
+              "of",
+              "if",
+              "his",
+              "her",
+              "my",
+              "noticed",
+              "come",
+              "mean",
+              "why",
+              "this",
+              "has",
+              "make",
+              "gpt",
+              "p.m",
+              "a.m"
+            ],
+            "startWords": [
+              "or",
+              "to",
+              "in",
+              "has",
+              "of",
+              "are",
+              "is",
+              "lines",
+              "with",
+              "days",
+              "years",
+              "tokens"
+            ]
+          },
+          "endCompatibleConfigs": [
+            {
+              "minInterval": 1000,
+              "minWordLength": 3,
+              "sentenceMinWord": 20
+            },
+            {
+              "minInterval": 1500,
+              "minWordLength": 1,
+              "sentenceMinWord": 20
+            }
+          ]
+        }
+      }
     },
     "bodyRule": {
       "enable": false,
@@ -6265,8 +6413,112 @@
         ],
         "loadingSelectors": [
           "#i3"
+        ]
+      }
+    },
+    {
+      "id": "hitomi",
+      "matches": [
+        "hitomi.la"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "opImageType": "insertFirst",
+        "imageSelectors": [
+          "#comicImages img"
         ],
-        "disableUserScript": true
+        "imageStyle": "margin:auto;",
+        "injectedCss": "#comicImages.fitVertical img {margin:auto;}",
+        "urlFetchType": "img",
+        "loadingSelectors": [
+          "picture"
+        ]
+      }
+    },
+    {
+      "id": "yamibo",
+      "matches": [
+        "www.yamibo.com"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".img-responsive"
+        ],
+        "urlFetchType": "img",
+        "loadingSelectors": [
+          "div"
+        ]
+      }
+    },
+    {
+      "id": "copymanga",
+      "matches": [
+        "www.copymanga.site"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".comicContent-list img"
+        ],
+        "inValidSrcRegex": [
+          "loading.jpg"
+        ],
+        "loadingSelectors": [
+          "li"
+        ]
+      }
+    },
+    {
+      "id": "readcomiconline",
+      "matches": [
+        "readcomiconline.li_notralsate"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#divImage img"
+        ],
+        "urlFetchType": "img",
+        "loadingSelectors": [
+          "p"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
+      "id": "visortmo",
+      "matches": [
+        "visortmo_notranslate.com"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#main-container img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ]
+      }
+    },
+    {
+      "id": "mangabuddy",
+      "matches": [
+        "mangabuddy.com"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#chapter-images img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "platforms": [
+          "chrome"
+        ],
+        "injectedCss": ".immersive-translate-attach-loading::after {top:10%!important;}",
+        "intersectionRootMargin": "0px 0px 200% 0px"
       }
     },
     {
@@ -6291,8 +6543,7 @@
           "[data-page]",
           ".gtm-manga-viewer-open-button",
           "[role=\"presentation\"]"
-        ],
-        "disableUserScript": true
+        ]
       }
     },
     {
@@ -6314,7 +6565,10 @@
         "inValidSrcRegex": [
           "loading-image.gif"
         ],
-        "disableUserScript": true,
+        "platforms": [
+          "chrome",
+          "firefox"
+        ],
         "intersectionRootMargin": "0px 0px 200% 0px"
       }
     },
@@ -8094,6 +8348,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-25T02:56:05.612Z",
+  "buildinConfigUpdatedAt": "2024-06-26T06:55:23.806Z",
   "latestVersion": "1.6.5"
 }
