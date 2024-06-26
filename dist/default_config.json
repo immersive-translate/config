@@ -6443,7 +6443,8 @@
       "imageRule.add": {
         "type": "mangaImage",
         "imageSelectors": [
-          ".img-responsive"
+          ".img-responsive",
+          ".needsclick img"
         ],
         "urlFetchType": "img",
         "loadingSelectors": [
@@ -8348,6 +8349,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-26T07:04:39.410Z",
+  "buildinConfigUpdatedAt": "2024-06-26T07:06:57.268Z",
   "latestVersion": "1.6.5"
 }
