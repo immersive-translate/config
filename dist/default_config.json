@@ -657,10 +657,6 @@
           "v": ""
         },
         {
-          "k": "GPT\\d?",
-          "v": ""
-        },
-        {
           "k": "gpt.{0,4}turbo",
           "v": ""
         },
@@ -682,6 +678,10 @@
         },
         {
           "k": "Ernie Bot",
+          "v": ""
+        },
+        {
+          "k": "GPT\\d?",
           "v": ""
         }
       ],
@@ -8355,6 +8355,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-26T16:12:06.691Z",
+  "buildinConfigUpdatedAt": "2024-06-26T16:33:55.863Z",
   "latestVersion": "1.6.6"
 }
