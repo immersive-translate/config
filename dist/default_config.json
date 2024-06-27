@@ -189,7 +189,8 @@
     "https://www.svtplay.se/[SVT Play]",
     "https://www.osmosis.org/[Osmosis]",
     "https://www.dr.dk/[DR]",
-    "https://www.pbs.org/[PBS]"
+    "https://www.pbs.org/[PBS]",
+    "https://www.viki.com/[Viki]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -6853,6 +6854,37 @@
       }
     },
     {
+      "id": "viki",
+      "matches": [
+        "www.viki.com"
+      ],
+      "excludeSelectors.add": [
+        ".vjs-text-track-display"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".vjs-text-track-display *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": "auth_subtitles.*\\.vtt",
+        "loadingContainerSelector": "[data-testid=\"vmplayer\"]",
+        "quickButtonRule": {
+          "appendSelector": ".vmp-right-control",
+          "insertBeforeSelector": ".vmp-right-control .vmp-player-settings"
+        },
+        "attachRule": {
+          "appendSelector": "[data-testid=\"vmplayer\"]",
+          "injectedCSS": [
+            ".imt-caption-window {margin-bottom: 0; bottom: 7%;}"
+          ],
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display {display: none;}",
+            "@media (min-width: 576px) { video::cue {opacity: 0} }"
+          ]
+        }
+      }
+    },
+    {
       "id": "masterclass",
       "matches": [
         "www.masterclass.com",
@@ -8355,6 +8387,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-26T16:33:55.863Z",
+  "buildinConfigUpdatedAt": "2024-06-27T03:15:53.211Z",
   "latestVersion": "1.6.6"
 }
