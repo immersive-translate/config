@@ -33,6 +33,7 @@
       "https://www.reddit.com/top/",
       "https://www.reddit.com/.compact",
       "https://app.immersivetranslate.com/pdf*",
+      "https://app.immersivetranslate.cn/pdf*",
       "https://bsky.app"
     ],
     "excludeMatches": [],
@@ -260,12 +261,15 @@
     "blockUrls": [
       "*immersivetranslate.com/preview",
       "https://app.immersivetranslate.com/",
+      "https://app.immersivetranslate.cn/",
       "https://app.immersivetranslate.com/pdf-pro*",
+      "https://app.immersivetranslate.cn/pdf-pro*",
       "*.immersivetranslate.com/download-subtitle*"
     ],
     "guideBlockUrls": [
       "https://onboarding.immersivetranslate.com*",
-      "https://immersivetranslate.com/accounts/login*"
+      "https://immersivetranslate.com/accounts/login*",
+      "https://immersivetranslate.cn/accounts/login*"
     ],
     "clickType": "translate",
     "afterInstalledAt": "",
@@ -276,12 +280,15 @@
     "blockUrls": [
       "*immersivetranslate.com/preview",
       "https://app.immersivetranslate.com/",
+      "https://app.immersivetranslate.cn/",
       "https://app.immersivetranslate.com/pdf-pro*",
+      "https://app.immersivetranslate.cn/pdf-pro*",
       "*.immersivetranslate.com/download-subtitle*"
     ],
     "guideBlockUrls": [
       "https://onboarding.immersivetranslate.com*",
-      "https://immersivetranslate.com/accounts/login*"
+      "https://immersivetranslate.com/accounts/login*",
+      "https://immersivetranslate.cn/accounts/login*"
     ],
     "clickType": "translate",
     "afterInstalledAt": "2023-10-28",
@@ -1882,8 +1889,11 @@
       ],
       "matches": [
         "https://app.immersivetranslate.com/pdf",
+        "https://app.immersivetranslate.cn/pdf",
         "https://app.immersivetranslate.com/pdf/",
+        "https://app.immersivetranslate.cn/pdf/",
         "https://app.immersivetranslate.com/pdf/*",
+        "https://app.immersivetranslate.cn/pdf/*",
         "http://localhost:38001/pdf*"
       ],
       "detectTextBufferLength": 80,
@@ -1951,6 +1961,7 @@
       "id": "isEbookBuilder",
       "matches": [
         "https://app.immersivetranslate.com/ebook/make/",
+        "https://app.immersivetranslate.cn/ebook/make/",
         "http://localhost:38001/ebook/make/"
       ],
       "isEbookBuilder": true,
@@ -2016,8 +2027,10 @@
       "id": "immersivePreview",
       "matches": [
         "https://immersivetranslate.com/preview*",
+        "https://immersivetranslate.cn/preview*",
         "https://test.immersivetranslate.com/preview*",
         "https://immersivetranslate.com/drafts*",
+        "https://immersivetranslate.cn/drafts*",
         "https://test.immersivetranslate.com/drafts*"
       ],
       "isInjectVersion": true,
@@ -2110,8 +2123,10 @@
       "id": "immersive",
       "matches": [
         "https://immersivetranslate.com",
+        "https://immersivetranslate.cn",
         "https://test.immersivetranslate.com",
         "https://app.immersivetranslate.com",
+        "https://app.immersivetranslate.cn",
         "https://test-app.immersivetranslate.com",
         "http://localhost:38001",
         "https://ai.immersivetranslate.com",
@@ -8387,6 +8402,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-27T03:15:53.211Z",
+  "buildinConfigUpdatedAt": "2024-06-27T07:21:12.863Z",
   "latestVersion": "1.6.6"
 }
