@@ -8401,8 +8401,17 @@
       "injectedCss.add": [
         ".immersive-translate-target-wrapper { color: #fff; }"
       ]
+    },
+    {
+      "id": "yodayo.chat",
+      "matches": [
+        "https://yodayo.com/*/chat/*"
+      ],
+      "extraBlockSelectors.add": [
+        ".inline-flex span"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-28T03:23:04.717Z",
+  "buildinConfigUpdatedAt": "2024-06-28T11:04:06.912Z",
   "latestVersion": "1.6.6"
 }
