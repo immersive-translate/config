@@ -2773,6 +2773,7 @@
         ],
         "videoSelector": ".html5-video-player.playing-mode video,.html5-video-player.paused-mode video",
         "translationOnlyPattern": [
+          "m.youtube.com/live*",
           "m.youtube.com/watch*",
           "m.youtube.com/embed*",
           "m.youtube.com/shorts*"
@@ -2877,6 +2878,7 @@
         "loadingContainerSelector": ".ytp-caption-window-container",
         "videoADSelector": ".ytp-ad-player-overlay",
         "translationOnlyPattern": [
+          "www.youtube.com/live*",
           "www.youtube.com/watch*",
           "www.youtube.com/embed*",
           "www.youtube.com/shorts*"
@@ -8412,6 +8414,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-28T11:04:06.912Z",
+  "buildinConfigUpdatedAt": "2024-06-28T16:04:59.149Z",
   "latestVersion": "1.6.6"
 }
