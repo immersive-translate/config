@@ -192,7 +192,8 @@
     "https://www.osmosis.org/[Osmosis]",
     "https://www.dr.dk/[DR]",
     "https://www.pbs.org/[PBS]",
-    "https://www.viki.com/[Viki]"
+    "https://www.viki.com/[Viki]",
+    "https://play.aetv.com/[A&E]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -6827,6 +6828,23 @@
       }
     },
     {
+      "id": "aetv",
+      "matches": [
+        "play.aetv.com"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track_dynamic",
+        "videoPlayerSelector": "video[data-pdk-active-track]",
+        "quickButtonRule": {
+          "appendSelector": ".tpBottomFloatRegion > [class='tpRow']"
+        },
+        "injectedCss": [
+          ".ttr-left:first-child {margin-bottom:1.5em}",
+          "#immersive-translate-quick-button-container {grid-column: 10;grid-row: 2;}"
+        ]
+      }
+    },
+    {
       "id": "hbomax",
       "matches": [
         "play.max.com",
@@ -8414,6 +8432,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-28T16:04:59.149Z",
+  "buildinConfigUpdatedAt": "2024-06-30T05:37:54.969Z",
   "latestVersion": "1.6.6"
 }
