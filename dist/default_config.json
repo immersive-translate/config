@@ -7775,6 +7775,7 @@
         ".subtitles-menu"
       ],
       "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
         "type": "general",
         "subtitleUrlRegExp": "/transcript/translation/",
@@ -8432,6 +8433,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-30T05:37:54.969Z",
+  "buildinConfigUpdatedAt": "2024-06-30T06:01:26.995Z",
   "latestVersion": "1.6.6"
 }
