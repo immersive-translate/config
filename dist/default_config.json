@@ -1200,7 +1200,8 @@
     "injectedCss": [
       ".immersive-translate-target-wrapper[dir='rtl'] {text-align: right;}",
       ".immersive-translate-target-wrapper[dir='rtl'] [data-immersive-translate-class-bak*='block-wrapper'] {display:block;}",
-      ".immersive-translate-target-wrapper {word-break: break-word;}"
+      ".immersive-translate-target-wrapper {word-break: break-word;}",
+      "[imt-state=\"translation\"] .immersive-translate-target-wrapper[dir='rtl'] {display:inline-block;}"
     ],
     "isOnBoardingPage": false,
     "isEbook": false,
@@ -8433,6 +8434,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-30T06:01:26.995Z",
+  "buildinConfigUpdatedAt": "2024-06-30T13:11:04.110Z",
   "latestVersion": "1.6.6"
 }
