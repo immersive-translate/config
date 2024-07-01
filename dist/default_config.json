@@ -1181,7 +1181,7 @@
       "checkSelfUpdate": true
     },
     "imageRule": {
-      "enable": true,
+      "enable": false,
       "concurrency": 2,
       "queryIntervalTime": 1000,
       "errorTimes": 3,
@@ -1462,7 +1462,7 @@
       }
     },
     "bodyRule": {
-      "enable": false,
+      "enable": true,
       "maxBodyScreenLength": 25,
       "articleChildTags": [
         "P"
@@ -6392,6 +6392,7 @@
         ".zao-image-container": "position: relative;"
       },
       "imageRule.add": {
+        "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
           ".zao-surface .zao-image"
@@ -6410,6 +6411,7 @@
         ".eAvsta_root"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
           ".eAvsta_root img.G54Y0W_page"
@@ -6428,6 +6430,7 @@
         "#i3"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
           "#i3 #img"
@@ -6443,6 +6446,7 @@
         "hitomi.la"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "mangaImage",
         "opImageType": "insertFirst",
         "imageSelectors": [
@@ -6463,6 +6467,7 @@
         "www.yamibo.com"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
           ".img-responsive",
@@ -6484,6 +6489,7 @@
         "www.copymanga.site"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
           ".comicContent-list img",
@@ -6503,6 +6509,7 @@
         "readcomiconline.li_notralsate"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
           "#divImage img"
@@ -6520,6 +6527,7 @@
         "visortmo_notranslate.com"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
           "#main-container img"
@@ -6535,6 +6543,7 @@
         "mangabuddy.com"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
           "#chapter-images img"
@@ -6555,6 +6564,7 @@
         "www.pixiv.net"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
           "[data-page] > img",
@@ -6580,6 +6590,7 @@
         "newtoki*.com"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
           ".view-padding p > img",
@@ -6612,6 +6623,7 @@
         ".stream_comment"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "manga",
         "imageSelectors": [
           ".page .note canvas:first-child",
@@ -6636,6 +6648,7 @@
         ".stream_comment"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "manga",
         "imageSelectors": [
           ".react-swipe-container  canvas",
@@ -6658,6 +6671,7 @@
         "comic-fuz.com"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "mangaImage",
         "opImageType": "append",
         "imageSelectors": [
@@ -6674,6 +6688,7 @@
         "mangadex.org"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
           "[class*='reader-pages'] img"
@@ -6691,6 +6706,7 @@
         "www.kuaikanmanhua.com"
       ],
       "imageRule.add": {
+        "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
           ".img-box img"
@@ -8434,6 +8450,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-06-30T13:11:04.110Z",
+  "buildinConfigUpdatedAt": "2024-07-01T12:33:26.831Z",
   "latestVersion": "1.6.6"
 }
