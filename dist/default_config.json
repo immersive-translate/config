@@ -1183,7 +1183,7 @@
       "checkSelfUpdate": true
     },
     "imageRule": {
-      "enable": false,
+      "enable": true,
       "concurrency": 2,
       "queryIntervalTime": 1000,
       "errorTimes": 3,
@@ -8512,6 +8512,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-02T06:28:59.926Z",
+  "buildinConfigUpdatedAt": "2024-07-02T08:47:57.573Z",
   "latestVersion": "1.6.6"
 }
