@@ -664,40 +664,7 @@
         "}}",
         "code"
       ],
-      "glossaries": [
-        {
-          "k": "open.{0,3}ai",
-          "v": ""
-        },
-        {
-          "k": "gpt.{0,4}turbo",
-          "v": ""
-        },
-        {
-          "k": "gpt.{0,4}o",
-          "v": ""
-        },
-        {
-          "k": "chat.{0,3}gpt",
-          "v": ""
-        },
-        {
-          "k": "palm",
-          "v": ""
-        },
-        {
-          "k": "baidu",
-          "v": ""
-        },
-        {
-          "k": "Ernie Bot",
-          "v": ""
-        },
-        {
-          "k": "GPT\\d?",
-          "v": ""
-        }
-      ],
+      "glossaries": [],
       "disableWarning": false,
       "requestTimeout": 101000,
       "randomPrefix": " ",
@@ -8548,6 +8515,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-02T11:06:05.760Z",
+  "buildinConfigUpdatedAt": "2024-07-02T13:37:13.737Z",
   "latestVersion": "1.6.6"
 }
