@@ -1494,8 +1494,8 @@
     "translationBlockStyle": "",
     "isShowUserscriptPagePopup": true,
     "observeUrlChange": false,
-    "paragraphMinTextCount": 4,
-    "paragraphMinWordCount": 2,
+    "paragraphMinTextCount": 1,
+    "paragraphMinWordCount": 1,
     "shadowRootSelectors": [],
     "blockMinTextCount": 24,
     "blockMinWordCount": 4,
@@ -8515,6 +8515,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-02T13:37:13.737Z",
+  "buildinConfigUpdatedAt": "2024-07-02T15:43:31.425Z",
   "latestVersion": "1.6.6"
 }
