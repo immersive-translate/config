@@ -193,7 +193,8 @@
     "https://www.dr.dk/[DR]",
     "https://www.pbs.org/[PBS]",
     "https://www.viki.com/[Viki]",
-    "https://play.aetv.com/[A&E]"
+    "https://play.aetv.com/[A&E]",
+    "https://w.mgtv.com//[MGTV]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -7474,6 +7475,38 @@
       }
     },
     {
+      "id": "mgtv",
+      "matches": "w.mgtv.com",
+      "excludeSelectors.add": [
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#immersive-translate-caption-window *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": "^https://subtitle\\.hitv\\.com/c1/subtitle",
+        "hookType": "fetch",
+        "loadingContainerSelector": "container",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container { display: inline-block; position: relative; top: 6px; }"
+        ],
+        "quickButtonRule": {
+          "appendSelector": "mango-control-wrap-right",
+          "insertBeforeSelector": "mango-subtitle-bar",
+          "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: none !important; }"
+        },
+        "attachRule": {
+          "appendSelector": "container",
+          "injectedGlobalCSS": [
+            "mango-subtitle { display: none !important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "themotionmagic",
       "matches": [
         "player.hotmart.com"
@@ -8512,6 +8545,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-02T08:47:57.573Z",
+  "buildinConfigUpdatedAt": "2024-07-02T09:51:06.855Z",
   "latestVersion": "1.6.6"
 }
