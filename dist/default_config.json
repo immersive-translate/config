@@ -7217,6 +7217,15 @@
         "quickButtonRule": {
           "appendSelector": "[data-role=\"wetv-ctrlbar-right\"]",
           "insertBeforeSelector": "[data-role=\"wetv-player-definition\"]"
+        },
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ],
+        "attachRule": {
+          "appendSelector": "#player-wrapper",
+          "injectedGlobalCSS": [
+            ".text-track { display: none !important; }"
+          ]
         }
       }
     },
@@ -7634,6 +7643,9 @@
           "insertBeforeSelector": "mango-subtitle-bar",
           "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: none !important; }"
         },
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ],
         "attachRule": {
           "appendSelector": "container",
           "injectedGlobalCSS": [
@@ -8713,6 +8725,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-03T09:20:35.088Z",
+  "buildinConfigUpdatedAt": "2024-07-03T10:05:29.851Z",
   "latestVersion": "1.7.1"
 }
