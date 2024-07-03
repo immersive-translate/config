@@ -119,12 +119,17 @@
     "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA]",
     "https://comic-fuz.com/[COMIC FUZ]",
     "https://mangadex.org/[MangaDex]",
+    "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox]",
+    "https://www.copymanga.site[Copymanga][chrome,firefox]",
+    "https://shonenjumpplus.com[ShonenJumpPlus]",
+    "https://viewer.heros-web.com/[Heros Web]",
+    "https://comic-days.com/[Comic Days]",
+    "https://comic-walker.com/[ComicWalker]",
+    "https://web-ace.jp/[Web Ace]",
     "https://www.kuaikanmanhua.com/[快看漫画]",
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
     "https://e-hentai.org/[E-Hentai]",
-    "https://hitomi.la[Hitomi]",
-    "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox]",
-    "https://www.copymanga.site[Copymanga][chrome,firefox]"
+    "https://hitomi.la[Hitomi]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -1965,8 +1970,8 @@
         "enable": false
       },
       "isInjectMeta": true,
-      "paragraphMinTextCount": 4,
-      "paragraphMinWordCount": 2,
+      "paragraphMinTextCount": 1,
+      "paragraphMinWordCount": 1,
       "blockMinTextCount": 1,
       "blockMinWordCount": 1,
       "containerMinTextCount": 1,
@@ -5800,9 +5805,26 @@
         ".bpx-player-subtitle-panel-text"
       ],
       "subtitleRule.add": {
-        "type": "bilibili",
+        "type": "general",
         "subtitleUrlRegExp": "aisubtitle.hdslb.com/bfs",
-        "loadingContainerSelector": ".bpx-player-subtitle-panel"
+        "loadingContainerSelector": ".bpx-player-subtitle-panel",
+        "generalSetting": {
+          "itemsPath": "body",
+          "textKey": "content",
+          "startKey": "from",
+          "endKey": "to"
+        },
+        "quickButtonRule": {
+          "appendSelector": ".bpx-player-control-bottom-right",
+          "injectCSS": ".imt-quick-subtitle-button { height: 60%; } .label { display: none; } .logo,.logo svg { width: 70%; } .imt-quick-subtitle-button {margin: 0 8px}",
+          "insertBeforeSelector": ".bpx-player-ctrl-quality"
+        },
+        "attachRule": {
+          "appendSelector": ".bpx-player-subtitle-panel",
+          "injectedGlobalCSS": [
+            ".bpx-player-subtitle-panel-text { display: none; }"
+          ]
+        }
       }
     },
     {
@@ -6435,6 +6457,21 @@
       }
     },
     {
+      "id": "visortmo",
+      "matches": [
+        "visortmo_notranslate.com"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".img-container img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ]
+      }
+    },
+    {
       "id": "hitomi",
       "matches": [
         "hitomi.la"
@@ -6453,6 +6490,92 @@
         "loadingSelectors": [
           "picture"
         ]
+      }
+    },
+    {
+      "id": "futabanet",
+      "matches": [
+        "gaugau.futabanet_block_too_much.jp"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".works_tateyomi__wrap img",
+          ".pt-img img"
+        ],
+        "urlFetchType": "img",
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
+      "id": "web-ace",
+      "matches": [
+        "web-ace.*"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          "img.viewerFixedImage"
+        ],
+        "urlFetchType": "img",
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
+      "id": "toonily",
+      "matches": [
+        "toonily_notranslate.me"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#chapter-images img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
+      "id": "omegascans",
+      "matches": [
+        "omegascans.org"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "urlFetchType": "img",
+        "imageSelectors": [
+          "main #content .container img"
+        ],
+        "injectedCss": ".immersive-translate-attach-loading::after {top:5%!important;}",
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
+      "id": "bomtoon",
+      "matches": [
+        "www.bomtoon_notranslate.com"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "urlFetchType": "img",
+        "imageSelectors": [
+          "img[data-nimg]"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 100% 0px"
       }
     },
     {
@@ -6516,16 +6639,59 @@
       }
     },
     {
-      "id": "visortmo",
+      "id": "shonenjumpplus",
       "matches": [
-        "visortmo_notranslate.com"
+        "shonenjumpplus.com",
+        "viewer.heros-web.com",
+        "comic-days.com"
+      ],
+      "selectorMatches": [
+        "canvas.page-image.js-page-image",
+        "img.page-image.js-page-image"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".js-page-area canvas",
+          "img.page-image.js-page-image"
+        ],
+        "injectedCss": ".align-right.immersive-translate-attach-loading::after {right: 0px;} .align-left.immersive-translate-attach-loading::after {left:20%;} .is-touch .immersive-translate-attach-loading::after {left:50%;right:unset;}",
+        "opImageType": "append",
+        "loadingSelectors": [
+          "p"
+        ]
+      }
+    },
+    {
+      "id": "jumptoon",
+      "matches": [
+        "jumptoon_tiaoman.com"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#viewer-scroller canvas"
+        ],
+        "urlFetchType": "canvasArgs",
+        "opImageType": "append",
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
+      "id": "comic-walker",
+      "matches": [
+        "comic-walker.com"
       ],
       "imageRule.add": {
         "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
-          "#main-container img"
+          "[class^='_mainScreen'] canvas"
         ],
+        "opImageType": "append",
         "loadingSelectors": [
           "div"
         ]
@@ -6574,7 +6740,8 @@
         "loadingSelectors": [
           "[data-page]",
           ".gtm-manga-viewer-open-button",
-          "[role=\"presentation\"]"
+          "[role=\"presentation\"]",
+          "div"
         ]
       }
     },
@@ -6636,7 +6803,7 @@
     {
       "id": "h5_nicovideo",
       "matches": [
-        "sp.seiga.nicovideo.*/watch/mg*"
+        "sp.*.nicovideo.*/watch/mg*"
       ],
       "mutationExcludeSelectors.add": [
         ".stream_comment"
@@ -6648,6 +6815,7 @@
           ".react-swipe-container  canvas",
           "[role=\"presentation\"] canvas"
         ],
+        "opImageType": "append",
         "inValidSrcRegex": [
           "placeholder.png"
         ],
@@ -6656,7 +6824,8 @@
           "[id]"
         ],
         "imageStyle": "position:absolute;z-index:1;width:100%;height:100%;",
-        "disableMarkSelector": ".react-swipe-container"
+        "disableMarkSelector": ".react-swipe-container",
+        "intersectionRootMargin": "0px 0px 200% 0px"
       }
     },
     {
@@ -7867,6 +8036,23 @@
           "appendSelector": ".secondary-controls",
           "insertBeforeSelector": ".speeds.menu-container"
         }
+      },
+      "subtitleRule.add_v.[1.7.1]": {
+        "generalSetting": {
+          "startKey": "start",
+          "endKey": "end",
+          "textKey": "text",
+          "timeDivisor": 1000
+        },
+        "attachRule": {
+          "appendSelector": ".video-wrapper",
+          "injectedGlobalCSS": [
+            ".closed-captions {display:none!important;}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {margin-bottom: 0; bottom: 15%;}"
+          ]
+        }
       }
     },
     {
@@ -7938,7 +8124,12 @@
         "www.zdf.de"
       ],
       "excludeSelectors.add": [
-        ".zdfplayer-cue-region"
+        ".zdfplayer-video-container",
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".zdfplayer-video-container *",
+        "#immersive-translate-caption-window *"
       ],
       "subtitleRule.add": {
         "type": "ebutt",
@@ -7951,6 +8142,13 @@
         ],
         "quickButtonRule": {
           "appendSelector": "[class^='right-controls-']"
+        },
+        "attachRule": {
+          "appendSelector": "[class^='subtitle-container-']",
+          "injectedGlobalCSS": [
+            ".zdfplayer-cue-inline { display: none !important; }",
+            "[class^='subtitle-container-'] { visibility: visible; }"
+          ]
         }
       },
       "subtitleRule.add_v.[1.4.1]": {
@@ -8515,6 +8713,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-02T15:43:31.425Z",
+  "buildinConfigUpdatedAt": "2024-07-03T08:56:55.855Z",
   "latestVersion": "1.6.6"
 }
