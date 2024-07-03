@@ -2756,7 +2756,7 @@
           "m.youtube.com/shorts*"
         ],
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": ".html5-video-player.playing-mode,.html5-video-player.paused-mode",
@@ -2874,7 +2874,7 @@
         },
         "videoSelector": ".html5-video-player.playing-mode video,.html5-video-player.paused-mode video",
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": ".html5-video-player.playing-mode,.html5-video-player.paused-mode",
@@ -2925,7 +2925,7 @@
         },
         "videoSelector": ".html5-video-player.playing-mode video,.html5-video-player.paused-mode video",
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": ".html5-video-player.playing-mode,.html5-video-player.paused-mode",
@@ -2981,7 +2981,7 @@
         },
         "videoSelector": ".html5-video-player video",
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": ".html5-video-player",
@@ -3434,7 +3434,7 @@
         },
         "videoSelector": "video",
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": ".video-js",
@@ -3836,7 +3836,7 @@
         },
         "videoSelector": ".plyr__video-wrapper video",
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": ".plyr--video",
@@ -3911,7 +3911,7 @@
         },
         "videoSelector": "#vplayer video",
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": "#vplayer"
@@ -6263,7 +6263,7 @@
         },
         "videoSelector": "video",
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": ".watch-video",
@@ -6982,7 +6982,7 @@
           "insertBeforeSelector": "[data-testid=\"volume-control\"]"
         },
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": "[data-rt=\"video-player-container\"]",
@@ -7092,7 +7092,7 @@
           "insertBeforeSelector": ".vmp-right-control .vmp-player-settings"
         },
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": "[data-testid=\"vmplayer\"]",
@@ -7371,7 +7371,7 @@
         "activeLangSelector": ".jw-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active",
         "videoSelector": "video",
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": ".jw-wrapper",
@@ -7406,7 +7406,7 @@
         "activeLangSelector": "#jw-player-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active",
         "videoSelector": "video",
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": ".jw-wrapper",
@@ -7481,7 +7481,7 @@
         "loadingContainerSelector": "#vilos",
         "subtitleUrlRegExp": ".*\\.vtt",
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": "#vilos",
@@ -7518,7 +7518,7 @@
           "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: 120px !important; bottom 30px; }"
         },
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": "div[data-handle='captions']",
@@ -7558,7 +7558,7 @@
           "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: none !important; }"
         },
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": "div[data-testid=overlayPlayPause]",
@@ -7597,7 +7597,7 @@
           "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: none !important; }"
         },
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": "#player-videojs",
@@ -7668,7 +7668,7 @@
           "appendSelector": ".styles_columns__S4HQf:last-child"
         },
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": "[role=\"main\"]",
@@ -7701,7 +7701,7 @@
         },
         "videoSelector": "video",
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": ".popout-location div.h-screen.select-none",
@@ -7946,7 +7946,7 @@
         "videoPlayerSelector": "video",
         "videoSelector": "video",
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": ".w-video-wrapper",
@@ -8201,7 +8201,7 @@
           "insertBeforeSelector": ".css-1ce7rqp.e7f2hfl0"
         },
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .imt-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
           "appendSelector": ".video-player",
@@ -8713,6 +8713,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-03T09:06:08.000Z",
+  "buildinConfigUpdatedAt": "2024-07-03T09:20:35.088Z",
   "latestVersion": "1.7.1"
 }
