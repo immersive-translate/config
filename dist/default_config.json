@@ -7999,7 +7999,7 @@
     {
       "id": "panopto",
       "matches": [
-        "southampton.cloud.panopto.eu"
+        "southampton.cloud.panopto.eu_no_subitle"
       ],
       "excludeSelectors.add": [
         ".primaryPlayer"
@@ -8725,6 +8725,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-03T14:36:01.563Z",
+  "buildinConfigUpdatedAt": "2024-07-03T15:26:07.102Z",
   "latestVersion": "1.7.2"
 }
