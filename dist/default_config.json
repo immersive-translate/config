@@ -5818,7 +5818,8 @@
         "quickButtonRule": {
           "appendSelector": ".bpx-player-control-bottom-right",
           "injectCSS": ".imt-quick-subtitle-button { height: 60%; } .label { display: none; } .logo,.logo svg { width: 70%; } .imt-quick-subtitle-button {margin: 0 8px}",
-          "insertBeforeSelector": ".bpx-player-ctrl-quality"
+          "insertBeforeSelector": ".bpx-player-ctrl-quality",
+          "ccEnableSelector": ".bpx-player-ctrl-subtitle"
         },
         "attachRule": {
           "appendSelector": ".bpx-player-subtitle-panel",
@@ -8726,6 +8727,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-04T02:00:32.868Z",
+  "buildinConfigUpdatedAt": "2024-07-04T03:03:59.173Z",
   "latestVersion": "1.7.2"
 }
