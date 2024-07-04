@@ -3271,7 +3271,8 @@
         "[class*='styles_dropdown']",
         "[class*='styles_aboutText']",
         "[class*='styles_titleContainer']",
-        "[class*='styles_header'] h1"
+        "[class*='styles_header'] h1",
+        "button > span"
       ],
       "globalStyles": {
         "h5 + p": "height:unset;",
@@ -8727,6 +8728,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-04T04:23:32.164Z",
+  "buildinConfigUpdatedAt": "2024-07-04T07:12:48.413Z",
   "latestVersion": "1.7.2"
 }
