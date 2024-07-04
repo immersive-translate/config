@@ -126,6 +126,7 @@
     "https://comic-days.com/[Comic Days]",
     "https://comic-walker.com/[ComicWalker]",
     "https://web-ace.jp/[Web Ace]",
+    "https://omegascans.org/[Omega Scans]",
     "https://www.kuaikanmanhua.com/[快看漫画]",
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
     "https://e-hentai.org/[E-Hentai]",
@@ -6552,7 +6553,7 @@
         "type": "mangaImage",
         "urlFetchType": "img",
         "imageSelectors": [
-          "main #content .container img"
+          "main #content .container .flex-col img[data-src]"
         ],
         "injectedCss": ".immersive-translate-attach-loading::after {top:5%!important;}",
         "loadingSelectors": [
@@ -8725,6 +8726,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-03T15:26:07.102Z",
+  "buildinConfigUpdatedAt": "2024-07-04T02:00:32.868Z",
   "latestVersion": "1.7.2"
 }
