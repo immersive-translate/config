@@ -6327,6 +6327,12 @@
           "appendSelector": ".jw-reset.jw-button-container",
           "insertBeforeSelector": ".jw-settings-submenu-button",
           "injectCSS": ".imt-quick-subtitle-pop-content {z-index: 999999;}"
+        },
+        "attachRule": {
+          "appendSelector": ".jwplayer",
+          "injectedGlobalCSS": [
+            ".jw-text-track-container {display:none!important;}"
+          ]
         }
       }
     },
@@ -6346,6 +6352,12 @@
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
           "insertBeforeSelector": ".vjs-playback-rate"
+        },
+        "attachRule": {
+          "appendSelector": "video-js[id^='vjs_video']",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display { display: none !important; }"
+          ]
         }
       }
     },
@@ -6396,6 +6408,12 @@
           "appendSelector": ".icon-spacing.css-4yh7a0",
           "insertBeforeSelector": "#subtitles-toggle-button",
           "ccEnableSelector": "#subtitles-toggle-button"
+        },
+        "attachRule": {
+          "appendSelector": "#video-player-controls-wrapper",
+          "injectedGlobalCSS": [
+            "div[data-subtitles-container='true'] { display: none !important; }"
+          ]
         }
       }
     },
@@ -6902,9 +6920,16 @@
           "#immersive-translate-quick-button-container {order: 2} .imt-quick-subtitle-pop-content {z-index: 2147483647}"
         ],
         "quickButtonRule": {
-          "appendSelector": ".vjs-control-bar"
+          "appendSelector": ".vjs-control-bar",
+          "injectCSS": ".label { display: none; }"
         },
-        "videoSelector": ".PromoPlayer video"
+        "videoSelector": ".PromoPlayer video",
+        "attachRule": {
+          "appendSelector": "div[id^='vjs_video']",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display { display: none !important; }"
+          ]
+        }
       }
     },
     {
@@ -6946,6 +6971,13 @@
           "appendSelector": ".vjs-control-bar",
           "insertBeforeSelector": ".vjs-volume-panel",
           "injectCSS": " .label { display: none; } .imt-quick-subtitle-pop-content {transform: translateX(43%); right: 0; z-index: 2147483647 } "
+        },
+        "attachRule": {
+          "appendSelector": "div[id^='vjs_video']",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display { display: none !important; }"
+          ],
+          "injectedCSS": []
         }
       }
     },
@@ -7071,7 +7103,14 @@
         "quickButtonRule": {
           "appendSelector": "[data-testid=\"video-section\"]  .vjs-control-bar",
           "insertBeforeSelector": "[data-testid=\"video-section\"] .vjs-volume-panel",
-          "injectCSS": ".imt-quick-subtitle-pop-content {z-index: 999999;}"
+          "injectCSS": ".imt-quick-subtitle-pop-content { z-index: 999999; max-height: 150px !important; }"
+        },
+        "videoSelector": "div[id^='mv-video-item-'] > video",
+        "attachRule": {
+          "appendSelector": ".mv-video-item",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display { display: none; }"
+          ]
         }
       }
     },
@@ -7153,6 +7192,12 @@
         "quickButtonRule": {
           "appendSelector": ".bmpui-ui-container.bmpui-ui-viu-subtitle > .bmpui-container-wrapper",
           "injectCSS": ".imt-quick-subtitle-button {margin-bottom: 8px}"
+        },
+        "attachRule": {
+          "appendSelector": ".bmpui-ui-viu-subtitle-overlay",
+          "injectedGlobalCSS": [
+            ".bmpui-ui-viu-subtitle-overlay > .bmpui-container-wrapper { display: none !important; }"
+          ]
         }
       }
     },
@@ -7248,6 +7293,12 @@
         "quickButtonRule": {
           "appendSelector": ".jw-reset.jw-button-container",
           "insertBeforeSelector": "[button=\"ttt-button\"]"
+        },
+        "attachRule": {
+          "appendSelector": "#imdbnext-vp-jw-single",
+          "injectedGlobalCSS": [
+            ".jw-text-track-display { display: none !important; }"
+          ]
         }
       }
     },
@@ -7533,13 +7584,12 @@
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
-          "appendSelector": "div[data-handle='captions']",
+          "appendSelector": ".w-vulcan-overlays--center > div",
           "injectedGlobalCSS": [
             ".w-captions.w-css-reset { display: none !important; }",
             ".w-bottom-bar-right-inner.w-css-reset { z-index: 2147483647; }"
           ],
           "injectedCSS": [
-            ".imt-cue { font-size: 2.3vw !important; }",
             ".imt-caption-window {margin-bottom: 0;}"
           ]
         }
@@ -7612,12 +7662,9 @@
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
-          "appendSelector": "#player-videojs",
+          "appendSelector": ".page-wrap",
           "injectedGlobalCSS": [
             "div.vjs-text-track-display > div > div { display: none !important; }"
-          ],
-          "injectedCSS": [
-            ".imt-cue { font-size: 2vw !important; }"
           ]
         }
       }
@@ -7745,6 +7792,12 @@
         "quickButtonRule": {
           "appendSelector": ".vds-controls-group:last-child",
           "insertBeforeSelector": ".vds-caption-button"
+        },
+        "attachRule": {
+          "appendSelector": "[data-layout=\"video\"]",
+          "injectedGlobalCSS": [
+            ".vds-captions {display:none!important;}"
+          ]
         }
       }
     },
@@ -8089,7 +8142,17 @@
         "quickButtonRule": {
           "appendSelector": ".ardplayer-footer .ardplayer-addons-container",
           "insertBeforeSelector": ".ardplayer-footer .ardplayer-button-sharing",
-          "injectCSS": ".imt-quick-subtitle-button {font-size: 20px; } .logo,.logo svg { height: 36px !important; width: 36px !important;} .imt-quick-subtitle-pop-content {z-index: 2147483647;} "
+          "injectCSS": ".imt-quick-subtitle-button {font-size: 20px; } .logo,.logo svg { height: 36px !important; width: 36px !important;} .imt-quick-subtitle-pop-content {z-index: 2147483647;} ",
+          "ccEnableSelector": ".ardplayer-button-language"
+        },
+        "attachRule": {
+          "appendSelector": "[data-initiator-name=\"player-container\"]",
+          "injectedGlobalCSS": [
+            ".ardplayer-untertitel div[lang] {display:none!important;}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {margin-bottom: 0; bottom: 20%;}"
+          ]
         }
       }
     },
@@ -8182,6 +8245,12 @@
         "quickButtonRule": {
           "appendSelector": ".shaka-controls-button-panel",
           "insertBeforeSelector": ".shaka-mute-button"
+        },
+        "attachRule": {
+          "appendSelector": ".shaka-video-container",
+          "injectedGlobalCSS": [
+            "@media (min-width: 576px) { video::cue {opacity: 0} }"
+          ]
         }
       }
     },
@@ -8735,6 +8804,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-04T11:03:29.385Z",
+  "buildinConfigUpdatedAt": "2024-07-05T08:51:42.137Z",
   "latestVersion": "1.7.2"
 }
