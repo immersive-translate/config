@@ -8817,11 +8817,11 @@
     {
       "id": "ipinfo",
       "matches": "ipinfo.io",
-      "excludeSelectors.add": [
-        ".text-bali-hai-primary:last-child"
+      "injectedCss.add": [
+        ".text-bali-hai-primary:last-child {display:none!important;}"
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-05T10:07:22.267Z",
+  "buildinConfigUpdatedAt": "2024-07-05T12:21:53.140Z",
   "latestVersion": "1.7.3"
 }
