@@ -1055,6 +1055,7 @@
     "Apple SD Gothic Neo",
     "Nanum Gothic",
     "Source Han Serif",
+    "Source Han Sans CN",
     "Source Han Sans",
     "Noto Sans SC"
   ],
@@ -1302,6 +1303,7 @@
         "Inconsolata",
         "Source Code Pro",
         "Source Han Serif",
+        "Source Han Sans CN",
         "Source Han Sans",
         "Noto Sans SC"
       ]
@@ -8804,6 +8806,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-05T09:09:21.000Z",
+  "buildinConfigUpdatedAt": "2024-07-05T09:42:35.158Z",
   "latestVersion": "1.7.3"
 }
