@@ -6683,7 +6683,10 @@
         "loadingSelectors": [
           "p"
         ]
-      }
+      },
+      "injectedCss.add": [
+        "[class^='Original_section_title'] {overflow:hidden!important;}"
+      ]
     },
     {
       "id": "jumptoon",
@@ -8806,6 +8809,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-05T09:42:35.158Z",
+  "buildinConfigUpdatedAt": "2024-07-05T09:48:43.932Z",
   "latestVersion": "1.7.3"
 }
