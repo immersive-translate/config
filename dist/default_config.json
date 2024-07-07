@@ -425,7 +425,6 @@
     "https://www.google.com/recaptcha/*",
     "ad.doubanio.com",
     "datawrapper.dwcdn.net",
-    "*://*/*.xml",
     "*://*/*.svg",
     "file://*/*.xml",
     "file://*/*.svg"
@@ -8845,6 +8844,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-07T08:02:45.673Z",
+  "buildinConfigUpdatedAt": "2024-07-07T13:34:57.937Z",
   "latestVersion": "1.7.5"
 }
