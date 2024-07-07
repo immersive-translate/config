@@ -130,7 +130,8 @@
     "https://www.kuaikanmanhua.com/[快看漫画]",
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
     "https://e-hentai.org/[E-Hentai]",
-    "https://hitomi.la[Hitomi]"
+    "https://hitomi.la[Hitomi]",
+    "https://www.antbyw.com[Antbyw]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -6516,6 +6517,25 @@
       }
     },
     {
+      "id": "antbyw",
+      "matches": "www.antbyw.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#jameson_manhua img"
+        ],
+        "inValidSrcRegex": [
+          "ajax-loader.gif"
+        ],
+        "urlFetchType": "img",
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "futabanet",
       "matches": [
         "gaugau.futabanet_block_too_much.jp"
@@ -8825,6 +8845,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-07T02:17:47.922Z",
+  "buildinConfigUpdatedAt": "2024-07-07T03:59:48.384Z",
   "latestVersion": "1.7.5"
 }
