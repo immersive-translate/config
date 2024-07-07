@@ -6529,7 +6529,6 @@
         "inValidSrcRegex": [
           "ajax-loader.gif"
         ],
-        "urlFetchType": "img",
         "loadingSelectors": [
           "div"
         ],
@@ -8846,6 +8845,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-07T07:22:16.734Z",
+  "buildinConfigUpdatedAt": "2024-07-07T07:36:59.410Z",
   "latestVersion": "1.7.5"
 }
