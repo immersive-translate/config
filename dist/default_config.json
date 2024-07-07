@@ -6523,7 +6523,8 @@
         "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
-          "#jameson_manhua img"
+          "#jameson_manhua img",
+          "#jamesonreadtouch img"
         ],
         "inValidSrcRegex": [
           "ajax-loader.gif"
@@ -8845,6 +8846,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-07T03:59:48.384Z",
+  "buildinConfigUpdatedAt": "2024-07-07T07:22:16.734Z",
   "latestVersion": "1.7.5"
 }
