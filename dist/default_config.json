@@ -5818,9 +5818,12 @@
           "startKey": "from",
           "endKey": "to"
         },
+        "injectedCss": [
+          "div[data-screen=full] #immersive-translate-quick-button-container { margin-top: 4.5px !important;}"
+        ],
         "quickButtonRule": {
           "appendSelector": ".bpx-player-control-bottom-right",
-          "injectCSS": ".imt-quick-subtitle-button { height: 60%; } .label { display: none; } .logo,.logo svg { width: 70%; } .imt-quick-subtitle-button {margin: 0 8px}",
+          "injectCSS": ".imt-quick-subtitle-button { height: 60%; } .label { display: none; } .logo,.logo svg { width: 70%; } .imt-quick-subtitle-button { margin: 0 8px;}",
           "insertBeforeSelector": ".bpx-player-ctrl-quality",
           "ccEnableSelector": ".bpx-player-ctrl-subtitle"
         },
@@ -8844,6 +8847,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-07T14:26:54.439Z",
+  "buildinConfigUpdatedAt": "2024-07-07T15:02:10.234Z",
   "latestVersion": "1.7.5"
 }
