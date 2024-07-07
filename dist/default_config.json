@@ -7281,7 +7281,7 @@
         ".player-wrapper *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
+        "type": "subsrt",
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "xhr",
         "loadingContainerSelector": "#player-wrapper",
@@ -8844,6 +8844,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-07T13:34:57.937Z",
+  "buildinConfigUpdatedAt": "2024-07-07T14:26:54.439Z",
   "latestVersion": "1.7.5"
 }
