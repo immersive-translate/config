@@ -7561,7 +7561,10 @@
     },
     {
       "id": "wistia",
-      "matches": "*.wistia.net",
+      "matches": [
+        "*.wistia.net",
+        "platform.thinkific.com"
+      ],
       "excludeSelectors.add": [
         "div[data-handle='captions']",
         "#immersive-translate-caption-window"
@@ -8822,6 +8825,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-05T13:51:25.000Z",
+  "buildinConfigUpdatedAt": "2024-07-07T02:17:47.922Z",
   "latestVersion": "1.7.5"
 }
