@@ -127,7 +127,6 @@
     "https://comic-walker.com/[ComicWalker]",
     "https://web-ace.jp/[Web Ace]",
     "https://omegascans.org/[Omega Scans]",
-    "https://www.kuaikanmanhua.com/[快看漫画]",
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
     "https://e-hentai.org/[E-Hentai]",
     "https://hitomi.la[Hitomi]",
@@ -6935,13 +6934,14 @@
     {
       "id": "kuaikanmanhua",
       "matches": [
-        "www.kuaikanmanhua.com"
+        "*.kuaikanmanhua_notranslate.com"
       ],
       "imageRule.add": {
         "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
-          ".img-box img"
+          ".img-box img",
+          ".comic-pics img"
         ],
         "loadingSelectors": [
           "div"
@@ -8868,6 +8868,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-08T07:16:56.376Z",
+  "buildinConfigUpdatedAt": "2024-07-08T09:05:16.351Z",
   "latestVersion": "1.7.5"
 }
