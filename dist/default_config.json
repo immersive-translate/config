@@ -6969,15 +6969,9 @@
         ],
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
-          "injectCSS": ".label { display: none; }"
+          "injectCSS": ".imt-quick-subtitle-pop-content { max-height: 150px !important; }"
         },
-        "videoSelector": ".PromoPlayer video",
-        "attachRule": {
-          "appendSelector": "div[id^='vjs_video']",
-          "injectedGlobalCSS": [
-            ".vjs-text-track-display { display: none !important; }"
-          ]
-        }
+        "videoSelector": ".PromoPlayer video"
       }
     },
     {
@@ -8868,6 +8862,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-08T09:05:16.351Z",
+  "buildinConfigUpdatedAt": "2024-07-08T09:30:27.062Z",
   "latestVersion": "1.7.5"
 }
