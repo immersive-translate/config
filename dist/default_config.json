@@ -1058,7 +1058,10 @@
     "Source Han Serif",
     "Source Han Sans CN",
     "Source Han Sans",
-    "Noto Sans SC"
+    "Noto Sans SC",
+    "Ubuntu Mono",
+    "Inconsolata",
+    "Source Code Pro"
   ],
   "generalRule": {
     "_comment": "",
@@ -1306,7 +1309,10 @@
         "Source Han Serif",
         "Source Han Sans CN",
         "Source Han Sans",
-        "Noto Sans SC"
+        "Noto Sans SC",
+        "Ubuntu Mono",
+        "Inconsolata",
+        "Source Code Pro"
       ]
     },
     "ytAsrConfig": {
@@ -8862,6 +8868,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-08T06:43:39.153Z",
+  "buildinConfigUpdatedAt": "2024-07-08T07:16:56.376Z",
   "latestVersion": "1.7.5"
 }
