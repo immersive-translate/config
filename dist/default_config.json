@@ -131,7 +131,8 @@
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
     "https://e-hentai.org/[E-Hentai]",
     "https://hitomi.la[Hitomi]",
-    "https://www.antbyw.com[Antbyw]"
+    "https://www.antbyw.com[Antbyw]",
+    "https://www.zerobywzz.com[Zerobywzz]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -6607,6 +6608,20 @@
       }
     },
     {
+      "id": "zerobywzz",
+      "matches": "www.zerobywzz.com",
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".uk-text-center img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "bomtoon",
       "matches": [
         "www.bomtoon_notranslate.com"
@@ -8847,6 +8862,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-07T15:02:10.234Z",
+  "buildinConfigUpdatedAt": "2024-07-08T06:43:39.153Z",
   "latestVersion": "1.7.5"
 }
