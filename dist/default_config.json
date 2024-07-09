@@ -131,7 +131,8 @@
     "https://e-hentai.org/[E-Hentai]",
     "https://hitomi.la[Hitomi]",
     "https://www.antbyw.com[Antbyw]",
-    "https://www.zerobywzz.com[Zerobywzz]"
+    "https://www.zerobywzz.com[Zerobywzz]",
+    "https://jmanga.org[Jmanga]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -6544,6 +6545,25 @@
       }
     },
     {
+      "id": "jmanga",
+      "matches": "jmanga.org",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".container-reader-chapter img"
+        ],
+        "injectedCss": ".immersive-translate-attach-loading::after {width:6px!important;height:6px!important;animation: immersiveTranslateShadowRolling 1.5s linear infinite!important;}",
+        "inValidSrcRegex": [
+          "data:image/gif"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "futabanet",
       "matches": [
         "gaugau.futabanet_block_too_much.jp"
@@ -8862,6 +8882,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-09T07:09:36.551Z",
+  "buildinConfigUpdatedAt": "2024-07-09T08:06:04.582Z",
   "latestVersion": "1.7.5"
 }
