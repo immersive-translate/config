@@ -3645,6 +3645,9 @@
       "normalizeBody": "body",
       "selectors": [
         "div[data-block-id]"
+      ],
+      "excludeSelectors": [
+        ".notion-code-block"
       ]
     },
     {
@@ -8886,6 +8889,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-09T08:08:48.888Z",
+  "buildinConfigUpdatedAt": "2024-07-09T09:26:00.465Z",
   "latestVersion": "1.7.5"
 }
