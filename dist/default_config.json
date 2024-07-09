@@ -7254,12 +7254,12 @@
       ],
       "subtitleRule.add": {
         "type": "webvtt",
-        "subtitleUrlRegExp": ".*ambry/\\?x-li-ambry-ep=.*",
+        "subtitleUrlRegExp": "/.*ambry/\\?x-li-ambry-ep=.*|.*video-captions-webvtt.*/",
         "hookType": "xhr",
         "loadingContainerSelector": ".video-player-container",
         "quickButtonRule": {
-          "appendSelector": ".vjs-control-bar",
-          "insertBeforeSelector": ".vjs-captions-toggle"
+          "appendSelector": ".classroom-layout__media .vjs-control-bar",
+          "insertBeforeSelector": ".vjs-captions-menu-toggle"
         }
       }
     },
@@ -8862,6 +8862,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-08T09:30:27.062Z",
+  "buildinConfigUpdatedAt": "2024-07-09T07:09:36.551Z",
   "latestVersion": "1.7.5"
 }
