@@ -5904,7 +5904,11 @@
         ".identifiers",
         ".cite",
         ".share",
-        ".arrow-link"
+        ".arrow-link",
+        ".multiple-results-actions",
+        ".sort-dropdown .option-label",
+        ".display-options .button-label",
+        ".actions-buttons.sidebar"
       ],
       "globalAttributes.add": {
         "#Scholarscope_HighlightContent": {
@@ -8882,6 +8886,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-09T08:06:04.582Z",
+  "buildinConfigUpdatedAt": "2024-07-09T08:08:48.888Z",
   "latestVersion": "1.7.5"
 }
