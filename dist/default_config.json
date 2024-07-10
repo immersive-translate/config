@@ -1741,7 +1741,8 @@
       "#hs_cos_wrapper_post_body",
       "#hs_cos_wrapper_post_body",
       "option",
-      "ul > li"
+      "ul > li",
+      "button"
     ],
     "allBlockTags": [
       "BODY",
@@ -8889,6 +8890,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-09T09:26:00.465Z",
+  "buildinConfigUpdatedAt": "2024-07-10T01:52:26.981Z",
   "latestVersion": "1.7.5"
 }
