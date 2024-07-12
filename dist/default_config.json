@@ -8897,8 +8897,15 @@
       "injectedCss.add": [
         ".text-bali-hai-primary:last-child {display:none!important;}"
       ]
+    },
+    {
+      "id": "help.maxon.net",
+      "matches": "help.maxon.net",
+      "excludeSelectors.add": [
+        "#contentBody"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-12T03:31:39.128Z",
+  "buildinConfigUpdatedAt": "2024-07-12T04:10:02.485Z",
   "latestVersion": "1.7.5"
 }
