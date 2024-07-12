@@ -4201,6 +4201,9 @@
         "span.captions",
         "span[id^=cap]"
       ],
+      "excludeSelectors.add": [
+        ".bibliography"
+      ],
       "globalAttributes.add": {
         "#abspara0010 br": {
           "style": "display:none;"
@@ -8895,6 +8898,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-11T03:32:45.713Z",
+  "buildinConfigUpdatedAt": "2024-07-12T02:29:10.387Z",
   "latestVersion": "1.7.5"
 }
