@@ -203,7 +203,8 @@
     "https://www.pbs.org/[PBS]",
     "https://www.viki.com/[Viki]",
     "https://play.aetv.com/[A&E]",
-    "https://w.mgtv.com//[MGTV]"
+    "https://w.mgtv.com/[MGTV]",
+    "https://dev.epicgames.com/[DevEpicGames]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -3439,7 +3440,7 @@
         "#immersive-translate-caption-window *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
+        "type": "subsrt",
         "subtitleUrlRegExp": "/subtitles/.*\\.(vtt|webvtt)$",
         "loadingContainerSelector": ".vjs-text-track-display",
         "quickButtonRule": {
@@ -6372,7 +6373,7 @@
         ".video-container *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
+        "type": "subsrt",
         "subtitleUrlRegExp": "/texttrack/.*\\.(vtt|webvtt)",
         "loadingContainerSelector": ".video-container",
         "quickButtonRule": {
@@ -7051,7 +7052,7 @@
         ".vjs-text-track-display *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
+        "type": "subsrt",
         "subtitleUrlRegExp": "\\.vtt\\?",
         "loadingContainerSelector": ".vjs-text-track-display",
         "injectedCss": [
@@ -7184,7 +7185,7 @@
         ".vjs-text-track-display *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
+        "type": "subsrt",
         "subtitleUrlRegExp": "\\.webvtt$",
         "loadingContainerSelector": ".vjs-text-track-display",
         "injectedCss": [
@@ -7271,7 +7272,7 @@
         ".bmpui-ui-viu-subtitle-overlay *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
+        "type": "subsrt",
         "hookType": "xhr",
         "subtitleUrlRegExp": "https?://[^/]+\\.cloudfront\\.net/[^/]+/[^/]+$",
         "loadingContainerSelector": ".bmpui-container-wrapper",
@@ -7377,7 +7378,7 @@
         ".jw-text-track-container *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
+        "type": "subsrt",
         "subtitleUrlRegExp": "\\.srt$",
         "loadingContainerSelector": "#imdbnext-vp-jw-single",
         "quickButtonRule": {
@@ -7533,6 +7534,11 @@
             "@media (min-width: 576px) { video::cue {opacity: 0} }"
           ]
         }
+      },
+      "subtitleRule.add_v.[1.7.6]": {
+        "multiSetting": {
+          "activeLangSelector": ".jw-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active"
+        }
       }
     },
     {
@@ -7556,7 +7562,7 @@
           "appendSelector": ".jw-button-container",
           "insertBeforeSelector": ".jw-icon-cc"
         },
-        "activeLangSelector": "#jw-player-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active",
+        "activeLangSelector": ".jw-settings-item-active",
         "videoSelector": "video",
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
@@ -7567,6 +7573,11 @@
             ".jw-text-track-container {display: none;}",
             "@media (min-width: 576px) { video::cue {opacity: 0} }"
           ]
+        }
+      },
+      "subtitleRule.add_v.[1.7.6]": {
+        "multiSetting": {
+          "activeLangSelector": ".jw-settings-item-active"
         }
       }
     },
@@ -7661,7 +7672,7 @@
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
-        "type": "webvtt",
+        "type": "subsrt",
         "subtitleUrlRegExp": ".*\\.vtt",
         "hookType": "xhr",
         "loadingContainerSelector": "div[data-handle='captions']",
@@ -7702,7 +7713,7 @@
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
-        "type": "webvtt",
+        "type": "subsrt",
         "subtitleUrlRegExp": "\\.vtt$",
         "hookType": "xhr",
         "loadingContainerSelector": "div[data-testid=overlayPlayPause]",
@@ -7741,7 +7752,7 @@
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
-        "type": "webvtt",
+        "type": "subsrt",
         "subtitleUrlRegExp": ".*captions.*\\.vtt$",
         "hookType": "xhr",
         "loadingContainerSelector": ".wrapper",
@@ -7969,17 +7980,68 @@
         "#video *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
+        "type": "multi_attach_vtt",
         "hookType": "fetch",
-        "subtitleUrlRegExp": "\\.vtt",
-        "videoPlayerSelector": "video",
-        "loadingContainerSelector": "media-controller",
-        "injectedCss": [
-          "media-controller div.pointer-events-none .flex .flex span.text-textPrimary-onDark span {white-space: pre-line;}"
-        ],
         "quickButtonRule": {
           "appendSelector": ".pointer-events-none #media-control-bar",
           "insertBeforeSelector": ".pointer-events-none .media-volume-wrapper"
+        },
+        "activeLangSelector": "div[data-testid='subtitles-item-endonym'].font-bold",
+        "videoPlayerSelector": "video",
+        "subtitleUrlRegExp": "\\.vtt",
+        "injectedCss": [
+          "media-controller div.pointer-events-none .flex .flex span.text-textPrimary-onDark span {white-space: pre-line;}"
+        ],
+        "attachRule": {
+          "appendSelector": ".aspect-h-9.sticky.top-0",
+          "injectedGlobalCSS": [
+            ".transition-transform { display: none !important; }",
+            ".imt-caption-window { margin-bottom: 50px; }"
+          ]
+        }
+      },
+      "subtitleRule.add_v.[1.7.6]": {
+        "multiSetting": {
+          "activeLangSelector": "input[name=subtitle-language][class*=checked]",
+          "langValueSelector": "input[name=subtitle-language]",
+          "langValueAttribute": "value",
+          "urlLangRegex": "subtitles/(\\S+)/full.vtt"
+        }
+      }
+    },
+    {
+      "id": "devEpicGames",
+      "matches": [
+        "dev.epicgames.com"
+      ],
+      "excludeSelectors.add": [
+        ".vjs-poster"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".vjs-poster *"
+      ],
+      "subtitleRule.add": {
+        "type": "multi_attach_vtt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "injectCSS": ".label { display: none; }",
+          "insertBeforeSelector": ".vjs-menu-button.vjs-settings-menu"
+        },
+        "activeLangSelector": "li.vjs-menu-item.vjs-captions-menu-item.vjs-selected > span",
+        "subtitleUrlRegExp": "\\.vtt",
+        "injectedCss": [],
+        "attachRule": {
+          "appendSelector": "#vjs_video_3",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display {display: none;}"
+          ]
+        }
+      },
+      "subtitleRule.add_v.[1.7.6]": {
+        "multiSetting": {
+          "activeLangSelector": "li.vjs-menu-item.vjs-captions-menu-item.vjs-selected > span",
+          "langTextRegex": "(\\S+)\\s+Captions"
         }
       }
     },
@@ -8921,6 +8983,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-12T04:15:06.555Z",
+  "buildinConfigUpdatedAt": "2024-07-12T11:31:30.780Z",
   "latestVersion": "1.7.5"
 }
