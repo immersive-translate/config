@@ -132,6 +132,7 @@
     "https://hitomi.la[Hitomi]",
     "https://www.antbyw.com[Antbyw]",
     "https://www.zerobywzz.com[Zerobywzz]",
+    "https://www.idmzj.com[动漫之家]",
     "https://jmanga.org[Jmanga]"
   ],
   "supportedVideoSubtitleSites": [
@@ -6660,6 +6661,20 @@
       }
     },
     {
+      "id": "idmzj",
+      "matches": "www.idmzj.com",
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".scrollbar-demo-item img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "bomtoon",
       "matches": [
         "www.bomtoon_notranslate.com"
@@ -8906,6 +8921,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-12T04:10:02.485Z",
+  "buildinConfigUpdatedAt": "2024-07-12T04:15:06.555Z",
   "latestVersion": "1.7.5"
 }
