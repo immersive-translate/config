@@ -1745,7 +1745,7 @@
       "#hs_cos_wrapper_post_body",
       "option",
       "ul > li",
-      "label > a",
+      "label",
       "button",
       "[class*='menu-button']"
     ],
@@ -8985,6 +8985,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-15T06:35:50.431Z",
+  "buildinConfigUpdatedAt": "2024-07-15T07:21:57.990Z",
   "latestVersion": "1.7.6"
 }
