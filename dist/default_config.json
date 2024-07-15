@@ -8701,7 +8701,8 @@
         "doc.qt.io",
         "winaero.com",
         "community.afforai.com",
-        "www.perplexity.ai"
+        "www.perplexity.ai",
+        "hdsr.mitpress.mit.edu"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -8983,6 +8984,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-13T03:25:51.232Z",
+  "buildinConfigUpdatedAt": "2024-07-15T01:58:57.459Z",
   "latestVersion": "1.7.6"
 }
