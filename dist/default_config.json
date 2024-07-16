@@ -205,7 +205,8 @@
     "https://play.aetv.com/[A&E]",
     "https://w.mgtv.com/[MGTV]",
     "https://dev.epicgames.com/[DevEpicGames]",
-    "https://app.zoom.us/[ZOOM]"
+    "https://app.zoom.us/[ZOOM]",
+    "https://weverse.io/[Weverse]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -7934,6 +7935,33 @@
       }
     },
     {
+      "id": "weverse",
+      "matches": [
+        "weverse.io"
+      ],
+      "excludeSelectors.add": [
+        ".pzp-pc__video"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".pzp-pc__video *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": ".*\\.vtt",
+        "quickButtonRule": {
+          "appendSelector": ".pzp-pc__bottom-buttons-right",
+          "insertBeforeSelector": "button.pzp-pc-subtitle-button"
+        },
+        "attachRule": {
+          "appendSelector": ".pzp-pc__video",
+          "injectedGlobalCSS": [
+            ".pzp-pc-subtitle-text { display: none !important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "paramountplus",
       "matches": [
         "*.paramountplus.com"
@@ -9012,6 +9040,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-16T03:24:10.525Z",
+  "buildinConfigUpdatedAt": "2024-07-16T03:55:13.194Z",
   "latestVersion": "1.7.6"
 }
