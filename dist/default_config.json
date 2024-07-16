@@ -430,9 +430,9 @@
     "https://www.google.com/recaptcha/*",
     "ad.doubanio.com",
     "datawrapper.dwcdn.net",
-    "*://*/*.svg",
-    "file://*/*.xml",
-    "file://*/*.svg"
+    "*://*/*\\.svg",
+    "file://*/*\\.xml",
+    "file://*/*\\.svg"
   ],
   "telemetry": true,
   "loadingTheme": "spinner",
@@ -9040,6 +9040,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-16T03:55:13.194Z",
+  "buildinConfigUpdatedAt": "2024-07-16T10:43:10.477Z",
   "latestVersion": "1.7.6"
 }
