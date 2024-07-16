@@ -204,7 +204,8 @@
     "https://www.viki.com/[Viki]",
     "https://play.aetv.com/[A&E]",
     "https://w.mgtv.com/[MGTV]",
-    "https://dev.epicgames.com/[DevEpicGames]"
+    "https://dev.epicgames.com/[DevEpicGames]",
+    "https://app.zoom.us/[ZOOM]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -2324,6 +2325,32 @@
           "#layers[style='z-index: 1;'] [style='height: 100px;'] { height: 400px !important; }",
           "video::cue {white-space: pre-line;}"
         ]
+      }
+    },
+    {
+      "id": "zoom",
+      "matches": [
+        "app.zoom.us"
+      ],
+      "excludeSelectors.add": [
+        ".live-transcription-subtitle__box"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".live-transcription-subtitle__box *"
+      ],
+      "subtitleRule.add": {
+        "type": "live",
+        "injectedCss": [
+          ".live-transcription-subtitle__item { max-height: none !important; }"
+        ],
+        "liveSubtitleRule": {
+          "containerSelector": ".live-transcription-subtitle__box",
+          "textSelectors": [
+            ".live-transcription-subtitle__item"
+          ],
+          "reportSelector": ".meeting-client-inner",
+          "mutationChangeDelay": 1000
+        }
       }
     },
     {
@@ -8985,6 +9012,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-15T07:21:57.990Z",
+  "buildinConfigUpdatedAt": "2024-07-16T03:24:10.525Z",
   "latestVersion": "1.7.6"
 }
