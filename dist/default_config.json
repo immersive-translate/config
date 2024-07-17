@@ -6418,6 +6418,30 @@
       }
     },
     {
+      "id": "zenva",
+      "matches": "academy.zenva.com",
+      "excludeSelectors": [
+        ".video-container"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".video-container *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-playback-rate"
+        },
+        "attachRule": {
+          "appendSelector": "#video-sidebar-wrapper",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display { display: none !important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "apple",
       "matches": "developer.apple.com",
       "excludeSelectors": [
@@ -9040,6 +9064,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-16T10:43:10.477Z",
+  "buildinConfigUpdatedAt": "2024-07-17T08:50:23.682Z",
   "latestVersion": "1.7.6"
 }
