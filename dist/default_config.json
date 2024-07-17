@@ -206,7 +206,8 @@
     "https://w.mgtv.com/[MGTV]",
     "https://dev.epicgames.com/[DevEpicGames]",
     "https://app.zoom.us/[ZOOM]",
-    "https://weverse.io/[Weverse]"
+    "https://weverse.io/[Weverse]",
+    "https://academy.zenva.com[Zenva Academy]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -9064,6 +9065,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-17T08:50:23.682Z",
+  "buildinConfigUpdatedAt": "2024-07-17T08:51:34.729Z",
   "latestVersion": "1.7.6"
 }
