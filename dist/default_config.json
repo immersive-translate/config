@@ -2354,7 +2354,7 @@
           "mutationChangeDelay": 1000
         },
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] .live-transcription-subtitle__box span {direction: rtl;}"
         ]
       }
     },
@@ -9068,6 +9068,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-17T09:26:38.906Z",
+  "buildinConfigUpdatedAt": "2024-07-17T10:19:16.896Z",
   "latestVersion": "1.7.6"
 }
