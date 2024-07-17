@@ -2352,7 +2352,10 @@
           ],
           "reportSelector": ".meeting-client-inner",
           "mutationChangeDelay": 1000
-        }
+        },
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ]
       }
     },
     {
@@ -9065,6 +9068,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-17T08:51:34.729Z",
+  "buildinConfigUpdatedAt": "2024-07-17T09:26:38.906Z",
   "latestVersion": "1.7.6"
 }
