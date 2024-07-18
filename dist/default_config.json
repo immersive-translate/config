@@ -603,8 +603,6 @@
     },
     "ai": {
       "env": {
-        "imt_domain": "domain",
-        "imt_title": "title",
         "imt_source_field": "text",
         "imt_trans_field": "text",
         "imt_sub_source_field": "text",
@@ -632,8 +630,8 @@
         },
         {
           "id": "ja2zh-CN",
-          "systemPrompt": "你是一个日语翻译专家，精通中日两种文化，只返回中文",
-          "prompt": "请将日语翻译成中文（避免解释原文）:\n\n{{text}}"
+          "systemPrompt": "您是专业、正宗的机器翻译引擎，精通日语，英语和中文。",
+          "prompt": "将以下文本翻译为简体中文，直接输出译文，无需任何附加文本。\nSource Text: {{text}}\nTranslated Text:"
         },
         {
           "id": "auto2wyw",
@@ -935,6 +933,14 @@
       "provider": "custom",
       "limit": 2,
       "model": "hunyuan-standard"
+    },
+    "siliconcloud": {
+      "extends": "ai",
+      "name": "siliconcloud",
+      "provider": "custom",
+      "limit": 2,
+      "model": "alibaba/Qwen2-72B-Instruct",
+      "apiUrl": "https://api.siliconflow.cn/v1/chat/completions "
     }
   },
   "shortcuts": {
@@ -1449,7 +1455,11 @@
             }
           ]
         }
-      }
+      },
+      "aiEnable": true,
+      "aiSupportLanguages": [
+        "en"
+      ]
     },
     "bodyRule": {
       "enable": true,
@@ -8592,6 +8602,15 @@
         "quickButtonRule": {
           "appendSelector": ".PlayerSettingsGroup",
           "insertBeforeSelector": ".PlayerSettingsGroup .PlayerControlsButton"
+        },
+        "attachRule": {
+          "appendSelector": "#dash-player-container",
+          "injectedCSS": [
+            ".imt-caption-window {margin-bottom: 5%;}"
+          ],
+          "injectedGlobalCSS": [
+            "@media (min-width: 576px) { video::cue {opacity: 0} }"
+          ]
         }
       }
     },
@@ -9098,6 +9117,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-18T05:17:48.718Z",
+  "buildinConfigUpdatedAt": "2024-07-18T11:21:25.259Z",
   "latestVersion": "1.7.6"
 }
