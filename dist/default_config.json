@@ -2340,15 +2340,19 @@
       "mutationExcludeSelectors.add": [
         ".live-transcription-subtitle__box *"
       ],
+      "extraInlineSelectors.add": [
+        ".live-transcription-subtitle__item"
+      ],
       "subtitleRule.add": {
         "type": "live",
         "injectedCss": [
-          ".live-transcription-subtitle__item { max-height: none !important; }"
+          ".live-transcription-subtitle__item { max-height: none !important; }",
+          "#live-transcription-subtitle {flex-direction: column;color: white;}"
         ],
         "liveSubtitleRule": {
           "containerSelector": ".live-transcription-subtitle__box",
           "textSelectors": [
-            ".live-transcription-subtitle__item"
+            ".live-transcription-subtitle"
           ],
           "reportSelector": ".meeting-client-inner",
           "mutationChangeDelay": 1000
@@ -9094,6 +9098,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-18T02:26:35.604Z",
+  "buildinConfigUpdatedAt": "2024-07-18T05:17:48.718Z",
   "latestVersion": "1.7.6"
 }
