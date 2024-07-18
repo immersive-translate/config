@@ -3591,7 +3591,8 @@
         ".jleFbf",
         "#searchform",
         ".yg51vc",
-        ".CbAZb"
+        ".CbAZb",
+        ".B6fmyf.byrV5b.Mg1HEd"
       ],
       "extraBlockSelectors": [
         ".MUFPAc"
@@ -6422,6 +6423,31 @@
       }
     },
     {
+      "id": "hstream",
+      "matches": "hstream.moe",
+      "excludeSelectors": [
+        ".video-container"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".video-container *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": "/texttrack/.*\\.(vtt|webvtt)",
+        "loadingContainerSelector": ".video-container",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-playback-rate"
+        },
+        "attachRule": {
+          "appendSelector": "video-js[id^='vjs_video']",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display { display: none !important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "zenva",
       "matches": "academy.zenva.com",
       "excludeSelectors": [
@@ -9068,6 +9094,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-17T10:19:16.896Z",
+  "buildinConfigUpdatedAt": "2024-07-18T02:26:35.604Z",
   "latestVersion": "1.7.6"
 }
