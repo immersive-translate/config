@@ -229,7 +229,7 @@
     "*.medium.com",
     "news.ycombinator.com"
   ],
-  "spVersion": "1.7.7",
+  "spVersion": "1.7.8",
   "ispVersion": "1.0.3",
   "gspVersion": "1.0.1",
   "modifiedBySystem": false,
@@ -9117,6 +9117,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-18T11:32:09.000Z",
+  "buildinConfigUpdatedAt": "2024-07-19T01:08:31.814Z",
   "latestVersion": "1.7.7"
 }
