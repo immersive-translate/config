@@ -126,7 +126,6 @@
     "https://comic-days.com/[Comic Days]",
     "https://comic-walker.com/[ComicWalker]",
     "https://web-ace.jp/[Web Ace]",
-    "https://omegascans.org/[Omega Scans]",
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
     "https://e-hentai.org/[E-Hentai]",
     "https://hitomi.la[Hitomi]",
@@ -6729,7 +6728,7 @@
     {
       "id": "omegascans",
       "matches": [
-        "omegascans.org"
+        "omegascans_notranslate.org"
       ],
       "imageRule.add": {
         "type": "mangaImage",
@@ -9117,6 +9116,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-20T10:19:09.785Z",
+  "buildinConfigUpdatedAt": "2024-07-20T13:29:09.453Z",
   "latestVersion": "1.7.7"
 }
