@@ -126,7 +126,6 @@
     "https://comic-days.com/[Comic Days]",
     "https://comic-walker.com/[ComicWalker]",
     "https://web-ace.jp/[Web Ace]",
-    "https://omegascans.org/[Omega Scans]",
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
     "https://e-hentai.org/[E-Hentai]",
     "https://hitomi.la[Hitomi]",
@@ -9117,6 +9116,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-19T01:08:31.814Z",
+  "buildinConfigUpdatedAt": "2024-07-20T08:43:55.708Z",
   "latestVersion": "1.7.7"
 }
