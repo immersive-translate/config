@@ -124,6 +124,7 @@
     "https://shonenjumpplus.com[ShonenJumpPlus]",
     "https://viewer.heros-web.com/[Heros Web]",
     "https://comic-days.com/[Comic Days]",
+    "https://comic-top.com[Comic Top]",
     "https://comic-walker.com/[ComicWalker]",
     "https://web-ace.jp/[Web Ace]",
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
@@ -6874,6 +6875,20 @@
       ]
     },
     {
+      "id": "comic-top",
+      "matches": "comic-top.com",
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".page-wrapper img"
+        ],
+        "urlFetchType": "img",
+        "loadingSelectors": [
+          "div"
+        ]
+      }
+    },
+    {
       "id": "jumptoon",
       "matches": [
         "jumptoon_tiaoman.com"
@@ -9114,6 +9129,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-21T02:24:04.302Z",
+  "buildinConfigUpdatedAt": "2024-07-22T03:25:53.982Z",
   "latestVersion": "1.7.7"
 }
