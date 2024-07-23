@@ -3356,7 +3356,13 @@
         "li[id^=chat-messages] div[id^=message-content]",
         "div[class^=headerText]",
         "section[aria-label='Search Results'] div[id^=message-content]",
-        "div[class^=messagesPopout]"
+        "div[class^=messagesPopout]",
+        "[class^='embedTitle']",
+        "[class^='embedDescription']"
+      ],
+      "excludeSelectors.add": [
+        "[class*='username']",
+        "[class*='repliedMessage']"
       ],
       "extraBlockSelectors": [
         "[class^='embedFieldValue']",
@@ -9129,6 +9135,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-23T00:59:21.031Z",
+  "buildinConfigUpdatedAt": "2024-07-23T15:24:17.262Z",
   "latestVersion": "1.7.7"
 }
