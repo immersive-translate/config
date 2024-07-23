@@ -2210,7 +2210,7 @@
       "paragraphMinWordCount": 2,
       "paragraphMinTextCount": 4,
       "injectedCss": [
-        ".immersive-translate-target-translation-block-wrapper { display: block; }"
+        ".immersive-translate-target-translation-block-wrapper { display: block !important; }"
       ],
       "excludeSelectors": [
         ".mw-editsection",
@@ -9129,6 +9129,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-22T03:25:53.982Z",
+  "buildinConfigUpdatedAt": "2024-07-23T00:59:21.031Z",
   "latestVersion": "1.7.7"
 }
