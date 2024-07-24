@@ -1457,7 +1457,9 @@
         }
       },
       "aiEnable": false,
-      "aiSupportLanguages": []
+      "aiSupportLanguages": [
+        "en"
+      ]
     },
     "bodyRule": {
       "enable": true,
@@ -9135,6 +9137,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-23T15:24:17.262Z",
+  "buildinConfigUpdatedAt": "2024-07-24T03:39:03.503Z",
   "latestVersion": "1.7.7"
 }
