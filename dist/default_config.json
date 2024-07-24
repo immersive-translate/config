@@ -3206,15 +3206,15 @@
         "#welcome_center",
         ".gad_overview_articles_wrapper",
         ".library_article_text h4",
-        ".header_name",
-        ".main-content",
-        "#reader_pane"
+        ".header_name"
       ],
       "excludeMatches": [
         "https://www.inoreader.com/features*",
         "https://www.inoreader.com/blog*",
         "https://www.inoreader.com/discover*",
-        "https://www.inoreader.com/contact*"
+        "https://www.inoreader.com/contact*",
+        "https://www.inoreader.com/pricing*",
+        "https://www.inoreader.com/enterprise*"
       ],
       "observeUrlChange": false,
       "globalStyles": {
@@ -9142,6 +9142,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-24T14:11:04.838Z",
+  "buildinConfigUpdatedAt": "2024-07-24T14:30:41.241Z",
   "latestVersion": "1.7.7"
 }
