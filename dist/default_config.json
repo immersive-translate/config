@@ -3206,7 +3206,9 @@
         "#welcome_center",
         ".gad_overview_articles_wrapper",
         ".library_article_text h4",
-        ".header_name"
+        ".header_name",
+        ".main-content",
+        "#reader_pane"
       ],
       "excludeMatches": [
         "https://www.inoreader.com/features*",
@@ -9140,6 +9142,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-24T13:56:52.356Z",
+  "buildinConfigUpdatedAt": "2024-07-24T14:11:04.838Z",
   "latestVersion": "1.7.7"
 }
