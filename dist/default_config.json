@@ -3209,7 +3209,10 @@
         ".header_name"
       ],
       "excludeMatches": [
-        "https://www.inoreader.com/features/"
+        "https://www.inoreader.com/features*",
+        "https://www.inoreader.com/blog*",
+        "https://www.inoreader.com/discover*",
+        "https://www.inoreader.com/contact*"
       ],
       "observeUrlChange": false,
       "globalStyles": {
@@ -9137,6 +9140,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-24T10:32:11.791Z",
+  "buildinConfigUpdatedAt": "2024-07-24T13:56:52.356Z",
   "latestVersion": "1.7.7"
 }
