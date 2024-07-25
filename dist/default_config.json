@@ -207,7 +207,8 @@
     "https://dev.epicgames.com/[DevEpicGames]",
     "https://app.zoom.us/[ZOOM]",
     "https://weverse.io/[Weverse]",
-    "https://academy.zenva.com[Zenva Academy]"
+    "https://academy.zenva.com[Zenva Academy]",
+    "https://courses.kevinpowell.co[Kevin Powell]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -7781,7 +7782,8 @@
       "id": "wistia",
       "matches": [
         "*.wistia.net",
-        "platform.thinkific.com"
+        "platform.thinkific.com",
+        "courses.kevinpowell.co"
       ],
       "excludeSelectors.add": [
         "div[data-handle='captions']",
@@ -9142,6 +9144,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-24T14:30:41.241Z",
+  "buildinConfigUpdatedAt": "2024-07-25T15:54:02.830Z",
   "latestVersion": "1.7.7"
 }
