@@ -2055,7 +2055,8 @@
         "table"
       ],
       "injectedCss.add": [
-        ".immersive-translate-target-wrapper {white-space: unset;}"
+        ".immersive-translate-target-wrapper {white-space: unset;}",
+        "[data-immersive-translate_rtl] #preview {text-align: right;}"
       ],
       "excludeSelectorsRegexes": {
         "[class='inline-tabular'] > table > tbody > tr > td": [
@@ -9144,6 +9145,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-25T15:54:02.830Z",
+  "buildinConfigUpdatedAt": "2024-07-26T01:16:25.840Z",
   "latestVersion": "1.7.7"
 }
