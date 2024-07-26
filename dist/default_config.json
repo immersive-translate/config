@@ -1185,7 +1185,10 @@
     ],
     "ignoreRichSelectors": [
       "relin-hc",
-      "x-p"
+      "x-p",
+      "xqdd_highlight_new_word",
+      "rw-highlight",
+      "hypothesis-highlight"
     ],
     "shareConfig": {
       "injectCss": true,
@@ -1765,8 +1768,8 @@
       "RELIN-HIGHLIGHT",
       "RELIN-ORIGIN",
       "RELIN-TARGET",
-      "XQDD_HIGHLIGHT_NEW_WORD",
       "NOBR",
+      "XQDD_HIGHLIGHT_NEW_WORD",
       "RW-HIGHLIGHT",
       "HYPOTHESIS-HIGHLIGHT"
     ],
@@ -9200,6 +9203,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-26T13:10:03.655Z",
+  "buildinConfigUpdatedAt": "2024-07-26T14:19:17.246Z",
   "latestVersion": "1.7.7"
 }
