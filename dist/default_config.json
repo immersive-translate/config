@@ -1183,6 +1183,10 @@
       "relin-hc",
       "x-p"
     ],
+    "ignoreRichSelectors": [
+      "relin-hc",
+      "x-p"
+    ],
     "shareConfig": {
       "injectCss": true,
       "removeSelectors": [
@@ -9196,6 +9200,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-26T11:39:46.703Z",
+  "buildinConfigUpdatedAt": "2024-07-26T13:10:03.655Z",
   "latestVersion": "1.7.7"
 }
