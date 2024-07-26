@@ -542,7 +542,8 @@
       "tag_handling": "smart",
       "html": "smart",
       "enableRichTranslate": true,
-      "richIdName": "data-dl-uid"
+      "richIdName": "data-dl-uid",
+      "richIdSymbol": "\""
     },
     "tenAlpha": {
       "placeholderDelimiters": [
@@ -9203,6 +9204,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-26T14:25:23.053Z",
+  "buildinConfigUpdatedAt": "2024-07-26T15:11:43.959Z",
   "latestVersion": "1.7.7"
 }
