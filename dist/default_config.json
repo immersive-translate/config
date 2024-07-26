@@ -464,7 +464,8 @@
         "{",
         "}",
         "b"
-      ]
+      ],
+      "enableRichTranslate": true
     },
     "google": {
       "visible": true,
@@ -475,7 +476,8 @@
         "🚠",
         "b"
       ],
-      "maxTextGroupLengthPerRequest": 50
+      "maxTextGroupLengthPerRequest": 50,
+      "enableRichTranslate": true
     },
     "transmart": {
       "limit": 20,
@@ -488,7 +490,8 @@
       "translatedPlaceholderDelimiters": [
         "#\\s?",
         "\\s?#"
-      ]
+      ],
+      "enableRichTranslate": true
     },
     "baidu": {
       "placeholderDelimiters": [
@@ -536,7 +539,10 @@
         "b"
       ],
       "limit": 10,
-      "tag_handling": "none"
+      "tag_handling": "none",
+      "html": "smart",
+      "enableRichTranslate": true,
+      "richIdName": "data-dl-uid"
     },
     "tenAlpha": {
       "placeholderDelimiters": [
@@ -566,7 +572,9 @@
         "<code>",
         "</code>",
         "b"
-      ]
+      ],
+      "enableRichTranslate": true,
+      "richTag": "c"
     },
     "yandex": {
       "visible": true,
@@ -577,7 +585,8 @@
         "<code>",
         "</code>",
         "b"
-      ]
+      ],
+      "enableRichTranslate": true
     },
     "deeplx": {
       "limit": 3,
@@ -604,6 +613,7 @@
     },
     "ai": {
       "env": {
+        "html_only": " if the text contains an html tag, keep it.",
         "imt_source_field": "text",
         "imt_trans_field": "text",
         "imt_sub_source_field": "text",
@@ -614,8 +624,8 @@
         "subtitle_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\nOutput:\n  - id: 1\n    {{imt_sub_trans_field}}: ...\n  - id: 2\n    {{imt_sub_trans_field}}: ...\n</example>"
       },
       "systemPrompt": "You are a professional, authentic machine translation engine.",
-      "prompt": "Translate the following source text to {{to}}, Output translation directly without any additional text.\nSource Text: {{text}}\nTranslated Text:",
-      "multiplePrompt": "You will be given a YAML formatted input containing entries with \"id\" and \"{{imt_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_source_field}}\" field into {{to}}. Write the translation back into the \"{{imt_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{normal_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
+      "prompt": "Translate the following source text to {{to}},{{html_only}} Output translation directly without any additional text.\nSource Text: {{text}}\n\nTranslated Text:",
+      "multiplePrompt": "You will be given a YAML formatted input containing entries with \"id\" and \"{{imt_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{normal_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
       "subtitlePrompt": "You will be translating all \"{{imt_sub_source_field}}\" fields of a set of YAML-formatted video subtitles into {{to}}. Here are the original subtitles in YAML format:\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\nPlease translate ONLY the \"{{imt_sub_source_field}}\" field of each subtitle entry into {{to}}. Do not translate or change the \"id\" fields.\n\nOutput the translated subtitles in the same YAML format, with each subtitle entry on its own line. The \"id\" fields should remain unchanged, and the \"{{imt_sub_source_field}}\" fields should contain your {{to}} translations.\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
       "langOverrides": [
         {
@@ -628,11 +638,6 @@
           "systemPrompt": "你是一个精通古文的学者，只返回白话文",
           "prompt": "请将文言文用白话文解释:\n\n{{text}}",
           "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文言文翻译为白话文，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}"
-        },
-        {
-          "id": "ja2zh-CN",
-          "systemPrompt": "您是专业、正宗的机器翻译引擎，精通日语，英语和中文。",
-          "prompt": "将以下文本翻译为简体中文，直接输出译文，无需任何附加文本。\nSource Text: {{text}}\nTranslated Text:"
         },
         {
           "id": "auto2wyw",
@@ -726,7 +731,8 @@
       "provider": "pro"
     },
     "gemini.add_v.[1.5.7]": {
-      "randomPrefix": "Hi, "
+      "randomPrefix": "Hi, ",
+      "enableRichTranslate": true
     },
     "claude": {
       "visible": true,
@@ -750,7 +756,8 @@
       "translationTextSeparator": "\n\n%%\n\n",
       "assistantId": "common",
       "proModel": "claude-3-haiku-20240307",
-      "proLimit": 10
+      "proLimit": 10,
+      "enableRichTranslate": true
     },
     "openai": {
       "visible": true,
@@ -839,6 +846,7 @@
       "extends": "ai",
       "assistantId": "common",
       "maxTextGroupLengthPerRequest": 1,
+      "enableRichTranslate": true,
       "provider": "pro"
     },
     "chatgpt": {
@@ -908,7 +916,8 @@
       "model": "deepseek-chat",
       "limit": 1,
       "apiUrl": "https://api.deepseek.com/chat/completions",
-      "provider": "custom"
+      "provider": "custom",
+      "enableRichTranslate": false
     },
     "aliyun-bailian": {
       "extends": "ai",
@@ -939,9 +948,19 @@
       "extends": "ai",
       "name": "siliconcloud",
       "provider": "custom",
-      "limit": 2,
-      "model": "alibaba/Qwen2-72B-Instruct",
-      "apiUrl": "https://api.siliconflow.cn/v1/chat/completions "
+      "limit": 1,
+      "model": "Qwen/Qwen2-7B-Instruct",
+      "apiUrl": "https://api.siliconflow.cn/v1/chat/completions"
+    },
+    "lingyiwanwu": {
+      "extends": "ai",
+      "name": "lingyiwanwu",
+      "model": "yi-medium",
+      "provider": "custom",
+      "limit": 5,
+      "maxTextGroupLengthPerRequestForSubtitle": 1,
+      "apiUrl": "https://api.lingyiwanwu.com/v1/chat/completions",
+      "enableRichTranslate": true
     }
   },
   "shortcuts": {
@@ -1115,6 +1134,9 @@
     ],
     "excludeRegexps": [
       "(&lt;\\\\/?[a-zA-Z0-9]+(?:[^&gt;]*?)&gt;)",
+      "(<form>|<body>|<strong>|<img|<IMG|<Img|<ImG|<iMg|<iMG|<em>|<b>|</b>|<i>|</i>|<u>|</u>|<br>|<br/>)"
+    ],
+    "excludeRegexps.remove_v.[1.7.5]": [
       "(<form>|<body>|<strong>|<img|<IMG|<Img|<ImG|<iMg|<iMG|<em>|<b>|</b>|<i>|</i>|<u>|</u>|<br>|<br/>)"
     ],
     "detectionServiceOrder": [
@@ -1688,6 +1710,11 @@
       "mn",
       "msqrt",
       "d-math"
+    ],
+    "rich.stayOriginalTags.remove": [
+      "CODE",
+      "SUP",
+      "SUB"
     ],
     "additionalStayOriginalTags": [],
     "inlineTags": [
@@ -2268,7 +2295,8 @@
         "[data-testid='UserDescription'] a",
         "[data-testid='HoverCard'] a",
         "[data-testid='UserCell'] a",
-        "[data-testid='birdwatch-pivot']  a"
+        "[data-testid='birdwatch-pivot']  a",
+        ".DocsMarkdown--link-external-icon"
       ],
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
@@ -9143,8 +9171,31 @@
       "excludeSelectors.add": [
         "#contentBody"
       ]
+    },
+    {
+      "id": "character.ai",
+      "matches": "character.ai",
+      "bodyRule.add": {
+        "bodySelector": "#test",
+        "bodyIsRoot": true
+      },
+      "extraInlineSelectors.add": [
+        ".auto-content",
+        ".auto-content *",
+        ".font-display .prose",
+        ".font-display .prose *"
+      ],
+      "atomicBlockSelectors.add": [
+        ".auto-content",
+        ".auto-content *",
+        ".font-display .prose",
+        ".font-display .prose *"
+      ],
+      "globalStyles.add": {
+        ".swiper,.rah-static": "height:unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-26T01:16:25.840Z",
+  "buildinConfigUpdatedAt": "2024-07-26T11:03:42.100Z",
   "latestVersion": "1.7.7"
 }
