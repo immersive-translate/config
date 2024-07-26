@@ -539,7 +539,7 @@
         "b"
       ],
       "limit": 10,
-      "tag_handling": "none",
+      "tag_handling": "smart",
       "html": "smart",
       "enableRichTranslate": true,
       "richIdName": "data-dl-uid"
@@ -9196,6 +9196,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-26T11:03:19.000Z",
+  "buildinConfigUpdatedAt": "2024-07-26T11:39:46.703Z",
   "latestVersion": "1.7.7"
 }
