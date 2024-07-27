@@ -9205,8 +9205,20 @@
       "globalStyles.add": {
         ".swiper,.rah-static": "height:unset;"
       }
+    },
+    {
+      "id": "queenslibrary.org",
+      "matches": "queenslibrary.org",
+      "injectedCss": [
+        [
+          "font.notranslate { all: unset;}"
+        ]
+      ],
+      "excludeSelectors.add": [
+        "#Web-QBPL-Menu"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-27T14:37:44.898Z",
+  "buildinConfigUpdatedAt": "2024-07-27T15:01:02.959Z",
   "latestVersion": "1.7.8"
 }
