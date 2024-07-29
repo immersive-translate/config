@@ -133,7 +133,8 @@
     "https://www.antbyw.com[Antbyw]",
     "https://www.zerobywzz.com[Zerobywzz]",
     "https://www.idmzj.com[动漫之家]",
-    "https://jmanga.org[Jmanga]"
+    "https://jmanga.org[Jmanga]",
+    "https://twicomi.com/manga*[Twitter Comic]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -6739,6 +6740,21 @@
       }
     },
     {
+      "id": "twicomi",
+      "matches": "https://twicomi.com/manga*",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".image img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "futabanet",
       "matches": [
         "gaugau.futabanet_block_too_much.jp"
@@ -9230,6 +9246,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-29T10:17:46.660Z",
+  "buildinConfigUpdatedAt": "2024-07-29T10:59:50.992Z",
   "latestVersion": "1.7.9"
 }
