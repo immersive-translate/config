@@ -948,9 +948,9 @@
       "extends": "ai",
       "name": "siliconcloud",
       "provider": "custom",
-      "limit": 1,
+      "limit": 10,
       "model": "Qwen/Qwen2-7B-Instruct",
-      "apiUrl": "https://api.siliconflow.cn/v1/chat/completions"
+      "apiUrl": "https://public-beta-api.siliconflow.cn/v1/chat/completions"
     },
     "lingyiwanwu": {
       "extends": "ai",
@@ -9230,6 +9230,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-29T09:56:11.000Z",
+  "buildinConfigUpdatedAt": "2024-07-29T10:17:46.660Z",
   "latestVersion": "1.7.9"
 }
