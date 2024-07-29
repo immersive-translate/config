@@ -1798,7 +1798,6 @@
       "option",
       "ul > li",
       "label",
-      "button",
       "[class*='menu-button']"
     ],
     "allBlockTags": [
@@ -4847,7 +4846,10 @@
     },
     {
       "id": "webofscience",
-      "matches": "https://www.webofscience.com/*",
+      "matches": [
+        "https://www.webofscience.com/*",
+        "https://webofscience.clarivate.*/*"
+      ],
       "globalStyles": {
         ".abstract": "height:auto !important;",
         ".show-more-lines": "height:unset !important;"
@@ -4856,7 +4858,11 @@
         ".summary-left-panel",
         ".authors",
         "app-full-record-keywords mark",
-        "mat-sidenav"
+        "mat-sidenav",
+        "[name=pubdate]",
+        "[data-ta^=Summary-]",
+        "app-summary-authors",
+        ".search-text"
       ],
       "mutationObserverContainerSelectors": [
         "[data-ta='summary-record-title-link']",
@@ -9223,6 +9229,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-29T03:39:22.087Z",
+  "buildinConfigUpdatedAt": "2024-07-29T03:57:45.640Z",
   "latestVersion": "1.7.8"
 }
