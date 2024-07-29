@@ -543,9 +543,7 @@
       "tag_handling": "none",
       "html": "smart",
       "enableRichTranslate": true,
-      "richTag": "c",
-      "richIdName": "data-dl-uid",
-      "richIdSymbol": "\""
+      "richTag": "c"
     },
     "deepl.add_v.[1.7.8]": {
       "tag_handling": "smart"
@@ -1801,6 +1799,7 @@
       "option",
       "ul > li",
       "label",
+      "button",
       "[class*='menu-button']"
     ],
     "allBlockTags": [
@@ -9232,6 +9231,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-29T06:18:20.780Z",
+  "buildinConfigUpdatedAt": "2024-07-29T08:59:01.665Z",
   "latestVersion": "1.7.8"
 }
