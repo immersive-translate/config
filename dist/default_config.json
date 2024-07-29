@@ -4855,7 +4855,8 @@
       "excludeSelectors.add": [
         ".summary-left-panel",
         ".authors",
-        "app-full-record-keywords mark"
+        "app-full-record-keywords mark",
+        "mat-sidenav"
       ],
       "mutationObserverContainerSelectors": [
         "[data-ta='summary-record-title-link']",
@@ -9222,6 +9223,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-29T03:11:59.262Z",
+  "buildinConfigUpdatedAt": "2024-07-29T03:39:22.087Z",
   "latestVersion": "1.7.8"
 }
