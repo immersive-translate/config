@@ -464,8 +464,7 @@
         "{",
         "}",
         "b"
-      ],
-      "enableRichTranslate": true
+      ]
     },
     "google": {
       "visible": true,
@@ -477,6 +476,7 @@
         "b"
       ],
       "maxTextGroupLengthPerRequest": 50,
+      "richTag": "c",
       "enableRichTranslate": true
     },
     "transmart": {
@@ -491,6 +491,7 @@
         "#\\s?",
         "\\s?#"
       ],
+      "richTag": "c",
       "enableRichTranslate": true
     },
     "baidu": {
@@ -542,6 +543,7 @@
       "tag_handling": "none",
       "html": "smart",
       "enableRichTranslate": true,
+      "richTag": "c",
       "richIdName": "data-dl-uid",
       "richIdSymbol": "\""
     },
@@ -590,6 +592,7 @@
         "</code>",
         "b"
       ],
+      "richTag": "c",
       "enableRichTranslate": true
     },
     "deeplx": {
@@ -9229,6 +9232,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-29T03:57:45.640Z",
+  "buildinConfigUpdatedAt": "2024-07-29T06:18:20.780Z",
   "latestVersion": "1.7.8"
 }
