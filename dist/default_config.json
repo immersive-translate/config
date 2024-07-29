@@ -2319,7 +2319,7 @@
         "[class='css-901oao r-14j79pv r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-bcqeeo r-qvutc0']",
         "[class='css-175oi2r r-1wbh5a2 r-dnmrzs']"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         "[data-testid=\"tweetText\"] div.r-6koalj"
       ],
       "extraInlineSelectors": [
@@ -2439,7 +2439,7 @@
         ".mhy-user-card__name",
         ".mhy-account-title__name"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         ".reply-card__content__detail p:first-child",
         ".reply-card-inner-reply__content > p:first-child"
       ]
@@ -2477,7 +2477,7 @@
         "askubuntu.com",
         "serverfault.com"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         "span.comment-copy"
       ],
       "globalStyles": {
@@ -2735,7 +2735,7 @@
         "a.anchor",
         "div.file-navigation + div.Box"
       ],
-      "extraBlockSelectors": [],
+      "extraBlockSelectors.add": [],
       "extraInlineSelectors": [
         "g-emoji",
         "a.anchor"
@@ -2885,7 +2885,7 @@
       "injectedCss": [
         ".immersive-translate-target-wrapper img { width: 16px; height: 16px }"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         ".caption-visual-line"
       ]
     },
@@ -2943,7 +2943,7 @@
         "#message",
         ".yt_to_text_transcript_text"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         "yt-formatted-string.ytd-transcript-segment-renderer",
         ".caption-visual-line"
       ],
@@ -3050,7 +3050,7 @@
         "www.youtube-nocookie.com",
         "music.youtube.com"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         ".caption-visual-line"
       ],
       "mainFrameMinTextCount": 0,
@@ -3193,7 +3193,7 @@
         ".blurb-text": "max-height: unset;",
         ".comment-body": "max-height: unset;"
       },
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         ".reader2-post-title",
         ".tweet-link-top",
         ".tweet-link-bottom",
@@ -3412,7 +3412,7 @@
         "[class*='username']",
         "[class*='repliedMessage']"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         "[class^='embedFieldValue']",
         "li[class^='card'] div[class^='message']",
         "[data-list-item-id^='forum-channel-list'] div[class^='headerText']"
@@ -3660,7 +3660,7 @@
         ".CbAZb",
         ".B6fmyf.byrV5b.Mg1HEd"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         ".MUFPAc"
       ],
       "additionalExcludeSelectors.add": [
@@ -3824,7 +3824,7 @@
         ".CommentsTableOfContents-commentAuthor",
         ".CommentBottom-bottom"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         "span.commentOnSelection"
       ]
     },
@@ -3893,7 +3893,7 @@
         "*.pornhub.com/insights/*",
         "pornhub.com/insights/*"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         ".trendingNow",
         ".searchItem",
         ".tagcloud > a"
@@ -3913,7 +3913,7 @@
     {
       "id": "yourporn",
       "matches": "https://www.youporn.com/*",
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         ".button"
       ],
       "globalStyles": {
@@ -3988,7 +3988,7 @@
         ".stats",
         ".thumb"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         ".searches > a",
         ".tag > a",
         ".extra > a",
@@ -4049,7 +4049,7 @@
       "globalStyles": {
         ".grid_title": "max-height:unset;"
       },
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         ".genre_filter_item",
         "button"
       ],
@@ -4217,7 +4217,7 @@
       "matches": "www.amazon.com",
       "paragraphMinTextCount": 4,
       "paragraphMinWordCount": 2,
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         ".a-size-small.a-link-normal.page-banner-link.a-nowrap"
       ],
       "globalStyles": {
@@ -4300,7 +4300,7 @@
         "span.display",
         "span.math"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         "span.captions",
         "span[id^=cap]"
       ],
@@ -4319,7 +4319,7 @@
     {
       "id": "thehighestofthemountains",
       "matches": "www.thehighestofthemountains.com",
-      "extraBlockSelectors": "div"
+      "extraBlockSelectors.add": "div"
     },
     {
       "id": "telegraph1",
@@ -4347,7 +4347,7 @@
         "main div[class*='h-[125]']": "height:auto"
       },
       "normalizeBody": "body",
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         "a.custom-a"
       ]
     },
@@ -4557,7 +4557,7 @@
         "header.fandom-community-header",
         "div.ph-registration-buttons"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         ".mp-nav a"
       ],
       "isTransformPreTagNewLine": true
@@ -4849,7 +4849,7 @@
         ".abstract": "height:auto !important;",
         ".show-more-lines": "height:unset !important;"
       },
-      "excludeSelectors": [
+      "excludeSelectors.add": [
         ".summary-left-panel",
         ".authors",
         "app-full-record-keywords mark"
@@ -4858,7 +4858,7 @@
         "[data-ta='summary-record-title-link']",
         "#FullRTa-fullRecordtitle-0"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         "app-summary-authors + div",
         "app-full-record-keywords span span"
       ],
@@ -4878,7 +4878,7 @@
     {
       "id": "jetbrains",
       "matches": "https://www.jetbrains.com/help/*",
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         "[data-test=prompt]"
       ]
     },
@@ -4971,7 +4971,7 @@
     {
       "id": "coinmarketcap",
       "matches": "coinmarketcap.com",
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         "div[class='sc-3502f6cd-0 JxHqg']"
       ]
     },
@@ -4992,7 +4992,7 @@
       "additionalSelectors": [
         "font[face=verdana]"
       ],
-      "extraBlockSelectors": "font[face=verdana]"
+      "extraBlockSelectors.add": "font[face=verdana]"
     },
     {
       "id": "im.zendesk",
@@ -5177,7 +5177,7 @@
     {
       "id": "newsminimalist",
       "matches": "https://www.newsminimalist.com/",
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         ".inline-flex"
       ],
       "excludeTags.remove": [
@@ -5500,7 +5500,7 @@
         "#ybar-inner-wrap",
         "#Col2-5-Rmp-Proxy"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         ".SIPGg",
         ".sc-kzMCTH.pSZXj"
       ],
@@ -5847,7 +5847,7 @@
     {
       "id": "ieee",
       "matches": "spectrum.ieee.org",
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         "small"
       ]
     },
@@ -8274,7 +8274,7 @@
       "selectorMatches": [
         "iframe[src*='player.vimeo.com']"
       ],
-      "extraBlockSelectors": [
+      "extraBlockSelectors.add": [
         "span.vp-captions-line",
         "span[class^=CaptionsRenderer_]"
       ],
@@ -9219,6 +9219,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-28T11:58:16.503Z",
+  "buildinConfigUpdatedAt": "2024-07-29T02:14:52.106Z",
   "latestVersion": "1.7.8"
 }
