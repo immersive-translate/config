@@ -2183,7 +2183,10 @@
       "isInjectVersion": true,
       "isInjectMeta": true,
       "waitForSelectorsTimeout": 1,
-      "longBuildPageLength": 1000
+      "longBuildPageLength": 1000,
+      "excludeTags.remove": [
+        "PRE"
+      ]
     },
     {
       "id": "simpread",
@@ -9219,6 +9222,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-29T02:14:52.106Z",
+  "buildinConfigUpdatedAt": "2024-07-29T03:11:59.262Z",
   "latestVersion": "1.7.8"
 }
