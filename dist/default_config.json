@@ -243,11 +243,8 @@
   "excludeTranslationHtmlTags": [
     "textarea",
     "input",
-    "button",
     "select",
     "option",
-    "iframe",
-    "form",
     "body",
     "marquee"
   ],
@@ -476,7 +473,6 @@
         "b"
       ],
       "maxTextGroupLengthPerRequest": 50,
-      "richTag": "c",
       "enableRichTranslate": true
     },
     "transmart": {
@@ -491,7 +487,6 @@
         "#\\s?",
         "\\s?#"
       ],
-      "richTag": "c",
       "enableRichTranslate": true
     },
     "baidu": {
@@ -543,7 +538,8 @@
       "tag_handling": "none",
       "html": "smart",
       "enableRichTranslate": true,
-      "richTag": "c"
+      "richIdName": "data-dl-uid",
+      "richIdSymbol": "\""
     },
     "deepl.add_v.[1.7.8]": {
       "tag_handling": "smart"
@@ -590,7 +586,6 @@
         "</code>",
         "b"
       ],
-      "richTag": "c",
       "enableRichTranslate": true
     },
     "deeplx": {
@@ -1104,6 +1099,10 @@
     "longBuildDomLength": 3000,
     "longBuildPageLength": 20,
     "detectTextBufferLength": 0,
+    "domPurifyAddTags": [
+      "iframe",
+      "button"
+    ],
     "isTranslateWhenServiceChanged": true,
     "excludeSelectorsRegexes": {
       "td,th": [
@@ -9231,6 +9230,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-29T08:59:01.665Z",
+  "buildinConfigUpdatedAt": "2024-07-29T09:46:21.121Z",
   "latestVersion": "1.7.8"
 }
