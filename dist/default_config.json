@@ -9427,8 +9427,15 @@
       "excludeTags.remove": [
         "PRE"
       ]
+    },
+    {
+      "id": "trankynam",
+      "matches": "www.trankynam.com",
+      "initialSelectorGlobalAttributes.add": {
+        "header": {}
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-30T13:43:39.026Z",
+  "buildinConfigUpdatedAt": "2024-07-30T13:49:43.861Z",
   "latestVersion": "1.7.9"
 }
