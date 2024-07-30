@@ -9420,8 +9420,15 @@
       "excludeSelectors.add": [
         "#Web-QBPL-Menu"
       ]
+    },
+    {
+      "id": "ac.nowcoder",
+      "matches": "ac.nowcoder.com",
+      "excludeTags.remove": [
+        "PRE"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-30T11:11:11.418Z",
+  "buildinConfigUpdatedAt": "2024-07-30T13:43:39.026Z",
   "latestVersion": "1.7.9"
 }
