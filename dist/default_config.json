@@ -117,6 +117,7 @@
     "https://www.pixiv.net/manga[Pixiv][chrome,firefox]",
     "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA]",
     "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA]",
+    "https://readcomiconline.li[ReadComicOnline]",
     "https://comic-fuz.com/[COMIC FUZ]",
     "https://mangadex.org/[MangaDex]",
     "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox]",
@@ -6879,6 +6880,21 @@
       }
     },
     {
+      "id": "kemono",
+      "matches": "kemono.su",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".post__thumbnail figure img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "mangadistrict",
       "matches": "mangadistrict.com",
       "imageRule.add": {
@@ -7052,7 +7068,7 @@
     {
       "id": "readcomiconline",
       "matches": [
-        "readcomiconline.li_notralsate"
+        "readcomiconline.li"
       ],
       "imageRule.add": {
         "enable": true,
@@ -7060,7 +7076,6 @@
         "imageSelectors": [
           "#divImage img"
         ],
-        "urlFetchType": "img",
         "loadingSelectors": [
           "p"
         ],
@@ -9406,6 +9421,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-30T07:36:11.944Z",
+  "buildinConfigUpdatedAt": "2024-07-30T08:18:21.610Z",
   "latestVersion": "1.7.9"
 }
