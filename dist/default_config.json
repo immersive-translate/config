@@ -211,7 +211,8 @@
     "https://app.zoom.us/[ZOOM]",
     "https://weverse.io/[Weverse]",
     "https://academy.zenva.com[Zenva Academy]",
-    "https://courses.kevinpowell.co[Kevin Powell]"
+    "https://courses.kevinpowell.co[Kevin Powell]",
+    "https://www.fau.tv[Fau TV]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -8391,6 +8392,27 @@
       }
     },
     {
+      "id": "fautv",
+      "matches": [
+        "www.fau.tv"
+      ],
+      "excludeSelectors.add": [
+        ".jw-wrapper"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".jw-wrapper *"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": "#player",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "insertBeforeSelector": ".jw-icon-cc"
+        }
+      }
+    },
+    {
       "id": "player.vimeo",
       "matches": [
         "https://player.vimeo.com/video/*",
@@ -9344,6 +9366,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-30T03:34:34.503Z",
+  "buildinConfigUpdatedAt": "2024-07-30T06:44:01.574Z",
   "latestVersion": "1.7.9"
 }
