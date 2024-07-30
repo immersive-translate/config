@@ -129,13 +129,15 @@
     "https://web-ace.jp/[Web Ace]",
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
     "https://e-hentai.org/[E-Hentai]",
+    "https://nhentai.net[nHentai]",
     "https://hitomi.la[Hitomi]",
     "https://www.antbyw.com[Antbyw]",
     "https://www.zerobywzz.com[Zerobywzz]",
     "https://www.idmzj.com[动漫之家]",
     "https://jmanga.org[Jmanga]",
     "https://twicomi.com/manga*[Twitter Comic]",
-    "https://wnacg.com[Wnacg]"
+    "https://wnacg.com[Wnacg]",
+    "https://mangadistrict.com[MANGA DISTRICT]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -6871,7 +6873,22 @@
           "#image-container img"
         ],
         "loadingSelectors": [
-          "a"
+          "section"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
+      "id": "mangadistrict",
+      "matches": "mangadistrict.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".page-break.no-gaps img"
+        ],
+        "loadingSelectors": [
+          "div"
         ],
         "intersectionRootMargin": "0px 0px 200% 0px"
       }
@@ -9389,6 +9406,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-30T07:01:18.111Z",
+  "buildinConfigUpdatedAt": "2024-07-30T07:36:11.944Z",
   "latestVersion": "1.7.9"
 }
