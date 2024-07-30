@@ -2728,7 +2728,8 @@
         "article section[aria-label='card content'] > div > div > div  > div:nth-child(2)",
         ".TimelineItem-body > .Link--primary",
         "[role=\"navigation\"] p",
-        "[data-testid=\"commit-row-item\"] h4"
+        "[data-testid=\"commit-row-item\"] h4",
+        ".font-mktg"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -9421,6 +9422,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-30T10:56:21.692Z",
+  "buildinConfigUpdatedAt": "2024-07-30T11:11:11.418Z",
   "latestVersion": "1.7.9"
 }
