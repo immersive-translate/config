@@ -134,7 +134,8 @@
     "https://www.zerobywzz.com[Zerobywzz]",
     "https://www.idmzj.com[动漫之家]",
     "https://jmanga.org[Jmanga]",
-    "https://twicomi.com/manga*[Twitter Comic]"
+    "https://twicomi.com/manga*[Twitter Comic]",
+    "https://wnacg.com[Wnacg]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -6822,6 +6823,21 @@
       }
     },
     {
+      "id": "wnacg",
+      "matches": "https://wnacg.com/*",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#imgarea img"
+        ],
+        "loadingSelectors": [
+          "a"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "nhentai",
       "matches": "nhentai.net",
       "imageRule.add": {
@@ -9328,6 +9344,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-30T02:50:32.524Z",
+  "buildinConfigUpdatedAt": "2024-07-30T03:34:34.503Z",
   "latestVersion": "1.7.9"
 }
