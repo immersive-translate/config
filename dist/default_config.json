@@ -139,7 +139,8 @@
     "https://twicomi.com/manga*[Twitter Comic]",
     "https://wnacg.com[Wnacg]",
     "https://mangadistrict.com[MANGA DISTRICT]",
-    "https://www.fanbox.cc[FANBOX]"
+    "https://www.fanbox.cc[FANBOX]",
+    "https://vw.mangaz.com[MangaZ]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -6927,6 +6928,21 @@
       }
     },
     {
+      "id": "mangaz",
+      "matches": "vw.mangaz.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "opImageType": "append",
+        "imageSelectors": [
+          ".page_image canvas"
+        ],
+        "loadingSelectors": [
+          "div"
+        ]
+      }
+    },
+    {
       "id": "futabanet",
       "matches": [
         "gaugau.futabanet_block_too_much.jp"
@@ -9452,6 +9468,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-31T02:40:30.728Z",
+  "buildinConfigUpdatedAt": "2024-07-31T03:09:11.223Z",
   "latestVersion": "1.7.9"
 }
