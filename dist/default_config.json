@@ -6031,12 +6031,6 @@
           "injectCSS": ".imt-quick-subtitle-button { height: 60%; } .label { display: none; } .logo,.logo svg { width: 70%; } .imt-quick-subtitle-button { margin: 0 8px;}",
           "insertBeforeSelector": ".bpx-player-ctrl-quality",
           "ccEnableSelector": ".bpx-player-ctrl-subtitle"
-        },
-        "attachRule": {
-          "appendSelector": ".bpx-player-subtitle-panel",
-          "injectedGlobalCSS": [
-            ".bpx-player-subtitle-panel-text { display: none; }"
-          ]
         }
       }
     },
@@ -9468,6 +9462,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-31T03:09:11.223Z",
+  "buildinConfigUpdatedAt": "2024-07-31T06:58:34.897Z",
   "latestVersion": "1.7.9"
 }
