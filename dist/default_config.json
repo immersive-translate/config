@@ -6902,7 +6902,11 @@
         ],
         "loadingSelectors": [
           "div"
-        ]
+        ],
+        "inValidSrcRegex": [
+          "blank.gif"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
       }
     },
     {
@@ -9466,6 +9470,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-01T08:50:53.455Z",
+  "buildinConfigUpdatedAt": "2024-08-01T08:53:45.862Z",
   "latestVersion": "1.7.9"
 }
