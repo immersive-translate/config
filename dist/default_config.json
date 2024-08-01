@@ -6902,8 +6902,7 @@
         ],
         "loadingSelectors": [
           "div"
-        ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        ]
       }
     },
     {
@@ -9467,6 +9466,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-01T05:53:09.306Z",
+  "buildinConfigUpdatedAt": "2024-08-01T06:00:46.945Z",
   "latestVersion": "1.7.9"
 }
