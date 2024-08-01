@@ -960,7 +960,7 @@
       "provider": "custom",
       "limit": 10,
       "model": "Qwen/Qwen2-7B-Instruct",
-      "apiUrl": "https://public-beta-api.siliconflow.cn/v1/chat/completions"
+      "apiUrl": "https://api.siliconflow.cn/v1/chat/completions"
     },
     "lingyiwanwu": {
       "extends": "ai",
@@ -9466,6 +9466,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-01T06:00:46.945Z",
+  "buildinConfigUpdatedAt": "2024-08-01T08:50:53.455Z",
   "latestVersion": "1.7.9"
 }
