@@ -9452,6 +9452,10 @@
       "matches": "ac.nowcoder.com",
       "excludeTags.remove": [
         "PRE"
+      ],
+      "excludeSelectors.add": [
+        ".answer-module",
+        ".question-intr"
       ]
     },
     {
@@ -9462,6 +9466,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-07-31T06:58:34.897Z",
+  "buildinConfigUpdatedAt": "2024-08-01T04:32:58.209Z",
   "latestVersion": "1.7.9"
 }
