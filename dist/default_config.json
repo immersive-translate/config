@@ -6964,8 +6964,9 @@
       "imageRule.add": {
         "enable": true,
         "type": "mangaImage",
+        "opImageType": "append",
         "imageSelectors": [
-          ".currentScreen canvas"
+          "#canvasCluster canvas"
         ],
         "loadingSelectors": [
           "div"
@@ -9520,6 +9521,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-02T10:15:42.806Z",
+  "buildinConfigUpdatedAt": "2024-08-02T12:21:19.696Z",
   "latestVersion": "1.8.1"
 }
