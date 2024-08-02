@@ -2005,7 +2005,8 @@
     {
       "id": "sci-hub.pdfWebPage",
       "matches": [
-        "sci-hub.*"
+        "sci-hub.*",
+        "www.scihubmirror.com"
       ],
       "waitForSelectorsTimeout": 1,
       "pdfUrlExtractRule": {
@@ -6943,6 +6944,36 @@
       }
     },
     {
+      "id": "fantia",
+      "matches": "fantia_notranslate.*",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "picture.article__atomic-block img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
+      "id": "pash-up",
+      "matches": "pash-up.jp",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".currentScreen canvas"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "mangaz",
       "matches": "vw.mangaz.com",
       "imageRule.add": {
@@ -9489,6 +9520,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-02T09:03:47.165Z",
+  "buildinConfigUpdatedAt": "2024-08-02T10:15:42.806Z",
   "latestVersion": "1.8.1"
 }
