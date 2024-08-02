@@ -129,8 +129,8 @@
     "https://comic-walker.com/[ComicWalker]",
     "https://web-ace.jp/[Web Ace]",
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
-    "https://e-hentai.org/[E-Hentai]",
-    "https://nhentai.net[nHentai]",
+    "https://e-hentai.org/[E-Hentai][chrome,firefox,safari]",
+    "https://nhentai.net[nHentai][chrome,firefox,safari]",
     "https://www.antbyw.com[Antbyw]",
     "https://www.zerobywzz.com[Zerobywzz]",
     "https://www.idmzj.com[动漫之家]",
@@ -9478,6 +9478,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-02T06:50:09.618Z",
+  "buildinConfigUpdatedAt": "2024-08-02T07:27:53.021Z",
   "latestVersion": "1.7.9"
 }
