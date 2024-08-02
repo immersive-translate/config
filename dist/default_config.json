@@ -767,6 +767,7 @@
       "assistantId": "common",
       "proModel": "claude-3-haiku-20240307",
       "proLimit": 10,
+      "temperature": 0,
       "enableRichTranslate": true
     },
     "openai": {
@@ -2319,8 +2320,15 @@
         "[data-testid='UserDescription'] a",
         "[data-testid='HoverCard'] a",
         "[data-testid='UserCell'] a",
-        "[data-testid='birdwatch-pivot']  a",
+        "[data-testid='birdwatch-pivot'] a",
         ".DocsMarkdown--link-external-icon"
+      ],
+      "rich.additionalStayOriginalSelectors.remove": [
+        "[data-testid=\"tweetText\"] a",
+        "[data-testid='UserDescription'] a",
+        "[data-testid='HoverCard'] a",
+        "[data-testid='UserCell'] a",
+        "[data-testid='birdwatch-pivot'] a"
       ],
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
@@ -9470,6 +9478,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-01T08:53:45.862Z",
+  "buildinConfigUpdatedAt": "2024-08-02T03:37:54.594Z",
   "latestVersion": "1.7.9"
 }
