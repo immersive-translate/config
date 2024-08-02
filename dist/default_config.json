@@ -796,8 +796,8 @@
       "systemPrompt": "You are a professional, authentic translation engine, only returns translations.",
       "prompt": "Translate the text to {{to}} Language, please do not explain my original text.:\n\n{{text}}",
       "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}",
-      "model": "gpt-4o-mini",
-      "proModel": "gpt-4o-mini",
+      "model": "gpt-3.5-turbo",
+      "proModel": "gpt-3.5-turbo",
       "proLimit": 10,
       "overrides": [
         {
@@ -9522,6 +9522,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-02T13:30:37.543Z",
+  "buildinConfigUpdatedAt": "2024-08-02T15:57:56.818Z",
   "latestVersion": "1.8.1"
 }
