@@ -9477,7 +9477,8 @@
       "excludeSelectors.add": [
         ".answer-module",
         ".question-intr",
-        ".language-list"
+        ".language-list",
+        ".question-oi"
       ]
     },
     {
@@ -9488,6 +9489,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-02T09:00:11.492Z",
+  "buildinConfigUpdatedAt": "2024-08-02T09:03:47.165Z",
   "latestVersion": "1.8.1"
 }
