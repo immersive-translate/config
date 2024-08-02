@@ -6758,6 +6758,11 @@
         "imageSelectors": [
           "#i3 #img"
         ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ],
         "loadingSelectors": [
           "#i3"
         ]
@@ -6877,6 +6882,11 @@
         "type": "mangaImage",
         "imageSelectors": [
           "#image-container img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ],
         "loadingSelectors": [
           "section"
@@ -9478,6 +9488,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-02T07:51:30.000Z",
+  "buildinConfigUpdatedAt": "2024-08-02T08:03:08.676Z",
   "latestVersion": "1.8.1"
 }
