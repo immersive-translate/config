@@ -131,7 +131,6 @@
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
     "https://e-hentai.org/[E-Hentai]",
     "https://nhentai.net[nHentai]",
-    "https://hitomi.la[Hitomi]",
     "https://www.antbyw.com[Antbyw]",
     "https://www.zerobywzz.com[Zerobywzz]",
     "https://www.idmzj.com[动漫之家]",
@@ -6782,7 +6781,7 @@
     {
       "id": "hitomi",
       "matches": [
-        "hitomi.la"
+        "hitomi_notranslate.la"
       ],
       "imageRule.add": {
         "enable": true,
@@ -6798,7 +6797,8 @@
         "loadingSelectors": [
           "picture"
         ]
-      }
+      },
+      "_comment": "插入图片闪动"
     },
     {
       "id": "antbyw",
@@ -9478,6 +9478,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-02T03:37:54.594Z",
+  "buildinConfigUpdatedAt": "2024-08-02T06:50:09.618Z",
   "latestVersion": "1.7.9"
 }
