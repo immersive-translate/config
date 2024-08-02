@@ -139,7 +139,8 @@
     "https://wnacg.com[Wnacg]",
     "https://mangadistrict.com[MANGA DISTRICT]",
     "https://www.fanbox.cc[FANBOX]",
-    "https://vw.mangaz.com[MangaZ]"
+    "https://vw.mangaz.com[MangaZ]",
+    "https://pash-up.jp[PASH UP]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -9521,6 +9522,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-02T12:21:19.696Z",
+  "buildinConfigUpdatedAt": "2024-08-02T12:22:08.847Z",
   "latestVersion": "1.8.1"
 }
