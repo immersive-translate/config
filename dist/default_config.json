@@ -140,7 +140,8 @@
     "https://mangadistrict.com[MANGA DISTRICT]",
     "https://www.fanbox.cc[FANBOX]",
     "https://vw.mangaz.com[MangaZ]",
-    "https://pash-up.jp[PASH UP]"
+    "https://pash-up.jp[PASH UP]",
+    "https://www.colamanga.com[COLAMANGA]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -6976,6 +6977,21 @@
       }
     },
     {
+      "id": "colamanga",
+      "matches": "www.colamanga.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".mh_comicpic img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "mangaz",
       "matches": "vw.mangaz.com",
       "imageRule.add": {
@@ -9522,6 +9538,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-05T03:35:29.873Z",
+  "buildinConfigUpdatedAt": "2024-08-06T03:31:09.759Z",
   "latestVersion": "1.8.1"
 }
