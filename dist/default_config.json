@@ -254,8 +254,6 @@
   "excludeTranslationHtmlTags": [
     "textarea",
     "input",
-    "select",
-    "option",
     "body",
     "marquee"
   ],
@@ -1113,7 +1111,9 @@
     "detectTextBufferLength": 0,
     "domPurifyAddTags": [
       "iframe",
-      "button"
+      "button",
+      "select",
+      "option"
     ],
     "isTranslateWhenServiceChanged": true,
     "excludeSelectorsRegexes": {
@@ -4976,10 +4976,16 @@
     },
     {
       "id": "jetbrains",
-      "matches": "https://www.jetbrains.com/help/*",
+      "matches": "https://*.jetbrains.com",
       "extraBlockSelectors.add": [
         "[data-test=prompt]"
-      ]
+      ],
+      "additionalExcludeSelectors.add": [
+        ".comment__info"
+      ],
+      "globalStyles.add": {
+        ".card p,.card h4": "-webkit-line-clamp:unset;"
+      }
     },
     {
       "id": "crates",
@@ -9540,6 +9546,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-07T06:25:03.986Z",
+  "buildinConfigUpdatedAt": "2024-08-07T06:53:56.149Z",
   "latestVersion": "1.8.1"
 }
