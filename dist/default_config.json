@@ -2594,7 +2594,8 @@
       "matches": "old.reddit.com",
       "selectors": [
         "p.title > a",
-        "[role=main] .md-container"
+        "[role=main] .md-container",
+        ".media-gallery .usertext"
       ],
       "detectParagraphLanguage": true
     },
@@ -7994,7 +7995,8 @@
       "id": "aniwatch",
       "matches": [
         "megacloud.tv",
-        "aniwatch.to"
+        "aniwatch.to",
+        "9animetv.to"
       ],
       "excludeSelectors.add": [
         ".jw-wrapper",
@@ -9546,6 +9548,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-07T06:53:56.149Z",
+  "buildinConfigUpdatedAt": "2024-08-07T09:59:06.409Z",
   "latestVersion": "1.8.1"
 }
