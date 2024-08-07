@@ -9536,8 +9536,14 @@
       "initialSelectorGlobalAttributes.add": {
         "header": {}
       }
+    },
+    {
+      "id": "supabase",
+      "matches": "supabase.com",
+      "rich.stayOriginalTags.remove": [],
+      "_comment": "临时code标签内部块级元素翻译排除"
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-06T03:31:09.759Z",
+  "buildinConfigUpdatedAt": "2024-08-07T05:39:28.196Z",
   "latestVersion": "1.8.1"
 }
