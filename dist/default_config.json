@@ -8301,7 +8301,8 @@
       "id": "movie-web",
       "matches": [
         "movie-web.app/media*",
-        "movie-web-me.vercel.app/media*"
+        "movie-web-me.vercel.app/media*",
+        "*.vidbinge.com"
       ],
       "excludeSelectors.add": [
         "#root"
@@ -9549,6 +9550,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-08T01:39:46.648Z",
+  "buildinConfigUpdatedAt": "2024-08-08T09:22:11.450Z",
   "latestVersion": "1.8.1"
 }
