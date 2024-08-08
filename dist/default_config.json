@@ -2595,7 +2595,8 @@
       "selectors": [
         "p.title > a",
         "[role=main] .md-container",
-        ".media-gallery .usertext"
+        ".media-gallery .usertext",
+        ".expando .usertext"
       ],
       "detectParagraphLanguage": true
     },
@@ -9548,6 +9549,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-07T09:59:06.409Z",
+  "buildinConfigUpdatedAt": "2024-08-08T01:39:46.648Z",
   "latestVersion": "1.8.1"
 }
