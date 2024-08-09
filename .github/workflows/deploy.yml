@@ -9,6 +9,7 @@ on:
       - '.github/workflows/deploy.yml'
       - "wrangler.toml"
       - "worker.template.js"
+      - "Makefile"
 jobs:
   deploy:
     name: Deploy to Cloudflare Pages
