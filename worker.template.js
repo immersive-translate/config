@@ -9,7 +9,8 @@ export default {
       // no cache
 
       return formatResponse(
-        new Response(DEFAULT_CONFIG, {
+        new Response(JSON.stringify(DEFAULT_CONFIG,null,2) 
+        , {
           headers: {
             "Content-Type": "application/json",
             "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
