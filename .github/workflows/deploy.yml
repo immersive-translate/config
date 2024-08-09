@@ -6,6 +6,9 @@ on:
       - main
     paths:
       - 'dist/**'
+      - '.github/workflows/deploy.yml'
+      - "wrangler.toml"
+      - "worker.template.js"
 jobs:
   deploy:
     name: Deploy to Cloudflare Pages
