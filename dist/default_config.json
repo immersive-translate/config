@@ -215,6 +215,7 @@
     "https://w.mgtv.com/[MGTV]",
     "https://dev.epicgames.com/[DevEpicGames]",
     "https://app.zoom.us/[ZOOM]",
+    "https://teams.live.com/[TEAM]",
     "https://weverse.io/[Weverse]",
     "https://academy.zenva.com[Zenva Academy]",
     "https://courses.kevinpowell.co[Kevin Powell]",
@@ -2435,6 +2436,39 @@
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #live-transcription-subtitle font {direction: rtl;}"
+        ]
+      }
+    },
+    {
+      "id": "team",
+      "matches": [
+        "teams.live.com"
+      ],
+      "excludeSelectors.add": [
+        ".ui-box[class='ui-box j'] .ui-box[class='ui-box']"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".ui-box[class='ui-box j'] .ui-box[class='ui-box'] *"
+      ],
+      "extraInlineSelectors.add": [
+        "[data-tid='closed-caption-text']"
+      ],
+      "subtitleRule.add": {
+        "type": "live",
+        "injectedCss": [
+          ".fui-Flex.___8puuoi0.f22iagw.f18w1nra.f1en88kg { flex-direction: column !important; }",
+          "font.immersive-translate-target-wrapper br { display: none; }"
+        ],
+        "liveSubtitleRule": {
+          "containerSelector": ".ui-box[class='ui-box j'] .ui-box[class='ui-box']",
+          "textSelectors": [
+            "data-tid='closed-caption-text'"
+          ],
+          "reportSelector": "[data-tid='closed-captions-renderer']",
+          "mutationChangeDelay": 1000
+        },
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] font.immersive-translate-target-wrapper {direction: rtl;}"
         ]
       }
     },
@@ -9550,6 +9584,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-08T09:22:11.450Z",
+  "buildinConfigUpdatedAt": "2024-08-09T02:22:11.190Z",
   "latestVersion": "1.8.1"
 }
