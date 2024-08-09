@@ -1,5 +1,6 @@
 export default {
   async fetch(request, env, ctx) {
+    const { pathname, searchParams } = new URL(request.url);
     if (pathname === "/") {
       return new Response("Hello");
     } else if (pathname === "/default_config.json") {
