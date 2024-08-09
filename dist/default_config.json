@@ -8511,7 +8511,7 @@
           "media-controller div.pointer-events-none .flex .flex span.text-textPrimary-onDark span {white-space: pre-line;}"
         ],
         "attachRule": {
-          "appendSelector": ".aspect-h-9.sticky.top-0",
+          "appendSelector": ".pointer-events-none.absolute.z-10.flex.h-full.w-full.items-center.justify-center",
           "injectedGlobalCSS": [
             ".transition-transform { display: none !important; }",
             ".imt-caption-window { margin-bottom: 50px; }"
@@ -9587,6 +9587,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-09T02:58:06.764Z",
+  "buildinConfigUpdatedAt": "2024-08-09T06:34:27.944Z",
   "latestVersion": "1.8.1"
 }
