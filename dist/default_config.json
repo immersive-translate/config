@@ -2605,6 +2605,9 @@
         ".AnswerFooter___StyledFlex-sc-2xbo88-0",
         "[class='q-box qu-mb--small']"
       ],
+      "additionalExcludeSelectors.add": [
+        ".qu-zIndex--action_bar"
+      ],
       "globalStyles": {
         ".qu-truncateLines--3": "-webkit-line-clamp: unset;"
       }
@@ -9584,6 +9587,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-09T02:22:11.190Z",
+  "buildinConfigUpdatedAt": "2024-08-09T02:58:06.764Z",
   "latestVersion": "1.8.1"
 }
