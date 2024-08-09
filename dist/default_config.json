@@ -8506,6 +8506,7 @@
         },
         "activeLangSelector": "div[data-testid='subtitles-item-endonym'].font-bold",
         "videoPlayerSelector": "video",
+        "videoSelector": "video",
         "subtitleUrlRegExp": "\\.vtt",
         "injectedCss": [
           "media-controller div.pointer-events-none .flex .flex span.text-textPrimary-onDark span {white-space: pre-line;}"
@@ -9587,6 +9588,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-09T06:34:27.944Z",
+  "buildinConfigUpdatedAt": "2024-08-09T06:56:49.389Z",
   "latestVersion": "1.8.1"
 }
