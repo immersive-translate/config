@@ -20,3 +20,12 @@ jobs:
           accountId: ${{secrets.IMMERSIVE_CLOUDFLARE_ACCOUNT_ID}}
           projectName: config
           directory: dist
+      - name: build worker
+        run: make build
+      - name: Deploy worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.IMMERSIVE_CLOUDFLARE_API_TOKEN }}
+          accountId: ${{secrets.IMMERSIVE_CLOUDFLARE_ACCOUNT_ID}}
+          workingDirectory: ./
+          command: deploy ./.cache/worker.js --env prod

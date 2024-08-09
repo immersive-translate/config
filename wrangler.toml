@@ -1,0 +1,12 @@
+name = "config-worker"
+compatibility_date = "2023-12-01"
+main = "worker.js"
+account_id = "e87258c26d9b7cefe890b9f3c165ad8f"
+[vars]
+PROD="0"
+[env.prod.vars]
+PROD="1"
+main = ".cache/worker.js"
+
+
+
