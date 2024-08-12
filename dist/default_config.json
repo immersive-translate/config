@@ -3141,7 +3141,7 @@
           ".caption-window",
           ".caption-visual-line"
         ],
-        "videoPlayerSelector": ".html5-video-player.playing-mode,.html5-video-player.paused-mode",
+        "videoPlayerSelector": ".html5-video-player",
         "loadingContainerSelector": ".ytp-caption-window-container",
         "videoADSelector": ".ytp-ad-player-overlay",
         "translationOnlyPattern": [
@@ -3156,12 +3156,12 @@
           "appendSelector": ".ypcs-control-buttons-right",
           "insertBeforeSelector": ".ypcs-control-buttons-right .ypcs-volume-control-slot"
         },
-        "videoSelector": ".html5-video-player.playing-mode video,.html5-video-player.paused-mode video",
+        "videoSelector": ".html5-video-player video,.html5-video-player video",
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
-          "appendSelector": ".html5-video-player.playing-mode,.html5-video-player.paused-mode",
+          "appendSelector": ".html5-video-player",
           "injectedCSS": [
             ".imt-caption-container {z-index:40;}",
             ".imt-caption-window {margin-bottom: 2%;}"
@@ -9588,6 +9588,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-09T06:56:49.389Z",
+  "buildinConfigUpdatedAt": "2024-08-12T04:07:45.368Z",
   "latestVersion": "1.8.1"
 }
