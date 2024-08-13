@@ -243,7 +243,7 @@
     "news.ycombinator.com"
   ],
   "spVersion": "1.8.2",
-  "ispVersion": "1.0.4",
+  "ispVersion": "1.0.5",
   "gspVersion": "1.0.1",
   "modifiedBySystem": false,
   "enableDefaultAlwaysTranslatedUrls": true,
@@ -9588,6 +9588,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-13T06:23:32.167Z",
+  "buildinConfigUpdatedAt": "2024-08-13T15:08:45.777Z",
   "latestVersion": "1.8.1"
 }
