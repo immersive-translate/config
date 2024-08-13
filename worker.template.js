@@ -17,6 +17,20 @@ export default {
           },
         }),
       );
+    } else if (pathname === "/meta.json") {
+
+      // 
+      // no cache
+
+      return formatResponse(
+        new Response(JSON.stringify(META,null,2) 
+        , {
+          headers: {
+            "Content-Type": "application/json",
+            "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
+          },
+        }),
+      );
     } else {
       return formatResponse(
         new Response("Not Found", {
