@@ -220,7 +220,8 @@
     "https://academy.zenva.com[Zenva Academy]",
     "https://courses.kevinpowell.co[Kevin Powell]",
     "https://www.fau.tv[Fau TV]",
-    "https://www.thaipbs.or.th/[Thai PBS]"
+    "https://www.thaipbs.or.th/[Thai PBS]",
+    "https://gorails.com/[GORAILS]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -9128,6 +9129,28 @@
       }
     },
     {
+      "id": "mediadelivery",
+      "matches": "iframe.mediadelivery.net",
+      "excludeSelectors.add": [
+        ".plyr__captions",
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".plyr__captions *",
+        "#immersive-translate-caption-window *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": "\\.vtt",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".plyr__captions",
+        "quickButtonRule": {
+          "appendSelector": ".plyr__controls",
+          "insertBeforeSelector": "button[data-plyr='captions']"
+        }
+      }
+    },
+    {
       "id": "archiveToday",
       "matches": [
         "archive.today",
@@ -9588,6 +9611,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-13T15:08:45.777Z",
+  "buildinConfigUpdatedAt": "2024-08-13T16:06:49.404Z",
   "latestVersion": "1.8.1"
 }
