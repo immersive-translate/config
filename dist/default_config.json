@@ -6547,7 +6547,7 @@
     {
       "id": "udemy",
       "matches": [
-        "www.udemy.com"
+        "*.udemy.com"
       ],
       "excludeSelectors.add": [
         "[data-purpose='captions-cue-text']",
@@ -9588,6 +9588,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-12T04:07:45.368Z",
+  "buildinConfigUpdatedAt": "2024-08-13T06:23:32.167Z",
   "latestVersion": "1.8.1"
 }
