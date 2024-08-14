@@ -2447,10 +2447,10 @@
         "teams.live.com"
       ],
       "excludeSelectors.add": [
-        ".ui-box[class='ui-box j'] .ui-box[class='ui-box']"
+        ".ui-box .ui-box[class='ui-box']"
       ],
       "mutationExcludeSelectors.add": [
-        ".ui-box[class='ui-box j'] .ui-box[class='ui-box'] *"
+        ".ui-box .ui-box[class='ui-box'] *"
       ],
       "extraInlineSelectors.add": [
         "[data-tid='closed-caption-text']"
@@ -2462,7 +2462,7 @@
           "font.immersive-translate-target-wrapper br { display: none; }"
         ],
         "liveSubtitleRule": {
-          "containerSelector": ".ui-box[class='ui-box j'] .ui-box[class='ui-box']",
+          "containerSelector": ".ui-box .ui-box[class='ui-box']",
           "textSelectors": [
             "data-tid='closed-caption-text'"
           ],
@@ -9642,6 +9642,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-14T07:48:05.082Z",
+  "buildinConfigUpdatedAt": "2024-08-14T08:19:41.836Z",
   "latestVersion": "1.8.1"
 }
