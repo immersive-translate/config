@@ -1706,6 +1706,9 @@
     "excludeTags.remove_v.[1.4.9]": [
       "BUTTON"
     ],
+    "additionalExcludeSelectors.remove_v.[1.4.9]": [
+      ".btn"
+    ],
     "bodyTranslateTags": [
       "FOOTER",
       "ASIDE",
@@ -9642,6 +9645,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-14T08:19:41.836Z",
+  "buildinConfigUpdatedAt": "2024-08-14T10:17:09.243Z",
   "latestVersion": "1.8.1"
 }
