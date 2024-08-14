@@ -9515,7 +9515,9 @@
       "id": "ar5iv.labs.arxiv.org",
       "matches": "ar5iv.labs.arxiv.org",
       "excludeSelectors.add": [
-        ".ltx_bibliography"
+        ".ltx_bibliography",
+        ".ltx_tag.ltx_tag_item",
+        ".ltx_listing.ltx_lstlisting.ltx_listing"
       ]
     },
     {
@@ -9611,6 +9613,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-13T16:06:49.404Z",
+  "buildinConfigUpdatedAt": "2024-08-14T06:50:08.732Z",
   "latestVersion": "1.8.1"
 }
