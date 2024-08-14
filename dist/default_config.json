@@ -221,7 +221,8 @@
     "https://courses.kevinpowell.co[Kevin Powell]",
     "https://www.fau.tv[Fau TV]",
     "https://www.thaipbs.or.th/[Thai PBS]",
-    "https://gorails.com/[GORAILS]"
+    "https://gorails.com/[GORAILS]",
+    "https://quantra.quantinsti.com/[QUANTRA]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -8425,6 +8426,34 @@
       }
     },
     {
+      "id": "quantinsti",
+      "matches": [
+        "quantra.quantinsti.com"
+      ],
+      "excludeSelectors.add": [
+        "#vjs_video_3"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#vjs_video_3 *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": ".*\\.vtt",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "injectCSS": ".label { display: none; }",
+          "insertBeforeSelector": "div.vjs-subs-caps-button"
+        },
+        "attachRule": {
+          "appendSelector": "#vjs_video_3",
+          "injectedGlobalCSS": [
+            "div.vjs-text-track-cue { display: none !important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "paramountplus",
       "matches": [
         "*.paramountplus.com"
@@ -9613,6 +9642,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-14T06:50:08.732Z",
+  "buildinConfigUpdatedAt": "2024-08-14T07:48:05.082Z",
   "latestVersion": "1.8.1"
 }
