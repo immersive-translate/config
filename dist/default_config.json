@@ -105,6 +105,10 @@
     "officialHtmlSelector": "#latexml-download-link",
     "validBefore": "2023-10-31",
     "validOnlySelector": ".download-format",
+    "detectOrders": [
+      "https://arxiv.org/html",
+      "https://ar5iv.labs.arxiv.org/html"
+    ],
     "matches": [
       "https://arxiv.org/abs/*"
     ]
@@ -635,6 +639,7 @@
         "normal_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_source_field}}: Source\nOutput:\n  - id: 1\n    {{imt_trans_field}}: Translation\n</example>",
         "subtitle_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\nOutput:\n  - id: 1\n    {{imt_sub_trans_field}}: ...\n  - id: 2\n    {{imt_sub_trans_field}}: ...\n</example>"
       },
+      "assistantId": "common",
       "systemPrompt": "You are a professional, authentic machine translation engine.",
       "prompt": "Translate the following source text to {{to}},{{html_only}} Output translation directly without any additional text.\nSource Text: {{text}}\n\nTranslated Text:",
       "multiplePrompt": "You will be given a YAML formatted input containing entries with \"id\" and \"{{imt_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{normal_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
@@ -780,6 +785,7 @@
       ],
       "ignoreResRegexs": [
         "^抱歉.*要求",
+        "^抱歉.*请求",
         "^抱歉.*翻译",
         "^很抱歉.*翻译",
         "^我很抱歉.*翻译",
@@ -787,6 +793,7 @@
         "^抱歉.*我无法",
         "^I'm sorry, but I cannot",
         "^I'm sorry, but I cannot provide",
+        "^I'm sorry, I can't assist with that.",
         "^这句话的内容不适合在此平台上讨论",
         "^这句话不适合在公共场合讨论",
         "地道的翻译引擎，你只返回译文，不含任何解释"
@@ -853,7 +860,8 @@
       "translationTextSeparator": "\n\n%%\n\n",
       "newlinePlaceholderDelimiters": [
         "\n<br>\n"
-      ]
+      ],
+      "enableFallback": true
     },
     "openai.add_v.[1.3.4]": {
       "extends": "ai",
@@ -882,7 +890,9 @@
       "placeholderDelimiters": [
         "@",
         "#"
-      ]
+      ],
+      "richTag": "c",
+      "enableRichTranslate": true
     },
     "you": {
       "placeholderDelimiters": [
@@ -2039,6 +2049,7 @@
       "detectTextBufferLength": 80,
       "targetWrapperTag": "span",
       "isInjectVersion": "true",
+      "enableRichTranslate": true,
       "selectorMatches": [
         "meta[name='immersive-translate-ebook-builder'][content='true']"
       ],
@@ -9124,7 +9135,7 @@
       "subtitleRule.add": {
         "type": "xml",
         "subtitleUrlRegExp": "\\.xml\\?",
-        "loadingContainerSelector": ".intl-video-area",
+        "loadingContainerSelector": ".iqp-player-g.iqp-player.iqp-player-pc",
         "xmlTextSelector": "sub",
         "loadingStyle": "bottom: 10%;",
         "rtlInjectedCss": [
@@ -9136,6 +9147,19 @@
         ],
         "quickButtonRule": {
           "appendSelector": ".iqp-contrls-right"
+        },
+        "attachRule": {
+          "appendSelector": ".iqp-player-g.iqp-player.iqp-player-pc",
+          "injectedGlobalCSS": [
+            "iqpdiv[data-player-hook='subtitleelem'] {display: none;}"
+          ]
+        },
+        "xmlSetting": {
+          "subtitleItemSelector": "dia",
+          "textSelector": "sub",
+          "startSelector": "st",
+          "endSelector": "et",
+          "timeDivisor": 1000
         }
       }
     },
@@ -9243,7 +9267,9 @@
       "excludeSelectors.add": [
         ".desktop_header",
         "[class*='ltx_lst_language_']",
-        "div.package-alerts"
+        "div.package-alerts",
+        ".ltx_toclist",
+        ".ltx_authors"
       ]
     },
     {
@@ -9645,6 +9671,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-14T10:17:09.243Z",
+  "buildinConfigUpdatedAt": "2024-08-14T12:04:48.364Z",
   "latestVersion": "1.8.1"
 }
