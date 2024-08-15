@@ -6944,6 +6944,21 @@
       }
     },
     {
+      "id": "cp-library",
+      "matches": "https://cp-library.com/*",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".content img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "nhentai",
       "matches": "nhentai.net",
       "imageRule.add": {
@@ -9710,6 +9725,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-15T04:31:37.745Z",
+  "buildinConfigUpdatedAt": "2024-08-15T07:00:51.825Z",
   "latestVersion": "1.8.2"
 }
