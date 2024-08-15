@@ -6959,6 +6959,21 @@
       }
     },
     {
+      "id": "18comic",
+      "matches": "https://18comic.vip/*",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".panel-body img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "nhentai",
       "matches": "nhentai.net",
       "imageRule.add": {
@@ -9725,6 +9740,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-15T07:00:51.825Z",
+  "buildinConfigUpdatedAt": "2024-08-15T07:28:05.301Z",
   "latestVersion": "1.8.2"
 }
