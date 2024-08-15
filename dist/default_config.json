@@ -145,8 +145,7 @@
     "https://www.fanbox.cc[FANBOX]",
     "https://vw.mangaz.com[MangaZ]",
     "https://pash-up.jp[PASH UP]",
-    "https://www.colamanga.com[COLAMANGA]",
-    "https://hitomi.la/[Hitomi]"
+    "https://www.colamanga.com[COLAMANGA]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -227,8 +226,7 @@
     "https://www.fau.tv[Fau TV]",
     "https://www.thaipbs.or.th/[Thai PBS]",
     "https://gorails.com/[GORAILS]",
-    "https://quantra.quantinsti.com/[QUANTRA]",
-    "https://www.gaia.com/[Gaia]"
+    "https://quantra.quantinsti.com/[QUANTRA]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -250,7 +248,7 @@
     "*.medium.com",
     "news.ycombinator.com"
   ],
-  "spVersion": "1.8.3",
+  "spVersion": "1.8.2",
   "ispVersion": "1.0.5",
   "gspVersion": "1.0.1",
   "modifiedBySystem": false,
@@ -6854,7 +6852,7 @@
     {
       "id": "hitomi",
       "matches": [
-        "hitomi.la"
+        "hitomi_notranslate.la"
       ],
       "imageRule.add": {
         "enable": true,
@@ -6939,39 +6937,6 @@
         ],
         "loadingSelectors": [
           "a",
-          "div"
-        ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
-      }
-    },
-    {
-      "id": "cp-library",
-      "matches": "https://cp-library.com/*",
-      "imageRule.add": {
-        "enable": true,
-        "type": "mangaImage",
-        "imageSelectors": [
-          ".content img"
-        ],
-        "loadingSelectors": [
-          "div"
-        ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
-      }
-    },
-    {
-      "id": "18comic",
-      "matches": [
-        "18comic.*",
-        "jmcomicg*"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "mangaImage",
-        "imageSelectors": [
-          ".panel-body img"
-        ],
-        "loadingSelectors": [
           "div"
         ],
         "intersectionRootMargin": "0px 0px 200% 0px"
@@ -7379,7 +7344,7 @@
     {
       "id": "pixiv",
       "matches": [
-        "*.pixiv.net"
+        "www.pixiv.net"
       ],
       "imageRule.add": {
         "enable": true,
@@ -8500,42 +8465,6 @@
           "appendSelector": "#vjs_video_3",
           "injectedGlobalCSS": [
             "div.vjs-text-track-cue { display: none !important; }"
-          ]
-        }
-      }
-    },
-    {
-      "id": "gaia",
-      "matches": [
-        "www.gaia.com"
-      ],
-      "excludeSelectors.add": [
-        "video-js"
-      ],
-      "mutationExcludeSelectors.add": [
-        "video-js *"
-      ],
-      "subtitleRule.add": {
-        "type": "webvtt",
-        "subsrtFormat": "vtt",
-        "subtitleUrlRegExp": "\\.vtt",
-        "hookType": "xhr",
-        "quickButtonRule": {
-          "appendSelector": ".vjs-control-bar",
-          "injectCSS": ".label { display: none; }",
-          "insertBeforeSelector": "button.vjs-control.vjs-button.vjs-video-overlay-button"
-        },
-        "injectedCss": [
-          "#immersive-translate-quick-button-container { order: 6; }",
-          "@media (max-width: 570px) { #immersive-translate-quick-button-container { display: none !important; } }"
-        ],
-        "attachRule": {
-          "appendSelector": "video-js",
-          "injectedGlobalCSS": [
-            ".vjs-text-track-display { display: none; }"
-          ],
-          "injectedCSS": [
-            ".imt-caption-window { bottom: 5%; }"
           ]
         }
       }
@@ -9742,8 +9671,15 @@
       "initialSelectorGlobalAttributes.add": {
         "header": {}
       }
+    },
+    {
+      "id": "chromium",
+      "matches": "*.chromium.org",
+      "additionalExcludeSelectors.add": [
+        "ancestors-breadcrumbs"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-15T08:59:47.323Z",
+  "buildinConfigUpdatedAt": "2024-08-15T09:48:44.780Z",
   "latestVersion": "1.8.2"
 }
