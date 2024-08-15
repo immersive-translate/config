@@ -6932,10 +6932,12 @@
         "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
-          "#imgarea img"
+          "#imgarea img",
+          "#img_list img"
         ],
         "loadingSelectors": [
-          "a"
+          "a",
+          "div"
         ],
         "intersectionRootMargin": "0px 0px 200% 0px"
       }
@@ -9671,6 +9673,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-14T13:16:15.000Z",
+  "buildinConfigUpdatedAt": "2024-08-15T02:51:06.561Z",
   "latestVersion": "1.8.2"
 }
