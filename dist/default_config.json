@@ -7378,7 +7378,7 @@
     {
       "id": "pixiv",
       "matches": [
-        "www.pixiv.net"
+        "*.pixiv.net"
       ],
       "imageRule.add": {
         "enable": true,
@@ -9743,6 +9743,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-15T08:27:00.062Z",
+  "buildinConfigUpdatedAt": "2024-08-15T08:44:10.547Z",
   "latestVersion": "1.8.2"
 }
