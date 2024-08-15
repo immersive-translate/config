@@ -6960,7 +6960,10 @@
     },
     {
       "id": "18comic",
-      "matches": "https://18comic.vip/*",
+      "matches": [
+        "18comic.*",
+        "jmcomicg*"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "mangaImage",
@@ -9740,6 +9743,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-15T07:28:05.301Z",
+  "buildinConfigUpdatedAt": "2024-08-15T08:27:00.062Z",
   "latestVersion": "1.8.2"
 }
