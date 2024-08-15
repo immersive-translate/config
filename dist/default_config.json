@@ -145,7 +145,8 @@
     "https://www.fanbox.cc[FANBOX]",
     "https://vw.mangaz.com[MangaZ]",
     "https://pash-up.jp[PASH UP]",
-    "https://www.colamanga.com[COLAMANGA]"
+    "https://www.colamanga.com[COLAMANGA]",
+    "https://hitomi.la/[Hitomi]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -9743,6 +9744,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-15T08:58:13.795Z",
+  "buildinConfigUpdatedAt": "2024-08-15T08:59:47.323Z",
   "latestVersion": "1.8.2"
 }
