@@ -6853,7 +6853,7 @@
     {
       "id": "hitomi",
       "matches": [
-        "hitomi_notranslate.la"
+        "hitomi.la"
       ],
       "imageRule.add": {
         "enable": true,
@@ -9743,6 +9743,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-15T08:44:10.547Z",
+  "buildinConfigUpdatedAt": "2024-08-15T08:58:13.795Z",
   "latestVersion": "1.8.2"
 }
