@@ -226,7 +226,8 @@
     "https://www.fau.tv[Fau TV]",
     "https://www.thaipbs.or.th/[Thai PBS]",
     "https://gorails.com/[GORAILS]",
-    "https://quantra.quantinsti.com/[QUANTRA]"
+    "https://quantra.quantinsti.com/[QUANTRA]",
+    "https://www.gaia.com/[Gaia]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -9166,6 +9167,42 @@
       }
     },
     {
+      "id": "gaia",
+      "matches": [
+        "www.gaia.com"
+      ],
+      "excludeSelectors.add": [
+        "video-js"
+      ],
+      "mutationExcludeSelectors.add": [
+        "video-js *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": "\\.vtt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "injectCSS": ".label { display: none; }",
+          "insertBeforeSelector": "button.vjs-control.vjs-button.vjs-video-overlay-button"
+        },
+        "injectedCss": [
+          "#immersive-translate-quick-button-container { order: 6; }",
+          "@media (max-width: 570px) { #immersive-translate-quick-button-container { display: none !important; } }"
+        ],
+        "attachRule": {
+          "appendSelector": "video-js",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display { display: none; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window { bottom: 5%; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "dr",
       "matches": "*.dr.dk",
       "excludeSelectors.add": [
@@ -9680,6 +9717,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-15T09:48:44.780Z",
+  "buildinConfigUpdatedAt": "2024-08-15T13:25:36.671Z",
   "latestVersion": "1.8.2"
 }
