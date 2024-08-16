@@ -2395,7 +2395,8 @@
         "[data-testid='HoverCard'] span[dir=auto]",
         "[data-testid='HoverCard'] [role='dialog'] div[dir=ltr]",
         "[data-testid='birdwatch-pivot'] div[dir=ltr]",
-        "[data-testid='twitterArticleReadView']"
+        "[data-testid='twitterArticleReadView']",
+        "[aria-label='Grok']"
       ],
       "subtitleRule.add": {
         "type": "live",
@@ -9724,6 +9725,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-16T07:31:44.461Z",
+  "buildinConfigUpdatedAt": "2024-08-16T08:56:39.432Z",
   "latestVersion": "1.8.2"
 }
