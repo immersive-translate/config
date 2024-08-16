@@ -9714,8 +9714,13 @@
       "additionalExcludeSelectors.add": [
         "ancestors-breadcrumbs"
       ]
+    },
+    {
+      "id": "omim",
+      "matches": "www.omim.org",
+      "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-15T16:19:01.237Z",
+  "buildinConfigUpdatedAt": "2024-08-16T03:41:20.062Z",
   "latestVersion": "1.8.2"
 }
