@@ -147,7 +147,8 @@
     "https://pash-up.jp[PASH UP]",
     "https://www.colamanga.com[COLAMANGA]",
     "https://ganganonline.com[GANGAN ONLINE]",
-    "https://battwo.com[BATOTO]"
+    "https://battwo.com[BATOTO]",
+    "https://asuracomic.net[Asura Scans]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -7121,6 +7122,22 @@
       }
     },
     {
+      "id": "asuracomic",
+      "matches": "asuracomic.net",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "img[alt='chapter page']"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "injectedCss": ".immersive-translate-attach-loading::after {top:5%!important;}",
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "mangaz",
       "matches": "vw.mangaz.com",
       "imageRule.add": {
@@ -9789,6 +9806,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-16T10:19:35.883Z",
+  "buildinConfigUpdatedAt": "2024-08-16T10:35:26.118Z",
   "latestVersion": "1.8.2"
 }
