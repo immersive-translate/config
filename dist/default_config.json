@@ -5945,7 +5945,8 @@
       "id": "claudeAi",
       "matches": "claude.ai",
       "excludeSelectors": [
-        ".contents *"
+        ".contents *",
+        ".code-block__code"
       ],
       "excludeTags.remove": [
         "PRE"
@@ -9836,6 +9837,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-16T10:43:20.064Z",
+  "buildinConfigUpdatedAt": "2024-08-16T16:15:33.171Z",
   "latestVersion": "1.8.2"
 }
