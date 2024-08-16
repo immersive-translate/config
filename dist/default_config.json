@@ -145,7 +145,8 @@
     "https://www.fanbox.cc[FANBOX]",
     "https://vw.mangaz.com[MangaZ]",
     "https://pash-up.jp[PASH UP]",
-    "https://www.colamanga.com[COLAMANGA]"
+    "https://www.colamanga.com[COLAMANGA]",
+    "https://ganganonline.com[GANGAN ONLINE]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -7058,6 +7059,21 @@
       }
     },
     {
+      "id": "ganganonline",
+      "matches": "*.ganganonline.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "img[decoding='async']"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "mangaz",
       "matches": "vw.mangaz.com",
       "imageRule.add": {
@@ -9725,6 +9741,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-16T08:56:39.432Z",
+  "buildinConfigUpdatedAt": "2024-08-16T09:20:03.421Z",
   "latestVersion": "1.8.2"
 }
