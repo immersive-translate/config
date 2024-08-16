@@ -6837,6 +6837,21 @@
       }
     },
     {
+      "id": "manga18",
+      "matches": [
+        "manga18.club"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".image_story img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ]
+      }
+    },
+    {
       "id": "visortmo",
       "matches": [
         "visortmo_notranslate.com"
@@ -9741,6 +9756,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-16T09:20:03.421Z",
+  "buildinConfigUpdatedAt": "2024-08-16T09:36:09.828Z",
   "latestVersion": "1.8.2"
 }
