@@ -8051,11 +8051,13 @@
       "id": "fmoviesz",
       "matches": [
         "fmovies24.to",
+        "*.fmovies.co",
         "vidplay.online",
         "c8365730d4.nl",
         "kerapoxy.cc",
         "vid41c.site",
         "https://*/*sub.info=*fmovies24.to*",
+        "https://*/*sub.info=*fmovies.*",
         "https://*/*sub.info=*bflixhd.to*"
       ],
       "excludeSelectors.add": [
@@ -9769,6 +9771,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-16T09:47:09.247Z",
+  "buildinConfigUpdatedAt": "2024-08-16T09:49:23.116Z",
   "latestVersion": "1.8.2"
 }
