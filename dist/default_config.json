@@ -6852,6 +6852,19 @@
       }
     },
     {
+      "id": "fhentai",
+      "matches": "fhentai.net",
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          "img[loading='lazy']"
+        ],
+        "loadingSelectors": [
+          "div"
+        ]
+      }
+    },
+    {
       "id": "visortmo",
       "matches": [
         "visortmo_notranslate.com"
@@ -9756,6 +9769,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-16T09:36:09.828Z",
+  "buildinConfigUpdatedAt": "2024-08-16T09:47:09.247Z",
   "latestVersion": "1.8.2"
 }
