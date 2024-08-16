@@ -9716,11 +9716,14 @@
       ]
     },
     {
-      "id": "omim",
-      "matches": "www.omim.org",
+      "id": "noRichTranslate",
+      "matches": [
+        "www.omim.org",
+        "*.nisanyanadlar.com"
+      ],
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-16T06:31:21.848Z",
+  "buildinConfigUpdatedAt": "2024-08-16T07:31:44.461Z",
   "latestVersion": "1.8.2"
 }
