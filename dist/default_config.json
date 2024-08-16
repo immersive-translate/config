@@ -146,7 +146,8 @@
     "https://vw.mangaz.com[MangaZ]",
     "https://pash-up.jp[PASH UP]",
     "https://www.colamanga.com[COLAMANGA]",
-    "https://ganganonline.com[GANGAN ONLINE]"
+    "https://ganganonline.com[GANGAN ONLINE]",
+    "https://battwo.com[BATOTO]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -7102,6 +7103,24 @@
       }
     },
     {
+      "id": "bato",
+      "matches": [
+        "bato.to",
+        "battwo.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#viewer img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "mangaz",
       "matches": "vw.mangaz.com",
       "imageRule.add": {
@@ -9770,6 +9789,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-16T10:11:46.142Z",
+  "buildinConfigUpdatedAt": "2024-08-16T10:19:35.883Z",
   "latestVersion": "1.8.2"
 }
