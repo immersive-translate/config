@@ -3560,7 +3560,8 @@
       ],
       "excludeSelectors.add": [
         "[class*='username']",
-        "[class*='repliedMessage']"
+        "[class*='repliedMessage']",
+        "[class^='codeContainer']"
       ],
       "extraBlockSelectors.add": [
         "[class^='embedFieldValue']",
@@ -9837,6 +9838,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-16T16:15:33.171Z",
+  "buildinConfigUpdatedAt": "2024-08-17T14:00:12.568Z",
   "latestVersion": "1.8.2"
 }
