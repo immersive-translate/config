@@ -3561,12 +3561,13 @@
       "excludeSelectors.add": [
         "[class*='username']",
         "[class*='repliedMessage']",
-        "[class^='codeContainer']"
+        "code"
       ],
       "extraBlockSelectors.add": [
         "[class^='embedFieldValue']",
         "li[class^='card'] div[class^='message']",
-        "[data-list-item-id^='forum-channel-list'] div[class^='headerText']"
+        "[data-list-item-id^='forum-channel-list'] div[class^='headerText']",
+        "pre"
       ],
       "globalStyles": {
         "main div[class^=headerText]": "max-height: unset;",
@@ -9838,6 +9839,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-17T14:00:12.568Z",
+  "buildinConfigUpdatedAt": "2024-08-17T15:00:08.216Z",
   "latestVersion": "1.8.2"
 }
