@@ -3560,14 +3560,12 @@
       ],
       "excludeSelectors.add": [
         "[class*='username']",
-        "[class*='repliedMessage']",
-        "code"
+        "[class*='repliedMessage']"
       ],
       "extraBlockSelectors.add": [
         "[class^='embedFieldValue']",
         "li[class^='card'] div[class^='message']",
-        "[data-list-item-id^='forum-channel-list'] div[class^='headerText']",
-        "pre"
+        "[data-list-item-id^='forum-channel-list'] div[class^='headerText']"
       ],
       "globalStyles": {
         "main div[class^=headerText]": "max-height: unset;",
@@ -3575,6 +3573,7 @@
         "main div[class^=text]": "max-height: unset;",
         "h3[data-text-variant='heading-lg/semibold']": "-webkit-line-clamp: none;"
       },
+      "enableRichTranslate": false,
       "detectParagraphLanguage": true,
       "wrapperPrefix": "<br />",
       "wrapperSuffix": "",
@@ -9839,6 +9838,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-17T15:00:08.216Z",
+  "buildinConfigUpdatedAt": "2024-08-17T15:10:56.015Z",
   "latestVersion": "1.8.2"
 }
