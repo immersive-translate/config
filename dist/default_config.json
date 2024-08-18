@@ -809,7 +809,7 @@
       "prompt": "Translate the text to {{to}} Language, please do not explain my original text.:\n\n{{text}}",
       "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}",
       "model": "gpt-3.5-turbo",
-      "proModel": "gpt-3.5-turbo",
+      "proModel": "gpt-4o-mini",
       "proLimit": 10,
       "overrides": [
         {
@@ -9839,6 +9839,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-18T03:00:23.580Z",
+  "buildinConfigUpdatedAt": "2024-08-18T17:03:12.619Z",
   "latestVersion": "1.8.2"
 }
