@@ -8453,7 +8453,8 @@
         "loadingContainerSelector": "[role=\"main\"]",
         "subtitleUrlRegExp": ".*\\.vtt",
         "quickButtonRule": {
-          "appendSelector": ".styles_columns__S4HQf:last-child"
+          "appendSelector": ".styles_columns__S4HQf:last-child",
+          "ccEnableSelector": "div[data-testid='bottom-bar'] button[data-testid='subtitle-settings-button']"
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
@@ -9838,6 +9839,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-17T22:58:38.968Z",
+  "buildinConfigUpdatedAt": "2024-08-18T03:00:23.580Z",
   "latestVersion": "1.8.2"
 }
