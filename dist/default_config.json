@@ -3515,25 +3515,15 @@
       "id": "producthunt",
       "matches": "www.producthunt.com",
       "excludeMatches": "https://www.producthunt.com/stories/*",
-      "selectors": [
-        "h2",
-        "div[class^='styles_htmlText__']",
-        "[class^='styles_tagline']",
-        "a[href^='/discussions/'].fontWeight-600",
-        "button[class^='styles_textButton'] > div > span",
-        "h5 + p",
-        "div[data-test=product-item-name] + div",
-        ".noOfLines-1,.noOfLines-2,.noOfLines-3",
-        ".fontWeight-600",
-        "[class*='styles_dropdown']",
-        "[class*='styles_aboutText']",
-        "[class*='styles_titleContainer']",
-        "[class*='styles_header'] h1",
-        "button > span"
+      "excludeSelectors.add": [
+        ".styles_extraInfo__Xs_5Y",
+        "[data-test=\"show-more-shoutouts-button\"]",
+        ".styles_buttons__kKy_S",
+        ".styles_count___6_8F"
       ],
       "globalStyles": {
         "h5 + p": "height:unset;",
-        ".noOfLines-1,.noOfLines-2,.noOfLines-3": "-webkit-line-clamp:unset;"
+        ".noOfLines-1,.noOfLines-2,.noOfLines-3,.styles_noOfLines-2__k_Ta_,[data-test=\"post-name-481116\"]": "-webkit-line-clamp:unset;"
       },
       "excludeTags.remove": [
         "PRE"
@@ -9842,6 +9832,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-19T06:57:07.036Z",
+  "buildinConfigUpdatedAt": "2024-08-19T08:26:47.933Z",
   "latestVersion": "1.8.2"
 }
