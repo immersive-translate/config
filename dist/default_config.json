@@ -6954,7 +6954,10 @@
     },
     {
       "id": "wnacg",
-      "matches": "https://wnacg.com/*",
+      "matches": [
+        "wnacg.com",
+        "www.wnacg.com"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "mangaImage",
@@ -9832,6 +9835,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-19T08:26:47.933Z",
+  "buildinConfigUpdatedAt": "2024-08-19T10:41:16.694Z",
   "latestVersion": "1.8.2"
 }
