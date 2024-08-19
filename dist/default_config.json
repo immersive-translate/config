@@ -5394,6 +5394,9 @@
     {
       "id": "perplexity",
       "matches": "https://www.perplexity.ai",
+      "excludeMatches": [
+        "https://www.perplexity.ai/hub/*"
+      ],
       "globalStyles": {
         ".line-clamp-1": "-webkit-line-clamp: unset !important;",
         ".line-clamp-2": "-webkit-line-clamp: unset !important;"
@@ -9839,6 +9842,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-18T17:03:12.619Z",
+  "buildinConfigUpdatedAt": "2024-08-19T06:57:07.036Z",
   "latestVersion": "1.8.2"
 }
