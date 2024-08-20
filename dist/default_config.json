@@ -6956,7 +6956,8 @@
       "id": "wnacg",
       "matches": [
         "wnacg.com",
-        "www.wnacg.com"
+        "www.wnacg.com",
+        "www.wn02.cc"
       ],
       "imageRule.add": {
         "enable": true,
@@ -8277,7 +8278,8 @@
       "matches": [
         "*.wistia.net",
         "platform.thinkific.com",
-        "courses.kevinpowell.co"
+        "courses.kevinpowell.co",
+        "learn.ni.com"
       ],
       "excludeSelectors.add": [
         "div[data-handle='captions']",
@@ -9835,6 +9837,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-19T10:41:16.694Z",
+  "buildinConfigUpdatedAt": "2024-08-20T02:29:40.465Z",
   "latestVersion": "1.8.2"
 }
