@@ -149,7 +149,8 @@
     "https://ganganonline.com[GANGAN ONLINE]",
     "https://battwo.com[BATOTO]",
     "https://asuracomic.net[Asura Scans]",
-    "https://www.lezhinus.com[Lezhin Comics]"
+    "https://www.lezhinus.com[Lezhin Comics]",
+    "https://allmanga.to[All Manga]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -7143,6 +7144,24 @@
       }
     },
     {
+      "id": "allmanga",
+      "matches": "allmanga.to",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#pictureViewer img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "inValidSrcRegex": [
+          "data:image/gif"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "mangaz",
       "matches": "vw.mangaz.com",
       "imageRule.add": {
@@ -9850,6 +9869,6 @@
       "longBuildPageLength": 1000
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-20T07:48:01.757Z",
+  "buildinConfigUpdatedAt": "2024-08-20T10:40:13.371Z",
   "latestVersion": "1.8.2"
 }
