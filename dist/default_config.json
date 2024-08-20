@@ -149,7 +149,6 @@
     "https://ganganonline.com[GANGAN ONLINE]",
     "https://battwo.com[BATOTO]",
     "https://asuracomic.net[Asura Scans]",
-    "https://www.lezhinus.com[Lezhin Comics]",
     "https://allmanga.to[All Manga]"
   ],
   "supportedVideoSubtitleSites": [
@@ -7131,17 +7130,7 @@
     {
       "id": "lezhinus",
       "matches": "www.lezhinus.com",
-      "imageRule.add": {
-        "enable": true,
-        "type": "mangaImage",
-        "imageSelectors": [
-          "#scroll-list img"
-        ],
-        "loadingSelectors": [
-          "div"
-        ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
-      }
+      "_comment": "因为部分内容是canvas，禁止读取"
     },
     {
       "id": "allmanga",
@@ -9870,6 +9859,6 @@
       "longBuildPageLength": 1000
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-20T10:47:38.917Z",
+  "buildinConfigUpdatedAt": "2024-08-20T11:00:21.677Z",
   "latestVersion": "1.8.2"
 }
