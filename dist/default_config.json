@@ -8111,7 +8111,8 @@
       "id": "fmovies2",
       "matches": [
         "*.fmovies.co",
-        "mcloud.vvid30c.site"
+        "mcloud.vvid30c.site",
+        "rabbitstream.net"
       ],
       "subtitleRule.add": {
         "type": "multi_attach_vtt",
@@ -9869,6 +9870,6 @@
       "longBuildPageLength": 1000
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-20T10:40:13.371Z",
+  "buildinConfigUpdatedAt": "2024-08-20T10:47:38.917Z",
   "latestVersion": "1.8.2"
 }
