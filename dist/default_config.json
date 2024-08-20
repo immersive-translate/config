@@ -294,11 +294,6 @@
     "enable": true,
     "blockUrls": [
       "*immersivetranslate.com/preview",
-      "https://app.immersivetranslate.com/",
-      "https://app.immersivetranslate.cn/",
-      "https://app.immersivetranslate.com/pdf-pro*",
-      "https://app.immersivetranslate.cn/pdf-pro*",
-      "https://app.immersivetranslate.com/text*",
       "*.immersivetranslate.com/download-subtitle*"
     ],
     "guideBlockUrls": [
@@ -314,11 +309,6 @@
     "enable": true,
     "blockUrls": [
       "*immersivetranslate.com/preview",
-      "https://app.immersivetranslate.com/",
-      "https://app.immersivetranslate.cn/",
-      "https://app.immersivetranslate.com/pdf-pro*",
-      "https://app.immersivetranslate.cn/pdf-pro*",
-      "https://app.immersivetranslate.com/text*",
       "*.immersivetranslate.com/download-subtitle*"
     ],
     "guideBlockUrls": [
@@ -9837,6 +9827,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-20T02:29:40.465Z",
+  "buildinConfigUpdatedAt": "2024-08-20T03:13:17.030Z",
   "latestVersion": "1.8.2"
 }
