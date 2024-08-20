@@ -9841,8 +9841,15 @@
         "*.nisanyanadlar.com"
       ],
       "enableRichTranslate": false
+    },
+    {
+      "id": "longPage",
+      "matches": [
+        "neuralnetworksanddeeplearning.com"
+      ],
+      "longBuildPageLength": 1000
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-20T07:41:42.072Z",
+  "buildinConfigUpdatedAt": "2024-08-20T07:44:25.023Z",
   "latestVersion": "1.8.2"
 }
