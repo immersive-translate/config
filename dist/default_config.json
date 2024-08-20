@@ -7457,7 +7457,7 @@
     {
       "id": "newtoki341.com",
       "matches": [
-        "newtoki*.com"
+        "newtoki_notranslate*.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -9850,6 +9850,6 @@
       "longBuildPageLength": 1000
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-20T07:44:25.023Z",
+  "buildinConfigUpdatedAt": "2024-08-20T07:48:01.757Z",
   "latestVersion": "1.8.2"
 }
