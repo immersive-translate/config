@@ -2854,7 +2854,8 @@
         ".TimelineItem-body > .Link--primary",
         "[role=\"navigation\"] p",
         "[data-testid=\"commit-row-item\"] h4",
-        ".font-mktg"
+        ".font-mktg",
+        ".search-title,.search-match"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -9947,6 +9948,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-21T15:58:32.137Z",
+  "buildinConfigUpdatedAt": "2024-08-21T16:02:16.894Z",
   "latestVersion": "1.8.3"
 }
