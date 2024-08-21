@@ -1590,7 +1590,8 @@
       "kbd",
       "span.pretex-inline",
       "span.math-inline",
-      ".reference-citations"
+      ".reference-citations",
+      ".code"
     ],
     "translationBlockStyle": "",
     "isShowUserscriptPagePopup": true,
@@ -9946,6 +9947,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-21T12:40:52.926Z",
+  "buildinConfigUpdatedAt": "2024-08-21T15:58:32.137Z",
   "latestVersion": "1.8.3"
 }
