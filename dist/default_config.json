@@ -9936,8 +9936,16 @@
         "neuralnetworksanddeeplearning.com"
       ],
       "longBuildPageLength": 1000
+    },
+    {
+      "id": "ffmpeg",
+      "matches": "ffmpeg.org",
+      "excludeSelectors.add": [
+        ".memproto",
+        ".memtitle"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-21T12:24:03.000Z",
+  "buildinConfigUpdatedAt": "2024-08-21T12:40:52.926Z",
   "latestVersion": "1.8.3"
 }
