@@ -236,7 +236,8 @@
     "https://www.thaipbs.or.th/[Thai PBS]",
     "https://gorails.com/[GORAILS]",
     "https://quantra.quantinsti.com/[QUANTRA]",
-    "https://www.gaia.com/[Gaia]"
+    "https://www.gaia.com/[Gaia]",
+    "https://www.rtve.es[RTVE.es]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -9334,6 +9335,36 @@
       }
     },
     {
+      "id": "rtve",
+      "matches": "www.rtve.*",
+      "injectedCss.add": [
+        ".errorHead * {font-size: 3.2rem!important;}"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "fetch",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "loadingContainerSelector": ".striplayer",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container {order: 4}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": "[class='theo-secondary-color vjs-control-bar ']",
+          "insertBeforeSelector": ".vjs-control-bar .vjs-icon-subtitles"
+        },
+        "attachRule": {
+          "appendSelector": ".theo-player-wrapper",
+          "injectedGlobalCSS": [
+            ".theoplayer-texttracks {display: none!important;} "
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {bottom: 60px;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "www.iq.com",
       "matches": "www.iq.com",
       "excludeSelectors.add": [
@@ -9963,6 +9994,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-23T03:59:35.666Z",
+  "buildinConfigUpdatedAt": "2024-08-23T10:09:30.806Z",
   "latestVersion": "1.8.3"
 }
