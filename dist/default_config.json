@@ -7215,6 +7215,21 @@
       }
     },
     {
+      "id": "allporncomic",
+      "matches": "allporncomic.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".read-container img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "mangaz",
       "matches": "*.mangaz.com",
       "imageRule.add": {
@@ -9610,7 +9625,8 @@
         "community.afforai.com",
         "www.perplexity.ai",
         "hdsr.mitpress.mit.edu",
-        "rent.men"
+        "rent.men",
+        "*.rwth-aachen.*"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -9994,6 +10010,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-23T10:09:30.806Z",
+  "buildinConfigUpdatedAt": "2024-08-23T10:26:04.986Z",
   "latestVersion": "1.8.3"
 }
