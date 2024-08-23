@@ -9946,8 +9946,23 @@
         ".memproto",
         ".memtitle"
       ]
+    },
+    {
+      "id": "podcasts",
+      "matches": "podcasts.apple.com",
+      "injectedCss.add": [
+        ".multiline-clamp { display: flex!important;flex-direction: column; }",
+        ".headings__title,.powerswoosh__title,[data-testid=truncate-text] {-webkit-line-clamp:unset!important;}",
+        ".show-artwork {height:fit-content!important;}",
+        ".powerswoosh__lockup-details-container,.powerswoosh__chin,[data-testid=amp-review__text] {max-height:unset!important;height:unset!important;}",
+        ".episode-hero__overlay {overflow:auto!important;}",
+        "ul .multiline-clamp {display:unset!important;}"
+      ],
+      "excludeSelectors.add": [
+        ".detailed-play-button-wrapper"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-22T02:23:04.474Z",
+  "buildinConfigUpdatedAt": "2024-08-23T03:59:35.666Z",
   "latestVersion": "1.8.3"
 }
