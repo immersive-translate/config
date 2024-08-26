@@ -237,7 +237,8 @@
     "https://gorails.com/[GORAILS]",
     "https://quantra.quantinsti.com/[QUANTRA]",
     "https://www.gaia.com/[Gaia]",
-    "https://www.rtve.es[RTVE.es]"
+    "https://www.rtve.es[RTVE.es]",
+    "https://unitycodemonkey.teachable.com/[Code Monkey]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -10005,6 +10006,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-26T08:51:20.644Z",
+  "buildinConfigUpdatedAt": "2024-08-26T08:59:11.238Z",
   "latestVersion": "1.8.3"
 }
