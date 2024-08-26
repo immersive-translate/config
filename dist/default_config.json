@@ -8557,13 +8557,21 @@
         "#immersive-translate-caption-window *"
       ],
       "subtitleRule.add": {
-        "type": "subsrt",
-        "subsrtFormat": "vtt",
+        "type": "multi_attach_vtt",
         "videoPlayerSelector": ".vjs-tech",
         "subtitleUrlRegExp": ".*\\.(vtt|webvtt)",
         "quickButtonRule": {
           "appendSelector": ".styles_columns__S4HQf:last-child",
           "ccEnableSelector": "div[data-testid='bottom-bar'] button[data-testid='subtitle-settings-button']"
+        },
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ],
+        "attachRule": {
+          "appendSelector": "[role=\"main\"]",
+          "injectedGlobalCSS": [
+            "[data-testid=\"subtitle-text\"]{display: none;}"
+          ]
         }
       }
     },
@@ -9997,6 +10005,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-26T08:15:46.224Z",
+  "buildinConfigUpdatedAt": "2024-08-26T08:51:20.644Z",
   "latestVersion": "1.8.3"
 }
