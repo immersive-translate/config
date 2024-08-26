@@ -9912,10 +9912,6 @@
     {
       "id": "character.ai",
       "matches": "character.ai",
-      "bodyRule.add": {
-        "bodySelector": "#test",
-        "bodyIsRoot": true
-      },
       "extraInlineSelectors.add": [
         ".auto-content",
         ".auto-content *",
@@ -10010,6 +10006,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-23T10:26:04.986Z",
+  "buildinConfigUpdatedAt": "2024-08-26T02:37:32.648Z",
   "latestVersion": "1.8.3"
 }
