@@ -2872,7 +2872,8 @@
         "[aria-label=\"Account\"] .markdown-title",
         ".js-repos-container .markdown-title",
         "a.anchor",
-        "div.file-navigation + div.Box"
+        "div.file-navigation + div.Box",
+        "[data-testid^='breadcrumbs']"
       ],
       "extraBlockSelectors.add": [],
       "extraInlineSelectors": [
@@ -10006,6 +10007,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-26T02:37:32.648Z",
+  "buildinConfigUpdatedAt": "2024-08-26T07:24:47.861Z",
   "latestVersion": "1.8.3"
 }
