@@ -9396,7 +9396,7 @@
         "xmlTextSelector": "sub",
         "loadingStyle": "bottom: 10%;",
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] .subtitle_text {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "injectedCss": [
           ".iqp-player {direction: ltr !important;}",
@@ -10007,6 +10007,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-26T07:24:47.861Z",
+  "buildinConfigUpdatedAt": "2024-08-26T07:35:13.914Z",
   "latestVersion": "1.8.3"
 }
