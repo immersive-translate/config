@@ -8352,7 +8352,8 @@
         "subtitleUrlRegExp": "/video/.*\\.srt",
         "quickButtonRule": {
           "appendSelector": ".controls_bottom_right",
-          "insertBeforeSelector": ".subtitles_toggle_button"
+          "insertBeforeSelector": ".subtitles_toggle_button",
+          "ccEnableSelector": "button.subtitles_toggle_button:not([disabled])"
         }
       }
     },
@@ -10006,6 +10007,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-26T08:59:11.238Z",
+  "buildinConfigUpdatedAt": "2024-08-26T09:23:38.562Z",
   "latestVersion": "1.8.3"
 }
