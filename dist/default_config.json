@@ -1137,7 +1137,8 @@
       "button",
       "select",
       "option",
-      "mjx-container"
+      "mjx-container",
+      "use"
     ],
     "isTranslateWhenServiceChanged": true,
     "excludeSelectorsRegexes": {
@@ -10002,6 +10003,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-27T03:16:56.489Z",
+  "buildinConfigUpdatedAt": "2024-08-28T08:11:47.829Z",
   "latestVersion": "1.8.3"
 }
