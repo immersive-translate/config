@@ -8571,7 +8571,7 @@
         "#immersive-translate-caption-window *"
       ],
       "subtitleRule.add": {
-        "type": "vtt",
+        "type": "subsrt",
         "videoPlayerSelector": ".vjs-tech",
         "subtitleUrlRegExp": ".*\\.(vtt)",
         "quickButtonRule": {
@@ -10023,6 +10023,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-29T08:25:23.527Z",
+  "buildinConfigUpdatedAt": "2024-08-29T09:12:44.049Z",
   "latestVersion": "1.8.3"
 }
