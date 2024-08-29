@@ -2868,7 +2868,8 @@
         "[role=\"navigation\"] p",
         "[data-testid=\"commit-row-item\"] h4",
         ".font-mktg",
-        ".search-title,.search-match"
+        ".search-title,.search-match",
+        ".pinned-item-desc"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -10022,6 +10023,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-29T06:55:49.386Z",
+  "buildinConfigUpdatedAt": "2024-08-29T08:25:23.527Z",
   "latestVersion": "1.8.3"
 }
