@@ -2055,6 +2055,15 @@
       }
     },
     {
+      "id": "ieeexplore.pdfWebPage",
+      "matches": "https://ieeexplore.ieee.org/stamp/stamp.jsp",
+      "waitForSelectorsTimeout": 1,
+      "pdfUrlExtractRule": {
+        "selector": "body > iframe",
+        "attribute": "src"
+      }
+    },
+    {
       "id": "isEbookBuilder",
       "matches": [
         "https://app.immersivetranslate.com/ebook/make/",
@@ -10001,8 +10010,17 @@
       "excludeSelectors.add": [
         ".detailed-play-button-wrapper"
       ]
+    },
+    {
+      "id": "duolingo",
+      "matches": "www.duolingo.com",
+      "likePreSelectors.add": [
+        "._3gSoe._35mGI"
+      ],
+      "isTransformPreTagNewLine": true,
+      "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-28T08:11:47.829Z",
+  "buildinConfigUpdatedAt": "2024-08-29T06:45:25.286Z",
   "latestVersion": "1.8.3"
 }
