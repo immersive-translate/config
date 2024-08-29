@@ -1983,6 +1983,7 @@
       "selectorMatches": [
         "meta[name='immersive-translate-pdf-viewer'][content='true']"
       ],
+      "enableRichTranslate": false,
       "matches": [
         "https://app.immersivetranslate.com/pdf",
         "https://app.immersivetranslate.cn/pdf",
@@ -10021,6 +10022,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-29T06:45:25.286Z",
+  "buildinConfigUpdatedAt": "2024-08-29T06:55:49.386Z",
   "latestVersion": "1.8.3"
 }
