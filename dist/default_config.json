@@ -1221,11 +1221,13 @@
       "mh",
       "body",
       "relin-hc",
-      "x-p"
+      "x-p",
+      "app-keyword-content"
     ],
     "atomicBlockSelectors": [
       "relin-hc",
       "x-p",
+      "app-keyword-content",
       "code *"
     ],
     "ignoreRichSelectors": [
@@ -10093,6 +10095,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-30T10:21:45.000Z",
+  "buildinConfigUpdatedAt": "2024-08-30T10:47:08.994Z",
   "latestVersion": "1.8.4"
 }
