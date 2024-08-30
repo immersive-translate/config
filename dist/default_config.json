@@ -336,7 +336,7 @@
   },
   "floatBallTooltipRule": {
     "mainBtnTooltipImmediateShowCount": 5,
-    "mainBtnTooltipDelayTime": 1500,
+    "mainBtnTooltipDelayTime": 800,
     "h5MainBtnTooltipMaxShowCount": 1
   },
   "pcFloatBallMainBtnTooltipShownCount": 0,
@@ -10093,6 +10093,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-30T09:41:06.093Z",
+  "buildinConfigUpdatedAt": "2024-08-30T10:13:11.922Z",
   "latestVersion": "1.8.3"
 }
