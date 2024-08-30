@@ -10043,8 +10043,17 @@
       ],
       "isTransformPreTagNewLine": true,
       "enableRichTranslate": false
+    },
+    {
+      "id": "sp-codeSites",
+      "matches": [
+        "docs.wxwidgets.org"
+      ],
+      "additionalExcludeSelectors.add": [
+        ".doxygen-awesome-fragment-wrapper"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-30T02:27:57.081Z",
+  "buildinConfigUpdatedAt": "2024-08-30T03:08:31.159Z",
   "latestVersion": "1.8.3"
 }
