@@ -238,7 +238,8 @@
     "https://quantra.quantinsti.com/[QUANTRA]",
     "https://www.gaia.com/[Gaia]",
     "https://www.rtve.es[RTVE.es]",
-    "https://unitycodemonkey.teachable.com/[Code Monkey]"
+    "https://unitycodemonkey.teachable.com/[Code Monkey]",
+    "https://www.amazon.com/[Amazon]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -4443,7 +4444,13 @@
         "[class*='-star ']",
         "[data-hook='acr-average-stars-rating-text']",
         ".a-color-price"
-      ]
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt",
+        "videoSelector": ".video-js[id^=\"ive\"] > video",
+        "hookType": "xhr"
+      }
     },
     {
       "id": "visualstudioMarketplace",
@@ -10023,6 +10030,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-29T09:12:44.049Z",
+  "buildinConfigUpdatedAt": "2024-08-30T02:21:15.609Z",
   "latestVersion": "1.8.3"
 }
