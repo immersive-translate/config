@@ -2305,6 +2305,23 @@
       "longBuildPageLength": 1000
     },
     {
+      "id": "preCodeSites",
+      "matches": [
+        "taylor.town",
+        "seller.shopee.*"
+      ],
+      "isTransformPreTagNewLine": true,
+      "excludeTags.remove": [
+        "PRE"
+      ],
+      "likePreSelectors.add": [
+        "CODE"
+      ],
+      "stayOriginalTags.remove": [
+        "CODE"
+      ]
+    },
+    {
       "id": "fenoxo",
       "matches": "www.fenoxo.com",
       "likePreSelectors.add": [
@@ -10030,6 +10047,6 @@
       "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-30T02:21:15.609Z",
+  "buildinConfigUpdatedAt": "2024-08-30T02:26:46.020Z",
   "latestVersion": "1.8.3"
 }
