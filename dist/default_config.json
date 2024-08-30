@@ -239,7 +239,8 @@
     "https://www.gaia.com/[Gaia]",
     "https://www.rtve.es[RTVE.es]",
     "https://www.amazon.com/[Amazon]",
-    "https://www.kika.de[KIKA]"
+    "https://www.kika.de[KIKA]",
+    "https://www.jove.com[Jove]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -9039,6 +9040,21 @@
       }
     },
     {
+      "id": "jove",
+      "matches": [
+        "www.jove.com"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": "#coreplayer",
+        "quickButtonRule": {
+          "injectCSS": ".label { display: none; }",
+          "appendSelector": ".fp-controls"
+        }
+      }
+    },
+    {
       "id": "codewithchris",
       "matches": [
         "learn.codewithchris.com",
@@ -10074,6 +10090,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-30T03:54:18.230Z",
+  "buildinConfigUpdatedAt": "2024-08-30T09:07:15.135Z",
   "latestVersion": "1.8.3"
 }
