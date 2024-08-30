@@ -8624,6 +8624,9 @@
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ]
+      },
+      "subtitleRule.add_v.[1.8.4]": {
+        "subtitleUrlRegExp": ".*\\.(vtt|webvtt)"
       }
     },
     {
@@ -10090,6 +10093,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-30T09:07:15.135Z",
+  "buildinConfigUpdatedAt": "2024-08-30T09:41:06.093Z",
   "latestVersion": "1.8.3"
 }
