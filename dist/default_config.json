@@ -238,7 +238,8 @@
     "https://quantra.quantinsti.com/[QUANTRA]",
     "https://www.gaia.com/[Gaia]",
     "https://www.rtve.es[RTVE.es]",
-    "https://www.amazon.com/[Amazon]"
+    "https://www.amazon.com/[Amazon]",
+    "https://www.kika.de[KIKA]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -8186,6 +8187,23 @@
       }
     },
     {
+      "id": "kika",
+      "matches": [
+        "www.kika.de"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".ardplayer-viewport",
+        "loadingStyle": "bottom: unset; top: 5%; height: unset;",
+        "quickButtonRule": {
+          "appendSelector": ".ardplayer-button-big .ardplayer-addons-container",
+          "insertBeforeSelector": ".ardplayer-button-big .ardplayer-icon-sharing",
+          "injectCSS": ".label { display: none; } .logo,svg {height: 32px !important; width: 32px !important;}"
+        }
+      }
+    },
+    {
       "id": "ocrtraining",
       "matches": [
         "ocrtraining.cit.nih.gov",
@@ -10054,6 +10072,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-08-30T03:08:31.159Z",
+  "buildinConfigUpdatedAt": "2024-08-30T03:19:24.860Z",
   "latestVersion": "1.8.3"
 }
