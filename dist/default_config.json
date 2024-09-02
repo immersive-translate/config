@@ -5244,7 +5244,8 @@
       "additionalSelectors": [
         "font[face=verdana]"
       ],
-      "extraBlockSelectors.add": "font[face=verdana]"
+      "extraBlockSelectors.add": "font[face=verdana]",
+      "enableRichTranslate": false
     },
     {
       "id": "im.zendesk",
@@ -10098,6 +10099,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-02T03:10:38.104Z",
+  "buildinConfigUpdatedAt": "2024-09-02T03:15:22.114Z",
   "latestVersion": "1.8.4"
 }
