@@ -2385,6 +2385,7 @@
         "https://twitter.com/jobs/*",
         "https://x.com/i/premium_sign_up",
         "https://x.com/settings/subscription",
+        "https://x.com/settings/account",
         "https://x.com/jobs/*"
       ],
       "additionalStayOriginalSelectors": [
@@ -10096,6 +10097,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-02T02:35:44.856Z",
+  "buildinConfigUpdatedAt": "2024-09-02T03:02:14.998Z",
   "latestVersion": "1.8.4"
 }
