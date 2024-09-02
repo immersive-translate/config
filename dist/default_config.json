@@ -9699,7 +9699,8 @@
         "hdsr.mitpress.mit.edu",
         "rent.men",
         "*.rwth-aachen.*",
-        "www.backcountry.com"
+        "www.backcountry.com",
+        "intranet.alxswe.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -10097,6 +10098,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-02T03:02:14.998Z",
+  "buildinConfigUpdatedAt": "2024-09-02T03:10:38.104Z",
   "latestVersion": "1.8.4"
 }
