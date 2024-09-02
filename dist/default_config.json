@@ -5702,9 +5702,8 @@
       "id": "feedly",
       "matches": "feedly.com",
       "globalStyles": {
-        ".TitleOnlyLayout": "height:unset !important;",
-        ".EntrySummary--u4": "-webkit-line-clamp: unset;max-height:unset;",
-        ".EntrySummary--u5": "-webkit-line-clamp: unset;max-height:unset;"
+        ".TitleOnlyLayout,.SelectedEntryScroller > div": "height:unset !important;",
+        ".EntrySummary--u4,.EntrySummary--u5": "-webkit-line-clamp: unset;max-height:unset;"
       },
       "excludeSelectors": [
         ".Leftnav"
@@ -10100,6 +10099,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-02T07:00:01.721Z",
+  "buildinConfigUpdatedAt": "2024-09-02T07:49:11.050Z",
   "latestVersion": "1.8.4"
 }
