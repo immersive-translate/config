@@ -2297,6 +2297,7 @@
         "manned.org",
         "bugs.webkit.org",
         "bugzilla.mozilla.org",
+        "bugs.gentoo.org",
         "lwn.net/Articles/*",
         "docs.haproxy.org",
         "man.freebsd.org",
@@ -10099,6 +10100,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-02T03:15:22.114Z",
+  "buildinConfigUpdatedAt": "2024-09-02T07:00:01.721Z",
   "latestVersion": "1.8.4"
 }
