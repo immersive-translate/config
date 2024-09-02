@@ -9350,26 +9350,13 @@
       "id": "hulu",
       "matches": "https://*.hulu.com",
       "subtitleRule.add": {
-        "type": "hulu",
+        "type": "ebutt",
         "hookType": "fetch",
-        "injectedCss": [
-          ".ClosedCaption {display:none!important;}"
-        ],
-        "videoSelector": "#content-video-player",
-        "subtitleUrlRegExp": "play.hulu.com/.*/playlist",
+        "subtitleUrlRegExp": "\\.ttml$",
         "loadingContainerSelector": "#web-player-app",
         "quickButtonRule": {
           "appendSelector": ".PlayerSettingsGroup",
           "insertBeforeSelector": ".PlayerSettingsGroup .PlayerControlsButton"
-        },
-        "attachRule": {
-          "appendSelector": "#dash-player-container",
-          "injectedCSS": [
-            ".imt-caption-window {margin-bottom: 5%;}"
-          ],
-          "injectedGlobalCSS": [
-            "@media (min-width: 576px) { video::cue {opacity: 0} }"
-          ]
         }
       }
     },
@@ -10099,6 +10086,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-02T07:49:11.050Z",
+  "buildinConfigUpdatedAt": "2024-09-02T08:14:09.184Z",
   "latestVersion": "1.8.4"
 }
