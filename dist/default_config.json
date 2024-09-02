@@ -2890,7 +2890,8 @@
         "[data-testid=\"commit-row-item\"] h4",
         ".font-mktg",
         ".search-title,.search-match",
-        ".pinned-item-desc"
+        ".pinned-item-desc",
+        "#repo-content-turbo-frame .markdown-title"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -10095,6 +10096,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-02T00:40:53.940Z",
+  "buildinConfigUpdatedAt": "2024-09-02T02:35:44.856Z",
   "latestVersion": "1.8.4"
 }
