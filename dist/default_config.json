@@ -125,7 +125,7 @@
     "https://www.pixiv.net/manga[Pixiv][chrome,firefox]",
     "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA]",
     "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA]",
-    "https://readcomiconline.li[ReadComicOnline]",
+    "https://readcomiconline.li[ReadComicOnline][chrome]",
     "https://comic-fuz.com/[COMIC FUZ]",
     "https://mangadex.org/[MangaDex]",
     "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox]",
@@ -3661,7 +3661,8 @@
       "wrapperPrefix": "<br />",
       "wrapperSuffix": "",
       "paragraphMinTextCount": 4,
-      "paragraphMinWordCount": 2
+      "paragraphMinWordCount": 2,
+      "enableInputDeepActive": true
     },
     {
       "id": "telegram",
@@ -7477,7 +7478,13 @@
         "loadingSelectors": [
           "p"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        "inValidSrcRegex": [
+          "blank.gif"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome"
+        ]
       }
     },
     {
@@ -10092,6 +10099,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-03T09:13:08.723Z",
+  "buildinConfigUpdatedAt": "2024-09-03T10:00:15.382Z",
   "latestVersion": "1.8.4"
 }
