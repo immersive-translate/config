@@ -9350,6 +9350,11 @@
     {
       "id": "hulu",
       "matches": "https://*.hulu.com",
+      "additionalExcludeSelectors.add": [
+        ".PlayerMetadata__subTitle",
+        ".PlayerMetadata__subTitle",
+        ".CaptionBox"
+      ],
       "subtitleRule.add": {
         "type": "ebutt",
         "hookType": "fetch",
@@ -10087,6 +10092,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-02T08:44:15.666Z",
+  "buildinConfigUpdatedAt": "2024-09-03T09:13:08.723Z",
   "latestVersion": "1.8.4"
 }
