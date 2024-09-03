@@ -10097,8 +10097,15 @@
       "additionalExcludeSelectors.add": [
         ".doxygen-awesome-fragment-wrapper"
       ]
+    },
+    {
+      "id": "wayfair",
+      "matches": "www.wayfair.com",
+      "injectedCss.add": [
+        "[data-enzyme-id=\"Collapse-Collapsible\"] {height:unset!important;}"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-03T10:49:39.000Z",
+  "buildinConfigUpdatedAt": "2024-09-03T14:21:08.840Z",
   "latestVersion": "1.9.1"
 }
