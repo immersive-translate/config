@@ -3968,7 +3968,8 @@
         "h3.story__title",
         ".feed-item__title-link",
         ".article-body",
-        ".interview-body"
+        ".interview-body",
+        ".post-page__content"
       ]
     },
     {
@@ -10163,6 +10164,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-04T06:32:01.214Z",
+  "buildinConfigUpdatedAt": "2024-09-04T07:55:28.072Z",
   "latestVersion": "1.9.1"
 }
