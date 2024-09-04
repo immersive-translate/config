@@ -9701,7 +9701,8 @@
         "rent.men",
         "*.rwth-aachen.*",
         "www.backcountry.com",
-        "intranet.alxswe.com"
+        "intranet.alxswe.com",
+        "www.steepandcheap.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -10106,6 +10107,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-04T02:28:54.227Z",
+  "buildinConfigUpdatedAt": "2024-09-04T03:41:39.844Z",
   "latestVersion": "1.9.1"
 }
