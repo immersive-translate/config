@@ -240,7 +240,8 @@
     "https://www.rtve.es[RTVE.es]",
     "https://www.amazon.com/[Amazon]",
     "https://www.kika.de[KIKA]",
-    "https://www.jove.com[Jove]"
+    "https://www.jove.com[Jove]",
+    "https://asu.instructure.com/[ASU]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -9530,6 +9531,39 @@
       }
     },
     {
+      "id": "asu",
+      "matches": [
+        "api.playposit.com"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "excludeSelectors.add": [
+        "#overlay-container"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#overlay-container *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": "\\.vtt",
+        "hookType": "xhr",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container { display: inline-block; position: relative; top: 9px; }"
+        ],
+        "quickButtonRule": {
+          "appendSelector": "#extra-actions-wrapper",
+          "injectCSS": ".label { display: none; }"
+        },
+        "attachRule": {
+          "appendSelector": "#video-container",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display {display: none;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "dr",
       "matches": "*.dr.dk",
       "excludeSelectors.add": [
@@ -10108,6 +10142,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-04T04:03:06.385Z",
+  "buildinConfigUpdatedAt": "2024-09-04T04:08:51.185Z",
   "latestVersion": "1.9.1"
 }
