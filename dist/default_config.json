@@ -241,7 +241,8 @@
     "https://www.amazon.com/[Amazon]",
     "https://www.kika.de[KIKA]",
     "https://www.jove.com[Jove]",
-    "https://asu.instructure.com/[ASU]"
+    "https://asu.instructure.com/[ASU]",
+    "https://f1tv.formula1.com/[F1tv]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -9564,6 +9565,26 @@
       }
     },
     {
+      "id": "f1tv",
+      "matches": [
+        "f1tv.formula1.com"
+      ],
+      "excludeSelectors.add": [
+        "#main-embeddedPlayer"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#main-embeddedPlayer *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.webvtt$",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".bmpui-controlbar-bottom .bmpui-container-wrapper"
+        }
+      }
+    },
+    {
       "id": "dr",
       "matches": "*.dr.dk",
       "excludeSelectors.add": [
@@ -10142,6 +10163,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-04T04:08:51.185Z",
+  "buildinConfigUpdatedAt": "2024-09-04T06:32:01.214Z",
   "latestVersion": "1.9.1"
 }
