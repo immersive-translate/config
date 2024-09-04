@@ -242,7 +242,8 @@
     "https://www.kika.de[KIKA]",
     "https://www.jove.com[Jove]",
     "https://asu.instructure.com/[ASU]",
-    "https://f1tv.formula1.com/[F1tv]"
+    "https://f1tv.formula1.com/[F1tv]",
+    "https://www.patreon.com[Patreon]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -6746,6 +6747,26 @@
       }
     },
     {
+      "id": "patreon",
+      "matches": "www.patreon.com",
+      "excludeSelectors": [
+        ".video-container"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".video-container *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": ".*\\.vtt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".sc-m5ts00-1.ejfyrG > div:last-child",
+          "insertBeforeSelector": ".sc-m5ts00-1.ejfyrG > div:last-child > button",
+          "injectCSS": ".label { display: none; } .logo,.logo svg { width: 70%; } .imt-quick-subtitle-button { margin: 0 8px;}"
+        }
+      }
+    },
+    {
       "id": "thaipbs",
       "matches": [
         "www.thaipbs.*",
@@ -10164,6 +10185,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-04T07:55:28.072Z",
+  "buildinConfigUpdatedAt": "2024-09-04T08:29:28.889Z",
   "latestVersion": "1.9.1"
 }
