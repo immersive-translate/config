@@ -2481,7 +2481,7 @@
     {
       "id": "zoom",
       "matches": [
-        "app.zoom.us"
+        "*.zoom.us"
       ],
       "excludeSelectors.add": [
         ".live-transcription-subtitle__box"
@@ -10106,6 +10106,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-04T02:04:53.319Z",
+  "buildinConfigUpdatedAt": "2024-09-04T02:28:54.227Z",
   "latestVersion": "1.9.1"
 }
