@@ -269,7 +269,7 @@
     "*.medium.com",
     "news.ycombinator.com"
   ],
-  "spVersion": "1.9.2",
+  "spVersion": "1.9.4",
   "ispVersion": "1.0.5",
   "gspVersion": "1.0.1",
   "modifiedBySystem": false,
@@ -10005,6 +10005,12 @@
         "#footer",
         ".summary > h3",
         ".notes > h3"
+      ],
+      "extraInlineSelectors.add": [
+        "[role=article] > p > span"
+      ],
+      "selectors": [
+        "#chapters"
       ]
     },
     {
@@ -10189,6 +10195,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-05T08:58:24.000Z",
+  "buildinConfigUpdatedAt": "2024-09-05T15:21:22.460Z",
   "latestVersion": "1.9.3"
 }
