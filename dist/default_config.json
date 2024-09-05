@@ -93,6 +93,10 @@
     "dualMatches": [],
     "translationMatches": []
   },
+  "translationLanguagePairs": [
+    "zh-CN:zh-TW",
+    "zh-TW:zh-CN"
+  ],
   "enabled": true,
   "minVersion": "0.6.2",
   "showOpenaiOnSafari": true,
@@ -10185,6 +10189,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-04T08:29:28.889Z",
+  "buildinConfigUpdatedAt": "2024-09-05T08:27:50.471Z",
   "latestVersion": "1.9.1"
 }
