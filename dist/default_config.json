@@ -10005,12 +10005,6 @@
         "#footer",
         ".summary > h3",
         ".notes > h3"
-      ],
-      "extraInlineSelectors.add": [
-        "[role=article] > p > span"
-      ],
-      "selectors": [
-        "#chapters"
       ]
     },
     {
@@ -10195,6 +10189,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-05T15:21:22.460Z",
+  "buildinConfigUpdatedAt": "2024-09-06T06:33:27.919Z",
   "latestVersion": "1.9.3"
 }
