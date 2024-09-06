@@ -2903,7 +2903,8 @@
         ".font-mktg",
         ".search-title,.search-match",
         ".pinned-item-desc",
-        "#repo-content-turbo-frame .markdown-title"
+        "#repo-content-turbo-frame .markdown-title",
+        "[app-name='blackbird-search'] [data-hpc='true']"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -10211,6 +10212,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-06T07:09:33.853Z",
+  "buildinConfigUpdatedAt": "2024-09-06T10:55:59.809Z",
   "latestVersion": "1.9.3"
 }
