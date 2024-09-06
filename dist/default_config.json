@@ -247,7 +247,8 @@
     "https://www.jove.com[Jove]",
     "https://asu.instructure.com/[ASU]",
     "https://f1tv.formula1.com/[F1tv]",
-    "https://www.patreon.com[Patreon]"
+    "https://www.patreon.com[Patreon]",
+    "https://projector.datacamp.com[Datacamp]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -9611,6 +9612,27 @@
       }
     },
     {
+      "id": "datacamp",
+      "matches": [
+        "projector.datacamp.com"
+      ],
+      "excludeSelectors.add": [
+        ".video"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".video *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": "div.vjs-subs-caps-button"
+        }
+      }
+    },
+    {
       "id": "dr",
       "matches": "*.dr.dk",
       "excludeSelectors.add": [
@@ -10189,6 +10211,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-06T06:33:27.919Z",
+  "buildinConfigUpdatedAt": "2024-09-06T06:55:32.722Z",
   "latestVersion": "1.9.3"
 }
