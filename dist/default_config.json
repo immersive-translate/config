@@ -2060,7 +2060,8 @@
       "id": "sci-hub.pdfWebPage",
       "matches": [
         "sci-hub.*",
-        "www.scihubmirror.com"
+        "www.scihubmirror.com",
+        "*.sci-hub.*"
       ],
       "waitForSelectorsTimeout": 1,
       "pdfUrlExtractRule": {
@@ -10212,6 +10213,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-06T10:55:59.809Z",
+  "buildinConfigUpdatedAt": "2024-09-07T08:41:07.726Z",
   "latestVersion": "1.9.3"
 }
