@@ -8986,7 +8986,8 @@
       "id": "player.vimeo",
       "matches": [
         "https://player.vimeo.com/video/*",
-        "laracasts.com"
+        "laracasts.com",
+        "www.physeo.com"
       ],
       "selectorMatches": [
         "iframe[src*='player.vimeo.com']"
@@ -9014,7 +9015,6 @@
         ],
         "quickButtonRule": {
           "appendSelector": "[data-control-bar=\"true\"] > div",
-          "insertBeforeSelector": "[data-volume-control-container=\"true\"]",
           "ccEnableSelector": "[data-cc-button=\"true\"]",
           "injectCSS": ".imt-quick-subtitle-button {margin-right: 0px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}"
         }
@@ -10213,6 +10213,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-07T08:41:07.726Z",
+  "buildinConfigUpdatedAt": "2024-09-09T02:42:32.341Z",
   "latestVersion": "1.9.3"
 }
