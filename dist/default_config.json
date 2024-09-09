@@ -1150,7 +1150,10 @@
       "option",
       "mjx-container",
       "use",
-      "d-math"
+      "d-math",
+      "mathml",
+      "asciimath",
+      "latex"
     ],
     "isTranslateWhenServiceChanged": true,
     "excludeSelectorsRegexes": {
@@ -10215,6 +10218,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-09T08:24:05.559Z",
+  "buildinConfigUpdatedAt": "2024-09-09T09:10:40.936Z",
   "latestVersion": "1.9.3"
 }
