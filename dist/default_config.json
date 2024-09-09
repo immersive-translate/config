@@ -1149,7 +1149,8 @@
       "select",
       "option",
       "mjx-container",
-      "use"
+      "use",
+      "d-math"
     ],
     "isTranslateWhenServiceChanged": true,
     "excludeSelectorsRegexes": {
@@ -10214,6 +10215,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-09T03:55:20.937Z",
+  "buildinConfigUpdatedAt": "2024-09-09T08:24:05.559Z",
   "latestVersion": "1.9.3"
 }
