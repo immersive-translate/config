@@ -5746,7 +5746,15 @@
         ".copyable-text"
       ],
       "wrapperPrefix": "\n",
-      "wrapperSuffix": "<br/>"
+      "wrapperSuffix": "<br/>",
+      "extraInlineSelectors.add": [
+        ".selectable-text",
+        ".selectable-text *"
+      ],
+      "atomicBlockSelectors.add": [
+        ".selectable-text",
+        ".selectable-text *"
+      ]
     },
     {
       "id": "bing",
@@ -10213,6 +10221,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-10T09:09:55.539Z",
+  "buildinConfigUpdatedAt": "2024-09-10T16:41:08.683Z",
   "latestVersion": "1.9.3"
 }
