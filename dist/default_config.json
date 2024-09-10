@@ -5743,7 +5743,7 @@
       "id": "whatsapp",
       "matches": "web.whatsapp.com",
       "selectors": [
-        ".copyable-text > span"
+        ".copyable-text"
       ],
       "wrapperPrefix": "\n",
       "wrapperSuffix": "<br/>"
@@ -7737,6 +7737,9 @@
         ],
         "loadingSelectors": [
           "[data-testid=\"placeholder\"]"
+        ],
+        "inValidSrcRegex": [
+          ".svg"
         ]
       }
     },
@@ -10210,6 +10213,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-10T08:27:56.245Z",
+  "buildinConfigUpdatedAt": "2024-09-10T09:09:55.539Z",
   "latestVersion": "1.9.3"
 }
