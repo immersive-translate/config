@@ -1637,20 +1637,7 @@
     "globalMeta": {},
     "globalStyles": {},
     "initialGlobalAttributes": {},
-    "initialSelectorGlobalAttributes": {
-      "header": {
-        "translate": "no"
-      },
-      "footer:last-of-type": {
-        "translate": "no"
-      },
-      "nav:last-of-type": {
-        "translate": "no"
-      },
-      "nav": {
-        "translate": "no"
-      }
-    },
+    "initialSelectorGlobalAttributes": {},
     "selectors": [],
     "preWhitespaceDetectedTags": [
       "DIV",
@@ -1681,7 +1668,12 @@
       "aside.onebox"
     ],
     "atomicBlockTags": [],
-    "excludeSelectors": [],
+    "excludeSelectors": [
+      "header",
+      "footer:last-of-type",
+      "nav:last-of-type",
+      "nav"
+    ],
     "additionalExcludeSelectors": [
       "[contenteditable=\"true\"]",
       ".uacc-clickable",
@@ -10218,6 +10210,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-09T09:10:40.936Z",
+  "buildinConfigUpdatedAt": "2024-09-10T08:27:56.245Z",
   "latestVersion": "1.9.3"
 }
