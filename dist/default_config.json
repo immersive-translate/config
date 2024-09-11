@@ -156,7 +156,8 @@
     "https://ganganonline.com[GANGAN ONLINE]",
     "https://battwo.com[BATOTO]",
     "https://asuracomic.net[Asura Scans]",
-    "https://allmanga.to[All Manga]"
+    "https://allmanga.to[All Manga]",
+    "https://manhwaclan.com[Manhwaclan]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -7154,8 +7155,11 @@
       }
     },
     {
-      "id": "mangadistrict",
-      "matches": "mangadistrict.com",
+      "id": "mangadistrict-manhwaclan",
+      "matches": [
+        "mangadistrict.com",
+        "manhwaclan.com"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "mangaImage",
@@ -7168,6 +7172,7 @@
         "inValidSrcRegex": [
           "blank.gif"
         ],
+        "injectedCss": ".immersive-translate-attach-loading::after {top:10%!important;}",
         "intersectionRootMargin": "0px 0px 200% 0px"
       }
     },
@@ -10276,6 +10281,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-11T06:55:03.875Z",
+  "buildinConfigUpdatedAt": "2024-09-11T07:03:11.166Z",
   "latestVersion": "1.9.3"
 }
