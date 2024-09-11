@@ -6273,7 +6273,10 @@
     },
     {
       "id": "pubmed.ncbi.nlm.nih.gov",
-      "matches": "pubmed.ncbi.nlm.nih.gov",
+      "matches": [
+        "pubmed.ncbi.nlm.nih.gov",
+        "pubmed*.pubmed*"
+      ],
       "urlChangeDelay": 0,
       "excludeSelectors": [
         ".docsum-journal-citation",
@@ -10221,6 +10224,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-10T16:41:08.683Z",
+  "buildinConfigUpdatedAt": "2024-09-11T01:55:00.188Z",
   "latestVersion": "1.9.3"
 }
