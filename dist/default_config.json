@@ -247,7 +247,8 @@
     "https://asu.instructure.com/[ASU]",
     "https://f1tv.formula1.com/[F1tv]",
     "https://www.patreon.com[Patreon]",
-    "https://projector.datacamp.com[Datacamp]"
+    "https://projector.datacamp.com[Datacamp]",
+    "https://urplay.se[Urplay]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -9559,6 +9560,33 @@
       }
     },
     {
+      "id": "urplay",
+      "matches": [
+        "urplay.se"
+      ],
+      "excludeSelectors.add": [
+        ".jw-media"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".jw-media *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": "\\.vtt\\?",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container"
+        },
+        "attachRule": {
+          "appendSelector": ".jw-media",
+          "injectedGlobalCSS": [
+            ".jw-text-track-container { display: none; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "asu",
       "matches": [
         "api.playposit.com"
@@ -10211,6 +10239,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-11T02:59:33.322Z",
+  "buildinConfigUpdatedAt": "2024-09-11T03:35:19.449Z",
   "latestVersion": "1.9.3"
 }
