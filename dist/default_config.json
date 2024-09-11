@@ -1153,7 +1153,8 @@
       "d-math",
       "mathml",
       "asciimath",
-      "latex"
+      "latex",
+      "mathmlword"
     ],
     "isTranslateWhenServiceChanged": true,
     "excludeSelectorsRegexes": {
@@ -2163,7 +2164,8 @@
       ],
       "pageType": "pdfProReader",
       "excludeSelectors": [
-        "table"
+        "table",
+        ".mmd-context-menu"
       ],
       "injectedCss.add": [
         ".immersive-translate-target-wrapper {white-space: unset;}",
@@ -10225,6 +10227,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-11T02:16:15.323Z",
+  "buildinConfigUpdatedAt": "2024-09-11T02:27:23.089Z",
   "latestVersion": "1.9.3"
 }
