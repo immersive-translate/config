@@ -150,7 +150,6 @@
     "https://twicomi.com/manga*[Twitter Comic]",
     "https://wnacg.com[Wnacg]",
     "https://mangadistrict.com[MANGA DISTRICT]",
-    "https://www.fanbox.cc[FANBOX]",
     "https://vw.mangaz.com[MangaZ]",
     "https://pash-up.jp[PASH UP]",
     "https://www.colamanga.com[COLAMANGA]",
@@ -7172,21 +7171,6 @@
       }
     },
     {
-      "id": "fanbox",
-      "matches": "www.fanbox.cc",
-      "imageRule.add": {
-        "enable": true,
-        "type": "mangaImage",
-        "imageSelectors": [
-          "figure.article__atomic-block img"
-        ],
-        "loadingSelectors": [
-          "div"
-        ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
-      }
-    },
-    {
       "id": "fantia",
       "matches": "fantia_notranslate.*",
       "imageRule.add": {
@@ -10227,6 +10211,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-11T02:27:23.089Z",
+  "buildinConfigUpdatedAt": "2024-09-11T02:59:33.322Z",
   "latestVersion": "1.9.3"
 }
