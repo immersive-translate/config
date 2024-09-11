@@ -157,7 +157,8 @@
     "https://battwo.com[BATOTO]",
     "https://asuracomic.net[Asura Scans]",
     "https://allmanga.to[All Manga]",
-    "https://manhwaclan.com[Manhwaclan]"
+    "https://manhwaclan.com[Manhwaclan]",
+    "https://www.corocoro.jp[CoroCoro]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -7177,6 +7178,21 @@
       }
     },
     {
+      "id": "wn01",
+      "matches": "www.wn01.cc",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#img_list img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "fantia",
       "matches": "fantia_notranslate.*",
       "imageRule.add": {
@@ -7525,7 +7541,8 @@
       "matches": [
         "shonenjumpplus.com",
         "viewer.heros-web.com",
-        "comic-days.com"
+        "comic-days.com",
+        "www.corocoro.jp"
       ],
       "selectorMatches": [
         "canvas.page-image.js-page-image",
@@ -10281,6 +10298,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-11T07:03:11.166Z",
+  "buildinConfigUpdatedAt": "2024-09-11T07:35:37.514Z",
   "latestVersion": "1.9.3"
 }
