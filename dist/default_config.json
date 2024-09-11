@@ -2339,6 +2339,14 @@
       ]
     },
     {
+      "id": "fanbox",
+      "matches": "www.fanbox.cc",
+      "isTransformPreTagNewLine": true,
+      "likePreSelectors.add": [
+        "[class^='Body__PostBodyText']"
+      ]
+    },
+    {
       "id": "fenoxo",
       "matches": "www.fenoxo.com",
       "likePreSelectors.add": [
@@ -10298,6 +10306,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-11T07:35:37.514Z",
+  "buildinConfigUpdatedAt": "2024-09-11T08:01:19.555Z",
   "latestVersion": "1.9.3"
 }
