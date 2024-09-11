@@ -1593,6 +1593,7 @@
     "additionalStayOriginalSelectors": [
       "span.katex",
       "span.notranslate",
+      ".math-block",
       ".MathJax_Preview",
       ".MathJax_Display",
       ".MathJax",
@@ -10224,6 +10225,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-11T01:55:00.188Z",
+  "buildinConfigUpdatedAt": "2024-09-11T02:16:15.323Z",
   "latestVersion": "1.9.3"
 }
