@@ -7613,6 +7613,43 @@
       }
     },
     {
+      "id": "manhwa-raw",
+      "matches": [
+        "manhwa-raw.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".reading-content img"
+        ],
+        "urlFetchType": "img",
+        "loadingSelectors": [
+          "div"
+        ],
+        "injectedCss": ".immersive-translate-attach-loading::after {top:5%!important;}",
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
+      "id": "manhwato",
+      "matches": [
+        "manhwato.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".page-chapter img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "injectedCss": ".immersive-translate-attach-loading::after {top:5%!important;}",
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "pixiv",
       "matches": [
         "www.pixiv.net"
@@ -10239,6 +10276,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-11T03:35:19.449Z",
+  "buildinConfigUpdatedAt": "2024-09-11T06:55:03.875Z",
   "latestVersion": "1.9.3"
 }
