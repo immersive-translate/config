@@ -3385,6 +3385,9 @@
       "excludeSelectors": [
         "hr+div span[dir=auto][style] > span"
       ],
+      "additionalExcludeSelectors.remove_v.[1.4.9]": [
+        "h1 br"
+      ],
       "selectors": [
         "h1",
         "ul li h3+div span[dir=auto]",
@@ -10306,6 +10309,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-11T08:01:19.555Z",
+  "buildinConfigUpdatedAt": "2024-09-11T10:21:17.112Z",
   "latestVersion": "1.9.3"
 }
