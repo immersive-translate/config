@@ -6096,7 +6096,10 @@
       "excludeTags.remove": [
         "PRE"
       ],
-      "injectedCss": "[data-testid='chat-menu-trigger'] br {display:none;}",
+      "injectedCss": [
+        "[data-testid='chat-menu-trigger'] br {display:none;}",
+        "[data-test-render-count] {overflow: scroll;}"
+      ],
       "aiRule": {
         "messageWrapperSelector": ".contents",
         "messageContainerSelector": ".ReactMarkdown",
@@ -10334,6 +10337,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T05:40:07.837Z",
+  "buildinConfigUpdatedAt": "2024-09-12T05:45:11.757Z",
   "latestVersion": "1.9.3"
 }
