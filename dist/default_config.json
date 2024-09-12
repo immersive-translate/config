@@ -10338,27 +10338,27 @@
       ]
     },
     {
-      "id": "mastersportal",
-      "matches": "www.mastersportal.com",
+      "id": "translate-header",
+      "matches": [
+        "www.mastersportal.com",
+        "www.ad-italia.it",
+        "blog.zsec.uk"
+      ],
       "excludeSelectors.remove": [
         "header"
       ]
     },
     {
-      "id": "ad-italia",
-      "matches": "www.ad-italia.it",
+      "id": "sphinx-rtd-theme",
+      "selectorMatches": [
+        ".wy-nav-side"
+      ],
       "excludeSelectors.remove": [
-        "header"
-      ]
-    },
-    {
-      "id": "zsec-blog",
-      "matches": "blog.zsec.uk",
-      "excludeSelectors.remove": [
-        "header"
+        "nav",
+        "nav:last-of-type"
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T08:06:38.682Z",
+  "buildinConfigUpdatedAt": "2024-09-12T08:09:04.051Z",
   "latestVersion": "1.9.3"
 }
