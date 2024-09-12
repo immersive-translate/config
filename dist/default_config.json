@@ -10459,8 +10459,30 @@
           "imtAndroid"
         ]
       }
+    },
+    {
+      "id": "dvamh-vzwp7",
+      "matches": [
+        "dvamh-vzwp7.top"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#default-tab-thumbnail img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ],
+        "loadingSelectors": [
+          "p"
+        ]
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T14:05:58.014Z",
+  "buildinConfigUpdatedAt": "2024-09-12T14:12:53.375Z",
   "latestVersion": "1.9.3"
 }
