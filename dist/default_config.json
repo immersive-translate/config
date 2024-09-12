@@ -10350,8 +10350,15 @@
       "excludeSelectors.remove": [
         "header"
       ]
+    },
+    {
+      "id": "zsec-blog",
+      "matches": "blog.zsec.uk",
+      "excludeSelectors.remove": [
+        "header"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T07:52:52.761Z",
+  "buildinConfigUpdatedAt": "2024-09-12T08:06:38.682Z",
   "latestVersion": "1.9.3"
 }
