@@ -160,7 +160,8 @@
     "https://asuracomic.net[Asura Scans]",
     "https://allmanga.to[All Manga]",
     "https://manhwaclan.com[Manhwaclan]",
-    "https://www.corocoro.jp[CoroCoro]"
+    "https://www.corocoro.jp[CoroCoro]",
+    "https://yymanhua.com[Yymanhua][chrome,firefox,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -7104,8 +7105,29 @@
           "safari",
           "imtAndroid"
         ]
-      },
-      "_comment": "插入图片闪动"
+      }
+    },
+    {
+      "id": "yymanhua",
+      "matches": "yymanhua.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#cp_img img"
+        ],
+        "inValidSrcRegex": [
+          "loading.gif"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtAndroid"
+        ]
+      }
     },
     {
       "id": "antbyw",
@@ -10382,6 +10404,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T10:35:51.261Z",
+  "buildinConfigUpdatedAt": "2024-09-12T11:00:15.021Z",
   "latestVersion": "1.9.3"
 }
