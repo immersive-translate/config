@@ -10336,8 +10336,15 @@
       "injectedCss.add": [
         "[data-enzyme-id=\"Collapse-Collapsible\"] {height:unset!important;}"
       ]
+    },
+    {
+      "id": "mastersportal",
+      "matches": "www.mastersportal.com",
+      "excludeSelectors.remove": [
+        "header"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T07:26:02.826Z",
+  "buildinConfigUpdatedAt": "2024-09-12T07:36:04.096Z",
   "latestVersion": "1.9.3"
 }
