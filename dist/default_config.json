@@ -87,7 +87,9 @@
   "translationMode": "dual",
   "translationModeUrlPattern": {
     "dualMatches": [],
-    "translationMatches": []
+    "translationMatches": [
+      "https://app.immersivetranslate.com/pdf/"
+    ]
   },
   "translationModeLanguagePattern": {
     "dualMatches": [],
@@ -10330,6 +10332,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T01:39:52.599Z",
+  "buildinConfigUpdatedAt": "2024-09-12T02:18:26.639Z",
   "latestVersion": "1.9.3"
 }
