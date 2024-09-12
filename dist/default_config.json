@@ -7922,6 +7922,22 @@
       }
     },
     {
+      "id": "sexkomix2",
+      "matches": [
+        "sexkomix2.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".fancybox img"
+        ],
+        "loadingSelectors": [
+          "li"
+        ]
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -10426,6 +10442,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T11:05:07.438Z",
+  "buildinConfigUpdatedAt": "2024-09-12T11:06:23.491Z",
   "latestVersion": "1.9.3"
 }
