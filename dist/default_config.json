@@ -10440,8 +10440,27 @@
           "#image-container"
         ]
       }
+    },
+    {
+      "id": "rawkuma",
+      "matches": [
+        "rawkuma.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#readerarea img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T11:06:23.491Z",
+  "buildinConfigUpdatedAt": "2024-09-12T14:05:58.014Z",
   "latestVersion": "1.9.3"
 }
