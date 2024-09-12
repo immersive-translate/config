@@ -9932,7 +9932,8 @@
         "*.rwth-aachen.*",
         "www.backcountry.com",
         "intranet.alxswe.com",
-        "www.steepandcheap.com"
+        "www.steepandcheap.com",
+        "whoer.is"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -10337,6 +10338,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T05:45:11.757Z",
+  "buildinConfigUpdatedAt": "2024-09-12T07:26:02.826Z",
   "latestVersion": "1.9.3"
 }
