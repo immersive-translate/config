@@ -6565,10 +6565,15 @@
       ]
     },
     {
-      "id": "fastapi.tiangolo.com",
+      "id": "fastapi",
       "matches": "fastapi.tiangolo.com",
+      "excludeSelectors": [],
       "selectors": [
-        "article"
+        "article",
+        ".md-sidebar__inner"
+      ],
+      "injectedCss.add": [
+        ".md-sidebar__inner .immersive-translate-target-wrapper {display: inline-flex;}"
       ]
     },
     {
@@ -10320,6 +10325,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T00:41:11.004Z",
+  "buildinConfigUpdatedAt": "2024-09-12T01:28:38.935Z",
   "latestVersion": "1.9.3"
 }
