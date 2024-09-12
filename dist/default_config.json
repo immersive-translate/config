@@ -7085,6 +7085,29 @@
       "_comment": "插入图片闪动"
     },
     {
+      "id": "acgmhh",
+      "matches": "acgmhh.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "opImageType": "insertFirst",
+        "imageSelectors": [
+          ".manga-picture img"
+        ],
+        "imageStyle": "margin:auto;",
+        "loadingSelectors": [
+          "picture"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      },
+      "_comment": "插入图片闪动"
+    },
+    {
       "id": "antbyw",
       "matches": "www.antbyw.com",
       "imageRule.add": {
@@ -10359,6 +10382,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T08:09:04.051Z",
+  "buildinConfigUpdatedAt": "2024-09-12T10:35:51.261Z",
   "latestVersion": "1.9.3"
 }
