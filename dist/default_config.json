@@ -10402,8 +10402,30 @@
         "nav",
         "nav:last-of-type"
       ]
+    },
+    {
+      "id": "hentai.name",
+      "matches": [
+        "www.hentai.name"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#image-container img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ],
+        "loadingSelectors": [
+          "#image-container"
+        ]
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T11:00:15.021Z",
+  "buildinConfigUpdatedAt": "2024-09-12T11:05:07.438Z",
   "latestVersion": "1.9.3"
 }
