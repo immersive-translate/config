@@ -5722,6 +5722,17 @@
       "selectorMatches": [
         "meta[name='generator'][content^='Discourse']"
       ],
+      "additionalExcludeSelectors.add": [
+        ".username",
+        ".post-infos",
+        ".title",
+        ".topic-category",
+        ".topic-timeline",
+        ".topic-map",
+        ".topic-list-header",
+        ".number",
+        ".activity"
+      ],
       "urlChangeDelay": 0,
       "_comment": "解决url变化但是页面不变的问题"
     },
@@ -10309,6 +10320,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-11T10:21:17.112Z",
+  "buildinConfigUpdatedAt": "2024-09-12T00:41:11.004Z",
   "latestVersion": "1.9.3"
 }
