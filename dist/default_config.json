@@ -6565,8 +6565,10 @@
       ]
     },
     {
-      "id": "fastapi",
-      "matches": "fastapi.tiangolo.com",
+      "id": "mkdocs-material",
+      "selectorMatches": [
+        ".md-container[data-md-component]"
+      ],
       "excludeSelectors": [],
       "selectors": [
         "article",
@@ -10325,6 +10327,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T01:28:38.935Z",
+  "buildinConfigUpdatedAt": "2024-09-12T01:33:50.688Z",
   "latestVersion": "1.9.3"
 }
