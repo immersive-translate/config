@@ -10343,8 +10343,15 @@
       "excludeSelectors.remove": [
         "header"
       ]
+    },
+    {
+      "id": "ad-italia",
+      "matches": "www.ad-italia.it",
+      "excludeSelectors.remove": [
+        "header"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T07:36:04.096Z",
+  "buildinConfigUpdatedAt": "2024-09-12T07:52:52.761Z",
   "latestVersion": "1.9.3"
 }
