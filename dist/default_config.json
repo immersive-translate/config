@@ -3583,7 +3583,8 @@
         "span[data-thread-id]",
         "div[data-message-id] div[class='']",
         ".messageBody",
-        "#views"
+        "#views",
+        "center table"
       ],
       "globalStyles": {
         "[role='listitem'] > div": "height:auto!important;white-space:unset!important;"
@@ -10333,6 +10334,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T03:28:39.417Z",
+  "buildinConfigUpdatedAt": "2024-09-12T05:40:07.837Z",
   "latestVersion": "1.9.3"
 }
