@@ -1182,6 +1182,9 @@
         "^(/[a-zA-Z0-9\\-_.]+)+$",
         "^Model$",
         "^[a-z]+-[0-9]+B\\*?$"
+      ],
+      "[default-translate] a": [
+        "/^.{0,50}$/"
       ]
     },
     "skipBuildContainerSelectors": [
@@ -1692,9 +1695,7 @@
       "aside.onebox"
     ],
     "atomicBlockTags": [],
-    "excludeSelectors": [
-      "[default-translate]"
-    ],
+    "excludeSelectors": [],
     "additionalExcludeSelectors": [
       "[contenteditable=\"true\"]",
       ".uacc-clickable",
@@ -10596,6 +10597,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-13T03:04:55.786Z",
+  "buildinConfigUpdatedAt": "2024-09-13T03:17:34.643Z",
   "latestVersion": "1.9.4"
 }
