@@ -255,7 +255,6 @@
     "https://www.patreon.com[Patreon]",
     "https://www.cbsnews.com[CBS NEWS]",
     "https://khflix.com[Khflix]",
-    "https://projector.datacamp.com[Datacamp]",
     "https://donghuaworld.com[Donghuaworld]",
     "https://projector.datacamp.com[Datacamp]",
     "https://urplay.se[Urplay]"
@@ -10597,6 +10596,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-13T02:49:35.000Z",
+  "buildinConfigUpdatedAt": "2024-09-13T03:04:55.786Z",
   "latestVersion": "1.9.4"
 }
