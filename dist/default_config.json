@@ -3606,7 +3606,8 @@
         "div[data-message-id] div[class='']",
         ".messageBody",
         "#views",
-        "center table"
+        "center table",
+        ".message"
       ],
       "globalStyles": {
         "[role='listitem'] > div": "height:auto!important;white-space:unset!important;"
@@ -10630,6 +10631,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-13T11:33:17.670Z",
+  "buildinConfigUpdatedAt": "2024-09-13T15:32:26.197Z",
   "latestVersion": "1.9.6"
 }
