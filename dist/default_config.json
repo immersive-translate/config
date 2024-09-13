@@ -68,6 +68,7 @@
   "beta": false,
   "cache": true,
   "enableAiAssistant": true,
+  "enableSelfServiceReport": true,
   "proOpenaiModels": [
     "gpt-3.5-turbo",
     "gpt-3.5-turbo-0125",
@@ -252,6 +253,10 @@
     "https://asu.instructure.com/[ASU]",
     "https://f1tv.formula1.com/[F1tv]",
     "https://www.patreon.com[Patreon]",
+    "https://www.cbsnews.com[CBS NEWS]",
+    "https://khflix.com[Khflix]",
+    "https://projector.datacamp.com[Datacamp]",
+    "https://donghuaworld.com[Donghuaworld]",
     "https://projector.datacamp.com[Datacamp]",
     "https://urplay.se[Urplay]"
   ],
@@ -1644,7 +1649,20 @@
     "globalMeta": {},
     "globalStyles": {},
     "initialGlobalAttributes": {},
-    "initialSelectorGlobalAttributes": {},
+    "initialSelectorGlobalAttributes": {
+      "header": {
+        "default-translate": "no"
+      },
+      "footer:last-of-type": {
+        "default-translate": "no"
+      },
+      "nav:last-of-type": {
+        "default-translate": "no"
+      },
+      "nav": {
+        "default-translate": "no"
+      }
+    },
     "selectors": [],
     "preWhitespaceDetectedTags": [
       "DIV",
@@ -1676,10 +1694,7 @@
     ],
     "atomicBlockTags": [],
     "excludeSelectors": [
-      "header",
-      "footer:last-of-type",
-      "nav:last-of-type",
-      "nav"
+      "[default-translate]"
     ],
     "additionalExcludeSelectors": [
       "[contenteditable=\"true\"]",
@@ -9091,6 +9106,77 @@
       }
     },
     {
+      "id": "khflix",
+      "matches": [
+        "khflix.com"
+      ],
+      "excludeSelectors.add": [
+        "#video-playlist"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#video-playlist *"
+      ],
+      "subtitleRule.add": {
+        "type": "multi_attach_vtt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "insertBeforeSelector": ".jw-icon-cc"
+        },
+        "videoPlayerSelector": "video",
+        "videoSelector": "video",
+        "subtitleUrlRegExp": "\\.vtt",
+        "injectedCss": [],
+        "attachRule": {
+          "appendSelector": ".jw-wrapper",
+          "injectedGlobalCSS": [
+            ".jw-captions { display: none !important; }"
+          ]
+        },
+        "multiSetting": {
+          "activeLangSelector": ".jw-settings-submenu-captions .jw-settings-item-active",
+          "urlLangRegex": "\\d+\\.(\\w+)\\.vtt",
+          "isMapLangFromUrl": true
+        }
+      }
+    },
+    {
+      "id": "donghuaworld",
+      "matches": [
+        "dwserver.donghuaworld.com"
+      ],
+      "excludeSelectors.add": [
+        ".jw-media"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".jw-media *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "multi_attach_vtt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "insertBeforeSelector": ".jw-icon-cc"
+        },
+        "videoPlayerSelector": "video",
+        "videoSelector": "video",
+        "subtitleUrlRegExp": "\\.vtt",
+        "attachRule": {
+          "appendSelector": ".jw-media",
+          "injectedGlobalCSS": [
+            ".jw-captions { display: none !important; }"
+          ]
+        },
+        "multiSetting": {
+          "activeLangSelector": ".jw-settings-submenu-captions .jw-settings-item-active",
+          "urlLangRegex": "\\.English_(.*?)\\-\\.vtt",
+          "isMapLangFromUrl": true
+        }
+      }
+    },
+    {
       "id": "vimeo",
       "matches": [
         "vimeo.com"
@@ -9683,6 +9769,42 @@
       }
     },
     {
+      "id": "cbsnews",
+      "matches": "www.cbsnews.com",
+      "excludeSelectors.add": [
+        ".avia-container"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".avia-container *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "xml",
+        "subtitleUrlRegExp": "\\_xml\\?",
+        "xmlTextSelector": "p",
+        "loadingStyle": "bottom: 10%;",
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ],
+        "injectedCss": [
+          "#immersive-translate-quick-button-container {float: right; height: 100%;}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": "slot-fb > .avia-control-group-right"
+        },
+        "attachRule": {
+          "appendSelector": ".avia-container"
+        },
+        "xmlSetting": {
+          "subtitleItemSelector": "p",
+          "startAttr": "begin",
+          "endAttr": "end",
+          "timeDivisor": 1000
+        }
+      }
+    },
+    {
       "id": "gaia",
       "matches": [
         "www.gaia.com"
@@ -10215,6 +10337,9 @@
         "#footer",
         ".summary > h3",
         ".notes > h3"
+      ],
+      "buildContainerSelectors": [
+        ".chapter p"
       ]
     },
     {
@@ -10399,17 +10524,6 @@
       ]
     },
     {
-      "id": "translate-header",
-      "matches": [
-        "www.mastersportal.com",
-        "www.ad-italia.it",
-        "blog.zsec.uk"
-      ],
-      "excludeSelectors.remove": [
-        "header"
-      ]
-    },
-    {
       "id": "sphinx-rtd-theme",
       "selectorMatches": [
         ".wy-nav-side"
@@ -10483,6 +10597,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-12T14:12:53.375Z",
+  "buildinConfigUpdatedAt": "2024-09-13T02:41:56.197Z",
   "latestVersion": "1.9.3"
 }
