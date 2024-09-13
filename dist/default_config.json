@@ -130,26 +130,24 @@
   },
   "supportedMangaSites": [
     "https://www.pixiv.net/manga[Pixiv][chrome,firefox]",
-    "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA]",
-    "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA]",
+    "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://readcomiconline.li[ReadComicOnline][chrome]",
-    "https://comic-fuz.com/[COMIC FUZ]",
-    "https://mangadex.org/[MangaDex]",
-    "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox]",
-    "https://www.copymanga.site[Copymanga][chrome,firefox]",
-    "https://shonenjumpplus.com[ShonenJumpPlus]",
-    "https://viewer.heros-web.com/[Heros Web]",
-    "https://comic-days.com/[Comic Days]",
-    "https://comic-top.com[Comic Top]",
-    "https://comic-walker.com/[ComicWalker]",
-    "https://web-ace.jp/[Web Ace]",
+    "https://comic-fuz.com/[COMIC FUZ][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://mangadex.org/[MangaDex][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox,imtAndroid]",
+    "https://shonenjumpplus.com[ShonenJumpPlus][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://viewer.heros-web.com/[Heros Web][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://comic-days.com/[Comic Days][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://comic-top.com[Comic Top][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://comic-walker.com/[ComicWalker][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://web-ace.jp/[Web Ace][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
-    "https://e-hentai.org/[E-Hentai][chrome,firefox,safari]",
+    "https://e-hentai.org/[E-Hentai][chrome,firefox,safari,imtAndroid]",
     "https://nhentai.net[nHentai][chrome,firefox,safari]",
     "https://www.antbyw.com[Antbyw]",
-    "https://www.zerobywzz.com[Zerobywzz]",
     "https://www.idmzj.com[动漫之家]",
-    "https://jmanga.org[Jmanga]",
+    "https://jmanga.org[Jmanga][chrome,firefox,safari,imtAndroid]",
     "https://twicomi.com/manga*[Twitter Comic]",
     "https://wnacg.com[Wnacg]",
     "https://mangadistrict.com[MANGA DISTRICT]",
@@ -6987,7 +6985,8 @@
         "loadingSelectors": [
           ".zao-image-container"
         ]
-      }
+      },
+      "_comment": "all"
     },
     {
       "id": "zebrack-shueisha",
@@ -7006,7 +7005,8 @@
         "loadingSelectors": [
           "[data-testid='placeholder']"
         ]
-      }
+      },
+      "_comment": "all"
     },
     {
       "id": "hentai",
@@ -7026,7 +7026,8 @@
         "platforms": [
           "chrome",
           "firefox",
-          "safari"
+          "safari",
+          "imtAndroid"
         ],
         "loadingSelectors": [
           "#i3",
@@ -7170,6 +7171,12 @@
         "type": "mangaImage",
         "imageSelectors": [
           ".container-reader-chapter img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
         ],
         "injectedCss": ".immersive-translate-attach-loading::after {width:6px!important;height:6px!important;animation: immersiveTranslateShadowRolling 1.5s linear infinite!important;}",
         "inValidSrcRegex": [
@@ -7584,7 +7591,8 @@
         "urlFetchType": "img",
         "platforms": [
           "chrome",
-          "firefox"
+          "firefox",
+          "imtAndroid"
         ],
         "loadingSelectors": [
           "div"
@@ -7897,7 +7905,8 @@
         "inValidSrcRegex": [
           ".svg"
         ]
-      }
+      },
+      "_comment": "all"
     },
     {
       "id": "mangadex",
@@ -7915,7 +7924,8 @@
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "injectedCss": ".immersive-translate-attach-loading::after {top:10%!important;}"
-      }
+      },
+      "_comment": "all"
     },
     {
       "id": "kuaikanmanhua",
@@ -10611,6 +10621,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-13T07:56:49.181Z",
+  "buildinConfigUpdatedAt": "2024-09-13T08:28:53.193Z",
   "latestVersion": "1.9.6"
 }
