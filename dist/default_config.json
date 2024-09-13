@@ -10528,9 +10528,9 @@
       "selectorMatches": [
         ".wy-nav-side"
       ],
-      "excludeSelectors.remove": [
-        "nav",
-        "nav:last-of-type"
+      "excludeSelectors": [
+        "header[default-translate]",
+        "footer[default-translate]"
       ]
     },
     {
@@ -10597,6 +10597,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-13T02:41:56.197Z",
+  "buildinConfigUpdatedAt": "2024-09-13T02:48:58.769Z",
   "latestVersion": "1.9.3"
 }
