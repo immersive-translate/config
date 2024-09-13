@@ -2356,12 +2356,28 @@
       ]
     },
     {
+      "id": "fanbox",
+      "matches": [
+        "*.fanbox.cc"
+      ],
+      "isTransformPreTagNewLine": true,
+      "likePreSelectors.add": [
+        "[class^='Body__PostBodyText']"
+      ],
+      "mutationExcludeSelectors.add": [
+        "[class^='Body__PostBodyText']"
+      ]
+    },
+    {
       "id": "fenoxo",
       "matches": "www.fenoxo.com",
       "likePreSelectors.add": [
         ".mainText"
       ],
-      "isTransformPreTagNewLine": true
+      "isTransformPreTagNewLine": true,
+      "mutationExcludeSelectors.add": [
+        ".mainText"
+      ]
     },
     {
       "id": "wikipedia",
@@ -10614,6 +10630,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-13T10:37:19.492Z",
+  "buildinConfigUpdatedAt": "2024-09-13T11:33:17.670Z",
   "latestVersion": "1.9.6"
 }
