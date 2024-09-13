@@ -10325,6 +10325,24 @@
       ]
     },
     {
+      "id": "archiveofourown-chapter",
+      "matches": [
+        "archiveofourown.org/works*chapters/*"
+      ],
+      "excludeSelectors.add": [
+        ".meta",
+        ".navigation",
+        ".byline",
+        "#add_comment",
+        "#footer",
+        ".summary > h3",
+        ".notes > h3"
+      ],
+      "buildContainerSelectors": [
+        "#main"
+      ]
+    },
+    {
       "id": "archiveofourown",
       "matches": [
         "archiveofourown.org"
@@ -10594,6 +10612,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-13T04:01:30.088Z",
+  "buildinConfigUpdatedAt": "2024-09-13T04:20:15.243Z",
   "latestVersion": "1.9.4"
 }
