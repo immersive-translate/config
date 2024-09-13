@@ -5748,7 +5748,6 @@
       "additionalExcludeSelectors.add": [
         ".username",
         ".post-infos",
-        ".title",
         ".topic-category",
         ".topic-timeline",
         ".topic-map",
@@ -10612,6 +10611,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-13T06:57:15.000Z",
+  "buildinConfigUpdatedAt": "2024-09-13T07:56:49.181Z",
   "latestVersion": "1.9.6"
 }
