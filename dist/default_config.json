@@ -10125,7 +10125,8 @@
         "www.backcountry.com",
         "intranet.alxswe.com",
         "www.steepandcheap.com",
-        "whoer.is"
+        "whoer.is",
+        "community.seniorswc.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -10621,6 +10622,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-13T08:28:53.193Z",
+  "buildinConfigUpdatedAt": "2024-09-13T08:29:36.125Z",
   "latestVersion": "1.9.6"
 }
