@@ -10337,9 +10337,6 @@
         "#footer",
         ".summary > h3",
         ".notes > h3"
-      ],
-      "buildContainerSelectors": [
-        ".chapter p"
       ]
     },
     {
@@ -10597,6 +10594,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-13T03:17:34.643Z",
+  "buildinConfigUpdatedAt": "2024-09-13T04:01:30.088Z",
   "latestVersion": "1.9.4"
 }
