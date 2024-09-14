@@ -5810,7 +5810,8 @@
       "atomicBlockSelectors.add": [
         ".selectable-text",
         ".selectable-text *"
-      ]
+      ],
+      "enableRichTranslate": false
     },
     {
       "id": "bing",
@@ -10657,6 +10658,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-14T06:49:19.819Z",
+  "buildinConfigUpdatedAt": "2024-09-14T07:18:07.207Z",
   "latestVersion": "1.9.6"
 }
