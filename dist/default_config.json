@@ -5799,7 +5799,8 @@
       "id": "whatsapp",
       "matches": "web.whatsapp.com",
       "selectors": [
-        ".copyable-text"
+        ".copyable-text",
+        "[role=list]"
       ],
       "additionalExcludeSelectors.add": [
         "[aria-hidden=\"true\"]"
@@ -10679,6 +10680,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-14T09:24:01.170Z",
+  "buildinConfigUpdatedAt": "2024-09-14T09:48:00.158Z",
   "latestVersion": "1.9.6"
 }
