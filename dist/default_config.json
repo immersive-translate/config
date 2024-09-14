@@ -7367,7 +7367,8 @@
         "type": "mangaImage",
         "opImageType": "append",
         "imageSelectors": [
-          "#canvasCluster canvas"
+          "#canvasCluster canvas",
+          "#viewport1 canvas"
         ],
         "loadingSelectors": [
           "div"
@@ -7478,21 +7479,6 @@
       }
     },
     {
-      "id": "vwmangaz",
-      "matches": "vw.mangaz.com",
-      "imageRule.add": {
-        "enable": true,
-        "type": "mangaImage",
-        "opImageType": "append",
-        "imageSelectors": [
-          ".page_image img"
-        ],
-        "loadingSelectors": [
-          "div"
-        ]
-      }
-    },
-    {
       "id": "mangaz",
       "matches": "*.mangaz.com",
       "imageRule.add": {
@@ -7500,7 +7486,8 @@
         "type": "mangaImage",
         "opImageType": "append",
         "imageSelectors": [
-          ".page_image canvas"
+          ".page_image canvas",
+          ".page_image img"
         ],
         "loadingSelectors": [
           "div"
@@ -10689,6 +10676,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-14T08:01:24.838Z",
+  "buildinConfigUpdatedAt": "2024-09-14T08:17:15.352Z",
   "latestVersion": "1.9.6"
 }
