@@ -1607,6 +1607,7 @@
       ".math-block",
       ".MathJax_Preview",
       ".MathJax_Display",
+      ".math-container",
       ".MathJax",
       ".MathJax_SVG",
       "[aria-labelledby^=\"MathJax-SVG\"]",
@@ -10680,6 +10681,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-14T09:57:51.477Z",
+  "buildinConfigUpdatedAt": "2024-09-14T11:23:34.468Z",
   "latestVersion": "1.9.6"
 }
