@@ -145,7 +145,7 @@
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
     "https://e-hentai.org/[E-Hentai][chrome,firefox,safari,imtAndroid]",
     "https://nhentai.net[nHentai][chrome,firefox,safari]",
-    "https://www.antbyw.com[Antbyw]",
+    "https://www.antbyw.com[Antbyw][chrome,firefox,safari,imtAndroid]",
     "https://www.idmzj.com[动漫之家]",
     "https://jmanga.org[Jmanga][chrome,firefox,safari,imtAndroid]",
     "https://twicomi.com/manga*[Twitter Comic]",
@@ -7169,6 +7169,12 @@
         "loadingSelectors": [
           "div"
         ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ],
         "intersectionRootMargin": "0px 0px 200% 0px"
       }
     },
@@ -10631,6 +10637,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-13T15:32:26.197Z",
+  "buildinConfigUpdatedAt": "2024-09-14T01:37:28.649Z",
   "latestVersion": "1.9.6"
 }
