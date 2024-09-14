@@ -7478,6 +7478,21 @@
       }
     },
     {
+      "id": "vwmangaz",
+      "matches": "vw.mangaz.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "opImageType": "append",
+        "imageSelectors": [
+          ".page_image img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ]
+      }
+    },
+    {
       "id": "mangaz",
       "matches": "*.mangaz.com",
       "imageRule.add": {
@@ -10674,6 +10689,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-14T07:44:11.191Z",
+  "buildinConfigUpdatedAt": "2024-09-14T08:01:24.838Z",
   "latestVersion": "1.9.6"
 }
