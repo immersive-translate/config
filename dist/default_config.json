@@ -7132,6 +7132,26 @@
       }
     },
     {
+      "id": "177picyy",
+      "matches": "www.177picyy.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".single-content img"
+        ],
+        "loadingSelectors": [
+          "p"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "yymanhua",
       "matches": "yymanhua.com",
       "imageRule.add": {
@@ -10637,6 +10657,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-14T01:37:28.649Z",
+  "buildinConfigUpdatedAt": "2024-09-14T02:50:13.555Z",
   "latestVersion": "1.9.6"
 }
