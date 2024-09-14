@@ -5801,6 +5801,9 @@
       "selectors": [
         ".copyable-text"
       ],
+      "additionalExcludeSelectors.add": [
+        "[aria-hidden=\"true\"]"
+      ],
       "wrapperPrefix": "\n",
       "wrapperSuffix": "<br/>",
       "extraInlineSelectors.add": [
@@ -10676,6 +10679,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-14T08:17:15.352Z",
+  "buildinConfigUpdatedAt": "2024-09-14T09:24:01.170Z",
   "latestVersion": "1.9.6"
 }
