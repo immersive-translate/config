@@ -7258,7 +7258,13 @@
           "a",
           "div"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtIOS"
+        ]
       }
     },
     {
@@ -7315,7 +7321,12 @@
           "blank.gif"
         ],
         "injectedCss": ".immersive-translate-attach-loading::after {top:10%!important;}",
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
       }
     },
     {
@@ -7592,7 +7603,12 @@
         "loadingSelectors": [
           "div"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
       }
     },
     {
@@ -10658,6 +10674,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-14T07:18:07.207Z",
+  "buildinConfigUpdatedAt": "2024-09-14T07:44:11.191Z",
   "latestVersion": "1.9.6"
 }
