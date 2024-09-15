@@ -5553,13 +5553,16 @@
         "consumeTimeout": 1000
       },
       "additionalStayOriginalSelectors": [
-        "a.citation"
+        "a.citation",
+        "[class='my-md pb-xs pt-sm']"
       ],
       "selectors": [
         ".prose",
         ".my-md",
         ".line-clamp-2",
-        ".line-clamp-1"
+        ".line-clamp-1",
+        "[data-testid=thread-title]",
+        "[class='rounded-md duration-150']"
       ]
     },
     {
@@ -10681,6 +10684,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-14T11:23:34.468Z",
+  "buildinConfigUpdatedAt": "2024-09-15T04:11:20.368Z",
   "latestVersion": "1.9.6"
 }
