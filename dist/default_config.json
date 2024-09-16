@@ -3691,7 +3691,8 @@
         "section[aria-label='Search Results'] div[id^=message-content]",
         "div[class^=messagesPopout]",
         "[class^='embedTitle']",
-        "[class^='embedDescription']"
+        "[class^='embedDescription']",
+        "[class^='promptContent']"
       ],
       "excludeSelectors.add": [
         "[class*='username']",
@@ -8923,7 +8924,8 @@
       "matches": [
         "movie-web.app/media*",
         "movie-web-me.vercel.app/media*",
-        "*.vidbinge.com"
+        "*.vidbinge.com",
+        "vidsrc.xyz"
       ],
       "excludeSelectors.add": [
         "#root"
@@ -10683,6 +10685,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-16T05:49:03.239Z",
+  "buildinConfigUpdatedAt": "2024-09-16T12:45:23.504Z",
   "latestVersion": "1.9.6"
 }
