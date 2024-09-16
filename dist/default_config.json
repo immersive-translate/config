@@ -8934,9 +8934,8 @@
       "subtitleRule.add": {
         "type": "subsrt",
         "hookType": "fetch",
-        "subsrtFormat": "vtt",
         "loadingContainerSelector": ".relative.h-screen.overflow-hidden",
-        "subtitleUrlRegExp": ".*\\.vtt",
+        "subtitleUrlRegExp": ".*\\.(srt|vtt)",
         "quickButtonRule": {
           "appendSelector": ".hidden.justify-between .flex.items-center.space-x-3"
         },
@@ -10684,6 +10683,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-15T04:11:20.368Z",
+  "buildinConfigUpdatedAt": "2024-09-16T05:49:03.239Z",
   "latestVersion": "1.9.6"
 }
