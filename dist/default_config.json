@@ -2409,6 +2409,9 @@
         "[role=math]",
         ".nowrap"
       ],
+      "globalStyles.add": {
+        ".no-article-text-sister-projects li": "height:unset;"
+      },
       "bodyRule.add": {
         "bodySelector": "#content",
         "articleSelector": "#bodyContent"
@@ -10784,6 +10787,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-18T07:53:41.025Z",
+  "buildinConfigUpdatedAt": "2024-09-18T09:51:45.358Z",
   "latestVersion": "1.9.6"
 }
