@@ -8052,7 +8052,7 @@
         "subtitleUrlRegExp": ".vtt$",
         "loadingContainerSelector": ".vjs-text-track-display",
         "injectedCss": [
-          "#immersive-translate-quick-button-container {order: 2} .imt-quick-subtitle-pop-content {z-index: 2147483647}"
+          "#immersive-translate-quick-button-container { order: 2; position: absolute; right: 0; bottom: 35%; } .imt-quick-subtitle-pop-content {z-index: 2147483647}"
         ],
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
@@ -10697,6 +10697,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-18T02:42:32.913Z",
+  "buildinConfigUpdatedAt": "2024-09-18T03:19:20.116Z",
   "latestVersion": "1.9.6"
 }
