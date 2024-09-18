@@ -2527,7 +2527,7 @@
     {
       "id": "zoom-asu",
       "matches": [
-        "asu.zoom.us"
+        "*.zoom.us/rec/*"
       ],
       "excludeSelectors.add": [
         ".player-share .video-js"
@@ -10761,6 +10761,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-18T06:48:51.894Z",
+  "buildinConfigUpdatedAt": "2024-09-18T07:04:51.535Z",
   "latestVersion": "1.9.6"
 }
