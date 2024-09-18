@@ -157,10 +157,11 @@
     "https://www.ganganonline.com[GANGAN ONLINE]",
     "https://battwo.com[BATOTO]",
     "https://asuracomic.net[Asura Scans]",
-    "https://allmanga.to[All Manga]",
-    "https://manhwaclan.com[Manhwaclan]",
+    "https://allmanga.to[All Manga][chrome,firefox,safari,imtAndroid]",
+    "https://manhwaclan.com[Manhwaclan][chrome,firefox,safari]",
     "https://www.corocoro.jp[CoroCoro]",
-    "https://yymanhua.com[Yymanhua][chrome,firefox,imtAndroid]"
+    "https://yymanhua.com[Yymanhua][chrome,firefox,imtAndroid]",
+    "https://manhwatop.com[Manhwatop][chrome,firefox,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -7917,6 +7918,28 @@
       }
     },
     {
+      "id": "manhwatop",
+      "matches": [
+        "manhwatop.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".page-break img"
+        ],
+        "loadingSelectors": [
+          ".page-break"
+        ],
+        "injectedCss": ".immersive-translate-attach-loading::after {top:5%!important;}",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "pixiv",
       "matches": [
         "www.pixiv.net"
@@ -10761,6 +10784,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-18T07:04:51.535Z",
+  "buildinConfigUpdatedAt": "2024-09-18T07:53:41.025Z",
   "latestVersion": "1.9.6"
 }
