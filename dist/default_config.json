@@ -7066,6 +7066,11 @@
         ],
         "loadingSelectors": [
           "div"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ]
       }
     },
@@ -7382,7 +7387,10 @@
         "loadingSelectors": [
           "div"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome"
+        ]
       }
     },
     {
@@ -7500,6 +7508,10 @@
         ],
         "loadingSelectors": [
           "div"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox"
         ]
       }
     },
@@ -10685,6 +10697,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-18T02:26:30.155Z",
+  "buildinConfigUpdatedAt": "2024-09-18T02:42:32.913Z",
   "latestVersion": "1.9.6"
 }
