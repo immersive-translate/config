@@ -2525,6 +2525,38 @@
       }
     },
     {
+      "id": "zoom-asu",
+      "matches": [
+        "asu.zoom.us"
+      ],
+      "excludeSelectors.add": [
+        ".player-share .video-js"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".player-share .video-js *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "rec/play/vtt",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-extend-control",
+          "insertBeforeSelector": ".vjs-captions-control",
+          "injectCSS": ".imt-quick-subtitle-pop-content { max-height: 150px !important; }"
+        },
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window { direction: rtl; }"
+        ],
+        "attachRule": {
+          "appendSelector": ".player-share .video-js",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display {display:none!important;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "zoom",
       "matches": [
         "*.zoom.us"
@@ -10697,6 +10729,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-18T03:19:20.116Z",
+  "buildinConfigUpdatedAt": "2024-09-18T06:44:01.338Z",
   "latestVersion": "1.9.6"
 }
