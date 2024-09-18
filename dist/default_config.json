@@ -7116,6 +7116,11 @@
         ],
         "loadingSelectors": [
           "div"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ]
       }
     },
@@ -7470,7 +7475,13 @@
         "loadingSelectors": [
           "div"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
       }
     },
     {
@@ -7509,7 +7520,13 @@
         "inValidSrcRegex": [
           "data:image/gif"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
       }
     },
     {
@@ -7524,7 +7541,12 @@
         "loadingSelectors": [
           "div"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtAndroid"
+        ]
       }
     },
     {
@@ -7863,7 +7885,12 @@
           "div"
         ],
         "injectedCss": ".immersive-translate-attach-loading::after {top:5%!important;}",
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
       }
     },
     {
@@ -7881,7 +7908,12 @@
           "div"
         ],
         "injectedCss": ".immersive-translate-attach-loading::after {top:5%!important;}",
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtAndroid"
+        ]
       }
     },
     {
@@ -10729,6 +10761,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-18T06:44:01.338Z",
+  "buildinConfigUpdatedAt": "2024-09-18T06:48:51.894Z",
   "latestVersion": "1.9.6"
 }
