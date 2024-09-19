@@ -6397,7 +6397,8 @@
         ".multiple-results-actions",
         ".sort-dropdown .option-label",
         ".display-options .button-label",
-        ".actions-buttons.sidebar"
+        ".actions-buttons.sidebar",
+        ".title-copy"
       ],
       "globalAttributes.add": {
         "#Scholarscope_HighlightContent": {
@@ -6416,7 +6417,8 @@
       ],
       "injectedCss": [
         "#Scholarscope_HighlightOrigin > p font,#Scholarscope_HighlightContent > p font {display: inline!important;}",
-        "#Scholarscope_HighlightOrigin > p font br,#Scholarscope_HighlightContent > p font br {display: none!important;}"
+        "#Scholarscope_HighlightOrigin > p font br,#Scholarscope_HighlightContent > p font br {display: none!important;}",
+        ".title-translate {display:block;}"
       ]
     },
     {
@@ -10787,6 +10789,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-18T09:51:45.358Z",
+  "buildinConfigUpdatedAt": "2024-09-19T06:50:18.966Z",
   "latestVersion": "1.9.6"
 }
