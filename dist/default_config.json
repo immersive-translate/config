@@ -5181,7 +5181,8 @@
       "id": "webofscience",
       "matches": [
         "https://www.webofscience.com/*",
-        "https://webofscience.clarivate.*/*"
+        "https://webofscience.clarivate.*/*",
+        "www-webofscience-com-*.*"
       ],
       "globalStyles": {
         ".abstract": "height:auto !important;",
@@ -10790,5 +10791,5 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-19T06:56:25.887Z"
+  "buildinConfigUpdatedAt": "2024-09-19T07:24:24.011Z"
 }
