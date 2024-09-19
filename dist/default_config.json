@@ -1,4 +1,5 @@
 {
+  "latestVersion": "1.9.6",
   "immediateTranslationTextCount": 4999,
   "translationStartMode": "dynamic",
   "domReadyDetectTimeout": 3000,
@@ -10789,6 +10790,5 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-19T06:50:18.966Z",
-  "latestVersion": "1.9.6"
+  "buildinConfigUpdatedAt": "2024-09-19T06:56:25.887Z"
 }
