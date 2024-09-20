@@ -10796,7 +10796,18 @@
           "p"
         ]
       }
+    },
+    {
+      "id": "https://app.follow.is/feeds/",
+      "matches": [
+        "https://app.follow.is/feeds/*"
+      ],
+      "isTranslateTitle": false,
+      "excludeSelectors.add": [
+        ".bg-native",
+        "main > div > div.h-full:first-child"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-20T04:10:05.186Z"
+  "buildinConfigUpdatedAt": "2024-09-20T05:53:29.893Z"
 }
