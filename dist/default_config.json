@@ -10843,7 +10843,45 @@
         ".bg-native",
         "main > div > div.h-full:first-child"
       ]
+    },
+    {
+      "id": "svelte",
+      "matches": [
+        "svelte.dev/docs/*",
+        "learn.svelte.dev"
+      ],
+      "selectors": [
+        ".text"
+      ]
+    },
+    {
+      "id": "gitpod",
+      "matches": "www.gitpod.io/docs/*",
+      "selectors": [
+        ".content-docs"
+      ]
+    },
+    {
+      "id": "service-now",
+      "matches": "*.service-now.com",
+      "selectors": [
+        "article",
+        ".email-content"
+      ]
+    },
+    {
+      "id": "realpython",
+      "matches": "realpython.com",
+      "selectors": [
+        "h1",
+        "h2",
+        ".my-0",
+        ".my-1",
+        ".article-body",
+        "table-of-contents",
+        "#disqus_recommendations"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-20T07:40:08.600Z"
+  "buildinConfigUpdatedAt": "2024-09-20T07:49:56.362Z"
 }
