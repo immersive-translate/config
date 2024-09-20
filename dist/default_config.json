@@ -101,6 +101,10 @@
     "zh-CN:zh-TW",
     "zh-TW:zh-CN"
   ],
+  "autoTranslateParams": [
+    "_immersive_translate_auto_translate",
+    "crosearch_translate"
+  ],
   "enabled": true,
   "minVersion": "0.6.2",
   "showOpenaiOnSafari": true,
@@ -634,6 +638,7 @@
     },
     "deeplx": {
       "limit": 3,
+      "enableRichTranslate": false,
       "placeholderDelimiters": [
         "@",
         "#"
@@ -797,6 +802,10 @@
       "maxTextGroupLengthPerRequestForSubtitle": 3,
       "bodyConfigs": {
         "max_tokens": 2048
+      },
+      "headerConfigs": {
+        "anthropic-version": "2023-06-01",
+        "anthropic-dangerous-direct-browser-access": "true"
       },
       "translationTextSeparator": "\n\n%%\n\n",
       "assistantId": "common",
@@ -4609,6 +4618,7 @@
       },
       "subtitleRule.add": {
         "type": "webvtt",
+        "enableHookDownload": true,
         "subtitleUrlRegExp": "webvtt$",
         "loadingContainerSelector": ".vjs-text-track-display",
         "quickButtonRule": {
@@ -8223,6 +8233,7 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
+        "enableHookDownload": true,
         "subtitleUrlRegExp": ".*subtitles.*\\.vtt",
         "videoPlayerSelector": "video",
         "quickButtonRule": {
@@ -9831,7 +9842,28 @@
           "appendSelector": ".PlayerSettingsGroup",
           "insertBeforeSelector": ".PlayerSettingsGroup .PlayerControlsButton"
         }
-      }
+      },
+      "subtitleRule.add_v.[1.9.6]": {
+        "type": "xml",
+        "hookType": "fetch",
+        "subtitleUrlRegExp": "\\.ttml$",
+        "loadingContainerSelector": "#web-player-app",
+        "injectedCss": [
+          ".CaptionBox {white-space: pre-line;}"
+        ],
+        "xmlTextSelector": "p",
+        "xmlSetting": {
+          "subtitleItemSelector": "div",
+          "textSelector": "p",
+          "startSelector": "div",
+          "endSelector": "div",
+          "startAttr": "begin",
+          "endAttr": "end",
+          "timeDivisor": 1000
+        },
+        "enableHookDownload": true
+      },
+      "_comment": "无法自托管，自托管字幕广告后会偏移"
     },
     {
       "id": "youku.tv",
@@ -10809,5 +10841,5 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-20T05:53:29.893Z"
+  "buildinConfigUpdatedAt": "2024-09-20T07:01:22.489Z"
 }
