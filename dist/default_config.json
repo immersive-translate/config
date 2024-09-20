@@ -6382,7 +6382,8 @@
       "id": "pubmed.ncbi.nlm.nih.gov",
       "matches": [
         "pubmed.ncbi.nlm.nih.gov",
-        "pubmed*.pubmed*"
+        "pubmed*.pubmed*",
+        "*.ncbi.nlm.nih.gov"
       ],
       "urlChangeDelay": 0,
       "excludeSelectors": [
@@ -6401,6 +6402,9 @@
         ".display-options .button-label",
         ".actions-buttons.sidebar",
         ".title-copy"
+      ],
+      "extraBlockSelectors.add": [
+        ".mixed-citation"
       ],
       "globalAttributes.add": {
         "#Scholarscope_HighlightContent": {
@@ -10791,5 +10795,5 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-19T07:24:24.011Z"
+  "buildinConfigUpdatedAt": "2024-09-20T02:22:17.525Z"
 }
