@@ -10881,7 +10881,15 @@
         "table-of-contents",
         "#disqus_recommendations"
       ]
+    },
+    {
+      "id": "casino",
+      "matches": "www.casino.org",
+      "excludeSelectors.add": [
+        ".material-symbols-outlined"
+      ],
+      "repeatTranslateNum": 4
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-20T07:56:46.000Z"
+  "buildinConfigUpdatedAt": "2024-09-20T10:28:08.855Z"
 }
