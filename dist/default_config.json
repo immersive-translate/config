@@ -2032,6 +2032,7 @@
         "https://app.immersivetranslate.cn/pdf/",
         "https://app.immersivetranslate.com/pdf/*",
         "https://app.immersivetranslate.cn/pdf/*",
+        "https://app.infread.com/pdf/*",
         "http://localhost:38001/pdf*"
       ],
       "detectTextBufferLength": 80,
@@ -2111,6 +2112,7 @@
       "matches": [
         "https://app.immersivetranslate.com/ebook/make/",
         "https://app.immersivetranslate.cn/ebook/make/",
+        "https://app.infread.com/ebook/make/",
         "http://localhost:38001/ebook/make/"
       ],
       "isEbookBuilder": true,
@@ -2250,7 +2252,8 @@
       "id": "immersive-word",
       "matches": [
         "test-app.immersivetranslate.com/word*",
-        "app.immersivetranslate.com/word*"
+        "app.immersivetranslate.com/word*",
+        "app.infread.com/word*"
       ],
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
@@ -2283,7 +2286,8 @@
         "https://test-app.immersivetranslate.com",
         "http://localhost:38001",
         "https://ai.immersivetranslate.com",
-        "https://test-ai.immersivetranslate.com"
+        "https://test-ai.immersivetranslate.com",
+        "https://app.infread.com"
       ],
       "allowInnerInvoke": true,
       "isInjectVersion": true,
@@ -10841,5 +10845,5 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-20T07:01:22.489Z"
+  "buildinConfigUpdatedAt": "2024-09-20T07:40:08.600Z"
 }
