@@ -6404,6 +6404,7 @@
         ".actions-buttons.sidebar",
         ".title-copy"
       ],
+      "enableRichTranslate": false,
       "extraBlockSelectors.add": [
         ".mixed-citation"
       ],
@@ -10796,5 +10797,5 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-20T02:41:00.623Z"
+  "buildinConfigUpdatedAt": "2024-09-20T03:56:35.095Z"
 }
