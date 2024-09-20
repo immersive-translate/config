@@ -10301,7 +10301,8 @@
         "intranet.alxswe.com",
         "www.steepandcheap.com",
         "whoer.is",
-        "community.seniorswc.com"
+        "community.seniorswc.com",
+        "www.skool.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -10797,5 +10798,5 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-20T03:56:35.095Z"
+  "buildinConfigUpdatedAt": "2024-09-20T04:10:05.186Z"
 }
