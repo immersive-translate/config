@@ -4646,7 +4646,8 @@
       },
       "bodyRule.add": {
         "bodySelector": "article"
-      }
+      },
+      "enableRichTranslate": false
     },
     {
       "id": "thehighestofthemountains",
@@ -10795,5 +10796,5 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-20T02:22:17.525Z"
+  "buildinConfigUpdatedAt": "2024-09-20T02:41:00.623Z"
 }
