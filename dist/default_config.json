@@ -155,7 +155,6 @@
     "https://jmanga.org[Jmanga][chrome,firefox,safari,imtAndroid]",
     "https://twicomi.com/manga*[Twitter Comic]",
     "https://wnacg.com[Wnacg]",
-    "https://mangadistrict.com[MANGA DISTRICT]",
     "https://vw.mangaz.com[MangaZ]",
     "https://pash-up.jp[PASH UP]",
     "https://www.colamanga.com[COLAMANGA]",
@@ -7385,7 +7384,7 @@
     {
       "id": "mangadistrict-manhwaclan",
       "matches": [
-        "mangadistrict.com",
+        "mangadistrict2.com",
         "manhwaclan.com"
       ],
       "imageRule.add": {
@@ -10919,5 +10918,5 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-23T03:32:16.590Z"
+  "buildinConfigUpdatedAt": "2024-09-23T08:24:18.456Z"
 }
