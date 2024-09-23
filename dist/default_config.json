@@ -153,17 +153,17 @@
     "https://www.antbyw.com[Antbyw][chrome,firefox,safari,imtAndroid]",
     "https://www.idmzj.com[动漫之家]",
     "https://jmanga.org[Jmanga][chrome,firefox,safari,imtAndroid]",
-    "https://twicomi.com/manga*[Twitter Comic]",
-    "https://wnacg.com[Wnacg]",
-    "https://vw.mangaz.com[MangaZ]",
-    "https://pash-up.jp[PASH UP]",
-    "https://www.colamanga.com[COLAMANGA]",
-    "https://www.ganganonline.com[GANGAN ONLINE]",
-    "https://battwo.com[BATOTO]",
+    "https://twicomi.com/manga*[Twitter Comic][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://wnacg.com[Wnacg][chrome,firefox,safari,imtIOS]",
+    "https://vw.mangaz.com[MangaZ][chrome,firefox]",
+    "https://pash-up.jp[PASH UP][chrome]",
+    "https://www.colamanga.com[COLAMANGA][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://www.ganganonline.com[GANGAN ONLINE][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://battwo.com[BATOTO][chrome,firefox,safari,imtAndroid]",
     "https://asuracomic.net[Asura Scans]",
     "https://allmanga.to[All Manga][chrome,firefox,safari,imtAndroid]",
     "https://manhwaclan.com[Manhwaclan][chrome,firefox,safari]",
-    "https://www.corocoro.jp[CoroCoro]",
+    "https://www.corocoro.jp[CoroCoro][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://yymanhua.com[Yymanhua][chrome,firefox,imtAndroid]",
     "https://manhwatop.com[Manhwatop][chrome,firefox,imtAndroid]",
     "https://palcy.jp/[Palcy][chrome,firefox,safari,imtAndroid]"
@@ -7316,7 +7316,8 @@
         "loadingSelectors": [
           "div"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "_comment": "all"
       }
     },
     {
@@ -7471,7 +7472,8 @@
           "div"
         ],
         "intersectionRootMargin": "0px 0px 200% 0px"
-      }
+      },
+      "_comment": "all"
     },
     {
       "id": "ganganonline",
@@ -7486,7 +7488,8 @@
           "div"
         ],
         "intersectionRootMargin": "0px 0px 200% 0px"
-      }
+      },
+      "_comment": "all"
     },
     {
       "id": "bato",
@@ -7825,7 +7828,8 @@
       },
       "injectedCss.add": [
         "[class^='Original_section_title'] {overflow:hidden!important;}"
-      ]
+      ],
+      "_comment": "all"
     },
     {
       "id": "comic-top",
@@ -10918,5 +10922,5 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-23T08:24:18.456Z"
+  "buildinConfigUpdatedAt": "2024-09-23T09:10:11.434Z"
 }
