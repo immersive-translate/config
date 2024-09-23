@@ -5907,6 +5907,10 @@
         ".SIPGg",
         ".sc-kzMCTH.pSZXj"
       ],
+      "likePreSelectors.add": [
+        ".highLightSearchTarget"
+      ],
+      "isTransformPreTagNewLine": true,
       "globalStyles": {
         "#atomic .Mt\\(20px\\)": "margin-top: 100px;",
         "[class*='LineClamp']": "-webkit-line-clamp:unset;max-height:unset;",
@@ -10932,5 +10936,5 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-23T13:15:05.439Z"
+  "buildinConfigUpdatedAt": "2024-09-23T14:05:29.734Z"
 }
