@@ -5187,6 +5187,7 @@
     {
       "id": "nature",
       "matches": "https://www.nature.com/articles/*",
+      "excludeMatches": "https://www.nature.com/articles/*.pdf",
       "excludeSelectors": [
         ".c-header",
         ".c-recommendations-header",
@@ -10931,5 +10932,5 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-23T10:07:18.278Z"
+  "buildinConfigUpdatedAt": "2024-09-23T10:08:54.320Z"
 }
