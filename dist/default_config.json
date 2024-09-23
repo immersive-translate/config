@@ -161,7 +161,7 @@
     "https://www.colamanga.com[COLAMANGA][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://www.ganganonline.com[GANGAN ONLINE][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://battwo.com[BATOTO][chrome,firefox,safari,imtAndroid]",
-    "https://asuracomic.net[Asura Scans]",
+    "https://asuracomic.net[Asura Scans][chrome,firefox,safari]",
     "https://allmanga.to[All Manga][chrome,firefox,safari,imtAndroid]",
     "https://manhwaclan.com[Manhwaclan][chrome,firefox,safari]",
     "https://www.corocoro.jp[CoroCoro][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
@@ -7536,7 +7536,12 @@
           "div"
         ],
         "injectedCss": ".immersive-translate-attach-loading::after {top:5%!important;}",
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
       }
     },
     {
@@ -10926,5 +10931,5 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-23T09:48:50.224Z"
+  "buildinConfigUpdatedAt": "2024-09-23T10:07:18.278Z"
 }
