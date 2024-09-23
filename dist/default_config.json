@@ -138,6 +138,7 @@
     "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://readcomiconline.li[ReadComicOnline][chrome]",
+    "https://readcomic.me[ReadComic][chrome]",
     "https://comic-fuz.com/[COMIC FUZ][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://mangadex.org/[MangaDex][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox,imtAndroid]",
@@ -2235,6 +2236,13 @@
       "toastErrorMinTimes": 500,
       "waitForSelectorsTimeout": 1,
       "detectParagraphLanguage.add.[1.4.8]": false
+    },
+    {
+      "id": "common.pdfWebPage",
+      "waitForSelectorsTimeout": 1,
+      "selectorMatches": [
+        "embed[type='application/pdf']"
+      ]
     },
     {
       "id": "download-subtitle",
@@ -7782,16 +7790,19 @@
     {
       "id": "readcomiconline",
       "matches": [
-        "readcomiconline.li"
+        "readcomiconline.li",
+        "readcomic.me"
       ],
       "imageRule.add": {
         "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
-          "#divImage img"
+          "#divImage img",
+          ".page-chapter img"
         ],
         "loadingSelectors": [
-          "p"
+          "p",
+          "div"
         ],
         "inValidSrcRegex": [
           "blank.gif"
@@ -10584,13 +10595,6 @@
       ]
     },
     {
-      "id": "common.pdfWebPage",
-      "waitForSelectorsTimeout": 1,
-      "selectorMatches": [
-        "embed[type='application/pdf']"
-      ]
-    },
-    {
       "id": "bitwarden.com",
       "matches": "bitwarden.com",
       "excludeSelectors.add": [
@@ -10922,5 +10926,5 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-23T09:10:11.434Z"
+  "buildinConfigUpdatedAt": "2024-09-23T09:48:50.224Z"
 }
