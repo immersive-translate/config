@@ -3062,7 +3062,7 @@
     },
     {
       "id": "facebook",
-      "matches": "www.facebook.com",
+      "matches": "*.facebook.com",
       "excludeMatches": [
         "https://www.facebook.com/business/*",
         "https://www.facebook.com/help*"
@@ -10932,5 +10932,5 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-23T10:08:54.320Z"
+  "buildinConfigUpdatedAt": "2024-09-23T13:15:05.439Z"
 }
