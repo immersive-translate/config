@@ -166,7 +166,8 @@
     "https://manhwaclan.com[Manhwaclan][chrome,firefox,safari]",
     "https://www.corocoro.jp[CoroCoro]",
     "https://yymanhua.com[Yymanhua][chrome,firefox,imtAndroid]",
-    "https://manhwatop.com[Manhwatop][chrome,firefox,imtAndroid]"
+    "https://manhwatop.com[Manhwatop][chrome,firefox,imtAndroid]",
+    "https://palcy.jp/[Palcy][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -10896,7 +10897,27 @@
       "injectedCss.add": [
         "a > font {width: max-content;}"
       ]
+    },
+    {
+      "id": "palcy",
+      "matches": "palcy.jp",
+      "imageRule.add": {
+        "enable": true,
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ],
+        "type": "mangaImage",
+        "imageSelectors": [
+          "ul.pages li img"
+        ],
+        "loadingSelectors": [
+          "li"
+        ]
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-22T07:20:27.477Z"
+  "buildinConfigUpdatedAt": "2024-09-23T03:32:16.590Z"
 }
