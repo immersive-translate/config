@@ -3070,7 +3070,9 @@
       "selectors": [
         "div[dir=auto][style]",
         "div[dir=auto][class]",
-        "span[lang]"
+        "span[lang]",
+        "[data-pagelet=BizInboxMessengerMessageListContainer] span",
+        "[data-pagelet=BizInboxContextCardDetail] span"
       ],
       "insertPosition": "afterend",
       "preWhitespaceDetectedTags": [
@@ -4669,7 +4671,8 @@
       "bodyRule.add": {
         "bodySelector": "article"
       },
-      "enableRichTranslate": false
+      "enableRichTranslate": false,
+      "enableRichTranslate.add_v.[1.9.7]": true
     },
     {
       "id": "thehighestofthemountains",
@@ -6432,6 +6435,7 @@
         ".title-copy"
       ],
       "enableRichTranslate": false,
+      "enableRichTranslate.add_v.[1.9.7]": true,
       "extraBlockSelectors.add": [
         ".mixed-citation"
       ],
@@ -10218,6 +10222,8 @@
         ".plyr__captions *",
         "#immersive-translate-caption-window *"
       ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
         "type": "subsrt",
         "subtitleUrlRegExp": "\\.vtt",
@@ -10934,7 +10940,12 @@
           "li"
         ]
       }
+    },
+    {
+      "id": "learn-ed",
+      "matches": "www.learn.ed.ac.*",
+      "repeatTranslateNum": 1
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-23T14:05:29.734Z"
+  "buildinConfigUpdatedAt": "2024-09-24T15:47:20.080Z"
 }
