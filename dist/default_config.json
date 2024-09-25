@@ -1173,7 +1173,11 @@
       "mathml",
       "asciimath",
       "latex",
-      "mathmlword"
+      "mathmlword",
+      "semantics",
+      "annotation-xml",
+      "annotation",
+      "ci"
     ],
     "isTranslateWhenServiceChanged": true,
     "excludeSelectorsRegexes": {
@@ -10947,5 +10951,5 @@
       "repeatTranslateNum": 1
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-24T15:47:20.080Z"
+  "buildinConfigUpdatedAt": "2024-09-25T15:30:26.023Z"
 }
