@@ -6586,8 +6586,14 @@
     },
     {
       "id": "qqMail",
-      "matches": "mail.qq.com",
-      "useIframePostMessage": false
+      "matches": "*.mail.qq.com",
+      "useIframePostMessage": false,
+      "excludeSelectors.add": [
+        ".xmail-cmp-account"
+      ],
+      "globalStyles": {
+        ".mail-list-page-wide-item": "height:unset;"
+      }
     },
     {
       "id": "nikkei",
@@ -10970,5 +10976,5 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-26T14:30:32.698Z"
+  "buildinConfigUpdatedAt": "2024-09-26T15:34:54.998Z"
 }
