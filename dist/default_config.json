@@ -10745,7 +10745,8 @@
       "matches": "ffmpeg.org",
       "excludeSelectors.add": [
         ".memproto",
-        ".memtitle"
+        ".memtitle",
+        ".reference"
       ]
     },
     {
@@ -10951,5 +10952,5 @@
       "repeatTranslateNum": 1
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-25T15:30:26.023Z"
+  "buildinConfigUpdatedAt": "2024-09-26T08:38:49.646Z"
 }
