@@ -673,7 +673,6 @@
         "normal_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_source_field}}: Source\nOutput:\n  - id: 1\n    {{imt_trans_field}}: Translation\n</example>",
         "subtitle_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\nOutput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\n</example>"
       },
-      "translationTextSeparator": "\n\n%%\n\n",
       "systemPrompt": "You are a professional, authentic machine translation engine.",
       "prompt": "Translate the following source text to {{to}},{{html_only}} Output translation directly without any additional text.\nSource Text: {{text}}\n\nTranslated Text:",
       "multiplePrompt": "You will be given a YAML formatted input containing entries with \"id\" and \"{{imt_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{normal_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
@@ -1022,6 +1021,28 @@
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://api.lingyiwanwu.com/v1/chat/completions",
       "enableRichTranslate": true
+    },
+    "zhipu": {
+      "extends": "ai",
+      "name": "zhipu",
+      "model": "glm-4-flash",
+      "visible": true,
+      "provider": "custom",
+      "limit": 10,
+      "bodyConfigs": {
+        "temperature": 0.01,
+        "top_p": 0.1,
+        "max_tokens": 2048
+      },
+      "ignoreResRegexs": [
+        "^系统检测到输入或生成内容可能包含不安全或敏感内容"
+      ],
+      "maxTextGroupLengthPerRequestForSubtitle": 1,
+      "apiUrl": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+      "enableRichTranslate": true,
+      "enableFallback": true,
+      "prompt": "Source Text:\n\"\"\"\n{{text}}\n\"\"\"\n\n## Translation Requirements:\n1. Stay true to the “Source Text” ensuring each sentence is translated accurately and fluently.\n2. Ensure that no part of the text is omitted during translation. Every detail must be included.\n3. Large numbers must be translated correctly, following Simplified Chinese conventions.\n\n## Instruction:\n1. Carefully analyze and deeply understand the content, context, emotions, and cultural nuances of the \"Source Text\" in relation to the target language.\n2. Translate the \"Source Text\" into {{to}} accurately according to the \"Translation Requirements\".\n3. Ensure the translation is accurate, natural, and fluent for the target audience. Adjust expressions as necessary to fit cultural and linguistic norms.\n\n## Requirements:\nDo not include any additional content. Only output the translation. This is crucial.",
+      "systemPrompt": "## Role:\nYou are an expert in both the source and target languages, with a deep understanding of their respective cultures."
     }
   },
   "shortcuts": {
@@ -3065,6 +3086,11 @@
       ]
     },
     {
+      "id": "facebookBusinessInbox",
+      "matches": "https://business.facebook.com/latest/inbox/all",
+      "detectParagraphLanguage": true
+    },
+    {
       "id": "facebook",
       "matches": "*.facebook.com",
       "excludeMatches": [
@@ -3074,9 +3100,7 @@
       "selectors": [
         "div[dir=auto][style]",
         "div[dir=auto][class]",
-        "span[lang]",
-        "[data-pagelet=BizInboxMessengerMessageListContainer] span",
-        "[data-pagelet=BizInboxContextCardDetail] span"
+        "span[lang]"
       ],
       "insertPosition": "afterend",
       "preWhitespaceDetectedTags": [
@@ -10745,8 +10769,7 @@
       "matches": "ffmpeg.org",
       "excludeSelectors.add": [
         ".memproto",
-        ".memtitle",
-        ".reference"
+        ".memtitle"
       ]
     },
     {
@@ -10945,12 +10968,7 @@
           "li"
         ]
       }
-    },
-    {
-      "id": "learn-ed",
-      "matches": "www.learn.ed.ac.*",
-      "repeatTranslateNum": 1
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-26T08:38:49.646Z"
+  "buildinConfigUpdatedAt": "2024-09-26T11:03:44.216Z"
 }
