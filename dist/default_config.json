@@ -205,7 +205,6 @@
     "https://www.nma.art/[nmaArt]",
     "https://developer.apple.com[Developer Apple]",
     "https://egghead.io/[egghead.io]",
-    "https://mubi.com/[Mubi]",
     "https://www.viu.com/[Viu]",
     "https://cn.linkedin.com/[LinkedIn]",
     "https://www.kanopy.com/[Kanopy]",
@@ -9877,8 +9876,8 @@
     {
       "id": "mubi",
       "matches": [
-        "https://mubi.com",
-        "https://mubi.de"
+        "https://mubi_down.com",
+        "https://mubi_down.de"
       ],
       "subtitleRule.add": {
         "type": "mubi",
@@ -9897,7 +9896,8 @@
             ".clpp-text-container {display: none;}"
           ]
         }
-      }
+      },
+      "_comment": "暂时下线"
     },
     {
       "id": "hulu",
@@ -10988,5 +10988,5 @@
       "repeatTranslateNum": 1
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-28T07:04:19.173Z"
+  "buildinConfigUpdatedAt": "2024-09-28T07:46:09.573Z"
 }
