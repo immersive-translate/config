@@ -1040,7 +1040,7 @@
       ],
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
-      "enableRichTranslate": true,
+      "enableRichTranslate": false,
       "enableFallback": true,
       "prompt": "Source Text:\n\"\"\"\n{{text}}\n\"\"\"\n\n## Translation Requirements:\n1. Stay true to the “Source Text” ensuring each sentence is translated accurately and fluently.\n2. Ensure that no part of the text is omitted during translation. Every detail must be included.\n3. Large numbers must be translated correctly, following Simplified Chinese conventions.\n\n## Instruction:\n1. Carefully analyze and deeply understand the content, context, emotions, and cultural nuances of the \"Source Text\" in relation to the target language.\n2. Translate the \"Source Text\" into {{to}} accurately according to the \"Translation Requirements\".\n3. Ensure the translation is accurate, natural, and fluent for the target audience. Adjust expressions as necessary to fit cultural and linguistic norms.\n\n## Requirements:\nDo not include any additional content. Only output the translation. This is crucial.",
       "systemPrompt": "## Role:\nYou are an expert in both the source and target languages, with a deep understanding of their respective cultures."
@@ -1603,6 +1603,9 @@
     "bodyRule": {
       "enable": true,
       "maxBodyScreenLength": 25,
+      "preSelectors": [
+        "h1"
+      ],
       "articleChildTags": [
         "P"
       ],
@@ -1989,7 +1992,8 @@
     "touchShortcutsToggleTranslateTouchElement": "touchShortcutsOff",
     "touchShortcutsToggleTranslateTouchElementPreferenceKey": "slide.left",
     "mouseHoverHoldKey": "Off",
-    "mouseHoverPreferenceKey": "Ctrl"
+    "mouseHoverPreferenceKey": "Ctrl",
+    "mousePressHoldTranslateDelay": 500
   },
   "rules": [
     {
@@ -10988,5 +10992,5 @@
       "repeatTranslateNum": 1
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-28T07:46:09.573Z"
+  "buildinConfigUpdatedAt": "2024-09-28T12:22:35.025Z"
 }
