@@ -1190,6 +1190,7 @@
       "select",
       "option",
       "mjx-container",
+      "mjx-math",
       "use",
       "d-math",
       "mathml",
@@ -1332,7 +1333,8 @@
       ".immersive-translate-target-wrapper[dir='rtl'] {text-align: right;}",
       ".immersive-translate-target-wrapper[dir='rtl'] [data-immersive-translate-class-bak*='block-wrapper'] {display:block;}",
       ".immersive-translate-target-wrapper {word-break: break-word;}",
-      "[imt-state=\"translation\"] .immersive-translate-target-wrapper[dir='rtl'] {display:inline-block;}"
+      "[imt-state=\"translation\"] .immersive-translate-target-wrapper[dir='rtl'] {display:inline-block;}",
+      ".immersive-translate-target-wrapper [aria-hidden=true] {display:none;}"
     ],
     "isOnBoardingPage": false,
     "isEbook": false,
@@ -10992,5 +10994,5 @@
       "repeatTranslateNum": 1
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-28T12:28:51.753Z"
+  "buildinConfigUpdatedAt": "2024-09-28T15:43:50.853Z"
 }
