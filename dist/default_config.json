@@ -2938,6 +2938,7 @@
         "[data-testid=comment]",
         "[data-adclicklocation='title'] h3",
         "[data-testid='post-title-text']",
+        "[data-testid=search-subreddit-desc-text]",
         "[slot=comment]",
         "[data-adclicklocation=media]",
         ".PostContent",
@@ -10978,5 +10979,5 @@
       "repeatTranslateNum": 1
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-28T05:57:53.865Z"
+  "buildinConfigUpdatedAt": "2024-09-28T06:36:28.077Z"
 }
