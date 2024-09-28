@@ -8610,16 +8610,25 @@
     {
       "id": "itv",
       "matches": [
-        "www.itv.com"
+        "*.itv.com"
       ],
       "subtitleRule.add": {
-        "type": "text_track",
-        "videoPlayerSelector": ".genie-video",
-        "loadingContainerSelector": ".genie-container",
-        "loadingStyle": "bottom: unset; top: 5%;",
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": ".vtt$",
+        "videoPlayerSelector": "[data-testid=video-wrapper] video",
         "quickButtonRule": {
-          "appendSelector": ".control-bar_right-child-container",
-          "insertBeforeSelector": ".controls-toggle_button--fullscreen"
+          "appendSelector": ".fe-mrphs__controlsWrapperBottom .fe-mrphs__controls > div:last-child",
+          "insertBeforeSelector": ".fe-mrphs__subtitlesButton"
+        },
+        "attachRule": {
+          "appendSelector": "[data-testid=video-wrapper]",
+          "injectedGlobalCSS": [
+            ".fe-mrphs__subtitles {display: none !important;}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {margin-bottom: 0; bottom: 7%;}"
+          ]
         }
       }
     },
@@ -10979,5 +10988,5 @@
       "repeatTranslateNum": 1
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-28T06:36:28.077Z"
+  "buildinConfigUpdatedAt": "2024-09-28T07:04:19.173Z"
 }
