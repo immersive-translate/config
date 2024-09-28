@@ -673,6 +673,7 @@
         "normal_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_source_field}}: Source\nOutput:\n  - id: 1\n    {{imt_trans_field}}: Translation\n</example>",
         "subtitle_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\nOutput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\n</example>"
       },
+      "translationTextSeparator": "\n\n%%\n\n",
       "systemPrompt": "You are a professional, authentic machine translation engine.",
       "prompt": "Translate the following source text to {{to}},{{html_only}} Output translation directly without any additional text.\nSource Text: {{text}}\n\nTranslated Text:",
       "multiplePrompt": "You will be given a YAML formatted input containing entries with \"id\" and \"{{imt_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{normal_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
@@ -2217,12 +2218,6 @@
       "waitForSelectorsTimeout": 1
     },
     {
-      "id": "bilin",
-      "matches": "bilin.ai",
-      "isInjectVersion": true,
-      "waitForSelectorsTimeout": 1
-    },
-    {
       "id": "pro-pdf",
       "matches": [
         "https://*.immersivetranslate.com/pdf-pro*"
@@ -3093,11 +3088,6 @@
       ]
     },
     {
-      "id": "facebookBusinessInbox",
-      "matches": "https://business.facebook.com/latest/inbox/all",
-      "detectParagraphLanguage": true
-    },
-    {
       "id": "facebook",
       "matches": "*.facebook.com",
       "excludeMatches": [
@@ -3107,7 +3097,9 @@
       "selectors": [
         "div[dir=auto][style]",
         "div[dir=auto][class]",
-        "span[lang]"
+        "span[lang]",
+        "[data-pagelet=BizInboxMessengerMessageListContainer] span",
+        "[data-pagelet=BizInboxContextCardDetail] span"
       ],
       "insertPosition": "afterend",
       "preWhitespaceDetectedTags": [
@@ -10978,7 +10970,12 @@
           "li"
         ]
       }
+    },
+    {
+      "id": "learn-ed",
+      "matches": "www.learn.ed.ac.*",
+      "repeatTranslateNum": 1
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-28T01:19:56.897Z"
+  "buildinConfigUpdatedAt": "2024-09-28T01:37:51.583Z"
 }
