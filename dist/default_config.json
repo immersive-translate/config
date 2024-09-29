@@ -1773,8 +1773,7 @@
       "h1 br",
       "h2 br",
       "h3 br",
-      "h4 br",
-      "[aria-hidden=true]"
+      "h4 br"
     ],
     "translationClasses": [],
     "excludeTags": [
@@ -10992,6 +10991,6 @@
       "repeatTranslateNum": 1
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-29T08:12:41.870Z",
+  "buildinConfigUpdatedAt": "2024-09-29T08:26:43.856Z",
   "latestVersion": "1.9.8"
 }
