@@ -6882,7 +6882,7 @@
         ".shaka-text-container *"
       ],
       "subtitleRule.add": {
-        "type": "udemy",
+        "type": "subsrt",
         "subtitleUrlRegExp": "^https://vtt.*\\.udemycdn\\.com/.*\\.vtt",
         "videoPlayerSelector": "video.shaka-video",
         "humanTrust": 85,
@@ -6893,6 +6893,13 @@
         ],
         "quickButtonRule": {
           "appendSelector": "[data-purpose=\"video-controls\"]"
+        },
+        "attachRule": {
+          "appendSelector": "[data-purpose=curriculum-item-viewer-content]",
+          "injectedGlobalCSS": [
+            "[data-purpose=captions-cue-text] {display: none !important;}",
+            "[data-purpose=curriculum-item-viewer-content] [class^=well--container] {display: none !important;}"
+          ]
         }
       },
       "subtitleRule.add_v.[1.4.1]": {
@@ -11014,6 +11021,6 @@
       "_comment": "暂时单独给他处理公式"
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-29T10:09:55.586Z",
+  "buildinConfigUpdatedAt": "2024-09-29T10:51:14.271Z",
   "latestVersion": "1.9.8"
 }
