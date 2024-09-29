@@ -1190,6 +1190,7 @@
       "select",
       "option",
       "mjx-container",
+      "mjx-math",
       "use",
       "d-math",
       "mathml",
@@ -11002,8 +11003,16 @@
         ".mx_MessageTimestamp",
         ".mx_EventTile_avatar"
       ]
+    },
+    {
+      "id": "balthild",
+      "matches": "balthild.github.io",
+      "injectedCss.add": [
+        ".immersive-translate-target-wrapper [aria-hidden=true] {display:none;}"
+      ],
+      "_comment": "暂时单独给他处理公式"
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-29T08:37:09.365Z",
+  "buildinConfigUpdatedAt": "2024-09-29T10:05:19.182Z",
   "latestVersion": "1.9.8"
 }
