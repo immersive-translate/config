@@ -2224,6 +2224,13 @@
       "waitForSelectorsTimeout": 1
     },
     {
+      "id": "bilin",
+      "matches": "bilin.ai",
+      "isInjectVersion": true,
+      "isInjectMeta": true,
+      "waitForSelectorsTimeout": 1
+    },
+    {
       "id": "pro-pdf",
       "matches": [
         "https://*.immersivetranslate.com/pdf-pro*"
@@ -10994,5 +11001,5 @@
       "repeatTranslateNum": 1
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-28T15:43:50.853Z"
+  "buildinConfigUpdatedAt": "2024-09-29T02:02:07.216Z"
 }
