@@ -1774,7 +1774,8 @@
       "h1 br",
       "h2 br",
       "h3 br",
-      "h4 br"
+      "h4 br",
+      "[aria-hidden=true]"
     ],
     "translationClasses": [],
     "excludeTags": [
@@ -11013,6 +11014,6 @@
       "_comment": "暂时单独给他处理公式"
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-29T10:05:19.182Z",
+  "buildinConfigUpdatedAt": "2024-09-29T10:09:55.586Z",
   "latestVersion": "1.9.8"
 }
