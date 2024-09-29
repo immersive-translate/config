@@ -10989,8 +10989,21 @@
       "id": "learn-ed",
       "matches": "www.learn.ed.ac.*",
       "repeatTranslateNum": 1
+    },
+    {
+      "id": "app.schildi.chat",
+      "matches": "app.schildi.chat",
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
+      "excludeSelectors.add": [
+        ".mx_DisambiguatedProfile",
+        ".mx_MessageTimestamp",
+        ".mx_EventTile_avatar"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-29T08:26:43.856Z",
+  "buildinConfigUpdatedAt": "2024-09-29T08:37:09.365Z",
   "latestVersion": "1.9.8"
 }
