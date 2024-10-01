@@ -284,9 +284,9 @@
     "*.medium.com",
     "news.ycombinator.com"
   ],
-  "spVersion": "1.9.8",
+  "spVersion": "1.9.9",
   "ispVersion": "1.0.5",
-  "gspVersion": "1.0.3",
+  "gspVersion": "1.0.6",
   "modifiedBySystem": false,
   "enableDefaultAlwaysTranslatedUrls": true,
   "isChangedAlwaysTranslatedUrls": false,
@@ -11021,6 +11021,6 @@
       "_comment": "暂时单独给他处理公式"
     }
   ],
-  "buildinConfigUpdatedAt": "2024-09-29T10:51:14.271Z",
+  "buildinConfigUpdatedAt": "2024-10-01T02:11:26.949Z",
   "latestVersion": "1.9.8"
 }
