@@ -1774,8 +1774,7 @@
       "h1 br",
       "h2 br",
       "h3 br",
-      "h4 br",
-      "[aria-hidden=true]"
+      "h4 br"
     ],
     "translationClasses": [],
     "excludeTags": [
@@ -5907,6 +5906,9 @@
       ],
       "wrapperPrefix": "\n",
       "wrapperSuffix": "<br/>",
+      "additionalExcludeSelectors.add": [
+        "[aria-hidden=true]"
+      ],
       "extraInlineSelectors.add": [
         ".selectable-text",
         ".selectable-text *"
@@ -10422,7 +10424,8 @@
         "www.steepandcheap.com",
         "whoer.is",
         "community.seniorswc.com",
-        "www.skool.com"
+        "www.skool.com",
+        "sfget.jp"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -11021,6 +11024,6 @@
       "_comment": "暂时单独给他处理公式"
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-01T02:11:26.949Z",
+  "buildinConfigUpdatedAt": "2024-10-02T02:24:37.059Z",
   "latestVersion": "1.9.8"
 }
