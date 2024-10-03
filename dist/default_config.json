@@ -6895,13 +6895,6 @@
         ],
         "quickButtonRule": {
           "appendSelector": "[data-purpose=\"video-controls\"]"
-        },
-        "attachRule": {
-          "appendSelector": "[data-purpose=curriculum-item-viewer-content]",
-          "injectedGlobalCSS": [
-            "[data-purpose=captions-cue-text] {display: none !important;}",
-            "[data-purpose=curriculum-item-viewer-content] [class^=well--container] {display: none !important;}"
-          ]
         }
       },
       "subtitleRule.add_v.[1.4.1]": {
@@ -11024,6 +11017,6 @@
       "_comment": "暂时单独给他处理公式"
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-02T02:24:37.059Z",
+  "buildinConfigUpdatedAt": "2024-10-03T13:00:42.994Z",
   "latestVersion": "1.9.8"
 }
