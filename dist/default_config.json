@@ -1290,8 +1290,7 @@
     "atomicBlockSelectors": [
       "relin-hc",
       "x-p",
-      "app-keyword-content",
-      "code *"
+      "app-keyword-content"
     ],
     "ignoreRichSelectors": [
       "relin-hc",
@@ -1909,8 +1908,7 @@
       ".highlighter--highlighted",
       ".rw-highlight",
       "ruby *",
-      "p > button",
-      "code *"
+      "p > button"
     ],
     "extraBlockSelectors": [
       "turbo-frame",
@@ -2397,7 +2395,8 @@
       "matches": [
         "taylor.town",
         "seller.shopee.*",
-        "www.flatpanelshd.com"
+        "www.flatpanelshd.com",
+        "www.rarlab.com"
       ],
       "isTransformPreTagNewLine": true,
       "excludeTags.remove": [
@@ -11017,6 +11016,6 @@
       "_comment": "暂时单独给他处理公式"
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-03T13:00:42.994Z",
+  "buildinConfigUpdatedAt": "2024-10-05T15:32:44.288Z",
   "latestVersion": "1.9.8"
 }
