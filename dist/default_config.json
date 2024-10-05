@@ -1275,6 +1275,7 @@
       "web-highlight",
       "font.immersive-translate-target-wrapper *",
       "pre",
+      "pre code",
       ".uacc-clickable"
     ],
     "mutationExcludeContainsSelectors": [
@@ -1919,7 +1920,8 @@
       "ul > li",
       "label",
       "button",
-      "[class*='menu-button']"
+      "[class*='menu-button']",
+      "br"
     ],
     "allBlockTags": [
       "BODY",
@@ -11016,6 +11018,6 @@
       "_comment": "暂时单独给他处理公式"
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-05T15:32:44.288Z",
+  "buildinConfigUpdatedAt": "2024-10-05T16:19:26.734Z",
   "latestVersion": "1.9.8"
 }
