@@ -3004,6 +3004,7 @@
         "https://github.com/readme/*",
         "https://github.com/readme/",
         "https://github.com/features/*",
+        "https://github.com/codespaces/*",
         "https://github.com/customer-stories/*"
       ],
       "mutationExcludeSelectors": [
@@ -11018,6 +11019,6 @@
       "_comment": "暂时单独给他处理公式"
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-05T16:19:26.734Z",
+  "buildinConfigUpdatedAt": "2024-10-05T16:36:47.765Z",
   "latestVersion": "1.9.8"
 }
