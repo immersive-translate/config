@@ -4702,6 +4702,9 @@
       "bodyRule.add": {
         "bodySelector": "article"
       },
+      "injectedCss.add": [
+        "h2 {font-size:unset;}"
+      ],
       "enableRichTranslate": false,
       "enableRichTranslate.add_v.[1.9.7]": true
     },
@@ -11023,6 +11026,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-06T07:30:48.911Z",
+  "buildinConfigUpdatedAt": "2024-10-06T07:34:18.232Z",
   "latestVersion": "1.9.8"
 }
