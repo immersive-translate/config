@@ -2430,10 +2430,7 @@
       "likePreSelectors.add": [
         ".mainText"
       ],
-      "isTransformPreTagNewLine": true,
-      "mutationExcludeSelectors.add": [
-        ".mainText"
-      ]
+      "isTransformPreTagNewLine": true
     },
     {
       "id": "wikipedia",
@@ -11026,6 +11023,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-06T07:14:28.582Z",
+  "buildinConfigUpdatedAt": "2024-10-06T07:30:48.911Z",
   "latestVersion": "1.9.8"
 }
