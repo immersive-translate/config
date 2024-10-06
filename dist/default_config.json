@@ -11017,8 +11017,15 @@
         ".immersive-translate-target-wrapper [aria-hidden=true] {display:none;}"
       ],
       "_comment": "暂时单独给他处理公式"
+    },
+    {
+      "id": "csust",
+      "matches": "tsgvpn2.csust.edu.cn",
+      "injectedCss.add": [
+        "h2 {font-size:unset;}"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-05T16:38:02.376Z",
+  "buildinConfigUpdatedAt": "2024-10-06T07:14:28.582Z",
   "latestVersion": "1.9.8"
 }
