@@ -10420,7 +10420,8 @@
         "whoer.is",
         "community.seniorswc.com",
         "www.skool.com",
-        "sfget.jp"
+        "sfget.jp",
+        "talentcentral.eu.shl.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -11026,6 +11027,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-06T07:34:18.232Z",
+  "buildinConfigUpdatedAt": "2024-10-07T04:30:07.504Z",
   "latestVersion": "1.9.8"
 }
