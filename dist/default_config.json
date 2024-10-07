@@ -2124,6 +2124,9 @@
         "www.scihubmirror.com",
         "*.sci-hub.*"
       ],
+      "excludeMatches": [
+        "https://x.sci-hub.org.cn/scholar"
+      ],
       "waitForSelectorsTimeout": 1,
       "pdfUrlExtractRule": {
         "selector": "#pdf",
@@ -11037,6 +11040,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-07T13:11:40.772Z",
+  "buildinConfigUpdatedAt": "2024-10-07T15:26:50.065Z",
   "latestVersion": "1.9.8"
 }
