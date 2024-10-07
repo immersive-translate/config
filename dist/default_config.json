@@ -10779,7 +10779,8 @@
       "id": "noRichTranslate",
       "matches": [
         "www.omim.org",
-        "*.nisanyanadlar.com"
+        "*.nisanyanadlar.com",
+        "www.360doc.cn"
       ],
       "enableRichTranslate": false
     },
@@ -11036,6 +11037,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-07T10:58:50.855Z",
+  "buildinConfigUpdatedAt": "2024-10-07T11:53:57.591Z",
   "latestVersion": "1.9.8"
 }
