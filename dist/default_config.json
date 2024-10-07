@@ -5964,7 +5964,8 @@
         "footer",
         "nav",
         "[aria-label='Markets summary']"
-      ]
+      ],
+      "injectedCss.add": ".immersive-translate-target-wrapper br {display:none;}"
     },
     {
       "id": "businessinsider",
@@ -11027,6 +11028,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-07T04:30:07.504Z",
+  "buildinConfigUpdatedAt": "2024-10-07T07:55:55.126Z",
   "latestVersion": "1.9.8"
 }
