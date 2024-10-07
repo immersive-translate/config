@@ -11027,8 +11027,15 @@
       "injectedCss.add": [
         "h2 {font-size:unset;}"
       ]
+    },
+    {
+      "id": "z-lib",
+      "matches": "*.z-lib.*",
+      "globalStyles": {
+        ".title,.book-info": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-07T08:02:43.208Z",
+  "buildinConfigUpdatedAt": "2024-10-07T10:58:50.855Z",
   "latestVersion": "1.9.8"
 }
