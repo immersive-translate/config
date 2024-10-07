@@ -10422,7 +10422,8 @@
         "community.seniorswc.com",
         "www.skool.com",
         "sfget.jp",
-        "talentcentral.eu.shl.com"
+        "talentcentral.eu.shl.com",
+        "www.crd.york.ac.*"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -11028,6 +11029,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-07T07:55:55.126Z",
+  "buildinConfigUpdatedAt": "2024-10-07T08:02:43.208Z",
   "latestVersion": "1.9.8"
 }
