@@ -1736,7 +1736,9 @@
       "aside.onebox"
     ],
     "atomicBlockTags": [],
-    "excludeSelectors": [],
+    "excludeSelectors": [
+      "[default-translate]"
+    ],
     "additionalExcludeSelectors": [
       "[contenteditable=\"true\"]",
       ".uacc-clickable",
@@ -11040,6 +11042,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-07T15:26:50.065Z",
+  "buildinConfigUpdatedAt": "2024-10-08T09:15:13.451Z",
   "latestVersion": "1.9.8"
 }
