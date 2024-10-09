@@ -4119,6 +4119,10 @@
         ".article-body",
         ".interview-body",
         ".post-page__content"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
       ]
     },
     {
@@ -11045,6 +11049,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-09T02:04:49.976Z",
+  "buildinConfigUpdatedAt": "2024-10-09T03:08:44.192Z",
   "latestVersion": "1.9.8"
 }
