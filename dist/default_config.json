@@ -141,7 +141,7 @@
     "https://readcomiconline.li[ReadComicOnline][chrome]",
     "https://readcomic.me[ReadComic][chrome]",
     "https://comic-fuz.com/[COMIC FUZ][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
-    "https://mangadex.org/[MangaDex][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://mangadex.org/[MangaDex][chrome,firefox,safari,userscript,imtIOS]",
     "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox,imtAndroid]",
     "https://shonenjumpplus.com[ShonenJumpPlus][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://viewer.heros-web.com/[Heros Web][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
@@ -11049,6 +11049,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-09T03:08:44.192Z",
+  "buildinConfigUpdatedAt": "2024-10-09T06:37:21.373Z",
   "latestVersion": "1.9.8"
 }
