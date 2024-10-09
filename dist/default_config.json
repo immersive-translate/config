@@ -3121,6 +3121,9 @@
       "translationClasses": [
         "immersive-translate-text"
       ],
+      "injectedCss.add": [
+        "._4ik4._4ik5 {max-height:unset!important;}"
+      ],
       "detectParagraphLanguage": true
     },
     {
@@ -11042,6 +11045,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-08T09:15:13.451Z",
+  "buildinConfigUpdatedAt": "2024-10-09T01:47:08.557Z",
   "latestVersion": "1.9.8"
 }
