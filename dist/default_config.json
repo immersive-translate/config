@@ -1995,7 +1995,7 @@
     "touchShortcutsToggleTranslateTouchElementPreferenceKey": "slide.left",
     "mouseHoverHoldKey": "Off",
     "mouseHoverPreferenceKey": "Ctrl",
-    "mousePressHoldTranslateDelay": 500
+    "mousePressHoldTranslateDelay": 800
   },
   "rules": [
     {
@@ -11049,6 +11049,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-09T06:37:21.373Z",
+  "buildinConfigUpdatedAt": "2024-10-09T07:35:02.241Z",
   "latestVersion": "1.9.8"
 }
