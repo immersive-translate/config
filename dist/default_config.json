@@ -3806,7 +3806,7 @@
         "main div[class^=headerText]": "max-height: unset;",
         "main div[class^=message]": "max-height: unset;",
         "main div[class^=text]": "max-height: unset;",
-        "h3[data-text-variant='heading-lg/semibold']": "-webkit-line-clamp: none;"
+        "h3[data-text-variant='heading-lg/semibold']": "-webkit-line-clamp: unset;line-height: unset;"
       },
       "enableRichTranslate": false,
       "detectParagraphLanguage": true,
@@ -11045,6 +11045,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-09T01:47:08.557Z",
+  "buildinConfigUpdatedAt": "2024-10-09T02:04:49.976Z",
   "latestVersion": "1.9.8"
 }
