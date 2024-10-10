@@ -171,7 +171,8 @@
     "https://palcy.jp/[Palcy][chrome,firefox,safari,imtAndroid]",
     "https://comic-trail.com/[Comic-Trail]",
     "https://mangaflame.org/[Mangaflame]",
-    "https://templetoons.com/[Templetoons]"
+    "https://templetoons.com/[Templetoons]",
+    "https://batocomic.net/[Batocomic]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -265,7 +266,8 @@
     "https://khflix.com[Khflix]",
     "https://donghuaworld.com[Donghuaworld]",
     "https://projector.datacamp.com[Datacamp]",
-    "https://urplay.se[Urplay]"
+    "https://urplay.se[Urplay]",
+    "https://app.lecturio.com[Lecturio]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -8292,6 +8294,19 @@
       }
     },
     {
+      "id": "batocomic",
+      "matches": [
+        "batocomic.net"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "div[name='image-item'] img"
+        ]
+      }
+    },
+    {
       "id": "manhwahub",
       "matches": [
         "manhwahub.net"
@@ -11190,6 +11205,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T09:50:48.795Z",
+  "buildinConfigUpdatedAt": "2024-10-10T09:59:16.875Z",
   "latestVersion": "1.9.8"
 }
