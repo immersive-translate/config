@@ -8342,7 +8342,11 @@
         "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
-          "div[name='image-item'] img"
+          "div[name='image-item'] img",
+          "div[class*='item'] img"
+        ],
+        "loadingSelectors": [
+          "div"
         ]
       }
     },
@@ -11245,6 +11249,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T11:17:43.915Z",
+  "buildinConfigUpdatedAt": "2024-10-10T11:37:51.365Z",
   "latestVersion": "1.9.8"
 }
