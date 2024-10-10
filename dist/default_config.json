@@ -8714,7 +8714,7 @@
           "insertBeforeSelector": ".fe-mrphs__subtitlesButton"
         },
         "attachRule": {
-          "appendSelector": "[data-testid=video-wrapper]",
+          "appendSelector": "[data-testid=vod-player]",
           "injectedGlobalCSS": [
             ".fe-mrphs__subtitles {display: none !important;}"
           ],
@@ -11120,6 +11120,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T03:38:38.650Z",
+  "buildinConfigUpdatedAt": "2024-10-10T04:02:27.170Z",
   "latestVersion": "1.9.8"
 }
