@@ -8291,6 +8291,19 @@
       }
     },
     {
+      "id": "manhwahub",
+      "matches": [
+        "manhwahub.net"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".page-break img"
+        ]
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -11107,6 +11120,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T03:22:35.782Z",
+  "buildinConfigUpdatedAt": "2024-10-10T03:38:38.650Z",
   "latestVersion": "1.9.8"
 }
