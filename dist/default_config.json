@@ -3139,6 +3139,7 @@
         ".slim-video-information-title",
         ".yt-spec-button-view-model",
         ".yt-core-attributed-string > span",
+        ".yt-core-attributed-string",
         ".title"
       ],
       "shareConfig": {
@@ -11152,6 +11153,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T09:11:08.784Z",
+  "buildinConfigUpdatedAt": "2024-10-10T09:33:09.202Z",
   "latestVersion": "1.9.8"
 }
