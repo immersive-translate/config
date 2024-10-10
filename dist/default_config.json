@@ -170,7 +170,8 @@
     "https://manhwatop.com[Manhwatop][chrome,firefox,imtAndroid]",
     "https://palcy.jp/[Palcy][chrome,firefox,safari,imtAndroid]",
     "https://comic-trail.com/[Comic-Trail]",
-    "https://mangaflame.org/[Mangaflame]"
+    "https://mangaflame.org/[Mangaflame]",
+    "https://templetoons.com/[Templetoons]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -8277,6 +8278,19 @@
       }
     },
     {
+      "id": "templetoons",
+      "matches": [
+        "templetoons.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "img[alt^='Chapter']"
+        ]
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -11093,6 +11107,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T03:18:21.412Z",
+  "buildinConfigUpdatedAt": "2024-10-10T03:22:35.782Z",
   "latestVersion": "1.9.8"
 }
