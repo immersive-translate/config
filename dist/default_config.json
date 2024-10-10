@@ -8304,6 +8304,20 @@
       }
     },
     {
+      "id": "hentaizap",
+      "matches": [
+        "hentaizap.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "opImageType": "insertFirst",
+        "imageSelectors": [
+          ".fw_img img#fimg:first-of-type"
+        ]
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -11120,6 +11134,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T04:02:27.170Z",
+  "buildinConfigUpdatedAt": "2024-10-10T06:15:40.346Z",
   "latestVersion": "1.9.8"
 }
