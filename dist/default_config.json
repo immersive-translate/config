@@ -7915,7 +7915,8 @@
       "imageRule.add": {
         "type": "mangaImage",
         "imageSelectors": [
-          ".page-wrapper img"
+          ".page-wrapper img",
+          ".reader-area img"
         ],
         "urlFetchType": "img",
         "loadingSelectors": [
@@ -11049,6 +11050,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-09T07:35:02.241Z",
+  "buildinConfigUpdatedAt": "2024-10-10T02:48:14.951Z",
   "latestVersion": "1.9.8"
 }
