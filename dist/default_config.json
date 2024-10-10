@@ -8318,6 +8318,19 @@
       }
     },
     {
+      "id": "manwadb",
+      "matches": [
+        "manwadb.xyz"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".img-content img"
+        ]
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -11134,6 +11147,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T06:15:40.346Z",
+  "buildinConfigUpdatedAt": "2024-10-10T06:26:02.594Z",
   "latestVersion": "1.9.8"
 }
