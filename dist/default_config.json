@@ -168,7 +168,8 @@
     "https://www.corocoro.jp[CoroCoro][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://yymanhua.com[Yymanhua][chrome,firefox,imtAndroid]",
     "https://manhwatop.com[Manhwatop][chrome,firefox,imtAndroid]",
-    "https://palcy.jp/[Palcy][chrome,firefox,safari,imtAndroid]"
+    "https://palcy.jp/[Palcy][chrome,firefox,safari,imtAndroid]",
+    "https://comic-trail.com/[Comic-Trail]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -7943,6 +7944,21 @@
       }
     },
     {
+      "id": "comic-trail",
+      "matches": [
+        "comic-trail.com"
+      ],
+      "imageRule.add": {
+        "type": "mangaImage",
+        "imageSelectors": [
+          "p.js-page-area"
+        ],
+        "urlFetchType": "canvasArgs",
+        "opImageType": "append",
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "comic-walker",
       "matches": [
         "comic-walker.com"
@@ -11050,6 +11066,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T02:48:14.951Z",
+  "buildinConfigUpdatedAt": "2024-10-10T02:55:16.980Z",
   "latestVersion": "1.9.8"
 }
