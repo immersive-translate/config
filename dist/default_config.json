@@ -9566,6 +9566,43 @@
       }
     },
     {
+      "id": "lecturio",
+      "matches": [
+        "app.lecturio.com"
+      ],
+      "excludeSelectors.add": [
+        "#vjs_video_3"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#vjs_video_3 *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "multi_attach_vtt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": "div.vjs-subs-caps-button"
+        },
+        "videoPlayerSelector": "video",
+        "videoSelector": "video",
+        "subtitleUrlRegExp": "\\.vtt",
+        "attachRule": {
+          "appendSelector": "#vjs_video_3",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display { display: none !important; }"
+          ]
+        },
+        "multiSetting": {
+          "activeLangSelector": ".vjs-captions-menu-item.vjs-selected",
+          "langTextRegex": "^(\\S+)\\s",
+          "urlLangRegex": "/net/([^_]+)/",
+          "isMapLangFromUrl": true
+        }
+      }
+    },
+    {
       "id": "vimeo",
       "matches": [
         "vimeo.com"
@@ -11153,6 +11190,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T09:33:09.202Z",
+  "buildinConfigUpdatedAt": "2024-10-10T09:50:48.795Z",
   "latestVersion": "1.9.8"
 }
