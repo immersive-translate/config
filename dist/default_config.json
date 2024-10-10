@@ -8294,6 +8294,22 @@
       }
     },
     {
+      "id": "poipiku",
+      "matches": [
+        "poipiku.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          ".IllustItemThumb img"
+        ],
+        "loadingSelectors": [
+          ".IllustItemThumb"
+        ]
+      }
+    },
+    {
       "id": "batocomic",
       "matches": [
         "batocomic.net"
@@ -11205,6 +11221,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T09:59:16.875Z",
+  "buildinConfigUpdatedAt": "2024-10-10T10:42:55.784Z",
   "latestVersion": "1.9.8"
 }
