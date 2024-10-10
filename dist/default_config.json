@@ -169,7 +169,8 @@
     "https://yymanhua.com[Yymanhua][chrome,firefox,imtAndroid]",
     "https://manhwatop.com[Manhwatop][chrome,firefox,imtAndroid]",
     "https://palcy.jp/[Palcy][chrome,firefox,safari,imtAndroid]",
-    "https://comic-trail.com/[Comic-Trail]"
+    "https://comic-trail.com/[Comic-Trail]",
+    "https://mangaflame.org/[Mangaflame]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -8263,6 +8264,19 @@
       }
     },
     {
+      "id": "mangaflame",
+      "matches": [
+        "mangaflame.org"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "#readerarea img"
+        ]
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -11079,6 +11093,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T03:13:54.723Z",
+  "buildinConfigUpdatedAt": "2024-10-10T03:18:21.412Z",
   "latestVersion": "1.9.8"
 }
