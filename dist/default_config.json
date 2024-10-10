@@ -8250,6 +8250,19 @@
       }
     },
     {
+      "id": "mangapark",
+      "matches": [
+        "mangapark.net"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "mangaImage",
+        "imageSelectors": [
+          "div[data-name='image-show'] img"
+        ]
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -11066,6 +11079,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T02:55:16.980Z",
+  "buildinConfigUpdatedAt": "2024-10-10T03:13:54.723Z",
   "latestVersion": "1.9.8"
 }
