@@ -7595,7 +7595,7 @@
         "enable": true,
         "type": "mangaImage",
         "imageSelectors": [
-          "img[alt='chapter page']"
+          "img[alt^='chapter page']"
         ],
         "loadingSelectors": [
           "div"
@@ -11152,6 +11152,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T09:05:26.618Z",
+  "buildinConfigUpdatedAt": "2024-10-10T09:11:08.784Z",
   "latestVersion": "1.9.8"
 }
