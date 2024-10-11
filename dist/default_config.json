@@ -70,6 +70,103 @@
   "cache": true,
   "enableAiAssistant": true,
   "enableSelfServiceReport": true,
+  "enablePerformanceReport": true,
+  "performanceBlockUrls": [
+    "https://www.chase.com",
+    "https://www.bankofamerica.com",
+    "https://www.wellsfargo.com",
+    "https://www.citi.com",
+    "https://www.usbank.com",
+    "https://www.pnc.com",
+    "https://www.capitalone.com",
+    "https://www.tdbank.com",
+    "https://www.hsbc.co.uk",
+    "https://www.barclays.co.uk",
+    "https://www.lloydsbank.com",
+    "https://www.natwest.com",
+    "https://www.santander.co.uk",
+    "https://www.nationwide.co.uk",
+    "https://www.deutsche-bank.de",
+    "https://www.commerzbank.de",
+    "https://www.dzbank.de",
+    "https://www.ing.de",
+    "https://www.hypovereinsbank.de",
+    "https://www.bnpparibas.fr",
+    "https://www.credit-agricole.fr",
+    "https://www.societegenerale.fr",
+    "https://www.lcl.fr",
+    "https://www.labanquepostale.fr",
+    "https://www.bk.mufg.jp",
+    "https://www.smbc.co.jp",
+    "https://www.mizuhobank.com",
+    "https://www.resonabank.co.jp",
+    "https://www.shinseibank.com",
+    "http://www.icbc.com.cn",
+    "http://www.ccb.com",
+    "https://www.boc.cn",
+    "http://www.abchina.com",
+    "http://www.cmbchina.com",
+    "http://www.psbc.com",
+    "http://www.cebbank.com",
+    "http://www.cmbc.com.cn",
+    "http://www.citicbank.com",
+    "http://www.spdb.com.cn",
+    "http://www.bankcomm.com",
+    "http://www.cib.com.cn",
+    "http://www.hxb.com.cn",
+    "http://www.cbhb.com.cn",
+    "http://www.czbank.com",
+    "http://www.bankofbeijing.com.cn",
+    "http://www.bankofshanghai.com",
+    "http://www.hfbank.com.cn",
+    "http://www.gdb.com.cn",
+    "http://www.pingan.com",
+    "https://www.rbcroyalbank.com",
+    "https://www.td.com",
+    "https://www.scotiabank.com",
+    "https://www.cibc.com",
+    "https://www.bmo.com",
+    "https://www.commbank.com.au",
+    "https://www.westpac.com.au",
+    "https://www.anz.com.au",
+    "https://www.nab.com.au",
+    "https://www.macquarie.com.au",
+    "https://www.sbi.co.in",
+    "https://www.icicibank.com",
+    "https://www.hdfcbank.com",
+    "https://www.axisbank.com",
+    "https://www.pnbindia.in",
+    "https://www.bb.com.br",
+    "https://www.itau.com.br",
+    "https://www.bradesco.com.br",
+    "https://www.santander.com.br",
+    "https://www.caixa.gov.br",
+    "https://www.sberbank.ru",
+    "https://www.vtb.ru",
+    "https://www.gazprombank.ru",
+    "https://www.alfabank.ru",
+    "https://www.rshb.ru",
+    "https://www.bancosantander.es",
+    "https://www.bbva.es",
+    "https://www.caixabank.es",
+    "https://www.bankia.es",
+    "https://www.sabadell.com",
+    "https://www.unicredit.it",
+    "https://www.intesasanpaolo.com",
+    "https://www.mps.it",
+    "https://www.ubibanca.com",
+    "https://www.bancobpm.it",
+    "https://www.ing.nl",
+    "https://www.rabobank.nl",
+    "https://www.abnamro.nl",
+    "https://www.volksbank.nl",
+    "https://www.triodos.nl",
+    "https://www.ubs.com",
+    "https://www.credit-suisse.com",
+    "https://www.raiffeisen.ch",
+    "https://www.zkb.ch",
+    "https://www.postfinance.ch"
+  ],
   "proOpenaiModels": [
     "gpt-3.5-turbo",
     "gpt-3.5-turbo-0125",
@@ -409,19 +506,23 @@
   },
   "inputStartingTriggerKeyAlias": {
     "/": [
-      "、"
+      "、",
+      "slash"
     ],
     ".": [
-      "。"
+      "。",
+      "period"
     ],
     ",": [
-      "，"
+      "，",
+      "comma"
     ],
     "space": [
       " "
     ],
     ";": [
-      "；"
+      "；",
+      "semicolon"
     ],
     ":": [
       "："
@@ -1319,6 +1420,9 @@
     },
     "imageRule": {
       "enable": true,
+      "enableTools": true,
+      "minWidth": 100,
+      "minHeight": 100,
       "concurrency": 2,
       "queryIntervalTime": 1000,
       "errorTimes": 3,
@@ -2587,6 +2691,10 @@
           "#layers[style='z-index: 1;'] [style='height: 100px;'] { height: 400px !important; }",
           "video::cue {white-space: pre-line;}"
         ]
+      },
+      "imageRule.add": {
+        "opImageType": "append",
+        "imageStyle": "opacity:1;position:unset;"
       }
     },
     {
@@ -6872,23 +6980,15 @@
         "subtitleUrlRegExp": "^https://.+?.oca.nflxvideo.net/\\?([ovet]=[^=]+){4}$",
         "loadingStyle": "bottom: 15%;",
         "quickButtonRule": {
-          "appendSelector": "[data-uia=\"control-next\"]",
-          "insertBeforeSelector": "[data-uia=\"control-next\"]",
+          "appendSelector": "[data-uia=\"control-audio-subtitle\"]",
+          "insertBeforeSelector": "[data-uia=\"control-audio-subtitle\"]",
           "injectCSS": ".imt-quick-subtitle-button {height: 60%; margin-right: 50px; font-size: 20px; } .logo,.logo svg { height: 36px; width: 36px} .label { display: none; } .imt-quick-subtitle-pop-content {transform: translateX(50%); right: 0}"
         },
         "videoSelector": "video",
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
-        "attachRule": {
-          "appendSelector": ".watch-video",
-          "injectedCSS": [
-            ".imt-caption-window {margin-bottom: 0px; bottom: 10vw;}"
-          ],
-          "injectedGlobalCSS": [
-            ".player-timedtext {display: none !important; }"
-          ]
-        }
+        "enableHookDownload": true
       }
     },
     {
@@ -7133,7 +7233,7 @@
       },
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".zao-surface .zao-image"
         ],
@@ -7153,7 +7253,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".eAvsta_root img.G54Y0W_page"
         ],
@@ -7173,7 +7273,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#i3 #img",
           "#sd img"
@@ -7196,7 +7296,7 @@
         "manga18.club"
       ],
       "imageRule.add": {
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".image_story img"
         ],
@@ -7214,7 +7314,7 @@
       "id": "fhentai",
       "matches": "fhentai.net",
       "imageRule.add": {
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "img[loading='lazy']"
         ],
@@ -7234,7 +7334,7 @@
         "visortmo_notranslate.com"
       ],
       "imageRule.add": {
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".img-container img"
         ],
@@ -7250,7 +7350,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "opImageType": "insertFirst",
         "imageSelectors": [
           "#comicImages img",
@@ -7270,7 +7370,7 @@
       "matches": "acgmhh.com",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "opImageType": "insertFirst",
         "imageSelectors": [
           ".manga-picture img"
@@ -7292,7 +7392,7 @@
       "matches": "www.177picyy.com",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".single-content img"
         ],
@@ -7312,7 +7412,7 @@
       "matches": "yymanhua.com",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#cp_img img"
         ],
@@ -7334,7 +7434,7 @@
       "matches": "www.antbyw.com",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#jameson_manhua img",
           "#jamesonreadtouch img"
@@ -7359,7 +7459,7 @@
       "matches": "jmanga.org",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".container-reader-chapter img"
         ],
@@ -7384,7 +7484,7 @@
       "matches": "https://twicomi.com/manga*",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".image img"
         ],
@@ -7405,7 +7505,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#imgarea img",
           "#img_list img"
@@ -7428,7 +7528,7 @@
       "matches": "nhentai.net",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#image-container img"
         ],
@@ -7448,7 +7548,7 @@
       "matches": "kemono.su",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".post__thumbnail figure img"
         ],
@@ -7466,7 +7566,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".page-break.no-gaps img"
         ],
@@ -7490,7 +7590,7 @@
       "matches": "www.wn01.cc",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#img_list img"
         ],
@@ -7505,7 +7605,7 @@
       "matches": "fantia_notranslate.*",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "picture.article__atomic-block img"
         ],
@@ -7520,7 +7620,7 @@
       "matches": "pash-up.jp",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "opImageType": "append",
         "imageSelectors": [
           "#canvasCluster canvas",
@@ -7540,7 +7640,7 @@
       "matches": "www.colamanga.com",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".mh_comicpic img"
         ],
@@ -7556,7 +7656,7 @@
       "matches": "*.ganganonline.com",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "img[decoding='async']"
         ],
@@ -7575,7 +7675,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#viewer img"
         ],
@@ -7596,7 +7696,7 @@
       "matches": "asuracomic.net",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "img[alt^='chapter page']"
         ],
@@ -7622,7 +7722,7 @@
       "matches": "allmanga.to",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#pictureViewer img"
         ],
@@ -7646,7 +7746,7 @@
       "matches": "allporncomic.com",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".read-container img"
         ],
@@ -7666,7 +7766,7 @@
       "matches": "*.mangaz.com",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "opImageType": "append",
         "imageSelectors": [
           ".page_image canvas",
@@ -7686,7 +7786,7 @@
       "matches": "girls-h-comics.com",
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".moviebese img"
         ],
@@ -7704,7 +7804,7 @@
         "gaugau.futabanet_block_too_much.jp"
       ],
       "imageRule.add": {
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".works_tateyomi__wrap img",
           ".pt-img img"
@@ -7722,7 +7822,7 @@
         "web-ace.*"
       ],
       "imageRule.add": {
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "img.viewerFixedImage"
         ],
@@ -7739,7 +7839,7 @@
         "toonily_notranslate.me"
       ],
       "imageRule.add": {
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#chapter-images img"
         ],
@@ -7755,7 +7855,7 @@
         "omegascans_notranslate.org"
       ],
       "imageRule.add": {
-        "type": "mangaImage",
+        "type": "manga",
         "urlFetchType": "img",
         "imageSelectors": [
           "main #content .container .flex-col img[data-src]"
@@ -7771,7 +7871,7 @@
       "id": "zerobywzz",
       "matches": "www.zerobywzz.com",
       "imageRule.add": {
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".uk-text-center img"
         ],
@@ -7785,7 +7885,7 @@
       "id": "idmzj",
       "matches": "www.idmzj.com",
       "imageRule.add": {
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".scrollbar-demo-item img"
         ],
@@ -7806,7 +7906,7 @@
         "www.bomtoon_notranslate.com"
       ],
       "imageRule.add": {
-        "type": "mangaImage",
+        "type": "manga",
         "urlFetchType": "img",
         "imageSelectors": [
           "img[data-nimg]"
@@ -7824,7 +7924,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".img-responsive",
           ".needsclick img"
@@ -7847,7 +7947,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".comicContent-list img",
           ".van-image img"
@@ -7868,7 +7968,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#divImage img",
           ".page-chapter img"
@@ -7899,7 +7999,7 @@
         "img.page-image.js-page-image"
       ],
       "imageRule.add": {
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".js-page-area canvas",
           "img.page-image.js-page-image"
@@ -7919,7 +8019,7 @@
       "id": "comic-top",
       "matches": "comic-top.com",
       "imageRule.add": {
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".page-wrapper img",
           ".reader-area img"
@@ -7936,7 +8036,7 @@
         "jumptoon_tiaoman.com"
       ],
       "imageRule.add": {
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#viewer-scroller canvas"
         ],
@@ -7977,7 +8077,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "[class^='_mainScreen'] canvas"
         ],
@@ -7994,7 +8094,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#chapter-images img"
         ],
@@ -8015,7 +8115,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".reading-content img"
         ],
@@ -8039,7 +8139,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".page-chapter img"
         ],
@@ -8062,7 +8162,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".page-break img"
         ],
@@ -8084,7 +8184,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "[data-page] > img",
           "[dir='vert'] img",
@@ -8111,7 +8211,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".view-padding p > img",
           ".view-padding div > img",
@@ -8194,7 +8294,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "opImageType": "append",
         "imageSelectors": [
           "[class*='viewer_wrapper'] img"
@@ -8215,7 +8315,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "[class*='reader-pages'] img"
         ],
@@ -8234,7 +8334,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".img-box img",
           ".comic-pics img"
@@ -8252,7 +8352,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           ".fancybox img"
         ],
@@ -11063,7 +11163,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#image-container img"
         ],
@@ -11085,7 +11185,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#readerarea img"
         ],
@@ -11104,7 +11204,7 @@
       ],
       "imageRule.add": {
         "enable": true,
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "#default-tab-thumbnail img"
         ],
@@ -11194,7 +11294,7 @@
           "safari",
           "imtAndroid"
         ],
-        "type": "mangaImage",
+        "type": "manga",
         "imageSelectors": [
           "ul.pages li img"
         ],
@@ -11249,6 +11349,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-10T12:51:10.963Z",
+  "buildinConfigUpdatedAt": "2024-10-11T08:31:07.021Z",
   "latestVersion": "1.9.8"
 }
