@@ -2510,11 +2510,27 @@
       "id": "preCodeSites",
       "matches": [
         "taylor.town",
-        "seller.shopee.*",
         "www.flatpanelshd.com",
         "www.rarlab.com"
       ],
       "isTransformPreTagNewLine": true,
+      "excludeTags.remove": [
+        "PRE"
+      ],
+      "likePreSelectors.add": [
+        "CODE"
+      ],
+      "stayOriginalTags.remove": [
+        "CODE"
+      ]
+    },
+    {
+      "id": "shopee",
+      "matches": "seller.shopee.*",
+      "isTransformPreTagNewLine": true,
+      "globalStyles.add": {
+        ".ellipsis-content": "-webkit-line-clamp:unset;"
+      },
       "excludeTags.remove": [
         "PRE"
       ],
@@ -11387,6 +11403,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-12T08:48:16.690Z",
+  "buildinConfigUpdatedAt": "2024-10-12T09:14:12.139Z",
   "latestVersion": "1.10.2"
 }
