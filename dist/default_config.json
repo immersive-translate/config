@@ -9059,7 +9059,8 @@
         "kerapoxy.cc",
         "vid41c.site",
         "https://*/*sub.info=*fmovies24.to*",
-        "https://*/*sub.info=*bflixhd.to*"
+        "https://*/*sub.info=*bflixhd.to*",
+        "https://megacloud.tube/embed-*"
       ],
       "excludeSelectors.add": [
         ".jw-wrapper",
@@ -9071,7 +9072,7 @@
       ],
       "subtitleRule.add": {
         "type": "multi_attach_vtt",
-        "subtitleUrlRegExp": "subtitle/.*\\.vtt$",
+        "subtitleUrlRegExp": ".*\\.vtt$",
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
           "insertBeforeSelector": ".jw-icon-cc"
@@ -11352,6 +11353,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-12T02:22:40.730Z",
+  "buildinConfigUpdatedAt": "2024-10-12T02:56:32.084Z",
   "latestVersion": "1.10.2"
 }
