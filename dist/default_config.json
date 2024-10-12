@@ -1885,7 +1885,8 @@
       "h1 br",
       "h2 br",
       "h3 br",
-      "h4 br"
+      "h4 br",
+      ".easyscholar-ranking"
     ],
     "translationClasses": [],
     "excludeTags": [
@@ -11403,6 +11404,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-12T09:14:12.139Z",
+  "buildinConfigUpdatedAt": "2024-10-12T13:53:00.966Z",
   "latestVersion": "1.10.2"
 }
