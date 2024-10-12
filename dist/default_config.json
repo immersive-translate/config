@@ -3820,7 +3820,8 @@
         "td a.gsc_a_at",
         "td div.gs_gray:last-of-type",
         "div.gsc_oci_value",
-        "#gs_opinion"
+        "#gs_opinion",
+        ".gs_rt"
       ],
       "extraInlineSelectors": [
         "br"
@@ -11404,6 +11405,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-12T13:53:00.966Z",
+  "buildinConfigUpdatedAt": "2024-10-12T14:34:59.572Z",
   "latestVersion": "1.10.2"
 }
