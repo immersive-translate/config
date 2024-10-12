@@ -3276,6 +3276,9 @@
       "mutationExcludeSelectors.add": [
         ".imt-caption-container *"
       ],
+      "excludeSelectors.add": [
+        ".ytm-badge-and-byline-item-byline"
+      ],
       "subtitleRule.add": {
         "type": "youtube",
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
@@ -11349,6 +11352,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-11T11:03:23.000Z",
+  "buildinConfigUpdatedAt": "2024-10-12T02:22:40.730Z",
   "latestVersion": "1.10.2"
 }
