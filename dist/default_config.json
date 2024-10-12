@@ -5792,7 +5792,8 @@
       "id": "perplexity",
       "matches": "https://www.perplexity.ai",
       "excludeMatches": [
-        "https://www.perplexity.ai/hub/*"
+        "https://www.perplexity.ai/hub/*",
+        "https://www.perplexity.ai/onboarding"
       ],
       "globalStyles": {
         ".line-clamp-1": "-webkit-line-clamp: unset !important;",
@@ -11405,6 +11406,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-12T14:34:59.572Z",
+  "buildinConfigUpdatedAt": "2024-10-12T14:43:21.827Z",
   "latestVersion": "1.10.2"
 }
