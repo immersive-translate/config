@@ -4723,7 +4723,7 @@
     },
     {
       "id": "amazon",
-      "matches": "www.amazon.com",
+      "matches": "www.amazon.*",
       "paragraphMinTextCount": 4,
       "paragraphMinWordCount": 2,
       "repeatTranslateNum": 3,
@@ -11387,6 +11387,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-12T08:10:39.693Z",
+  "buildinConfigUpdatedAt": "2024-10-12T08:48:16.690Z",
   "latestVersion": "1.10.2"
 }
