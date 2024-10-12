@@ -6080,6 +6080,7 @@
         ".highLightSearchTarget"
       ],
       "isTransformPreTagNewLine": true,
+      "detectParagraphLanguage": true,
       "globalStyles": {
         "#atomic .Mt\\(20px\\)": "margin-top: 100px;",
         "[class*='LineClamp']": "-webkit-line-clamp:unset;max-height:unset;",
@@ -11356,6 +11357,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-12T03:09:05.680Z",
+  "buildinConfigUpdatedAt": "2024-10-12T03:31:28.992Z",
   "latestVersion": "1.10.2"
 }
