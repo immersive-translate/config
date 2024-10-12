@@ -5180,6 +5180,9 @@
         "streamingChange": false,
         "streamingDeepChild": true,
         "streamingDelayTime": 1000
+      },
+      "globalStyles": {
+        "[class^='BotListItem_botDescription']": "-webkit-line-clamp: unset;"
       }
     },
     {
@@ -11353,6 +11356,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-12T03:04:29.644Z",
+  "buildinConfigUpdatedAt": "2024-10-12T03:09:05.680Z",
   "latestVersion": "1.10.2"
 }
