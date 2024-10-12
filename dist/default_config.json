@@ -269,7 +269,7 @@
     "https://comic-trail.com/[Comic-Trail][chrome,firefox,userscript,imtAndroid,imtIOS]",
     "https://mangaflame.org/[Mangaflame][chrome,firefox,safari,imtAndroid]",
     "https://templetoons.com/[Templetoons][chrome,firefox,safari]",
-    "https://batocomic.net/[Batocomic]"
+    "https://batocomic.net/[Batocomic][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -8437,6 +8437,12 @@
         ],
         "loadingSelectors": [
           ".IllustItemThumb"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
         ]
       }
     },
@@ -8454,6 +8460,12 @@
         ],
         "loadingSelectors": [
           "div"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
         ]
       }
     },
@@ -8467,6 +8479,11 @@
         "type": "manga",
         "imageSelectors": [
           ".page-break img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ]
       }
     },
@@ -8481,6 +8498,12 @@
         "opImageType": "insertFirst",
         "imageSelectors": [
           ".fw_img img#fimg:first-of-type"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtIOS"
         ]
       }
     },
@@ -8494,6 +8517,13 @@
         "type": "manga",
         "imageSelectors": [
           ".img-content img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid",
+          "imtIOS"
         ]
       }
     },
@@ -11357,6 +11387,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-12T03:31:28.992Z",
+  "buildinConfigUpdatedAt": "2024-10-12T08:10:39.693Z",
   "latestVersion": "1.10.2"
 }
