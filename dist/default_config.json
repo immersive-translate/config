@@ -2802,7 +2802,7 @@
         "liveSubtitleRule": {
           "containerSelector": ".ui-box .ui-box[class='ui-box']",
           "textSelectors": [
-            "data-tid='closed-caption-text'"
+            "[data-tid='closed-caption-text']"
           ],
           "reportSelector": "[data-tid='closed-captions-renderer']",
           "mutationChangeDelay": 1000
@@ -11406,6 +11406,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-12T14:43:21.827Z",
+  "buildinConfigUpdatedAt": "2024-10-13T14:01:19.981Z",
   "latestVersion": "1.10.2"
 }
