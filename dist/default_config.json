@@ -7597,7 +7597,10 @@
           "div"
         ],
         "intersectionRootMargin": "0px 0px 200% 0px"
-      }
+      },
+      "excludeTags.remove": [
+        "PRE"
+      ]
     },
     {
       "id": "mangadistrict-manhwaclan",
@@ -8543,7 +8546,7 @@
       }
     },
     {
-      "id": "manwadb",
+      "id": "manwadb-xyz",
       "matches": [
         "manwadb.xyz"
       ],
@@ -8586,6 +8589,19 @@
         "opImageType": "append",
         "imageSelectors": [
           "canvas.page-image"
+        ]
+      }
+    },
+    {
+      "id": "manwadb",
+      "matches": [
+        "manwadb.cc"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".img-content img"
         ]
       }
     },
@@ -11488,6 +11504,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-14T11:25:47.230Z",
+  "buildinConfigUpdatedAt": "2024-10-14T15:55:27.539Z",
   "latestVersion": "1.10.2"
 }
