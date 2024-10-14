@@ -269,7 +269,8 @@
     "https://comic-trail.com/[Comic-Trail][chrome,firefox,userscript,imtAndroid,imtIOS]",
     "https://mangaflame.org/[Mangaflame][chrome,firefox,safari,imtAndroid]",
     "https://templetoons.com/[Templetoons][chrome,firefox,safari]",
-    "https://batocomic.net/[Batocomic][chrome,firefox,safari,imtAndroid]"
+    "https://batocomic.net/[Batocomic][chrome,firefox,safari,imtAndroid]",
+    "https://comic-action.com/[Comic-action]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -8567,6 +8568,20 @@
       }
     },
     {
+      "id": "comic-action",
+      "matches": [
+        "comic-action.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "opImageType": "append",
+        "imageSelectors": [
+          "canvas.page-image"
+        ]
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -11426,6 +11441,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-14T04:12:23.081Z",
+  "buildinConfigUpdatedAt": "2024-10-14T06:11:36.346Z",
   "latestVersion": "1.10.2"
 }
