@@ -7711,7 +7711,8 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          "#viewer img"
+          "#viewer img",
+          "div[name='image-item'] > div > img"
         ],
         "loadingSelectors": [
           "div"
@@ -11441,6 +11442,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-14T06:11:36.346Z",
+  "buildinConfigUpdatedAt": "2024-10-14T06:31:46.669Z",
   "latestVersion": "1.10.2"
 }
