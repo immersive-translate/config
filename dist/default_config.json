@@ -6084,6 +6084,14 @@
       }
     },
     {
+      "id": "bingNews",
+      "matches": "https://*.bing.com/news/search*",
+      "globalStyles": {
+        ".newsitem .title": "max-height: none; -webkit-line-clamp: 10",
+        ".newsitem .snippet": "max-height: none; -webkit-line-clamp: 10"
+      }
+    },
+    {
       "id": "yahoo",
       "matches": "*.yahoo.*",
       "excludeSelectors": [
@@ -11405,6 +11413,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-14T03:29:29.888Z",
+  "buildinConfigUpdatedAt": "2024-10-14T03:47:14.954Z",
   "latestVersion": "1.10.2"
 }
