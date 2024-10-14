@@ -253,7 +253,7 @@
     "https://www.idmzj.com[动漫之家]",
     "https://jmanga.org[Jmanga][chrome,firefox,safari,imtAndroid]",
     "https://twicomi.com/manga*[Twitter Comic][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
-    "https://wnacg.com[Wnacg][chrome,firefox,safari,imtIOS]",
+    "https://wnacg.com[Wnacg][chrome,firefox,safari]",
     "https://vw.mangaz.com[MangaZ][chrome,firefox]",
     "https://pash-up.jp[PASH UP][chrome]",
     "https://www.colamanga.com[COLAMANGA][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
@@ -7544,8 +7544,7 @@
         "platforms": [
           "chrome",
           "firefox",
-          "safari",
-          "imtIOS"
+          "safari"
         ]
       }
     },
@@ -11406,6 +11405,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-13T14:01:19.981Z",
+  "buildinConfigUpdatedAt": "2024-10-14T03:29:29.888Z",
   "latestVersion": "1.10.2"
 }
