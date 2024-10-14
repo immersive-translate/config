@@ -8554,6 +8554,19 @@
       }
     },
     {
+      "id": "manhuabika",
+      "matches": [
+        "manhuabika.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#chapter-images-id img"
+        ]
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -11413,6 +11426,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-14T03:47:14.954Z",
+  "buildinConfigUpdatedAt": "2024-10-14T04:12:23.081Z",
   "latestVersion": "1.10.2"
 }
