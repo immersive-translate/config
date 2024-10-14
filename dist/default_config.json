@@ -7346,6 +7346,18 @@
       }
     },
     {
+      "id": "manhuapica",
+      "matches": [
+        "manhuapica.com"
+      ],
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          "#chapter-images-id img"
+        ]
+      }
+    },
+    {
       "id": "fhentai",
       "matches": "fhentai.net",
       "imageRule.add": {
@@ -11467,6 +11479,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-14T06:53:06.305Z",
+  "buildinConfigUpdatedAt": "2024-10-14T09:48:13.805Z",
   "latestVersion": "1.10.2"
 }
