@@ -6832,7 +6832,10 @@
       "matches": "arca.live",
       "excludeTags.remove": [
         "PRE"
-      ]
+      ],
+      "globalStyles": {
+        ".vrow.column": "height:unset !important;"
+      }
     },
     {
       "id": "chatpdf",
@@ -11485,6 +11488,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-14T10:42:56.504Z",
+  "buildinConfigUpdatedAt": "2024-10-14T11:25:47.230Z",
   "latestVersion": "1.10.2"
 }
