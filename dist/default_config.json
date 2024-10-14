@@ -2404,19 +2404,6 @@
       "waitForSelectorsTimeout": 1
     },
     {
-      "id": "immersive-word",
-      "matches": [
-        "test-app.immersivetranslate.com/word*",
-        "app.immersivetranslate.com/word*",
-        "app.infread.com/word*"
-      ],
-      "blockMinTextCount": 0,
-      "blockMinWordCount": 0,
-      "allowInnerInvoke": true,
-      "isInjectVersion": true,
-      "isInjectMeta": true
-    },
-    {
       "id": "onboarding",
       "matches": [
         "https://onboarding.immersivetranslate.com",
@@ -2444,6 +2431,11 @@
         "https://test-ai.immersivetranslate.com",
         "https://app.infread.com"
       ],
+      "excludeSelectors.add": [
+        "#imt-navbar *"
+      ],
+      "blockMinTextCount": 0,
+      "blockMinWordCount": 0,
       "allowInnerInvoke": true,
       "isInjectVersion": true,
       "isInjectMeta": true,
@@ -11479,6 +11471,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-14T09:48:13.805Z",
+  "buildinConfigUpdatedAt": "2024-10-14T09:51:37.361Z",
   "latestVersion": "1.10.2"
 }
