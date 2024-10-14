@@ -11469,8 +11469,15 @@
       "id": "otter.ai",
       "matches": "otter.ai",
       "richMoreWordPercent": 0.8
+    },
+    {
+      "id": "yxlady",
+      "matches": "m.yxlady.com",
+      "injectedCss.add": [
+        ".immersive-translate-target-wrapper, .immersive-translate-target-translation-block-wrapper, .immersive-translate-target-inner { font-size: unset; }"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-14T09:51:37.361Z",
+  "buildinConfigUpdatedAt": "2024-10-14T10:36:22.002Z",
   "latestVersion": "1.10.2"
 }
