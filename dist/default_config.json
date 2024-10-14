@@ -11476,8 +11476,15 @@
       "injectedCss.add": [
         ".immersive-translate-target-wrapper, .immersive-translate-target-translation-block-wrapper, .immersive-translate-target-inner { font-size: unset; }"
       ]
+    },
+    {
+      "id": "m163",
+      "matches": "m.163.com",
+      "globalStyles": {
+        ".card-recommend-oneImg article h4": "max-height:unset;-webkit-line-clamp:unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-14T10:36:22.002Z",
+  "buildinConfigUpdatedAt": "2024-10-14T10:42:56.504Z",
   "latestVersion": "1.10.2"
 }
