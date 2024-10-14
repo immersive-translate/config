@@ -8846,6 +8846,31 @@
       }
     },
     {
+      "id": "slideslive",
+      "matches": [
+        "slideslive.com"
+      ],
+      "excludeSelectors.add": [
+        ".slp__video"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".slp__video *"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track_dynamic",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".slp__videoPlayer__content",
+        "quickButtonRule": {
+          "appendSelector": ".slp__videoControls__right",
+          "insertBeforeSelector": ".slp__videoControls__right > button.slp__button--playerSettings",
+          "injectCSS": ".imt-quick-subtitle-pop-content { max-height: none !important; }"
+        },
+        "injectedCss": [
+          "#immersive-translate-quick-button-container { display: inline-block; height: 100%; }"
+        ]
+      }
+    },
+    {
       "id": "viu",
       "matches": [
         "www.viu.com"
@@ -11442,6 +11467,6 @@
       "richMoreWordPercent": 0.8
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-14T06:31:46.669Z",
+  "buildinConfigUpdatedAt": "2024-10-14T06:53:06.305Z",
   "latestVersion": "1.10.2"
 }
