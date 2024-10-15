@@ -11503,8 +11503,18 @@
       "globalStyles": {
         ".card-recommend-oneImg article h4": "max-height:unset;-webkit-line-clamp:unset;"
       }
+    },
+    {
+      "id": "curseforge",
+      "matches": "www.curseforge.com",
+      "globalStyles": {
+        ".project-card": "height:unset;grid-template-rows: auto auto auto auto;",
+        ".project-card .description": "height:unset;-webkit-line-clamp:unset;",
+        "ul.details-list": "height:unset;",
+        ".project-card .categories": "height:unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-15T02:23:59.856Z",
+  "buildinConfigUpdatedAt": "2024-10-15T03:48:39.256Z",
   "latestVersion": "1.10.2"
 }
