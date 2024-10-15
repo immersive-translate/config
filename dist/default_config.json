@@ -3158,7 +3158,8 @@
         ".search-title,.search-match",
         ".pinned-item-desc",
         "#repo-content-turbo-frame .markdown-title",
-        "[app-name='blackbird-search'] [data-hpc='true']"
+        "[app-name='blackbird-search'] [data-hpc='true']",
+        ".topic-box > a > p:nth-of-type(2)"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -11532,6 +11533,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-15T07:09:57.576Z",
+  "buildinConfigUpdatedAt": "2024-10-15T08:36:10.071Z",
   "latestVersion": "1.10.2"
 }
