@@ -11513,8 +11513,15 @@
         "ul.details-list": "height:unset;",
         ".project-card .categories": "height:unset;"
       }
+    },
+    {
+      "id": "duckduckgo",
+      "matches": "duckduckgo.com",
+      "globalStyles": {
+        "div[data-result='snippet'] > div > span": "-webkit-line-clamp:unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-15T03:48:39.256Z",
+  "buildinConfigUpdatedAt": "2024-10-15T06:44:05.217Z",
   "latestVersion": "1.10.2"
 }
