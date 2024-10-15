@@ -11491,8 +11491,11 @@
       "richMoreWordPercent": 0.8
     },
     {
-      "id": "yxlady",
-      "matches": "m.yxlady.com",
+      "id": "translation-font-size-unset",
+      "matches": [
+        "m.yxlady.com",
+        "web3.fireverseai.com"
+      ],
       "injectedCss.add": [
         ".immersive-translate-target-wrapper, .immersive-translate-target-translation-block-wrapper, .immersive-translate-target-inner { font-size: unset; }"
       ]
@@ -11529,6 +11532,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-15T06:49:44.047Z",
+  "buildinConfigUpdatedAt": "2024-10-15T07:09:57.576Z",
   "latestVersion": "1.10.2"
 }
