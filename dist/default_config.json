@@ -10871,7 +10871,8 @@
         "www.skool.com",
         "sfget.jp",
         "talentcentral.eu.shl.com",
-        "www.crd.york.ac.*"
+        "www.crd.york.ac.*",
+        "www.campo.fau.de"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -11504,6 +11505,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-14T16:34:58.237Z",
+  "buildinConfigUpdatedAt": "2024-10-15T02:23:59.856Z",
   "latestVersion": "1.10.2"
 }
