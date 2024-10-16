@@ -10873,7 +10873,8 @@
         "sfget.jp",
         "talentcentral.eu.shl.com",
         "www.crd.york.ac.*",
-        "www.campo.fau.de"
+        "www.campo.fau.de",
+        "s.hoothin.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -11533,6 +11534,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-15T08:36:10.071Z",
+  "buildinConfigUpdatedAt": "2024-10-16T03:52:36.883Z",
   "latestVersion": "1.10.2"
 }
