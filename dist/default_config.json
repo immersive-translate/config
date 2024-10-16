@@ -270,7 +270,8 @@
     "https://mangaflame.org/[Mangaflame][chrome,firefox,safari,imtAndroid]",
     "https://templetoons.com/[Templetoons][chrome,firefox,safari]",
     "https://batocomic.net/[Batocomic][chrome,firefox,safari,imtAndroid]",
-    "https://comic-action.com/[Comic-action]"
+    "https://comic-action.com/[Comic-action]",
+    "https://m.ac.qq.com/[Tencent-Manga]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -7354,6 +7355,18 @@
       }
     },
     {
+      "id": "Tencent-Manga",
+      "matches": [
+        "m.ac.qq.com"
+      ],
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          ".comic-pic"
+        ]
+      }
+    },
+    {
       "id": "fhentai",
       "matches": "fhentai.net",
       "imageRule.add": {
@@ -11534,6 +11547,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-16T03:52:36.883Z",
+  "buildinConfigUpdatedAt": "2024-10-16T03:56:38.860Z",
   "latestVersion": "1.10.2"
 }
