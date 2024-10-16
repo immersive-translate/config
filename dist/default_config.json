@@ -366,7 +366,8 @@
     "https://donghuaworld.com[Donghuaworld]",
     "https://projector.datacamp.com[Datacamp]",
     "https://urplay.se[Urplay]",
-    "https://app.lecturio.com[Lecturio]"
+    "https://app.lecturio.com[Lecturio]",
+    "https://www.gagaoolala.com[Gagaoolala]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -10663,6 +10664,35 @@
       }
     },
     {
+      "id": "gagaoolala",
+      "matches": [
+        "www.gagaoolala.com"
+      ],
+      "excludeSelectors.add": [
+        "#gl-id-video-container"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#gl-id-video-container *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": "\\.vtt",
+        "hookType": "xhr",
+        "injectedCss": [],
+        "quickButtonRule": {
+          "appendSelector": ".bmpui-ui-controlbar .bmpui-controlbar-bottom > div",
+          "insertBeforeSelector": ".bmpui-ui-controlbar .bmpui-controlbar-bottom > div .bmpui-gl-ui-setting-subtitle"
+        },
+        "attachRule": {
+          "appendSelector": "#gl-id-video-container",
+          "injectedGlobalCSS": [
+            ".bmpui-ui-subtitle-overlay {display: none;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "f1tv",
       "matches": [
         "f1tv.formula1.com"
@@ -11547,6 +11577,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-16T03:57:13.071Z",
+  "buildinConfigUpdatedAt": "2024-10-16T08:52:51.078Z",
   "latestVersion": "1.10.2"
 }
