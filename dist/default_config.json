@@ -271,7 +271,7 @@
     "https://templetoons.com/[Templetoons][chrome,firefox,safari]",
     "https://batocomic.net/[Batocomic][chrome,firefox,safari,imtAndroid]",
     "https://comic-action.com/[Comic-action]",
-    "https://m.ac.qq.com/[Tencent-Manga]"
+    "https://m.ac.qq.com/[腾讯动漫]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -11547,6 +11547,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-16T03:56:38.860Z",
+  "buildinConfigUpdatedAt": "2024-10-16T03:57:13.071Z",
   "latestVersion": "1.10.2"
 }
