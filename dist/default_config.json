@@ -8063,7 +8063,8 @@
         "type": "manga",
         "imageSelectors": [
           ".js-page-area canvas",
-          "img.page-image.js-page-image"
+          "img.page-image.js-page-image",
+          "img[class$=\"_page\"]"
         ],
         "injectedCss": ".align-right.immersive-translate-attach-loading::after {right: 0px;} .align-left.immersive-translate-attach-loading::after {left:20%;} .is-touch .immersive-translate-attach-loading::after {left:50%;right:unset;}",
         "opImageType": "append",
@@ -11611,6 +11612,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-17T07:48:31.039Z",
+  "buildinConfigUpdatedAt": "2024-10-17T08:14:07.573Z",
   "latestVersion": "1.10.2"
 }
