@@ -272,7 +272,8 @@
     "https://batocomic.net/[Batocomic][chrome,firefox,safari,imtAndroid]",
     "https://comic-action.com/[Comic-action]",
     "https://m.ac.qq.com/[腾讯动漫]",
-    "https://www.mangajikan.com/[Mangajikan]"
+    "https://www.mangajikan.com/[Mangajikan]",
+    "https://Komiku.com/[komiku]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -11420,6 +11421,17 @@
       }
     },
     {
+      "id": "komiku",
+      "matches": "komiku.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#readerarea img"
+        ]
+      }
+    },
+    {
       "id": "dvamh-vzwp7",
       "matches": [
         "dvamh-vzwp7.top"
@@ -11612,6 +11624,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-17T08:14:07.573Z",
+  "buildinConfigUpdatedAt": "2024-10-17T08:43:20.299Z",
   "latestVersion": "1.10.2"
 }
