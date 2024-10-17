@@ -11385,6 +11385,17 @@
       }
     },
     {
+      "id": "saucemanhwa",
+      "matches": "saucemanhwa.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".chapter-content img"
+        ]
+      }
+    },
+    {
       "id": "dvamh-vzwp7",
       "matches": [
         "dvamh-vzwp7.top"
@@ -11577,6 +11588,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-16T08:52:51.078Z",
+  "buildinConfigUpdatedAt": "2024-10-17T07:04:41.205Z",
   "latestVersion": "1.10.2"
 }
