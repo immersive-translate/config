@@ -271,7 +271,8 @@
     "https://templetoons.com/[Templetoons][chrome,firefox,safari]",
     "https://batocomic.net/[Batocomic][chrome,firefox,safari,imtAndroid]",
     "https://comic-action.com/[Comic-action]",
-    "https://m.ac.qq.com/[腾讯动漫]"
+    "https://m.ac.qq.com/[腾讯动漫]",
+    "https://www.mangajikan.com/[Mangajikan]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -11396,6 +11397,17 @@
       }
     },
     {
+      "id": "mangajikan",
+      "matches": "www.mangajikan.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".more-box img"
+        ]
+      }
+    },
+    {
       "id": "dvamh-vzwp7",
       "matches": [
         "dvamh-vzwp7.top"
@@ -11588,6 +11600,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-17T07:04:41.205Z",
+  "buildinConfigUpdatedAt": "2024-10-17T07:35:37.189Z",
   "latestVersion": "1.10.2"
 }
