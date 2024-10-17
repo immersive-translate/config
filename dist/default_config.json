@@ -11408,6 +11408,17 @@
       }
     },
     {
+      "id": "jcomic",
+      "matches": "jcomic.net",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".container img"
+        ]
+      }
+    },
+    {
       "id": "dvamh-vzwp7",
       "matches": [
         "dvamh-vzwp7.top"
@@ -11600,6 +11611,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-17T07:35:37.189Z",
+  "buildinConfigUpdatedAt": "2024-10-17T07:48:31.039Z",
   "latestVersion": "1.10.2"
 }
