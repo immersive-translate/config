@@ -9375,6 +9375,9 @@
         "courses.kevinpowell.co",
         "learn.ni.com"
       ],
+      "selectorMatches": [
+        "#wistia_video"
+      ],
       "excludeSelectors.add": [
         "div[data-handle='captions']",
         "#immersive-translate-caption-window"
@@ -11624,6 +11627,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-17T11:30:59.000Z",
+  "buildinConfigUpdatedAt": "2024-10-18T07:29:51.626Z",
   "latestVersion": "1.10.2"
 }
