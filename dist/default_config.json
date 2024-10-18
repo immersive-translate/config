@@ -10883,7 +10883,7 @@
       "id": "bsky.app",
       "matches": "https://bsky.app",
       "selectors": [
-        "[data-testid=postText]"
+        "[data-testid*=post] [data-word-wrap]"
       ],
       "isTranslateTitle": false
     },
@@ -11627,6 +11627,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-18T07:29:51.626Z",
+  "buildinConfigUpdatedAt": "2024-10-18T08:53:43.210Z",
   "latestVersion": "1.10.2"
 }
