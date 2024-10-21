@@ -5,6 +5,7 @@
   "domReadyDetectTimeout": 3000,
   "translationService": "bing",
   "mouseModifierKeyPressTimeout": 400,
+  "sameLangCheck": true,
   "immediateTranslationPattern": {
     "matches": [
       "www.tumblr.com",
@@ -368,6 +369,7 @@
     "https://donghuaworld.com[Donghuaworld]",
     "https://projector.datacamp.com[Datacamp]",
     "https://urplay.se[Urplay]",
+    "https://www.ganjingworld.com[Ganjingworld]",
     "https://app.lecturio.com[Lecturio]",
     "https://www.gagaoolala.com[Gagaoolala]"
   ],
@@ -410,7 +412,6 @@
   "translationPosition": "after",
   "inputTranslationService": "inherit",
   "inputTranslationBlockUrls": [
-    "*.feishu.cn",
     "*.larkoffice.com",
     "*.larksuite.com",
     "www.notion.so",
@@ -623,7 +624,7 @@
       ]
     },
     "google": {
-      "visible": true,
+      "defaultVisible": true,
       "requestTimeout": 15000,
       "retry": 1,
       "placeholderDelimiters": [
@@ -636,7 +637,10 @@
     },
     "transmart": {
       "limit": 20,
-      "visible": true,
+      "defaultVisible": true,
+      "defaultHiddenLangs": [
+        "zh-TW"
+      ],
       "requestTimeout": 10000,
       "placeholderDelimiters": [
         "#",
@@ -723,7 +727,7 @@
       ]
     },
     "bing": {
-      "visible": true,
+      "defaultVisible": true,
       "maxTextLengthPerRequest": 1800,
       "requestTimeout": 10000,
       "retry": 1,
@@ -737,7 +741,7 @@
       "richTag": "c"
     },
     "yandex": {
-      "visible": true,
+      "defaultVisible": true,
       "maxTextLengthPerRequest": 1000,
       "requestTimeout": 10000,
       "retry": 1,
@@ -827,7 +831,7 @@
           "systemPrompt": "你是一個專業的、地道的翻譯引擎。你只返回翻譯的文本，不做任何解釋。",
           "prompt": "將以下文本翻譯成 {{to}}：\n\n<text>\n{{text}}\n</text>\n\n直接輸出翻譯結果，不要添加任何額外的文本或標籤。",
           "multiplePrompt": "你將會得到一個包含 \"id\" 和 \"{{imt_source_field}}\" 欄位的 YAML 格式輸入。以下是輸入內容：\n\n<yaml>\n{{yaml}}\n</yaml>\n\n對於 YAML 中的每個條目，將 \"{{imt_source_field}}\" 欄位的內容翻譯成 {{to}}。將翻譯結果寫回每個條目的 \"{{imt_source_field}}\" 欄位。\n\n以下是期望的格式範例：\n\n{{normal_result_yaml_example}}\n\n請直接返回翻譯後的 YAML，不要添加任何額外的標籤。",
-          "subtitlePrompt": "你將會翻譯一組 YAML 格式的視頻字幕中的 \"{{imt_sub_source_field}}\" 欄位為 {{to}}。以下是原始字幕的 YAML 格式：\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\n請僅翻譯每個字幕條目中的 \"{{imt_sub_source_field}}\" 欄位為簡體中文。不要翻譯或更改 \"id\" 欄位。\n\n以相同的 YAML 格式輸出翻譯後的字幕，每個字幕條目各佔一行。\"id\" 欄位應保持不變，\"{{imt_sub_source_field}}\" 欄位應包含你的 {{to}} 翻譯結果。\n\n請直接返回翻譯後的 YAML，不要添加任何額外的標籤。"
+          "subtitlePrompt": "你將會翻譯一組 YAML 格式的影片字幕中的 \"{{imt_sub_source_field}}\" 欄位為 {{to}}。以下是原始字幕的 YAML 格式：\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\n請僅翻譯每個字幕條目中的 \"{{imt_sub_source_field}}\" 欄位為簡體中文。不要翻譯或更改 \"id\" 欄位。\n\n以相同的 YAML 格式輸出翻譯後的字幕，每個字幕條目各佔一行。\"id\" 欄位應保持不變，\"{{imt_sub_source_field}}\" 欄位應包含你的 {{to}} 翻譯結果。\n\n請直接返回翻譯後的 YAML，不要添加任何額外的標籤。"
         },
         {
           "id": "zh-CN2auto",
@@ -1122,7 +1126,11 @@
       "provider": "custom",
       "limit": 10,
       "model": "Qwen/Qwen2-7B-Instruct",
-      "apiUrl": "https://api.siliconflow.cn/v1/chat/completions"
+      "apiUrl": "https://api.siliconflow.cn/v1/chat/completions",
+      "defaultVisible": true,
+      "defaultHiddenLangs": [
+        "zh-TW"
+      ]
     },
     "lingyiwanwu": {
       "extends": "ai",
@@ -1138,7 +1146,10 @@
       "extends": "ai",
       "name": "zhipu",
       "model": "glm-4-flash",
-      "visible": true,
+      "defaultVisible": true,
+      "defaultHiddenLangs": [
+        "zh-TW"
+      ],
       "provider": "custom",
       "limit": 10,
       "bodyConfigs": {
@@ -1426,9 +1437,13 @@
     },
     "imageRule": {
       "enable": true,
+      "mangaTranslator": "auto",
+      "commonTranslator": "deepl",
       "enableTools": true,
-      "minWidth": 100,
-      "minHeight": 100,
+      "hoverMinWidth": 100,
+      "hoverMinHeight": 100,
+      "toolsMinWidth": 280,
+      "toolsMinHeight": 280,
       "concurrency": 2,
       "queryIntervalTime": 1000,
       "errorTimes": 3,
@@ -9377,7 +9392,7 @@
         "learn.ni.com"
       ],
       "selectorMatches": [
-        "#wistia_video"
+        ".wistia_embed"
       ],
       "excludeSelectors.add": [
         "div[data-handle='captions']",
@@ -9414,6 +9429,19 @@
           "injectedCSS": [
             ".imt-caption-window {margin-bottom: 0;}"
           ]
+        }
+      },
+      "subtitleRule.add_v.[1.10.3]": {
+        "type": "general",
+        "subtitleUrlRegExp": "embed/captions/.*\\.json",
+        "hookType": "fetch",
+        "loadingContainerSelector": "div[data-handle='captions']",
+        "generalSetting": {
+          "captionsPath": "captions",
+          "itemsPath": "hash.lines",
+          "textKey": "text",
+          "startKey": "start",
+          "endKey": "end"
         }
       }
     },
@@ -9920,6 +9948,40 @@
           "activeLangSelector": ".vjs-captions-menu-item.vjs-selected",
           "langTextRegex": "^(\\S+)\\s",
           "urlLangRegex": "/net/([^_]+)/",
+          "isMapLangFromUrl": true
+        }
+      }
+    },
+    {
+      "id": "ganjingworld",
+      "matches": [
+        "www.ganjingworld.com"
+      ],
+      "excludeSelectors.add": [
+        ".vidPlayerWrap"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".vidPlayerWrap *"
+      ],
+      "subtitleRule.add": {
+        "type": "multi_attach_vtt",
+        "hookType": "fetch",
+        "quickButtonRule": {
+          "appendSelector": "[class*='player_controlToolbar']"
+        },
+        "videoPlayerSelector": "video",
+        "videoSelector": "video",
+        "subtitleUrlRegExp": "^(?!.*thumbnails).*\\.vtt$",
+        "attachRule": {
+          "appendSelector": ".vidPlayerWrap .media-player",
+          "injectedGlobalCSS": [
+            ".vds-captions { display: none !important; }"
+          ]
+        },
+        "multiSetting": {
+          "activeLangSelector": "[class*='player_playerMenu'] > div > div.vds-radio[aria-checked='true']",
+          "langTextRegex": "^(\\S+)\\s",
+          "urlLangRegex": "_(.*?)\\.",
           "isMapLangFromUrl": true
         }
       }
@@ -11637,6 +11699,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-21T05:37:53.319Z",
+  "buildinConfigUpdatedAt": "2024-10-21T13:23:36.250Z",
   "latestVersion": "1.10.2"
 }
