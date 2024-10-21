@@ -1407,6 +1407,7 @@
     "ignoreRichSelectors": [
       "relin-hc",
       "x-p",
+      "ruby",
       "xqdd_highlight_new_word",
       "rw-highlight",
       "hypothesis-highlight"
@@ -11636,6 +11637,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-21T02:30:38.850Z",
+  "buildinConfigUpdatedAt": "2024-10-21T05:37:53.319Z",
   "latestVersion": "1.10.2"
 }
