@@ -9924,6 +9924,27 @@
       }
     },
     {
+      "id": "fautv",
+      "matches": [
+        "www.fau.tv"
+      ],
+      "excludeSelectors.add": [
+        ".jw-wrapper"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".jw-wrapper *"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": "#player",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "insertBeforeSelector": ".jw-icon-cc"
+        }
+      }
+    },
+    {
       "id": "vimeo",
       "matches": [
         "vimeo.com"
@@ -9949,27 +9970,6 @@
           "insertBeforeSelector": "[data-volume-control-container=\"true\"]",
           "ccEnableSelector": "[data-cc-button=\"true\"]",
           "injectCSS": ".imt-quick-subtitle-button {margin-right: 0px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}"
-        }
-      }
-    },
-    {
-      "id": "fautv",
-      "matches": [
-        "www.fau.tv"
-      ],
-      "excludeSelectors.add": [
-        ".jw-wrapper"
-      ],
-      "mutationExcludeSelectors.add": [
-        ".jw-wrapper *"
-      ],
-      "subtitleRule.add": {
-        "type": "text_track",
-        "videoPlayerSelector": "video",
-        "loadingContainerSelector": "#player",
-        "quickButtonRule": {
-          "appendSelector": ".jw-button-container",
-          "insertBeforeSelector": ".jw-icon-cc"
         }
       }
     },
@@ -10008,6 +10008,15 @@
           "appendSelector": "[data-control-bar=\"true\"] > div",
           "ccEnableSelector": "[data-cc-button=\"true\"]",
           "injectCSS": ".imt-quick-subtitle-button {margin-right: 0px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}"
+        },
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ],
+        "attachRule": {
+          "appendSelector": ".vp-video-wrapper",
+          "injectedGlobalCSS": [
+            ".vp-captions {display: none !important;}"
+          ]
         }
       }
     },
@@ -11627,6 +11636,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-19T08:03:55.000Z",
+  "buildinConfigUpdatedAt": "2024-10-21T02:30:38.850Z",
   "latestVersion": "1.10.2"
 }
