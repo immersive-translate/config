@@ -371,7 +371,8 @@
     "https://urplay.se[Urplay]",
     "https://www.ganjingworld.com[Ganjingworld]",
     "https://app.lecturio.com[Lecturio]",
-    "https://www.gagaoolala.com[Gagaoolala]"
+    "https://www.gagaoolala.com[Gagaoolala]",
+    "https://curiositystream.com[curiositystream]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -1448,6 +1449,7 @@
       "queryIntervalTime": 1000,
       "errorTimes": 3,
       "errorInterval": 5000,
+      "enableImageTranslation": "pro_beta",
       "latinLang": [
         "en",
         "fr",
@@ -10772,6 +10774,33 @@
       }
     },
     {
+      "id": "curiositystream",
+      "matches": [
+        "curiositystream.com"
+      ],
+      "excludeSelectors.add": [
+        "[data-testid=\"video-player\"]"
+      ],
+      "mutationExcludeSelectors.add": [
+        "[data-testid=\"video-player\"] *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": "\\.vtt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar > div > div > ul:last-of-type"
+        },
+        "attachRule": {
+          "appendSelector": "[data-testid=\"video-player\"] > div",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display {display: none;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "f1tv",
       "matches": [
         "f1tv.formula1.com"
@@ -11700,6 +11729,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-22T03:18:45.633Z",
-  "latestVersion": "1.10.3"
+  "buildinConfigUpdatedAt": "2024-10-22T08:46:34.582Z",
+  "latestVersion": "1.10.4"
 }
