@@ -1450,6 +1450,7 @@
       "errorTimes": 3,
       "errorInterval": 5000,
       "enableImageTranslation": "pro_beta",
+      "toolsDelayTime": 1200,
       "latinLang": [
         "en",
         "fr",
@@ -11736,6 +11737,6 @@
       "longBuildPageLength": 10000
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-22T10:45:04.634Z",
+  "buildinConfigUpdatedAt": "2024-10-22T14:12:27.204Z",
   "latestVersion": "1.10.4"
 }
