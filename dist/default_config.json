@@ -11025,7 +11025,8 @@
         "talentcentral.eu.shl.com",
         "www.crd.york.ac.*",
         "www.campo.fau.de",
-        "s.hoothin.com"
+        "s.hoothin.com",
+        "feedback.featurebase.app"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -11729,6 +11730,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-22T08:46:34.582Z",
+  "buildinConfigUpdatedAt": "2024-10-22T09:03:35.518Z",
   "latestVersion": "1.10.4"
 }
