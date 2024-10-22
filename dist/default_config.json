@@ -9847,7 +9847,8 @@
     {
       "id": "khflix",
       "matches": [
-        "khflix.com"
+        "khflix.com",
+        "watch.globaltv.com"
       ],
       "excludeSelectors.add": [
         "#video-playlist"
@@ -11699,6 +11700,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-21T13:29:39.000Z",
+  "buildinConfigUpdatedAt": "2024-10-22T03:18:45.633Z",
   "latestVersion": "1.10.3"
 }
