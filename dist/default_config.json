@@ -5551,10 +5551,7 @@
       "matches": "page.kakao.com",
       "shadowRootSelectors": [
         "div[style^='visibility: visible'"
-      ],
-      "globalStyles.add": {
-        "p.a2": "margin-bottom:0px;"
-      }
+      ]
     },
     {
       "id": "coinmarketcap",
@@ -11810,6 +11807,6 @@
       "longBuildPageLength": 10000
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-23T07:06:57.810Z",
+  "buildinConfigUpdatedAt": "2024-10-23T07:11:13.779Z",
   "latestVersion": "1.10.5"
 }
