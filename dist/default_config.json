@@ -11317,7 +11317,8 @@
         "#footer",
         ".summary > h3",
         ".notes > h3"
-      ]
+      ],
+      "longBuildPageLength": 1000
     },
     {
       "id": "bitwarden.com",
@@ -11818,6 +11819,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-23T07:25:14.318Z",
+  "buildinConfigUpdatedAt": "2024-10-23T07:56:34.717Z",
   "latestVersion": "1.10.5"
 }
