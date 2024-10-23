@@ -271,10 +271,10 @@
     "https://mangaflame.org/[Mangaflame][chrome,firefox,safari,imtAndroid]",
     "https://templetoons.com/[Templetoons][chrome,firefox,safari]",
     "https://batocomic.net/[Batocomic][chrome,firefox,safari,imtAndroid]",
-    "https://comic-action.com/[Comic-action]",
-    "https://m.ac.qq.com/[腾讯动漫]",
-    "https://www.mangajikan.com/[Mangajikan]",
-    "https://Komiku.com/[komiku]",
+    "https://comic-action.com/[Comic-action][chrome,firefox,safari]",
+    "https://m.ac.qq.com/[腾讯动漫][chrome,firefox,safari]",
+    "https://www.mangajikan.com/[Mangajikan][chrome,firefox,safari]",
+    "https://Komiku.com/[komiku][chrome,firefox,safari]",
     "https://klz9.com[KL][chrome,firefox]"
   ],
   "supportedVideoSubtitleSites": [
@@ -7377,6 +7377,11 @@
         "type": "manga",
         "imageSelectors": [
           "#chapter-images-id img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ]
       }
     },
@@ -7389,6 +7394,11 @@
         "type": "manga",
         "imageSelectors": [
           ".comic-pic"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ]
       }
     },
@@ -8634,6 +8644,11 @@
         "type": "manga",
         "imageSelectors": [
           "#chapter-images-id img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ]
       }
     },
@@ -8648,6 +8663,11 @@
         "opImageType": "append",
         "imageSelectors": [
           "canvas.page-image"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ]
       }
     },
@@ -8661,6 +8681,11 @@
         "type": "manga",
         "imageSelectors": [
           ".img-content img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ]
       }
     },
@@ -11525,6 +11550,11 @@
         "type": "manga",
         "imageSelectors": [
           ".chapter-content img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ]
       }
     },
@@ -11536,6 +11566,11 @@
         "type": "manga",
         "imageSelectors": [
           ".more-box img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ]
       }
     },
@@ -11547,6 +11582,11 @@
         "type": "manga",
         "imageSelectors": [
           ".container img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ]
       }
     },
@@ -11558,6 +11598,11 @@
         "type": "manga",
         "imageSelectors": [
           "#readerarea img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ]
       }
     },
@@ -11759,6 +11804,6 @@
       "longBuildPageLength": 10000
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-23T03:14:50.964Z",
+  "buildinConfigUpdatedAt": "2024-10-23T03:34:32.646Z",
   "latestVersion": "1.10.4"
 }
