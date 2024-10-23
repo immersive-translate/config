@@ -4629,6 +4629,9 @@
         "weibo.com",
         "*.weibo.*"
       ],
+      "excludeMatches": [
+        "passport.weibo.com/sso/signin*"
+      ],
       "selectors": [
         "div[class^='detail_wbtext']",
         ".weibo-text"
@@ -5548,7 +5551,10 @@
       "matches": "page.kakao.com",
       "shadowRootSelectors": [
         "div[style^='visibility: visible'"
-      ]
+      ],
+      "globalStyles.add": {
+        "p.a2": "margin-bottom:0px;"
+      }
     },
     {
       "id": "coinmarketcap",
@@ -11804,6 +11810,6 @@
       "longBuildPageLength": 10000
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-23T04:17:39.000Z",
+  "buildinConfigUpdatedAt": "2024-10-23T07:06:57.810Z",
   "latestVersion": "1.10.5"
 }
