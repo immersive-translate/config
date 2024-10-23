@@ -274,7 +274,8 @@
     "https://comic-action.com/[Comic-action]",
     "https://m.ac.qq.com/[腾讯动漫]",
     "https://www.mangajikan.com/[Mangajikan]",
-    "https://Komiku.com/[komiku]"
+    "https://Komiku.com/[komiku]",
+    "https://klz9.com[KL][chrome,firefox]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -1437,6 +1438,9 @@
       "checkSelfUpdate": true
     },
     "imageRule": {
+      "blockToolsUrls": [
+        "www.figma.com"
+      ],
       "enable": true,
       "mangaTranslator": "auto",
       "commonTranslator": "deepl",
@@ -1450,7 +1454,7 @@
       "errorTimes": 3,
       "errorInterval": 5000,
       "enableImageTranslation": "pro_beta",
-      "toolsDelayTime": 1200,
+      "toolsDelayTime": 1300,
       "latinLang": [
         "en",
         "fr",
@@ -8215,6 +8219,24 @@
       }
     },
     {
+      "id": "klz9",
+      "matches": [
+        "klz9.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".chapter-img"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox"
+        ]
+      }
+    },
+    {
       "id": "manhwato",
       "matches": [
         "manhwato.com"
@@ -11737,6 +11759,6 @@
       "longBuildPageLength": 10000
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-22T14:12:27.204Z",
+  "buildinConfigUpdatedAt": "2024-10-23T03:14:50.964Z",
   "latestVersion": "1.10.4"
 }
