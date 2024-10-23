@@ -1443,7 +1443,7 @@
       ],
       "enable": true,
       "mangaTranslator": "auto",
-      "commonTranslator": "deepl",
+      "commonTranslator": "bing",
       "enableTools": true,
       "hoverMinWidth": 100,
       "hoverMinHeight": 100,
@@ -11804,6 +11804,6 @@
       "longBuildPageLength": 10000
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-23T03:47:34.578Z",
-  "latestVersion": "1.10.4"
+  "buildinConfigUpdatedAt": "2024-10-23T04:17:37.666Z",
+  "latestVersion": "1.10.5"
 }
