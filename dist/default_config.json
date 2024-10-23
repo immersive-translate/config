@@ -11805,8 +11805,19 @@
       "id": "justia",
       "matches": "supreme.justia.com",
       "longBuildPageLength": 10000
+    },
+    {
+      "id": "ml4vis",
+      "matches": "ml4vis.github.io",
+      "globalStyles.add": {
+        ".jss42": "height:unset;",
+        ".jss44": "max-height:unset;"
+      },
+      "excludeSelectors.add": [
+        ".jss45"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-23T07:11:13.779Z",
+  "buildinConfigUpdatedAt": "2024-10-23T07:25:14.318Z",
   "latestVersion": "1.10.5"
 }
