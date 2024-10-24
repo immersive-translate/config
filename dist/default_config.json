@@ -11079,7 +11079,8 @@
         "www.campo.fau.de",
         "s.hoothin.com",
         "feedback.featurebase.app",
-        "typefully.com"
+        "typefully.com",
+        "*.affine.*"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -11845,6 +11846,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-24T07:49:52.948Z",
+  "buildinConfigUpdatedAt": "2024-10-24T08:58:11.275Z",
   "latestVersion": "1.10.5"
 }
