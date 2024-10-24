@@ -11817,8 +11817,17 @@
       "excludeSelectors.add": [
         ".jss45"
       ]
+    },
+    {
+      "id": "www.dgl.ai",
+      "matches": [
+        "www.dgl.ai"
+      ],
+      "excludeSelectors.add": [
+        "header"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-24T02:07:53.017Z",
+  "buildinConfigUpdatedAt": "2024-10-24T06:32:26.663Z",
   "latestVersion": "1.10.5"
 }
