@@ -1,5 +1,5 @@
 {
-  "resaleVersion": "1.9.7",
+  "resaleVersion": "1.10.2",
   "immediateTranslationTextCount": 4999,
   "translationStartMode": "dynamic",
   "domReadyDetectTimeout": 3000,
@@ -11819,6 +11819,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-24T02:06:47.101Z",
+  "buildinConfigUpdatedAt": "2024-10-24T02:07:53.017Z",
   "latestVersion": "1.10.5"
 }
