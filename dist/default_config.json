@@ -8528,6 +8528,7 @@
         "imageSelectors": [
           "img[alt^='Chapter']"
         ],
+        "injectedCss": ".imt-image-status {top:5%!important;}",
         "platforms": [
           "chrome",
           "firefox",
@@ -11846,6 +11847,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-24T08:57:47.000Z",
+  "buildinConfigUpdatedAt": "2024-10-25T06:36:01.269Z",
   "latestVersion": "1.10.5"
 }
