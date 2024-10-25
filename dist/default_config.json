@@ -7046,6 +7046,13 @@
           "insertBeforeSelector": "[data-uia=\"control-audio-subtitle\"]",
           "injectCSS": ".imt-quick-subtitle-button {height: 60%; margin-right: 50px; font-size: 20px; } .logo,.logo svg { height: 36px; width: 36px} .label { display: none; } .imt-quick-subtitle-pop-content {transform: translateX(50%); right: 0}"
         },
+        "attachRule": {
+          "appendSelector": ".watch-video",
+          "injectedGlobalCSS": ".player-timedtext {display:none!important;}",
+          "injectedCSS": [
+            ".imt-caption-window {margin-bottom: 0; bottom: 10%;}"
+          ]
+        },
         "videoSelector": "video",
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
@@ -8264,7 +8271,7 @@
         "loadingSelectors": [
           "div"
         ],
-        "injectedCss": ".immersive-translate-attach-loading::after {top:5%!important;}",
+        "injectedCss": ".imt-image-status {top:5%!important;}",
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
           "chrome",
@@ -11848,6 +11855,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-25T09:23:18.897Z",
+  "buildinConfigUpdatedAt": "2024-10-25T09:26:14.011Z",
   "latestVersion": "1.10.5"
 }
