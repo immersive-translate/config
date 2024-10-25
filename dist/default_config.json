@@ -7572,7 +7572,7 @@
           "safari",
           "imtAndroid"
         ],
-        "injectedCss": ".immersive-translate-attach-loading::after {width:6px!important;height:6px!important;animation: immersiveTranslateShadowRolling 1.5s linear infinite!important;}",
+        "injectedCss": ".imt-image-status {width:6px!important;height:6px!important;animation: immersiveTranslateShadowRolling 1.5s linear infinite!important;}",
         "inValidSrcRegex": [
           "data:image/gif"
         ],
@@ -7681,7 +7681,7 @@
         "inValidSrcRegex": [
           "blank.gif"
         ],
-        "injectedCss": ".immersive-translate-attach-loading::after {top:10%!important;}",
+        "injectedCss": ".imt-image-status {top:10%!important;}",
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
           "chrome",
@@ -7966,7 +7966,7 @@
         "imageSelectors": [
           "main #content .container .flex-col img[data-src]"
         ],
-        "injectedCss": ".immersive-translate-attach-loading::after {top:5%!important;}",
+        "injectedCss": ".imt-image-status {top:5%!important;}",
         "loadingSelectors": [
           "div"
         ],
@@ -8111,7 +8111,7 @@
           "img.page-image.js-page-image",
           "img[class$=\"_page\"]"
         ],
-        "injectedCss": ".align-right.immersive-translate-attach-loading::after {right: 0px;} .align-left.immersive-translate-attach-loading::after {left:20%;} .is-touch .immersive-translate-attach-loading::after {left:50%;right:unset;}",
+        "injectedCss": ".align-right.imt-image-status {right: 0px;} .align-left.imt-image-status {left:20%;} .is-touch .imt-image-status {left:50%;right:unset;}",
         "opImageType": "append",
         "loadingSelectors": [
           "p"
@@ -8211,7 +8211,7 @@
         "platforms": [
           "chrome"
         ],
-        "injectedCss": ".immersive-translate-attach-loading::after {top:10%!important;}",
+        "injectedCss": ".imt-image-status {top:10%!important;}",
         "intersectionRootMargin": "0px 0px 200% 0px"
       }
     },
@@ -8230,7 +8230,6 @@
         "loadingSelectors": [
           "div"
         ],
-        "injectedCss": ".immersive-translate-attach-loading::after {top:5%!important;}",
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
           "chrome",
@@ -8294,7 +8293,7 @@
         "loadingSelectors": [
           ".page-break"
         ],
-        "injectedCss": ".immersive-translate-attach-loading::after {top:5%!important;}",
+        "injectedCss": ".imt-image-status {top:5%!important;}",
         "platforms": [
           "chrome",
           "firefox",
@@ -8448,7 +8447,7 @@
           "div"
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
-        "injectedCss": ".immersive-translate-attach-loading::after {top:10%!important;}"
+        "injectedCss": ".imt-image-status {top:10%!important;}"
       },
       "_comment": "all"
     },
@@ -11858,6 +11857,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-25T10:23:15.558Z",
+  "buildinConfigUpdatedAt": "2024-10-25T11:11:08.010Z",
   "latestVersion": "1.10.6"
 }
