@@ -7809,7 +7809,7 @@
         "loadingSelectors": [
           "div"
         ],
-        "injectedCss": ".immersive-translate-attach-loading::after {top:5%!important;}",
+        "injectedCss": ".imt-image-status {top:5%!important;}",
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
           "chrome",
@@ -8516,6 +8516,7 @@
         "imageSelectors": [
           "#readerarea img"
         ],
+        "injectedCss": ".imt-image-status {top:1%!important;}",
         "platforms": [
           "chrome",
           "firefox",
@@ -8600,6 +8601,7 @@
         "imageSelectors": [
           ".page-break img"
         ],
+        "injectedCss": ".imt-image-status {top:10%!important;}",
         "platforms": [
           "chrome",
           "firefox",
@@ -11566,6 +11568,7 @@
         "imageSelectors": [
           ".chapter-content img"
         ],
+        "injectedCss": ".imt-image-status {top:5%!important;}",
         "platforms": [
           "chrome",
           "firefox",
@@ -11855,6 +11858,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-25T10:03:41.000Z",
+  "buildinConfigUpdatedAt": "2024-10-25T10:23:15.558Z",
   "latestVersion": "1.10.6"
 }
