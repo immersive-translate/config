@@ -8573,6 +8573,7 @@
         "loadingSelectors": [
           "div"
         ],
+        "injectedCss": ".imt-image-status {z-index:999 !important;}",
         "platforms": [
           "chrome",
           "firefox",
@@ -11847,6 +11848,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-25T06:36:01.269Z",
+  "buildinConfigUpdatedAt": "2024-10-25T07:38:38.900Z",
   "latestVersion": "1.10.5"
 }
