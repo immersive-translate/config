@@ -3301,9 +3301,6 @@
           "script"
         ]
       },
-      "mutationConfig.add": {
-        "checkSelfUpdate": false
-      },
       "excludeTags.remove": [
         "BUTTON"
       ],
@@ -11857,6 +11854,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-25T11:11:08.010Z",
+  "buildinConfigUpdatedAt": "2024-10-26T07:33:56.994Z",
   "latestVersion": "1.10.6"
 }
