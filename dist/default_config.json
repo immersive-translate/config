@@ -11087,7 +11087,8 @@
         "s.hoothin.com",
         "feedback.featurebase.app",
         "typefully.com",
-        "*.affine.*"
+        "*.affine.*",
+        "kalimat.anghami.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -11854,6 +11855,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-28T03:46:12.363Z",
+  "buildinConfigUpdatedAt": "2024-10-30T14:09:02.785Z",
   "latestVersion": "1.10.6"
 }
