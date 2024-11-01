@@ -11090,13 +11090,23 @@
         "s.hoothin.com",
         "feedback.featurebase.app",
         "typefully.com",
-        "*.affine.*",
-        "kalimat.anghami.com"
+        "*.affine.*"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
         "[translate=no]"
       ]
+    },
+    {
+      "id": "NoPreSiteTranslate",
+      "matches": [
+        "kalimat.anghami.com"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
+      "isTransformPreTagNewLine": true
     },
     {
       "id": "jmir",
@@ -11865,6 +11875,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-01T10:33:12.853Z",
+  "buildinConfigUpdatedAt": "2024-11-01T11:40:54.525Z",
   "latestVersion": "1.10.6"
 }
