@@ -7556,7 +7556,10 @@
     },
     {
       "id": "jmanga",
-      "matches": "jmanga.org",
+      "matches": [
+        "jmanga.org",
+        "jmanga.to"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
@@ -7569,7 +7572,7 @@
           "safari",
           "imtAndroid"
         ],
-        "injectedCss": ".imt-image-status {width:6px!important;height:6px!important;animation: immersiveTranslateShadowRolling 1.5s linear infinite!important;}",
+        "injectedCss": ".imt-image-status {animation: immersiveTranslateShadowRolling 1.5s linear infinite!important;z-index:9;}",
         "inValidSrcRegex": [
           "data:image/gif"
         ],
@@ -11855,6 +11858,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-10-30T14:09:02.785Z",
+  "buildinConfigUpdatedAt": "2024-11-01T02:13:04.984Z",
   "latestVersion": "1.10.6"
 }
