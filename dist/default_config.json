@@ -11856,8 +11856,15 @@
       "excludeSelectors.add": [
         "header"
       ]
+    },
+    {
+      "id": "rebang",
+      "matches": "rebang.today",
+      "globalStyles": {
+        ".multirow-ellipsis-3": "-webkit-line-clamp:unset;"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-01T02:13:04.984Z",
+  "buildinConfigUpdatedAt": "2024-11-01T10:33:12.853Z",
   "latestVersion": "1.10.6"
 }
