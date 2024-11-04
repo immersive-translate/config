@@ -5225,6 +5225,22 @@
       }
     },
     {
+      "id": "janitorai",
+      "matches": [
+        "https://janitorai.com"
+      ],
+      "excludeSelectors": [
+        "[data-testid=virtuoso-scroller] .css-10c6i1g *"
+      ],
+      "aiRule": {
+        "streamingSelector": "button[aria-label=Cancel]",
+        "messageWrapperSelector": "[data-testid=virtuoso-scroller] .css-10c6i1g",
+        "streamingChange": false,
+        "streamingDeepChild": true,
+        "streamingDelayTime": 1500
+      }
+    },
+    {
       "id": "glasp",
       "matches": "glasp.co",
       "excludeSelectors": [
@@ -11920,6 +11936,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-04T14:55:48.220Z",
+  "buildinConfigUpdatedAt": "2024-11-04T15:56:28.517Z",
   "latestVersion": "1.10.6"
 }
