@@ -2523,7 +2523,8 @@
         "man.freebsd.org",
         "www.oreilly.com/openbook/opensources/book/*",
         "gamefaqs.gamespot.com",
-        "bugs.java.com/bugdatabase/view_bug.do"
+        "bugs.java.com/bugdatabase/view_bug.do",
+        "rachelsenglish.com"
       ],
       "isTransformPreTagNewLine": true,
       "longBuildPageLength": 1000
@@ -11889,6 +11890,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-04T07:50:35.564Z",
+  "buildinConfigUpdatedAt": "2024-11-04T08:25:06.406Z",
   "latestVersion": "1.10.6"
 }
