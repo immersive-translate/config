@@ -11880,8 +11880,15 @@
       "additionalExcludeSelectors.add": [
         "#basket"
       ]
+    },
+    {
+      "id": "sakura",
+      "matches": "www.sakura.fm",
+      "injectedCss.add": [
+        ".immersive-translate-target-wrapper, .immersive-translate-target-translation-block-wrapper, .immersive-translate-target-inner span { opacity: 1 !important; }"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-04T06:25:23.714Z",
+  "buildinConfigUpdatedAt": "2024-11-04T07:50:35.564Z",
   "latestVersion": "1.10.6"
 }
