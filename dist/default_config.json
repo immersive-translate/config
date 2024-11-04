@@ -2761,7 +2761,7 @@
           "[data-immersive-translate_rtl] #immersive-translate-caption-window { direction: rtl; }"
         ],
         "attachRule": {
-          "appendSelector": ".player-share .video-js",
+          "appendSelector": ".player-view .video-js",
           "injectedGlobalCSS": [
             ".vjs-text-track-display {display:none!important;}"
           ]
@@ -11890,6 +11890,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-04T09:05:04.296Z",
+  "buildinConfigUpdatedAt": "2024-11-04T09:15:22.902Z",
   "latestVersion": "1.10.6"
 }
