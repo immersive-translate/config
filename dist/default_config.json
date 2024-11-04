@@ -276,7 +276,8 @@
     "https://www.mangajikan.com/[Mangajikan][chrome,firefox,safari]",
     "https://Komiku.com/[komiku][chrome,firefox,safari]",
     "https://klz9.com[KL][chrome,firefox]",
-    "https://www.mangakoinu.com/[mangakoinu][chrome,firefox,safari]"
+    "https://www.mangakoinu.com/[Mangakoinu][chrome,firefox,safari]",
+    "https://www.sololevelingmangafree.com/[Sololevelingmangafree][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -11652,6 +11653,22 @@
       }
     },
     {
+      "id": "sololevelingmangafree",
+      "matches": "www.sololevelingmangafree.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".entry-inner p img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "dvamh-vzwp7",
       "matches": [
         "dvamh-vzwp7.top"
@@ -11890,6 +11907,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-04T09:15:22.902Z",
+  "buildinConfigUpdatedAt": "2024-11-04T09:51:38.729Z",
   "latestVersion": "1.10.6"
 }
