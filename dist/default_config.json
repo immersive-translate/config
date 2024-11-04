@@ -11669,6 +11669,22 @@
       }
     },
     {
+      "id": "tkr375",
+      "matches": "tkr375.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#tnimg img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "dvamh-vzwp7",
       "matches": [
         "dvamh-vzwp7.top"
@@ -11907,6 +11923,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-04T09:51:38.729Z",
+  "buildinConfigUpdatedAt": "2024-11-04T10:41:40.327Z",
   "latestVersion": "1.10.6"
 }
