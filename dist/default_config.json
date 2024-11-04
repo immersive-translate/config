@@ -2847,22 +2847,22 @@
         ".iOzk7[jsname='dsyhDe'] *"
       ],
       "extraInlineSelectors.add": [
-        ".iTTPOb.VbkSUe",
-        ".Mz6pEf.wY1pdd"
+        ".bh44bd.VbkSUe",
+        ".bYevke.wY1pdd"
       ],
       "subtitleRule.add": {
         "type": "live",
         "injectedCss": [
-          ".Mz6pEf.wY1pdd { font-size: 1.2rem !important; }",
+          ".bYevke.wY1pdd { font-size: 1.2rem !important; }",
           "font.immersive-translate-target-wrapper { font-size: 1.2rem; display: inline-block; padding-left: 55px; }",
           "font.immersive-translate-target-wrapper br { display: none; }"
         ],
         "liveSubtitleRule": {
           "containerSelector": ".iOzk7[jsname='dsyhDe']",
           "textSelectors": [
-            ".TBMuR.bj4p3b"
+            ".nMcdL.bj4p3b"
           ],
-          "textContentSelector": ".Mz6pEf.wY1pdd",
+          "textContentSelector": ".bYevke.wY1pdd",
           "reportSelector": ".iOzk7[jsname='dsyhDe']",
           "mutationChangeDelay": 1000,
           "findParentBlockDepth": 5
@@ -11923,6 +11923,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-04T10:41:40.327Z",
+  "buildinConfigUpdatedAt": "2024-11-04T11:12:52.451Z",
   "latestVersion": "1.10.6"
 }
