@@ -11873,8 +11873,15 @@
       "globalStyles": {
         ".multirow-ellipsis-3": "-webkit-line-clamp:unset;"
       }
+    },
+    {
+      "id": "monmouthcoffee",
+      "matches": "www.monmouthcoffee.*",
+      "additionalExcludeSelectors.add": [
+        "#basket"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-01T11:40:54.525Z",
+  "buildinConfigUpdatedAt": "2024-11-04T06:25:23.714Z",
   "latestVersion": "1.10.6"
 }
