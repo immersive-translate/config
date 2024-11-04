@@ -901,8 +901,8 @@
       "provider": "pro"
     },
     "gemini.add_v.[1.5.7]": {
-      "randomPrefix": "Hi, ",
-      "enableRichTranslate": true
+      "randomPrefix": "none",
+      "enableRichTranslate": false
     },
     "claude": {
       "visible": true,
@@ -11920,6 +11920,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-04T11:44:11.121Z",
+  "buildinConfigUpdatedAt": "2024-11-04T14:55:48.220Z",
   "latestVersion": "1.10.6"
 }
