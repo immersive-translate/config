@@ -232,6 +232,25 @@
     "enableTrialPro": true,
     "trialProShowLimit": 20
   },
+  "discountActivity": {
+    "enable": true,
+    "upgradeShowCountCacheKey": "upgradeDiscountActivity20241111",
+    "upgradeShowLimit": 20,
+    "start": "2024-10-31T16:00:00.000Z",
+    "end": "2024-11-10T16:00:00.000Z",
+    "titleI18n": {
+      "zh-CN": "50%OFF",
+      "zh-TW": "50%OFF",
+      "en": "50%OFF"
+    },
+    "popupUrl": "https://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension&utm_campaign=popup_discount",
+    "floatBallUrl": "https://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension&utm_campaign=float_ball_discount",
+    "tipsI18n": {
+      "zh-CN": "沉浸式翻译双十一年度大促（史上最低）！ 首年 50% OFF！续费 30% OFF！",
+      "zh-TW": "沉浸式翻譯雙十一年度大促（史上最低）！ 首年50% OFF！ 續費30% OFF！",
+      "en": "Black Friday Sale (All-time Low)! 50% OFF First Year, 30% OFF renewals!"
+    }
+  },
   "supportedMangaSites": [
     "https://www.pixiv.net/manga[Pixiv][chrome,firefox]",
     "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
@@ -449,7 +468,7 @@
     "afterInstalledAt": "",
     "fixedPosition": "right",
     "upgradeVisible": true,
-    "upgradeShowLimit": 50
+    "upgradeShowLimit": 20
   },
   "pcFloatBall": {
     "enable": true,
@@ -466,7 +485,7 @@
     "afterInstalledAt": "2023-10-28",
     "fixedPosition": "right",
     "upgradeVisible": true,
-    "upgradeShowLimit": 50
+    "upgradeShowLimit": 20
   },
   "floatBallTooltipRule": {
     "mainBtnTooltipImmediateShowCount": 5,
@@ -1446,7 +1465,7 @@
       "enable": true,
       "mangaTranslator": "auto",
       "commonTranslator": "bing",
-      "enableTools": true,
+      "enableTools": false,
       "hoverMinWidth": 100,
       "hoverMinHeight": 100,
       "toolsMinWidth": 280,
@@ -2795,7 +2814,8 @@
             ".live-transcription-subtitle"
           ],
           "reportSelector": ".meeting-client-inner",
-          "mutationChangeDelay": 1000
+          "mutationChangeDelay": 1000,
+          "enableTriggerTranslate": true
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #live-transcription-subtitle font {direction: rtl;}"
@@ -2828,7 +2848,8 @@
             "[data-tid='closed-caption-text']"
           ],
           "reportSelector": "[data-tid='closed-captions-renderer']",
-          "mutationChangeDelay": 1000
+          "mutationChangeDelay": 1000,
+          "enableTriggerTranslate": true
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] font.immersive-translate-target-wrapper {direction: rtl;}"
@@ -2841,7 +2862,8 @@
         "meet.google.com"
       ],
       "excludeSelectors.add": [
-        ".iOzk7[jsname='dsyhDe']"
+        ".iOzk7[jsname='dsyhDe']",
+        ".nMcdL.bj4p3b"
       ],
       "mutationExcludeSelectors.add": [
         ".iOzk7[jsname='dsyhDe'] *"
@@ -2862,7 +2884,8 @@
           "textContentSelector": ".bYevke.wY1pdd",
           "reportSelector": ".iOzk7[jsname='dsyhDe']",
           "mutationChangeDelay": 1000,
-          "findParentBlockDepth": 5
+          "findParentBlockDepth": 5,
+          "enableTriggerTranslate": true
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] font.immersive-translate-target-wrapper {direction: rtl;}"
@@ -3810,7 +3833,8 @@
       "globalStyles": {
         ".article_title_link,.library_article_text h4,.gadget_overview_article_title,.article_magazine_title_link,.reader_pane_view_style_2 .column_view_title": "-webkit-line-clamp: unset;max-height: unset;",
         ".article_tile_content_wraper,div.article_tile": "overflow:auto",
-        ".article_header_title": "white-space:normal"
+        ".article_header_title": "white-space:normal;max-height: unset;",
+        ".article_header_title span": "display:flex !important;flex-direction: column;"
       }
     },
     {
@@ -11965,6 +11989,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-05T09:50:40.059Z",
+  "buildinConfigUpdatedAt": "2024-11-05T11:27:56.066Z",
   "latestVersion": "1.10.6"
 }
