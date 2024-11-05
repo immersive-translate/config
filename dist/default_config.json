@@ -6123,6 +6123,9 @@
         "a",
         "i"
       ],
+      "excludeSelectors.add": [
+        ".tptxt"
+      ],
       "globalStyles": {
         "[class*='lineclamp'],.b_title": "-webkit-line-clamp:unset;"
       }
@@ -11962,6 +11965,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-05T08:28:27.029Z",
+  "buildinConfigUpdatedAt": "2024-11-05T09:50:40.059Z",
   "latestVersion": "1.10.6"
 }
