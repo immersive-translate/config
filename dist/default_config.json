@@ -11592,6 +11592,25 @@
       }
     },
     {
+      "id": "manwadd",
+      "matches": [
+        "manwadd.cc"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".img-content img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "saucemanhwa",
       "matches": "saucemanhwa.com",
       "imageRule.add": {
@@ -11943,6 +11962,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-05T06:43:53.070Z",
+  "buildinConfigUpdatedAt": "2024-11-05T08:28:27.029Z",
   "latestVersion": "1.10.6"
 }
