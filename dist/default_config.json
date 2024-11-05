@@ -3122,6 +3122,11 @@
       "globalStyles": {
         "div.XPromoBottomBar": "display:none",
         "[class*='line-clamp']": "-webkit-line-clamp: unset"
+      },
+      "initialGlobalAttributes.add": {
+        "a.inset-0": {
+          "style": "inset: unset;"
+        }
       }
     },
     {
@@ -11936,6 +11941,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-04T15:56:28.517Z",
+  "buildinConfigUpdatedAt": "2024-11-05T02:37:53.103Z",
   "latestVersion": "1.10.6"
 }
