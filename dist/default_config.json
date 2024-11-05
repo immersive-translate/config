@@ -5536,7 +5536,9 @@
       "id": "pkg",
       "matches": "https://pkg.go.dev/*",
       "selectors": [
-        "div.UnitDetails p"
+        "div.UnitDetails",
+        "#_nav_group_README",
+        "p.SearchSnippet-infoLabel"
       ]
     },
     {
@@ -11941,6 +11943,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-05T02:37:53.103Z",
+  "buildinConfigUpdatedAt": "2024-11-05T06:43:53.070Z",
   "latestVersion": "1.10.6"
 }
