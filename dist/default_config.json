@@ -2692,6 +2692,9 @@
       "extraBlockSelectors.add": [
         "[data-testid=\"tweetText\"] div.r-6koalj"
       ],
+      "injectedCss.add": [
+        ".r-h9hxbl{width:unset;}"
+      ],
       "extraInlineSelectors": [
         "[data-testid=\"tweetText\"] div.r-xoduu5",
         "[data-testid=\"tweetText\"] span",
@@ -11989,6 +11992,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-05T12:08:58.000Z",
+  "buildinConfigUpdatedAt": "2024-11-05T14:36:31.625Z",
   "latestVersion": "1.11.1"
 }
