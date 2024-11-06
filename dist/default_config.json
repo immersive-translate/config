@@ -345,7 +345,7 @@
     "https://www.rottentomatoes.com/[Rotten Tomatoes]",
     "https://fmovies24.to/[FMovies]",
     "https://bflixhd.to/[Bflixhd]",
-    "https://aniwatch.to/[AniWatch]",
+    "https://hianime.to/[Hianime]",
     "https://www.iq.com/[iQIYI]",
     "https://www.youku.tv/[Youku]",
     "https://www.dailymotion.com/[Dailymotion]",
@@ -9385,10 +9385,10 @@
       }
     },
     {
-      "id": "aniwatch",
+      "id": "hianime",
       "matches": [
         "megacloud.tv",
-        "aniwatch.to",
+        "hianime.to",
         "9animetv.to"
       ],
       "excludeSelectors.add": [
@@ -12014,6 +12014,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-06T02:21:03.852Z",
+  "buildinConfigUpdatedAt": "2024-11-06T03:59:06.274Z",
   "latestVersion": "1.11.1"
 }
