@@ -11540,7 +11540,8 @@
     {
       "id": "longPage",
       "matches": [
-        "neuralnetworksanddeeplearning.com"
+        "neuralnetworksanddeeplearning.com",
+        "novel18.syosetu.com"
       ],
       "longBuildPageLength": 1000
     },
@@ -12021,6 +12022,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-06T10:29:40.320Z",
+  "buildinConfigUpdatedAt": "2024-11-06T14:48:10.947Z",
   "latestVersion": "1.11.1"
 }
