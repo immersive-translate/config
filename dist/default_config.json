@@ -394,7 +394,8 @@
     "https://www.ganjingworld.com[Ganjingworld]",
     "https://app.lecturio.com[Lecturio]",
     "https://www.gagaoolala.com[Gagaoolala]",
-    "https://curiositystream.com[curiositystream]"
+    "https://curiositystream.com[curiositystream]",
+    "https://tv.nrk.no[NRK TV]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -10977,6 +10978,27 @@
       }
     },
     {
+      "id": "nrk",
+      "matches": "tv.nrk.no",
+      "excludeSelectors.add": [
+        "tv-player[data-testid=\"tv-player\"]",
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        "tv-player[data-testid=\"tv-player\"] *",
+        "#immersive-translate-caption-window *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": "\\.webvtt$",
+        "videoPlayerSelector": "video",
+        "quickButtonRule": {
+          "appendSelector": "#player-controls > div",
+          "insertBeforeSelector": "button[type=\"settings-button\"]"
+        }
+      }
+    },
+    {
       "id": "mediadelivery",
       "matches": "iframe.mediadelivery.net",
       "excludeSelectors.add": [
@@ -11992,6 +12014,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-05T14:36:31.625Z",
+  "buildinConfigUpdatedAt": "2024-11-06T02:21:03.852Z",
   "latestVersion": "1.11.1"
 }
