@@ -12012,8 +12012,15 @@
       "injectedCss.add": [
         ".immersive-translate-target-wrapper, .immersive-translate-target-translation-block-wrapper, .immersive-translate-target-inner span { opacity: 1 !important; }"
       ]
+    },
+    {
+      "id": "mocharymethod.com",
+      "matches": "beta.mocharymethod.com",
+      "additionalExcludeSelectors.remove": [
+        "h4 br"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-06T03:59:06.274Z",
+  "buildinConfigUpdatedAt": "2024-11-06T10:12:17.474Z",
   "latestVersion": "1.11.1"
 }
