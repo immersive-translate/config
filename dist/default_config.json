@@ -11541,7 +11541,7 @@
       "id": "longPage",
       "matches": [
         "neuralnetworksanddeeplearning.com",
-        "novel18.syosetu.com"
+        "www.alphapolis.co.jp"
       ],
       "longBuildPageLength": 1000
     },
@@ -12022,6 +12022,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-06T14:48:10.947Z",
+  "buildinConfigUpdatedAt": "2024-11-06T14:59:12.226Z",
   "latestVersion": "1.11.1"
 }
