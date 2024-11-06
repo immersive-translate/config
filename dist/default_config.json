@@ -11121,7 +11121,7 @@
       "id": "bsky.app",
       "matches": "https://bsky.app",
       "selectors": [
-        "[data-testid*=post] [data-word-wrap]"
+        "[data-testid*=postText]"
       ],
       "isTranslateTitle": false
     },
@@ -12021,6 +12021,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-06T10:12:17.474Z",
+  "buildinConfigUpdatedAt": "2024-11-06T10:29:40.320Z",
   "latestVersion": "1.11.1"
 }
