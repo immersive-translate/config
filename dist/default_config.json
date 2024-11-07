@@ -11186,7 +11186,11 @@
       "id": "bsky.app",
       "matches": "https://bsky.app",
       "selectors": [
-        "[data-testid*=postText]"
+        "[data-testid*=postText]",
+        "[data-testid*=postThread]"
+      ],
+      "excludeSelectors.add": [
+        "[aria-label='kilgoretrout.bsky.social']"
       ],
       "isTranslateTitle": false
     },
@@ -12103,6 +12107,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-07T09:14:22.535Z",
+  "buildinConfigUpdatedAt": "2024-11-07T10:28:43.055Z",
   "latestVersion": "1.11.1"
 }
