@@ -397,7 +397,8 @@
     "https://app.lecturio.com[Lecturio]",
     "https://www.gagaoolala.com[Gagaoolala]",
     "https://curiositystream.com[curiositystream]",
-    "https://tv.nrk.no[NRK TV]"
+    "https://tv.nrk.no[NRK TV]",
+    "https://tubitv.com[TUBI]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -8868,6 +8869,33 @@
       }
     },
     {
+      "id": "tubitv",
+      "matches": [
+        "tubitv.com"
+      ],
+      "excludeSelectors.add": [
+        ".vjs-text-track-display"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".vjs-text-track-display *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": "\\.srt$",
+        "hookType": "fetch",
+        "quickButtonRule": {
+          "appendSelector": ".T8nOy",
+          "insertBeforeSelector": "#languageArea"
+        },
+        "attachRule": {
+          "appendSelector": "div[data-id=\"hls\"]",
+          "injectedGlobalCSS": [
+            "div[data-id=\"captionsComponent\"] { display: none !important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "domestika",
       "matches": [
         "www.domestika.org"
@@ -12075,6 +12103,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-07T06:39:51.145Z",
+  "buildinConfigUpdatedAt": "2024-11-07T09:14:22.535Z",
   "latestVersion": "1.11.1"
 }
