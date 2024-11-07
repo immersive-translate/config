@@ -8379,7 +8379,7 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          ".page-break img"
+          ".page-break img:not(.lazyloading)[src*=\"https://c2.manhwatop.com\"]"
         ],
         "loadingSelectors": [
           ".page-break"
@@ -12107,6 +12107,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-07T10:39:09.674Z",
+  "buildinConfigUpdatedAt": "2024-11-07T11:01:03.238Z",
   "latestVersion": "1.11.1"
 }
