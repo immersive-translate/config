@@ -8287,6 +8287,25 @@
       }
     },
     {
+      "id": "manga18fx",
+      "matches": [
+        "manga18fx.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".page-break img"
+        ],
+        "injectedCss": ".imt-image-status {top:10%!important;}",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "manhwa-raw",
       "matches": [
         "manhwa-raw.com"
@@ -12056,6 +12075,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-07T06:30:27.186Z",
+  "buildinConfigUpdatedAt": "2024-11-07T06:39:51.145Z",
   "latestVersion": "1.11.1"
 }
