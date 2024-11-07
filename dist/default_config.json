@@ -11190,7 +11190,7 @@
         "[data-testid*=postThread]"
       ],
       "excludeSelectors.add": [
-        "[aria-label='kilgoretrout.bsky.social']"
+        "[aria-label]"
       ],
       "isTranslateTitle": false
     },
@@ -12107,6 +12107,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-07T10:28:43.055Z",
+  "buildinConfigUpdatedAt": "2024-11-07T10:39:09.674Z",
   "latestVersion": "1.11.1"
 }
