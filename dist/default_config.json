@@ -5477,7 +5477,9 @@
         "[name=pubdate]",
         "[data-ta^=Summary-]",
         "app-summary-authors",
-        ".search-text"
+        ".search-text",
+        ".mat-drawer-inner-container",
+        "[class*='sidenav-panel']"
       ],
       "mutationObserverContainerSelectors": [
         "[data-ta='summary-record-title-link']",
@@ -12107,6 +12109,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-07T11:01:03.238Z",
+  "buildinConfigUpdatedAt": "2024-11-07T11:09:15.975Z",
   "latestVersion": "1.11.1"
 }
