@@ -297,7 +297,8 @@
     "https://klz9.com[KL][chrome,firefox]",
     "https://www.mangakoinu.com/[Mangakoinu][chrome,firefox,safari]",
     "https://www.sololevelingmangafree.com/[Sololevelingmangafree][chrome,firefox,safari]",
-    "https://syosetu.si/[Syosetu][chrome,firefox,safari]"
+    "https://syosetu.si/[Syosetu][chrome,firefox,safari]",
+    "https://comick.io/[Comick][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -8271,6 +8272,24 @@
       }
     },
     {
+      "id": "comick",
+      "matches": [
+        "comick.io"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".reader-container divid*=\"page\"] img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "manhwa-raw",
       "matches": [
         "manhwa-raw.com"
@@ -12040,6 +12059,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-07T02:39:41.792Z",
+  "buildinConfigUpdatedAt": "2024-11-07T06:26:54.101Z",
   "latestVersion": "1.11.1"
 }
