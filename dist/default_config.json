@@ -12088,8 +12088,16 @@
       "additionalExcludeSelectors.remove": [
         "h4 br"
       ]
+    },
+    {
+      "id": "appsumo",
+      "matches": "appsumo.com",
+      "excludeSelectors": [],
+      "globalStyles": {
+        "[class*='line-clamp']": "-webkit-line-clamp: unset"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-07T11:32:27.967Z",
+  "buildinConfigUpdatedAt": "2024-11-08T04:20:32.081Z",
   "latestVersion": "1.11.1"
 }
