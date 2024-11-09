@@ -1924,6 +1924,7 @@
       "div[class^=token-line]",
       "#liuchan-window > .liuchan-container > *",
       ".material-icons",
+      "material-icon",
       "i.fa",
       "i[class^=fa-]",
       ".notranslate",
@@ -12104,6 +12105,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-08T11:45:09.031Z",
+  "buildinConfigUpdatedAt": "2024-11-09T13:34:42.418Z",
   "latestVersion": "1.11.1"
 }
