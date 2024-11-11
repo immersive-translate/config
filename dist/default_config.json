@@ -11223,7 +11223,8 @@
         "s.hoothin.com",
         "feedback.featurebase.app",
         "typefully.com",
-        "*.affine.*"
+        "*.affine.*",
+        "*.shopify.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -12106,6 +12107,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-11T01:11:58.714Z",
+  "buildinConfigUpdatedAt": "2024-11-11T11:48:59.955Z",
   "latestVersion": "1.11.1"
 }
