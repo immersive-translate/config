@@ -11600,7 +11600,8 @@
       "id": "longPage",
       "matches": [
         "neuralnetworksanddeeplearning.com",
-        "www.alphapolis.co.jp"
+        "www.alphapolis.co.jp",
+        "sive.rs"
       ],
       "longBuildPageLength": 1000
     },
@@ -12105,6 +12106,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-09T13:34:42.418Z",
+  "buildinConfigUpdatedAt": "2024-11-11T01:11:58.714Z",
   "latestVersion": "1.11.1"
 }
