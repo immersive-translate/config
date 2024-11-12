@@ -5491,13 +5491,15 @@
       "matches": [
         "https://www.webofscience.com/*",
         "https://webofscience.clarivate.*/*",
-        "www-webofscience-com-*.*"
+        "www-webofscience-com-*.*",
+        "webofscience-clarivate*.*"
       ],
       "globalStyles": {
         ".abstract": "height:auto !important;",
         ".show-more-lines": "height:unset !important;"
       },
       "excludeSelectors.add": [
+        "app-custom-breadcrumbs",
         ".summary-left-panel",
         ".authors",
         "app-full-record-keywords mark",
@@ -12135,6 +12137,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-12T10:37:19.920Z",
+  "buildinConfigUpdatedAt": "2024-11-12T14:40:17.844Z",
   "latestVersion": "1.11.1"
 }
