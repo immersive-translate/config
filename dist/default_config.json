@@ -397,7 +397,8 @@
     "https://www.gagaoolala.com[Gagaoolala]",
     "https://curiositystream.com[curiositystream]",
     "https://tv.nrk.no[NRK TV]",
-    "https://tubitv.com[TUBI]"
+    "https://tubitv.com[TUBI]",
+    "https://www.tiktok.com[TikTok]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -2889,6 +2890,33 @@
           "reportSelector": ".iOzk7[jsname='dsyhDe']",
           "mutationChangeDelay": 1000,
           "findParentBlockDepth": 5,
+          "enableTriggerTranslate": true
+        },
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] font.immersive-translate-target-wrapper {direction: rtl;}"
+        ]
+      }
+    },
+    {
+      "id": "tiktok-video",
+      "matches": [
+        "www.tiktok.com"
+      ],
+      "excludeSelectors.add": [
+        "[class*=\"DivVideoClosedCaptionContainer\"]"
+      ],
+      "mutationExcludeSelectors.add": [
+        "[class*=\"DivVideoClosedCaptionContainer\"] *"
+      ],
+      "subtitleRule.add": {
+        "type": "live",
+        "liveSubtitleRule": {
+          "containerSelector": "[class*=\"DivVideoClosedCaptionContainer\"]",
+          "textSelectors": [
+            "[class*=\"DivVideoClosedCaption \"]"
+          ],
+          "reportSelector": "[class*=\"DivLeftContainer\"]",
+          "mutationChangeDelay": 1000,
           "enableTriggerTranslate": true
         },
         "rtlInjectedCss": [
@@ -12107,6 +12135,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-11T11:48:59.955Z",
+  "buildinConfigUpdatedAt": "2024-11-12T10:37:19.920Z",
   "latestVersion": "1.11.1"
 }
