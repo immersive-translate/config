@@ -5492,7 +5492,8 @@
         "https://www.webofscience.com/*",
         "https://webofscience.clarivate.*/*",
         "www-webofscience-com-*.*",
-        "webofscience-clarivate*.*"
+        "webofscience-clarivate*.*",
+        "*.ustc.edu.*/*wos*"
       ],
       "globalStyles": {
         ".abstract": "height:auto !important;",
@@ -12137,6 +12138,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-13T02:57:23.088Z",
+  "buildinConfigUpdatedAt": "2024-11-13T03:07:18.335Z",
   "latestVersion": "1.11.1"
 }
