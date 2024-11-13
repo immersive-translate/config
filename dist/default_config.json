@@ -3775,7 +3775,6 @@
         "link[href^='https://substackcdn.com/bundle/'][rel=preload]"
       ],
       "excludeSelectors": [
-        "[style^=top]",
         ".publication-footer",
         ".subscribe-footer",
         ".main-menu",
@@ -3795,14 +3794,16 @@
         ".reader2-clamp-lines": "max-height: unset; -webkit-line-clamp: unset;",
         "[class*='clamp-']": "max-height: unset; -webkit-line-clamp:unset;",
         ".blurb-text": "max-height: unset;",
-        ".comment-body": "max-height: unset;"
+        ".comment-body": "max-height: unset;",
+        "[class*='_hideSelectio']": "overflow: scroll;"
       },
       "extraBlockSelectors.add": [
         ".reader2-post-title",
         ".tweet-link-top",
         ".tweet-link-bottom",
         ".expanded-link"
-      ]
+      ],
+      "richMoreWordPercent": 0.8
     },
     {
       "id": "seekingalpha",
@@ -12138,6 +12139,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-13T03:07:18.335Z",
+  "buildinConfigUpdatedAt": "2024-11-13T03:27:14.058Z",
   "latestVersion": "1.11.1"
 }
