@@ -6540,7 +6540,8 @@
       ],
       "excludeSelectors.add": [
         ".catalogue__list"
-      ]
+      ],
+      "richMoreWordPercent": "0.8"
     },
     {
       "id": "gitbook",
@@ -12154,6 +12155,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-13T03:51:24.287Z",
+  "buildinConfigUpdatedAt": "2024-11-13T06:10:57.403Z",
   "latestVersion": "1.11.1"
 }
