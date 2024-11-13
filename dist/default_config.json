@@ -1326,7 +1326,7 @@
   "generalRule": {
     "_comment": "",
     "longBuildDomLength": 3000,
-    "longBuildPageLength": 20,
+    "longBuildPageLength": 30,
     "repeatTranslateNum": 0,
     "detectTextBufferLength": 0,
     "smallCodeLength": 30,
@@ -12137,6 +12137,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-12T14:40:17.844Z",
+  "buildinConfigUpdatedAt": "2024-11-13T02:57:23.088Z",
   "latestVersion": "1.11.1"
 }
