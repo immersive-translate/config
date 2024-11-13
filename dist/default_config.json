@@ -3477,7 +3477,8 @@
         "yt-attributed-string > span",
         "ytd-notification-renderer .message",
         "#message",
-        ".yt_to_text_transcript_text"
+        ".yt_to_text_transcript_text",
+        "video-summary-content-view-model"
       ],
       "extraBlockSelectors.add": [
         "yt-formatted-string.ytd-transcript-segment-renderer",
@@ -12139,6 +12140,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-13T03:27:14.058Z",
+  "buildinConfigUpdatedAt": "2024-11-13T03:48:39.775Z",
   "latestVersion": "1.11.1"
 }
