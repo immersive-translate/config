@@ -10535,20 +10535,8 @@
         "type": "ebutt",
         "hookType": "fetch",
         "subtitleUrlRegExp": "iplayer/subtitles/.*.xml",
-        "loadingContainerSelector": ".player__container"
-      },
-      "subtitleRule.add_v.[1.7.3]": {
-        "videoSelector": "smp-toucan-player->smp-playback->video",
-        "attachRule": {
-          "appendSelector": "smp-toucan-player->smp-video-layout->smp-subtitles",
-          "injectedGlobalCSSContainer": "smp-toucan-player->smp-video-layout->smp-subtitles",
-          "injectedGlobalCSS": [
-            "div[lang] {display:none !important;}"
-          ],
-          "injectedCSS": [
-            ".imt-caption-window {bottom:15% !important;}"
-          ]
-        }
+        "loadingContainerSelector": ".player__container",
+        "appendSelector": "smp-toucan-player->smp-video-layout->smp-subtitles"
       }
     },
     {
@@ -12169,6 +12157,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-14T07:50:33.966Z",
+  "buildinConfigUpdatedAt": "2024-11-14T09:22:48.210Z",
   "latestVersion": "1.11.2"
 }
