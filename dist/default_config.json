@@ -5913,11 +5913,11 @@
       "matches": "https://www.perplexity.ai",
       "excludeMatches": [
         "https://www.perplexity.ai/hub/*",
-        "https://www.perplexity.ai/onboarding"
+        "https://www.perplexity.ai/onboarding",
+        "https://www.perplexity.ai/enterprise*"
       ],
       "globalStyles": {
-        ".line-clamp-1": "-webkit-line-clamp: unset !important;",
-        ".line-clamp-2": "-webkit-line-clamp: unset !important;"
+        "[class*=line-clamp]": "-webkit-line-clamp: unset !important;"
       },
       "mutationConfig.add": {
         "buildTimeout": 1000,
@@ -10375,7 +10375,8 @@
     {
       "id": "jove",
       "matches": [
-        "www.jove.com"
+        "www.jove.com",
+        "app.jove.com"
       ],
       "subtitleRule.add": {
         "type": "text_track",
@@ -12168,6 +12169,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-14T06:20:56.000Z",
+  "buildinConfigUpdatedAt": "2024-11-14T07:50:33.966Z",
   "latestVersion": "1.11.2"
 }
