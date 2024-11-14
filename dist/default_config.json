@@ -2698,7 +2698,7 @@
       "injectedCss.add": [
         ".r-h9hxbl{width:unset;}"
       ],
-      "likePreSelectors.add_v.[1.11.1]": [
+      "likePreSelectors.add_v.[1.11.2]": [
         "[data-testid=tweetText]"
       ],
       "isTransformPreTagNewLine": true,
@@ -12168,6 +12168,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-14T06:18:09.777Z",
-  "latestVersion": "1.11.1"
+  "buildinConfigUpdatedAt": "2024-11-14T06:21:11.652Z",
+  "latestVersion": "1.11.2"
 }
