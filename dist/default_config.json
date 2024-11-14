@@ -2666,6 +2666,7 @@
         "https://x.com/settings/account",
         "https://x.com/jobs/*"
       ],
+      "switchTranslateRestart": true,
       "additionalStayOriginalSelectors": [
         "[data-testid=\"tweetText\"] a",
         "[data-testid='UserDescription'] a",
@@ -2697,6 +2698,10 @@
       "injectedCss.add": [
         ".r-h9hxbl{width:unset;}"
       ],
+      "likePreSelectors.add_v.[1.11.1]": [
+        "[data-testid=tweetText]"
+      ],
+      "isTransformPreTagNewLine": true,
       "extraInlineSelectors": [
         "[data-testid=\"tweetText\"] div.r-xoduu5",
         "[data-testid=\"tweetText\"] span",
@@ -3321,13 +3326,13 @@
         "[data-pagelet=BizInboxMessengerMessageListContainer] span",
         "[data-pagelet=BizInboxContextCardDetail] span"
       ],
+      "excludeSelectors.add": [
+        "[data-ad-comet-preview=message] [role=button]"
+      ],
       "insertPosition": "afterend",
       "preWhitespaceDetectedTags": [
         "DIV",
         "SPAN"
-      ],
-      "excludeSelectors": [
-        "[role=button]"
       ],
       "translationClasses": [
         "immersive-translate-text"
@@ -3335,6 +3340,7 @@
       "injectedCss.add": [
         "._4ik4._4ik5 {max-height:unset!important;}"
       ],
+      "skipTrailTextRegex": "…",
       "detectParagraphLanguage": true
     },
     {
@@ -7419,6 +7425,7 @@
         "imageSelectors": [
           ".eAvsta_root img.G54Y0W_page"
         ],
+        "loadingStyle": "z-index: 9999;",
         "loadingSelectors": [
           "[data-testid='placeholder']"
         ]
@@ -11225,11 +11232,17 @@
       "matches": "https://bsky.app",
       "selectors": [
         "[data-testid*=postText]",
-        "[data-testid*=postThread]"
+        "[data-testid*=postThread]",
+        "[data-testid*=feedItem]"
       ],
       "excludeSelectors.add": [
         "[aria-label]"
       ],
+      "likePreSelectors.add_v.[1.11.2]": [
+        "[data-testid*=postThread] [data-word-wrap]",
+        "[data-testid*=feedItem] [data-word-wrap]"
+      ],
+      "isTransformPreTagNewLine": true,
       "isTranslateTitle": false
     },
     {
@@ -12155,6 +12168,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-13T06:10:57.403Z",
+  "buildinConfigUpdatedAt": "2024-11-14T06:18:09.777Z",
   "latestVersion": "1.11.1"
 }
