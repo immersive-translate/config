@@ -3453,7 +3453,8 @@
       "additionalExcludeSelectors.add": [
         ".ytp-caption-window-container",
         "text",
-        ".imt-caption-container"
+        ".imt-caption-container",
+        "ytd-button-renderer"
       ],
       "globalStyles": {
         "#video-title,h1.ytd-watch-metadata,.ytd-video-renderer": "-webkit-line-clamp: unset;max-height: unset;",
@@ -12158,6 +12159,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-15T09:39:26.154Z",
+  "buildinConfigUpdatedAt": "2024-11-15T14:38:10.155Z",
   "latestVersion": "1.11.2"
 }
