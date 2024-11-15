@@ -3458,7 +3458,7 @@
       "globalStyles": {
         "#video-title": "-webkit-line-clamp: unset;max-height: unset;",
         "h1.ytd-watch-metadata": "-webkit-line-clamp: unset;max-height: unset;",
-        "yt-formatted-string#video-title": "-webkit-line-clamp: unset;max-height: unset;",
+        "yt-formatted-string#video-title,.ShortsLockupViewModelHostOutsideMetadataTitle": "-webkit-line-clamp: unset;max-height: unset;",
         "ytd-expander.ytd-comment-renderer": "--ytd-expander-max-lines: 1000;"
       },
       "injectedCss": [
@@ -3484,7 +3484,8 @@
         "ytd-notification-renderer .message",
         "#message",
         ".yt_to_text_transcript_text",
-        "video-summary-content-view-model"
+        "video-summary-content-view-model",
+        ".yt-core-attributed-string"
       ],
       "extraBlockSelectors.add": [
         "yt-formatted-string.ytd-transcript-segment-renderer",
@@ -12158,6 +12159,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-15T03:44:16.706Z",
+  "buildinConfigUpdatedAt": "2024-11-15T09:25:19.108Z",
   "latestVersion": "1.11.2"
 }
