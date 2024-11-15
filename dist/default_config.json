@@ -3456,8 +3456,7 @@
         ".imt-caption-container"
       ],
       "globalStyles": {
-        "#video-title": "-webkit-line-clamp: unset;max-height: unset;",
-        "h1.ytd-watch-metadata": "-webkit-line-clamp: unset;max-height: unset;",
+        "#video-title,h1.ytd-watch-metadata,.ytd-video-renderer": "-webkit-line-clamp: unset;max-height: unset;",
         "yt-formatted-string#video-title,.ShortsLockupViewModelHostOutsideMetadataTitle": "-webkit-line-clamp: unset;max-height: unset;",
         "ytd-expander.ytd-comment-renderer": "--ytd-expander-max-lines: 1000;"
       },
@@ -12159,6 +12158,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-15T09:25:19.108Z",
+  "buildinConfigUpdatedAt": "2024-11-15T09:39:26.154Z",
   "latestVersion": "1.11.2"
 }
