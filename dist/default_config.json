@@ -9001,7 +9001,8 @@
         "type": "text_track_dynamic",
         "videoPlayerSelector": "video[data-pdk-active-track]",
         "quickButtonRule": {
-          "appendSelector": ".tpBottomFloatRegion > [class='tpRow']"
+          "appendSelector": ".tpBottomFloatRegion > [class='tpRow']",
+          "injectCSS": ".imt-quick-subtitle-pop-content { max-height: 150px !important; }"
         },
         "injectedCss": [
           ".ttr-left:first-child {margin-bottom:1.5em}",
@@ -12157,6 +12158,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-14T09:22:48.210Z",
+  "buildinConfigUpdatedAt": "2024-11-15T03:44:16.706Z",
   "latestVersion": "1.11.2"
 }
