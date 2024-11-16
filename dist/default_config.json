@@ -2542,7 +2542,7 @@
         "bugs.gentoo.org",
         "lwn.net/Articles/*",
         "docs.haproxy.org",
-        "man.freebsd.org",
+        "*.freebsd.org",
         "www.oreilly.com/openbook/opensources/book/*",
         "gamefaqs.gamespot.com",
         "bugs.java.com/bugdatabase/view_bug.do",
@@ -12159,6 +12159,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-16T04:04:42.000Z",
+  "buildinConfigUpdatedAt": "2024-11-16T10:59:33.172Z",
   "latestVersion": "1.11.4"
 }
