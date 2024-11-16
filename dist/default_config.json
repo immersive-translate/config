@@ -420,7 +420,7 @@
     "*.medium.com",
     "news.ycombinator.com"
   ],
-  "spVersion": "1.11.2",
+  "spVersion": "1.11.3",
   "ispVersion": "1.0.5",
   "gspVersion": "1.0.6",
   "modifiedBySystem": false,
@@ -2698,7 +2698,7 @@
       "injectedCss.add": [
         ".r-h9hxbl{width:unset;}"
       ],
-      "likePreSelectors.add_v.[1.11.4]": [
+      "likePreSelectors.add_v.[1.11.5]": [
         "[data-testid=tweetText]"
       ],
       "isTransformPreTagNewLine": true,
@@ -11229,7 +11229,7 @@
       "excludeSelectors.add": [
         "[aria-label]"
       ],
-      "likePreSelectors.add_v.[1.11.4]": [
+      "likePreSelectors.add_v.[1.11.5]": [
         "[data-testid*=postThread] [data-word-wrap]",
         "[data-testid*=feedItem] [data-word-wrap]"
       ],
@@ -12159,6 +12159,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-16T03:55:43.000Z",
-  "latestVersion": "1.11.3"
+  "buildinConfigUpdatedAt": "2024-11-16T04:05:00.058Z",
+  "latestVersion": "1.11.4"
 }
