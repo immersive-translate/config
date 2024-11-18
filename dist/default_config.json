@@ -12165,8 +12165,19 @@
       "globalStyles": {
         "[class*='line-clamp']": "-webkit-line-clamp: unset"
       }
+    },
+    {
+      "id": "bb-rich",
+      "selectorMatches": "bb-rich-text-editor",
+      "atomicBlockSelectors.add": [
+        ".bb-editor-root *"
+      ],
+      "injectedCss.add": [
+        "bb-rich-text-editor font br {display:none;}",
+        "[imt-state=dual] bb-rich-text-editor .immersive-translate-target-translation-block-wrapper {margin-top:-10px!important;}"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-18T07:24:55.681Z",
+  "buildinConfigUpdatedAt": "2024-11-18T07:26:16.446Z",
   "latestVersion": "1.11.5"
 }
