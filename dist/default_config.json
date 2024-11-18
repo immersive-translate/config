@@ -11606,7 +11606,7 @@
         ".font-display .prose *"
       ],
       "globalStyles.add": {
-        ".swiper,.rah-static": "height:unset;"
+        ".swiper,.rah-static,[class*=max-h],.line-clamp-1": "overflow:scroll;-webkit-line-clamp:unset;"
       }
     },
     {
@@ -12178,6 +12178,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-18T07:26:16.446Z",
+  "buildinConfigUpdatedAt": "2024-11-18T07:50:38.248Z",
   "latestVersion": "1.11.5"
 }
