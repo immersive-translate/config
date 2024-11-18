@@ -3882,7 +3882,9 @@
         ".article_title_link,.library_article_text h4,.gadget_overview_article_title,.article_magazine_title_link,.reader_pane_view_style_2 .column_view_title": "-webkit-line-clamp: unset;max-height: unset;",
         ".article_tile_content_wraper,div.article_tile": "overflow:auto",
         ".article_header_title": "white-space:normal;max-height: unset;",
-        ".article_header_title span": "display:flex !important;flex-direction: column;"
+        ".article_header_title span": "display:flex !important;flex-direction: column;",
+        ".ar.article_no_thumbnail": "height:unset;",
+        ".view_style_2 #reader_pane .ar .article_header_text .column_view_info": "position:relative!important;"
       }
     },
     {
@@ -12178,6 +12180,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-18T07:54:28.737Z",
+  "buildinConfigUpdatedAt": "2024-11-18T16:23:43.751Z",
   "latestVersion": "1.11.5"
 }
