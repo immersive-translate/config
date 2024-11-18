@@ -2587,6 +2587,13 @@
       ]
     },
     {
+      "id": "xiapi",
+      "matches": "*.xiapibuy.*",
+      "globalStyles.add": {
+        ".WBVL_7,.tauwWr.jqRqhn": "-webkit-line-clamp:unset;max-height:unset;height:unset;"
+      }
+    },
+    {
       "id": "fanbox",
       "matches": [
         "*.fanbox.cc"
@@ -12159,6 +12166,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-17T08:59:17.073Z",
+  "buildinConfigUpdatedAt": "2024-11-18T02:47:42.782Z",
   "latestVersion": "1.11.4"
 }
