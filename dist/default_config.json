@@ -1475,7 +1475,7 @@
       "queryIntervalTime": 1000,
       "errorTimes": 3,
       "errorInterval": 5000,
-      "enableImageTranslation": "pro_beta",
+      "enableImageTranslation": "pro",
       "toolsDelayTime": 1500,
       "latinLang": [
         "en",
@@ -12166,6 +12166,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-18T02:47:42.782Z",
+  "buildinConfigUpdatedAt": "2024-11-18T03:09:59.465Z",
   "latestVersion": "1.11.4"
 }
