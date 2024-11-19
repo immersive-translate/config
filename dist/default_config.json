@@ -3328,11 +3328,11 @@
         "span[lang]",
         "[data-pagelet=BizInboxMessengerMessageListContainer] span",
         "[data-pagelet=BizInboxContextCardDetail] span",
-        "[data-type=container][data-mcomponent=MContainer].m.displayed .native-text"
+        "[data-type=container][data-mcomponent=MContainer][class='m displayed'] .native-text",
+        "[data-mcomponent=ServerTextArea] .native-text"
       ],
       "excludeSelectors.add": [
         "[data-ad-comet-preview=message] [role=button]",
-        "[data-type=container][data-mcomponent=MContainer].m.displayed > div:first-child",
         "[role=button]"
       ],
       "translationMode": "translation",
@@ -12249,6 +12249,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-19T11:13:41.117Z",
+  "buildinConfigUpdatedAt": "2024-11-19T11:47:58.692Z",
   "latestVersion": "1.11.5"
 }
