@@ -12180,27 +12180,51 @@
       ]
     },
     {
-      "id": "xianqihaotianmi",
-      "matches": "www.xianqihaotianmi.org",
+      "id": "novel-site",
+      "matches": [
+        "www.piaotia.com",
+        "www.zhenhunxiaoshuo.com",
+        "www.hetushu.com"
+      ],
       "injectedCss.add": [
-        ".list-charts li { white-space: normal !important; overflow: visible !important; }"
+        ".centent ul { display: flex; }",
+        ".centent ul li { height: unset !important; float: none !important; }",
+        "article.excerpt { white-space: normal !important; overflow: visible !important; }",
+        "#dir dd { white-space: normal !important; overflow: visible !important; }"
       ]
     },
     {
-      "id": "piaotia",
-      "matches": "www.piaotia.com",
+      "id": "xianqihaotianmi",
+      "matches": "www.xianqihaotianmi.org",
       "injectedCss.add": [
-        ".centent ul li { height: unset !important; }"
+        ".list-charts { display: flex; flex-wrap: wrap; }",
+        ".list-charts li { white-space: normal !important; overflow: visible !important; }"
       ]
     },
     {
       "id": "sobqg",
       "matches": "www.sobqg.com/book/*",
       "injectedCss.add": [
+        "#volumes { display: flex; flex-wrap: wrap; }",
         "a.ell { white-space: normal !important; overflow: visible !important; }"
+      ]
+    },
+    {
+      "id": "luminousfox",
+      "matches": "www.luminousfox.com/book/*",
+      "injectedCss.add": [
+        "#detail_chapter .box_content ul li { height: unset !important; overflow: visible !important; }"
+      ]
+    },
+    {
+      "id": "doupocangqiong",
+      "matches": "www.doupocangqiong.org",
+      "injectedCss.add": [
+        "#play_0 ul { display: grid; grid-template-columns: repeat(3, 1fr); }",
+        "#play_0 ul li { height: unset !important; }"
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-19T03:24:31.632Z",
+  "buildinConfigUpdatedAt": "2024-11-19T06:50:16.795Z",
   "latestVersion": "1.11.5"
 }
