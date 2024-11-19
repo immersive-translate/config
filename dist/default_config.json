@@ -12206,7 +12206,12 @@
       "matches": "www.sobqg.com/book/*",
       "injectedCss.add": [
         "#volumes { display: flex; flex-wrap: wrap; }",
-        "a.ell { white-space: normal !important; overflow: visible !important; }"
+        "a.ell { white-space: normal !important; overflow: visible !important; }",
+        "#hot .g_book > a > h3 { white-space: normal; overflow: visible; max-height: none; -webkit-line-clamp: none; }",
+        "#hot .g_book { height: 330px; }"
+      ],
+      "additionalExcludeSelectors.add": [
+        "#hot .g_book > span"
       ]
     },
     {
@@ -12225,6 +12230,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-19T06:50:16.795Z",
+  "buildinConfigUpdatedAt": "2024-11-19T08:41:43.479Z",
   "latestVersion": "1.11.5"
 }
