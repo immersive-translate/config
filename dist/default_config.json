@@ -12178,8 +12178,22 @@
         "bb-rich-text-editor font br {display:none;}",
         "[imt-state=dual] bb-rich-text-editor .immersive-translate-target-translation-block-wrapper {margin-top:-10px!important;}"
       ]
+    },
+    {
+      "id": "xianqihaotianmi",
+      "matches": "www.xianqihaotianmi.org",
+      "injectedCss.add": [
+        ".list-charts li { white-space: normal !important; overflow: visible !important; }"
+      ]
+    },
+    {
+      "id": "piaotia",
+      "matches": "www.piaotia.com",
+      "injectedCss.add": [
+        ".centent ul li { height: unset !important; }"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-18T16:23:43.751Z",
+  "buildinConfigUpdatedAt": "2024-11-19T03:00:36.773Z",
   "latestVersion": "1.11.5"
 }
