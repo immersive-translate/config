@@ -12192,8 +12192,15 @@
       "injectedCss.add": [
         ".centent ul li { height: unset !important; }"
       ]
+    },
+    {
+      "id": "sobqg",
+      "matches": "www.sobqg.com/book/*",
+      "injectedCss.add": [
+        "a.ell { white-space: normal !important; overflow: visible !important; }"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-19T03:00:36.773Z",
+  "buildinConfigUpdatedAt": "2024-11-19T03:24:31.632Z",
   "latestVersion": "1.11.5"
 }
