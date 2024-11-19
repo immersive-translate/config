@@ -4003,8 +4003,10 @@
       "excludeSelectors": [
         ".jHAG3.XG5Jd",
         ".OZZZK",
-        ".lDdSm"
-      ]
+        ".lDdSm",
+        ".ZfoST.VlT6S.azUpZ"
+      ],
+      "translationMode": "translation"
     },
     {
       "id": "producthunt",
@@ -12249,6 +12251,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-19T11:47:58.692Z",
+  "buildinConfigUpdatedAt": "2024-11-19T15:20:03.454Z",
   "latestVersion": "1.11.5"
 }
