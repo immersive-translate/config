@@ -6608,16 +6608,16 @@
         "i",
         "button"
       ],
-      "matches": [
-        "www.kaggle.com"
-      ],
+      "matches": "www.kaggle.com",
       "excludeSelectors.add": [
         ".sc-kHItYk.kCjSZT",
         ".sc-hagvSa.guBIfV",
         ".sc-jhZTHU.btgPPn"
       ],
       "injectedCss.add": [
-        ".km-listitem--large,.erdMHP {height:unset !important;}"
+        ".km-listitem--large,.erdMHP {height:unset !important;}",
+        "[role=listitem] {overflow:scroll;}",
+        "[role=listitem] div {-webkit-line-clamp:unset;}"
       ]
     },
     {
@@ -12278,6 +12278,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-20T12:12:08.482Z",
+  "buildinConfigUpdatedAt": "2024-11-20T14:48:14.562Z",
   "latestVersion": "1.11.5"
 }
