@@ -6602,10 +6602,19 @@
     },
     {
       "id": "kaggle",
-      "matches": "www.kaggle.com",
       "excludeTags": [
         "i",
         "button"
+      ],
+      "matches": [
+        "www.kaggle.com"
+      ],
+      "excludeSelectors.add": [
+        ".sc-kHItYk.kCjSZT",
+        ".sc-hagvSa.guBIfV"
+      ],
+      "injectedCss.add": [
+        ".km-listitem--large,.erdMHP {height:unset !important;}"
       ]
     },
     {
@@ -12251,6 +12260,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-20T03:59:02.480Z",
+  "buildinConfigUpdatedAt": "2024-11-20T06:48:27.733Z",
   "latestVersion": "1.11.5"
 }
