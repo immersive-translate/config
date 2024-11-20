@@ -805,7 +805,7 @@
     },
     "ai": {
       "env": {
-        "html_only": " if the text contains an html tag, keep it.",
+        "html_only": ", if the text contains html tags, please consider after translate, where the tags should be in translated result, meanwhile keep the result fluently.",
         "imt_source_field": "text",
         "imt_trans_field": "text",
         "imt_sub_source_field": "text",
@@ -12251,6 +12251,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-19T15:20:03.454Z",
+  "buildinConfigUpdatedAt": "2024-11-20T03:59:02.480Z",
   "latestVersion": "1.11.5"
 }
