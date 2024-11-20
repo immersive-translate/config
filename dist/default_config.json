@@ -2547,7 +2547,8 @@
         "www.oreilly.com/openbook/opensources/book/*",
         "gamefaqs.gamespot.com",
         "bugs.java.com/bugdatabase/view_bug.do",
-        "rachelsenglish.com"
+        "rachelsenglish.com",
+        "privatter.net"
       ],
       "isTransformPreTagNewLine": true,
       "longBuildPageLength": 1000
@@ -12277,6 +12278,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-20T09:18:08.707Z",
+  "buildinConfigUpdatedAt": "2024-11-20T12:12:08.482Z",
   "latestVersion": "1.11.5"
 }
