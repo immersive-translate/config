@@ -6611,7 +6611,8 @@
       ],
       "excludeSelectors.add": [
         ".sc-kHItYk.kCjSZT",
-        ".sc-hagvSa.guBIfV"
+        ".sc-hagvSa.guBIfV",
+        ".sc-jhZTHU.btgPPn"
       ],
       "injectedCss.add": [
         ".km-listitem--large,.erdMHP {height:unset !important;}"
@@ -12260,6 +12261,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-20T06:48:27.733Z",
+  "buildinConfigUpdatedAt": "2024-11-20T06:49:36.587Z",
   "latestVersion": "1.11.5"
 }
