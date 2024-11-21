@@ -2339,7 +2339,8 @@
         "#side-bar",
         "h1#side-bar-title",
         "#tool",
-        ".Code"
+        ".Code",
+        "[default-translate]"
       ],
       "bodyRule.add": {
         "enable": false
@@ -12319,6 +12320,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-21T06:59:15.788Z",
+  "buildinConfigUpdatedAt": "2024-11-21T07:12:09.997Z",
   "latestVersion": "1.11.5"
 }
