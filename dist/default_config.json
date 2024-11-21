@@ -2793,6 +2793,9 @@
         "type": "subsrt",
         "subsrtFormat": "vtt",
         "hookType": "xhr",
+        "injectedCss": [
+          ".video-js .vjs-text-track-display .vjs-text-track-cue > div { white-space: unset !important; }"
+        ],
         "subtitleUrlRegExp": "rec/play/vtt",
         "quickButtonRule": {
           "appendSelector": ".vjs-extend-control",
@@ -2801,13 +2804,7 @@
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window { direction: rtl; }"
-        ],
-        "attachRule": {
-          "appendSelector": ".player-view .video-js",
-          "injectedGlobalCSS": [
-            ".vjs-text-track-display {display:none!important;}"
-          ]
-        }
+        ]
       }
     },
     {
@@ -12322,6 +12319,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-21T07:48:44.977Z",
+  "buildinConfigUpdatedAt": "2024-11-21T10:06:51.892Z",
   "latestVersion": "1.11.5"
 }
