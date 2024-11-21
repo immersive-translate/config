@@ -3485,7 +3485,7 @@
         "ytd-button-renderer"
       ],
       "globalStyles": {
-        "#video-title,h1.ytd-watch-metadata,.ytd-video-renderer": "-webkit-line-clamp: unset;max-height: unset;",
+        "#video-title,h1.ytd-watch-metadata,.ytd-video-renderer,.yt-lockup-metadata-view-model-wiz__title": "-webkit-line-clamp: unset;max-height: unset;",
         "yt-formatted-string#video-title,.ShortsLockupViewModelHostOutsideMetadataTitle": "-webkit-line-clamp: unset;max-height: unset;",
         "ytd-expander.ytd-comment-renderer": "--ytd-expander-max-lines: 1000;"
       },
@@ -12278,6 +12278,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-20T14:48:14.562Z",
+  "buildinConfigUpdatedAt": "2024-11-21T02:41:32.576Z",
   "latestVersion": "1.11.5"
 }
