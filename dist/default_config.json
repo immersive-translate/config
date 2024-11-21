@@ -12276,8 +12276,30 @@
         "#play_0 ul { display: grid; grid-template-columns: repeat(3, 1fr); }",
         "#play_0 ul li { height: unset !important; }"
       ]
+    },
+    {
+      "id": "proko",
+      "matches": "www.proko.com",
+      "additionalExcludeSelectors.add": [
+        ".proko-preview-statistic-wrap",
+        ".lesson-instructors-wrap",
+        ".proko-comments-item-title",
+        ".proko-comments-item-vote-wrap",
+        ".course-card__details .border-outline075",
+        ".category-subscribe"
+      ],
+      "likePreSelectors.add": [
+        "[prokoexpansiontextblock]"
+      ],
+      "isTransformPreTagNewLine": true,
+      "injectedCss.add": [
+        ".lesson-video-banner-skip,.lesson-title,.lesson-content,.course-card__details {height:unset!important;overflow:scroll;}",
+        "[class*='clamp'],.course-card__description{-webkit-line-clamp:unset!important;overflow:unset;}",
+        "proko-button{z-index:1;}",
+        ".truncate {white-space:unset;}"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-21T02:41:32.576Z",
+  "buildinConfigUpdatedAt": "2024-11-21T03:19:08.963Z",
   "latestVersion": "1.11.5"
 }
