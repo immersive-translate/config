@@ -8658,7 +8658,8 @@
     {
       "id": "mangapark",
       "matches": [
-        "mangapark.net"
+        "mangapark.net",
+        "mangapark.to"
       ],
       "imageRule.add": {
         "enable": true,
@@ -8666,6 +8667,7 @@
         "imageSelectors": [
           "div[data-name='image-show'] img"
         ],
+        "injectedCss": ".imt-image-status {top:5%!important;}",
         "platforms": [
           "chrome",
           "firefox",
@@ -12320,6 +12322,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-21T07:12:09.997Z",
+  "buildinConfigUpdatedAt": "2024-11-21T07:48:44.977Z",
   "latestVersion": "1.11.5"
 }
