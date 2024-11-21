@@ -399,7 +399,8 @@
     "https://tv.nrk.no[NRK TV]",
     "https://tubitv.com[TUBI]",
     "https://www.tiktok.com[TikTok]",
-    "https://www.barrons.com/[BARRONS]"
+    "https://www.barrons.com/[BARRONS]",
+    "https://courses.mitxonline.mit.edu/[MITXONLINE]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -10505,7 +10506,8 @@
     {
       "id": "edx",
       "matches": [
-        "*.edx.org"
+        "*.edx.org",
+        "courses.mitxonline.mit.edu"
       ],
       "excludeSelectors.add": [
         ".closed-captions",
@@ -12300,6 +12302,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-21T03:19:08.963Z",
+  "buildinConfigUpdatedAt": "2024-11-21T03:27:56.630Z",
   "latestVersion": "1.11.5"
 }
