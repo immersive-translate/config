@@ -927,7 +927,9 @@
     },
     "gemini.add_v.[1.5.7]": {
       "randomPrefix": "none",
-      "enableRichTranslate": false
+      "enableRichTranslate": false,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true
     },
     "claude": {
       "visible": true,
@@ -957,7 +959,9 @@
       "proModel": "claude-3-haiku-20240307",
       "proLimit": 10,
       "temperature": 0,
-      "enableRichTranslate": true
+      "enableRichTranslate": true,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true
     },
     "openai": {
       "visible": true,
@@ -1050,6 +1054,8 @@
       "assistantId": "common",
       "maxTextGroupLengthPerRequest": 1,
       "enableRichTranslate": true,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
       "provider": "pro"
     },
     "chatgpt": {
@@ -1169,7 +1175,9 @@
       "limit": 5,
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://api.lingyiwanwu.com/v1/chat/completions",
-      "enableRichTranslate": true
+      "enableRichTranslate": true,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true
     },
     "zhipu": {
       "extends": "ai",
@@ -1192,6 +1200,8 @@
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
       "enableRichTranslate": false,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
       "enableFallback": true
     }
   },
@@ -1856,18 +1866,22 @@
     "initialGlobalAttributes": {},
     "initialSelectorGlobalAttributes": {
       "header": {
+        "sideHead": "1",
         "default-translate": "no"
       },
       "footer:last-of-type": {
         "default-translate": "no"
       },
       "nav:last-of-type": {
+        "sideHead": "1",
         "default-translate": "no"
       },
       "nav": {
+        "sideHead": "1",
         "default-translate": "no"
       }
     },
+    "navHeadEnableTranslate": true,
     "selectors": [],
     "preWhitespaceDetectedTags": [
       "DIV",
@@ -3384,6 +3398,9 @@
         ".yt-core-attributed-string",
         ".title"
       ],
+      "skipDynamicMarkSelectors": [
+        "ytm-comment-replies-renderer"
+      ],
       "shareConfig": {
         "injectCss": false,
         "removeSelectors": [
@@ -3519,6 +3536,11 @@
         "yt-formatted-string.ytd-transcript-segment-renderer",
         ".caption-visual-line"
       ],
+      "likePreSelectors.add_v.[1.11.5]": [
+        "#description-inline-expander .yt-core-attributed-string span",
+        "#content-text span"
+      ],
+      "isTransformPreTagNewLine": true,
       "mutationExcludeSelectors.add": [
         ".imt-caption-container *"
       ],
@@ -12318,6 +12340,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-22T07:22:03.720Z",
+  "buildinConfigUpdatedAt": "2024-11-22T10:27:05.726Z",
   "latestVersion": "1.11.5"
 }
