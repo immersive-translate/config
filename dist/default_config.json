@@ -3530,7 +3530,10 @@
         "#message",
         ".yt_to_text_transcript_text",
         "video-summary-content-view-model",
-        ".yt-core-attributed-string"
+        ".yt-core-attributed-string",
+        "#title",
+        ".product-item-title",
+        ".product-item-price"
       ],
       "extraBlockSelectors.add": [
         "yt-formatted-string.ytd-transcript-segment-renderer",
@@ -12340,6 +12343,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-22T10:30:05.000Z",
+  "buildinConfigUpdatedAt": "2024-11-22T13:41:59.800Z",
   "latestVersion": "1.11.6"
 }
