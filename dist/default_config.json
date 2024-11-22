@@ -7935,6 +7935,7 @@
         "loadingSelectors": [
           "div"
         ],
+        "injectedCss": ".imt-image-status {z-index:2147483647 !important;}",
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
           "chrome",
@@ -12317,6 +12318,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-22T03:12:32.970Z",
+  "buildinConfigUpdatedAt": "2024-11-22T07:22:03.720Z",
   "latestVersion": "1.11.5"
 }
