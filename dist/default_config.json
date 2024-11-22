@@ -6931,8 +6931,13 @@
       "selectorMatches": [
         "#__docusaurus"
       ],
+      "initialSelectorGlobalAttributes.add": {
+        "aside": {
+          "sideHead": "1",
+          "default-translate": "no"
+        }
+      },
       "excludeSelectors.add": [
-        "aside",
         ".DocSearch-Modal"
       ]
     },
@@ -12343,6 +12348,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-22T13:41:59.800Z",
+  "buildinConfigUpdatedAt": "2024-11-22T14:13:14.766Z",
   "latestVersion": "1.11.6"
 }
