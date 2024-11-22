@@ -8025,9 +8025,7 @@
           ".page_image canvas",
           ".page_image img"
         ],
-        "loadingSelectors": [
-          "div"
-        ],
+        "injectedCss": ".imt-image-status { width: 30% !important; } #book > .imt-image-status { opacity: 0; } .imt-img-loading { background-image: none !important; }",
         "platforms": [
           "chrome",
           "firefox"
@@ -12319,6 +12317,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-21T10:06:51.892Z",
+  "buildinConfigUpdatedAt": "2024-11-22T03:12:32.970Z",
   "latestVersion": "1.11.5"
 }
