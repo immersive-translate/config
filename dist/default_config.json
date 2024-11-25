@@ -3539,7 +3539,7 @@
         "yt-formatted-string.ytd-transcript-segment-renderer",
         ".caption-visual-line"
       ],
-      "likePreSelectors.add_v.[1.11.6]": [
+      "likePreSelectors.add_v.[1.11.7]": [
         "#description-inline-expander .yt-core-attributed-string span",
         "#content-text span"
       ],
@@ -12348,6 +12348,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-24T13:57:54.213Z",
+  "buildinConfigUpdatedAt": "2024-11-25T02:08:59.741Z",
   "latestVersion": "1.11.6"
 }
