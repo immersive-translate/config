@@ -1887,7 +1887,8 @@
         "header"
       ],
       "side.selectors": [
-        "nav"
+        "nav",
+        "aside"
       ],
       "side.enableTranslate": true,
       "header.selectors": [
@@ -12347,6 +12348,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-25T08:09:50.178Z",
+  "buildinConfigUpdatedAt": "2024-11-25T09:00:47.285Z",
   "latestVersion": "1.11.6"
 }
