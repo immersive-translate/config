@@ -1866,22 +1866,35 @@
     "initialGlobalAttributes": {},
     "initialSelectorGlobalAttributes": {
       "header": {
-        "sideHead": "1",
+        "header": "1",
         "default-translate": "no"
       },
       "footer:last-of-type": {
         "default-translate": "no"
       },
       "nav:last-of-type": {
-        "sideHead": "1",
+        "side": "1",
         "default-translate": "no"
       },
       "nav": {
-        "sideHead": "1",
+        "side": "1",
         "default-translate": "no"
       }
     },
-    "navHeadEnableTranslate": true,
+    "preTranslateLimiter": {
+      "keys": [
+        "side",
+        "header"
+      ],
+      "side.selectors": [
+        "nav"
+      ],
+      "side.enableTranslate": true,
+      "header.selectors": [
+        "header"
+      ],
+      "header.enableTranslate": false
+    },
     "selectors": [],
     "preWhitespaceDetectedTags": [
       "DIV",
@@ -12334,6 +12347,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-25T02:48:46.910Z",
+  "buildinConfigUpdatedAt": "2024-11-25T08:09:50.178Z",
   "latestVersion": "1.11.6"
 }
