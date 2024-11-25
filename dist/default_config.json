@@ -10562,21 +10562,7 @@
         }
       },
       "subtitleRule.add_v.[1.7.1]": {
-        "generalSetting": {
-          "startKey": "start",
-          "endKey": "end",
-          "textKey": "text",
-          "timeDivisor": 1000
-        },
-        "attachRule": {
-          "appendSelector": ".video-wrapper",
-          "injectedGlobalCSS": [
-            ".closed-captions {display:none!important;}"
-          ],
-          "injectedCSS": [
-            ".imt-caption-window {margin-bottom: 0; bottom: 15%;}"
-          ]
-        }
+        "attachRule": null
       }
     },
     {
@@ -12348,6 +12334,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-25T02:08:59.741Z",
+  "buildinConfigUpdatedAt": "2024-11-25T02:48:46.910Z",
   "latestVersion": "1.11.6"
 }
