@@ -3168,6 +3168,10 @@
         ".crosspost-title",
         "div.md[id^=t3_]"
       ],
+      "excludeSelectors.add": [
+        "shreddit-comment-action-row",
+        "faceplate-hovercard"
+      ],
       "detectParagraphLanguage": true,
       "globalStyles": {
         "div.XPromoBottomBar": "display:none",
@@ -12350,6 +12354,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-26T13:42:11.345Z",
+  "buildinConfigUpdatedAt": "2024-11-26T14:40:47.247Z",
   "latestVersion": "1.11.7"
 }
