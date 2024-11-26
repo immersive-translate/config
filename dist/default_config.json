@@ -11324,6 +11324,9 @@
         "[data-testid*=postThread] [data-word-wrap]",
         "[data-testid*=feedItem] [data-word-wrap]"
       ],
+      "additionalInlineSelectors.add": [
+        "[data-testid*=postThread] [role=link]"
+      ],
       "isTransformPreTagNewLine": true,
       "isTranslateTitle": false
     },
@@ -12349,6 +12352,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-25T14:59:16.444Z",
+  "buildinConfigUpdatedAt": "2024-11-26T07:39:59.516Z",
   "latestVersion": "1.11.7"
 }
