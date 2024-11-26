@@ -8071,7 +8071,6 @@
           ".page_image canvas",
           ".page_image img"
         ],
-        "injectedCss": ".imt-image-status { width: 30% !important; } #book > .imt-image-status { opacity: 0; } .imt-img-loading { background-image: none !important; }",
         "platforms": [
           "chrome",
           "firefox"
@@ -8302,7 +8301,6 @@
           "img.page-image.js-page-image",
           "img[class$=\"_page\"]"
         ],
-        "injectedCss": ".align-right.imt-image-status {right: 0px;} .align-left.imt-image-status {left:20%;} .is-touch .imt-image-status {left:50%;right:unset;}",
         "opImageType": "append",
         "loadingSelectors": [
           "p"
@@ -12352,6 +12350,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-26T07:39:59.516Z",
+  "buildinConfigUpdatedAt": "2024-11-26T07:41:34.296Z",
   "latestVersion": "1.11.7"
 }
