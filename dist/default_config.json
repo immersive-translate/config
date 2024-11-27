@@ -12350,8 +12350,15 @@
         "proko-button{z-index:1;}",
         ".truncate {white-space:unset;}"
       ]
+    },
+    {
+      "id": "fix-header",
+      "selectorMatches": "article header",
+      "preTranslateLimiter.add": {
+        "header.enableTranslate": true
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-27T03:09:31.455Z",
+  "buildinConfigUpdatedAt": "2024-11-27T03:16:44.940Z",
   "latestVersion": "1.11.7"
 }
