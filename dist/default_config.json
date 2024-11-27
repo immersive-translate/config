@@ -11306,7 +11306,7 @@
         "[data-testid*=feedItem]"
       ],
       "excludeSelectors.add": [
-        "[aria-label]"
+        "a[aria-label]"
       ],
       "likePreSelectors.add_v.[1.11.5]": [
         "[data-testid*=postThread] [data-word-wrap]",
@@ -11316,6 +11316,12 @@
         "[data-testid*=postThread] a[role=link]",
         "[data-feed-context] button",
         "[data-feed-context] a[role=link]"
+      ],
+      "injectedCss.add": [
+        ".r-xoduu5 {display:inline!important;}"
+      ],
+      "extraBlockSelectors.remove": [
+        "button"
       ],
       "isTransformPreTagNewLine": true,
       "isTranslateTitle": false
@@ -12358,6 +12364,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-27T14:05:34.585Z",
+  "buildinConfigUpdatedAt": "2024-11-27T15:57:08.211Z",
   "latestVersion": "1.11.7"
 }
