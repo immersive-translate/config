@@ -2705,7 +2705,9 @@
         "https://x.com/i/premium_sign_up",
         "https://x.com/settings/subscription",
         "https://x.com/settings/account",
-        "https://x.com/jobs/*"
+        "https://x.com/jobs/*",
+        "https://x.com/*/tos*",
+        "https://x.com/*/privacy*"
       ],
       "switchTranslateRestart": true,
       "additionalStayOriginalSelectors": [
@@ -12359,6 +12361,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-27T03:16:44.940Z",
+  "buildinConfigUpdatedAt": "2024-11-27T07:55:47.653Z",
   "latestVersion": "1.11.7"
 }
