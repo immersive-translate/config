@@ -12341,12 +12341,21 @@
     },
     {
       "id": "fix-header",
-      "selectorMatches": "article header",
-      "preTranslateLimiter.add": {
+      "selectorMatches": [
+        "article header",
+        "header h1"
+      ],
+      "preTranslateLimiter.add_v.[1.11.8]": {
         "header.enableTranslate": true
-      }
+      },
+      "initialSelectorGlobalAttributes.remove": {
+        "header": {}
+      },
+      "extraBlockSelectors.add": [
+        ".btn"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-27T10:03:48.079Z",
+  "buildinConfigUpdatedAt": "2024-11-27T13:10:01.133Z",
   "latestVersion": "1.11.7"
 }
