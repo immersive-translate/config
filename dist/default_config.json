@@ -11313,7 +11313,9 @@
         "[data-testid*=feedItem] [data-word-wrap]"
       ],
       "additionalInlineSelectors.add": [
-        "[data-testid*=postThread] [role=link]"
+        "[data-testid*=postThread] a[role=link]",
+        "[data-feed-context] button",
+        "[data-feed-context] a[role=link]"
       ],
       "isTransformPreTagNewLine": true,
       "isTranslateTitle": false
@@ -12356,6 +12358,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-27T13:10:01.133Z",
+  "buildinConfigUpdatedAt": "2024-11-27T14:05:34.585Z",
   "latestVersion": "1.11.7"
 }
