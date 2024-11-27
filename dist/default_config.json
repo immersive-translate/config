@@ -7454,9 +7454,7 @@
     },
     {
       "id": "nebula",
-      "matches": [
-        "nebula.tv"
-      ],
+      "matches": "nebula.tv",
       "excludeSelectors.add": [
         "[data-subtitles-container='true']"
       ],
@@ -7469,11 +7467,11 @@
         "loadingContainerSelector": ".video-poster",
         "quickButtonRule": {
           "appendSelector": ".icon-spacing.css-4yh7a0",
-          "insertBeforeSelector": "#subtitles-toggle-button",
-          "ccEnableSelector": "#subtitles-toggle-button"
+          "insertBeforeSelector": "[aria-label=Subtitles]",
+          "ccEnableSelector": "[aria-label=Subtitles]"
         },
         "attachRule": {
-          "appendSelector": "#video-player-controls-wrapper",
+          "appendSelector": "#video-player",
           "injectedGlobalCSS": [
             "div[data-subtitles-container='true'] { display: none !important; }"
           ]
@@ -12354,6 +12352,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-26T14:40:47.247Z",
+  "buildinConfigUpdatedAt": "2024-11-27T03:09:31.455Z",
   "latestVersion": "1.11.7"
 }
