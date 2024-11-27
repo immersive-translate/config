@@ -1882,21 +1882,7 @@
         "default-translate": "no"
       }
     },
-    "preTranslateLimiter": {
-      "keys": [
-        "side",
-        "header"
-      ],
-      "side.selectors": [
-        "nav",
-        "aside"
-      ],
-      "side.enableTranslate": true,
-      "header.selectors": [
-        "header"
-      ],
-      "header.enableTranslate": false
-    },
+    "preTranslateLimiter": {},
     "selectors": [],
     "preWhitespaceDetectedTags": [
       "DIV",
@@ -12361,6 +12347,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-27T07:55:47.653Z",
+  "buildinConfigUpdatedAt": "2024-11-27T10:03:48.079Z",
   "latestVersion": "1.11.7"
 }
