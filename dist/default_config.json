@@ -12366,8 +12366,41 @@
       "extraBlockSelectors.add": [
         ".btn"
       ]
+    },
+    {
+      "id": "vodtw",
+      "matches": [
+        "www.vodtw.com/book/*"
+      ],
+      "injectedCss.add": [
+        "dl { display: flex; flex-wrap: wrap; }",
+        "dl dd { white-space: normal !important; overflow: visible !important; }",
+        "#info p { height: unset !important; }"
+      ],
+      "atomicBlockSelectors": [
+        "dl dd a"
+      ]
+    },
+    {
+      "id": "8du8",
+      "matches": [
+        "www.8du8.net/*"
+      ],
+      "injectedCss.add": [
+        ".book_list ul li { height: unset !important; overflow: visible !important; }"
+      ]
+    },
+    {
+      "id": "jwxs",
+      "matches": [
+        "www.jwxs.org/book/*"
+      ],
+      "injectedCss.add": [
+        "#list dd { height: 5rem !important; line-height: unset !important; }",
+        ".readbtn .chapterlist { margin: unset !important; }"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-28T03:22:51.646Z",
+  "buildinConfigUpdatedAt": "2024-11-28T03:36:51.640Z",
   "latestVersion": "1.11.7"
 }
