@@ -1505,7 +1505,8 @@
       ".immersive-translate-target-wrapper[dir='rtl'] {text-align: right;}",
       ".immersive-translate-target-wrapper[dir='rtl'] [data-immersive-translate-class-bak*='block-wrapper'] {display:block;}",
       ".immersive-translate-target-wrapper {word-break: break-word;}",
-      "[imt-state=\"translation\"] .immersive-translate-target-wrapper[dir='rtl'] {display:inline-block;}"
+      "[imt-state=\"translation\"] .immersive-translate-target-wrapper[dir='rtl'] {display:inline-block;}",
+      "html[dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {text-align:left;}"
     ],
     "isOnBoardingPage": false,
     "isEbook": false,
@@ -2639,7 +2640,7 @@
       "matches": "*.wikipedia.org",
       "paragraphMinWordCount": 2,
       "paragraphMinTextCount": 4,
-      "injectedCss": [
+      "injectedCss.add": [
         ".immersive-translate-target-translation-block-wrapper { display: block !important; }"
       ],
       "excludeSelectors": [
@@ -12401,6 +12402,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-28T03:36:51.640Z",
+  "buildinConfigUpdatedAt": "2024-11-28T08:02:19.710Z",
   "latestVersion": "1.11.7"
 }
