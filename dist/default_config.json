@@ -3971,7 +3971,8 @@
         "td div.gs_gray:last-of-type",
         "div.gsc_oci_value",
         "#gs_opinion",
-        ".gs_rt"
+        ".gs_rt",
+        ".gsh_csp"
       ],
       "extraInlineSelectors": [
         "br"
@@ -12367,6 +12368,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-28T03:18:04.259Z",
+  "buildinConfigUpdatedAt": "2024-11-28T03:22:51.646Z",
   "latestVersion": "1.11.7"
 }
