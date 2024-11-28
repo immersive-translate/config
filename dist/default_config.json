@@ -1506,7 +1506,7 @@
       ".immersive-translate-target-wrapper[dir='rtl'] [data-immersive-translate-class-bak*='block-wrapper'] {display:block;}",
       ".immersive-translate-target-wrapper {word-break: break-word;}",
       "[imt-state=\"translation\"] .immersive-translate-target-wrapper[dir='rtl'] {display:inline-block;}",
-      "html[dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {text-align:left;}"
+      "[dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {text-align:left;}"
     ],
     "isOnBoardingPage": false,
     "isEbook": false,
@@ -12402,6 +12402,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-28T08:02:19.710Z",
+  "buildinConfigUpdatedAt": "2024-11-28T08:28:36.896Z",
   "latestVersion": "1.11.7"
 }
