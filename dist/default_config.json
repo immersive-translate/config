@@ -8525,7 +8525,10 @@
           "[role=\"presentation\"]",
           "div"
         ]
-      }
+      },
+      "buildContainerSelectors": [
+        "main"
+      ]
     },
     {
       "id": "newtoki341.com",
@@ -12364,6 +12367,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-27T15:57:08.211Z",
+  "buildinConfigUpdatedAt": "2024-11-28T03:18:04.259Z",
   "latestVersion": "1.11.7"
 }
