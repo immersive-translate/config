@@ -298,7 +298,8 @@
     "https://www.sololevelingmangafree.com/[Sololevelingmangafree][chrome,firefox,safari]",
     "https://syosetu.si/[Syosetu][chrome,firefox,safari]",
     "https://comick.io/[Comick][chrome,firefox,safari]",
-    "https://klmanga.rs/[Klmanga][chrome,firefox,safari]"
+    "https://klmanga.rs/[Klmanga][chrome,firefox,safari]",
+    "https://www.sukima.me[Sukima][chrome,firefox,safari,userscript,imtAndroid,imtIOS]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -7926,6 +7927,20 @@
       }
     },
     {
+      "id": "sukima",
+      "matches": "www.sukima.me",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "opImageType": "append",
+        "urlFetchType": "canvasArgs",
+        "imageSelectors": [
+          ".slick-track canvas"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
       "id": "colamanga",
       "matches": "www.colamanga.com",
       "imageRule.add": {
@@ -12420,6 +12435,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-29T01:58:09.475Z",
+  "buildinConfigUpdatedAt": "2024-11-29T13:17:25.720Z",
   "latestVersion": "1.11.7"
 }
