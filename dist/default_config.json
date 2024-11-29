@@ -299,7 +299,8 @@
     "https://syosetu.si/[Syosetu][chrome,firefox,safari]",
     "https://comick.io/[Comick][chrome,firefox,safari]",
     "https://klmanga.rs/[Klmanga][chrome,firefox,safari]",
-    "https://www.sukima.me[Sukima][chrome,firefox,safari,userscript,imtAndroid,imtIOS]"
+    "https://www.sukima.me[Sukima][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://younganimal.com[YoungAnimal][chrome,firefox,safari,imtIOS]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -8852,6 +8853,27 @@
       }
     },
     {
+      "id": "younganimal",
+      "matches": [
+        "younganimal.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "opImageType": "insertFirst",
+        "imageSelectors": [
+          "#xCVPages img",
+          "#xCVPages canvas"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtIOS"
+        ]
+      }
+    },
+    {
       "id": "manwadb-xyz",
       "matches": [
         "manwadb.xyz"
@@ -12435,6 +12457,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-29T13:17:25.720Z",
+  "buildinConfigUpdatedAt": "2024-11-29T14:47:54.687Z",
   "latestVersion": "1.11.7"
 }
