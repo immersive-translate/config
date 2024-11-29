@@ -7742,7 +7742,8 @@
       "id": "jmanga",
       "matches": [
         "jmanga.org",
-        "jmanga.to"
+        "jmanga.to",
+        "jmanga.ac"
       ],
       "imageRule.add": {
         "enable": true,
@@ -8693,7 +8694,8 @@
       "id": "mangapark",
       "matches": [
         "mangapark.net",
-        "mangapark.to"
+        "mangapark.to",
+        "mangapark.org"
       ],
       "imageRule.add": {
         "enable": true,
@@ -12123,6 +12125,22 @@
       }
     },
     {
+      "id": "iqiyi-manga",
+      "matches": "www.iqiyi.com",
+      "imageRule.add": {
+        "enable": true,
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ],
+        "type": "manga",
+        "imageSelectors": [
+          ".main-container img"
+        ]
+      }
+    },
+    {
       "id": "learn-ed",
       "matches": "www.learn.ed.ac.*",
       "repeatTranslateNum": 1
@@ -12402,6 +12420,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-28T08:28:36.896Z",
+  "buildinConfigUpdatedAt": "2024-11-29T01:58:09.475Z",
   "latestVersion": "1.11.7"
 }
