@@ -6950,6 +6950,9 @@
       },
       "excludeSelectors.add": [
         ".DocSearch-Modal"
+      ],
+      "extraBlockSelectors.add": [
+        ".hash-link"
       ]
     },
     {
@@ -12457,6 +12460,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-11-29T14:47:54.687Z",
+  "buildinConfigUpdatedAt": "2024-12-01T14:30:18.017Z",
   "latestVersion": "1.11.7"
 }
