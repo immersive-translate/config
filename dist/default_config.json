@@ -2857,7 +2857,7 @@
           "enableTriggerTranslate": true
         },
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] #live-transcription-subtitle font {direction: rtl;}"
+          "[data-immersive-translate_rtl] #live-transcription-subtitle font {direction: rtl;text-align: right;}"
         ]
       }
     },
@@ -12460,6 +12460,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-01T14:30:18.017Z",
+  "buildinConfigUpdatedAt": "2024-12-02T01:37:47.360Z",
   "latestVersion": "1.11.7"
 }
