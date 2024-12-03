@@ -5752,9 +5752,6 @@
         "[data-test-id*=subject]",
         ".zd-comment",
         ".title"
-      ],
-      "excludeSelectors.add": [
-        "blockquote"
       ]
     },
     {
@@ -12460,6 +12457,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-02T01:37:47.360Z",
+  "buildinConfigUpdatedAt": "2024-12-03T02:22:36.349Z",
   "latestVersion": "1.11.7"
 }
