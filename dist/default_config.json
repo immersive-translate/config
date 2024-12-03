@@ -2187,12 +2187,19 @@
       "selectorMatches": [
         "meta[name='immersive-translate-subtitle-builder'][content='true']"
       ],
+      "matches": [
+        "https://*.immersivetranslate.com/subtitle*",
+        "https://*.immersivetranslate.com/download-subtitle*"
+      ],
       "pairs": {
         ".source-text": ".target-text"
       },
       "paragraphMinTextCount": 4,
       "paragraphMinWordCount": 2,
       "isTranslateTitle": false,
+      "isInjectMeta": true,
+      "isInjectVersion": true,
+      "allowInnerInvoke": true,
       "wrapperPrefix": "",
       "wrapperSuffix": "",
       "bodyRule.add": {
@@ -2462,18 +2469,6 @@
       "selectorMatches": [
         "embed[type='application/pdf']"
       ]
-    },
-    {
-      "id": "download-subtitle",
-      "matches": [
-        "https://*.immersivetranslate.com/download-subtitle*"
-      ],
-      "pageType": "downloadSubtitle",
-      "allowThirdPartyTranslate": true,
-      "allowInnerInvoke": true,
-      "isInjectVersion": true,
-      "isInjectMeta": true,
-      "waitForSelectorsTimeout": 1
     },
     {
       "id": "onboarding",
@@ -3803,7 +3798,8 @@
         "div > div[dir=auto]",
         "div:not([class]) > div > div:nth-child(2)"
       ],
-      "wrapperPrefix": "<br/>"
+      "wrapperPrefix": "<br/>",
+      "injectedCss.add": "article ._aagw {position:unset !important;}"
     },
     {
       "id": "otherInstagram",
@@ -12448,6 +12444,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-03T02:23:39.208Z",
+  "buildinConfigUpdatedAt": "2024-12-03T11:08:24.106Z",
   "latestVersion": "1.11.7"
 }
