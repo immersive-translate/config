@@ -4765,7 +4765,8 @@
       ],
       "selectors": [
         "div[class^='detail_wbtext']",
-        ".weibo-text"
+        ".weibo-text",
+        ".m-feed"
       ],
       "stayOriginalSelectors.add": [
         ".expand"
@@ -12444,6 +12445,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-03T11:08:24.106Z",
+  "buildinConfigUpdatedAt": "2024-12-03T12:46:01.281Z",
   "latestVersion": "1.11.7"
 }
