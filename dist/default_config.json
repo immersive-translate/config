@@ -5746,15 +5746,6 @@
       "enableRichTranslate": false
     },
     {
-      "id": "im.zendesk",
-      "matches": "https://immersivetranslate.zendesk.com/agent/*",
-      "selectors": [
-        "[data-test-id*=subject]",
-        ".zd-comment",
-        ".title"
-      ]
-    },
-    {
       "id": "zendesk",
       "matches": "https://*.zendesk.com/agent/*",
       "selectors": [
@@ -12457,6 +12448,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-03T02:22:36.349Z",
+  "buildinConfigUpdatedAt": "2024-12-03T02:23:39.208Z",
   "latestVersion": "1.11.7"
 }
