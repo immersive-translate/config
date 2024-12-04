@@ -4546,7 +4546,11 @@
         "#GlobalNavigation",
         "#GlobalFooter",
         ".LiveBlogHeader-timestampAndShareBarContainer",
-        ".LiveBlogHeader-liveUpdatesPill"
+        ".LiveBlogHeader-liveUpdatesPill",
+        ".QuoteInBody-inlineButton"
+      ],
+      "extraBlockSelectors.remove": [
+        "button"
       ]
     },
     {
@@ -12445,6 +12449,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-03T12:46:01.281Z",
+  "buildinConfigUpdatedAt": "2024-12-04T03:32:08.459Z",
   "latestVersion": "1.11.7"
 }
