@@ -12448,8 +12448,15 @@
         "#list dd { height: 5rem !important; line-height: unset !important; }",
         ".readbtn .chapterlist { margin: unset !important; }"
       ]
+    },
+    {
+      "id": "readthedocs",
+      "matches": "*.readthedocs.*",
+      "additionalExcludeSelectors.remove": [
+        ".notranslate"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-05T03:44:11.526Z",
+  "buildinConfigUpdatedAt": "2024-12-05T05:18:14.891Z",
   "latestVersion": "1.11.7"
 }
