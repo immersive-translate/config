@@ -719,6 +719,7 @@
     "deepl": {
       "visible": true,
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
+      "dualEnableRichTranslate": false,
       "requestTimeout": 15000,
       "maxTextLengthPerRequest": 1800,
       "maxTextGroupLengthPerRequest": 50,
@@ -12465,6 +12466,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-06T07:03:46.568Z",
+  "buildinConfigUpdatedAt": "2024-12-06T12:03:58.336Z",
   "latestVersion": "1.11.7"
 }
