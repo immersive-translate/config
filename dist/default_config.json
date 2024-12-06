@@ -1513,7 +1513,7 @@
     "injectedCss": [
       ".immersive-translate-target-wrapper[dir='rtl'] {text-align: right;}",
       ".immersive-translate-target-wrapper[dir='rtl'] [data-immersive-translate-class-bak*='block-wrapper'] {display:block;}",
-      ".immersive-translate-target-wrapper {word-break: break-word;}",
+      ".immersive-translate-target-wrapper {word-break:break-word; user-select:text;}",
       "[imt-state=\"translation\"] .immersive-translate-target-wrapper[dir='rtl'] {display:inline-block;}",
       "[dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {text-align:left;}"
     ],
@@ -12467,6 +12467,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-06T02:07:05.965Z",
+  "buildinConfigUpdatedAt": "2024-12-06T03:24:18.302Z",
   "latestVersion": "1.11.7"
 }
