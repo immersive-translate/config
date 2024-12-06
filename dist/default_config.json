@@ -11301,7 +11301,19 @@
         "[class*='ltx_lst_language_']",
         "div.package-alerts",
         ".ltx_toclist",
-        ".ltx_authors"
+        ".ltx_authors",
+        ".ltx_eqn_table"
+      ],
+      "enableRichTranslate": false
+    },
+    {
+      "id": "ar5iv.labs.arxiv.org",
+      "matches": "ar5iv.labs.arxiv.org",
+      "excludeSelectors.add": [
+        ".ltx_bibliography",
+        ".ltx_tag.ltx_tag_item",
+        ".ltx_listing.ltx_lstlisting.ltx_listing",
+        ".ltx_eqn_table"
       ],
       "enableRichTranslate": false
     },
@@ -11662,16 +11674,6 @@
       "excludeSelectors.add": [
         ".status-widget__state"
       ]
-    },
-    {
-      "id": "ar5iv.labs.arxiv.org",
-      "matches": "ar5iv.labs.arxiv.org",
-      "excludeSelectors.add": [
-        ".ltx_bibliography",
-        ".ltx_tag.ltx_tag_item",
-        ".ltx_listing.ltx_lstlisting.ltx_listing"
-      ],
-      "enableRichTranslate": false
     },
     {
       "id": "www.ey.com",
@@ -12458,6 +12460,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-06T01:57:10.045Z",
+  "buildinConfigUpdatedAt": "2024-12-06T02:00:29.288Z",
   "latestVersion": "1.11.7"
 }
