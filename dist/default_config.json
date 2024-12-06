@@ -11302,7 +11302,8 @@
         "div.package-alerts",
         ".ltx_toclist",
         ".ltx_authors"
-      ]
+      ],
+      "enableRichTranslate": false
     },
     {
       "id": "jstor",
@@ -12457,6 +12458,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-05T05:18:14.891Z",
+  "buildinConfigUpdatedAt": "2024-12-06T01:57:10.045Z",
   "latestVersion": "1.11.7"
 }
