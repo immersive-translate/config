@@ -6241,7 +6241,7 @@
       "id": "whatsapp",
       "matches": "web.whatsapp.com",
       "selectors": [
-        ".copyable-text",
+        "._akbu",
         "[role=list]"
       ],
       "wrapperPrefix": "\n",
@@ -6250,12 +6250,7 @@
         "[aria-hidden=true]"
       ],
       "extraInlineSelectors.add": [
-        ".selectable-text",
-        ".selectable-text *"
-      ],
-      "atomicBlockSelectors.add": [
-        ".selectable-text",
-        ".selectable-text *"
+        ".x1lliihq"
       ],
       "enableRichTranslate": false
     },
@@ -12469,6 +12464,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-06T04:23:50.117Z",
+  "buildinConfigUpdatedAt": "2024-12-06T05:04:55.357Z",
   "latestVersion": "1.11.7"
 }
