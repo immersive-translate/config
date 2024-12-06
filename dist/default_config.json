@@ -5693,7 +5693,8 @@
       "selectors": [
         "div.UnitDetails",
         "#_nav_group_README",
-        "p.SearchSnippet-infoLabel"
+        "p.SearchSnippet-infoLabel",
+        ".go-Container"
       ]
     },
     {
@@ -12464,6 +12465,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-06T05:04:55.357Z",
+  "buildinConfigUpdatedAt": "2024-12-06T07:03:46.568Z",
   "latestVersion": "1.11.7"
 }
