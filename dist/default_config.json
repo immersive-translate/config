@@ -2701,6 +2701,7 @@
         "https://x.com/*/privacy*"
       ],
       "switchTranslateRestart": true,
+      "enableRichTranslate": false,
       "additionalStayOriginalSelectors": [
         "[data-testid=\"tweetText\"] a",
         "[data-testid='UserDescription'] a",
@@ -12467,6 +12468,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-06T03:24:18.302Z",
+  "buildinConfigUpdatedAt": "2024-12-06T04:19:58.328Z",
   "latestVersion": "1.11.7"
 }
