@@ -1440,6 +1440,13 @@
       ".uacc-clickable"
     ],
     "mutationExcludeContainsSelectors": [
+      "markerow8",
+      "span.highlighter--highlighted",
+      "span.highlighter-ext",
+      "mark",
+      "msreadoutspan",
+      "rw-highlight",
+      "web-highlight",
       "msreadoutspan",
       "[class*='rgh-seen-']",
       "[isInvalidTag]",
@@ -12460,6 +12467,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-06T02:00:29.288Z",
+  "buildinConfigUpdatedAt": "2024-12-06T02:07:05.965Z",
   "latestVersion": "1.11.7"
 }
