@@ -688,7 +688,8 @@
       "placeholderDelimiters": [
         "#",
         "#"
-      ]
+      ],
+      "enableRichTranslate": false
     },
     "cai": {
       "placeholderDelimiters": [
@@ -12468,6 +12469,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-06T04:19:58.328Z",
+  "buildinConfigUpdatedAt": "2024-12-06T04:23:50.117Z",
   "latestVersion": "1.11.7"
 }
