@@ -9450,7 +9450,10 @@
     },
     {
       "id": "vk.com",
-      "matches": "vk.com/video",
+      "matches": [
+        "vk.com/video",
+        "vkvideo.ru"
+      ],
       "subtitleRule.add_v.[1.4.12]": {
         "type": "text_track",
         "videoPlayerSelector": ".videoplayer_media_provider",
@@ -12472,6 +12475,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-07T08:12:40.059Z",
+  "buildinConfigUpdatedAt": "2024-12-07T15:47:24.654Z",
   "latestVersion": "1.11.7"
 }
