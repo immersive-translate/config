@@ -2575,10 +2575,14 @@
         "gamefaqs.gamespot.com",
         "bugs.java.com/bugdatabase/view_bug.do",
         "rachelsenglish.com",
-        "privatter.net"
+        "privatter.net",
+        "www.asuswrt-merlin.net"
       ],
       "isTransformPreTagNewLine": true,
-      "longBuildPageLength": 1000
+      "longBuildPageLength": 1000,
+      "buildContainerSelectors": [
+        "pre"
+      ]
     },
     {
       "id": "preCodeSites",
@@ -12468,6 +12472,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-06T12:11:31.551Z",
+  "buildinConfigUpdatedAt": "2024-12-07T08:12:40.059Z",
   "latestVersion": "1.11.7"
 }
