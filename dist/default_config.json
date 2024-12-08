@@ -2744,7 +2744,7 @@
       "likePreSelectors.add_v.[1.11.5]": [
         "[data-testid=tweetText]"
       ],
-      "isTransformPreTagNewLine": true,
+      "isTransformPreTagNewLine": false,
       "extraInlineSelectors": [
         "[data-testid=\"tweetText\"] div.r-xoduu5",
         "[data-testid=\"tweetText\"] span",
@@ -12476,6 +12476,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-07T17:07:12.867Z",
+  "buildinConfigUpdatedAt": "2024-12-08T08:55:18.764Z",
   "latestVersion": "1.11.7"
 }
