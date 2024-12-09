@@ -11682,6 +11682,9 @@
         ".summary > h3",
         ".notes > h3"
       ],
+      "skipBuildContainerSelectors.remove": [
+        "em"
+      ],
       "longBuildPageLength": 1000
     },
     {
@@ -12476,6 +12479,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-08T08:55:18.764Z",
+  "buildinConfigUpdatedAt": "2024-12-09T02:04:29.558Z",
   "latestVersion": "1.11.7"
 }
