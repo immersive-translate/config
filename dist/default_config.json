@@ -2755,7 +2755,8 @@
       "globalStyles": {
         "[data-testid='card.layoutLarge.detail'] > div:nth-child(2)": "-webkit-line-clamp: unset;",
         "[data-testid='card.layoutSmall.detail'] > div:nth-child(2)": "-webkit-line-clamp: unset;",
-        "[data-testid='tweetText']": "-webkit-line-clamp: unset;"
+        "[data-testid='tweetText']": "-webkit-line-clamp: unset;",
+        "[role=dialog] [style*='webkit-line-clamp']": "-webkit-line-clamp: unset;"
       },
       "ignoreZhCNandZhTW": true,
       "isTranslateTitle": false,
@@ -2778,7 +2779,8 @@
         "[data-testid='HoverCard'] [role='dialog'] div[dir=ltr]",
         "[data-testid='birdwatch-pivot'] div[dir=ltr]",
         "[data-testid='twitterArticleReadView']",
-        "[aria-label='Grok']"
+        "[aria-label='Grok']",
+        "[role=dialog]"
       ],
       "subtitleRule.add": {
         "type": "live",
@@ -12484,6 +12486,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-09T11:51:05.821Z",
+  "buildinConfigUpdatedAt": "2024-12-09T12:38:42.899Z",
   "latestVersion": "1.11.7"
 }
