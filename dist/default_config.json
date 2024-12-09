@@ -5620,8 +5620,11 @@
       ],
       "extraBlockSelectors.add": [
         "app-summary-authors + div",
-        "app-full-record-keywords span span"
+        "app-full-record-keywords span span",
+        "[data-ta=summary-record-title-link]",
+        "[cdxanalyticscategory=wos-recordCard_ExpandAbstract]"
       ],
+      "skipTrailTextRegex": "为了绕过高亮导致脏检查跳过了",
       "observeUrlChange": true,
       "urlChangeDelay": 600,
       "mutationChangeDelay": 600
@@ -12481,6 +12484,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-09T08:11:38.013Z",
+  "buildinConfigUpdatedAt": "2024-12-09T11:51:05.821Z",
   "latestVersion": "1.11.7"
 }
