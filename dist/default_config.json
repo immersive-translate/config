@@ -3470,7 +3470,7 @@
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
-          "appendSelector": ".html5-video-player.playing-mode,.html5-video-player.paused-mode",
+          "appendSelector": "#player-container-id",
           "injectedCSS": [
             ".imt-caption-container {z-index:40;}"
           ],
@@ -12481,6 +12481,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-09T07:08:17.472Z",
+  "buildinConfigUpdatedAt": "2024-12-09T08:11:38.013Z",
   "latestVersion": "1.11.7"
 }
