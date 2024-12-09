@@ -5646,7 +5646,11 @@
       ],
       "globalStyles.add": {
         ".card p,.card h4": "-webkit-line-clamp:unset;"
-      }
+      },
+      "excludeSelectors": [
+        ".toolbar__ee8",
+        "[data-test=\"left-sidebar\"]"
+      ]
     },
     {
       "id": "crates",
@@ -6145,17 +6149,6 @@
           "translate": "no"
         }
       }
-    },
-    {
-      "id": "youtrackJetbrains",
-      "matches": "youtrack.jetbrains.com/articles/*",
-      "selectors": [
-        "[role=presentation]",
-        "[data-test=article-content]"
-      ],
-      "excludeSelectors": [
-        ".toolbar__ee8"
-      ]
     },
     {
       "id": "dw",
@@ -12488,6 +12481,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-09T03:57:58.467Z",
+  "buildinConfigUpdatedAt": "2024-12-09T07:08:17.472Z",
   "latestVersion": "1.11.7"
 }
