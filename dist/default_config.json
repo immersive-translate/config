@@ -12477,8 +12477,17 @@
       "additionalExcludeSelectors.remove": [
         ".notranslate"
       ]
+    },
+    {
+      "id": "surveymyopinion.researchnow",
+      "matches": "surveymyopinion.researchnow.com",
+      "globalAttributes.add": {
+        "option": {
+          "label": ""
+        }
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-09T02:04:29.558Z",
+  "buildinConfigUpdatedAt": "2024-12-09T03:57:58.467Z",
   "latestVersion": "1.11.7"
 }
