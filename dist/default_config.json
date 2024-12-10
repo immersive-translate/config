@@ -12498,8 +12498,18 @@
       "mainFrameSelector.add": [
         "tw-story"
       ]
+    },
+    {
+      "id": "aliexpress",
+      "matches": "*.aliexpress.*",
+      "injectedCss.add": [
+        "[class*='multi--title'],.G7dOC {-webkit-line-clamp:unset;}"
+      ],
+      "excludeSelectors.add": [
+        "[class*='multi--price']"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-10T06:55:16.809Z",
+  "buildinConfigUpdatedAt": "2024-12-10T15:00:25.852Z",
   "latestVersion": "1.11.7"
 }
