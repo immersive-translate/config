@@ -299,7 +299,7 @@
     "https://syosetu.si/[Syosetu][chrome,firefox,safari]",
     "https://comick.io/[Comick][chrome,firefox,safari]",
     "https://klmanga.rs/[Klmanga][chrome,firefox,safari]",
-    "https://www.sukima.me[Sukima][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://www.sukima.me[Sukima][chrome,firefox,safari,userscript]",
     "https://younganimal.com[YoungAnimal][chrome,firefox,safari,imtIOS]"
   ],
   "supportedVideoSubtitleSites": [
@@ -7942,7 +7942,13 @@
         "imageSelectors": [
           ".slick-track canvas"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "userscript"
+        ]
       }
     },
     {
@@ -12494,6 +12500,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-10T06:38:30.936Z",
+  "buildinConfigUpdatedAt": "2024-12-10T06:55:16.809Z",
   "latestVersion": "1.11.7"
 }
