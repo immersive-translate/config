@@ -3297,7 +3297,8 @@
         ".pinned-item-desc",
         "#repo-content-turbo-frame .markdown-title",
         "[app-name='blackbird-search'] [data-hpc='true']",
-        ".topic-box > a > p:nth-of-type(2)"
+        ".topic-box > a > p:nth-of-type(2)",
+        "[data-testid=\"listitem-title-link\"]"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -12484,8 +12485,15 @@
           "label": ""
         }
       }
+    },
+    {
+      "id": "xfiction.org",
+      "matches": "*.xfiction.org",
+      "mainFrameSelector.add": [
+        "tw-story"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-09T12:38:42.899Z",
+  "buildinConfigUpdatedAt": "2024-12-10T06:38:30.936Z",
   "latestVersion": "1.11.7"
 }
