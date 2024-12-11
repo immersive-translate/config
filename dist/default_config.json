@@ -3076,6 +3076,12 @@
     {
       "id": "hackerNews",
       "matches": "news.ycombinator.com",
+      "excludeMatches": [
+        "https://news.ycombinator.com/submit",
+        "https://news.ycombinator.com/newsfaq.html",
+        "https://news.ycombinator.com/newsguidelines.html",
+        "https://news.ycombinator.com/security.html"
+      ],
       "selectors": [
         ".titleline > a",
         ".comment > .commtext",
@@ -12510,6 +12516,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-10T15:00:25.852Z",
+  "buildinConfigUpdatedAt": "2024-12-11T08:05:09.816Z",
   "latestVersion": "1.11.7"
 }
