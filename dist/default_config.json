@@ -12514,8 +12514,13 @@
       "excludeSelectors.add": [
         "[class*='multi--price']"
       ]
+    },
+    {
+      "id": "otherMathSites",
+      "selectorMatches": "math",
+      "enableRichTranslate": false
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-11T08:05:09.816Z",
+  "buildinConfigUpdatedAt": "2024-12-11T08:13:43.717Z",
   "latestVersion": "1.11.7"
 }
