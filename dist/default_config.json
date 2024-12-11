@@ -12519,8 +12519,20 @@
       "id": "otherMathSites",
       "selectorMatches": "math",
       "enableRichTranslate": false
+    },
+    {
+      "id": "mobalytics",
+      "matches": "mobalytics.gg",
+      "extraInlineSelectors.add": [
+        ".x1n2onr6.xb3r6kr",
+        ".x1n2onr6.xb3r6kr *"
+      ],
+      "atomicBlockSelectors.add": [
+        ".x1n2onr6.xb3r6kr",
+        ".x1n2onr6.xb3r6kr *"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-11T08:13:43.717Z",
+  "buildinConfigUpdatedAt": "2024-12-11T14:47:19.248Z",
   "latestVersion": "1.11.7"
 }
