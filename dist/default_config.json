@@ -2104,7 +2104,8 @@
       ".highlighter--highlighted",
       ".rw-highlight",
       "ruby *",
-      "p > button"
+      "p > button",
+      "p span button"
     ],
     "extraBlockSelectors": [
       "turbo-frame",
@@ -12524,6 +12525,17 @@
       ]
     },
     {
+      "id": "journals.aps",
+      "matches": "journals.aps.*",
+      "enableRichTranslate": false,
+      "additionalInlineSelectors.add": [
+        "[class*='article'] button"
+      ],
+      "stayOriginalSelectors.add": [
+        "button"
+      ]
+    },
+    {
       "id": "otherMathSites",
       "selectorMatches": [
         "math",
@@ -12546,6 +12558,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-12T12:08:18.574Z",
+  "buildinConfigUpdatedAt": "2024-12-12T12:40:49.714Z",
   "latestVersion": "1.11.7"
 }
