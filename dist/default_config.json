@@ -2744,9 +2744,10 @@
         "[data-testid='twitterArticleReadView']",
         "[aria-label='Grok']",
         "[role=dialog]",
-        "article",
-        ".css-175oi2r.r-uef6q5.r-dnmrzs.r-97e31f.r-13qz1uu.r-13awgt0.r-dgnwoc.r-1me0s30.r-t3sqpr.r-1dqxon3",
-        ".css-175oi2r.r-1awozwy.r-13awgt0.r-1rnoaur.r-13qz1uu"
+        "[class=' css-175oi2r r-uef6q5 r-dnmrzs r-97e31f r-13qz1uu r-13awgt0 r-dgnwoc r-1me0s30 r-t3sqpr r-1dqxon3']",
+        "[class='css-175oi2r r-1awozwy r-13awgt0 r-1rnoaur r-13qz1uu']",
+        "[class='css-175oi2r r-kemksi r-1kqtdi0 r-1q9bdsx r-1phboty r-rs99b7 r-1udh08x r-13qz1uu']",
+        "[class='css-175oi2r r-uef6q5 r-dnmrzs r-97e31f r-13qz1uu r-13awgt0 r-dgnwoc r-1me0s30 r-t3sqpr r-1dqxon3']"
       ],
       "excludeSelectors": [
         "[aria-describedby][role=button]",
@@ -2761,8 +2762,7 @@
         "time",
         "[data-testid=User-Name]",
         "[data-testid=socialContext]",
-        "[data-testid=tweet-text-show-more-link]",
-        "[style*='color: rgb(113, 118, 123)']"
+        "[data-testid=tweet-text-show-more-link]"
       ],
       "globalStyles": {
         "[data-testid='card.layoutLarge.detail'] > div:nth-child(2)": "-webkit-line-clamp: unset;",
@@ -12561,6 +12561,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-12T13:13:22.680Z",
+  "buildinConfigUpdatedAt": "2024-12-12T13:36:45.727Z",
   "latestVersion": "1.11.7"
 }
