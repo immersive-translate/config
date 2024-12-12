@@ -2759,7 +2759,10 @@
         "[aria-label=Grok] [style*='rgb(89, 93, 98)']",
         "[aria-label=Grok] .r-uho16t",
         "time",
-        "[data-testid=User-Name]"
+        "[data-testid=User-Name]",
+        "[data-testid=socialContext]",
+        "[data-testid=tweet-text-show-more-link]",
+        "[style*='color: rgb(113, 118, 123)']"
       ],
       "globalStyles": {
         "[data-testid='card.layoutLarge.detail'] > div:nth-child(2)": "-webkit-line-clamp: unset;",
@@ -12558,6 +12561,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-12T12:40:49.714Z",
+  "buildinConfigUpdatedAt": "2024-12-12T13:13:22.680Z",
   "latestVersion": "1.11.7"
 }
