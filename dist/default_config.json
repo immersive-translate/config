@@ -2727,14 +2727,43 @@
       ],
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
+      "selectors": [
+        "[data-testid=\"tweetText\"]",
+        ".tweet-text",
+        ".js-quoted-tweet-text",
+        "[data-testid='card.layoutSmall.detail'] > div:nth-child(2)",
+        "[data-testid='developerBuiltCardContainer'] > div:nth-child(2)",
+        "[data-testid='card.layoutLarge.detail'] > div:nth-child(2)",
+        "[data-testid='cellInnerDiv'] div[data-testid='UserCell'] > div> div:nth-child(2)",
+        "[data-testid='UserDescription']",
+        "[data-testid='HoverCard'] div[dir=auto]",
+        "[data-testid='HoverCard'] span[dir=auto]",
+        "[data-testid='HoverCard'] [role='dialog'] div[dir=ltr]",
+        "[data-testid='birdwatch-pivot'] div[dir=ltr]",
+        "[data-testid='twitterArticleReadView']",
+        "[aria-label='Grok']",
+        "[role=dialog]",
+        "article",
+        ".css-175oi2r.r-uef6q5.r-dnmrzs.r-97e31f.r-13qz1uu.r-13awgt0.r-dgnwoc.r-1me0s30.r-t3sqpr.r-1dqxon3",
+        ".css-175oi2r.r-1awozwy.r-13awgt0.r-1rnoaur.r-13qz1uu"
+      ],
       "excludeSelectors": [
         "[aria-describedby][role=button]",
         "header",
         "[data-testid='radioGroupplayback_rate'] div",
         "[data-testid='userFollowIndicator']",
         "[class='css-901oao r-14j79pv r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-bcqeeo r-qvutc0']",
-        "[class='css-175oi2r r-1wbh5a2 r-dnmrzs']"
+        "[class='css-175oi2r r-1wbh5a2 r-dnmrzs']",
+        "[aria-label=Grok] button",
+        "[aria-label=Grok] [style*='rgb(89, 93, 98)']",
+        "[aria-label=Grok] .r-uho16t"
       ],
+      "globalStyles": {
+        "[data-testid='card.layoutLarge.detail'] > div:nth-child(2)": "-webkit-line-clamp: unset;",
+        "[data-testid='card.layoutSmall.detail'] > div:nth-child(2)": "-webkit-line-clamp: unset;",
+        "[data-testid='tweetText'],[style*='-webkit-line-clamp']": "-webkit-line-clamp: unset;",
+        "[role=dialog] [style*='webkit-line-clamp']": "-webkit-line-clamp: unset;"
+      },
       "extraBlockSelectors.add": [
         "[data-testid=\"tweetText\"] div.r-6koalj"
       ],
@@ -2752,12 +2781,6 @@
         "[data-testid='HoverCard'] div[dir=auto] div",
         "[data-testid='HoverCard'] span[dir=auto] div"
       ],
-      "globalStyles": {
-        "[data-testid='card.layoutLarge.detail'] > div:nth-child(2)": "-webkit-line-clamp: unset;",
-        "[data-testid='card.layoutSmall.detail'] > div:nth-child(2)": "-webkit-line-clamp: unset;",
-        "[data-testid='tweetText']": "-webkit-line-clamp: unset;",
-        "[role=dialog] [style*='webkit-line-clamp']": "-webkit-line-clamp: unset;"
-      },
       "ignoreZhCNandZhTW": true,
       "isTranslateTitle": false,
       "useIframePostMessage": false,
@@ -2765,23 +2788,6 @@
       "paragraphMinTextCount": 2,
       "paragraphMinWordCount": 1,
       "repeatTranslateNum": 0,
-      "selectors": [
-        "[data-testid=\"tweetText\"]",
-        ".tweet-text",
-        ".js-quoted-tweet-text",
-        "[data-testid='card.layoutSmall.detail'] > div:nth-child(2)",
-        "[data-testid='developerBuiltCardContainer'] > div:nth-child(2)",
-        "[data-testid='card.layoutLarge.detail'] > div:nth-child(2)",
-        "[data-testid='cellInnerDiv'] div[data-testid='UserCell'] > div> div:nth-child(2)",
-        "[data-testid='UserDescription']",
-        "[data-testid='HoverCard'] div[dir=auto]",
-        "[data-testid='HoverCard'] span[dir=auto]",
-        "[data-testid='HoverCard'] [role='dialog'] div[dir=ltr]",
-        "[data-testid='birdwatch-pivot'] div[dir=ltr]",
-        "[data-testid='twitterArticleReadView']",
-        "[aria-label='Grok']",
-        "[role=dialog]"
-      ],
       "subtitleRule.add": {
         "type": "live",
         "isInject": false,
@@ -12533,6 +12539,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-12T09:06:14.680Z",
+  "buildinConfigUpdatedAt": "2024-12-12T10:14:01.885Z",
   "latestVersion": "1.11.7"
 }
