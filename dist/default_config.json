@@ -2756,7 +2756,8 @@
         "[class='css-175oi2r r-1wbh5a2 r-dnmrzs']",
         "[aria-label=Grok] button",
         "[aria-label=Grok] [style*='rgb(89, 93, 98)']",
-        "[aria-label=Grok] .r-uho16t"
+        "[aria-label=Grok] .r-uho16t",
+        "time"
       ],
       "globalStyles": {
         "[data-testid='card.layoutLarge.detail'] > div:nth-child(2)": "-webkit-line-clamp: unset;",
@@ -12544,6 +12545,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-12T10:54:18.402Z",
+  "buildinConfigUpdatedAt": "2024-12-12T12:05:32.222Z",
   "latestVersion": "1.11.7"
 }
