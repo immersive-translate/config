@@ -12523,7 +12523,12 @@
     },
     {
       "id": "otherMathSites",
-      "selectorMatches": "math",
+      "selectorMatches": [
+        "math",
+        "mjx-container",
+        "[class*='MathJax']",
+        "[class*='math-']"
+      ],
       "enableRichTranslate": false
     },
     {
@@ -12539,6 +12544,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-12T10:14:01.885Z",
+  "buildinConfigUpdatedAt": "2024-12-12T10:54:18.402Z",
   "latestVersion": "1.11.7"
 }
