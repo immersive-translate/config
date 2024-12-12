@@ -4028,13 +4028,11 @@
       "matches": "news.google.com",
       "blockMinTextCount": 26,
       "blockMinWordCount": 5,
-      "globalStyles": {
-        ".MCAGUe": "height: auto;",
-        ".To2ZZb.DbQnIe": "height: unset;",
-        ".cp7Yvc > h2": "display: block;",
-        ".oovtQ": "height: auto;",
-        "h4": "-webkit-line-clamp: unset;"
-      },
+      "injectedCss.add": [
+        ".oovtQ,.MCAGUe,.To2ZZb.DbQnIe {height: unset;}",
+        "h4,.IBr9hb,.gPFEn{-webkit-line-clamp: unset!important;}",
+        ".cp7Yvc > h2 {display: block;}"
+      ],
       "excludeSelectors": [
         ".EyERq",
         ".AOl7G.eejsDc",
@@ -4053,7 +4051,9 @@
         "[jsname='rymPhb']",
         ".cbz1ld",
         ".VfPpkd-P5QLlc",
-        ".XvhY1d"
+        ".XvhY1d",
+        "time",
+        ".bInasb"
       ]
     },
     {
@@ -12533,6 +12533,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-11T14:47:19.248Z",
+  "buildinConfigUpdatedAt": "2024-12-12T09:06:14.680Z",
   "latestVersion": "1.11.7"
 }
