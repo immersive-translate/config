@@ -3415,6 +3415,8 @@
         "SUP",
         "SUB"
       ],
+      "enableRichTranslate": false,
+      "enableRichTranslate.add_v.[1.12.1]": true,
       "stayOriginalSelectors.add": [
         ".issue-link"
       ],
@@ -12655,6 +12657,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-13T14:38:30.000Z",
+  "buildinConfigUpdatedAt": "2024-12-13T14:45:48.649Z",
   "latestVersion": "1.12.1"
 }
