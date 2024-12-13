@@ -414,6 +414,7 @@
   "inactiveDays": 21,
   "enableInputTranslationWithoutTriggerKey": true,
   "enableRenderHtmlTag": false,
+  "enableContextDiffPreview": false,
   "enableEditTranslation": false,
   "autoSelectTargetLanguageAfterInstalledAt": "2024-01-04",
   "defaultAlwaysTranslatedUrls": [
@@ -461,6 +462,10 @@
   "mutationBlockUrls": [
     "*.larkoffice.com",
     "*.larksuite.com"
+  ],
+  "joinJobs": [
+    "前端开发工程师",
+    "前端开发实习生"
   ],
   "monkeyH5FloatBall": {
     "enable": true,
@@ -822,9 +827,13 @@
         "imt_yaml_item": "- id: {{id}}\n  {{imt_source_field}}: {{text}}",
         "imt_subtitle_yaml_item": "- id: {{id}}\n  {{imt_sub_source_field}}: {{text}}",
         "normal_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_source_field}}: Source\nOutput:\n  - id: 1\n    {{imt_trans_field}}: Translation\n</example>",
-        "subtitle_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\nOutput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\n</example>"
+        "subtitle_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\nOutput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\n</example>",
+        "summary_prompt": "\n\nYou are about to translate text from an article. Title: 《{{imt_title}}》, Summary: {{imt_theme}}",
+        "terms_prompt": "\n\nThis content may include the following terms {{imt_terms}}. Please handle these terms carefully.",
+        "sub_summary_prompt": "\n\nYou are about to translate subtitles, {{imt_theme}}",
+        "sub_terms_prompt": "\n\nThis subtitle may include the following terms {{imt_terms}}. Please handle these terms carefully."
       },
-      "systemPrompt": "You are a professional, authentic machine translation engine.",
+      "systemPrompt": "You are a professional, authentic machine translation engine.{{summary_prompt}}{{terms_prompt}}",
       "prompt": ";; Treat next line as plain text input and translate it into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n{{text}}",
       "multiplePrompt": "You will be given a YAML formatted input containing entries with \"id\" and \"{{imt_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{normal_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
       "subtitlePrompt": "You will be given a YAML formatted subtitles containing entries with \"id\" and \"{{imt_sub_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_sub_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_sub_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{subtitle_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
@@ -872,7 +881,8 @@
           "id": "zh-CN2auto",
           "subtitlePrompt": "You will be translating all \"{{imt_sub_source_field}}\" fields of a set of YAML-formatted video subtitles from Simplified Chinese into {{to}}. Here are the original subtitles in YAML format:\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\nPlease translate ONLY the \"{{imt_sub_source_field}}\" field of each subtitle entry into Simplified Chinese. Do not translate or change the \"id\" fields.\n\nOutput the translated subtitles in the same YAML format, with each subtitle entry on its own line. The \"id\" fields should remain unchanged, and the \"{{imt_sub_source_field}}\" fields should contain your {{to}} translations.\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information."
         }
-      ]
+      ],
+      "translationTextSeparator": "\n\n%%\n\n"
     },
     "gemini": {
       "visible": true,
@@ -1062,6 +1072,7 @@
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
+      "enableAIContext": false,
       "provider": "pro"
     },
     "chatgpt": {
@@ -1166,7 +1177,7 @@
       "name": "siliconcloud",
       "provider": "custom",
       "limit": 10,
-      "model": "Qwen/Qwen2-7B-Instruct",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
       "apiUrl": "https://api.siliconflow.cn/v1/chat/completions",
       "defaultVisible": true,
       "defaultHiddenLangs": [
@@ -1394,6 +1405,7 @@
       "hr",
       "em"
     ],
+    "enableSkipBuildContainer": true,
     "glossaries": [
       {
         "k": "LLM",
@@ -1512,6 +1524,9 @@
         "it"
       ]
     },
+    "imageRule.add_v.[1.12.1]": {
+      "enableImageTranslation": "all"
+    },
     "useIframePostMessage": false,
     "searchEnhancementConfig": [],
     "injectedCss": [
@@ -1539,7 +1554,6 @@
     "aiRule": {},
     "subtitleRule": {
       "isInject": true,
-      "autoEnableSubtitle": false,
       "preTranslation": false,
       "humanPreferred": true,
       "disabled": false,
@@ -1789,7 +1803,7 @@
     },
     "bodyRule": {
       "enable": true,
-      "maxBodyScreenLength": 25,
+      "maxBodyScreenLength": 200,
       "preSelectors": [
         "h1"
       ],
@@ -1797,12 +1811,27 @@
         "P"
       ],
       "articleChildTagsNum": 4,
+      "matchNodeRule": {
+        "pre": {
+          "minNum": 1
+        },
+        "p": {
+          "minNum": 4
+        },
+        "article": {
+          "minNum": 1,
+          "maxNum": 1
+        }
+      },
+      "minTextLength": 3000,
       "bodyIsRoot": false,
       "humanPreferred": true,
       "preTranslation": true,
       "xpathRule": [
         "name:P"
-      ]
+      ],
+      "contextTimeout": 4000,
+      "contextReqLength": 20000
     },
     "bodyRule.add_v.[1.4.9]": {
       "enable": true
@@ -1821,6 +1850,7 @@
     "isPdf": false,
     "pdfUrlExtractRule": {},
     "isTransformPreTagNewLine": false,
+    "advanceTransformPreTagNewLine": false,
     "likePreSelectors": [
       "pre"
     ],
@@ -1838,6 +1868,7 @@
       ".math-container",
       ".MathJax",
       ".MathJax_SVG",
+      "math-renderer",
       "[aria-labelledby^=\"MathJax-SVG\"]",
       ".mwe-math-element",
       "span[translate=no]",
@@ -1897,6 +1928,21 @@
       }
     },
     "preTranslateLimiter": {},
+    "preTranslateLimiter.add_v.[1.11.7]": {
+      "keys": [
+        "side",
+        "header"
+      ],
+      "side.selectors": [
+        "nav",
+        "aside"
+      ],
+      "side.enableTranslate": true,
+      "header.selectors": [
+        "header"
+      ],
+      "header.enableTranslate": false
+    },
     "selectors": [],
     "preWhitespaceDetectedTags": [
       "DIV",
@@ -2283,13 +2329,18 @@
       "bodyRule.add": {
         "enable": false
       },
+      "bodyRule.add_v.[1.11.7]": {
+        "enable": true,
+        "bodySelector": "#viewerContainer",
+        "articleSelector": "#viewerContainer"
+      },
       "injectedCss": [
         ".immersive-translate-target-wrapper {display: contents!important;position:absolute;}",
         ".immersive-translate-target-wrapper br {display: none;!important;}",
         ".immersive-translate-target-wrapper span {position: relative;!important;}",
         ".immersive-translate-error-wrapper {padding:0px !important;margin:0px !important;}",
-        "font {line-height: 0!important;}",
-        ".immersive-translate-target-translation-block-wrapper {display: unset!important;}"
+        ".immersive-translate-target-translation-block-wrapper {display: unset!important;}",
+        ".immersive-translate-target-inner div div {border:unset!important;padding:0!important;}"
       ],
       "globalAttributes.add": {
         "[class='textLayer']": {
@@ -2710,7 +2761,7 @@
         "https://x.com/*/privacy*"
       ],
       "switchTranslateRestart": true,
-      "enableRichTranslate": false,
+      "enableRichTranslate": true,
       "additionalStayOriginalSelectors": [
         "[data-testid=\"tweetText\"] a",
         "[data-testid='UserDescription'] a",
@@ -2780,12 +2831,24 @@
         "[data-testid=tweetText]"
       ],
       "isTransformPreTagNewLine": false,
+      "isTransformPreTagNewLine.add_v.[1.12.1]": true,
+      "advanceTransformPreTagNewLine": true,
       "extraInlineSelectors": [
         "[data-testid=\"tweetText\"] div.r-xoduu5",
         "[data-testid=\"tweetText\"] span",
         "[data-testid=\"UserDescription\"] div",
         "[data-testid='HoverCard'] div[dir=auto] div",
         "[data-testid='HoverCard'] span[dir=auto] div"
+      ],
+      "advanceMergeConfig": [
+        {
+          "condition": "translationMode==translation",
+          "advanceConfig": {
+            "generalRule": {
+              "likePreSelectors": []
+            }
+          }
+        }
       ],
       "ignoreZhCNandZhTW": true,
       "isTranslateTitle": false,
@@ -2812,6 +2875,7 @@
       "subtitleRule.add_v.[1.2.1]": {
         "type": "twitter",
         "videoPlayerSelector": "video",
+        "enableTriggerTranslate": true,
         "loadingStyle": "bottom: unset; top: 5%;",
         "injectedCss": [
           "#layers[style='z-index: 1;'] [style='height: 100px;'] { height: 400px !important; }",
@@ -3204,6 +3268,9 @@
       ],
       "inputConfig.add": {
         "clearContentEnable": false
+      },
+      "bodyRule.add": {
+        "enable": false
       }
     },
     {
@@ -5384,7 +5451,8 @@
         "streamingDeepChild": true,
         "streamingDelayTime": 1000
       },
-      "enableRichTranslate": false
+      "enableRichTranslate": false,
+      "enableRichTranslate.add_v.[1.12.1]": true
     },
     {
       "id": "poe",
@@ -6278,7 +6346,10 @@
       "extraInlineSelectors.add": [
         ".x1lliihq"
       ],
-      "enableRichTranslate": false
+      "enableRichTranslate": false,
+      "bodyRule.add": {
+        "enable": false
+      }
     },
     {
       "id": "bing",
@@ -6390,12 +6461,19 @@
       "excludeSelectors": [
         "#app > div > div > header",
         "#app > div > div > div > div > header",
-        "#in-story-masthead"
+        "#in-story-masthead",
+        "[data-testid=masthead-container]"
       ],
       "injectedCss": [
         "a::after {position:relative!important;}",
         "footer {line-height: unset!important;;}"
-      ]
+      ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.enableTranslate": true
+      },
+      "initialSelectorGlobalAttributes.remove": {
+        "header": {}
+      }
     },
     {
       "id": "bugsKde",
@@ -10715,6 +10793,10 @@
         "hookType": "fetch",
         "subtitleUrlRegExp": "iplayer/subtitles/.*.xml",
         "loadingContainerSelector": ".smp-toucan-player"
+      },
+      "bodyRule.add": {
+        "bodySelector": "#main-content",
+        "articleSelector": "article"
       }
     },
     {
@@ -11340,10 +11422,14 @@
         "[class*='ltx_lst_language_']",
         "div.package-alerts",
         ".ltx_toclist",
-        ".ltx_authors",
-        ".ltx_eqn_table"
+        ".ltx_authors"
       ],
-      "enableRichTranslate": false
+      "bodyRule.add": {
+        "bodySelector": "article",
+        "articleSelector": ".ltx_abstract"
+      },
+      "enableRichTranslate": false,
+      "enableRichTranslate.add_v.[1.12.1]": true
     },
     {
       "id": "ar5iv.labs.arxiv.org",
@@ -11354,7 +11440,8 @@
         ".ltx_listing.ltx_lstlisting.ltx_listing",
         ".ltx_eqn_table"
       ],
-      "enableRichTranslate": false
+      "enableRichTranslate": false,
+      "enableRichTranslate.add_v.[1.12.1]": true
     },
     {
       "id": "jstor",
@@ -11415,6 +11502,7 @@
         "button"
       ],
       "isTransformPreTagNewLine": true,
+      "advanceTransformPreTagNewLine": true,
       "isTranslateTitle": false
     },
     {
@@ -12452,9 +12540,10 @@
       "id": "fix-header",
       "selectorMatches": [
         "article header",
-        "header h1"
+        "header h1",
+        "header p"
       ],
-      "preTranslateLimiter.add_v.[1.11.8]": {
+      "preTranslateLimiter.add_v.[1.12.1]": {
         "header.enableTranslate": true
       },
       "initialSelectorGlobalAttributes.remove": {
@@ -12534,6 +12623,7 @@
       "id": "journals.aps",
       "matches": "journals.aps.*",
       "enableRichTranslate": false,
+      "enableRichTranslate.add_v.[1.12.1]": true,
       "additionalInlineSelectors.add": [
         "[class*='article'] button"
       ],
@@ -12549,7 +12639,8 @@
         "[class*='MathJax']",
         "[class*='math-']"
       ],
-      "enableRichTranslate": false
+      "enableRichTranslate": false,
+      "enableRichTranslate.add_v.[1.12.1]": true
     },
     {
       "id": "mobalytics",
@@ -12564,6 +12655,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-13T02:55:19.028Z",
-  "latestVersion": "1.11.7"
+  "buildinConfigUpdatedAt": "2024-12-13T14:38:51.702Z",
+  "latestVersion": "1.12.1"
 }
