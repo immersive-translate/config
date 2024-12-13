@@ -11388,13 +11388,15 @@
     {
       "id": "bsky.app",
       "matches": "https://bsky.app",
-      "selectors": [
-        "[data-testid*=postText]",
-        "[data-testid*=postThread]",
-        "[data-testid*=feedItem]"
-      ],
       "excludeSelectors.add": [
-        "a[aria-label]"
+        "[class='css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a']",
+        "[class='css-175oi2r r-1la3zjv r-3o4zer']",
+        "[data-testid^=homeScreenFeedTabs]",
+        "[class='css-146c3p1 r-1loqt21']",
+        "[class='css-1jxf684 r-1loqt21']",
+        "[data-testid=repostCount]",
+        "[data-testid=likeCount]",
+        "[data-testid=replyBtn]"
       ],
       "likePreSelectors.add_v.[1.11.5]": [
         "[data-testid*=postThread] [data-word-wrap]",
@@ -11406,7 +11408,8 @@
         "[data-feed-context] a[role=link]"
       ],
       "injectedCss.add": [
-        ".r-xoduu5 {display:inline!important;}"
+        ".r-xoduu5 {display:inline!important;}",
+        "[style*='-webkit-line-clamp'] {-webkit-line-clamp:unset!important;}"
       ],
       "extraBlockSelectors.remove": [
         "button"
@@ -12561,6 +12564,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-12T13:36:45.727Z",
+  "buildinConfigUpdatedAt": "2024-12-13T02:55:19.028Z",
   "latestVersion": "1.11.7"
 }
