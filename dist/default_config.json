@@ -9367,6 +9367,9 @@
         "quickButtonRule": {
           "appendSelector": ".mc-video__controls"
         }
+      },
+      "subtitleRule.add_v.[1.12.2]": {
+        "enableHookDownload": true
       }
     },
     {
@@ -12657,6 +12660,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-13T14:45:48.649Z",
-  "latestVersion": "1.12.1"
+  "buildinConfigUpdatedAt": "2024-12-13T16:14:03.049Z",
+  "latestVersion": "1.12.2"
 }
