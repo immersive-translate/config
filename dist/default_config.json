@@ -12544,23 +12544,6 @@
       ]
     },
     {
-      "id": "fix-header",
-      "selectorMatches": [
-        "article header",
-        "header h1",
-        "header p"
-      ],
-      "preTranslateLimiter.add_v.[1.12.1]": {
-        "header.enableTranslate": true
-      },
-      "initialSelectorGlobalAttributes.remove": {
-        "header": {}
-      },
-      "extraBlockSelectors.add": [
-        ".btn"
-      ]
-    },
-    {
       "id": "vodtw",
       "matches": [
         "www.vodtw.com/book/*"
@@ -12660,8 +12643,34 @@
         ".x1n2onr6.xb3r6kr",
         ".x1n2onr6.xb3r6kr *"
       ]
+    },
+    {
+      "id": "www.inven.co.kr",
+      "matches": [
+        "https://www.inven.co.kr/*"
+      ],
+      "globalStyles.add": {
+        "li": "height:unset!important;"
+      }
+    },
+    {
+      "id": "fix-header",
+      "selectorMatches": [
+        "article header",
+        "header h1",
+        "header p"
+      ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.enableTranslate": true
+      },
+      "initialSelectorGlobalAttributes.remove": {
+        "header": {}
+      },
+      "extraBlockSelectors.add": [
+        ".btn"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-14T03:53:13.918Z",
+  "buildinConfigUpdatedAt": "2024-12-14T13:24:04.349Z",
   "latestVersion": "1.12.2"
 }
