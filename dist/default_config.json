@@ -891,6 +891,7 @@
         "}}",
         "code"
       ],
+      "enableRichGlossaries": true,
       "glossaries": [],
       "disableWarning": false,
       "requestTimeout": 101000,
@@ -12661,6 +12662,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-14T02:33:11.575Z",
+  "buildinConfigUpdatedAt": "2024-12-14T03:53:13.918Z",
   "latestVersion": "1.12.2"
 }
