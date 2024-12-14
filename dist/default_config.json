@@ -1928,7 +1928,7 @@
       }
     },
     "preTranslateLimiter": {},
-    "preTranslateLimiter.add_v.[1.11.7]": {
+    "preTranslateLimiter.add_v.[1.12.1]": {
       "keys": [
         "side",
         "header"
@@ -2247,7 +2247,8 @@
       ],
       "matches": [
         "https://*.immersivetranslate.com/subtitle*",
-        "https://*.immersivetranslate.com/download-subtitle*"
+        "https://*.immersivetranslate.com/download-subtitle*",
+        "http://localhost:38001/download-subtitle*"
       ],
       "pairs": {
         ".source-text": ".target-text"
@@ -9368,7 +9369,7 @@
           "appendSelector": ".mc-video__controls"
         }
       },
-      "subtitleRule.add_v.[1.12.2]": {
+      "subtitleRule.add_v.[1.12.1]": {
         "enableHookDownload": true
       }
     },
@@ -12660,6 +12661,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-13T16:13:38.000Z",
+  "buildinConfigUpdatedAt": "2024-12-14T02:33:11.575Z",
   "latestVersion": "1.12.2"
 }
