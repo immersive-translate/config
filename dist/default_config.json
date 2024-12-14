@@ -5363,7 +5363,6 @@
       "id": "fandom",
       "matches": "*.fandom.com",
       "urlChangeDelay": 800,
-      "normalizeBody": "#mw-content-text",
       "globalStyles": {
         "#mw-content-text > div > div:nth-child(1)": "height:100%;"
       },
@@ -12671,6 +12670,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-14T13:24:04.349Z",
+  "buildinConfigUpdatedAt": "2024-12-14T15:21:42.697Z",
   "latestVersion": "1.12.2"
 }
