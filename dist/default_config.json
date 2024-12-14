@@ -5373,6 +5373,9 @@
       "extraBlockSelectors.add": [
         ".mp-nav a"
       ],
+      "injectedCss.add": [
+        ".immersive-translate-target-translation-block-wrapper {display: unset!important;}"
+      ],
       "isTransformPreTagNewLine": true
     },
     {
@@ -12670,6 +12673,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-14T15:21:42.697Z",
+  "buildinConfigUpdatedAt": "2024-12-14T15:23:45.358Z",
   "latestVersion": "1.12.2"
 }
