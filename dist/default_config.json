@@ -11861,14 +11861,18 @@
       "extraInlineSelectors.add": [
         ".auto-content",
         ".auto-content *",
-        ".font-display .prose",
-        ".font-display .prose *"
+        "#chat-messages > .group:first-child .prose *",
+        "#chat-messages > .group:not(:first-child) .font-display *"
       ],
       "atomicBlockSelectors.add": [
         ".auto-content",
         ".auto-content *",
-        ".font-display .prose",
-        ".font-display .prose *"
+        "#chat-messages > .group:first-child .prose *",
+        "#chat-messages > .group:not(:first-child) .font-display *"
+      ],
+      "injectedCss.add": [
+        ".immersive-translate-target-wrapper br {display:none;}",
+        "[imt-state=dual] .prose p {margin:0;}"
       ],
       "globalStyles.add": {
         ".swiper,.rah-static,[class*=max-h],.line-clamp-1": "overflow:scroll;-webkit-line-clamp:unset;"
@@ -12674,6 +12678,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-15T07:01:22.000Z",
+  "buildinConfigUpdatedAt": "2024-12-15T15:24:55.511Z",
   "latestVersion": "1.12.3"
 }
