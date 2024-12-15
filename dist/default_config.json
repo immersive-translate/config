@@ -1824,7 +1824,7 @@
           "maxNum": 1
         }
       },
-      "minTextLength": 3000,
+      "minTextLength": 800,
       "bodyIsRoot": false,
       "humanPreferred": true,
       "preTranslation": true,
@@ -12674,6 +12674,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-15T04:58:53.378Z",
-  "latestVersion": "1.12.2"
+  "buildinConfigUpdatedAt": "2024-12-15T07:01:44.424Z",
+  "latestVersion": "1.12.3"
 }
