@@ -11447,7 +11447,8 @@
         ".ltx_bibliography",
         ".ltx_tag.ltx_tag_item",
         ".ltx_listing.ltx_lstlisting.ltx_listing",
-        ".ltx_eqn_table"
+        ".ltx_eqn_table",
+        ".ltx_figure_panel"
       ],
       "enableRichTranslate": false,
       "enableRichTranslate.add_v.[1.12.1]": true
@@ -12673,6 +12674,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-14T15:23:45.358Z",
+  "buildinConfigUpdatedAt": "2024-12-15T04:58:53.378Z",
   "latestVersion": "1.12.2"
 }
