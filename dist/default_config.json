@@ -2408,7 +2408,7 @@
       ],
       "isEbookBuilder": true,
       "pageType": "ebookBuilder",
-      "toastErrorMinTimes": 500,
+      "toastErrorMinTimes": 100,
       "isTranslateWhenServiceChanged": false,
       "isTranslateTitle": false,
       "detectTextBufferLength": 80,
@@ -12683,6 +12683,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-16T03:27:41.721Z",
+  "buildinConfigUpdatedAt": "2024-12-16T11:02:05.291Z",
   "latestVersion": "1.12.3"
 }
