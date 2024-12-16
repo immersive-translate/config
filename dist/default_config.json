@@ -12666,6 +12666,13 @@
       }
     },
     {
+      "id": "gemini.google",
+      "matches": "gemini.google.com",
+      "injectedCss.add": [
+        "[data-test-id=conversation] {height: unset!important;}"
+      ]
+    },
+    {
       "id": "fix-header",
       "selectorMatches": [
         "article header",
@@ -12683,6 +12690,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-16T11:02:05.291Z",
+  "buildinConfigUpdatedAt": "2024-12-16T12:38:34.232Z",
   "latestVersion": "1.12.3"
 }
