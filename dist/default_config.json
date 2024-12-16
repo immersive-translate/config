@@ -4146,9 +4146,14 @@
         ".jHAG3.XG5Jd",
         ".OZZZK",
         ".lDdSm",
-        ".ZfoST.VlT6S.azUpZ"
-      ],
-      "translationMode": "translation"
+        ".ZfoST.VlT6S.azUpZ",
+        ".GssDD,.xpAva,.oHwUF,.D1eg_",
+        "[id=CenterRegion]",
+        "[id=RibbonRoot]",
+        "[role=toolbar]",
+        ".qQbyL,.bkYAr,.gpJ9q,.threeColumnCirclePersonaDivWidth",
+        "[class='_rWRU Ejrkd qq2gS D8iyG']"
+      ]
     },
     {
       "id": "producthunt",
@@ -12678,6 +12683,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-15T15:24:55.511Z",
+  "buildinConfigUpdatedAt": "2024-12-16T03:27:41.721Z",
   "latestVersion": "1.12.3"
 }
