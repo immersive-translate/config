@@ -11563,7 +11563,8 @@
         "feedback.featurebase.app",
         "typefully.com",
         "*.affine.*",
-        "*.shopify.com"
+        "*.shopify.com",
+        "*.marscode.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -12693,6 +12694,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-16T12:55:55.829Z",
+  "buildinConfigUpdatedAt": "2024-12-17T06:48:38.724Z",
   "latestVersion": "1.12.3"
 }
