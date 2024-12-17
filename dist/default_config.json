@@ -1183,6 +1183,11 @@
       "defaultVisible": true,
       "defaultHiddenLangs": [
         "zh-TW"
+      ],
+      "placeholderDelimiters": [
+        "{{",
+        "}}",
+        "code"
       ]
     },
     "lingyiwanwu": {
@@ -1204,6 +1209,11 @@
       "defaultVisible": true,
       "defaultHiddenLangs": [
         "zh-TW"
+      ],
+      "placeholderDelimiters": [
+        "{{",
+        "}}",
+        "code"
       ],
       "provider": "custom",
       "limit": 10,
@@ -12694,6 +12704,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-17T07:30:10.000Z",
+  "buildinConfigUpdatedAt": "2024-12-17T14:52:31.846Z",
   "latestVersion": "1.12.4"
 }
