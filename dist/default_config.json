@@ -11544,56 +11544,6 @@
       ]
     },
     {
-      "id": "NoTranslate",
-      "matches": [
-        "*.tiktok.com",
-        "altis.world",
-        "*.newthingsunderthesun.com",
-        "*.gumroad.com",
-        "edstem.org",
-        "actions.tldrnewsletter.com",
-        "community.linkingyourthinking.com",
-        "doc.qt.io",
-        "winaero.com",
-        "community.afforai.com",
-        "www.perplexity.ai",
-        "hdsr.mitpress.mit.edu",
-        "rent.men",
-        "*.rwth-aachen.*",
-        "www.backcountry.com",
-        "intranet.alxswe.com",
-        "www.steepandcheap.com",
-        "whoer.is",
-        "community.seniorswc.com",
-        "www.skool.com",
-        "sfget.jp",
-        "talentcentral.eu.shl.com",
-        "www.crd.york.ac.*",
-        "www.campo.fau.de",
-        "s.hoothin.com",
-        "feedback.featurebase.app",
-        "typefully.com",
-        "*.affine.*",
-        "*.shopify.com",
-        "*.marscode.com"
-      ],
-      "additionalExcludeSelectors.remove": [
-        ".notranslate",
-        "[translate=no]"
-      ]
-    },
-    {
-      "id": "NoPreSiteTranslate",
-      "matches": [
-        "kalimat.anghami.com"
-      ],
-      "additionalExcludeSelectors.remove": [
-        ".notranslate",
-        "[translate=no]"
-      ],
-      "isTransformPreTagNewLine": true
-    },
-    {
       "id": "jmir",
       "matches": [
         "*.jmir.org"
@@ -12695,6 +12645,66 @@
       ]
     },
     {
+      "id": "NoTranslate",
+      "matches": [
+        "*.tiktok.com",
+        "altis.world",
+        "*.newthingsunderthesun.com",
+        "*.gumroad.com",
+        "edstem.org",
+        "actions.tldrnewsletter.com",
+        "community.linkingyourthinking.com",
+        "doc.qt.io",
+        "winaero.com",
+        "community.afforai.com",
+        "www.perplexity.ai",
+        "hdsr.mitpress.mit.edu",
+        "rent.men",
+        "*.rwth-aachen.*",
+        "www.backcountry.com",
+        "intranet.alxswe.com",
+        "www.steepandcheap.com",
+        "whoer.is",
+        "community.seniorswc.com",
+        "www.skool.com",
+        "sfget.jp",
+        "talentcentral.eu.shl.com",
+        "www.crd.york.ac.*",
+        "www.campo.fau.de",
+        "s.hoothin.com",
+        "feedback.featurebase.app",
+        "typefully.com",
+        "*.affine.*",
+        "*.shopify.com",
+        "*.marscode.com"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ]
+    },
+    {
+      "id": "NoPreSiteTranslate",
+      "matches": [
+        "kalimat.anghami.com"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
+      "isTransformPreTagNewLine": true
+    },
+    {
+      "id": "bodyNoTranslateSite",
+      "selectorMatches": [
+        "body[translate=no]"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ]
+    },
+    {
       "id": "fix-header",
       "selectorMatches": [
         "article header",
@@ -12712,6 +12722,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-18T06:08:17.161Z",
+  "buildinConfigUpdatedAt": "2024-12-18T12:25:07.390Z",
   "latestVersion": "1.12.4"
 }
