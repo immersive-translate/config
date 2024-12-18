@@ -12688,6 +12688,13 @@
       ]
     },
     {
+      "id": "ieltscat.xdf",
+      "matches": "ieltscat.xdf.*",
+      "injectedCss.add": [
+        "#tabs-content-wrap {overflow:scroll;}"
+      ]
+    },
+    {
       "id": "fix-header",
       "selectorMatches": [
         "article header",
@@ -12705,6 +12712,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-18T03:19:35.359Z",
+  "buildinConfigUpdatedAt": "2024-12-18T06:08:17.161Z",
   "latestVersion": "1.12.4"
 }
