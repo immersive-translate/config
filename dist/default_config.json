@@ -1074,6 +1074,7 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "enableAIContext": false,
+      "enableRichGlossaries": true,
       "provider": "pro"
     },
     "chatgpt": {
@@ -12704,6 +12705,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-18T02:24:24.801Z",
+  "buildinConfigUpdatedAt": "2024-12-18T03:19:35.359Z",
   "latestVersion": "1.12.4"
 }
