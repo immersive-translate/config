@@ -3360,6 +3360,7 @@
       "useIframePostMessage": false,
       "excludeMatches": [
         "https://github.com/*/*/settings",
+        "https://github.com/*/*/settings/*",
         "https://github.com/settings/*",
         "https://github.com/sponsors/*",
         "https://github.com/readme/*",
@@ -12725,6 +12726,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-19T03:23:44.623Z",
+  "buildinConfigUpdatedAt": "2024-12-19T11:10:56.519Z",
   "latestVersion": "1.12.4"
 }
