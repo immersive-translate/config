@@ -8430,6 +8430,9 @@
         "comic-days.com",
         "www.corocoro.jp"
       ],
+      "excludeMatches": [
+        "tonarinoyj.jp"
+      ],
       "selectorMatches": [
         "canvas.page-image.js-page-image",
         "img.page-image.js-page-image"
@@ -12722,6 +12725,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-18T15:44:14.803Z",
+  "buildinConfigUpdatedAt": "2024-12-19T03:23:44.623Z",
   "latestVersion": "1.12.4"
 }
