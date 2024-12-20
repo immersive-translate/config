@@ -7357,7 +7357,7 @@
           "injectCSS": ".imt-quick-subtitle-button {height: 60%; margin-right: 50px; font-size: 20px; } .logo,.logo svg { height: 36px; width: 36px} .label { display: none; } .imt-quick-subtitle-pop-content {transform: translateX(50%); right: 0}"
         },
         "attachRule": {
-          "appendSelector": ".watch-video",
+          "appendSelector": ".watch-video--player-view > div",
           "injectedGlobalCSS": ".player-timedtext {display:none!important;}",
           "injectedCSS": [
             ".imt-caption-window {margin-bottom: 0; bottom: 10%;}"
@@ -12757,6 +12757,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-20T08:45:36.908Z",
+  "buildinConfigUpdatedAt": "2024-12-20T08:53:48.958Z",
   "latestVersion": "1.12.4"
 }
