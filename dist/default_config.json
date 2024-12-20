@@ -403,7 +403,8 @@
     "https://tubitv.com[TUBI]",
     "https://www.tiktok.com[TikTok]",
     "https://www.barrons.com/[BARRONS]",
-    "https://courses.mitxonline.mit.edu/[MITXONLINE]"
+    "https://courses.mitxonline.mit.edu/[MITXONLINE]",
+    "https://www.docubay.com/[Docubay]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -10176,6 +10177,36 @@
       }
     },
     {
+      "id": "docubay",
+      "matches": [
+        "www.docubay.com"
+      ],
+      "excludeSelectors.add": [
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#immersive-translate-caption-window *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": "div.vjs-subs-caps-button",
+          "injectCSS": ".label { display: none; }"
+        },
+        "injectedCss": [
+          "#immersive-translate-quick-button-container { position: absolute; top: -3px; right: 0; }"
+        ],
+        "attachRule": {
+          "appendSelector": "#vjs_video_3",
+          "injectedGlobalCSS": [
+            "div.vjs-text-track-cue { display: none !important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "quantinsti",
       "matches": [
         "quantra.quantinsti.com"
@@ -12726,6 +12757,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-19T11:10:56.519Z",
+  "buildinConfigUpdatedAt": "2024-12-20T08:45:36.908Z",
   "latestVersion": "1.12.4"
 }
