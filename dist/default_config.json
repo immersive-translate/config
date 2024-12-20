@@ -9885,6 +9885,49 @@
       }
     },
     {
+      "id": "cgcookie.com",
+      "matches": [
+        "cgcookie.com"
+      ],
+      "excludeSelectors.add": [
+        "div[data-handle='captions']",
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        "div[data-handle='captions'] *",
+        "#immersive-translate-caption-window *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": ".*\\.vtt",
+        "hookType": "xhr",
+        "loadingContainerSelector": "div[data-handle='captions']",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container { display: inline-block !important; height: 100%; position: absolute; bottom: 100%; right: 0;}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".w-bottom-bar-right-inner.w-css-reset",
+          "insertBeforeSelector": ".w-bottom-bar-right-inner.w-css-reset>.w-css-reset:first-child",
+          "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: 120px !important; bottom 30px; }"
+        },
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ],
+        "attachRule": {
+          "appendSelector": ".w-vulcan-overlays--center > div",
+          "injectedGlobalCSS": [
+            ".w-captions.w-css-reset { display: none !important; }",
+            ".w-bottom-bar-right-inner.w-css-reset { z-index: 2147483647; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {margin-bottom: 0;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "wistia",
       "matches": [
         "*.wistia.net",
@@ -12757,6 +12800,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-20T08:53:48.958Z",
+  "buildinConfigUpdatedAt": "2024-12-20T09:00:47.503Z",
   "latestVersion": "1.12.4"
 }
