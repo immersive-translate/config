@@ -1988,7 +1988,8 @@
     ],
     "atomicBlockTags": [],
     "excludeSelectors": [
-      "[default-translate]"
+      "[default-translate]",
+      ".breadcrumbs"
     ],
     "additionalExcludeSelectors": [
       "[contenteditable=\"true\"]",
@@ -1996,7 +1997,6 @@
       "#monica-content-root",
       "#immersive-translate-popup",
       ".social-share",
-      ".breadcrumbs",
       ".post__footer",
       ".btn",
       ".share-nav",
@@ -12831,6 +12831,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-20T10:12:29.445Z",
+  "buildinConfigUpdatedAt": "2024-12-20T10:24:16.862Z",
   "latestVersion": "1.12.4"
 }
