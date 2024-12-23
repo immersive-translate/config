@@ -6997,6 +6997,9 @@
       ],
       "bodyRule.add": {
         "bodySelector": ".search-results-list"
+      },
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.enableTranslate": true
       }
     },
     {
@@ -12865,6 +12868,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-23T03:04:31.145Z",
+  "buildinConfigUpdatedAt": "2024-12-23T06:37:09.940Z",
   "latestVersion": "1.12.4"
 }
