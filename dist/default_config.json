@@ -9912,7 +9912,8 @@
     {
       "id": "cgcookie.com",
       "matches": [
-        "cgcookie.com"
+        "cgcookie.com",
+        "academy.yoast.com"
       ],
       "excludeSelectors.add": [
         "div[data-handle='captions']",
@@ -12894,6 +12895,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-23T09:40:51.507Z",
+  "buildinConfigUpdatedAt": "2024-12-23T10:01:41.937Z",
   "latestVersion": "1.12.4"
 }
