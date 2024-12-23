@@ -12760,7 +12760,18 @@
         "[class*='math-']"
       ],
       "enableRichTranslate": false,
-      "enableRichTranslate.add_v.[1.12.1]": true
+      "enableRichTranslate.add_v.[1.12.1]": true,
+      "advanceMergeConfig": [
+        {
+          "condition": "translationService==zhipu",
+          "advanceConfig": {
+            "rich.stayOriginalTags.remove": [
+              "SUP",
+              "SUB"
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "mobalytics",
@@ -12882,6 +12893,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-23T08:20:56.476Z",
+  "buildinConfigUpdatedAt": "2024-12-23T09:19:48.461Z",
   "latestVersion": "1.12.4"
 }
