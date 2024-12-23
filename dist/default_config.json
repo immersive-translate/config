@@ -7270,6 +7270,16 @@
       ],
       "injectedCss.add": [
         ".md-sidebar__inner .immersive-translate-target-wrapper {display: inline-flex;}"
+      ],
+      "advanceMergeConfig": [
+        {
+          "condition": "platform==safari",
+          "advanceConfig": {
+            "generalRule": {
+              "preTranslateLimiter": {}
+            }
+          }
+        }
       ]
     },
     {
@@ -12920,6 +12930,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-23T15:04:53.141Z",
+  "buildinConfigUpdatedAt": "2024-12-23T16:53:29.217Z",
   "latestVersion": "1.12.4"
 }
