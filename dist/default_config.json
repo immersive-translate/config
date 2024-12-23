@@ -3315,7 +3315,8 @@
         "#-post-rtjson-content",
         ".RichTextJSON-root",
         "[slot='title']",
-        ".room-message-text"
+        ".room-message-text",
+        "[source=re_reddit] div > a.text-neutral-content-weak"
       ],
       "excludeSelectors": [
         ".text-neutral-content-weak"
@@ -12871,6 +12872,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-23T06:59:42.111Z",
+  "buildinConfigUpdatedAt": "2024-12-23T07:17:15.393Z",
   "latestVersion": "1.12.4"
 }
