@@ -12868,7 +12868,8 @@
     {
       "id": "bodyNoTranslateSite",
       "selectorMatches": [
-        "body[translate=no]"
+        "body[translate=no]",
+        "#app[translate=no]"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -12893,6 +12894,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-23T09:19:48.461Z",
+  "buildinConfigUpdatedAt": "2024-12-23T09:40:51.507Z",
   "latestVersion": "1.12.4"
 }
