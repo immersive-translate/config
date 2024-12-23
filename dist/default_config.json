@@ -12744,7 +12744,6 @@
       "id": "journals.aps",
       "matches": "journals.aps.*",
       "enableRichTranslate": false,
-      "enableRichTranslate.add_v.[1.12.1]": true,
       "additionalInlineSelectors.add": [
         "[class*='article'] button"
       ],
@@ -12883,6 +12882,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-23T07:46:01.755Z",
+  "buildinConfigUpdatedAt": "2024-12-23T08:20:56.476Z",
   "latestVersion": "1.12.4"
 }
