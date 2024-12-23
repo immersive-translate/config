@@ -405,7 +405,8 @@
     "https://www.barrons.com/[BARRONS]",
     "https://courses.mitxonline.mit.edu/[MITXONLINE]",
     "https://www.docubay.com/[Docubay]",
-    "https://app.hubspot.com/[Hubspot]"
+    "https://app.hubspot.com/[Hubspot]",
+    "https://rumble.com/[Rumble]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -10773,6 +10774,24 @@
       }
     },
     {
+      "id": "rumble",
+      "matches": [
+        "rumble.com"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".video-player",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container { height: 18px; padding: 6px 9px; float: right; }"
+        ],
+        "quickButtonRule": {
+          "injectCSS": ".label { display: none; }",
+          "appendSelector": ".videoPlayer-Rumble-cls > div > div:nth-child(4) > div:nth-child(3)"
+        }
+      }
+    },
+    {
       "id": "codewithchris",
       "matches": [
         "learn.codewithchris.com",
@@ -12831,6 +12850,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-20T10:24:16.862Z",
+  "buildinConfigUpdatedAt": "2024-12-23T02:51:27.119Z",
   "latestVersion": "1.12.4"
 }
