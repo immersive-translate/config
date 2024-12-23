@@ -1421,7 +1421,7 @@
       "hr",
       "em"
     ],
-    "enableSkipBuildContainer": true,
+    "enableSkipBuildContainer": false,
     "glossaries": [
       {
         "k": "LLM",
@@ -12895,6 +12895,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-23T10:01:41.937Z",
+  "buildinConfigUpdatedAt": "2024-12-23T10:30:25.822Z",
   "latestVersion": "1.12.4"
 }
