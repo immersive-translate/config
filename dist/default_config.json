@@ -12585,7 +12585,10 @@
     },
     {
       "id": "bb-rich",
-      "selectorMatches": "bb-rich-text-editor",
+      "selectorMatches": [
+        "bb-rich-text-editor",
+        ".bb-editor-root"
+      ],
       "atomicBlockSelectors.add": [
         ".bb-editor-root *"
       ],
@@ -12868,6 +12871,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-23T06:37:09.940Z",
+  "buildinConfigUpdatedAt": "2024-12-23T06:59:42.111Z",
   "latestVersion": "1.12.4"
 }
