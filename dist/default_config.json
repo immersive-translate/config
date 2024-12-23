@@ -406,7 +406,8 @@
     "https://courses.mitxonline.mit.edu/[MITXONLINE]",
     "https://www.docubay.com/[Docubay]",
     "https://app.hubspot.com/[Hubspot]",
-    "https://rumble.com/[Rumble]"
+    "https://rumble.com/[Rumble]",
+    "https://www.wsj.com/[WSJ]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -6433,7 +6434,21 @@
         "nav",
         "[aria-label='Markets summary']"
       ],
-      "injectedCss.add": ".immersive-translate-target-wrapper br {display:none;}"
+      "injectedCss.add": ".immersive-translate-target-wrapper br {display:none;}",
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".video-inner",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container { height: 32px; margin-top: 15px; }"
+        ],
+        "quickButtonRule": {
+          "injectCSS": ".label { display: none; }",
+          "appendSelector": "[id^=\"video-controls-video\"]",
+          "insertBeforeSelector": "[id^=\"video-cc-video\"]",
+          "ccEnableSelector": "[id^=\"video-cc-video\"]"
+        }
+      }
     },
     {
       "id": "businessinsider",
@@ -12850,6 +12865,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-23T02:51:27.119Z",
+  "buildinConfigUpdatedAt": "2024-12-23T03:04:31.145Z",
   "latestVersion": "1.12.4"
 }
