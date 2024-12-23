@@ -5747,6 +5747,17 @@
       "mutationChangeDelay": 600
     },
     {
+      "id": "science",
+      "matches": "www.science.org",
+      "stayOriginalSelectors.add": [
+        ".open-in-viewer"
+      ],
+      "excludeSelectors.add": [
+        ".core-self-citation",
+        ".contributors"
+      ]
+    },
+    {
       "id": "appleinsider",
       "matches": [
         "appleinsider.com"
@@ -12870,7 +12881,8 @@
       "id": "bodyNoTranslateSite",
       "selectorMatches": [
         "body[translate=no]",
-        "#app[translate=no]"
+        "#app[translate=no]",
+        "#root[translate=no]"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -12895,6 +12907,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-23T10:30:25.822Z",
+  "buildinConfigUpdatedAt": "2024-12-23T14:40:27.575Z",
   "latestVersion": "1.12.4"
 }
