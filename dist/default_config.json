@@ -12828,6 +12828,19 @@
       ]
     },
     {
+      "id": "other-chatapps",
+      "matches": [
+        "app.salesmartly.com/chat"
+      ],
+      "selectors.add": [
+        ".chat__inbox_item_text_ordinary",
+        ".ivu-tooltip [title]"
+      ],
+      "injectedCss.add": [
+        "._ss_2FLBr4_u {height:unset!important;}"
+      ]
+    },
+    {
       "id": "NoTranslate",
       "matches": [
         "*.tiktok.com",
@@ -12907,6 +12920,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-23T14:40:27.575Z",
+  "buildinConfigUpdatedAt": "2024-12-23T15:04:53.141Z",
   "latestVersion": "1.12.4"
 }
