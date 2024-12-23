@@ -6991,10 +6991,14 @@
         "#Scholarscope_HighlightContent",
         "#Scholarscope_HighlightContent span"
       ],
+      "stayOriginalSelectors.add": [
+        ".usa-link"
+      ],
       "injectedCss": [
         "#Scholarscope_HighlightOrigin > p font,#Scholarscope_HighlightContent > p font {display: inline!important;}",
         "#Scholarscope_HighlightOrigin > p font br,#Scholarscope_HighlightContent > p font br {display: none!important;}",
-        ".title-translate {display:block;}"
+        ".title-translate {display:block;}",
+        ".immersive-translate-target-inner br{display:none;}"
       ],
       "bodyRule.add": {
         "bodySelector": ".search-results-list"
@@ -12872,6 +12876,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-23T07:17:15.393Z",
+  "buildinConfigUpdatedAt": "2024-12-23T07:28:57.054Z",
   "latestVersion": "1.12.4"
 }
