@@ -3404,7 +3404,10 @@
         "#repo-content-turbo-frame .markdown-title",
         "[app-name='blackbird-search'] [data-hpc='true']",
         ".topic-box > a > p:nth-of-type(2)",
-        "[data-testid=\"listitem-title-link\"]"
+        "[data-testid=\"listitem-title-link\"]",
+        "#repo-content-turbo-frame p",
+        "#repo-content-turbo-frame h4",
+        "[aria-label=\"card content\"] .flex-column > div:nth-child(2)"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -12911,6 +12914,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-24T04:05:03.000Z",
+  "buildinConfigUpdatedAt": "2024-12-24T07:33:38.306Z",
   "latestVersion": "1.12.5"
 }
