@@ -6141,7 +6141,8 @@
       "excludeMatches": [
         "https://www.perplexity.ai/hub/*",
         "https://www.perplexity.ai/onboarding",
-        "https://www.perplexity.ai/enterprise*"
+        "https://www.perplexity.ai/enterprise*",
+        "https://www.perplexity.ai/2024recap"
       ],
       "globalStyles": {
         "[class*=line-clamp]": "-webkit-line-clamp: unset !important;"
@@ -12942,6 +12943,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-24T09:36:20.653Z",
+  "buildinConfigUpdatedAt": "2024-12-24T09:47:12.757Z",
   "latestVersion": "1.12.5"
 }
