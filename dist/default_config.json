@@ -301,7 +301,8 @@
     "https://comick.io/[Comick][chrome,firefox,safari]",
     "https://klmanga.rs/[Klmanga][chrome,firefox,safari]",
     "https://www.sukima.me[Sukima][chrome,firefox,safari,userscript]",
-    "https://younganimal.com[YoungAnimal][chrome,firefox,safari,imtIOS]"
+    "https://younganimal.com[YoungAnimal][chrome,firefox,safari,imtIOS]",
+    "https://piccoma.com[Piccoma][chrome,firefox,safari,userscript]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -8118,6 +8119,26 @@
       }
     },
     {
+      "id": "piccoma.com",
+      "matches": "piccoma.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "opImageType": "append",
+        "urlFetchType": "canvasArgs",
+        "imageSelectors": [
+          ".PCM-viewer2_canvas_wrap canvas"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "userscript"
+        ]
+      }
+    },
+    {
       "id": "sukima",
       "matches": "www.sukima.me",
       "imageRule.add": {
@@ -12914,6 +12935,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-24T07:33:38.306Z",
+  "buildinConfigUpdatedAt": "2024-12-24T08:14:18.344Z",
   "latestVersion": "1.12.5"
 }
