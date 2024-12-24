@@ -6129,6 +6129,13 @@
       }
     },
     {
+      "id": "perplexity.ai.2024recap",
+      "matches": "https://www.perplexity.ai/2024recap",
+      "selectors": [
+        "header"
+      ]
+    },
+    {
       "id": "perplexity",
       "matches": "https://www.perplexity.ai",
       "excludeMatches": [
@@ -12935,6 +12942,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-24T08:14:18.344Z",
+  "buildinConfigUpdatedAt": "2024-12-24T09:36:20.653Z",
   "latestVersion": "1.12.5"
 }
