@@ -1,11 +1,12 @@
 {
-  "resaleVersion": "1.10.2",
+  "releaseVersion": "1.12.4",
   "immediateTranslationTextCount": 4999,
   "translationStartMode": "dynamic",
   "domReadyDetectTimeout": 3000,
   "translationService": "bing",
   "mouseModifierKeyPressTimeout": 400,
   "sameLangCheck": true,
+  "isPreview": true,
   "immediateTranslationPattern": {
     "matches": [
       "www.tumblr.com",
@@ -905,7 +906,7 @@
       "interval": 1050,
       "limit": 0.8,
       "prompt": "You are a professional,authentic translation engine,only returns translations.\nFor example:\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\nThe translation is:\n<Start>\n你好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\nTranslate the content to {{to}} Language:\n\n<Start>{{text}}<End>",
-      "model": "gemini-1.0-pro-latest",
+      "model": "gemini-1.5-pro-latest",
       "proModel": "gemini-1.5-pro-latest",
       "proLimit": 10,
       "maxTextGroupLengthPerRequest": 1,
@@ -1521,6 +1522,7 @@
       "mangaTranslator": "auto",
       "commonTranslator": "bing",
       "enableTools": false,
+      "enableMouseHover": true,
       "hoverMinWidth": 100,
       "hoverMinHeight": 100,
       "toolsMinWidth": 280,
@@ -4231,13 +4233,23 @@
       "wrapperSuffix": "",
       "paragraphMinTextCount": 4,
       "paragraphMinWordCount": 2,
-      "enableInputDeepActive": true
+      "enableInputDeepActive": true,
+      "advanceMergeConfig": [
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "immediateTranslationTextCount": 0
+          }
+        }
+      ]
     },
     {
       "id": "telegram",
       "matches": [
         "web.telegram.org/z/*",
-        "web.telegram.org/a/*"
+        "web.telegram.org/a/*",
+        "web.telegram.org/k/*",
+        "web.telegram.org/k/"
       ],
       "isTranslateTitle": false,
       "selectors": [
@@ -4256,30 +4268,15 @@
         ".document-wrapper",
         ".message.spoilers-container custom-emoji-element"
       ],
-      "detectParagraphLanguage": true
-    },
-    {
-      "id": "telegramK",
-      "matches": [
-        "web.telegram.org/k/*",
-        "web.telegram.org/k/"
-      ],
-      "selectors": [
-        ".message",
-        ".reply-markup-button-text",
-        ".bot-commands-list-element-description"
-      ],
-      "extraBlockSelectors.add": [
-        ".message.spoilers-container em",
-        ".message.spoilers-container strong"
-      ],
-      "excludeSelectors": [
-        ".time",
-        ".peer-title",
-        ".document-wrapper",
-        ".message.spoilers-container custom-emoji-element"
-      ],
-      "detectParagraphLanguage": true
+      "detectParagraphLanguage": true,
+      "advanceMergeConfig": [
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "immediateTranslationTextCount": 0
+          }
+        }
+      ]
     },
     {
       "id": "githubGist",
@@ -5480,7 +5477,15 @@
         "streamingDelayTime": 1000
       },
       "enableRichTranslate": false,
-      "enableRichTranslate.add_v.[1.12.1]": true
+      "enableRichTranslate.add_v.[1.12.1]": true,
+      "advanceMergeConfig": [
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "immediateTranslationTextCount": 0
+          }
+        }
+      ]
     },
     {
       "id": "poe",
@@ -6745,7 +6750,15 @@
         "streamingChange": true,
         "streamingDeepChild": false,
         "streamingDelayTime": 1000
-      }
+      },
+      "advanceMergeConfig": [
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "immediateTranslationTextCount": 0
+          }
+        }
+      ]
     },
     {
       "id": "feishu",
@@ -7407,7 +7420,8 @@
           "injectedGlobalCSS": ".player-timedtext {display:none!important;}",
           "injectedCSS": [
             ".imt-caption-window {margin-bottom: 0; bottom: 10%;}"
-          ]
+          ],
+          "isDelay": true
         },
         "videoSelector": "video",
         "rtlInjectedCss": [
@@ -9931,56 +9945,14 @@
       }
     },
     {
-      "id": "cgcookie.com",
-      "matches": [
-        "cgcookie.com",
-        "academy.yoast.com"
-      ],
-      "excludeSelectors.add": [
-        "div[data-handle='captions']",
-        "#immersive-translate-caption-window"
-      ],
-      "mutationExcludeSelectors.add": [
-        "div[data-handle='captions'] *",
-        "#immersive-translate-caption-window *"
-      ],
-      "mainFrameMinTextCount": 0,
-      "mainFrameMinWordCount": 0,
-      "subtitleRule.add": {
-        "type": "subsrt",
-        "subtitleUrlRegExp": ".*\\.vtt",
-        "hookType": "xhr",
-        "loadingContainerSelector": "div[data-handle='captions']",
-        "injectedCss": [
-          "#immersive-translate-quick-button-container { display: inline-block !important; height: 100%; position: absolute; bottom: 100%; right: 0;}"
-        ],
-        "quickButtonRule": {
-          "appendSelector": ".w-bottom-bar-right-inner.w-css-reset",
-          "insertBeforeSelector": ".w-bottom-bar-right-inner.w-css-reset>.w-css-reset:first-child",
-          "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: 120px !important; bottom 30px; }"
-        },
-        "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
-        ],
-        "attachRule": {
-          "appendSelector": ".w-vulcan-overlays--center > div",
-          "injectedGlobalCSS": [
-            ".w-captions.w-css-reset { display: none !important; }",
-            ".w-bottom-bar-right-inner.w-css-reset { z-index: 2147483647; }"
-          ],
-          "injectedCSS": [
-            ".imt-caption-window {margin-bottom: 0;}"
-          ]
-        }
-      }
-    },
-    {
       "id": "wistia",
       "matches": [
         "*.wistia.net",
         "platform.thinkific.com",
         "courses.kevinpowell.co",
-        "learn.ni.com"
+        "learn.ni.com",
+        "cgcookie.com",
+        "academy.yoast.com"
       ],
       "selectorMatches": [
         ".wistia_embed"
@@ -10019,7 +9991,8 @@
           ],
           "injectedCSS": [
             ".imt-caption-window {margin-bottom: 0;}"
-          ]
+          ],
+          "isDelay": true
         }
       },
       "subtitleRule.add_v.[1.10.3]": {
@@ -12019,7 +11992,15 @@
       ],
       "globalStyles.add": {
         ".swiper,.rah-static,[class*=max-h],.line-clamp-1": "overflow:scroll;-webkit-line-clamp:unset;"
-      }
+      },
+      "advanceMergeConfig": [
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "immediateTranslationTextCount": 0
+          }
+        }
+      ]
     },
     {
       "id": "queenslibrary.org",
@@ -12774,28 +12755,6 @@
       ]
     },
     {
-      "id": "otherMathSites",
-      "selectorMatches": [
-        "math",
-        "mjx-container",
-        "[class*='MathJax']",
-        "[class*='math-']"
-      ],
-      "enableRichTranslate": false,
-      "enableRichTranslate.add_v.[1.12.1]": true,
-      "advanceMergeConfig": [
-        {
-          "condition": "translationService==zhipu",
-          "advanceConfig": {
-            "rich.stayOriginalTags.remove": [
-              "SUP",
-              "SUB"
-            ]
-          }
-        }
-      ]
-    },
-    {
       "id": "mobalytics",
       "matches": "mobalytics.gg",
       "extraInlineSelectors.add": [
@@ -12913,6 +12872,28 @@
       ]
     },
     {
+      "id": "otherMathSites",
+      "selectorMatches": [
+        "math",
+        "mjx-container",
+        "[class*='MathJax']",
+        "[class*='math-']"
+      ],
+      "enableRichTranslate": false,
+      "enableRichTranslate.add_v.[1.12.1]": true,
+      "advanceMergeConfig": [
+        {
+          "condition": "translationService==zhipu",
+          "advanceConfig": {
+            "rich.stayOriginalTags.remove": [
+              "SUP",
+              "SUB"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id": "fix-header",
       "selectorMatches": [
         "article header",
@@ -12930,6 +12911,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-23T16:53:29.217Z",
-  "latestVersion": "1.12.4"
+  "buildinConfigUpdatedAt": "2024-12-24T04:05:23.424Z",
+  "latestVersion": "1.12.5"
 }
