@@ -5724,6 +5724,9 @@
         "webofscience-clarivate*.*",
         "*.ustc.edu.*/*wos*"
       ],
+      "selectorMatches": [
+        "app-wos.mat-typography"
+      ],
       "globalStyles": {
         ".abstract": "height:auto !important;",
         ".show-more-lines": "height:unset !important;"
@@ -12953,6 +12956,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-25T03:56:38.256Z",
+  "buildinConfigUpdatedAt": "2024-12-25T07:20:48.408Z",
   "latestVersion": "1.12.5"
 }
