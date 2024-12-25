@@ -12941,8 +12941,17 @@
       "extraBlockSelectors.add": [
         ".btn"
       ]
+    },
+    {
+      "id": "book-douban",
+      "matches": [
+        "book.douban.com"
+      ],
+      "excludeTags.remove": [
+        "PRE"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-24T09:47:12.757Z",
+  "buildinConfigUpdatedAt": "2024-12-25T03:51:52.983Z",
   "latestVersion": "1.12.5"
 }
