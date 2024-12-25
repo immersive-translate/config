@@ -3495,7 +3495,8 @@
       "matches": "*.facebook.com",
       "excludeMatches": [
         "https://www.facebook.com/business/*",
-        "https://www.facebook.com/help*"
+        "https://www.facebook.com/help*",
+        "https://www.facebook.com/ads/library/*"
       ],
       "selectors": [
         "div[dir=auto][style]",
@@ -12952,6 +12953,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-25T03:51:52.983Z",
+  "buildinConfigUpdatedAt": "2024-12-25T03:56:38.256Z",
   "latestVersion": "1.12.5"
 }
