@@ -302,7 +302,9 @@
     "https://klmanga.rs/[Klmanga][chrome,firefox,safari]",
     "https://www.sukima.me[Sukima][chrome,firefox,safari,userscript]",
     "https://younganimal.com[YoungAnimal][chrome,firefox,safari,imtIOS]",
-    "https://piccoma.com[Piccoma][chrome,firefox,safari,userscript]"
+    "https://piccoma.com[Piccoma][chrome,firefox,safari,userscript]",
+    "https://www.mangasuika.com/[Mangasuika][chrome,firefox,safari]",
+    "https://www.firemanga.com/[Firemanga][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -9065,6 +9067,24 @@
       }
     },
     {
+      "id": "firemanga",
+      "matches": [
+        "www.firemanga.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".imageChap img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "manhwahub",
       "matches": [
         "manhwahub.net"
@@ -12975,6 +12995,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-26T07:38:36.464Z",
+  "buildinConfigUpdatedAt": "2024-12-26T07:50:53.510Z",
   "latestVersion": "1.12.5"
 }
