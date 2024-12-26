@@ -9046,6 +9046,25 @@
       }
     },
     {
+      "id": "mangasuika",
+      "matches": [
+        "www.mangasuika.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".box_doc img"
+        ],
+        "injectedCss": ".imt-loading {z-index:999 !important;}",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "manhwahub",
       "matches": [
         "manhwahub.net"
@@ -12956,6 +12975,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-25T07:20:48.408Z",
+  "buildinConfigUpdatedAt": "2024-12-26T07:38:36.464Z",
   "latestVersion": "1.12.5"
 }
