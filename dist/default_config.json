@@ -12872,6 +12872,15 @@
       ]
     },
     {
+      "id": "book-douban",
+      "matches": [
+        "book.douban.com"
+      ],
+      "excludeTags.remove": [
+        "PRE"
+      ]
+    },
+    {
       "id": "other-chatapps",
       "matches": [
         "app.salesmartly.com/chat"
@@ -12984,17 +12993,8 @@
       "extraBlockSelectors.add": [
         ".btn"
       ]
-    },
-    {
-      "id": "book-douban",
-      "matches": [
-        "book.douban.com"
-      ],
-      "excludeTags.remove": [
-        "PRE"
-      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-26T07:50:53.510Z",
-  "latestVersion": "1.12.5"
+  "buildinConfigUpdatedAt": "2024-12-26T09:01:58.436Z",
+  "latestVersion": "1.12.6"
 }
