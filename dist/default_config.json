@@ -2184,7 +2184,8 @@
       "label",
       "button",
       "[class*='menu-button']",
-      "br"
+      "br",
+      ".xt-google-domain-link-metrics"
     ],
     "allBlockTags": [
       "BODY",
@@ -13019,6 +13020,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-27T11:54:14.188Z",
+  "buildinConfigUpdatedAt": "2024-12-27T12:06:35.623Z",
   "latestVersion": "1.12.6"
 }
