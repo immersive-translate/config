@@ -5771,7 +5771,13 @@
       "excludeSelectors.add": [
         ".core-self-citation",
         ".contributors"
-      ]
+      ],
+      "initialSelectorGlobalAttributes.remove": {
+        "header": {}
+      },
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.enableTranslate": true
+      }
     },
     {
       "id": "appleinsider",
@@ -13014,6 +13020,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-27T07:22:28.675Z",
+  "buildinConfigUpdatedAt": "2024-12-27T11:39:55.572Z",
   "latestVersion": "1.12.6"
 }
