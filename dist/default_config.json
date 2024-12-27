@@ -3940,6 +3940,9 @@
       "id": "otherInstagram",
       "blockMinWordCount": 1,
       "matches": "https://www.instagram.com/*",
+      "excludeSelectors.add": [
+        "https://www.instagram.com/b/*"
+      ],
       "paragraphMinTextCount": 2,
       "selectors": [
         "h1",
@@ -13020,6 +13023,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-27T12:06:35.623Z",
+  "buildinConfigUpdatedAt": "2024-12-27T14:36:00.112Z",
   "latestVersion": "1.12.6"
 }
