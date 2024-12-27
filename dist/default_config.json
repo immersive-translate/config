@@ -1841,8 +1841,7 @@
           "minNum": 4
         },
         "article": {
-          "minNum": 1,
-          "maxNum": 1
+          "minNum": 1
         }
       },
       "minTextLength": 800,
@@ -13020,6 +13019,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-27T11:39:55.572Z",
+  "buildinConfigUpdatedAt": "2024-12-27T11:54:14.188Z",
   "latestVersion": "1.12.6"
 }
