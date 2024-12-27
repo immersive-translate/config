@@ -12992,7 +12992,6 @@
         "[class*='math-']"
       ],
       "enableRichTranslate": false,
-      "enableRichTranslate.add_v.[1.12.1]": true,
       "advanceMergeConfig": [
         {
           "condition": "translationService==zhipu",
@@ -13023,6 +13022,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-27T14:36:00.112Z",
+  "buildinConfigUpdatedAt": "2024-12-27T15:18:27.103Z",
   "latestVersion": "1.12.6"
 }
