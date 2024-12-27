@@ -411,7 +411,8 @@
     "https://www.docubay.com/[Docubay]",
     "https://app.hubspot.com/[Hubspot]",
     "https://rumble.com/[Rumble]",
-    "https://www.wsj.com/[WSJ]"
+    "https://www.wsj.com/[WSJ]",
+    "https://www.lmanga.com/[Lmanga]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -9085,6 +9086,24 @@
       }
     },
     {
+      "id": "lmanga",
+      "matches": [
+        "www.lmanga.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".ng-scope img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "manhwahub",
       "matches": [
         "manhwahub.net"
@@ -12995,6 +13014,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-26T09:01:35.000Z",
+  "buildinConfigUpdatedAt": "2024-12-27T07:22:28.675Z",
   "latestVersion": "1.12.6"
 }
