@@ -12899,11 +12899,16 @@
     },
     {
       "id": "book-douban",
-      "matches": [
-        "book.douban.com"
-      ],
+      "matches": "book.douban.com",
       "excludeTags.remove": [
         "PRE"
+      ]
+    },
+    {
+      "id": "graphcore",
+      "matches": "www.graphcore.ai",
+      "excludeSelectors.add": [
+        ".morph"
       ]
     },
     {
@@ -13020,6 +13025,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-28T10:37:23.987Z",
+  "buildinConfigUpdatedAt": "2024-12-29T08:27:39.150Z",
   "latestVersion": "1.12.6"
 }
