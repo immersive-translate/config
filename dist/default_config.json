@@ -3354,7 +3354,14 @@
         "[data-testid=ResponsiveAdSlot]",
         "[data-testid=SiteHeader]",
         "[data-testid=HomeTickerV2]"
-      ]
+      ],
+      "bodyRule.add": {
+        "bodySelector": "[data-testid=MainContent]",
+        "articleSelector": "[data-testid=ArticleBody]"
+      },
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.enableTranslate": true
+      }
     },
     {
       "id": "npmjs",
@@ -13025,6 +13032,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-29T08:27:39.150Z",
+  "buildinConfigUpdatedAt": "2024-12-29T09:02:56.020Z",
   "latestVersion": "1.12.6"
 }
