@@ -3191,7 +3191,9 @@
         ".hn-story-title"
       ],
       "excludeSelectors": [
-        ".reply"
+        ".reply",
+        ".comhead",
+        ".subtext"
       ]
     },
     {
@@ -13038,6 +13040,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-30T09:16:09.000Z",
+  "buildinConfigUpdatedAt": "2024-12-30T09:41:48.244Z",
   "latestVersion": "1.12.7"
 }
