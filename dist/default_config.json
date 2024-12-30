@@ -3436,7 +3436,8 @@
         ".js-repos-container .markdown-title",
         "a.anchor",
         "div.file-navigation + div.Box",
-        "[data-testid^='breadcrumbs']"
+        "[data-testid^='breadcrumbs']",
+        "[data-ga-click*=Star]"
       ],
       "extraBlockSelectors.add": [],
       "extraInlineSelectors": [
@@ -13034,6 +13035,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-30T03:23:52.218Z",
+  "buildinConfigUpdatedAt": "2024-12-30T04:14:45.304Z",
   "latestVersion": "1.12.6"
 }
