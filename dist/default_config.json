@@ -12424,14 +12424,17 @@
       }
     },
     {
-      "id": "https://app.follow.is/feeds/",
+      "id": "followis",
       "matches": [
         "https://app.follow.is/feeds/*"
       ],
       "isTranslateTitle": false,
       "excludeSelectors.add": [
         ".bg-native",
-        "main > div > div.h-full:first-child"
+        "main > div > div.h-full:first-child span"
+      ],
+      "injectedCss.add": [
+        "[class*='line-clamp'] {-webkit-line-clamp:unset;}"
       ]
     },
     {
@@ -13035,6 +13038,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-30T04:14:45.304Z",
+  "buildinConfigUpdatedAt": "2024-12-30T07:11:57.839Z",
   "latestVersion": "1.12.6"
 }
