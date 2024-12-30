@@ -284,6 +284,7 @@
     "https://allmanga.to[All Manga][chrome,firefox,safari,imtAndroid]",
     "https://manhwaclan.com[Manhwaclan][chrome,firefox,safari]",
     "https://www.corocoro.jp[CoroCoro][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://tonarinoyj.jp[tonarinoyj][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://yymanhua.com[Yymanhua][chrome,firefox,imtAndroid]",
     "https://manhwatop.com[Manhwatop][chrome,firefox,imtAndroid]",
     "https://palcy.jp/[Palcy][chrome,firefox,safari,imtAndroid]",
@@ -1518,6 +1519,7 @@
       "checkSelfUpdate": true
     },
     "imageRule": {
+      "type": "common",
       "blockToolsUrls": [
         "www.figma.com"
       ],
@@ -8544,9 +8546,7 @@
         "shonenjumpplus.com",
         "viewer.heros-web.com",
         "comic-days.com",
-        "www.corocoro.jp"
-      ],
-      "excludeMatches": [
+        "www.corocoro.jp",
         "tonarinoyj.jp"
       ],
       "selectorMatches": [
@@ -8560,6 +8560,7 @@
           "img.page-image.js-page-image",
           "img[class$=\"_page\"]"
         ],
+        "urlFetchType": "canvasArgs",
         "opImageType": "append",
         "loadingSelectors": [
           "p"
@@ -13033,6 +13034,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-29T14:48:31.088Z",
+  "buildinConfigUpdatedAt": "2024-12-30T03:23:52.218Z",
   "latestVersion": "1.12.6"
 }
