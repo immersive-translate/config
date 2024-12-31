@@ -1,5 +1,5 @@
 {
-  "releaseVersion": "1.12.4",
+  "releaseVersion": "1.12.7",
   "immediateTranslationTextCount": 4999,
   "translationStartMode": "dynamic",
   "domReadyDetectTimeout": 3000,
@@ -13041,6 +13041,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-31T07:52:00.515Z",
+  "buildinConfigUpdatedAt": "2024-12-31T08:13:16.012Z",
   "latestVersion": "1.12.7"
 }
