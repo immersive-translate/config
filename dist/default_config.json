@@ -5070,9 +5070,8 @@
         "[data-rows]": "max-height: unset;-webkit-line-clamp: unset;",
         "[data-a-expander-name='review_text_read_more']": " max-height: unset;"
       },
-      "excludeSelectors": [
+      "additionalExcludeSelectors.add": [
         "#navFooter",
-        "#navbar-main",
         ".s-price-instructions-style",
         "[class*='-star ']",
         "[data-hook='acr-average-stars-rating-text']",
@@ -13040,6 +13039,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-30T09:41:48.244Z",
+  "buildinConfigUpdatedAt": "2024-12-31T03:36:12.025Z",
   "latestVersion": "1.12.7"
 }
