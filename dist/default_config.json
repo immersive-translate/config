@@ -4090,14 +4090,14 @@
         "https://www.inoreader.com/enterprise*"
       ],
       "observeUrlChange": false,
-      "globalStyles": {
-        ".article_title_link,.library_article_text h4,.gadget_overview_article_title,.article_magazine_title_link,.reader_pane_view_style_2 .column_view_title": "-webkit-line-clamp: unset;max-height: unset;",
-        ".article_tile_content_wraper,div.article_tile": "overflow:auto",
-        ".article_header_title": "white-space:normal;max-height: unset;",
-        ".article_header_title span": "display:flex !important;flex-direction: column;",
-        ".ar.article_no_thumbnail": "height:unset;",
-        ".view_style_2 #reader_pane .ar .article_header_text .column_view_info": "position:relative!important;"
-      }
+      "injectedCss.add": [
+        ".article_title_link,.library_article_text h4,.gadget_overview_article_title,.article_magazine_title_link,.reader_pane_view_style_2 .column_view_title {-webkit-line-clamp: unset!important;max-height: unset!important;}",
+        ".article_tile_content_wraper,div.article_tile {overflow:auto}",
+        ".article_header_title {white-space:normal;max-height: unset!important;}",
+        ".article_header_title span {display:flex !important;flex-direction: column;}",
+        ".ar.article_no_thumbnail,[data-type=article] {height:unset!important;}",
+        ".view_style_2 #reader_pane .ar .article_header_text .column_view_info {position:relative!important;}"
+      ]
     },
     {
       "id": "aha",
@@ -13056,6 +13056,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-01T13:25:03.559Z",
+  "buildinConfigUpdatedAt": "2025-01-01T14:49:46.537Z",
   "latestVersion": "1.12.7"
 }
