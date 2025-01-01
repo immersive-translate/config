@@ -2664,6 +2664,9 @@
       ],
       "isTransformPreTagNewLine": true,
       "longBuildPageLength": 1000,
+      "excludeTags.remove": [
+        "PRE"
+      ],
       "buildContainerSelectors": [
         "pre"
       ]
@@ -13053,6 +13056,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-01T13:15:48.252Z",
+  "buildinConfigUpdatedAt": "2025-01-01T13:25:03.559Z",
   "latestVersion": "1.12.7"
 }
