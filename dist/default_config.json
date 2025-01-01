@@ -2656,7 +2656,11 @@
         "bugs.java.com/bugdatabase/view_bug.do",
         "rachelsenglish.com",
         "privatter.net",
-        "www.asuswrt-merlin.net"
+        "www.asuswrt-merlin.net",
+        "tic80.com"
+      ],
+      "selectorMatches": [
+        "pre.changelog"
       ],
       "isTransformPreTagNewLine": true,
       "longBuildPageLength": 1000,
@@ -13049,6 +13053,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2024-12-31T10:26:55.602Z",
+  "buildinConfigUpdatedAt": "2025-01-01T13:15:48.252Z",
   "latestVersion": "1.12.7"
 }
