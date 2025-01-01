@@ -12943,6 +12943,17 @@
       ]
     },
     {
+      "id": "digitaltrends",
+      "matches": "www.digitaltrends.com",
+      "extraBlockSelectors.add": [
+        ".b-mem-post__title"
+      ],
+      "injectedCss.add": [
+        ".b-mem__inner .b-mem-post:first-child h3{-webkit-line-clamp: 2;}",
+        ".b-mem__inner .b-mem-post:first-child .b-mem-post__excerpt{display:inline;}"
+      ]
+    },
+    {
       "id": "other-chatapps",
       "matches": [
         "app.salesmartly.com/chat"
@@ -13056,6 +13067,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-01T14:49:46.537Z",
+  "buildinConfigUpdatedAt": "2025-01-01T15:45:24.382Z",
   "latestVersion": "1.12.7"
 }
