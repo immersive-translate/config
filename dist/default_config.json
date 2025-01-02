@@ -305,7 +305,8 @@
     "https://younganimal.com[YoungAnimal][chrome,firefox,safari,imtIOS]",
     "https://piccoma.com[Piccoma][chrome,firefox,safari,userscript]",
     "https://www.mangasuika.com/[Mangasuika][chrome,firefox,safari]",
-    "https://www.firemanga.com/[Firemanga][chrome,firefox,safari]"
+    "https://www.firemanga.com/[Firemanga][chrome,firefox,safari]",
+    "https://hentaizap.com/[Hentaizap][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -9149,8 +9150,7 @@
         "platforms": [
           "chrome",
           "firefox",
-          "safari",
-          "imtIOS"
+          "safari"
         ]
       }
     },
@@ -13050,6 +13050,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-02T07:43:15.209Z",
+  "buildinConfigUpdatedAt": "2025-01-02T11:08:20.820Z",
   "latestVersion": "1.12.7"
 }
