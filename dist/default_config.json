@@ -870,6 +870,10 @@
           "prompt": ";; Treat next line as plain text input and translate it into 繁體中文,{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n{{text}}"
         },
         {
+          "id": "zh-CN2ru",
+          "prompt": ";; Treat next line as plain text input and translate it into 俄语,{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n{{text}}"
+        },
+        {
           "id": "auto2wyw",
           "systemPrompt": "你是一个文言文翻译，请用文言文的方式进行翻译，尽可能贴近古风，只返回译文，不含任何解释。",
           "prompt": "请翻译为文言文（避免解释原文）:\n\n{{text}}",
@@ -13050,6 +13054,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-02T11:08:20.820Z",
+  "buildinConfigUpdatedAt": "2025-01-02T15:49:57.818Z",
   "latestVersion": "1.12.7"
 }
