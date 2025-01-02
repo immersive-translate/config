@@ -865,32 +865,15 @@
           "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文言文翻译为白话文，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}"
         },
         {
+          "id": "zh-CN2zh-TW",
+          "prompt": ";; Treat next line as plain text input and translate it into 繁體中文,{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n{{text}}"
+        },
+        {
           "id": "auto2wyw",
           "systemPrompt": "你是一个文言文翻译，请用文言文的方式进行翻译，尽可能贴近古风，只返回译文，不含任何解释。",
           "prompt": "请翻译为文言文（避免解释原文）:\n\n{{text}}",
           "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}",
           "subtitlePrompt": "将下面 YAML 格式的视频字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必须补全每一个 {{imt_sub_trans_field}} 字段，保留每一个 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n开始翻译：\n\n{{yaml}}"
-        },
-        {
-          "id": "auto2yyy",
-          "systemPrompt": "你是一个专业的、地道的翻译引擎。你只返回翻译的文本，不做任何解释。",
-          "prompt": "将以下文本翻译成 {{to}}：\n\n<text>\n{{text}}\n</text>\n\n直接输出翻译结果，不要添加任何额外的文本或标签。",
-          "multiplePrompt": "你将会得到一个包含 \"id\" 和 \"{{imt_source_field}}\" 字段的 YAML 格式输入。以下是输入内容：\n\n<yaml>\n{{yaml}}\n</yaml>\n\n对于 YAML 中的每个条目，将 \"{{imt_source_field}}\" 字段的内容翻译成 {{to}}。将翻译结果写回每个条目的 \"{{imt_source_field}}\" 字段。\n\n以下是期望的输出格式示例：\n\n{{normal_result_yaml_example}}\n\n请直接返回翻译后的 YAML，不要添加任何额外的标签。",
-          "subtitlePrompt": "你将会翻译一组 YAML 格式的视频字幕中的 \"{{imt_sub_source_field}}\" 字段为 {{to}}。以下是原始字幕的 YAML 格式：\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\n请仅翻译每个字幕条目中的 \"{{imt_sub_source_field}}\" 字段为简体中文。不要翻译或更改 \"id\" 字段。\n\n以相同的 YAML 格式输出翻译后的字幕，每个字幕条目各占一行。\"id\" 字段应保持不变，\"{{imt_sub_source_field}}\" 字段应包含你的 {{to}} 翻译结果。\n\n请直接返回翻译后的 YAML，不要添加任何额外的标签。"
-        },
-        {
-          "id": "auto2zzz",
-          "systemPrompt": "あなたはプロフェッショナルで正確な翻訳エンジンです。翻訳されたテキストのみを返し、説明は一切行いません。",
-          "prompt": "次のテキストを{{to}}に翻訳してください：\n\n<text>\n{{text}}\n</text>\n\n翻訳結果を直接出力し、追加のテキストやタグは一切含めないでください。",
-          "multiplePrompt": "\"id\"フィールドと \"{{imt_source_field}}\" フィールドを含むYAML形式の入力が与えられます。以下が入力です：\n\n<yaml>\n{{yaml}}\n</yaml>\n\nYAMLの各エントリについて、\"{{imt_source_field}}\" フィールドの内容を {{to}} に翻訳してください。そのエントリの \"{{imt_source_field}}\" フィールドに翻訳結果を書き戻してください。\n\n以下は期待される形式の例です：\n\n{{normal_result_yaml_example}}\n\n追加のタグを一切含めずに、翻訳されたYAMLを直接返してください。",
-          "subtitlePrompt": "YAML形式のビデオ字幕セットの \"{{imt_sub_source_field}}\" フィールドを {{to}} に翻訳します。以下がYAML形式の元の字幕です：\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\n各字幕エントリの \"{{imt_sub_source_field}}\" フィールドのみを簡体字中国語に翻訳してください。\"id\" フィールドは翻訳や変更をしないでください。\n\n翻訳された字幕を同じYAML形式で出力し、各字幕エントリを一行ずつにしてください。\"id\" フィールドは変更せず、\"{{imt_sub_source_field}}\" フィールドに {{to}} の翻訳を含めてください。\n\n追加のタグを一切含めずに、翻訳されたYAMLを直接返してください。"
-        },
-        {
-          "id": "auto2xxx",
-          "systemPrompt": "你是一個專業的、地道的翻譯引擎。你只返回翻譯的文本，不做任何解釋。",
-          "prompt": "將以下文本翻譯成 {{to}}：\n\n<text>\n{{text}}\n</text>\n\n直接輸出翻譯結果，不要添加任何額外的文本或標籤。",
-          "multiplePrompt": "你將會得到一個包含 \"id\" 和 \"{{imt_source_field}}\" 欄位的 YAML 格式輸入。以下是輸入內容：\n\n<yaml>\n{{yaml}}\n</yaml>\n\n對於 YAML 中的每個條目，將 \"{{imt_source_field}}\" 欄位的內容翻譯成 {{to}}。將翻譯結果寫回每個條目的 \"{{imt_source_field}}\" 欄位。\n\n以下是期望的格式範例：\n\n{{normal_result_yaml_example}}\n\n請直接返回翻譯後的 YAML，不要添加任何額外的標籤。",
-          "subtitlePrompt": "你將會翻譯一組 YAML 格式的影片字幕中的 \"{{imt_sub_source_field}}\" 欄位為 {{to}}。以下是原始字幕的 YAML 格式：\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\n請僅翻譯每個字幕條目中的 \"{{imt_sub_source_field}}\" 欄位為簡體中文。不要翻譯或更改 \"id\" 欄位。\n\n以相同的 YAML 格式輸出翻譯後的字幕，每個字幕條目各佔一行。\"id\" 欄位應保持不變，\"{{imt_sub_source_field}}\" 欄位應包含你的 {{to}} 翻譯結果。\n\n請直接返回翻譯後的 YAML，不要添加任何額外的標籤。"
         },
         {
           "id": "zh-CN2auto",
@@ -13067,6 +13050,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-01T15:45:24.382Z",
+  "buildinConfigUpdatedAt": "2025-01-02T07:43:15.209Z",
   "latestVersion": "1.12.7"
 }
