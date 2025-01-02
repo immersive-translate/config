@@ -6469,6 +6469,20 @@
       "likePreSelectors.add": [
         ".highLightSearchTarget"
       ],
+      "urlChangeDelay": 400,
+      "mutationConfig.add": {
+        "enableUrlChange": true,
+        "buildTimeout": 1000,
+        "consumeTimeout": 1000
+      },
+      "advanceMergeConfig": [
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "immediateTranslationTextCount": 0
+          }
+        }
+      ],
       "isTransformPreTagNewLine": true,
       "detectParagraphLanguage": true,
       "globalStyles": {
@@ -13054,6 +13068,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-02T15:49:57.818Z",
+  "buildinConfigUpdatedAt": "2025-01-02T16:24:19.781Z",
   "latestVersion": "1.12.7"
 }
