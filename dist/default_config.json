@@ -255,24 +255,24 @@
   "supportedMangaSites": [
     "https://www.pixiv.net/manga[Pixiv][chrome,firefox]",
     "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
-    "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA][chrome,firefox,safari,userscript,imtIOS]",
     "https://readcomiconline.li[ReadComicOnline][chrome]",
     "https://readcomic.me[ReadComic][chrome]",
     "https://comic-fuz.com/[COMIC FUZ][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://mangadex.org/[MangaDex][chrome,firefox,safari,userscript,imtIOS]",
-    "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox,imtAndroid]",
+    "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox]",
     "https://shonenjumpplus.com[ShonenJumpPlus][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
-    "https://viewer.heros-web.com/[Heros Web][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
-    "https://comic-days.com/[Comic Days][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://viewer.heros-web.com/[Heros Web][chrome,firefox,safari,userscript,imtIOS]",
+    "https://comic-days.com/[Comic Days][chrome,firefox,safari,userscript,imtIOS]",
     "https://comic-top.com[Comic Top][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://comic-walker.com/[ComicWalker][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://web-ace.jp/[Web Ace][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://mangabuddy.com/[MANGABUDDY][chrome]",
-    "https://e-hentai.org/[E-Hentai][chrome,firefox,safari,imtAndroid]",
+    "https://e-hentai.org/[E-Hentai][chrome,firefox,safari]",
     "https://nhentai.net[nHentai][chrome,firefox,safari]",
     "https://www.antbyw.com[Antbyw][chrome,firefox,safari,imtAndroid]",
     "https://www.idmzj.com[动漫之家]",
-    "https://jmanga.org[Jmanga][chrome,firefox,safari,imtAndroid]",
+    "https://jmanga.org[Jmanga][chrome,firefox,safari]",
     "https://twicomi.com/manga*[Twitter Comic][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://wnacg.com[Wnacg][chrome,firefox,safari]",
     "https://vw.mangaz.com[MangaZ][chrome,firefox]",
@@ -438,7 +438,7 @@
     "*.medium.com",
     "news.ycombinator.com"
   ],
-  "spVersion": "1.12.5",
+  "spVersion": "1.12.7",
   "ispVersion": "1.0.7",
   "gspVersion": "1.0.6",
   "modifiedBySystem": false,
@@ -3948,7 +3948,13 @@
         "div:not([class]) > div > div:nth-child(2)"
       ],
       "wrapperPrefix": "<br/>",
-      "injectedCss.add": "article ._aagw {position:unset !important;}"
+      "injectedCss.add": "article ._aagw {position:unset !important;}",
+      "immediatelyInjectedCss": [
+        "article ._aagw {position:unset !important;}"
+      ],
+      "imageRule.add": {
+        "enableParentTriggerTools": true
+      }
     },
     {
       "id": "otherInstagram",
@@ -3967,7 +3973,13 @@
         "span[dir=auto] > div > span",
         "div > h1[dir=auto]"
       ],
-      "wrapperSuffix": ""
+      "wrapperSuffix": "",
+      "immediatelyInjectedCss": [
+        "article ._aagw {position:unset !important;}"
+      ],
+      "imageRule.add": {
+        "enableParentTriggerTools": true
+      }
     },
     {
       "id": "1paragraph",
@@ -13072,6 +13084,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-03T09:29:21.387Z",
-  "latestVersion": "1.12.7"
+  "buildinConfigUpdatedAt": "2025-01-03T11:49:01.480Z",
+  "latestVersion": "1.12.8"
 }
