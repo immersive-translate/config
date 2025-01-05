@@ -2028,6 +2028,7 @@
       "[translate=no]",
       ".navmenu-container",
       ".google-symbols",
+      "[style*='Google Symbols']",
       "span[class^=material-symbols-]",
       "h1 br",
       "h2 br",
@@ -13090,6 +13091,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-05T13:28:51.390Z",
+  "buildinConfigUpdatedAt": "2025-01-05T14:19:09.803Z",
   "latestVersion": "1.12.8"
 }
