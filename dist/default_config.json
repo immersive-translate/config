@@ -2028,7 +2028,6 @@
       "[translate=no]",
       ".navmenu-container",
       ".google-symbols",
-      "[style*='Google Symbols']",
       "span[class^=material-symbols-]",
       "h1 br",
       "h2 br",
@@ -5992,13 +5991,6 @@
       }
     },
     {
-      "id": "chatGoogle",
-      "matches": "chat.google.com",
-      "selectors": [
-        "[jsname=bgckF]"
-      ]
-    },
-    {
       "id": "fiverr",
       "matches": "https://www.fiverr.com/inbox/*",
       "selectors": [
@@ -6408,25 +6400,6 @@
       },
       "excludeSelectors": [
         ".Leftnav"
-      ]
-    },
-    {
-      "id": "bardGoogle",
-      "matches": "bard.google.com",
-      "excludeSelectors": [
-        "mat-sidenav",
-        "div.capabilities-disclaimer",
-        "#cdk-overlay-6",
-        "message-actions button",
-        ".mdc-button__label .ng-star-inserted",
-        ".mdc-list-item__primary-text"
-      ],
-      "isTranslateTitle": false,
-      "excludeTags.add": [
-        "mat-tooltip-component"
-      ],
-      "excludeTags.remove": [
-        "BUTTON"
       ]
     },
     {
@@ -11718,10 +11691,50 @@
       ]
     },
     {
-      "id": "makersuite.google",
-      "matches": "makersuite.google.com",
+      "id": "bardGoogle",
+      "matches": "bard.google.com",
+      "excludeSelectors": [
+        "mat-sidenav",
+        "div.capabilities-disclaimer",
+        "#cdk-overlay-6",
+        "message-actions button",
+        ".mdc-button__label .ng-star-inserted",
+        ".mdc-list-item__primary-text"
+      ],
+      "isTranslateTitle": false,
+      "excludeTags.add": [
+        "mat-tooltip-component"
+      ],
+      "excludeTags.remove": [
+        "BUTTON"
+      ]
+    },
+    {
+      "id": "chatGoogle",
+      "matches": "chat.google.com",
+      "selectors": [
+        "[jsname=bgckF]"
+      ]
+    },
+    {
+      "id": "gemini.google",
+      "matches": "gemini.google.com",
+      "injectedCss.add": [
+        "[data-test-id=conversation] {height: unset!important;}"
+      ]
+    },
+    {
+      "id": "otherGoogle",
+      "matches": "*.google.com",
+      "globalStyles": {
+        ".scSearchSearch_results_listSearchresultslistsnippet": "-webkit-line-clamp:unset;"
+      },
       "excludeSelectors.add": [
         ".material-symbols-outlined"
+      ],
+      "additionalExcludeSelectors.add": [
+        ".o_35",
+        "[style*='Google Symbols']"
       ]
     },
     {
@@ -12678,13 +12691,6 @@
       }
     },
     {
-      "id": "google-support",
-      "matches": "support.google.com",
-      "globalStyles": {
-        ".scSearchSearch_results_listSearchresultslistsnippet": "-webkit-line-clamp:unset;"
-      }
-    },
-    {
       "id": "justia",
       "matches": "supreme.justia.com",
       "longBuildPageLength": 10000
@@ -12932,13 +12938,6 @@
       ]
     },
     {
-      "id": "gemini.google",
-      "matches": "gemini.google.com",
-      "injectedCss.add": [
-        "[data-test-id=conversation] {height: unset!important;}"
-      ]
-    },
-    {
       "id": "ieltscat.xdf",
       "matches": "ieltscat.xdf.*",
       "injectedCss.add": [
@@ -13091,6 +13090,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-05T15:04:07.362Z",
+  "buildinConfigUpdatedAt": "2025-01-05T15:17:50.195Z",
   "latestVersion": "1.12.8"
 }
