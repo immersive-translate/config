@@ -7519,7 +7519,7 @@
         "loadingContainerSelector": ".shaka-video-container",
         "loadingStyle": "bottom: 15%;",
         "injectedCss": [
-          "[class^='well--text'] {white-space: pre;}"
+          "[class^='well--text'] {white-space: pre;max-width: 100%;}"
         ],
         "quickButtonRule": {
           "appendSelector": "[data-purpose=\"video-controls\"]"
@@ -13091,6 +13091,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-05T14:19:09.803Z",
+  "buildinConfigUpdatedAt": "2025-01-05T15:04:07.362Z",
   "latestVersion": "1.12.8"
 }
