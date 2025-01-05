@@ -9827,6 +9827,12 @@
         "loadingStyle": "bottom: unset; top: 5%;",
         "quickButtonRule": {
           "appendSelector": "[role=\"presentation\"] > .rc-ControlBar > .icon-container"
+        },
+        "attachRule": {
+          "appendSelector": "#vjs_video_3",
+          "injectedGlobalCSS": [
+            "video::cue {opacity: 0}"
+          ]
         }
       }
     },
@@ -13084,6 +13090,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-05T12:57:53.575Z",
+  "buildinConfigUpdatedAt": "2025-01-05T13:28:51.390Z",
   "latestVersion": "1.12.8"
 }
