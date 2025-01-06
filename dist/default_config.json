@@ -12512,7 +12512,8 @@
       "matches": "*.service-now.com",
       "selectors": [
         "article",
-        ".email-content"
+        ".email-content",
+        "section"
       ]
     },
     {
@@ -13090,6 +13091,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-05T15:17:50.195Z",
+  "buildinConfigUpdatedAt": "2025-01-06T03:02:21.002Z",
   "latestVersion": "1.12.8"
 }
