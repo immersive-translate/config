@@ -3521,7 +3521,8 @@
         "div[dir=auto][class]",
         "span[lang]",
         "[data-pagelet=BizInboxMessengerMessageListContainer] span",
-        "[data-pagelet=BizInboxContextCardDetail] span"
+        "[data-pagelet=BizInboxContextCardDetail] span",
+        ".xod5an3"
       ],
       "excludeSelectors.add": [
         "[data-ad-comet-preview=message] [role=button]"
@@ -13128,6 +13129,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-06T15:37:25.848Z",
+  "buildinConfigUpdatedAt": "2025-01-06T15:45:25.856Z",
   "latestVersion": "1.12.8"
 }
