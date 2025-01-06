@@ -12988,6 +12988,13 @@
       ]
     },
     {
+      "id": "next_westlaw",
+      "matches": "*.next.westlaw.com",
+      "stayOriginalSelectors.add": [
+        ".docLinkWrapper"
+      ]
+    },
+    {
       "id": "digitaltrends",
       "matches": "www.digitaltrends.com",
       "extraBlockSelectors.add": [
@@ -13112,6 +13119,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-06T14:07:00.905Z",
+  "buildinConfigUpdatedAt": "2025-01-06T14:27:57.041Z",
   "latestVersion": "1.12.8"
 }
