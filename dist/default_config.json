@@ -5995,7 +5995,16 @@
       "id": "fiverr",
       "matches": "https://www.fiverr.com/inbox/*",
       "selectors": [
-        ".message-body"
+        ".message-body",
+        "article[data-testid=index-container]"
+      ],
+      "excludeSelectors.add": [
+        "[data-testid=basic-message-header]",
+        "[data-testid=message-header-timestamp]",
+        "time",
+        ".user-name",
+        ".user-info",
+        ".header"
       ]
     },
     {
@@ -13119,6 +13128,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-06T14:27:57.041Z",
+  "buildinConfigUpdatedAt": "2025-01-06T15:37:25.848Z",
   "latestVersion": "1.12.8"
 }
