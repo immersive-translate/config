@@ -415,7 +415,8 @@
     "https://rumble.com/[Rumble]",
     "https://www.wsj.com/[WSJ]",
     "https://www.lmanga.com/[Lmanga]",
-    "https://spring.academy/[SpringAcademy]"
+    "https://spring.academy/[SpringAcademy]",
+    "https://pan.quark.cn/[Quark]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -9811,6 +9812,26 @@
       }
     },
     {
+      "id": "quark",
+      "matches": [
+        "pan.quark.*"
+      ],
+      "excludeSelectors.add": [
+        ".video-container"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".video-container *"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".video-container",
+        "quickButtonRule": {
+          "appendSelector": "[class^=\"Toolbar--foot-toolba-box\"]"
+        }
+      }
+    },
+    {
       "id": "kika",
       "matches": [
         "www.kika.de"
@@ -13091,6 +13112,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-06T03:02:21.002Z",
+  "buildinConfigUpdatedAt": "2025-01-06T08:48:48.130Z",
   "latestVersion": "1.12.8"
 }
