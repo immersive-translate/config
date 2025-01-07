@@ -5746,7 +5746,10 @@
         ".c-article__pill-button",
         "#author-information-content",
         "#article-info-section"
-      ]
+      ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.enableTranslate": true
+      }
     },
     {
       "id": "webofscience",
@@ -13129,6 +13132,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-06T15:45:25.856Z",
+  "buildinConfigUpdatedAt": "2025-01-07T01:27:42.745Z",
   "latestVersion": "1.12.8"
 }
