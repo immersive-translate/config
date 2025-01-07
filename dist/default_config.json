@@ -416,7 +416,8 @@
     "https://www.wsj.com/[WSJ]",
     "https://www.lmanga.com/[Lmanga]",
     "https://spring.academy/[SpringAcademy]",
-    "https://pan.quark.cn/[Quark]"
+    "https://pan.quark.cn/[Quark]",
+    "https://www.medici.tv/[Medici]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -11480,6 +11481,27 @@
       }
     },
     {
+      "id": "medici",
+      "matches": [
+        "www.medici.tv"
+      ],
+      "excludeSelectors.add": [
+        "#player-movie-page"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#player-movie-page *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.webvtt$",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "ccEnableSelector": ".jw-icon-cc"
+        }
+      }
+    },
+    {
       "id": "asu",
       "matches": [
         "api.playposit.com"
@@ -13141,6 +13163,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-07T06:19:51.568Z",
+  "buildinConfigUpdatedAt": "2025-01-07T07:11:22.622Z",
   "latestVersion": "1.12.8"
 }
