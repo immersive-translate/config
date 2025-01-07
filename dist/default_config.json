@@ -2610,24 +2610,6 @@
       "mainFrameSelector": "div.simpread-read-root.simpread-read-root-show > sr-read"
     },
     {
-      "id": "txt",
-      "matches": [
-        "*://*/*.txt",
-        "file://*/*.txt"
-      ],
-      "selectorMatches": [
-        "body > pre"
-      ],
-      "longBuildPageLength": 1000,
-      "mutationExcludeSelectors.add": [
-        "body"
-      ],
-      "isTransformPreTagNewLine": true,
-      "excludeTags.remove": [
-        "PRE"
-      ]
-    },
-    {
       "id": "hangejp",
       "matches": [
         "arad.hange.jp",
@@ -13094,7 +13076,8 @@
       "selectorMatches": [
         "body[translate=no]",
         "#app[translate=no]",
-        "#root[translate=no]"
+        "#root[translate=no]",
+        "#editor-core-root [translate=no]"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -13123,6 +13106,24 @@
       ]
     },
     {
+      "id": "txt",
+      "matches": [
+        "*://*/*.txt",
+        "file://*/*.txt"
+      ],
+      "selectorMatches": [
+        "body > pre"
+      ],
+      "longBuildPageLength": 1000,
+      "mutationExcludeSelectors.add": [
+        "body"
+      ],
+      "isTransformPreTagNewLine": true,
+      "excludeTags.remove": [
+        "PRE"
+      ]
+    },
+    {
       "id": "fix-header",
       "selectorMatches": [
         "article header",
@@ -13140,6 +13141,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-07T02:59:04.981Z",
+  "buildinConfigUpdatedAt": "2025-01-07T06:19:51.568Z",
   "latestVersion": "1.12.8"
 }
