@@ -12920,6 +12920,15 @@
       ]
     },
     {
+      "id": "ceros",
+      "matches": [
+        "view.ceros.com"
+      ],
+      "injectedCss.add": [
+        ".page-object.group > .page-object.text > p { height: 100% !important; overflow: auto !important; }"
+      ]
+    },
+    {
       "id": "readthedocs",
       "matches": "*.readthedocs.*",
       "additionalExcludeSelectors.remove": [
@@ -13165,6 +13174,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-08T06:29:03.284Z",
+  "buildinConfigUpdatedAt": "2025-01-08T09:45:38.436Z",
   "latestVersion": "1.12.8"
 }
