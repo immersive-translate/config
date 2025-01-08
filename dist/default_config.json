@@ -306,7 +306,8 @@
     "https://piccoma.com[Piccoma][chrome,firefox,safari,userscript]",
     "https://www.mangasuika.com/[Mangasuika][chrome,firefox,safari]",
     "https://www.firemanga.com/[Firemanga][chrome,firefox,safari]",
-    "https://hentaizap.com/[Hentaizap][chrome,firefox,safari]"
+    "https://hentaizap.com/[Hentaizap][chrome,firefox,safari]",
+    "https://jmanga.sh/[Jmanga][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -7978,7 +7979,8 @@
       "matches": [
         "jmanga.org",
         "jmanga.to",
-        "jmanga.ac"
+        "jmanga.ac",
+        "jmanga.sh"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13163,6 +13165,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-08T06:18:09.463Z",
+  "buildinConfigUpdatedAt": "2025-01-08T06:29:03.284Z",
   "latestVersion": "1.12.8"
 }
