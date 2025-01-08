@@ -11492,7 +11492,7 @@
         "#player-movie-page *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
+        "type": "subsrt",
         "subtitleUrlRegExp": "\\.webvtt$",
         "hookType": "xhr",
         "quickButtonRule": {
@@ -13163,6 +13163,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-07T07:11:22.622Z",
+  "buildinConfigUpdatedAt": "2025-01-08T06:18:09.463Z",
   "latestVersion": "1.12.8"
 }
