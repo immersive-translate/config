@@ -307,7 +307,8 @@
     "https://www.mangasuika.com/[Mangasuika][chrome,firefox,safari]",
     "https://www.firemanga.com/[Firemanga][chrome,firefox,safari]",
     "https://hentaizap.com/[Hentaizap][chrome,firefox,safari]",
-    "https://jmanga.sh/[Jmanga][chrome,firefox,safari]"
+    "https://jmanga.sh/[Jmanga][chrome,firefox,safari]",
+    "https://hanime1.me/[Hanime1][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -9248,6 +9249,24 @@
       }
     },
     {
+      "id": "hanime1",
+      "matches": [
+        "hanime1.me"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#comic-content-wrapper img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "manwadb",
       "matches": [
         "manwadb.cc"
@@ -13174,6 +13193,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-08T09:45:38.436Z",
+  "buildinConfigUpdatedAt": "2025-01-09T06:44:33.782Z",
   "latestVersion": "1.12.8"
 }
