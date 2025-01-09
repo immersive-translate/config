@@ -13105,7 +13105,8 @@
         "typefully.com",
         "*.affine.*",
         "*.shopify.com",
-        "*.marscode.com"
+        "*.marscode.com",
+        "updraft.cyfrin.io"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -13193,6 +13194,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-09T06:44:33.782Z",
+  "buildinConfigUpdatedAt": "2025-01-09T07:27:30.336Z",
   "latestVersion": "1.12.8"
 }
