@@ -308,7 +308,8 @@
     "https://www.firemanga.com/[Firemanga][chrome,firefox,safari]",
     "https://hentaizap.com/[Hentaizap][chrome,firefox,safari]",
     "https://jmanga.sh/[Jmanga][chrome,firefox,safari]",
-    "https://hanime1.me/[Hanime1][chrome,firefox,safari]"
+    "https://hanime1.me/[Hanime1][chrome,firefox,safari]",
+    "https://globalcomix.com/[Globalcomix][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -7777,6 +7778,27 @@
       }
     },
     {
+      "id": "globalcomix",
+      "matches": [
+        "globalcomix.com"
+      ],
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          "#readerContainer img"
+        ],
+        "inValidSrcRegex": [
+          "#readerContainer img[loading=\"lazy\"]"
+        ],
+        "injectedCss": ".imt-image-status {top:15%!important;}",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "manga18",
       "matches": [
         "manga18.club"
@@ -13194,6 +13216,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-09T07:27:30.336Z",
+  "buildinConfigUpdatedAt": "2025-01-10T07:07:58.191Z",
   "latestVersion": "1.12.8"
 }
