@@ -307,6 +307,7 @@
     "https://www.mangasuika.com/[Mangasuika][chrome,firefox,safari]",
     "https://www.firemanga.com/[Firemanga][chrome,firefox,safari]",
     "https://hentaizap.com/[Hentaizap][chrome,firefox,safari]",
+    "https://klz9.com[KL][chrome,firefox]",
     "https://jmanga.sh/[Jmanga][chrome,firefox,safari]",
     "https://hanime1.me/[Hanime1][chrome,firefox,safari]",
     "https://globalcomix.com/[Globalcomix][chrome,firefox,safari]"
@@ -659,6 +660,7 @@
     "matches": [],
     "excludeMatches": []
   },
+  "sameLangTranslationTheme": "background",
   "translationServices": {
     "volcAlpha": {
       "placeholderDelimiters": [
@@ -1874,6 +1876,8 @@
     "pdfUrlExtractRule": {},
     "isTransformPreTagNewLine": false,
     "advanceTransformPreTagNewLine": false,
+    "advanceTransformPreTagMinTextCount": 0,
+    "advanceTransformPreTagMinLineCount": 0,
     "likePreSelectors": [
       "pre"
     ],
@@ -2855,6 +2859,8 @@
       "isTransformPreTagNewLine": false,
       "isTransformPreTagNewLine.add_v.[1.12.1]": true,
       "advanceTransformPreTagNewLine": true,
+      "advanceTransformPreTagMinTextCount": 1000,
+      "advanceTransformPreTagMinLineCount": 10,
       "extraInlineSelectors": [
         "[data-testid=\"tweetText\"] div.r-xoduu5",
         "[data-testid=\"tweetText\"] span",
@@ -6500,7 +6506,10 @@
         "nav",
         "[aria-label='Markets summary']"
       ],
-      "injectedCss.add": ".immersive-translate-target-wrapper br {display:none;}",
+      "injectedCss.add": [
+        ".immersive-translate-target-wrapper br {display:none;}",
+        ".spcv_list-item .immersive-translate-target-translation-block-wrapper {display:inline-block;margin-top:8px;}"
+      ],
       "subtitleRule.add": {
         "type": "text_track",
         "videoPlayerSelector": "video",
@@ -7812,6 +7821,41 @@
           "div"
         ],
         "injectedCss": ".imt-image-status {top:5%!important;}",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
+      "id": "klz9",
+      "matches": [
+        "klz9.com"
+      ],
+      "imageRule.add_v.[1.10.5]": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".chapter-img"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox"
+        ]
+      }
+    },
+    {
+      "id": "comemh8",
+      "matches": [
+        "www.comemh8.com"
+      ],
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          ".img-box img"
+        ],
         "platforms": [
           "chrome",
           "firefox",
@@ -13216,6 +13260,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-10T07:07:58.191Z",
-  "latestVersion": "1.12.8"
+  "buildinConfigUpdatedAt": "2025-01-10T12:42:20.959Z",
+  "latestVersion": "1.13.1"
 }
