@@ -1384,6 +1384,7 @@
     "repeatTranslateNum": 0,
     "detectTextBufferLength": 0,
     "smallCodeLength": 30,
+    "forceFormatPre": false,
     "domPurifyAddTags": [
       "iframe",
       "button",
@@ -11364,9 +11365,12 @@
         "injectedCss": [
           "#immersive-translate-quick-button-container {display: inline-block; vertical-align: middle;}"
         ],
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #subtitle svg text:last-child {writing-mode: horizontal-tb !important;direction: rtl !important;unicode-bidi: bidi-override !important;text-anchor: end !important;}"
+        ],
         "subtitleUrlRegExp": "\\.ass$",
         "subsrtFormat": "ass",
-        "loadingContainerSelector": "#youku-dashboard",
+        "loadingContainerSelector": "#youku-advertise",
         "loadingStyle": "bottom: 10%;",
         "quickButtonRule": {
           "appendSelector": ".kui-dashboard-dashboard-panel .kui-dashboard-rear-ctn",
@@ -13128,6 +13132,21 @@
       ]
     },
     {
+      "id": "nexusmods",
+      "matches": [
+        "next.nexusmods.com",
+        "readit.plus"
+      ],
+      "likePreSelectors.add": [
+        ".next-container section"
+      ],
+      "buildContainerSelectors": [
+        ".next-container section"
+      ],
+      "forceFormatPre": true,
+      "isTransformPreTagNewLine": true
+    },
+    {
       "id": "other-chatapps",
       "matches": [
         "app.salesmartly.com/chat"
@@ -13261,6 +13280,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-11T03:49:16.514Z",
-  "latestVersion": "1.13.1"
+  "buildinConfigUpdatedAt": "2025-01-11T05:06:12.881Z",
+  "latestVersion": "1.13.2"
 }
