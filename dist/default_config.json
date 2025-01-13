@@ -3737,7 +3737,7 @@
           "appendSelector": ".html5-video-player.playing-mode,.html5-video-player.paused-mode",
           "injectedCSS": [
             ".imt-caption-container {z-index:40;}",
-            ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text;}"
+            ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}"
           ],
           "injectedGlobalCSS": [
             ".caption-window {display: none;} ",
@@ -13280,6 +13280,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-11T05:06:10.000Z",
+  "buildinConfigUpdatedAt": "2025-01-13T02:57:34.982Z",
   "latestVersion": "1.13.2"
 }
