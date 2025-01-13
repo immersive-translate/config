@@ -7834,7 +7834,7 @@
       "matches": [
         "klz9.com"
       ],
-      "imageRule.add_v.[1.10.5]": {
+      "imageRule.add_v.[1.13.2]": {
         "enable": true,
         "type": "manga",
         "imageSelectors": [
@@ -7852,7 +7852,7 @@
       "matches": [
         "www.comemh8.com"
       ],
-      "imageRule.add": {
+      "imageRule.add_v.[1.13.2]": {
         "type": "manga",
         "imageSelectors": [
           ".img-box img"
@@ -13280,6 +13280,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-13T02:57:34.982Z",
+  "buildinConfigUpdatedAt": "2025-01-13T07:11:47.798Z",
   "latestVersion": "1.13.2"
 }
