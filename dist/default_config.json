@@ -960,10 +960,12 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "langOverrides": [],
+      "keepGlossariesPrompt": "keep {{xxx}}. ",
       "removeResRegexs": [
         "^##",
         "^```",
         "```$",
+        ";; Simplified Chinese translation: ",
         "^译文：",
         "^原文：",
         "^简化中文翻译：",
@@ -1248,6 +1250,37 @@
       ],
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+      "enableRichTranslate": false,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
+      "enableFallback": true
+    },
+    "zhipu-pro": {
+      "extends": "ai",
+      "name": "zhipu",
+      "model": "glm-4-plus",
+      "proModel": "glm-4-plus",
+      "defaultVisible": true,
+      "defaultHiddenLangs": [
+        "zh-TW"
+      ],
+      "placeholderDelimiters": [
+        "@",
+        "#"
+      ],
+      "provider": "pro",
+      "assistantId": "common",
+      "limit": 10,
+      "proLimit": 10,
+      "bodyConfigs": {
+        "temperature": 0.01,
+        "top_p": 0.1,
+        "max_tokens": 2048
+      },
+      "ignoreResRegexs": [
+        "^系统检测到输入或生成内容可能包含不安全或敏感内容"
+      ],
+      "maxTextGroupLengthPerRequestForSubtitle": 1,
       "enableRichTranslate": false,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
@@ -13296,6 +13329,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-13T09:51:35.805Z",
-  "latestVersion": "1.13.3"
+  "buildinConfigUpdatedAt": "2025-01-13T10:49:41.000Z",
+  "latestVersion": "1.13.4"
 }
