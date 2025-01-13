@@ -960,7 +960,7 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "langOverrides": [],
-      "keepGlossariesPrompt": "keep {{xxx}}. ",
+      "keepGlossariesPrompt": "Translate the text but keep placeholders like {{xxx}} in their original positions. ",
       "removeResRegexs": [
         "^##",
         "^```",
@@ -969,7 +969,8 @@
         "^译文：",
         "^原文：",
         "^简化中文翻译：",
-        "^简体中文： "
+        "^简体中文翻译：",
+        "^简体中文："
       ]
     },
     "claude": {
@@ -13329,6 +13330,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-13T10:49:41.000Z",
+  "buildinConfigUpdatedAt": "2025-01-13T11:22:36.975Z",
   "latestVersion": "1.13.4"
 }
