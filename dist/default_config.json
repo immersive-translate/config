@@ -11194,24 +11194,13 @@
         ".ardplayer-viewport-addon-overlays *"
       ],
       "subtitleRule.add": {
-        "type": "ebutt",
-        "hookType": "fetch",
-        "subtitleUrlRegExp": "subtitle/ebutt",
-        "loadingContainerSelector": ".ardplayer-viewport-addon-overlays",
+        "type": "text_track_dynamic",
+        "videoPlayerSelector": "video",
         "quickButtonRule": {
           "appendSelector": ".ardplayer-footer .ardplayer-addons-container",
           "insertBeforeSelector": ".ardplayer-footer .ardplayer-button-sharing",
           "injectCSS": ".imt-quick-subtitle-button {font-size: 20px; } .logo,.logo svg { height: 36px !important; width: 36px !important;} .imt-quick-subtitle-pop-content {z-index: 2147483647;} ",
           "ccEnableSelector": ".ardplayer-button-language"
-        },
-        "attachRule": {
-          "appendSelector": "[data-initiator-name=\"player-container\"]",
-          "injectedGlobalCSS": [
-            ".ardplayer-untertitel div[lang] {display:none!important;}"
-          ],
-          "injectedCSS": [
-            ".imt-caption-window {margin-bottom: 0; bottom: 20%;}"
-          ]
         }
       }
     },
@@ -13330,6 +13319,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-13T13:49:28.788Z",
+  "buildinConfigUpdatedAt": "2025-01-13T14:15:03.972Z",
   "latestVersion": "1.13.4"
 }
