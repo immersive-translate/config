@@ -902,10 +902,9 @@
       "visible": true,
       "placeholderDelimiters": [
         "{{",
-        "}}",
-        "code"
+        "}}"
       ],
-      "enableRichGlossaries": true,
+      "enableRichGlossaries": false,
       "glossaries": [],
       "disableWarning": false,
       "requestTimeout": 101000,
@@ -960,7 +959,17 @@
       "randomPrefix": "none",
       "enableRichTranslate": false,
       "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true
+      "translationEnableRichTranslate": true,
+      "langOverrides": [],
+      "removeResRegexs": [
+        "^##",
+        "^```",
+        "```$",
+        "^译文：",
+        "^原文：",
+        "^简化中文翻译：",
+        "^简体中文： "
+      ]
     },
     "claude": {
       "visible": true,
@@ -1385,6 +1394,11 @@
     "detectTextBufferLength": 0,
     "smallCodeLength": 30,
     "forceFormatPre": false,
+    "pageLangDetectWeight": {
+      "html": 1,
+      "body": 1,
+      "tab": 1
+    },
     "domPurifyAddTags": [
       "iframe",
       "button",
@@ -3651,6 +3665,9 @@
           "noscript",
           "script"
         ]
+      },
+      "pageLangDetectWeight.add": {
+        "body": 2
       },
       "additionalExcludeSelectors.add": [
         ".ytp-caption-window-container",
@@ -13280,6 +13297,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-13T07:11:47.798Z",
-  "latestVersion": "1.13.2"
+  "buildinConfigUpdatedAt": "2025-01-13T07:47:25.505Z",
+  "latestVersion": "1.13.3"
 }
