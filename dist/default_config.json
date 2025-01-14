@@ -421,7 +421,8 @@
     "https://spring.academy/[SpringAcademy]",
     "https://pan.quark.cn/[Quark]",
     "https://www.medici.tv/[Medici]",
-    "https://canvas.ucdavis.edu/[UCDAVIS]"
+    "https://canvas.ucdavis.edu/[UCDAVIS]",
+    "https://learning.iaabcfoundation.org/[IAABCFOUNDATION]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -9497,6 +9498,31 @@
       }
     },
     {
+      "id": "iaabcfoundation",
+      "matches": [
+        "learning.iaabcfoundation.org"
+      ],
+      "excludeSelectors.add": [
+        "[data-testid=\"video-player\"]"
+      ],
+      "mutationExcludeSelectors.add": [
+        "[data-testid=\"video-player\"] *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": "\\.srt$",
+        "hookType": "xhr",
+        "loadingContainerSelector": ".videoWrapper",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container{ position: absolute; top: -30px; right: 0; }"
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".jw-controlbar-right-group",
+          "injectCSS": ".label { display: none; }"
+        }
+      }
+    },
+    {
       "id": "domestika",
       "matches": [
         "www.domestika.org"
@@ -13353,6 +13379,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-14T09:50:16.647Z",
+  "buildinConfigUpdatedAt": "2025-01-14T11:34:43.301Z",
   "latestVersion": "1.13.5"
 }
