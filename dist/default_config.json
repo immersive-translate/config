@@ -420,7 +420,8 @@
     "https://www.lmanga.com/[Lmanga]",
     "https://spring.academy/[SpringAcademy]",
     "https://pan.quark.cn/[Quark]",
-    "https://www.medici.tv/[Medici]"
+    "https://www.medici.tv/[Medici]",
+    "https://canvas.ucdavis.edu/[UCDAVIS]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -11714,6 +11715,28 @@
       }
     },
     {
+      "id": "ucdavis",
+      "matches": [
+        "aggievideo.canvas.ucdavis.edu"
+      ],
+      "excludeSelectors.add": [
+        "[data-testid=\"video-player\"]"
+      ],
+      "mutationExcludeSelectors.add": [
+        "[data-testid=\"video-player\"] *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": "\\.vtt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".playkit-bottom-bar .playkit-right-controls",
+          "insertBeforeSelector": ".playkit-bottom-bar .playkit-right-controls .playkit-control-closed-captions"
+        }
+      }
+    },
+    {
       "id": "f1tv",
       "matches": [
         "f1tv.formula1.com"
@@ -13330,6 +13353,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-14T07:42:33.000Z",
+  "buildinConfigUpdatedAt": "2025-01-14T09:20:07.257Z",
   "latestVersion": "1.13.5"
 }
