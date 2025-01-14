@@ -11902,11 +11902,12 @@
     {
       "id": "otherGoogle",
       "matches": "*.google.com",
-      "globalStyles": {
-        ".scSearchSearch_results_listSearchresultslistsnippet": "-webkit-line-clamp:unset;"
-      },
+      "injectedCss.add": [
+        ".scSearchSearch_results_listSearchresultslistsnippet { -webkit-line-clamp:unset;}"
+      ],
       "excludeSelectors.add": [
-        ".material-symbols-outlined"
+        ".material-symbols-outlined",
+        ".cfc-result-card-table"
       ],
       "additionalExcludeSelectors.add": [
         ".o_35",
@@ -13319,6 +13320,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-13T14:15:03.972Z",
+  "buildinConfigUpdatedAt": "2025-01-14T07:01:00.024Z",
   "latestVersion": "1.13.4"
 }
