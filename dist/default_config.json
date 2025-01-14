@@ -12108,10 +12108,17 @@
       "matches": [
         "www.xiaohongshu.com"
       ],
+      "blockMinTextCount": 6,
+      "blockMinWordCount": 1,
       "excludeSelectors.add": [
         ".author-wrapper",
         ".info",
-        ".side-bar"
+        ".side-bar",
+        ".interactions",
+        ".show-more",
+        ".bottom-container",
+        ".total",
+        ".reds-sticky"
       ],
       "globalStyles": {
         "a.title": "-webkit-line-clamp:3"
@@ -13384,6 +13391,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-14T12:13:44.423Z",
+  "buildinConfigUpdatedAt": "2025-01-14T13:41:23.801Z",
   "latestVersion": "1.13.5"
 }
