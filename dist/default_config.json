@@ -11726,7 +11726,7 @@
         "[data-testid=\"video-player\"] *"
       ],
       "subtitleRule.add": {
-        "type": "subsrt",
+        "type": "webvtt",
         "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "xhr",
@@ -13353,6 +13353,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-14T09:20:07.257Z",
+  "buildinConfigUpdatedAt": "2025-01-14T09:50:16.647Z",
   "latestVersion": "1.13.5"
 }
