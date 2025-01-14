@@ -309,7 +309,9 @@
     "https://hentaizap.com/[Hentaizap][chrome,firefox,safari]",
     "https://jmanga.sh/[Jmanga][chrome,firefox,safari]",
     "https://hanime1.me/[Hanime1][chrome,firefox,safari]",
-    "https://globalcomix.com/[Globalcomix][chrome,firefox,safari]"
+    "https://globalcomix.com/[Globalcomix][chrome,firefox,safari]",
+    "https://klz9.com[KL][chrome,firefox]",
+    "https://www.comemh8.com[comemh8][chrome,firefox]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -13379,6 +13381,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-14T11:34:43.301Z",
+  "buildinConfigUpdatedAt": "2025-01-14T11:39:14.477Z",
   "latestVersion": "1.13.5"
 }
