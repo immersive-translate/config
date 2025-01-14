@@ -2612,13 +2612,6 @@
       "detectParagraphLanguage.add.[1.4.8]": false
     },
     {
-      "id": "common.pdfWebPage",
-      "waitForSelectorsTimeout": 1,
-      "selectorMatches": [
-        "embed[type='application/pdf']"
-      ]
-    },
-    {
       "id": "onboarding",
       "matches": [
         "https://onboarding.immersivetranslate.com",
@@ -13172,6 +13165,16 @@
       ]
     },
     {
+      "id": "jscires",
+      "matches": "jscires.org",
+      "extraBlockSelectors.add": [
+        ".jatsauthtab_title"
+      ],
+      "excludeSelectors.add": [
+        ".jatsa_contrib_info"
+      ]
+    },
+    {
       "id": "nexusmods",
       "matches": [
         "next.nexusmods.com",
@@ -13285,6 +13288,13 @@
       ]
     },
     {
+      "id": "common.pdfWebPage",
+      "waitForSelectorsTimeout": 1,
+      "selectorMatches": [
+        "embed[type='application/pdf']"
+      ]
+    },
+    {
       "id": "txt",
       "matches": [
         "*://*/*.txt",
@@ -13320,6 +13330,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-14T07:01:00.024Z",
+  "buildinConfigUpdatedAt": "2025-01-14T07:13:38.740Z",
   "latestVersion": "1.13.4"
 }
