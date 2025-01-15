@@ -4850,7 +4850,9 @@
         ".overflow-y-hidden": "max-height:unset;overflow-y:unset;"
       },
       "excludeSelectors.add": [
-        ".leading-normal"
+        ".leading-normal",
+        "[class='absolute bottom-1 right-1 rounded-lg px-2 py-1 text-xs text-nord5 bg-gray-800 bg-opacity-75']",
+        "[class='absolute bottom-1 left-1 rounded-lg px-2 py-1 text-xs text-nord5 bg-blue-800 bg-opacity-75']"
       ],
       "subtitleRule.add": {
         "type": "av2",
@@ -13407,6 +13409,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-15T16:03:56.615Z",
+  "buildinConfigUpdatedAt": "2025-01-15T16:09:09.245Z",
   "latestVersion": "1.13.5"
 }
