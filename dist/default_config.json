@@ -1251,7 +1251,8 @@
         "max_tokens": 2048
       },
       "ignoreResRegexs": [
-        "^系统检测到输入或生成内容可能包含不安全或敏感内容"
+        "^系统检测到输入或生成内容可能包含不安全或敏感内容",
+        "可能是一个缩写或专有名词，因此没有进行翻译。）$"
       ],
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
@@ -13403,6 +13404,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-15T07:46:55.215Z",
+  "buildinConfigUpdatedAt": "2025-01-15T09:33:55.221Z",
   "latestVersion": "1.13.5"
 }
