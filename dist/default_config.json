@@ -4844,11 +4844,14 @@
     },
     {
       "id": "missav",
-      "matches": "https://missav.com/*",
+      "matches": "https://missav.*/*",
       "globalStyles": {
         ".truncate": "white-space:unset;",
         ".overflow-y-hidden": "max-height:unset;overflow-y:unset;"
       },
+      "excludeSelectors.add": [
+        ".leading-normal"
+      ],
       "subtitleRule.add": {
         "type": "av2",
         "avSerial": {
@@ -13404,6 +13407,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-15T09:33:55.221Z",
+  "buildinConfigUpdatedAt": "2025-01-15T16:03:56.615Z",
   "latestVersion": "1.13.5"
 }
