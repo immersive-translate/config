@@ -1606,7 +1606,7 @@
       "enableImageTranslation": "pro"
     },
     "imageRule.add_v.[1.12.7]": {
-      "enableImageTranslation": "all"
+      "enableImageTranslation": "pro"
     },
     "useIframePostMessage": false,
     "searchEnhancementConfig": [],
@@ -13391,6 +13391,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-14T13:41:23.801Z",
+  "buildinConfigUpdatedAt": "2025-01-15T01:38:03.709Z",
   "latestVersion": "1.13.5"
 }
