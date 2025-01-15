@@ -3706,7 +3706,8 @@
         ".ytp-caption-window-container",
         "text",
         ".imt-caption-container",
-        "ytd-button-renderer"
+        "ytd-button-renderer",
+        ".ytp-sfn-content div :last-child"
       ],
       "globalStyles": {
         "#video-title,h1.ytd-watch-metadata,.ytd-video-renderer,.yt-lockup-metadata-view-model-wiz__title": "-webkit-line-clamp: unset;max-height: unset;",
@@ -13402,6 +13403,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-15T07:34:44.664Z",
+  "buildinConfigUpdatedAt": "2025-01-15T07:46:55.215Z",
   "latestVersion": "1.13.5"
 }
