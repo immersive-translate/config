@@ -13348,7 +13348,8 @@
         "body[translate=no]",
         "#app[translate=no]",
         "#root[translate=no]",
-        "#editor-core-root [translate=no]"
+        "#editor-core-root [translate=no]",
+        ".notranslate.chrome"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -13419,6 +13420,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-16T13:39:28.484Z",
+  "buildinConfigUpdatedAt": "2025-01-16T14:11:41.553Z",
   "latestVersion": "1.13.5"
 }
