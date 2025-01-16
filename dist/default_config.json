@@ -804,7 +804,7 @@
         "b"
       ],
       "enableRichTranslate": true,
-      "enableRichGlossaries": true,
+      "enableRichGlossaries": false,
       "richTag": "c"
     },
     "yandex": {
@@ -1103,7 +1103,7 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "enableAIContext": false,
-      "enableRichGlossaries": true,
+      "enableRichGlossaries": false,
       "provider": "pro"
     },
     "chatgpt": {
@@ -13420,6 +13420,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-16T14:11:41.553Z",
+  "buildinConfigUpdatedAt": "2025-01-16T15:58:03.629Z",
   "latestVersion": "1.13.5"
 }
