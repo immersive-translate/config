@@ -13188,6 +13188,15 @@
       ]
     },
     {
+      "id": "JeffyReader",
+      "selectorMatches": [
+        "br-span"
+      ],
+      "atomicBlockSelectors.add": [
+        "br-span"
+      ]
+    },
+    {
       "id": "batchUnlimitHeight",
       "matches": [
         "https://www.inven.co.kr/*",
@@ -13410,6 +13419,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-16T03:35:53.735Z",
+  "buildinConfigUpdatedAt": "2025-01-16T10:54:24.905Z",
   "latestVersion": "1.13.5"
 }
