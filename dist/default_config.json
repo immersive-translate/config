@@ -1625,7 +1625,8 @@
     "showSponsorOnSafari": false,
     "noTranslateRegexp": [
       "^\\d+.+ago$",
-      "^\\d+\\s+MIN\\s+READ$"
+      "^\\d+\\s+MIN\\s+READ$",
+      "^[\\u200B\\u200C\\u200D\\u2060\\uFEFF]+$"
     ],
     "waitForSelectors": [],
     "isInjectOptionsUrl": false,
@@ -13409,6 +13410,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-15T16:09:09.245Z",
+  "buildinConfigUpdatedAt": "2025-01-16T03:35:53.735Z",
   "latestVersion": "1.13.5"
 }
