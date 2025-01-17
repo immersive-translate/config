@@ -424,7 +424,8 @@
     "https://pan.quark.cn/[Quark]",
     "https://www.medici.tv/[Medici]",
     "https://canvas.ucdavis.edu/[UCDAVIS]",
-    "https://learning.iaabcfoundation.org/[IAABCFOUNDATION]"
+    "https://learning.iaabcfoundation.org/[IAABCFOUNDATION]",
+    "https://www.coindesk.com/[CoinDesk]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -11833,6 +11834,24 @@
       }
     },
     {
+      "id": "coindesk",
+      "matches": [
+        "www.coindesk.com"
+      ],
+      "excludeSelectors.add": [
+        "[data-subtitles-container='true']"
+      ],
+      "mutationExcludeSelectors.add": [
+        "[data-subtitles-container='true'] *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "loadingContainerSelector": ".jw-media",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "hookType": "xhr"
+      }
+    },
+    {
       "id": "dr",
       "matches": "*.dr.dk",
       "excludeSelectors.add": [
@@ -13425,6 +13444,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-17T04:11:08.612Z",
+  "buildinConfigUpdatedAt": "2025-01-17T07:40:44.723Z",
   "latestVersion": "1.13.5"
 }
