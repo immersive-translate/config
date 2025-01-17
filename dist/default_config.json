@@ -8176,7 +8176,10 @@
     },
     {
       "id": "nhentai",
-      "matches": "nhentai.net",
+      "matches": [
+        "nhentai.net",
+        "6hentai.net"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
@@ -13421,6 +13424,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-17T03:49:15.702Z",
+  "buildinConfigUpdatedAt": "2025-01-17T03:57:06.082Z",
   "latestVersion": "1.13.5"
 }
