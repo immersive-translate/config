@@ -186,6 +186,7 @@
     "ur"
   ],
   "translationMode": "dual",
+  "inputTranslationMode": "translation",
   "translationModeUrlPattern": {
     "dualMatches": [],
     "translationMatches": [
@@ -477,6 +478,7 @@
   ],
   "inputStyleBlockUrls": [],
   "inputTargetLanguage": "en",
+  "enableEnToZhInputTargetLang": true,
   "inputStartingTriggerKey": "/",
   "inputTrailingTriggerKey": "space",
   "inputTrailingTriggerKeyRepeatTimes": 3,
@@ -1942,6 +1944,7 @@
     ],
     "urlChangeDelay": 50,
     "mutationChangeDelay": 10,
+    "urlChangeUpdateRule": true,
     "mainFrameMinTextCount": 50,
     "mainFrameMinWordCount": 5,
     "visibleDelay": 0,
@@ -2569,7 +2572,7 @@
       "waitForSelectorsTimeout": 1
     },
     {
-      "id": "pro-pdf",
+      "id": "pro-pdf-immersive",
       "matches": [
         "https://*.immersivetranslate.com/pdf-pro*"
       ],
@@ -2954,6 +2957,10 @@
           "mutationChangeDelay": 1000
         }
       },
+      "mutationConfig.add": {
+        "consumeTimeout": 1000
+      },
+      "richMoreWordPercent": "0.5",
       "subtitleRule.add_v.[1.2.1]": {
         "type": "twitter",
         "videoPlayerSelector": "video",
@@ -13462,6 +13469,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-17T07:53:51.449Z",
-  "latestVersion": "1.13.5"
+  "buildinConfigUpdatedAt": "2025-01-17T12:19:36.250Z",
+  "latestVersion": "1.13.6"
 }
