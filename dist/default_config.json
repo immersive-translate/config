@@ -2889,7 +2889,8 @@
         "time",
         "[data-testid=User-Name]",
         "[data-testid=socialContext]",
-        "[data-testid=tweet-text-show-more-link]"
+        "[data-testid=tweet-text-show-more-link]",
+        "[aria-label=Grok] [class='css-175oi2r r-1habvwh r-vqp9x9 r-1q9bdsx r-1loqt21 r-9njtsq r-1wtj0ep r-nsbfu8 r-xbdcod r-13c7hvr'] > div:last-child"
       ],
       "globalStyles": {
         "[data-testid='card.layoutLarge.detail'] > div:nth-child(2)": "-webkit-line-clamp: unset;",
@@ -13420,6 +13421,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-16T15:58:03.629Z",
+  "buildinConfigUpdatedAt": "2025-01-17T03:49:15.702Z",
   "latestVersion": "1.13.5"
 }
