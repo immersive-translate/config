@@ -2099,7 +2099,8 @@
       "h2 br",
       "h3 br",
       "h4 br",
-      ".easyscholar-ranking"
+      ".easyscholar-ranking",
+      ".textLayer > span[role=presentation]"
     ],
     "translationClasses": [],
     "excludeTags": [
@@ -13424,6 +13425,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-17T03:57:06.082Z",
+  "buildinConfigUpdatedAt": "2025-01-17T04:11:08.612Z",
   "latestVersion": "1.13.5"
 }
