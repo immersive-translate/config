@@ -2584,7 +2584,7 @@
       "skipEditableCheck": true,
       "injectedCss.add": [
         ".immersive-translate-target-wrapper {white-space: unset;}",
-        "[data-immersive-translate_rtl] #preview {text-align: right;}",
+        "[data-immersive-translate_rtl] .immersive-translate-target-translation-block-wrapper {width:100%}",
         "* {text-decoration:unset;}"
       ],
       "additionalExcludeSelectors.remove": [
@@ -13470,6 +13470,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-18T13:30:58.844Z",
+  "buildinConfigUpdatedAt": "2025-01-18T14:51:36.960Z",
   "latestVersion": "1.13.6"
 }
