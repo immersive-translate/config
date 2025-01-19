@@ -13314,6 +13314,13 @@
       ]
     },
     {
+      "id": "qidian",
+      "matches": "www.qidian.com",
+      "extraBlockSelectors.add": [
+        ".type-list a"
+      ]
+    },
+    {
       "id": "nexusmods",
       "matches": [
         "next.nexusmods.com",
@@ -13470,6 +13477,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-18T14:51:36.960Z",
+  "buildinConfigUpdatedAt": "2025-01-19T04:31:40.713Z",
   "latestVersion": "1.13.6"
 }
