@@ -13321,6 +13321,16 @@
       ]
     },
     {
+      "id": "alphaxiv",
+      "matches": "www.alphaxiv.org",
+      "likePreSelectors.add": "[data-sentry-component=Response]",
+      "injectedCss.add": [
+        "[class*=line-clamp] {-webkit-line-clamp:unset;}"
+      ],
+      "isTransformPreTagNewLine": true,
+      "forceFormatPre": true
+    },
+    {
       "id": "nexusmods",
       "matches": [
         "next.nexusmods.com",
@@ -13477,6 +13487,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-19T04:31:40.713Z",
+  "buildinConfigUpdatedAt": "2025-01-19T14:47:47.089Z",
   "latestVersion": "1.13.6"
 }
