@@ -10257,6 +10257,7 @@
       "subtitleRule.add": {
         "type": "subsrt",
         "subsrtFormat": "srt",
+        "hookType": "fetch|xhr",
         "loadingContainerSelector": ".player",
         "subtitleUrlRegExp": "/video/.*\\.srt",
         "quickButtonRule": {
@@ -13518,6 +13519,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-20T13:05:15.563Z",
+  "buildinConfigUpdatedAt": "2025-01-20T13:31:06.082Z",
   "latestVersion": "1.13.6"
 }
