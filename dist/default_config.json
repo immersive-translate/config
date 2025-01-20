@@ -13473,6 +13473,16 @@
       ]
     },
     {
+      "id": "common2.pdfWebPage",
+      "selectorMatches": [
+        "[id=myPdfIframe][src*=pdf]"
+      ],
+      "pdfUrlExtractRule": {
+        "selector": "[id=myPdfIframe][src*=pdf]",
+        "attribute": "src"
+      }
+    },
+    {
       "id": "txt",
       "matches": [
         "*://*/*.txt",
@@ -13508,6 +13518,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-20T09:00:47.976Z",
+  "buildinConfigUpdatedAt": "2025-01-20T13:05:15.563Z",
   "latestVersion": "1.13.6"
 }
