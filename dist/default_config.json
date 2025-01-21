@@ -13477,10 +13477,11 @@
     {
       "id": "common2.pdfWebPage",
       "selectorMatches": [
-        "[id=myPdfIframe][src*=pdf]"
+        "[id=myPdfIframe][src*=pdf]",
+        "#article [type='application/pdf'][src*=pdf]"
       ],
       "pdfUrlExtractRule": {
-        "selector": "[id=myPdfIframe][src*=pdf]",
+        "selector": "iframe[src*=pdf]",
         "attribute": "src"
       }
     },
@@ -13520,6 +13521,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-21T10:10:30.271Z",
+  "buildinConfigUpdatedAt": "2025-01-21T10:19:18.776Z",
   "latestVersion": "1.13.6"
 }
