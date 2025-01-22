@@ -1257,7 +1257,9 @@
       },
       "ignoreResRegexs": [
         "^系统检测到输入或生成内容可能包含不安全或敏感内容",
-        "可能是一个缩写或专有名词，因此没有进行翻译。）$"
+        "可能是一个缩写或专有名词，因此没有进行翻译。）$",
+        "^输入文本无法识别，请提供有效的文本内容",
+        "^无法翻译，输入内容无法识别"
       ],
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
@@ -13521,6 +13523,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-21T10:19:18.776Z",
+  "buildinConfigUpdatedAt": "2025-01-22T10:27:04.062Z",
   "latestVersion": "1.13.6"
 }
