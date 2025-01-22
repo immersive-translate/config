@@ -13339,6 +13339,13 @@
       ]
     },
     {
+      "id": "vaseven",
+      "matches": "www.vaseven.com",
+      "excludeSelectors.add": [
+        ".et_pb_main_blurb_image"
+      ]
+    },
+    {
       "id": "qidian",
       "matches": "www.qidian.com",
       "extraBlockSelectors.add": [
@@ -13523,6 +13530,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-22T10:27:04.062Z",
+  "buildinConfigUpdatedAt": "2025-01-22T10:31:48.566Z",
   "latestVersion": "1.13.6"
 }
