@@ -1435,7 +1435,7 @@
   "generalRule": {
     "_comment": "",
     "longBuildDomLength": 3000,
-    "longBuildPageLength": 30,
+    "longBuildPageLength": 50,
     "repeatTranslateNum": 0,
     "detectTextBufferLength": 0,
     "smallCodeLength": 30,
@@ -13570,6 +13570,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-23T09:53:40.000Z",
+  "buildinConfigUpdatedAt": "2025-01-23T14:47:10.130Z",
   "latestVersion": "1.13.7"
 }
