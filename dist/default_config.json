@@ -468,6 +468,7 @@
     "marquee"
   ],
   "translationPosition": "after",
+  "clientImageTranslationService": "inherit",
   "inputTranslationService": "inherit",
   "inputTranslationBlockUrls": [
     "*.larkoffice.com",
@@ -1590,7 +1591,8 @@
       "mangaTranslator": "auto",
       "commonTranslator": "bing",
       "enableTools": false,
-      "enableMouseHover": true,
+      "enableMouseHover": false,
+      "imageTranslateProvider": "client",
       "hoverMinWidth": 100,
       "hoverMinHeight": 100,
       "toolsMinWidth": 280,
@@ -1599,8 +1601,32 @@
       "queryIntervalTime": 1000,
       "errorTimes": 3,
       "errorInterval": 5000,
+      "clientOcrTimeout": 10000,
+      "clientTranslateTimeout": 10000,
       "enableImageTranslation": "pro",
+      "supportPlatform": {
+        "chrome_pc": "all"
+      },
       "toolsDelayTime": 1500,
+      "clientSupportLangs": [
+        "en",
+        "de",
+        "fr",
+        "es",
+        "pt",
+        "pt-br",
+        "it",
+        "haw",
+        "fy",
+        "mt",
+        "gd",
+        "ny",
+        "sv",
+        "nl",
+        "ja",
+        "et",
+        "all"
+      ],
       "latinLang": [
         "en",
         "fr",
@@ -1608,13 +1634,21 @@
         "pt",
         "pt-br",
         "it"
+      ],
+      "notSupportRegexes": [
+        "AFR X}"
+      ],
+      "ignoreErrorRegexes": [
+        "failed to call OrtRun()",
+        "Got invalid dimensions for"
+      ],
+      "noTranslateRegexes": [
+        "^[^a-zA-Z]{2}"
+      ],
+      "removeTextRegexes": [
+        "&#\\d+;",
+        "&amp;"
       ]
-    },
-    "imageRule.add_v.[1.12.1]": {
-      "enableImageTranslation": "pro"
-    },
-    "imageRule.add_v.[1.12.7]": {
-      "enableImageTranslation": "pro"
     },
     "useIframePostMessage": false,
     "searchEnhancementConfig": [],
@@ -2912,7 +2946,8 @@
         "[data-testid=\"tweetText\"] div.r-6koalj"
       ],
       "injectedCss.add": [
-        ".r-h9hxbl{width:unset;}"
+        ".r-h9hxbl{width:unset;}",
+        ".imt-img { object-fit: cover !important; }"
       ],
       "likePreSelectors.add_v.[1.11.5]": [
         "[data-testid=tweetText]"
@@ -3669,6 +3704,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
+        "hookType": "xhr_response",
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
         "translateSelectors": [
           ".caption-window",
@@ -3795,6 +3831,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
+        "hookType": "xhr_response",
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
         "translateSelectors": [
           ".caption-window",
@@ -3863,6 +3900,7 @@
       },
       "subtitleRule.add": {
         "type": "youtube",
+        "hookType": "xhr_response",
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
         "translateSelectors": [
           ".caption-window",
@@ -3912,6 +3950,7 @@
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
         "type": "youtube",
+        "hookType": "xhr_response",
         "preTranslation": true,
         "humanPreferred": false,
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
@@ -3969,6 +4008,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
+        "hookType": "xhr_response",
         "subtitleUrlRegExp": "/api/timedtext",
         "translateSelectors": [
           ".caption-window",
@@ -13530,6 +13570,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-22T10:31:48.566Z",
-  "latestVersion": "1.13.6"
+  "buildinConfigUpdatedAt": "2025-01-23T09:38:41.014Z",
+  "latestVersion": "1.13.7"
 }
