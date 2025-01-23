@@ -3495,7 +3495,7 @@
     },
     {
       "id": "github",
-      "matches": "ax9rsosmvaht.compat.objectstorage.ap-seoul-1.oraclecloud.com",
+      "matches": "github.com",
       "useIframePostMessage": false,
       "excludeMatches": [
         "https://github.com/*/*/settings",
@@ -13573,6 +13573,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-23T15:10:50.279Z",
+  "buildinConfigUpdatedAt": "2025-01-23T15:44:53.541Z",
   "latestVersion": "1.13.7"
 }
