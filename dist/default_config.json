@@ -3495,7 +3495,7 @@
     },
     {
       "id": "github",
-      "matches": "github.com",
+      "matches": "ax9rsosmvaht.compat.objectstorage.ap-seoul-1.oraclecloud.com",
       "useIframePostMessage": false,
       "excludeMatches": [
         "https://github.com/*/*/settings",
@@ -3522,6 +3522,8 @@
         "li.repo-list-item p",
         "#responsive-meta-container p",
         "article p",
+        "feed-container article ul li a span",
+        "feed-container article .FormControl-caption",
         "div.repo-description p",
         "[itemprop=description]",
         ".integrations-auth-wrapper",
@@ -3542,7 +3544,8 @@
         "[aria-label=\"card content\"] .flex-column > div:nth-child(2)",
         "[class*=TitleHeader]",
         ".bpDald",
-        ".discussion-title"
+        ".discussion-title",
+        ".copilotPreview__footer"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}"
@@ -13570,6 +13573,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-23T14:47:10.130Z",
+  "buildinConfigUpdatedAt": "2025-01-23T15:10:50.279Z",
   "latestVersion": "1.13.7"
 }
