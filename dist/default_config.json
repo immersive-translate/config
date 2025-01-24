@@ -6,7 +6,7 @@
   "translationService": "bing",
   "mouseModifierKeyPressTimeout": 400,
   "sameLangCheck": true,
-  "isPreview": true,
+  "isPreview": false,
   "immediateTranslationPattern": {
     "matches": [
       "www.tumblr.com",
@@ -1512,6 +1512,8 @@
     "detectionServiceOrder": [
       "google",
       "bing",
+      "zhipu",
+      "siliconcloud",
       "transmart"
     ],
     "detectParagraphLanguage": false,
@@ -1602,13 +1604,20 @@
       "queryIntervalTime": 1000,
       "errorTimes": 3,
       "errorInterval": 5000,
-      "clientOcrTimeout": 10000,
-      "clientTranslateTimeout": 10000,
+      "clientOcrTimeout": 12000,
+      "clientTranslateTimeout": 12000,
       "enableImageTranslation": "pro",
       "supportPlatform": {
         "chrome_pc": "all"
       },
-      "toolsDelayTime": 1500,
+      "detectionServiceOrder": [
+        "zhipu",
+        "siliconcloud",
+        "google",
+        "bing",
+        "transmart"
+      ],
+      "toolsDelayTime": 200,
       "clientSupportLangs": [
         "en",
         "de",
@@ -8493,7 +8502,18 @@
     {
       "id": "lezhinus",
       "matches": "www.lezhinus.com",
-      "_comment": "因为部分内容是canvas，禁止读取"
+      "imageRule.add.[1.13.8]": {
+        "enable": true,
+        "type": "manga",
+        "urlFetchType": "canvasArgs",
+        "imageSelectors": [
+          "#scroll-list img",
+          "[class^='scrollView'] img",
+          "[class^='scrollView'] canvas"
+        ],
+        "opImageType": "append",
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      }
     },
     {
       "id": "allmanga",
@@ -13439,6 +13459,14 @@
       "isTransformPreTagNewLine": true
     },
     {
+      "id": "ya.ru",
+      "matches": "ya.ru",
+      "immediatelyInjectedCss": [
+        ".MMImage-Origin {display:none;}",
+        ".MMImageContainer,.MMImageContainer > img {pointer-events:unset!important;}"
+      ]
+    },
+    {
       "id": "other-chatapps",
       "matches": [
         "app.salesmartly.com/chat"
@@ -13591,6 +13619,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-24T06:21:00.706Z",
-  "latestVersion": "1.13.7"
+  "buildinConfigUpdatedAt": "2025-01-24T11:22:37.610Z",
+  "latestVersion": "1.13.8"
 }
