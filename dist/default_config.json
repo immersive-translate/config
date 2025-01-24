@@ -12945,7 +12945,8 @@
         "type": "manga",
         "injectedCss": ".imt-loading {z-index:999 !important;}",
         "imageSelectors": [
-          "div[name=\"image-items\"] img"
+          "div[name=\"image-items\"] img",
+          "#viewer div img"
         ]
       }
     },
@@ -13573,6 +13574,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-23T15:44:53.541Z",
+  "buildinConfigUpdatedAt": "2025-01-24T03:07:21.741Z",
   "latestVersion": "1.13.7"
 }
