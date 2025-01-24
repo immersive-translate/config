@@ -13165,13 +13165,12 @@
         "bb-rich-text-editor",
         ".bb-editor-root"
       ],
-      "atomicBlockSelectors.add": [
-        ".bb-editor-root *"
+      "likePreSelectors.add": [
+        ".bb-editor-wrapper",
+        ".bb-editor-root"
       ],
-      "injectedCss.add": [
-        "bb-rich-text-editor font br {display:none;}",
-        "[imt-state=dual] bb-rich-text-editor .immersive-translate-target-translation-block-wrapper {margin-top:-10px!important;}"
-      ]
+      "isTransformPreTagNewLine": true,
+      "forceFormatPre": true
     },
     {
       "id": "novel-site",
@@ -13619,6 +13618,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-24T14:35:54.000Z",
+  "buildinConfigUpdatedAt": "2025-01-24T16:08:15.785Z",
   "latestVersion": "1.13.8"
 }
