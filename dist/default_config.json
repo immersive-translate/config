@@ -1591,7 +1591,7 @@
       "mangaTranslator": "auto",
       "commonTranslator": "bing",
       "enableTools": false,
-      "enableMouseHover": false,
+      "enableMouseHover": true,
       "imageTranslateProvider": "client",
       "hoverMinWidth": 100,
       "hoverMinHeight": 100,
@@ -13574,6 +13574,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-24T03:07:21.741Z",
+  "buildinConfigUpdatedAt": "2025-01-24T03:41:06.639Z",
   "latestVersion": "1.13.7"
 }
