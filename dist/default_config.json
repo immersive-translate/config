@@ -6107,6 +6107,7 @@
       "matches": "https://*.zendesk.com/agent/*",
       "selectors": [
         "[data-test-id*=subject]",
+        "[data-test-id*=content] > span",
         ".zd-comment",
         ".title"
       ]
@@ -13575,7 +13576,8 @@
       "id": "common2.pdfWebPage",
       "selectorMatches": [
         "[id=myPdfIframe][src*=pdf]",
-        "#article [type='application/pdf'][src*=pdf]"
+        "#article [type='application/pdf'][src*=pdf]",
+        ".textFrame [type='application/pdf'][src*=pdf]"
       ],
       "pdfUrlExtractRule": {
         "selector": "iframe[src*=pdf]",
@@ -13618,6 +13620,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-24T16:08:15.785Z",
+  "buildinConfigUpdatedAt": "2025-01-25T06:08:08.649Z",
   "latestVersion": "1.13.8"
 }
