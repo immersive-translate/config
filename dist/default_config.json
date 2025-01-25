@@ -892,7 +892,7 @@
         },
         {
           "id": "zh-CN2ru",
-          "prompt": ";; Treat next line as plain text input and translate it into 俄语,{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n{{text}}"
+          "prompt": ";; Treat next line as 简体中文 and translate it into 俄语,{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n{{text}}"
         },
         {
           "id": "auto2wyw",
@@ -12296,17 +12296,6 @@
       ]
     },
     {
-      "id": "simpleZh",
-      "matches": [
-        "deno.com",
-        "deno.land",
-        "blog.partykit.io"
-      ],
-      "injectedCss": [
-        ":root, font {font-feature-settings:normal;}"
-      ]
-    },
-    {
       "id": "soundcloud",
       "matches": "soundcloud.com",
       "injectedCss": [
@@ -13482,6 +13471,18 @@
       ]
     },
     {
+      "id": "simpleZh",
+      "matches": [
+        "deno.com",
+        "deno.land",
+        "blog.partykit.io",
+        "docs.lemonsqueezy.com"
+      ],
+      "injectedCss": [
+        ":root, font {font-feature-settings:normal;}"
+      ]
+    },
+    {
       "id": "NoTranslate",
       "matches": [
         "*.tiktok.com",
@@ -13622,6 +13623,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-25T15:25:36.784Z",
+  "buildinConfigUpdatedAt": "2025-01-25T15:58:10.824Z",
   "latestVersion": "1.13.8"
 }
