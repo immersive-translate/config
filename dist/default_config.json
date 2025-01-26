@@ -3770,6 +3770,15 @@
       ]
     },
     {
+      "id": "twitch",
+      "matches": "www.twitch.tv",
+      "excludeSelectors.add": [
+        ".persistent-player",
+        ".chat-line__username-container",
+        ".chat-line__no-background span[aria-hidden=true]"
+      ]
+    },
+    {
       "id": "youtube",
       "matches": "www.youtube.com",
       "blockMinTextCount": 0,
@@ -13659,6 +13668,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-26T03:32:51.387Z",
+  "buildinConfigUpdatedAt": "2025-01-26T06:53:58.964Z",
   "latestVersion": "1.13.8"
 }
