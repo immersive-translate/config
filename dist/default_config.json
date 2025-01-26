@@ -3775,7 +3775,8 @@
       "excludeSelectors.add": [
         ".persistent-player",
         ".chat-line__username-container",
-        ".chat-line__no-background span[aria-hidden=true]"
+        ".chat-line__no-background span[aria-hidden=true]",
+        "[data-a-target=animated-channel-viewers-count],.live-time"
       ]
     },
     {
@@ -13668,6 +13669,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-26T06:53:58.964Z",
+  "buildinConfigUpdatedAt": "2025-01-26T06:57:45.980Z",
   "latestVersion": "1.13.8"
 }
