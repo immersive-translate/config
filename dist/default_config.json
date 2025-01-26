@@ -5721,7 +5721,7 @@
         "messageWrapperSelector": "[data-testid=virtuoso-scroller] .css-10c6i1g",
         "streamingChange": false,
         "streamingDeepChild": true,
-        "streamingDelayTime": 1500
+        "streamingDelayTime": 2000
       }
     },
     {
@@ -13669,6 +13669,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-26T06:57:45.980Z",
+  "buildinConfigUpdatedAt": "2025-01-26T07:26:56.211Z",
   "latestVersion": "1.13.8"
 }
