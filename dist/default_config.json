@@ -13012,6 +13012,22 @@
       }
     },
     {
+      "id": "cartoonporn",
+      "matches": "cartoonporn.to",
+      "imageRule.add": {
+        "enable": true,
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ],
+        "type": "manga",
+        "imageSelectors": [
+          ".images-list img"
+        ]
+      }
+    },
+    {
       "id": "learn-ed",
       "matches": "www.learn.ed.ac.*",
       "repeatTranslateNum": 1
@@ -13623,6 +13639,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-25T15:58:10.824Z",
+  "buildinConfigUpdatedAt": "2025-01-26T03:05:47.116Z",
   "latestVersion": "1.13.8"
 }
