@@ -248,8 +248,8 @@
     "popupUrl": "https://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension&utm_campaign=popup_discount",
     "floatBallUrl": "https://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension&utm_campaign=float_ball_discount",
     "tipsI18n": {
-      "zh-CN": "沉浸式翻译双十一年度大促（史上最低）！ 首年 50% OFF！续费 30% OFF！",
-      "zh-TW": "沉浸式翻譯雙十一年度大促（史上最低）！ 首年50% OFF！ 續費30% OFF！",
+      "zh-CN": "沉浸式翻译双十一年度大促（史上最低）！首年 50% OFF！续费 30% OFF！",
+      "zh-TW": "沉浸式翻譯雙十一年度大促（史上最低）！首年 50% OFF！續費 30% OFF！",
       "en": "Black Friday Sale (All-time Low)! 50% OFF First Year, 30% OFF renewals!"
     }
   },
@@ -314,7 +314,8 @@
     "https://klz9.com[KL][chrome,firefox]",
     "https://www.comemh8.com[comemh8][chrome,firefox]",
     "https://xbato.com/[Xbato][chrome,firefox,safari]",
-    "https://mangarawjp.me[Mangaraw][chrome,firefox,safari]"
+    "https://mangarawjp.me[Mangaraw][chrome,firefox,safari]",
+    "https://manga.bilibili.com[Bilibili-Manga][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -861,7 +862,7 @@
         "imt_subtitle_yaml_item": "- id: {{id}}\n  {{imt_sub_source_field}}: {{text}}",
         "normal_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_source_field}}: Source\nOutput:\n  - id: 1\n    {{imt_trans_field}}: Translation\n</example>",
         "subtitle_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\nOutput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\n</example>",
-        "summary_prompt": "\n\nYou are about to translate text from an article. Title: 《{{imt_title}}》, Summary: {{imt_theme}}",
+        "summary_prompt": "\n\nYou are about to translate text from an article. Title: “{{imt_title}}”, Summary: {{imt_theme}}",
         "terms_prompt": "\n\nThis content may include the following terms {{imt_terms}}. Please handle these terms carefully.",
         "sub_summary_prompt": "\n\nYou are about to translate subtitles, {{imt_theme}}",
         "sub_terms_prompt": "\n\nThis subtitle may include the following terms {{imt_terms}}. Please handle these terms carefully."
@@ -874,11 +875,11 @@
         {
           "id": "auto2zh-CN-NE",
           "extends": "auto2zh-CN",
-          "systemPrompt": "你是一个东北人翻译，请用东北人的口吻进行翻译，尽可能贴近生活,只返回译文，不含任何解释"
+          "systemPrompt": "你是一个东北人翻译，请用东北人的口吻进行翻译，尽可能贴近生活，只返回译文，不含任何解释"
         },
         {
           "id": "auto2zh-CN",
-          "prompt": "; 把下一行文本作为纯文本输入，并将其翻译为简体中文,{{html_only}}仅输出翻译。如果某些内容无需翻译（如专有名词、代码等），则保持原文不变。 不要解释，输入文本:\n{{text}}"
+          "prompt": "; 把下一行文本作为纯文本输入，并将其翻译为简体中文，{{html_only}}仅输出翻译。如果某些内容无需翻译（如专有名词、代码等），则保持原文不变。不要解释，输入文本:\n{{text}}"
         },
         {
           "id": "wyw2zh-CN",
@@ -888,18 +889,18 @@
         },
         {
           "id": "zh-CN2zh-TW",
-          "prompt": ";; Treat next line as plain text input and translate it into 繁體中文,{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n{{text}}"
+          "prompt": ";; Treat next line as plain text input and translate it into 繁體中文，{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n{{text}}"
         },
         {
           "id": "zh-CN2ru",
-          "prompt": ";; Treat next line as 简体中文 and translate it into 俄语,{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n{{text}}"
+          "prompt": ";; Treat next line as 简体中文 and translate it into 俄语，{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n{{text}}"
         },
         {
           "id": "auto2wyw",
           "systemPrompt": "你是一个文言文翻译，请用文言文的方式进行翻译，尽可能贴近古风，只返回译文，不含任何解释。",
           "prompt": "请翻译为文言文（避免解释原文）:\n\n{{text}}",
           "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}",
-          "subtitlePrompt": "将下面 YAML 格式的视频字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必须补全每一个 {{imt_sub_trans_field}} 字段，保留每一个 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n开始翻译：\n\n{{yaml}}"
+          "subtitlePrompt": "将下面 YAML 格式的视频字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必须补全每一个 {{imt_sub_trans_field}} 字段，保留每一个 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML：\n\n{{subtitle_result_yaml_example}}\n\n开始翻译：\n\n{{yaml}}"
         },
         {
           "id": "zh-CN2auto",
@@ -1051,18 +1052,18 @@
         {
           "if": "targetLanguage == zh-CN",
           "prompt": "请翻译为简体中文（避免解释原文）:\n\n {{text}}",
-          "systemPrompt": "你是一个专业,地道的翻译引擎，你只返回译文，不含任何解释",
+          "systemPrompt": "你是一个专业，地道的翻译引擎，你只返回译文，不含任何解释",
           "multiplePrompt": "请把这几句字幕翻译为简体中文，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段译文\n\n{{text}}"
         },
         {
           "if": "targetLanguage == zh-CN-NE",
-          "systemPrompt": "你是一个东北人翻译，请用东北人的口吻进行翻译，尽可能贴近生活,只返回译文，不含任何解释",
+          "systemPrompt": "你是一个东北人翻译，请用东北人的口吻进行翻译，尽可能贴近生活，只返回译文，不含任何解释",
           "prompt": "请翻译为{{to}}（避免解释原文）:\n\n {{text}}",
           "multiplePrompt": "请把这几句字幕翻译为{{to}}，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段译文\n\n{{text}}"
         },
         {
           "if": "sourceLanguage == zh-CN",
-          "systemPrompt": "你是一个专业,地道的翻译引擎，你只返回译文，不含任何解释",
+          "systemPrompt": "你是一个专业，地道的翻译引擎，你只返回译文，不含任何解释",
           "prompt": "请翻译为{{to}}（避免解释原文）:\n\n {{text}}",
           "multiplePrompt": "请把这几句字幕翻译为{{to}}，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段译文\n\n{{text}}"
         },
@@ -1079,7 +1080,7 @@
         {
           "if": "targetLanguage == zh-TW",
           "prompt": "請翻譯為繁體中文（避免解釋原文）:\n\n {{text}}",
-          "systemPrompt": "你是一個專業,道地的翻譯引擎，你只會回譯文",
+          "systemPrompt": "你是一個專業，道地的翻譯引擎，你只會回譯文",
           "multiplePrompt": "請把這幾句字幕翻譯為繁體中文，為了通順，你可能需要在下一句中包含上一句的部分內容，比如我給了你 5 段英文，你就必須返回 5 段譯文\n\n{{text}}"
         },
         {
@@ -6404,7 +6405,7 @@
         "community.m5stack.com/topic/*"
       ],
       "urlChangeDelay": 0,
-      "_comment": "解决url变化重复翻译问题"
+      "_comment": "解决 url 变化重复翻译问题"
     },
     {
       "id": "genuine",
@@ -6554,7 +6555,7 @@
         ".activity"
       ],
       "urlChangeDelay": 0,
-      "_comment": "解决url变化但是页面不变的问题"
+      "_comment": "解决 url 变化但是页面不变的问题"
     },
     {
       "id": "feedly",
@@ -9419,6 +9420,25 @@
           "firefox",
           "safari",
           "imtIOS"
+        ]
+      }
+    },
+    {
+      "id": "bilibili-manga",
+      "matches": [
+        "manga.bilibili.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "opImageType": "insertFirst",
+        "imageSelectors": [
+          ".image-container canvas"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ]
       }
     },
@@ -13639,6 +13659,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-26T03:05:47.116Z",
+  "buildinConfigUpdatedAt": "2025-01-26T03:32:51.387Z",
   "latestVersion": "1.13.8"
 }
