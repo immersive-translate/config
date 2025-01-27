@@ -316,7 +316,8 @@
     "https://xbato.com/[Xbato][chrome,firefox,safari]",
     "https://mangarawjp.me[Mangaraw][chrome,firefox,safari]",
     "https://manga.bilibili.com[Bilibili-Manga][chrome,firefox,safari]",
-    "https://w9.kaijimanga.com[Kaijimanga][chrome,firefox,safari]"
+    "https://w9.kaijimanga.com[Kaijimanga][chrome,firefox,safari]",
+    "https://m.idmzj.com[idmzj][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -8693,11 +8694,15 @@
     },
     {
       "id": "idmzj",
-      "matches": "www.idmzj.com",
+      "matches": [
+        "www.idmzj.com",
+        "m.idmzj.com"
+      ],
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
-          ".scrollbar-demo-item img"
+          ".scrollbar-demo-item img",
+          "#commicBox div img"
         ],
         "loadingSelectors": [
           "div"
@@ -13689,6 +13694,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-27T08:55:46.012Z",
+  "buildinConfigUpdatedAt": "2025-01-27T09:12:45.815Z",
   "latestVersion": "1.13.8"
 }
