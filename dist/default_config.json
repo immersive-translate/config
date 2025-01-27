@@ -315,7 +315,8 @@
     "https://www.comemh8.com[comemh8][chrome,firefox]",
     "https://xbato.com/[Xbato][chrome,firefox,safari]",
     "https://mangarawjp.me[Mangaraw][chrome,firefox,safari]",
-    "https://manga.bilibili.com[Bilibili-Manga][chrome,firefox,safari]"
+    "https://manga.bilibili.com[Bilibili-Manga][chrome,firefox,safari]",
+    "https://w9.kaijimanga.com[Kaijimanga][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -12757,6 +12758,22 @@
       }
     },
     {
+      "id": "kaijimanga",
+      "matches": "w9.kaijimanga.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".entry-content img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "mangakoinu",
       "matches": "www.mangakoinu.com",
       "imageRule.add": {
@@ -13672,6 +13689,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-27T03:55:23.861Z",
+  "buildinConfigUpdatedAt": "2025-01-27T08:55:46.012Z",
   "latestVersion": "1.13.8"
 }
