@@ -9039,7 +9039,7 @@
           ".img-wrapper img[class='page']",
           ".work-thumb",
           "[role=\"presentation\"] img",
-          ".manga-page img",
+          ".manga-page img[src*=\"webp\"]",
           ".zoomable-area img"
         ],
         "platforms": [
@@ -13672,6 +13672,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-26T09:52:13.483Z",
+  "buildinConfigUpdatedAt": "2025-01-27T03:55:23.861Z",
   "latestVersion": "1.13.8"
 }
