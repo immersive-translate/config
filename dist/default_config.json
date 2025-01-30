@@ -13529,6 +13529,14 @@
       ]
     },
     {
+      "id": "swaycloud",
+      "matches": "sway.cloud.microsoft",
+      "injectedCss.add": [
+        ".text_wrapper ul li {max-height:unset!important;}",
+        ".container {overflow:scroll;}"
+      ]
+    },
+    {
       "id": "other-chatapps",
       "matches": [
         "app.salesmartly.com/chat"
@@ -13694,6 +13702,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-27T09:12:45.815Z",
+  "buildinConfigUpdatedAt": "2025-01-30T07:38:21.511Z",
   "latestVersion": "1.13.8"
 }
