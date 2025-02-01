@@ -9486,7 +9486,7 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          "#chapter-images-id img"
+          "#chapter-images-id img[class*=\"lazyloaded\"]"
         ],
         "platforms": [
           "chrome",
@@ -13711,6 +13711,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-01T14:36:32.456Z",
+  "buildinConfigUpdatedAt": "2025-02-01T14:58:44.452Z",
   "latestVersion": "1.13.8"
 }
