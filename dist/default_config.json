@@ -9458,26 +9458,6 @@
       }
     },
     {
-      "id": "manwadb-xyz",
-      "matches": [
-        "manwadb.xyz"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".img-content img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "safari",
-          "imtAndroid",
-          "imtIOS"
-        ]
-      }
-    },
-    {
       "id": "manhuabika",
       "matches": [
         "manhuabika.com"
@@ -9524,24 +9504,6 @@
         "type": "manga",
         "imageSelectors": [
           "#comic-content-wrapper img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "safari"
-        ]
-      }
-    },
-    {
-      "id": "manwadb",
-      "matches": [
-        "manwadb.cc"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".img-content img"
         ],
         "platforms": [
           "chrome",
@@ -12725,7 +12687,9 @@
     {
       "id": "manwadd",
       "matches": [
-        "manwadd.cc"
+        "manwadd.cc",
+        "manwadb.cc",
+        "manwadb.xyz"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13711,6 +13675,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-01T14:58:44.452Z",
+  "buildinConfigUpdatedAt": "2025-02-01T15:05:13.909Z",
   "latestVersion": "1.13.8"
 }
