@@ -13030,6 +13030,9 @@
         "type": "manga",
         "imageSelectors": [
           ".render img"
+        ],
+        "inValidSrcRegex": [
+          "load.gif"
         ]
       }
     },
@@ -13708,6 +13711,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-01T14:15:14.689Z",
+  "buildinConfigUpdatedAt": "2025-02-01T14:36:32.456Z",
   "latestVersion": "1.13.8"
 }
