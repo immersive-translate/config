@@ -12737,6 +12737,9 @@
         "imageSelectors": [
           ".img-content img"
         ],
+        "inValidSrcRegex": [
+          "imagecover3.jpg"
+        ],
         "platforms": [
           "chrome",
           "firefox",
@@ -13709,6 +13712,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-01T12:54:23.391Z",
+  "buildinConfigUpdatedAt": "2025-02-01T13:51:43.211Z",
   "latestVersion": "1.13.8"
 }
