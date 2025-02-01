@@ -13521,6 +13521,13 @@
       "isTransformPreTagNewLine": true
     },
     {
+      "id": "ollama",
+      "matches": "ollama.com",
+      "excludeSelectors.add": [
+        "#file-explorer"
+      ]
+    },
+    {
       "id": "ya.ru",
       "matches": "ya.ru",
       "immediatelyInjectedCss": [
@@ -13702,6 +13709,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-01-31T12:20:18.115Z",
+  "buildinConfigUpdatedAt": "2025-02-01T12:54:23.391Z",
   "latestVersion": "1.13.8"
 }
