@@ -8207,10 +8207,7 @@
     {
       "id": "jmanga",
       "matches": [
-        "jmanga.org",
-        "jmanga.to",
-        "jmanga.ac",
-        "jmanga.sh"
+        "jmanga.*"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13678,6 +13675,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-01T17:02:17.419Z",
+  "buildinConfigUpdatedAt": "2025-02-02T11:34:52.694Z",
   "latestVersion": "1.13.8"
 }
