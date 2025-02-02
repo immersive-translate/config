@@ -12089,13 +12089,24 @@
     },
     {
       "id": "otherGoogle",
-      "matches": "*.google.com",
+      "matches": [
+        "*.google.com",
+        "dart.dev"
+      ],
       "injectedCss.add": [
         ".scSearchSearch_results_listSearchresultslistsnippet { -webkit-line-clamp:unset;}"
       ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "side.selectors": [
+          "nav",
+          "aside",
+          "#sidenav"
+        ]
+      },
       "excludeSelectors.add": [
         ".material-symbols-outlined",
-        ".cfc-result-card-table"
+        ".cfc-result-card-table",
+        ".material-symbols"
       ],
       "additionalExcludeSelectors.add": [
         ".o_35",
@@ -13675,6 +13686,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-02T11:34:52.694Z",
+  "buildinConfigUpdatedAt": "2025-02-02T12:12:05.959Z",
   "latestVersion": "1.13.8"
 }
