@@ -13517,6 +13517,13 @@
       ]
     },
     {
+      "id": "moddota",
+      "matches": "moddota.com",
+      "injectedCss.add": [
+        ".ReactVirtualized__Grid__innerScrollContainer {overflow:scroll!important;}"
+      ]
+    },
+    {
       "id": "other-chatapps",
       "matches": [
         "app.salesmartly.com/chat"
@@ -13682,6 +13689,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-02T12:38:43.604Z",
+  "buildinConfigUpdatedAt": "2025-02-02T12:42:41.174Z",
   "latestVersion": "1.13.8"
 }
