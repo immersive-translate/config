@@ -1683,7 +1683,8 @@
     "noTranslateRegexp": [
       "^\\d+.+ago$",
       "^\\d+\\s+MIN\\s+READ$",
-      "^[\\u200B\\u200C\\u200D\\u2060\\uFEFF]+$"
+      "^[\\u200B\\u200C\\u200D\\u2060\\uFEFF]+$",
+      "^[a-zA-Z]$"
     ],
     "waitForSelectors": [],
     "isInjectOptionsUrl": false,
@@ -2077,7 +2078,9 @@
       ],
       "side.selectors": [
         "nav",
-        "aside"
+        "aside",
+        "[class*='Sidebar']",
+        "#sidenav"
       ],
       "side.enableTranslate": true,
       "header.selectors": [
@@ -12096,13 +12099,6 @@
       "injectedCss.add": [
         ".scSearchSearch_results_listSearchresultslistsnippet { -webkit-line-clamp:unset;}"
       ],
-      "preTranslateLimiter.add_v.[1.12.1]": {
-        "side.selectors": [
-          "nav",
-          "aside",
-          "#sidenav"
-        ]
-      },
       "excludeSelectors.add": [
         ".material-symbols-outlined",
         ".cfc-result-card-table",
@@ -13686,6 +13682,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-02T12:12:05.959Z",
+  "buildinConfigUpdatedAt": "2025-02-02T12:38:43.604Z",
   "latestVersion": "1.13.8"
 }
