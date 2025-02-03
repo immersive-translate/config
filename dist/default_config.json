@@ -12539,6 +12539,15 @@
             "immediateTranslationTextCount": 0
           }
         }
+      ],
+      "excludeTags.remove": [
+        "PRE"
+      ],
+      "stayOriginalTags.remove": [
+        "CODE"
+      ],
+      "noTranslateRegexp": [
+        "c.ai"
       ]
     },
     {
@@ -13695,6 +13704,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-03T12:58:16.961Z",
+  "buildinConfigUpdatedAt": "2025-02-03T14:36:13.442Z",
   "latestVersion": "1.13.8"
 }
