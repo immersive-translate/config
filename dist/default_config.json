@@ -4769,6 +4769,12 @@
       "matches": [
         "www.notion.so"
       ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.enableTranslate": true
+      },
+      "initialSelectorGlobalAttributes.remove": {
+        "header": {}
+      },
       "injectedCss": [
         "[aria-label='Templates'] font br {display:none;}"
       ]
@@ -13689,6 +13695,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-02T12:42:41.174Z",
+  "buildinConfigUpdatedAt": "2025-02-03T12:58:16.961Z",
   "latestVersion": "1.13.8"
 }
