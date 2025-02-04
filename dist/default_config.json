@@ -364,7 +364,7 @@
     "https://www.espn.com/[ESPN]",
     "https://www.imdb.com/[IMDb]",
     "https://www.rottentomatoes.com/[Rotten Tomatoes]",
-    "https://fmovies24.to/[FMovies]",
+    "https://ww4.fmovies.co/[FMovies]",
     "https://bflixhd.to/[Bflixhd]",
     "https://hianime.to/[Hianime]",
     "https://www.iq.com/[iQIYI]",
@@ -13704,6 +13704,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-03T14:36:13.442Z",
+  "buildinConfigUpdatedAt": "2025-02-04T08:48:44.245Z",
   "latestVersion": "1.13.8"
 }
