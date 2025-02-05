@@ -13071,6 +13071,22 @@
       }
     },
     {
+      "id": "e621",
+      "matches": "e621.net",
+      "imageRule.add": {
+        "enable": true,
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ],
+        "type": "manga",
+        "imageSelectors": [
+          "img#image"
+        ]
+      }
+    },
+    {
       "id": "learn-ed",
       "matches": "www.learn.ed.ac.*",
       "repeatTranslateNum": 1
@@ -13704,6 +13720,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-04T08:48:44.245Z",
+  "buildinConfigUpdatedAt": "2025-02-05T03:17:35.618Z",
   "latestVersion": "1.13.8"
 }
