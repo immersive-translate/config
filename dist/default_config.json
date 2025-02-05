@@ -13631,6 +13631,13 @@
       ]
     },
     {
+      "id": "teacherspayteachers",
+      "matches": "www.teacherspayteachers.com/browse/*",
+      "injectedCss.add": [
+        ".ProductRowCard-module__cardTitleLink--YPqiC { display:unset !important; }"
+      ]
+    },
+    {
       "id": "other-chatapps",
       "matches": [
         "app.salesmartly.com/chat"
@@ -13796,6 +13803,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-05T10:37:51.338Z",
+  "buildinConfigUpdatedAt": "2025-02-05T11:25:16.829Z",
   "latestVersion": "1.13.8"
 }
