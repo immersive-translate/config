@@ -433,7 +433,8 @@
     "https://learning.iaabcfoundation.org/[IAABCFOUNDATION]",
     "https://www.coindesk.com/[CoinDesk]",
     "https://www.reuters.com/[Reuters]",
-    "https://tver.jp/[TVer]"
+    "https://tver.jp/[TVer]",
+    "https://pro.codewithandrea.com/[codewithandrea]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -11879,6 +11880,30 @@
       }
     },
     {
+      "id": "codewithandrea",
+      "matches": [
+        "customer-cj9d17w2zbobjd7j.cloudflarestream.com"
+      ],
+      "excludeSelectors.add": [
+        "[data-testid=\"video-player\"]"
+      ],
+      "mutationExcludeSelectors.add": [
+        "[data-testid=\"video-player\"] *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": "\\.vtt",
+        "hookType": "fetch",
+        "loadingContainerSelector": "stream > div",
+        "quickButtonRule": {
+          "appendSelector": ".css-6mrf8j.css-1oxfqe2"
+        }
+      }
+    },
+    {
       "id": "ucdavis",
       "matches": [
         "aggievideo.canvas.ucdavis.edu"
@@ -13739,6 +13764,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-05T04:12:31.017Z",
+  "buildinConfigUpdatedAt": "2025-02-05T07:24:12.330Z",
   "latestVersion": "1.13.8"
 }
