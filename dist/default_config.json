@@ -1610,7 +1610,7 @@
       "queryIntervalTime": 1000,
       "errorTimes": 3,
       "errorInterval": 5000,
-      "clientOcrTimeout": 12000,
+      "clientOcrTimeout": 20000,
       "clientTranslateTimeout": 12000,
       "enableImageTranslation": "pro",
       "supportPlatform": {
@@ -13720,6 +13720,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-05T03:17:35.618Z",
+  "buildinConfigUpdatedAt": "2025-02-05T03:19:11.175Z",
   "latestVersion": "1.13.8"
 }
