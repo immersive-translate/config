@@ -12824,6 +12824,22 @@
       }
     },
     {
+      "id": "comicmanga",
+      "matches": "comicmanga.cc",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".images-chapter img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "mangajikan",
       "matches": "www.mangajikan.com",
       "imageRule.add": {
@@ -13780,6 +13796,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-05T08:58:05.450Z",
+  "buildinConfigUpdatedAt": "2025-02-05T10:37:51.338Z",
   "latestVersion": "1.13.8"
 }
