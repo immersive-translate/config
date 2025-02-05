@@ -432,7 +432,8 @@
     "https://canvas.ucdavis.edu/[UCDAVIS]",
     "https://learning.iaabcfoundation.org/[IAABCFOUNDATION]",
     "https://www.coindesk.com/[CoinDesk]",
-    "https://www.reuters.com/[Reuters]"
+    "https://www.reuters.com/[Reuters]",
+    "https://tver.jp/[TVer]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -12031,6 +12032,24 @@
       }
     },
     {
+      "id": "tver",
+      "matches": "tver.jp",
+      "excludeSelectors.add": [
+        "div[class*=\"player_container\"]",
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        "div[class*=\"player_container\"] *",
+        "#immersive-translate-caption-window *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "\\.vtt",
+        "videoPlayerSelector": "video"
+      }
+    },
+    {
       "id": "archiveToday",
       "matches": [
         "archive.today",
@@ -13720,6 +13739,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-05T03:19:11.175Z",
+  "buildinConfigUpdatedAt": "2025-02-05T04:12:31.017Z",
   "latestVersion": "1.13.8"
 }
