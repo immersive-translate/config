@@ -434,7 +434,7 @@
     "https://www.coindesk.com/[CoinDesk]",
     "https://www.reuters.com/[Reuters]",
     "https://tver.jp/[TVer]",
-    "https://pro.codewithandrea.com/[codewithandrea]"
+    "https://pro.codewithandrea.com/[CodeWithAndrea]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -12840,6 +12840,22 @@
       }
     },
     {
+      "id": "manhwaden",
+      "matches": "www.manhwaden.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".read-container p img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "jcomic",
       "matches": "jcomic.net",
       "imageRule.add": {
@@ -13764,6 +13780,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-05T07:24:12.330Z",
+  "buildinConfigUpdatedAt": "2025-02-05T08:58:05.450Z",
   "latestVersion": "1.13.8"
 }
