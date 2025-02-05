@@ -13760,6 +13760,9 @@
     },
     {
       "id": "common2.pdfWebPage",
+      "matches": [
+        "https://obgyn.onlinelibrary.wiley.com/doi/pdf/*"
+      ],
       "selectorMatches": [
         "[id=myPdfIframe][src*=pdf]",
         "#article [type='application/pdf'][src*=pdf]",
@@ -13806,6 +13809,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-05T11:25:21.000Z",
+  "buildinConfigUpdatedAt": "2025-02-05T14:52:48.467Z",
   "latestVersion": "1.14.1"
 }
