@@ -6,7 +6,7 @@
   "translationService": "bing",
   "mouseModifierKeyPressTimeout": 400,
   "sameLangCheck": true,
-  "isPreview": false,
+  "isPreview": true,
   "immediateTranslationPattern": {
     "matches": [
       "www.tumblr.com",
@@ -3817,6 +3817,9 @@
         ".imt-caption-container",
         "ytd-button-renderer",
         ".ytp-sfn-content div :last-child",
+        "ytd-live-chat-frame"
+      ],
+      "additionalExcludeSelectors.remove.[1.14.1]": [
         "ytd-live-chat-frame"
       ],
       "globalStyles": {
@@ -13803,6 +13806,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-05T11:25:16.829Z",
-  "latestVersion": "1.13.8"
+  "buildinConfigUpdatedAt": "2025-02-05T11:25:48.700Z",
+  "latestVersion": "1.14.1"
 }
