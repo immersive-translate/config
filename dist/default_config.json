@@ -13708,7 +13708,8 @@
     {
       "id": "NoPreSiteTranslate",
       "matches": [
-        "kalimat.anghami.com"
+        "kalimat.anghami.com",
+        "changewindows.org"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -13809,6 +13810,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-06T07:06:19.753Z",
+  "buildinConfigUpdatedAt": "2025-02-06T10:37:28.371Z",
   "latestVersion": "1.14.1"
 }
