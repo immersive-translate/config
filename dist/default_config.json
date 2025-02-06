@@ -7998,7 +7998,7 @@
         "loadingSelectors": [
           "div"
         ],
-        "injectedCss": ".imt-image-status {top:5%!important;}",
+        "injectedCss": ".imt-image-status {top:15%!important;}",
         "platforms": [
           "chrome",
           "firefox",
@@ -13809,6 +13809,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-05T14:52:48.467Z",
+  "buildinConfigUpdatedAt": "2025-02-06T02:02:56.532Z",
   "latestVersion": "1.14.1"
 }
