@@ -1686,7 +1686,7 @@
       "^\\d+.+ago$",
       "^\\d+\\s+MIN\\s+READ$",
       "^[\\u200B\\u200C\\u200D\\u2060\\uFEFF]+$",
-      "^[a-zA-Z]$"
+      "^.{1}$"
     ],
     "waitForSelectors": [],
     "isInjectOptionsUrl": false,
@@ -13809,6 +13809,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-06T02:02:56.532Z",
+  "buildinConfigUpdatedAt": "2025-02-06T07:06:19.753Z",
   "latestVersion": "1.14.1"
 }
