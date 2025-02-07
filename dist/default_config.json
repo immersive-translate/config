@@ -13531,6 +13531,13 @@
       ]
     },
     {
+      "id": "taobao",
+      "matches": "*.taobao.com",
+      "excludeSelectors.add": [
+        ".text-price"
+      ]
+    },
+    {
       "id": "graphcore",
       "matches": "www.graphcore.ai",
       "excludeSelectors.add": [
@@ -13811,6 +13818,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-07T10:31:05.000Z",
+  "buildinConfigUpdatedAt": "2025-02-07T12:43:30.833Z",
   "latestVersion": "1.14.3"
 }
