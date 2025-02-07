@@ -11722,7 +11722,7 @@
         "video-js *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
+        "type": "multi_attach_vtt",
         "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "xhr",
@@ -11743,6 +11743,12 @@
           "injectedCSS": [
             ".imt-caption-window { bottom: 5%; }"
           ]
+        },
+        "multiSetting": {
+          "activeLangSelector": ".vjs-media-center-menu-content .vjs-menu-column:nth-of-type(2) .vjs-selected .vjs-menu-item-text",
+          "langTextRegex": "^(\\S+)\\s",
+          "urlLangRegex": "_F([^_]+)",
+          "isMapLangFromUrl": true
         }
       }
     },
@@ -13818,6 +13824,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-07T12:55:43.000Z",
+  "buildinConfigUpdatedAt": "2025-02-07T14:13:28.318Z",
   "latestVersion": "1.14.4"
 }
