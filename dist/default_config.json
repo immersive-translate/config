@@ -13658,6 +13658,13 @@
       ]
     },
     {
+      "id": "gothamist",
+      "matches": "gothamist.com",
+      "skipDynamicMarkSelectors": [
+        "[data-spotim-module=conversation]"
+      ]
+    },
+    {
       "id": "other-chatapps",
       "matches": [
         "app.salesmartly.com/chat"
@@ -13827,6 +13834,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-07T14:20:10.153Z",
+  "buildinConfigUpdatedAt": "2025-02-07T16:00:05.587Z",
   "latestVersion": "1.14.4"
 }
