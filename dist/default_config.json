@@ -6,7 +6,7 @@
   "translationService": "bing",
   "mouseModifierKeyPressTimeout": 400,
   "sameLangCheck": true,
-  "isPreview": true,
+  "isPreview": false,
   "immediateTranslationPattern": {
     "matches": [
       "www.tumblr.com",
@@ -1595,6 +1595,7 @@
     },
     "imageRule": {
       "type": "common",
+      "enableMangaFloatBall": true,
       "blockToolsUrls": [
         "www.figma.com"
       ],
@@ -13810,6 +13811,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-06T10:54:47.000Z",
-  "latestVersion": "1.14.2"
+  "buildinConfigUpdatedAt": "2025-02-07T10:31:32.220Z",
+  "latestVersion": "1.14.3"
 }
