@@ -10342,6 +10342,9 @@
         "hookType": "fetch|xhr",
         "loadingContainerSelector": ".player",
         "subtitleUrlRegExp": "/video/.*\\.srt",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container { position: relative; bottom: 50px; right: 60px; }"
+        ],
         "quickButtonRule": {
           "appendSelector": ".controls_bottom_right",
           "insertBeforeSelector": ".subtitles_toggle_button",
@@ -13824,6 +13827,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-07T14:13:28.318Z",
+  "buildinConfigUpdatedAt": "2025-02-07T14:20:10.153Z",
   "latestVersion": "1.14.4"
 }
