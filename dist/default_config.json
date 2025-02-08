@@ -6,7 +6,7 @@
   "translationService": "bing",
   "mouseModifierKeyPressTimeout": 400,
   "sameLangCheck": true,
-  "isPreview": false,
+  "isPreview": true,
   "immediateTranslationPattern": {
     "matches": [
       "www.tumblr.com",
@@ -1598,6 +1598,11 @@
       "enableMangaFloatBall": true,
       "blockToolsUrls": [
         "www.figma.com"
+      ],
+      "enableImageSrcObserver": false,
+      "imageTranslationUrls": [
+        "https://store1.immersivetranslate.com/",
+        "data:image/png"
       ],
       "enable": true,
       "mangaTranslator": "auto",
@@ -13633,7 +13638,10 @@
       "immediatelyInjectedCss": [
         ".MMImage-Origin {display:none;}",
         ".MMImageContainer,.MMImageContainer > img {pointer-events:unset!important;}"
-      ]
+      ],
+      "imageRule.add": {
+        "enableImageSrcObserver": true
+      }
     },
     {
       "id": "swaycloud",
@@ -13834,6 +13842,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-07T16:00:05.587Z",
-  "latestVersion": "1.14.4"
+  "buildinConfigUpdatedAt": "2025-02-08T10:48:53.674Z",
+  "latestVersion": "1.14.5"
 }
