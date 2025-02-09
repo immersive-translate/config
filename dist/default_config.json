@@ -2637,6 +2637,13 @@
       "waitForSelectorsTimeout": 1
     },
     {
+      "id": "dash-immersive",
+      "matches": "https://dash.immersivetranslate.com",
+      "isInjectVersion": true,
+      "isInjectMeta": true,
+      "waitForSelectorsTimeout": 1
+    },
+    {
       "id": "pro-pdf-immersive",
       "matches": [
         "https://*.immersivetranslate.com/pdf-pro*"
@@ -13842,6 +13849,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-09T04:08:20.096Z",
+  "buildinConfigUpdatedAt": "2025-02-09T10:38:45.280Z",
   "latestVersion": "1.14.6"
 }
