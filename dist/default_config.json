@@ -872,7 +872,7 @@
         "sub_terms_prompt": "\n\nThis subtitle may include the following terms {{imt_terms}}. Please handle these terms carefully."
       },
       "systemPrompt": "You are a professional, authentic machine translation engine.{{summary_prompt}}{{terms_prompt}}",
-      "prompt": ";; Treat next line as plain text input and translate it into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n{{text}}",
+      "prompt": ";; Treat next line as plain text input and translate it into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
       "multiplePrompt": "You will be given a YAML formatted input containing entries with \"id\" and \"{{imt_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{normal_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
       "subtitlePrompt": "You will be given a YAML formatted subtitles containing entries with \"id\" and \"{{imt_sub_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_sub_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_sub_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{subtitle_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
       "langOverrides": [
@@ -13902,6 +13902,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-10T13:39:37.147Z",
+  "buildinConfigUpdatedAt": "2025-02-10T16:01:30.496Z",
   "latestVersion": "1.14.8"
 }
