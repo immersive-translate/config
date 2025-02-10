@@ -6,7 +6,7 @@
   "translationService": "bing",
   "mouseModifierKeyPressTimeout": 400,
   "sameLangCheck": true,
-  "isPreview": true,
+  "isPreview": false,
   "immediateTranslationPattern": {
     "matches": [
       "www.tumblr.com",
@@ -1449,6 +1449,7 @@
     "detectTextBufferLength": 0,
     "smallCodeLength": 30,
     "forceFormatPre": false,
+    "longHtmlTextLength": 500000,
     "pageLangDetectWeight": {
       "html": 1,
       "body": 1,
@@ -11402,6 +11403,50 @@
       }
     },
     {
+      "id": "bbc-emp",
+      "matches": "https://emp.bbc.*/emp/*",
+      "excludeSelectors.add": [
+        ".p_accessibleHitArea"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".p_accessibleHitArea *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "xml",
+        "hookType": "xhr",
+        "videoSelector": "video#p_v_player_0",
+        "videoPlayerSelector": "video#p_v_player_0",
+        "subtitleUrlRegExp": "iplayer/subtitles",
+        "xmlTextSelector": "p",
+        "loadingStyle": "bottom: 10%;",
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ],
+        "injectedCss": [
+          "#immersive-translate-quick-button-container{ position: absolute; top: -70px; right: 0; }"
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".p_playerControlBarHolder",
+          "ccEnableSelector": ".p_subtitleButton"
+        },
+        "attachRule": {
+          "appendSelector": ".p_subtitlesContainer",
+          "injectedGlobalCSS": [
+            ".p_subtitlesContainer .p_paragraph {display: none !important;}"
+          ]
+        },
+        "xmlSetting": {
+          "subtitleItemSelector": "p",
+          "startAttr": "begin",
+          "endAttr": "end",
+          "timeDivisor": 1000,
+          "timePartCount": 4
+        }
+      }
+    },
+    {
       "id": "bbc",
       "matches": [
         "*.bbc.*"
@@ -13856,6 +13901,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-10T08:01:25.572Z",
-  "latestVersion": "1.14.6"
+  "buildinConfigUpdatedAt": "2025-02-10T08:08:47.335Z",
+  "latestVersion": "1.14.7"
 }
