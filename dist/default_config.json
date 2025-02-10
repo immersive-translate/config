@@ -933,7 +933,7 @@
       "limit": 0.8,
       "prompt": "You are a professional,authentic translation engine,only returns translations.\nFor example:\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\nThe translation is:\n<Start>\n你好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\nTranslate the content to {{to}} Language:\n\n<Start>{{text}}<End>",
       "model": "gemini-1.5-pro-latest",
-      "proModel": "gemini-1.5-pro-latest",
+      "proModel": "gemini-2.0-flash",
       "proLimit": 10,
       "maxTextGroupLengthPerRequest": 1,
       "maxTextLengthPerRequest": 1200,
@@ -13901,6 +13901,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-10T11:26:03.000Z",
+  "buildinConfigUpdatedAt": "2025-02-10T12:07:26.003Z",
   "latestVersion": "1.14.8"
 }
