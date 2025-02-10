@@ -12179,6 +12179,13 @@
         ".cfc-result-card-table",
         ".material-symbols"
       ],
+      "extraInlineSelectors.add": [
+        "ms-cmark-node > strong > ms-cmark-node",
+        "p ms-cmark-node"
+      ],
+      "atomicBlockSelectors.add": [
+        "p ms-cmark-node"
+      ],
       "additionalExcludeSelectors.add": [
         ".o_35",
         "[style*='Google Symbols']"
@@ -13849,6 +13856,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-09T10:38:45.280Z",
+  "buildinConfigUpdatedAt": "2025-02-10T02:44:42.999Z",
   "latestVersion": "1.14.6"
 }
