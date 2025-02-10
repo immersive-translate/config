@@ -1188,7 +1188,7 @@
       "extends": "ai",
       "name": "deepseek",
       "model": "deepseek-chat",
-      "limit": 1,
+      "limit": 10,
       "apiUrl": "https://api.deepseek.com/chat/completions",
       "provider": "custom",
       "enableRichTranslate": false
@@ -13856,6 +13856,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-10T02:44:42.999Z",
+  "buildinConfigUpdatedAt": "2025-02-10T08:01:25.572Z",
   "latestVersion": "1.14.6"
 }
