@@ -12215,7 +12215,8 @@
       "id": "otherGoogle",
       "matches": [
         "*.google.com",
-        "dart.dev"
+        "dart.dev",
+        "*.google"
       ],
       "injectedCss.add": [
         ".scSearchSearch_results_listSearchresultslistsnippet { -webkit-line-clamp:unset;}"
@@ -12223,7 +12224,8 @@
       "excludeSelectors.add": [
         ".material-symbols-outlined",
         ".cfc-result-card-table",
-        ".material-symbols"
+        ".material-symbols",
+        ".gemini-large-text__overlay"
       ],
       "extraInlineSelectors.add": [
         "ms-cmark-node > strong > ms-cmark-node",
@@ -13902,6 +13904,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-11T02:08:29.364Z",
+  "buildinConfigUpdatedAt": "2025-02-11T02:18:32.220Z",
   "latestVersion": "1.14.8"
 }
