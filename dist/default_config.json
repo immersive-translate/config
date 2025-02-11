@@ -3581,7 +3581,8 @@
         "[class*=TitleHeader]",
         ".bpDald",
         ".discussion-title",
-        ".copilotPreview__footer"
+        ".copilotPreview__footer",
+        ".heading-element"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}"
@@ -13905,6 +13906,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-11T07:19:18.478Z",
+  "buildinConfigUpdatedAt": "2025-02-11T16:18:58.749Z",
   "latestVersion": "1.14.8"
 }
