@@ -13792,7 +13792,8 @@
         "*.affine.*",
         "*.shopify.com",
         "*.marscode.com",
-        "updraft.cyfrin.io"
+        "updraft.cyfrin.io",
+        "nexus.evenant.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -13904,6 +13905,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-11T02:18:32.220Z",
+  "buildinConfigUpdatedAt": "2025-02-11T06:33:54.883Z",
   "latestVersion": "1.14.8"
 }
