@@ -13244,6 +13244,22 @@
       }
     },
     {
+      "id": "rule34",
+      "matches": "rule34.xxx",
+      "imageRule.add": {
+        "enable": true,
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ],
+        "type": "manga",
+        "imageSelectors": [
+          "#fit-to-screen > .flexi img"
+        ]
+      }
+    },
+    {
       "id": "learn-ed",
       "matches": "www.learn.ed.ac.*",
       "repeatTranslateNum": 1
@@ -13906,6 +13922,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-12T10:17:36.542Z",
+  "buildinConfigUpdatedAt": "2025-02-12T10:23:50.760Z",
   "latestVersion": "1.14.8"
 }
