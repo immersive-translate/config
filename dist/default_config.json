@@ -13752,6 +13752,18 @@
       ]
     },
     {
+      "id": "htmlLangFirst",
+      "selectorMatches": [
+        "[lang=he-IL]"
+      ],
+      "pageLangDetectWeight": {
+        "html": 2,
+        "body": 1,
+        "tab": 1
+      },
+      "_comment": "为了处理js库错误检测希伯来语成其他语言的问题"
+    },
+    {
       "id": "other-chatapps",
       "matches": [
         "app.salesmartly.com/chat"
@@ -13922,6 +13934,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-12T10:23:50.760Z",
+  "buildinConfigUpdatedAt": "2025-02-12T15:47:54.741Z",
   "latestVersion": "1.14.8"
 }
