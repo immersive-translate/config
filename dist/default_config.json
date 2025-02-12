@@ -1520,11 +1520,11 @@
       "(<form>|<body>|<strong>|<img|<IMG|<Img|<ImG|<iMg|<iMG|<em>|<b>|</b>|<i>|</i>|<u>|</u>|<br>|<br/>)"
     ],
     "detectionServiceOrder": [
-      "google",
       "bing",
       "zhipu",
       "siliconcloud",
-      "transmart"
+      "transmart",
+      "google"
     ],
     "detectParagraphLanguage": false,
     "paragraphFirstLetterFontSize": 35,
@@ -1629,9 +1629,9 @@
       "detectionServiceOrder": [
         "zhipu",
         "siliconcloud",
-        "google",
         "bing",
-        "transmart"
+        "transmart",
+        "google"
       ],
       "toolsDelayTime": 200,
       "clientSupportLangs": [
@@ -13906,6 +13906,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-11T16:18:58.749Z",
+  "buildinConfigUpdatedAt": "2025-02-12T10:17:36.542Z",
   "latestVersion": "1.14.8"
 }
