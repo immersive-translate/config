@@ -912,7 +912,7 @@
         },
         {
           "id": "ja2auto",
-          "prompt": ";; Treat next line as plain text input and translate it into {{to}},{{html_only}} output translation ONLY. Input:\n {{text}}"
+          "prompt": ";; Treat next line as Japanese input and translate it into {{to}},{{html_only}} output translation ONLY. Input:\n {{text}}"
         }
       ],
       "removeResRegexs": [
@@ -13948,6 +13948,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-13T14:17:53.957Z",
+  "buildinConfigUpdatedAt": "2025-02-13T14:26:01.709Z",
   "latestVersion": "1.14.8"
 }
