@@ -909,6 +909,10 @@
         {
           "id": "zh-CN2auto",
           "subtitlePrompt": "You will be translating all \"{{imt_sub_source_field}}\" fields of a set of YAML-formatted video subtitles from Simplified Chinese into {{to}}. Here are the original subtitles in YAML format:\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\nPlease translate ONLY the \"{{imt_sub_source_field}}\" field of each subtitle entry into Simplified Chinese. Do not translate or change the \"id\" fields.\n\nOutput the translated subtitles in the same YAML format, with each subtitle entry on its own line. The \"id\" fields should remain unchanged, and the \"{{imt_sub_source_field}}\" fields should contain your {{to}} translations.\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information."
+        },
+        {
+          "id": "ja2auto",
+          "prompt": ";; Treat next line as plain text input and translate it into {{to}},{{html_only}} output translation ONLY. Input:\n {{text}}"
         }
       ],
       "removeResRegexs": [
@@ -13944,6 +13948,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-13T12:25:24.969Z",
+  "buildinConfigUpdatedAt": "2025-02-13T14:17:53.957Z",
   "latestVersion": "1.14.8"
 }
