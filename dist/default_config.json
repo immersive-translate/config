@@ -1669,7 +1669,7 @@
         "Got invalid dimensions for"
       ],
       "noTranslateRegexes": [
-        "^[^a-zA-Z]{2}"
+        "^[^a-zA-Z1]{2}"
       ],
       "removeTextRegexes": [
         "&#\\d+;",
@@ -13937,6 +13937,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-13T02:11:07.145Z",
+  "buildinConfigUpdatedAt": "2025-02-13T03:30:10.304Z",
   "latestVersion": "1.14.8"
 }
