@@ -13752,6 +13752,13 @@
       ]
     },
     {
+      "id": "autoHeight",
+      "matches": "*.sooplive.*",
+      "injectedCss.add": [
+        ".side_list a,.title a,.tit {-webkit-line-clamp:unset!important;height:unset!important;}"
+      ]
+    },
+    {
       "id": "htmlLangFirst",
       "selectorMatches": [
         "[lang=he-IL]",
@@ -13937,6 +13944,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-13T10:48:01.324Z",
+  "buildinConfigUpdatedAt": "2025-02-13T12:25:24.969Z",
   "latestVersion": "1.14.8"
 }
