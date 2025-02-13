@@ -13754,7 +13754,10 @@
     {
       "id": "htmlLangFirst",
       "selectorMatches": [
-        "[lang=he-IL]"
+        "[lang=he-IL]",
+        "[lang=nl-NL]",
+        "[lang=ar-SA]",
+        "[lang=fa-IR]"
       ],
       "pageLangDetectWeight": {
         "html": 2,
@@ -13934,6 +13937,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-12T15:47:54.741Z",
+  "buildinConfigUpdatedAt": "2025-02-13T02:11:07.145Z",
   "latestVersion": "1.14.8"
 }
