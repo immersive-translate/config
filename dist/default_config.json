@@ -8551,7 +8551,7 @@
         "imageSelectors": [
           "#scroll-list img",
           "[class^='scrollView'] img",
-          "[class^='scrollView'] canvas"
+          "[class^='scrollView'] canvas[data]"
         ],
         "opImageType": "append",
         "intersectionRootMargin": "0px 0px 200% 0px"
@@ -9066,7 +9066,7 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          "[data-page] > img",
+          "[data-page] > img[src]",
           "[dir='vert'] img",
           ".img-wrapper img[class='page']",
           ".work-thumb",
@@ -13937,6 +13937,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-13T03:30:10.304Z",
+  "buildinConfigUpdatedAt": "2025-02-13T10:48:01.324Z",
   "latestVersion": "1.14.8"
 }
