@@ -5724,7 +5724,10 @@
             "immediateTranslationTextCount": 0
           }
         }
-      ]
+      ],
+      "imageRule.add": {
+        "enable": false
+      }
     },
     {
       "id": "poe",
@@ -13949,6 +13952,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-13T15:10:28.486Z",
+  "buildinConfigUpdatedAt": "2025-02-13T15:43:26.105Z",
   "latestVersion": "1.14.8"
 }
