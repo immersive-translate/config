@@ -13269,6 +13269,22 @@
       }
     },
     {
+      "id": "hentaipaw",
+      "matches": "hentaipaw.com",
+      "imageRule.add": {
+        "enable": true,
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ],
+        "type": "manga",
+        "imageSelectors": [
+          ".yarl__carousel img"
+        ]
+      }
+    },
+    {
       "id": "learn-ed",
       "matches": "www.learn.ed.ac.*",
       "repeatTranslateNum": 1
@@ -13953,6 +13969,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-14T08:38:10.671Z",
+  "buildinConfigUpdatedAt": "2025-02-14T08:43:17.667Z",
   "latestVersion": "1.14.8"
 }
