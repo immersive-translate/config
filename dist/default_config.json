@@ -6,7 +6,7 @@
   "translationService": "bing",
   "mouseModifierKeyPressTimeout": 400,
   "sameLangCheck": true,
-  "isPreview": false,
+  "isPreview": true,
   "immediateTranslationPattern": {
     "matches": [
       "www.tumblr.com",
@@ -312,12 +312,12 @@
     "https://hanime1.me/[Hanime1][chrome,firefox,safari]",
     "https://globalcomix.com/[Globalcomix][chrome,firefox,safari]",
     "https://klz9.com[KL][chrome]",
-    "https://www.comemh8.com[comemh8][chrome,firefox]",
+    "https://www.comemh8.com[comemh8][chrome]",
     "https://xbato.com/[Xbato][chrome,firefox,safari]",
     "https://mangarawjp.me[Mangaraw][chrome,firefox,safari]",
     "https://manga.bilibili.com[Bilibili-Manga][chrome,firefox,safari]",
     "https://w9.kaijimanga.com[Kaijimanga][chrome,firefox,safari]",
-    "https://m.idmzj.com[idmzj][chrome,firefox,safari]"
+    "https://m.idmzj.com[Idmzj][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -1190,13 +1190,17 @@
       "assistantId": "common"
     },
     "deepseek": {
+      "visible": true,
       "extends": "ai",
       "name": "deepseek",
       "model": "deepseek-chat",
       "limit": 10,
       "apiUrl": "https://api.deepseek.com/chat/completions",
       "provider": "custom",
-      "enableRichTranslate": false
+      "enableRichTranslate": false,
+      "proModel": "deepseek-chat",
+      "enableFallback": true,
+      "proLimit": 10
     },
     "aliyun-bailian": {
       "extends": "ai",
@@ -2646,7 +2650,10 @@
     },
     {
       "id": "dash-immersive",
-      "matches": "https://dash.immersivetranslate.com",
+      "matches": [
+        "https://dash.immersivetranslate.com",
+        "https://test-dash.immersivetranslate.com"
+      ],
       "isInjectVersion": true,
       "isInjectMeta": true,
       "waitForSelectorsTimeout": 1
@@ -8059,9 +8066,7 @@
           ".img-box img"
         ],
         "platforms": [
-          "chrome",
-          "firefox",
-          "safari"
+          "chrome"
         ]
       }
     },
@@ -12841,6 +12846,22 @@
       }
     },
     {
+      "id": "jestful",
+      "matches": [
+        "jestful.net"
+      ],
+      "imageRule.add_v.[1.14.9]": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#list-imga > p img"
+        ],
+        "platforms": [
+          "chrome"
+        ]
+      }
+    },
+    {
       "id": "manwadd",
       "matches": [
         "manwadd.cc",
@@ -13969,6 +13990,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-14T08:43:17.667Z",
-  "latestVersion": "1.14.8"
+  "buildinConfigUpdatedAt": "2025-02-14T09:59:16.372Z",
+  "latestVersion": "1.14.9"
 }
