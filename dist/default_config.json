@@ -2564,13 +2564,14 @@
       "id": "isEbookBuilder",
       "matches": [
         "https://app.immersivetranslate.com/ebook/make/",
+        "https://test-app.immersivetranslate.com/ebook/make/",
         "https://app.immersivetranslate.cn/ebook/make/",
         "https://app.infread.com/ebook/make/",
         "http://localhost:38001/ebook/make/"
       ],
       "isEbookBuilder": true,
       "pageType": "ebookBuilder",
-      "toastErrorMinTimes": 100,
+      "toastErrorMinTimes": 0,
       "isTranslateWhenServiceChanged": false,
       "isTranslateTitle": false,
       "detectTextBufferLength": 80,
@@ -13952,6 +13953,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-13T15:43:26.105Z",
+  "buildinConfigUpdatedAt": "2025-02-14T08:38:10.671Z",
   "latestVersion": "1.14.8"
 }
