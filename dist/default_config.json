@@ -5517,7 +5517,12 @@
         ".components-MessageActions-index__messageActionsWrapper",
         "span[data-openweb-allow-amp]",
         "div.spcv_typing-users"
-      ]
+      ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.selectors": [
+          ".site-header"
+        ]
+      }
     },
     {
       "id": "afreecatv",
@@ -13990,6 +13995,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-14T09:59:01.000Z",
+  "buildinConfigUpdatedAt": "2025-02-15T02:18:33.213Z",
   "latestVersion": "1.14.9"
 }
