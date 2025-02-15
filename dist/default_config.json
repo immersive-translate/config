@@ -13803,6 +13803,13 @@
       ]
     },
     {
+      "id": "1password",
+      "matches": "*.1password.com",
+      "additionalExcludeSelectors.add": [
+        ".secret-key"
+      ]
+    },
+    {
       "id": "autoHeight",
       "matches": "*.sooplive.*",
       "injectedCss.add": [
@@ -13999,6 +14006,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-15T06:30:19.538Z",
+  "buildinConfigUpdatedAt": "2025-02-15T08:20:21.791Z",
   "latestVersion": "1.14.9"
 }
