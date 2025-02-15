@@ -13815,7 +13815,9 @@
         "[lang=he-IL]",
         "[lang=nl-NL]",
         "[lang=ar-SA]",
-        "[lang=fa-IR]"
+        "[lang=fa-IR]",
+        "[lang=fi]",
+        "[lang=fi-FI]"
       ],
       "pageLangDetectWeight": {
         "html": 2,
@@ -13995,6 +13997,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-15T02:18:33.213Z",
+  "buildinConfigUpdatedAt": "2025-02-15T03:37:02.544Z",
   "latestVersion": "1.14.9"
 }
