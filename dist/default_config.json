@@ -13984,6 +13984,8 @@
       "selectorMatches": [
         "article header",
         "header h1",
+        "header h2",
+        "header h3",
         "header p"
       ],
       "preTranslateLimiter.add_v.[1.12.1]": {
@@ -13997,6 +13999,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-15T03:37:02.544Z",
+  "buildinConfigUpdatedAt": "2025-02-15T06:30:19.538Z",
   "latestVersion": "1.14.9"
 }
