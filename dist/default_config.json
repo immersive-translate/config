@@ -3597,7 +3597,8 @@
         ".bpDald",
         ".discussion-title",
         ".copilotPreview__footer",
-        ".heading-element"
+        ".heading-element",
+        ".js-feed-item-component h3 a[data-hovercard-type=pull_request]"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}"
@@ -3605,7 +3606,7 @@
       "atomicBlockSelectors": [
         "[itemprop=description]"
       ],
-      "excludeSelectors": [
+      "additionalExcludeSelectors.add": [
         "[data-test-selector='commit-tease-commit-message']",
         "[data-test-selector='create-branch.developmentForm']",
         "div.Box-header.position-relative",
@@ -14008,6 +14009,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-16T12:43:09.402Z",
+  "buildinConfigUpdatedAt": "2025-02-16T16:23:28.808Z",
   "latestVersion": "1.14.9"
 }
