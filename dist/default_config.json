@@ -2931,6 +2931,8 @@
       ],
       "switchTranslateRestart": true,
       "enableRichTranslate": true,
+      "enableRichTranslate.add_v.[1.14.8]": false,
+      "enableRichTranslate.add_v.[1.14.9]": true,
       "additionalStayOriginalSelectors": [
         "[data-testid=\"tweetText\"] a",
         "[data-testid='UserDescription'] a",
@@ -14006,6 +14008,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-15T08:20:21.791Z",
+  "buildinConfigUpdatedAt": "2025-02-16T12:43:09.402Z",
   "latestVersion": "1.14.9"
 }
