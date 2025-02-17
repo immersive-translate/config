@@ -6,7 +6,7 @@
   "translationService": "bing",
   "mouseModifierKeyPressTimeout": 400,
   "sameLangCheck": true,
-  "isPreview": true,
+  "isPreview": false,
   "immediateTranslationPattern": {
     "matches": [
       "www.tumblr.com",
@@ -14026,6 +14026,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-17T03:39:28.039Z",
-  "latestVersion": "1.14.9"
+  "buildinConfigUpdatedAt": "2025-02-17T08:42:47.700Z",
+  "latestVersion": "1.14.10"
 }
