@@ -13990,6 +13990,23 @@
       ]
     },
     {
+      "id": "fix-nav2header",
+      "matches": [
+        "www.acea.auto"
+      ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "side.selectors": [
+          "aside",
+          "[class*='Sidebar']",
+          "#sidenav"
+        ],
+        "header.selectors": [
+          "nav",
+          "header"
+        ]
+      }
+    },
+    {
       "id": "fix-header",
       "selectorMatches": [
         "article header",
@@ -14009,6 +14026,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-16T16:23:28.808Z",
+  "buildinConfigUpdatedAt": "2025-02-17T03:39:28.039Z",
   "latestVersion": "1.14.9"
 }
