@@ -318,7 +318,8 @@
     "https://manga.bilibili.com[Bilibili-Manga][chrome,firefox,safari]",
     "https://w9.kaijimanga.com[Kaijimanga][chrome,firefox,safari]",
     "https://m.idmzj.com[Idmzj][chrome,firefox,safari]",
-    "https://mn4u.net[Manga4u][chrome,firefox,safari]"
+    "https://mn4u.net[Manga4u][chrome,firefox,safari]",
+    "https://www.animatebookstore.com[Animatebookstore][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -9548,6 +9549,26 @@
       }
     },
     {
+      "id": "animatebookstore",
+      "matches": [
+        "www.animatebookstore.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "opImageType": "append",
+        "urlFetchType": "canvasArgs",
+        "imageSelectors": [
+          ".view-sheet-container canvas"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "hanime1",
       "matches": [
         "hanime1.me"
@@ -14043,6 +14064,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-18T06:14:41.191Z",
+  "buildinConfigUpdatedAt": "2025-02-18T07:53:05.928Z",
   "latestVersion": "1.14.11"
 }
