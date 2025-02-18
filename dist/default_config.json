@@ -5660,7 +5660,10 @@
       "globalStyles": {
         ".line-clamp-2": "-webkit-line-clamp:unset;max-height:unset;"
       },
-      "excludeSelectors.add": [
+      "excludeSelectors": [
+        "[data-target=DocFooterNav]"
+      ],
+      "additionalExcludeSelectors.add": [
         "thead"
       ]
     },
@@ -14064,6 +14067,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-18T07:53:05.928Z",
+  "buildinConfigUpdatedAt": "2025-02-18T08:49:54.387Z",
   "latestVersion": "1.14.11"
 }
