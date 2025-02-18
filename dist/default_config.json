@@ -507,7 +507,7 @@
     "blockUrls": [
       "*immersivetranslate.com/preview",
       "*.immersivetranslate.com/download-subtitle*",
-      "*immersivetranslate.com/accounts/login"
+      "*immersivetranslate.com/accounts/login*"
     ],
     "guideBlockUrls": [
       "https://onboarding.immersivetranslate.com*",
@@ -14065,6 +14065,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-18T09:47:48.535Z",
+  "buildinConfigUpdatedAt": "2025-02-18T09:51:17.146Z",
   "latestVersion": "1.14.11"
 }
