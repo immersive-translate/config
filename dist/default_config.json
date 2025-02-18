@@ -317,7 +317,8 @@
     "https://mangarawjp.me[Mangaraw][chrome,firefox,safari]",
     "https://manga.bilibili.com[Bilibili-Manga][chrome,firefox,safari]",
     "https://w9.kaijimanga.com[Kaijimanga][chrome,firefox,safari]",
-    "https://m.idmzj.com[Idmzj][chrome,firefox,safari]"
+    "https://m.idmzj.com[Idmzj][chrome,firefox,safari]",
+    "https://mn4u.net[Manga4u][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -13314,6 +13315,22 @@
       }
     },
     {
+      "id": "mn4u",
+      "matches": "mn4u.net",
+      "imageRule.add": {
+        "enable": true,
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ],
+        "type": "manga",
+        "imageSelectors": [
+          "#list-imga img"
+        ]
+      }
+    },
+    {
       "id": "learn-ed",
       "matches": "www.learn.ed.ac.*",
       "repeatTranslateNum": 1
@@ -14026,6 +14043,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-18T04:49:19.000Z",
+  "buildinConfigUpdatedAt": "2025-02-18T06:14:41.191Z",
   "latestVersion": "1.14.11"
 }
