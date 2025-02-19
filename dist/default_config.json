@@ -9989,6 +9989,9 @@
       "mutationExcludeSelectors.add": [
         ".vjs-text-track-display *"
       ],
+      "injectedCss.add": [
+        ".linked-area * {max-height: unset !important;}"
+      ],
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "/.*ambry/\\?x-li-ambry-ep=.*|.*video-captions-webvtt.*/",
@@ -14061,6 +14064,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-19T12:23:17.617Z",
+  "buildinConfigUpdatedAt": "2025-02-19T13:14:08.827Z",
   "latestVersion": "1.14.12"
 }
