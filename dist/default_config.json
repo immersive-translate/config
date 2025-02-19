@@ -12262,14 +12262,6 @@
       "injectedCss.add": [
         ".scSearchSearch_results_listSearchresultslistsnippet { -webkit-line-clamp:unset;}"
       ],
-      "excludeSelectors.add": [
-        ".material-symbols-outlined",
-        ".cfc-result-card-table",
-        ".material-symbols",
-        ".gemini-large-text__overlay",
-        "code",
-        "view-line"
-      ],
       "extraInlineSelectors.add": [
         "ms-cmark-node > strong > ms-cmark-node",
         "p ms-cmark-node"
@@ -12279,7 +12271,14 @@
       ],
       "additionalExcludeSelectors.add": [
         ".o_35",
-        "[style*='Google Symbols']"
+        "[style*='Google Symbols']",
+        "md-icon-button",
+        ".material-symbols-outlined",
+        ".cfc-result-card-table",
+        ".material-symbols",
+        ".gemini-large-text__overlay",
+        "code",
+        "view-line"
       ]
     },
     {
@@ -14062,6 +14061,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-19T12:17:19.430Z",
+  "buildinConfigUpdatedAt": "2025-02-19T12:23:17.617Z",
   "latestVersion": "1.14.12"
 }
