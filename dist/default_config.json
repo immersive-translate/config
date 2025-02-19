@@ -13499,7 +13499,8 @@
       ],
       "likePreSelectors.add": [
         ".bb-editor-wrapper",
-        ".bb-editor-root"
+        ".bb-editor-root",
+        "#content-tab-panel-content"
       ],
       "isTransformPreTagNewLine": true,
       "forceFormatPre": true
@@ -14064,6 +14065,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-19T13:14:08.827Z",
+  "buildinConfigUpdatedAt": "2025-02-19T13:27:19.572Z",
   "latestVersion": "1.14.12"
 }
