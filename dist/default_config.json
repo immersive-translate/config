@@ -6134,14 +6134,6 @@
       ]
     },
     {
-      "id": "colab",
-      "matches": "https://colab.research.google.com/*",
-      "excludeSelectors": [
-        "code",
-        "view-line"
-      ]
-    },
-    {
       "id": "gatesnotes",
       "matches": "www.gatesnotes.com",
       "minZIndex": -1
@@ -12274,7 +12266,9 @@
         ".material-symbols-outlined",
         ".cfc-result-card-table",
         ".material-symbols",
-        ".gemini-large-text__overlay"
+        ".gemini-large-text__overlay",
+        "code",
+        "view-line"
       ],
       "extraInlineSelectors.add": [
         "ms-cmark-node > strong > ms-cmark-node",
@@ -14068,6 +14062,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-19T09:58:57.000Z",
+  "buildinConfigUpdatedAt": "2025-02-19T12:17:19.430Z",
   "latestVersion": "1.14.12"
 }
