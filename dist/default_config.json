@@ -319,7 +319,8 @@
     "https://w9.kaijimanga.com[Kaijimanga][chrome,firefox,safari]",
     "https://m.idmzj.com[Idmzj][chrome,firefox,safari]",
     "https://mn4u.net[Manga4u][chrome,firefox,safari]",
-    "https://www.animatebookstore.com[Animatebookstore][chrome,firefox,safari]"
+    "https://www.animatebookstore.com[Animatebookstore][chrome,firefox,safari]",
+    "https://ganma.jp[GANMA][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -783,7 +784,7 @@
       "richIdName": "data-dl-uid",
       "richIdSymbol": "\"",
       "removeResRegexs": [
-        "下载app送18元彩金"
+        "下载 app 送 18 元彩金"
       ]
     },
     "deepl.add_v.[1.7.8]": {
@@ -13352,6 +13353,22 @@
       }
     },
     {
+      "id": "ganma",
+      "matches": "ganma.jp",
+      "imageRule.add": {
+        "enable": true,
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ],
+        "type": "manga",
+        "imageSelectors": [
+          "div[data-testid*=\"ReaderFrameForHorizontal\"] div.flex.flex-row-reverse div img"
+        ]
+      }
+    },
+    {
       "id": "learn-ed",
       "matches": "www.learn.ed.ac.*",
       "repeatTranslateNum": 1
@@ -13873,7 +13890,7 @@
         "body": 1,
         "tab": 1
       },
-      "_comment": "为了处理js库错误检测希伯来语成其他语言的问题"
+      "_comment": "为了处理 js 库错误检测希伯来语成其他语言的问题"
     },
     {
       "id": "other-chatapps",
@@ -14065,6 +14082,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-19T13:59:39.555Z",
+  "buildinConfigUpdatedAt": "2025-02-20T06:36:09.714Z",
   "latestVersion": "1.14.12"
 }
