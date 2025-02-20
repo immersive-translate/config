@@ -12139,12 +12139,6 @@
         "quickButtonRule": {
           "appendSelector": "#player-controls > div",
           "insertBeforeSelector": "button[type=\"settings-button\"]"
-        },
-        "attachRule": {
-          "appendSelector": "tv-player1",
-          "injectedGlobalCSS": [
-            "tv-player-subtitles { display: none; }"
-          ]
         }
       }
     },
@@ -14082,6 +14076,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-20T06:36:09.714Z",
+  "buildinConfigUpdatedAt": "2025-02-20T06:48:42.793Z",
   "latestVersion": "1.14.12"
 }
