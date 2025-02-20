@@ -10244,37 +10244,6 @@
       }
     },
     {
-      "id": "fmovies2",
-      "matches": [
-        "*.fmovies.co",
-        "mcloud.vvid30c.site",
-        "rabbitstream.net"
-      ],
-      "subtitleRule.add": {
-        "type": "multi_attach_vtt",
-        "subtitleUrlRegExp": ".*\\.vtt$",
-        "quickButtonRule": {
-          "appendSelector": ".jw-button-container",
-          "insertBeforeSelector": ".jw-icon-cc"
-        },
-        "activeLangSelector": ".jw-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active",
-        "videoSelector": "video",
-        "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
-        ],
-        "attachRule": {
-          "appendSelector": ".jw-wrapper",
-          "injectedGlobalCSS": [
-            ".jw-text-track-container {display: none;}",
-            "@media (min-width: 576px) { video::cue {opacity: 0} }"
-          ]
-        },
-        "multiSetting": {
-          "activeLangSelector": ".jw-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active"
-        }
-      }
-    },
-    {
       "id": "fmoviesz",
       "matches": [
         "fmovies24.to",
@@ -10285,7 +10254,9 @@
         "vid41c.site",
         "https://*/*sub.info=*fmovies24.to*",
         "https://*/*sub.info=*bflixhd.to*",
-        "https://megacloud.tube/embed-*"
+        "https://megacloud.tube/embed-*",
+        "mcloud.vvid30c.site",
+        "rabbitstream.net"
       ],
       "excludeSelectors.add": [
         ".jw-wrapper",
@@ -14076,6 +14047,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-20T06:48:42.793Z",
+  "buildinConfigUpdatedAt": "2025-02-20T07:55:11.775Z",
   "latestVersion": "1.14.12"
 }
