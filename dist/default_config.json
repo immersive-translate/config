@@ -12373,6 +12373,9 @@
       ],
       "additionalInlineSelectors.add": [
         ".tooltiptext"
+      ],
+      "stayOriginalSelectors.add": [
+        ".article-content .footers"
       ]
     },
     {
@@ -14048,6 +14051,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-20T10:03:51.147Z",
+  "buildinConfigUpdatedAt": "2025-02-20T11:45:26.001Z",
   "latestVersion": "1.14.12"
 }
