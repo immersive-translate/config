@@ -13985,7 +13985,8 @@
       "selectorMatches": [
         "[id=myPdfIframe][src*=pdf]",
         "#article [type='application/pdf'][src*=pdf]",
-        ".textFrame [type='application/pdf'][src*=pdf]"
+        ".textFrame [type='application/pdf'][src*=pdf]",
+        ".ggPdf"
       ],
       "pdfUrlExtractRule": {
         "selector": "iframe[src*=pdf]",
@@ -14047,6 +14048,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-20T07:55:11.775Z",
+  "buildinConfigUpdatedAt": "2025-02-20T10:03:51.147Z",
   "latestVersion": "1.14.12"
 }
