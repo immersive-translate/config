@@ -4221,7 +4221,8 @@
         "ul li h3+div span[dir=auto]",
         "hr+div span[dir=auto][style]",
         "span[dir=auto] > div > span",
-        "div > h1[dir=auto]"
+        "div > h1[dir=auto]",
+        ".x1fkh5qu.x1ddbhtg.x1dlrdel"
       ],
       "wrapperSuffix": "",
       "immediatelyInjectedCss": [
@@ -4229,6 +4230,9 @@
       ],
       "imageRule.add": {
         "enableParentTriggerTools": true
+      },
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.selectors": []
       }
     },
     {
@@ -14091,6 +14095,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-21T14:04:12.000Z",
+  "buildinConfigUpdatedAt": "2025-02-21T14:14:14.650Z",
   "latestVersion": "1.14.13"
 }
