@@ -2974,7 +2974,8 @@
         "https://x.com/settings/account",
         "https://x.com/jobs/*",
         "https://x.com/*/tos*",
-        "https://x.com/*/privacy*"
+        "https://x.com/*/privacy*",
+        "https://x.com/account/access*"
       ],
       "switchTranslateRestart": true,
       "enableRichTranslate": true,
@@ -14095,6 +14096,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-22T02:42:50.579Z",
+  "buildinConfigUpdatedAt": "2025-02-22T11:42:30.810Z",
   "latestVersion": "1.14.15"
 }
