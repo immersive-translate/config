@@ -3098,6 +3098,9 @@
       "mutationConfig.add": {
         "consumeTimeout": 1000
       },
+      "bodyRule.add": {
+        "enable": false
+      },
       "richMoreWordPercent": "0.5",
       "subtitleRule.add_v.[1.2.1]": {
         "type": "twitter",
@@ -14096,6 +14099,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-22T11:42:30.810Z",
-  "latestVersion": "1.14.15"
+  "buildinConfigUpdatedAt": "2025-02-24T09:10:24.981Z",
+  "latestVersion": "1.14.16"
 }
