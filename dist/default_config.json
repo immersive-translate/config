@@ -13909,6 +13909,17 @@
       ]
     },
     {
+      "id": "law.mit.edu",
+      "matches": "law.mit.edu",
+      "injectedCss.add": [
+        "@media screen and (min-width: 768px) { .pub-header-theme-light {top:-80% !important;} }"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ]
+    },
+    {
       "id": "autoHeight",
       "matches": "*.sooplive.*",
       "injectedCss.add": [
@@ -14124,6 +14135,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-25T13:20:54.127Z",
+  "buildinConfigUpdatedAt": "2025-02-25T13:35:29.611Z",
   "latestVersion": "1.14.16"
 }
