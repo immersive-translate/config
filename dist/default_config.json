@@ -13693,6 +13693,10 @@
       ],
       "excludeSelectors.add": [
         "[class*='multi--price']"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
       ]
     },
     {
@@ -14109,6 +14113,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-25T08:32:20.296Z",
+  "buildinConfigUpdatedAt": "2025-02-25T09:18:48.609Z",
   "latestVersion": "1.14.16"
 }
