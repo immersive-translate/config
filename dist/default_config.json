@@ -13700,6 +13700,16 @@
       ]
     },
     {
+      "id": "ozon",
+      "matches": "www.ozon.ru",
+      "injectedCss.add": [
+        ".tile-clickable-element > div {-webkit-line-clamp:unset;}"
+      ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.selectors": []
+      }
+    },
+    {
       "id": "journals.aps",
       "matches": "journals.aps.*",
       "enableRichTranslate": false,
@@ -14113,6 +14123,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-25T09:18:48.609Z",
+  "buildinConfigUpdatedAt": "2025-02-25T09:48:55.133Z",
   "latestVersion": "1.14.16"
 }
