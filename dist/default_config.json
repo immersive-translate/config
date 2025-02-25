@@ -14017,7 +14017,8 @@
         "#app[translate=no]",
         "#root[translate=no]",
         "#editor-core-root [translate=no]",
-        ".notranslate.chrome"
+        ".notranslate.chrome",
+        ".main-content [translate=no]"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -14123,6 +14124,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-25T09:48:55.133Z",
+  "buildinConfigUpdatedAt": "2025-02-25T13:20:54.127Z",
   "latestVersion": "1.14.16"
 }
