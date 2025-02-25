@@ -1228,7 +1228,8 @@
       "enableRichTranslate": false,
       "proModel": "deepseek-chat",
       "enableFallback": true,
-      "proLimit": 10
+      "proLimit": 10,
+      "requestTimeout": 200000
     },
     "aliyun-bailian": {
       "extends": "ai",
@@ -14099,6 +14100,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-24T09:10:04.000Z",
+  "buildinConfigUpdatedAt": "2025-02-25T07:58:04.250Z",
   "latestVersion": "1.14.16"
 }
