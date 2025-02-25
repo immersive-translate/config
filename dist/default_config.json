@@ -10471,75 +10471,6 @@
       }
     },
     {
-      "id": "wistia",
-      "matches": [
-        "*.wistia.net",
-        "platform.thinkific.com",
-        "courses.kevinpowell.co",
-        "learn.ni.com",
-        "cgcookie.com",
-        "academy.yoast.com"
-      ],
-      "selectorMatches": [
-        ".wistia_embed"
-      ],
-      "excludeSelectors.add": [
-        "div[data-handle='captions']",
-        "#immersive-translate-caption-window"
-      ],
-      "mutationExcludeSelectors.add": [
-        "div[data-handle='captions'] *",
-        "#immersive-translate-caption-window *"
-      ],
-      "preTranslateLimiter.add_v.[1.12.1]": {
-        "header.enableTranslate": true,
-        "side.enableTranslate": true
-      },
-      "mainFrameMinTextCount": 0,
-      "mainFrameMinWordCount": 0,
-      "subtitleRule.add": {
-        "type": "subsrt",
-        "subtitleUrlRegExp": ".*\\.vtt",
-        "hookType": "xhr",
-        "loadingContainerSelector": "div[data-handle='captions']",
-        "injectedCss": [
-          "#immersive-translate-quick-button-container { display: inline-block !important; height: 100%; position: absolute; bottom: 100%; right: 0;}"
-        ],
-        "quickButtonRule": {
-          "appendSelector": ".w-bottom-bar-right-inner.w-css-reset",
-          "insertBeforeSelector": ".w-bottom-bar-right-inner.w-css-reset>.w-css-reset:first-child",
-          "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: 120px !important; bottom 30px; }"
-        },
-        "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
-        ],
-        "attachRule": {
-          "appendSelector": ".w-vulcan-overlays--center > div",
-          "injectedGlobalCSS": [
-            ".w-captions.w-css-reset { display: none !important; }",
-            ".w-bottom-bar-right-inner.w-css-reset { z-index: 2147483647; }"
-          ],
-          "injectedCSS": [
-            ".imt-caption-window {margin-bottom: 0;}"
-          ],
-          "isDelay": true
-        }
-      },
-      "subtitleRule.add_v.[1.10.3]": {
-        "type": "general",
-        "subtitleUrlRegExp": "embed/captions/.*\\.json",
-        "hookType": "fetch",
-        "loadingContainerSelector": "div[data-handle='captions']",
-        "generalSetting": {
-          "captionsPath": "captions",
-          "itemsPath": "hash.lines",
-          "textKey": "text",
-          "startKey": "start",
-          "endKey": "end"
-        }
-      }
-    },
-    {
       "id": "osmosis",
       "matches": "*.osmosis.org",
       "excludeSelectors.add": [
@@ -13909,6 +13840,16 @@
       ]
     },
     {
+      "id": "descript",
+      "matches": "www.descript.com",
+      "additionalExcludeSelectors.add": [
+        "h1.home-hero"
+      ],
+      "injectedCss.add": [
+        ".immersive-translate-target-wrapper, .immersive-translate-target-wrapper *{color:unset!important;}"
+      ]
+    },
+    {
       "id": "law.mit.edu",
       "matches": "law.mit.edu",
       "injectedCss.add": [
@@ -13967,6 +13908,75 @@
       "injectedCss": [
         ":root, font {font-feature-settings:normal;}"
       ]
+    },
+    {
+      "id": "wistia",
+      "matches": [
+        "*.wistia.net",
+        "platform.thinkific.com",
+        "courses.kevinpowell.co",
+        "learn.ni.com",
+        "cgcookie.com",
+        "academy.yoast.com"
+      ],
+      "selectorMatches": [
+        ".wistia_embed"
+      ],
+      "excludeSelectors.add": [
+        "div[data-handle='captions']",
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        "div[data-handle='captions'] *",
+        "#immersive-translate-caption-window *"
+      ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.enableTranslate": true,
+        "side.enableTranslate": true
+      },
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": ".*\\.vtt",
+        "hookType": "xhr",
+        "loadingContainerSelector": "div[data-handle='captions']",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container { display: inline-block !important; height: 100%; position: absolute; bottom: 100%; right: 0;}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".w-bottom-bar-right-inner.w-css-reset",
+          "insertBeforeSelector": ".w-bottom-bar-right-inner.w-css-reset>.w-css-reset:first-child",
+          "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: 120px !important; bottom 30px; }"
+        },
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ],
+        "attachRule": {
+          "appendSelector": ".w-vulcan-overlays--center > div",
+          "injectedGlobalCSS": [
+            ".w-captions.w-css-reset { display: none !important; }",
+            ".w-bottom-bar-right-inner.w-css-reset { z-index: 2147483647; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {margin-bottom: 0;}"
+          ],
+          "isDelay": true
+        }
+      },
+      "subtitleRule.add_v.[1.10.3]": {
+        "type": "general",
+        "subtitleUrlRegExp": "embed/captions/.*\\.json",
+        "hookType": "fetch",
+        "loadingContainerSelector": "div[data-handle='captions']",
+        "generalSetting": {
+          "captionsPath": "captions",
+          "itemsPath": "hash.lines",
+          "textKey": "text",
+          "startKey": "start",
+          "endKey": "end"
+        }
+      }
     },
     {
       "id": "NoTranslate",
@@ -14135,6 +14145,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-25T13:35:29.611Z",
+  "buildinConfigUpdatedAt": "2025-02-25T16:02:30.528Z",
   "latestVersion": "1.14.16"
 }
