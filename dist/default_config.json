@@ -1751,8 +1751,10 @@
       "^\\d+.+ago$",
       "^\\d+\\s+MIN\\s+READ$",
       "^[\\u200B\\u200C\\u200D\\u2060\\uFEFF]+$",
+      "^[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]$",
       "^.{1}$",
-      "^[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]$"
+      "^$",
+      "^$"
     ],
     "waitForSelectors": [],
     "isInjectOptionsUrl": false,
@@ -14148,6 +14150,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-26T10:31:51.407Z",
+  "buildinConfigUpdatedAt": "2025-02-26T13:53:12.027Z",
   "latestVersion": "1.14.16"
 }
