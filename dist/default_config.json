@@ -4833,12 +4833,20 @@
         ".feed-item__title-link",
         ".article-body",
         ".interview-body",
-        ".post-page__content"
+        ".post-page__content",
+        ".product-index__timeline",
+        ".product-sidebar__description",
+        ".portal__entries",
+        ".portal__header",
+        ".portal--basic"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
         "[translate=no]"
-      ]
+      ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.selectors": []
+      }
     },
     {
       "id": "libreddit",
@@ -14150,6 +14158,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-26T13:53:12.027Z",
+  "buildinConfigUpdatedAt": "2025-02-27T16:18:17.877Z",
   "latestVersion": "1.14.16"
 }
