@@ -13803,9 +13803,10 @@
       "matches": "ollama.com",
       "excludeSelectors.add": [
         "#file-explorer",
-        "ul[role=\"list\"] li[x-test-model] h2",
-        "ul[role=\"list\"] li[x-test-model] span[x-test-size]",
-        "ul[role=\"list\"] li[x-test-model] span[x-test-capability]"
+        "span[x-test-search-response-title]",
+        "a[x-test-model-name]",
+        "span[x-test-size]",
+        "span[x-test-capability]"
       ]
     },
     {
@@ -14161,6 +14162,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-28T02:07:34.015Z",
+  "buildinConfigUpdatedAt": "2025-02-28T02:12:40.524Z",
   "latestVersion": "1.14.16"
 }
