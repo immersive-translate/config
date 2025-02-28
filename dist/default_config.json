@@ -4826,27 +4826,28 @@
     {
       "id": "indiehackers",
       "matches": "www.indiehackers.com",
-      "selectors": [
-        ".content",
-        "h1",
-        "h3.story__title",
-        ".feed-item__title-link",
-        ".article-body",
-        ".interview-body",
-        ".post-page__content",
-        ".product-index__timeline",
-        ".product-sidebar__description",
-        ".portal__entries",
-        ".portal__header",
-        ".portal--basic"
-      ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
         "[translate=no]"
       ],
+      "additionalExcludeSelectors.add": [
+        ".portal-entry__date",
+        ".portal-entry__byline",
+        ".firestore-post__header-metadata",
+        ".story__counts",
+        ".story__time-ago",
+        ".story__byline",
+        ".partnerships__age",
+        ".job__pay",
+        ".author-bio__name-link",
+        ".comment__footer"
+      ],
       "preTranslateLimiter.add_v.[1.12.1]": {
         "header.selectors": []
-      }
+      },
+      "injectedCss.add": [
+        ".meetups__meetup-name,.partnerships__title { -webkit-line-clamp: unset!important;max-height: unset!important; }"
+      ]
     },
     {
       "id": "libreddit",
@@ -14162,6 +14163,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-28T02:12:40.524Z",
+  "buildinConfigUpdatedAt": "2025-02-28T12:07:52.598Z",
   "latestVersion": "1.14.16"
 }
