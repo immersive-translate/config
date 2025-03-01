@@ -509,7 +509,8 @@
     "blockUrls": [
       "*immersivetranslate.com/preview",
       "*.immersivetranslate.com/download-subtitle*",
-      "*immersivetranslate.com/accounts/login*"
+      "*immersivetranslate.com/accounts/login*",
+      "dash.immersivetranslate.com/*"
     ],
     "guideBlockUrls": [
       "https://onboarding.immersivetranslate.com*",
@@ -526,7 +527,8 @@
     "enable": true,
     "blockUrls": [
       "*immersivetranslate.com/preview",
-      "*.immersivetranslate.com/download-subtitle*"
+      "*.immersivetranslate.com/download-subtitle*",
+      "dash.immersivetranslate.com/*"
     ],
     "guideBlockUrls": [
       "https://onboarding.immersivetranslate.com*",
@@ -629,10 +631,8 @@
     ]
   },
   "blockUrls": [
-    "https://dash.immersivetranslate.com/*",
     "https://immersive-translate.owenyoung.com/options/",
     "https://immersive-translate.owenyoung.com/auth-done/",
-    "https://dash.immersivetranslate.com/",
     "https://dash.immersivetranslate.com/auth-done/",
     "http://localhost:8000/dist/userscript/options/",
     "http://localhost:8000/auth-done/",
@@ -2705,8 +2705,11 @@
     {
       "id": "dash-immersive",
       "matches": [
-        "https://dash.immersivetranslate.com",
-        "https://test-dash.immersivetranslate.com"
+        "https://dash.immersivetranslate.com/*",
+        "https://test-dash.immersivetranslate.com/*"
+      ],
+      "selectors": [
+        ".hello"
       ],
       "isInjectVersion": true,
       "isInjectMeta": true,
@@ -14164,6 +14167,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-01T13:23:38.856Z",
+  "buildinConfigUpdatedAt": "2025-03-01T14:15:26.344Z",
   "latestVersion": "1.14.16"
 }
