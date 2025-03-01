@@ -1740,7 +1740,8 @@
       ".immersive-translate-target-wrapper[dir='rtl'] [data-immersive-translate-class-bak*='block-wrapper'] {display:block;}",
       ".immersive-translate-target-wrapper {word-break:break-word; user-select:text;}",
       "[imt-state=\"translation\"] .immersive-translate-target-wrapper[dir='rtl'] {display:inline-block;}",
-      "[dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {text-align:left;}"
+      "[dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {text-align:left;}",
+      "[imt-state=dual] .immersive-translate-target-translation-block-wrapper-theme-dividingLine::before {display:block;}"
     ],
     "isOnBoardingPage": false,
     "isEbook": false,
@@ -14163,6 +14164,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-02-28T12:07:52.598Z",
+  "buildinConfigUpdatedAt": "2025-03-01T13:23:38.856Z",
   "latestVersion": "1.14.16"
 }
