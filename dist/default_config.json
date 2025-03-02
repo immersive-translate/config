@@ -3212,7 +3212,7 @@
           "font.immersive-translate-target-wrapper br { display: none; }"
         ],
         "liveSubtitleRule": {
-          "containerSelector": ".ui-box .ui-box[class='ui-box']",
+          "containerSelector": "div[data-tid=\"closed-caption-v2-virtual-list-content\"] > .ui-box",
           "textSelectors": [
             "[data-tid='closed-caption-text']"
           ],
@@ -14168,6 +14168,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-02T11:54:11.530Z",
+  "buildinConfigUpdatedAt": "2025-03-02T15:12:43.275Z",
   "latestVersion": "1.14.16"
 }
