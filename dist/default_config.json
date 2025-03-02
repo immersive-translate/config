@@ -1269,7 +1269,8 @@
       "placeholderDelimiters": [
         "@",
         "#"
-      ]
+      ],
+      "systemPrompt": "You are a professional, authentic translation engine, only returns translations. Title: “{{imt_title}}” "
     },
     "lingyiwanwu": {
       "extends": "ai",
@@ -1316,7 +1317,8 @@
       "enableRichTranslate": false,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
-      "enableFallback": true
+      "enableFallback": true,
+      "systemPrompt": "You are a professional, authentic translation engine, only returns translations. Title: “{{imt_title}}” "
     },
     "zhipu-pro": {
       "extends": "ai",
@@ -14166,6 +14168,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-02T07:06:10.601Z",
+  "buildinConfigUpdatedAt": "2025-03-02T11:54:11.530Z",
   "latestVersion": "1.14.16"
 }
