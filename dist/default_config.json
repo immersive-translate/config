@@ -727,9 +727,8 @@
       "requestTimeout": 15000,
       "retry": 1,
       "placeholderDelimiters": [
-        "🚠",
-        "🚠",
-        "b"
+        "{",
+        "}"
       ],
       "maxTextGroupLengthPerRequest": 50,
       "enableRichTranslate": true,
@@ -14167,6 +14166,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-01T14:15:26.344Z",
+  "buildinConfigUpdatedAt": "2025-03-02T07:06:10.601Z",
   "latestVersion": "1.14.16"
 }
