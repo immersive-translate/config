@@ -13481,11 +13481,6 @@
       }
     },
     {
-      "id": "learn-ed",
-      "matches": "www.learn.ed.ac.*",
-      "repeatTranslateNum": 1
-    },
-    {
       "id": "app.schildi.chat",
       "matches": "app.schildi.chat",
       "additionalExcludeSelectors.remove": [
@@ -14304,6 +14299,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-03T14:42:05.687Z",
+  "buildinConfigUpdatedAt": "2025-03-03T15:55:24.261Z",
   "latestVersion": "1.15.2"
 }
