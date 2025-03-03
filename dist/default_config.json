@@ -322,7 +322,8 @@
     "https://m.idmzj.com[Idmzj][chrome,firefox,safari]",
     "https://mn4u.net[Manga4u][chrome,firefox,safari]",
     "https://www.animatebookstore.com[Animatebookstore][chrome,firefox,safari]",
-    "https://ganma.jp[GANMA][chrome,firefox,safari]"
+    "https://ganma.jp[GANMA][chrome,firefox,safari]",
+    "https://mangafire.to/[Mangafire][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -9069,6 +9070,21 @@
       }
     },
     {
+      "id": "mangafire",
+      "matches": [
+        "mangafire.to"
+      ],
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          "#page-wrapper img"
+        ],
+        "inValidSrcRegex": [
+          "data:,"
+        ]
+      }
+    },
+    {
       "id": "jumptoon",
       "matches": [
         "jumptoon_tiaoman.com"
@@ -14265,6 +14281,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-03T13:26:47.000Z",
+  "buildinConfigUpdatedAt": "2025-03-03T14:22:51.534Z",
   "latestVersion": "1.15.2"
 }
