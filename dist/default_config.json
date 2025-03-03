@@ -3153,7 +3153,7 @@
       "injectedCss.add": [
         ".r-h9hxbl{width:unset;}",
         ".imt-img { object-fit: cover !important; }",
-        "[data-testid=ScrollSnap-SwipeableList] [role=presentation] > div > div { max-height: unset !important; }"
+        "[aria-label=Grok] [data-testid=ScrollSnap-SwipeableList] [role=presentation] > div > div { max-height: unset !important; }"
       ],
       "likePreSelectors.add_v.[1.11.5]": [
         "[data-testid=tweetText]"
@@ -14282,6 +14282,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-03T14:29:17.521Z",
+  "buildinConfigUpdatedAt": "2025-03-03T14:32:23.932Z",
   "latestVersion": "1.15.2"
 }
