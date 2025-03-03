@@ -924,7 +924,7 @@
         "normal_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_source_field}}: Source\nOutput:\n  - id: 1\n    {{imt_trans_field}}: Translation\n</example>",
         "subtitle_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\nOutput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\n</example>",
         "title_prompt": "\n\n【Context Awareness】\nDocument Metadata:\nTitle: 《{{imt_title}}》",
-        "summary_prompt": "\nSummary: {{imt_theme}}",
+        "summary_prompt": "\nSummary: {{imt_theme}}...",
         "terms_prompt": "\n\nThis content may include the following terms {{imt_terms}}. Please handle these terms carefully.",
         "sub_summary_prompt": "\n\nYou are about to translate subtitles, {{imt_theme}}",
         "sub_terms_prompt": "\n\nThis subtitle may include the following terms {{imt_terms}}. Please handle these terms carefully."
@@ -14300,6 +14300,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-03T17:21:59.564Z",
+  "buildinConfigUpdatedAt": "2025-03-03T17:23:34.006Z",
   "latestVersion": "1.15.2"
 }
