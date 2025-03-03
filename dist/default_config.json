@@ -14166,7 +14166,8 @@
         "*.shopify.com",
         "*.marscode.com",
         "updraft.cyfrin.io",
-        "nexus.evenant.com"
+        "nexus.evenant.com",
+        "portal.achieve3000.net"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -14299,6 +14300,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-03T15:55:24.261Z",
+  "buildinConfigUpdatedAt": "2025-03-03T16:24:01.804Z",
   "latestVersion": "1.15.2"
 }
