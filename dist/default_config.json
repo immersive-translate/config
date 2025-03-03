@@ -923,8 +923,8 @@
         "imt_subtitle_yaml_item": "- id: {{id}}\n  {{imt_sub_source_field}}: {{text}}",
         "normal_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_source_field}}: Source\nOutput:\n  - id: 1\n    {{imt_trans_field}}: Translation\n</example>",
         "subtitle_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\nOutput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\n</example>",
-        "title_prompt": "\n\nYou are about to translate text from a source with the title: 《{{imt_title}}》",
-        "summary_prompt": "\n\nSummary: {{imt_theme}}",
+        "title_prompt": "\n\n【Context Awareness】\nDocument Metadata:\nTitle: 《{{imt_title}}》",
+        "summary_prompt": "\nSummary: {{imt_theme}}",
         "terms_prompt": "\n\nThis content may include the following terms {{imt_terms}}. Please handle these terms carefully.",
         "sub_summary_prompt": "\n\nYou are about to translate subtitles, {{imt_theme}}",
         "sub_terms_prompt": "\n\nThis subtitle may include the following terms {{imt_terms}}. Please handle these terms carefully."
@@ -975,7 +975,7 @@
       ],
       "removeResRegexs": [
         "^\\<think\\>[\\s\\S]+\\<\\/think\\>",
-        "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释，不加注释。原文为:"
+        "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释， 不加注释。原文为:"
       ],
       "translationTextSeparator": "\n\n%%\n\n"
     },
@@ -14300,6 +14300,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-03T16:24:01.804Z",
+  "buildinConfigUpdatedAt": "2025-03-03T17:21:59.564Z",
   "latestVersion": "1.15.2"
 }
