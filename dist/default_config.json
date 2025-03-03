@@ -431,6 +431,7 @@
     "https://app.hubspot.com/[Hubspot]",
     "https://rumble.com/[Rumble]",
     "https://www.wsj.com/[WSJ]",
+    "https://cn.wsj.com/[WSJ-CN]",
     "https://www.lmanga.com/[Lmanga]",
     "https://spring.academy/[SpringAcademy]",
     "https://pan.quark.cn/[Quark]",
@@ -6916,6 +6917,24 @@
           "appendSelector": "[id^=\"video-controls-video\"]",
           "insertBeforeSelector": "[id^=\"video-cc-video\"]",
           "ccEnableSelector": "[id^=\"video-cc-video\"]"
+        }
+      }
+    },
+    {
+      "id": "wsj-cn",
+      "matches": "cn.wsj.com",
+      "excludeSelectors": [
+        "[class*=\"VideoWrapper\"]"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".video-inner",
+        "quickButtonRule": {
+          "injectCSS": ".label { display: none; }",
+          "appendSelector": "[id^=\"video-controls-vc\"]",
+          "insertBeforeSelector": "[id^=\"video-cc-vc\"]",
+          "ccEnableSelector": "[id^=\"video-cc-vc\"]"
         }
       }
     },
@@ -14285,6 +14304,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-03T14:39:51.696Z",
+  "buildinConfigUpdatedAt": "2025-03-03T14:42:05.687Z",
   "latestVersion": "1.15.2"
 }
