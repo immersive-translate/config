@@ -3152,7 +3152,8 @@
       ],
       "injectedCss.add": [
         ".r-h9hxbl{width:unset;}",
-        ".imt-img { object-fit: cover !important; }"
+        ".imt-img { object-fit: cover !important; }",
+        "[data-testid=ScrollSnap-SwipeableList] [role=presentation] > div > div { max-height: unset !important; }"
       ],
       "likePreSelectors.add_v.[1.11.5]": [
         "[data-testid=tweetText]"
@@ -14281,6 +14282,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-03T14:22:51.534Z",
+  "buildinConfigUpdatedAt": "2025-03-03T14:29:17.521Z",
   "latestVersion": "1.15.2"
 }
