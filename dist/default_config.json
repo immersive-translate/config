@@ -10487,6 +10487,7 @@
       "id": "hianime",
       "matches": [
         "megacloud.tv",
+        "megacloud.club",
         "hianime.to",
         "9animetv.to"
       ],
@@ -10498,6 +10499,8 @@
         ".jw-wrapper *",
         "#immersive-translate-caption-window *"
       ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
         "type": "multi_attach_vtt",
         "subtitleUrlRegExp": "^(?!.*sprite\\.vtt$).*\\.vtt$",
@@ -14282,6 +14285,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-03T14:32:23.932Z",
+  "buildinConfigUpdatedAt": "2025-03-03T14:39:51.696Z",
   "latestVersion": "1.15.2"
 }
