@@ -1,6 +1,7 @@
 {
   "releaseVersion": "1.13.5",
   "immediateTranslationTextCount": 4999,
+  "immediateTranslationScrollLimitScreens": 1,
   "translationStartMode": "dynamic",
   "domReadyDetectTimeout": 3000,
   "translationService": "bing",
@@ -561,9 +562,36 @@
       }
     },
     {
-      "condition": "iosVersionNumber>18.2",
+      "condition": "iosVersion==18.3",
       "advanceConfig": {
         "useOnlineOptions": true
+      }
+    },
+    {
+      "condition": "iosSystemVersion==18_3",
+      "advanceConfig": {
+        "useOnlineOptions": true
+      }
+    },
+    {
+      "condition": "imtAndroidVersionNumber>10110",
+      "advanceConfig": {
+        "generalRule": {
+          "imageRule.add": {
+            "supportPlatform": {
+              "chrome_pc": "all",
+              "imtAndroid_mobile": "all"
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "platform==safari",
+      "advanceConfig": {
+        "generalRule": {
+          "enableServerDetectLanguage": true
+        }
       }
     }
   ],
@@ -893,24 +921,41 @@
         "imt_subtitle_yaml_item": "- id: {{id}}\n  {{imt_sub_source_field}}: {{text}}",
         "normal_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_source_field}}: Source\nOutput:\n  - id: 1\n    {{imt_trans_field}}: Translation\n</example>",
         "subtitle_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\nOutput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\n</example>",
-        "summary_prompt": "\n\nYou are about to translate text from an article. Title: “{{imt_title}}”, Summary: {{imt_theme}}",
+        "title_prompt": "\n\nYou are about to translate text from a source with the title: 《{{imt_title}}》",
+        "summary_prompt": "\n\nSummary: {{imt_theme}}",
         "terms_prompt": "\n\nThis content may include the following terms {{imt_terms}}. Please handle these terms carefully.",
         "sub_summary_prompt": "\n\nYou are about to translate subtitles, {{imt_theme}}",
         "sub_terms_prompt": "\n\nThis subtitle may include the following terms {{imt_terms}}. Please handle these terms carefully."
       },
-      "systemPrompt": "You are a professional, authentic machine translation engine.{{summary_prompt}}{{terms_prompt}}",
+      "systemPrompt": "You are a professional, authentic machine translation engine.{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
       "prompt": ";; Treat next line as plain text input and translate it into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
       "multiplePrompt": "You will be given a YAML formatted input containing entries with \"id\" and \"{{imt_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{normal_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
       "subtitlePrompt": "You will be given a YAML formatted subtitles containing entries with \"id\" and \"{{imt_sub_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_sub_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_sub_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{subtitle_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
       "langOverrides": [
         {
-          "id": "auto2zh-CN-NE",
-          "extends": "auto2zh-CN",
-          "systemPrompt": "你是一个东北人翻译，请用东北人的口吻进行翻译，尽可能贴近生活，只返回译文，不含任何解释"
+          "id": "auto2zh-CN",
+          "prompt": ";; 把下一行文本作为纯文本输入，并将其翻译为简体中文，{{html_only}}仅输出翻译。如果某些内容无需翻译（如专有名词、代码等），则保持原文不变。不要解释，输入文本:\n {{text}}"
         },
         {
-          "id": "auto2zh-CN",
-          "prompt": "; 把下一行文本作为纯文本输入，并将其翻译为简体中文，{{html_only}}仅输出翻译。如果某些内容无需翻译（如专有名词、代码等），则保持原文不变。不要解释，输入文本:\n{{text}}"
+          "id": "zh-CN2zh-TW",
+          "prompt": ";; Treat next line as plain text input and translate it from 简体中文 into 繁體中文，{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}"
+        },
+        {
+          "id": "zh-CN2ru",
+          "prompt": ";; Treat next line as 简体中文 and translate it into 俄语，{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}"
+        },
+        {
+          "id": "ja2auto",
+          "prompt": ";; Treat next line as plain text input and translate it from 日语 into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}"
+        },
+        {
+          "id": "zh-CN2auto",
+          "subtitlePrompt": "You will be translating all \"{{imt_sub_source_field}}\" fields of a set of YAML-formatted video subtitles from Simplified Chinese into {{to}}. Here are the original subtitles in YAML format:\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\nPlease translate ONLY the \"{{imt_sub_source_field}}\" field of each subtitle entry into Simplified Chinese. Do not translate or change the \"id\" fields.\n\nOutput the translated subtitles in the same YAML format, with each subtitle entry on its own line. The \"id\" fields should remain unchanged, and the \"{{imt_sub_source_field}}\" fields should contain your {{to}} translations.\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information."
+        },
+        {
+          "id": "auto2zh-CN-NE",
+          "extends": "auto2zh-CN",
+          "systemPrompt": "你是一个东北人翻译，请用东北人的口吻进行翻译，尽可能贴近生活,只返回译文，不含任何解释"
         },
         {
           "id": "wyw2zh-CN",
@@ -919,31 +964,16 @@
           "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文言文翻译为白话文，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}"
         },
         {
-          "id": "zh-CN2zh-TW",
-          "prompt": ";; Treat next line as plain text input and translate it into 繁體中文，{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n{{text}}"
-        },
-        {
-          "id": "zh-CN2ru",
-          "prompt": ";; Treat next line as 简体中文 and translate it into 俄语，{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n{{text}}"
-        },
-        {
           "id": "auto2wyw",
           "systemPrompt": "你是一个文言文翻译，请用文言文的方式进行翻译，尽可能贴近古风，只返回译文，不含任何解释。",
           "prompt": "请翻译为文言文（避免解释原文）:\n\n{{text}}",
           "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}",
-          "subtitlePrompt": "将下面 YAML 格式的视频字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必须补全每一个 {{imt_sub_trans_field}} 字段，保留每一个 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML：\n\n{{subtitle_result_yaml_example}}\n\n开始翻译：\n\n{{yaml}}"
-        },
-        {
-          "id": "zh-CN2auto",
-          "subtitlePrompt": "You will be translating all \"{{imt_sub_source_field}}\" fields of a set of YAML-formatted video subtitles from Simplified Chinese into {{to}}. Here are the original subtitles in YAML format:\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\nPlease translate ONLY the \"{{imt_sub_source_field}}\" field of each subtitle entry into Simplified Chinese. Do not translate or change the \"id\" fields.\n\nOutput the translated subtitles in the same YAML format, with each subtitle entry on its own line. The \"id\" fields should remain unchanged, and the \"{{imt_sub_source_field}}\" fields should contain your {{to}} translations.\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information."
-        },
-        {
-          "id": "ja2auto",
-          "prompt": ";; Treat next line as Japanese input and translate it into {{to}},{{html_only}} output translation ONLY. Input:\n {{text}}"
+          "subtitlePrompt": "将下面 YAML 格式的视频字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必须补全每一个 {{imt_sub_trans_field}} 字段，保留每一个 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n开始翻译：\n\n{{yaml}}"
         }
       ],
       "removeResRegexs": [
-        "^\\<think\\>[\\s\\S]+\\<\\/think\\>"
+        "^\\<think\\>[\\s\\S]+\\<\\/think\\>",
+        "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释，不加注释。原文为:"
       ],
       "translationTextSeparator": "\n\n%%\n\n"
     },
@@ -1021,7 +1051,9 @@
         "^简化中文翻译：",
         "^简体中文翻译：",
         "^简体中文：",
-        "^;;# "
+        "^;;# ",
+        "^原样输出，无需翻译$",
+        "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释，不加注释。原文为:"
       ]
     },
     "claude": {
@@ -1084,7 +1116,7 @@
       "systemPrompt": "You are a professional, authentic translation engine, only returns translations.",
       "prompt": "Translate the text to {{to}} Language, please do not explain my original text.:\n\n{{text}}",
       "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}",
-      "model": "gpt-3.5-turbo",
+      "model": "gpt-4o-mini",
       "proModel": "gpt-4o-mini",
       "proLimit": 10,
       "overrides": [
@@ -1280,6 +1312,55 @@
       "limit": 5,
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://api.lingyiwanwu.com/v1/chat/completions",
+      "enableRichTranslate": true,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true
+    },
+    "grok": {
+      "extends": "ai",
+      "name": "grok",
+      "model": "grok-2-1212",
+      "provider": "custom",
+      "limit": 4,
+      "maxTextGroupLengthPerRequestForSubtitle": 1,
+      "apiUrl": "https://api.x.ai/v1/chat/completions",
+      "enableRichTranslate": true,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true
+    },
+    "ollama": {
+      "extends": "ai",
+      "name": "ollama",
+      "model": "llama3.3",
+      "provider": "custom",
+      "limit": 5,
+      "maxTextGroupLengthPerRequestForSubtitle": 1,
+      "apiUrl": "http://localhost:11434/v1/chat/completions",
+      "enableRichTranslate": true,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
+      "APIKEY": "ollama"
+    },
+    "groq": {
+      "extends": "ai",
+      "name": "groq",
+      "model": "llama-3.1-8b-instant",
+      "provider": "custom",
+      "limit": 4,
+      "maxTextGroupLengthPerRequestForSubtitle": 1,
+      "apiUrl": "https://api.groq.com/openai/v1/chat/completions",
+      "enableRichTranslate": true,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true
+    },
+    "azure-openai": {
+      "extends": "ai",
+      "name": "azure-openai",
+      "model": "gpt-4o-mini",
+      "provider": "custom",
+      "limit": 5,
+      "maxTextGroupLengthPerRequestForSubtitle": 1,
+      "apiUrl": "https://api.cognitive.microsofttranslator.com/",
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true
@@ -1731,6 +1812,14 @@
         [
           "TT$",
           "。"
+        ],
+        [
+          "&quot;",
+          "“"
+        ],
+        [
+          "&quot;",
+          "”"
         ]
       ]
     },
@@ -2545,6 +2634,7 @@
       "isTranslateWhenServiceChanged": false,
       "translationMode": "translation",
       "skipEditableCheck": true,
+      "encodeHtmlTag": true,
       "selectors": [
         "#viewerContainer p"
       ],
@@ -3254,7 +3344,8 @@
           "reportSelector": ".iOzk7[jsname='dsyhDe']",
           "mutationChangeDelay": 1000,
           "findParentBlockDepth": 5,
-          "enableTriggerTranslate": true
+          "enableTriggerTranslate": true,
+          "preventRemoval": true
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] font.immersive-translate-target-wrapper {direction: rtl;}"
@@ -8932,7 +9023,8 @@
         "viewer.heros-web.com",
         "comic-days.com",
         "www.corocoro.jp",
-        "tonarinoyj.jp"
+        "tonarinoyj.jp",
+        "championcross.jp"
       ],
       "selectorMatches": [
         "canvas.page-image.js-page-image",
@@ -8943,7 +9035,8 @@
         "imageSelectors": [
           ".js-page-area canvas",
           "img.page-image.js-page-image",
-          "img[class$=\"_page\"]"
+          "img[class$=\"_page\"]",
+          "[class='-cv-page-canvas'] canvas"
         ],
         "urlFetchType": "canvasArgs",
         "opImageType": "append",
@@ -14168,6 +14261,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-02T15:12:43.275Z",
-  "latestVersion": "1.14.16"
+  "buildinConfigUpdatedAt": "2025-03-03T11:27:22.337Z",
+  "latestVersion": "1.15.1"
 }
