@@ -14060,7 +14060,8 @@
         "deno.com",
         "deno.land",
         "blog.partykit.io",
-        "docs.lemonsqueezy.com"
+        "docs.lemonsqueezy.com",
+        "www.hcompany.ai"
       ],
       "injectedCss": [
         ":root, font {font-feature-settings:normal;}"
@@ -14303,6 +14304,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-04T02:28:03.425Z",
+  "buildinConfigUpdatedAt": "2025-03-04T13:48:08.842Z",
   "latestVersion": "1.15.2"
 }
