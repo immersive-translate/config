@@ -12436,6 +12436,9 @@
         ".ltx_eqn_table",
         ".ltx_figure_panel"
       ],
+      "stayOriginalSelectors.add": [
+        ".ltx_note"
+      ],
       "enableRichTranslate": false,
       "enableRichTranslate.add_v.[1.12.1]": true
     },
@@ -14300,6 +14303,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-03T17:23:34.006Z",
+  "buildinConfigUpdatedAt": "2025-03-04T01:24:55.919Z",
   "latestVersion": "1.15.2"
 }
