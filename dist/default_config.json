@@ -2912,59 +2912,6 @@
       "useIframePostMessage": false
     },
     {
-      "id": "preSites",
-      "matches": [
-        "mail.jabber.org",
-        "antirez.com",
-        "patchwork.kernel.org",
-        "lists.apache.org",
-        "manned.org",
-        "bugs.webkit.org",
-        "bugzilla.mozilla.org",
-        "scriptbin.works",
-        "bugs.gentoo.org",
-        "lwn.net/Articles/*",
-        "docs.haproxy.org",
-        "*.freebsd.org",
-        "www.oreilly.com/openbook/opensources/book/*",
-        "gamefaqs.gamespot.com",
-        "bugs.java.com/bugdatabase/view_bug.do",
-        "rachelsenglish.com",
-        "privatter.net",
-        "www.asuswrt-merlin.net",
-        "tic80.com"
-      ],
-      "selectorMatches": [
-        "pre.changelog"
-      ],
-      "isTransformPreTagNewLine": true,
-      "longBuildPageLength": 1000,
-      "excludeTags.remove": [
-        "PRE"
-      ],
-      "buildContainerSelectors": [
-        "pre"
-      ]
-    },
-    {
-      "id": "preCodeSites",
-      "matches": [
-        "taylor.town",
-        "www.flatpanelshd.com",
-        "www.rarlab.com"
-      ],
-      "isTransformPreTagNewLine": true,
-      "excludeTags.remove": [
-        "PRE"
-      ],
-      "likePreSelectors.add": [
-        "CODE"
-      ],
-      "stayOriginalTags.remove": [
-        "CODE"
-      ]
-    },
-    {
       "id": "shopee",
       "matches": "seller.shopee.*",
       "isTransformPreTagNewLine": true,
@@ -6664,8 +6611,35 @@
     {
       "id": "braynzarsoft",
       "matches": "www.braynzarsoft.net",
-      "selectors": [
-        "div#view-question-desc"
+      "excludeSelectors.add": [
+        "#content-header",
+        ".sidebar-section"
+      ],
+      "additionalExcludeSelectors.add": [
+        ".rating-box",
+        ".tutorial-stat",
+        "#bookmark-btn",
+        ".question-footer",
+        ".adsbygoogle",
+        ".footer",
+        ".type",
+        ".views",
+        ".questioninputcode"
+      ],
+      "injectedCss.add": [
+        ".tutorial-desc {overflow: scroll !important;}",
+        ".question-title {display:inline-flex !important;}"
+      ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.selectors": [
+          "#header"
+        ],
+        "side.selectors": [
+          "#sidebar"
+        ]
+      },
+      "excludeTags.remove": [
+        "PRE"
       ]
     },
     {
@@ -14166,6 +14140,59 @@
       ]
     },
     {
+      "id": "preSites",
+      "matches": [
+        "mail.jabber.org",
+        "antirez.com",
+        "patchwork.kernel.org",
+        "lists.apache.org",
+        "manned.org",
+        "bugs.webkit.org",
+        "bugzilla.mozilla.org",
+        "scriptbin.works",
+        "bugs.gentoo.org",
+        "lwn.net/Articles/*",
+        "docs.haproxy.org",
+        "*.freebsd.org",
+        "www.oreilly.com/openbook/opensources/book/*",
+        "gamefaqs.gamespot.com",
+        "bugs.java.com/bugdatabase/view_bug.do",
+        "rachelsenglish.com",
+        "privatter.net",
+        "www.asuswrt-merlin.net",
+        "tic80.com"
+      ],
+      "selectorMatches": [
+        "pre.changelog"
+      ],
+      "isTransformPreTagNewLine": true,
+      "longBuildPageLength": 1000,
+      "excludeTags.remove": [
+        "PRE"
+      ],
+      "buildContainerSelectors": [
+        "pre"
+      ]
+    },
+    {
+      "id": "preCodeSites",
+      "matches": [
+        "taylor.town",
+        "www.flatpanelshd.com",
+        "www.rarlab.com"
+      ],
+      "isTransformPreTagNewLine": true,
+      "excludeTags.remove": [
+        "PRE"
+      ],
+      "likePreSelectors.add": [
+        "CODE"
+      ],
+      "stayOriginalTags.remove": [
+        "CODE"
+      ]
+    },
+    {
       "id": "NoPreSiteTranslate",
       "matches": [
         "kalimat.anghami.com",
@@ -14291,6 +14318,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-05T06:25:37.281Z",
+  "buildinConfigUpdatedAt": "2025-03-05T11:36:37.187Z",
   "latestVersion": "1.15.2"
 }
