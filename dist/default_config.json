@@ -11,25 +11,12 @@
   "useOnlineOptions": false,
   "immediateTranslationPattern": {
     "matches": [
-      "www.tumblr.com",
       "twitter.com",
       "x.com",
       "*.twitter.com",
       "*.x.com",
       "medium.com",
       "*.medium.com",
-      "www.facebook.com",
-      "www.youtube.com",
-      "m.youtube.com",
-      "mail.google.com",
-      "discord.com",
-      "google.com",
-      "facebook.com",
-      "*.facebook.com",
-      "web.telegram.org",
-      "*.instagram.com",
-      "instagram.com",
-      "*.slack.com",
       "https://old.reddit.com/",
       "https://www.reddit.com/r/popular/",
       "https://www.reddit.com/",
@@ -14304,6 +14291,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-04T13:48:08.842Z",
+  "buildinConfigUpdatedAt": "2025-03-05T03:56:23.505Z",
   "latestVersion": "1.15.2"
 }
