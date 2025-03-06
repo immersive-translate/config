@@ -551,6 +551,17 @@
       }
     },
     {
+      "condition": "imtIOSVersionNumber>10104",
+      "advanceConfig": {
+        "monkeyH5FloatBall.add": {
+          "enable": false
+        },
+        "pcFloatBall.add": {
+          "enable": false
+        }
+      }
+    },
+    {
       "condition": "iosVersion==18.3",
       "advanceConfig": {
         "useOnlineOptions": true
@@ -14317,6 +14328,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-06T11:55:41.389Z",
+  "buildinConfigUpdatedAt": "2025-03-06T14:27:09.403Z",
   "latestVersion": "1.15.2"
 }
