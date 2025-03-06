@@ -3934,6 +3934,9 @@
           "script"
         ]
       },
+      "bodyRule.add": {
+        "enable": false
+      },
       "pageLangDetectWeight.add": {
         "body": 2
       },
@@ -14318,6 +14321,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-06T02:16:34.984Z",
+  "buildinConfigUpdatedAt": "2025-03-06T03:20:54.402Z",
   "latestVersion": "1.15.2"
 }
