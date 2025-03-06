@@ -1315,8 +1315,7 @@
       "apiUrl": "https://api.x.ai/v1/chat/completions",
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true,
-      "disabledAt": "2025-03-01"
+      "translationEnableRichTranslate": true
     },
     "ollama": {
       "extends": "ai",
@@ -1329,8 +1328,7 @@
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
-      "APIKEY": "ollama",
-      "disabledAt": "2025-03-01"
+      "APIKEY": "ollama"
     },
     "groq": {
       "extends": "ai",
@@ -1342,8 +1340,7 @@
       "apiUrl": "https://api.groq.com/openai/v1/chat/completions",
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true,
-      "disabledAt": "2025-03-01"
+      "translationEnableRichTranslate": true
     },
     "azure-openai": {
       "extends": "ai",
@@ -1355,8 +1352,7 @@
       "apiUrl": "https://api.cognitive.microsofttranslator.com/",
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true,
-      "disabledAt": "2025-03-01"
+      "translationEnableRichTranslate": true
     },
     "zhipu": {
       "extends": "ai",
@@ -14321,6 +14317,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-06T03:20:54.402Z",
+  "buildinConfigUpdatedAt": "2025-03-06T11:55:41.389Z",
   "latestVersion": "1.15.2"
 }
