@@ -10447,7 +10447,6 @@
         "vid41c.site",
         "https://*/*sub.info=*fmovies24.to*",
         "https://*/*sub.info=*bflixhd.to*",
-        "https://megacloud.tube/embed-*",
         "mcloud.vvid30c.site",
         "rabbitstream.net"
       ],
@@ -10488,8 +10487,7 @@
     {
       "id": "hianime",
       "matches": [
-        "megacloud.tv",
-        "megacloud.club",
+        "megacloud.*",
         "hianime.to",
         "9animetv.to"
       ],
@@ -14379,6 +14377,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-07T10:25:04.783Z",
+  "buildinConfigUpdatedAt": "2025-03-07T10:57:54.485Z",
   "latestVersion": "1.15.2"
 }
