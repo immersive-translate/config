@@ -13485,6 +13485,24 @@
       }
     },
     {
+      "id": "book18",
+      "matches": [
+        "book18.fans"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#post-hentai img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "app.schildi.chat",
       "matches": "app.schildi.chat",
       "additionalExcludeSelectors.remove": [
@@ -14359,6 +14377,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-07T09:38:26.282Z",
+  "buildinConfigUpdatedAt": "2025-03-07T09:42:31.803Z",
   "latestVersion": "1.15.2"
 }
