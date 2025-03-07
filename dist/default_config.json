@@ -13996,23 +13996,6 @@
       ]
     },
     {
-      "id": "htmlLangFirst",
-      "selectorMatches": [
-        "[lang=he-IL]",
-        "[lang=nl-NL]",
-        "[lang=ar-SA]",
-        "[lang=fa-IR]",
-        "[lang=fi]",
-        "[lang=fi-FI]"
-      ],
-      "pageLangDetectWeight": {
-        "html": 2,
-        "body": 1,
-        "tab": 1
-      },
-      "_comment": "为了处理 js 库错误检测希伯来语成其他语言的问题"
-    },
-    {
       "id": "other-chatapps",
       "matches": [
         "app.salesmartly.com/chat"
@@ -14218,6 +14201,7 @@
       "id": "bodyNoTranslateSite",
       "selectorMatches": [
         "body[translate=no]",
+        "body[class=notranslate]",
         "#app[translate=no]",
         "#root[translate=no]",
         "#editor-core-root [translate=no]",
@@ -14249,6 +14233,23 @@
           }
         }
       ]
+    },
+    {
+      "id": "htmlLangFirst",
+      "selectorMatches": [
+        "[lang=he-IL]",
+        "[lang=nl-NL]",
+        "[lang=ar-SA]",
+        "[lang=fa-IR]",
+        "[lang=fi]",
+        "[lang=fi-FI]"
+      ],
+      "pageLangDetectWeight": {
+        "html": 2,
+        "body": 1,
+        "tab": 1
+      },
+      "_comment": "为了处理 js 库错误检测希伯来语成其他语言的问题"
     },
     {
       "id": "common.pdfWebPage",
@@ -14328,6 +14329,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-06T14:27:09.403Z",
+  "buildinConfigUpdatedAt": "2025-03-07T02:43:32.146Z",
   "latestVersion": "1.15.2"
 }
