@@ -310,7 +310,8 @@
     "https://mn4u.net[Manga4u][chrome,firefox,safari]",
     "https://www.animatebookstore.com[Animatebookstore][chrome,firefox,safari]",
     "https://ganma.jp[GANMA][chrome,firefox,safari]",
-    "https://mangafire.to/[Mangafire][chrome,firefox,safari]"
+    "https://mangafire.to/[Mangafire][chrome,firefox,safari]",
+    "https://reaperscans.com/[Reaperscans][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -8881,13 +8882,15 @@
     {
       "id": "omegascans",
       "matches": [
-        "omegascans_notranslate.org"
+        "omegascans_notranslate.org",
+        "reaperscans.com"
       ],
       "imageRule.add": {
         "type": "manga",
         "urlFetchType": "img",
         "imageSelectors": [
-          "main #content .container .flex-col img[data-src]"
+          "main #content .container .flex-col img[data-src]",
+          "main #content .container .flex-col img[src]"
         ],
         "injectedCss": ".imt-image-status {top:5%!important;}",
         "loadingSelectors": [
@@ -14356,6 +14359,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-07T09:30:40.953Z",
+  "buildinConfigUpdatedAt": "2025-03-07T09:38:26.282Z",
   "latestVersion": "1.15.2"
 }
