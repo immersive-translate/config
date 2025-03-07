@@ -311,7 +311,8 @@
     "https://www.animatebookstore.com[Animatebookstore][chrome,firefox,safari]",
     "https://ganma.jp[GANMA][chrome,firefox,safari]",
     "https://mangafire.to/[Mangafire][chrome,firefox,safari]",
-    "https://reaperscans.com/[Reaperscans][chrome,firefox,safari]"
+    "https://reaperscans.com/[Reaperscans][chrome,firefox,safari]",
+    "https://manhuatop.com/[Manhuatop][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -9624,7 +9625,8 @@
     {
       "id": "manhwahub",
       "matches": [
-        "manhwahub.net"
+        "manhwahub.net",
+        "manhuatop.org"
       ],
       "imageRule.add": {
         "enable": true,
@@ -14377,6 +14379,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-07T09:42:31.803Z",
+  "buildinConfigUpdatedAt": "2025-03-07T10:25:04.783Z",
   "latestVersion": "1.15.2"
 }
