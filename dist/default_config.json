@@ -6198,6 +6198,13 @@
       "matches": "www.theverge.com",
       "shadowRootSelectors": [
         "div#coral_thread > div"
+      ],
+      "additionalExcludeSelectors.add": [
+        ".k8dtcj0",
+        "._2xqpwjf._2xqpwj0"
+      ],
+      "extraBlockSelectors.add": [
+        "[role='article'] p"
       ]
     },
     {
@@ -14329,6 +14336,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-07T02:43:32.146Z",
+  "buildinConfigUpdatedAt": "2025-03-07T03:45:04.687Z",
   "latestVersion": "1.15.2"
 }
