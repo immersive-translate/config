@@ -4949,6 +4949,13 @@
       "urlChangeDelay": 2000
     },
     {
+      "id": "typora",
+      "matches": "typora.io",
+      "excludeSelectors": [
+        ".tab-slider--nav"
+      ]
+    },
+    {
       "id": "startme",
       "matches": "start.me",
       "selectors": [
@@ -14377,6 +14384,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-07T10:57:54.485Z",
+  "buildinConfigUpdatedAt": "2025-03-07T11:12:22.428Z",
   "latestVersion": "1.15.2"
 }
