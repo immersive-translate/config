@@ -1256,6 +1256,8 @@
       "apiUrl": "https://api.deepseek.com/chat/completions",
       "provider": "custom",
       "enableRichTranslate": false,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
       "proModel": "deepseek-chat",
       "enableFallback": true,
       "proLimit": 10,
@@ -1293,6 +1295,8 @@
       "limit": 10,
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "apiUrl": "https://api.siliconflow.cn/v1/chat/completions",
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
       "defaultVisible": true,
       "defaultHiddenLangs": [
         "zh-TW"
@@ -14385,6 +14389,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-09T08:41:33.331Z",
+  "buildinConfigUpdatedAt": "2025-03-09T11:00:26.798Z",
   "latestVersion": "1.15.2"
 }
