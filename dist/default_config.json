@@ -1244,6 +1244,8 @@
       "bodyConfigs": {
         "max_tokens": 2048
       },
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
       "translationTextSeparator": "\n\n%%\n\n",
       "assistantId": "common"
     },
@@ -1269,6 +1271,8 @@
       "model": "qwen-long",
       "provider": "custom",
       "limit": 1.5,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
     },
@@ -1278,6 +1282,8 @@
       "model": "",
       "provider": "custom",
       "limit": 10,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
     },
@@ -1286,6 +1292,8 @@
       "name": "hunyuan",
       "provider": "custom",
       "limit": 2,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
       "model": "hunyuan-standard"
     },
     "siliconcloud": {
@@ -14390,6 +14398,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-09T12:57:38.967Z",
+  "buildinConfigUpdatedAt": "2025-03-09T13:44:56.500Z",
   "latestVersion": "1.15.2"
 }
