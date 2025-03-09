@@ -492,10 +492,7 @@
     "*.larkoffice.com",
     "*.larksuite.com"
   ],
-  "joinJobs": [
-    "前端开发工程师",
-    "前端开发实习生"
-  ],
+  "joinJobs": [],
   "monkeyH5FloatBall": {
     "enable": true,
     "blockUrls": [
@@ -14388,6 +14385,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-09T08:04:00.393Z",
+  "buildinConfigUpdatedAt": "2025-03-09T08:41:33.331Z",
   "latestVersion": "1.15.2"
 }
