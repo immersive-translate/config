@@ -1293,6 +1293,7 @@
       "name": "siliconcloud",
       "provider": "custom",
       "limit": 10,
+      "maxTextGroupLengthPerRequest": 3,
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "apiUrl": "https://api.siliconflow.cn/v1/chat/completions",
       "dualEnableRichTranslate": false,
@@ -14389,6 +14390,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-09T11:00:26.798Z",
+  "buildinConfigUpdatedAt": "2025-03-09T12:57:38.967Z",
   "latestVersion": "1.15.2"
 }
