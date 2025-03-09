@@ -7435,6 +7435,10 @@
         "pubmed*.pubmed*",
         "*.ncbi.nlm.nih.gov"
       ],
+      "excludeMatches": [
+        "*.ncbi.nlm.nih.gov/*.pdf",
+        "pubmed*.pubmed*/*.pdf"
+      ],
       "urlChangeDelay": 0,
       "excludeSelectors": [
         ".docsum-journal-citation",
@@ -14384,6 +14388,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-07T11:12:22.428Z",
+  "buildinConfigUpdatedAt": "2025-03-09T08:04:00.393Z",
   "latestVersion": "1.15.2"
 }
