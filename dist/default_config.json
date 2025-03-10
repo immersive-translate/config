@@ -12373,7 +12373,8 @@
       "matches": [
         "*.google.com",
         "dart.dev",
-        "*.google"
+        "*.google",
+        "*.googleapis.com"
       ],
       "injectedCss.add": [
         ".scSearchSearch_results_listSearchresultslistsnippet { -webkit-line-clamp:unset;}"
@@ -12394,7 +12395,11 @@
         ".material-symbols",
         ".gemini-large-text__overlay",
         "code",
-        "view-line"
+        "view-line",
+        "#modelSelector",
+        ".leaderboard-content",
+        "#selected-count",
+        "#selected-cat"
       ]
     },
     {
@@ -12632,8 +12637,13 @@
       "excludeTags.remove": [
         "BUTTON"
       ],
-      "excludeSelectors.add": [
-        "[data-testid=\"block-label\"]"
+      "additionalExcludeSelectors.add": [
+        "[data-testid=\"block-label\"]",
+        ".prose h1 + p",
+        "#model_selector_md > div > div > span > h3",
+        "table",
+        ".tabs .md.svelte-8tpqd2.prose > p:nth-child(1)",
+        ".tabs h4"
       ],
       "mutationConfig.add": {
         "buildTimeout": 1000,
@@ -14399,6 +14409,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-10T11:23:26.414Z",
+  "buildinConfigUpdatedAt": "2025-03-10T11:39:27.743Z",
   "latestVersion": "1.15.2"
 }
