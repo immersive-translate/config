@@ -1843,7 +1843,8 @@
       ".immersive-translate-target-wrapper {word-break:break-word; user-select:text;}",
       "[imt-state=\"translation\"] .immersive-translate-target-wrapper[dir='rtl'] {display:inline-block;}",
       "[dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {text-align:left;}",
-      "[imt-state=dual] .immersive-translate-target-translation-block-wrapper-theme-dividingLine::before {display:block;}"
+      "[imt-state=dual] .immersive-translate-target-translation-block-wrapper-theme-dividingLine::before {display:block;}",
+      "[imt-trans-position=before] .immersive-translate-target-translation-block-wrapper {display:block!important;}"
     ],
     "isOnBoardingPage": false,
     "isEbook": false,
@@ -14398,6 +14399,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-09T13:44:56.500Z",
+  "buildinConfigUpdatedAt": "2025-03-10T11:23:26.414Z",
   "latestVersion": "1.15.2"
 }
