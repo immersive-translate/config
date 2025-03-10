@@ -456,7 +456,7 @@
   ],
   "spVersion": "1.15.3",
   "ispVersion": "2.0.0",
-  "gspVersion": "1.1.11",
+  "gspVersion": "2.0.0",
   "modifiedBySystem": false,
   "enableDefaultAlwaysTranslatedUrls": true,
   "isChangedAlwaysTranslatedUrls": false,
@@ -14442,6 +14442,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-10T12:24:21.541Z",
+  "buildinConfigUpdatedAt": "2025-03-10T12:35:52.218Z",
   "latestVersion": "1.15.2"
 }
