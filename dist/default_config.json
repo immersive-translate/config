@@ -430,7 +430,8 @@
     "https://www.coindesk.com/[CoinDesk]",
     "https://www.reuters.com/[Reuters]",
     "https://tver.jp/[TVer]",
-    "https://pro.codewithandrea.com/[CodeWithAndrea]"
+    "https://pro.codewithandrea.com/[CodeWithAndrea]",
+    "https://watch.hikaritv.xyz/[Hikaritv]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -11088,6 +11089,38 @@
       }
     },
     {
+      "id": "hikaritv",
+      "matches": [
+        "boosterx.stream"
+      ],
+      "excludeSelectors.add": [
+        ".jw-wrapper"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".jw-wrapper *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "multi_attach_vtt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "insertBeforeSelector": ".jw-icon-cc"
+        },
+        "subtitleUrlRegExp": "\\.srt$",
+        "attachRule": {
+          "appendSelector": ".jw-wrapper",
+          "injectedGlobalCSS": [
+            ".jw-captions { display: none !important; }"
+          ]
+        },
+        "multiSetting": {
+          "activeLangSelector": ".jw-settings-submenu-captions .jw-settings-item-active"
+        }
+      }
+    },
+    {
       "id": "khflix",
       "matches": [
         "khflix.com",
@@ -14409,6 +14442,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-10T11:39:27.743Z",
+  "buildinConfigUpdatedAt": "2025-03-10T12:24:21.541Z",
   "latestVersion": "1.15.2"
 }
