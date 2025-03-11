@@ -3480,7 +3480,13 @@
         "[class='q-box qu-flex--auto']",
         "[class='q-text qu-dynamicFontSize--small qu-mt--small qu-color--gray_light qu-passColorToLinks']",
         ".AnswerFooter___StyledFlex-sc-2xbo88-0",
-        "[class='q-box qu-mb--small']"
+        "[class='q-box qu-mb--small']",
+        "button.q-click-wrapper",
+        "[class='q-text qu-dynamicFontSize--tiny qu-pb--tiny qu-mt--small qu-color--gray_light qu-passColorToLinks']",
+        "[class='q-text qu-dynamicFontSize--tiny qu-mt--small qu-color--gray_light qu-passColorToLinks']",
+        ".qt_read_more",
+        "[class='q-flex qu-alignItems--flex-start']",
+        "[class='q-box qu-pl--tiny']"
       ],
       "additionalExcludeSelectors.add": [
         ".qu-zIndex--action_bar"
@@ -14468,6 +14474,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-11T02:39:48.453Z",
+  "buildinConfigUpdatedAt": "2025-03-11T02:41:18.637Z",
   "latestVersion": "1.15.2"
 }
