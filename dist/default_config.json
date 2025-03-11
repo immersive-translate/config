@@ -9047,14 +9047,40 @@
       }
     },
     {
+      "id": "championcross.jp",
+      "selectorMatches": [
+        "canvas.page-image.js-page-image",
+        "img.page-image.js-page-image"
+      ],
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          ".js-page-area canvas",
+          "img.page-image.js-page-image",
+          "img[class$=\"_page\"]",
+          "[class='-cv-page-canvas'] canvas"
+        ],
+        "urlFetchType": "canvasArgs",
+        "opImageType": "append",
+        "supportPlatform": [
+          "chrome"
+        ],
+        "loadingSelectors": [
+          "p"
+        ]
+      },
+      "injectedCss.add": [
+        "[class^='Original_section_title'] {overflow:hidden!important;}"
+      ]
+    },
+    {
       "id": "shonenjumpplus",
       "matches": [
         "shonenjumpplus.com",
         "viewer.heros-web.com",
         "comic-days.com",
         "www.corocoro.jp",
-        "tonarinoyj.jp",
-        "championcross.jp"
+        "tonarinoyj.jp"
       ],
       "selectorMatches": [
         "canvas.page-image.js-page-image",
@@ -14442,6 +14468,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-10T12:35:52.218Z",
+  "buildinConfigUpdatedAt": "2025-03-11T02:39:48.453Z",
   "latestVersion": "1.15.2"
 }
