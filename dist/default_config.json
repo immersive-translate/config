@@ -14103,6 +14103,21 @@
       ]
     },
     {
+      "id": "claudeartifacts",
+      "matches": "claudeartifacts.com",
+      "excludeSelectors": [
+        "h1"
+      ],
+      "additionalExcludeSelectors.add": [
+        "h3 + span.rounded-full",
+        "[class='p-6 pt-0 flex justify-between items-center']",
+        "[class='text-xs text-gray-500']"
+      ],
+      "globalStyles": {
+        ".line-clamp-3": "-webkit-line-clamp: unset"
+      }
+    },
+    {
       "id": "1password",
       "matches": "*.1password.com",
       "additionalExcludeSelectors.add": [
@@ -14471,6 +14486,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-11T02:47:47.931Z",
+  "buildinConfigUpdatedAt": "2025-03-11T03:23:40.593Z",
   "latestVersion": "1.15.2"
 }
