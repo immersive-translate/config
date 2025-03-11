@@ -9054,10 +9054,7 @@
     },
     {
       "id": "championcross.jp",
-      "selectorMatches": [
-        "canvas.page-image.js-page-image",
-        "img.page-image.js-page-image"
-      ],
+      "matches": "https://championcross.jp",
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
@@ -14474,6 +14471,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-11T02:41:18.637Z",
+  "buildinConfigUpdatedAt": "2025-03-11T02:47:47.931Z",
   "latestVersion": "1.15.2"
 }
