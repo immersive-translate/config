@@ -10021,6 +10021,13 @@
     },
     {
       "id": "barrons",
+      "matches": "www.barrons.com",
+      "extraInlineSelectors.add": [
+        "article p span"
+      ]
+    },
+    {
+      "id": "video-barrons",
       "matches": [
         "video-api.wsj.com"
       ],
@@ -14486,6 +14493,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-11T03:23:40.593Z",
+  "buildinConfigUpdatedAt": "2025-03-11T04:06:41.372Z",
   "latestVersion": "1.15.2"
 }
