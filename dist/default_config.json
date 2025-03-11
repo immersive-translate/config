@@ -2203,7 +2203,8 @@
       "span.math-inline",
       ".reference-citations",
       ".code",
-      "cds-code-snippet"
+      "cds-code-snippet",
+      ".interactive-markdown__code"
     ],
     "translationBlockStyle": "",
     "isShowUserscriptPagePopup": true,
@@ -14496,6 +14497,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-11T06:17:44.794Z",
+  "buildinConfigUpdatedAt": "2025-03-11T09:04:39.226Z",
   "latestVersion": "1.15.2"
 }
