@@ -34,6 +34,7 @@
     ],
     "selectorExcludeMatches": []
   },
+  "popupMoreMenus": [],
   "aiAssistantIds": [
     "paraphrase",
     "twitter",
@@ -455,8 +456,8 @@
     "news.ycombinator.com"
   ],
   "spVersion": "1.15.3",
-  "ispVersion": "2.0.0",
-  "gspVersion": "2.0.0",
+  "ispVersion": "99.0.0",
+  "gspVersion": "99.0.0",
   "modifiedBySystem": false,
   "enableDefaultAlwaysTranslatedUrls": true,
   "isChangedAlwaysTranslatedUrls": false,
@@ -929,6 +930,7 @@
       },
       "systemPrompt": "You are a professional, authentic machine translation engine.{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
       "prompt": ";; Treat next line as plain text input and translate it into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
+      "multipleSystemPrompt": "You are a professional multi-paragraph translation engine.{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
       "multiplePrompt": "You will be given a YAML formatted input containing entries with \"id\" and \"{{imt_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{normal_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
       "subtitlePrompt": "You will be given a YAML formatted subtitles containing entries with \"id\" and \"{{imt_sub_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_sub_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_sub_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{subtitle_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
       "langOverrides": [
@@ -1002,7 +1004,7 @@
       "translationTextSeparator": "\n<Keep This Symbol>",
       "bodyConfigs": {
         "generationConfig": {
-          "temperature": 0.1,
+          "temperature": 0,
           "topK": 1,
           "topP": 1,
           "maxOutputTokens": 2048,
@@ -1056,6 +1058,10 @@
         "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释，不加注释。原文为:"
       ]
     },
+    "gemini.add_v.[1.15.3]": {
+      "prompt": ";; Treat next line as plain text input and must translate it into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
+      "maxTextGroupLengthPerRequest": 4
+    },
     "claude": {
       "visible": true,
       "extends": "ai",
@@ -1088,6 +1094,9 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true
     },
+    "claude.add_v.[1.15.3]": {
+      "maxTextGroupLengthPerRequest": 4
+    },
     "openai": {
       "visible": true,
       "placeholderDelimiters": [
@@ -1113,6 +1122,7 @@
       "translationDebounce": 300,
       "interval": 1350,
       "requestTimeout": 101000,
+      "proRequestTimeout": 30000,
       "systemPrompt": "You are a professional, authentic translation engine, only returns translations.",
       "prompt": "Translate the text to {{to}} Language, please do not explain my original text.:\n\n{{text}}",
       "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}",
@@ -1184,6 +1194,13 @@
       "enableAIContext": false,
       "enableRichGlossaries": false,
       "provider": "pro"
+    },
+    "openai.add_v.[1.15.3]": {
+      "maxTextGroupLengthPerRequest": 4
+    },
+    "custom-ai": {
+      "extends": "openai",
+      "models": "gpt-3.5-turbo|gpt-4o-mini|gpt-4o|gpt-4|gpt-4-0125-preview|gpt-4-turbo|gpt-4-vision-preview|claude-3-haiku-20240307|claude-3-sonnet-20240229|claude-3-opus-20240229|ERNIE-4.0-8K|ERNIE-3.5-8K|ERNIE-Speed-8K|ERNIE-Speed-128K|chatglm_turbo|chatglm_pro|chatglm_std|chatglm_lite|glm-4|glm-4v|glm-3-turbo|qwen-turbo|qwen-plus|qwen-max|qwen-max-longcontext|SparkDesk|hunyuan|gemini-1.5-flash-preview-0514|llama2:7b|llama3:latest|llama3.3|llama3.2|llama3.2:1b|llama3.1|llama3.1:405b|command-r|moonshot-v1-8k|moonshot-v1-32k|moonshot-v1-128k|Baichuan2-Turbo|Baichuan2-Turbo-192k|llama3-70b-8192|deepseek-chat|deepseek-r1:1.5b|deepseek-r1:8b|deepseek-r1:14b|deepseek-r1:32b"
     },
     "chatgpt": {
       "placeholderDelimiters": [
@@ -1266,6 +1283,9 @@
       "proLimit": 10,
       "requestTimeout": 200000
     },
+    "deepseek.add_v.[1.15.3]": {
+      "maxTextGroupLengthPerRequest": 4
+    },
     "aliyun-bailian": {
       "extends": "ai",
       "name": "aliyun-bailian",
@@ -1317,6 +1337,9 @@
       ],
       "systemPrompt": "You are a professional, authentic translation engine, only returns translations. Title: “{{imt_title}}” "
     },
+    "siliconcloud.add_v.[1.15.3]": {
+      "maxTextGroupLengthPerRequest": 4
+    },
     "lingyiwanwu": {
       "extends": "ai",
       "name": "lingyiwanwu",
@@ -1344,6 +1367,7 @@
     "ollama": {
       "extends": "ai",
       "name": "ollama",
+      "models": "qwq:32b|deepseek-chat|deepseek-r1:1.5b|deepseek-r1:8b|deepseek-r1:14b|deepseek-r1:32b|llama2:7b|llama3:latest|llama3.3|llama3.2|llama3.2:1b|llama3.1|llama3.1:405b|llama3-70b-8192|glm-4|glm-4v|glm-3-turbo|qwen2.5:0.5b|qwen2.5:1.5b|qwen2.5:3b|qwen2.5:7b|qwen2.5:14b|qwen2.5:32b|qwen-turbo|qwen-plus|qwen-max|qwen-max-longcontext|hunyuan|command-r|Baichuan2-Turbo|Baichuan2-Turbo-192k",
       "model": "llama3.3",
       "provider": "custom",
       "limit": 5,
@@ -1414,6 +1438,9 @@
       "enableFallback": true,
       "systemPrompt": "You are a professional, authentic translation engine, only returns translations. Title: “{{imt_title}}” "
     },
+    "zhipu.add_v.[1.15.3]": {
+      "maxTextGroupLengthPerRequest": 4
+    },
     "zhipu-pro": {
       "extends": "ai",
       "name": "zhipu",
@@ -1439,11 +1466,15 @@
       "ignoreResRegexs": [
         "^系统检测到输入或生成内容可能包含不安全或敏感内容"
       ],
+      "maxTextGroupLengthPerRequest": 1,
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "enableRichTranslate": false,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "enableFallback": true
+    },
+    "zhipu-pro.add_v.[1.15.3]": {
+      "maxTextGroupLengthPerRequest": 4
     }
   },
   "shortcuts": {
@@ -1586,6 +1617,12 @@
     "smallCodeLength": 30,
     "forceFormatPre": false,
     "longHtmlTextLength": 500000,
+    "visibleObserverScreens": [
+      0,
+      0,
+      2,
+      0
+    ],
     "pageLangDetectWeight": {
       "html": 1,
       "body": 1,
@@ -1722,7 +1759,8 @@
       "injectCss": true,
       "removeSelectors": [
         "noscript",
-        "script"
+        "script",
+        ".immersive-translate-error-modal-shadow-root"
       ]
     },
     "mutationConfig": {
@@ -2341,6 +2379,21 @@
       ".easyscholar-ranking",
       ".textLayer > span[role=presentation]"
     ],
+    "mouseHoverExcludeSelectors": [
+      "rp",
+      "rt",
+      ".prism-code",
+      ".enlighter-code",
+      ".rc-CodeBlock",
+      "[role=code]",
+      "table.highlight",
+      "div[class^=codeBlockContent]",
+      "div[class^=codeBlockLines]",
+      ".material-icons",
+      "material-icon",
+      "i.fa",
+      "i[class^=fa-]"
+    ],
     "translationClasses": [],
     "excludeTags": [
       "TITLE",
@@ -2768,7 +2821,12 @@
       "blockMinTextCount": 1,
       "blockMinWordCount": 1,
       "containerMinTextCount": 1,
-      "wrapperPrefix": "<br />"
+      "wrapperPrefix": "<br />",
+      "shareConfig.add": {
+        "cloneIframes": [
+          "#chapters iframe"
+        ]
+      }
     },
     {
       "id": "immersiveTranslateIosOnBoarding",
@@ -2916,7 +2974,12 @@
       "longBuildPageLength": 1000,
       "excludeTags.remove": [
         "PRE"
-      ]
+      ],
+      "shareConfig.add": {
+        "cloneIframes": [
+          "iframe.original-body"
+        ]
+      }
     },
     {
       "id": "simpread",
@@ -14497,6 +14560,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-11T09:04:39.226Z",
-  "latestVersion": "1.15.2"
+  "buildinConfigUpdatedAt": "2025-03-13T10:27:59.669Z",
+  "latestVersion": "1.15.3"
 }
