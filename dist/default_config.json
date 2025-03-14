@@ -432,7 +432,8 @@
     "https://www.reuters.com/[Reuters]",
     "https://tver.jp/[TVer]",
     "https://pro.codewithandrea.com/[CodeWithAndrea]",
-    "https://watch.hikaritv.xyz/[Hikaritv]"
+    "https://watch.hikaritv.xyz/[Hikaritv]",
+    "https://university.lowstresshandling.com/[LowStressHandling]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -8151,6 +8152,30 @@
       }
     },
     {
+      "id": "lowstresshandling",
+      "matches": "university.lowstresshandling.com",
+      "excludeSelectors": [
+        "div[data-vjs-player]"
+      ],
+      "mutationExcludeSelectors.add": [
+        "div[data-vjs-player] *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": "div.vjs-subs-caps-button "
+        },
+        "attachRule": {
+          "appendSelector": "div[data-vjs-player]",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display { display: none !important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "apple",
       "matches": "developer.apple.com",
       "excludeSelectors": [
@@ -14560,6 +14585,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-13T10:27:40.000Z",
+  "buildinConfigUpdatedAt": "2025-03-14T08:57:42.825Z",
   "latestVersion": "1.15.3"
 }
