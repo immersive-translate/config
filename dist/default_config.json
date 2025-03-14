@@ -766,6 +766,7 @@
       "enableBrowserApi": true
     },
     "transmart": {
+      "addTimestamp": true,
       "limit": 20,
       "defaultVisible": true,
       "defaultHiddenLangs": [
@@ -816,6 +817,7 @@
     },
     "deepl": {
       "visible": true,
+      "addTimestamp": true,
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
       "requestTimeout": 15000,
       "maxTextLengthPerRequest": 1800,
@@ -864,6 +866,7 @@
       ]
     },
     "bing": {
+      "addTimestamp": true,
       "defaultVisible": true,
       "maxTextLengthPerRequest": 1800,
       "requestTimeout": 10000,
@@ -878,6 +881,7 @@
       "richTag": "c"
     },
     "yandex": {
+      "addTimestamp": true,
       "defaultVisible": true,
       "maxTextLengthPerRequest": 1000,
       "requestTimeout": 10000,
@@ -979,7 +983,9 @@
         "^\\<think\\>[\\s\\S]+\\<\\/think\\>",
         "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释， 不加注释。原文为:"
       ],
-      "translationTextSeparator": "\n\n%%\n\n"
+      "translationTextSeparator": "\n\n%%\n\n",
+      "addTimestamp": true,
+      "proRequestTimeout": 30000
     },
     "gemini": {
       "visible": true,
@@ -1030,7 +1036,10 @@
             "threshold": "BLOCK_NONE"
           }
         ]
-      }
+      },
+      "ignoreResRegexs": [
+        "BlockedReasonProhibitedContent"
+      ]
     },
     "gemini.add_v.[1.3.4]": {
       "extends": "ai",
@@ -1124,7 +1133,6 @@
       "translationDebounce": 300,
       "interval": 1350,
       "requestTimeout": 101000,
-      "proRequestTimeout": 30000,
       "systemPrompt": "You are a professional, authentic translation engine, only returns translations.",
       "prompt": "Translate the text to {{to}} Language, please do not explain my original text.:\n\n{{text}}",
       "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}",
@@ -2872,7 +2880,8 @@
       "id": "dash-immersive",
       "matches": [
         "https://dash.immersivetranslate.com/*",
-        "https://test-dash.immersivetranslate.com/*"
+        "https://test-dash.immersivetranslate.com/*",
+        "http://localhost:8000/dist/userscript/options*"
       ],
       "selectors": [
         ".hello"
@@ -9468,6 +9477,11 @@
           "div"
         ]
       },
+      "pageLangDetectWeight": {
+        "html": 1,
+        "body": 4,
+        "tab": 1
+      },
       "buildContainerSelectors": [
         "main"
       ]
@@ -14610,6 +14624,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-14T10:09:48.983Z",
-  "latestVersion": "1.15.3"
+  "buildinConfigUpdatedAt": "2025-03-14T11:57:18.034Z",
+  "latestVersion": "1.15.4"
 }
