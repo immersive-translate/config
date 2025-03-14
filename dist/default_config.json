@@ -11834,6 +11834,11 @@
       "bodyRule.add": {
         "bodySelector": "#main-content",
         "articleSelector": "article"
+      },
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.selectors": [
+          "#header-content"
+        ]
       }
     },
     {
@@ -14624,6 +14629,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-14T11:57:00.000Z",
+  "buildinConfigUpdatedAt": "2025-03-14T14:40:54.158Z",
   "latestVersion": "1.15.4"
 }
