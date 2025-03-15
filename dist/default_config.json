@@ -984,7 +984,7 @@
         "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释， 不加注释。原文为:"
       ],
       "translationTextSeparator": "\n\n%%\n\n",
-      "addTimestamp": true,
+      "addTimestamp": false,
       "proRequestTimeout": 30000
     },
     "gemini": {
@@ -14629,6 +14629,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-14T14:40:54.158Z",
+  "buildinConfigUpdatedAt": "2025-03-15T08:02:09.652Z",
   "latestVersion": "1.15.4"
 }
