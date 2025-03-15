@@ -5005,6 +5005,9 @@
         "notion.site",
         "*.notion.site"
       ],
+      "selectorMatches": [
+        ".notion-html body"
+      ],
       "normalizeBody": "body",
       "selectors": [
         "div[data-block-id]"
@@ -14629,6 +14632,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-15T08:02:09.652Z",
+  "buildinConfigUpdatedAt": "2025-03-15T15:15:27.302Z",
   "latestVersion": "1.15.4"
 }
