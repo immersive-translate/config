@@ -985,7 +985,8 @@
       ],
       "translationTextSeparator": "\n\n%%\n\n",
       "addTimestamp": false,
-      "proRequestTimeout": 30000
+      "proRequestTimeout": 30000,
+      "maxTokensRatio": 8
     },
     "gemini": {
       "visible": true,
@@ -14632,6 +14633,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-15T15:15:27.302Z",
+  "buildinConfigUpdatedAt": "2025-03-16T09:23:50.624Z",
   "latestVersion": "1.15.4"
 }
