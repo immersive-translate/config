@@ -5401,7 +5401,8 @@
         "[aria-hidden='false'] pre",
         "article p",
         ".postMetaInline",
-        "a .u-fontSize24"
+        "a .u-fontSize24",
+        "pre .ha"
       ],
       "excludeSelectors": [
         "[aria-label='Post Preview Reading Time']",
@@ -5411,6 +5412,9 @@
         ".qb.ab",
         ".ai.bn.n.mj",
         ".speechify-ignore"
+      ],
+      "excludeTags.remove": [
+        "PRE"
       ],
       "globalStyles": {
         "h2,h3": "-webkit-line-clamp: unset;max-height:unset;",
@@ -14633,6 +14637,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-16T14:51:00.140Z",
+  "buildinConfigUpdatedAt": "2025-03-16T15:24:21.987Z",
   "latestVersion": "1.15.4"
 }
