@@ -3795,7 +3795,8 @@
         ".discussion-title",
         ".copilotPreview__footer",
         ".heading-element",
-        ".js-feed-item-component h3 a[data-hovercard-type=pull_request]"
+        ".js-feed-item-component h3 a[data-hovercard-type=pull_request]",
+        "[aria-labelledby=outline-id] nav"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}"
@@ -14637,6 +14638,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-16T15:24:21.987Z",
+  "buildinConfigUpdatedAt": "2025-03-16T15:39:30.896Z",
   "latestVersion": "1.15.4"
 }
