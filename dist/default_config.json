@@ -7718,8 +7718,8 @@
     {
       "id": "pubs.rsc.org",
       "matches": "pubs.rsc.org",
-      "excludeSelectors": [
-        ".eqn"
+      "stayOriginalSelectors.add": [
+        "[class*='eqn']"
       ]
     },
     {
@@ -14633,6 +14633,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-16T09:23:50.624Z",
+  "buildinConfigUpdatedAt": "2025-03-16T14:51:00.140Z",
   "latestVersion": "1.15.4"
 }
