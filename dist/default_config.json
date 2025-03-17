@@ -449,6 +449,7 @@
   "enableContextDiffPreview": false,
   "enableEditTranslation": false,
   "autoSelectTargetLanguageAfterInstalledAt": "2024-01-04",
+  "autoSelectAllTargetLanguageAfterInstalledAt": "2025-03-16",
   "defaultAlwaysTranslatedUrls": [
     "twitter.com",
     "x.com",
@@ -721,6 +722,43 @@
     "file://*/*\\.xml",
     "file://*/*\\.svg"
   ],
+  "monkeyAddTimeStampHosts": [
+    "api-edge.cognitive.microsofttranslator.com",
+    "transmart.qq.com",
+    "translate.yandex.net",
+    "tmt.tencentcloudapi.com",
+    "open.volcengineapi.com",
+    "fanyi.baidu.com",
+    "api.fanyi.baidu.com",
+    "api.interpreter.caiyunai.com",
+    "api-free.deepl.com",
+    "api.deepl.com",
+    "api.openl.club",
+    "openapi.youdao.com",
+    "translate.volcengine.com",
+    "api.niutrans.com",
+    "api2.immersivetranslate.com",
+    "api.cognitive.microsofttranslator.com",
+    "api.groq.com",
+    "api.x.ai",
+    "api.openai.com",
+    "api.interpreter.caiyunai.com",
+    "api.cognitive.microsofttranslator.com",
+    "aidemo.youdao.com",
+    "openai.azure.com",
+    "mt.aliyuncs.com",
+    "api.anthropic.com",
+    "localhost",
+    "127.0.0.1",
+    "openrouter.ai",
+    "api.deepseek.com",
+    "aip.baidubce.com",
+    "ark.cn-beijing.volces.com",
+    "hunyuan.tencentcloudapi.com",
+    "public-beta-api.siliconflow.cn",
+    "api.siliconflow.cn",
+    "open.bigmodel.cn"
+  ],
   "telemetry": true,
   "loadingTheme": "spinner",
   "canary": false,
@@ -767,7 +805,6 @@
       "enableBrowserApi": true
     },
     "transmart": {
-      "addTimestamp": true,
       "limit": 20,
       "defaultVisible": true,
       "defaultHiddenLangs": [
@@ -818,7 +855,6 @@
     },
     "deepl": {
       "visible": true,
-      "addTimestamp": true,
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
       "requestTimeout": 15000,
       "maxTextLengthPerRequest": 1800,
@@ -867,7 +903,6 @@
       ]
     },
     "bing": {
-      "addTimestamp": true,
       "defaultVisible": true,
       "maxTextLengthPerRequest": 1800,
       "requestTimeout": 10000,
@@ -882,7 +917,6 @@
       "richTag": "c"
     },
     "yandex": {
-      "addTimestamp": true,
       "defaultVisible": true,
       "maxTextLengthPerRequest": 1000,
       "requestTimeout": 10000,
@@ -985,8 +1019,7 @@
         "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释， 不加注释。原文为:"
       ],
       "translationTextSeparator": "\n\n%%\n\n",
-      "addTimestamp": false,
-      "proRequestTimeout": 30000,
+      "proRequestTimeout": 45000,
       "maxTokensRatio": 8
     },
     "gemini": {
@@ -1003,13 +1036,14 @@
       "immediateTranslationTextCount": 5000,
       "translationDebounce": 300,
       "interval": 1050,
-      "limit": 0.8,
+      "limit": 0.2,
+      "retry": 1,
       "prompt": "You are a professional,authentic translation engine,only returns translations.\nFor example:\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\nThe translation is:\n<Start>\n你好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\nTranslate the content to {{to}} Language:\n\n<Start>{{text}}<End>",
       "model": "gemini-1.5-pro-latest",
       "proModel": "gemini-2.0-flash",
       "proLimit": 10,
       "maxTextGroupLengthPerRequest": 1,
-      "maxTextLengthPerRequest": 1200,
+      "maxTextLengthPerRequest": 3000,
       "maxTextGroupLengthPerRequestForSubtitle": 3,
       "translationTextSeparator": "\n<Keep This Symbol>",
       "bodyConfigs": {
@@ -1073,6 +1107,7 @@
     },
     "gemini.add_v.[1.15.3]": {
       "prompt": ";; Treat next line as plain text input and must translate it into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
+      "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
     },
     "claude": {
@@ -1108,6 +1143,7 @@
       "translationEnableRichTranslate": true
     },
     "claude.add_v.[1.15.3]": {
+      "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
     },
     "openai": {
@@ -1208,10 +1244,13 @@
       "provider": "pro"
     },
     "openai.add_v.[1.15.3]": {
+      "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
     },
     "custom-ai": {
-      "extends": "openai",
+      "defaultMaxTextGroupLengthPerRequest": 4,
+      "maxTextGroupLengthPerRequest": 4,
+      "extends": "ai",
       "models": "gpt-3.5-turbo|gpt-4o-mini|gpt-4o|gpt-4|gpt-4-0125-preview|gpt-4-turbo|gpt-4-vision-preview|claude-3-haiku-20240307|claude-3-sonnet-20240229|claude-3-opus-20240229|ERNIE-4.0-8K|ERNIE-3.5-8K|ERNIE-Speed-8K|ERNIE-Speed-128K|chatglm_turbo|chatglm_pro|chatglm_std|chatglm_lite|glm-4|glm-4v|glm-3-turbo|qwen-turbo|qwen-plus|qwen-max|qwen-max-longcontext|SparkDesk|hunyuan|gemini-1.5-flash-preview-0514|llama2:7b|llama3:latest|llama3.3|llama3.2|llama3.2:1b|llama3.1|llama3.1:405b|command-r|moonshot-v1-8k|moonshot-v1-32k|moonshot-v1-128k|Baichuan2-Turbo|Baichuan2-Turbo-192k|llama3-70b-8192|deepseek-chat|deepseek-r1:1.5b|deepseek-r1:8b|deepseek-r1:14b|deepseek-r1:32b"
     },
     "chatgpt": {
@@ -1296,6 +1335,7 @@
       "requestTimeout": 200000
     },
     "deepseek.add_v.[1.15.3]": {
+      "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
     },
     "aliyun-bailian": {
@@ -1350,6 +1390,7 @@
       "systemPrompt": "You are a professional, authentic translation engine, only returns translations. Title: “{{imt_title}}” "
     },
     "siliconcloud.add_v.[1.15.3]": {
+      "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
     },
     "lingyiwanwu": {
@@ -1451,6 +1492,7 @@
       "systemPrompt": "You are a professional, authentic translation engine, only returns translations. Title: “{{imt_title}}” "
     },
     "zhipu.add_v.[1.15.3]": {
+      "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
     },
     "zhipu-pro": {
@@ -1486,6 +1528,7 @@
       "enableFallback": true
     },
     "zhipu-pro.add_v.[1.15.3]": {
+      "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
     }
   },
@@ -14597,11 +14640,13 @@
         "[id=myPdfIframe][src*=pdf]",
         "#article [type='application/pdf'][src*=pdf]",
         ".textFrame [type='application/pdf'][src*=pdf]",
-        ".ggPdf"
+        ".ggPdf",
+        "[id=pdfCanvasContainer] > iframe[src*=pdf]"
       ],
       "pdfUrlExtractRule": {
         "selector": "iframe[src*=pdf]",
-        "attribute": "src"
+        "attribute": "src",
+        "query": "file"
       }
     },
     {
@@ -14659,6 +14704,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-17T03:56:57.719Z",
-  "latestVersion": "1.15.4"
+  "buildinConfigUpdatedAt": "2025-03-17T11:08:58.715Z",
+  "latestVersion": "1.15.5"
 }
