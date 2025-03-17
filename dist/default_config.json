@@ -313,7 +313,8 @@
     "https://ganma.jp[GANMA][chrome,firefox,safari]",
     "https://mangafire.to/[Mangafire][chrome,firefox,safari]",
     "https://reaperscans.com/[Reaperscans][chrome,firefox,safari]",
-    "https://manhuatop.com/[Manhuatop][chrome,firefox,safari]"
+    "https://manhuatop.com/[Manhuatop][chrome,firefox,safari]",
+    "https://play.dlsite.com/[Dlsite][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -13200,6 +13201,26 @@
       }
     },
     {
+      "id": "dlsite",
+      "matches": [
+        "play.dlsite.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "[class*=\"_page_container\"] img"
+        ],
+        "injectedCss": "#immersiveTranslateImgLoading { z-index:999 !important; }",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "rawkuma",
       "matches": [
         "rawkuma.com"
@@ -14638,6 +14659,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-17T03:00:57.294Z",
+  "buildinConfigUpdatedAt": "2025-03-17T03:56:57.719Z",
   "latestVersion": "1.15.4"
 }
