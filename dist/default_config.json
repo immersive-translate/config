@@ -449,7 +449,7 @@
   "enableContextDiffPreview": false,
   "enableEditTranslation": false,
   "autoSelectTargetLanguageAfterInstalledAt": "2024-01-04",
-  "autoSelectAllTargetLanguageAfterInstalledAt": "2025-04-22",
+  "autoSelectAllTargetLanguageAfterInstalledAt": "2025-03-16",
   "defaultAlwaysTranslatedUrls": [
     "twitter.com",
     "x.com",
@@ -14704,6 +14704,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-17T11:10:31.914Z",
+  "buildinConfigUpdatedAt": "2025-03-17T11:08:43.000Z",
   "latestVersion": "1.15.5"
 }
