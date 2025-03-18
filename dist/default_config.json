@@ -449,7 +449,7 @@
   "enableContextDiffPreview": false,
   "enableEditTranslation": false,
   "autoSelectTargetLanguageAfterInstalledAt": "2024-01-04",
-  "autoSelectAllTargetLanguageAfterInstalledAt": "2025-03-16",
+  "autoSelectAllTargetLanguageAfterInstalledAt": "2025-04-22",
   "defaultAlwaysTranslatedUrls": [
     "twitter.com",
     "x.com",
@@ -846,6 +846,20 @@
         "🚠"
       ]
     },
+    "youdao-ziyue": {
+      "placeholderDelimiters": [
+        "#",
+        "#"
+      ],
+      "prompt": "",
+      "limit": 1,
+      "maxTextLengthPerRequest": 1200,
+      "maxTextGroupLengthPerRequest": 5,
+      "translationTextSeparator": "\n\n%%\n\n",
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
+      "disabledAt": "2025-03-17"
+    },
     "aliyun": {
       "placeholderDelimiters": [
         "{{",
@@ -977,41 +991,49 @@
       "langOverrides": [
         {
           "id": "auto2zh-CN",
-          "prompt": ";; 把下一行文本作为纯文本输入，并将其翻译为简体中文，{{html_only}}仅输出翻译。如果某些内容无需翻译（如专有名词、代码等），则保持原文不变。不要解释，输入文本:\n {{text}}"
+          "prompt": ";; 把下一行文本作为纯文本输入，并将其翻译为简体中文，{{html_only}}仅输出翻译。如果某些内容无需翻译（如专有名词、代码等），则保持原文不变。不要解释，输入文本:\n {{text}}",
+          "multipleSystemPrompt": ""
         },
         {
           "id": "zh-CN2zh-TW",
-          "prompt": ";; Treat next line as plain text input and translate it from 简体中文 into 繁體中文，{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}"
+          "prompt": ";; Treat next line as plain text input and translate it from 简体中文 into 繁體中文，{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
+          "multipleSystemPrompt": ""
         },
         {
           "id": "zh-CN2ru",
-          "prompt": ";; Treat next line as 简体中文 and translate it into 俄语，{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}"
+          "prompt": ";; Treat next line as 简体中文 and translate it into 俄语，{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
+          "multipleSystemPrompt": ""
         },
         {
           "id": "ja2auto",
-          "prompt": ";; Treat next line as plain text input and translate it from 日语 into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}"
+          "prompt": ";; Treat next line as plain text input and translate it from 日语 into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
+          "multipleSystemPrompt": ""
         },
         {
           "id": "zh-CN2auto",
-          "subtitlePrompt": "You will be translating all \"{{imt_sub_source_field}}\" fields of a set of YAML-formatted video subtitles from Simplified Chinese into {{to}}. Here are the original subtitles in YAML format:\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\nPlease translate ONLY the \"{{imt_sub_source_field}}\" field of each subtitle entry into Simplified Chinese. Do not translate or change the \"id\" fields.\n\nOutput the translated subtitles in the same YAML format, with each subtitle entry on its own line. The \"id\" fields should remain unchanged, and the \"{{imt_sub_source_field}}\" fields should contain your {{to}} translations.\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information."
+          "subtitlePrompt": "You will be translating all \"{{imt_sub_source_field}}\" fields of a set of YAML-formatted video subtitles from Simplified Chinese into {{to}}. Here are the original subtitles in YAML format:\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\nPlease translate ONLY the \"{{imt_sub_source_field}}\" field of each subtitle entry into Simplified Chinese. Do not translate or change the \"id\" fields.\n\nOutput the translated subtitles in the same YAML format, with each subtitle entry on its own line. The \"id\" fields should remain unchanged, and the \"{{imt_sub_source_field}}\" fields should contain your {{to}} translations.\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
+          "multipleSystemPrompt": ""
         },
         {
           "id": "auto2zh-CN-NE",
           "extends": "auto2zh-CN",
-          "systemPrompt": "你是一个东北人翻译，请用东北人的口吻进行翻译，尽可能贴近生活,只返回译文，不含任何解释"
+          "systemPrompt": "你是一个东北人翻译，请用东北人的口吻进行翻译，尽可能贴近生活,只返回译文，不含任何解释",
+          "multipleSystemPrompt": ""
         },
         {
           "id": "wyw2zh-CN",
           "systemPrompt": "你是一个精通古文的学者，只返回白话文",
           "prompt": "请将文言文用白话文解释:\n\n{{text}}",
-          "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文言文翻译为白话文，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}"
+          "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文言文翻译为白话文，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}",
+          "multipleSystemPrompt": ""
         },
         {
           "id": "auto2wyw",
           "systemPrompt": "你是一个文言文翻译，请用文言文的方式进行翻译，尽可能贴近古风，只返回译文，不含任何解释。",
           "prompt": "请翻译为文言文（避免解释原文）:\n\n{{text}}",
           "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}",
-          "subtitlePrompt": "将下面 YAML 格式的视频字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必须补全每一个 {{imt_sub_trans_field}} 字段，保留每一个 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n开始翻译：\n\n{{yaml}}"
+          "subtitlePrompt": "将下面 YAML 格式的视频字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必须补全每一个 {{imt_sub_trans_field}} 字段，保留每一个 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n开始翻译：\n\n{{yaml}}",
+          "multipleSystemPrompt": ""
         }
       ],
       "removeResRegexs": [
@@ -3021,6 +3043,9 @@
       "excludeSelectors.add": [
         "#imt-navbar *"
       ],
+      "withAITitleBlockUrls": [
+        "immersivetranslate.com/text"
+      ],
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
       "allowInnerInvoke": true,
@@ -3158,6 +3183,9 @@
         "https://x.com/*/tos*",
         "https://x.com/*/privacy*",
         "https://x.com/account/access*"
+      ],
+      "withAITitleBlockUrls": [
+        "^https://x.com/home"
       ],
       "switchTranslateRestart": true,
       "enableRichTranslate": true,
@@ -14704,6 +14732,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-17T11:08:43.000Z",
-  "latestVersion": "1.15.5"
+  "buildinConfigUpdatedAt": "2025-03-18T11:34:06.246Z",
+  "latestVersion": "1.15.6"
 }
