@@ -14390,6 +14390,14 @@
       ]
     },
     {
+      "id": "nextjs",
+      "matches": "nextjs.org",
+      "injectedCss.add": [
+        "[imt-state=dual] .styled-scrollbar ul li ul li ul li ul li a {white-space:nowrap!important;}",
+        "[imt-state=dual] .styled-scrollbar ul li font.immersive-translate-target-wrapper {text-align: right;width: 100%;}"
+      ]
+    },
+    {
       "id": "autoHeight",
       "matches": "*.sooplive.*",
       "injectedCss.add": [
@@ -14732,6 +14740,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-18T11:33:48.000Z",
+  "buildinConfigUpdatedAt": "2025-03-18T15:00:19.432Z",
   "latestVersion": "1.15.6"
 }
