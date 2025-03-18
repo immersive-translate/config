@@ -5484,7 +5484,8 @@
         ".hx.hy.hz.ia.ib.ab",
         ".qb.ab",
         ".ai.bn.n.mj",
-        ".speechify-ignore"
+        ".speechify-ignore",
+        "article pre"
       ],
       "excludeTags.remove": [
         "PRE"
@@ -14740,6 +14741,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-18T15:00:19.432Z",
+  "buildinConfigUpdatedAt": "2025-03-18T15:48:57.310Z",
   "latestVersion": "1.15.6"
 }
