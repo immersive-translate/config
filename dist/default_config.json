@@ -2594,7 +2594,8 @@
     ],
     "additionalInlineTags": [],
     "extraInlineSelectors": [
-      "p > a span",
+      "p a span",
+      "article a span",
       "p > span a span",
       "a[data-testid=\"Link\"] span"
     ],
@@ -14745,6 +14746,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-19T07:11:26.193Z",
+  "buildinConfigUpdatedAt": "2025-03-19T07:52:32.602Z",
   "latestVersion": "1.15.6"
 }
