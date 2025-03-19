@@ -14642,6 +14642,10 @@
             ]
           }
         }
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
       ]
     },
     {
@@ -14741,6 +14745,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-18T15:48:57.310Z",
+  "buildinConfigUpdatedAt": "2025-03-19T07:11:26.193Z",
   "latestVersion": "1.15.6"
 }
