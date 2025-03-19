@@ -1451,7 +1451,10 @@
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
-      "APIKEY": "ollama"
+      "APIKEY": "ollama",
+      "bodyConfigs": {
+        "keep_alive": "5m"
+      }
     },
     "groq": {
       "extends": "ai",
@@ -14746,6 +14749,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-19T07:52:32.602Z",
+  "buildinConfigUpdatedAt": "2025-03-19T08:20:04.343Z",
   "latestVersion": "1.15.6"
 }
