@@ -1130,7 +1130,13 @@
     "gemini.add_v.[1.15.3]": {
       "prompt": ";; Treat next line as plain text input and must translate it into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
       "defaultMaxTextGroupLengthPerRequest": 4,
-      "maxTextGroupLengthPerRequest": 4
+      "maxTextGroupLengthPerRequest": 4,
+      "replaceTextRegexes": [
+        [
+          "n\\\\'t ",
+          "n't "
+        ]
+      ]
     },
     "claude": {
       "visible": true,
@@ -14749,6 +14755,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-19T08:20:04.343Z",
-  "latestVersion": "1.15.6"
+  "buildinConfigUpdatedAt": "2025-03-19T11:07:17.894Z",
+  "latestVersion": "1.15.7"
 }
