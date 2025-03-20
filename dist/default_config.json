@@ -14635,7 +14635,8 @@
         "#root[translate=no]",
         "#editor-core-root [translate=no]",
         ".notranslate.chrome",
-        ".main-content [translate=no]"
+        ".main-content [translate=no]",
+        "body.notranslate.rtb-desktop"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -14764,6 +14765,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-20T14:15:55.254Z",
+  "buildinConfigUpdatedAt": "2025-03-20T14:26:55.451Z",
   "latestVersion": "1.15.8"
 }
