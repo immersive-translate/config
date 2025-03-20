@@ -3970,7 +3970,8 @@
       "excludeMatches": [
         "https://www.facebook.com/business/*",
         "https://www.facebook.com/help*",
-        "https://www.facebook.com/ads/library/*"
+        "https://www.facebook.com/ads/library/*",
+        "https://developers.facebook.com/*"
       ],
       "selectors": [
         "div[dir=auto][style]",
@@ -14778,6 +14779,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-20T14:55:25.187Z",
+  "buildinConfigUpdatedAt": "2025-03-20T15:03:08.647Z",
   "latestVersion": "1.15.8"
 }
