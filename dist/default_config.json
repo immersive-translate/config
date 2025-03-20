@@ -7650,6 +7650,14 @@
       "extraBlockSelectors.add": [
         ".mixed-citation"
       ],
+      "advanceMergeConfig": [
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "domReadyDetectTimeout": 5000
+          }
+        }
+      ],
       "globalAttributes.add": {
         "#Scholarscope_HighlightContent": {
           "class": ""
@@ -14755,6 +14763,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-20T11:55:47.680Z",
+  "buildinConfigUpdatedAt": "2025-03-20T13:53:36.579Z",
   "latestVersion": "1.15.8"
 }
