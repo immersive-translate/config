@@ -9265,7 +9265,8 @@
         "type": "manga",
         "imageSelectors": [
           "#divImage img",
-          ".page-chapter img"
+          ".page-chapter img",
+          "div[style*='images/loading.gif'] img"
         ],
         "loadingSelectors": [
           "p",
@@ -14779,6 +14780,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-20T15:03:08.647Z",
+  "buildinConfigUpdatedAt": "2025-03-20T15:12:40.456Z",
   "latestVersion": "1.15.8"
 }
