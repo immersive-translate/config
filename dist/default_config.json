@@ -14418,6 +14418,19 @@
       ]
     },
     {
+      "id": "noon",
+      "matches": "www.noon.com",
+      "injectedCss.add": [
+        "[class*='ProductDetailsSection'] {-webkit-line-clamp:unset!important;}",
+        "[class*='title'] {-webkit-line-clamp:unset!important;}"
+      ],
+      "additionalExcludeSelectors.add": [
+        "[class*='priceContainer']",
+        "[class*='ProductImageFooter']",
+        "[class*='Nudges_nudges']"
+      ]
+    },
+    {
       "id": "autoHeight",
       "matches": "*.sooplive.*",
       "injectedCss.add": [
@@ -14765,6 +14778,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-20T14:26:55.451Z",
+  "buildinConfigUpdatedAt": "2025-03-20T14:55:25.187Z",
   "latestVersion": "1.15.8"
 }
