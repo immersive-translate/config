@@ -5693,6 +5693,7 @@
         "span.math"
       ],
       "extraBlockSelectors.add": [
+        "span.display",
         "span.captions",
         "span[id^=cap]"
       ],
@@ -14763,6 +14764,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-20T13:53:36.579Z",
+  "buildinConfigUpdatedAt": "2025-03-20T14:15:55.254Z",
   "latestVersion": "1.15.8"
 }
