@@ -2272,7 +2272,7 @@
       "contextTimeout": 4000,
       "contextReqLength": 20000
     },
-    "enableServerDetectLanguage": false,
+    "enableServerDetectLanguage": true,
     "bodyRule.add_v.[1.4.9]": {
       "enable": true
     },
@@ -14755,6 +14755,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-20T03:03:53.000Z",
+  "buildinConfigUpdatedAt": "2025-03-20T11:55:47.680Z",
   "latestVersion": "1.15.8"
 }
