@@ -459,7 +459,7 @@
     "*.medium.com",
     "news.ycombinator.com"
   ],
-  "spVersion": "1.15.3",
+  "spVersion": "1.15.9",
   "ispVersion": "99.0.0",
   "gspVersion": "99.0.0",
   "modifiedBySystem": false,
@@ -857,8 +857,7 @@
       "maxTextGroupLengthPerRequest": 5,
       "translationTextSeparator": "\n\n%%\n\n",
       "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true,
-      "disabledAt": "2025-03-17"
+      "translationEnableRichTranslate": true
     },
     "aliyun": {
       "placeholderDelimiters": [
@@ -14780,6 +14779,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-20T15:12:40.456Z",
+  "buildinConfigUpdatedAt": "2025-03-21T08:49:13.217Z",
   "latestVersion": "1.15.8"
 }
