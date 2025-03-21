@@ -14430,6 +14430,21 @@
       ]
     },
     {
+      "id": "klibs",
+      "matches": "klibs.io",
+      "injectedCss.add": [
+        "[class*='styles_card'] {height:unset!important; -webkit-line-clamp:unset!important; max-height:unset!important;}"
+      ],
+      "additionalExcludeSelectors.add": [
+        "[class*='styles_footerWrapper']",
+        "[class*='styles_searchFilterContainerWrapper']",
+        "[class*='styles_headingWrapper']",
+        "[class*='styles_navigation']",
+        "[class*='styles_rightSideColumnWrapper']",
+        ".breadcrumb"
+      ]
+    },
+    {
       "id": "autoHeight",
       "matches": "*.sooplive.*",
       "injectedCss.add": [
@@ -14777,6 +14792,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-21T09:48:26.525Z",
+  "buildinConfigUpdatedAt": "2025-03-21T14:02:33.750Z",
   "latestVersion": "1.15.8"
 }
