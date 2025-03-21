@@ -2301,7 +2301,6 @@
     "visibleDelay": 0,
     "additionalStayOriginalSelectors": [
       "span.katex",
-      "span.notranslate",
       ".math-block",
       ".MathJax_Preview",
       ".MathJax_Display",
@@ -2311,7 +2310,6 @@
       "math-renderer",
       "[aria-labelledby^=\"MathJax-SVG\"]",
       ".mwe-math-element",
-      "span[translate=no]",
       "em[translate=no]",
       "code[translate=no]",
       "span.math.inline",
@@ -14663,7 +14661,8 @@
         "#editor-core-root [translate=no]",
         ".notranslate.chrome",
         ".main-content [translate=no]",
-        "body.notranslate.rtb-desktop"
+        "body.notranslate.rtb-desktop",
+        ".survey-body .notranslate"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -14792,6 +14791,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-21T14:02:33.750Z",
+  "buildinConfigUpdatedAt": "2025-03-21T14:42:13.956Z",
   "latestVersion": "1.15.8"
 }
