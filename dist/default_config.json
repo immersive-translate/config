@@ -1413,8 +1413,7 @@
       "placeholderDelimiters": [
         "@",
         "#"
-      ],
-      "systemPrompt": "You are a professional, authentic translation engine, only returns translations. Title: “{{imt_title}}” "
+      ]
     },
     "siliconcloud.add_v.[1.15.3]": {
       "defaultMaxTextGroupLengthPerRequest": 4,
@@ -1518,8 +1517,7 @@
       "enableRichTranslate": false,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
-      "enableFallback": true,
-      "systemPrompt": "You are a professional, authentic translation engine, only returns translations. Title: “{{imt_title}}” "
+      "enableFallback": true
     },
     "zhipu.add_v.[1.15.3]": {
       "defaultMaxTextGroupLengthPerRequest": 4,
@@ -14779,6 +14777,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-21T08:49:13.217Z",
+  "buildinConfigUpdatedAt": "2025-03-21T09:48:26.525Z",
   "latestVersion": "1.15.8"
 }
