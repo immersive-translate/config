@@ -4117,7 +4117,6 @@
           "script"
         ]
       },
-      "translationMode": "dual",
       "bodyRule.add": {
         "enable": false
       },
@@ -14801,6 +14800,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-23T15:51:44.241Z",
+  "buildinConfigUpdatedAt": "2025-03-23T16:01:37.763Z",
   "latestVersion": "1.15.9"
 }
