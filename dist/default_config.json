@@ -14306,7 +14306,7 @@
     {
       "id": "nexusmods",
       "matches": [
-        "*.nexusmods.com",
+        "next.nexusmods.com",
         "readit.plus"
       ],
       "likePreSelectors.add": [
@@ -14800,6 +14800,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-23T16:01:37.763Z",
-  "latestVersion": "1.15.9"
+  "buildinConfigUpdatedAt": "2025-03-23T23:07:55.759Z",
+  "latestVersion": "1.15.10"
 }
