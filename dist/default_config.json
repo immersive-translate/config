@@ -13889,6 +13889,27 @@
       }
     },
     {
+      "id": "yinmh",
+      "matches": [
+        "www.yinmh.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".left .image img"
+        ],
+        "inValidSrcRegex": [
+          "/static/loading.gif"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "app.schildi.chat",
       "matches": "app.schildi.chat",
       "additionalExcludeSelectors.remove": [
@@ -14825,6 +14846,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-24T06:01:52.220Z",
+  "buildinConfigUpdatedAt": "2025-03-24T06:37:22.775Z",
   "latestVersion": "1.15.10"
 }
