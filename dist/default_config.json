@@ -315,7 +315,8 @@
     "https://reaperscans.com/[Reaperscans][chrome,firefox,safari]",
     "https://manhuatop.com/[Manhuatop][chrome,firefox,safari]",
     "https://play.dlsite.com/[Dlsite][chrome,firefox,safari]",
-    "https://ww1.uzakichanmanga.com/[uzakichanmanga][chrome,firefox,safari]"
+    "https://ww1.uzakichanmanga.com/[uzakichanmanga][chrome,firefox,safari]",
+    "https://pocket.shonenmagazine.com/[Shonenmagazine][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -9314,7 +9315,8 @@
         "viewer.heros-web.com",
         "comic-days.com",
         "www.corocoro.jp",
-        "tonarinoyj.jp"
+        "tonarinoyj.jp",
+        "pocket.shonenmagazine.com"
       ],
       "selectorMatches": [
         "canvas.page-image.js-page-image",
@@ -14823,6 +14825,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-24T03:50:22.722Z",
+  "buildinConfigUpdatedAt": "2025-03-24T04:03:20.562Z",
   "latestVersion": "1.15.10"
 }
