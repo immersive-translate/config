@@ -14511,6 +14511,13 @@
       ]
     },
     {
+      "id": "mathsisfun",
+      "matches": "www.mathsisfun.com",
+      "stayOriginalSelectors.add": [
+        ".center.large"
+      ]
+    },
+    {
       "id": "autoHeight",
       "matches": "*.sooplive.*",
       "injectedCss.add": [
@@ -14859,6 +14866,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-24T08:20:43.980Z",
+  "buildinConfigUpdatedAt": "2025-03-24T09:19:55.268Z",
   "latestVersion": "1.15.10"
 }
