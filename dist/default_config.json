@@ -14498,6 +14498,19 @@
       ]
     },
     {
+      "id": "turboscribe",
+      "matches": [
+        "turboscribe.ai"
+      ],
+      "buildContainerSelectors.add_v.[1.15.11]": [
+        "#page-root"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ]
+    },
+    {
       "id": "autoHeight",
       "matches": "*.sooplive.*",
       "injectedCss.add": [
@@ -14846,6 +14859,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-24T06:37:22.775Z",
+  "buildinConfigUpdatedAt": "2025-03-24T08:20:43.980Z",
   "latestVersion": "1.15.10"
 }
