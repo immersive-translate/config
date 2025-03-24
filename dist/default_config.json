@@ -1415,7 +1415,8 @@
       "placeholderDelimiters": [
         "@",
         "#"
-      ]
+      ],
+      "models": "Qwen/Qwen2.5-7B-Instruct|meta-llama/Meta-Llama-3.1-8B-Instruct|THUDM/glm-4-9b-chat"
     },
     "siliconcloud.add_v.[1.15.3]": {
       "defaultMaxTextGroupLengthPerRequest": 4,
@@ -14866,6 +14867,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-24T09:19:55.268Z",
+  "buildinConfigUpdatedAt": "2025-03-24T15:31:07.854Z",
   "latestVersion": "1.15.10"
 }
