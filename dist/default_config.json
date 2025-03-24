@@ -13780,7 +13780,10 @@
     },
     {
       "id": "hentaipaw",
-      "matches": "hentaipaw.com",
+      "matches": [
+        "hentaipaw.com",
+        "ja.hentaipaw.com"
+      ],
       "imageRule.add": {
         "enable": true,
         "platforms": [
@@ -13790,7 +13793,8 @@
         ],
         "type": "manga",
         "imageSelectors": [
-          ".yarl__carousel img"
+          ".yarl__carousel img",
+          ".yarl__container .yarl__fullsize  img"
         ]
       }
     },
@@ -14819,6 +14823,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-24T03:33:39.125Z",
+  "buildinConfigUpdatedAt": "2025-03-24T03:50:22.722Z",
   "latestVersion": "1.15.10"
 }
