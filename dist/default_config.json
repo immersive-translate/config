@@ -2464,7 +2464,8 @@
       "h4 br",
       ".easyscholar-ranking",
       ".textLayer > span[role=presentation]",
-      "time"
+      "time",
+      ".countdown"
     ],
     "mouseHoverExcludeSelectors": [
       "rp",
@@ -3235,10 +3236,10 @@
         "[data-testid='twitterArticleReadView']",
         "[aria-label='Grok']",
         "[role=dialog]",
-        "[class=' css-175oi2r r-uef6q5 r-dnmrzs r-97e31f r-13qz1uu r-13awgt0 r-dgnwoc r-1me0s30 r-t3sqpr r-1dqxon3']",
         "[class='css-175oi2r r-1awozwy r-13awgt0 r-1rnoaur r-13qz1uu']",
         "[class='css-175oi2r r-kemksi r-1kqtdi0 r-1q9bdsx r-1phboty r-rs99b7 r-1udh08x r-13qz1uu']",
-        "[class='css-175oi2r r-uef6q5 r-dnmrzs r-97e31f r-13qz1uu r-13awgt0 r-dgnwoc r-1me0s30 r-t3sqpr r-1dqxon3']"
+        "[class='css-175oi2r r-uef6q5 r-dnmrzs r-97e31f r-13qz1uu r-13awgt0 r-dgnwoc r-1me0s30 r-t3sqpr r-1dqxon3']",
+        "[class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0']"
       ],
       "excludeSelectors": [
         "[aria-describedby][role=button]",
@@ -3362,6 +3363,14 @@
           "appendSelector": ".vjs-extend-control",
           "insertBeforeSelector": ".vjs-captions-control",
           "injectCSS": ".imt-quick-subtitle-pop-content { max-height: 150px !important; }"
+        },
+        "attachRule": {
+          "appendSelector": ".video-js",
+          "injectedCSS": [
+            ".imt-caption-container {z-index:10;}",
+            ".imt-cue {font-size: 16px !important;}",
+            ".vjs-text-track-cue {display:none !important;}"
+          ]
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window { direction: rtl; }"
@@ -3807,6 +3816,7 @@
         "subtitleUrlRegExp": "/v3/caption/",
         "hookType": "xhr",
         "loadingContainerSelector": ".jw-captions",
+        "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
           "insertBeforeSelector": ".jw-icon-cc",
@@ -8118,6 +8128,7 @@
         "injectedCss": [
           "[class^='well--text'] {white-space: pre;max-width: 100%;}"
         ],
+        "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": "[data-purpose=\"video-controls\"]"
         }
@@ -8190,6 +8201,7 @@
         "type": "subsrt",
         "subtitleUrlRegExp": ".*\\.vtt",
         "hookType": "xhr",
+        "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": ".sc-m5ts00-1.ejfyrG > div:last-child",
           "insertBeforeSelector": ".sc-m5ts00-1.ejfyrG > div:last-child > button",
@@ -8217,6 +8229,7 @@
       "subtitleRule.add": {
         "type": "subsrt",
         "subtitleUrlRegExp": ".*\\.vtt.*",
+        "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
           "insertBeforeSelector": "div.vjs-subs-caps-button",
@@ -10193,6 +10206,7 @@
         "injectedCss": [
           "#immersive-translate-quick-button-container{ position: absolute; top: -30px; right: 0; }"
         ],
+        "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": ".jw-controlbar-right-group",
           "injectCSS": ".label { display: none; }"
@@ -10873,6 +10887,7 @@
         "injectedCss": [
           "#immersive-translate-quick-button-container { position: relative; bottom: 50px; right: 60px; }"
         ],
+        "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": ".controls_bottom_right",
           "insertBeforeSelector": ".subtitles_toggle_button",
@@ -11043,6 +11058,7 @@
           "appendSelector": ".styles_columns__S4HQf:last-child",
           "ccEnableSelector": "div[data-testid='bottom-bar'] button[data-testid='subtitle-settings-button']"
         },
+        "enableHookDownload": true,
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ]
@@ -12117,6 +12133,7 @@
         "subsrtFormat": "ass",
         "loadingContainerSelector": "#youku-advertise",
         "loadingStyle": "bottom: 10%;",
+        "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": ".kui-dashboard-dashboard-panel .kui-dashboard-rear-ctn",
           "insertBeforeSelector": ".kui-rate-control-0"
@@ -12141,6 +12158,7 @@
         "injectedCss": [
           "#immersive-translate-quick-button-container {display: inline-block;}"
         ],
+        "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": "starz-player .button-group",
           "insertBeforeSelector": "starz-player .button-group .video-player-icon-md"
@@ -12337,6 +12355,7 @@
         "type": "subsrt",
         "subtitleUrlRegExp": "\\.webvtt$",
         "hookType": "xhr",
+        "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
           "ccEnableSelector": ".jw-icon-cc"
@@ -12451,6 +12470,7 @@
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "fetch",
         "loadingContainerSelector": "stream > div",
+        "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": ".css-6mrf8j.css-1oxfqe2"
         }
@@ -12552,6 +12572,7 @@
         "type": "subsrt",
         "subtitleUrlRegExp": "\\.vtt$",
         "videoPlayerSelector": "video",
+        "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": ".drtv-player-controls__button-row",
           "insertBeforeSelector": ".drtv-player-button__subtitle"
@@ -12573,6 +12594,7 @@
         "type": "subsrt",
         "subtitleUrlRegExp": "\\.webvtt$",
         "videoPlayerSelector": "video",
+        "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": "#player-controls > div",
           "insertBeforeSelector": "button[type=\"settings-button\"]"
@@ -12597,6 +12619,7 @@
         "subtitleUrlRegExp": "\\.vtt",
         "videoPlayerSelector": "video",
         "loadingContainerSelector": ".plyr__captions",
+        "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": ".plyr__controls",
           "insertBeforeSelector": "button[data-plyr='captions']"
@@ -14873,6 +14896,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-25T13:49:12.882Z",
+  "buildinConfigUpdatedAt": "2025-03-25T16:07:43.397Z",
   "latestVersion": "1.15.10"
 }
