@@ -325,6 +325,7 @@
     "https://www.netflix.com[NetFlix]",
     "https://www.primevideo.com[PrimeVideo]",
     "https://twitter.com[Twitter Spaces]",
+    "https://www.facebook.com/[Facebook]",
     "https://play.max.com[HBO Max]",
     "https://www.hbogoasia.tw[HBO GO]",
     "https://vimeo.com/watch[Vimeo]",
@@ -3997,7 +3998,11 @@
         "._4ik4._4ik5 {max-height:unset!important;}"
       ],
       "skipTrailTextRegex": "…",
-      "detectParagraphLanguage": true
+      "detectParagraphLanguage": true,
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": "srt"
+      }
     },
     {
       "id": "youtubeMobile",
@@ -14868,6 +14873,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-25T09:57:29.401Z",
+  "buildinConfigUpdatedAt": "2025-03-25T13:49:12.882Z",
   "latestVersion": "1.15.10"
 }
