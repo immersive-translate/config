@@ -4113,6 +4113,18 @@
       ],
       "extraBlockSelectors.add": [
         ".caption-visual-line"
+      ],
+      "advanceMergeConfig": [
+        {
+          "condition": "imtAndroidVersionNumber>10000",
+          "advanceConfig": {
+            "generalRule": {
+              "subtitleRule.add": {
+                "subtitleButtonSelector": ".ytmClosedCaptioningButtonButton"
+              }
+            }
+          }
+        }
       ]
     },
     {
@@ -14936,6 +14948,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-26T06:59:50.164Z",
+  "buildinConfigUpdatedAt": "2025-03-26T07:18:00.808Z",
   "latestVersion": "1.15.10"
 }
