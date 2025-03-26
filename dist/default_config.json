@@ -14573,9 +14573,13 @@
     },
     {
       "id": "autoHeight",
-      "matches": "*.sooplive.*",
+      "matches": [
+        "*.sooplive.*",
+        "zen-browser.app"
+      ],
       "injectedCss.add": [
-        ".side_list a,.title a,.tit {-webkit-line-clamp:unset!important;height:unset!important;}"
+        ".side_list a,.title a,.tit {-webkit-line-clamp:unset!important;height:unset!important;}",
+        "details {height:unset!important;}"
       ]
     },
     {
@@ -14920,6 +14924,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-26T02:23:21.720Z",
+  "buildinConfigUpdatedAt": "2025-03-26T02:35:00.936Z",
   "latestVersion": "1.15.10"
 }
