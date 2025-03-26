@@ -10793,7 +10793,8 @@
         "https://*/*sub.info=*bflixhd.to*",
         "mcloud.vvid30c.site",
         "rabbitstream.net",
-        "kerolaunochan.*"
+        "kerolaunochan.*",
+        "megacloud.*"
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
@@ -14929,6 +14930,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-26T04:00:10.067Z",
+  "buildinConfigUpdatedAt": "2025-03-26T06:05:24.945Z",
   "latestVersion": "1.15.10"
 }
