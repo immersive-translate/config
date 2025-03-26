@@ -10792,8 +10792,11 @@
         "https://*/*sub.info=*fmovies24.to*",
         "https://*/*sub.info=*bflixhd.to*",
         "mcloud.vvid30c.site",
-        "rabbitstream.net"
+        "rabbitstream.net",
+        "kerolaunochan.*"
       ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
       "excludeSelectors.add": [
         ".jw-wrapper",
         "#immersive-translate-caption-window"
@@ -14926,6 +14929,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-26T02:57:53.613Z",
+  "buildinConfigUpdatedAt": "2025-03-26T04:00:10.067Z",
   "latestVersion": "1.15.10"
 }
