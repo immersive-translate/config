@@ -2916,6 +2916,9 @@
       "shareConfig.add": {
         "cloneIframes": [
           "#chapters iframe"
+        ],
+        "removeSelectors": [
+          ".immersive-translate-error-modal-shadow-root"
         ]
       }
     },
@@ -3073,6 +3076,9 @@
       "shareConfig.add": {
         "cloneIframes": [
           "iframe.original-body"
+        ],
+        "removeSelectors": [
+          ".immersive-translate-error-modal-shadow-root"
         ]
       }
     },
@@ -14930,6 +14936,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-26T06:05:24.945Z",
+  "buildinConfigUpdatedAt": "2025-03-26T06:59:50.164Z",
   "latestVersion": "1.15.10"
 }
