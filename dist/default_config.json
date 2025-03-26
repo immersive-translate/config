@@ -316,7 +316,8 @@
     "https://manhuatop.com/[Manhuatop][chrome,firefox,safari]",
     "https://play.dlsite.com/[Dlsite][chrome,firefox,safari]",
     "https://ww1.uzakichanmanga.com/[uzakichanmanga][chrome,firefox,safari]",
-    "https://pocket.shonenmagazine.com/[Shonenmagazine][chrome,firefox,safari]"
+    "https://pocket.shonenmagazine.com/[Shonenmagazine][chrome,firefox,safari]",
+    "https://comic.naver.com[ComicNaver][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -9576,6 +9577,29 @@
       }
     },
     {
+      "id": "ko-comic",
+      "matches": [
+        "*comic.naver.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".toon_view_lst img",
+          ".wt_viewer img"
+        ],
+        "supportPlatform": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ],
+        "inValidSrcRegex": [
+          "bg_transparency.png"
+        ]
+      }
+    },
+    {
       "id": "pixiv",
       "matches": [
         "www.pixiv.net"
@@ -14896,6 +14920,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-25T16:07:43.397Z",
+  "buildinConfigUpdatedAt": "2025-03-26T02:23:21.720Z",
   "latestVersion": "1.15.10"
 }
