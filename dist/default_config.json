@@ -253,6 +253,7 @@
     "https://mangadex.org/[MangaDex][chrome,firefox,safari,userscript,imtIOS]",
     "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox]",
     "https://shonenjumpplus.com[ShonenJumpPlus][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://www.rimacomiplus.jp[Rimacomiplus][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://viewer.heros-web.com/[Heros Web][chrome,firefox,safari,userscript,imtIOS]",
     "https://comic-days.com/[Comic Days][chrome,firefox,safari,userscript,imtIOS]",
     "https://comic-top.com[Comic Top][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
@@ -9337,7 +9338,8 @@
         "comic-days.com",
         "www.corocoro.jp",
         "tonarinoyj.jp",
-        "pocket.shonenmagazine.com"
+        "pocket.shonenmagazine.com",
+        "rimacomiplus.jp"
       ],
       "selectorMatches": [
         "canvas.page-image.js-page-image",
@@ -14924,6 +14926,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-26T02:35:00.936Z",
+  "buildinConfigUpdatedAt": "2025-03-26T02:57:53.613Z",
   "latestVersion": "1.15.10"
 }
