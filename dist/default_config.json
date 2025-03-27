@@ -2832,7 +2832,8 @@
           ".editorParamsToolbar",
           ".image-mode",
           ".im_db",
-          ".im_cb"
+          ".im_cb",
+          ".immersive-translate-error-modal-shadow-root"
         ]
       },
       "wrapperPrefix": "",
@@ -14948,6 +14949,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-26T07:18:00.808Z",
+  "buildinConfigUpdatedAt": "2025-03-27T03:19:29.559Z",
   "latestVersion": "1.15.10"
 }
