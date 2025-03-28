@@ -3527,7 +3527,8 @@
         "div[title='Tokens this week']",
         ".text-green-600.font-medium",
         ".text-xl.text-slate-11",
-        "button[role='tab']"
+        "button[role='tab']",
+        "[data-badge-type=http-method]"
       ],
       "globalStyles": {
         "button.text-primary-foreground": "height: 100%;white-space: normal;word-wrap: break-word;"
@@ -14962,6 +14963,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-28T08:25:30.087Z",
+  "buildinConfigUpdatedAt": "2025-03-28T08:33:55.514Z",
   "latestVersion": "1.15.10"
 }
