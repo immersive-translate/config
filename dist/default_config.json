@@ -2466,6 +2466,7 @@
       "h4 br",
       ".easyscholar-ranking",
       ".textLayer > span[role=presentation]",
+      ".rpv-core__text-layer > span[role=presentation]",
       "time",
       ".countdown"
     ],
@@ -14951,6 +14952,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-28T02:28:48.301Z",
+  "buildinConfigUpdatedAt": "2025-03-28T08:19:17.062Z",
   "latestVersion": "1.15.10"
 }
