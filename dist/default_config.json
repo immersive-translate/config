@@ -1168,7 +1168,7 @@
       },
       "translationTextSeparator": "\n\n%%\n\n",
       "assistantId": "common",
-      "proModel": "claude-3-haiku-20240307",
+      "proModel": "claude-3-5-haiku-20241022",
       "proLimit": 10,
       "temperature": 0,
       "enableRichTranslate": true,
@@ -14963,6 +14963,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-28T08:33:55.514Z",
+  "buildinConfigUpdatedAt": "2025-03-28T08:53:02.387Z",
   "latestVersion": "1.15.10"
 }
