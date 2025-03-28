@@ -14955,6 +14955,9 @@
       "preTranslateLimiter.add_v.[1.12.1]": {
         "header.enableTranslate": true
       },
+      "excludeSelectors.add": [
+        ".site-header"
+      ],
       "initialSelectorGlobalAttributes.remove": {
         "header": {}
       },
@@ -14963,6 +14966,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-28T08:53:02.387Z",
+  "buildinConfigUpdatedAt": "2025-03-28T13:24:42.022Z",
   "latestVersion": "1.15.10"
 }
