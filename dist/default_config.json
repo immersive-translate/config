@@ -14593,6 +14593,16 @@
       ]
     },
     {
+      "id": "doc2x",
+      "matches": [
+        "doc2x.com",
+        "doc2x.noedgeai.com"
+      ],
+      "additionalExcludeSelectors.add": [
+        "#md-scroll-top-dom"
+      ]
+    },
+    {
       "id": "mathsisfun",
       "matches": "www.mathsisfun.com",
       "stayOriginalSelectors.add": [
@@ -14952,6 +14962,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-28T08:19:17.062Z",
+  "buildinConfigUpdatedAt": "2025-03-28T08:25:30.087Z",
   "latestVersion": "1.15.10"
 }
