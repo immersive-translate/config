@@ -7527,6 +7527,11 @@
         ".ad-slot-header__wrapper",
         "#pageFooter"
       ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.selectors": [
+          ".header__wrapper-outer"
+        ]
+      },
       "bodyRule.add": {
         "bodySelector": ".layout__content-wrapper",
         "articleSelector": ".article__content-container"
@@ -14966,6 +14971,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-28T13:24:42.022Z",
+  "buildinConfigUpdatedAt": "2025-03-29T14:09:56.302Z",
   "latestVersion": "1.15.10"
 }
