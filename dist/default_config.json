@@ -14619,11 +14619,13 @@
       "id": "autoHeight",
       "matches": [
         "*.sooplive.*",
-        "zen-browser.app"
+        "zen-browser.app",
+        "message.alibaba.com"
       ],
       "injectedCss.add": [
         ".side_list a,.title a,.tit {-webkit-line-clamp:unset!important;height:unset!important;}",
-        "details {height:unset!important;}"
+        "details {height:unset!important;}",
+        ".product-title {height:unset!important;-webkit-line-clamp:unset!important;}"
       ]
     },
     {
@@ -14971,6 +14973,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-29T14:09:56.302Z",
+  "buildinConfigUpdatedAt": "2025-03-29T14:48:38.092Z",
   "latestVersion": "1.15.10"
 }
