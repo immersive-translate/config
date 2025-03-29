@@ -2468,7 +2468,8 @@
       ".textLayer > span[role=presentation]",
       ".rpv-core__text-layer > span[role=presentation]",
       "time",
-      ".countdown"
+      ".countdown",
+      "[class*='-timer']"
     ],
     "mouseHoverExcludeSelectors": [
       "rp",
@@ -14616,6 +14617,16 @@
       ]
     },
     {
+      "id": "atcoder",
+      "matches": [
+        "atcoder.jp"
+      ],
+      "excludeSelectors.add": [
+        ".nav-tabs"
+      ],
+      "enableRichTranslate": false
+    },
+    {
       "id": "autoHeight",
       "matches": [
         "*.sooplive.*",
@@ -14973,6 +14984,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-29T14:48:38.092Z",
+  "buildinConfigUpdatedAt": "2025-03-29T15:12:44.885Z",
   "latestVersion": "1.15.10"
 }
