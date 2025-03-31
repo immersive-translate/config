@@ -440,7 +440,8 @@
     "https://pro.codewithandrea.com/[CodeWithAndrea]",
     "https://watch.hikaritv.xyz/[Hikaritv]",
     "https://university.lowstresshandling.com/[LowStressHandling]",
-    "https://subscription.packtpub.com/[Packtpub]"
+    "https://subscription.packtpub.com/[Packtpub]",
+    "https://learn.unity.com/[UnityLearn]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -10319,6 +10320,21 @@
       }
     },
     {
+      "id": "unity-learn",
+      "matches": [
+        "learn.unity.com"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "videoPlayerSelector": "video",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": "div.vjs-subs-caps-button"
+        }
+      }
+    },
+    {
       "id": "hbogo",
       "matches": [
         "www.hbogoasia.*"
@@ -15017,6 +15033,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-31T03:39:07.500Z",
+  "buildinConfigUpdatedAt": "2025-03-31T06:53:30.901Z",
   "latestVersion": "1.15.10"
 }
