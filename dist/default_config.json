@@ -13960,6 +13960,24 @@
       }
     },
     {
+      "id": "18comic",
+      "matches": [
+        "18comic.vip"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".scramble-page img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "uzakichanmanga",
       "matches": [
         "ww1.uzakichanmanga.com"
@@ -14999,6 +15017,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-30T12:40:13.992Z",
+  "buildinConfigUpdatedAt": "2025-03-31T03:39:07.500Z",
   "latestVersion": "1.15.10"
 }
