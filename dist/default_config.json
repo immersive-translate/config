@@ -5626,9 +5626,10 @@
       ],
       "subtitleRule.add": {
         "type": "ebutt",
-        "hookType": "xhr",
+        "hookType": "xhr|fetch",
         "enableHookDownload": true,
         "subtitleUrlRegExp": "\\.ttml2$",
+        "videoSelector": "#dv-web-player video",
         "loadingContainerSelector": "#dv-web-player",
         "quickButtonRule": {
           "appendSelector": "[class*=\"infobar-container\"] > div > div:nth-child(3)"
@@ -15060,6 +15061,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-31T12:19:40.487Z",
+  "buildinConfigUpdatedAt": "2025-03-31T13:10:30.020Z",
   "latestVersion": "1.15.10"
 }
