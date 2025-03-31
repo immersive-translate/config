@@ -2789,6 +2789,10 @@
         "https://app.infread.com/pdf/*",
         "http://localhost:38001/pdf*"
       ],
+      "skipDynamicMarkSelectors": [
+        ".immersive-translate-page",
+        ".immersive-translate-page *"
+      ],
       "detectTextBufferLength": 80,
       "additionalExcludeSelectors.remove": [
         "[contenteditable=\"true\"]"
@@ -15074,6 +15078,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-31T15:12:10.491Z",
+  "buildinConfigUpdatedAt": "2025-03-31T16:12:59.215Z",
   "latestVersion": "1.15.10"
 }
