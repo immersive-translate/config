@@ -318,7 +318,8 @@
     "https://play.dlsite.com/[Dlsite][chrome,firefox,safari]",
     "https://ww1.uzakichanmanga.com/[uzakichanmanga][chrome,firefox,safari]",
     "https://pocket.shonenmagazine.com/[Shonenmagazine][chrome,firefox,safari]",
-    "https://comic.naver.com[ComicNaver][chrome,firefox,safari,imtAndroid]"
+    "https://comic.naver.com[ComicNaver][chrome,firefox,safari,imtAndroid]",
+    "https://comic-zenon.com/[comic-zenon][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -9360,6 +9361,21 @@
       ]
     },
     {
+      "id": "comic-zenon",
+      "matches": [
+        "comic-zenon.com"
+      ],
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          "canvas.page-image.js-page-image"
+        ],
+        "urlFetchType": "canvasArgs",
+        "opImageType": "append"
+      },
+      "_comment": "all"
+    },
+    {
       "id": "shonenjumpplus",
       "matches": [
         "shonenjumpplus.com",
@@ -15040,6 +15056,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-31T11:56:27.457Z",
+  "buildinConfigUpdatedAt": "2025-03-31T12:18:59.490Z",
   "latestVersion": "1.15.10"
 }
