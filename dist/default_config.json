@@ -9542,7 +9542,8 @@
     {
       "id": "manhwa-raw",
       "matches": [
-        "manhwa-raw.com"
+        "manhwa-raw.com",
+        "ero18x.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -15039,6 +15040,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-31T11:54:48.768Z",
+  "buildinConfigUpdatedAt": "2025-03-31T11:56:27.457Z",
   "latestVersion": "1.15.10"
 }
