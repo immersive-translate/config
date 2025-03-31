@@ -5635,7 +5635,11 @@
         },
         "injectedCss": [
           "#immersive-translate-quick-button-container { display: inline-block; }"
-        ]
+        ],
+        "attachRule": {
+          "appendSelector": ".atvwebplayersdk-overlays-container",
+          "injectedGlobalCSS": ".atvwebplayersdk-captions-text {display:none!important;}"
+        }
       }
     },
     {
@@ -15056,6 +15060,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-31T12:18:59.490Z",
+  "buildinConfigUpdatedAt": "2025-03-31T12:19:40.487Z",
   "latestVersion": "1.15.10"
 }
