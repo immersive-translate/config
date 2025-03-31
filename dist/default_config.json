@@ -13776,7 +13776,8 @@
         "platforms": [
           "chrome",
           "firefox",
-          "safari"
+          "safari",
+          "imtAndroid"
         ],
         "type": "manga",
         "injectedCss": ".imt-loading {z-index:999 !important;}",
@@ -15033,6 +15034,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-31T06:53:30.901Z",
+  "buildinConfigUpdatedAt": "2025-03-31T08:59:10.918Z",
   "latestVersion": "1.15.10"
 }
