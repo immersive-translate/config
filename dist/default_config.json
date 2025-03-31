@@ -3859,7 +3859,9 @@
         "https://github.com/readme/",
         "https://github.com/features/*",
         "https://github.com/codespaces",
-        "https://github.com/customer-stories/*"
+        "https://github.com/customer-stories/*",
+        "https://github.com/signup",
+        "https://github.com/login"
       ],
       "mutationExcludeSelectors": [
         ".react-blob-sticky-header *"
@@ -15037,6 +15039,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-31T11:51:33.358Z",
+  "buildinConfigUpdatedAt": "2025-03-31T11:54:48.768Z",
   "latestVersion": "1.15.10"
 }
