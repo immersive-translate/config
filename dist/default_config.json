@@ -14040,6 +14040,24 @@
       }
     },
     {
+      "id": "manhwas",
+      "matches": [
+        "www.manhwas.men"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#chapter_imgs img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "yinmh",
       "matches": [
         "www.yinmh.com"
@@ -15061,6 +15079,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-31T13:10:30.020Z",
+  "buildinConfigUpdatedAt": "2025-03-31T14:19:25.558Z",
   "latestVersion": "1.15.10"
 }
