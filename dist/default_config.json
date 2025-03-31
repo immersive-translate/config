@@ -13628,7 +13628,10 @@
     },
     {
       "id": "tkr375",
-      "matches": "tkr375.com",
+      "matches": [
+        "tkr375.com",
+        "tkr413.com"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
@@ -15034,6 +15037,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-31T08:59:10.918Z",
+  "buildinConfigUpdatedAt": "2025-03-31T11:51:33.358Z",
   "latestVersion": "1.15.10"
 }
