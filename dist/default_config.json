@@ -2470,8 +2470,7 @@
       ".textLayer > span[role=presentation]",
       ".rpv-core__text-layer > span[role=presentation]",
       "time",
-      ".countdown",
-      "[class*='-timer']"
+      ".countdown"
     ],
     "mouseHoverExcludeSelectors": [
       "rp",
@@ -15075,6 +15074,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-31T14:56:21.413Z",
+  "buildinConfigUpdatedAt": "2025-03-31T15:12:10.491Z",
   "latestVersion": "1.15.10"
 }
