@@ -2767,8 +2767,7 @@
       "blockMinWordCount": 1,
       "containerMinTextCount": 1,
       "wrapperPrefix": "<br />",
-      "targetWrapperTag": "span",
-      "detectTextBufferLength": 80
+      "targetWrapperTag": "span"
     },
     {
       "id": "pdf",
@@ -2793,7 +2792,6 @@
         ".immersive-translate-page",
         ".immersive-translate-page *"
       ],
-      "detectTextBufferLength": 0,
       "additionalExcludeSelectors.remove": [
         "[contenteditable=\"true\"]"
       ],
@@ -2891,7 +2889,6 @@
       "toastErrorMinTimes": 0,
       "isTranslateWhenServiceChanged": false,
       "isTranslateTitle": false,
-      "detectTextBufferLength": 80,
       "targetWrapperTag": "span",
       "isInjectVersion": "true",
       "enableRichTranslate": true,
@@ -3030,7 +3027,6 @@
         ".sub-table td",
         ".sub-table tr"
       ],
-      "detectTextBufferLength": 80,
       "detectParagraphLanguage": true,
       "isInjectVersion": true,
       "isInjectMeta": true,
@@ -15079,6 +15075,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-02T07:46:01.405Z",
+  "buildinConfigUpdatedAt": "2025-04-02T07:51:38.682Z",
   "latestVersion": "1.15.10"
 }
