@@ -2793,10 +2793,11 @@
         ".immersive-translate-page",
         ".immersive-translate-page *"
       ],
-      "detectTextBufferLength": 80,
+      "detectTextBufferLength": 0,
       "additionalExcludeSelectors.remove": [
         "[contenteditable=\"true\"]"
       ],
+      "detectParagraphLanguage": true,
       "isTranslateWhenServiceChanged": false,
       "translationMode": "translation",
       "skipEditableCheck": true,
@@ -15078,6 +15079,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-03-31T16:12:59.215Z",
+  "buildinConfigUpdatedAt": "2025-04-02T07:46:01.405Z",
   "latestVersion": "1.15.10"
 }
