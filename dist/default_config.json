@@ -442,7 +442,8 @@
     "https://watch.hikaritv.xyz/[Hikaritv]",
     "https://university.lowstresshandling.com/[LowStressHandling]",
     "https://subscription.packtpub.com/[Packtpub]",
-    "https://learn.unity.com/[UnityLearn]"
+    "https://learn.unity.com/[UnityLearn]",
+    "https://www.medbridge.com/[Medbridge]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -12405,6 +12406,41 @@
       }
     },
     {
+      "id": "medbridge",
+      "matches": [
+        "www.medbridge.com"
+      ],
+      "excludeSelectors.add": [
+        "#player-video"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#player-video *"
+      ],
+      "subtitleRule.add": {
+        "type": "multi_attach_vtt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": "\\.vtt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "injectCSS": ".label { display: none; }",
+          "insertBeforeSelector": ".jw-icon-cc"
+        },
+        "attachRule": {
+          "appendSelector": "#player-video",
+          "injectedCSS": [
+            ".jw-text-track-display { display: none; }"
+          ]
+        },
+        "multiSetting": {
+          "activeLangSelector": ".jw-settings-submenu-active .jw-settings-item-active",
+          "langTextRegex": "^(\\S+)\\s",
+          "urlLangRegex": "_(.*?)\\.vtt",
+          "isMapLangFromUrl": true
+        }
+      }
+    },
+    {
       "id": "urplay",
       "matches": [
         "urplay.se"
@@ -15071,6 +15107,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-02T09:30:00.391Z",
+  "buildinConfigUpdatedAt": "2025-04-02T10:08:58.424Z",
   "latestVersion": "1.15.10"
 }
