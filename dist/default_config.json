@@ -11742,14 +11742,10 @@
           "injectCSS": ".imt-quick-subtitle-button {margin-right: 0px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}"
         },
         "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}",
+          "[class^=CaptionsRenderer_module_captionsLine]:nth-child(2) {direction:rtl;width:100%;text-align:right;}"
         ],
-        "attachRule": {
-          "appendSelector": ".vp-video-wrapper",
-          "injectedGlobalCSS": [
-            ".vp-captions {display: none !important;}"
-          ]
-        }
+        "enableHookDownload": true
       }
     },
     {
@@ -15075,6 +15071,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-02T07:51:38.682Z",
+  "buildinConfigUpdatedAt": "2025-04-02T09:30:00.391Z",
   "latestVersion": "1.15.10"
 }
