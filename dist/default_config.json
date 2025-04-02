@@ -6707,6 +6707,9 @@
         "pre"
       ],
       "isTransformPreTagNewLine": true,
+      "extraBlockSelectors.add": [
+        "[href^='#page']"
+      ],
       "preWhitespaceDetectedTags": [
         "DIV",
         "SPAN",
@@ -15107,6 +15110,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-02T10:08:58.424Z",
+  "buildinConfigUpdatedAt": "2025-04-02T15:19:49.209Z",
   "latestVersion": "1.15.10"
 }
