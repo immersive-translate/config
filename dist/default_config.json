@@ -810,7 +810,7 @@
       ],
       "maxTextGroupLengthPerRequest": 50,
       "enableRichTranslate": true,
-      "enableBrowserApi": true
+      "enableBrowserApi": false
     },
     "transmart": {
       "limit": 20,
@@ -15110,6 +15110,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-02T15:19:49.209Z",
+  "buildinConfigUpdatedAt": "2025-04-03T01:58:27.836Z",
   "latestVersion": "1.15.10"
 }
