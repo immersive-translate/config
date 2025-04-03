@@ -319,7 +319,8 @@
     "https://ww1.uzakichanmanga.com/[uzakichanmanga][chrome,firefox,safari]",
     "https://pocket.shonenmagazine.com/[Shonenmagazine][chrome,firefox,safari]",
     "https://comic.naver.com[ComicNaver][chrome,firefox,safari,imtAndroid]",
-    "https://comic-zenon.com/[comic-zenon][chrome,firefox,safari]"
+    "https://comic-zenon.com/[comic-zenon][chrome,firefox,safari]",
+    "https://www.webtoons.com/[Webtoons][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -14110,6 +14111,24 @@
       }
     },
     {
+      "id": "webtoons",
+      "matches": [
+        "www.webtoons.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".viewer_img img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "app.schildi.chat",
       "matches": "app.schildi.chat",
       "additionalExcludeSelectors.remove": [
@@ -15110,6 +15129,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-03T06:14:12.338Z",
+  "buildinConfigUpdatedAt": "2025-04-03T07:30:14.023Z",
   "latestVersion": "1.15.10"
 }
