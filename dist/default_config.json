@@ -5618,7 +5618,8 @@
       "matches": [
         "www.primevideo.com",
         "https://*.amazon.co.*/*video*",
-        "https://*.amazon.com/*video*"
+        "https://*.amazon.com/*video*",
+        "https://*.amazon.*/*video*"
       ],
       "excludeSelectors.add": [
         "#dv-web-player"
@@ -15129,6 +15130,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-03T12:10:55.745Z",
+  "buildinConfigUpdatedAt": "2025-04-04T05:06:54.593Z",
   "latestVersion": "1.15.10"
 }
