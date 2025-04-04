@@ -14820,7 +14820,8 @@
         "courses.kevinpowell.co",
         "learn.ni.com",
         "cgcookie.com",
-        "academy.yoast.com"
+        "academy.yoast.com",
+        "courses.mavenanalytics.io"
       ],
       "selectorMatches": [
         ".wistia_embed"
@@ -15131,6 +15132,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-04T13:41:22.945Z",
+  "buildinConfigUpdatedAt": "2025-04-04T14:12:11.493Z",
   "latestVersion": "1.15.10"
 }
