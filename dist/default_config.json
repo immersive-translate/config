@@ -4034,7 +4034,9 @@
     },
     {
       "id": "youtubeMobile",
-      "matches": "m.youtube.com",
+      "matches": [
+        "m.youtube.com"
+      ],
       "selectors": [
         ".comment-text",
         "#content-text",
@@ -4046,7 +4048,8 @@
         ".title"
       ],
       "skipDynamicMarkSelectors": [
-        "ytm-comment-replies-renderer"
+        "ytm-comment-replies-renderer",
+        "panel-container *"
       ],
       "shareConfig": {
         "injectCss": false,
@@ -15133,6 +15136,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-05T06:29:55.851Z",
+  "buildinConfigUpdatedAt": "2025-04-06T08:30:38.753Z",
   "latestVersion": "1.15.10"
 }
