@@ -4057,6 +4057,7 @@
           "iron-iconset-svg",
           "iframe",
           "ytd-watch-next-secondary-results-renderer",
+          ".immersive-translate-error-modal-shadow-root",
           "noscript",
           "script"
         ]
@@ -4165,6 +4166,7 @@
           "iron-iconset-svg",
           "iframe",
           "ytd-watch-next-secondary-results-renderer",
+          ".immersive-translate-error-modal-shadow-root",
           "noscript",
           "script"
         ]
@@ -15136,6 +15138,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-06T08:30:38.753Z",
+  "buildinConfigUpdatedAt": "2025-04-06T12:22:56.440Z",
   "latestVersion": "1.15.10"
 }
