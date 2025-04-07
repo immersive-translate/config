@@ -9666,6 +9666,22 @@
       }
     },
     {
+      "id": "fxfx302",
+      "matches": "fxfx302.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".image-view img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "pixiv",
       "matches": [
         "www.pixiv.net"
@@ -15161,6 +15177,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-07T02:01:35.512Z",
+  "buildinConfigUpdatedAt": "2025-04-07T09:45:13.190Z",
   "latestVersion": "1.15.10"
 }
