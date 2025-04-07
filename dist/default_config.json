@@ -444,7 +444,8 @@
     "https://university.lowstresshandling.com/[LowStressHandling]",
     "https://subscription.packtpub.com/[Packtpub]",
     "https://learn.unity.com/[UnityLearn]",
-    "https://www.medbridge.com/[Medbridge]"
+    "https://www.medbridge.com/[Medbridge]",
+    "https://grayinstitute.inspire360.com/[GrayxInstitute]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -11353,6 +11354,28 @@
       }
     },
     {
+      "id": "grayinstitute",
+      "matches": [
+        "grayinstitute.inspire360.com"
+      ],
+      "excludeSelectors.add": [
+        "#content-view"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#content-view *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": ".*\\.vtt",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "injectCSS": ".label { display: none; }",
+          "insertBeforeSelector": "div.vjs-subs-caps-button"
+        }
+      }
+    },
+    {
       "id": "paramountplus",
       "matches": [
         "*.paramountplus.com"
@@ -15138,6 +15161,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-06T12:22:56.440Z",
+  "buildinConfigUpdatedAt": "2025-04-07T02:01:35.512Z",
   "latestVersion": "1.15.10"
 }
