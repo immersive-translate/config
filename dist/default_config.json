@@ -8256,7 +8256,8 @@
       },
       "likePreSelectors.add": [
         ".sc-eGRUor.jQrKLC",
-        "[class='sc-990a20cf-6 kTpbRT']"
+        "[class='sc-990a20cf-6 kTpbRT']",
+        "[class='sc-bd2a2bb7-3 jMfRKN']"
       ],
       "isTransformPreTagNewLine": true,
       "forceFormatPre": true
@@ -15177,6 +15178,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-07T09:45:13.190Z",
+  "buildinConfigUpdatedAt": "2025-04-08T03:55:38.308Z",
   "latestVersion": "1.15.10"
 }
