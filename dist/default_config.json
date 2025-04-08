@@ -320,7 +320,8 @@
     "https://pocket.shonenmagazine.com/[Shonenmagazine][chrome,firefox,safari]",
     "https://comic.naver.com[ComicNaver][chrome,firefox,safari,imtAndroid]",
     "https://comic-zenon.com/[comic-zenon][chrome,firefox,safari]",
-    "https://www.webtoons.com/[Webtoons][chrome,firefox,safari]"
+    "https://www.webtoons.com/[Webtoons][chrome,firefox,safari]",
+    "https://www.lezhin.com/[Lezhin Comics][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -15202,6 +15203,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-08T10:22:41.806Z",
+  "buildinConfigUpdatedAt": "2025-04-08T11:12:09.320Z",
   "latestVersion": "1.15.10"
 }
