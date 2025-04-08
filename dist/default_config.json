@@ -14182,6 +14182,25 @@
       }
     },
     {
+      "id": "lezhin",
+      "matches": [
+        "lezhin.com",
+        "www.lezhin.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".scrollViewCut__dBC__ img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "app.schildi.chat",
       "matches": "app.schildi.chat",
       "additionalExcludeSelectors.remove": [
@@ -15183,6 +15202,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-08T08:45:25.751Z",
+  "buildinConfigUpdatedAt": "2025-04-08T10:22:41.806Z",
   "latestVersion": "1.15.10"
 }
