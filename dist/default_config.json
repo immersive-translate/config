@@ -11383,13 +11383,18 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
+        "hookType": "xhr",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": "video-js",
         "subtitleUrlRegExp": ".*\\.vtt",
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
           "injectCSS": ".label { display: none; }",
           "insertBeforeSelector": "div.vjs-subs-caps-button"
-        }
+        },
+        "injectedCss": [
+          "#immersive-translate-quick-button-container { position: absolute; bottom: 34px; right: 70px; }"
+        ]
       }
     },
     {
@@ -15178,6 +15183,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-08T03:55:38.308Z",
+  "buildinConfigUpdatedAt": "2025-04-08T07:33:26.560Z",
   "latestVersion": "1.15.10"
 }
