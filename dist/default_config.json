@@ -15147,6 +15147,16 @@
       }
     },
     {
+      "id": "common3.pdfWebPage",
+      "selectorMatches": [
+        "#statements-pdf"
+      ],
+      "pdfUrlExtractRule": {
+        "selector": "#statements-pdf",
+        "attribute": "src"
+      }
+    },
+    {
       "id": "txt",
       "matches": [
         "*://*/*.txt",
@@ -15204,6 +15214,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-08T19:12:58.481Z",
+  "buildinConfigUpdatedAt": "2025-04-09T02:47:21.708Z",
   "latestVersion": "1.15.10"
 }
