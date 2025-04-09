@@ -445,8 +445,7 @@
     "https://university.lowstresshandling.com/[LowStressHandling]",
     "https://subscription.packtpub.com/[Packtpub]",
     "https://learn.unity.com/[UnityLearn]",
-    "https://www.medbridge.com/[Medbridge]",
-    "https://grayinstitute.inspire360.com/[GrayxInstitute]"
+    "https://www.medbridge.com/[Medbridge]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -11373,33 +11372,6 @@
       }
     },
     {
-      "id": "grayinstitute",
-      "matches": [
-        "grayinstitute.inspire360.com"
-      ],
-      "excludeSelectors.add": [
-        "#content-view"
-      ],
-      "mutationExcludeSelectors.add": [
-        "#content-view *"
-      ],
-      "subtitleRule.add": {
-        "type": "subsrt",
-        "hookType": "xhr",
-        "videoPlayerSelector": "video",
-        "loadingContainerSelector": "video-js",
-        "subtitleUrlRegExp": ".*\\.vtt",
-        "quickButtonRule": {
-          "appendSelector": ".vjs-control-bar",
-          "injectCSS": ".label { display: none; }",
-          "insertBeforeSelector": "div.vjs-subs-caps-button"
-        },
-        "injectedCss": [
-          "#immersive-translate-quick-button-container { position: absolute; bottom: 34px; right: 70px; }"
-        ]
-      }
-    },
-    {
       "id": "paramountplus",
       "matches": [
         "*.paramountplus.com"
@@ -15214,6 +15186,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-09T02:47:21.708Z",
+  "buildinConfigUpdatedAt": "2025-04-09T09:02:38.567Z",
   "latestVersion": "1.15.10"
 }
