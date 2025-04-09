@@ -321,7 +321,8 @@
     "https://comic.naver.com[ComicNaver][chrome,firefox,safari,imtAndroid]",
     "https://comic-zenon.com/[comic-zenon][chrome,firefox,safari]",
     "https://www.webtoons.com/[Webtoons][chrome,firefox,safari]",
-    "https://www.lezhin.com/[Lezhin Comics][chrome,firefox,safari]"
+    "https://www.lezhin.com/[Lezhin Comics][chrome,firefox,safari]",
+    "https://klmanga.my/[KLMANGA]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -15205,6 +15206,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-09T13:04:07.048Z",
+  "buildinConfigUpdatedAt": "2025-04-09T15:49:39.015Z",
   "latestVersion": "1.15.10"
 }
