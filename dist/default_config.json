@@ -10177,6 +10177,25 @@
       }
     },
     {
+      "id": "klmanga.my",
+      "matches": [
+        "klmanga.my"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".render .z_content img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "hanime1",
       "matches": [
         "hanime1.me"
@@ -15186,6 +15205,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-09T09:02:38.567Z",
+  "buildinConfigUpdatedAt": "2025-04-09T13:04:07.048Z",
   "latestVersion": "1.15.10"
 }
