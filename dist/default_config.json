@@ -1456,7 +1456,8 @@
       "apiUrl": "https://api.x.ai/v1/chat/completions",
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true
+      "translationEnableRichTranslate": true,
+      "models": "grok-2-1212|grok-2|grok-2-latest|grok-3-mini-fast-beta|grok-3-mini-beta|grok-3-fast-beta|grok-3-beta"
     },
     "ollama": {
       "extends": "ai",
@@ -15226,6 +15227,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-09T16:07:30.365Z",
+  "buildinConfigUpdatedAt": "2025-04-10T02:01:38.959Z",
   "latestVersion": "1.15.10"
 }
