@@ -324,7 +324,8 @@
     "https://www.lezhin.com/[Lezhin Comics][chrome,firefox,safari]",
     "https://klmanga.my/[KLMANGA][chrome,firefox,safari,imtAndroid]",
     "https://toptoon.com/[Toptoon][chrome,firefox,safari,imtAndroid]",
-    "https://sololevelingfree.vip/[SoloLevelingFree][chrome,firefox,safari,imtAndroid]"
+    "https://sololevelingfree.vip/[SoloLevelingFree][chrome,firefox,safari,imtAndroid]",
+    "https://rawkuma.net/[Rawkuma][chrome,firefox,safari][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -10237,6 +10238,24 @@
       }
     },
     {
+      "id": "rawkuma.net",
+      "matches": [
+        "rawkuma.net"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "img.ts-main-image"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -15247,6 +15266,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-10T07:25:33.724Z",
+  "buildinConfigUpdatedAt": "2025-04-10T08:58:55.312Z",
   "latestVersion": "1.15.10"
 }
