@@ -325,7 +325,7 @@
     "https://klmanga.my/[KLMANGA][chrome,firefox,safari,imtAndroid]",
     "https://toptoon.com/[Toptoon][chrome,firefox,safari,imtAndroid]",
     "https://sololevelingfree.vip/[SoloLevelingFree][chrome,firefox,safari,imtAndroid]",
-    "https://rawkuma.net/[Rawkuma][chrome,firefox,safari][chrome,firefox,safari,imtAndroid]",
+    "https://rawkuma.net/[Rawkuma][chrome,firefox,safari,imtAndroid]",
     "https://page.kakao.com/[Kakao][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
@@ -15311,6 +15311,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-10T11:22:42.864Z",
+  "buildinConfigUpdatedAt": "2025-04-10T11:27:21.589Z",
   "latestVersion": "1.15.10"
 }
