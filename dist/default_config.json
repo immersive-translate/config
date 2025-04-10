@@ -10256,6 +10256,24 @@
       }
     },
     {
+      "id": "tkr415.com",
+      "matches": [
+        "tkr415.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "div#tnimg img.lazyload-img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -15266,6 +15284,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-10T08:58:55.312Z",
+  "buildinConfigUpdatedAt": "2025-04-10T09:40:19.612Z",
   "latestVersion": "1.15.10"
 }
