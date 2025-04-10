@@ -325,7 +325,8 @@
     "https://klmanga.my/[KLMANGA][chrome,firefox,safari,imtAndroid]",
     "https://toptoon.com/[Toptoon][chrome,firefox,safari,imtAndroid]",
     "https://sololevelingfree.vip/[SoloLevelingFree][chrome,firefox,safari,imtAndroid]",
-    "https://rawkuma.net/[Rawkuma][chrome,firefox,safari][chrome,firefox,safari,imtAndroid]"
+    "https://rawkuma.net/[Rawkuma][chrome,firefox,safari][chrome,firefox,safari,imtAndroid]",
+    "https://page.kakao.com/[Kakao][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -6518,13 +6519,6 @@
       "minZIndex": -1
     },
     {
-      "id": "kakao",
-      "matches": "page.kakao.com",
-      "shadowRootSelectors": [
-        "div[style^='visibility: visible'"
-      ]
-    },
-    {
       "id": "coinmarketcap",
       "matches": "coinmarketcap.com",
       "extraBlockSelectors.add": [
@@ -10277,6 +10271,27 @@
         "type": "manga",
         "imageSelectors": [
           "div#chapter-content img[data-src]"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
+      "id": "page.kakao.com",
+      "matches": [
+        "page.kakao.com"
+      ],
+      "shadowRootSelectors": [
+        "div[style^='visibility: visible'"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".image-container img[loading='lazy']"
         ],
         "platforms": [
           "chrome",
@@ -15296,6 +15311,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-10T10:18:19.762Z",
+  "buildinConfigUpdatedAt": "2025-04-10T11:22:42.864Z",
   "latestVersion": "1.15.10"
 }
