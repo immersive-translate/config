@@ -323,7 +323,8 @@
     "https://www.webtoons.com/[Webtoons][chrome,firefox,safari]",
     "https://www.lezhin.com/[Lezhin Comics][chrome,firefox,safari]",
     "https://klmanga.my/[KLMANGA][chrome,firefox,safari,imtAndroid]",
-    "https://toptoon.com/[Toptoon][chrome,firefox,safari,imtAndroid]"
+    "https://toptoon.com/[Toptoon][chrome,firefox,safari,imtAndroid]",
+    "https://sololevelingfree.vip/[SoloLevelingFree][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[Youtube]",
@@ -14216,6 +14217,25 @@
       }
     },
     {
+      "id": "sololevelingfree.vip",
+      "matches": [
+        "sololevelingfree.vip"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "div.relative img.object-contain"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "app.schildi.chat",
       "matches": "app.schildi.chat",
       "additionalExcludeSelectors.remove": [
@@ -15227,6 +15247,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-10T02:01:38.959Z",
+  "buildinConfigUpdatedAt": "2025-04-10T07:25:33.724Z",
   "latestVersion": "1.15.10"
 }
