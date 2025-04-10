@@ -14982,6 +14982,41 @@
       ]
     },
     {
+      "id": "wistia-hook",
+      "matches": [
+        "agencysupremacy.io"
+      ],
+      "excludeSelectors.add": [
+        "div[data-handle='captions']"
+      ],
+      "mutationExcludeSelectors.add": [
+        "div[data-handle='captions'] *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "quickButtonRule": {
+          "appendSelector": ".w-bottom-bar-right-inner.w-css-reset",
+          "insertBeforeSelector": ".w-bottom-bar-right-inner.w-css-reset>.w-css-reset:first-child",
+          "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: 120px !important; bottom 30px; }"
+        },
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ],
+        "type": "general",
+        "subtitleUrlRegExp": "embed/captions/.*\\.json",
+        "hookType": "fetch",
+        "loadingContainerSelector": "div[data-handle='captions']",
+        "generalSetting": {
+          "captionsPath": "captions",
+          "itemsPath": "hash.lines",
+          "textKey": "text",
+          "startKey": "start",
+          "endKey": "end"
+        }
+      }
+    },
+    {
       "id": "wistia",
       "matches": [
         "*.wistia.net",
@@ -15311,6 +15346,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-10T11:27:21.589Z",
+  "buildinConfigUpdatedAt": "2025-04-10T14:15:09.559Z",
   "latestVersion": "1.15.10"
 }
