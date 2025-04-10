@@ -10268,6 +10268,24 @@
       }
     },
     {
+      "id": "manhwa18.com",
+      "matches": [
+        "manhwa18.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "div#chapter-content img[data-src]"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -15278,6 +15296,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-10T09:44:56.875Z",
+  "buildinConfigUpdatedAt": "2025-04-10T10:18:19.762Z",
   "latestVersion": "1.15.10"
 }
