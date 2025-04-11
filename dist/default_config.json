@@ -329,11 +329,11 @@
     "https://page.kakao.com/[Kakao][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
-    "https://www.youtube.com[Youtube]",
-    "https://tv.youtube.com[TV Youtube]",
-    "https://www.youtubekids.com[Youtube Kids]",
-    "https://www.netflix.com[NetFlix]",
-    "https://www.primevideo.com[PrimeVideo]",
+    "https://www.youtube.com[YouTube]",
+    "https://tv.youtube.com[TV YouTube]",
+    "https://www.youtubekids.com[YouTube Kids]",
+    "https://www.netflix.com[Netflix]",
+    "https://www.primevideo.com[Prime Video]",
     "https://twitter.com[Twitter Spaces]",
     "https://www.facebook.com/[Facebook]",
     "https://play.max.com[HBO Max]",
@@ -15364,6 +15364,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-10T14:51:44.491Z",
+  "buildinConfigUpdatedAt": "2025-04-11T02:50:49.983Z",
   "latestVersion": "1.15.10"
 }
