@@ -10827,6 +10827,9 @@
       "mutationExcludeSelectors.add": [
         ".jw-text-track-container *"
       ],
+      "injectedCss.add": [
+        "[class*=overflow] {max-height:unset!important;}"
+      ],
       "subtitleRule.add": {
         "type": "subsrt",
         "subtitleUrlRegExp": "\\.srt$",
@@ -15364,6 +15367,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-11T02:50:49.983Z",
+  "buildinConfigUpdatedAt": "2025-04-11T10:33:09.288Z",
   "latestVersion": "1.15.10"
 }
