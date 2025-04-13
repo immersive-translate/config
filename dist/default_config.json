@@ -2995,6 +2995,7 @@
         "table",
         ".mmd-context-menu"
       ],
+      "longBuildPageLength": 1000,
       "skipEditableCheck": true,
       "injectedCss.add": [
         ".immersive-translate-target-wrapper {white-space: unset;}",
@@ -15387,6 +15388,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-11T14:47:02.147Z",
+  "buildinConfigUpdatedAt": "2025-04-13T07:18:36.753Z",
   "latestVersion": "1.15.10"
 }
