@@ -9693,6 +9693,7 @@
           ".work-thumb",
           "[role=\"presentation\"] img",
           ".manga-page img[src*=\"webp\"]",
+          ".manga-page .c-relative img[src*=\"jpg\"]",
           ".zoomable-area img"
         ],
         "platforms": [
@@ -15388,6 +15389,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-13T07:18:36.753Z",
+  "buildinConfigUpdatedAt": "2025-04-14T03:08:52.957Z",
   "latestVersion": "1.15.10"
 }
