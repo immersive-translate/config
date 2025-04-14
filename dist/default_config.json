@@ -14986,6 +14986,18 @@
       "enableRichTranslate": false
     },
     {
+      "id": "trade",
+      "matches": [
+        "axiom.trade"
+      ],
+      "extraInlineSelectors.add": [
+        "[class^=tweet-body_root]"
+      ],
+      "atomicBlockSelectors.add": [
+        "[class^=tweet-body_root] *"
+      ]
+    },
+    {
       "id": "autoHeight",
       "matches": [
         "*.sooplive.*",
@@ -15389,6 +15401,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-14T03:08:52.957Z",
+  "buildinConfigUpdatedAt": "2025-04-14T14:25:18.911Z",
   "latestVersion": "1.15.10"
 }
