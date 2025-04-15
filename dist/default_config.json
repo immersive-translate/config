@@ -1214,7 +1214,7 @@
       "prompt": "Translate the text to {{to}} Language, please do not explain my original text.:\n\n{{text}}",
       "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}",
       "model": "gpt-4o-mini",
-      "proModel": "gpt-4o-mini",
+      "proModel": "gpt-4.1-mini",
       "proLimit": 10,
       "overrides": [
         {
@@ -15402,6 +15402,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-15T08:24:50.299Z",
+  "buildinConfigUpdatedAt": "2025-04-15T08:35:47.558Z",
   "latestVersion": "1.15.10"
 }
