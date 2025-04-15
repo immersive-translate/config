@@ -1406,6 +1406,7 @@
       "limit": 2,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
+      "models": "hunyuan-lite|hunyuan-standard|hunyuan-standard-256K|hunyuan-pro|DeepSeek-V3",
       "model": "hunyuan-standard"
     },
     "siliconcloud": {
@@ -15401,6 +15402,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-14T14:25:18.911Z",
+  "buildinConfigUpdatedAt": "2025-04-15T08:24:50.299Z",
   "latestVersion": "1.15.10"
 }
