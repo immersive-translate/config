@@ -9,6 +9,7 @@
   "sameLangCheck": true,
   "isPreview": false,
   "useOnlineOptions": false,
+  "enableMachineTranslateTerms": false,
   "immediateTranslationPattern": {
     "matches": [
       "twitter.com",
@@ -34,7 +35,20 @@
     ],
     "selectorExcludeMatches": []
   },
-  "popupMoreMenus": [],
+  "popupMoreMenus.add_v.[1.16.1]": [
+    {
+      "i18n": {
+        "zh-CN": "🔔沉浸式翻译术语库",
+        "zh-TW": "🔔沉浸式翻譯術語庫",
+        "en": "🔔Immersive Translate Glossary"
+      },
+      "key": "terms20250415",
+      "targetUrl": "https://dash.immersivetranslate.com/#terms",
+      "userType": "all",
+      "startTime": "2025-04-15 00:00:00",
+      "endTime": "2025-04-25 23:59:59"
+    }
+  ],
   "aiAssistantIds": [
     "paraphrase",
     "twitter",
@@ -203,6 +217,7 @@
   "donateUrl": "https://immersivetranslate.com/pricing",
   "uninstallUrl": "https://onboarding.immersivetranslate.com/uninstall",
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
+  "termsBaseUrl": "https://assets.immersivetranslate.cn/static/terms/",
   "arxivRule": {
     "injectContainerSelector": ".extra-services .full-text ul",
     "officialHtmlSelector": "#latexml-download-link",
@@ -475,9 +490,9 @@
     "*.medium.com",
     "news.ycombinator.com"
   ],
-  "spVersion": "1.15.11",
-  "ispVersion": "99.0.0",
-  "gspVersion": "99.0.0",
+  "spVersion": "99.99.99",
+  "ispVersion": "99.99.99",
+  "gspVersion": "99.99.99",
   "modifiedBySystem": false,
   "enableDefaultAlwaysTranslatedUrls": true,
   "isChangedAlwaysTranslatedUrls": false,
@@ -524,28 +539,36 @@
       "dash.immersivetranslate.com/*"
     ],
     "guideBlockUrls": [
-      "https://onboarding.immersivetranslate.com*",
       "https://immersivetranslate.com/accounts/login*",
-      "https://immersivetranslate.cn/accounts/login*"
+      "https://immersivetranslate.cn/accounts/login*",
+      "https://immersivetranslate.com/profile/",
+      "https://onboarding.immersivetranslate.com*"
     ],
+    "guideContentBlockUrls": [],
+    "defaultShowGuideNums": 1,
     "clickType": "translate",
     "afterInstalledAt": "",
     "fixedPosition": "right",
     "upgradeVisible": true,
-    "upgradeShowLimit": 20
+    "upgradeShowLimit": 20,
+    "transparency": 30
   },
   "pcFloatBall": {
     "enable": true,
+    "transparency": 30,
     "blockUrls": [
       "*immersivetranslate.com/preview",
       "*.immersivetranslate.com/download-subtitle*",
       "dash.immersivetranslate.com/*"
     ],
     "guideBlockUrls": [
-      "https://onboarding.immersivetranslate.com*",
       "https://immersivetranslate.com/accounts/login*",
-      "https://immersivetranslate.cn/accounts/login*"
+      "https://immersivetranslate.cn/accounts/login*",
+      "https://immersivetranslate.com/profile/",
+      "https://onboarding.immersivetranslate.com*"
     ],
+    "guideContentBlockUrls": [],
+    "defaultShowGuideNums": 1,
     "clickType": "translate",
     "afterInstalledAt": "2023-10-28",
     "fixedPosition": "right",
@@ -977,7 +1000,7 @@
     },
     "ai": {
       "env": {
-        "html_only": ", if the text contains html tags, please consider after translate, where the tags should be in translated result, meanwhile keep the result fluently.",
+        "html_only": "\n\nPs. if the text contains html tags, please consider after translate, where the tags should be in translated result, meanwhile keep the result fluently.",
         "imt_source_field": "text",
         "imt_trans_field": "text",
         "imt_sub_source_field": "text",
@@ -985,10 +1008,10 @@
         "imt_yaml_item": "- id: {{id}}\n  {{imt_source_field}}: {{text}}",
         "imt_subtitle_yaml_item": "- id: {{id}}\n  {{imt_sub_source_field}}: {{text}}",
         "normal_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_source_field}}: Source\nOutput:\n  - id: 1\n    {{imt_trans_field}}: Translation\n</example>",
-        "subtitle_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\nOutput:\n  - id: 1\n    {{imt_sub_trans_field}}: ...\n  - id: 2\n    {{imt_sub_trans_field}}: ...\n  - id: 3\n    {{imt_sub_trans_field}}: ...\n</example>",
+        "subtitle_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\nOutput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\n</example>",
         "title_prompt": "\n\n## Context Awareness\nDocument Metadata:\nTitle: 《{{imt_title}}》",
         "summary_prompt": "\n\n## Context Awareness\nDocument Metadata:\nSummary: {{imt_theme}}...",
-        "terms_prompt": "\nTerms: {{imt_terms}}",
+        "terms_prompt": "\nTerms (Prioritize this term mapping over other translations): {{imt_terms}}",
         "sub_summary_prompt": "\n\n## Context Awareness\nDocument Metadata:\nType: Subtitle\nSummary: {{imt_theme}}...",
         "sub_terms_prompt": "\nTerms: {{imt_terms}}"
       },
@@ -997,6 +1020,8 @@
       "multipleSystemPrompt": "You are a professional multi-paragraph translation engine.{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
       "multiplePrompt": "You will be given a YAML formatted input containing entries with \"id\" and \"{{imt_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{normal_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
       "subtitlePrompt": "You will be given a YAML formatted subtitles containing entries with \"id\" and \"{{imt_sub_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_sub_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_sub_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{subtitle_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
+      "selectionSystemPrompt": "You are a professional translation engine. You can translate text from {{from}} to {{to}}.\nYou can distinguish and translate words and sentences, and you can provide dictionary functions for words, providing phonetic symbols, meanings and examples.\nYou can also analyze the context of the word and provide a detailed analysis of the word in the context.\n\nREQUIREMENTS:\n1. If the input is a single word, return the translation, phonetic symbols, part of speech, meaning and example sentence.\n2. If the input is a sentence, phrase or multiple words, return the translation only, without any other fields.\n3. Must be follow the example JSON structure, must include all fields.\n4. DO NOT wrap the JSON output in any markdown code blocks, Output the JSON directly\n5. All explanations must be in {{to}}\n6. If it is an English word, use American phonetic symbols.Otherwise, use the phonetic system of that language.\n7. Analyze the word based on its context\n8. Provide a natural and relevant example sentence for words\n9. The same pos should be grouped together in the definitions array\n\nEXAMPLE OUTPUT FOR SINGLE WORD:\n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"adj.\",\n      \"meaning\": \"问候\",\n      \"example\": {\n        \"source\": \"Hello, world!\",\n        \"target\": \"你好，世界！\"\n      }\n    }\n  ]\n  \"translation\": \"你好\",\n  \"contextual_analysis\": \"你好，世界\",\n}\n\nEXAMPLE OUTPUT FOR SENTENCE、PHRASE, MULTIPLE WORD:\n{\n  \"translation\": \"This is a test sentence.\",\n}\n\n【Context Awareness】:\n\"{{context_text}}\"",
+      "selectionPrompt": "Below is the text to be translated:\n\n\"{{text}}\"",
       "langOverrides": [
         {
           "id": "auto2zh-CN",
@@ -1079,6 +1104,7 @@
       "maxTextLengthPerRequest": 3000,
       "maxTextGroupLengthPerRequestForSubtitle": 3,
       "translationTextSeparator": "\n<Keep This Symbol>",
+      "langOverrides": [],
       "bodyConfigs": {
         "generationConfig": {
           "temperature": 0,
@@ -1121,7 +1147,6 @@
       "enableRichTranslate": false,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
-      "langOverrides": [],
       "keepGlossariesPrompt": "Translate the text but keep placeholders like {{xxx}} in their original positions. ",
       "removeResRegexs": [
         "^##",
@@ -1139,7 +1164,6 @@
       ]
     },
     "gemini.add_v.[1.15.3]": {
-      "prompt": ";; Treat next line as plain text input and must translate it into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4,
       "replaceTextRegexes": [
@@ -1172,7 +1196,6 @@
         "anthropic-version": "2023-06-01",
         "anthropic-dangerous-direct-browser-access": "true"
       },
-      "translationTextSeparator": "\n\n%%\n\n",
       "assistantId": "common",
       "proModel": "claude-3-5-haiku-20241022",
       "proLimit": 10,
@@ -1266,7 +1289,6 @@
         }
       ],
       "maxTextGroupLengthPerRequestForSubtitle": 3,
-      "translationTextSeparator": "\n\n%%\n\n",
       "newlinePlaceholderDelimiters": [
         "\n<br>\n"
       ],
@@ -1355,7 +1377,6 @@
       },
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
-      "translationTextSeparator": "\n\n%%\n\n",
       "assistantId": "common"
     },
     "deepseek": {
@@ -1509,7 +1530,7 @@
         "zh-TW"
       ],
       "placeholderDelimiters": [
-        "@",
+        "#",
         "#"
       ],
       "provider": "custom",
@@ -1862,6 +1883,15 @@
         ".immersive-translate-error-modal-shadow-root"
       ]
     },
+    "selectionTranslation": {
+      "enable": false,
+      "urlPattern": {
+        "matches": [],
+        "excludeMatches": []
+      },
+      "enableAutoRead": false,
+      "triggerMode": "mini"
+    },
     "mutationConfig": {
       "consumeTimeout": 100,
       "buildTimeout": 100,
@@ -2009,6 +2039,7 @@
       "isInject": true,
       "preTranslation": false,
       "humanPreferred": true,
+      "aiSubtitlePreferred": true,
       "disabled": false,
       "hookType": "xhr",
       "showQuickButton": true,
@@ -4282,7 +4313,15 @@
             ".html5-video-player:not(.ytp-autohide) #immersive-translate-caption-window {bottom: 60px;}"
           ]
         },
-        "allowTempEnableSubtitle": true
+        "allowTempEnableSubtitle": true,
+        "aiSubtitle": {
+          "enable": true,
+          "urlRegex": [
+            "www.youtube.com/watch*",
+            "www.youtube.com/embed*",
+            "www.youtube.com/shorts*"
+          ]
+        }
       },
       "urlChangeDelay": 2000,
       "wrapperPrefix": "<br/>",
@@ -11582,7 +11621,8 @@
         "hookType": "fetch",
         "quickButtonRule": {
           "appendSelector": ".pointer-events-none #media-control-bar",
-          "insertBeforeSelector": ".pointer-events-none .media-volume-wrapper"
+          "insertBeforeSelector": ".pointer-events-none .media-volume-wrapper",
+          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 38px !important;}"
         },
         "activeLangSelector": "input[name=\"subtitle-language\"].after\\:visible",
         "videoPlayerSelector": "video",
@@ -11592,7 +11632,10 @@
           "media-controller div.pointer-events-none .flex .flex span.text-textPrimary-onDark span {white-space: pre-line;}"
         ],
         "attachRule": {
-          "appendSelector": "#maincontent .relative:not([class*=' ']):not([class^='']):not([class$=' '])",
+          "appendSelector": "#maincontent media-controller",
+          "injectedCSS": [
+            ".imt-caption-container {z-index:10;}"
+          ],
           "injectedGlobalCSS": [
             ".transition-transform { display: none !important; }",
             ".imt-caption-window { margin-bottom: 50px; }"
@@ -15403,6 +15446,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-16T03:19:48.910Z",
-  "latestVersion": "1.15.10"
+  "buildinConfigUpdatedAt": "2025-04-16T08:52:53.041Z",
+  "latestVersion": "1.16.1"
 }
