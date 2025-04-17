@@ -51,6 +51,8 @@
   ],
   "aiAssistantIds": [
     "paraphrase",
+    "plain-english",
+    "paragraph-summarizer-expert",
     "twitter",
     "tech",
     "reddit",
@@ -15468,6 +15470,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-17T04:38:50.161Z",
+  "buildinConfigUpdatedAt": "2025-04-17T04:43:06.666Z",
   "latestVersion": "1.16.2"
 }
