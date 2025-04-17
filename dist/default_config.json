@@ -1166,7 +1166,7 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "keepGlossariesPrompt": "Translate the text but keep placeholders like {{xxx}} in their original positions. ",
-      "removeResRegexs": [
+      "removeResRegexs.add": [
         "^##",
         "^```",
         "```$",
@@ -1564,7 +1564,7 @@
         "^输入文本无法识别，请提供有效的文本内容",
         "^无法翻译，输入内容无法识别"
       ],
-      "removeResRegexs": [
+      "removeResRegexs.add": [
         "翻译得更加自然和易懂了?。"
       ],
       "maxTextGroupLengthPerRequestForSubtitle": 1,
@@ -15465,6 +15465,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-16T09:49:52.000Z",
+  "buildinConfigUpdatedAt": "2025-04-17T03:59:02.134Z",
   "latestVersion": "1.16.2"
 }
