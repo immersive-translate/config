@@ -14839,7 +14839,10 @@
     {
       "id": "alphaxiv",
       "matches": "www.alphaxiv.org",
-      "likePreSelectors.add": "[data-sentry-component=Response]",
+      "likePreSelectors.add": [
+        "[data-sentry-component=Response]",
+        "[data-sentry-component=HTMLRenderer]"
+      ],
       "injectedCss.add": [
         "[class*=line-clamp] {-webkit-line-clamp:unset;}"
       ],
@@ -15465,6 +15468,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-17T03:59:02.134Z",
+  "buildinConfigUpdatedAt": "2025-04-17T04:00:32.096Z",
   "latestVersion": "1.16.2"
 }
