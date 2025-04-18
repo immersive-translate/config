@@ -15086,6 +15086,19 @@
       ]
     },
     {
+      "id": "pytorch",
+      "matches": [
+        "pytorch.org"
+      ],
+      "additionalExcludeSelectors.add": [
+        ".hello-bar",
+        "[data-cta='join']"
+      ],
+      "excludeSelectors.add": [
+        ".with-down-arrow"
+      ]
+    },
+    {
       "id": "autoHeight",
       "matches": [
         "*.sooplive.*",
@@ -15489,6 +15502,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-18T15:26:01.419Z",
+  "buildinConfigUpdatedAt": "2025-04-18T15:47:54.031Z",
   "latestVersion": "1.16.3"
 }
