@@ -546,8 +546,10 @@
       "https://immersivetranslate.com/profile/",
       "https://onboarding.immersivetranslate.com*"
     ],
-    "guideContentBlockUrls": [],
-    "defaultShowGuideNums": 1,
+    "guideContentBlockUrls": [
+      "https://onboarding.immersivetranslate.com*"
+    ],
+    "defaultShowGuideNums": 2,
     "clickType": "translate",
     "afterInstalledAt": "",
     "fixedPosition": "right",
@@ -569,8 +571,10 @@
       "https://immersivetranslate.com/profile/",
       "https://onboarding.immersivetranslate.com*"
     ],
-    "guideContentBlockUrls": [],
-    "defaultShowGuideNums": 1,
+    "guideContentBlockUrls": [
+      "https://onboarding.immersivetranslate.com*"
+    ],
+    "defaultShowGuideNums": 2,
     "clickType": "translate",
     "afterInstalledAt": "2023-10-28",
     "fixedPosition": "right",
@@ -1537,6 +1541,18 @@
       "limit": 5,
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://api.cognitive.microsofttranslator.com/",
+      "enableRichTranslate": true,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true
+    },
+    "openrouter": {
+      "extends": "custom-ai",
+      "name": "OpenRouter",
+      "provider": "custom",
+      "limit": 5,
+      "models": "deepseek/deepseek-chat-v3-0324:free|google/gemini-2.0-flash-exp:free|qwen/qwq-32b:free|google/gemini-2.0-flash-001|openai/gpt-4o-mini|google/gemini-flash-1.5-8b|google/gemini-flash-1.5-8b|google/gemini-2.0-flash-lite-001|google/gemini-flash-1.5|google/gemma-3-27b-it:free|nvidia/llama-3.1-nemotron-ultra-253b-v1:free",
+      "model": "google/gemini-2.0-flash-001",
+      "apiUrl": "https://openrouter.ai/api/v1/chat/completions",
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true
@@ -15470,6 +15486,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-17T04:43:06.666Z",
-  "latestVersion": "1.16.2"
+  "buildinConfigUpdatedAt": "2025-04-18T10:14:40.210Z",
+  "latestVersion": "1.16.3"
 }
