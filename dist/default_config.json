@@ -3145,6 +3145,7 @@
       ],
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
+      "detectParagraphLanguage": true,
       "allowInnerInvoke": true,
       "isInjectVersion": true,
       "isInjectMeta": true,
@@ -15487,6 +15488,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-18T11:52:52.112Z",
+  "buildinConfigUpdatedAt": "2025-04-18T15:02:49.267Z",
   "latestVersion": "1.16.3"
 }
