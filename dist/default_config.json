@@ -2406,6 +2406,7 @@
       "span.math-inline",
       ".reference-citations",
       ".code",
+      ".jp-CodeMirrorEditor",
       "cds-code-snippet",
       ".interactive-markdown__code"
     ],
@@ -15488,6 +15489,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-18T15:02:49.267Z",
+  "buildinConfigUpdatedAt": "2025-04-18T15:26:01.419Z",
   "latestVersion": "1.16.3"
 }
