@@ -3980,7 +3980,8 @@
         ".copilotPreview__footer",
         ".heading-element",
         ".js-feed-item-component h3 a[data-hovercard-type=pull_request]",
-        "[aria-labelledby=outline-id] nav"
+        "[aria-labelledby=outline-id] nav",
+        "[data-testid='issue-pr-title-link']"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}"
@@ -15486,6 +15487,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-18T10:14:19.000Z",
+  "buildinConfigUpdatedAt": "2025-04-18T11:52:52.112Z",
   "latestVersion": "1.16.3"
 }
