@@ -15100,6 +15100,16 @@
       ]
     },
     {
+      "id": "1688",
+      "matches": [
+        "www.1688.com"
+      ],
+      "injectedCss.add": [
+        "[class^='defaultSubNav'],[class^='loginButton'] {height:unset!important;}",
+        "[data-tracker='category'] > font {white-space:nowrap!important;}"
+      ]
+    },
+    {
       "id": "autoHeight",
       "matches": [
         "*.sooplive.*",
@@ -15522,6 +15532,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-21T11:08:53.411Z",
+  "buildinConfigUpdatedAt": "2025-04-21T14:48:28.229Z",
   "latestVersion": "1.16.4"
 }
