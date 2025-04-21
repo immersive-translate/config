@@ -15480,6 +15480,16 @@
       }
     },
     {
+      "id": "fix-flutter-doc-sider",
+      "matches": [
+        "docs.flutter.dev"
+      ],
+      "excludeSelectors.add": [
+        "span.expander.material-symbols",
+        "span.material-symbols"
+      ]
+    },
+    {
       "id": "fix-header",
       "selectorMatches": [
         "article header",
@@ -15502,6 +15512,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-18T15:47:54.031Z",
+  "buildinConfigUpdatedAt": "2025-04-21T09:23:12.621Z",
   "latestVersion": "1.16.3"
 }
