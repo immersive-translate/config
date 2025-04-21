@@ -3314,6 +3314,7 @@
       "selectors": [
         "[data-testid=\"tweetText\"]",
         ".tweet-text",
+        "[data-testid='tweet'] span",
         ".js-quoted-tweet-text",
         "[data-testid='card.layoutSmall.detail'] > div:nth-child(2)",
         "[data-testid='developerBuiltCardContainer'] > div:nth-child(2)",
@@ -15532,6 +15533,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-21T14:48:28.229Z",
+  "buildinConfigUpdatedAt": "2025-04-21T15:35:54.949Z",
   "latestVersion": "1.16.4"
 }
