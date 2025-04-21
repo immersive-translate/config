@@ -38,9 +38,9 @@
   "popupMoreMenus.add_v.[1.16.1]": [
     {
       "i18n": {
-        "zh-CN": "🔔沉浸式翻译术语库",
-        "zh-TW": "🔔沉浸式翻譯術語庫",
-        "en": "🔔Immersive Translate Glossary"
+        "zh-CN": "🔔 沉浸式翻译术语库",
+        "zh-TW": "🔔 沉浸式翻譯術語庫",
+        "en": "🔔 Immersive Translate Glossary"
       },
       "key": "terms20250415",
       "targetUrl": "https://dash.immersivetranslate.com/#terms",
@@ -189,7 +189,8 @@
     "he",
     "ckb",
     "fa",
-    "ur"
+    "ur",
+    "ug"
   ],
   "translationMode": "dual",
   "inputTranslationMode": "translation",
@@ -15512,6 +15513,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-21T09:23:12.621Z",
-  "latestVersion": "1.16.3"
+  "buildinConfigUpdatedAt": "2025-04-21T10:50:51.503Z",
+  "latestVersion": "1.16.4"
 }
