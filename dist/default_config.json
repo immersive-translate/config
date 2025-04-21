@@ -3067,6 +3067,16 @@
         "table",
         ".mmd-context-menu"
       ],
+      "advanceMergeConfig": [
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "translationLanguagePattern.add": {
+              "matches": []
+            }
+          }
+        }
+      ],
       "longBuildPageLength": 1000,
       "skipEditableCheck": true,
       "injectedCss.add": [
@@ -3163,7 +3173,17 @@
         "removeSelectors": [
           ".immersive-translate-error-modal-shadow-root"
         ]
-      }
+      },
+      "advanceMergeConfig": [
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "translationLanguagePattern.add": {
+              "matches": []
+            }
+          }
+        }
+      ]
     },
     {
       "id": "simpread",
@@ -15533,6 +15553,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-21T15:35:54.949Z",
+  "buildinConfigUpdatedAt": "2025-04-21T16:21:40.173Z",
   "latestVersion": "1.16.4"
 }
