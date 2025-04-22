@@ -4916,17 +4916,8 @@
         "[class^='embedTitle']",
         "[class^='embedDescription']",
         "[class^='promptContent']",
-        "nav[class^='container']",
         "li[class^='container'] > div[class^='header']"
       ],
-      "preTranslateLimiter.add_v.[1.12.1]": {
-        "keys": [
-          "side"
-        ],
-        "side.selectors": [
-          "nav[class^='container']"
-        ]
-      },
       "excludeSelectors.add": [
         "[class*='username']",
         "[class*='repliedMessage']"
@@ -15620,6 +15611,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-22T10:10:05.000Z",
+  "buildinConfigUpdatedAt": "2025-04-22T15:00:42.159Z",
   "latestVersion": "1.16.5"
 }
