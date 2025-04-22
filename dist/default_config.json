@@ -12006,9 +12006,10 @@
           "#immersive-translateQuickButton {visibility: inherit!important;}"
         ],
         "quickButtonRule": {
-          "appendSelector": "[data-control-bar=\"true\"] > div",
+          "appendSelector": "[data-control-bar=\"true\"] > div > div:nth-child(2) > div",
+          "insertBeforeSelector": "[data-control-bar=\"true\"] > div > div:nth-child(2) > div div[class*=\"ControlBarButtonsAndMenus\"]",
           "ccEnableSelector": "[data-cc-button=\"true\"]",
-          "injectCSS": ".imt-quick-subtitle-button {margin-right: 0px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}"
+          "injectCSS": ".imt-quick-subtitle-button {margin: 0 6px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}"
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}",
@@ -15553,6 +15554,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-22T05:40:14.727Z",
+  "buildinConfigUpdatedAt": "2025-04-22T06:26:43.814Z",
   "latestVersion": "1.16.4"
 }
