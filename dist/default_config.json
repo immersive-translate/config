@@ -345,7 +345,8 @@
     "https://sololevelingfree.vip/[SoloLevelingFree][chrome,firefox,safari,imtAndroid]",
     "https://rawkuma.net/[Rawkuma][chrome,firefox,safari,imtAndroid]",
     "https://page.kakao.com/[Kakao][chrome,firefox,safari,imtAndroid]",
-    "https://topreadmanga.com/[TopReadManga][chrome,firefox,safari,imtAndroid]"
+    "https://topreadmanga.com/[TopReadManga][chrome,firefox,safari,imtAndroid]",
+    "https://revengeoftheiron-bloodedswordhound.one/[Revenge of the Iron Blooded Swordhound][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -14468,6 +14469,25 @@
       }
     },
     {
+      "id": "revengeoftheiron-bloodedswordhound.one",
+      "matches": [
+        "revengeoftheiron-bloodedswordhound.one"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "div.entry-content p img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "app.schildi.chat",
       "matches": "app.schildi.chat",
       "additionalExcludeSelectors.remove": [
@@ -15571,6 +15591,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-22T08:42:15.697Z",
+  "buildinConfigUpdatedAt": "2025-04-22T09:04:06.539Z",
   "latestVersion": "1.16.4"
 }
