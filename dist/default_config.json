@@ -2874,6 +2874,16 @@
         "https://app.infread.com/pdf/*",
         "http://localhost:38001/pdf*"
       ],
+      "advanceMergeConfig": [
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "translationLanguagePattern.add": {
+              "matches": []
+            }
+          }
+        }
+      ],
       "skipDynamicMarkSelectors": [
         ".immersive-translate-page",
         ".immersive-translate-page *"
@@ -15611,6 +15621,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-22T15:00:42.159Z",
+  "buildinConfigUpdatedAt": "2025-04-22T15:19:21.042Z",
   "latestVersion": "1.16.5"
 }
