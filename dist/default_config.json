@@ -1929,7 +1929,15 @@
         "excludeMatches": []
       },
       "enableAutoRead": false,
-      "triggerMode": "mini"
+      "triggerMode": "mini",
+      "proService": {
+        "service": "gemini",
+        "model": "gemini-2.0-flash"
+      },
+      "commonService": {
+        "service": "zhipu",
+        "model": "glm-4-flash"
+      }
     },
     "mutationConfig": {
       "consumeTimeout": 100,
@@ -4334,6 +4342,25 @@
       "mutationExcludeSelectors.add": [
         ".imt-caption-container *"
       ],
+      "advanceMergeConfig": [
+        {
+          "condition": "abTagNumber<2",
+          "advanceConfig": {
+            "generalRule": {
+              "subtitleRule.add": {
+                "aiSubtitle": {
+                  "enable": true,
+                  "urlRegex": [
+                    "www.youtube.com/watch*",
+                    "www.youtube.com/embed*",
+                    "www.youtube.com/shorts*"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
       "subtitleRule.add": {
         "type": "youtube",
         "hookType": "xhr_response",
@@ -4376,15 +4403,7 @@
             ".html5-video-player:not(.ytp-autohide) #immersive-translate-caption-window {bottom: 60px;}"
           ]
         },
-        "allowTempEnableSubtitle": true,
-        "aiSubtitle": {
-          "enable": true,
-          "urlRegex": [
-            "www.youtube.com/watch*",
-            "www.youtube.com/embed*",
-            "www.youtube.com/shorts*"
-          ]
-        }
+        "allowTempEnableSubtitle": true
       },
       "urlChangeDelay": 2000,
       "wrapperPrefix": "<br/>",
@@ -4896,8 +4915,18 @@
         "div[class^=messagesPopout]",
         "[class^='embedTitle']",
         "[class^='embedDescription']",
-        "[class^='promptContent']"
+        "[class^='promptContent']",
+        "nav[class^='container']",
+        "li[class^='container'] > div[class^='header']"
       ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "keys": [
+          "side"
+        ],
+        "side.selectors": [
+          "nav[class^='container']"
+        ]
+      },
       "excludeSelectors.add": [
         "[class*='username']",
         "[class*='repliedMessage']"
@@ -15591,6 +15620,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-22T09:04:06.539Z",
-  "latestVersion": "1.16.4"
+  "buildinConfigUpdatedAt": "2025-04-22T10:10:26.568Z",
+  "latestVersion": "1.16.5"
 }
