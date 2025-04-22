@@ -3334,7 +3334,7 @@
       "selectors": [
         "[data-testid=\"tweetText\"]",
         ".tweet-text",
-        "[data-testid='tweet'] span",
+        "[data-testid='tweet'] [class='css-175oi2r r-13awgt0 r-eqz5dr r-iphfwy r-3o4zer r-ttdzmv']",
         ".js-quoted-tweet-text",
         "[data-testid='card.layoutSmall.detail'] > div:nth-child(2)",
         "[data-testid='developerBuiltCardContainer'] > div:nth-child(2)",
@@ -15553,6 +15553,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-21T16:21:40.173Z",
+  "buildinConfigUpdatedAt": "2025-04-22T05:40:14.727Z",
   "latestVersion": "1.16.4"
 }
