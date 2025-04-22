@@ -4895,8 +4895,18 @@
         "div[class^=messagesPopout]",
         "[class^='embedTitle']",
         "[class^='embedDescription']",
-        "[class^='promptContent']"
+        "[class^='promptContent']",
+        "nav[class^='container']",
+        "li[class^='container'] > div[class^='header']"
       ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "keys": [
+          "side"
+        ],
+        "side.selectors": [
+          "nav[class^='container']"
+        ]
+      },
       "excludeSelectors.add": [
         "[class*='username']",
         "[class*='repliedMessage']"
@@ -15571,6 +15581,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-22T06:41:01.146Z",
+  "buildinConfigUpdatedAt": "2025-04-22T08:41:26.234Z",
   "latestVersion": "1.16.4"
 }
