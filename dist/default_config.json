@@ -13748,6 +13748,9 @@
       "excludeSelectors": [
         "header[default-translate]",
         "footer[default-translate]"
+      ],
+      "stayOriginalSelectors.add": [
+        ".math.notranslate"
       ]
     },
     {
@@ -15632,6 +15635,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-23T06:28:51.433Z",
+  "buildinConfigUpdatedAt": "2025-04-23T06:31:50.565Z",
   "latestVersion": "1.16.5"
 }
