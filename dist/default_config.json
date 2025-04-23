@@ -9097,6 +9097,18 @@
       }
     },
     {
+      "id": "wto.to",
+      "matches": "wto.to",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "div[name='image-item'] > div > img"
+        ],
+        "loadingStyle": "z-index: 9999;"
+      }
+    },
+    {
       "id": "pash-up",
       "matches": "pash-up.jp",
       "imageRule.add": {
@@ -15695,6 +15707,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-23T10:05:57.087Z",
+  "buildinConfigUpdatedAt": "2025-04-23T10:35:06.839Z",
   "latestVersion": "1.16.5"
 }
