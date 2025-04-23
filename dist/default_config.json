@@ -5675,7 +5675,8 @@
         ".postMetaInline",
         "a .u-fontSize24",
         "pre .ha",
-        "pre"
+        "pre",
+        "div > p > span"
       ],
       "excludeSelectors": [
         "[aria-label='Post Preview Reading Time']",
@@ -15635,6 +15636,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-23T06:39:54.865Z",
+  "buildinConfigUpdatedAt": "2025-04-23T06:44:34.988Z",
   "latestVersion": "1.16.5"
 }
