@@ -15552,7 +15552,8 @@
         "file://*/*.txt"
       ],
       "selectorMatches": [
-        "body > pre"
+        "body > pre",
+        ".transcripts > pre"
       ],
       "longBuildPageLength": 1000,
       "mutationExcludeSelectors.add": [
@@ -15631,6 +15632,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-23T06:22:03.901Z",
+  "buildinConfigUpdatedAt": "2025-04-23T06:28:51.433Z",
   "latestVersion": "1.16.5"
 }
