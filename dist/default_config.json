@@ -15599,6 +15599,15 @@
       ]
     },
     {
+      "id": "fix-hidden-cis.vemic.com",
+      "matches": [
+        "cis.vemic.com"
+      ],
+      "injectedCss.add": [
+        "span.hotData-text[data-immersive-translate-walked] { -webkit-line-clamp: unset !important; line-clamp: unset !important;}"
+      ]
+    },
+    {
       "id": "fix-header",
       "selectorMatches": [
         "article header",
@@ -15621,6 +15630,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-22T15:19:21.042Z",
+  "buildinConfigUpdatedAt": "2025-04-23T06:09:10.025Z",
   "latestVersion": "1.16.5"
 }
