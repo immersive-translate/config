@@ -1825,6 +1825,9 @@
       ],
       "[default-translate] a": [
         "/^.{0,50}$/"
+      ],
+      ".breadcrumbs": [
+        "/^.{0,50}$/"
       ]
     },
     "skipBuildContainerSelectors": [
@@ -2510,8 +2513,7 @@
     ],
     "atomicBlockTags": [],
     "excludeSelectors": [
-      "[default-translate]",
-      ".breadcrumbs"
+      "[default-translate]"
     ],
     "additionalExcludeSelectors": [
       "[contenteditable=\"true\"]",
@@ -15637,6 +15639,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-23T07:21:37.644Z",
+  "buildinConfigUpdatedAt": "2025-04-23T07:36:17.606Z",
   "latestVersion": "1.16.5"
 }
