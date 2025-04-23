@@ -8387,6 +8387,7 @@
         }
       },
       "likePreSelectors.add": [
+        "[elevation='subtle'] .sc-brSvTw > :first-child > :first-child",
         ".sc-eGRUor.jQrKLC",
         "[class='sc-990a20cf-6 kTpbRT']",
         "[class='sc-bd2a2bb7-3 jMfRKN']"
@@ -15636,6 +15637,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-23T06:44:34.988Z",
+  "buildinConfigUpdatedAt": "2025-04-23T07:21:37.644Z",
   "latestVersion": "1.16.5"
 }
