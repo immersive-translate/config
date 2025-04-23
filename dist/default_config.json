@@ -9045,6 +9045,21 @@
       }
     },
     {
+      "id": "pixhentai.com",
+      "matches": "pixhentai.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".thumbnail img",
+          "figure img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ]
+      }
+    },
+    {
       "id": "fantia",
       "matches": "fantia_notranslate.*",
       "imageRule.add": {
@@ -15658,6 +15673,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-23T08:36:48.100Z",
+  "buildinConfigUpdatedAt": "2025-04-23T09:08:42.392Z",
   "latestVersion": "1.16.5"
 }
