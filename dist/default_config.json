@@ -14526,6 +14526,25 @@
       }
     },
     {
+      "id": "www.wn03.ru",
+      "matches": [
+        "www.wn03.ru"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "div#img_list img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "app.schildi.chat",
       "matches": "app.schildi.chat",
       "additionalExcludeSelectors.remove": [
@@ -15639,6 +15658,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-23T07:36:17.606Z",
+  "buildinConfigUpdatedAt": "2025-04-23T08:36:48.100Z",
   "latestVersion": "1.16.5"
 }
