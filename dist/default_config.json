@@ -9060,6 +9060,17 @@
       }
     },
     {
+      "id": "toongod.cc",
+      "matches": "toongod.cc",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".reading-content img"
+        ]
+      }
+    },
+    {
       "id": "fantia",
       "matches": "fantia_notranslate.*",
       "imageRule.add": {
@@ -9072,6 +9083,17 @@
           "div"
         ],
         "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
+      "id": "nhentai.com",
+      "matches": "nhentai.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "div[id^=page] img"
+        ]
       }
     },
     {
@@ -15673,6 +15695,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-23T09:08:42.392Z",
+  "buildinConfigUpdatedAt": "2025-04-23T10:05:57.087Z",
   "latestVersion": "1.16.5"
 }
