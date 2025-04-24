@@ -7809,7 +7809,7 @@
       ]
     },
     {
-      "id": "pubmed.ncbi.nlm.nih.gov",
+      "id": "pubmed",
       "matches": [
         "pubmed.ncbi.nlm.nih.gov",
         "pubmed*.pubmed*",
@@ -7874,9 +7874,6 @@
         ".title-translate {display:block;}",
         ".immersive-translate-target-inner br{display:none;}"
       ],
-      "bodyRule.add": {
-        "bodySelector": ".search-results-list"
-      },
       "preTranslateLimiter.add_v.[1.12.1]": {
         "header.enableTranslate": true
       }
@@ -15702,6 +15699,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-23T12:58:08.040Z",
+  "buildinConfigUpdatedAt": "2025-04-24T01:47:09.041Z",
   "latestVersion": "1.16.5"
 }
