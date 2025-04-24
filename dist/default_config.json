@@ -4299,7 +4299,9 @@
         ".imt-caption-container",
         "ytd-button-renderer",
         ".ytp-sfn-content div :last-child",
-        "ytd-live-chat-frame"
+        "ytd-live-chat-frame",
+        "yt-button-shape",
+        "ytd-comments-header-renderer"
       ],
       "additionalExcludeSelectors.remove.[1.14.1]": [
         "ytd-live-chat-frame"
@@ -15700,6 +15702,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-24T15:49:57.357Z",
+  "buildinConfigUpdatedAt": "2025-04-24T19:06:12.211Z",
   "latestVersion": "1.16.5"
 }
