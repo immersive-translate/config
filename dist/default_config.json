@@ -11105,7 +11105,7 @@
           "appendSelector": "[role=\"presentation\"] > .rc-ControlBar > .icon-container"
         },
         "attachRule": {
-          "appendSelector": "[data-vjs-player=\"true\"]",
+          "appendSelector": "#vjs_video_3",
           "injectedGlobalCSS": [
             "video::cue {opacity: 0}"
           ]
@@ -15782,6 +15782,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-25T07:24:39.505Z",
+  "buildinConfigUpdatedAt": "2025-04-25T08:08:19.962Z",
   "latestVersion": "1.16.5"
 }
