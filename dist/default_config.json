@@ -1552,7 +1552,11 @@
       "apiUrl": "https://openrouter.ai/api/v1/chat/completions",
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true
+      "translationEnableRichTranslate": true,
+      "headerConfigs": {
+        "HTTP-Referer": "https://immersivetranslate.com",
+        "X-Title": "Immersive Translation"
+      }
     },
     "zhipu": {
       "extends": "ai",
@@ -1937,6 +1941,7 @@
         "model": "glm-4-flash"
       }
     },
+    "enableAutoTranslateByReferrer": true,
     "mutationConfig": {
       "consumeTimeout": 100,
       "buildTimeout": 100,
@@ -15782,6 +15787,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-25T08:08:19.962Z",
-  "latestVersion": "1.16.5"
+  "buildinConfigUpdatedAt": "2025-04-25T11:27:05.194Z",
+  "latestVersion": "1.16.6"
 }
