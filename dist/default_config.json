@@ -11889,6 +11889,9 @@
       "mutationExcludeSelectors.add": [
         ".jw-wrapper *"
       ],
+      "selectionTranslation.add": {
+        "enable": false
+      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -15764,6 +15767,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-25T06:34:51.911Z",
+  "buildinConfigUpdatedAt": "2025-04-25T06:57:19.243Z",
   "latestVersion": "1.16.5"
 }
