@@ -4354,7 +4354,7 @@
       ],
       "advanceMergeConfig": [
         {
-          "condition": "abTagNumber<2",
+          "condition": "true",
           "advanceConfig": {
             "generalRule": {
               "subtitleRule.add": {
@@ -15702,6 +15702,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-24T19:06:12.211Z",
+  "buildinConfigUpdatedAt": "2025-04-25T03:29:37.358Z",
   "latestVersion": "1.16.5"
 }
