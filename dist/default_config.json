@@ -11223,6 +11223,9 @@
         "kerolaunochan.*",
         "megacloud.*"
       ],
+      "selectionTranslation": {
+        "enable": false
+      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "excludeSelectors.add": [
@@ -11303,9 +11306,10 @@
       }
     },
     {
-      "id": "rottentomatoes",
+      "id": "common-vtt-jw",
       "matches": [
-        "*.rottentomatoes.com"
+        "*.rottentomatoes.com",
+        "megaplay.buzz"
       ],
       "excludeSelectors.add": [
         ".jw-wrapper"
@@ -11313,9 +11317,16 @@
       "mutationExcludeSelectors.add": [
         ".jw-wrapper *"
       ],
+      "selectionTranslation": {
+        "enable": false
+      },
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
-        "type": "webvtt",
-        "subtitleUrlRegExp": "\\.vtt$",
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "fetch|xhr",
+        "subtitleUrlRegExp": "\\.vtt",
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
           "insertBeforeSelector": ".jw-icon-cc"
@@ -15702,6 +15713,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-25T03:29:37.358Z",
+  "buildinConfigUpdatedAt": "2025-04-25T04:09:43.218Z",
   "latestVersion": "1.16.5"
 }
