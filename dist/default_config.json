@@ -3587,19 +3587,18 @@
         ".iOzk7[jsname='dsyhDe'] *"
       ],
       "extraInlineSelectors.add": [
-        ".bh44bd.VbkSUe",
-        ".bYevke.wY1pdd"
+        ".bh44bd.VbkSUe"
       ],
       "subtitleRule.add": {
         "type": "live",
         "injectedCss": [
-          ".bYevke.wY1pdd { font-size: 1.2rem !important; }",
+          ".bh44bd.VbkSUe { font-size: 1.2rem !important; }",
           "font.immersive-translate-target-wrapper { font-size: 1.2rem; display: inline-block; padding-left: 55px; }",
           "font.immersive-translate-target-wrapper br { display: none; }"
         ],
         "liveSubtitleRule": {
           "containerSelector": ".iOzk7[jsname='dsyhDe']",
-          "textContentSelector": ".bYevke.wY1pdd",
+          "textContentSelector": ".bh44bd.VbkSUe",
           "reportSelector": ".iOzk7[jsname='dsyhDe']",
           "mutationChangeDelay": 1000,
           "findParentBlockDepth": 5,
@@ -15783,6 +15782,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-25T06:59:53.822Z",
+  "buildinConfigUpdatedAt": "2025-04-25T07:24:39.505Z",
   "latestVersion": "1.16.5"
 }
