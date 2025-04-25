@@ -15329,6 +15329,22 @@
       ]
     },
     {
+      "id": "seller-tiktok",
+      "matches": [
+        "seller.tiktok.com"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
+      "excludeSelectors.add": [
+        ".chatd-message-userName"
+      ],
+      "excludeTags.remove": [
+        "PRE"
+      ]
+    },
+    {
       "id": "autoHeight",
       "matches": [
         "*.sooplive.*",
@@ -15767,6 +15783,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-25T06:57:19.243Z",
+  "buildinConfigUpdatedAt": "2025-04-25T06:59:53.822Z",
   "latestVersion": "1.16.5"
 }
