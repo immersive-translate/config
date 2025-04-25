@@ -11344,7 +11344,7 @@
       "mutationExcludeSelectors.add": [
         ".player *"
       ],
-      "selectionTranslation": {
+      "selectionTranslation.add": {
         "enable": false
       },
       "mainFrameMinTextCount": 0,
@@ -15716,6 +15716,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-25T06:18:45.539Z",
+  "buildinConfigUpdatedAt": "2025-04-25T06:22:10.520Z",
   "latestVersion": "1.16.5"
 }
