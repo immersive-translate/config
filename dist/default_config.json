@@ -11386,6 +11386,9 @@
         "#vilos *",
         "#immersive-translate-caption-window *"
       ],
+      "selectionTranslation.add": {
+        "enable": false
+      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -15749,6 +15752,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-25T06:30:45.464Z",
+  "buildinConfigUpdatedAt": "2025-04-25T06:32:55.359Z",
   "latestVersion": "1.16.5"
 }
