@@ -15335,7 +15335,8 @@
     {
       "id": "seller-tiktok",
       "matches": [
-        "seller.tiktok.com"
+        "seller.tiktok.com",
+        "affiliate.tiktok.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -15787,6 +15788,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-25T11:26:44.000Z",
+  "buildinConfigUpdatedAt": "2025-04-25T14:30:35.140Z",
   "latestVersion": "1.16.6"
 }
