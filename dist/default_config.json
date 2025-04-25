@@ -12085,6 +12085,9 @@
       "mutationExcludeSelectors.add": [
         ".vp-captions *"
       ],
+      "selectionTranslation.add": {
+        "enable": false
+      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -12124,6 +12127,9 @@
         ".vp-captions *",
         ".vp-captions-line *"
       ],
+      "selectionTranslation.add": {
+        "enable": false
+      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -12901,6 +12907,9 @@
       "matches": [
         "api.playposit.com"
       ],
+      "selectionTranslation.add": {
+        "enable": false
+      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "excludeSelectors.add": [
@@ -15366,6 +15375,9 @@
       "mutationExcludeSelectors.add": [
         "div[data-handle='captions'] *"
       ],
+      "selectionTranslation.add": {
+        "enable": false
+      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -15752,6 +15764,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-25T06:32:55.359Z",
+  "buildinConfigUpdatedAt": "2025-04-25T06:34:51.911Z",
   "latestVersion": "1.16.5"
 }
