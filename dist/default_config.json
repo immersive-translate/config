@@ -11344,6 +11344,9 @@
       "mutationExcludeSelectors.add": [
         ".player *"
       ],
+      "selectionTranslation": {
+        "enable": false
+      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -15713,6 +15716,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-25T04:09:43.218Z",
+  "buildinConfigUpdatedAt": "2025-04-25T06:18:45.539Z",
   "latestVersion": "1.16.5"
 }
