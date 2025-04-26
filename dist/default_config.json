@@ -305,7 +305,7 @@
     "https://comic-action.com/[Comic-action][chrome,firefox,safari]",
     "https://m.ac.qq.com/[腾讯动漫][chrome,firefox,safari]",
     "https://www.mangajikan.com/[Mangajikan][chrome,firefox,safari]",
-    "https://Komiku.com/[komiku][chrome,firefox,safari]",
+    "https://Komiku.com/[komiku][chrome,firefox,safari,imtAndroid]",
     "https://www.mangakoinu.com/[Mangakoinu][chrome,firefox,safari]",
     "https://www.sololevelingmangafree.com/[Sololevelingmangafree][chrome,firefox,safari]",
     "https://syosetu.si/[Syosetu][chrome,firefox,safari]",
@@ -14080,7 +14080,10 @@
     },
     {
       "id": "komiku",
-      "matches": "komiku.com",
+      "matches": [
+        "komiku.com",
+        "komiku.one"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
@@ -14090,7 +14093,8 @@
         "platforms": [
           "chrome",
           "firefox",
-          "safari"
+          "safari",
+          "imtAndroid"
         ]
       }
     },
@@ -15788,6 +15792,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-25T14:30:35.140Z",
+  "buildinConfigUpdatedAt": "2025-04-26T07:37:35.852Z",
   "latestVersion": "1.16.6"
 }
