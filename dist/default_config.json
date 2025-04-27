@@ -5680,7 +5680,7 @@
         ".postMetaInline",
         "a .u-fontSize24",
         "pre .ha",
-        "pre",
+        "pre > div > div > div",
         "div > p > span"
       ],
       "excludeSelectors": [
@@ -15793,6 +15793,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-27T02:34:04.873Z",
+  "buildinConfigUpdatedAt": "2025-04-27T02:51:12.681Z",
   "latestVersion": "1.16.6"
 }
