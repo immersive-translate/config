@@ -471,7 +471,8 @@
     "https://subscription.packtpub.com/[Packtpub]",
     "https://learn.unity.com/[UnityLearn]",
     "https://www.medbridge.com/[Medbridge]",
-    "https://anix.com.co/[anix]"
+    "https://anix.com.co/[anix]",
+    "https://ahrefs.com/[ahrefs]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -15434,6 +15435,7 @@
     {
       "id": "wistia",
       "matches": [
+        "ahrefs.com",
         "*.wistia.net",
         "platform.thinkific.com",
         "courses.kevinpowell.co",
@@ -15473,7 +15475,7 @@
         "quickButtonRule": {
           "appendSelector": ".w-bottom-bar-right-inner.w-css-reset",
           "insertBeforeSelector": ".w-bottom-bar-right-inner.w-css-reset>.w-css-reset:first-child",
-          "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: 120px !important; bottom 30px; }"
+          "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: 120px !important; bottom 30px;right:80px !important; }"
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
@@ -15793,6 +15795,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-27T04:05:29.200Z",
+  "buildinConfigUpdatedAt": "2025-04-27T07:57:19.895Z",
   "latestVersion": "1.16.6"
 }
