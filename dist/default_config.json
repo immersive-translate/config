@@ -313,7 +313,7 @@
     "https://klmanga.rs/[Klmanga][chrome,firefox,safari]",
     "https://www.sukima.me[Sukima][chrome,firefox,safari,userscript]",
     "https://younganimal.com[YoungAnimal][chrome,firefox,safari,imtIOS]",
-    "https://piccoma.com[Piccoma][chrome,firefox,safari,userscript]",
+    "https://piccoma.com[Piccoma][chrome,firefox,safari]",
     "https://www.mangasuika.com/[Mangasuika][chrome,firefox,safari]",
     "https://www.firemanga.com/[Firemanga][chrome,firefox,safari]",
     "https://hentaizap.com/[Hentaizap][chrome,firefox,safari]",
@@ -1457,6 +1457,9 @@
     "siliconcloud": {
       "extends": "ai",
       "name": "siliconcloud",
+      "freeModels": [
+        "Qwen/Qwen2.5-7B-Instruct"
+      ],
       "provider": "custom",
       "limit": 10,
       "maxTextGroupLengthPerRequest": 3,
@@ -1564,6 +1567,10 @@
       "extends": "ai",
       "name": "zhipu",
       "model": "glm-4-flash",
+      "freeModels": [
+        "glm-4-flash"
+      ],
+      "models": "glm-4-flash|glm-4-flash-250414|glm-4-air|glm-4-airx|glm-4|glm-4-plus|glm-4-0520|glm-4-0520-plus",
       "defaultVisible": true,
       "defaultHiddenLangs": [
         "zh-TW"
@@ -9149,8 +9156,7 @@
         "platforms": [
           "chrome",
           "firefox",
-          "safari",
-          "userscript"
+          "safari"
         ]
       }
     },
@@ -15804,6 +15810,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-27T09:55:08.289Z",
-  "latestVersion": "1.16.6"
+  "buildinConfigUpdatedAt": "2025-04-27T10:47:47.213Z",
+  "latestVersion": "1.16.7"
 }
