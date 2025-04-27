@@ -11345,6 +11345,13 @@
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
           "insertBeforeSelector": ".jw-icon-cc"
+        },
+        "attachRule": {
+          "appendSelector": ".jw-wrapper",
+          "injectedGlobalCSS": [
+            ".jw-text-track-container {display: none;}",
+            "@media (min-width: 576px) { video::cue {opacity: 0} }"
+          ]
         }
       }
     },
@@ -15795,6 +15802,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-27T07:57:19.895Z",
+  "buildinConfigUpdatedAt": "2025-04-27T09:15:31.746Z",
   "latestVersion": "1.16.6"
 }
