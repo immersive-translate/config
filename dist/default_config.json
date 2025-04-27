@@ -1022,7 +1022,7 @@
         "summary_prompt": "\n\n## Context Awareness\nDocument Metadata:\nSummary: {{imt_theme}}...",
         "terms_prompt": "\nTerms (Prioritize this term mapping over other translations): {{imt_terms}}",
         "sub_summary_prompt": "\n\n## Context Awareness\nDocument Metadata:\nType: Subtitle\nSummary: {{imt_theme}}...",
-        "sub_terms_prompt": "\nTerms: {{imt_terms}}"
+        "sub_terms_prompt": "\nTerms (Prioritize this term mapping over other translations): {{imt_terms}}"
       },
       "systemPrompt": "You are a professional, authentic machine translation engine.{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
       "prompt": ";; Treat next line as plain text input and translate it into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
@@ -15793,6 +15793,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-27T02:51:12.681Z",
+  "buildinConfigUpdatedAt": "2025-04-27T04:05:29.200Z",
   "latestVersion": "1.16.6"
 }
