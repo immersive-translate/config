@@ -5682,7 +5682,9 @@
         "a .u-fontSize24",
         "pre .ha",
         "pre > div > div > div",
-        "div > p > span"
+        "div > p > span",
+        "section p,section span",
+        "a div span"
       ],
       "excludeSelectors": [
         "[aria-label='Post Preview Reading Time']",
@@ -15802,6 +15804,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-27T09:15:31.746Z",
+  "buildinConfigUpdatedAt": "2025-04-27T09:55:08.289Z",
   "latestVersion": "1.16.6"
 }
