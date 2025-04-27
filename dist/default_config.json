@@ -13383,7 +13383,8 @@
       "matches": "*.tandfonline.com",
       "extraInlineSelectors.add": [
         "span.off-screen"
-      ]
+      ],
+      "_comment": "该站点服务器对pdf资源做了保护，会严格要求host以及cookie才会响应application/pdf的请求 https://www.tandfonline.com/doi/pdf/10.1111/ajpy.12198"
     },
     {
       "id": "boringreport",
@@ -15810,6 +15811,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-27T14:09:41.515Z",
+  "buildinConfigUpdatedAt": "2025-04-27T16:35:06.494Z",
   "latestVersion": "1.16.7"
 }
