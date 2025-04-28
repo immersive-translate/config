@@ -4252,7 +4252,8 @@
         ".media-item-headline": "max-height:unset;-webkit-line-clamp:unset;"
       },
       "injectedCss": [
-        ".immersive-translate-target-wrapper img { width: 16px; height: 16px }"
+        ".immersive-translate-target-wrapper img { width: 16px; height: 16px }",
+        "h4.compact-media-item-headline {max-height:unset !important;line-clamp:unset !important;overflow:unset !important;-webkit-line-clamp:unset !important;}"
       ],
       "extraBlockSelectors.add": [
         ".caption-visual-line"
@@ -15811,6 +15812,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-27T16:35:06.494Z",
+  "buildinConfigUpdatedAt": "2025-04-28T08:03:49.571Z",
   "latestVersion": "1.16.7"
 }
