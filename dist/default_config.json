@@ -1458,7 +1458,8 @@
       "extends": "ai",
       "name": "siliconcloud",
       "freeModels": [
-        "Qwen/Qwen2.5-7B-Instruct"
+        "Qwen/Qwen2.5-7B-Instruct",
+        "THUDM/glm-4-9b-chat"
       ],
       "provider": "custom",
       "limit": 10,
@@ -1475,7 +1476,7 @@
         "@",
         "#"
       ],
-      "models": "Qwen/Qwen2.5-7B-Instruct|meta-llama/Meta-Llama-3.1-8B-Instruct|THUDM/glm-4-9b-chat"
+      "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/glm-4-9b-chat|meta-llama/Meta-Llama-3.1-8B-Instruct"
     },
     "siliconcloud.add_v.[1.15.3]": {
       "defaultMaxTextGroupLengthPerRequest": 4,
@@ -15812,6 +15813,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-28T08:03:49.571Z",
+  "buildinConfigUpdatedAt": "2025-04-28T14:30:35.149Z",
   "latestVersion": "1.16.7"
 }
