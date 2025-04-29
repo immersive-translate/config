@@ -6217,7 +6217,10 @@
         ".line-clamp-2": "-webkit-line-clamp:unset;max-height:unset;"
       },
       "excludeSelectors.add": [
-        "thead"
+        "thead",
+        "ul.text-base",
+        "a.group > div.flex-1",
+        "div.absolute.truncate"
       ]
     },
     {
@@ -15840,6 +15843,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-29T10:52:14.194Z",
+  "buildinConfigUpdatedAt": "2025-04-29T12:12:47.828Z",
   "latestVersion": "1.16.8"
 }
