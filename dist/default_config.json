@@ -13072,11 +13072,14 @@
       "mutationExcludeSelectors.add": [
         "[data-testid=\"video-player\"] *"
       ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
         "type": "webvtt",
         "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "xhr",
+        "loadingContainerSelector": ".playkit-subtitles",
         "quickButtonRule": {
           "appendSelector": ".playkit-bottom-bar .playkit-right-controls",
           "insertBeforeSelector": ".playkit-bottom-bar .playkit-right-controls .playkit-control-closed-captions"
@@ -15826,6 +15829,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-29T07:31:40.000Z",
+  "buildinConfigUpdatedAt": "2025-04-29T07:46:22.121Z",
   "latestVersion": "1.16.8"
 }
