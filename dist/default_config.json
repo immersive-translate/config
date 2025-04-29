@@ -8090,7 +8090,11 @@
         ".d4t-icon"
       ],
       "injectedCss": [
-        "font {font-family: sans-serif !important;}"
+        "font {font-family: sans-serif !important;}",
+        ".d4t-sprite-icon {display: unset !important;}"
+      ],
+      "additionalExcludeSelectors.add": [
+        "span[class^='text-opac'] + span[class^='text-']"
       ]
     },
     {
@@ -15843,6 +15847,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-29T12:12:47.828Z",
+  "buildinConfigUpdatedAt": "2025-04-29T15:33:39.311Z",
   "latestVersion": "1.16.8"
 }
