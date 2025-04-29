@@ -635,6 +635,16 @@
       }
     },
     {
+      "condition": "imtIOSVersionNumber<10108",
+      "advanceConfig": {
+        "generalRule": {
+          "imageRule.add": {
+            "enableImageTranslation": ""
+          }
+        }
+      }
+    },
+    {
       "condition": "imtIOSVersionNumber>10107",
       "advanceConfig": {
         "generalRule": {
@@ -15829,6 +15839,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-29T07:46:22.121Z",
+  "buildinConfigUpdatedAt": "2025-04-29T08:08:46.009Z",
   "latestVersion": "1.16.8"
 }
