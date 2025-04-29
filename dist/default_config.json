@@ -635,6 +635,19 @@
       }
     },
     {
+      "condition": "imtIOSVersionNumber>10107",
+      "advanceConfig": {
+        "generalRule": {
+          "imageRule.add": {
+            "supportPlatform": {
+              "chrome_pc": "all",
+              "imtIOS_mobile": "all"
+            }
+          }
+        }
+      }
+    },
+    {
       "condition": "platform==safari",
       "advanceConfig": {
         "generalRule": {
@@ -15813,6 +15826,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-29T06:39:11.366Z",
-  "latestVersion": "1.16.7"
+  "buildinConfigUpdatedAt": "2025-04-29T07:32:04.569Z",
+  "latestVersion": "1.16.8"
 }
