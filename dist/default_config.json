@@ -1485,7 +1485,8 @@
         "THUDM/glm-4-9b-chat"
       ],
       "provider": "custom",
-      "limit": 10,
+      "limit": 5,
+      "requestTimeout": 6000000,
       "maxTextGroupLengthPerRequest": 3,
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "apiUrl": "https://api.siliconflow.cn/v1/chat/completions",
@@ -15839,6 +15840,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-29T08:08:46.009Z",
+  "buildinConfigUpdatedAt": "2025-04-29T10:52:14.194Z",
   "latestVersion": "1.16.8"
 }
