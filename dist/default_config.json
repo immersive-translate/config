@@ -9597,7 +9597,7 @@
         ],
         "urlFetchType": "canvasArgs",
         "opImageType": "append",
-        "supportPlatform": [
+        "platforms": [
           "chrome"
         ],
         "loadingSelectors": [
@@ -9887,7 +9887,7 @@
           ".toon_view_lst img",
           ".wt_viewer img"
         ],
-        "supportPlatform": [
+        "platforms": [
           "chrome",
           "firefox",
           "safari",
@@ -15850,6 +15850,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-30T02:23:27.529Z",
+  "buildinConfigUpdatedAt": "2025-04-30T08:14:21.285Z",
   "latestVersion": "1.16.8"
 }
