@@ -2112,8 +2112,7 @@
       "^[\\u200B\\u200C\\u200D\\u2060\\uFEFF]+$",
       "^[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]$",
       "^.{1}$",
-      "^$",
-      "^$"
+      "^$"
     ],
     "waitForSelectors": [],
     "isInjectOptionsUrl": false,
@@ -3150,6 +3149,9 @@
         "buildTimeout": 1000,
         "consumeTimeout": 1000
       },
+      "noTranslateRegexp.remove": [
+        "^.{1}$"
+      ],
       "excludeSelectorsRegexes": {
         "[class='inline-tabular'] > table > tbody > tr > td": [
           "^[A-Z0-9\\-_.]{0,10}$",
@@ -15850,6 +15852,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-30T08:14:21.285Z",
+  "buildinConfigUpdatedAt": "2025-04-30T09:39:36.375Z",
   "latestVersion": "1.16.8"
 }
