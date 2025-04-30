@@ -913,6 +913,9 @@
       ]
     },
     "youdao-ziyue": {
+      "env": {
+        "title_prompt": ""
+      },
       "placeholderDelimiters": [
         "#",
         "#"
@@ -15847,6 +15850,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-30T02:16:15.039Z",
+  "buildinConfigUpdatedAt": "2025-04-30T02:23:27.529Z",
   "latestVersion": "1.16.8"
 }
