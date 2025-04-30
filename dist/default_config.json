@@ -10,6 +10,7 @@
   "isPreview": false,
   "useOnlineOptions": false,
   "enableMachineTranslateTerms": false,
+  "termsDomainWithSelf": false,
   "immediateTranslationPattern": {
     "matches": [
       "twitter.com",
@@ -487,6 +488,9 @@
   "enableEditTranslation": false,
   "autoSelectTargetLanguageAfterInstalledAt": "2024-01-04",
   "autoSelectAllTargetLanguageAfterInstalledAt": "2025-03-27",
+  "sentryCaptureConfig": {
+    "enable": true
+  },
   "defaultAlwaysTranslatedUrls": [
     "twitter.com",
     "x.com",
@@ -1050,6 +1054,12 @@
         "terms_prompt": "\n\nRequired Terminology: You MUST use the following terms during translation, If 'source':'target', source == target, keep the source term unchanged.\n\n Terms -> \n\n {{imt_terms}}",
         "sub_summary_prompt": "\n\n## Context Awareness\nDocument Metadata:\nType: Subtitle\nSummary: {{imt_theme}}...",
         "sub_terms_prompt": "\n\nRequired Terminology: You MUST use the following terms during translation, If 'source':'target', source == target, keep the source term unchanged.\n\n Terms -> \n\n {{imt_terms}}"
+      },
+      "env.add_v.[1.16.9]": {
+        "imt_terms_with_domain": "*   **If `[domain]` tag IS present:** Check context. If context matches `[domain]`, use the listed Translation (even if Source==Translation). If context *doesn't* match, ignore the list entry & translate the term generally.",
+        "imt_terms_without_domain": "*   **If NO `[domain]` tag:** Apply strictly with absolute priority, ** overriding any other translation logic for the term**. (Use original Source Term if Source==Translation, else use listed Translation).\n    *   *Example:* If rule is `'kick': 'kick'` and text is `(kick drum)`, the output MUST contain `kick` literally within the context, like `(kick 鼓)` or similar, NOT translated as `(底鼓)`.",
+        "terms_prompt": "\n\nRequired Terminology: For terms in `Terms ->`:\n{{imt_terms_with_domain}}\n{{imt_terms_without_domain}}\nTerms -> \n{{imt_terms}}",
+        "sub_terms_prompt": "\n\nRequired Terminology: For terms in `Terms ->`:\n{{imt_terms_with_domain}}\n{{imt_terms_without_domain}}\nTerms -> \n{{imt_terms}}"
       },
       "systemPrompt": "You are a professional, authentic machine translation engine.{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
       "prompt": ";; Treat next line as plain text input and translate it into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
@@ -15852,6 +15862,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-30T09:39:36.375Z",
-  "latestVersion": "1.16.8"
+  "buildinConfigUpdatedAt": "2025-04-30T10:02:51.342Z",
+  "latestVersion": "1.16.9"
 }
