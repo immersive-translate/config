@@ -2872,38 +2872,6 @@
       }
     },
     {
-      "id": "isEbook",
-      "isEbook": true,
-      "pageType": "ebookReader",
-      "isTranslateTitle": false,
-      "urlChangeDelay": 200,
-      "selectorMatches": [
-        "meta[name='immersive-translate-ebook-viewer'][content='true']"
-      ],
-      "injectedCss": [
-        ".immersive-translate-target-translation-block-wrapper {display:block;}"
-      ],
-      "excludeSelectors": [
-        "#drop-target",
-        "#drop-target h1",
-        "#side-bar",
-        "h1#side-bar-title"
-      ],
-      "extraInlineSelectors": [
-        "span.dropcaps"
-      ],
-      "bodyRule.add": {
-        "enable": false
-      },
-      "paragraphMinTextCount": 4,
-      "paragraphMinWordCount": 2,
-      "blockMinTextCount": 1,
-      "blockMinWordCount": 1,
-      "containerMinTextCount": 1,
-      "wrapperPrefix": "<br />",
-      "targetWrapperTag": "span"
-    },
-    {
       "id": "pdf",
       "isPdf": true,
       "isTranslateTitle": false,
@@ -3020,6 +2988,42 @@
       }
     },
     {
+      "id": "isEbook",
+      "isEbook": true,
+      "pageType": "ebookReader",
+      "isTranslateTitle": false,
+      "urlChangeDelay": 200,
+      "selectorMatches": [
+        "meta[name='immersive-translate-ebook-viewer'][content='true']"
+      ],
+      "injectedCss": [
+        ".immersive-translate-target-translation-block-wrapper {display:block;}"
+      ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "side.enableTranslate": true,
+        "header.enableTranslate": true
+      },
+      "excludeSelectors": [
+        "#drop-target",
+        "#drop-target h1",
+        "#side-bar",
+        "h1#side-bar-title"
+      ],
+      "extraInlineSelectors": [
+        "span.dropcaps"
+      ],
+      "bodyRule.add": {
+        "enable": false
+      },
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
+      "blockMinTextCount": 1,
+      "blockMinWordCount": 1,
+      "containerMinTextCount": 1,
+      "wrapperPrefix": "<br />",
+      "targetWrapperTag": "span"
+    },
+    {
       "id": "isEbookBuilder",
       "matches": [
         "https://app.immersivetranslate.com/ebook/make/",
@@ -3028,6 +3032,10 @@
         "https://app.infread.com/ebook/make/",
         "http://localhost:38001/ebook/make/"
       ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "side.enableTranslate": true,
+        "header.enableTranslate": true
+      },
       "isEbookBuilder": true,
       "pageType": "ebookBuilder",
       "toastErrorMinTimes": 0,
@@ -15862,6 +15870,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-30T10:02:30.000Z",
+  "buildinConfigUpdatedAt": "2025-04-30T14:55:12.887Z",
   "latestVersion": "1.16.9"
 }
