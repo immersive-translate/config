@@ -4334,8 +4334,12 @@
       "matches": "www.youtube.com",
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
-      "mainFrameMinTextCount": 100,
-      "mainFrameMinWordCount": 100,
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "mainFrameMinTextCount.add_v.[1.16.1]": 100,
+      "mainFrameMinWordCount.add_v.[1.16.1]": 100,
+      "mainFrameMinTextCount.add_v.[1.16.6]": 0,
+      "mainFrameMinWordCount.add_v.[1.16.6]": 0,
       "detectParagraphLanguage": true,
       "lineBreakMaxTextCount": 0,
       "shareConfig": {
@@ -15870,6 +15874,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-04-30T14:55:12.887Z",
+  "buildinConfigUpdatedAt": "2025-05-01T02:50:46.259Z",
   "latestVersion": "1.16.9"
 }
