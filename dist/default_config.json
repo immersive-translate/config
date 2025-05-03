@@ -7812,7 +7812,8 @@
       "id": "bilibili",
       "matches": "www.bilibili.com",
       "excludeSelectors.add": [
-        ".bpx-player-subtitle-panel-text"
+        ".bpx-player-subtitle-panel-text",
+        ".bili-video-card__info--author, .bili-video-card__info--date"
       ],
       "subtitleRule.add": {
         "type": "general",
@@ -15881,6 +15882,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-03T04:47:20.136Z",
+  "buildinConfigUpdatedAt": "2025-05-03T06:23:04.902Z",
   "latestVersion": "1.16.9"
 }
