@@ -3703,14 +3703,15 @@
     {
       "id": "openrouter",
       "matches": "openrouter.ai",
-      "excludeSelectors": [
+      "excludeSelectors.add": [
         ".line-clamp-1.text-lg",
         ".text-muted-foreground.text-sm.col-span-4.text-right",
         "div[title='Tokens this week']",
         ".text-green-600.font-medium",
         ".text-xl.text-slate-11",
         "button[role='tab']",
-        "[data-badge-type=http-method]"
+        "[data-badge-type=http-method]",
+        "div[role='region'] > div > ul"
       ],
       "globalStyles": {
         "button.text-primary-foreground": "height: 100%;white-space: normal;word-wrap: break-word;"
@@ -15882,6 +15883,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-03T06:23:04.902Z",
+  "buildinConfigUpdatedAt": "2025-05-03T10:42:44.539Z",
   "latestVersion": "1.16.9"
 }
