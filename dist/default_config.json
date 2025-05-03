@@ -2643,7 +2643,8 @@
       "MATH",
       "TTS-SENTENCE",
       "AIO-CODE",
-      "RELIN-TARGET"
+      "RELIN-TARGET",
+      "DATETIME"
     ],
     "excludeTags.remove_v.[1.4.9]": [
       "BUTTON"
@@ -15108,6 +15109,12 @@
       "matches": "book.douban.com",
       "excludeTags.remove": [
         "PRE"
+      ],
+      "excludeSelectors.add": [
+        "a.author-name",
+        "p.user > a",
+        "div#collector > div > div[style^='padding-left'] > a",
+        "div#info a"
       ]
     },
     {
@@ -15874,6 +15881,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-01T02:50:46.259Z",
+  "buildinConfigUpdatedAt": "2025-05-03T04:47:20.136Z",
   "latestVersion": "1.16.9"
 }
