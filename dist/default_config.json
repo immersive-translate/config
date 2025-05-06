@@ -15881,8 +15881,17 @@
       "extraBlockSelectors.add": [
         ".btn"
       ]
+    },
+    {
+      "id": "ccfddl",
+      "matches": [
+        "ccfddl.com"
+      ],
+      "excludeSelectors.add": [
+        "div.conf-timer > span[style^='color: black']"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-03T10:42:44.539Z",
+  "buildinConfigUpdatedAt": "2025-05-06T03:16:03.154Z",
   "latestVersion": "1.16.9"
 }
