@@ -1596,8 +1596,10 @@
       "name": "zhipu",
       "model": "glm-4-flash",
       "freeModels": [
-        "glm-4-flash"
+        "glm-4-flash",
+        "glm-4-flash-250414"
       ],
+      "model.add_v.[1.16.9]": "glm-4-flash-250414",
       "models": "glm-4-flash|glm-4-flash-250414|glm-4-air|glm-4-airx|glm-4|glm-4-plus|glm-4-0520|glm-4-0520-plus",
       "defaultVisible": true,
       "defaultHiddenLangs": [
@@ -15902,6 +15904,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-06T10:45:17.000Z",
+  "buildinConfigUpdatedAt": "2025-05-06T10:56:10.530Z",
   "latestVersion": "1.16.12"
 }
