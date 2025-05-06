@@ -7230,7 +7230,16 @@
         ".activity"
       ],
       "urlChangeDelay": 0,
-      "_comment": "解决 url 变化但是页面不变的问题"
+      "_comment": "解决 url 变化但是页面不变的问题",
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.selectors": [
+          "header"
+        ],
+        "header.enableTranslate": true
+      },
+      "injectedCss.add": [
+        "header.d-header {height: 6em !important;}"
+      ]
     },
     {
       "id": "feedly",
@@ -15879,14 +15888,12 @@
     },
     {
       "id": "ccfddl",
-      "matches": [
-        "ccfddl.com"
-      ],
+      "matches": "ccfddl.com",
       "excludeSelectors.add": [
         "div.conf-timer > span[style^='color: black']"
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-06T05:59:15.122Z",
+  "buildinConfigUpdatedAt": "2025-05-06T06:25:26.974Z",
   "latestVersion": "1.16.9"
 }
