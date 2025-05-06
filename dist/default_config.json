@@ -15892,8 +15892,15 @@
       "excludeSelectors.add": [
         "div.conf-timer > span[style^='color: black']"
       ]
+    },
+    {
+      "id": "pinboard",
+      "matches": "pinboard.in",
+      "injectedCss.add": [
+        "div.blurb_box,div.homepage_quad,div.signup_button {height: unset !important;}"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-06T06:25:26.974Z",
+  "buildinConfigUpdatedAt": "2025-05-06T07:32:15.705Z",
   "latestVersion": "1.16.9"
 }
