@@ -15198,8 +15198,7 @@
       "id": "nexusmods",
       "matches": [
         "next.nexusmods.com",
-        "readit.plus",
-        "www.nexusmods.com"
+        "readit.plus"
       ],
       "likePreSelectors.add": [
         ".next-container section"
@@ -15905,6 +15904,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-06T10:57:12.628Z",
+  "buildinConfigUpdatedAt": "2025-05-06T12:21:27.264Z",
   "latestVersion": "1.16.12"
 }
