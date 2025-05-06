@@ -2112,7 +2112,8 @@
       "^[\\u200B\\u200C\\u200D\\u2060\\uFEFF]+$",
       "^[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]$",
       "^.{1}$",
-      "^$"
+      "^$",
+      " onerror="
     ],
     "waitForSelectors": [],
     "isInjectOptionsUrl": false,
@@ -15884,6 +15885,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-06T04:04:09.045Z",
+  "buildinConfigUpdatedAt": "2025-05-06T04:19:42.569Z",
   "latestVersion": "1.16.9"
 }
