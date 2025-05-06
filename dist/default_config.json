@@ -3877,7 +3877,8 @@
         "p.title > a",
         "[role=main] .md-container",
         ".media-gallery .usertext",
-        ".expando .usertext"
+        ".expando .usertext",
+        ".res-expando-box .md"
       ],
       "detectParagraphLanguage": true
     },
@@ -15893,6 +15894,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-06T03:20:07.382Z",
+  "buildinConfigUpdatedAt": "2025-05-06T03:32:32.805Z",
   "latestVersion": "1.16.9"
 }
