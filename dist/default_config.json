@@ -15712,7 +15712,8 @@
         ".notranslate.chrome",
         ".main-content [translate=no]",
         "body.notranslate.rtb-desktop",
-        ".survey-body .notranslate"
+        ".survey-body .notranslate",
+        ".ProseMirror[translate=no]"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -15892,6 +15893,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-06T03:16:03.154Z",
+  "buildinConfigUpdatedAt": "2025-05-06T03:20:07.382Z",
   "latestVersion": "1.16.9"
 }
