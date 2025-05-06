@@ -1045,7 +1045,7 @@
         "sub_summary_prompt": "\n\n## Context Awareness\nDocument Metadata:\nType: Subtitle\nSummary: {{imt_theme}}...",
         "sub_terms_prompt": "\n\nRequired Terminology: You MUST use the following terms during translation, If 'source':'target', source == target, keep the source term unchanged.\n\n Terms -> \n\n {{imt_terms}}"
       },
-      "env.add_v.[1.16.9]": {
+      "env.add_v.[1.16.10]": {
         "imt_terms_with_domain": "*   **If `[domain]` tag IS present:** Check context. If context matches `[domain]`, use the listed Translation (even if Source==Translation). If context *doesn't* match, ignore the list entry & translate the term generally.",
         "imt_terms_without_domain": "*   **If NO `[domain]` tag:** Apply strictly with absolute priority, ** overriding any other translation logic for the term**. (Use original Source Term if Source==Translation, else use listed Translation).\n    *   *Example:* If rule is `'kick': 'kick'` and text is `(kick drum)`, the output MUST contain `kick` literally within the context, like `(kick 鼓)` or similar, NOT translated as `(底鼓)`.",
         "terms_prompt": "\n\nRequired Terminology: For terms in `Terms ->`:\n{{imt_terms_with_domain}}\n{{imt_terms_without_domain}}\nTerms -> \n{{imt_terms}}",
@@ -1805,6 +1805,7 @@
   ],
   "generalRule": {
     "_comment": "",
+    "purifyRichHtml": true,
     "longBuildDomLength": 3000,
     "longBuildPageLength": 50,
     "repeatTranslateNum": 0,
@@ -15901,6 +15902,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-06T07:32:15.705Z",
-  "latestVersion": "1.16.9"
+  "buildinConfigUpdatedAt": "2025-05-06T08:10:03.053Z",
+  "latestVersion": "1.16.10"
 }
