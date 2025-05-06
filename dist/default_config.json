@@ -1132,8 +1132,8 @@
     "gemini": {
       "visible": true,
       "placeholderDelimiters": [
-        "{{",
-        "}}"
+        "{",
+        "}"
       ],
       "enableRichGlossaries": false,
       "glossaries": [],
@@ -1260,8 +1260,8 @@
     "openai": {
       "visible": true,
       "placeholderDelimiters": [
-        "{{",
-        "}}"
+        "{",
+        "}"
       ],
       "ignoreResRegexs": [
         "^抱歉.*要求",
@@ -15902,6 +15902,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-06T10:07:51.000Z",
+  "buildinConfigUpdatedAt": "2025-05-06T10:41:29.037Z",
   "latestVersion": "1.16.11"
 }
