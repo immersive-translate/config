@@ -489,7 +489,7 @@
   "autoSelectTargetLanguageAfterInstalledAt": "2024-01-04",
   "autoSelectAllTargetLanguageAfterInstalledAt": "2025-03-27",
   "sentryCaptureConfig": {
-    "enable": true
+    "enable": false
   },
   "defaultAlwaysTranslatedUrls": [
     "twitter.com",
@@ -15884,6 +15884,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-06T03:56:31.395Z",
+  "buildinConfigUpdatedAt": "2025-05-06T04:04:09.045Z",
   "latestVersion": "1.16.9"
 }
