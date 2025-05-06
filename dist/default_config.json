@@ -2113,7 +2113,7 @@
       "^[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]$",
       "^.{1}$",
       "^$",
-      " onerror="
+      "<[a-zA-Z]+ id=0>"
     ],
     "waitForSelectors": [],
     "isInjectOptionsUrl": false,
@@ -15885,6 +15885,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-06T04:19:42.569Z",
+  "buildinConfigUpdatedAt": "2025-05-06T04:48:11.948Z",
   "latestVersion": "1.16.9"
 }
