@@ -2113,7 +2113,8 @@
       "^[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]$",
       "^.{1}$",
       "^$",
-      "<[a-zA-Z]+ id=0>"
+      "<img id=0>",
+      "<canvas id=0>"
     ],
     "waitForSelectors": [],
     "isInjectOptionsUrl": false,
@@ -15885,6 +15886,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-06T04:48:11.948Z",
+  "buildinConfigUpdatedAt": "2025-05-06T04:52:28.184Z",
   "latestVersion": "1.16.9"
 }
