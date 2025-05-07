@@ -3922,7 +3922,8 @@
       "detectParagraphLanguage": true,
       "globalStyles": {
         "div.XPromoBottomBar": "display:none",
-        "[class*='line-clamp']": "-webkit-line-clamp: unset"
+        "[class*='line-clamp']": "-webkit-line-clamp: unset",
+        ".pointer-events-none": "pointer-events: unset"
       },
       "waitForSelectors": [
         "[data-testid=post_author_link]"
@@ -15911,6 +15912,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-07T08:47:11.374Z",
+  "buildinConfigUpdatedAt": "2025-05-07T10:52:27.582Z",
   "latestVersion": "1.16.12"
 }
