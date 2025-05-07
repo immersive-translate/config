@@ -7014,7 +7014,8 @@
         ".line-clamp-2",
         ".line-clamp-1",
         "[data-testid=thread-title]",
-        "[class='rounded-md duration-150']"
+        "[class='rounded-md duration-150']",
+        "[data-testid*=article-]"
       ]
     },
     {
@@ -15908,6 +15909,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-07T03:35:10.238Z",
+  "buildinConfigUpdatedAt": "2025-05-07T08:30:24.012Z",
   "latestVersion": "1.16.12"
 }
