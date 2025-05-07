@@ -8161,8 +8161,12 @@
         "PRE"
       ],
       "globalStyles": {
-        ".vrow.column": "height:unset !important;"
-      }
+        ".vrow.column": "height:unset !important;",
+        ".body .board-article .article-list .list-table .vrow.column .vcol": "width:unset !important;"
+      },
+      "additionalExcludeSelectors.add": [
+        "span.user-info"
+      ]
     },
     {
       "id": "chatpdf",
@@ -15904,6 +15908,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-07T03:21:14.918Z",
+  "buildinConfigUpdatedAt": "2025-05-07T03:35:10.238Z",
   "latestVersion": "1.16.12"
 }
