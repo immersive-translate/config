@@ -15454,16 +15454,61 @@
       ]
     },
     {
+      "id": "ccfddl",
+      "matches": "ccfddl.com",
+      "excludeSelectors.add": [
+        "div.conf-timer > span[style^='color: black']"
+      ]
+    },
+    {
+      "id": "pinboard",
+      "matches": "pinboard.in",
+      "injectedCss.add": [
+        "div.blurb_box,div.homepage_quad,div.signup_button {height: unset !important;}",
+        "h1.magazine_title {line-height: 1.2 !important;}"
+      ]
+    },
+    {
+      "id": "flutterDev",
+      "matches": "docs.flutter.dev",
+      "excludeSelectors.add": [
+        "span.expander.material-symbols",
+        "span.material-symbols"
+      ]
+    },
+    {
+      "id": "scripod",
+      "matches": "scripod.com",
+      "injectedCss.add": [
+        "div.line-clamp-4[data-immersive-translate-walked] { -webkit-line-clamp: unset; max-height: unset;}"
+      ]
+    },
+    {
+      "id": "cis.vemic.com",
+      "matches": "cis.vemic.com",
+      "injectedCss.add": [
+        "span.hotData-text[data-immersive-translate-walked] { -webkit-line-clamp: unset !important; line-clamp: unset !important;}"
+      ]
+    },
+    {
       "id": "autoHeight",
       "matches": [
         "*.sooplive.*",
         "zen-browser.app",
         "message.alibaba.com"
       ],
+      "selectorMatches": [
+        "#plugin-product-comment"
+      ],
       "injectedCss.add": [
         ".side_list a,.title a,.tit {-webkit-line-clamp:unset!important;height:unset!important;}",
         "details {height:unset!important;}",
-        ".product-title {height:unset!important;-webkit-line-clamp:unset!important;}"
+        ".product-title {height:unset!important;-webkit-line-clamp:unset!important;}",
+        ".plugin-product-comment-content {height:unset!important;-webkit-line-clamp:unset!important;}"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
       ]
     },
     {
@@ -15605,48 +15650,6 @@
       }
     },
     {
-      "id": "NoTranslate",
-      "matches": [
-        "*.tiktok.com",
-        "altis.world",
-        "*.newthingsunderthesun.com",
-        "*.gumroad.com",
-        "edstem.org",
-        "actions.tldrnewsletter.com",
-        "community.linkingyourthinking.com",
-        "doc.qt.io",
-        "winaero.com",
-        "community.afforai.com",
-        "www.perplexity.ai",
-        "hdsr.mitpress.mit.edu",
-        "rent.men",
-        "*.rwth-aachen.*",
-        "www.backcountry.com",
-        "intranet.alxswe.com",
-        "www.steepandcheap.com",
-        "whoer.is",
-        "community.seniorswc.com",
-        "www.skool.com",
-        "sfget.jp",
-        "talentcentral.eu.shl.com",
-        "www.crd.york.ac.*",
-        "www.campo.fau.de",
-        "s.hoothin.com",
-        "feedback.featurebase.app",
-        "typefully.com",
-        "*.affine.*",
-        "*.shopify.com",
-        "*.marscode.com",
-        "updraft.cyfrin.io",
-        "nexus.evenant.com",
-        "portal.achieve3000.net"
-      ],
-      "additionalExcludeSelectors.remove": [
-        ".notranslate",
-        "[translate=no]"
-      ]
-    },
-    {
       "id": "preSites",
       "matches": [
         "mail.jabber.org",
@@ -15710,6 +15713,48 @@
         "[translate=no]"
       ],
       "isTransformPreTagNewLine": true
+    },
+    {
+      "id": "NoTranslate",
+      "matches": [
+        "*.tiktok.com",
+        "altis.world",
+        "*.newthingsunderthesun.com",
+        "*.gumroad.com",
+        "edstem.org",
+        "actions.tldrnewsletter.com",
+        "community.linkingyourthinking.com",
+        "doc.qt.io",
+        "winaero.com",
+        "community.afforai.com",
+        "www.perplexity.ai",
+        "hdsr.mitpress.mit.edu",
+        "rent.men",
+        "*.rwth-aachen.*",
+        "www.backcountry.com",
+        "intranet.alxswe.com",
+        "www.steepandcheap.com",
+        "whoer.is",
+        "community.seniorswc.com",
+        "www.skool.com",
+        "sfget.jp",
+        "talentcentral.eu.shl.com",
+        "www.crd.york.ac.*",
+        "www.campo.fau.de",
+        "s.hoothin.com",
+        "feedback.featurebase.app",
+        "typefully.com",
+        "*.affine.*",
+        "*.shopify.com",
+        "*.marscode.com",
+        "updraft.cyfrin.io",
+        "nexus.evenant.com",
+        "portal.achieve3000.net"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ]
     },
     {
       "id": "bodyNoTranslateSite",
@@ -15844,34 +15889,6 @@
       }
     },
     {
-      "id": "fix-flutter-doc-sider",
-      "matches": [
-        "docs.flutter.dev"
-      ],
-      "excludeSelectors.add": [
-        "span.expander.material-symbols",
-        "span.material-symbols"
-      ]
-    },
-    {
-      "id": "fix-hidden-scripod",
-      "matches": [
-        "scripod.com"
-      ],
-      "injectedCss.add": [
-        "div.line-clamp-4[data-immersive-translate-walked] { -webkit-line-clamp: unset; max-height: unset;}"
-      ]
-    },
-    {
-      "id": "fix-hidden-cis.vemic.com",
-      "matches": [
-        "cis.vemic.com"
-      ],
-      "injectedCss.add": [
-        "span.hotData-text[data-immersive-translate-walked] { -webkit-line-clamp: unset !important; line-clamp: unset !important;}"
-      ]
-    },
-    {
       "id": "fix-header",
       "selectorMatches": [
         "article header",
@@ -15892,23 +15909,8 @@
       "extraBlockSelectors.add": [
         ".btn"
       ]
-    },
-    {
-      "id": "ccfddl",
-      "matches": "ccfddl.com",
-      "excludeSelectors.add": [
-        "div.conf-timer > span[style^='color: black']"
-      ]
-    },
-    {
-      "id": "pinboard",
-      "matches": "pinboard.in",
-      "injectedCss.add": [
-        "div.blurb_box,div.homepage_quad,div.signup_button {height: unset !important;}",
-        "h1.magazine_title {line-height: 1.2 !important;}"
-      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-07T08:30:24.012Z",
+  "buildinConfigUpdatedAt": "2025-05-07T08:47:11.374Z",
   "latestVersion": "1.16.12"
 }
