@@ -3896,7 +3896,7 @@
       "globalStyles": {
         "div.XPromoBottomBar": "display:none",
         "[class*='line-clamp']": "-webkit-line-clamp: unset",
-        ".pointer-events-none": "pointer-events: unset",
+        "a.pointer-events-none": "pointer-events: unset",
         "a.absolute.inset-0": "inset: unset !important;"
       },
       "waitForSelectors": [
@@ -15941,6 +15941,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-08T10:47:26.311Z",
+  "buildinConfigUpdatedAt": "2025-05-08T13:44:50.713Z",
   "latestVersion": "1.16.12"
 }
