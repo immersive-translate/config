@@ -3671,33 +3671,6 @@
       }
     },
     {
-      "id": "tiktok-video",
-      "matches": [
-        "www.tiktok.com"
-      ],
-      "excludeSelectors.add": [
-        "[class*=\"DivVideoClosedCaptionContainer\"]"
-      ],
-      "mutationExcludeSelectors.add": [
-        "[class*=\"DivVideoClosedCaptionContainer\"] *"
-      ],
-      "subtitleRule.add": {
-        "type": "live",
-        "liveSubtitleRule": {
-          "containerSelector": "[class*=\"DivVideoClosedCaptionContainer\"]",
-          "textSelectors": [
-            "[class*=\"DivVideoClosedCaption \"]"
-          ],
-          "reportSelector": "[class*=\"DivLeftContainer\"]",
-          "mutationChangeDelay": 1000,
-          "enableTriggerTranslate": true
-        },
-        "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] font.immersive-translate-target-wrapper {direction: rtl;}"
-        ]
-      }
-    },
-    {
       "id": "openrouter",
       "matches": "openrouter.ai",
       "excludeSelectors.add": [
@@ -6438,6 +6411,31 @@
       "selectors": [
         "[data-e2e^=comment-level]",
         "[data-e2e=browse-video-desc] > span"
+      ],
+      "excludeSelectors.add": [
+        "[class*=\"DivInfoPosition\"]"
+      ],
+      "mutationExcludeSelectors.add": [
+        "[class*=\"DivInfoPosition\"] *"
+      ],
+      "subtitleRule.add": {
+        "type": "live",
+        "liveSubtitleRule": {
+          "containerSelector": "[class*=\"DivInfoPosition\"]",
+          "textSelectors": [
+            "[class*=\"DivVideoClosedCaption\"]"
+          ],
+          "reportSelector": "[class*=\"DivLeftContainer\"]",
+          "mutationChangeDelay": 10,
+          "enableTriggerTranslate": true
+        },
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] font.immersive-translate-target-wrapper {direction: rtl;}"
+        ]
+      },
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
       ]
     },
     {
@@ -15922,6 +15920,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-07T15:40:54.074Z",
+  "buildinConfigUpdatedAt": "2025-05-08T01:59:59.652Z",
   "latestVersion": "1.16.12"
 }
