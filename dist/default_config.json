@@ -4058,7 +4058,9 @@
         ".heading-element",
         ".js-feed-item-component h3 a[data-hovercard-type=pull_request]",
         "[aria-labelledby=outline-id] nav",
-        "[data-testid='issue-pr-title-link']"
+        "[data-testid='issue-pr-title-link']",
+        "div.user-profile-bio",
+        "div.news > div.js-notice"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}"
@@ -4079,7 +4081,8 @@
         "div.file-navigation + div.Box",
         "[data-testid^='breadcrumbs']",
         "[data-ga-click*=Star]",
-        ".markdown-body h3"
+        ".markdown-body h3",
+        "div.vcard-names-container"
       ],
       "extraBlockSelectors.add": [],
       "extraInlineSelectors": [
@@ -15920,6 +15923,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-08T01:59:59.652Z",
+  "buildinConfigUpdatedAt": "2025-05-08T03:16:27.607Z",
   "latestVersion": "1.16.12"
 }
