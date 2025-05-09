@@ -4161,6 +4161,7 @@
       "matches": "*.facebook.com",
       "excludeMatches": [
         "https://www.facebook.com/business/*",
+        "https://business.facebook.com/*",
         "https://www.facebook.com/help*",
         "https://www.facebook.com/ads/library/*",
         "https://developers.facebook.com/*"
@@ -15941,6 +15942,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-08T13:44:50.713Z",
+  "buildinConfigUpdatedAt": "2025-05-09T08:19:28.196Z",
   "latestVersion": "1.16.12"
 }
