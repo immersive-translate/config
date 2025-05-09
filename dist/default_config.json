@@ -3530,6 +3530,18 @@
       }
     },
     {
+      "id": "common-vtt",
+      "matches": [
+        "gdc-search.github.io"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subsrtFormat": "vtt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": ".vtt"
+      }
+    },
+    {
       "id": "zoom-asu",
       "matches": [
         "*.zoom.us/rec/*"
@@ -15942,6 +15954,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-09T08:19:28.196Z",
+  "buildinConfigUpdatedAt": "2025-05-09T11:50:32.793Z",
   "latestVersion": "1.16.12"
 }
