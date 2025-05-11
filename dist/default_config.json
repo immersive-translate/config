@@ -3672,7 +3672,7 @@
           "containerSelector": ".iOzk7[jsname='dsyhDe']",
           "textContentSelector": ".bh44bd.VbkSUe",
           "reportSelector": ".iOzk7[jsname='dsyhDe']",
-          "mutationChangeDelay": 1000,
+          "mutationChangeDelay": 2000,
           "findParentBlockDepth": 5,
           "enableTriggerTranslate": true,
           "preventRemoval": true
@@ -15954,6 +15954,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-09T11:50:32.793Z",
+  "buildinConfigUpdatedAt": "2025-05-11T01:04:39.894Z",
   "latestVersion": "1.16.12"
 }
