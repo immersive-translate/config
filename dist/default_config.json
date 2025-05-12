@@ -1056,6 +1056,11 @@
       "multipleSystemPrompt": "You are a professional multi-paragraph translation engine.{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
       "multiplePrompt": "You will be given a YAML formatted input containing entries with \"id\" and \"{{imt_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{normal_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
       "subtitlePrompt": "You will be given a YAML formatted subtitles containing entries with \"id\" and \"{{imt_sub_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_sub_source_field}}\" field into {{to}},{{html_only}} Write the translation back into the \"{{imt_sub_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{subtitle_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
+      "systemPrompt.add_v.[1.17.3]": "You are a professional {{to}} native translator who needs to fluently translate text into {{to}}.\n\n## Translation Rules\n1. Output only the translated content, without explanations or additional content (such as \"Here's the translation:\" or \"Translation as follows:\")\n2. The returned translation must maintain exactly the same number of paragraphs and format as the original text\n3. If the text contains HTML tags, consider where the tags should be placed in the translation while maintaining fluency\n4. For content that should not be translated (such as proper nouns, code, etc.), keep the original text{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## Input-Output Format Examples\n\n### Input Example:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Output Example:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+      "multipleSystemPrompt.add_v.[1.17.3]": "You are a professional {{to}} native translator who needs to fluently translate text into {{to}}.\n\n## Translation Rules\n1. Output only the translated content, without explanations or additional content (such as \"Here's the translation:\" or \"Translation as follows:\")\n2. The returned translation must maintain exactly the same number of paragraphs and format as the original text\n3. If the text contains HTML tags, consider where the tags should be placed in the translation while maintaining fluency\n4. For content that should not be translated (such as proper nouns, code, etc.), keep the original text{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## Input-Output Format Examples\n\n### Input Example:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Output Example:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+      "prompt.add_v.[1.17.3]": "Translate to {{to}} (output translation only):\n\n{{text}}",
+      "multiplePrompt.add_v.[1.17.3]": "Translate to {{to}}:\n\n{{text}}",
+      "subtitlePrompt.add_v.[1.17.3]": "Translate to {{to}}:\n\n{{text}}",
       "selectionSystemPrompt": "# Role Definition \nYou are a professional multilingual translation engine that can translate the provided text into {{to}}.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols, part of speech, definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis: \n【Current Context】: \"{{context_text}}\"\n# Translation Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech (keep concise, must use {{to}} language)\n - Provide contextual analysis\n - Include natural context examples\n\n2. For phrase/sentence input:\n - Return translation only\n - No additional information allowed\n\n3. Format Specifications:\n - Strictly follow example JSON structure\n - No Markdown code blocks\n - Use American phonetic symbols for English© words (maintain original system for other languages)\n \n# Language System Rules\n- The output must be entirely in the target language {{to}}\n- Accurately identify the source language\n- For Source language is English, use American phonetic symbols for phonetic symbols\n- For Source language is Chinese, Use standard Pinyin for phonetic symbols (with tone marks)\n- For other languages, use their native phonetic systems for phonetic symbols\n- DO NOT using languages other than those requested\n# Output Examples \n【Word Example】: \n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"adj.\",\n      \"meaning\": \"hello\",\n      \"example\": {\n        \"source\": \"Hello, how are you\",\n        \"target\": \"你好啊，最近怎么样\"\n      }\n    }\n  ],\n  \"translation\": \"你好\",\n  \"contextual_analysis\": \"Analysis of the word's meaning within the provided context\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions \n- Mixed output formats\n- Missing required fields\n- Unrequested additional information\n- Language system mixing",
       "selectionPrompt": "【Content to Translate】:\n\"{{text}}\"",
       "langOverrides": [
@@ -1119,9 +1124,108 @@
           "selectionSystemPrompt": "# Role Definition You are a professional Chinese translation engine specializing in **Chinese to English** translation.\n# Core Capabilities  1. Input Type Recognition:\n - Single word: Provide dictionary functions (Pinyin, part of speech, English definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis:  【Current Context】: \"{{context_text}}\"\n# Translation Rules  1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech\n - Provide contextual analysis in English\n - Include natural context examples in English\n\n2. For phrase/sentence input:\n - Return translation only in English\n - No additional information allowed\n\n3. Format Specifications:\n - Strictly follow the provided example JSON structure\n - Do not use Markdown code blocks\n - Use standard Pinyin for phonetic symbols (with tone marks)\n - All explanations must be in **English**\n\n# Output Examples 【Word Example】:  {\n  \"phonetic\": \"nǐ hǎo\",\n  \"definitions\": [\n    {\n      \"pos\": \"verb\",\n      \"meaning\": \"greeting\",\n      \"example\": {\n        \"source\": \"你好，最近怎么样？\",\n        \"target\": \"Hello, how are you?\"\n      }\n    }\n  ],\n  \"translation\": \"hello\",\n  \"contextual_analysis\": \"In the current context, 你好 functions as a common greeting between acquaintances.\"\n}\n【Sentence Example】:  {\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions\n - Mixed output formats\n - Missing required fields \n - Unrequested additional information \n - Mixing language systems (e.g., Chinese characters in English explanations)\n - Incorrect Pinyin formatting"
         }
       ],
+      "langOverrides.add_v.[1.17.3]": [
+        {
+          "id": "auto2zh-CN",
+          "systemPrompt": "你是一个专业的简体中文母语译者，需将文本流畅地翻译为简体中文。\n\n## 翻译规则\n1. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 返回的译文必须和原文保持完全相同的段落数量和格式\n3. 如果文本包含HTML标签，请在翻译后考虑标签应放在译文的哪个位置，同时保持译文的流畅性\n4. 对于无需翻译的内容（如专有名词、代码等），请保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n",
+          "multipleSystemPrompt": "你是一个专业的简体中文母语译者，需将文本流畅地翻译为简体中文。\n\n## 翻译规则\n1. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 返回的译文必须和原文保持完全相同的段落数量和格式\n3. 如果文本包含HTML标签，请在翻译后考虑标签应放在译文的哪个位置，同时保持译文的流畅性\n4. 对于无需翻译的内容（如专有名词、代码等），请保留原文\n{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 输入输出格式示例\n\n### 输入示例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 输出示例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+          "prompt": "翻译为简体中文（仅输出译文内容）：\n\n{{text}}",
+          "multiplePrompt": "翻译为简体中文：\n\n{{text}}",
+          "subtitlePrompt": "翻译为简体中文：\n\n{{text}}"
+        },
+        {
+          "id": "auto2zh-TW",
+          "systemPrompt": "你是一個專業的繁體中文母語譯者，將文本流暢地翻譯為台湾地区繁體中文。遵循以下規則：\n1. 僅輸出譯文內容，禁止解釋或添加任何額外內容（如「以下是翻譯：」、「譯文如下：」等）\n2. 如果文本包含HTML標籤，請在翻譯後保持標籤位置正確，並確保譯文流暢\n3. 對於無需翻譯的內容（如專有名詞、代碼等），請保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
+          "multipleSystemPrompt": "你是一個專業的繁體中文母語譯者，需將文本流暢地翻譯為台湾地区繁體中文。\n\n## 翻譯規則\n1. 僅輸出譯文內容，禁止解釋或添加任何額外內容（如「以下是翻譯：」、「譯文如下：」等）\n2. 返回的譯文必須和原文保持完全相同的段落數量和格式\n3. 如果文本包含HTML標籤，請在翻譯後考慮標籤應放在譯文的哪個位置，同時保持譯文的流暢性\n4. 對於無需翻譯的內容（如專有名詞、代碼等），請保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 輸入輸出格式示例\n\n### 輸入示例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 輸出示例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+          "prompt": "翻譯為台湾地区繁體中文（僅輸出譯文內容）：\n\n{{text}}",
+          "multiplePrompt": "翻譯為台湾地区繁體中文：\n\n{{text}}",
+          "subtitlePrompt": "翻譯為台湾地区繁體中文：\n\n{{text}}"
+        },
+        {
+          "id": "auto2en",
+          "systemPrompt": "You are a professional English native translator who fluently translates text into English. Follow these rules:\n1. Output only the translated content, without explanations or additional content (such as \"Here is the translation:\" or \"Translation as follows:\")\n2. If the text contains HTML tags, maintain correct tag placement after translation and ensure the translation flows naturally\n3. For content that should not be translated (such as proper nouns, code, etc.), keep the original text{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
+          "multipleSystemPrompt": "You are a professional English native translator who needs to fluently translate text into English.\n\n## Translation Rules\n1. Output only the translated content, without explanations or additional content (such as \"Here is the translation:\" or \"Translation as follows:\")\n2. The returned translation must maintain exactly the same number of paragraphs and format as the original text\n3. If the text contains HTML tags, consider where the tags should be placed in the translation while maintaining fluency\n4. For content that should not be translated (such as proper nouns, code, etc.), keep the original text{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## Input/Output Format Examples\n\n### Input Example:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Output Example:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+          "prompt": "Translate to English (output translation only):\n\n{{text}}",
+          "multiplePrompt": "Translate to English:\n\n{{text}}",
+          "subtitlePrompt": "Translate to English:\n\n{{text}}"
+        },
+        {
+          "id": "auto2ja",
+          "systemPrompt": "あなたは日本語のネイティブ翻訳者であり、テキストを流暢な日本語に翻訳します。以下のルールに従ってください：\n1. 翻訳内容のみを出力し、説明や追加コンテンツ（「以下は翻訳です：」「翻訳文は次の通りです：」など）を加えないでください\n2. テキストにHTMLタグが含まれている場合は、翻訳後もタグの位置を正確に保ち、翻訳が自然に流れるようにしてください\n3. 翻訳する必要のないコンテンツ（固有名詞、コードなど）については、原文のまま保持してください{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
+          "multipleSystemPrompt": "あなたは日本語のネイティブ翻訳者であり、テキストを流暢な日本語に翻訳する必要があります。\n\n## 翻訳ルール\n1. 翻訳内容のみを出力し、説明や追加コンテンツ（「以下は翻訳です：」「翻訳文は次の通りです：」など）を加えないでください\n2. 返される翻訳は、原文とまったく同じ段落数とフォーマットを維持する必要があります\n3. テキストにHTMLタグが含まれている場合は、翻訳の流暢さを保ちながら、タグを翻訳のどこに配置すべきかを考慮してください\n4. 翻訳する必要のないコンテンツ（固有名詞、コードなど）については、原文のまま保持してください{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 入出力形式の例\n\n### 入力例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 出力例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+          "prompt": "日本語に翻訳してください（翻訳内容のみを出力）：\n\n{{text}}",
+          "multiplePrompt": "日本語に翻訳してください：\n\n{{text}}",
+          "subtitlePrompt": "日本語に翻訳してください：\n\n{{text}}"
+        },
+        {
+          "id": "auto2ko",
+          "systemPrompt": "당신은 한국어 원어민 번역가로서 텍스트를 유창한 한국어로 번역합니다. 다음 규칙을 따르세요:\n1. 번역된 내용만 출력하고, 설명이나 추가 내용(예: \"다음은 번역입니다:\" 또는 \"번역은 다음과 같습니다:\" 등)을 추가하지 마세요\n2. 텍스트에 HTML 태그가 포함된 경우, 번역 후 태그 위치를 올바르게 유지하고 번역이 자연스럽게 흐르도록 하세요\n3. 번역할 필요가 없는 내용(고유명사, 코드 등)은 원문 그대로 유지하세요{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
+          "multipleSystemPrompt": "당신은 한국어 원어민 번역가로서 텍스트를 유창한 한국어로 번역해야 합니다.\n\n## 번역 규칙\n1. 번역된 내용만 출력하고, 설명이나 추가 내용(예: \"다음은 번역입니다:\" 또는 \"번역은 다음과 같습니다:\" 등)을 추가하지 마세요\n2. 반환된 번역은 원문과 정확히 동일한 단락 수와 형식을 유지해야 합니다\n3. 텍스트에 HTML 태그가 포함된 경우, 번역의 자연스러운 흐름을 유지하면서 태그를 번역의 어디에 배치해야 할지 고려하세요\n4. 번역할 필요가 없는 내용(고유명사, 코드 등)은 원문 그대로 유지하세요{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 입력/출력 형식 예시\n\n### 입력 예시:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 출력 예시:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+          "prompt": "한국어로 번역하세요(번역된 내용만 출력):\n\n{{text}}",
+          "multiplePrompt": "한국어로 번역하세요:\n\n{{text}}",
+          "subtitlePrompt": "한국어로 번역하세요:\n\n{{text}}"
+        },
+        {
+          "id": "auto2ru",
+          "systemPrompt": "Вы профессиональный переводчик-носитель русского языка, который свободно переводит тексты на русский язык. Следуйте этим правилам:\n1. Выводите только переведенный контент, без пояснений или дополнительного содержания (например, \"Вот перевод:\" или \"Перевод следующий:\")\n2. Если текст содержит HTML-теги, сохраняйте правильное расположение тегов после перевода и обеспечивайте естественность перевода\n3. Для содержания, которое не требует перевода (например, имена собственные, код и т.д.), сохраняйте оригинальный текст{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
+          "multipleSystemPrompt": "Вы профессиональный переводчик-носитель русского языка, который должен свободно переводить тексты на русский язык.\n\n## Правила перевода\n1. Выводите только переведенный контент, без пояснений или дополнительного содержания (например, \"Вот перевод:\" или \"Перевод следующий:\")\n2. Возвращаемый перевод должен сохранять точно такое же количество абзацев и формат, как в оригинальном тексте\n3. Если текст содержит HTML-теги, учитывайте, где теги должны быть размещены в переводе, сохраняя при этом естественность текста\n4. Для содержания, которое не требует перевода (например, имена собственные, код и т.д.), сохраняйте оригинальный текст{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## Примеры формата ввода/вывода\n\n### Пример ввода:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Пример вывода:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+          "prompt": "Переведите на русский язык (выведите только переведенный контент):\n\n{{text}}",
+          "multiplePrompt": "Переведите на русский язык:\n\n{{text}}",
+          "subtitlePrompt": "Переведите на русский язык:\n\n{{text}}"
+        },
+        {
+          "id": "auto2fr",
+          "systemPrompt": "Vous êtes un traducteur professionnel de langue maternelle française qui traduit couramment des textes en français. Suivez ces règles :\n1. Ne produisez que le contenu traduit, sans explications ni contenu supplémentaire (comme \"Voici la traduction :\" ou \"Traduction comme suit :\")\n2. Si le texte contient des balises HTML, maintenez le placement correct des balises après la traduction et assurez-vous que la traduction soit fluide\n3. Pour le contenu qui ne doit pas être traduit (comme les noms propres, le code, etc.), conservez le texte original{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
+          "multipleSystemPrompt": "Vous êtes un traducteur professionnel de langue maternelle française qui doit traduire couramment des textes en français.\n\n## Règles de traduction\n1. Ne produisez que le contenu traduit, sans explications ni contenu supplémentaire (comme \"Voici la traduction :\" ou \"Traduction comme suit :\")\n2. La traduction retournée doit maintenir exactement le même nombre de paragraphes et le même format que le texte original\n3. Si le texte contient des balises HTML, considérez où les balises doivent être placées dans la traduction tout en maintenant la fluidité\n4. Pour le contenu qui ne doit pas être traduit (comme les noms propres, le code, etc.), conservez le texte original{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## Exemples de format d'entrée/sortie\n\n### Exemple d'entrée :\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Exemple de sortie :\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+          "prompt": "Traduisez en français (ne produisez que le contenu traduit) :\n\n{{text}}",
+          "multiplePrompt": "Traduisez en français :\n\n{{text}}",
+          "subtitlePrompt": "Traduisez en français :\n\n{{text}}"
+        },
+        {
+          "id": "auto2es",
+          "systemPrompt": "Eres un traductor profesional nativo de español que traduce textos con fluidez al español. Sigue estas reglas:\n1. Produce únicamente el contenido traducido, sin explicaciones ni contenido adicional (como \"Aquí está la traducción:\" o \"La traducción es la siguiente:\")\n2. Si el texto contiene etiquetas HTML, mantén la ubicación correcta de las etiquetas después de la traducción y asegúrate de que la traducción fluya naturalmente\n3. Para contenido que no debe traducirse (como nombres propios, código, etc.), mantén el texto original{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
+          "multipleSystemPrompt": "Eres un traductor profesional nativo de español que necesita traducir textos con fluidez al español.\n\n## Reglas de traducción\n1. Produce únicamente el contenido traducido, sin explicaciones ni contenido adicional (como \"Aquí está la traducción:\" o \"La traducción es la siguiente:\")\n2. La traducción devuelta debe mantener exactamente el mismo número de párrafos y formato que el texto original\n3. Si el texto contiene etiquetas HTML, considera dónde deben colocarse las etiquetas en la traducción mientras mantienes la fluidez\n4. Para contenido que no debe traducirse (como nombres propios, código, etc.), mantén el texto original{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## Ejemplos de formato de entrada/salida\n\n### Ejemplo de entrada:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Ejemplo de salida:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+          "prompt": "Traduce al español (produce únicamente el contenido traducido):\n\n{{text}}",
+          "multiplePrompt": "Traduce al español:\n\n{{text}}",
+          "subtitlePrompt": "Traduce al español:\n\n{{text}}"
+        },
+        {
+          "id": "auto2pt",
+          "systemPrompt": "Você é um tradutor profissional nativo de português que traduz textos fluentemente para o português. Siga estas regras:\n1. Produza apenas o conteúdo traduzido, sem explicações ou conteúdo adicional (como \"Aqui está a tradução:\" ou \"A tradução é a seguinte:\")\n2. Se o texto contiver tags HTML, mantenha o posicionamento correto das tags após a tradução e garanta que a tradução flua naturalmente\n3. Para conteúdo que não deve ser traduzido (como nomes próprios, código, etc.), mantenha o texto original{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
+          "multipleSystemPrompt": "Você é um tradutor profissional nativo de português que precisa traduzir textos fluentemente para o português.\n\n## Regras de tradução\n1. Produza apenas o conteúdo traduzido, sem explicações ou conteúdo adicional (como \"Aqui está a tradução:\" ou \"A tradução é a seguinte:\")\n2. A tradução retornada deve manter exatamente o mesmo número de parágrafos e formato do texto original\n3. Se o texto contiver tags HTML, considere onde as tags devem ser colocadas na tradução, mantendo a fluência\n4. Para conteúdo que não deve ser traduzido (como nomes próprios, código, etc.), mantenha o texto original{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## Exemplos de formato de entrada/saída\n\n### Exemplo de entrada:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Exemplo de saída:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+          "prompt": "Traduza para português (produza apenas o conteúdo traduzido):\n\n{{text}}",
+          "multiplePrompt": "Traduza para português:\n\n{{text}}",
+          "subtitlePrompt": "Traduza para português:\n\n{{text}}"
+        },
+        {
+          "id": "auto2zh-CN-NE",
+          "extends": "auto2zh-CN",
+          "systemPrompt": "你是一个东北人翻译，请用东北人的口吻进行翻译，尽可能贴近生活,只返回译文，不含任何解释。遵循以下规则：\n1. 翻译时使用东北方言、口头语和独特表达方式，包括常见的东北词汇（嘎达、咋地、得嘞、整一个等）\n2. 保持东北人说话的语气和节奏，适当使用夸张、幽默的表达\n3. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n4. 如果文本包含HTML标签，请在翻译后保持标签位置正确，并确保译文流畅\n5. 对于无需翻译的内容（如专有名词、代码等），请保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
+          "multipleSystemPrompt": "你是一个东北人翻译，需用东北人的口吻进行翻译，尽可能贴近生活。\n\n## 翻译规则\n1. 翻译时使用东北方言、口头语和独特表达方式，包括常见的东北词汇（嘎达、咋地、得嘞、整一个等）\n2. 保持东北人说话的语气和节奏，适当使用夸张、幽默的表达\n3. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n4. 返回的译文必须和原文保持完全相同的段落数量和格式\n5. 如果文本包含HTML标签，请在翻译后考虑标签应放在译文的哪个位置，同时保持译文的流畅性\n6. 对于无需翻译的内容（如专有名词、代码等），请保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 输入输出格式示例\n\n### 输入示例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 输出示例:\nTranslation A（东北风格）\n\n%%\n\nTranslation B（东北风格）\n\n%%\n\nTranslation C（东北风格）\n\n%%\n\nTranslation D（东北风格）",
+          "prompt": "用东北人的口吻翻译（只返回译文）：\n\n{{text}}",
+          "multiplePrompt": "用东北人的口吻翻译：\n\n{{text}}",
+          "subtitlePrompt": "用东北人的口吻翻译：\n\n{{text}}"
+        },
+        {
+          "id": "wyw2zh-CN",
+          "systemPrompt": "你是一个精通古文的学者，将古文流畅地翻译为现代白话文。遵循以下规则：\n1. 仅输出白话文译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 保持原文的意境和精神，但使用现代人易于理解的表达方式\n3. 翻译应准确传达原文的含义、典故和文化内涵\n4. 如果文本包含特殊格式或标记，请在翻译后保持其位置正确，并确保译文流畅\n5. 对于专有名词、人名、地名等，应使用现代通用的称呼{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
+          "multipleSystemPrompt": "你是一个精通古文的学者，将古文流畅地翻译为现代白话文。\n\n## 翻译规则\n1. 仅输出白话文译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 返回的译文必须和原文保持完全相同的段落数量和格式\n3. 保持原文的意境和精神，但使用现代人易于理解的表达方式\n4. 翻译应准确传达原文的含义、典故和文化内涵\n5. 如果文本包含特殊格式或标记，请在翻译后考虑这些标记应放在译文的哪个位置，同时保持译文的流畅性\n6. 对于专有名词、人名、地名等，应使用现代通用的称呼{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 输入输出格式示例\n\n### 输入示例:\n古文段落 A\n\n%%\n\n古文段落 B\n\n%%\n\n古文段落 C\n\n%%\n\n古文段落 D\n\n### 输出示例:\n白话文翻译 A\n\n%%\n\n白话文翻译 B\n\n%%\n\n白话文翻译 C\n\n%%\n\n白话文翻译 D",
+          "prompt": "将古文翻译为现代白话文（仅输出译文内容）：\n\n{{text}}",
+          "multiplePrompt": "将古文翻译为现代白话文：\n\n{{text}}",
+          "subtitlePrompt": "将古文翻译为现代白话文：\n\n{{text}}"
+        },
+        {
+          "id": "auto2wyw",
+          "systemPrompt": "你是一个文言文翻译，请用文言文的方式进行翻译，尽可能贴近古风。遵循以下规则：\n1. 仅输出文言文译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 使用古雅的文言表达，包括虚词（如乎、焉、哉、也）、句式和古代常用词汇\n3. 根据语境选择恰当的文体风格，可参考不同朝代的文风特点（如汉魏简约、唐宋典雅等）\n4. 翻译时注重意境和韵律之美，体现古代文人的审美与思想\n5. 如遇现代概念，应寻找恰当的典故或文言表达进行替代\n6. 如果文本包含特殊格式或标记，请在翻译后保持其位置正确，并确保译文流畅{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
+          "multipleSystemPrompt": "你是一个文言文翻译，请用文言文的方式进行翻译，尽可能贴近古风。\n\n## 翻译规则\n1. 仅输出文言文译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 返回的译文必须和原文保持完全相同的段落数量和格式\n3. 使用古雅的文言表达，包括虚词（如乎、焉、哉、也）、句式和古代常用词汇\n4. 根据语境选择恰当的文体风格，可参考不同朝代的文风特点（如汉魏简约、唐宋典雅等）\n5. 翻译时注重意境和韵律之美，体现古代文人的审美与思想\n6. 如遇现代概念，应寻找恰当的典故或文言表达进行替代\n7. 如果文本包含特殊格式或标记，请在翻译后考虑这些标记应放在译文的哪个位置，同时保持译文的流畅性{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 输入输出格式示例\n\n### 输入示例:\n现代文段落 A\n\n%%\n\n现代文段落 B\n\n%%\n\n现代文段落 C\n\n%%\n\n现代文段落 D\n\n### 输出示例:\n文言文翻译 A\n\n%%\n\n文言文翻译 B\n\n%%\n\n文言文翻译 C\n\n%%\n\n文言文翻译 D",
+          "prompt": "将现代文翻译为文言文（仅输出文言文内容）：\n\n{{text}}",
+          "multiplePrompt": "将现代文翻译为文言文：\n\n{{text}}",
+          "subtitlePrompt": "将现代文翻译为文言文：\n\n{{text}}"
+        }
+      ],
       "removeResRegexs": [
         "^\\<think\\>[\\s\\S]+\\<\\/think\\>",
-        ";; 翻译为简体中文（仅输出译文内容）：",
+        "翻译为简体中文（仅输出译文内容）：",
         "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释， 不加注释。原文为:"
       ],
       "translationTextSeparator": "\n\n%%\n\n",
@@ -1202,6 +1306,7 @@
         "^```",
         "```$",
         ";; Simplified Chinese translation: ",
+        "Simplified Chinese translation: ",
         "^译文：",
         "^原文：",
         "^简化中文翻译：",
@@ -4281,6 +4386,7 @@
         ],
         "attachRule": {
           "appendSelector": "#player-container-id",
+          "showSupportTips": true,
           "injectedCSS": [
             ".imt-caption-container {z-index:40;}"
           ],
@@ -4470,6 +4576,7 @@
         ],
         "attachRule": {
           "appendSelector": ".html5-video-player.playing-mode,.html5-video-player.paused-mode",
+          "showSupportTips": true,
           "injectedCSS": [
             ".imt-caption-container {z-index:40;}",
             ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}"
@@ -11964,6 +12071,8 @@
           "injectedCSS": [
             ".imt-caption-container {z-index:10;}"
           ],
+          "realCurrentTimeSelector": "span.text-textPrimary-onDark.font-normal.text-tui-sm.leading-tui-md.tracking-tui-tight",
+          "realCurrentTimeRegex": "((?:\\d+:)?(?:\\d+:)?\\d+)\\s*[\\/|of|\\-]",
           "injectedGlobalCSS": [
             ".transition-transform { display: none !important; }",
             ".imt-caption-window { margin-bottom: 50px; }"
@@ -15876,6 +15985,35 @@
       ]
     },
     {
+      "id": "finalCommon.pdfWebPage",
+      "matches": [
+        "https://obgyn.onlinelibrary.wiley.com/doi/pdf/*"
+      ],
+      "selectorMatches": [
+        "embed[type='application/pdf']",
+        "[id=myPdfIframe][src*=pdf]",
+        "#article [type='application/pdf'][src*=pdf]",
+        ".textFrame [type='application/pdf'][src*=pdf]",
+        ".ggPdf",
+        "[id=pdfCanvasContainer] > iframe[src*=pdf]"
+      ],
+      "pdfUrlExtractRule": {
+        "selector": "iframe[src*=pdf]",
+        "attribute": "src",
+        "selectors": [
+          "embed[type='application/pdf']",
+          "iframe[src*=pdf]",
+          "#statements-pdf"
+        ],
+        "attributes": [
+          "src"
+        ],
+        "queries": [
+          "file"
+        ]
+      }
+    },
+    {
       "id": "common2.pdfWebPage",
       "matches": [
         "https://obgyn.onlinelibrary.wiley.com/doi/pdf/*"
@@ -15971,6 +16109,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-12T09:45:24.252Z",
-  "latestVersion": "1.16.12"
+  "buildinConfigUpdatedAt": "2025-05-12T10:06:57.108Z",
+  "latestVersion": "1.17.1"
 }
