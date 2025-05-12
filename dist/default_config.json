@@ -7019,6 +7019,7 @@
       "matches": "https://www.perplexity.ai",
       "excludeMatches": [
         "https://www.perplexity.ai/hub/*",
+        "https://www.perplexity.ai/*/hub/*",
         "https://www.perplexity.ai/onboarding",
         "https://www.perplexity.ai/enterprise*",
         "https://www.perplexity.ai/2024recap"
@@ -15968,6 +15969,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-12T05:56:29.741Z",
+  "buildinConfigUpdatedAt": "2025-05-12T06:21:24.650Z",
   "latestVersion": "1.16.12"
 }
