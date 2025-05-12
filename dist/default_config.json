@@ -1071,7 +1071,7 @@
         },
         {
           "id": "zh-CN2zh-TW",
-          "prompt": ";; Treat next line as plain text input and translate it from 简体中文 into 繁體中文，{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
+          "prompt": ";; Treat next line as plain text input and translate it from 简体中文 into 台湾繁體中文，{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
           "multipleSystemPrompt": ""
         },
         {
@@ -16109,6 +16109,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-12T10:06:34.000Z",
+  "buildinConfigUpdatedAt": "2025-05-12T10:25:24.531Z",
   "latestVersion": "1.17.1"
 }
