@@ -347,7 +347,8 @@
     "https://rawkuma.net/[Rawkuma][chrome,firefox,safari,imtAndroid]",
     "https://page.kakao.com/[Kakao][chrome,firefox,safari,imtAndroid]",
     "https://topreadmanga.com/[TopReadManga][chrome,firefox,safari,imtAndroid]",
-    "https://revengeoftheiron-bloodedswordhound.one/[Revenge of the Iron Blooded Swordhound][chrome,firefox,safari,imtAndroid]"
+    "https://revengeoftheiron-bloodedswordhound.one/[Revenge of the Iron Blooded Swordhound][chrome,firefox,safari,imtAndroid]",
+    "https://poipiku.com/[Poipiku][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -15629,14 +15630,14 @@
       "id": "scripod",
       "matches": "scripod.com",
       "injectedCss.add": [
-        "div.line-clamp-4[data-immersive-translate-walked] { -webkit-line-clamp: unset; max-height: unset;}"
+        "div.line-clamp-4 { -webkit-line-clamp: unset; max-height: unset;}"
       ]
     },
     {
       "id": "cis.vemic.com",
       "matches": "cis.vemic.com",
       "injectedCss.add": [
-        "span.hotData-text[data-immersive-translate-walked] { -webkit-line-clamp: unset !important; line-clamp: unset !important;}"
+        "span.hotData-text { -webkit-line-clamp: unset !important; line-clamp: unset !important;}"
       ]
     },
     {
@@ -16109,6 +16110,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-12T10:25:24.531Z",
+  "buildinConfigUpdatedAt": "2025-05-12T15:33:31.012Z",
   "latestVersion": "1.17.1"
 }
