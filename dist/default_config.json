@@ -15538,7 +15538,8 @@
         "message.alibaba.com"
       ],
       "selectorMatches": [
-        "#plugin-product-comment"
+        "#plugin-product-comment",
+        ".plugin-product-comment-collections"
       ],
       "injectedCss.add": [
         ".side_list a,.title a,.tit {-webkit-line-clamp:unset!important;height:unset!important;}",
@@ -15969,6 +15970,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-12T06:21:24.650Z",
+  "buildinConfigUpdatedAt": "2025-05-12T08:12:29.824Z",
   "latestVersion": "1.16.12"
 }
