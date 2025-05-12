@@ -9171,19 +9171,32 @@
         ],
         "loadingSelectors": [
           "div"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
         ]
       }
     },
     {
-      "id": "toongod.cc",
-      "matches": "toongod.cc",
+      "id": "toongod",
+      "matches": [
+        "toongod.cc"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          ".reading-content img"
+          ".reading-content img",
+          ".page-break > img"
         ]
-      }
+      },
+      "platforms": [
+        "chrome",
+        "firefox",
+        "safari"
+      ]
     },
     {
       "id": "fantia",
@@ -15955,6 +15968,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-11T15:51:08.992Z",
+  "buildinConfigUpdatedAt": "2025-05-12T05:56:29.741Z",
   "latestVersion": "1.16.12"
 }
