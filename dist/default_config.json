@@ -15811,6 +15811,7 @@
       "selectorMatches": [
         "body[translate=no]",
         "body[class=notranslate]",
+        "body[class^='notranslate']",
         "#app[translate=no]",
         "#root[translate=no]",
         "#editor-core-root [translate=no]",
@@ -15970,6 +15971,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-12T08:12:29.824Z",
+  "buildinConfigUpdatedAt": "2025-05-12T09:45:24.252Z",
   "latestVersion": "1.16.12"
 }
