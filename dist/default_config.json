@@ -12785,7 +12785,8 @@
           "#immersive-translate-quick-button-container {display:inline-block;vertical-align:middle;margin-right:-16px;}"
         ],
         "quickButtonRule": {
-          "appendSelector": "[class^='right-controls-']"
+          "appendSelector": "[class^='right-controls-']",
+          "insertBeforeSelector": ".button-settings"
         },
         "attachRule": {
           "appendSelector": "[class^='subtitle-container-']",
@@ -16146,6 +16147,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-13T11:25:55.114Z",
+  "buildinConfigUpdatedAt": "2025-05-13T11:38:09.127Z",
   "latestVersion": "1.17.1"
 }
