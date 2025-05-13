@@ -13999,7 +13999,7 @@
         "CODE"
       ],
       "noTranslateRegexp": [
-        "c.ai"
+        "c\\.ai"
       ]
     },
     {
@@ -16119,6 +16119,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-13T06:32:20.781Z",
+  "buildinConfigUpdatedAt": "2025-05-13T07:59:24.419Z",
   "latestVersion": "1.17.1"
 }
