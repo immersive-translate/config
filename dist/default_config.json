@@ -474,7 +474,8 @@
     "https://learn.unity.com/[UnityLearn]",
     "https://www.medbridge.com/[Medbridge]",
     "https://anix.com.co/[anix]",
-    "https://ahrefs.com/[ahrefs]"
+    "https://ahrefs.com/[ahrefs]",
+    "https://www.domestika.org/[DOMESTIKA]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -4285,7 +4286,8 @@
         "https://business.facebook.com/*",
         "https://www.facebook.com/help*",
         "https://www.facebook.com/ads/library/*",
-        "https://developers.facebook.com/*"
+        "https://developers.facebook.com/*",
+        "https://www.facebook.com/v20.0/plugins/*"
       ],
       "selectors": [
         "div[dir=auto][style]",
@@ -4316,6 +4318,31 @@
       "subtitleRule.add": {
         "type": "subsrt",
         "subtitleUrlRegExp": "srt"
+      }
+    },
+    {
+      "id": "facebookV20VideoPlugin",
+      "matches": "www.facebook.com/v20.0/plugins/*",
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "\\.srt",
+        "quickButtonRule": {
+          "appendSelector": "._1c7f._1c7h",
+          "insertBeforeSelector": "._1c7f._1c7h ._2j04"
+        },
+        "injectedCss": [
+          "#immersive-translate-quick-button-container { display: inline-block; position: relative; top: 10px; }"
+        ],
+        "attachRule": {
+          "appendSelector": "._53j5._37u6._9kkd",
+          "injectedGlobalCSS": [
+            "._30vn._30vp._5z68 {display: none!important;} "
+          ]
+        }
       }
     },
     {
@@ -16119,6 +16146,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-13T07:59:24.419Z",
+  "buildinConfigUpdatedAt": "2025-05-13T11:25:55.114Z",
   "latestVersion": "1.17.1"
 }
