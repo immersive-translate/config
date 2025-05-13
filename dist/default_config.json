@@ -8990,6 +8990,13 @@
       }
     },
     {
+      "id": "scholar.cnki.net",
+      "matches": "scholar.cnki.net",
+      "injectedCss.add": [
+        ".result .searchItem {height: auto!important;}"
+      ]
+    },
+    {
       "id": "visortmo",
       "matches": [
         "visortmo_notranslate.com"
@@ -16110,6 +16117,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-12T15:33:31.012Z",
+  "buildinConfigUpdatedAt": "2025-05-13T02:36:47.493Z",
   "latestVersion": "1.17.1"
 }
