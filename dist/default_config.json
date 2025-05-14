@@ -15090,6 +15090,13 @@
       "forceFormatPre": true
     },
     {
+      "id": "jddonline.com",
+      "matches": "jddonline.com",
+      "injectedCss.add": [
+        ".article-body {column-count:unset;-webkit-column-count:unset;-moz-column-count:unset;}"
+      ]
+    },
+    {
       "id": "novel-site",
       "matches": [
         "www.piaotia.com",
@@ -16148,6 +16155,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-14T10:12:04.000Z",
+  "buildinConfigUpdatedAt": "2025-05-14T15:01:22.809Z",
   "latestVersion": "1.17.2"
 }
