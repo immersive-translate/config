@@ -1567,7 +1567,10 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "maxTextGroupLengthPerRequestForSubtitle": 1,
-      "apiUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+      "apiUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "bodyConfigs": {
+        "enable_thinking": false
+      }
     },
     "doubao": {
       "extends": "ai",
@@ -16155,6 +16158,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-14T15:01:22.809Z",
+  "buildinConfigUpdatedAt": "2025-05-15T09:18:01.778Z",
   "latestVersion": "1.17.2"
 }
