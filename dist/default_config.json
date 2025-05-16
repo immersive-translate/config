@@ -278,7 +278,6 @@
     "https://comic-top.com[Comic Top][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://comic-walker.com/[ComicWalker][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
     "https://web-ace.jp/[Web Ace][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
-    "https://mangabuddy.com/[MANGABUDDY][chrome]",
     "https://e-hentai.org/[E-Hentai][chrome,firefox,safari]",
     "https://nhentai.net[nHentai][chrome,firefox,safari]",
     "https://www.antbyw.com[Antbyw][chrome,firefox,safari,imtAndroid]",
@@ -1235,7 +1234,26 @@
       "translationTextSeparator": "\n\n%%\n\n",
       "proRequestTimeout": 45000,
       "requestTimeout": 101000,
-      "maxTokensRatio": 8
+      "maxTokensRatio": 8,
+      "modelsOverrides": [
+        {
+          "models": [
+            "qwen3-.*"
+          ],
+          "bodyConfigs": {
+            "enable_thinking": "false"
+          }
+        },
+        {
+          "models": [
+            "o3-mini.*",
+            "o3-mini"
+          ],
+          "bodyConfigs": {
+            "temperature.remove": ""
+          }
+        }
+      ]
     },
     "gemini": {
       "visible": true,
@@ -3637,6 +3655,28 @@
           "video::cue {white-space: pre-line;}"
         ]
       },
+      "subtitleRule.add_v.[1.17.3]": {
+        "multipleVideoContainerSelector": "[data-testid=\"videoComponent\"]",
+        "quickButtonRule": {
+          "appendSelector": "button[role=\"button\"]>div>svg<-parent<-parent<-parent<-parent",
+          "injectCSS": ".imt-quick-subtitle-pop-content { transform: unset !important; } .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } "
+        },
+        "aiSubtitle": {
+          "enable": true
+        },
+        "videoSelector": "video",
+        "attachRule": {
+          "appendSelector": "video<-parent",
+          "isDelay": true,
+          "injectedCSS": [
+            ".imt-caption-container {z-index:0;}",
+            ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}"
+          ],
+          "injectedGlobalCSS": [
+            ".r-1peqgm7 #immersive-translate-caption-window {bottom: 60px;}"
+          ]
+        }
+      },
       "imageRule.add": {
         "opImageType": "append",
         "imageStyle": "opacity:1;position:unset;"
@@ -4422,11 +4462,27 @@
           "appendSelector": "#player-container-id",
           "showSupportTips": true,
           "injectedCSS": [
-            ".imt-caption-container {z-index:40;}"
+            ".imt-caption-container {z-index:5;}"
           ],
           "injectedGlobalCSS": [
             ".caption-window {display: none;} ",
             "shorts-video #immersive-translate-caption-window { height: 150px;}"
+          ]
+        }
+      },
+      "subtitleRule.add_v.[1.17.3]": {
+        "quickButtonRule": {
+          "appendSelector": ".player-controls-top",
+          "insertBeforeSelector": ".ytwPlayerAutonavToggleHost",
+          "injectCSS": ".logo,.logo svg { height: 20px !important; width: 20px !important;} .imt-quick-subtitle-pop-content {bottom: unset !important; top: 40px !important;}",
+          "injectedGlobalCSS": ".player-controls-top.with-video-details { z-index: 10; }"
+        },
+        "aiSubtitle": {
+          "enable": true,
+          "urlRegex": [
+            "m.youtube.com/watch*",
+            "m.youtube.com/embed*",
+            "m.youtube.com/shorts*"
           ]
         }
       },
@@ -9972,27 +10028,6 @@
         "loadingSelectors": [
           "div"
         ]
-      }
-    },
-    {
-      "id": "mangabuddy",
-      "matches": [
-        "mangabuddy.com"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "#chapter-images img"
-        ],
-        "loadingSelectors": [
-          "div"
-        ],
-        "platforms": [
-          "chrome"
-        ],
-        "injectedCss": ".imt-image-status {top:10%!important;}",
-        "intersectionRootMargin": "0px 0px 200% 0px"
       }
     },
     {
@@ -15692,6 +15727,15 @@
       ]
     },
     {
+      "id": "jddonline",
+      "matches": [
+        "jddonline.com"
+      ],
+      "injectedCss.add": [
+        "div.jdd-product-info-box {height:unset!important;}"
+      ]
+    },
+    {
       "id": "autoHeight",
       "matches": [
         "*.sooplive.*",
@@ -16162,6 +16206,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-16T03:56:55.799Z",
-  "latestVersion": "1.17.2"
+  "buildinConfigUpdatedAt": "2025-05-16T10:47:10.472Z",
+  "latestVersion": "1.17.3"
 }
