@@ -13676,7 +13676,8 @@
         "[class='css-1jxf684 r-1loqt21']",
         "[data-testid=repostCount]",
         "[data-testid=likeCount]",
-        "[data-testid=replyBtn]"
+        "[data-testid=replyBtn]",
+        "[style='flex: 1 1 0%; flex-direction: row; align-items: center; padding-bottom: 4px; gap: 4px; z-index: 20;']"
       ],
       "likePreSelectors.add_v.[1.11.5]": [
         "[data-testid*=postThread] [data-word-wrap]",
@@ -16158,6 +16159,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-15T09:18:01.778Z",
+  "buildinConfigUpdatedAt": "2025-05-16T02:48:25.557Z",
   "latestVersion": "1.17.2"
 }
