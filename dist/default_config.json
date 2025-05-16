@@ -16143,7 +16143,8 @@
         "header h1",
         "header h2",
         "header h3",
-        "header p"
+        "header p",
+        "header nav"
       ],
       "preTranslateLimiter.add_v.[1.12.1]": {
         "header.enableTranslate": true
@@ -16159,6 +16160,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-16T02:48:25.557Z",
+  "buildinConfigUpdatedAt": "2025-05-16T02:52:19.538Z",
   "latestVersion": "1.17.2"
 }
