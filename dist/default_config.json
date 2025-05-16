@@ -11505,7 +11505,8 @@
         "mcloud.vvid30c.site",
         "rabbitstream.net",
         "kerolaunochan.*",
-        "megacloud.*"
+        "megacloud.*",
+        "netusa.xyz"
       ],
       "selectionTranslation": {
         "enable": false
@@ -16160,6 +16161,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-16T02:52:19.538Z",
+  "buildinConfigUpdatedAt": "2025-05-16T03:07:06.325Z",
   "latestVersion": "1.17.2"
 }
