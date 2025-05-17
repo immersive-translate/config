@@ -7065,18 +7065,6 @@
       ]
     },
     {
-      "id": "ahaIo",
-      "matches": [
-        "*.aha.io"
-      ],
-      "selectors": [
-        "[tabindex='0']",
-        "div.user-content",
-        "div.comments__body",
-        "span.name"
-      ]
-    },
-    {
       "id": "thehill",
       "matches": "thehill.com",
       "injectedCss": [
@@ -16206,6 +16194,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-16T10:46:48.000Z",
+  "buildinConfigUpdatedAt": "2025-05-17T10:05:07.511Z",
   "latestVersion": "1.17.3"
 }
