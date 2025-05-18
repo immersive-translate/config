@@ -9334,7 +9334,8 @@
         "platforms": [
           "chrome",
           "firefox",
-          "safari"
+          "safari",
+          "imtAndroid"
         ]
       }
     },
@@ -16194,6 +16195,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-17T10:05:07.511Z",
+  "buildinConfigUpdatedAt": "2025-05-18T08:36:43.133Z",
   "latestVersion": "1.17.3"
 }
