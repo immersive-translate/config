@@ -12896,7 +12896,10 @@
     },
     {
       "id": "hulu",
-      "matches": "https://*.hulu.com",
+      "matches": [
+        "https://*.hulu.com",
+        "https://*.hulu.*"
+      ],
       "additionalExcludeSelectors.add": [
         ".PlayerMetadata__subTitle",
         ".PlayerMetadata__subTitle",
@@ -16196,6 +16199,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-18T09:25:03.225Z",
+  "buildinConfigUpdatedAt": "2025-05-18T12:25:59.904Z",
   "latestVersion": "1.17.3"
 }
