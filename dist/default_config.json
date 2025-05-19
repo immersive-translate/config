@@ -16258,9 +16258,10 @@
       },
       "extraBlockSelectors.add": [
         ".btn"
-      ]
+      ],
+      "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-19T11:09:28.000Z",
+  "buildinConfigUpdatedAt": "2025-05-19T11:28:04.892Z",
   "latestVersion": "1.17.4"
 }
