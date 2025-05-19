@@ -4230,7 +4230,8 @@
         "div.news > div.js-notice"
       ],
       "injectedCss.add": [
-        ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}"
+        ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
+        "li>div[class*='Box-sc'],div[class*='Box-sc']>button[class*='prc-Token-TokenBase'],li[class*='card-label-module']>button[class*='prc-Token-TokenBase'] {height:unset!important;}"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -4249,7 +4250,8 @@
         "[data-testid^='breadcrumbs']",
         "[data-ga-click*=Star]",
         ".markdown-body h3",
-        "div.vcard-names-container"
+        "div.vcard-names-container",
+        "div.js-disable-context-menu"
       ],
       "extraBlockSelectors.add": [],
       "extraInlineSelectors": [
@@ -16199,6 +16201,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-18T12:25:59.904Z",
+  "buildinConfigUpdatedAt": "2025-05-19T02:49:04.575Z",
   "latestVersion": "1.17.3"
 }
