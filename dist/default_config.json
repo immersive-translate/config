@@ -9754,6 +9754,16 @@
       }
     },
     {
+      "id": "newtoki468",
+      "matches": "newtoki468.com",
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          "p>img"
+        ]
+      }
+    },
+    {
       "id": "idmzj",
       "matches": [
         "www.idmzj.com",
@@ -16235,6 +16245,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-19T10:01:49.150Z",
+  "buildinConfigUpdatedAt": "2025-05-19T10:54:20.017Z",
   "latestVersion": "1.17.3"
 }
