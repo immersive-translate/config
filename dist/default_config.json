@@ -8013,13 +8013,6 @@
       }
     },
     {
-      "id": "highfrequencyelectronics",
-      "matches": "www.highfrequencyelectronics.com",
-      "globalStyles": {
-        "#main-content": "overflow:unset;"
-      }
-    },
-    {
       "id": "githubBlog",
       "matches": "github.blog",
       "globalStyles": {
@@ -8097,13 +8090,6 @@
       "selectors": [
         ".content",
         "#menu"
-      ]
-    },
-    {
-      "id": "uzh",
-      "matches": "www.uzh.ch",
-      "injectedCss": [
-        ".TextImage--inner {overflow:auto !important;}"
       ]
     },
     {
@@ -13923,13 +13909,6 @@
       ]
     },
     {
-      "id": "icloud-sandbox",
-      "matches": "www-mail.icloud-sandbox.com",
-      "injectedCss.add": [
-        "body{overflow-y:scroll!important;}"
-      ]
-    },
-    {
       "id": "pubs.acs.org",
       "matches": "pubs.acs.org",
       "mainFrameSelector": [
@@ -13964,15 +13943,6 @@
       ],
       "stayOriginalSelectors.add": [
         "d-cite"
-      ]
-    },
-    {
-      "id": "cpaaustralia",
-      "matches": [
-        "*.cpaaustralia.com.*"
-      ],
-      "injectedCss": [
-        "li.expanded > div{ overflow:scroll; }"
       ]
     },
     {
@@ -15280,15 +15250,6 @@
       ]
     },
     {
-      "id": "8du8",
-      "matches": [
-        "www.8du8.net/*"
-      ],
-      "injectedCss.add": [
-        ".book_list ul li { height: unset !important; overflow: visible !important; }"
-      ]
-    },
-    {
       "id": "jwxs",
       "matches": [
         "www.jwxs.org/book/*"
@@ -15395,13 +15356,6 @@
       "injectedCss.add": [
         "li {height:unset!important;}",
         ".big_box,article .text,article .title {height:unset!important;}"
-      ]
-    },
-    {
-      "id": "ieltscat.xdf",
-      "matches": "ieltscat.xdf.*",
-      "injectedCss.add": [
-        "#tabs-content-wrap {overflow:scroll;}"
       ]
     },
     {
@@ -15536,13 +15490,6 @@
       "injectedCss.add": [
         ".text_wrapper ul li {max-height:unset!important;}",
         ".container {overflow:scroll;}"
-      ]
-    },
-    {
-      "id": "moddota",
-      "matches": "moddota.com",
-      "injectedCss.add": [
-        ".ReactVirtualized__Grid__innerScrollContainer {overflow:scroll!important;}"
       ]
     },
     {
@@ -15962,6 +15909,29 @@
       }
     },
     {
+      "id": "overflow-sites",
+      "matches": [
+        "www.highfrequencyelectronics.com",
+        "www.uzh.ch",
+        "www-mail.icloud-sandbox.com",
+        "*.cpaaustralia.com.*",
+        "www.8du8.net/*",
+        "ieltscat.xdf.*",
+        "moddota.com",
+        "www.nogizaka46.com"
+      ],
+      "injectedCss.add": [
+        "#main-content {overflow:unset;}",
+        ".TextImage--inner {overflow:auto !important;}",
+        "body{overflow-y:scroll!important;}",
+        "li.expanded > div{ overflow:scroll; }",
+        ".book_list ul li { height: unset !important; overflow: visible !important; }",
+        "#tabs-content-wrap {overflow:scroll;}",
+        ".ReactVirtualized__Grid__innerScrollContainer {overflow:scroll!important;}",
+        ".b--wrap {overflow:scroll!important;}"
+      ]
+    },
+    {
       "id": "preSites",
       "matches": [
         "mail.jabber.org",
@@ -16264,6 +16234,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-19T13:21:38.824Z",
+  "buildinConfigUpdatedAt": "2025-05-19T15:49:14.890Z",
   "latestVersion": "1.17.4"
 }
