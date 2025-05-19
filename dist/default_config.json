@@ -2107,6 +2107,7 @@
       },
       "enableAutoRead": false,
       "triggerMode": "mini",
+      "triggerModeForIcon": "hover",
       "proService": {
         "service": "gemini",
         "model": "gemini-2.0-flash"
@@ -3616,6 +3617,20 @@
               "likePreSelectors": []
             }
           }
+        },
+        {
+          "condition": "isMobile==true",
+          "advanceConfig": {
+            "generalRule": {
+              "subtitleRule.add": {
+                "quickButtonRule": {
+                  "appendSelector": "div<-[data-testid*=\"cellInnerDiv-tweet\"]->[data-testid*=\"immersive-tweet-ui-content-container\"] button[role=\"button\"]<-parent",
+                  "insertBeforeSelector": "div<-[data-testid*=\"cellInnerDiv-tweet\"]->[data-testid*=\"immersive-tweet-ui-content-container\"] button[role=\"button\"]",
+                  "injectCSS": ".imt-quick-subtitle-button { margin: 0 6px !important; } .imt-quick-subtitle-pop-content { transform: unset !important; } .logo,.logo svg { height: 24px !important; width: 24px !important;}, .logo svg { margin-top: 2px !important; } "
+                }
+              }
+            }
+          }
         }
       ],
       "ignoreZhCNandZhTW": true,
@@ -3675,7 +3690,8 @@
             ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}"
           ],
           "injectedGlobalCSS": [
-            ".r-1peqgm7 #immersive-translate-caption-window {bottom: 60px;}"
+            ".r-1peqgm7 #immersive-translate-caption-window {bottom: 60px;}",
+            "[data-testid=\"modalContainer\"] #immersive-translate-caption-window {bottom: unset !important; height: 180px !important;}"
           ]
         }
       },
@@ -16245,6 +16261,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-19T10:54:20.017Z",
-  "latestVersion": "1.17.3"
+  "buildinConfigUpdatedAt": "2025-05-19T11:08:58.090Z",
+  "latestVersion": "1.17.4"
 }
