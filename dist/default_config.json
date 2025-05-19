@@ -15795,14 +15795,15 @@
       "matches": [
         "*.sooplive.*",
         "zen-browser.app",
-        "message.alibaba.com"
+        "message.alibaba.com",
+        "erp.91miaoshou.com"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
         ".plugin-product-comment-collections"
       ],
       "injectedCss.add": [
-        ".side_list a,.title a,.tit {-webkit-line-clamp:unset!important;height:unset!important;}",
+        ".side_list a,.title a,.tit,.item-title {-webkit-line-clamp:unset!important;height:unset!important;}",
         "details {height:unset!important;}",
         ".product-title {height:unset!important;-webkit-line-clamp:unset!important;}",
         ".plugin-product-comment-content {height:unset!important;-webkit-line-clamp:unset!important;}"
@@ -16262,6 +16263,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-19T11:28:04.892Z",
+  "buildinConfigUpdatedAt": "2025-05-19T11:42:42.992Z",
   "latestVersion": "1.17.4"
 }
