@@ -347,7 +347,8 @@
     "https://page.kakao.com/[Kakao][chrome,firefox,safari,imtAndroid]",
     "https://topreadmanga.com/[TopReadManga][chrome,firefox,safari,imtAndroid]",
     "https://revengeoftheiron-bloodedswordhound.one/[Revenge of the Iron Blooded Swordhound][chrome,firefox,safari,imtAndroid]",
-    "https://poipiku.com/[Poipiku][chrome,firefox,safari,imtAndroid]"
+    "https://poipiku.com/[Poipiku][chrome,firefox,safari,imtAndroid]",
+    "https://manhuaus.com/[Manhuaus][chrome,firefox,safari]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -14247,6 +14248,22 @@
       }
     },
     {
+      "id": "manhuaus.com",
+      "matches": "manhuaus.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "div.page-break > img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "jestful",
       "matches": [
         "jestful.net"
@@ -16201,6 +16218,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-19T02:49:04.575Z",
+  "buildinConfigUpdatedAt": "2025-05-19T07:51:12.639Z",
   "latestVersion": "1.17.3"
 }
