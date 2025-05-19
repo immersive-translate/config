@@ -14264,6 +14264,22 @@
       }
     },
     {
+      "id": "toondex",
+      "matches": "toondex.co",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "img[id*='row']"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "jestful",
       "matches": [
         "jestful.net"
@@ -16218,6 +16234,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-19T07:51:12.639Z",
+  "buildinConfigUpdatedAt": "2025-05-19T08:31:22.331Z",
   "latestVersion": "1.17.3"
 }
