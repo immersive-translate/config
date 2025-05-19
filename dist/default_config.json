@@ -1237,6 +1237,7 @@
       "proRequestTimeout": 45000,
       "requestTimeout": 101000,
       "maxTokensRatio": 8,
+      "minTokensRatio": 0.21,
       "modelsOverrides": [
         {
           "models": [
@@ -16263,6 +16264,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-19T11:42:42.992Z",
+  "buildinConfigUpdatedAt": "2025-05-19T13:21:38.824Z",
   "latestVersion": "1.17.4"
 }
