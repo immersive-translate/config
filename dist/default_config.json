@@ -9722,7 +9722,8 @@
       "id": "omegascans",
       "matches": [
         "omegascans_notranslate.org",
-        "reaperscans.com"
+        "reaperscans.com",
+        "www.omegascans.org"
       ],
       "imageRule.add": {
         "type": "manga",
@@ -16234,6 +16235,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-19T09:54:38.787Z",
+  "buildinConfigUpdatedAt": "2025-05-19T10:01:49.150Z",
   "latestVersion": "1.17.3"
 }
