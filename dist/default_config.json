@@ -10830,6 +10830,22 @@
       }
     },
     {
+      "id": "comic.mf-fleur.jp",
+      "matches": "comic.mf-fleur.jp",
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          ".manga-content__image img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "page.kakao.com",
       "matches": [
         "page.kakao.com"
@@ -16343,6 +16359,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-20T09:39:32.508Z",
+  "buildinConfigUpdatedAt": "2025-05-20T09:45:36.700Z",
   "latestVersion": "1.17.4"
 }
