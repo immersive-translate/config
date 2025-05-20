@@ -14258,6 +14258,23 @@
       }
     },
     {
+      "id": "momon-ga.com",
+      "matches": "momon-ga.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#post-hentai img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "blossommanga.com",
       "matches": "blossommanga.com",
       "imageRule.add": {
@@ -16322,6 +16339,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-20T05:36:06.655Z",
+  "buildinConfigUpdatedAt": "2025-05-20T05:42:57.992Z",
   "latestVersion": "1.17.4"
 }
