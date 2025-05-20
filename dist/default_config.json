@@ -348,7 +348,8 @@
     "https://topreadmanga.com/[TopReadManga][chrome,firefox,safari,imtAndroid]",
     "https://revengeoftheiron-bloodedswordhound.one/[Revenge of the Iron Blooded Swordhound][chrome,firefox,safari,imtAndroid]",
     "https://poipiku.com/[Poipiku][chrome,firefox,safari,imtAndroid]",
-    "https://manhuaus.com/[Manhuaus][chrome,firefox,safari]"
+    "https://manhuaus.com/[Manhuaus][chrome,firefox,safari]",
+    "https://www.hmttmh.com/[HMTTMH][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -14241,6 +14242,23 @@
       }
     },
     {
+      "id": "w226.npdn.top",
+      "matches": "w226.npdn.top",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#comicContain img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "dlsite",
       "matches": [
         "play.dlsite.com"
@@ -16268,6 +16286,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-20T03:45:09.793Z",
+  "buildinConfigUpdatedAt": "2025-05-20T03:53:42.676Z",
   "latestVersion": "1.17.4"
 }
