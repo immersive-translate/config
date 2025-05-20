@@ -14224,6 +14224,23 @@
       }
     },
     {
+      "id": "blossommanga.com",
+      "matches": "blossommanga.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "img[ng-img='true']"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "dlsite",
       "matches": [
         "play.dlsite.com"
@@ -16251,6 +16268,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-20T03:40:19.563Z",
+  "buildinConfigUpdatedAt": "2025-05-20T03:45:09.793Z",
   "latestVersion": "1.17.4"
 }
