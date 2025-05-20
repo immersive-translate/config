@@ -9324,7 +9324,8 @@
       "id": "mangadistrict-manhwaclan",
       "matches": [
         "mangadistrict2.com",
-        "manhwaclan.com"
+        "manhwaclan.com",
+        "manhuaread.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -9771,6 +9772,9 @@
     {
       "id": "smokingbehindthesupermarket.com",
       "matches": "smokingbehindthesupermarket.com",
+      "selectorMatches": [
+        "div.post-single-content#content"
+      ],
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
@@ -16339,6 +16343,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-20T05:42:57.992Z",
+  "buildinConfigUpdatedAt": "2025-05-20T09:39:32.508Z",
   "latestVersion": "1.17.4"
 }
