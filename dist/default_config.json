@@ -10847,6 +10847,22 @@
       }
     },
     {
+      "id": "manhwaus.org",
+      "matches": "manhwaus.org",
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          ".read-content img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -16306,6 +16322,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-20T05:04:53.730Z",
+  "buildinConfigUpdatedAt": "2025-05-20T05:36:06.655Z",
   "latestVersion": "1.17.4"
 }
