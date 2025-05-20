@@ -14243,7 +14243,10 @@
     },
     {
       "id": "w226.npdn.top",
-      "matches": "w226.npdn.top",
+      "matches": [
+        "w226.npdn.top",
+        "www.hmttmh.com"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
@@ -16286,6 +16289,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-20T03:53:42.676Z",
+  "buildinConfigUpdatedAt": "2025-05-20T03:55:32.195Z",
   "latestVersion": "1.17.4"
 }
