@@ -349,7 +349,8 @@
     "https://revengeoftheiron-bloodedswordhound.one/[Revenge of the Iron Blooded Swordhound][chrome,firefox,safari,imtAndroid]",
     "https://poipiku.com/[Poipiku][chrome,firefox,safari,imtAndroid]",
     "https://manhuaus.com/[Manhuaus][chrome,firefox,safari]",
-    "https://www.hmttmh.com/[HMTTMH][chrome,firefox,safari,imtAndroid]"
+    "https://www.hmttmh.com/[HMTTMH][chrome,firefox,safari,imtAndroid]",
+    "https://smokingbehindthesupermarket.com/[Smoking Behind the Supermarket][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -9768,6 +9769,22 @@
       }
     },
     {
+      "id": "smokingbehindthesupermarket.com",
+      "matches": "smokingbehindthesupermarket.com",
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          "#content img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "idmzj",
       "matches": [
         "www.idmzj.com",
@@ -16289,6 +16306,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-20T03:55:32.195Z",
+  "buildinConfigUpdatedAt": "2025-05-20T05:04:53.730Z",
   "latestVersion": "1.17.4"
 }
