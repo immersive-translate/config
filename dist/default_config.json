@@ -9949,7 +9949,8 @@
         "www.corocoro.jp",
         "tonarinoyj.jp",
         "pocket.shonenmagazine.com",
-        "rimacomiplus.jp"
+        "rimacomiplus.jp",
+        "kuragebunch.com"
       ],
       "selectorMatches": [
         "canvas.page-image.js-page-image",
@@ -9961,7 +9962,8 @@
           ".js-page-area canvas",
           "img.page-image.js-page-image",
           "img[class$=\"_page\"]",
-          "[class='-cv-page-canvas'] canvas"
+          "[class='-cv-page-canvas'] canvas",
+          ".link-slot img"
         ],
         "urlFetchType": "canvasArgs",
         "opImageType": "append",
@@ -16362,6 +16364,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-20T13:49:43.405Z",
+  "buildinConfigUpdatedAt": "2025-05-20T16:08:56.952Z",
   "latestVersion": "1.17.4"
 }
