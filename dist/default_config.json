@@ -14207,6 +14207,23 @@
       }
     },
     {
+      "id": "www.manhuazhan.com",
+      "matches": "www.manhuazhan.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "p.chapter>img.lazy"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "dlsite",
       "matches": [
         "play.dlsite.com"
@@ -16234,6 +16251,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-19T15:49:14.890Z",
+  "buildinConfigUpdatedAt": "2025-05-20T03:40:19.563Z",
   "latestVersion": "1.17.4"
 }
