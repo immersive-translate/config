@@ -14351,8 +14351,11 @@
       "imageRule.add": {
         "enable": true,
         "type": "manga",
+        "opImageType": "append",
+        "urlFetchType": "canvasArgs",
         "imageSelectors": [
-          "[class*=\"_page_container\"] img"
+          "[class*=\"_page_container\"] img",
+          "[class*=\"imageViewerRender\"] canvas"
         ],
         "injectedCss": "#immersiveTranslateImgLoading { z-index:999 !important; }",
         "platforms": [
@@ -16371,6 +16374,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-21T04:37:01.846Z",
+  "buildinConfigUpdatedAt": "2025-05-21T10:43:26.747Z",
   "latestVersion": "1.17.4"
 }
