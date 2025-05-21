@@ -6587,6 +6587,13 @@
       "excludeSelectors": [
         "[data-testid=virtuoso-scroller] .css-10c6i1g *"
       ],
+      "excludeTags.remove": [
+        "PRE",
+        "CODE"
+      ],
+      "stayOriginalTags.remove": [
+        "CODE"
+      ],
       "aiRule": {
         "streamingSelector": "button[aria-label=Cancel]",
         "messageWrapperSelector": "[data-testid=virtuoso-scroller] .css-10c6i1g",
@@ -16364,6 +16371,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-20T16:08:56.952Z",
+  "buildinConfigUpdatedAt": "2025-05-21T04:37:01.846Z",
   "latestVersion": "1.17.4"
 }
