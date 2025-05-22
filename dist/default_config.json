@@ -9940,7 +9940,8 @@
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
-          "canvas.page-image.js-page-image"
+          "canvas.page-image.js-page-image",
+          ".link-slot img"
         ],
         "urlFetchType": "canvasArgs",
         "opImageType": "append"
@@ -16374,6 +16375,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-21T10:43:26.747Z",
+  "buildinConfigUpdatedAt": "2025-05-22T05:14:24.571Z",
   "latestVersion": "1.17.4"
 }
