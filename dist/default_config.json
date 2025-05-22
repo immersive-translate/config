@@ -4531,7 +4531,7 @@
       ],
       "advanceMergeConfig": [
         {
-          "condition": "imtAndroidVersionNumber>10000",
+          "condition": "platform==imtAndroid",
           "advanceConfig": {
             "generalRule": {
               "subtitleRule.add": {
@@ -16375,6 +16375,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-22T10:30:06.000Z",
+  "buildinConfigUpdatedAt": "2025-05-22T10:42:22.400Z",
   "latestVersion": "1.17.5"
 }
