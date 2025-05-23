@@ -8927,14 +8927,16 @@
         "*.xn--h10b90bbmq49b63sq4e.com",
         "m.뉴토끼대피소.com",
         "뉴토끼대피소.com",
-        "funbe537.com"
+        "funbe537.com",
+        "happytoon01.com"
       ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
         "imageSelectors": [
           "#toon_content_imgs img",
-          "#toon_img img"
+          "#toon_img img",
+          ".webtoon-read-section img"
         ],
         "platforms": [
           "chrome",
@@ -16433,6 +16435,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-23T06:38:57.101Z",
+  "buildinConfigUpdatedAt": "2025-05-23T06:47:42.244Z",
   "latestVersion": "1.17.5"
 }
