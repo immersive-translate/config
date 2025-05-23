@@ -477,7 +477,8 @@
     "https://www.medbridge.com/[Medbridge]",
     "https://anix.com.co/[anix]",
     "https://ahrefs.com/[ahrefs]",
-    "https://www.domestika.org/[DOMESTIKA]"
+    "https://www.domestika.org/[DOMESTIKA]",
+    "https://www.angel.com/[ANGEL]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -16423,6 +16424,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-23T07:18:12.726Z",
+  "buildinConfigUpdatedAt": "2025-05-23T07:29:04.118Z",
   "latestVersion": "1.17.5"
 }
