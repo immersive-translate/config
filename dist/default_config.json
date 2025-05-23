@@ -8955,6 +8955,25 @@
       "_comment": "通用韩漫配置项"
     },
     {
+      "id": "comic-meteor",
+      "matches": [
+        "comic-meteor.jp"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#content img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "mangaplus-shueisha",
       "matches": [
         "mangaplus.shueisha.*"
@@ -16427,6 +16446,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-23T07:45:15.882Z",
+  "buildinConfigUpdatedAt": "2025-05-23T08:16:37.452Z",
   "latestVersion": "1.17.5"
 }
