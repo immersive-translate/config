@@ -4162,12 +4162,16 @@
         "hookType": "xhr",
         "enableHookDownload": true,
         "quickButtonRule": {
-          "appendSelector": ".bmpui-ui-container.bmpui-controlbar-bottom",
+          "appendSelector": ".bmpui-ui-container.bmpui-controlbar-bottom > .bmpui-container-wrapper",
           "insertBeforeSelector": ".bmpui-ui-communityviewtogglebutton",
           "ccEnableSelector": ".bmpui-ui-subtitlesettingstogglebutton"
         },
         "attachRule": {
           "appendSelector": "#bitmovin-player",
+          "injectedCSS": [
+            ".imt-caption-container {z-index: 10;}",
+            ".imt-caption-window {margin-bottom: 0; bottom: 12%!important;top: unset!important;}"
+          ],
           "injectedGlobalCSS": [
             ".bmpui-subtitle-position-vtt {display: none!important;} "
           ]
@@ -16419,6 +16423,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-23T06:53:30.757Z",
+  "buildinConfigUpdatedAt": "2025-05-23T07:18:12.726Z",
   "latestVersion": "1.17.5"
 }
