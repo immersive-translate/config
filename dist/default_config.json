@@ -15111,8 +15111,11 @@
       "imageRule.add": {
         "enable": true,
         "type": "manga",
+        "opImageType": "append",
+        "urlFetchType": "canvasArgs",
         "imageSelectors": [
-          ".scrollViewCut__dBC__ img"
+          "div[class*='scrollViewCut'] img",
+          "div[class*='scrollViewCut'] canvas"
         ],
         "platforms": [
           "chrome",
@@ -16424,6 +16427,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-23T07:29:04.118Z",
+  "buildinConfigUpdatedAt": "2025-05-23T07:45:15.882Z",
   "latestVersion": "1.17.5"
 }
