@@ -4148,6 +4148,36 @@
       }
     },
     {
+      "id": "angel",
+      "matches": "www.angel.com",
+      "excludeSelectors.add": [
+        ".bmpui-subtitle-position-vtt *"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".bmpui-subtitle-position-vtt *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": "/subtitles/.*\\.vtt",
+        "hookType": "xhr",
+        "enableHookDownload": true,
+        "quickButtonRule": {
+          "appendSelector": ".bmpui-ui-container.bmpui-controlbar-bottom",
+          "insertBeforeSelector": ".bmpui-ui-communityviewtogglebutton",
+          "ccEnableSelector": ".bmpui-ui-subtitlesettingstogglebutton"
+        },
+        "attachRule": {
+          "appendSelector": "#bitmovin-player",
+          "injectedGlobalCSS": [
+            ".bmpui-subtitle-position-vtt {display: none!important;} "
+          ]
+        },
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ]
+      }
+    },
+    {
       "id": "reuters",
       "matches": "www.reuters.com",
       "excludeSelectors": [
@@ -8892,6 +8922,28 @@
       }
     },
     {
+      "id": "ko-commic",
+      "matches": [
+        "*.xn--h10b90bbmq49b63sq4e.com",
+        "m.뉴토끼대피소.com",
+        "뉴토끼대피소.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#toon_content_imgs img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      },
+      "_comment": "通用韩漫配置项"
+    },
+    {
       "id": "mangaplus-shueisha",
       "matches": [
         "mangaplus.shueisha.*"
@@ -10570,6 +10622,26 @@
         "type": "manga",
         "imageSelectors": [
           ".ng-scope img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari"
+        ]
+      }
+    },
+    {
+      "id": "ganma",
+      "matches": [
+        "share.ganma.jp",
+        "ganma.jp"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "div[data-testid*=\"ReaderFrameForHorizontal\"] div.flex.flex-row-reverse div img",
+          "div > img"
         ],
         "platforms": [
           "chrome",
@@ -14907,22 +14979,6 @@
       }
     },
     {
-      "id": "ganma",
-      "matches": "ganma.jp",
-      "imageRule.add": {
-        "enable": true,
-        "platforms": [
-          "chrome",
-          "firefox",
-          "safari"
-        ],
-        "type": "manga",
-        "imageSelectors": [
-          "div[data-testid*=\"ReaderFrameForHorizontal\"] div.flex.flex-row-reverse div img"
-        ]
-      }
-    },
-    {
       "id": "imhentai",
       "matches": [
         "imhentai.xxx"
@@ -16375,6 +16431,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-22T10:42:22.400Z",
+  "buildinConfigUpdatedAt": "2025-05-23T06:27:59.018Z",
   "latestVersion": "1.17.5"
 }
