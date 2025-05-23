@@ -11892,11 +11892,11 @@
       "id": "osmosis",
       "matches": "*.osmosis.org",
       "excludeSelectors.add": [
-        "div[data-testid=overlayPlayPause]",
+        "#video-player-container",
         "#immersive-translate-caption-window"
       ],
       "mutationExcludeSelectors.add": [
-        "div[data-testid=overlayPlayPause] *",
+        "#video-player-container *",
         "#immersive-translate-caption-window *"
       ],
       "mainFrameMinTextCount": 0,
@@ -11905,18 +11905,18 @@
         "type": "subsrt",
         "subtitleUrlRegExp": "\\.vtt$",
         "hookType": "xhr",
-        "loadingContainerSelector": "div[data-testid=overlayPlayPause]",
+        "loadingContainerSelector": "#video-player-container",
         "injectedCss": [],
         "quickButtonRule": {
-          "appendSelector": "#video-player-container > div:nth-child(3) > div div[cn=gap-2]",
-          "insertBeforeSelector": "#video-player-container > div:nth-child(3) > div div[cn=gap-2] > :first-child",
+          "appendSelector": "#video-player-container > div > div:nth-child(3) > div > div:nth-child(2) > div:nth-child(2)",
+          "insertBeforeSelector": "#video-player-container > div > div:nth-child(3) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2)",
           "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: none !important; }"
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
-          "appendSelector": "div[data-testid=overlayPlayPause]",
+          "appendSelector": "#video-player-container",
           "injectedGlobalCSS": [
             "div[data-testid=video-subtitles-container] { display: none !important; }",
             "#video-player-container > div:nth-child(3) > div div[cn=gap-2] { z-index: 21474836471; }"
@@ -16447,6 +16447,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-23T11:02:29.807Z",
+  "buildinConfigUpdatedAt": "2025-05-23T11:14:33.906Z",
   "latestVersion": "1.17.5"
 }
