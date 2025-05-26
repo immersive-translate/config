@@ -10211,7 +10211,8 @@
         "platforms": [
           "chrome",
           "firefox",
-          "safari"
+          "safari",
+          "imtAndroid"
         ]
       }
     },
@@ -16456,6 +16457,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-26T02:26:33.854Z",
+  "buildinConfigUpdatedAt": "2025-05-26T03:11:02.289Z",
   "latestVersion": "1.17.5"
 }
