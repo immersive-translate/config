@@ -15046,8 +15046,10 @@
       "imageRule.add": {
         "enable": true,
         "type": "manga",
+        "urlFetchType": "canvasArgs",
+        "opImageType": "append",
         "imageSelectors": [
-          ".scramble-page img"
+          ".scramble-page canvas"
         ],
         "platforms": [
           "chrome",
@@ -16465,6 +16467,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-26T08:34:39.096Z",
+  "buildinConfigUpdatedAt": "2025-05-26T10:33:00.803Z",
   "latestVersion": "1.17.5"
 }
