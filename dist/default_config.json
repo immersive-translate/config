@@ -9978,7 +9978,7 @@
         "readcomic.me"
       ],
       "imageRule.add": {
-        "enable": false,
+        "enable": true,
         "type": "manga",
         "imageSelectors": [
           "#divImage img",
@@ -16467,6 +16467,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-26T10:33:00.803Z",
+  "buildinConfigUpdatedAt": "2025-05-26T11:58:02.078Z",
   "latestVersion": "1.17.5"
 }
