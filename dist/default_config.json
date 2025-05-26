@@ -16088,7 +16088,7 @@
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
-          "appendSelector": ".w-vulcan-overlays--center > div",
+          "appendSelector": ".w-video-wrapper.w-css-reset",
           "injectedGlobalCSS": [
             ".w-captions.w-css-reset { display: none !important; }",
             ".w-bottom-bar-right-inner.w-css-reset { z-index: 2147483647; }"
@@ -16457,6 +16457,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-26T03:11:02.289Z",
+  "buildinConfigUpdatedAt": "2025-05-26T06:18:34.308Z",
   "latestVersion": "1.17.5"
 }
