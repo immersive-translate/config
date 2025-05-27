@@ -16133,6 +16133,13 @@
       }
     },
     {
+      "id": "futuretools",
+      "matches": "www.futuretools.io",
+      "globalStyles": {
+        ".collection-item-6": "height: unset !important;"
+      }
+    },
+    {
       "id": "overflow-sites",
       "matches": [
         "www.highfrequencyelectronics.com",
@@ -16467,6 +16474,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-26T11:58:02.078Z",
+  "buildinConfigUpdatedAt": "2025-05-27T01:15:44.397Z",
   "latestVersion": "1.17.5"
 }
