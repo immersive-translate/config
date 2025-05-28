@@ -350,7 +350,8 @@
     "https://poipiku.com/[Poipiku][chrome,firefox,safari,imtAndroid]",
     "https://manhuaus.com/[Manhuaus][chrome,firefox,safari]",
     "https://www.hmttmh.com/[HMTTMH][chrome,firefox,safari,imtAndroid]",
-    "https://smokingbehindthesupermarket.com/[Smoking Behind the Supermarket][chrome,firefox,safari,imtAndroid]"
+    "https://smokingbehindthesupermarket.com/[Smoking Behind the Supermarket][chrome,firefox,safari,imtAndroid]",
+    "https://jumptoon.com/[Jumptoon][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -1770,7 +1771,7 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "enableFallback": true,
-      "selectionSystemPrompt": "You are a professional multilingual translation engine.\nRULES: \n1. For single words: provide translation, phonetics, definitions grouped by part of speech, and example sentences.  \n2. For sentences/phrases:  provide translation only.  \n3. All explanations must be in {{to}}.  \n4. For  English, Use American phonetics for phonetic symbols. \n5. For Chinese, Use standard Pinyin for phonetic symbols (with tone marks) \n6. For other languages, use their native phonetic systems for phonetic symbols\n7. Do not output languages other than those requested \n8. Consider context when analyzing words.  \n9. Output raw JSON without markdown code blocks. \nSINGLE WORD OUTPUT: \n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"excl.\",\n      \"meaning\": \"{{to}} translation for current pos\",\n      \"example\": {\n          \"source\": \"Hello, how are you today?\",\n          \"target\": \"{{to}} example\"\n       }\n    }\n  ],\n  \"translation\": \"translation in {{to}}\",\n  \"contextual_analysis\": \"contextual analysis use {{to}}\"\n}\nSENTENCE/PHRASE OUTPUT: \n{\n  \"translation\": \"translation in {{to}}\"\n}\nCONTEXT: {{context_text}}"
+      "selectionSystemPrompt": "You are a professional multilingual translation engine.\nRULES: \n1. For single words: provide translation, phonetics, definitions grouped by part of speech, and example sentences.  \n2. For sentences/phrases:  provide translation only.  \n3. All responses must be in {{to}} language.  \n4. For English, Use American phonetics for phonetic symbols. \n5. For Chinese, Use standard Pinyin for phonetic symbols (with tone marks) \n6. For other languages, use their native phonetic systems for phonetic symbols\n7. Do not output languages other than those requested \n8. Consider context when analyzing words.  \n9. Output raw JSON without markdown code blocks. \nSINGLE WORD OUTPUT: \n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"excl.\",\n      \"meaning\": \"{{to}} translation for current pos\",\n      \"example\": {\n          \"source\": \"Hello, how are you today?\",\n          \"target\": \"{{to}} example\"\n       }\n    }\n  ],\n  \"translation\": \"translation in {{to}}\",\n  \"contextual_analysis\": \"contextual analysis use {{to}} language\"\n}\nSENTENCE/PHRASE OUTPUT: \n{\n  \"translation\": \"translation in {{to}}\"\n}\nCONTEXT: {{context_text}}"
     },
     "zhipu.add_v.[1.15.3]": {
       "defaultMaxTextGroupLengthPerRequest": 4,
@@ -10107,12 +10108,14 @@
     {
       "id": "jumptoon",
       "matches": [
-        "jumptoon_tiaoman.com"
+        "jumptoon_tiaoman.com",
+        "jumptoon.com"
       ],
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
-          "#viewer-scroller canvas"
+          "#viewer-scroller canvas",
+          "body canvas"
         ],
         "urlFetchType": "canvasArgs",
         "opImageType": "append",
@@ -16475,6 +16478,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-27T08:53:30.326Z",
+  "buildinConfigUpdatedAt": "2025-05-28T06:31:53.315Z",
   "latestVersion": "1.17.5"
 }
