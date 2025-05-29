@@ -6303,7 +6303,8 @@
         ".ubGTjb"
       ],
       "globalStyles": {
-        ".Epkrse": "-webkit-line-clamp:unset;"
+        ".Epkrse": "-webkit-line-clamp:unset;",
+        "div[data-g-id='description']": "-webkit-line-clamp:unset;max-height:unset;"
       }
     },
     {
@@ -16485,6 +16486,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-29T06:02:30.303Z",
+  "buildinConfigUpdatedAt": "2025-05-29T09:54:12.684Z",
   "latestVersion": "1.17.5"
 }
