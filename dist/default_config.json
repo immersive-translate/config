@@ -50,6 +50,20 @@
       "endTime": "2025-04-25 23:59:59"
     }
   ],
+  "sidePanel": {
+    "i18n": {
+      "zh-CN": {
+        "upgradeTitle": "订阅立省 30%"
+      },
+      "zh-TW": {
+        "upgradeTitle": "訂閱立省 30%"
+      },
+      "en": {
+        "upgradeTitle": "Subscribe to save 30%"
+      }
+    },
+    "upgradeUrl": "https://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension&utm_campaign=side_panel_footer_upgrade"
+  },
   "aiAssistantIds": [
     "paraphrase",
     "plain-english",
@@ -351,6 +365,7 @@
     "https://manhuaus.com/[Manhuaus][chrome,firefox,safari]",
     "https://www.hmttmh.com/[HMTTMH][chrome,firefox,safari,imtAndroid]",
     "https://smokingbehindthesupermarket.com/[Smoking Behind the Supermarket][chrome,firefox,safari,imtAndroid]",
+    "https://comic-growl.com/[Comic Growl][chrome,firefox,safari,imtAndroid]",
     "https://jumptoon.com/[Jumptoon][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
@@ -1729,7 +1744,7 @@
       "translationEnableRichTranslate": true,
       "headerConfigs": {
         "HTTP-Referer": "https://immersivetranslate.com",
-        "X-Title": "Immersive Translation"
+        "X-Title": "Immersive Translate"
       }
     },
     "zhipu": {
@@ -1820,6 +1835,7 @@
   "shortcuts": {
     "toggleTranslatePage": "Alt+A",
     "toggleTranslateTheWholePage": "Alt+W",
+    "toggleSidePanel": "Alt+S",
     "toggleOnlyTransation": "",
     "toggleTranslateToThePageEndImmediately": "",
     "toggleTranslationMask": "",
@@ -2981,7 +2997,24 @@
     "touchShortcutsToggleTranslateTouchElementPreferenceKey": "slide.left",
     "mouseHoverHoldKey": "Off",
     "mouseHoverPreferenceKey": "Ctrl",
-    "mousePressHoldTranslateDelay": 800
+    "mousePressHoldTranslateDelay": 800,
+    "darkModeRule": {
+      "element": "html",
+      "selectors": [
+        ".dark",
+        ".dark-mode",
+        ".theme-dark",
+        ".dark-theme",
+        "[dark]",
+        "[data-dark]",
+        "[data-dark-mode]",
+        "[data-dark-mode='true']",
+        "[theme='dark']",
+        "[data-theme='dark']",
+        "[data-bs-theme='dark']",
+        "[data-color-mode='dark']"
+      ]
+    }
   },
   "rules": [
     {
@@ -3701,7 +3734,18 @@
             ".r-1peqgm7 #immersive-translate-caption-window {bottom: 60px;}",
             "[data-testid=\"modalContainer\"] #immersive-translate-caption-window {bottom: unset !important; height: 180px !important;}"
           ]
-        }
+        },
+        "quickButtonRules": [
+          {
+            "appendSelector": "button[role=\"button\"]>div>svg<-parent<-parent<-parent<-parent",
+            "injectCSS": ".imt-quick-subtitle-pop-content { transform: unset !important; } .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } "
+          },
+          {
+            "appendSelector": "div<-[data-testid*=\"cellInnerDiv-tweet\"]->[data-testid*=\"immersive-tweet-ui-content-container\"] button[role=\"button\"]<-parent",
+            "insertBeforeSelector": "div<-[data-testid*=\"cellInnerDiv-tweet\"]->[data-testid*=\"immersive-tweet-ui-content-container\"] button[role=\"button\"]",
+            "injectCSS": ".imt-quick-subtitle-button { margin: 0 6px !important; } .imt-quick-subtitle-pop-content { transform: unset !important; } .logo,.logo svg { height: 24px !important; width: 24px !important;}, .logo svg { margin-top: 2px !important; } "
+          }
+        ]
       },
       "imageRule.add": {
         "opImageType": "append",
@@ -10778,6 +10822,28 @@
       }
     },
     {
+      "id": "comic-growl",
+      "matches": [
+        "comic-growl.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "urlFetchType": "canvasArgs",
+        "opImageType": "append",
+        "imageSelectors": [
+          ".-cv-page-content img",
+          ".-cv-page-content canvas"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "manhuabika",
       "matches": [
         "manhuabika.com"
@@ -11829,14 +11895,9 @@
         "subtitleUrlRegExp": "\\.vtt",
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
-          "insertBeforeSelector": ".jw-icon-cc"
-        },
-        "attachRule": {
-          "appendSelector": ".jw-wrapper",
-          "injectedGlobalCSS": [
-            ".jw-text-track-container {display: none;}",
-            "@media (min-width: 576px) { video::cue {opacity: 0} }"
-          ]
+          "insertBeforeSelector": ".jw-icon-cc",
+          "ccEnableSelector": ".jw-icon-cc",
+          "isEnableCCObserver": true
         }
       }
     },
@@ -16491,6 +16552,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-29T11:34:41.211Z",
-  "latestVersion": "1.17.5"
+  "buildinConfigUpdatedAt": "2025-05-29T11:38:10.873Z",
+  "latestVersion": "1.17.6"
 }
