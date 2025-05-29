@@ -12168,6 +12168,13 @@
       }
     },
     {
+      "id": "backrooms-wiki",
+      "matches": "backrooms-wiki.wikidot.com",
+      "stayOriginalTags.remove": [
+        "TT"
+      ]
+    },
+    {
       "id": "hubspotvideo",
       "matches": [
         "*.hubspotvideo.com"
@@ -16478,6 +16485,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-28T06:31:53.315Z",
+  "buildinConfigUpdatedAt": "2025-05-29T06:02:30.303Z",
   "latestVersion": "1.17.5"
 }
