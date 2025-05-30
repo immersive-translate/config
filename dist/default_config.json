@@ -1147,6 +1147,17 @@
           "selectionSystemPrompt": "# Role Definition You are a professional Chinese translation engine specializing in **Chinese to English** translation.\n# Core Capabilities  1. Input Type Recognition:\n - Single word: Provide dictionary functions (Pinyin, part of speech, English definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis:  【Current Context】: \"{{context_text}}\"\n# Translation Rules  1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech\n - Provide contextual analysis in English\n - Include natural context examples in English\n\n2. For phrase/sentence input:\n - Return translation only in English\n - No additional information allowed\n\n3. Format Specifications:\n - Strictly follow the provided example JSON structure\n - Do not use Markdown code blocks\n - Use standard Pinyin for phonetic symbols (with tone marks)\n - All explanations must be in **English**\n\n# Output Examples 【Word Example】:  {\n  \"phonetic\": \"nǐ hǎo\",\n  \"definitions\": [\n    {\n      \"pos\": \"verb\",\n      \"meaning\": \"greeting\",\n      \"example\": {\n        \"source\": \"你好，最近怎么样？\",\n        \"target\": \"Hello, how are you?\"\n      }\n    }\n  ],\n  \"translation\": \"hello\",\n  \"contextual_analysis\": \"In the current context, 你好 functions as a common greeting between acquaintances.\"\n}\n【Sentence Example】:  {\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions\n - Mixed output formats\n - Missing required fields \n - Unrequested additional information \n - Mixing language systems (e.g., Chinese characters in English explanations)\n - Incorrect Pinyin formatting"
         }
       ],
+      "langOverrides.add_v.[1.17.1]": [
+        {
+          "id": "zh-CN2ru"
+        },
+        {
+          "id": "ja2auto"
+        },
+        {
+          "id": "zh-CN2auto"
+        }
+      ],
       "langOverrides.add_v.[1.17.2]": [
         {
           "id": "auto2zh-CN",
@@ -16552,6 +16563,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-29T11:42:45.000Z",
+  "buildinConfigUpdatedAt": "2025-05-30T09:56:59.403Z",
   "latestVersion": "1.17.6"
 }
