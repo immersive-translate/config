@@ -16215,6 +16215,24 @@
     {
       "id": "msn",
       "matches": "www.msn.com",
+      "injectedCss.add": [
+        ".root {overflow-y: scroll!important;}",
+        ".heading {-webkit-line-clamp: unset!important;}",
+        ".content .text {overflow-y: scroll !important;}"
+      ],
+      "excludeSelectors.add": [
+        ".attribution",
+        ".super-nav-container",
+        "#follow-button",
+        ".media-info-container",
+        ".ad-label",
+        ".provider-name",
+        ".weather-container",
+        ".money-info-content",
+        "casual-games-card",
+        ".match-data",
+        ".me-stripe-container"
+      ],
       "subtitleRule.add": {
         "type": "subsrt",
         "subtitleUrlRegExp": ".*[?&]vtt=true(&.*)?$",
@@ -16563,6 +16581,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-30T09:56:59.403Z",
+  "buildinConfigUpdatedAt": "2025-05-31T10:44:01.428Z",
   "latestVersion": "1.17.6"
 }
