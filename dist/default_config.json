@@ -3888,24 +3888,24 @@
       ],
       "excludeSelectors.add": [
         ".iOzk7[jsname='dsyhDe']",
-        ".nMcdL.bj4p3b"
+        ".ygicle.VbkSUe"
       ],
       "mutationExcludeSelectors.add": [
         ".iOzk7[jsname='dsyhDe'] *"
       ],
       "extraInlineSelectors.add": [
-        ".bh44bd.VbkSUe"
+        ".ygicle.VbkSUe"
       ],
       "subtitleRule.add": {
         "type": "live",
         "injectedCss": [
           ".bh44bd.VbkSUe { font-size: 1.2rem !important; }",
-          "font.immersive-translate-target-wrapper { font-size: 1.2rem; display: inline-block; padding-left: 55px; }",
+          "font.immersive-translate-target-wrapper { font-size: 1.2rem; display: inline-block; }",
           "font.immersive-translate-target-wrapper br { display: none; }"
         ],
         "liveSubtitleRule": {
           "containerSelector": ".iOzk7[jsname='dsyhDe']",
-          "textContentSelector": ".bh44bd.VbkSUe",
+          "textContentSelector": ".ygicle.VbkSUe",
           "reportSelector": ".iOzk7[jsname='dsyhDe']",
           "mutationChangeDelay": 1000,
           "findParentBlockDepth": 5,
@@ -16581,6 +16581,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-05-31T10:44:01.428Z",
+  "buildinConfigUpdatedAt": "2025-06-01T12:00:43.398Z",
   "latestVersion": "1.17.6"
 }
