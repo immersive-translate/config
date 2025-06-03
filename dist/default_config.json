@@ -5209,15 +5209,6 @@
       "id": "googleMail",
       "matches": "mail.google.com",
       "detectParagraphLanguage": true,
-      "selectors": [
-        "h2[data-thread-perm-id]",
-        "span[data-thread-id]",
-        "div[data-message-id] div[class='']",
-        ".messageBody",
-        "#views",
-        "center table",
-        ".message"
-      ],
       "globalStyles": {
         "[role='listitem'] > div": "height:auto!important;white-space:unset!important;"
       }
@@ -16583,6 +16574,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-03T08:26:33.036Z",
+  "buildinConfigUpdatedAt": "2025-06-03T09:18:10.495Z",
   "latestVersion": "1.17.6"
 }
