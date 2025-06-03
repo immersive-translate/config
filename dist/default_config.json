@@ -16369,7 +16369,8 @@
         "*.marscode.com",
         "updraft.cyfrin.io",
         "nexus.evenant.com",
-        "portal.achieve3000.net"
+        "portal.achieve3000.net",
+        "triumph-cubic.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -16581,6 +16582,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-02T07:12:50.314Z",
+  "buildinConfigUpdatedAt": "2025-06-03T07:12:44.626Z",
   "latestVersion": "1.17.6"
 }
