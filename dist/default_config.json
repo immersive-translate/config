@@ -15991,6 +15991,7 @@
       "id": "seller-tiktok",
       "matches": [
         "seller.tiktok.com",
+        "seller-my.tiktok.com",
         "affiliate.tiktok.com"
       ],
       "additionalExcludeSelectors.remove": [
@@ -16584,6 +16585,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-04T06:02:35.814Z",
+  "buildinConfigUpdatedAt": "2025-06-04T06:58:37.795Z",
   "latestVersion": "1.17.7"
 }
