@@ -11037,7 +11037,7 @@
       }
     },
     {
-      "id": "page.kakao.com",
+      "id": "page.kakao",
       "matches": [
         "page.kakao.com"
       ],
@@ -11053,7 +11053,8 @@
         "platforms": [
           "chrome",
           "firefox",
-          "safari"
+          "safari",
+          "imtAndroid"
         ]
       }
     },
@@ -16585,6 +16586,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-04T06:58:37.795Z",
+  "buildinConfigUpdatedAt": "2025-06-04T11:37:40.617Z",
   "latestVersion": "1.17.7"
 }
