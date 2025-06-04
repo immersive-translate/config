@@ -16374,6 +16374,9 @@
       "additionalExcludeSelectors.remove": [
         ".notranslate",
         "[translate=no]"
+      ],
+      "excludeTags.remove": [
+        "PRE"
       ]
     },
     {
@@ -16581,6 +16584,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-04T03:43:37.000Z",
+  "buildinConfigUpdatedAt": "2025-06-04T06:02:35.814Z",
   "latestVersion": "1.17.7"
 }
