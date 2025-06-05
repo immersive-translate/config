@@ -16023,7 +16023,10 @@
     },
     {
       "id": "flutterDev",
-      "matches": "docs.flutter.dev",
+      "matches": [
+        "docs.flutter.dev",
+        "docs.flutter.cn"
+      ],
       "excludeSelectors.add": [
         "span.expander.material-symbols",
         "span.material-symbols"
@@ -16586,6 +16589,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-04T11:37:40.617Z",
+  "buildinConfigUpdatedAt": "2025-06-05T03:05:01.342Z",
   "latestVersion": "1.17.7"
 }
