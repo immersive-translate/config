@@ -10873,6 +10873,23 @@
       }
     },
     {
+      "id": "xmanga",
+      "matches": "xmanga.org",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "div > img[alt='preview']"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "comic-action",
       "matches": [
         "comic-action.com"
@@ -16590,6 +16607,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-05T03:18:10.015Z",
+  "buildinConfigUpdatedAt": "2025-06-05T12:11:34.631Z",
   "latestVersion": "1.17.7"
 }
