@@ -10392,7 +10392,8 @@
           "[role=\"presentation\"] img",
           ".manga-page img[src*=\"webp\"]",
           ".manga-page .c-relative img[src*=\"jpg\"]",
-          ".zoomable-area img"
+          ".zoomable-area img",
+          ".manga-page img"
         ],
         "platforms": [
           "chrome",
@@ -10404,6 +10405,10 @@
           ".gtm-manga-viewer-open-button",
           "[role=\"presentation\"]",
           "div"
+        ],
+        "opImageType": "append",
+        "inValidSrcRegex": [
+          "/100x100/"
         ]
       },
       "pageLangDetectWeight": {
@@ -16609,6 +16614,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-06T06:48:19.544Z",
+  "buildinConfigUpdatedAt": "2025-06-06T08:37:07.973Z",
   "latestVersion": "1.17.7"
 }
