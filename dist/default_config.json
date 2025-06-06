@@ -4691,7 +4691,8 @@
       "globalStyles": {
         "#video-title,h1.ytd-watch-metadata,.ytd-video-renderer,.yt-lockup-metadata-view-model-wiz__title": "-webkit-line-clamp: unset;max-height: unset;",
         "yt-formatted-string#video-title,.ShortsLockupViewModelHostOutsideMetadataTitle": "-webkit-line-clamp: unset;max-height: unset;",
-        "ytd-expander.ytd-comment-renderer": "--ytd-expander-max-lines: 1000;"
+        "ytd-expander.ytd-comment-renderer": "--ytd-expander-max-lines: 1000;",
+        ".page-header-view-model-wiz__page-header-title--page-header-title-large": "-webkit-line-clamp: unset !important;max-height: unset !important;"
       },
       "injectedCss": [
         ".immersive-translate-target-wrapper img { width: 16px; height: 16px }",
@@ -16608,6 +16609,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-06T04:23:19.716Z",
+  "buildinConfigUpdatedAt": "2025-06-06T06:48:19.544Z",
   "latestVersion": "1.17.7"
 }
