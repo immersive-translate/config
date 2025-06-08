@@ -4346,11 +4346,13 @@
         "[aria-labelledby=outline-id] nav",
         "[data-testid='issue-pr-title-link']",
         "div.user-profile-bio",
-        "div.news > div.js-notice"
+        "div.news > div.js-notice",
+        "#memex-project-view-root a [class^='prc-Text-Text']"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
-        "li>div[class*='Box-sc'],div[class*='Box-sc']>button[class*='prc-Token-TokenBase'],li[class*='card-label-module']>button[class*='prc-Token-TokenBase'] {height:unset!important;}"
+        "li>div[class*='Box-sc'],div[class*='Box-sc']>button[class*='prc-Token-TokenBase'],li[class*='card-label-module']>button[class*='prc-Token-TokenBase'] {height:unset!important;}",
+        "#memex-project-view-root [class*=table-row__StyledTableRow-sc],#memex-project-view-root [class*=base-cell-module__Box] {height:unset!important;}"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -16616,6 +16618,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-08T04:35:48.394Z",
+  "buildinConfigUpdatedAt": "2025-06-08T05:09:51.006Z",
   "latestVersion": "1.17.7"
 }
