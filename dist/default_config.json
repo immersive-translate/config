@@ -16269,6 +16269,15 @@
       }
     },
     {
+      "id": "no-translate-username",
+      "matches": [
+        "onlinelibrary.wiley.com"
+      ],
+      "excludeSelectors.add": [
+        ".loa-authors"
+      ]
+    },
+    {
       "id": "futuretools",
       "matches": "www.futuretools.io",
       "globalStyles": {
@@ -16566,7 +16575,8 @@
     {
       "id": "fix-nav2header",
       "matches": [
-        "www.acea.auto"
+        "www.acea.auto",
+        "news.cgtn.com"
       ],
       "preTranslateLimiter.add_v.[1.12.1]": {
         "side.selectors": [
@@ -16576,18 +16586,10 @@
         ],
         "header.selectors": [
           "nav",
-          "header"
+          "header",
+          "[class^='header-v3']"
         ]
       }
-    },
-    {
-      "id": "no-translate-username",
-      "matches": [
-        "onlinelibrary.wiley.com"
-      ],
-      "excludeSelectors.add": [
-        ".loa-authors"
-      ]
     },
     {
       "id": "fix-header",
@@ -16614,6 +16616,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-06T08:37:07.973Z",
+  "buildinConfigUpdatedAt": "2025-06-08T04:35:48.394Z",
   "latestVersion": "1.17.7"
 }
