@@ -4374,6 +4374,9 @@
         ".markdown-body h3",
         "div.vcard-names-container",
         "div.js-disable-context-menu",
+        "[class*='OverviewContent-module__Box']",
+        ".BorderGrid-cell a[role='link']",
+        ".BorderGrid-cell .topic-tag-link",
         "table[class*='Table-module__Box']"
       ],
       "extraBlockSelectors.add": [],
@@ -16643,6 +16646,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-10T13:39:39.593Z",
+  "buildinConfigUpdatedAt": "2025-06-10T13:47:52.723Z",
   "latestVersion": "1.17.7"
 }
