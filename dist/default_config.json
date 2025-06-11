@@ -6081,6 +6081,9 @@
       "excludeTags.remove": [
         "PRE"
       ],
+      "additionalExcludeSelectors.add": [
+        "pre > span"
+      ],
       "globalStyles": {
         "h2,h3": "-webkit-line-clamp: unset;max-height:unset;",
         "article p": "-webkit-line-clamp: unset;max-height:unset;"
@@ -16641,6 +16644,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-11T03:03:30.938Z",
+  "buildinConfigUpdatedAt": "2025-06-11T03:17:17.651Z",
   "latestVersion": "1.17.7"
 }
