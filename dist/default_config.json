@@ -3858,6 +3858,7 @@
         "teams.microsoft.com"
       ],
       "excludeSelectors.add": [
+        ".ui-box .ui-box[class='ui-box']",
         "[data-tid='author']"
       ],
       "mutationExcludeSelectors.add": [
@@ -3890,6 +3891,10 @@
       "id": "googleMeet",
       "matches": [
         "meet.google.com"
+      ],
+      "excludeSelectors.add": [
+        ".iOzk7[jsname='dsyhDe']",
+        ".ygicle.VbkSUe"
       ],
       "mutationExcludeSelectors.add": [
         ".iOzk7[jsname='dsyhDe'] *"
@@ -16644,6 +16649,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-11T03:17:17.651Z",
+  "buildinConfigUpdatedAt": "2025-06-11T03:47:52.404Z",
   "latestVersion": "1.17.7"
 }
