@@ -6578,7 +6578,10 @@
         "thead",
         "ul.text-base",
         "a.group > div.flex-1",
-        "div.absolute.truncate"
+        "div.absolute.truncate",
+        "nav",
+        "ul[class*='dark:border-gray-800']",
+        "div[class*='from-gray-100-to-white']"
       ]
     },
     {
@@ -16650,6 +16653,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-11T09:30:19.220Z",
+  "buildinConfigUpdatedAt": "2025-06-11T10:04:47.684Z",
   "latestVersion": "1.17.7"
 }
