@@ -13385,7 +13385,8 @@
           "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container {float: right; height: 100%;}"
         ],
         "quickButtonRule": {
-          "appendSelector": "slot-fb > .avia-control-group-right"
+          "appendSelector": "slot-fb > .avia-control-group-right",
+          "injectCSS": ".imt-quick-subtitle-pop-content {right: 65px !important;}"
         },
         "attachRule": {
           "appendSelector": ".avia-container"
@@ -16649,6 +16650,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-11T03:47:52.404Z",
+  "buildinConfigUpdatedAt": "2025-06-11T09:30:19.220Z",
   "latestVersion": "1.17.7"
 }
