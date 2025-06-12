@@ -12098,7 +12098,7 @@
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
-          "appendSelector": ".page-wrap",
+          "appendSelector": ".page-wrap .video-js",
           "injectedGlobalCSS": [
             "div.vjs-text-track-display > div > div { display: none !important; }"
           ]
@@ -16701,6 +16701,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-12T10:34:04.000Z",
+  "buildinConfigUpdatedAt": "2025-06-12T10:48:57.199Z",
   "latestVersion": "1.18.1"
 }
