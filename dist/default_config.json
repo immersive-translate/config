@@ -11834,7 +11834,8 @@
         "rabbitstream.net",
         "kerolaunochan.*",
         "megacloud.*",
-        "netusa.xyz"
+        "netusa.xyz",
+        "cdnstreame.net"
       ],
       "selectionTranslation": {
         "enable": false
@@ -16654,6 +16655,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-11T10:16:54.120Z",
+  "buildinConfigUpdatedAt": "2025-06-12T07:13:19.742Z",
   "latestVersion": "1.17.7"
 }
