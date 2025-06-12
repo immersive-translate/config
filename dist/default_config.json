@@ -404,7 +404,6 @@
     "https://www.nma.art/[nmaArt]",
     "https://developer.apple.com[Developer Apple]",
     "https://egghead.io/[egghead.io]",
-    "https://www.viu.com/[Viu]",
     "https://cn.linkedin.com/[LinkedIn]",
     "https://www.kanopy.com/[Kanopy]",
     "https://www.rachelsenglishacademy.com/[RachelsEnglishAcademy]",
@@ -16689,6 +16688,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-12T07:23:18.957Z",
+  "buildinConfigUpdatedAt": "2025-06-12T07:48:37.074Z",
   "latestVersion": "1.17.7"
 }
