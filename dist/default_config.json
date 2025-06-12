@@ -495,7 +495,8 @@
     "https://ahrefs.com/[ahrefs]",
     "https://www.domestika.org/[DOMESTIKA]",
     "https://www.angel.com/[ANGEL]",
-    "https://shangpa-academy.mn.co/[Shangpa Academy]"
+    "https://shangpa-academy.mn.co/[Shangpa Academy]",
+    "https://internetfundamentals.com//[Internetfundamentals]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -12093,6 +12094,39 @@
       }
     },
     {
+      "id": "internetfundamentals",
+      "matches": "internetfundamentals.com",
+      "excludeSelectors.add": [
+        "#vjs_video_3",
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#vjs_video_3 *",
+        "#immersive-translate-caption-window *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "hookType": "xhr",
+        "loadingContainerSelector": "#vjs_video_3",
+        "injectedCss": [],
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": "div.vjs-resolutions",
+          "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: none !important; }"
+        },
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ],
+        "attachRule": {
+          "appendSelector": "#vjs_video_3",
+          "injectedGlobalCSS": [
+            "div.vjs-text-track-display > div > div { display: none !important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "mgtv",
       "matches": "w.mgtv.com",
       "excludeSelectors.add": [
@@ -16655,6 +16689,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-12T07:13:19.742Z",
+  "buildinConfigUpdatedAt": "2025-06-12T07:23:18.957Z",
   "latestVersion": "1.17.7"
 }
