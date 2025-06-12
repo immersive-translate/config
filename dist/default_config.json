@@ -1324,7 +1324,10 @@
           "topK": 1,
           "topP": 1,
           "maxOutputTokens": 2048,
-          "stopSequences": []
+          "stopSequences": [],
+          "thinkingConfig": {
+            "thinkingBudget": 0
+          }
         },
         "safetySettings": [
           {
@@ -8710,6 +8713,13 @@
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "enableHookDownload": true
+      },
+      "subtitleRule.add_v.[1.17.8]": {
+        "quickButtonRule": {
+          "appendSelector": "[data-uia=\"control-audio-subtitle\"]<-parent<-parent",
+          "insertBeforeSelector": "[data-uia=\"control-audio-subtitle\"]<-parent",
+          "injectCSS": ".imt-quick-subtitle-button {height: 60%; margin-right: 50px; font-size: 20px; } .logo,.logo svg { height: 36px; width: 36px} .label { display: none; } .imt-quick-subtitle-pop-content {transform: translateX(50%); right: 0}"
+        }
       }
     },
     {
@@ -16688,6 +16698,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-12T07:48:37.074Z",
-  "latestVersion": "1.17.7"
+  "buildinConfigUpdatedAt": "2025-06-12T10:29:34.308Z",
+  "latestVersion": "1.18.1"
 }
