@@ -6202,7 +6202,10 @@
         ".a-carousel-viewport": "height:unset;",
         "[class*='clamp']": "max-height: unset;-webkit-line-clamp: unset;",
         "[data-rows]": "max-height: unset;-webkit-line-clamp: unset;",
-        "[data-a-expander-name='review_text_read_more']": " max-height: unset;"
+        "[data-a-expander-name='review_text_read_more']": " max-height: unset;",
+        ".compact.primaryText.primaryTextOnly": "max-height: unset;-webkit-line-clamp: unset;",
+        ".format": "-webkit-line-clamp: unset;",
+        "[class*='textButton']": "-webkit-line-clamp: unset;"
       },
       "additionalExcludeSelectors.add": [
         "#navFooter",
@@ -16698,6 +16701,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-12T10:29:34.308Z",
+  "buildinConfigUpdatedAt": "2025-06-12T10:31:41.344Z",
   "latestVersion": "1.18.1"
 }
