@@ -11291,7 +11291,8 @@
         "attachRule": {
           "appendSelector": "[data-rt=\"video-player-container\"]",
           "injectedGlobalCSS": [
-            "[class^='_video-player__text-tracks'] {display: none !important; }"
+            "[class^='_video-player__text-tracks'] {display: none !important; }",
+            "[data-rt=\"subtitles-container\"] {display: none !important; }"
           ],
           "injectedCSS": [
             ".imt-caption-window {bottom: 60px;}"
@@ -16654,6 +16655,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-13T03:36:02.205Z",
+  "buildinConfigUpdatedAt": "2025-06-13T04:00:06.471Z",
   "latestVersion": "1.18.1"
 }
