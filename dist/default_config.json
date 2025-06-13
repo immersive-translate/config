@@ -11845,7 +11845,9 @@
         "kerolaunochan.*",
         "megacloud.*",
         "netusa.xyz",
-        "cdnstreame.net"
+        "cdnstreame.net",
+        "9animetv.to",
+        "hianime.to"
       ],
       "selectionTranslation": {
         "enable": false
@@ -11862,7 +11864,7 @@
       ],
       "subtitleRule.add": {
         "type": "multi_attach_vtt",
-        "subtitleUrlRegExp": ".*\\.vtt$",
+        "subtitleUrlRegExp": "^(?!.*sprite\\.vtt$).*\\.vtt$",
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
           "insertBeforeSelector": ".jw-icon-cc"
@@ -11883,52 +11885,6 @@
       "subtitleRule.add_v.[1.7.6]": {
         "multiSetting": {
           "activeLangSelector": ".jw-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active"
-        }
-      }
-    },
-    {
-      "id": "hianime",
-      "matches": [
-        "megacloud.*",
-        "hianime.to",
-        "9animetv.to"
-      ],
-      "excludeSelectors.add": [
-        ".jw-wrapper",
-        "#immersive-translate-caption-window"
-      ],
-      "mutationExcludeSelectors.add": [
-        ".jw-wrapper *",
-        "#immersive-translate-caption-window *"
-      ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
-      "mainFrameMinTextCount": 0,
-      "mainFrameMinWordCount": 0,
-      "subtitleRule.add": {
-        "type": "multi_attach_vtt",
-        "subtitleUrlRegExp": "^(?!.*sprite\\.vtt$).*\\.vtt$",
-        "quickButtonRule": {
-          "appendSelector": ".jw-button-container",
-          "insertBeforeSelector": ".jw-icon-cc"
-        },
-        "activeLangSelector": ".jw-settings-item-active",
-        "videoSelector": "video",
-        "rtlInjectedCss": [
-          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
-        ],
-        "attachRule": {
-          "appendSelector": ".jw-wrapper",
-          "injectedGlobalCSS": [
-            ".jw-text-track-container {display: none;}",
-            "@media (min-width: 576px) { video::cue {opacity: 0} }"
-          ]
-        }
-      },
-      "subtitleRule.add_v.[1.7.6]": {
-        "multiSetting": {
-          "activeLangSelector": ".jw-settings-item-active"
         }
       }
     },
@@ -16698,6 +16654,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-12T12:03:40.009Z",
+  "buildinConfigUpdatedAt": "2025-06-13T03:36:02.205Z",
   "latestVersion": "1.18.1"
 }
