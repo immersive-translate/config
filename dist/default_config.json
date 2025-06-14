@@ -14039,10 +14039,11 @@
         "[data-testid^=homeScreenFeedTabs]",
         "[class='css-146c3p1 r-1loqt21']",
         "[class='css-1jxf684 r-1loqt21']",
-        "[data-testid=repostCount]",
-        "[data-testid=likeCount]",
-        "[data-testid=replyBtn]",
-        "[style='flex: 1 1 0%; flex-direction: row; align-items: center; padding-bottom: 4px; gap: 4px; z-index: 20;']"
+        "[data-testid^=repostCount]",
+        "[data-testid^=likeCount]",
+        "[data-testid^=quoteCount]",
+        "[data-testid^=replyBtn]",
+        "[aria-label='View profile']"
       ],
       "likePreSelectors.add_v.[1.11.5]": [
         "[data-testid*=postThread] [data-word-wrap]",
@@ -16660,6 +16661,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-14T13:52:35.914Z",
+  "buildinConfigUpdatedAt": "2025-06-14T14:39:33.386Z",
   "latestVersion": "1.18.1"
 }
