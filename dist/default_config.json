@@ -4348,7 +4348,8 @@
         "[data-testid='issue-pr-title-link']",
         "div.user-profile-bio",
         "div.news > div.js-notice",
-        "#memex-project-view-root a [class^='prc-Text-Text']"
+        "#memex-project-view-root a [class^='prc-Text-Text']",
+        "[class^=OverviewContent] [class*=DirectoryRichtextContent]"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -4374,10 +4375,11 @@
         ".markdown-body h3",
         "div.vcard-names-container",
         "div.js-disable-context-menu",
-        "[class*='OverviewContent-module__Box']",
         ".BorderGrid-cell a[role='link']",
         ".BorderGrid-cell .topic-tag-link",
-        "table[class*='Table-module__Box']"
+        "table[class*='Table-module__Box']",
+        ".author,.assignee",
+        ".TimelineItem-body"
       ],
       "extraBlockSelectors.add": [],
       "extraInlineSelectors": [
@@ -16655,6 +16657,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-13T04:00:06.471Z",
+  "buildinConfigUpdatedAt": "2025-06-14T12:25:04.261Z",
   "latestVersion": "1.18.1"
 }
