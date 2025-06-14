@@ -13650,13 +13650,7 @@
     {
       "id": "codewithandrea",
       "matches": [
-        "customer-cj9d17w2zbobjd7j.cloudflarestream.com"
-      ],
-      "excludeSelectors.add": [
-        "[data-testid=\"video-player\"]"
-      ],
-      "mutationExcludeSelectors.add": [
-        "[data-testid=\"video-player\"] *"
+        "customer-*.cloudflarestream.com"
       ],
       "selectionTranslation.add": {
         "enable": false
@@ -13664,14 +13658,22 @@
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
-        "type": "subsrt",
-        "subsrtFormat": "vtt",
+        "type": "webvtt",
         "subtitleUrlRegExp": "\\.vtt",
-        "hookType": "fetch",
+        "hookType": "fetch|xhr",
         "loadingContainerSelector": "stream > div",
         "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": ".css-6mrf8j.css-1oxfqe2"
+        },
+        "attachRule": {
+          "appendSelector": "body",
+          "injectedCSS": [
+            ".imt-caption-window {margin-bottom: 0; bottom: 7%;}"
+          ],
+          "injectedGlobalCSS": [
+            "@media (min-width: 576px) { video::cue {opacity: 0} }"
+          ]
         }
       }
     },
@@ -16658,6 +16660,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-14T13:17:28.920Z",
+  "buildinConfigUpdatedAt": "2025-06-14T13:52:35.914Z",
   "latestVersion": "1.18.1"
 }
