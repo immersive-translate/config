@@ -4188,10 +4188,11 @@
         ".RichTextJSON-root",
         "[slot='title']",
         ".room-message-text",
-        "[source=re_reddit] div > a.text-neutral-content-weak"
-      ],
-      "excludeSelectors": [
-        ".text-neutral-content-weak"
+        "[source=re_reddit] div > a.text-neutral-content-weak",
+        "#response-container",
+        "#streaming-response",
+        "[noun='recommendation']",
+        "#subgrid-container h1, #subgrid-container h2"
       ],
       "paragraphMinTextCount": 5,
       "paragraphMinWordCount": 2,
@@ -16661,6 +16662,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-15T05:29:45.927Z",
+  "buildinConfigUpdatedAt": "2025-06-15T07:58:11.869Z",
   "latestVersion": "1.18.1"
 }
