@@ -4194,6 +4194,9 @@
         "[noun='recommendation']",
         "#subgrid-container h1, #subgrid-container h2"
       ],
+      "excludeSelectors": [
+        ".text-neutral-content-weak"
+      ],
       "paragraphMinTextCount": 5,
       "paragraphMinWordCount": 2,
       "excludeMatches": [
@@ -16662,6 +16665,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-15T07:58:11.869Z",
+  "buildinConfigUpdatedAt": "2025-06-15T08:01:07.367Z",
   "latestVersion": "1.18.1"
 }
