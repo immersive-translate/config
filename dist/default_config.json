@@ -4379,7 +4379,7 @@
         ".BorderGrid-cell .topic-tag-link",
         "table[class*='Table-module__Box']",
         ".author,.assignee",
-        ".TimelineItem-body"
+        ".js-timeline-item .TimelineItem [class='TimelineItem-body']"
       ],
       "extraBlockSelectors.add": [],
       "extraInlineSelectors": [
@@ -16661,6 +16661,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-14T14:39:33.386Z",
+  "buildinConfigUpdatedAt": "2025-06-15T05:29:45.927Z",
   "latestVersion": "1.18.1"
 }
