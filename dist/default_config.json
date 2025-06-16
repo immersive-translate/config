@@ -5,6 +5,9 @@
   "translationStartMode": "dynamic",
   "domReadyDetectTimeout": 3000,
   "translationService": "bing",
+  "clientImageTranslationService": "inherit",
+  "inputTranslationService": "inherit",
+  "userTranslationServices": {},
   "mouseModifierKeyPressTimeout": 400,
   "sameLangCheck": true,
   "isPreview": false,
@@ -258,22 +261,22 @@
     "trialProShowLimit": 20
   },
   "discountActivity": {
-    "enable": true,
-    "upgradeShowCountCacheKey": "upgradeDiscountActivity20241111",
+    "enable": false,
+    "upgradeShowCountCacheKey": "upgradeDiscountActivity20250618",
     "upgradeShowLimit": 20,
-    "start": "2024-10-31T16:00:00.000Z",
-    "end": "2024-11-10T16:00:00.000Z",
+    "start": "2025-6-15T16:00:00.000Z",
+    "end": "2025-6-19T16:00:00.000Z",
     "titleI18n": {
-      "zh-CN": "50%OFF",
-      "zh-TW": "50%OFF",
-      "en": "50%OFF"
+      "zh-CN": "618 大促",
+      "zh-TW": "ON SALE",
+      "en": "ON SALE"
     },
-    "popupUrl": "https://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension&utm_campaign=popup_discount",
+    "popupUrl": "https://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension&utm_campaign=popup_618",
     "floatBallUrl": "https://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension&utm_campaign=float_ball_discount",
     "tipsI18n": {
-      "zh-CN": "沉浸式翻译双十一年度大促（史上最低）！首年 50% OFF！续费 30% OFF！",
-      "zh-TW": "沉浸式翻譯雙十一年度大促（史上最低）！首年 50% OFF！續費 30% OFF！",
-      "en": "Black Friday Sale (All-time Low)! 50% OFF First Year, 30% OFF renewals!"
+      "zh-CN": "",
+      "zh-TW": "",
+      "en": ""
     }
   },
   "supportedMangaSites": [
@@ -539,8 +542,6 @@
     "marquee"
   ],
   "translationPosition": "after",
-  "clientImageTranslationService": "inherit",
-  "inputTranslationService": "inherit",
   "inputTranslationBlockUrls": [
     "*.larkoffice.com",
     "*.larksuite.com",
@@ -679,6 +680,14 @@
       "advanceConfig": {
         "generalRule": {
           "enableServerDetectLanguage": true
+        }
+      }
+    },
+    {
+      "condition": "isMobile==false",
+      "advanceConfig": {
+        "discountActivity.add": {
+          "enable": true
         }
       }
     }
@@ -993,7 +1002,9 @@
         "<code>",
         "</code>"
       ],
-      "limit": 100
+      "limit": 100,
+      "type": "mock",
+      "group": "custom"
     },
     "custom": {
       "placeholderDelimiters": [
@@ -1810,7 +1821,10 @@
     },
     "zhipu-pro": {
       "extends": "ai",
-      "name": "zhipu",
+      "name": "GLM-4 Plus",
+      "group": "pro",
+      "type": "zhipu-pro",
+      "visible": true,
       "model": "glm-4-plus",
       "proModel": "glm-4-plus",
       "defaultVisible": true,
@@ -1843,6 +1857,111 @@
     "zhipu-pro.add_v.[1.15.3]": {
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
+    },
+    "google-free": {
+      "type": "google",
+      "group": "free",
+      "extends": "google"
+    },
+    "bing-free": {
+      "type": "bing",
+      "group": "free",
+      "extends": "bing"
+    },
+    "zhipu-free": {
+      "type": "zhipu",
+      "group": "free",
+      "extends": "zhipu",
+      "provider": "custom",
+      "models": "glm-4-flash|glm-4-flash-250414"
+    },
+    "siliconcloud-free": {
+      "type": "siliconcloud",
+      "group": "free",
+      "extends": "siliconcloud",
+      "provider": "custom",
+      "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/glm-4-9b-chat"
+    },
+    "openai-pro": {
+      "name": "GPT-4.1 mini",
+      "type": "openai",
+      "group": "pro",
+      "extends": "openai",
+      "provider": "pro",
+      "visible": true
+    },
+    "claude-pro": {
+      "name": "Claude 3.5 Haiku",
+      "type": "claude",
+      "group": "pro",
+      "extends": "claude",
+      "provider": "pro",
+      "visible": true
+    },
+    "deepseek-pro": {
+      "name": "DeepSeek V3",
+      "type": "deepseek",
+      "group": "pro",
+      "extends": "deepseek",
+      "provider": "pro",
+      "visible": true
+    },
+    "gemini-pro": {
+      "name": "Gemini 2.0 Flash",
+      "type": "gemini",
+      "group": "pro",
+      "extends": "gemini",
+      "provider": "pro",
+      "visible": true
+    },
+    "deepl-pro": {
+      "name": "DeepL",
+      "type": "deepl",
+      "group": "pro",
+      "extends": "deepl",
+      "provider": "pro",
+      "visible": true
+    },
+    "openai-max": {
+      "name": "GPT-4.1",
+      "type": "openai",
+      "group": "max",
+      "extends": "openai",
+      "provider": "pro",
+      "proModel": "gpt-4.1",
+      "visible": true
+    },
+    "claude-max": {
+      "name": "Claude 4 Sonnet",
+      "type": "claude",
+      "group": "max",
+      "extends": "claude",
+      "provider": "pro",
+      "proModel": "claude-sonnet-4-20250514",
+      "visible": true
+    },
+    "gemini-max": {
+      "name": "Gemini 2.5 Pro",
+      "type": "gemini",
+      "group": "max",
+      "extends": "gemini",
+      "provider": "pro",
+      "proModel": "gemini-2.5-pro-preview",
+      "visible": true
+    },
+    "openai-custom": {
+      "name": "OpenAI 1",
+      "type": "openai",
+      "group": "custom",
+      "provider": "custom",
+      "extends": "openai"
+    },
+    "claude-custom": {
+      "name": "Claude 1",
+      "type": "claude",
+      "group": "custom",
+      "provider": "custom",
+      "extends": "claude"
     }
   },
   "shortcuts": {
@@ -4329,7 +4448,8 @@
         ".integrations-auth-wrapper",
         ".new-feed-onboarding-notice",
         "article section[aria-label='card content'] > div > div > div  > div:nth-child(2)",
-        ".TimelineItem-body > .Link--primary",
+        ".js-notice h2, .js-notice p",
+        ".TimelineItem-body a span, .TimelineItem-body a div, .TimelineItem-body form span, .TimelineItem-body form div",
         "[role=\"navigation\"] p",
         "[data-testid=\"commit-row-item\"] h4",
         ".font-mktg",
@@ -4353,7 +4473,9 @@
         "div.user-profile-bio",
         "div.news > div.js-notice",
         "#memex-project-view-root a [class^='prc-Text-Text']",
-        "[class^=OverviewContent] [class*=DirectoryRichtextContent]"
+        "[class^=OverviewContent] [class*=DirectoryRichtextContent]",
+        "[id^=pullrequestreview]",
+        "[class^='ChatMessage']"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -4383,7 +4505,12 @@
         ".BorderGrid-cell .topic-tag-link",
         "table[class*='Table-module__Box']",
         ".author,.assignee",
-        ".js-timeline-item .TimelineItem [class='TimelineItem-body']"
+        ".blob-code",
+        ".timeline-comment-header",
+        ".review-thread-reply",
+        ".codeRepository",
+        "a[data-hovercard-type]",
+        "[title='Label: Private']"
       ],
       "extraBlockSelectors.add": [],
       "extraInlineSelectors": [
@@ -16667,6 +16794,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-16T02:43:43.123Z",
-  "latestVersion": "1.18.1"
+  "buildinConfigUpdatedAt": "2025-06-16T11:33:19.345Z",
+  "latestVersion": "1.18.2"
 }
