@@ -2216,7 +2216,8 @@
       "font.immersive-translate-target-wrapper *",
       "pre",
       "pre code",
-      ".uacc-clickable"
+      ".uacc-clickable",
+      "#immersiveTranslateImgLoading *"
     ],
     "mutationExcludeContainsSelectors": [
       "markerow8",
@@ -16795,6 +16796,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-16T12:13:17.676Z",
+  "buildinConfigUpdatedAt": "2025-06-16T14:37:47.352Z",
   "latestVersion": "1.18.2"
 }
