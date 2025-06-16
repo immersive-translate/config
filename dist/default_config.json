@@ -998,6 +998,15 @@
       "type": "mock",
       "group": "custom"
     },
+    "mock2": {
+      "placeholderDelimiters": [
+        "<code>",
+        "</code>"
+      ],
+      "limit": 100,
+      "type": "mock",
+      "group": "custom"
+    },
     "custom": {
       "placeholderDelimiters": [
         "{",
@@ -16786,6 +16795,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-16T11:45:30.825Z",
+  "buildinConfigUpdatedAt": "2025-06-16T12:13:17.676Z",
   "latestVersion": "1.18.2"
 }
