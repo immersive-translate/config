@@ -1608,7 +1608,7 @@
     "deepseek": {
       "visible": true,
       "extends": "ai",
-      "name": "deepseek",
+      "name": "Deepseek",
       "model": "deepseek-chat",
       "limit": 10,
       "apiUrl": "https://api.deepseek.com/chat/completions",
@@ -16796,6 +16796,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-16T14:37:47.352Z",
-  "latestVersion": "1.18.2"
+  "buildinConfigUpdatedAt": "2025-06-16T17:54:35.447Z",
+  "latestVersion": "1.18.3"
 }
