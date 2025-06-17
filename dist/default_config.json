@@ -7508,7 +7508,12 @@
         ".line-clamp-1",
         "[data-testid=thread-title]",
         "[class='rounded-md duration-150']",
-        "[data-testid*=article-]"
+        "[data-testid*=article-]",
+        "[data-framer-name='Content']",
+        "[data-framer-root]"
+      ],
+      "additionalExcludeSelectors.add": [
+        "[data-framer-name='Desktop']"
       ]
     },
     {
@@ -16796,6 +16801,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-16T17:54:07.000Z",
+  "buildinConfigUpdatedAt": "2025-06-17T07:28:29.043Z",
   "latestVersion": "1.18.3"
 }
