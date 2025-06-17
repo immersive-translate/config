@@ -9290,6 +9290,24 @@
       }
     },
     {
+      "id": "mangatoto",
+      "matches": [
+        "mangatoto.com"
+      ],
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          "img.page-img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "manga18",
       "matches": [
         "manga18.club"
@@ -16801,6 +16819,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-17T07:28:29.043Z",
+  "buildinConfigUpdatedAt": "2025-06-17T07:34:55.666Z",
   "latestVersion": "1.18.3"
 }
