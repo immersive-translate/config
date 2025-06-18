@@ -3881,7 +3881,7 @@
           {
             "appendSelector": "div<-[data-testid*=\"cellInnerDiv-tweet\"]->[data-testid*=\"immersive-tweet-ui-content-container\"] button[role=\"button\"]<-parent",
             "insertBeforeSelector": "div<-[data-testid*=\"cellInnerDiv-tweet\"]->[data-testid*=\"immersive-tweet-ui-content-container\"] button[role=\"button\"]",
-            "injectCSS": ".imt-quick-subtitle-button { margin: 0 6px !important; } .imt-quick-subtitle-pop-content { transform: unset !important; } .logo,.logo svg { height: 24px !important; width: 24px !important;}, .logo svg { margin-top: 2px !important; } "
+            "injectCSS": ".imt-quick-subtitle-button { margin: 0 6px !important; } .imt-quick-subtitle-pop-content { transform: translateY(calc(65%)) !important; right: 35px;  } .logo,.logo svg { height: 24px !important; width: 24px !important;}, .logo svg { margin-top: 2px !important; } "
           }
         ]
       },
@@ -16864,6 +16864,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-18T07:11:27.633Z",
+  "buildinConfigUpdatedAt": "2025-06-18T09:20:29.659Z",
   "latestVersion": "1.18.3"
 }
