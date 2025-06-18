@@ -7818,8 +7818,13 @@
         ".sc-kzMCTH.pSZXj"
       ],
       "likePreSelectors.add": [
-        ".highLightSearchTarget"
+        ".highLightSearchTarget",
+        ".body-wrapper",
+        "body"
       ],
+      "isTransformPreTagNewLine": true,
+      "normalizeBody": true,
+      "forceFormatPre": true,
       "urlChangeDelay": 400,
       "mutationConfig.add": {
         "enableUrlChange": true,
@@ -7834,7 +7839,6 @@
           }
         }
       ],
-      "isTransformPreTagNewLine": true,
       "detectParagraphLanguage": true,
       "globalStyles": {
         "#atomic .Mt\\(20px\\)": "margin-top: 100px;",
@@ -12016,7 +12020,8 @@
         "netusa.xyz",
         "cdnstreame.net",
         "9animetv.to",
-        "hianime.to"
+        "hianime.to",
+        "videostr.net"
       ],
       "selectionTranslation": {
         "enable": false
@@ -16843,6 +16848,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-18T03:00:34.007Z",
+  "buildinConfigUpdatedAt": "2025-06-18T03:51:18.031Z",
   "latestVersion": "1.18.3"
 }
