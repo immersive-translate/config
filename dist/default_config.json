@@ -16795,6 +16795,23 @@
       }
     },
     {
+      "id": "strict-fix-nav2header",
+      "matches": [
+        "www.talkclassical.com"
+      ],
+      "preTranslateLimiter": {
+        "side.selectors": [
+          "aside",
+          "#sidenav"
+        ],
+        "header.selectors": [
+          "nav",
+          "header"
+        ]
+      },
+      "_comment": "严格模式下，只翻译 header 和 side 标签"
+    },
+    {
       "id": "fix-header",
       "selectorMatches": [
         "article header",
@@ -16819,6 +16836,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-17T07:34:55.666Z",
+  "buildinConfigUpdatedAt": "2025-06-18T01:37:51.955Z",
   "latestVersion": "1.18.3"
 }
