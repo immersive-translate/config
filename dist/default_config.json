@@ -5752,11 +5752,18 @@
         "h1",
         ".userContent",
         ".DismissMessage",
-        ".PanelColumn"
+        ".PanelColumn",
+        ".Meta-Discussion"
       ],
       "excludeSelectors": [
         ".ClearFix .Count"
-      ]
+      ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.enableTranslate": true,
+        "header.selectors": [
+          "#Head"
+        ]
+      }
     },
     {
       "id": "linkedinFeed",
@@ -16836,6 +16843,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-18T01:37:51.955Z",
+  "buildinConfigUpdatedAt": "2025-06-18T03:00:34.007Z",
   "latestVersion": "1.18.3"
 }
