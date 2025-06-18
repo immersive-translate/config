@@ -498,7 +498,8 @@
     "https://www.domestika.org/[DOMESTIKA]",
     "https://www.angel.com/[ANGEL]",
     "https://shangpa-academy.mn.co/[Shangpa Academy]",
-    "https://internetfundamentals.com//[Internetfundamentals]"
+    "https://internetfundamentals.com/[Internetfundamentals]",
+    "https://tv.dmm.com/[DMM]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -13501,6 +13502,21 @@
       }
     },
     {
+      "id": "dmm",
+      "matches": "tv.dmm.com",
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "fetch",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "loadingContainerSelector": "#vodWrapper",
+        "quickButtonRule": {
+          "appendSelector": "#vodWrapper .relative.flex.justify-end.items-center",
+          "insertBeforeSelector": "#vodWrapper .relative.flex.justify-end.items-center > div:first-child"
+        }
+      }
+    },
+    {
       "id": "www.iq.com",
       "matches": "www.iq.com",
       "excludeSelectors.add": [
@@ -16848,6 +16864,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-18T03:51:18.031Z",
+  "buildinConfigUpdatedAt": "2025-06-18T07:11:27.633Z",
   "latestVersion": "1.18.3"
 }
