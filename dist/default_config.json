@@ -3858,7 +3858,8 @@
           "injectCSS": ".imt-quick-subtitle-pop-content { transform: unset !important; } .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } "
         },
         "aiSubtitle": {
-          "enable": true
+          "enable": true,
+          "maxDurationHours": 4
         },
         "videoSelector": "video",
         "attachRule": {
@@ -4749,7 +4750,8 @@
             "m.youtube.com/watch*",
             "m.youtube.com/embed*",
             "m.youtube.com/shorts*"
-          ]
+          ],
+          "maxDurationHours": 4
         }
       },
       "wrapperPrefix": "",
@@ -4890,7 +4892,8 @@
                     "www.youtube.com/watch*",
                     "www.youtube.com/embed*",
                     "www.youtube.com/shorts*"
-                  ]
+                  ],
+                  "maxDurationHours": 4
                 }
               }
             }
@@ -16864,6 +16867,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-18T09:38:58.831Z",
-  "latestVersion": "1.18.3"
+  "buildinConfigUpdatedAt": "2025-06-19T09:30:41.788Z",
+  "latestVersion": "1.18.4"
 }
