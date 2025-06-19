@@ -8285,15 +8285,6 @@
       }
     },
     {
-      "id": "marginalrevolution",
-      "matches": "marginalrevolution.com",
-      "globalAttributes.add": {
-        "header": {
-          "translate": "unset;"
-        }
-      }
-    },
-    {
       "id": "githubBlog",
       "matches": "github.blog",
       "globalStyles": {
@@ -16867,6 +16858,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-19T09:30:08.000Z",
+  "buildinConfigUpdatedAt": "2025-06-19T16:04:38.787Z",
   "latestVersion": "1.18.4"
 }
