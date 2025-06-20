@@ -11200,6 +11200,29 @@
       }
     },
     {
+      "id": "speed-manga",
+      "matches": [
+        "speed-manga.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#readerarea img"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "inValidSrcRegex": [
+          ".svg"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "tkr415.com",
       "matches": [
         "tkr415.com"
@@ -16878,6 +16901,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-20T08:55:02.000Z",
+  "buildinConfigUpdatedAt": "2025-06-20T09:47:22.001Z",
   "latestVersion": "1.18.5"
 }
