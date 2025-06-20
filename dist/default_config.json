@@ -13838,6 +13838,7 @@
       "subtitleRule.add": {
         "type": "webvtt",
         "subsrtFormat": "vtt",
+        "loadingContainerSelector": ".mighty-video-player-container",
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "xhr",
         "quickButtonRule": {
@@ -16877,6 +16878,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-20T07:34:40.955Z",
+  "buildinConfigUpdatedAt": "2025-06-20T08:37:32.481Z",
   "latestVersion": "1.18.4"
 }
