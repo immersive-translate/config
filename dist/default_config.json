@@ -3618,6 +3618,19 @@
       "matches": [
         "*.fanbox.cc"
       ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "[class^='LazyImage__ImageWrapper'] img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      },
       "isTransformPreTagNewLine": true,
       "likePreSelectors.add": [
         "[class^='Body__PostBodyText']"
@@ -16901,6 +16914,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-20T09:47:22.001Z",
+  "buildinConfigUpdatedAt": "2025-06-20T09:56:05.569Z",
   "latestVersion": "1.18.5"
 }
