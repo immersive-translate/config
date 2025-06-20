@@ -369,7 +369,8 @@
     "https://www.hmttmh.com/[HMTTMH][chrome,firefox,safari,imtAndroid]",
     "https://smokingbehindthesupermarket.com/[Smoking Behind the Supermarket][chrome,firefox,safari,imtAndroid]",
     "https://comic-growl.com/[Comic Growl][chrome,firefox,safari,imtAndroid]",
-    "https://jumptoon.com/[Jumptoon][chrome,firefox,safari,imtAndroid]"
+    "https://jumptoon.com/[Jumptoon][chrome,firefox,safari,imtAndroid]",
+    "https://www.baozimh.com/[Fenoxo][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -16933,6 +16934,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-20T10:24:19.204Z",
+  "buildinConfigUpdatedAt": "2025-06-20T10:26:49.311Z",
   "latestVersion": "1.18.5"
 }
