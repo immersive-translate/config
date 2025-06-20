@@ -3640,6 +3640,25 @@
       ]
     },
     {
+      "id": "twmanga",
+      "matches": [
+        "www.twmanga.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "img.i-amphtml-fill-content"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "fenoxo",
       "matches": "www.fenoxo.com",
       "likePreSelectors.add": [
@@ -16914,6 +16933,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-20T09:56:05.569Z",
+  "buildinConfigUpdatedAt": "2025-06-20T10:24:19.204Z",
   "latestVersion": "1.18.5"
 }
