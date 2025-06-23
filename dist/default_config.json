@@ -4603,6 +4603,16 @@
       ]
     },
     {
+      "id": "rmit",
+      "matches": [
+        "www.rmit.edu.au"
+      ],
+      "injectedCss": [
+        ".colfeature-content{height:unset!important;}",
+        ".text-component-inner{font-feature-settings:unset!important;}"
+      ]
+    },
+    {
       "id": "mfacebook",
       "matches": "m.facebook.com",
       "selectors": [
@@ -16936,6 +16946,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-23T03:13:34.635Z",
+  "buildinConfigUpdatedAt": "2025-06-23T08:33:43.936Z",
   "latestVersion": "1.18.5"
 }
