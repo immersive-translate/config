@@ -1975,6 +1975,18 @@
       "group": "custom",
       "provider": "custom",
       "extends": "claude"
+    },
+    "transmart-custom": {
+      "type": "transmart",
+      "group": "free",
+      "extends": "transmart",
+      "disabledAt": "2025-01-01"
+    },
+    "yandex-custom": {
+      "type": "yandex",
+      "group": "free",
+      "extends": "yandex",
+      "disabledAt": "2025-01-01"
     }
   },
   "shortcuts": {
@@ -16975,6 +16987,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-24T10:19:49.452Z",
+  "buildinConfigUpdatedAt": "2025-06-24T10:41:55.881Z",
   "latestVersion": "1.18.5"
 }
