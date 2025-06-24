@@ -1978,13 +1978,13 @@
     },
     "transmart-custom": {
       "type": "transmart",
-      "group": "free",
+      "group": "custom",
       "extends": "transmart",
       "disabledAt": "2025-01-01"
     },
     "yandex-custom": {
       "type": "yandex",
-      "group": "free",
+      "group": "custom",
       "extends": "yandex",
       "disabledAt": "2025-01-01"
     }
@@ -16987,6 +16987,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-24T10:41:55.881Z",
+  "buildinConfigUpdatedAt": "2025-06-24T10:45:05.558Z",
   "latestVersion": "1.18.5"
 }
