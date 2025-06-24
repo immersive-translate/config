@@ -16105,6 +16105,9 @@
     },
     {
       "id": "nexusmods",
+      "matches": [
+        "www.nexusmods.com"
+      ],
       "selectorMatches": ".next-container section [data-lexical-editor]",
       "likePreSelectors.add": [
         ".next-container section"
@@ -16114,6 +16117,9 @@
       ],
       "injectedCss.add": [
         "[class*='line-clamp'] {-webkit-line-clamp:unset!important;}"
+      ],
+      "skipBuildContainerSelectors.remove": [
+        "em"
       ],
       "forceFormatPre": true,
       "isTransformPreTagNewLine": true
@@ -16951,6 +16957,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-24T06:16:26.542Z",
+  "buildinConfigUpdatedAt": "2025-06-24T06:29:39.619Z",
   "latestVersion": "1.18.5"
 }
