@@ -14981,12 +14981,16 @@
     },
     {
       "id": "saucemanhwa",
-      "matches": "saucemanhwa.com",
+      "matches": [
+        "saucemanhwa.com",
+        "saucemanhwa.org"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          ".chapter-content img"
+          ".chapter-content img",
+          ".image-item img"
         ],
         "injectedCss": ".imt-image-status {top:5%!important;}",
         "platforms": [
@@ -16947,6 +16951,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-23T09:25:13.612Z",
+  "buildinConfigUpdatedAt": "2025-06-24T06:16:26.542Z",
   "latestVersion": "1.18.5"
 }
