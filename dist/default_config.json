@@ -1885,6 +1885,16 @@
       "provider": "custom",
       "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/glm-4-9b-chat"
     },
+    "transmart-free": {
+      "type": "transmart",
+      "group": "free",
+      "extends": "transmart"
+    },
+    "yandex-free": {
+      "type": "yandex",
+      "group": "free",
+      "extends": "yandex"
+    },
     "openai-pro": {
       "name": "GPT-4.1 mini",
       "type": "openai",
@@ -16965,6 +16975,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-24T10:02:48.771Z",
+  "buildinConfigUpdatedAt": "2025-06-24T10:19:49.452Z",
   "latestVersion": "1.18.5"
 }
