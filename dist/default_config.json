@@ -7841,7 +7841,8 @@
         ".tptxt"
       ],
       "globalStyles": {
-        "[class*='lineclamp'],.b_title": "-webkit-line-clamp:unset;"
+        "[class*='lineclamp'],.b_title": "-webkit-line-clamp:unset;",
+        ".b_gwaDl,.b_snipwithnsl": "height:unset !important;"
       }
     },
     {
@@ -16957,6 +16958,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-24T06:29:39.619Z",
+  "buildinConfigUpdatedAt": "2025-06-24T08:21:29.829Z",
   "latestVersion": "1.18.5"
 }
