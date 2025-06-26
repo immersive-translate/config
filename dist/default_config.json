@@ -16170,6 +16170,12 @@
       "matches": [
         "www.nexusmods.com"
       ],
+      "skipBuildContainerSelectors.remove": [
+        "em"
+      ]
+    },
+    {
+      "id": "sp.nexusmods",
       "selectorMatches": ".next-container section [data-lexical-editor]",
       "likePreSelectors.add": [
         ".next-container section"
@@ -16180,11 +16186,9 @@
       "injectedCss.add": [
         "[class*='line-clamp'] {-webkit-line-clamp:unset!important;}"
       ],
-      "skipBuildContainerSelectors.remove": [
-        "em"
-      ],
       "forceFormatPre": true,
-      "isTransformPreTagNewLine": true
+      "isTransformPreTagNewLine": true,
+      "_comment": "nexusmods 部分区域会自动清除译文，建议手动翻译，插件针对性做过处理。自动翻译无法翻译这部分区域"
     },
     {
       "id": "ollama",
@@ -17028,6 +17032,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-26T10:57:02.714Z",
+  "buildinConfigUpdatedAt": "2025-06-26T11:25:22.155Z",
   "latestVersion": "1.18.7"
 }
