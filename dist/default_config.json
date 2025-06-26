@@ -11156,6 +11156,25 @@
       }
     },
     {
+      "id": "manhwahentai",
+      "matches": [
+        "manhwahentai.io"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".chapter-image img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "xmanga",
       "matches": "xmanga.org",
       "imageRule.add": {
@@ -16999,6 +17018,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-25T13:22:47.561Z",
+  "buildinConfigUpdatedAt": "2025-06-26T05:32:39.019Z",
   "latestVersion": "1.18.7"
 }
