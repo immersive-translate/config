@@ -16217,6 +16217,15 @@
       ]
     },
     {
+      "id": "rubyonrails",
+      "matches": "api.rubyonrails.org",
+      "preTranslateLimiter.add": {
+        "side.selectors": [
+          ".tree .content > h1"
+        ]
+      }
+    },
+    {
       "id": "teacherspayteachers",
       "matches": "www.teacherspayteachers.com/browse/*",
       "injectedCss.add": [
@@ -17019,6 +17028,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-26T09:13:34.455Z",
+  "buildinConfigUpdatedAt": "2025-06-26T10:57:02.714Z",
   "latestVersion": "1.18.7"
 }
