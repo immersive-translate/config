@@ -16669,6 +16669,20 @@
       }
     },
     {
+      "id": "www.ti.com.cn",
+      "matches": "www.ti.com.cn",
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": ".*\\.vtt(\\?.*)?$",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": "button.vjs-share-control",
+          "injectedGlobalCSS": ".immersive-translate-quick-button-container {position: relative;left:24px;top:4px;}"
+        }
+      }
+    },
+    {
       "id": "no-translate-username",
       "matches": [
         "onlinelibrary.wiley.com"
@@ -17034,6 +17048,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-27T06:30:37.516Z",
+  "buildinConfigUpdatedAt": "2025-06-27T08:19:34.063Z",
   "latestVersion": "1.18.7"
 }
