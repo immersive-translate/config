@@ -9762,7 +9762,8 @@
       "matches": [
         "mangadistrict2.com",
         "manhwaclan.com",
-        "manhuaread.com"
+        "manhuaread.com",
+        "www.mangaread.org"
       ],
       "imageRule.add": {
         "enable": true,
@@ -17033,6 +17034,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-26T16:40:23.116Z",
+  "buildinConfigUpdatedAt": "2025-06-27T06:30:37.516Z",
   "latestVersion": "1.18.7"
 }
