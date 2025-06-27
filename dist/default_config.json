@@ -8625,18 +8625,17 @@
       "selectorMatches": [
         "#__docusaurus"
       ],
-      "initialSelectorGlobalAttributes.add": {
-        "aside": {
-          "sideHead": "1",
-          "default-translate": "no"
-        }
-      },
       "excludeSelectors.add": [
         ".DocSearch-Modal"
       ],
       "extraBlockSelectors.add": [
         ".hash-link"
-      ]
+      ],
+      "preTranslateLimiter.add": {
+        "side.selectors": [
+          "aside"
+        ]
+      }
     },
     {
       "id": "mercari",
@@ -17048,6 +17047,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-27T08:19:34.063Z",
+  "buildinConfigUpdatedAt": "2025-06-27T09:27:43.708Z",
   "latestVersion": "1.18.7"
 }
