@@ -568,6 +568,8 @@
   "joinJobs": [],
   "monkeyH5FloatBall": {
     "enable": true,
+    "enableSidePanel": true,
+    "enablePinSidePanel": true,
     "blockUrls": [
       "*immersivetranslate.com/preview",
       "*.immersivetranslate.com/download-subtitle*",
@@ -581,7 +583,8 @@
       "https://onboarding.immersivetranslate.com*"
     ],
     "guideContentBlockUrls": [
-      "https://onboarding.immersivetranslate.com*"
+      "https://onboarding.immersivetranslate.com/*/intro/*",
+      "https://onboarding.immersivetranslate.com/*/init/*"
     ],
     "defaultShowGuideNums": 2,
     "clickType": "translate",
@@ -594,6 +597,7 @@
   "pcFloatBall": {
     "enable": true,
     "enableSidePanel": true,
+    "enablePinSidePanel": true,
     "transparency": 30,
     "blockUrls": [
       "*immersivetranslate.com/preview",
@@ -607,7 +611,8 @@
       "https://onboarding.immersivetranslate.com*"
     ],
     "guideContentBlockUrls": [
-      "https://onboarding.immersivetranslate.com*"
+      "https://onboarding.immersivetranslate.com/*/intro/*",
+      "https://onboarding.immersivetranslate.com/*/init/*"
     ],
     "defaultShowGuideNums": 2,
     "clickType": "translate",
@@ -2140,6 +2145,7 @@
     "smallCodeLength": 30,
     "forceFormatPre": false,
     "longHtmlTextLength": 500000,
+    "enableSiteAutoTranslate": true,
     "visibleObserverScreens": [
       0,
       0,
@@ -7839,7 +7845,8 @@
       },
       "injectedCss.add": [
         "header.d-header {height: 6em !important;}"
-      ]
+      ],
+      "enableSiteAutoTranslate": true
     },
     {
       "id": "feedly",
@@ -17047,6 +17054,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-27T09:27:43.708Z",
-  "latestVersion": "1.18.7"
+  "buildinConfigUpdatedAt": "2025-06-27T11:23:50.827Z",
+  "latestVersion": "1.18.8"
 }
