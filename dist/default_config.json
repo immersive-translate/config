@@ -63,7 +63,7 @@
         "upgradeTitle": "訂閱立省 30%"
       },
       "en": {
-        "upgradeTitle": "Subscribe to save 30%"
+        "upgradeTitle": "Subscribe (30% off)"
       }
     },
     "upgradeUrl": "https://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension&utm_campaign=side_panel_footer_upgrade"
@@ -583,6 +583,8 @@
       "https://onboarding.immersivetranslate.com*"
     ],
     "guideContentBlockUrls": [
+      "https://test-onboarding.immersivetranslate.com/*/intro/*",
+      "https://test-onboarding.immersivetranslate.com/*/init/*",
       "https://onboarding.immersivetranslate.com/*/intro/*",
       "https://onboarding.immersivetranslate.com/*/init/*"
     ],
@@ -611,6 +613,8 @@
       "https://onboarding.immersivetranslate.com*"
     ],
     "guideContentBlockUrls": [
+      "https://test-onboarding.immersivetranslate.com/*/intro/*",
+      "https://test-onboarding.immersivetranslate.com/*/init/*",
       "https://onboarding.immersivetranslate.com/*/intro/*",
       "https://onboarding.immersivetranslate.com/*/init/*"
     ],
@@ -3561,7 +3565,17 @@
       "waitForSelectorsTimeout": 1,
       "longBuildPageLength": 1000,
       "blockMinTextCount": 0,
-      "blockMinWordCount": 0
+      "blockMinWordCount": 0,
+      "advanceMergeConfig": [
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "pcFloatBall.add": {
+              "enableSidePanel": false
+            }
+          }
+        }
+      ]
     },
     {
       "id": "immersive",
@@ -17055,6 +17069,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-30T03:29:02.508Z",
-  "latestVersion": "1.18.9"
+  "buildinConfigUpdatedAt": "2025-06-30T08:02:01.865Z",
+  "latestVersion": "1.18.10"
 }
