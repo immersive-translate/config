@@ -10420,7 +10420,6 @@
         "comic-days.com",
         "www.corocoro.jp",
         "tonarinoyj.jp",
-        "pocket.shonenmagazine.com",
         "rimacomiplus.jp",
         "kuragebunch.com"
       ],
@@ -17102,6 +17101,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-01T07:53:30.800Z",
+  "buildinConfigUpdatedAt": "2025-07-01T08:04:14.740Z",
   "latestVersion": "1.18.10"
 }
