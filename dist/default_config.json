@@ -8363,7 +8363,8 @@
       "excludeSelectors.add": [
         ".sc-kHItYk.kCjSZT",
         ".sc-hagvSa.guBIfV",
-        ".sc-jhZTHU.btgPPn"
+        ".sc-jhZTHU.btgPPn",
+        "#editor-sidebar-scroll-container"
       ],
       "injectedCss.add": [
         ".km-listitem--large {height:unset !important;}",
@@ -17098,6 +17099,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-01T07:26:04.479Z",
+  "buildinConfigUpdatedAt": "2025-07-01T07:42:30.446Z",
   "latestVersion": "1.18.10"
 }
