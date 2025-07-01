@@ -9303,8 +9303,7 @@
           "chrome",
           "firefox",
           "safari",
-          "imtAndroid",
-          "imtIOS"
+          "imtAndroid"
         ]
       },
       "_comment": "通用韩漫配置项"
@@ -17103,6 +17102,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-01T07:50:06.072Z",
+  "buildinConfigUpdatedAt": "2025-07-01T07:53:30.800Z",
   "latestVersion": "1.18.10"
 }
