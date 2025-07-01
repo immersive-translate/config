@@ -6967,6 +6967,13 @@
       ]
     },
     {
+      "id": "nyassembly",
+      "matches": "nyassembly.gov",
+      "excludeTags.remove": [
+        "PRE"
+      ]
+    },
+    {
       "id": "developerChrome",
       "matches": "developer.chrome.com",
       "excludeSelectors": [
@@ -17077,6 +17084,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-06-30T13:45:54.089Z",
+  "buildinConfigUpdatedAt": "2025-07-01T07:03:00.904Z",
   "latestVersion": "1.18.10"
 }
