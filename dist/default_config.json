@@ -11417,9 +11417,10 @@
       }
     },
     {
-      "id": "wfwf395",
+      "id": "wfwf",
       "matches": [
-        "wfwf395.com"
+        "wfwf395.com",
+        "wfwf399.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -17097,6 +17098,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-01T07:23:40.287Z",
+  "buildinConfigUpdatedAt": "2025-07-01T07:26:04.479Z",
   "latestVersion": "1.18.10"
 }
