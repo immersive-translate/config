@@ -10436,13 +10436,16 @@
           "img.page-image.js-page-image",
           "img[class$=\"_page\"]",
           "[class='-cv-page-canvas'] canvas",
-          ".link-slot img"
+          ".link-slot img",
+          ".c-viewer__comic img",
+          ".c-viewer__comic canvas"
         ],
         "urlFetchType": "canvasArgs",
         "opImageType": "append",
         "loadingSelectors": [
           "p"
-        ]
+        ],
+        "loadingStyle": "z-index: 9999;"
       },
       "injectedCss.add": [
         "[class^='Original_section_title'] {overflow:hidden!important;}"
@@ -17100,6 +17103,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-01T07:45:43.322Z",
+  "buildinConfigUpdatedAt": "2025-07-01T07:50:06.072Z",
   "latestVersion": "1.18.10"
 }
