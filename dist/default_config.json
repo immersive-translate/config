@@ -4680,6 +4680,9 @@
         "[data-ad-comet-preview=message] [role=button]",
         "[role=button]"
       ],
+      "injectedCss": [
+        ".native-text.rslh {line-height:unset!important;}"
+      ],
       "translationMode": "translation",
       "detectParagraphLanguage": true
     },
@@ -17101,6 +17104,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-01T08:04:14.740Z",
+  "buildinConfigUpdatedAt": "2025-07-02T07:39:29.002Z",
   "latestVersion": "1.18.10"
 }
