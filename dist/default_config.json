@@ -5772,7 +5772,6 @@
       "excludeSelectors": [
         "a h3 + div",
         "div#sfooter",
-        "a[role=presentation] > div > div:first-child",
         ".b5ZQcf",
         ".CEMjEf",
         ".MgUUmf.NUnG9d",
@@ -5797,7 +5796,11 @@
         "#searchform",
         ".yg51vc",
         ".CbAZb",
-        ".B6fmyf.byrV5b.Mg1HEd"
+        ".B6fmyf.byrV5b.Mg1HEd",
+        "[class='SPa6uf Hqu6dd OSrXXb']",
+        "[class='ZtihLe YrbPuc']",
+        "[class='kb0PBd A9Y9g'] .TXwUJf,[class='kb0PBd cvP2Ce'] .TXwUJf",
+        "[class='wep10b vDF3Oc jIrdcd'],[class='gqF9jc YrbPuc']"
       ],
       "extraBlockSelectors.add": [
         ".MUFPAc"
@@ -5805,18 +5808,15 @@
       "additionalExcludeSelectors.add": [
         "[jscontroller='UsftYd']"
       ],
-      "globalStyles": {
-        ".V82bz": "-webkit-line-clamp: unset;max-height: unset;margin-bottom:30px",
-        ".pe7FNb": "-webkit-line-clamp: unset;",
-        ".promotion-3PDMAb": "display: none;",
-        ".uAKcGb": "-webkit-line-clamp: unset;max-height: unset;margin-bottom:30px",
-        "div[data-content-feature='1'] > div": "-webkit-line-clamp: unset;max-height: unset;",
-        "div[style='-webkit-line-clamp:2']": "-webkit-line-clamp: unset;max-height: unset;",
-        "div[style='-webkit-line-clamp:3']": "-webkit-line-clamp: unset;max-height: unset;",
-        "div[style='-webkit-line-clamp:4']": "-webkit-line-clamp: unset;max-height: unset;",
-        ".Pw4Ldf.RsCEN": "height:unset;",
-        ".related-question-pair": "overflow:auto;"
-      },
+      "injectedCss.add": [
+        ".V82bz,.uAKcGb,.F0FGWb,.Hdw6tb,.M1Sizc,.XVPTd,.Yt787.JGD2rd,.ITZIwc {-webkit-line-clamp: unset!important;max-height: unset!important;}",
+        ".pe7FNb {-webkit-line-clamp: unset!important;}",
+        ".promotion-3PDMAb {display: none!important;}",
+        "div[data-content-feature='1'] > div {-webkit-line-clamp: unset!important;max-height: unset!important;}",
+        "div[style='-webkit-line-clamp:*'] {-webkit-line-clamp: unset!important;max-height: unset!important;}",
+        ".Pw4Ldf.RsCEN {height:unset!important;}",
+        ".related-question-pair {overflow:auto!important;}"
+      ],
       "ignoreZhCNandZhTW": true,
       "isTranslateTitle": false,
       "searchEnhancementConfig": [
@@ -17122,6 +17122,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-02T08:52:51.675Z",
+  "buildinConfigUpdatedAt": "2025-07-02T08:57:07.102Z",
   "latestVersion": "1.18.10"
 }
