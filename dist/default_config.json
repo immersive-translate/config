@@ -9801,7 +9801,8 @@
         "mangadistrict2.com",
         "manhwaclan.com",
         "manhuaread.com",
-        "www.mangaread.org"
+        "www.mangaread.org",
+        "mangaforfree.net"
       ],
       "imageRule.add": {
         "enable": true,
@@ -17121,6 +17122,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-02T08:38:35.416Z",
+  "buildinConfigUpdatedAt": "2025-07-02T08:52:51.675Z",
   "latestVersion": "1.18.10"
 }
