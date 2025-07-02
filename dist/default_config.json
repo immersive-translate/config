@@ -15783,6 +15783,23 @@
       }
     },
     {
+      "id": "t1.xtoon2.com",
+      "matches": "t1.xtoon2.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "img.lazy-read"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "app.schildi.chat",
       "matches": "app.schildi.chat",
       "additionalExcludeSelectors.remove": [
@@ -17104,6 +17121,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-02T07:39:29.002Z",
+  "buildinConfigUpdatedAt": "2025-07-02T08:38:35.416Z",
   "latestVersion": "1.18.10"
 }
