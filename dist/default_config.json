@@ -11988,6 +11988,13 @@
       }
     },
     {
+      "id": "app.rapidlaunch.wtf",
+      "matches": "app.rapidlaunch.wtf",
+      "injectedCss": [
+        ".max-h-24 { max-height: unset !important; }"
+      ]
+    },
+    {
       "id": "imdb",
       "matches": "www.imdb.com",
       "excludeSelectors.add": [
@@ -17138,6 +17145,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-03T07:49:53.661Z",
+  "buildinConfigUpdatedAt": "2025-07-03T08:23:11.881Z",
   "latestVersion": "1.18.10"
 }
