@@ -9427,8 +9427,10 @@
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
+          "div[name='image-item'] img",
           "img.page-img"
         ],
+        "loadingStyle": "z-index: 9999;",
         "platforms": [
           "chrome",
           "firefox",
@@ -10409,7 +10411,8 @@
         "type": "manga",
         "imageSelectors": [
           "canvas.page-image.js-page-image",
-          ".link-slot img"
+          ".link-slot img",
+          ".page-area img"
         ],
         "urlFetchType": "canvasArgs",
         "opImageType": "append"
@@ -15695,6 +15698,27 @@
       }
     },
     {
+      "id": "ridibooks.com",
+      "matches": "ridibooks.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "div[role='region'] img[data-index]"
+        ],
+        "opImageType": "append",
+        "inValidSrcRegex": [
+          "data:image/svg"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "sololevelingfree.vip",
       "matches": [
         "sololevelingfree.vip"
@@ -16532,26 +16556,10 @@
       ]
     },
     {
-      "id": "scripod",
-      "matches": "scripod.com",
-      "injectedCss.add": [
-        "div.line-clamp-4 { -webkit-line-clamp: unset; max-height: unset;}"
-      ]
-    },
-    {
-      "id": "cis.vemic.com",
-      "matches": "cis.vemic.com",
-      "injectedCss.add": [
-        "span.hotData-text { -webkit-line-clamp: unset !important; line-clamp: unset !important;}"
-      ]
-    },
-    {
-      "id": "jddonline",
-      "matches": [
-        "jddonline.com"
-      ],
-      "injectedCss.add": [
-        "div.jdd-product-info-box {height:unset!important;}"
+      "id": "docs-tutorials",
+      "matches": "docs.pytorch.org",
+      "extraBlockSelectors.add": [
+        ".tutorial-filter"
       ]
     },
     {
@@ -16560,7 +16568,10 @@
         "*.sooplive.*",
         "zen-browser.app",
         "message.alibaba.com",
-        "erp.91miaoshou.com"
+        "erp.91miaoshou.com",
+        "jddonline.com",
+        "cis.vemic.com",
+        "scripod.com"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
@@ -16570,7 +16581,10 @@
         ".side_list a,.title a,.tit,.item-title {-webkit-line-clamp:unset!important;height:unset!important;}",
         "details {height:unset!important;}",
         ".product-title {height:unset!important;-webkit-line-clamp:unset!important;}",
-        ".plugin-product-comment-content {height:unset!important;-webkit-line-clamp:unset!important;}"
+        ".plugin-product-comment-content {height:unset!important;-webkit-line-clamp:unset!important;}",
+        "div.jdd-product-info-box {height:unset!important;}",
+        "span.hotData-text { -webkit-line-clamp: unset !important; line-clamp: unset !important;}",
+        "div.line-clamp-4 { -webkit-line-clamp: unset; max-height: unset;}"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -17122,6 +17136,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-02T08:57:07.102Z",
+  "buildinConfigUpdatedAt": "2025-07-03T03:58:38.155Z",
   "latestVersion": "1.18.10"
 }
