@@ -12011,7 +12011,8 @@
         ".expand-collapse-button",
         ".responder-actions",
         ".jelly-quote",
-        ".squire-attachments-container"
+        ".squire-attachments-container",
+        ".note-mention-suggestion-list"
       ]
     },
     {
@@ -17165,6 +17166,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-03T09:06:56.544Z",
+  "buildinConfigUpdatedAt": "2025-07-03T09:26:09.899Z",
   "latestVersion": "1.18.10"
 }
