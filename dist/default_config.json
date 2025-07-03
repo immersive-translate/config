@@ -7273,15 +7273,6 @@
       ]
     },
     {
-      "id": "crates",
-      "matches": [
-        "https://crates.io/search*"
-      ],
-      "selectors": [
-        "div[class^=_description-box] div[class^=_description]"
-      ]
-    },
-    {
       "id": "theverge",
       "matches": "www.theverge.com",
       "shadowRootSelectors": [
@@ -17166,6 +17157,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-03T09:26:09.899Z",
+  "buildinConfigUpdatedAt": "2025-07-03T15:49:10.328Z",
   "latestVersion": "1.18.10"
 }
