@@ -11995,6 +11995,26 @@
       ]
     },
     {
+      "id": "letsjelly",
+      "matches": "app.letsjelly.com",
+      "excludeSelectors.add": [
+        ".cil-contacts-wrapper",
+        ".cil-time",
+        ".cil-assignments",
+        ".cil-labels",
+        ".popover-dialog",
+        "summary.button",
+        "a.button",
+        ".conversation-actions-bar",
+        ".conversation-actions-bar-spacer",
+        ".message-header",
+        ".expand-collapse-button",
+        ".responder-actions",
+        ".jelly-quote",
+        ".squire-attachments-container"
+      ]
+    },
+    {
       "id": "imdb",
       "matches": "www.imdb.com",
       "excludeSelectors.add": [
@@ -17145,6 +17165,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-03T08:23:11.881Z",
+  "buildinConfigUpdatedAt": "2025-07-03T09:06:56.544Z",
   "latestVersion": "1.18.10"
 }
