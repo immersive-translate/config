@@ -15616,7 +15616,7 @@
         "enable": true,
         "type": "manga",
         "urlFetchType": "canvasArgs",
-        "opImageType": "append",
+        "intersectionRootMargin": "0px 0px 100% 0px",
         "imageSelectors": [
           ".scramble-page canvas",
           ".scramble-page img"
@@ -17166,6 +17166,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-07T10:23:42.868Z",
+  "buildinConfigUpdatedAt": "2025-07-07T10:50:36.625Z",
   "latestVersion": "1.18.10"
 }
