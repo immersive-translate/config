@@ -8365,7 +8365,7 @@
       ],
       "injectedCss.add": [
         ".km-listitem--large {height:unset !important;}",
-        ".km-listitem--large.jWyUHl {height:unset !important;}",
+        ".km-listitem--large .jWyUHl {height:unset !important;}",
         "[role=listitem] {overflow:scroll;}",
         "[role=listitem] div {-webkit-line-clamp:unset;}"
       ]
@@ -17165,6 +17165,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-04T07:17:14.316Z",
+  "buildinConfigUpdatedAt": "2025-07-07T02:42:12.888Z",
   "latestVersion": "1.18.10"
 }
