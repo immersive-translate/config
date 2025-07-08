@@ -5581,7 +5581,12 @@
             "immediateTranslationTextCount": 0
           }
         }
-      ]
+      ],
+      "preTranslateLimiter.add": {
+        "side.selectors": [
+          "[class*='sidebarList']"
+        ]
+      }
     },
     {
       "id": "telegram",
@@ -17147,6 +17152,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-08T03:06:27.482Z",
+  "buildinConfigUpdatedAt": "2025-07-08T06:23:39.818Z",
   "latestVersion": "1.18.10"
 }
