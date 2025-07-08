@@ -15665,13 +15665,17 @@
     {
       "id": "webtoons",
       "matches": [
-        "www.webtoons.com"
+        "www.webtoons.com",
+        "m.webtoons.com"
       ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
         "imageSelectors": [
           ".viewer_img img"
+        ],
+        "inValidSrcRegex": [
+          "bg_transparency.png"
         ],
         "platforms": [
           "chrome",
@@ -17143,6 +17147,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-08T01:04:37.436Z",
+  "buildinConfigUpdatedAt": "2025-07-08T03:06:27.482Z",
   "latestVersion": "1.18.10"
 }
