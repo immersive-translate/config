@@ -1391,6 +1391,80 @@
           "n\\\\'t ",
           "n't "
         ]
+      ],
+      "modelsOverrides": [
+        {
+          "models": [
+            "gemini-2.5-flash",
+            "gemini-2.5-flash-lite"
+          ],
+          "bodyConfigs": {
+            "generationConfig": {
+              "temperature": 0,
+              "topK": 1,
+              "topP": 1,
+              "maxOutputTokens": 2048,
+              "stopSequences": [],
+              "thinkingConfig": {
+                "thinkingBudget": 0
+              }
+            },
+            "safetySettings": [
+              {
+                "category": "HARM_CATEGORY_HARASSMENT",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_HATE_SPEECH",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                "threshold": "BLOCK_NONE"
+              }
+            ]
+          }
+        },
+        {
+          "models": [
+            "gemini-2.5-pro",
+            "gemini-2.5-pro-preview"
+          ],
+          "bodyConfigs": {
+            "generationConfig": {
+              "temperature": 0,
+              "topK": 1,
+              "topP": 1,
+              "maxOutputTokens": 2048,
+              "stopSequences": [],
+              "thinkingConfig": {
+                "thinkingBudget": 128
+              }
+            },
+            "safetySettings": [
+              {
+                "category": "HARM_CATEGORY_HARASSMENT",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_HATE_SPEECH",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                "threshold": "BLOCK_NONE"
+              }
+            ]
+          }
+        }
       ]
     },
     "claude": {
@@ -1920,11 +1994,13 @@
       "visible": true
     },
     "gemini-pro": {
-      "name": "Gemini 2.0 Flash",
+      "name": "Gemini 2.5 Flash",
       "type": "gemini",
       "group": "pro",
       "extends": "gemini",
       "provider": "pro",
+      "model": "gemini-2.5-flash",
+      "proModel": "gemini-2.5-flash",
       "visible": true
     },
     "deepl-pro": {
@@ -1959,7 +2035,9 @@
       "group": "max",
       "extends": "gemini",
       "provider": "pro",
-      "proModel": "gemini-2.5-pro-preview",
+      "proLimit": 5,
+      "proModel": "gemini-2.5-pro",
+      "model": "gemini-2.5-pro",
       "visible": true
     },
     "openai-custom": {
@@ -17152,6 +17230,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-08T06:23:39.818Z",
+  "buildinConfigUpdatedAt": "2025-07-08T06:28:57.941Z",
   "latestVersion": "1.18.10"
 }
