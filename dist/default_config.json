@@ -16881,6 +16881,19 @@
       }
     },
     {
+      "id": "ficbook.net",
+      "matches": [
+        "ficbook.net"
+      ],
+      "isTransformPreTagNewLine": true,
+      "likePreSelectors.add": [
+        "#content"
+      ],
+      "preTranslateLimiter.add_v.[1.12.1]": {
+        "header.enableTranslate": true
+      }
+    },
+    {
       "id": "overflow-sites",
       "matches": [
         "www.highfrequencyelectronics.com",
@@ -17230,6 +17243,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-08T06:28:57.941Z",
+  "buildinConfigUpdatedAt": "2025-07-08T07:20:40.224Z",
   "latestVersion": "1.18.10"
 }
