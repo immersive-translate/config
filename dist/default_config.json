@@ -5806,7 +5806,8 @@
         "span[data-ts]"
       ],
       "extraBlockSelectors.add": [
-        ".MUFPAc"
+        ".MUFPAc",
+        "[role=heading]"
       ],
       "additionalExcludeSelectors.add": [
         "[jscontroller='UsftYd']"
@@ -5820,31 +5821,7 @@
         ".Pw4Ldf.RsCEN {height:unset!important;}",
         ".related-question-pair {overflow:auto!important;}"
       ],
-      "ignoreZhCNandZhTW": true,
       "isTranslateTitle": false,
-      "searchEnhancementConfig": [
-        {
-          "id": "google",
-          "urlMatch": "https://www\\.google\\..+/search",
-          "style": {
-            "source": "font-size:12px; margin-bottom: 6px;",
-            "enTitle": "margin-top:6px;font-size:14px;",
-            "searchTitle": "margin-top:6px;position:relative;padding-right:24px;",
-            "more": "color:#1a0dab;margin-top:8px;",
-            "enTitleClassName": "immersive-translate-search-enhancement-en-title"
-          },
-          "keyword": {
-            "value": "[0]$1",
-            "matches": [
-              {
-                "source": "url",
-                "matchRegex": "q=(.+?)&"
-              }
-            ]
-          },
-          "showCount": 5
-        }
-      ],
       "darkModeRule": {
         "element": "meta",
         "selectors": [
@@ -17166,6 +17143,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-07T10:50:36.625Z",
+  "buildinConfigUpdatedAt": "2025-07-08T01:04:37.436Z",
   "latestVersion": "1.18.10"
 }
