@@ -16993,7 +16993,6 @@
         "edstem.org",
         "actions.tldrnewsletter.com",
         "community.linkingyourthinking.com",
-        "doc.qt.io",
         "winaero.com",
         "community.afforai.com",
         "www.perplexity.ai",
@@ -17245,6 +17244,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-09T03:04:32.326Z",
+  "buildinConfigUpdatedAt": "2025-07-09T04:15:09.751Z",
   "latestVersion": "1.18.10"
 }
