@@ -15159,7 +15159,8 @@
       "matches": [
         "manwadd.cc",
         "manwadb.cc",
-        "manwadb.xyz"
+        "manwadb.xyz",
+        "manwath.cc"
       ],
       "imageRule.add": {
         "enable": true,
@@ -17244,6 +17245,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-09T02:25:50.362Z",
+  "buildinConfigUpdatedAt": "2025-07-09T03:04:32.326Z",
   "latestVersion": "1.18.10"
 }
