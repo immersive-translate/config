@@ -261,6 +261,7 @@
     "enableTrialPro": true,
     "trialProShowLimit": 20
   },
+  "ignoreReportEmailRegex": "@immersivetranslate.com|privaterelay.appleid.com",
   "discountActivity": {
     "enable": false,
     "upgradeShowCountCacheKey": "upgradeDiscountActivity20250618",
@@ -279,6 +280,9 @@
       "zh-TW": "",
       "en": ""
     }
+  },
+  "tokenUsageTips": {
+    "enableMaxTips": true
   },
   "supportedMangaSites": [
     "https://www.pixiv.net/manga[Pixiv][chrome,firefox,imtAndroid]",
@@ -694,6 +698,16 @@
           "enableServerDetectLanguage": true
         }
       }
+    },
+    {
+      "condition": "abTagNumber<1 && installedAtTimestamp>1751846400000",
+      "advanceConfig": {
+        "generalRule": {
+          "selectionTranslation.add": {
+            "enable": true
+          }
+        }
+      }
     }
   ],
   "inputLanguageCodeAlias": {
@@ -803,11 +817,11 @@
     "www.dianomi.com/smartads.epl",
     "secure-assets.rubiconproject.com",
     "eus.rubiconproject.com",
-    "eus.rubiconproject.com",
     "i.liadm.com",
     "eb2.3lift.com",
     "googleads.g.doubleclick.net",
-    "https://www.google.com/recaptcha/*",
+    "www.google.com/recaptcha/*",
+    "*.safeframe.googlesyndication.com",
     "ad.doubanio.com",
     "datawrapper.dwcdn.net",
     "*://*/*\\.svg",
@@ -2300,6 +2314,7 @@
     ],
     "excludeRegexps": [
       "(&lt;\\\\/?[a-zA-Z0-9]+(?:[^&gt;]*?)&gt;)",
+      "(<canvas>)",
       "(<form>|<body>|<strong>|<img|<IMG|<Img|<ImG|<iMg|<iMG|<em>|<b>|</b>|<i>|</i>|<u>|</u>|<br>|<br/>)"
     ],
     "excludeRegexps.remove_v.[1.7.5]": [
@@ -2564,6 +2579,8 @@
       "sourceFontWeight": "400",
       "translationFontWeight": "400",
       "translateGroupCount": 5,
+      "filterAmbientSounds": true,
+      "filterAmbientSoundsRegex": "\\([^)]*\\)",
       "autoSwitchSubtitleWithSameLanguage": true,
       "enableIOSFullScreenTextTrack": true,
       "youtubeAutoEnableSubtitleAfterInstalledAt": "2024-04-25",
@@ -17092,6 +17109,16 @@
       "_comment": "为了处理 js 库错误检测希伯来语成其他语言的问题"
     },
     {
+      "id": "deepFrameTranslate",
+      "matches": [
+        "online.vitalsource.com",
+        "anarchothaumaturgist.itch.io",
+        "darkpetal16.itch.io",
+        "registry.khronos.org"
+      ],
+      "enableDeepFrameTranslatePage": true
+    },
+    {
       "id": "common.pdfWebPage",
       "waitForSelectorsTimeout": 1,
       "selectorMatches": [
@@ -17244,6 +17271,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-09T04:15:09.751Z",
-  "latestVersion": "1.18.10"
+  "buildinConfigUpdatedAt": "2025-07-09T10:53:24.000Z",
+  "latestVersion": "1.19.1"
 }
