@@ -8817,6 +8817,14 @@
         ".d4t-sprite-icon",
         ".d4t-icon"
       ],
+      "likePreSelectors.add": [
+        ".poe-content"
+      ],
+      "forceFormatPre": true,
+      "isTransformPreTagNewLine": true,
+      "buildContainerSelectors": [
+        ".poe-content"
+      ],
       "injectedCss": [
         "font {font-family: sans-serif !important;}",
         ".d4t-sprite-icon {display: unset !important;}"
@@ -17297,6 +17305,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-10T07:28:56.262Z",
+  "buildinConfigUpdatedAt": "2025-07-10T09:19:58.547Z",
   "latestVersion": "1.19.1"
 }
