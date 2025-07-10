@@ -16913,6 +16913,15 @@
       }
     },
     {
+      "id": "migflash",
+      "matches": [
+        "migflash.com"
+      ],
+      "additionalExcludeSelectors.remove": [
+        "h1 br"
+      ]
+    },
+    {
       "id": "overflow-sites",
       "matches": [
         "www.highfrequencyelectronics.com",
@@ -17271,6 +17280,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-09T11:01:35.725Z",
+  "buildinConfigUpdatedAt": "2025-07-10T01:11:25.980Z",
   "latestVersion": "1.19.1"
 }
