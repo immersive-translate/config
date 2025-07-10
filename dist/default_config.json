@@ -3051,7 +3051,8 @@
       ".material-icons",
       "material-icon",
       "i.fa",
-      "i[class^=fa-]"
+      "i[class^=fa-]",
+      ".google-symbols.notranslate"
     ],
     "translationClasses": [],
     "excludeTags": [
@@ -17295,6 +17296,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-10T07:07:52.238Z",
+  "buildinConfigUpdatedAt": "2025-07-10T07:27:32.795Z",
   "latestVersion": "1.19.1"
 }
