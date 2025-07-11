@@ -375,7 +375,8 @@
     "https://smokingbehindthesupermarket.com/[Smoking Behind the Supermarket][chrome,firefox,safari,imtAndroid]",
     "https://comic-growl.com/[Comic Growl][chrome,firefox,safari,imtAndroid]",
     "https://jumptoon.com/[Jumptoon][chrome,firefox,safari,imtAndroid]",
-    "https://www.baozimh.com/[Fenoxo][chrome,firefox,safari,imtAndroid]"
+    "https://www.baozimh.com/[Fenoxo][chrome,firefox,safari,imtAndroid]",
+    "https://ww2.mangafreak.me/[MangaFreak][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -11530,6 +11531,45 @@
       }
     },
     {
+      "id": "mangafreak",
+      "matches": [
+        "ww2.mangafreak.me"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "img#gohere"
+        ],
+        "loadingStyle": "z-index: 9999;",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
+      "id": "komiic",
+      "matches": [
+        "komiic.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "img.comicImage"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "page.kakao",
       "matches": [
         "page.kakao.com"
@@ -17305,6 +17345,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-10T09:19:58.547Z",
+  "buildinConfigUpdatedAt": "2025-07-11T08:01:04.701Z",
   "latestVersion": "1.19.1"
 }
