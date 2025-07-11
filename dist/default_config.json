@@ -10800,7 +10800,8 @@
           "chrome",
           "firefox",
           "safari",
-          "imtAndroid"
+          "imtAndroid",
+          "imtIOS"
         ],
         "inValidSrcRegex": [
           "bg_transparency.png"
@@ -17394,6 +17395,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-11T14:45:57.399Z",
+  "buildinConfigUpdatedAt": "2025-07-11T15:09:13.142Z",
   "latestVersion": "1.19.2"
 }
