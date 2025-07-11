@@ -9843,13 +9843,15 @@
       "id": "nhentai",
       "matches": [
         "nhentai.net",
-        "6hentai.net"
+        "6hentai.net",
+        "nhentai.com"
       ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          "#image-container img"
+          "#image-container img",
+          "div[id^=page] img"
         ],
         "platforms": [
           "chrome",
@@ -9981,17 +9983,6 @@
       }
     },
     {
-      "id": "nhentai.com",
-      "matches": "nhentai.com",
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "div[id^=page] img"
-        ]
-      }
-    },
-    {
       "id": "wto.to",
       "matches": "wto.to",
       "imageRule.add": {
@@ -10000,7 +9991,13 @@
         "imageSelectors": [
           "div[name='image-item'] > div > img"
         ],
-        "loadingStyle": "z-index: 9999;"
+        "loadingStyle": "z-index: 9999;",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
       }
     },
     {
@@ -17345,6 +17342,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-11T08:01:04.701Z",
+  "buildinConfigUpdatedAt": "2025-07-11T08:22:11.266Z",
   "latestVersion": "1.19.1"
 }
