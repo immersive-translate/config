@@ -10329,13 +10329,7 @@
         "loadingSelectors": [
           "div"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px",
-        "platforms": [
-          "chrome",
-          "firefox",
-          "safari",
-          "imtAndroid"
-        ]
+        "intersectionRootMargin": "0px 0px 200% 0px"
       }
     },
     {
@@ -10359,12 +10353,6 @@
         "type": "manga",
         "imageSelectors": [
           "p>img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "safari",
-          "imtAndroid"
         ]
       }
     },
@@ -10623,13 +10611,7 @@
         "loadingSelectors": [
           "div"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px",
-        "platforms": [
-          "chrome",
-          "firefox",
-          "safari",
-          "imtAndroid"
-        ]
+        "intersectionRootMargin": "0px 0px 200% 0px"
       }
     },
     {
@@ -17387,6 +17369,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-11T08:32:41.141Z",
+  "buildinConfigUpdatedAt": "2025-07-11T08:31:24.000Z",
   "latestVersion": "1.19.2"
 }
