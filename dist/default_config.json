@@ -9455,10 +9455,8 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          ".zao-surface .zao-image"
-        ],
-        "loadingSelectors": [
-          ".zao-image-container"
+          ".zao-surface .zao-image",
+          ".story-see-content img"
         ]
       },
       "_comment": "all"
@@ -17398,6 +17396,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-12T12:11:10.085Z",
+  "buildinConfigUpdatedAt": "2025-07-12T12:16:24.110Z",
   "latestVersion": "1.19.2"
 }
