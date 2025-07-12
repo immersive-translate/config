@@ -15074,7 +15074,8 @@
       ],
       "excludeSelectors": [
         "header[default-translate]",
-        "footer[default-translate]"
+        "footer[default-translate]",
+        "dt"
       ],
       "stayOriginalSelectors.add": [
         ".math.notranslate"
@@ -17396,6 +17397,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-12T12:16:24.110Z",
+  "buildinConfigUpdatedAt": "2025-07-12T12:34:47.672Z",
   "latestVersion": "1.19.2"
 }
