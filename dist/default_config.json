@@ -11864,6 +11864,14 @@
       ]
     },
     {
+      "id": "scrimba",
+      "matches": "scrimba.com",
+      "injectedCss": [
+        "[class*='trunc'] {-webkit-line-clamp: unset !important;}",
+        ".tile {overflow: scroll;}"
+      ]
+    },
+    {
       "id": "video-barrons",
       "matches": [
         "video-api.wsj.com"
@@ -17397,6 +17405,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-12T12:34:47.672Z",
+  "buildinConfigUpdatedAt": "2025-07-13T13:51:18.171Z",
   "latestVersion": "1.19.2"
 }
