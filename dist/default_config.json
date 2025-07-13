@@ -4673,7 +4673,8 @@
         "#memex-project-view-root a [class^='prc-Text-Text']",
         "[class^=OverviewContent] [class*=DirectoryRichtextContent]",
         "[id^=pullrequestreview]",
-        "[class^='ChatMessage']"
+        "[class^='ChatMessage']",
+        "a[data-hovercard-type='issue']"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -17405,6 +17406,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-13T13:51:18.171Z",
+  "buildinConfigUpdatedAt": "2025-07-13T15:44:33.348Z",
   "latestVersion": "1.19.2"
 }
