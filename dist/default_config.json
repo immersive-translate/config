@@ -17007,6 +17007,45 @@
       }
     },
     {
+      "id": "skool",
+      "matches": [
+        "www.skool.com"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
+      "excludeTags.remove": [
+        "PRE"
+      ],
+      "excludeSelectors.add": [
+        "[class^=styled__ShowMore]",
+        "[class^=styled__UserNameText]",
+        "[class^=styled__GroupNameWrapper]",
+        "[class^=styled__ButtonWrapper]",
+        "[class^=styled__LeaderboardsPreviewTitle]",
+        "[class^=styled__ExpandRepliesWrapper]",
+        "[class^=styled__GroupFeedLinkLabel]",
+        "[class^=styled__HeaderLinks]",
+        "[class^=styled__RecentActivityLabel]",
+        "[class^=styled__PostedDate]",
+        "[class^=styled__MemberInfo]",
+        "[class^=styled__UserRoleTag]",
+        "[class^=styled__DateAndLabelWrapper]",
+        "[class^=styled__PinnedOverlay]",
+        "[class^=styled__CommentsCount]",
+        "[class^=styled__LastMessageTime]",
+        "[class^=styled__LikeLabel]",
+        "[class^=styled__TypographyWrapper]",
+        "[class^=styled__MemberPercentage]",
+        "[class^=styled__LevelBlockTitle]"
+      ],
+      "injectedCss.add": [
+        ".erGJuk {max-height:unset!important;}"
+      ],
+      "skipTrailTextRegex": "\\.{3}"
+    },
+    {
       "id": "no-translate-username",
       "matches": [
         "onlinelibrary.wiley.com"
@@ -17407,6 +17446,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-14T03:12:22.749Z",
+  "buildinConfigUpdatedAt": "2025-07-14T06:20:39.678Z",
   "latestVersion": "1.19.2"
 }
