@@ -17103,6 +17103,19 @@
       }
     },
     {
+      "id": "xiaosaas",
+      "matches": [
+        "*.xiaosaas.com"
+      ],
+      "stayOriginalTags.remove": [
+        "CODE"
+      ],
+      "excludeSelectors.add": [
+        "p.marginRight10",
+        "p.marginLeft10"
+      ]
+    },
+    {
       "id": "migflash",
       "matches": [
         "migflash.com"
@@ -17474,6 +17487,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-14T08:27:11.000Z",
+  "buildinConfigUpdatedAt": "2025-07-14T10:40:19.076Z",
   "latestVersion": "1.19.3"
 }
