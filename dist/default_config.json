@@ -17045,6 +17045,28 @@
       ]
     },
     {
+      "id": "txt",
+      "matches": [
+        "*://*/*.txt",
+        "file://*/*.txt"
+      ],
+      "selectorMatches": [
+        "body > pre",
+        ".transcripts > pre"
+      ],
+      "longBuildPageLength": 1000,
+      "mutationExcludeSelectors.add": [
+        "body"
+      ],
+      "excludeSelectors.add": [
+        ".api-code"
+      ],
+      "isTransformPreTagNewLine": true,
+      "excludeTags.remove": [
+        "PRE"
+      ]
+    },
+    {
       "id": "overflow-sites",
       "matches": [
         "www.highfrequencyelectronics.com",
@@ -17325,28 +17347,6 @@
       }
     },
     {
-      "id": "txt",
-      "matches": [
-        "*://*/*.txt",
-        "file://*/*.txt"
-      ],
-      "selectorMatches": [
-        "body > pre",
-        ".transcripts > pre"
-      ],
-      "longBuildPageLength": 1000,
-      "mutationExcludeSelectors.add": [
-        "body"
-      ],
-      "excludeSelectors.add": [
-        ".api-code"
-      ],
-      "isTransformPreTagNewLine": true,
-      "excludeTags.remove": [
-        "PRE"
-      ]
-    },
-    {
       "id": "fix-nav2header",
       "matches": [
         "www.acea.auto",
@@ -17407,6 +17407,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-14T02:31:22.190Z",
+  "buildinConfigUpdatedAt": "2025-07-14T03:12:22.749Z",
   "latestVersion": "1.19.2"
 }
