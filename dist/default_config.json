@@ -17191,7 +17191,8 @@
         "body.notranslate.rtb-desktop",
         ".survey-body .notranslate",
         ".ProseMirror[translate=no]",
-        "#mainWrapper[translate=no]"
+        "#mainWrapper[translate=no]",
+        "body.notranslate"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -17406,6 +17407,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-13T15:44:33.348Z",
+  "buildinConfigUpdatedAt": "2025-07-14T02:31:22.190Z",
   "latestVersion": "1.19.2"
 }
