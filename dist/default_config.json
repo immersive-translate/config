@@ -1798,7 +1798,7 @@
     "grok": {
       "extends": "ai",
       "name": "Grok",
-      "model": "grok-2-1212",
+      "model": "grok-3-mini-fast",
       "provider": "custom",
       "limit": 4,
       "maxTextGroupLengthPerRequestForSubtitle": 1,
@@ -1806,7 +1806,7 @@
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
-      "models": "grok-2-1212|grok-2|grok-2-latest|grok-3-mini-fast-beta|grok-3-mini-beta|grok-3-fast-beta|grok-3-beta"
+      "models": "grok-3-mini-fast|grok-3-fast|grok-3-mini|grok-3|grok-4-0709|grok-2-1212|grok-2-vision-1212"
     },
     "ollama": {
       "extends": "ai",
@@ -17444,6 +17444,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-14T06:59:23.331Z",
+  "buildinConfigUpdatedAt": "2025-07-14T07:34:10.872Z",
   "latestVersion": "1.19.2"
 }
