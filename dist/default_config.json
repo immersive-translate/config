@@ -984,7 +984,7 @@
     "deepl": {
       "visible": true,
       "immediateTranslationTextCountForImmersiveDeepl": 50000,
-      "requestTimeout": 15000,
+      "requestTimeout": 30000,
       "maxTextLengthPerRequest": 1800,
       "maxTextGroupLengthPerRequest": 50,
       "qualityDelimiterBetaV3": "",
@@ -2539,7 +2539,7 @@
       ".immersive-translate-target-wrapper[dir='rtl'] [data-immersive-translate-class-bak*='block-wrapper'] {display:block;}",
       ".immersive-translate-target-wrapper {word-break:break-word; user-select:text;}",
       "[imt-state=\"translation\"] .immersive-translate-target-wrapper[dir='rtl'] {display:inline-block;}",
-      "[dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {text-align:left;}",
+      "[dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {text-align:left;direction:ltr;}",
       "[imt-state=dual] .immersive-translate-target-translation-block-wrapper-theme-dividingLine::before {display:block;}",
       "[imt-trans-position=before] .immersive-translate-target-translation-block-wrapper {display:block!important;}",
       "[imt-state][data-immersive-translate_rtl] .immersive-translate-target-wrapper {display:block!important;}"
@@ -3602,7 +3602,11 @@
       "pageType": "pdfProReader",
       "excludeSelectors": [
         "table",
-        ".mmd-context-menu"
+        ".mmd-context-menu",
+        ".preview-original-body *"
+      ],
+      "skipIgnoreSelectors": [
+        ".original-body"
       ],
       "advanceMergeConfig": [
         {
@@ -3700,7 +3704,11 @@
         "https://app.infread.com"
       ],
       "excludeSelectors.add": [
-        "#imt-navbar *"
+        "#imt-navbar *",
+        ".preview-original-body *"
+      ],
+      "skipIgnoreSelectors": [
+        ".original-body"
       ],
       "withAITitleBlockUrls": [
         "immersivetranslate.com/text"
@@ -17038,7 +17046,7 @@
       "excludeTags.remove": [
         "PRE"
       ],
-      "excludeSelectors.add": [
+      "additionalExcludeSelectors.add": [
         "[class^=styled__ShowMore]",
         "[class^=styled__UserNameText]",
         "[class^=styled__GroupNameWrapper]",
@@ -17466,6 +17474,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-14T08:23:18.486Z",
-  "latestVersion": "1.19.2"
+  "buildinConfigUpdatedAt": "2025-07-14T08:27:12.897Z",
+  "latestVersion": "1.19.3"
 }
