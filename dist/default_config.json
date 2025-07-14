@@ -15089,6 +15089,28 @@
       ]
     },
     {
+      "id": "arenascan",
+      "matches": [
+        "arenascan.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#readerarea img"
+        ],
+        "inValidSrcRegex": [
+          ".svg"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "hentai.name",
       "matches": [
         "www.hentai.name"
@@ -17444,6 +17466,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-14T07:34:10.872Z",
+  "buildinConfigUpdatedAt": "2025-07-14T08:23:18.486Z",
   "latestVersion": "1.19.2"
 }
