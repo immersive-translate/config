@@ -8034,10 +8034,13 @@
     {
       "id": "yahoo",
       "matches": "*.yahoo.*",
-      "excludeSelectors": [
+      "additionalExcludeSelectors.add": [
         "._ys_jiqava",
         "#ybar-inner-wrap",
-        "#Col2-5-Rmp-Proxy"
+        "#Col2-5-Rmp-Proxy",
+        ".readmore",
+        ".ticker-item-wrapper",
+        ".ticker-list"
       ],
       "extraBlockSelectors.add": [
         ".SIPGg",
@@ -17494,6 +17497,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-15T06:48:11.782Z",
+  "buildinConfigUpdatedAt": "2025-07-15T06:49:54.780Z",
   "latestVersion": "1.19.3"
 }
