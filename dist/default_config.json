@@ -9138,6 +9138,10 @@
         "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": "[data-purpose=\"video-controls\"]"
+        },
+        "attachRule": {
+          "appendSelector": "[class*='video-player--container']",
+          "injectedGlobalCSS": "[class*='captions-display--captions-cue-text'] {display: none !important;}"
         }
       },
       "subtitleRule.add_v.[1.4.1]": {
@@ -17474,6 +17478,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-15T01:54:19.669Z",
+  "buildinConfigUpdatedAt": "2025-07-15T03:26:47.741Z",
   "latestVersion": "1.19.3"
 }
