@@ -6391,6 +6391,16 @@
       ]
     },
     {
+      "id": "uxtension",
+      "matches": "www.uxento.io",
+      "excludeSelectors": [
+        ".flex.justify-between.items-start.gap-2.w-full",
+        ".flex.items-center.gap-3.pr-12",
+        ".text-xs.sm\\:text-sm.text-white.font-mono.line-clamp-1.break-all",
+        ".font-medium.text-white.break-words"
+      ]
+    },
+    {
       "id": "medium",
       "matches": [
         "medium.com",
@@ -17478,6 +17488,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-15T03:26:47.741Z",
+  "buildinConfigUpdatedAt": "2025-07-15T04:55:39.574Z",
   "latestVersion": "1.19.3"
 }
