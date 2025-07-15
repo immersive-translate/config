@@ -6397,7 +6397,9 @@
         ".flex.justify-between.items-start.gap-2.w-full",
         ".flex.items-center.gap-3.pr-12",
         ".text-xs.sm\\:text-sm.text-white.font-mono.line-clamp-1.break-all",
-        ".font-medium.text-white.break-words"
+        ".font-medium.text-white.break-words",
+        ".flex.items-center.gap-3.pr-12 > button",
+        ".text-xs.flex.items-center.gap-1.text-amber-500.hover\\:text-amber-400.transition-colors"
       ]
     },
     {
@@ -17491,6 +17493,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-15T06:18:46.372Z",
+  "buildinConfigUpdatedAt": "2025-07-15T06:31:03.007Z",
   "latestVersion": "1.19.3"
 }
