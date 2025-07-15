@@ -11349,7 +11349,8 @@
     {
       "id": "manhwahentai",
       "matches": [
-        "manhwahentai.io"
+        "manhwahentai.io",
+        "beehentai.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -12197,7 +12198,9 @@
       "matches": "app.letsjelly.com",
       "selectors": [
         ".message-content",
-        ".h1-subject-button"
+        ".h1-subject-button",
+        ".cil-subject",
+        ".cil-body-wrapper"
       ]
     },
     {
@@ -17488,6 +17491,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-15T04:55:39.574Z",
+  "buildinConfigUpdatedAt": "2025-07-15T06:18:46.372Z",
   "latestVersion": "1.19.3"
 }
