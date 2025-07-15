@@ -3043,9 +3043,10 @@
       ".rpv-core__text-layer > span[role=presentation]",
       "time",
       ".countdown",
-      "visuallyhidden",
+      ".visuallyhidden",
       ".sider-search-inner.gpt-light",
-      ".fb-ads-block.ads-in-text"
+      ".fb-ads-block.ads-in-text",
+      "#stageTime"
     ],
     "mouseHoverExcludeSelectors": [
       "rp",
@@ -17493,6 +17494,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-15T06:31:03.007Z",
+  "buildinConfigUpdatedAt": "2025-07-15T06:48:11.782Z",
   "latestVersion": "1.19.3"
 }
