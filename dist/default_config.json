@@ -2538,7 +2538,7 @@
       ".immersive-translate-target-wrapper[dir='rtl'] {text-align: right;}",
       ".immersive-translate-target-wrapper[dir='rtl'] [data-immersive-translate-class-bak*='block-wrapper'] {display:block;}",
       ".immersive-translate-target-wrapper {word-break:break-word; user-select:text;}",
-      "[imt-state=\"translation\"] .immersive-translate-target-wrapper[dir='rtl'] {display:inline-block;}",
+      "[imt-state=\"translation\"] .immersive-translate-target-wrapper[dir='rtl'] {display:inline-block!important;}",
       "[dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {text-align:left;direction:ltr;}",
       "[imt-state=dual] .immersive-translate-target-translation-block-wrapper-theme-dividingLine::before {display:block;}",
       "[imt-trans-position=before] .immersive-translate-target-translation-block-wrapper {display:block!important;}",
@@ -17494,6 +17494,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-16T03:18:32.707Z",
+  "buildinConfigUpdatedAt": "2025-07-16T04:16:11.882Z",
   "latestVersion": "1.19.3"
 }
