@@ -4351,6 +4351,9 @@
         ".container",
         "h3.title",
         "div.content"
+      ],
+      "excludeSelectors.add": [
+        ".vue-recycle-scroller"
       ]
     },
     {
@@ -17494,6 +17497,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-16T07:50:15.831Z",
+  "buildinConfigUpdatedAt": "2025-07-16T10:04:54.101Z",
   "latestVersion": "1.19.3"
 }
