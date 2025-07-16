@@ -2027,7 +2027,7 @@
       "visible": true
     },
     "deepl-pro": {
-      "name": "DeepL",
+      "name": "DeepL (Next-gen)",
       "type": "deepl",
       "group": "pro",
       "extends": "deepl",
@@ -17494,6 +17494,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-16T04:16:11.882Z",
+  "buildinConfigUpdatedAt": "2025-07-16T07:50:15.831Z",
   "latestVersion": "1.19.3"
 }
