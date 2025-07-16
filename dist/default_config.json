@@ -5511,7 +5511,8 @@
         "#welcome_center",
         ".gad_overview_articles_wrapper",
         ".library_article_text h4",
-        ".header_name"
+        ".header_name",
+        ".blog-content"
       ],
       "excludeMatches": [
         "https://www.inoreader.com/features*",
@@ -17493,6 +17494,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-16T03:00:22.084Z",
+  "buildinConfigUpdatedAt": "2025-07-16T03:18:32.707Z",
   "latestVersion": "1.19.3"
 }
