@@ -2893,6 +2893,7 @@
       ".mwe-math-element",
       "em[translate=no]",
       "code[translate=no]",
+      "a[translate=no]",
       "span.math.inline",
       "span.math.display",
       ".ltx_Math",
@@ -17497,6 +17498,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-16T10:04:54.101Z",
+  "buildinConfigUpdatedAt": "2025-07-16T10:22:38.110Z",
   "latestVersion": "1.19.3"
 }
