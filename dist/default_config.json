@@ -506,7 +506,8 @@
     "https://www.angel.com/[ANGEL]",
     "https://shangpa-academy.mn.co/[Shangpa Academy]",
     "https://internetfundamentals.com/[Internetfundamentals]",
-    "https://tv.dmm.com/[DMM]"
+    "https://tv.dmm.com/[DMM]",
+    "https://learning.sap.com/[SAP]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -14462,6 +14463,24 @@
       }
     },
     {
+      "id": "learningSap",
+      "matches": "learning.sap.com",
+      "excludeSelectors.add": [
+        ".playkit-subtitles",
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".playkit-subtitles",
+        "#immersive-translate-caption-window *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "\\.vtt",
+        "videoPlayerSelector": "video"
+      }
+    },
+    {
       "id": "archiveToday",
       "matches": [
         "archive.today",
@@ -17498,6 +17517,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-16T11:37:11.977Z",
+  "buildinConfigUpdatedAt": "2025-07-16T14:19:03.049Z",
   "latestVersion": "1.19.3"
 }
