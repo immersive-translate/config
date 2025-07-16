@@ -2412,8 +2412,8 @@
       "triggerMode": "mini",
       "triggerModeForIcon": "hover",
       "proService": {
-        "service": "gemini",
-        "model": "gemini-2.0-flash"
+        "service": "gemini-pro",
+        "model": "gemini-2.5-flash"
       },
       "commonService": {
         "service": "zhipu",
@@ -17493,6 +17493,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-16T01:57:52.006Z",
+  "buildinConfigUpdatedAt": "2025-07-16T03:00:22.084Z",
   "latestVersion": "1.19.3"
 }
