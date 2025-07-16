@@ -6399,13 +6399,13 @@
     {
       "id": "uxtension",
       "matches": "www.uxento.io",
-      "excludeSelectors": [
-        ".flex.justify-between.items-start.gap-2.w-full",
-        ".flex.items-center.gap-3.pr-12",
-        ".text-xs.sm\\:text-sm.text-white.font-mono.line-clamp-1.break-all",
-        ".font-medium.text-white.break-words",
-        ".flex.items-center.gap-3.pr-12 > button",
-        ".text-xs.flex.items-center.gap-1.text-amber-500.hover\\:text-amber-400.transition-colors"
+      "selectors": [
+        "[class='px-4 pb-4 text-sm leading-relaxed break-words text-white overflow-hidden']",
+        "[class='text-xs leading-relaxed break-words text-[#AAAAB9] mb-2 overflow-hidden']",
+        "[class='px-4 pb-4 text-sm leading-relaxed break-words text-white']",
+        "[class='text-xs leading-relaxed break-words text-[#AAAAB9] mb-2']",
+        "[class='flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip'] section",
+        "h2"
       ]
     },
     {
@@ -17498,6 +17498,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-16T10:22:38.110Z",
+  "buildinConfigUpdatedAt": "2025-07-16T11:37:11.977Z",
   "latestVersion": "1.19.3"
 }
