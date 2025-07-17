@@ -2571,6 +2571,7 @@
       "isInject": true,
       "preTranslation": false,
       "humanPreferred": true,
+      "meetingAutoEnableSubtitle": true,
       "aiSubtitlePreferred": true,
       "disabled": false,
       "hookType": "xhr",
@@ -3543,7 +3544,43 @@
         "removeSelectors": [
           ".immersive-translate-error-modal-shadow-root"
         ]
-      }
+      },
+      "advanceMergeConfig": [
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "translationServices": {
+              "deepseek-pro.add": {
+                "proLimit": 5
+              },
+              "deepl-pro.add": {
+                "proLimit": 5
+              },
+              "zhipu-pro.add": {
+                "proLimit": 5
+              },
+              "openai-pro.add": {
+                "proLimit": 5
+              },
+              "claude-pro.add": {
+                "proLimit": 5
+              },
+              "gemini-pro.add": {
+                "proLimit": 5
+              },
+              "openai-max.add": {
+                "proLimit": 5
+              },
+              "claude-max.add": {
+                "proLimit": 5
+              },
+              "gemini-max.add": {
+                "proLimit": 5
+              }
+            }
+          }
+        }
+      ]
     },
     {
       "id": "immersiveTranslateIosOnBoarding",
@@ -3617,6 +3654,40 @@
           "advanceConfig": {
             "translationLanguagePattern.add": {
               "matches": []
+            }
+          }
+        },
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "translationServices": {
+              "deepseek-pro.add": {
+                "proLimit": 5
+              },
+              "deepl-pro.add": {
+                "proLimit": 5
+              },
+              "zhipu-pro.add": {
+                "proLimit": 5
+              },
+              "openai-pro.add": {
+                "proLimit": 5
+              },
+              "claude-pro.add": {
+                "proLimit": 5
+              },
+              "gemini-pro.add": {
+                "proLimit": 5
+              },
+              "openai-max.add": {
+                "proLimit": 5
+              },
+              "claude-max.add": {
+                "proLimit": 5
+              },
+              "gemini-max.add": {
+                "proLimit": 5
+              }
             }
           }
         }
@@ -4172,7 +4243,8 @@
           ],
           "reportSelector": ".meeting-client-inner",
           "mutationChangeDelay": 1000,
-          "enableTriggerTranslate": true
+          "enableTriggerTranslate": true,
+          "isMeeting": true
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #live-transcription-subtitle font {direction: rtl;text-align: right;}"
@@ -4208,7 +4280,8 @@
           ],
           "reportSelector": "[data-tid='closed-captions-renderer']",
           "mutationChangeDelay": 1000,
-          "enableTriggerTranslate": true
+          "enableTriggerTranslate": true,
+          "isMeeting": true
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] font.immersive-translate-target-wrapper {direction: rtl;}"
@@ -4244,7 +4317,8 @@
           "mutationChangeDelay": 1000,
           "findParentBlockDepth": 5,
           "enableTriggerTranslate": true,
-          "preventRemoval": true
+          "preventRemoval": true,
+          "isMeeting": true
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] font.immersive-translate-target-wrapper {direction: rtl;}"
@@ -13536,9 +13610,10 @@
         "*.edx.org",
         "courses.mitxonline.mit.edu"
       ],
-      "excludeSelectors.add": [
+      "additionalExcludeSelectors.add": [
         ".closed-captions",
-        ".subtitles-menu"
+        ".wrapper-video-bottom-section",
+        ".secondary-controls"
       ],
       "selectionTranslation.add": {
         "enable": false
@@ -13564,6 +13639,21 @@
       },
       "subtitleRule.add_v.[1.7.1]": {
         "attachRule": null
+      },
+      "subtitleRule.add_v.[1.19.4]": {
+        "type": "edx",
+        "attachRule": {
+          "appendSelector": ".video-player",
+          "injectedCSS": [
+            ".imt-caption-container {z-index:9;}"
+          ],
+          "injectedGlobalCSS": [
+            ".closed-captions {display: none!important;}"
+          ]
+        },
+        "quickButtonRule": {
+          "appendSelector": ".secondary-controls"
+        }
       }
     },
     {
@@ -17517,6 +17607,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-16T14:19:03.049Z",
-  "latestVersion": "1.19.3"
+  "buildinConfigUpdatedAt": "2025-07-17T11:19:49.673Z",
+  "latestVersion": "1.19.4"
 }
