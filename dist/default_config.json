@@ -4152,7 +4152,7 @@
         },
         "quickButtonRules": [
           {
-            "appendSelector": "[data-testid=\"scrubber\"]<-parent->button[role=\"button\"]<-parent<-parent",
+            "appendSelector": "button[role=\"button\"]>div>svg<-parent<-parent<-parent<-parent",
             "injectCSS": ".imt-quick-subtitle-pop-content { transform: unset !important; } .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } "
           },
           {
@@ -17607,6 +17607,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-18T07:59:51.854Z",
+  "buildinConfigUpdatedAt": "2025-07-18T08:18:45.854Z",
   "latestVersion": "1.19.4"
 }
