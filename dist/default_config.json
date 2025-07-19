@@ -14567,7 +14567,17 @@
         "type": "subsrt",
         "hookType": "xhr",
         "subtitleUrlRegExp": "\\.vtt",
-        "videoPlayerSelector": "video"
+        "videoPlayerSelector": "video",
+        "attachRule": {
+          "appendSelector": "#player-gui",
+          "injectedGlobalCSS": [
+            ".playkit-subtitles {display: none;}"
+          ]
+        },
+        "quickButtonRule": {
+          "appendSelector": ".playkit-controls-container .playkit-right-controls",
+          "insertBeforeSelector": ".playkit-controls-container .playkit-control-closed-captions"
+        }
       }
     },
     {
@@ -17607,6 +17617,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-18T12:19:38.000Z",
+  "buildinConfigUpdatedAt": "2025-07-19T12:15:54.307Z",
   "latestVersion": "1.19.5"
 }
