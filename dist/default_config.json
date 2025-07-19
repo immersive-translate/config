@@ -3798,6 +3798,9 @@
       "excludeTags.remove": [
         "PRE"
       ],
+      "buildContainerSelectors.add": [
+        ".docx p"
+      ],
       "shareConfig.add": {
         "cloneIframes": [
           "iframe.original-body"
@@ -17479,7 +17482,8 @@
         "online.vitalsource.com",
         "anarchothaumaturgist.itch.io",
         "darkpetal16.itch.io",
-        "registry.khronos.org"
+        "registry.khronos.org",
+        "achieve.macmillanlearning.com"
       ],
       "enableDeepFrameTranslatePage": true
     },
@@ -17617,6 +17621,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-19T12:15:54.307Z",
+  "buildinConfigUpdatedAt": "2025-07-19T14:47:38.337Z",
   "latestVersion": "1.19.5"
 }
