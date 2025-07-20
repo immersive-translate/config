@@ -15797,7 +15797,7 @@
     },
     {
       "id": "iqiyi-manga",
-      "matches": "www.iqiyi.com",
+      "matches": "www.iqiyi.com/manhua/*",
       "imageRule.add": {
         "enable": true,
         "platforms": [
@@ -17258,6 +17258,21 @@
       ]
     },
     {
+      "id": "freecodecamp",
+      "matches": [
+        "www.freecodecamp.org"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]",
+        "[role=code]"
+      ],
+      "additionalExcludeSelectors.add": [
+        ".monaco-mouse-cursor-text",
+        ".challenge-preview"
+      ]
+    },
+    {
       "id": "txt",
       "matches": [
         "*://*/*.txt",
@@ -17621,6 +17636,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-19T14:47:38.337Z",
+  "buildinConfigUpdatedAt": "2025-07-20T07:46:52.236Z",
   "latestVersion": "1.19.5"
 }
