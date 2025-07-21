@@ -4765,7 +4765,8 @@
         "[class^=OverviewContent] [class*=DirectoryRichtextContent]",
         "[id^=pullrequestreview]",
         "[class^='ChatMessage']",
-        "a[data-hovercard-type='issue']"
+        "a[data-hovercard-type='issue']",
+        "[class*=prc-FormControl] > [class*=prc-Text]"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -17346,7 +17347,8 @@
         "rachelsenglish.com",
         "privatter.net",
         "www.asuswrt-merlin.net",
-        "tic80.com"
+        "tic80.com",
+        "www.impo.*"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -17506,7 +17508,8 @@
         "anarchothaumaturgist.itch.io",
         "darkpetal16.itch.io",
         "registry.khronos.org",
-        "achieve.macmillanlearning.com"
+        "achieve.macmillanlearning.com",
+        "mail.shanghai.*"
       ],
       "enableDeepFrameTranslatePage": true
     },
@@ -17644,6 +17647,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-21T07:45:32.953Z",
+  "buildinConfigUpdatedAt": "2025-07-21T16:14:17.637Z",
   "latestVersion": "1.19.5"
 }
