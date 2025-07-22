@@ -2906,6 +2906,7 @@
       "span.math-inline",
       ".reference-citations",
       ".code",
+      "[data-test='json-editor']",
       ".jp-CodeMirrorEditor",
       "cds-code-snippet",
       ".interactive-markdown__code"
@@ -4895,6 +4896,7 @@
         "https://www.facebook.com/business/*",
         "https://business.facebook.com/*",
         "https://www.facebook.com/help*",
+        "https://www.facebook.com/settings*",
         "https://www.facebook.com/ads/library/*",
         "https://developers.facebook.com/*",
         "https://www.facebook.com/v20.0/plugins/*"
@@ -5784,6 +5786,7 @@
         }
       ],
       "preTranslateLimiter.add": {
+        "side.enableTranslate": false,
         "side.selectors": [
           "[class*='sidebarList']"
         ]
@@ -6582,10 +6585,10 @@
       ],
       "paragraphMinTextCount": 4,
       "paragraphMinWordCount": 2,
-      "globalStyles": {
-        "[itemprop=name]": "-webkit-line-clamp: unset;max-height: unset;",
-        ".merch-item-title": "-webkit-line-clamp: unset;max-height: unset;"
-      }
+      "injectedCss.add": [
+        ".iS4T .zgfQ .uHzw .Ep66 {-webkit-line-clamp: unset;max-height: unset;}",
+        "[itemprop=name],.merch-item-title {-webkit-line-clamp: unset;max-height: unset;}"
+      ]
     },
     {
       "id": "skinstore",
@@ -13428,6 +13431,10 @@
       "selectionTranslation.add": {
         "enable": false
       },
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -17499,7 +17506,7 @@
         "body": 1,
         "tab": 1
       },
-      "_comment": "为了处理 js 库错误检测希伯来语成其他语言的问题"
+      "_comment": "为了处理 js 库错误检测希伯来语成其他语言的问题 "
     },
     {
       "id": "deepFrameTranslate",
@@ -17509,7 +17516,8 @@
         "darkpetal16.itch.io",
         "registry.khronos.org",
         "achieve.macmillanlearning.com",
-        "mail.shanghai.*"
+        "mail.shanghai.*",
+        "help.autodesk.com"
       ],
       "enableDeepFrameTranslatePage": true
     },
@@ -17523,7 +17531,8 @@
     {
       "id": "finalCommon.pdfWebPage",
       "matches": [
-        "https://obgyn.onlinelibrary.wiley.com/doi/pdf/*"
+        "https://obgyn.onlinelibrary.wiley.com/doi/pdf/*",
+        "https://docs.amd.com/v/u/*/*"
       ],
       "selectorMatches": [
         "embed[type='application/pdf']",
@@ -17531,7 +17540,8 @@
         "#article [type='application/pdf'][src*=pdf]",
         ".textFrame [type='application/pdf'][src*=pdf]",
         ".ggPdf",
-        "[id=pdfCanvasContainer] > iframe[src*=pdf]"
+        "[id=pdfCanvasContainer] > iframe[src*=pdf]",
+        ".viewercontent-container  iframe[src*=documents]"
       ],
       "pdfUrlExtractRule": {
         "selector": "iframe[src*=pdf]",
@@ -17539,6 +17549,7 @@
         "selectors": [
           "embed[type='application/pdf']",
           "iframe[src*=pdf]",
+          "iframe[src*=documents]",
           "#statements-pdf"
         ],
         "attributes": [
@@ -17647,6 +17658,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-21T16:14:17.637Z",
+  "buildinConfigUpdatedAt": "2025-07-22T12:26:42.156Z",
   "latestVersion": "1.19.5"
 }
