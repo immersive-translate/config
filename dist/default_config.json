@@ -1296,7 +1296,8 @@
       "modelsOverrides": [
         {
           "models": [
-            "qwen3-.*"
+            "qwen3-.*",
+            "Qwen3-.*"
           ],
           "bodyConfigs": {
             "enable_thinking": false,
@@ -15363,7 +15364,7 @@
     {
       "id": "dlsite",
       "matches": [
-        "play.dlsite.com"
+        "*.dlsite.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -15372,7 +15373,9 @@
         "urlFetchType": "canvasArgs",
         "imageSelectors": [
           "[class*=\"_page_container\"] img",
-          "[class*=\"imageViewerRender\"] canvas"
+          "[class*=\"imageViewerRender\"] canvas",
+          ".area-main img",
+          "#main li>img"
         ],
         "injectedCss": "#immersiveTranslateImgLoading { z-index:999 !important; }",
         "platforms": [
@@ -17658,6 +17661,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-22T12:26:42.156Z",
+  "buildinConfigUpdatedAt": "2025-07-24T02:09:17.667Z",
   "latestVersion": "1.19.5"
 }
