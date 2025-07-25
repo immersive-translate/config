@@ -1308,6 +1308,12 @@
         },
         {
           "models": [
+            "Qwen/Qwen3-235B-A22B-Instruct-2507"
+          ],
+          "bodyConfigs": {}
+        },
+        {
+          "models": [
             "o3-mini.*",
             "o3-mini"
           ],
@@ -4611,7 +4617,8 @@
       "paragraphMinWordCount": 2,
       "excludeMatches": [
         "https://www.reddit.com/r/*/wiki/*",
-        "https://www.reddit.com/settings/*"
+        "https://www.reddit.com/settings/*",
+        "https://www.reddit.com/message/sent/*"
       ],
       "detectParagraphLanguage": true,
       "globalStyles": {
@@ -16203,6 +16210,31 @@
       }
     },
     {
+      "id": "www.acrobiosystems.com",
+      "matches": "www.acrobiosystems.com",
+      "injectedCss.add": [
+        ".productDetialDetail .productLink {overflow: hidden;}",
+        ".productDetialDetail .productLink .box a {display: flex; justify-content: center; white-space: nowrap;}"
+      ]
+    },
+    {
+      "id": "www.metacritic.com",
+      "matches": "www.metacritic.com",
+      "injectedCss.add": [
+        ".c-finderProductCard_info .c-finderProductCard_meta {display: block;}"
+      ]
+    },
+    {
+      "id": "motrix.app",
+      "matches": "motrix.app",
+      "excludeSelectors.add": [
+        ".download-section__right .el-tabs__nav"
+      ],
+      "additionalExcludeSelectors.add": [
+        ".download-section__right .el-tabs__nav"
+      ]
+    },
+    {
       "id": "t1.xtoon2.com",
       "matches": "t1.xtoon2.com",
       "imageRule.add": {
@@ -17377,7 +17409,8 @@
       "matches": [
         "taylor.town",
         "www.flatpanelshd.com",
-        "www.rarlab.com"
+        "www.rarlab.com",
+        "bugs.mysql.com"
       ],
       "isTransformPreTagNewLine": true,
       "excludeTags.remove": [
@@ -17661,6 +17694,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-24T02:09:17.667Z",
+  "buildinConfigUpdatedAt": "2025-07-25T01:55:05.135Z",
   "latestVersion": "1.19.5"
 }
