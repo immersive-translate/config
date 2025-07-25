@@ -975,6 +975,17 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true
     },
+    "qwen-mt": {
+      "withTerms": false,
+      "model": "qwen-mt-plus",
+      "models": "qwen-mt-plus|qwen-mt-turbo",
+      "limit": 10,
+      "maxTextLengthPerRequest": 1200,
+      "maxTextGroupLengthPerRequest": 5,
+      "translationTextSeparator": "\n\n%%\n\n",
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true
+    },
     "aliyun": {
       "placeholderDelimiters": [
         "{{",
@@ -2250,6 +2261,7 @@
   ],
   "generalRule": {
     "_comment": "",
+    "floatEffectParagraphNum": 8,
     "purifyRichHtml": true,
     "longBuildDomLength": 3000,
     "longBuildPageLength": 50,
@@ -17694,6 +17706,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-25T01:55:05.135Z",
-  "latestVersion": "1.19.5"
+  "buildinConfigUpdatedAt": "2025-07-25T09:38:57.428Z",
+  "latestVersion": "1.19.6"
 }
