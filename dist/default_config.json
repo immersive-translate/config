@@ -1890,9 +1890,10 @@
       "model": "glm-4-flash",
       "freeModels": [
         "glm-4-flash",
-        "glm-4-flash-250414"
+        "glm-4-flash-250414",
+        "glm-4.5-flash"
       ],
-      "models": "glm-4-flash|glm-4-flash-250414|glm-4-air|glm-4-airx|glm-4|glm-4-plus|glm-4-0520|glm-4-0520-plus",
+      "models": "glm-4.5|glm-4.5-air,|glm-4.5-x|glm-4.5-airx|glm-4.5-flash|glm-4-flash|glm-4-flash-250414|glm-4-air|glm-4-airx|glm-4|glm-4-plus|glm-4-0520|glm-4-0520-plus",
       "defaultVisible": true,
       "defaultHiddenLangs": [
         "zh-TW"
@@ -1923,7 +1924,20 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "enableFallback": true,
-      "selectionSystemPrompt": "You are a professional multilingual translation engine.\nRULES: \n1. For single words: provide translation, phonetics, definitions grouped by part of speech, and example sentences.  \n2. For sentences/phrases:  provide translation only.  \n3. All responses must be in {{to}} language.  \n4. For English, Use American phonetics for phonetic symbols. \n5. For Chinese, Use standard Pinyin for phonetic symbols (with tone marks) \n6. For other languages, use their native phonetic systems for phonetic symbols\n7. Do not output languages other than those requested \n8. Consider context when analyzing words.  \n9. Output raw JSON without markdown code blocks. \nSINGLE WORD OUTPUT: \n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"excl.\",\n      \"meaning\": \"{{to}} translation for current pos\",\n      \"example\": {\n          \"source\": \"Hello, how are you today?\",\n          \"target\": \"{{to}} example\"\n       }\n    }\n  ],\n  \"translation\": \"translation in {{to}}\",\n  \"contextual_analysis\": \"contextual analysis use {{to}} language\"\n}\nSENTENCE/PHRASE OUTPUT: \n{\n  \"translation\": \"translation in {{to}}\"\n}\nCONTEXT: {{context_text}}"
+      "selectionSystemPrompt": "You are a professional multilingual translation engine.\nRULES: \n1. For single words: provide translation, phonetics, definitions grouped by part of speech, and example sentences.  \n2. For sentences/phrases:  provide translation only.  \n3. All responses must be in {{to}} language.  \n4. For English, Use American phonetics for phonetic symbols. \n5. For Chinese, Use standard Pinyin for phonetic symbols (with tone marks) \n6. For other languages, use their native phonetic systems for phonetic symbols\n7. Do not output languages other than those requested \n8. Consider context when analyzing words.  \n9. Output raw JSON without markdown code blocks. \nSINGLE WORD OUTPUT: \n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"excl.\",\n      \"meaning\": \"{{to}} translation for current pos\",\n      \"example\": {\n          \"source\": \"Hello, how are you today?\",\n          \"target\": \"{{to}} example\"\n       }\n    }\n  ],\n  \"translation\": \"translation in {{to}}\",\n  \"contextual_analysis\": \"contextual analysis use {{to}} language\"\n}\nSENTENCE/PHRASE OUTPUT: \n{\n  \"translation\": \"translation in {{to}}\"\n}\nCONTEXT: {{context_text}}",
+      "modelsOverrides.add": [
+        {
+          "models": [
+            "glm-4.5",
+            "glm-4.5.*"
+          ],
+          "bodyConfigs": {
+            "thinking": {
+              "type": "disabled"
+            }
+          }
+        }
+      ]
     },
     "zhipu.add_v.[1.15.3]": {
       "defaultMaxTextGroupLengthPerRequest": 4,
@@ -1986,7 +2000,7 @@
       "group": "free",
       "extends": "zhipu",
       "provider": "custom",
-      "models": "glm-4-flash|glm-4-flash-250414"
+      "models": "glm-4-flash|glm-4-flash-250414|glm-4.5-flash"
     },
     "siliconcloud-free": {
       "type": "siliconcloud",
@@ -17792,6 +17806,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-28T10:15:31.001Z",
+  "buildinConfigUpdatedAt": "2025-07-28T15:11:49.630Z",
   "latestVersion": "1.19.6"
 }
