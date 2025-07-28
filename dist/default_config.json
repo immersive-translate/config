@@ -507,7 +507,9 @@
     "https://shangpa-academy.mn.co/[Shangpa Academy]",
     "https://internetfundamentals.com/[Internetfundamentals]",
     "https://tv.dmm.com/[DMM]",
-    "https://learning.sap.com/[SAP]"
+    "https://learning.sap.com/[SAP]",
+    "https://dynasty-scans.com/[Dynasty Scans]",
+    "https://weebcentral.com/[Weebcentral]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -9578,6 +9580,23 @@
       }
     },
     {
+      "id": "dynasty-scans",
+      "matches": "dynasty-scans.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#image img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "mangaplus-shueisha",
       "matches": [
         "mangaplus.shueisha.*"
@@ -10045,13 +10064,31 @@
       ]
     },
     {
+      "id": "weebcentral",
+      "matches": "weebcentral.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "[class*='flex-1 flex flex-col pb-4 cursor-pointer gap-4'] img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "mangadistrict-manhwaclan",
       "matches": [
         "mangadistrict2.com",
         "manhwaclan.com",
         "manhuaread.com",
         "www.mangaread.org",
-        "mangaforfree.net"
+        "mangaforfree.net",
+        "bakamh.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -10258,14 +10295,16 @@
       "id": "bato",
       "matches": [
         "bato.to",
-        "battwo.com"
+        "battwo.com",
+        "bato.si"
       ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
         "imageSelectors": [
           "#viewer img",
-          "div[name='image-item'] > div > img"
+          "div[name='image-item'] > div > img",
+          "[data-name='image-item'] img"
         ],
         "loadingSelectors": [
           "div"
@@ -11116,13 +11155,13 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          "[class*='reader-pages'] img"
+          "[class*='reader-pages'] img",
+          "img[class*='img sp limit-width limit-height mx-auto']"
         ],
         "loadingSelectors": [
           "div"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px",
-        "injectedCss": ".imt-image-status {top:10%!important;}"
+        "intersectionRootMargin": "0px 0px 200% 0px"
       },
       "_comment": "all"
     },
@@ -11536,6 +11575,23 @@
           "chrome",
           "firefox",
           "safari"
+        ]
+      }
+    },
+    {
+      "id": "rokuhentai",
+      "matches": "rokuhentai.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "img.site-reader__image[src]"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
         ]
       }
     },
@@ -12549,9 +12605,6 @@
         "videostr.net",
         "anthropic.skilljar.com"
       ],
-      "selectionTranslation": {
-        "enable": false
-      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "excludeSelectors.add": [
@@ -15401,7 +15454,8 @@
           "chrome",
           "firefox",
           "safari",
-          "imtAndroid"
+          "imtAndroid",
+          "imtIOS"
         ]
       }
     },
@@ -16118,7 +16172,8 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          "div[role='region'] img[data-index]"
+          "div[role='region'] img[data-index]",
+          "#viewer img[data-index]"
         ],
         "opImageType": "append",
         "inValidSrcRegex": [
@@ -16220,6 +16275,25 @@
           "canvas.page-image"
         ]
       }
+    },
+    {
+      "id": "ynjn",
+      "matches": "ynjn.jp",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "urlFetchType": "canvasArgs",
+        "opImageType": "append",
+        "imageSelectors": [
+          ".swiper-slide canvas"
+        ]
+      },
+      "platforms": [
+        "chrome",
+        "firefox",
+        "safari",
+        "imtAndroid"
+      ]
     },
     {
       "id": "www.acrobiosystems.com",
@@ -17358,6 +17432,15 @@
       ]
     },
     {
+      "id": "kemono.cr",
+      "matches": [
+        "kemono.cr"
+      ],
+      "excludeTags.remove": [
+        "PRE"
+      ]
+    },
+    {
       "id": "overflow-sites",
       "matches": [
         "www.highfrequencyelectronics.com",
@@ -17709,6 +17792,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-26T15:30:34.626Z",
+  "buildinConfigUpdatedAt": "2025-07-28T10:15:31.001Z",
   "latestVersion": "1.19.6"
 }
