@@ -376,7 +376,8 @@
     "https://comic-growl.com/[Comic Growl][chrome,firefox,safari,imtAndroid]",
     "https://jumptoon.com/[Jumptoon][chrome,firefox,safari,imtAndroid]",
     "https://www.baozimh.com/[Fenoxo][chrome,firefox,safari,imtAndroid]",
-    "https://ww2.mangafreak.me/[MangaFreak][chrome,firefox,safari,imtAndroid]"
+    "https://ww2.mangafreak.me/[MangaFreak][chrome,firefox,safari,imtAndroid]",
+    "https://www.cmoa.jp/[cmoa][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -4054,7 +4055,8 @@
         "[class='css-175oi2r r-1awozwy r-13awgt0 r-1rnoaur r-13qz1uu']",
         "[class='css-175oi2r r-kemksi r-1kqtdi0 r-1q9bdsx r-1phboty r-rs99b7 r-1udh08x r-13qz1uu']",
         "[class='css-175oi2r r-uef6q5 r-dnmrzs r-97e31f r-13qz1uu r-13awgt0 r-dgnwoc r-1me0s30 r-t3sqpr r-1dqxon3']",
-        "[class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0']"
+        "[class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0']",
+        "[data-testid='inlinePrompt']"
       ],
       "excludeSelectors": [
         "[aria-describedby][role=button]",
@@ -4950,7 +4952,10 @@
         "[data-pagelet=BizInboxContextCardDetail] span",
         ".xod5an3",
         "[class='x1i10hfl xjbqb8w x1ejq31n xd10rxx x1sy0etr x17r0tee x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz x1sur9pj xkrqix3 xzsf02u x1pd3egz']",
-        "#PNG_EXPORT"
+        "#PNG_EXPORT",
+        ".fb_content.clearfix",
+        "[role='main']",
+        "[role='region']"
       ],
       "excludeSelectors.add": [
         "[data-ad-comet-preview=message] [role=button]"
@@ -6868,7 +6873,8 @@
       "matches": "play.google.com",
       "excludeSelectors": [
         ".vlGucd",
-        ".ubGTjb"
+        ".ubGTjb",
+        ".page-nums"
       ],
       "globalStyles": {
         ".Epkrse": "-webkit-line-clamp:unset;",
@@ -10133,7 +10139,8 @@
           "chrome",
           "firefox",
           "safari",
-          "imtAndroid"
+          "imtAndroid",
+          "imtIOS"
         ]
       }
     },
@@ -11696,6 +11703,25 @@
       }
     },
     {
+      "id": "pixiv.app",
+      "matches": [
+        "pixiv.app"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".relative > img[data-nimg]"
+        ]
+      },
+      "platforms": [
+        "chrome",
+        "firefox",
+        "safari",
+        "imtAndroid"
+      ]
+    },
+    {
       "id": "speed-manga",
       "matches": [
         "speed-manga.com"
@@ -11717,6 +11743,25 @@
           "imtAndroid"
         ]
       }
+    },
+    {
+      "id": "cmoa",
+      "matches": [
+        "www.cmoa.jp"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".pt-img img"
+        ]
+      },
+      "platforms": [
+        "chrome",
+        "firefox",
+        "safari",
+        "imtAndroid"
+      ]
     },
     {
       "id": "tkr415.com",
@@ -16140,7 +16185,8 @@
         "platforms": [
           "chrome",
           "firefox",
-          "safari"
+          "safari",
+          "imtAndroid"
         ]
       }
     },
@@ -17817,6 +17863,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-29T03:04:39.132Z",
+  "buildinConfigUpdatedAt": "2025-07-29T11:04:41.481Z",
   "latestVersion": "1.19.6"
 }
