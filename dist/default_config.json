@@ -12848,12 +12848,13 @@
         "loadingContainerSelector": ".rc-VideoControlsContainer",
         "loadingStyle": "bottom: unset; top: 5%;",
         "quickButtonRule": {
-          "appendSelector": "[role=\"presentation\"] > .rc-ControlBar > .icon-container",
-          "injectCSS": ".imt-quick-subtitle-pop-content {right: 75px !important;}"
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-subtitles-button",
+          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;margin:0!important;} .imt-quick-subtitle-pop-content {right: 75px !important;} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
         },
         "enableIOSFullScreenTextTrack": false,
         "attachRule": {
-          "appendSelector": "[data-testid=\"playerContainer\"]",
+          "appendSelector": "[data-e2e=\"vlp-video-player\"]",
           "injectedGlobalCSS": [
             "video::cue {opacity: 0}"
           ]
@@ -18188,6 +18189,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-29T13:38:06.750Z",
+  "buildinConfigUpdatedAt": "2025-07-29T14:18:44.933Z",
   "latestVersion": "1.19.7"
 }
