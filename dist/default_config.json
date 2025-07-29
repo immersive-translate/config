@@ -286,41 +286,41 @@
   },
   "supportedMangaSites": [
     "https://www.pixiv.net/manga[Pixiv][chrome,firefox,imtAndroid]",
-    "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
-    "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA][chrome,firefox,safari,userscript,imtIOS]",
+    "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
+    "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
     "https://readcomiconline.li[ReadComicOnline][]",
     "https://readcomic.me[ReadComic][chrome]",
-    "https://comic-fuz.com/[COMIC FUZ][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
-    "https://mangadex.org/[MangaDex][chrome,firefox,safari,userscript,imtIOS]",
+    "https://comic-fuz.com/[COMIC FUZ][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
+    "https://mangadex.org/[MangaDex][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
     "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox]",
-    "https://shonenjumpplus.com[ShonenJumpPlus][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
-    "https://www.rimacomiplus.jp[Rimacomiplus][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
-    "https://viewer.heros-web.com/[Heros Web][chrome,firefox,safari,userscript,imtIOS]",
-    "https://comic-days.com/[Comic Days][chrome,firefox,safari,userscript,imtIOS]",
-    "https://comic-top.com[Comic Top][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
-    "https://comic-walker.com/[ComicWalker][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
-    "https://web-ace.jp/[Web Ace][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://shonenjumpplus.com[ShonenJumpPlus][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
+    "https://www.rimacomiplus.jp[Rimacomiplus][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
+    "https://viewer.heros-web.com/[Heros Web][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
+    "https://comic-days.com/[Comic Days][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
+    "https://comic-top.com[Comic Top][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
+    "https://comic-walker.com/[ComicWalker][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
+    "https://web-ace.jp/[Web Ace][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://e-hentai.org/[E-Hentai][chrome,firefox,safari]",
     "https://nhentai.net[nHentai][chrome,firefox,safari]",
     "https://www.antbyw.com[Antbyw][chrome,firefox,safari,imtAndroid]",
     "https://www.idmzj.com[动漫之家]",
     "https://jmanga.org[Jmanga][chrome,firefox,safari]",
-    "https://twicomi.com/manga*[Twitter Comic][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://twicomi.com/manga*[Twitter Comic][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://wnacg.com[Wnacg][chrome,firefox,safari]",
     "https://vw.mangaz.com[MangaZ][chrome,firefox]",
     "https://pash-up.jp[PASH UP][chrome]",
-    "https://www.colamanga.com[COLAMANGA][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
-    "https://www.ganganonline.com[GANGAN ONLINE][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://www.colamanga.com[COLAMANGA][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
+    "https://www.ganganonline.com[GANGAN ONLINE][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://battwo.com[BATOTO][chrome,firefox,safari,imtAndroid]",
     "https://asuracomic.net[Asura Scans][chrome,firefox,safari]",
     "https://allmanga.to[All Manga][chrome,firefox,safari,imtAndroid]",
     "https://manhwaclan.com[Manhwaclan][chrome,firefox,safari]",
-    "https://www.corocoro.jp[CoroCoro][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
-    "https://tonarinoyj.jp[tonarinoyj][chrome,firefox,safari,userscript,imtAndroid,imtIOS]",
+    "https://www.corocoro.jp[CoroCoro][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
+    "https://tonarinoyj.jp[tonarinoyj][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://yymanhua.com[Yymanhua][chrome,firefox,imtAndroid]",
     "https://manhwatop.com[Manhwatop][chrome,firefox,imtAndroid]",
     "https://palcy.jp/[Palcy][chrome,firefox,safari,imtAndroid]",
-    "https://comic-trail.com/[Comic-Trail][chrome,firefox,userscript,imtAndroid,imtIOS]",
+    "https://comic-trail.com/[Comic-Trail][chrome,firefox,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://mangaflame.org/[Mangaflame][chrome,firefox,safari,imtAndroid]",
     "https://templetoons.com/[Templetoons][chrome,firefox,safari]",
     "https://batocomic.net/[Batocomic][chrome,firefox,safari,imtAndroid]",
@@ -334,7 +334,7 @@
     "https://comick.io/[Comick][chrome,firefox,safari]",
     "https://klmanga.rs/[Klmanga][chrome,firefox,safari]",
     "https://www.sukima.me[Sukima][chrome,firefox,safari,userscript]",
-    "https://younganimal.com[YoungAnimal][chrome,firefox,safari,imtIOS]",
+    "https://younganimal.com[YoungAnimal][chrome,firefox,safari,imtIOS,imtIOSNew]",
     "https://piccoma.com[Piccoma][chrome,firefox,safari]",
     "https://www.mangasuika.com/[Mangasuika][chrome,firefox,safari]",
     "https://www.firemanga.com/[Firemanga][chrome,firefox,safari]",
@@ -627,7 +627,7 @@
       "https://onboarding.immersivetranslate.com/*/intro/*",
       "https://onboarding.immersivetranslate.com/*/init/*"
     ],
-    "defaultShowGuideNums": 2,
+    "defaultShowGuideNums": 4,
     "clickType": "translate",
     "afterInstalledAt": "2023-10-28",
     "fixedPosition": "right",
@@ -712,6 +712,84 @@
             "enable": true
           }
         }
+      }
+    },
+    {
+      "condition": "isPro==false && isMobile==false && hasOpenedRewardCenter==false && abTagNumber>0 && abTagNumber<2",
+      "advanceConfig": {
+        "notificationList.add": [
+          {
+            "enable": true,
+            "excludeMatches": [
+              "*.immersivetranslate.com"
+            ],
+            "displayPosition": "webpage",
+            "expireTime": "2025-08-15",
+            "id": "reward-center",
+            "content": {
+              "zh-CN": {
+                "bannerUrl": "https://s.immersivetranslate.com/assets/r2-uploads/notification_reward_center.png",
+                "title": "奖励中心已上线",
+                "updateDetail": "<b>包含以下超值奖励：</b><br/>200,000 高级模型 Token<br/>5 次 AI 字幕翻译<br/>100 页 PDF Pro 翻译额度",
+                "buttonText": "立即查看",
+                "buttonLink": "imt://sendToExt/openRewardCenter?trigger=notification"
+              },
+              "zh-TW": {
+                "bannerUrl": "https://s.immersivetranslate.com/assets/r2-uploads/notification_reward_center.png",
+                "title": "重寫更新通知",
+                "updateDetail": "<b>包含以下超值獎勵：</b><br/>200,000 高級模型 Token<br/>5 次 AI 字幕翻譯<br/>100 頁 PDF Pro 翻譯額度",
+                "buttonText": "立即查看",
+                "buttonLink": "imt://sendToExt/openRewardCenter?trigger=notification"
+              },
+              "en": {
+                "bannerUrl": "https://s.immersivetranslate.com/assets/r2-uploads/notification_reward_center.png",
+                "title": "Reward Center is now live",
+                "updateDetail": "<b>Includes the following valuable rewards:</b><br/>200,000 advanced model Tokens<br/>5 AI subtitle translations<br/>100 pages of PDF Pro translation quota",
+                "buttonText": "View Now",
+                "buttonLink": "imt://sendToExt/openRewardCenter?trigger=notification"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "isPro==false && isMobile==false && hasOpenedRewardCenter==false && abTagNumber<1",
+      "advanceConfig": {
+        "notificationList.add": [
+          {
+            "enable": true,
+            "displayPosition": "sidePanel",
+            "expireTime": "2025-08-15",
+            "id": "reward-center",
+            "excludeMatches": [
+              "*.immersivetranslate.com"
+            ],
+            "content": {
+              "zh-CN": {
+                "bannerUrl": "https://s.immersivetranslate.com/assets/r2-uploads/notification_reward_center.png",
+                "title": "奖励中心已上线",
+                "updateDetail": "<b>包含以下超值奖励：</b><br/>200,000 高级模型 Token<br/>5 次 AI 字幕翻译<br/>100 页 PDF Pro 翻译额度",
+                "buttonText": "立即查看",
+                "buttonLink": "imt://sendToExt/openRewardCenter?trigger=notification"
+              },
+              "zh-TW": {
+                "bannerUrl": "https://s.immersivetranslate.com/assets/r2-uploads/notification_reward_center.png",
+                "title": "重寫更新通知",
+                "updateDetail": "<b>包含以下超值獎勵：</b><br/>200,000 高級模型 Token<br/>5 次 AI 字幕翻譯<br/>100 頁 PDF Pro 翻譯額度",
+                "buttonText": "立即查看",
+                "buttonLink": "imt://sendToExt/openRewardCenter?trigger=notification"
+              },
+              "en": {
+                "bannerUrl": "https://s.immersivetranslate.com/assets/r2-uploads/notification_reward_center.png",
+                "title": "Reward Center is now live",
+                "updateDetail": "<b>Includes the following valuable rewards:</b><br/>200,000 advanced model Tokens<br/>5 AI subtitle translations<br/>100 pages of PDF Pro translation quota",
+                "buttonText": "View Now",
+                "buttonLink": "imt://sendToExt/openRewardCenter?trigger=notification"
+              }
+            }
+          }
+        ]
       }
     }
   ],
@@ -981,6 +1059,7 @@
     "qwen-mt": {
       "withTerms": false,
       "model": "qwen-mt-plus",
+      "name": "Qwen MT",
       "models": "qwen-mt-plus|qwen-mt-turbo",
       "limit": 10,
       "maxTextLengthPerRequest": 1200,
@@ -1979,7 +2058,20 @@
       "enableRichTranslate": false,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
-      "enableFallback": true
+      "enableFallback": true,
+      "modelsOverrides.add": [
+        {
+          "models": [
+            "glm-4.5",
+            "glm-4.5.*"
+          ],
+          "bodyConfigs": {
+            "thinking": {
+              "type": "disabled"
+            }
+          }
+        }
+      ]
     },
     "zhipu-pro.add_v.[1.15.3]": {
       "defaultMaxTextGroupLengthPerRequest": 4,
@@ -2000,7 +2092,9 @@
       "group": "free",
       "extends": "zhipu",
       "provider": "custom",
-      "models": "glm-4-flash|glm-4-flash-250414"
+      "model": "glm-4-flash-250414",
+      "models": "glm-4-flash|glm-4-flash-250414",
+      "modelsHidden": true
     },
     "siliconcloud-free": {
       "type": "siliconcloud",
@@ -2454,6 +2548,177 @@
       "commonService": {
         "service": "zhipu",
         "model": "glm-4-flash"
+      }
+    },
+    "aiWriting": {
+      "enable": true,
+      "urlPattern": {
+        "matches": [],
+        "excludeMatches": []
+      },
+      "prompts": {
+        "summaryPrompt": "You are a professional {{ai_writing_scene}} analysis assistant, skilled at summarizing and analyzing {{ai_writing_scene}}. Please provide a concise and clear summary based on the following {{ai_writing_scene}} content. Reply in {{target_language}} language. DO NOT exceed 150 words! Output only the summary, without any additional content.",
+        "suggestionPrompt": "You are an expert assistant in {{ai_writing_scene}} analysis. Your task is to generate exactly 3 concise, actionable reply suggestions based on the provided {{ai_writing_scene}} content.\n\nInstructions:\n1. Respond exclusively in {{target_language}}.\n2. Each suggestion must be concise, actionable, and contextually relevant.\n3. Consider the current status and context of the {{ai_writing_scene}}.\n4. Format your output strictly as a raw JSON array of strings without markdown code blocks.\n\n{{ai_writing_style}}\n\nOutput Example:\n[\"suggestion1\", \"suggestion2\", \"suggestion3\"]",
+        "polishReplyPrompt": "You are a professional {{ai_writing_scene}} reply assistant, skilled at refining and enhancing replies for {{ai_writing_scene}} communications. Based on the provided context and user's draft reply, polish and improve the reply following the instructions below.\n\n**Instructions:**\n1. Improve clarity, professionalism, and readability.\n2. Ensure relevance to the provided {{ai_writing_scene}} context.\n3. Correct grammar, spelling, and punctuation errors.\n4. Enhance helpfulness and actionability.\n5. Preserve the original intent and tone.\n6. Respond exclusively in {{target_language}}.\n7. Output only the result, without any additional content.\n\n{{ai_writing_style}}\n\n**{{ai_writing_scene}} Context:**\n{{ai_writing_context}}\n\n{{current_site_info}}",
+        "generalSystemPrompt": "You are a professional writing assistant, skilled at refining and enhancing content for user input. Polish and improve the content following the instructions below.\n\n**Instructions:**\n1. Improve clarity, professionalism, and readability.\n2. Correct grammar, spelling, and punctuation errors.\n3. Enhance helpfulness and actionability.\n4. Preserve the original intent and tone.\n5. Respond exclusively in {{target_language}}.\n\n{{ai_writing_style}}\n\n{{current_site_info}}",
+        "deepseek-pro": {
+          "polishReplyPrompt": "You are a professional {{ai_writing_scene}} reply assistant, skilled at refining and enhancing replies for {{ai_writing_scene}} communications. Based on the provided context and user's draft reply, polish and improve the reply following the instructions below.\n\n**Instructions:**\n1. Improve clarity, professionalism, and readability.\n2. Ensure relevance to the provided {{ai_writing_scene}} context.\n3. Correct grammar, spelling, and punctuation errors.\n4. Enhance helpfulness and actionability.\n5. Preserve the original intent and tone.\n6. Respond exclusively in {{target_language}}.\n7. Output only the result, without any additional content\n8. Unless a specific writing style is requested, there's no need for extra polite tone words. \n\n{{ai_writing_style}}\n\n**{{ai_writing_scene}} Context:**\n{{ai_writing_context}}\n\n{{current_site_info}}"
+        }
+      },
+      "promptStyle": {
+        "length": {
+          "selected": "auto",
+          "options": [
+            {
+              "labelKey": "aiWriting.promptStyle.auto",
+              "value": "auto"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.length.short",
+              "value": "short"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.length.medium",
+              "value": "medium"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.length.long",
+              "value": "long"
+            }
+          ]
+        },
+        "formalityLevel": {
+          "selected": "auto",
+          "options": [
+            {
+              "labelKey": "aiWriting.promptStyle.auto",
+              "value": "auto"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.formalityLevel.formal",
+              "value": "formal"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.formalityLevel.neutral",
+              "value": "neutral"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.formalityLevel.casual",
+              "value": "casual"
+            }
+          ]
+        },
+        "tone": {
+          "selected": "auto",
+          "options": [
+            {
+              "labelKey": "aiWriting.promptStyle.auto",
+              "value": "auto"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.tone.friendly",
+              "value": "friendly"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.tone.kind",
+              "value": "kind"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.tone.enthusiastic",
+              "value": "enthusiastic"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.tone.caring",
+              "value": "caring"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.tone.empathetic",
+              "value": "empathetic"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.tone.concise",
+              "value": "concise"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.tone.sincere",
+              "value": "sincere"
+            }
+          ]
+        },
+        "role": {
+          "selected": "auto",
+          "options": [
+            {
+              "labelKey": "aiWriting.promptStyle.auto",
+              "value": "auto"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.role.leader",
+              "value": "leader"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.role.subordinate",
+              "value": "subordinate"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.role.colleague",
+              "value": "colleague"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.role.developer",
+              "value": "developer"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.role.salesRepresentative",
+              "value": "salesRepresentative"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.role.customerService",
+              "value": "customerService"
+            },
+            {
+              "labelKey": "aiWriting.promptStyle.role.humanResources",
+              "value": "humanResources"
+            }
+          ]
+        }
+      },
+      "serviceConfigs": {
+        "modelsOverrides": [
+          {
+            "models": [
+              "gemini-2.5-pro",
+              "gemini-2.5-pro-preview"
+            ],
+            "bodyConfigs": {
+              "generationConfig": {
+                "temperature": 0,
+                "topK": 1,
+                "topP": 1,
+                "maxOutputTokens": 2048,
+                "stopSequences": []
+              },
+              "safetySettings": [
+                {
+                  "category": "HARM_CATEGORY_HARASSMENT",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_HATE_SPEECH",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                  "threshold": "BLOCK_NONE"
+                }
+              ]
+            }
+          }
+        ]
       }
     },
     "enableAutoTranslateByReferrer": true,
@@ -3911,7 +4176,8 @@
           "firefox",
           "safari",
           "imtAndroid",
-          "imtIOS"
+          "imtIOS",
+          "imtIOSNew"
         ]
       },
       "isTransformPreTagNewLine": true,
@@ -4877,6 +5143,16 @@
           "aside.feed-right-sidebar"
         ],
         "side.enableTranslate": true
+      },
+      "aiWriting.add": {
+        "scene": "github-issue",
+        "appendSelector": ".Footer-module__childrenStyling--ySU6Z",
+        "insertBeforeSelector": ".IssueActions-module__IssueActionsButtonGroup--k8eny",
+        "titleSelector": ".prc-Heading-Heading-6CmGO .markdown-title",
+        "contentSelector": "#issue-body-viewer .markdown-body",
+        "commentSelector": ".react-issue-comment",
+        "insertInputSelector": ".prc-Textarea-TextArea-13q4j",
+        "injectDelay": 1000
       }
     },
     {
@@ -5052,6 +5328,7 @@
       "subtitleRule.add": {
         "type": "youtube",
         "hookType": "xhr_response",
+        "allowFreeUserLive": true,
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
         "translateSelectors": [
           ".caption-window",
@@ -5254,6 +5531,7 @@
       "subtitleRule.add": {
         "type": "youtube",
         "hookType": "xhr_response",
+        "allowFreeUserLive": true,
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
         "translateSelectors": [
           ".caption-window",
@@ -5324,6 +5602,7 @@
       "subtitleRule.add": {
         "type": "youtube",
         "hookType": "xhr_response",
+        "allowFreeUserLive": true,
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
         "translateSelectors": [
           ".caption-window",
@@ -5374,6 +5653,7 @@
       "subtitleRule.add": {
         "type": "youtube",
         "hookType": "xhr_response",
+        "allowFreeUserLive": true,
         "preTranslation": true,
         "humanPreferred": false,
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
@@ -5432,6 +5712,7 @@
       "subtitleRule.add": {
         "type": "youtube",
         "hookType": "xhr_response",
+        "allowFreeUserLive": true,
         "subtitleUrlRegExp": "/api/timedtext",
         "translateSelectors": [
           ".caption-window",
@@ -5711,6 +5992,16 @@
       "detectParagraphLanguage": true,
       "globalStyles": {
         "[role='listitem'] > div": "height:auto!important;white-space:unset!important;"
+      },
+      "aiWriting.add": {
+        "scene": "email",
+        "appendSelector": ".btC",
+        "insertBeforeSelector": ".oc.gU",
+        "titleSelector": "h2.hP",
+        "contentSelector": "",
+        "commentSelector": ".gs",
+        "insertInputSelector": ".editable",
+        "injectCSS": ".immersive-translate-ai-writing-button {margin-left:12px; border-radius: 20px; padding: 6px 12px;}"
       }
     },
     {
@@ -6781,6 +7072,9 @@
     {
       "id": "sciencedirect",
       "matches": "www.sciencedirect.com",
+      "excludeMatches": [
+        "www.sciencedirect.com/*/pdf/download/*"
+      ],
       "urlChangeDelay": 2000,
       "stayOriginalSelectors": [
         "span.display",
@@ -10856,7 +11150,8 @@
           "firefox",
           "userscript",
           "imtAndroid",
-          "imtIOS"
+          "imtIOS",
+          "imtIOSNew"
         ]
       }
     },
@@ -11007,7 +11302,8 @@
           "firefox",
           "safari",
           "imtAndroid",
-          "imtIOS"
+          "imtIOS",
+          "imtIOSNew"
         ],
         "inValidSrcRegex": [
           "bg_transparency.png"
@@ -11470,7 +11766,8 @@
           "chrome",
           "firefox",
           "safari",
-          "imtIOS"
+          "imtIOS",
+          "imtIOSNew"
         ]
       }
     },
@@ -12438,6 +12735,16 @@
     {
       "id": "letsjelly",
       "matches": "app.letsjelly.com",
+      "aiWriting.add": {
+        "scene": "email",
+        "appendSelector": "form[data-controller='reply'] .field.submit",
+        "insertBeforeSelector": "form[data-controller='reply'] .button.ml-auto",
+        "titleSelector": ".h1-subject-button",
+        "contentSelector": "",
+        "commentSelector": ".conversation-list .message.seen",
+        "insertInputSelector": "#ts_responder .squire-editor",
+        "injectCSS": ".immersive-translate-ai-writing-button {border-radius: 20px; padding: 10px 20px;}"
+      },
       "selectors": [
         ".message-content",
         ".h1-subject-button",
@@ -13871,6 +14178,20 @@
       }
     },
     {
+      "id": "imt-admin",
+      "matches": [
+        "admin.immersivetranslate.com"
+      ],
+      "aiWriting.add": {
+        "scene": "email",
+        "appendSelector": "#basic > div.ant-space.ant-space-horizontal.ant-space-align-center",
+        "titleSelector": "#basic_EmailSubject",
+        "contentSelector": "#basic_EmailBody",
+        "commentSelector": "",
+        "insertInputSelector": "#basic_EmailBody"
+      }
+    },
+    {
       "id": "bbc-emp",
       "matches": "https://emp.bbc.*/emp/*",
       "excludeSelectors.add": [
@@ -15121,6 +15442,9 @@
     {
       "id": "pubs.acs.org",
       "matches": "pubs.acs.org",
+      "excludeMatches": [
+        "https://pubs.acs.org/doi/pdf*"
+      ],
       "mainFrameSelector": [
         ".article_abstract",
         ".article_header-title",
@@ -15525,7 +15849,8 @@
           "firefox",
           "safari",
           "imtAndroid",
-          "imtIOS"
+          "imtIOS",
+          "imtIOSNew"
         ]
       }
     },
@@ -17863,6 +18188,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-29T11:04:41.481Z",
-  "latestVersion": "1.19.6"
+  "buildinConfigUpdatedAt": "2025-07-29T11:15:50.829Z",
+  "latestVersion": "1.19.7"
 }
