@@ -4338,7 +4338,8 @@
         "[data-testid=User-Name]",
         "[data-testid=socialContext]",
         "[data-testid=tweet-text-show-more-link]",
-        "[aria-label=Grok] [class='css-175oi2r r-1habvwh r-vqp9x9 r-1q9bdsx r-1loqt21 r-9njtsq r-1wtj0ep r-nsbfu8 r-xbdcod r-13c7hvr'] > div:last-child"
+        "[aria-label=Grok] [class='css-175oi2r r-1habvwh r-vqp9x9 r-1q9bdsx r-1loqt21 r-9njtsq r-1wtj0ep r-nsbfu8 r-xbdcod r-13c7hvr'] > div:last-child",
+        "[role='tab']"
       ],
       "globalStyles": {
         "[data-testid='card.layoutLarge.detail'] > div:nth-child(2)": "-webkit-line-clamp: unset;",
@@ -8175,7 +8176,9 @@
         "[class='rounded-md duration-150']",
         "[data-testid*=article-]",
         "[data-framer-name='Content']",
-        "[data-framer-root]"
+        "[data-framer-root]",
+        "[class='py-sm group flex cursor-pointer items-center justify-between']",
+        "[data-testid='answer-mode-tabs']"
       ],
       "additionalExcludeSelectors.add": [
         "[data-framer-name='Desktop']"
@@ -18189,6 +18192,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-29T14:18:44.933Z",
+  "buildinConfigUpdatedAt": "2025-07-29T15:48:36.700Z",
   "latestVersion": "1.19.7"
 }
