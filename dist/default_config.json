@@ -4101,6 +4101,12 @@
         "[data-testid='HoverCard'] div[dir=auto] div",
         "[data-testid='HoverCard'] span[dir=auto] div"
       ],
+      "darkModeRule": {
+        "element": "html",
+        "selectors": [
+          "[style*='color-scheme: dark']"
+        ]
+      },
       "advanceMergeConfig": [
         {
           "condition": "translationMode==translation",
@@ -6323,6 +6329,12 @@
         ".wrap": "height:unset;",
         ".entry-header": "height:unset;",
         ".entry-title > a": "height:unset;-webkit-line-clamp:unset;"
+      },
+      "darkModeRule": {
+        "element": "html",
+        "selectors": [
+          "[lang]"
+        ]
       }
     },
     {
@@ -17805,6 +17817,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-28T18:28:11.399Z",
+  "buildinConfigUpdatedAt": "2025-07-29T03:04:39.132Z",
   "latestVersion": "1.19.6"
 }
