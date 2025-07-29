@@ -2027,12 +2027,12 @@
     },
     "zhipu-pro": {
       "extends": "ai",
-      "name": "GLM-4 Plus",
+      "name": "GLM-4.5",
       "group": "pro",
       "type": "zhipu-pro",
       "visible": true,
-      "model": "glm-4-plus",
-      "proModel": "glm-4-plus",
+      "model": "glm-4.5",
+      "proModel": "glm-4.5",
       "defaultVisible": true,
       "defaultHiddenLangs": [
         "zh-TW"
@@ -18188,6 +18188,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-29T11:40:11.940Z",
+  "buildinConfigUpdatedAt": "2025-07-29T13:38:06.750Z",
   "latestVersion": "1.19.7"
 }
