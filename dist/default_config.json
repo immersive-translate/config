@@ -10913,7 +10913,8 @@
     {
       "id": "bomtoon",
       "matches": [
-        "www.bomtoon_notranslate.com"
+        "www.bomtoon_notranslate.com",
+        "www.bomtoon.com"
       ],
       "imageRule.add": {
         "type": "manga",
@@ -12195,7 +12196,10 @@
     },
     {
       "id": "manhwaus.org",
-      "matches": "manhwaus.org",
+      "matches": [
+        "manhwaus.org",
+        "manga18.me"
+      ],
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
@@ -17837,6 +17841,15 @@
       ]
     },
     {
+      "id": "cooperativa",
+      "matches": [
+        "cooperativa.cl"
+      ],
+      "injectedCss.add": [
+        "font.notranslate {display:unset!important}"
+      ]
+    },
+    {
       "id": "overflow-sites",
       "matches": [
         "www.highfrequencyelectronics.com",
@@ -18188,6 +18201,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-30T10:19:48.131Z",
+  "buildinConfigUpdatedAt": "2025-07-30T11:13:35.593Z",
   "latestVersion": "1.19.7"
 }
