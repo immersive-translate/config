@@ -3209,7 +3209,8 @@
       "[data-test='json-editor']",
       ".jp-CodeMirrorEditor",
       "cds-code-snippet",
-      ".interactive-markdown__code"
+      ".interactive-markdown__code",
+      "span.variable[translate=no]"
     ],
     "translationBlockStyle": "",
     "isShowUserscriptPagePopup": true,
@@ -8982,13 +8983,9 @@
     },
     {
       "id": "semanticscholar",
-      "matches": "www.semanticscholar.org",
-      "selectors": [
-        ".cl-paper-title",
-        ".cl-paper-abstract",
-        ".tldr-abstract-replacement",
-        ".text-truncator",
-        ".paper-detail-title"
+      "matches": "*.semanticscholar.org",
+      "excludeSelectors.add": [
+        "[class='sc-jSFjdj sc-gKAaRy dYGhuI fTsuzH']"
       ]
     },
     {
@@ -12857,7 +12854,7 @@
         },
         "enableIOSFullScreenTextTrack": false,
         "attachRule": {
-          "appendSelector": "[data-e2e=\"vlp-video-player\"]",
+          "appendSelector": "[id^='vjs_video'][data-vjs-player]",
           "injectedGlobalCSS": [
             "video::cue {opacity: 0}"
           ]
@@ -18192,6 +18189,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-29T15:48:36.700Z",
+  "buildinConfigUpdatedAt": "2025-07-30T10:04:44.654Z",
   "latestVersion": "1.19.7"
 }
