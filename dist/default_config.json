@@ -511,7 +511,10 @@
     "https://learning.sap.com/[SAP]",
     "https://dynasty-scans.com/[Dynasty Scans]",
     "https://weebcentral.com/[Weebcentral]",
-    "https://www.aljazeera.com/[Aljazeera]"
+    "https://www.aljazeera.com/[Aljazeera]",
+    "https://www.arte.tv/[Arte]",
+    "https://www.feynmanlectures.caltech.edu/[Feynmanlectures]",
+    "https://updraft.cyfrin.io/[Updraft]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -15055,11 +15058,65 @@
         "hookType": "xhr",
         "subtitleUrlRegExp": "\\.vtt",
         "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".aj-video-player",
+        "injectedCss": [
+          "#imt-subtitle-loading span { color: #fff !important; }"
+        ],
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
           "insertBeforeSelector": ".aj-cc-button"
         }
       }
+    },
+    {
+      "id": "arte",
+      "matches": "www.arte.tv",
+      "excludeSelectors.add": [
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#immersive-translate-caption-window *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "\\.vtt",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": ".avp-player",
+        "quickButtonRule": {
+          "appendSelector": ".avp-controls > .avp-controls__right",
+          "insertBeforeSelector": ".avp-language"
+        }
+      }
+    },
+    {
+      "id": "updraft",
+      "matches": "updraft.cyfrin.io",
+      "excludeSelectors.add": [
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#immersive-translate-caption-window *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "\\.vtt",
+        "videoPlayerSelector": "video",
+        "loadingContainerSelector": "#cyfrin-video-player",
+        "quickButtonRule": {
+          "appendSelector": "media-control-bar > div:nth-of-type(2)",
+          "insertBeforeSelector": "media-control-bar > div:nth-of-type(2) > div:nth-of-type(3)",
+          "injectCSS": ".imt-quick-subtitle-pop-content { max-height: unset !important; }"
+        }
+      },
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
+      "excludeTags.remove": [
+        "PRE"
+      ]
     },
     {
       "id": "learningSap",
@@ -15086,6 +15143,34 @@
         "quickButtonRule": {
           "appendSelector": ".playkit-controls-container .playkit-right-controls",
           "insertBeforeSelector": ".playkit-controls-container .playkit-control-closed-captions"
+        }
+      }
+    },
+    {
+      "id": "feynmanlectures",
+      "matches": "www.feynmanlectures.caltech.edu",
+      "excludeSelectors.add": [
+        ".videoview",
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".videoview",
+        "#immersive-translate-caption-window *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "\\.vtt",
+        "videoPlayerSelector": "video",
+        "attachRule": {
+          "appendSelector": "#vidwidthsizer > .video > div:nth-of-type(2) > div",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display {display: none;}"
+          ]
+        },
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": "div.vjs-subs-caps-button"
         }
       }
     },
@@ -17993,7 +18078,6 @@
         "*.affine.*",
         "*.shopify.com",
         "*.marscode.com",
-        "updraft.cyfrin.io",
         "nexus.evenant.com",
         "portal.achieve3000.net",
         "triumph-cubic.com"
@@ -18223,6 +18307,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-31T04:14:48.944Z",
+  "buildinConfigUpdatedAt": "2025-07-31T08:51:13.663Z",
   "latestVersion": "1.19.7"
 }
