@@ -5238,7 +5238,8 @@
         "#PNG_EXPORT",
         ".fb_content.clearfix",
         "[role='main']",
-        "[role='region']"
+        "[role='region']",
+        "[role='presentation']"
       ],
       "excludeSelectors.add": [
         "[data-ad-comet-preview=message] [role=button]"
@@ -8436,7 +8437,8 @@
       "matches": "web.whatsapp.com",
       "selectors": [
         "._akbu",
-        "[role=list]"
+        "[role=list]",
+        ".copyable-text"
       ],
       "wrapperPrefix": "\n",
       "wrapperSuffix": "<br/>",
@@ -10955,6 +10957,14 @@
           "div"
         ]
       }
+    },
+    {
+      "id": "datalab.naver",
+      "matches": "datalab.naver.com",
+      "injectedCss.add": [
+        ".tab_list_area .list_itm {height: unset !important;}",
+        ".section.main_tab_opt .select {height: unset !important;}"
+      ]
     },
     {
       "id": "copymanga",
@@ -18307,6 +18317,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-31T08:51:13.663Z",
+  "buildinConfigUpdatedAt": "2025-07-31T12:54:09.293Z",
   "latestVersion": "1.19.7"
 }
