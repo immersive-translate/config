@@ -510,7 +510,8 @@
     "https://tv.dmm.com/[DMM]",
     "https://learning.sap.com/[SAP]",
     "https://dynasty-scans.com/[Dynasty Scans]",
-    "https://weebcentral.com/[Weebcentral]"
+    "https://weebcentral.com/[Weebcentral]",
+    "https://www.aljazeera.com/[aj-cc-button]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -4573,7 +4574,8 @@
       ],
       "excludeSelectors.add": [
         ".ui-box .ui-box[class='ui-box']",
-        "[data-tid='author']"
+        "[data-tid='author']",
+        ".fui-ChatMessageCompact__author"
       ],
       "mutationExcludeSelectors.add": [
         ".ui-box .ui-box[class='ui-box'] *"
@@ -15040,6 +15042,26 @@
       }
     },
     {
+      "id": "aljazeera",
+      "matches": "www.aljazeera.com",
+      "excludeSelectors.add": [
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#immersive-translate-caption-window *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "\\.vtt",
+        "videoPlayerSelector": "video",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".aj-cc-button"
+        }
+      }
+    },
+    {
       "id": "learningSap",
       "matches": "learning.sap.com",
       "excludeSelectors.add": [
@@ -18201,6 +18223,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-30T11:13:35.593Z",
+  "buildinConfigUpdatedAt": "2025-07-31T04:13:28.276Z",
   "latestVersion": "1.19.7"
 }
