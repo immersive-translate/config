@@ -285,14 +285,14 @@
     "enableMaxTips": true
   },
   "supportedMangaSites": [
-    "https://www.pixiv.net/manga[Pixiv][chrome,firefox,imtAndroid]",
+    "https://www.pixiv.net/manga[Pixiv][chrome,firefox,imtAndroid,imtIOSNew]",
     "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
     "https://readcomiconline.li[ReadComicOnline][]",
     "https://readcomic.me[ReadComic][chrome]",
     "https://comic-fuz.com/[COMIC FUZ][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://mangadex.org/[MangaDex][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
-    "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox]",
+    "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox,imtIOSNew]",
     "https://shonenjumpplus.com[ShonenJumpPlus][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://www.rimacomiplus.jp[Rimacomiplus][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://viewer.heros-web.com/[Heros Web][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
@@ -300,48 +300,48 @@
     "https://comic-top.com[Comic Top][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://comic-walker.com/[ComicWalker][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://web-ace.jp/[Web Ace][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
-    "https://e-hentai.org/[E-Hentai][chrome,firefox,safari]",
-    "https://nhentai.net[nHentai][chrome,firefox,safari]",
-    "https://www.antbyw.com[Antbyw][chrome,firefox,safari,imtAndroid]",
+    "https://e-hentai.org/[E-Hentai][chrome,firefox,safari,imtIOSNew]",
+    "https://nhentai.net[nHentai][chrome,firefox,safari,imtIOSNew]",
+    "https://www.antbyw.com[Antbyw][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://www.idmzj.com[动漫之家]",
-    "https://jmanga.org[Jmanga][chrome,firefox,safari]",
+    "https://jmanga.org[Jmanga][chrome,firefox,safari,imtIOSNew]",
     "https://twicomi.com/manga*[Twitter Comic][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
-    "https://wnacg.com[Wnacg][chrome,firefox,safari]",
-    "https://vw.mangaz.com[MangaZ][chrome,firefox]",
+    "https://wnacg.com[Wnacg][chrome,firefox,safari,imtIOSNew]",
+    "https://vw.mangaz.com[MangaZ][chrome,firefox,imtIOSNew]",
     "https://pash-up.jp[PASH UP][chrome]",
     "https://www.colamanga.com[COLAMANGA][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://www.ganganonline.com[GANGAN ONLINE][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
-    "https://battwo.com[BATOTO][chrome,firefox,safari,imtAndroid]",
-    "https://asuracomic.net[Asura Scans][chrome,firefox,safari]",
-    "https://allmanga.to[All Manga][chrome,firefox,safari,imtAndroid]",
-    "https://manhwaclan.com[Manhwaclan][chrome,firefox,safari]",
+    "https://battwo.com[BATOTO][chrome,firefox,safari,imtAndroid,imtIOSNew]",
+    "https://asuracomic.net[Asura Scans][chrome,firefox,safari,imtIOSNew]",
+    "https://allmanga.to[All Manga][chrome,firefox,safari,imtAndroid,imtIOSNew]",
+    "https://manhwaclan.com[Manhwaclan][chrome,firefox,safari,imtIOSNew]",
     "https://www.corocoro.jp[CoroCoro][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://tonarinoyj.jp[tonarinoyj][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
-    "https://yymanhua.com[Yymanhua][chrome,firefox,imtAndroid]",
-    "https://manhwatop.com[Manhwatop][chrome,firefox,imtAndroid]",
-    "https://palcy.jp/[Palcy][chrome,firefox,safari,imtAndroid]",
+    "https://yymanhua.com[Yymanhua][chrome,firefox,imtAndroid,imtIOSNew]",
+    "https://manhwatop.com[Manhwatop][chrome,firefox,imtAndroid,imtIOSNew]",
+    "https://palcy.jp/[Palcy][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://comic-trail.com/[Comic-Trail][chrome,firefox,userscript,imtAndroid,imtIOS,imtIOSNew]",
-    "https://mangaflame.org/[Mangaflame][chrome,firefox,safari,imtAndroid]",
-    "https://templetoons.com/[Templetoons][chrome,firefox,safari]",
-    "https://batocomic.net/[Batocomic][chrome,firefox,safari,imtAndroid]",
-    "https://comic-action.com/[Comic-action][chrome,firefox,safari]",
-    "https://m.ac.qq.com/[腾讯动漫][chrome,firefox,safari]",
-    "https://www.mangajikan.com/[Mangajikan][chrome,firefox,safari]",
-    "https://Komiku.com/[komiku][chrome,firefox,safari,imtAndroid]",
-    "https://www.mangakoinu.com/[Mangakoinu][chrome,firefox,safari]",
-    "https://www.sololevelingmangafree.com/[Sololevelingmangafree][chrome,firefox,safari]",
-    "https://syosetu.si/[Syosetu][chrome,firefox,safari]",
-    "https://comick.io/[Comick][chrome,firefox,safari]",
-    "https://klmanga.rs/[Klmanga][chrome,firefox,safari]",
-    "https://www.sukima.me[Sukima][chrome,firefox,safari,userscript]",
+    "https://mangaflame.org/[Mangaflame][chrome,firefox,safari,imtAndroid,imtIOSNew]",
+    "https://templetoons.com/[Templetoons][chrome,firefox,safari,imtIOSNew]",
+    "https://batocomic.net/[Batocomic][chrome,firefox,safari,imtAndroid,imtIOSNew]",
+    "https://comic-action.com/[Comic-action][chrome,firefox,safari,imtIOSNew]",
+    "https://m.ac.qq.com/[腾讯动漫][chrome,firefox,safari,imtIOSNew]",
+    "https://www.mangajikan.com/[Mangajikan][chrome,firefox,safari,imtIOSNew]",
+    "https://Komiku.com/[komiku][chrome,firefox,safari,imtAndroid,imtIOSNew]",
+    "https://www.mangakoinu.com/[Mangakoinu][chrome,firefox,safari,imtIOSNew]",
+    "https://www.sololevelingmangafree.com/[Sololevelingmangafree][chrome,firefox,safari,imtIOSNew]",
+    "https://syosetu.si/[Syosetu][chrome,firefox,safari,imtIOSNew]",
+    "https://comick.io/[Comick][chrome,firefox,safari,imtIOSNew]",
+    "https://klmanga.rs/[Klmanga][chrome,firefox,safari,imtIOSNew]",
+    "https://www.sukima.me[Sukima][chrome,firefox,safari,userscript,imtIOSNew]",
     "https://younganimal.com[YoungAnimal][chrome,firefox,safari,imtIOS,imtIOSNew]",
-    "https://piccoma.com[Piccoma][chrome,firefox,safari]",
-    "https://www.mangasuika.com/[Mangasuika][chrome,firefox,safari]",
-    "https://www.firemanga.com/[Firemanga][chrome,firefox,safari]",
-    "https://hentaizap.com/[Hentaizap][chrome,firefox,safari]",
-    "https://jmanga.sh/[Jmanga][chrome,firefox,safari]",
-    "https://hanime1.me/[Hanime1][chrome,firefox,safari]",
-    "https://globalcomix.com/[Globalcomix][chrome,firefox,safari]",
+    "https://piccoma.com[Piccoma][chrome,firefox,safari,imtIOSNew]",
+    "https://www.mangasuika.com/[Mangasuika][chrome,firefox,safari,imtIOSNew]",
+    "https://www.firemanga.com/[Firemanga][chrome,firefox,safari,imtIOSNew]",
+    "https://hentaizap.com/[Hentaizap][chrome,firefox,safari,imtIOSNew]",
+    "https://jmanga.sh/[Jmanga][chrome,firefox,safari,imtIOSNew]",
+    "https://hanime1.me/[Hanime1][chrome,firefox,safari,imtIOSNew]",
+    "https://globalcomix.com/[Globalcomix][chrome,firefox,safari,imtIOSNew]",
     "https://klz9.com[KL][chrome]",
     "https://www.comemh8.com[comemh8][chrome]",
     "https://xbato.com/[Xbato][chrome,firefox,safari]",
@@ -377,7 +377,8 @@
     "https://jumptoon.com/[Jumptoon][chrome,firefox,safari,imtAndroid]",
     "https://www.baozimh.com/[Fenoxo][chrome,firefox,safari,imtAndroid]",
     "https://ww2.mangafreak.me/[MangaFreak][chrome,firefox,safari,imtAndroid]",
-    "https://www.cmoa.jp/[cmoa][chrome,firefox,safari,imtAndroid]"
+    "https://www.cmoa.jp/[cmoa][chrome,firefox,safari,imtAndroid]",
+    "https://comic-gardo.com/[ComicGardo][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -4180,10 +4181,10 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid",
-          "imtIOS",
-          "imtIOSNew"
+          "imtIOS"
         ]
       },
       "isTransformPreTagNewLine": true,
@@ -4208,6 +4209,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -5084,7 +5086,11 @@
         "[id^=pullrequestreview]",
         "[class^='ChatMessage']",
         "a[data-hovercard-type='issue']",
-        "[class*=prc-FormControl] > [class*=prc-Text]"
+        "[class*=prc-FormControl] > [class*=prc-Text]",
+        "[data-testid='beginners-playlist-section']",
+        "[data-testid='getting-started-checklist-section']",
+        "[data-testid='docs-section']",
+        "[data-testid='recommendations-section']"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -9887,6 +9893,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -9907,6 +9914,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -9924,6 +9932,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -9989,6 +9998,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ],
@@ -10012,6 +10022,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -10031,6 +10042,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -10053,6 +10065,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -10103,6 +10116,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -10120,6 +10134,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -10138,6 +10153,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -10203,6 +10219,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -10223,6 +10240,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -10246,6 +10264,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "imtAndroid"
         ]
       }
@@ -10269,6 +10288,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ],
@@ -10289,6 +10309,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ],
@@ -10348,6 +10369,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -10370,6 +10392,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ],
         "loadingSelectors": [
@@ -10408,6 +10431,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -10440,6 +10464,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid",
           "imtIOS"
@@ -10477,6 +10502,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -10528,6 +10554,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -10568,6 +10595,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -10588,6 +10616,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "userscript"
         ]
@@ -10648,6 +10677,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -10670,6 +10700,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -10709,6 +10740,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -10730,6 +10762,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "imtAndroid"
         ]
       }
@@ -10841,6 +10874,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -10871,6 +10905,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -10890,6 +10925,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -10914,6 +10950,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -10952,6 +10989,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "imtAndroid"
         ],
         "loadingSelectors": [
@@ -11064,10 +11102,10 @@
         "www.corocoro.jp",
         "tonarinoyj.jp",
         "rimacomiplus.jp",
-        "kuragebunch.com"
+        "kuragebunch.com",
+        "comic-gardo.com"
       ],
       "selectorMatches": [
-        "canvas.page-image.js-page-image",
         "img.page-image.js-page-image"
       ],
       "imageRule.add": {
@@ -11144,6 +11182,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -11165,10 +11204,10 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "userscript",
           "imtAndroid",
-          "imtIOS",
-          "imtIOSNew"
+          "imtIOS"
         ]
       }
     },
@@ -11204,6 +11243,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -11224,6 +11264,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -11249,6 +11290,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -11273,6 +11315,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "imtAndroid"
         ]
       }
@@ -11298,6 +11341,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "imtAndroid"
         ]
       }
@@ -11317,10 +11361,10 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid",
-          "imtIOS",
-          "imtIOSNew"
+          "imtIOS"
         ],
         "inValidSrcRegex": [
           "bg_transparency.png"
@@ -11339,6 +11383,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "imtAndroid"
         ]
       }
@@ -11365,6 +11410,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "imtAndroid"
         ],
         "loadingSelectors": [
@@ -11561,6 +11607,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -11581,6 +11628,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -11601,6 +11649,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -11622,6 +11671,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -11647,6 +11697,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -11667,6 +11718,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -11685,6 +11737,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -11703,6 +11756,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -11723,6 +11777,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -11743,6 +11798,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -11762,6 +11818,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -11782,9 +11839,9 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
-          "imtIOS",
-          "imtIOSNew"
+          "imtIOS"
         ]
       }
     },
@@ -11803,6 +11860,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -11824,6 +11882,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -11843,6 +11902,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -11862,6 +11922,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -11879,6 +11940,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -11899,6 +11961,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -11920,6 +11983,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -11936,6 +12000,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -11955,6 +12020,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -11974,6 +12040,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -11993,6 +12060,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -12011,6 +12079,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -12053,6 +12122,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -12091,6 +12161,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -12109,6 +12180,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -12124,6 +12196,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -12144,6 +12217,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -12164,6 +12238,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -12183,6 +12258,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -12205,6 +12281,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -12224,6 +12301,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -15874,6 +15952,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -15893,6 +15972,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ],
@@ -15913,6 +15993,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -15930,6 +16011,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -15947,6 +16029,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -15967,6 +16050,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -15992,10 +16076,10 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid",
-          "imtIOS",
-          "imtIOSNew"
+          "imtIOS"
         ]
       }
     },
@@ -16013,6 +16097,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -16030,6 +16115,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16046,6 +16132,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16086,6 +16173,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -16108,6 +16196,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16124,6 +16213,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16140,6 +16230,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16156,6 +16247,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16172,6 +16264,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16188,6 +16281,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16204,6 +16298,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16223,6 +16318,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -16240,6 +16336,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16259,6 +16356,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16277,6 +16375,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ],
@@ -16361,6 +16460,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ],
@@ -16381,6 +16481,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ],
         "type": "manga",
@@ -16397,6 +16498,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ],
@@ -16416,6 +16518,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ],
         "type": "manga",
@@ -16435,6 +16538,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ],
         "type": "manga",
@@ -16451,6 +16555,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ],
         "type": "manga",
@@ -16467,6 +16572,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ],
         "type": "manga",
@@ -16483,6 +16589,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ],
         "type": "manga",
@@ -16499,6 +16606,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ],
         "type": "manga",
@@ -16518,6 +16626,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ],
         "type": "manga",
@@ -16535,6 +16644,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ],
         "type": "manga",
@@ -16558,6 +16668,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -16577,6 +16688,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16598,6 +16710,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16616,6 +16729,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16634,6 +16748,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari"
         ]
       }
@@ -16655,6 +16770,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -16678,6 +16794,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -16701,6 +16818,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "imtAndroid",
           "safari"
         ]
@@ -16723,6 +16841,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -16742,6 +16861,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -16761,6 +16881,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -16780,6 +16901,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -16799,6 +16921,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -16873,6 +16996,7 @@
         "platforms": [
           "chrome",
           "firefox",
+          "imtIOSNew",
           "safari",
           "imtAndroid"
         ]
@@ -18341,6 +18465,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-01T04:41:13.799Z",
+  "buildinConfigUpdatedAt": "2025-08-01T08:19:11.665Z",
   "latestVersion": "1.19.7"
 }
