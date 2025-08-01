@@ -1405,7 +1405,8 @@
         },
         {
           "models": [
-            "Qwen/Qwen3-235B-A22B-Instruct-2507"
+            "Qwen/Qwen3-235B-A22B-Instruct-2507",
+            "Qwen/Qwen3-30B-A3B-Instruct-2507"
           ],
           "bodyConfigs": {}
         },
@@ -11568,7 +11569,8 @@
     {
       "id": "mangaflame",
       "matches": [
-        "mangaflame.org"
+        "mangaflame.org",
+        "manhwa404.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -11576,7 +11578,6 @@
         "imageSelectors": [
           "#readerarea img"
         ],
-        "injectedCss": ".imt-image-status {top:1%!important;}",
         "platforms": [
           "chrome",
           "firefox",
@@ -12857,9 +12858,32 @@
       }
     },
     {
-      "id": "coursera",
-      "matches": [
-        "www.coursera.org"
+      "id": "coursera1",
+      "selectorMatches": [
+        ".rc-MetatagsWrapper .rc-VLPContainerWrapperCds"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": ".vjs-tech",
+        "loadingContainerSelector": ".rc-VideoControlsContainer",
+        "loadingStyle": "bottom: unset; top: 5%;",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;margin:0 12px 0 0!important;} .imt-quick-subtitle-pop-content {right: 75px !important;} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
+        },
+        "enableIOSFullScreenTextTrack": false,
+        "attachRule": {
+          "appendSelector": "[data-e2e='vlp-video-player']",
+          "injectedGlobalCSS": [
+            "video::cue {opacity: 0}"
+          ]
+        }
+      }
+    },
+    {
+      "id": "coursera2",
+      "selectorMatches": [
+        ".rc-MetatagsWrapper .rc-Course"
       ],
       "subtitleRule.add": {
         "type": "text_track",
@@ -18317,6 +18341,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-07-31T12:54:09.293Z",
+  "buildinConfigUpdatedAt": "2025-08-01T04:41:13.799Z",
   "latestVersion": "1.19.7"
 }
