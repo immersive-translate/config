@@ -2247,6 +2247,7 @@
     "toggleTranslatePage": "Alt+A",
     "toggleTranslateTheWholePage": "Alt+W",
     "toggleSidePanel": "Alt+S",
+    "openAiWritingModal": "Alt+I",
     "toggleOnlyTransation": "",
     "toggleTranslateToThePageEndImmediately": "",
     "toggleTranslationMask": "",
@@ -2901,6 +2902,8 @@
       "autoSwitchSubtitleWithSameLanguage": true,
       "enableIOSFullScreenTextTrack": true,
       "youtubeAutoEnableSubtitleAfterInstalledAt": "2024-04-25",
+      "isEnableAiSubtitleTip": true,
+      "freeAiSubtitleCacheEndTime": "2025-09-01",
       "velocityGroup": [
         1,
         3,
@@ -4474,12 +4477,12 @@
         "quickButtonRules": [
           {
             "appendSelector": "button[role=\"button\"]>div>svg<-parent<-parent<-parent<-parent",
-            "injectCSS": ".imt-quick-subtitle-pop-content { transform: unset !important; } .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } "
+            "injectCSS": ".imt-quick-subtitle-pop-content { transform: unset !important; } .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} "
           },
           {
             "appendSelector": "div<-[data-testid*=\"cellInnerDiv-tweet\"]->[data-testid*=\"immersive-tweet-ui-content-container\"] button[role=\"button\"]<-parent",
             "insertBeforeSelector": "div<-[data-testid*=\"cellInnerDiv-tweet\"]->[data-testid*=\"immersive-tweet-ui-content-container\"] button[role=\"button\"]",
-            "injectCSS": ".imt-quick-subtitle-button { margin: 0 6px !important; } .imt-quick-subtitle-pop-content { transform: translateY(calc(65%)) !important; right: 35px;  } .logo,.logo svg { height: 24px !important; width: 24px !important;}, .logo svg { margin-top: 2px !important; } "
+            "injectCSS": ".imt-quick-subtitle-button { margin: 0 6px !important; } .imt-quick-subtitle-pop-content { transform: translateY(calc(65%)) !important; right: 35px;  } .logo,.logo svg { height: 24px !important; width: 24px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important; right: 35px; top: 0} "
           }
         ]
       },
@@ -18465,6 +18468,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-01T08:19:11.665Z",
-  "latestVersion": "1.19.7"
+  "buildinConfigUpdatedAt": "2025-08-01T09:19:39.054Z",
+  "latestVersion": "1.20.1"
 }
