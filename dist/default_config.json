@@ -1395,7 +1395,8 @@
         {
           "models": [
             "qwen3-.*",
-            "Qwen3-.*"
+            "Qwen3-.*",
+            "qwen3:.*"
           ],
           "bodyConfigs": {
             "enable_thinking": false,
@@ -1407,7 +1408,9 @@
         {
           "models": [
             "Qwen/Qwen3-235B-A22B-Instruct-2507",
-            "Qwen/Qwen3-30B-A3B-Instruct-2507"
+            "Qwen/Qwen3-30B-A3B-Instruct-2507",
+            "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+            "Qwen/Qwen3-Coder-30B-A3B-Instruct"
           ],
           "bodyConfigs": {}
         },
@@ -13104,7 +13107,8 @@
         "9animetv.to",
         "hianime.to",
         "videostr.net",
-        "anthropic.skilljar.com"
+        "anthropic.skilljar.com",
+        "streameeeeee.site"
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
@@ -18468,6 +18472,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-01T09:19:13.000Z",
+  "buildinConfigUpdatedAt": "2025-08-02T04:20:36.477Z",
   "latestVersion": "1.20.1"
 }
