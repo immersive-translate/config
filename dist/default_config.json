@@ -8430,7 +8430,8 @@
         "header.enableTranslate": true
       },
       "injectedCss.add": [
-        "header.d-header {height: 6em !important;}"
+        "header.d-header {height: 6em !important;}",
+        ".topic-list .main-link .raw-topic-link > font {pointer-events:unset!important;}"
       ],
       "enableSiteAutoTranslate": true
     },
@@ -18472,6 +18473,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-02T04:20:36.477Z",
+  "buildinConfigUpdatedAt": "2025-08-03T12:23:41.591Z",
   "latestVersion": "1.20.1"
 }
