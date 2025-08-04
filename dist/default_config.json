@@ -5474,7 +5474,9 @@
         ".ytp-sfn-content div :last-child",
         "ytd-live-chat-frame",
         "yt-button-shape",
-        "ytd-comments-header-renderer"
+        "ytd-comments-header-renderer",
+        "yt-content-metadata-view-model",
+        "yt-description-preview-view-model button"
       ],
       "additionalExcludeSelectors.remove.[1.14.1]": [
         "ytd-live-chat-frame"
@@ -6929,7 +6931,8 @@
         "footer.ds-footer"
       ],
       "injectedCss": [
-        "a::before {position:relative!important;}"
+        "a::before {position:relative!important;}",
+        "[class^=button] span font {white-space:pre-wrap;}"
       ]
     },
     {
@@ -17940,6 +17943,30 @@
       }
     },
     {
+      "id": "edclub.com",
+      "matches": "www.edclub.com",
+      "excludeSelectors.add": [
+        ".vjs-text-track-display"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".vjs-text-track-display *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "hookType": "xhr",
+        "loadingContainerSelector": ".video-js",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container{height: 28px;display: flex;align-items: center;align-self: flex-end;}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-subs-caps-button",
+          "injectCSS": ".logo svg {height: 18px; width: 18px}"
+        }
+      }
+    },
+    {
       "id": "investopedia",
       "matches": "www.investopedia.com",
       "subtitleRule.add": {
@@ -18041,6 +18068,13 @@
       ],
       "additionalExcludeSelectors.remove": [
         "h1 br"
+      ]
+    },
+    {
+      "id": "jfrog",
+      "matches": "jfrog.com",
+      "stayOriginalSelectors.add": [
+        ".readercontent-topic-codeblockcontainer"
       ]
     },
     {
@@ -18456,8 +18490,18 @@
         ".btn"
       ],
       "_comment": "给部分网页开后门翻译 header标签"
+    },
+    {
+      "id": "text-track",
+      "matches": [
+        "www.typing.com"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video"
+      }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-04T11:29:07.401Z",
+  "buildinConfigUpdatedAt": "2025-08-04T16:04:16.244Z",
   "latestVersion": "1.20.1"
 }
