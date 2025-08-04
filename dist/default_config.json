@@ -499,7 +499,6 @@
     "https://pro.codewithandrea.com/[CodeWithAndrea]",
     "https://watch.hikaritv.xyz/[Hikaritv]",
     "https://university.lowstresshandling.com/[LowStressHandling]",
-    "https://subscription.packtpub.com/[Packtpub]",
     "https://learn.unity.com/[UnityLearn]",
     "https://www.medbridge.com/[Medbridge]",
     "https://anix.com.co/[anix]",
@@ -2381,7 +2380,7 @@
   ],
   "generalRule": {
     "_comment": "",
-    "floatEffectParagraphNum": 8,
+    "floatEffectParagraphNum": -1,
     "purifyRichHtml": true,
     "longBuildDomLength": 3000,
     "longBuildPageLength": 50,
@@ -3380,7 +3379,8 @@
       "i.fa",
       "i[class^=fa-]",
       ".google-symbols.notranslate",
-      "[aria-hidden=true]"
+      "[aria-hidden=true]",
+      ".imt-fb-container *"
     ],
     "translationClasses": [],
     "excludeTags": [
@@ -9792,30 +9792,6 @@
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
           "insertBeforeSelector": "div.vjs-subs-caps-button "
-        },
-        "attachRule": {
-          "appendSelector": "div[data-vjs-player]",
-          "injectedGlobalCSS": [
-            ".vjs-text-track-display { display: none !important; }"
-          ]
-        }
-      }
-    },
-    {
-      "id": "packtpub",
-      "matches": "subscription.packtpub.com",
-      "excludeSelectors": [
-        "div[data-vjs-player]"
-      ],
-      "mutationExcludeSelectors.add": [
-        "div[data-vjs-player] *"
-      ],
-      "subtitleRule.add": {
-        "type": "subsrt",
-        "subtitleUrlRegExp": "blob:https://subscription.packtpub.com",
-        "quickButtonRule": {
-          "appendSelector": ".vjs-control-bar",
-          "insertBeforeSelector": "div.vjs-subs-caps-button"
         },
         "attachRule": {
           "appendSelector": "div[data-vjs-player]",
@@ -18114,6 +18090,15 @@
       ]
     },
     {
+      "id": "gta5-mods",
+      "matches": [
+        "www.gta5-mods.com"
+      ],
+      "excludeSelectors.add": [
+        "#main-nav"
+      ]
+    },
+    {
       "id": "cooperativa",
       "matches": [
         "cooperativa.cl"
@@ -18473,6 +18458,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-03T12:23:41.591Z",
+  "buildinConfigUpdatedAt": "2025-08-04T11:29:07.401Z",
   "latestVersion": "1.20.1"
 }
