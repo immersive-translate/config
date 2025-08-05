@@ -709,7 +709,17 @@
       }
     },
     {
-      "condition": "abTagNumber<1 && installedAtTimestamp>1751846400000",
+      "condition": "abTagNumber<1 && installedAtTimestamp<1754438400000",
+      "advanceConfig": {
+        "generalRule": {
+          "selectionTranslation.add": {
+            "enable": true
+          }
+        }
+      }
+    },
+    {
+      "condition": "installedAtTimestamp>1754438400000",
       "advanceConfig": {
         "generalRule": {
           "selectionTranslation.add": {
@@ -18502,6 +18512,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-04T16:04:16.244Z",
+  "buildinConfigUpdatedAt": "2025-08-05T03:36:00.147Z",
   "latestVersion": "1.20.1"
 }
