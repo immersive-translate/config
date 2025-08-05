@@ -9697,7 +9697,11 @@
     {
       "id": "wiley",
       "matches": "*.wiley.com",
+      "excludeMatches": [
+        "onlinelibrary.wiley.com/action/downloadSupplement*"
+      ],
       "excludeSelectors.add": [
+        ".loa-authors",
         ".MuiBox-root > .MuiTypography-root.MuiTypography-body2"
       ]
     },
@@ -18045,15 +18049,6 @@
       "skipTrailTextRegex": "\\.{3}"
     },
     {
-      "id": "no-translate-username",
-      "matches": [
-        "onlinelibrary.wiley.com"
-      ],
-      "excludeSelectors.add": [
-        ".loa-authors"
-      ]
-    },
-    {
       "id": "futuretools",
       "matches": "www.futuretools.io",
       "globalStyles": {
@@ -18118,28 +18113,6 @@
       ]
     },
     {
-      "id": "txt",
-      "matches": [
-        "*://*/*.txt",
-        "file://*/*.txt"
-      ],
-      "selectorMatches": [
-        "body > pre",
-        ".transcripts > pre"
-      ],
-      "longBuildPageLength": 1000,
-      "mutationExcludeSelectors.add": [
-        "body"
-      ],
-      "excludeSelectors.add": [
-        ".api-code"
-      ],
-      "isTransformPreTagNewLine": true,
-      "excludeTags.remove": [
-        "PRE"
-      ]
-    },
-    {
       "id": "kemono.cr",
       "matches": [
         "kemono.cr"
@@ -18164,6 +18137,39 @@
       ],
       "injectedCss.add": [
         "font.notranslate {display:unset!important}"
+      ]
+    },
+    {
+      "id": "macro",
+      "matches": [
+        "macro.com"
+      ],
+      "likePreSelectors.add": [
+        "[data-block-type=md] [style^=scrollbar-gutter]"
+      ],
+      "forceFormatPre": true,
+      "isTransformPreTagNewLine": true
+    },
+    {
+      "id": "txt",
+      "matches": [
+        "*://*/*.txt",
+        "file://*/*.txt"
+      ],
+      "selectorMatches": [
+        "body > pre",
+        ".transcripts > pre"
+      ],
+      "longBuildPageLength": 1000,
+      "mutationExcludeSelectors.add": [
+        "body"
+      ],
+      "excludeSelectors.add": [
+        ".api-code"
+      ],
+      "isTransformPreTagNewLine": true,
+      "excludeTags.remove": [
+        "PRE"
       ]
     },
     {
@@ -18527,6 +18533,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-05T08:36:02.569Z",
+  "buildinConfigUpdatedAt": "2025-08-05T13:27:34.569Z",
   "latestVersion": "1.20.3"
 }
