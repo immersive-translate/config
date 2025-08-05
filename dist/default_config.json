@@ -774,6 +774,7 @@
           {
             "enable": true,
             "displayPosition": "sidePanel",
+            "forcePinSidePanel": true,
             "expireTime": "2025-08-15",
             "id": "reward-center",
             "excludeMatches": [
@@ -1942,7 +1943,17 @@
       "APIKEY": "ollama",
       "bodyConfigs": {
         "keep_alive": "5m"
-      }
+      },
+      "modelsOverrides.add": [
+        {
+          "models": [
+            "deepseek-r1:.+b"
+          ],
+          "bodyConfigs": {
+            "think": "false"
+          }
+        }
+      ]
     },
     "groq": {
       "extends": "ai",
@@ -2391,6 +2402,7 @@
   "generalRule": {
     "_comment": "",
     "floatEffectParagraphNum": -1,
+    "floatBlockEffectParagraphs": 4,
     "purifyRichHtml": true,
     "longBuildDomLength": 3000,
     "longBuildPageLength": 50,
@@ -4254,6 +4266,9 @@
         "#right-navigation",
         "#p-associated-pages",
         ".vector-header"
+      ],
+      "additionalExcludeSelectors.add": [
+        ".lazy-image-placeholder"
       ],
       "stayOriginalSelectors": [
         ".chemf",
@@ -18512,6 +18527,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-05T03:36:00.147Z",
-  "latestVersion": "1.20.1"
+  "buildinConfigUpdatedAt": "2025-08-05T08:00:27.194Z",
+  "latestVersion": "1.20.2"
 }
