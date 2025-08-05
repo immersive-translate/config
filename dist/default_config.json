@@ -2573,8 +2573,8 @@
       "triggerMode": "mini",
       "triggerModeForIcon": "hover",
       "proService": {
-        "service": "gemini-pro",
-        "model": "gemini-2.5-flash"
+        "service": "openai-pro",
+        "model": "gpt-4.1-mini"
       },
       "commonService": {
         "service": "zhipu",
@@ -18527,6 +18527,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-05T08:11:55.000Z",
+  "buildinConfigUpdatedAt": "2025-08-05T08:36:02.569Z",
   "latestVersion": "1.20.3"
 }
