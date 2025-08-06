@@ -8987,7 +8987,9 @@
         ".km-listitem--large {height:unset !important;}",
         ".km-listitem--large .jWyUHl {height:unset !important;}",
         "[role=listitem] {overflow:scroll;}",
-        "[role=listitem] div {-webkit-line-clamp:unset;}"
+        "[role=listitem] div {-webkit-line-clamp:unset;}",
+        "[class*='km-listitem--medium'] {height:unset !important;}",
+        ".MuiListItem-root a > div :nth-child(2) {height:unset !important;}"
       ]
     },
     {
@@ -9931,6 +9933,29 @@
           "firefox",
           "imtIOSNew",
           "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
+      "id": "klmanga",
+      "matches": [
+        "klmanga.ge",
+        "klmanga.my",
+        "klmanga.rs"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".render .z_content img",
+          ".render img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtIOSNew",
           "imtAndroid"
         ]
       }
@@ -11438,7 +11463,8 @@
         ],
         "opImageType": "append",
         "inValidSrcRegex": [
-          "/100x100/"
+          "/100x100/",
+          "/user-profile/"
         ]
       },
       "pageLangDetectWeight": {
@@ -12013,26 +12039,6 @@
         "type": "manga",
         "imageSelectors": [
           "img.site-reader__image[src]"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
-      "id": "klmanga.my",
-      "matches": [
-        "klmanga.my"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".render .z_content img"
         ],
         "platforms": [
           "chrome",
@@ -16493,23 +16499,6 @@
       }
     },
     {
-      "id": "klmanga",
-      "matches": "klmanga.rs",
-      "imageRule.add": {
-        "enable": true,
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ],
-        "type": "manga",
-        "imageSelectors": [
-          ".render img"
-        ]
-      }
-    },
-    {
       "id": "xbato",
       "matches": "xbato.com",
       "imageRule.add": {
@@ -17018,8 +17007,31 @@
           "imtIOSNew",
           "safari",
           "imtAndroid"
+        ],
+        "inValidSrcRegex": [
+          "/bg_detail.png"
         ]
       }
+    },
+    {
+      "id": "xgo",
+      "matches": [
+        "www.xgo.ing"
+      ],
+      "excludeTags.remove": [
+        "PRE"
+      ],
+      "injectedCss.add": "[class*='line-clamp']{-webkit-line-clamp:unset !important;}"
+    },
+    {
+      "id": "nebula.starbreeze",
+      "matches": [
+        "https://nebula.starbreeze.com/support"
+      ],
+      "injectedCss.add": [
+        "main section>div {overflow-y:scroll !important;}",
+        "main section>div::-webkit-scrollbar {display: none;width: 0px;background: transparent;}"
+      ]
     },
     {
       "id": "app.schildi.chat",
@@ -18536,6 +18548,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-06T03:52:32.521Z",
+  "buildinConfigUpdatedAt": "2025-08-06T10:44:15.374Z",
   "latestVersion": "1.20.3"
 }
