@@ -285,7 +285,7 @@
     "enableMaxTips": true
   },
   "supportedMangaSites": [
-    "https://www.pixiv.net/manga[Pixiv][chrome,firefox,imtAndroid,imtIOSNew]",
+    "https://www.pixiv.net/manga[Pixiv][chrome,firefox,imtAndroid]",
     "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
     "https://readcomiconline.li[ReadComicOnline][]",
@@ -11452,7 +11452,6 @@
         "platforms": [
           "chrome",
           "firefox",
-          "imtIOSNew",
           "imtAndroid"
         ],
         "loadingSelectors": [
@@ -18548,6 +18547,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-06T10:44:15.374Z",
+  "buildinConfigUpdatedAt": "2025-08-06T12:05:31.366Z",
   "latestVersion": "1.20.3"
 }
