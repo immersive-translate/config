@@ -10367,7 +10367,8 @@
       "matches": [
         "wnacg.com",
         "www.wnacg.com",
-        "www.wn02.cc"
+        "www.wn02.cc",
+        "www.wnacg.ru"
       ],
       "imageRule.add": {
         "enable": true,
@@ -11413,7 +11414,8 @@
         "type": "manga",
         "imageSelectors": [
           "[data-page] > img[src]",
-          "[dir='vert'] img",
+          "[dir='vert'] > div > div:first-child img",
+          "[dir='vert'] > div > div:nth-child(2) img",
           ".img-wrapper img[class='page']",
           ".work-thumb",
           "[role=\"presentation\"] img",
@@ -14149,7 +14151,8 @@
         ],
         "quickButtonRule": {
           "injectCSS": ".label { display: none; }",
-          "appendSelector": ".videoPlayer-Rumble-cls > div > div:nth-child(4) > div:nth-child(3)"
+          "appendSelector": ".videoPlayer-Rumble-cls > div > div:nth-child(5) > div:nth-child(3)",
+          "insertBeforeSelector": "[title='Playback settings']"
         }
       }
     },
@@ -18533,6 +18536,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-05T13:27:34.569Z",
+  "buildinConfigUpdatedAt": "2025-08-06T03:52:32.521Z",
   "latestVersion": "1.20.3"
 }
