@@ -15073,6 +15073,13 @@
       }
     },
     {
+      "id": "orvehogar",
+      "matches": [
+        "www.orvehogar.com"
+      ],
+      "injectedCss": "h3.vtex-product-summary-2-x-productNameContainer{height: unset!important;}"
+    },
+    {
       "id": "coindesk",
       "matches": [
         "www.coindesk.com"
@@ -17786,7 +17793,8 @@
         "erp.91miaoshou.com",
         "jddonline.com",
         "cis.vemic.com",
-        "scripod.com"
+        "scripod.com",
+        "drjoedispenza.com"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
@@ -17799,7 +17807,8 @@
         ".plugin-product-comment-content {height:unset!important;-webkit-line-clamp:unset!important;}",
         "div.jdd-product-info-box {height:unset!important;}",
         "span.hotData-text { -webkit-line-clamp: unset !important; line-clamp: unset !important;}",
-        "div.line-clamp-4 { -webkit-line-clamp: unset; max-height: unset;}"
+        "div.line-clamp-4 { -webkit-line-clamp: unset; max-height: unset;}",
+        "[class*='titleTypography'] {-webkit-line-clamp: unset !important;}"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -18547,6 +18556,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-06T12:05:31.366Z",
+  "buildinConfigUpdatedAt": "2025-08-07T09:11:23.315Z",
   "latestVersion": "1.20.3"
 }
