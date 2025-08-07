@@ -8468,7 +8468,9 @@
       "matches": "feedly.com",
       "globalStyles": {
         ".TitleOnlyLayout,.SelectedEntryScroller > div": "height:unset !important;",
-        ".EntrySummary--u4,.EntrySummary--u5": "-webkit-line-clamp: unset;max-height:unset;"
+        ".EntrySummary--u4,.EntrySummary--u5": "-webkit-line-clamp: unset;max-height:unset;",
+        ".EntryTitleLink": "-webkit-line-clamp: unset;",
+        ".SelectedEntryScroller > div :nth-child(2) :last-child": "-webkit-line-clamp: unset !important;"
       },
       "excludeSelectors": [
         ".Leftnav"
@@ -16190,7 +16192,9 @@
         "manwadd.cc",
         "manwadb.cc",
         "manwadb.xyz",
-        "manwath.cc"
+        "manwath.cc",
+        "manwa.me",
+        "manwa*.*"
       ],
       "imageRule.add": {
         "enable": true,
@@ -18556,6 +18560,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-07T09:11:23.315Z",
+  "buildinConfigUpdatedAt": "2025-08-07T09:27:00.203Z",
   "latestVersion": "1.20.3"
 }
