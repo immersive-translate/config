@@ -1432,6 +1432,19 @@
           "bodyConfigs": {
             "temperature.remove": ""
           }
+        },
+        {
+          "models": [
+            "gpt-5",
+            "gpt-5-mini",
+            "gpt-5-nano"
+          ],
+          "bodyConfigs": {
+            "reasoning": {
+              "effort": "minimal"
+            },
+            "temperature.remove": ""
+          }
         }
       ]
     },
@@ -12162,7 +12175,8 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          ".pt-img img"
+          ".pt-img img",
+          ".slick-slide img"
         ]
       },
       "platforms": [
@@ -16608,8 +16622,7 @@
         "platforms": [
           "chrome",
           "firefox",
-          "imtIOSNew",
-          "safari"
+          "imtIOSNew"
         ],
         "type": "manga",
         "imageSelectors": [
@@ -16626,7 +16639,8 @@
           "chrome",
           "firefox",
           "imtIOSNew",
-          "safari"
+          "safari",
+          "imtAndroid"
         ],
         "type": "manga",
         "imageSelectors": [
@@ -17894,7 +17908,8 @@
         "learn.ni.com",
         "cgcookie.com",
         "academy.yoast.com",
-        "courses.mavenanalytics.io"
+        "courses.mavenanalytics.io",
+        "apclassroom.collegeboard.org"
       ],
       "selectorMatches": [
         ".wistia_embed"
@@ -17910,9 +17925,6 @@
       "preTranslateLimiter.add_v.[1.12.1]": {
         "header.enableTranslate": true,
         "side.enableTranslate": true
-      },
-      "selectionTranslation.add": {
-        "enable": false
       },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
@@ -18561,6 +18573,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-08T03:58:42.000Z",
+  "buildinConfigUpdatedAt": "2025-08-08T06:32:24.157Z",
   "latestVersion": "1.20.4"
 }
