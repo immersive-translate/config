@@ -1678,7 +1678,7 @@
       "prompt": "Translate the text to {{to}} Language, please do not explain my original text.:\n\n{{text}}",
       "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}",
       "model": "gpt-4o-mini",
-      "proModel": "gpt-4.1-mini",
+      "proModel": "gpt-5-mini",
       "models": "gpt-5|gpt-5-chat|gpt-5-mini|gpt-5-nano|gpt-4.1-mini|gpt-4o-mini|gpt-4o|gpt-4.1|gpt-4.1-nano|gpt-4.5-preview",
       "proLimit": 10,
       "overrides": [
@@ -2162,9 +2162,11 @@
       "visible": false
     },
     "openai-pro": {
-      "name": "GPT-4.1 mini",
+      "name": "GPT-5 mini",
       "type": "openai",
       "group": "pro",
+      "proModel": "gpt-5-mini",
+      "model": "gpt-5-mini",
       "extends": "openai",
       "provider": "pro",
       "visible": true
@@ -2204,12 +2206,13 @@
       "visible": true
     },
     "openai-max": {
-      "name": "GPT-4.1",
+      "name": "GPT-5",
       "type": "openai",
       "group": "max",
       "extends": "openai",
       "provider": "pro",
-      "proModel": "gpt-4.1",
+      "proModel": "gpt-5-chat",
+      "model": "gpt-5-chat",
       "visible": true
     },
     "claude-max": {
@@ -2585,7 +2588,7 @@
       "triggerModeForIcon": "hover",
       "proService": {
         "service": "openai-pro",
-        "model": "gpt-4.1-mini"
+        "model": "gpt-5-mini"
       },
       "commonService": {
         "service": "zhipu",
@@ -18571,6 +18574,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-08T07:41:24.517Z",
+  "buildinConfigUpdatedAt": "2025-08-08T08:26:30.538Z",
   "latestVersion": "1.20.4"
 }
