@@ -596,8 +596,10 @@
       "https://onboarding.immersivetranslate.com*"
     ],
     "guideContentBlockUrls": [
+      "https://test-onboarding.immersivetranslate.com/*/tutorial/*",
       "https://test-onboarding.immersivetranslate.com/*/intro/*",
       "https://test-onboarding.immersivetranslate.com/*/init/*",
+      "https://onboarding.immersivetranslate.com/*/tutorial/*",
       "https://onboarding.immersivetranslate.com/*/intro/*",
       "https://onboarding.immersivetranslate.com/*/init/*"
     ],
@@ -18574,6 +18576,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-08T08:26:30.538Z",
+  "buildinConfigUpdatedAt": "2025-08-08T10:28:59.582Z",
   "latestVersion": "1.20.4"
 }
