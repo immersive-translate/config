@@ -1440,9 +1440,7 @@
             "gpt-5-nano"
           ],
           "bodyConfigs": {
-            "reasoning": {
-              "effort": "minimal"
-            },
+            "reasoning_effort": "minimal",
             "temperature.remove": ""
           }
         }
@@ -1681,7 +1679,7 @@
       "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}",
       "model": "gpt-4o-mini",
       "proModel": "gpt-4.1-mini",
-      "models": "gpt-4.1-mini|gpt-4o-mini|gpt-4o|gpt-4.1|gpt-4.1-nano|gpt-4.5-preview",
+      "models": "gpt-5|gpt-5-chat|gpt-5-mini|gpt-5-nano|gpt-4.1-mini|gpt-4o-mini|gpt-4o|gpt-4.1|gpt-4.1-nano|gpt-4.5-preview",
       "proLimit": 10,
       "overrides": [
         {
@@ -18573,6 +18571,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-08T06:32:24.157Z",
+  "buildinConfigUpdatedAt": "2025-08-08T07:31:31.010Z",
   "latestVersion": "1.20.4"
 }
