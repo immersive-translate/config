@@ -11454,7 +11454,8 @@
         "platforms": [
           "chrome",
           "firefox",
-          "imtAndroid"
+          "imtAndroid",
+          "imtIOSNew"
         ],
         "loadingSelectors": [
           "[data-page]",
@@ -18560,6 +18561,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-07T09:27:00.203Z",
-  "latestVersion": "1.20.3"
+  "buildinConfigUpdatedAt": "2025-08-08T03:59:16.694Z",
+  "latestVersion": "1.20.4"
 }
