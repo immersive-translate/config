@@ -2166,11 +2166,11 @@
       "visible": false
     },
     "openai-pro": {
-      "name": "GPT-4.1 mini",
+      "name": "GPT-5 mini",
       "type": "openai",
       "group": "pro",
-      "proModel": "gpt-4.1-mini",
-      "model": "gpt-4.1-mini",
+      "proModel": "gpt-5-mini",
+      "model": "gpt-5-mini",
       "extends": "openai",
       "provider": "pro",
       "visible": true
@@ -2210,13 +2210,13 @@
       "visible": true
     },
     "openai-max": {
-      "name": "GPT-4.1",
+      "name": "GPT-5",
       "type": "openai",
       "group": "max",
       "extends": "openai",
       "provider": "pro",
-      "proModel": "gpt-4.1",
-      "model": "gpt-4.1",
+      "proModel": "gpt-5-chat",
+      "model": "gpt-5-chat",
       "visible": true
     },
     "claude-max": {
@@ -18578,6 +18578,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-09T05:28:00.959Z",
+  "buildinConfigUpdatedAt": "2025-08-09T13:15:25.795Z",
   "latestVersion": "1.20.4"
 }
