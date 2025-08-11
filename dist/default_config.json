@@ -6212,7 +6212,8 @@
         ".text-content",
         ".message",
         ".reply-markup-button-text",
-        ".bot-commands-list-element-description"
+        ".bot-commands-list-element-description",
+        "[class*='tabs-tab page-password active']"
       ],
       "extraBlockSelectors.add": [
         ".message.spoilers-container em",
@@ -9721,6 +9722,23 @@
       }
     },
     {
+      "id": "common2.pdfWebPage",
+      "matches": [
+        "https://obgyn.onlinelibrary.wiley.com/doi/pdf/*",
+        "onlinelibrary.wiley.com/doi/pdf/*"
+      ],
+      "selectorMatches": [
+        "[id=myPdfIframe][src*=pdf]",
+        "#article [type='application/pdf'][src*=pdf]",
+        ".textFrame [type='application/pdf'][src*=pdf]",
+        ".ggPdf"
+      ],
+      "pdfUrlExtractRule": {
+        "selector": "iframe[src*=pdf]",
+        "attribute": "src"
+      }
+    },
+    {
       "id": "wiley",
       "matches": "*.wiley.com",
       "excludeMatches": [
@@ -9997,6 +10015,26 @@
           "chrome",
           "firefox",
           "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
+      "id": "readallcomics",
+      "matches": "readallcomics.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "center > p .bgimglazy-load"
+        ],
+        "inValidSrcRegex": [
+          "preloader.gif"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
           "safari",
           "imtAndroid"
         ]
@@ -11582,6 +11620,13 @@
         "disableMarkSelector": ".react-swipe-container",
         "intersectionRootMargin": "0px 0px 200% 0px"
       }
+    },
+    {
+      "id": "writing.com",
+      "matches": "writing.com",
+      "excludeTags.remove": [
+        "PRE"
+      ]
     },
     {
       "id": "comic-fuz",
@@ -18475,22 +18520,6 @@
       }
     },
     {
-      "id": "common2.pdfWebPage",
-      "matches": [
-        "https://obgyn.onlinelibrary.wiley.com/doi/pdf/*"
-      ],
-      "selectorMatches": [
-        "[id=myPdfIframe][src*=pdf]",
-        "#article [type='application/pdf'][src*=pdf]",
-        ".textFrame [type='application/pdf'][src*=pdf]",
-        ".ggPdf"
-      ],
-      "pdfUrlExtractRule": {
-        "selector": "iframe[src*=pdf]",
-        "attribute": "src"
-      }
-    },
-    {
       "id": "common4.pdfWebPage",
       "selectorMatches": [
         "#statements-pdf"
@@ -18582,6 +18611,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-10T08:23:55.915Z",
+  "buildinConfigUpdatedAt": "2025-08-11T10:37:56.319Z",
   "latestVersion": "1.20.4"
 }
