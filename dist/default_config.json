@@ -98,6 +98,7 @@
   "enableAiAssistant": true,
   "enableSelfServiceReport": true,
   "enablePerformanceReport": true,
+  "enableProSecretAPIKey": false,
   "performanceBlockUrls": [
     "https://www.chase.com",
     "https://www.bankofamerica.com",
@@ -3703,6 +3704,7 @@
         "meta[name='immersive-translate-pdf-viewer'][content='true']"
       ],
       "enableRichTranslate": false,
+      "allowInnerInvoke": true,
       "matches": [
         "https://app.immersivetranslate.com/pdf",
         "https://app.immersivetranslate.cn/pdf",
@@ -3844,7 +3846,8 @@
       "blockMinWordCount": 1,
       "containerMinTextCount": 1,
       "wrapperPrefix": "<br />",
-      "targetWrapperTag": "span"
+      "targetWrapperTag": "span",
+      "allowInnerInvoke": true
     },
     {
       "id": "isEbookBuilder",
@@ -3868,6 +3871,7 @@
       "targetWrapperTag": "span",
       "isInjectVersion": "true",
       "enableRichTranslate": true,
+      "allowInnerInvoke": true,
       "selectorMatches": [
         "meta[name='immersive-translate-ebook-builder'][content='true']"
       ],
@@ -4003,6 +4007,7 @@
         ".mmd-context-menu",
         ".preview-original-body *"
       ],
+      "allowInnerInvoke": true,
       "skipIgnoreSelectors": [
         ".original-body"
       ],
@@ -18611,6 +18616,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-11T10:37:56.319Z",
-  "latestVersion": "1.20.4"
+  "buildinConfigUpdatedAt": "2025-08-11T14:32:31.105Z",
+  "latestVersion": "1.20.5"
 }
