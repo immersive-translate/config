@@ -3980,6 +3980,7 @@
       ],
       "isInjectVersion": true,
       "isInjectMeta": true,
+      "allowInnerInvoke": true,
       "waitForSelectorsTimeout": 1
     },
     {
@@ -3994,6 +3995,7 @@
       ],
       "isInjectVersion": true,
       "isInjectMeta": true,
+      "allowInnerInvoke": true,
       "waitForSelectorsTimeout": 1
     },
     {
@@ -18616,6 +18618,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-11T14:55:14.000Z",
+  "buildinConfigUpdatedAt": "2025-08-12T02:07:27.481Z",
   "latestVersion": "1.20.6"
 }
