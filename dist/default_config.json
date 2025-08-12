@@ -9987,11 +9987,29 @@
       }
     },
     {
+      "id": "greentoon.net",
+      "matches": [
+        "greentoon.net"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".toon_content img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "klmanga",
       "matches": [
-        "klmanga.ge",
-        "klmanga.my",
-        "klmanga.rs"
+        "klmanga.*"
       ],
       "imageRule.add": {
         "enable": true,
@@ -9999,6 +10017,9 @@
         "imageSelectors": [
           ".render .z_content img",
           ".render img"
+        ],
+        "inValidSrcRegex": [
+          "load.gif"
         ],
         "platforms": [
           "chrome",
@@ -11080,7 +11101,10 @@
         "loadingSelectors": [
           "div"
         ],
-        "intersectionRootMargin": "0px 0px 100% 0px"
+        "intersectionRootMargin": "0px 0px 100% 0px",
+        "inValidSrcRegex": [
+          ".svg"
+        ]
       }
     },
     {
@@ -18618,6 +18642,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-12T02:07:27.481Z",
+  "buildinConfigUpdatedAt": "2025-08-12T07:56:52.996Z",
   "latestVersion": "1.20.6"
 }
