@@ -379,7 +379,9 @@
     "https://www.baozimh.com/[Fenoxo][chrome,firefox,safari,imtAndroid]",
     "https://ww2.mangafreak.me/[MangaFreak][chrome,firefox,safari,imtAndroid]",
     "https://www.cmoa.jp/[cmoa][chrome,firefox,safari,imtAndroid]",
-    "https://comic-gardo.com/[ComicGardo][chrome,firefox,safari,imtAndroid]"
+    "https://comic-gardo.com/[ComicGardo][chrome,firefox,safari,imtAndroid]",
+    "https://booklive.jp/[Booklive][chrome,firefox,safari,imtAndroid]",
+    "https://www.mrblue.com/[MrBlue][chrome,firefox,safari,imtAndroid]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -9065,13 +9067,6 @@
       }
     },
     {
-      "id": "semanticscholar",
-      "matches": "*.semanticscholar.org",
-      "excludeSelectors.add": [
-        "[class='sc-jSFjdj sc-gKAaRy dYGhuI fTsuzH']"
-      ]
-    },
-    {
       "id": "uni-trier",
       "matches": "dblp.uni-trier.de",
       "selectors": [
@@ -10016,7 +10011,8 @@
         "type": "manga",
         "imageSelectors": [
           ".render .z_content img",
-          ".render img"
+          ".render img",
+          ".z_content img"
         ],
         "inValidSrcRegex": [
           "load.gif"
@@ -10948,6 +10944,16 @@
           "div"
         ],
         "intersectionRootMargin": "0px 0px 200% 0px"
+      }
+    },
+    {
+      "id": "mrblue",
+      "matches": "*.mrblue.com",
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          "#root img"
+        ]
       }
     },
     {
@@ -12254,7 +12260,8 @@
     {
       "id": "cmoa",
       "matches": [
-        "www.cmoa.jp"
+        "www.cmoa.jp",
+        "booklive.jp"
       ],
       "imageRule.add": {
         "enable": true,
@@ -18642,6 +18649,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-12T07:56:52.996Z",
+  "buildinConfigUpdatedAt": "2025-08-12T11:19:07.372Z",
   "latestVersion": "1.20.6"
 }
