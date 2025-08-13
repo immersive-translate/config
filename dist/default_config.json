@@ -3409,7 +3409,8 @@
       ".visuallyhidden",
       ".sider-search-inner.gpt-light",
       ".fb-ads-block.ads-in-text",
-      "#stageTime"
+      "#stageTime",
+      ".example-header"
     ],
     "mouseHoverExcludeSelectors": [
       "rp",
@@ -18508,13 +18509,13 @@
     {
       "id": "deepFrameTranslate",
       "matches": [
-        "online.vitalsource.com",
         "anarchothaumaturgist.itch.io",
         "darkpetal16.itch.io",
         "registry.khronos.org",
         "achieve.macmillanlearning.com",
         "mail.shanghai.*",
-        "help.autodesk.com"
+        "help.autodesk.com",
+        "*.vitalsource.com"
       ],
       "enableDeepFrameTranslatePage": true
     },
@@ -18649,6 +18650,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-12T11:19:07.372Z",
+  "buildinConfigUpdatedAt": "2025-08-13T04:31:42.480Z",
   "latestVersion": "1.20.6"
 }
