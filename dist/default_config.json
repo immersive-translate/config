@@ -97,7 +97,7 @@
   "cache": true,
   "enableAiAssistant": true,
   "enableSelfServiceReport": true,
-  "enablePerformanceReport": true,
+  "enablePerformanceReport": false,
   "enableProSecretAPIKey": false,
   "performanceBlockUrls": [
     "https://www.chase.com",
@@ -1751,7 +1751,16 @@
       "translationEnableRichTranslate": true,
       "enableAIContext": false,
       "enableRichGlossaries": false,
-      "provider": "pro"
+      "provider": "pro",
+      "langOverrides.add_v.[1.19.1]": [
+        {
+          "id": "zh-CN2ru"
+        },
+        {
+          "id": "auto2ru"
+        }
+      ],
+      "_comment": "让1.3.4之后的版本才能继承ai的配置，这个的配置顺序要高于openai默认配置"
     },
     "openai.add_v.[1.15.3]": {
       "defaultMaxTextGroupLengthPerRequest": 4,
@@ -2209,7 +2218,7 @@
       "visible": true
     },
     "deepl-pro": {
-      "name": "DeepL (Next-gen)",
+      "name": "DeepL Pro",
       "type": "deepl",
       "group": "pro",
       "extends": "deepl",
@@ -8574,7 +8583,6 @@
         "body"
       ],
       "isTransformPreTagNewLine": true,
-      "normalizeBody": true,
       "forceFormatPre": true,
       "urlChangeDelay": 400,
       "mutationConfig.add": {
@@ -15506,7 +15514,8 @@
       ],
       "extraInlineSelectors.add": [
         "ms-cmark-node > strong > ms-cmark-node",
-        "p ms-cmark-node"
+        "p ms-cmark-node",
+        "span > button"
       ],
       "atomicBlockSelectors.add": [
         "p ms-cmark-node"
@@ -18642,14 +18651,18 @@
     {
       "id": "text-track",
       "matches": [
-        "www.typing.com"
+        "www.typing.com",
+        "*.video-stream-hosting.de",
+        "*.thieme.de"
       ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
         "type": "text_track",
         "videoPlayerSelector": "video"
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-13T04:31:42.480Z",
+  "buildinConfigUpdatedAt": "2025-08-14T11:51:24.322Z",
   "latestVersion": "1.20.6"
 }
