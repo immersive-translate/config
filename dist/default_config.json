@@ -18293,6 +18293,22 @@
       "isTransformPreTagNewLine": true
     },
     {
+      "id": "read.amazon",
+      "matches": "read.amazon.com",
+      "extraInlineSelectors.add": [
+        "span.kg-a11y-rel[role=text]"
+      ],
+      "atomicBlockSelectors.add": [
+        "span.kg-a11y-rel[role=text]"
+      ],
+      "enableRichTranslate": false,
+      "injectedCss.add": [
+        "font { color:#333!important; white-space: pre-wrap;}",
+        "p > font { position:absolute;left:0;right:0; }",
+        ".kg-a11y-rel { background:white!important; }"
+      ]
+    },
+    {
       "id": "txt",
       "matches": [
         "*://*/*.txt",
@@ -18663,6 +18679,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-14T11:51:24.322Z",
+  "buildinConfigUpdatedAt": "2025-08-14T15:55:30.558Z",
   "latestVersion": "1.20.6"
 }
