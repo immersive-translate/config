@@ -18293,6 +18293,11 @@
       "isTransformPreTagNewLine": true
     },
     {
+      "id": "spicychat.ai",
+      "matches": "spicychat.ai",
+      "isTranslateTitle": false
+    },
+    {
       "id": "read.amazon",
       "matches": "read.amazon.com",
       "extraInlineSelectors.add": [
@@ -18679,6 +18684,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-14T15:55:30.558Z",
+  "buildinConfigUpdatedAt": "2025-08-15T13:45:32.221Z",
   "latestVersion": "1.20.6"
 }
