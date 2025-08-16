@@ -730,7 +730,7 @@
       "advanceConfig": {
         "generalRule": {
           "selectionTranslation.add": {
-            "enable": true
+            "enable": false
           }
         }
       }
@@ -18684,6 +18684,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-15T13:45:32.221Z",
+  "buildinConfigUpdatedAt": "2025-08-16T15:39:31.806Z",
   "latestVersion": "1.20.6"
 }
