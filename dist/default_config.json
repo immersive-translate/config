@@ -5232,8 +5232,8 @@
       },
       "aiWriting.add": {
         "scene": "github-issue",
-        "appendSelector": ".Footer-module__childrenStyling--ySU6Z",
-        "insertBeforeSelector": ".IssueActions-module__IssueActionsButtonGroup--k8eny",
+        "appendSelector": ".Footer-module__childrenStyling--cH0iq",
+        "insertBeforeSelector": ".IssueActions-module__IssueActionsButtonGroup--Usbpc",
         "titleSelector": ".prc-Heading-Heading-6CmGO .markdown-title",
         "contentSelector": "#issue-body-viewer .markdown-body",
         "commentSelector": ".react-issue-comment",
@@ -18684,6 +18684,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-16T15:39:31.806Z",
+  "buildinConfigUpdatedAt": "2025-08-17T11:00:13.487Z",
   "latestVersion": "1.20.6"
 }
