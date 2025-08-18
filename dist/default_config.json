@@ -726,11 +726,11 @@
       }
     },
     {
-      "condition": "installedAtTimestamp>1754438400000",
+      "condition": "versionNumber > 12006 && installedAtTimestamp>1754438400000",
       "advanceConfig": {
         "generalRule": {
           "selectionTranslation.add": {
-            "enable": false
+            "enable": true
           }
         }
       }
@@ -5162,7 +5162,8 @@
         "[data-testid='beginners-playlist-section']",
         "[data-testid='getting-started-checklist-section']",
         "[data-testid='docs-section']",
-        "[data-testid='recommendations-section']"
+        "[data-testid='recommendations-section']",
+        ".Layout-main react-partial pre"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -5230,6 +5231,7 @@
         ],
         "side.enableTranslate": true
       },
+      "isTransformPreTagNewLine": true,
       "aiWriting.add": {
         "scene": "github-issue",
         "appendSelector": ".Footer-module__childrenStyling--cH0iq",
@@ -14431,7 +14433,7 @@
       ],
       "aiWriting.add": {
         "scene": "email",
-        "appendSelector": "#basic > div.ant-space.ant-space-horizontal.ant-space-align-center",
+        "appendSelector": ".ant-modal-root #basic > div.ant-space.ant-space-horizontal.ant-space-align-center",
         "titleSelector": "#basic_EmailSubject",
         "contentSelector": "#basic_EmailBody",
         "commentSelector": "",
@@ -15518,7 +15520,15 @@
         ".leaderboard-content",
         "#selected-count",
         "#selected-cat"
-      ]
+      ],
+      "buildContainerSelectors.add": [
+        "rich-text-editor"
+      ],
+      "likePreSelectors.add": [
+        "rich-text-editor"
+      ],
+      "isTransformPreTagNewLine": true,
+      "forceFormatPre": true
     },
     {
       "id": "etymonline",
@@ -17949,7 +17959,8 @@
     {
       "id": "wistia-hook",
       "matches": [
-        "agencysupremacy.io"
+        "agencysupremacy.io",
+        "dynamous.ai"
       ],
       "excludeSelectors.add": [
         "div[data-handle='captions']"
@@ -18304,6 +18315,20 @@
       ]
     },
     {
+      "id": "mckinsey",
+      "matches": [
+        "www.mckinsey.com"
+      ],
+      "likePreSelectors.add": [
+        "#interactive-bespoke-tech-trends-2025"
+      ],
+      "buildContainerSelectors.add": [
+        "#interactive-bespoke-tech-trends-2025"
+      ],
+      "forceFormatPre": true,
+      "isTransformPreTagNewLine": true
+    },
+    {
       "id": "txt",
       "matches": [
         "*://*/*.txt",
@@ -18370,7 +18395,8 @@
         "privatter.net",
         "www.asuswrt-merlin.net",
         "tic80.com",
-        "www.impo.*"
+        "www.impo.*",
+        "sotf-mods.com"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -18449,7 +18475,8 @@
         "*.marscode.com",
         "nexus.evenant.com",
         "portal.achieve3000.net",
-        "triumph-cubic.com"
+        "triumph-cubic.com",
+        "ieeeforms.wufoo.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -18674,6 +18701,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-18T08:17:05.000Z",
+  "buildinConfigUpdatedAt": "2025-08-18T15:12:11.880Z",
   "latestVersion": "1.20.7"
 }
