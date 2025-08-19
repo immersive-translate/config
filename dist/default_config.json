@@ -10948,6 +10948,13 @@
         "type": "manga",
         "imageSelectors": [
           "#root img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
         ]
       }
     },
@@ -16453,7 +16460,8 @@
       "id": "komiku",
       "matches": [
         "komiku.com",
-        "komiku.one"
+        "komiku.one",
+        "manga18fx.cc"
       ],
       "imageRule.add": {
         "enable": true,
@@ -18396,7 +18404,8 @@
         "www.asuswrt-merlin.net",
         "tic80.com",
         "www.impo.*",
-        "sotf-mods.com"
+        "sotf-mods.com",
+        "www.bls.gov"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -18476,7 +18485,8 @@
         "nexus.evenant.com",
         "portal.achieve3000.net",
         "triumph-cubic.com",
-        "ieeeforms.wufoo.com"
+        "ieeeforms.wufoo.com",
+        "www.midjourney.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -18701,6 +18711,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-19T06:59:23.000Z",
+  "buildinConfigUpdatedAt": "2025-08-19T11:23:45.517Z",
   "latestVersion": "1.20.8"
 }
