@@ -2177,9 +2177,6 @@
       "defaultVisible": true,
       "disabledAt": "2025-07-11"
     },
-    "qwen-mt-pro.add_v.[1.20.9]": {
-      "disabledAt": ""
-    },
     "zhipu-pro.add_v.[1.15.3]": {
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
@@ -18865,6 +18862,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-22T10:57:07.000Z",
+  "buildinConfigUpdatedAt": "2025-08-22T11:10:31.909Z",
   "latestVersion": "1.20.9"
 }
