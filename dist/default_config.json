@@ -381,7 +381,8 @@
     "https://www.cmoa.jp/[cmoa][chrome,firefox,safari,imtAndroid]",
     "https://comic-gardo.com/[ComicGardo][chrome,firefox,safari,imtAndroid]",
     "https://booklive.jp/[Booklive][chrome,firefox,safari,imtAndroid]",
-    "https://www.mrblue.com/[MrBlue][chrome,firefox,safari,imtAndroid]"
+    "https://www.mrblue.com/[MrBlue][chrome,firefox,safari,imtAndroid]",
+    "https://mangalove.me/[MangaLove][chrome,firefox,safari,imtAndroid,imtIOSNew]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -17110,6 +17111,26 @@
       ]
     },
     {
+      "id": "mangalove",
+      "matches": "mangalove.me",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "urlFetchType": "canvasArgs",
+        "opImageType": "append",
+        "imageSelectors": [
+          ".imgWrap canvas"
+        ]
+      },
+      "platforms": [
+        "chrome",
+        "firefox",
+        "safari",
+        "imtAndroid",
+        "imtIOSNew"
+      ]
+    },
+    {
       "id": "www.acrobiosystems.com",
       "matches": "www.acrobiosystems.com",
       "injectedCss.add": [
@@ -18724,6 +18745,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-22T01:23:52.619Z",
+  "buildinConfigUpdatedAt": "2025-08-22T02:45:59.126Z",
   "latestVersion": "1.20.8"
 }
