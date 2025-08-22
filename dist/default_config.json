@@ -597,15 +597,17 @@
       "https://immersivetranslate.com/accounts/login*",
       "https://immersivetranslate.cn/accounts/login*",
       "https://immersivetranslate.com/profile/",
-      "https://onboarding.immersivetranslate.com*"
+      "https://onboarding.immersivetranslate.com*",
+      "https://*.immersivetranslate.com/*/intro/tutorial/step-1*"
     ],
     "guideContentBlockUrls": [
-      "https://test-onboarding.immersivetranslate.com/*/tutorial/*",
-      "https://test-onboarding.immersivetranslate.com/*/intro/*",
-      "https://test-onboarding.immersivetranslate.com/*/init/*",
-      "https://onboarding.immersivetranslate.com/*/tutorial/*",
-      "https://onboarding.immersivetranslate.com/*/intro/*",
-      "https://onboarding.immersivetranslate.com/*/init/*"
+      "https://*.immersivetranslate.com/*/tutorial/*",
+      "https://*.immersivetranslate.com/*/intro/*",
+      "https://*.immersivetranslate.com/*/init/*"
+    ],
+    "guideArrowPermanentUrls": [
+      "https://*.immersivetranslate.com/*/intro/step-1",
+      "https://*.immersivetranslate.com/*/tutorial/step-2"
     ],
     "defaultShowGuideNums": 2,
     "clickType": "translate",
@@ -629,15 +631,17 @@
       "https://immersivetranslate.com/accounts/login*",
       "https://immersivetranslate.cn/accounts/login*",
       "https://immersivetranslate.com/profile/",
-      "https://onboarding.immersivetranslate.com*"
+      "https://onboarding.immersivetranslate.com*",
+      "https://*.immersivetranslate.com/*/intro/tutorial/step-1*"
     ],
     "guideContentBlockUrls": [
-      "https://test-onboarding.immersivetranslate.com/*/tutorial/*",
-      "https://test-onboarding.immersivetranslate.com/*/intro/*",
-      "https://test-onboarding.immersivetranslate.com/*/init/*",
-      "https://onboarding.immersivetranslate.com/*/tutorial/*",
-      "https://onboarding.immersivetranslate.com/*/intro/*",
-      "https://onboarding.immersivetranslate.com/*/init/*"
+      "https://*.immersivetranslate.com/*/tutorial/*",
+      "https://*.immersivetranslate.com/*/intro/*",
+      "https://*.immersivetranslate.com/*/init/*"
+    ],
+    "guideArrowPermanentUrls": [
+      "https://*.immersivetranslate.com/*/intro/step-1",
+      "https://*.immersivetranslate.com/*/tutorial/step-2"
     ],
     "defaultShowGuideNums": 4,
     "clickType": "translate",
@@ -1085,6 +1089,7 @@
       "name": "Qwen MT",
       "models": "qwen-mt-plus|qwen-mt-turbo",
       "limit": 10,
+      "provider": "custom",
       "maxTextLengthPerRequest": 1200,
       "maxTextGroupLengthPerRequest": 5,
       "translationTextSeparator": "\n\n%%\n\n",
@@ -1450,6 +1455,20 @@
           "bodyConfigs": {
             "reasoning_effort": "minimal",
             "temperature.remove": ""
+          }
+        },
+        {
+          "models": [
+            "gpt-5$",
+            "gpt-5-mini",
+            "gpt-5-nano"
+          ],
+          "apiUrl": "/v1/responses",
+          "bodyConfigs": {
+            "temperature.remove": "",
+            "reasoning": {
+              "effort": "minimal"
+            }
           }
         }
       ]
@@ -2094,15 +2113,8 @@
     "zhipu.add_v.[1.16.9]": {
       "model": "glm-4-flash-250414"
     },
-    "zhipu-pro": {
+    "zhipu-base": {
       "extends": "ai",
-      "name": "GLM-4.5",
-      "group": "pro",
-      "type": "zhipu-pro",
-      "visible": true,
-      "model": "glm-4.5",
-      "proModel": "glm-4.5",
-      "defaultVisible": true,
       "defaultHiddenLangs": [
         "zh-TW"
       ],
@@ -2142,6 +2154,32 @@
         }
       ]
     },
+    "zhipu-pro": {
+      "extends": "zhipu-base",
+      "name": "GLM-4.5",
+      "group": "pro",
+      "type": "zhipu-pro",
+      "provider": "pro",
+      "visible": true,
+      "model": "glm-4.5",
+      "proModel": "glm-4.5",
+      "defaultVisible": true
+    },
+    "qwen-mt-pro": {
+      "extends": "qwen-mt",
+      "name": "Qwen-MT Turbo",
+      "provider": "pro",
+      "group": "pro",
+      "type": "qwen-mt",
+      "visible": true,
+      "model": "qwen-mt-turbo",
+      "proModel": "qwen-mt-turbo",
+      "defaultVisible": true,
+      "disabledAt": "2025-07-11"
+    },
+    "qwen-mt-pro.add_v.[1.20.9]": {
+      "disabledAt": ""
+    },
     "zhipu-pro.add_v.[1.15.3]": {
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
@@ -2159,6 +2197,7 @@
     "zhipu-free": {
       "type": "zhipu",
       "group": "free",
+      "name": "GLM-4 Flash",
       "extends": "zhipu",
       "provider": "custom",
       "model": "glm-4-flash-250414",
@@ -2195,7 +2234,7 @@
       "type": "openai",
       "group": "pro",
       "proModel": "gpt-5-mini",
-      "model": "gpt-5-mini",
+      "model": "gpt-4.1-mini",
       "extends": "openai",
       "provider": "pro",
       "visible": true,
@@ -2795,6 +2834,17 @@
                 }
               ]
             }
+          },
+          {
+            "models": [
+              "gpt-5$",
+              "gpt-5-mini",
+              "gpt-5-nano"
+            ],
+            "bodyConfigs": {
+              "reasoning_effort": "minimal",
+              "temperature.remove": ""
+            }
           }
         ]
       }
@@ -3311,9 +3361,7 @@
         "translate": "unset;"
       }
     },
-    "inputTutorialsText": "",
     "inputTutorialsSelectors": [],
-    "globalMeta": {},
     "globalStyles": {},
     "initialGlobalAttributes": {},
     "initialSelectorGlobalAttributes": {
@@ -3903,7 +3951,6 @@
       "injectedCss": [
         ".immersive-translate-target-translation-block-wrapper {display:block;}"
       ],
-      "globalMeta": {},
       "excludeSelectors": [
         "h1.notranslate",
         "#drop-target",
@@ -6232,6 +6279,14 @@
         "side.selectors": [
           "[class*='sidebarList']"
         ]
+      },
+      "inputConfig.add": {
+        "tutorialsSelectors": [
+          "[class*='placeholder'][aria-hidden='true']"
+        ],
+        "tutorialsText": "输入中文后快速连击 3 次空格键翻译，与外国人轻松对话",
+        "placeholderType": "dom",
+        "enableMutationObserver": true
       }
     },
     {
@@ -6268,7 +6323,15 @@
             "immediateTranslationTextCount": 0
           }
         }
-      ]
+      ],
+      "inputConfig.add": {
+        "tutorialsSelectors": [
+          "span.input-field-placeholder"
+        ],
+        "tutorialsText": "输入中文后快速连击 3 次空格键翻译，与外国人轻松对话",
+        "placeholderType": "dom",
+        "enableMutationObserver": true
+      }
     },
     {
       "id": "githubGist",
@@ -6405,15 +6468,12 @@
         "#gb",
         "#SIvCob"
       ],
-      "inputTutorialsText": "试试输入中文后快速连击 3 次空格键翻译（仅提示一次）",
-      "inputTutorialsSelectors": [
-        "textarea#APjFqb"
-      ],
       "inputConfig.add": {
-        "tutorialsText": "试试输入中文后快速连击 3 次空格键翻译（仅提示一次）",
+        "tutorialsText": "输入中文后快速连击 3 次空格键翻译，搜索结果不同哦",
         "tutorialsSelectors": [
           "textarea#APjFqb"
-        ]
+        ],
+        "placeholderType": "attribute"
       }
     },
     {
@@ -7570,6 +7630,24 @@
       ],
       "imageRule.add": {
         "enable": false
+      },
+      "inputConfig.add": {
+        "tutorialsSelectors": [
+          ".placeholder"
+        ],
+        "tutorialsText": "输入中文后快速连击 3 次空格键翻译，获得不同的 AI 回复",
+        "placeholderType": "::after"
+      }
+    },
+    {
+      "id": "deepseek",
+      "matches": "chat.deepseek.com",
+      "inputConfig.add": {
+        "tutorialsSelectors": [
+          "textarea#chat-input"
+        ],
+        "tutorialsText": "输入中文后快速连击 3 次空格键翻译，获得不同的 AI 回复",
+        "placeholderType": "attribute"
       }
     },
     {
@@ -8553,6 +8631,13 @@
       "enableRichTranslate": false,
       "bodyRule.add": {
         "enable": false
+      },
+      "inputConfig.add": {
+        "tutorialsSelectors": [
+          "#main .lexical-rich-text-input div[aria-hidden='true'] > div"
+        ],
+        "tutorialsText": "输入中文后快速连击 3 次空格键翻译，与外国人轻松对话",
+        "placeholderType": "dom"
       }
     },
     {
@@ -12994,7 +13079,8 @@
         ".message-content",
         ".h1-subject-button",
         ".cil-subject",
-        ".cil-body-wrapper"
+        ".cil-body-wrapper",
+        ".text-body"
       ]
     },
     {
@@ -16749,6 +16835,40 @@
       }
     },
     {
+      "id": "comic.pixiv.net",
+      "matches": "comic.pixiv.net",
+      "imageRule.add": {
+        "enable": true,
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ],
+        "type": "manga",
+        "backgroundImgSelectors": [
+          "div[id*='page-']"
+        ]
+      }
+    },
+    {
+      "id": "www.comico.jp",
+      "matches": "www.comico.jp",
+      "imageRule.add": {
+        "enable": true,
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid"
+        ],
+        "type": "manga",
+        "backgroundImgSelectors": [
+          "div[id*='objectFit_viewerImg']"
+        ]
+      }
+    },
+    {
       "id": "rule34",
       "matches": "rule34.xxx",
       "imageRule.add": {
@@ -18745,6 +18865,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-22T02:45:59.126Z",
-  "latestVersion": "1.20.8"
+  "buildinConfigUpdatedAt": "2025-08-22T10:57:44.098Z",
+  "latestVersion": "1.20.9"
 }
