@@ -1456,7 +1456,9 @@
             "reasoning_effort": "minimal",
             "temperature.remove": ""
           }
-        },
+        }
+      ],
+      "modelsOverrides.add_v.[1.20.9]": [
         {
           "models": [
             "gpt-5$",
@@ -18871,6 +18873,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-22T15:54:03.943Z",
+  "buildinConfigUpdatedAt": "2025-08-22T15:58:35.817Z",
   "latestVersion": "1.20.9"
 }
