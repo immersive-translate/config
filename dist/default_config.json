@@ -1892,7 +1892,19 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "maxTextGroupLengthPerRequestForSubtitle": 1,
-      "apiUrl": "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
+      "apiUrl": "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
+      "modelsOverrides.add": [
+        {
+          "models": [
+            "douba-seed-1.6"
+          ],
+          "bodyConfigs": {
+            "thinking": {
+              "type": "disabled"
+            }
+          }
+        }
+      ]
     },
     "hunyuan": {
       "extends": "ai",
@@ -5163,7 +5175,8 @@
         "[data-testid='getting-started-checklist-section']",
         "[data-testid='docs-section']",
         "[data-testid='recommendations-section']",
-        ".Layout-main react-partial pre"
+        ".Layout-main react-partial pre",
+        ".feed-item-content section[data-view-component] [class='flex-1 d-flex flex-column'] div:nth-child(2)"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -18711,6 +18724,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-19T11:23:45.517Z",
+  "buildinConfigUpdatedAt": "2025-08-22T01:23:52.619Z",
   "latestVersion": "1.20.8"
 }
