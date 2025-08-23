@@ -18491,14 +18491,6 @@
       "isTransformPreTagNewLine": true
     },
     {
-      "id": "echo360",
-      "matches": "echo360.net.au",
-      "injectedCss.add": [
-        ".ReactVirtualized__Grid__innerScrollContainer {display: flex;flex-direction: column;}",
-        ".ReactVirtualized__Grid__innerScrollContainer > div{position:unset!important;height:unset!important;}"
-      ]
-    },
-    {
       "id": "txt",
       "matches": [
         "*://*/*.txt",
@@ -18873,6 +18865,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-22T15:58:35.817Z",
+  "buildinConfigUpdatedAt": "2025-08-23T03:28:24.436Z",
   "latestVersion": "1.20.9"
 }
