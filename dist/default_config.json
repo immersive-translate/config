@@ -2167,18 +2167,6 @@
       "proModel": "glm-4.5",
       "defaultVisible": true
     },
-    "qwen-mt-pro": {
-      "extends": "qwen-mt",
-      "name": "Qwen-MT Turbo",
-      "provider": "pro",
-      "group": "pro",
-      "type": "qwen-mt",
-      "visible": true,
-      "model": "qwen-mt-turbo",
-      "proModel": "qwen-mt-turbo",
-      "defaultVisible": true,
-      "disabledAt": "2025-07-11"
-    },
     "zhipu-pro.add_v.[1.15.3]": {
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
@@ -12752,6 +12740,9 @@
       "matches": "www.barrons.com",
       "extraInlineSelectors.add": [
         "article p span"
+      ],
+      "injectedCss.add": [
+        "font.immersive-translate-target-wrapper > br {display:none;}"
       ]
     },
     {
@@ -18122,7 +18113,8 @@
       "id": "wistia-hook",
       "matches": [
         "agencysupremacy.io",
-        "dynamous.ai"
+        "dynamous.ai",
+        "dynamous.wistia.com"
       ],
       "excludeSelectors.add": [
         "div[data-handle='captions']"
@@ -18865,6 +18857,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-23T03:28:24.436Z",
+  "buildinConfigUpdatedAt": "2025-08-24T16:24:40.625Z",
   "latestVersion": "1.20.9"
 }
