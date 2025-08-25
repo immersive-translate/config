@@ -9346,10 +9346,7 @@
       ],
       "preTranslateLimiter.add_v.[1.12.1]": {
         "header.enableTranslate": true
-      },
-      "additionalExcludeSelectors.remove": [
-        ".notranslate"
-      ]
+      }
     },
     {
       "id": "chosun",
@@ -17004,6 +17001,9 @@
           ".scramble-page canvas",
           ".scramble-page img"
         ],
+        "inValidSrcRegex": [
+          "blank.jpg"
+        ],
         "platforms": [
           "chrome",
           "firefox",
@@ -18892,6 +18892,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-25T09:38:12.879Z",
+  "buildinConfigUpdatedAt": "2025-08-25T10:54:18.090Z",
   "latestVersion": "1.20.10"
 }
