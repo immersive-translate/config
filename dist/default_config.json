@@ -2256,6 +2256,22 @@
       "proModel": "gemini-2.5-flash",
       "visible": true
     },
+    "qwen-mt-pro": {
+      "extends": "qwen-mt",
+      "name": "Qwen-MT Turbo",
+      "provider": "pro",
+      "type": "custom-ai",
+      "visible": true,
+      "model": "qwen-mt-turbo",
+      "proModel": "qwen-mt-turbo",
+      "defaultVisible": true,
+      "group": "pro",
+      "disabledAt": "2025-01-01"
+    },
+    "qwen-mt-pro.add_v.[1.20.9]": {
+      "type": "qwen-mt",
+      "disabledAt": ""
+    },
     "deepl-pro": {
       "name": "DeepL Pro",
       "type": "deepl",
@@ -5212,7 +5228,8 @@
         "[data-testid='docs-section']",
         "[data-testid='recommendations-section']",
         ".Layout-main react-partial pre",
-        ".feed-item-content section[data-view-component] [class='flex-1 d-flex flex-column'] div:nth-child(2)"
+        ".feed-item-content section[data-view-component] [class='flex-1 d-flex flex-column'] div:nth-child(2)",
+        "#org-new-form"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -6116,7 +6133,8 @@
         "div.gsc_oci_value",
         "#gs_opinion",
         ".gs_rt",
-        ".gsh_csp"
+        ".gsh_csp",
+        ".gs_fma_wpr"
       ],
       "extraInlineSelectors": [
         "br"
@@ -6319,6 +6337,13 @@
         "tutorialsText": "输入中文后快速连击 3 次空格键翻译，与外国人轻松对话",
         "placeholderType": "dom",
         "enableMutationObserver": true
+      }
+    },
+    {
+      "id": "societyforpsychotherapy",
+      "matches": "societyforpsychotherapy.org",
+      "preTranslateLimiter.add": {
+        "header.enableTranslate": true
       }
     },
     {
@@ -7207,13 +7232,19 @@
         "articleSelector": ".body-content"
       },
       "subtitleRule.add": {
-        "type": "webvtt",
-        "enableHookDownload": true,
-        "subtitleUrlRegExp": "webvtt$",
-        "loadingContainerSelector": ".vjs-text-track-display",
+        "type": "subsrt",
+        "videoSelector": ".vjs-tech",
+        "hookType": "fetch",
+        "subtitleUrlRegExp": "vtt$",
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
           "insertBeforeSelector": ".vjs-playback-rate"
+        },
+        "attachRule": {
+          "appendSelector": ".bvp-playlist-player__container",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display {display:none!important;}"
+          ]
         }
       }
     },
@@ -9315,7 +9346,10 @@
       ],
       "preTranslateLimiter.add_v.[1.12.1]": {
         "header.enableTranslate": true
-      }
+      },
+      "additionalExcludeSelectors.remove": [
+        ".notranslate"
+      ]
     },
     {
       "id": "chosun",
@@ -18858,6 +18892,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-25T09:24:13.000Z",
+  "buildinConfigUpdatedAt": "2025-08-25T09:38:12.879Z",
   "latestVersion": "1.20.10"
 }
