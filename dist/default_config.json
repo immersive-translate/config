@@ -3330,6 +3330,7 @@
       "em[translate=no]",
       "code[translate=no]",
       "a[translate=no]",
+      "b[translate=no]",
       "span.math.inline",
       "span.math.display",
       ".ltx_Math",
@@ -7217,6 +7218,9 @@
     {
       "id": "bloomberg",
       "matches": "www.bloomberg.com",
+      "excludeMatches": [
+        "https://www.bloomberg.com/live/*"
+      ],
       "urlChangeDelay": 2000,
       "excludeSelectors": [
         ".ticker-bar",
@@ -10270,7 +10274,8 @@
     {
       "id": "mangatoto",
       "matches": [
-        "mangatoto.com"
+        "mangatoto.com",
+        "batotoo.com"
       ],
       "imageRule.add": {
         "type": "manga",
@@ -12382,14 +12387,16 @@
       "id": "cmoa",
       "matches": [
         "www.cmoa.jp",
-        "booklive.jp"
+        "booklive.jp",
+        "yanmaga.jp"
       ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
         "imageSelectors": [
           ".pt-img img",
-          ".slick-slide img"
+          ".slick-slide img",
+          "img[id*='r-bannerImg-after_viewer']"
         ]
       },
       "platforms": [
@@ -12400,14 +12407,15 @@
       ]
     },
     {
-      "id": "tkr415.com",
+      "id": "tkr-manga",
       "matches": [
-        "tkr415.com"
+        "tkr*.com"
       ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
         "imageSelectors": [
+          "#tnimg img",
           "div#tnimg img.lazyload-img"
         ],
         "platforms": [
@@ -16619,26 +16627,6 @@
       }
     },
     {
-      "id": "tkr375",
-      "matches": [
-        "tkr375.com",
-        "tkr413.com"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "#tnimg img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
       "id": "dvamh-vzwp7",
       "matches": [
         "dvamh-vzwp7.top"
@@ -18892,6 +18880,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-25T10:54:18.090Z",
+  "buildinConfigUpdatedAt": "2025-08-26T10:57:02.041Z",
   "latestVersion": "1.20.10"
 }
