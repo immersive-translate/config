@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       branch:
-        default: "develop"
+        default: "feat/diff-config"
         description: "branch"
         type: string
 jobs:
