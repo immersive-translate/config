@@ -36,12 +36,14 @@ jobs:
           echo "::set-output name=version::$(echo $content | jq -r '.version')"
       - name: add buildinConfigUpdatedAt field to repo/dist/default_config.json
         run: make generateconfig target=repo/dist/default_config.json
-      - name: checkout target version 
-        run: git checkout v${{ steps.set_var.outputs.version }} 
-      - name: diff config
-        run: make diff-config baseConfig=default_config.json latestConfig=repo/dist/default_config.json outputDiffConfig=repo/dist/diff_config.json
-      - name: echo diff config
-        run: cat repo/dist/diff_config.json
+      - name: list all tags
+        run: git tag --list
+      # - name: checkout target version 
+      #   run: git checkout v${{ steps.set_var.outputs.version }} 
+      # - name: diff config
+      #   run: make diff-config baseConfig=default_config.json latestConfig=repo/dist/default_config.json outputDiffConfig=repo/dist/diff_config.json
+      # - name: echo diff config
+      #   run: cat repo/dist/diff_config.json
       # - name: build worker
       #   run: cd repo && make build
       # - name: Deploy worker
