@@ -1,4 +1,4 @@
-name: Publish rule
+name: Publish Develop rule
 on:
   repository_dispatch:
     types:
