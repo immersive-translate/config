@@ -40,8 +40,8 @@ jobs:
         run: git fetch --tags && git checkout v${{ steps.set_var.outputs.version }} && cp default_config.json repo/dist/base_config.json && git checkout ${{github.event.inputs.branch || 'develop'}}
       - name: diff config
         run: make diff-config baseConfig=repo/dist/base_config.json latestConfig=repo/dist/default_config.json outputDiffConfig=repo/dist/diff_config.json
-      # - name: echo diff config
-      #   run: cat repo/dist/diff_config.json
+      - name: echo diff config
+        run: cat repo/dist/diff_config.json
       # - name: build worker
       #   run: cd repo && make build
       # - name: Deploy worker
