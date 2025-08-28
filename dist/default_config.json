@@ -2196,6 +2196,7 @@
       "group": "free",
       "extends": "siliconcloud",
       "provider": "custom",
+      "model": "THUDM/glm-4-9b-chat",
       "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/glm-4-9b-chat"
     },
     "transmart-free": {
@@ -4195,6 +4196,7 @@
       "longBuildPageLength": 1000,
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
+      "enableSiteAutoTranslate": false,
       "advanceMergeConfig": [
         {
           "condition": "true",
@@ -6626,7 +6628,8 @@
         "*.notion.site"
       ],
       "selectorMatches": [
-        ".notion-html body"
+        ".notion-html body",
+        ".notion-app"
       ],
       "normalizeBody": "body",
       "selectors": [
@@ -15934,7 +15937,8 @@
       "id": "docs.unity3d",
       "matches": "docs.unity3d.com",
       "stayOriginalSelectors": [
-        ".tooltip"
+        ".tooltip",
+        ".sidebar-menu"
       ],
       "mainFrameSelector": [
         ".tooltip > .tooltiptext",
@@ -18742,7 +18746,8 @@
         "achieve.macmillanlearning.com",
         "mail.shanghai.*",
         "help.autodesk.com",
-        "*.vitalsource.com"
+        "*.vitalsource.com",
+        "*.sumtotal.host"
       ],
       "enableDeepFrameTranslatePage": true
     },
@@ -18881,6 +18886,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-28T07:04:56.123Z",
+  "buildinConfigUpdatedAt": "2025-08-28T09:56:54.066Z",
   "latestVersion": "1.20.11"
 }
