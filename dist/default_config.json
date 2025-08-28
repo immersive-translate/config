@@ -2258,12 +2258,12 @@
     },
     "qwen-mt-pro": {
       "extends": "qwen-mt",
-      "name": "Qwen-MT Turbo",
+      "name": "Qwen-MT Plus",
       "provider": "pro",
       "type": "custom-ai",
       "visible": true,
-      "model": "qwen-mt-turbo",
-      "proModel": "qwen-mt-turbo",
+      "model": "qwen-mt-plus",
+      "proModel": "qwen-mt-plus",
       "defaultVisible": true,
       "group": "pro",
       "disabledAt": "2025-01-01"
@@ -18881,6 +18881,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-26T11:26:55.000Z",
+  "buildinConfigUpdatedAt": "2025-08-28T07:04:56.123Z",
   "latestVersion": "1.20.11"
 }
