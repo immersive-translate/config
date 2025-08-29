@@ -5544,13 +5544,11 @@
       "atomicBlockSelectors": [
         ".comment-text"
       ],
-      "globalStyles": {
-        ".comment-text": "max-height:unset;",
-        ".media-item-headline": "max-height:unset;-webkit-line-clamp:unset;"
-      },
       "injectedCss": [
         ".immersive-translate-target-wrapper img { width: 16px; height: 16px }",
-        "h4.compact-media-item-headline {max-height:unset !important;line-clamp:unset !important;overflow:unset !important;-webkit-line-clamp:unset !important;}"
+        ".shortsLockupViewModelHostMetadataTitle,h4.compact-media-item-headline {max-height:unset !important;line-clamp:unset !important;overflow:unset !important;-webkit-line-clamp:unset !important;}",
+        ".comment-text {max-height:unset;}",
+        ".media-item-headline {max-height:unset;-webkit-line-clamp:unset;}"
       ],
       "extraBlockSelectors.add": [
         ".caption-visual-line"
@@ -5619,19 +5617,18 @@
       "additionalExcludeSelectors.remove.[1.14.1]": [
         "ytd-live-chat-frame"
       ],
-      "globalStyles": {
-        "#video-title,h1.ytd-watch-metadata,.ytd-video-renderer,.yt-lockup-metadata-view-model-wiz__title": "-webkit-line-clamp: unset;max-height: unset;",
-        "yt-formatted-string#video-title,.ShortsLockupViewModelHostOutsideMetadataTitle": "-webkit-line-clamp: unset;max-height: unset;",
-        "ytd-expander.ytd-comment-renderer": "--ytd-expander-max-lines: 1000;",
-        ".page-header-view-model-wiz__page-header-title--page-header-title-large": "-webkit-line-clamp: unset !important;max-height: unset !important;"
-      },
       "injectedCss": [
         ".immersive-translate-target-wrapper img { width: 16px; height: 16px }",
         ".metadata-snippet-container {max-height: unset !important;}",
         ".immersive-translate-target-wrapper {text-align: left;}",
         ".immersive-translate-target-wrapper[dir=rtl] {text-align: right;}",
         "#commentCanvas .cmt {display:flex;flex-direction: column;}",
-        "#commentCanvas .cmt font br {display: none;}"
+        "#commentCanvas .cmt font br {display: none;}",
+        "#video-title,h1.ytd-watch-metadata,.ytd-video-renderer,.yt-lockup-metadata-view-model-wiz__title {-webkit-line-clamp: unset;max-height: unset;}",
+        "yt-formatted-string#video-title,.ShortsLockupViewModelHostOutsideMetadataTitle {-webkit-line-clamp: unset;max-height: unset;}",
+        "ytd-expander.ytd-comment-renderer {--ytd-expander-max-lines: 1000;}",
+        ".page-header-view-model-wiz__page-header-title--page-header-title-large {-webkit-line-clamp: unset !important;max-height: unset !important;}",
+        ".yt-lockup-metadata-view-model__title,.shortsLockupViewModelHostOutsideMetadataTitle,h1.ytd-watch-metadata,.ytwFeedAdMetadataViewModelHostTextsStyleStandardHeadline {-webkit-line-clamp: unset !important;max-height: unset !important;}"
       ],
       "isTranslateTitle": false,
       "observeUrlChange": true,
@@ -18886,6 +18883,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-28T09:56:54.066Z",
+  "buildinConfigUpdatedAt": "2025-08-29T01:51:11.219Z",
   "latestVersion": "1.20.11"
 }
