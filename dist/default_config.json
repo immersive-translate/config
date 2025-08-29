@@ -524,6 +524,8 @@
   "enableInputTranslation": true,
   "enableFloatShare": true,
   "isShowInputTranslationConsent": true,
+  "isEnableGuideTips": true,
+  "isEnableNotification": true,
   "enableShowFloatingBallGuide": true,
   "verifyRequestTimeout": 5000,
   "inactiveDays": 21,
@@ -2171,6 +2173,24 @@
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
     },
+    "zhipu-air-pro": {
+      "extends": "zhipu-base",
+      "name": "GLM-4.5 Air",
+      "group": "pro",
+      "type": "zhipu-pro",
+      "provider": "pro",
+      "visible": true,
+      "model": "glm-4.5-air",
+      "proModel": "glm-4.5-air",
+      "immersiveProApiUrl": "https://api2.immersivetranslate.com/bigmodel-air/translate",
+      "defaultVisible": true,
+      "guestTrialLimit": 5,
+      "disabledAt": "2025-07-11",
+      "hiddenPro": true
+    },
+    "zhipu-air-pro.add_v.[1.20.12]": {
+      "disabledAt": ""
+    },
     "google-free": {
       "type": "google",
       "group": "free",
@@ -3030,7 +3050,8 @@
       "enableIOSFullScreenTextTrack": true,
       "youtubeAutoEnableSubtitleAfterInstalledAt": "2024-04-25",
       "isEnableAiSubtitleTip": true,
-      "freeAiSubtitleCacheEndTime": "2025-09-01",
+      "freeAiSubtitleCacheEndTime": "2025-09-30",
+      "aiSubtitleMaxTextLength": 200,
       "velocityGroup": [
         1,
         3,
@@ -3747,6 +3768,8 @@
       ]
     }
   },
+  "downloadAppUrl": "https://app.adjust.com/1rs1pqs7?campaign=extention&redirect=https%3A%2F%2Fimmersivetranslate.com%2Fzh-Hans%2Fdownload%3Fcampain%3Dextention_app_download",
+  "downloadAppQrCode": "https://s.immersivetranslate.com/assets/r2-uploads/APPDownloadQRCode.svg",
   "rules": [
     {
       "id": "isSubtitleBuilder",
@@ -5079,6 +5102,17 @@
       "initialGlobalAttributes.add": {
         "a.inset-0": {
           "style": "inset: unset;"
+        }
+      },
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": ".*\\.(vtt)",
+        "hookType": "fetch",
+        "quickButtonRule": {
+          "ccEnableSelector": "shreddit-player-2 -> shreddit-media-ui -> [aria-label='Toggle captions']",
+          "appendSelector": "shreddit-player-2 -> shreddit-media-ui -> .disappearing-controls",
+          "injectCSS": ".imt-quick-subtitle-pop-content {max-height: unset!important;width:fit-content;right:32px;}"
         }
       }
     },
@@ -18886,6 +18920,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-29T05:12:09.626Z",
-  "latestVersion": "1.20.11"
+  "buildinConfigUpdatedAt": "2025-08-29T11:19:10.090Z",
+  "latestVersion": "1.20.12"
 }
