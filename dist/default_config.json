@@ -5548,7 +5548,8 @@
         ".immersive-translate-target-wrapper img { width: 16px; height: 16px }",
         ".shortsLockupViewModelHostMetadataTitle,h4.compact-media-item-headline {max-height:unset !important;line-clamp:unset !important;overflow:unset !important;-webkit-line-clamp:unset !important;}",
         ".comment-text {max-height:unset;}",
-        ".media-item-headline {max-height:unset;-webkit-line-clamp:unset;}"
+        ".details,.subhead,.video-card-title,.media-item-headline {max-height:unset!important;-webkit-line-clamp:unset!important;}",
+        "truncated-text-content {max-height: unset !important;}"
       ],
       "extraBlockSelectors.add": [
         ".caption-visual-line"
@@ -5612,7 +5613,8 @@
         "yt-button-shape",
         "ytd-comments-header-renderer",
         "yt-content-metadata-view-model",
-        "yt-description-preview-view-model button"
+        "yt-description-preview-view-model button",
+        ".yt-page-header-view-model__page-header-title"
       ],
       "additionalExcludeSelectors.remove.[1.14.1]": [
         "ytd-live-chat-frame"
@@ -5628,7 +5630,7 @@
         "yt-formatted-string#video-title,.ShortsLockupViewModelHostOutsideMetadataTitle {-webkit-line-clamp: unset;max-height: unset;}",
         "ytd-expander.ytd-comment-renderer {--ytd-expander-max-lines: 1000;}",
         ".page-header-view-model-wiz__page-header-title--page-header-title-large {-webkit-line-clamp: unset !important;max-height: unset !important;}",
-        ".yt-lockup-metadata-view-model__title,.shortsLockupViewModelHostOutsideMetadataTitle,h1.ytd-watch-metadata,.ytwFeedAdMetadataViewModelHostTextsStyleStandardHeadline {-webkit-line-clamp: unset !important;max-height: unset !important;}"
+        "#title,#video-title,.yt-lockup-metadata-view-model__title,.shortsLockupViewModelHostOutsideMetadataTitle,h1.ytd-watch-metadata,.ytwFeedAdMetadataViewModelHostTextsStyleStandardHeadline {-webkit-line-clamp: unset !important;max-height: unset !important;}"
       ],
       "isTranslateTitle": false,
       "observeUrlChange": true,
@@ -5644,6 +5646,7 @@
         "yt-formatted-string.ytd-transcript-segment-renderer",
         "#description-inline-expander > yt-attributed-string > span",
         "yt-attributed-string > span",
+        "yt-formatted-string > span",
         "ytd-notification-renderer .message",
         "#message",
         ".yt_to_text_transcript_text",
@@ -18883,6 +18886,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-29T01:51:11.219Z",
+  "buildinConfigUpdatedAt": "2025-08-29T05:12:09.626Z",
   "latestVersion": "1.20.11"
 }
