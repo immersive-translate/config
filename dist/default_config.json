@@ -1467,7 +1467,7 @@
             "gpt-5-mini",
             "gpt-5-nano"
           ],
-          "apiUrl": "/v1/responses",
+          "apiUrl": "/responses",
           "bodyConfigs": {
             "temperature.remove": "",
             "reasoning": {
@@ -18920,6 +18920,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-29T11:18:44.000Z",
+  "buildinConfigUpdatedAt": "2025-08-31T05:48:13.135Z",
   "latestVersion": "1.20.12"
 }
