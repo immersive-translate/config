@@ -34,10 +34,12 @@ jobs:
         run: |
           content=`cat ./manifest.json`
           echo "::set-output name=version::$(echo $content | jq -r '.version')"
+          default_config=`cat ./default_config.json`
+          echo "::set-output name=diff_version::$(echo $default_config | jq -r '.diffVersion')"
       - name: add buildinConfigUpdatedAt field to repo/dist/default_config.json
         run: make generateconfig target=repo/dist/default_config.json
       - name: cp base config
-        run: git fetch --tags && git checkout v${{ steps.set_var.outputs.version }} && cp default_config.json repo/dist/base_config.json && git checkout ${{github.event.inputs.branch || 'develop'}}
+        run: git fetch --tags && git checkout v${{ steps.set_var.outputs.diff_version }} && cp default_config.json repo/dist/base_config.json && git checkout ${{github.event.inputs.branch || 'develop'}}
       - name: diff config
         run: make diff-config baseConfig=repo/dist/base_config.json latestConfig=repo/dist/default_config.json outputDiffConfig=repo/dist/diff_config.json
       - name: echo diff config
