@@ -27,6 +27,15 @@ export default {
         }
       }
 
+      const currentVersion = request.headers.get("X-Current-Version");
+      if (currentVersion && DEFAULT_CONFIG.diffVersion && compareVersions(currentVersion, DEFAULT_CONFIG.diffVersion)) {
+        return formatResponse(
+          new Response(JSON.stringify(DIFF_CONFIG, null, 2), {
+            headers: { "Content-Type": "application/json" },
+          }),
+        );
+      }
+
       // 如果时间戳不一致或没有 If-Modified-Since 头部，返回完整响应
       return formatResponse(
         new Response(JSON.stringify(DEFAULT_CONFIG, null, 2), {
@@ -65,4 +74,31 @@ function formatResponse(response) {
   response.headers.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
   response.headers.set("Access-Control-Allow-Headers", "*");
   return response;
+}
+
+
+/**
+ * 当version1大于version2时返回true
+ * @param version1
+ * @param version2
+ * @returns boolean
+ */
+export function compareVersions(version1, version2) {
+  try {
+    const version = version1.split(".").reverse();
+    const spVersion = version2.split(".").reverse();
+
+    let spVNumber = 0,
+      vNumber = 0;
+
+    let moreV = 1;
+    for (let i = 0; i < 3; i++) {
+      spVNumber += moreV * Number(spVersion[i] || "0");
+      vNumber += moreV * Number(version[i] || "0");
+      moreV *= 100;
+    }
+    return vNumber >= spVNumber;
+  } catch (error) {
+    return false;
+  }
 }

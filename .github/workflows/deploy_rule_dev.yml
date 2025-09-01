@@ -44,12 +44,12 @@ jobs:
         run: make diff-config baseConfig=repo/dist/base_config.json latestConfig=repo/dist/default_config.json outputDiffConfig=repo/dist/diff_config.json
       - name: echo diff config
         run: cat repo/dist/diff_config.json
-      # - name: build worker
-      #   run: cd repo && make build
-      # - name: Deploy worker
-      #   uses: cloudflare/wrangler-action@v3
-      #   with:
-      #     apiToken: ${{ secrets.IMMERSIVE_CLOUDFLARE_API_TOKEN }}
-      #     accountId: ${{secrets.IMMERSIVE_CLOUDFLARE_ACCOUNT_ID}}
-      #     workingDirectory: ./
-      #     command: deploy ./.cache/worker.js
+      - name: build worker
+        run: cd repo && make build
+      - name: Deploy worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.IMMERSIVE_CLOUDFLARE_API_TOKEN }}
+          accountId: ${{secrets.IMMERSIVE_CLOUDFLARE_ACCOUNT_ID}}
+          workingDirectory: ./
+          command: deploy ./.cache/worker.js
