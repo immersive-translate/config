@@ -3508,7 +3508,8 @@
       ".sider-search-inner.gpt-light",
       ".fb-ads-block.ads-in-text",
       "#stageTime",
-      ".example-header"
+      ".example-header",
+      "times"
     ],
     "mouseHoverExcludeSelectors": [
       "rp",
@@ -8312,16 +8313,11 @@
     {
       "id": "ietf",
       "matches": "*.ietf.org/doc/html/*",
-      "additionalSelectors": [
-        "pre"
-      ],
       "isTransformPreTagNewLine": true,
       "extraBlockSelectors.add": [
         "[href^='#page']"
       ],
-      "preWhitespaceDetectedTags": [
-        "DIV",
-        "SPAN",
+      "excludeTags.remove": [
         "PRE"
       ]
     },
@@ -12512,6 +12508,27 @@
         "imageSelectors": [
           "img.v-img"
         ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
+      "id": "play.comipo.app",
+      "matches": [
+        "play.comipo.app"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "div[data-testid*=\"placeholder\"] > img"
+        ],
+        "loadingStyle": "z-index: 9999;",
         "platforms": [
           "chrome",
           "firefox",
@@ -17194,7 +17211,8 @@
     {
       "id": "topreadmanga.com",
       "matches": [
-        "topreadmanga.com"
+        "topreadmanga.com",
+        "kissmanga.in"
       ],
       "imageRule.add": {
         "enable": true,
@@ -18920,6 +18938,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-08-31T05:48:13.135Z",
+  "buildinConfigUpdatedAt": "2025-09-01T10:32:28.449Z",
   "latestVersion": "1.20.12"
 }
