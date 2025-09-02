@@ -1096,7 +1096,10 @@
       "maxTextGroupLengthPerRequest": 5,
       "translationTextSeparator": "\n\n%%\n\n",
       "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true
+      "translationEnableRichTranslate": true,
+      "ignoreResRegexs": [
+        "may contain inappropriate content"
+      ]
     },
     "aliyun": {
       "placeholderDelimiters": [
@@ -2694,6 +2697,7 @@
       }
     },
     "aiWriting": {
+      "disabledAt": "2025-09-01",
       "enable": false,
       "urlPattern": {
         "matches": [],
@@ -4220,6 +4224,9 @@
       "longBuildPageLength": 1000,
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
+      "pageLangDetectWeight": {
+        "html": 3
+      },
       "enableSiteAutoTranslate": false,
       "advanceMergeConfig": [
         {
@@ -5051,6 +5058,18 @@
       },
       "bodyRule.add": {
         "enable": false
+      },
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": ".*\\.(vtt)",
+        "hookType": "fetch",
+        "deduplicateSubtitles": true,
+        "quickButtonRule": {
+          "ccEnableSelector": "shreddit-player-2 -> shreddit-media-ui -> [aria-label='Toggle captions']",
+          "appendSelector": "shreddit-player-2 -> shreddit-media-ui -> .disappearing-controls",
+          "injectCSS": ".imt-quick-subtitle-pop-content {max-height: unset!important;width:fit-content;right:32px;}"
+        }
       }
     },
     {
@@ -5110,6 +5129,7 @@
         "subsrtFormat": "vtt",
         "subtitleUrlRegExp": ".*\\.(vtt)",
         "hookType": "fetch",
+        "deduplicateSubtitles": true,
         "quickButtonRule": {
           "ccEnableSelector": "shreddit-player-2 -> shreddit-media-ui -> [aria-label='Toggle captions']",
           "appendSelector": "shreddit-player-2 -> shreddit-media-ui -> .disappearing-controls",
@@ -18938,6 +18958,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-01T10:32:28.449Z",
-  "latestVersion": "1.20.12"
+  "buildinConfigUpdatedAt": "2025-09-02T10:11:21.952Z",
+  "latestVersion": "1.20.13"
 }
