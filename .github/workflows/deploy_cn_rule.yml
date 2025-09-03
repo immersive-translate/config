@@ -1,4 +1,4 @@
-name: Publish rule
+name: Publish CN rule
 on:
   repository_dispatch:
     types:
