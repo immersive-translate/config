@@ -37,7 +37,7 @@ jobs:
       - name: generate cn config
         run: make generateconfig target=repo/dist/default_config.json
       - name: build worker
-        run: make build
+        run: cd repo && make build
       - name: update worker name
         run: sed -i 's/config-worker/cn-config-worker/g' wrangler.toml
       - name: Deploy worker
@@ -45,6 +45,6 @@ jobs:
         with:
           apiToken: ${{ secrets.IMMERSIVE_CLOUDFLARE_API_TOKEN }}
           accountId: ${{secrets.IMMERSIVE_CLOUDFLARE_ACCOUNT_ID}}
-          workingDirectory: ./
-          command: deploy ./.cache/worker.js --env prod
+          workingDirectory: ./repo/
+          command: deploy ./repo/.cache/worker.js --env prod
 
