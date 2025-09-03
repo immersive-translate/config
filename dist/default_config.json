@@ -3380,7 +3380,8 @@
       ".jp-CodeMirrorEditor",
       "cds-code-snippet",
       ".interactive-markdown__code",
-      "span.variable[translate=no]"
+      "span.variable[translate=no]",
+      "#ace-editor"
     ],
     "translationBlockStyle": "",
     "isShowUserscriptPagePopup": true,
@@ -4223,7 +4224,9 @@
       "id": "onboarding",
       "matches": [
         "https://onboarding.immersivetranslate.com",
-        "https://test-onboarding.immersivetranslate.com"
+        "https://test-onboarding.immersivetranslate.com",
+        "https://onboarding.immersivetranslate.cn",
+        "https://test-onboarding.immersivetranslate.cn"
       ],
       "allowInnerInvoke": true,
       "isInjectVersion": true,
@@ -4252,10 +4255,12 @@
       "matches": [
         "https://immersivetranslate.com",
         "https://immersivetranslate.cn",
+        "https://test.immersivetranslate.cn",
         "https://test.immersivetranslate.com",
         "https://app.immersivetranslate.com",
         "https://app.immersivetranslate.cn",
         "https://test-app.immersivetranslate.com",
+        "https://test-app.immersivetranslate.cn",
         "http://localhost:38001",
         "https://ai.immersivetranslate.com",
         "https://test-ai.immersivetranslate.com",
@@ -16018,8 +16023,7 @@
       "id": "docs.unity3d",
       "matches": "docs.unity3d.com",
       "stayOriginalSelectors": [
-        ".tooltip",
-        ".sidebar-menu"
+        ".tooltip"
       ],
       "mainFrameSelector": [
         ".tooltip > .tooltiptext",
@@ -18172,7 +18176,8 @@
         "jddonline.com",
         "cis.vemic.com",
         "scripod.com",
-        "drjoedispenza.com"
+        "drjoedispenza.com",
+        "www.x-mol.com"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
@@ -18186,7 +18191,8 @@
         "div.jdd-product-info-box {height:unset!important;}",
         "span.hotData-text { -webkit-line-clamp: unset !important; line-clamp: unset !important;}",
         "div.line-clamp-4 { -webkit-line-clamp: unset; max-height: unset;}",
-        "[class*='titleTypography'] {-webkit-line-clamp: unset !important;}"
+        "[class*='titleTypography'] {-webkit-line-clamp: unset !important;}",
+        ".div-text-line-three { -webkit-line-clamp: unset; max-height: unset;}"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -18661,7 +18667,9 @@
         "tic80.com",
         "www.impo.*",
         "sotf-mods.com",
-        "www.bls.gov"
+        "www.bls.gov",
+        "www.sreality.cz",
+        "alar.95chat.cloud"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -18698,7 +18706,9 @@
       "id": "NoPreSiteTranslate",
       "matches": [
         "kalimat.anghami.com",
-        "changewindows.org"
+        "changewindows.org",
+        "scispace.com",
+        "ww2.mathworks.cn"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -18968,6 +18978,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-02T15:59:23.741Z",
+  "buildinConfigUpdatedAt": "2025-09-03T15:28:44.832Z",
   "latestVersion": "1.20.13"
 }
