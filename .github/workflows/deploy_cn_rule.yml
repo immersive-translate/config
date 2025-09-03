@@ -35,7 +35,7 @@ jobs:
           content=`cat ./manifest.json`
           echo "::set-output name=version::$(echo $content | jq -r '.version')"
       - name: generate cn config
-        run: make generateconfig target=repo/dist/default_config.json
+        run: make generatecnconfig target=repo/dist/default_config.json
       - name: build worker
         run: cd repo && make build
       - name: update worker name
