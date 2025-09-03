@@ -39,7 +39,7 @@ jobs:
       - name: build worker
         run: cd repo && make build
       - name: update worker name
-        run: sed -i 's/config-worker/cn-config-worker/g' wrangler.toml
+        run: cd repo && sed -i 's/config-worker/cn-config-worker/g' wrangler.toml
       - name: Deploy worker
         uses: cloudflare/wrangler-action@v3
         with:
