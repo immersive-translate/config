@@ -1,0 +1,50 @@
+name: Publish rule
+on:
+  repository_dispatch:
+    types:
+      - deploy-cn-rule
+  workflow_dispatch:
+    inputs:
+      branch:
+        default: "main"
+        description: "branch"
+        type: string
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    concurrency: nightly-build-rule
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+        with:
+          repository: immersive-translate/extension
+          ref: ${{github.event.inputs.branch || 'main'}}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+      - name: Clone repo
+        run: git clone https://$PERSONAL_GITHUB_TOKEN@github.com/immersive-translate/config repo
+        env:
+          PERSONAL_GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.46.2
+      - name: test
+        run: make test
+      - id: set_var
+        run: |
+          content=`cat ./manifest.json`
+          echo "::set-output name=version::$(echo $content | jq -r '.version')"
+      - name: generate cn config
+        run: make generateconfig target=repo/dist/default_config.json
+      - name: build worker
+        run: make build
+      - name: update worker name
+        run: sed -i 's/config-worker/cn-config-worker/g' wrangler.toml
+      - name: Deploy worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.IMMERSIVE_CLOUDFLARE_API_TOKEN }}
+          accountId: ${{secrets.IMMERSIVE_CLOUDFLARE_ACCOUNT_ID}}
+          workingDirectory: ./
+          command: deploy ./.cache/worker.js --env prod
+
