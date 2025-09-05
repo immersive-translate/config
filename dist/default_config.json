@@ -518,7 +518,9 @@
     "https://www.aljazeera.com/[Aljazeera]",
     "https://www.arte.tv/[Arte]",
     "https://www.feynmanlectures.caltech.edu/[Feynmanlectures]",
-    "https://updraft.cyfrin.io/[Updraft]"
+    "https://updraft.cyfrin.io/[Updraft]",
+    "https://mediaspace.illinois.edu/[MediaSpace]",
+    "https://www.nbcnews.com/[NBCNEWS]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -2614,11 +2616,11 @@
       "(<form>|<body>|<strong>|<img|<IMG|<Img|<ImG|<iMg|<iMG|<em>|<b>|</b>|<i>|</i>|<u>|</u>|<br>|<br/>)"
     ],
     "detectionServiceOrder": [
+      "google",
       "bing",
       "zhipu",
       "siliconcloud",
-      "transmart",
-      "google"
+      "transmart"
     ],
     "detectParagraphLanguage": false,
     "paragraphFirstLetterFontSize": 35,
@@ -2927,9 +2929,9 @@
       "detectionServiceOrder": [
         "zhipu",
         "siliconcloud",
+        "google",
         "bing",
-        "transmart",
-        "google"
+        "transmart"
       ],
       "toolsDelayTime": 200,
       "clientSupportLangs": [
@@ -3063,7 +3065,7 @@
       "youtubeAutoEnableSubtitleAfterInstalledAt": "2024-04-25",
       "isEnableAiSubtitleTip": true,
       "freeAiSubtitleCacheEndTime": "2025-09-30",
-      "aiSubtitleMaxTextLength": 200,
+      "aiSubtitleMaxTextLength": 400,
       "velocityGroup": [
         1,
         3,
@@ -13206,7 +13208,10 @@
     },
     {
       "id": "imdb",
-      "matches": "www.imdb.com",
+      "matches": [
+        "www.imdb.com",
+        "m.imdb.com"
+      ],
       "excludeSelectors.add": [
         ".jw-text-track-container"
       ],
@@ -15609,12 +15614,6 @@
         "hookType": "xhr",
         "subtitleUrlRegExp": "\\.vtt",
         "videoPlayerSelector": "video",
-        "attachRule": {
-          "appendSelector": "#player-gui",
-          "injectedGlobalCSS": [
-            ".playkit-subtitles {display: none;}"
-          ]
-        },
         "quickButtonRule": {
           "appendSelector": ".playkit-controls-container .playkit-right-controls",
           "insertBeforeSelector": ".playkit-controls-container .playkit-control-closed-captions"
@@ -18403,6 +18402,61 @@
       }
     },
     {
+      "id": "mediaspace",
+      "matches": "mediaspace.illinois.edu",
+      "excludeSelectors.add": [
+        ".playkit-overlay-action "
+      ],
+      "mutationExcludeSelectors.add": [
+        ".playkit-overlay-action  *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "hookType": "xhr",
+        "injectedCss": [
+          "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container{height: 28px;display: flex;align-items: center;align-self: flex-end;}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".playkit-bottom-bar .playkit-right-controls",
+          "insertBeforeSelector": ".playkit-bottom-bar .playkit-right-controls .playkit-control-closed-captions",
+          "injectCSS": ".logo svg {height: 18px; width: 18px}"
+        },
+        "attachRule": {
+          "appendSelector": "#player .playkit-container",
+          "injectedGlobalCSS": [
+            ".playkit-subtitles { display: none !important; }"
+          ]
+        }
+      }
+    },
+    {
+      "id": "nbcnews",
+      "matches": "www.nbcnews.com",
+      "excludeSelectors.add": [
+        ".jw-wrapper.jw-reset"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".jw-wrapper.jw-reset *"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subtitleUrlRegExp": "\\.vtt$",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".jw-controlbar.jw-reset .jw-button-container",
+          "insertBeforeSelector": ".jw-controlbar.jw-reset .jw-button-container .jw-icon-cc",
+          "injectCSS": ".logo svg {height: 18px; width: 18px}"
+        },
+        "attachRule": {
+          "appendSelector": ".jw-wrapper.jw-reset",
+          "injectedGlobalCSS": [
+            ".jw-captions { display: none !important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "investopedia",
       "matches": "www.investopedia.com",
       "subtitleRule.add": {
@@ -18669,7 +18723,8 @@
         "sotf-mods.com",
         "www.bls.gov",
         "www.sreality.cz",
-        "alar.95chat.cloud"
+        "alar.95chat.cloud",
+        "novel.prcm.jp"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -18978,6 +19033,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-03T15:28:44.832Z",
+  "buildinConfigUpdatedAt": "2025-09-05T10:33:30.213Z",
   "latestVersion": "1.20.13"
 }
