@@ -4300,6 +4300,9 @@
           ".immersive-translate-error-modal-shadow-root"
         ]
       },
+      "injectedCss.add": [
+        ".docx-wrapper p {line-height: unset!important;}"
+      ],
       "advanceMergeConfig": [
         {
           "condition": "true",
@@ -19036,6 +19039,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-06T15:26:10.159Z",
+  "buildinConfigUpdatedAt": "2025-09-06T16:00:54.705Z",
   "latestVersion": "1.20.13"
 }
