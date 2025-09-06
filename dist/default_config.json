@@ -18607,17 +18607,6 @@
       ]
     },
     {
-      "id": "macro",
-      "matches": [
-        "macro.com"
-      ],
-      "likePreSelectors.add": [
-        "[data-block-type=md] [style^=scrollbar-gutter]"
-      ],
-      "forceFormatPre": true,
-      "isTransformPreTagNewLine": true
-    },
-    {
       "id": "spicychat.ai",
       "matches": "spicychat.ai",
       "isTranslateTitle": false
@@ -18651,6 +18640,18 @@
       ],
       "forceFormatPre": true,
       "isTransformPreTagNewLine": true
+    },
+    {
+      "id": "formatPreSites",
+      "matches": [
+        "macro.com"
+      ],
+      "likePreSelectors.add": [
+        "[data-block-type=md] [style^=scrollbar-gutter]"
+      ],
+      "forceFormatPre": true,
+      "isTransformPreTagNewLine": true,
+      "_comment": "专门处理格式化的内容"
     },
     {
       "id": "txt",
@@ -18909,10 +18910,12 @@
       "id": "finalCommon.pdfWebPage",
       "matches": [
         "https://obgyn.onlinelibrary.wiley.com/doi/pdf/*",
+        "https://onlinelibrary.wiley.com/doi/pdf/*",
         "https://docs.amd.com/v/u/*/*"
       ],
       "selectorMatches": [
         "embed[type='application/pdf']",
+        "iframe[type='application/pdf']",
         "[id=myPdfIframe][src*=pdf]",
         "#article [type='application/pdf'][src*=pdf]",
         ".textFrame [type='application/pdf'][src*=pdf]",
@@ -19033,6 +19036,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-05T10:33:30.213Z",
+  "buildinConfigUpdatedAt": "2025-09-06T15:26:10.159Z",
   "latestVersion": "1.20.13"
 }
