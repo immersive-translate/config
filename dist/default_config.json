@@ -5587,11 +5587,13 @@
           "appendSelector": "#player-container-id",
           "showSupportTips": true,
           "injectedCSS": [
-            ".imt-caption-container {z-index:5;}"
+            ".imt-caption-container {z-index:5;}",
+            ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}"
           ],
           "injectedGlobalCSS": [
             ".caption-window {display: none;} ",
-            ".page-shorts #immersive-translate-caption-window { height: 180px;}"
+            ".page-shorts #immersive-translate-caption-window { height: 180px;}",
+            "#immersive-translate-caption-window {bottom: 30px;}"
           ]
         }
       },
@@ -9821,8 +9823,8 @@
         "subtitleUrlRegExp": "^https://.+?.oca.nflxvideo.net/\\?([ovet]=[^=]+){4}$",
         "loadingStyle": "bottom: 15%;",
         "quickButtonRule": {
-          "appendSelector": "[data-uia=\"control-audio-subtitle\"]",
-          "insertBeforeSelector": "[data-uia=\"control-audio-subtitle\"]",
+          "appendSelector": "[data-uia=\"control-audio-subtitle\"]<-parent<-parent",
+          "insertBeforeSelector": "[data-uia=\"control-audio-subtitle\"]<-parent",
           "injectCSS": ".imt-quick-subtitle-button {height: 60%; margin-right: 50px; font-size: 20px; } .logo,.logo svg { height: 36px; width: 36px} .label { display: none; } .imt-quick-subtitle-pop-content {transform: translateX(50%); right: 0}"
         },
         "attachRule": {
@@ -9838,13 +9840,6 @@
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "enableHookDownload": true
-      },
-      "subtitleRule.add_v.[1.17.8]": {
-        "quickButtonRule": {
-          "appendSelector": "[data-uia=\"control-audio-subtitle\"]<-parent<-parent",
-          "insertBeforeSelector": "[data-uia=\"control-audio-subtitle\"]<-parent",
-          "injectCSS": ".imt-quick-subtitle-button {height: 60%; margin-right: 50px; font-size: 20px; } .logo,.logo svg { height: 36px; width: 36px} .label { display: none; } .imt-quick-subtitle-pop-content {transform: translateX(50%); right: 0}"
-        }
       }
     },
     {
@@ -19039,6 +19034,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-06T16:00:54.705Z",
+  "buildinConfigUpdatedAt": "2025-09-08T15:33:26.021Z",
   "latestVersion": "1.20.13"
 }
