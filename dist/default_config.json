@@ -9979,9 +9979,6 @@
       "mutationExcludeSelectors.add": [
         ".video-container *"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "subtitleRule.add": {
         "type": "subsrt",
         "subtitleUrlRegExp": ".*\\.vtt.*",
@@ -13404,9 +13401,6 @@
       "mutationExcludeSelectors.add": [
         "#videocastPlayer *"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.srt$",
@@ -13538,9 +13532,6 @@
       "mutationExcludeSelectors.add": [
         ".player *"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -13571,9 +13562,6 @@
         "#vilos *",
         "#immersive-translate-caption-window *"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -13748,9 +13736,6 @@
       "excludeSelectors.add": [
         "#immersive-translate-caption-window"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "mutationExcludeSelectors.add": [
         "#immersive-translate-caption-window *"
       ],
@@ -13785,9 +13770,6 @@
       "mutationExcludeSelectors.add": [
         "#root *"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "subtitleRule.add": {
         "type": "subsrt",
         "hookType": "fetch",
@@ -14116,9 +14098,6 @@
       "mutationExcludeSelectors.add": [
         ".jw-wrapper *"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -14315,9 +14294,6 @@
       "mutationExcludeSelectors.add": [
         ".vp-captions *"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -14357,9 +14333,6 @@
         ".vp-captions *",
         ".vp-captions-line *"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "additionalExcludeSelectors.remove": [
         ".notranslate",
         "[translate=no]"
@@ -14505,9 +14478,6 @@
         "www.comsol.com/video/*",
         "www.comsol.com/blogs/*"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "excludeSelectors.add": [
         ".w-captions",
         ".w-captions-line > div > span"
@@ -14564,9 +14534,6 @@
         ".wrapper-video-bottom-section",
         ".secondary-controls"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -14680,9 +14647,6 @@
       "mutationExcludeSelectors.add": [
         ".p_accessibleHitArea *"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -15201,9 +15165,6 @@
       "matches": [
         "api.playposit.com"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "excludeSelectors.add": [
@@ -15316,9 +15277,6 @@
       "matches": [
         "customer-*.cloudflarestream.com"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -15487,9 +15445,6 @@
         ".plyr__captions *",
         "#immersive-translate-caption-window *"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -18235,9 +18190,6 @@
       "mutationExcludeSelectors.add": [
         "div[data-handle='captions'] *"
       ],
-      "selectionTranslation.add": {
-        "enable": false
-      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
@@ -19034,6 +18986,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-08T15:33:26.021Z",
+  "buildinConfigUpdatedAt": "2025-09-09T08:01:58.676Z",
   "latestVersion": "1.20.13"
 }
