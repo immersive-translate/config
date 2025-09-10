@@ -5121,7 +5121,8 @@
         "#response-container",
         "#streaming-response",
         "[noun='recommendation']",
-        "#subgrid-container h1, #subgrid-container h2"
+        "#subgrid-container h1, #subgrid-container h2",
+        ".i18n-subreddit-description"
       ],
       "excludeSelectors": [
         ".text-neutral-content-weak"
@@ -9552,6 +9553,9 @@
     {
       "id": "pubs.rsc.org",
       "matches": "pubs.rsc.org",
+      "excludeMatches": [
+        "https://pubs.rsc.org/*/articlepdf/*"
+      ],
       "stayOriginalSelectors.add": [
         "[class*='eqn']"
       ]
@@ -18129,7 +18133,8 @@
         "cis.vemic.com",
         "scripod.com",
         "drjoedispenza.com",
-        "www.x-mol.com"
+        "www.x-mol.com",
+        "webvpn.bnu.*"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
@@ -18144,7 +18149,8 @@
         "span.hotData-text { -webkit-line-clamp: unset !important; line-clamp: unset !important;}",
         "div.line-clamp-4 { -webkit-line-clamp: unset; max-height: unset;}",
         "[class*='titleTypography'] {-webkit-line-clamp: unset !important;}",
-        ".div-text-line-three { -webkit-line-clamp: unset; max-height: unset;}"
+        ".div-text-line-three { -webkit-line-clamp: unset; max-height: unset;}",
+        ".data-title { -webkit-line-clamp: unset!important; max-height: unset!important;}"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -18986,6 +18992,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-09T08:01:58.676Z",
+  "buildinConfigUpdatedAt": "2025-09-10T03:27:07.261Z",
   "latestVersion": "1.20.13"
 }
