@@ -9943,6 +9943,36 @@
       ]
     },
     {
+      "id": "investors",
+      "matches": "www.investors.com",
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": ".*\\.srt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "insertBeforeSelector": ".jw-icon-cc",
+          "ccEnableSelector": ".jw-icon-cc"
+        },
+        "injectedCss": ".jw-reset-text {font-size: 0.8em !important;}"
+      }
+    },
+    {
+      "id": "abc.net",
+      "matches": "www.abc.net.au",
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subsrtFormat": "srt",
+        "subtitleUrlRegExp": ".*\\.vtt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "insertBeforeSelector": ".jw-icon-cc",
+          "ccEnableSelector": ".jw-icon-cc"
+        }
+      }
+    },
+    {
       "id": "patreon",
       "matches": "www.patreon.com",
       "excludeSelectors": [
@@ -10070,8 +10100,9 @@
     {
       "id": "apple",
       "matches": "developer.apple.com",
-      "excludeSelectors": [
-        ".developer-video-player"
+      "excludeSelectors.add": [
+        ".developer-video-player",
+        ".vue-recycle-scroller"
       ],
       "mutationExcludeSelectors.add": [
         ".developer-video-player *"
@@ -10668,7 +10699,8 @@
         "wnacg.com",
         "www.wnacg.com",
         "www.wn02.cc",
-        "www.wnacg.ru"
+        "www.wnacg.ru",
+        "www.wnacg*.cc"
       ],
       "imageRule.add": {
         "enable": true,
@@ -10975,7 +11007,8 @@
       "matches": [
         "bato.to",
         "battwo.com",
-        "bato.si"
+        "bato.si",
+        "mto.to"
       ],
       "imageRule.add": {
         "enable": true,
@@ -14042,7 +14075,8 @@
           "realCurrentTimeRegex": "((?:\\d+:)?(?:\\d+:)?\\d+)\\s*[\\/|of|\\-]",
           "injectedGlobalCSS": [
             ".transition-transform { display: none !important; }",
-            ".imt-caption-window { margin-bottom: 50px; }"
+            ".imt-caption-window { margin-bottom: 50px; }",
+            "#immersive-translate-caption-window {opacity: 1 !important;}"
           ]
         }
       },
@@ -18177,7 +18211,8 @@
         "deno.land",
         "blog.partykit.io",
         "docs.lemonsqueezy.com",
-        "www.hcompany.ai"
+        "www.hcompany.ai",
+        "www.coingecko.com"
       ],
       "injectedCss": [
         ":root, font {font-feature-settings:normal;}"
@@ -18566,6 +18601,19 @@
       "id": "spicychat.ai",
       "matches": "spicychat.ai",
       "isTranslateTitle": false
+    },
+    {
+      "id": "sdk-cooperate",
+      "matches": [
+        "pandaily.com"
+      ],
+      "extraInlineSelectors.add": [
+        "h3"
+      ],
+      "excludeSelectors.add": [
+        "[data-discover]",
+        "header"
+      ]
     },
     {
       "id": "read.amazon",
@@ -18992,6 +19040,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-10T03:27:07.261Z",
+  "buildinConfigUpdatedAt": "2025-09-11T01:58:34.799Z",
   "latestVersion": "1.20.13"
 }
