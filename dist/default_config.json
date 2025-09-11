@@ -7867,16 +7867,24 @@
     },
     {
       "id": "tiktok",
-      "matches": "https://www.tiktok.com/*/video/*",
+      "matches": [
+        "https://www.tiktok.com/*/video/*",
+        "https://www.tiktok.com/*"
+      ],
       "selectors": [
         "[data-e2e^=comment-level]",
         "[data-e2e=browse-video-desc] > span"
       ],
-      "excludeSelectors.add": [
-        "[class*=\"DivInfoPosition\"]"
+      "additionalExcludeSelectors.add": [
+        "[class*='DivInfoPosition']",
+        "[data-e2e='like-count']",
+        "[data-e2e='nav-foryou']",
+        "[data-e2e*='comment-username']",
+        "[class*='DivCommentSubContentSplitWrapper']",
+        "[class*='DivViewRepliesContainer']"
       ],
       "mutationExcludeSelectors.add": [
-        "[class*=\"DivInfoPosition\"] *"
+        "[class*='DivInfoPosition'] *"
       ],
       "subtitleRule.add": {
         "type": "live",
@@ -8686,12 +8694,12 @@
       ],
       "urlChangeDelay": 0,
       "_comment": "解决 url 变化但是页面不变的问题",
-      "preTranslateLimiter.add_v.[1.12.1]": {
-        "header.selectors": [
-          "header"
-        ],
+      "preTranslateLimiter.add": {
         "header.enableTranslate": true
       },
+      "extraBlockSelectors.add": [
+        "header ol li a"
+      ],
       "injectedCss.add": [
         "header.d-header {height: 6em !important;}",
         ".topic-list .main-link .raw-topic-link > font {pointer-events:unset!important;}"
@@ -11472,7 +11480,8 @@
         "tonarinoyj.jp",
         "rimacomiplus.jp",
         "kuragebunch.com",
-        "comic-gardo.com"
+        "comic-gardo.com",
+        "ichicomi.com"
       ],
       "selectorMatches": [
         "img.page-image.js-page-image"
@@ -13866,6 +13875,9 @@
       "mutationExcludeSelectors.add": [
         ".pzp-pc__video *"
       ],
+      "excludeMatches": [
+        "weverse.io/*/live/*"
+      ],
       "subtitleRule.add": {
         "type": "subsrt",
         "subsrtFormat": "vtt",
@@ -15830,7 +15842,7 @@
     {
       "id": "bsky.app",
       "matches": "https://bsky.app",
-      "excludeSelectors.add": [
+      "additionalExcludeSelectors.add": [
         "[class='css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a']",
         "[class='css-175oi2r r-1la3zjv r-3o4zer']",
         "[data-testid^=homeScreenFeedTabs]",
@@ -18646,6 +18658,32 @@
       "isTransformPreTagNewLine": true
     },
     {
+      "id": "dcinside",
+      "matches": [
+        "*.dcinside.com"
+      ],
+      "additionalExcludeSelectors.add": [
+        ".num",
+        ".time"
+      ],
+      "preTranslateLimiter.add": {
+        "header.enableTranslate": true
+      },
+      "injectedCss.add": [
+        ".time_best .typet_list li a {font-size:unset !important;}",
+        "font {background:unset!important;padding:unset!important;}"
+      ]
+    },
+    {
+      "id": "f95zone",
+      "matches": "f95zone.to",
+      "additionalExcludeSelectors.add": [
+        ".pageNavWrapper",
+        ".message-userExtras",
+        ".message-name"
+      ]
+    },
+    {
       "id": "formatPreSites",
       "matches": [
         "macro.com"
@@ -19040,6 +19078,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-11T01:58:34.799Z",
+  "buildinConfigUpdatedAt": "2025-09-11T15:45:06.979Z",
   "latestVersion": "1.20.13"
 }
