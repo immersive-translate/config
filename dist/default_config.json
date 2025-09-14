@@ -8006,10 +8006,6 @@
         "https://www.tiktok.com/*/video/*",
         "https://www.tiktok.com/*"
       ],
-      "selectors": [
-        "[data-e2e^=comment-level]",
-        "[data-e2e=browse-video-desc] > span"
-      ],
       "additionalExcludeSelectors.add": [
         "[class*='DivInfoPosition']",
         "[data-e2e='like-count']",
@@ -19214,6 +19210,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-12T13:51:49.000Z",
+  "buildinConfigUpdatedAt": "2025-09-14T04:02:55.332Z",
   "latestVersion": "1.21.2"
 }
