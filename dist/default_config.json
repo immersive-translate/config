@@ -4384,6 +4384,7 @@
       },
       "enableSiteAutoTranslate": false,
       "toastErrorMinTimes": 5,
+      "detectParagraphLanguage": true,
       "advanceMergeConfig": [
         {
           "condition": "true",
@@ -5443,7 +5444,9 @@
         "[data-testid='recommendations-section']",
         ".Layout-main react-partial pre",
         ".feed-item-content section[data-view-component] [class='flex-1 d-flex flex-column'] div:nth-child(2)",
-        "#org-new-form"
+        "#org-new-form",
+        ".trial-info-large",
+        ".dfd-trial__container-form"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -14641,7 +14644,7 @@
         "videoPlayerSelector": "video",
         "loadingContainerSelector": "#coreplayer",
         "quickButtonRule": {
-          "injectCSS": ".label { display: none; }",
+          "injectCSS": ".imt-quick-subtitle-pop-content {right: 60px !important;}",
           "appendSelector": ".fp-controls"
         }
       }
@@ -19210,6 +19213,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-14T04:02:55.332Z",
-  "latestVersion": "1.21.2"
+  "buildinConfigUpdatedAt": "2025-09-15T08:28:55.657Z",
+  "latestVersion": "1.21.3"
 }
