@@ -5736,13 +5736,14 @@
           "appendSelector": "#player-container-id",
           "showSupportTips": true,
           "injectedCSS": [
-            ".imt-caption-container {z-index:5;}",
+            ".imt-caption-container {z-index:1;}",
             ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}"
           ],
           "injectedGlobalCSS": [
             ".caption-window {display: none;} ",
             ".page-shorts #immersive-translate-caption-window { height: 180px;}",
-            "#immersive-translate-caption-window {bottom: 30px;}"
+            "#immersive-translate-caption-window {bottom: 30px;}",
+            ".prevent-controls-collision {z-index: 0 !important;}"
           ]
         }
       },
@@ -19226,6 +19227,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-16T06:47:15.636Z",
+  "buildinConfigUpdatedAt": "2025-09-16T06:52:19.444Z",
   "latestVersion": "1.21.4"
 }
