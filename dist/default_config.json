@@ -2783,11 +2783,11 @@
       "triggerMode": "mini",
       "triggerModeForIcon": "hover",
       "proService": {
-        "service": "openai-pro",
+        "service": "openai",
         "model": "gpt-5-mini"
       },
       "commonService": {
-        "service": "zhipu-free",
+        "service": "zhipu",
         "model": "glm-4-flash"
       },
       "prompts": {
@@ -2859,6 +2859,16 @@
             }
           }
         ]
+      }
+    },
+    "selectionTranslation.add_v.[1.21.1]": {
+      "proService": {
+        "service": "openai-pro",
+        "model": "gpt-5-mini"
+      },
+      "commonService": {
+        "service": "zhipu-free",
+        "model": "glm-4-flash"
       }
     },
     "aiWriting": {
@@ -19216,6 +19226,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-15T14:40:19.000Z",
+  "buildinConfigUpdatedAt": "2025-09-16T06:47:15.636Z",
   "latestVersion": "1.21.4"
 }
