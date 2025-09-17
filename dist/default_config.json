@@ -1946,6 +1946,23 @@
         "enable_thinking": false
       }
     },
+    "kimi": {
+      "extends": "ai",
+      "name": "Kimi",
+      "model": "kimi-k2-0711-preview",
+      "models": "kimi-k2-0905-preview|kimi-k2-0711-preview|kimi-k2-turbo-preview",
+      "provider": "custom",
+      "limit": 10,
+      "enableRichTranslate": false,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
+      "enableFallback": true,
+      "proLimit": 10,
+      "requestTimeout": 200000,
+      "defaultMaxTextGroupLengthPerRequest": 4,
+      "maxTextGroupLengthPerRequest": 4,
+      "hidden": true
+    },
     "doubao": {
       "extends": "ai",
       "model": "",
@@ -2432,6 +2449,38 @@
         "aiWriting",
         "selectionTranslation"
       ]
+    },
+    "qwen-max": {
+      "extends": "qwen",
+      "name": "Qwen Max",
+      "provider": "pro",
+      "type": "custom-ai",
+      "visible": true,
+      "model": "qwen3-max-preview",
+      "proModel": "qwen3-max-preview",
+      "defaultVisible": true,
+      "group": "max",
+      "disabledAt": "2025-01-01"
+    },
+    "qwen-max.add_v.[1.21.5]": {
+      "type": "qwen",
+      "disabledAt": "2025-01-01"
+    },
+    "kimi-max": {
+      "extends": "kimi",
+      "name": "Kimi K2",
+      "provider": "pro",
+      "type": "custom-ai",
+      "visible": true,
+      "model": "Kimi-K2-0905",
+      "proModel": "Kimi-K2-0905",
+      "defaultVisible": true,
+      "group": "max",
+      "disabledAt": "2025-01-01"
+    },
+    "kimi-max.add_v.[1.21.5]": {
+      "type": "kimi",
+      "disabledAt": "2025-01-01"
     },
     "openai-custom": {
       "name": "OpenAI 1",
@@ -5759,7 +5808,8 @@
           "urlRegex": [
             "m.youtube.com/watch*",
             "m.youtube.com/embed*",
-            "m.youtube.com/shorts*"
+            "m.youtube.com/shorts*",
+            "m.youtube.com/live*"
           ],
           "maxDurationHours": 4
         }
@@ -5904,6 +5954,7 @@
                 "aiSubtitle": {
                   "enable": true,
                   "urlRegex": [
+                    "www.youtube.com/live*",
                     "www.youtube.com/watch*",
                     "www.youtube.com/embed*",
                     "www.youtube.com/shorts*"
@@ -14647,8 +14698,7 @@
     {
       "id": "jove",
       "matches": [
-        "www.jove.com",
-        "app.jove.com"
+        "*.jove.com"
       ],
       "subtitleRule.add": {
         "type": "text_track",
@@ -19227,6 +19277,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-16T06:52:19.444Z",
-  "latestVersion": "1.21.4"
+  "buildinConfigUpdatedAt": "2025-09-17T09:51:37.442Z",
+  "latestVersion": "1.21.5"
 }
