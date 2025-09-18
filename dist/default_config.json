@@ -3236,7 +3236,7 @@
       "^\\d+\\s+MIN\\s+READ$",
       "^[\\u200B\\u200C\\u200D\\u2060\\uFEFF]+$",
       "^[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]$",
-      "^.{1}$",
+      "^[a-zA-Z]{1}$",
       "^$",
       "<img id=0>",
       "<canvas id=0>"
@@ -4379,21 +4379,18 @@
       ],
       "longBuildPageLength": 1000,
       "skipEditableCheck": true,
+      "additionalExcludeSelectors.remove": [
+        "[contenteditable=\"true\"]"
+      ],
       "injectedCss.add": [
         ".immersive-translate-target-wrapper {white-space: unset;}",
         "[data-immersive-translate_rtl] .immersive-translate-target-translation-block-wrapper {width:100%}",
         "* {text-decoration:unset;}"
       ],
-      "additionalExcludeSelectors.remove": [
-        "[contenteditable=\"true\"]"
-      ],
       "mutationConfig.add": {
         "buildTimeout": 1000,
         "consumeTimeout": 1000
       },
-      "noTranslateRegexp.remove": [
-        "^.{1}$"
-      ],
       "excludeSelectorsRegexes": {
         "[class='inline-tabular'] > table > tbody > tr > td": [
           "^[A-Z0-9\\-_.]{0,10}$",
@@ -4455,6 +4452,39 @@
       ]
     },
     {
+      "id": "immersive-word",
+      "matches": [
+        "https://*.immersivetranslate.*/word*"
+      ],
+      "excludeSelectors.add": [
+        "#imt-navbar *",
+        ".preview-original-body *"
+      ],
+      "skipIgnoreSelectors": [
+        ".original-body"
+      ],
+      "blockMinTextCount": 0,
+      "blockMinWordCount": 0,
+      "paragraphMinWordCount": 0,
+      "paragraphMinTextCount": 0,
+      "detectParagraphLanguage": true,
+      "allowInnerInvoke": true,
+      "isInjectVersion": true,
+      "isInjectMeta": true,
+      "skipEditableCheck": true,
+      "additionalExcludeSelectors.remove": [
+        "[contenteditable=\"true\"]"
+      ],
+      "waitForSelectorsTimeout": 1,
+      "longBuildPageLength": 1000,
+      "excludeTags.remove": [
+        "PRE"
+      ],
+      "buildContainerSelectors.add": [
+        ".docx p"
+      ]
+    },
+    {
       "id": "immersive",
       "matches": [
         "https://immersivetranslate.*",
@@ -4482,9 +4512,6 @@
       "longBuildPageLength": 1000,
       "excludeTags.remove": [
         "PRE"
-      ],
-      "buildContainerSelectors.add": [
-        ".docx p"
       ],
       "shareConfig.add": {
         "cloneIframes": [
@@ -7284,13 +7311,24 @@
     {
       "id": "uxtension",
       "matches": "www.uxento.io",
+      "excludeSelectors": [
+        "article div[class='flex justify-between items-center px-3']",
+        "article div[class='flex items-center gap-2 mb-2']",
+        "article div[class='flex justify-between items-center pr-4']",
+        "article div[class='px-3 pb-3 pt-1 grid grid-cols-2 gap-4']",
+        "article div[class='flex flex-wrap gap-1 mt-1']",
+        "article div[class='flex items-center gap-3 pr-12']"
+      ],
       "selectors": [
         "[class='px-4 pb-4 text-sm leading-relaxed break-words text-white overflow-hidden']",
         "[class='text-xs leading-relaxed break-words text-[#AAAAB9] mb-2 overflow-hidden']",
         "[class='px-4 pb-4 text-sm leading-relaxed break-words text-white']",
         "[class='text-xs leading-relaxed break-words text-[#AAAAB9] mb-2']",
         "[class='flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip'] section",
-        "h2"
+        "h2",
+        "article",
+        "article h2",
+        "article p"
       ]
     },
     {
@@ -14557,7 +14595,7 @@
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
-        "type": "text_track",
+        "type": "text_track_dynamic",
         "videoPlayerSelector": "video",
         "loadingContainerSelector": ".player_container",
         "loadingStyle": "bottom: unset; top: 5%;",
@@ -19276,6 +19314,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-18T07:16:33.000Z",
+  "buildinConfigUpdatedAt": "2025-09-18T15:49:17.411Z",
   "latestVersion": "1.21.6"
 }
