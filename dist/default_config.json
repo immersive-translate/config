@@ -9657,9 +9657,6 @@
         "#Scholarscope_HighlightContent",
         "#Scholarscope_HighlightContent span"
       ],
-      "stayOriginalSelectors.add": [
-        ".usa-link"
-      ],
       "injectedCss": [
         "#Scholarscope_HighlightOrigin > p font,#Scholarscope_HighlightContent > p font {display: inline!important;}",
         "#Scholarscope_HighlightOrigin > p font br,#Scholarscope_HighlightContent > p font br {display: none!important;}",
@@ -19314,6 +19311,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-18T15:49:17.411Z",
+  "buildinConfigUpdatedAt": "2025-09-18T16:09:58.130Z",
   "latestVersion": "1.21.6"
 }
