@@ -2921,8 +2921,7 @@
       }
     },
     "aiWriting": {
-      "disabledAt": "2025-09-01",
-      "enable": false,
+      "enable": true,
       "urlPattern": {
         "matches": [],
         "excludeMatches": []
@@ -19277,6 +19276,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-17T09:56:02.000Z",
-  "latestVersion": "1.21.5"
+  "buildinConfigUpdatedAt": "2025-09-18T07:17:05.297Z",
+  "latestVersion": "1.21.6"
 }
