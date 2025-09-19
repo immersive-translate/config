@@ -519,7 +519,8 @@
     "https://www.feynmanlectures.caltech.edu/[Feynmanlectures]",
     "https://updraft.cyfrin.io/[Updraft]",
     "https://mediaspace.illinois.edu/[MediaSpace]",
-    "https://www.nbcnews.com/[NBCNEWS]"
+    "https://www.nbcnews.com/[NBCNEWS]",
+    "https://fawesome.tv[Fawesome]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -5531,7 +5532,8 @@
         ".feed-item-content section[data-view-component] [class='flex-1 d-flex flex-column'] div:nth-child(2)",
         "#org-new-form",
         ".trial-info-large",
-        ".dfd-trial__container-form"
+        ".dfd-trial__container-form",
+        "dialog-helper"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -10502,6 +10504,20 @@
       }
     },
     {
+      "id": "fawesome",
+      "matches": [
+        "fawesome.tv"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "quickButtonRule": {
+          "appendSelector": ".video-controls > .options.right",
+          "insertBeforeSelector": ".cc-on-off"
+        }
+      }
+    },
+    {
       "id": "readallcomics",
       "matches": "readallcomics.com",
       "imageRule.add": {
@@ -11567,10 +11583,12 @@
       ],
       "imageRule.add": {
         "type": "manga",
-        "urlFetchType": "img",
+        "urlFetchType": "canvasArgs",
         "imageSelectors": [
-          "img[data-nimg]"
+          "img[data-nimg]",
+          ".printView canvas"
         ],
+        "opImageType": "append",
         "loadingSelectors": [
           "div"
         ],
@@ -12729,8 +12747,7 @@
       "id": "cmoa",
       "matches": [
         "www.cmoa.jp",
-        "booklive.jp",
-        "yanmaga.jp"
+        "booklive.jp"
       ],
       "imageRule.add": {
         "enable": true,
@@ -12746,6 +12763,28 @@
         "firefox",
         "safari",
         "imtAndroid"
+      ]
+    },
+    {
+      "id": "yanmaga.jp",
+      "matches": [
+        "yanmaga.jp"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".pt-img img",
+          ".slick-slide img",
+          "img[id*='r-bannerImg-after_viewer']"
+        ]
+      },
+      "platforms": [
+        "chrome",
+        "firefox",
+        "safari",
+        "imtAndroid",
+        "imtIOSNew"
       ]
     },
     {
@@ -15189,6 +15228,25 @@
         "quickButtonRule": {
           "appendSelector": "starz-player .button-group",
           "insertBeforeSelector": "starz-player .button-group .video-player-icon-md"
+        }
+      }
+    },
+    {
+      "id": "jointherealworld",
+      "matches": "app.jointherealworld.com",
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "text/en.vtt",
+        "quickButtonRule": {
+          "appendSelector": ".aspect-video section >:nth-child(2) >:nth-child(2)"
+        },
+        "attachRule": {
+          "appendSelector": ".aspect-video",
+          "injectedGlobalCSS": [
+            ".pointer-events-none.text-white {display: none!important;} "
+          ]
         }
       }
     },
@@ -19311,6 +19369,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-19T09:38:06.000Z",
+  "buildinConfigUpdatedAt": "2025-09-19T15:50:41.489Z",
   "latestVersion": "1.21.7"
 }
