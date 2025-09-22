@@ -6618,7 +6618,8 @@
         ".message",
         ".reply-markup-button-text",
         ".bot-commands-list-element-description",
-        "[class*='tabs-tab page-password active']"
+        "[class*='tabs-tab page-password active']",
+        "#auth-qr-form"
       ],
       "extraBlockSelectors.add": [
         ".message.spoilers-container em",
@@ -18044,13 +18045,16 @@
       "id": "mobalytics",
       "matches": "mobalytics.gg",
       "extraInlineSelectors.add": [
-        ".x1n2onr6.xb3r6kr",
-        ".x1n2onr6.xb3r6kr *"
+        "p.xlpi6m9.x5qbwci.xw7yly9 span span"
       ],
-      "atomicBlockSelectors.add": [
-        ".x1n2onr6.xb3r6kr",
-        ".x1n2onr6.xb3r6kr *"
-      ]
+      "buildContainerSelectors.add": [
+        ".x1n2onr6.xb3r6kr.x5yr21d"
+      ],
+      "likePreSelectors.add": [
+        ".x1n2onr6.xb3r6kr.x5yr21d .x5yr21d"
+      ],
+      "isTransformPreTagNewLine": true,
+      "forceFormatPre": true
     },
     {
       "id": "JeffyReader",
@@ -19369,6 +19373,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-19T15:50:41.489Z",
+  "buildinConfigUpdatedAt": "2025-09-22T11:02:02.140Z",
   "latestVersion": "1.21.7"
 }
