@@ -3739,7 +3739,8 @@
       ".fb-ads-block.ads-in-text",
       "#stageTime",
       ".example-header",
-      "times"
+      "times",
+      "[value=ka]"
     ],
     "mouseHoverExcludeSelectors": [
       "rp",
@@ -19375,6 +19376,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-22T11:31:15.997Z",
+  "buildinConfigUpdatedAt": "2025-09-22T15:45:35.294Z",
   "latestVersion": "1.21.7"
 }
