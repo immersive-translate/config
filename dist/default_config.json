@@ -12422,7 +12422,8 @@
       "id": "manhwahub",
       "matches": [
         "manhwahub.net",
-        "manhuatop.org"
+        "manhuatop.org",
+        "aedexnox.vxviral.xyz"
       ],
       "imageRule.add": {
         "enable": true,
@@ -12435,7 +12436,8 @@
           "chrome",
           "firefox",
           "imtIOSNew",
-          "safari"
+          "safari",
+          "imtAndroid"
         ]
       }
     },
@@ -19373,6 +19375,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-22T11:02:02.140Z",
+  "buildinConfigUpdatedAt": "2025-09-22T11:31:15.997Z",
   "latestVersion": "1.21.7"
 }
