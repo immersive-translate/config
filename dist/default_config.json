@@ -1468,6 +1468,16 @@
             "reasoning_effort": "minimal",
             "temperature.remove": ""
           }
+        },
+        {
+          "models": [
+            "Hunyuan-MT"
+          ],
+          "prompt": "把下面的文本翻译成 {{to}} 语言，不要额外解释\n\n{{text}}",
+          "multiplePrompt": "把下面的多行文本翻译成 {{to}} 语言，不要额外解释，注意换行符\n\n{{text}}",
+          "systemPrompt": "",
+          "multipleSystemPrompt": "",
+          "subtitlePrompt": ""
         }
       ],
       "modelsOverrides.add_v.[1.20.9]": [
@@ -1998,7 +2008,7 @@
     "siliconcloud": {
       "extends": "ai",
       "model": "Qwen/Qwen2.5-7B-Instruct",
-      "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/glm-4-9b-chat",
+      "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/glm-4-9b-chat|tencent/Hunyuan-MT-7B",
       "freeModels": [
         "Qwen/Qwen2.5-7B-Instruct",
         "THUDM/glm-4-9b-chat"
@@ -12685,6 +12695,28 @@
       }
     },
     {
+      "id": "rawotaku",
+      "matches": [
+        "rawotaku.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".iv-card.loader.shuffled.active img",
+          ".iv-card.loader.shuffled img"
+        ],
+        "loadingStyle": "z-index: 9999;",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "rawkuma.net",
       "matches": [
         "rawkuma.net"
@@ -16521,7 +16553,9 @@
       "id": "chromium",
       "matches": "*.chromium.org",
       "additionalExcludeSelectors.add": [
-        "ancestors-breadcrumbs"
+        "ancestors-breadcrumbs",
+        "depth-finder[role='tree']",
+        "repository-detail"
       ]
     },
     {
@@ -19148,7 +19182,8 @@
         "portal.achieve3000.net",
         "triumph-cubic.com",
         "ieeeforms.wufoo.com",
-        "www.midjourney.com"
+        "www.midjourney.com",
+        "fifakitcreator.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -19376,6 +19411,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-22T15:45:35.294Z",
+  "buildinConfigUpdatedAt": "2025-09-23T10:58:17.985Z",
   "latestVersion": "1.21.7"
 }
