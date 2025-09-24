@@ -9018,6 +9018,25 @@
       }
     },
     {
+      "id": "drizzle",
+      "matches": [
+        "orm.drizzle.team"
+      ],
+      "urlChangeDelay": 400,
+      "mutationConfig.add": {
+        "enableUrlChange": true
+      },
+      "excludeSelectors.add": [
+        "[class^='codetabs_tab']",
+        ".npm__tab"
+      ],
+      "preTranslateLimiter.add": {
+        "side.selectors": [
+          "#aside"
+        ]
+      }
+    },
+    {
       "id": "yahoo",
       "matches": "*.yahoo.*",
       "additionalExcludeSelectors.add": [
@@ -10273,6 +10292,22 @@
           "appendSelector": ".vjs-control-bar",
           "insertBeforeSelector": "div.vjs-subs-caps-button",
           "injectCSS": ".imt-quick-subtitle-button { height: 60%; } .label { display: none; } .logo,.logo svg { width: 70%; } .imt-quick-subtitle-button { margin: 6px 8px 0;}"
+        }
+      }
+    },
+    {
+      "id": "matlabacademy",
+      "matches": [
+        "matlabacademy.mathworks.com"
+      ],
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "subsrtFormat": "srt",
+        "subtitleUrlRegExp": ".*\\.vtt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": "div.vjs-subs-caps-button"
         }
       }
     },
@@ -19411,6 +19446,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-23T10:58:17.985Z",
+  "buildinConfigUpdatedAt": "2025-09-24T11:33:36.265Z",
   "latestVersion": "1.21.7"
 }
