@@ -2683,7 +2683,7 @@
   ],
   "generalRule": {
     "_comment": "",
-    "domCheckTimeout": 200,
+    "domCheckTimeout": 500,
     "floatEffectParagraphNum": -1,
     "floatBlockEffectParagraphs": 4,
     "purifyRichHtml": true,
@@ -19456,6 +19456,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-26T07:43:35.064Z",
+  "buildinConfigUpdatedAt": "2025-09-26T08:23:55.946Z",
   "latestVersion": "1.21.7"
 }
