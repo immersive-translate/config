@@ -791,6 +791,16 @@
       }
     },
     {
+      "condition": "isPro==true",
+      "advanceConfig": {
+        "translationServices.add": {
+          "deepl.add_v.[1.21.7]": {
+            "provider": "pro"
+          }
+        }
+      }
+    },
+    {
       "condition": "isPro==false && isMobile==false && hasOpenedRewardCenter==false && abTagNumber<1",
       "advanceConfig": {
         "notificationList.add": [
@@ -19446,6 +19456,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-24T11:33:36.265Z",
+  "buildinConfigUpdatedAt": "2025-09-26T07:43:35.064Z",
   "latestVersion": "1.21.7"
 }
