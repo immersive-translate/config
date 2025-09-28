@@ -13054,6 +13054,25 @@
       }
     },
     {
+      "id": "tichct",
+      "matches": [
+        "www.tichct.org"
+      ],
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          ".gallery-item img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "frontendmasters",
       "matches": [
         "frontendmasters.com"
@@ -14758,7 +14777,7 @@
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
-        "type": "text_track",
+        "type": "text_track_dynamic",
         "videoPlayerSelector": "video",
         "allowHideModeTextTrack": true,
         "loadingContainerSelector": ".vp-telecine",
@@ -19231,7 +19250,8 @@
         "triumph-cubic.com",
         "ieeeforms.wufoo.com",
         "www.midjourney.com",
-        "fifakitcreator.com"
+        "fifakitcreator.com",
+        "app.voxy.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -19459,6 +19479,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-26T10:57:10.215Z",
+  "buildinConfigUpdatedAt": "2025-09-28T02:04:31.250Z",
   "latestVersion": "1.21.7"
 }
