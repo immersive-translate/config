@@ -2407,6 +2407,11 @@
       "type": "qwen-mt",
       "disabledAt": ""
     },
+    "qwen-mt-pro.add_v.[1.21.1]": {
+      "type": "qwen-mt",
+      "disabledAt": "",
+      "isDeleted": true
+    },
     "qwen-pro": {
       "extends": "qwen",
       "name": "Qwen Plus",
@@ -2417,11 +2422,15 @@
       "proModel": "qwen-plus-latest",
       "defaultVisible": true,
       "group": "pro",
-      "disabledAt": "2025-01-01"
+      "disabledAt": "2025-01-01",
+      "supportFeatures": [
+        "aiWriting",
+        "selectionTranslation"
+      ]
     },
     "qwen-pro.add_v.[1.21.1]": {
       "type": "qwen",
-      "disabledAt": "2025-01-01"
+      "disabledAt": ""
     },
     "deepl-pro": {
       "name": "DeepL Pro",
@@ -2484,7 +2493,11 @@
       "proModel": "qwen3-max-preview",
       "defaultVisible": true,
       "group": "max",
-      "disabledAt": "2025-01-01"
+      "disabledAt": "2025-01-01",
+      "supportFeatures": [
+        "aiWriting",
+        "selectionTranslation"
+      ]
     },
     "qwen-max.add_v.[1.21.5]": {
       "type": "qwen",
@@ -2500,11 +2513,15 @@
       "proModel": "Kimi-K2-0905",
       "defaultVisible": true,
       "group": "max",
-      "disabledAt": "2025-01-01"
+      "disabledAt": "2025-01-01",
+      "supportFeatures": [
+        "aiWriting",
+        "selectionTranslation"
+      ]
     },
     "kimi-max.add_v.[1.21.5]": {
       "type": "kimi",
-      "disabledAt": "2025-01-01"
+      "disabledAt": ""
     },
     "openai-custom": {
       "name": "OpenAI 1",
@@ -19479,6 +19496,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-28T02:04:31.250Z",
+  "buildinConfigUpdatedAt": "2025-09-28T03:07:02.970Z",
   "latestVersion": "1.21.7"
 }
