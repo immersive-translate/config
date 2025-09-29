@@ -4079,6 +4079,7 @@
       ],
       "enableRichTranslate": false,
       "allowInnerInvoke": true,
+      "toastErrorMinTimes": 5,
       "matches": [
         "https://app.immersivetranslate.*/pdf",
         "https://app.immersivetranslate.*/pdf/*",
@@ -18596,7 +18597,8 @@
         "scripod.com",
         "drjoedispenza.com",
         "www.x-mol.com",
-        "webvpn.bnu.*"
+        "webvpn.bnu.*",
+        "www.connectedpapers.com"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
@@ -18612,7 +18614,8 @@
         "div.line-clamp-4 { -webkit-line-clamp: unset; max-height: unset;}",
         "[class*='titleTypography'] {-webkit-line-clamp: unset !important;}",
         ".div-text-line-three { -webkit-line-clamp: unset; max-height: unset;}",
-        ".data-title { -webkit-line-clamp: unset!important; max-height: unset!important;}"
+        ".data-title { -webkit-line-clamp: unset!important; max-height: unset!important;}",
+        ".paper-title,.search-result-abstract.folded,.list-group-item-mod h5 { -webkit-line-clamp: unset!important; max-height: unset!important;}"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -19496,6 +19499,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-28T03:07:02.970Z",
+  "buildinConfigUpdatedAt": "2025-09-29T15:00:31.388Z",
   "latestVersion": "1.21.7"
 }
