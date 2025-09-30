@@ -5414,7 +5414,9 @@
         "#streaming-response",
         "[noun='recommendation']",
         "#subgrid-container h1, #subgrid-container h2",
-        ".i18n-subreddit-description"
+        ".i18n-subreddit-description",
+        "#streaming-response",
+        "#response-container_streaming"
       ],
       "excludeSelectors": [
         ".text-neutral-content-weak"
@@ -19527,6 +19529,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-30T07:43:02.000Z",
+  "buildinConfigUpdatedAt": "2025-09-30T08:04:43.125Z",
   "latestVersion": "1.21.8"
 }
