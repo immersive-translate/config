@@ -2048,10 +2048,6 @@
       "defaultVisible": true,
       "defaultHiddenLangs": [
         "zh-TW"
-      ],
-      "placeholderDelimiters": [
-        "@",
-        "#"
       ]
     },
     "siliconcloud.add_v.[1.15.3]": {
@@ -2161,10 +2157,6 @@
       "defaultVisible": true,
       "defaultHiddenLangs": [
         "zh-TW"
-      ],
-      "placeholderDelimiters": [
-        "#",
-        "#"
       ],
       "provider": "custom",
       "limit": 10,
@@ -2813,6 +2805,7 @@
     "excludeRegexps": [
       "(&lt;\\\\/?[a-zA-Z0-9]+(?:[^&gt;]*?)&gt;)",
       "(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})",
+      "(<h1|<form>|<body>|<strong>|<img|<IMG|<Img|<ImG|<iMg|<iMG|<em>|<b>|</b>|<i>|</i>|<u>|</u>|<br>|<br/>)",
       "(<canvas>)"
     ],
     "detectionServiceOrder": [
@@ -19529,6 +19522,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-30T08:04:43.125Z",
+  "buildinConfigUpdatedAt": "2025-09-30T09:58:08.143Z",
   "latestVersion": "1.21.8"
 }
