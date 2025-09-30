@@ -10,6 +10,7 @@
   "userTranslationServices": {},
   "mouseModifierKeyPressTimeout": 400,
   "sameLangCheck": true,
+  "aiTranslatedCheck": true,
   "isPreview": false,
   "useOnlineOptions": false,
   "enableMachineTranslateTerms": false,
@@ -669,6 +670,16 @@
   "pcFloatBallMainBtnTooltipShownCount": 0,
   "h5FloatBallMainBtnTooltipShownCount": 0,
   "advanceMergeConfig": [
+    {
+      "condition": "abTagNumber<0",
+      "advanceConfig": {
+        "translationServices.add": {
+          "siliconcloud-free.add_v.[1.12.8]": {
+            "enableImtServe": true
+          }
+        }
+      }
+    },
     {
       "condition": "imtAndroidVersionNumber>10107",
       "advanceConfig": {
@@ -1989,7 +2000,8 @@
     },
     "doubao": {
       "extends": "ai",
-      "model": "",
+      "model": "deepseek-v3-1-250821",
+      "models": "deepseek-v3-1-250821|deepseek-v3-250324|deepseek-r1-250528|doubao-seed-1-6-250615|doubao-seed-1-6-thinking-250715|doubao-seed-1-6-flash-250715|kimi-k2-250711",
       "provider": "custom",
       "limit": 10,
       "dualEnableRichTranslate": false,
@@ -2521,7 +2533,8 @@
     },
     "kimi-max.add_v.[1.21.5]": {
       "type": "kimi",
-      "disabledAt": ""
+      "disabledAt": "",
+      "hidden": false
     },
     "openai-custom": {
       "name": "OpenAI 1",
@@ -2701,8 +2714,20 @@
     "Inconsolata",
     "Source Code Pro"
   ],
+  "conflictOtherTranslator": [
+    {
+      "name": "Chrome",
+      "selector": "font[dir='auto'][style='vertical-align: inherit;'] > font[dir='auto'][style='vertical-align: inherit;']"
+    },
+    {
+      "name": "Edge",
+      "selector": "[_msttexthash][_msthash]"
+    }
+  ],
   "generalRule": {
     "_comment": "",
+    "privacyProtocolVersion": "",
+    "privacyProtocolEnableTime": "2025-10-10T15:30:00Z",
     "domCheckTimeout": 500,
     "floatEffectParagraphNum": -1,
     "floatBlockEffectParagraphs": 4,
@@ -4082,7 +4107,9 @@
       "toastErrorMinTimes": 5,
       "matches": [
         "https://app.immersivetranslate.*/pdf",
+        "https://test-app.immersivetranslate.*/pdf",
         "https://app.immersivetranslate.*/pdf/*",
+        "https://test-app.immersivetranslate.*/pdf/*",
         "https://app.infread.com/pdf/*",
         "http://localhost:38001/pdf*"
       ],
@@ -4470,6 +4497,7 @@
         "https://onboarding.immersivetranslate.*",
         "https://*onboarding.immersivetranslate.*"
       ],
+      "privacyProtocolVersion": "",
       "allowInnerInvoke": true,
       "isInjectVersion": true,
       "isInjectMeta": true,
@@ -19499,6 +19527,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-29T15:00:31.388Z",
-  "latestVersion": "1.21.7"
+  "buildinConfigUpdatedAt": "2025-09-30T07:43:30.749Z",
+  "latestVersion": "1.21.8"
 }
