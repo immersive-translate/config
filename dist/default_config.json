@@ -2805,7 +2805,7 @@
     "excludeRegexps": [
       "(&lt;\\\\/?[a-zA-Z0-9]+(?:[^&gt;]*?)&gt;)",
       "(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})",
-      "(<h1|<form>|<body>|<strong>|<img|<IMG|<Img|<ImG|<iMg|<iMG|<em>|<b>|</b>|<i>|</i>|<u>|</u>|<br>|<br/>)",
+      "(<h1)",
       "(<canvas>)"
     ],
     "detectionServiceOrder": [
@@ -19522,6 +19522,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-09-30T09:58:08.143Z",
+  "buildinConfigUpdatedAt": "2025-10-01T15:32:46.550Z",
   "latestVersion": "1.21.8"
 }
