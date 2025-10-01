@@ -2805,7 +2805,6 @@
     "excludeRegexps": [
       "(&lt;\\\\/?[a-zA-Z0-9]+(?:[^&gt;]*?)&gt;)",
       "(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})",
-      "(<h1)",
       "(<canvas>)"
     ],
     "detectionServiceOrder": [
@@ -19522,6 +19521,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-01T15:32:46.550Z",
+  "buildinConfigUpdatedAt": "2025-10-01T15:34:03.940Z",
   "latestVersion": "1.21.8"
 }
