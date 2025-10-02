@@ -19214,7 +19214,8 @@
         "www.bls.gov",
         "www.sreality.cz",
         "alar.95chat.cloud",
-        "novel.prcm.jp"
+        "novel.prcm.jp",
+        "im.jinritemai.com"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -19527,6 +19528,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-02T13:08:18.882Z",
+  "buildinConfigUpdatedAt": "2025-10-02T15:31:53.689Z",
   "latestVersion": "1.21.8"
 }
