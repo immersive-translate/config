@@ -2807,6 +2807,7 @@
       "(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})",
       "(<canvas>)"
     ],
+    "secretRegexps": [],
     "detectionServiceOrder": [
       "google",
       "bing",
@@ -19526,6 +19527,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-02T13:03:43.124Z",
+  "buildinConfigUpdatedAt": "2025-10-02T13:08:18.882Z",
   "latestVersion": "1.21.8"
 }
