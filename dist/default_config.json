@@ -8183,8 +8183,10 @@
       ],
       "additionalExcludeSelectors.add": [
         "[class*='DivInfoPosition']",
-        "[data-e2e='like-count']",
+        "[data-e2e*='-count']",
         "[data-e2e='nav-foryou']",
+        "[data-e2e*='view-more']",
+        "[data-e2e*='comment-reply']",
         "[data-e2e*='comment-username']",
         "[class*='DivCommentSubContentSplitWrapper']",
         "[class*='DivViewRepliesContainer']"
@@ -19528,6 +19530,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-03T15:58:35.594Z",
+  "buildinConfigUpdatedAt": "2025-10-06T08:29:08.272Z",
   "latestVersion": "1.21.8"
 }
