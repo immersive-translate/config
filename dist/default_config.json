@@ -3276,14 +3276,11 @@
     "useIframePostMessage": false,
     "searchEnhancementConfig": [],
     "injectedCss": [
-      ".immersive-translate-target-wrapper[dir='rtl'] {text-align: right;}",
-      ".immersive-translate-target-wrapper[dir='rtl'] [data-immersive-translate-class-bak*='block-wrapper'] {display:block;}",
-      ".immersive-translate-target-wrapper {word-break:break-word; user-select:text;}",
-      "[imt-state=\"translation\"] .immersive-translate-target-wrapper[dir='rtl'] {display:inline-block!important;}",
+      ".immersive-translate-target-wrapper[dir='rtl'] {text-align: right;display:block!important;}",
       "[dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {text-align:left;direction:ltr;}",
+      ".immersive-translate-target-wrapper {word-break:break-word; user-select:text;}",
       "[imt-state=dual] .immersive-translate-target-translation-block-wrapper-theme-dividingLine::before {display:block;}",
-      "[imt-trans-position=before] .immersive-translate-target-translation-block-wrapper {display:block!important;}",
-      "[imt-state][data-immersive-translate_rtl] .immersive-translate-target-wrapper {display:block!important;}"
+      "[imt-trans-position=before] .immersive-translate-target-translation-block-wrapper {display:block!important;}"
     ],
     "isOnBoardingPage": false,
     "isEbook": false,
@@ -19530,6 +19527,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-06T08:29:08.272Z",
+  "buildinConfigUpdatedAt": "2025-10-06T15:19:53.055Z",
   "latestVersion": "1.21.8"
 }
