@@ -2791,6 +2791,9 @@
       "hr",
       "em"
     ],
+    "buildContainerSelectors": [
+      "td"
+    ],
     "enableSkipBuildContainer": false,
     "glossaries": [
       {
@@ -4242,7 +4245,8 @@
       "matches": [
         "https://*.immersivetranslate.*/ebook/make/",
         "https://app.infread.com/ebook/make/",
-        "http://localhost:38001/ebook/make/"
+        "http://localhost:38001/ebook/make/",
+        "http://localhost:3000/*/ebook-make*/"
       ],
       "preTranslateLimiter.add_v.[1.12.1]": {
         "side.enableTranslate": true,
@@ -4674,6 +4678,29 @@
         "imageSelectors": [
           "img.i-amphtml-fill-content"
         ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
+      "id": "jmcomic",
+      "matches": [
+        "jmcomic-zzz.one"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "opImageType": "append",
+        "urlFetchType": "canvasArgs",
+        "imageSelectors": [
+          ".scramble-page canvas"
+        ],
+        "loadingStyle": "z-index: 999",
         "platforms": [
           "chrome",
           "firefox",
@@ -5605,7 +5632,8 @@
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
         "li>div[class*='Box-sc'],div[class*='Box-sc']>button[class*='prc-Token-TokenBase'],li[class*='card-label-module']>button[class*='prc-Token-TokenBase'] {height:unset!important;}",
-        "#memex-project-view-root [class*=table-row__StyledTableRow-sc],#memex-project-view-root [class*=base-cell-module__Box] {height:unset!important;}"
+        "#memex-project-view-root [class*=table-row__StyledTableRow-sc],#memex-project-view-root [class*=base-cell-module__Box] {height:unset!important;}",
+        "[class*='GridCard-module__description'] {-webkit-line-clamp: unset;}"
       ],
       "atomicBlockSelectors": [
         "[itemprop=description]"
@@ -9929,7 +9957,7 @@
       ],
       "forceFormatPre": true,
       "isTransformPreTagNewLine": true,
-      "buildContainerSelectors": [
+      "buildContainerSelectors.add": [
         ".poe-content"
       ],
       "injectedCss": [
@@ -12162,7 +12190,7 @@
         "body": 4,
         "tab": 1
       },
-      "buildContainerSelectors": [
+      "buildContainerSelectors.add": [
         "main"
       ]
     },
@@ -16400,6 +16428,15 @@
       ]
     },
     {
+      "id": "chub.ai",
+      "matches": [
+        "chub.ai"
+      ],
+      "stayOriginalTags.remove": [
+        "CODE"
+      ]
+    },
+    {
       "id": "soundcloud",
       "matches": "soundcloud.com",
       "injectedCss": [
@@ -16529,7 +16566,7 @@
         ".summary > h3",
         ".notes > h3"
       ],
-      "buildContainerSelectors": [
+      "buildContainerSelectors.add": [
         "#main"
       ]
     },
@@ -18011,7 +18048,7 @@
         ".bb-editor-root",
         "#content-tab-panel-content"
       ],
-      "buildContainerSelectors": [
+      "buildContainerSelectors.add": [
         "bb-rich-text-editor",
         ".bb-editor-wrapper",
         ".bb-editor-root",
@@ -18329,7 +18366,7 @@
       "likePreSelectors.add": [
         ".next-container section"
       ],
-      "buildContainerSelectors": [
+      "buildContainerSelectors.add": [
         ".next-container section"
       ],
       "injectedCss.add": [
@@ -19224,7 +19261,7 @@
       "excludeTags.remove": [
         "PRE"
       ],
-      "buildContainerSelectors": [
+      "buildContainerSelectors.add": [
         "pre"
       ]
     },
@@ -19527,6 +19564,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-06T15:19:53.055Z",
+  "buildinConfigUpdatedAt": "2025-10-10T02:29:13.074Z",
   "latestVersion": "1.21.8"
 }
