@@ -2719,7 +2719,7 @@
   "generalRule": {
     "_comment": "",
     "privacyProtocolVersion": "",
-    "privacyProtocolEnableTime": "2025-10-10T15:30:00Z",
+    "privacyProtocolEnableTime": "2025-10-31T00:00:00Z",
     "domCheckTimeout": 500,
     "floatEffectParagraphNum": -1,
     "floatBlockEffectParagraphs": 4,
@@ -19564,6 +19564,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-10T06:54:47.707Z",
+  "buildinConfigUpdatedAt": "2025-10-10T06:58:24.192Z",
   "latestVersion": "1.21.8"
 }
