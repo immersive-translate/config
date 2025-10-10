@@ -671,7 +671,7 @@
   "h5FloatBallMainBtnTooltipShownCount": 0,
   "advanceMergeConfig": [
     {
-      "condition": "abTagNumber<0",
+      "condition": "abTagNumber<1",
       "advanceConfig": {
         "translationServices.add": {
           "siliconcloud-free.add_v.[1.12.8]": {
@@ -19564,6 +19564,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-10T02:29:13.074Z",
+  "buildinConfigUpdatedAt": "2025-10-10T06:54:47.707Z",
   "latestVersion": "1.21.8"
 }
