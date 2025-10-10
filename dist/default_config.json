@@ -5096,6 +5096,9 @@
       "extraInlineSelectors.add": [
         "[data-tid='closed-caption-text']"
       ],
+      "stayOriginalSelectors.add": [
+        "span[title][style='min-width: 20px; height: 20px;']"
+      ],
       "subtitleRule.add": {
         "type": "live",
         "injectedCss": [
@@ -5816,6 +5819,7 @@
       "matches": "www.facebook.com/v20.0/plugins/*",
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "subsrt",
         "subsrtFormat": "vtt",
@@ -5986,6 +5990,7 @@
       "blockMinWordCount": 0,
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "detectParagraphLanguage": true,
       "lineBreakMaxTextCount": 0,
       "shareConfig": {
@@ -6151,6 +6156,7 @@
       "blockMinWordCount": 0,
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "detectParagraphLanguage": true,
       "lineBreakMaxTextCount": 0,
       "isTranslateTitle": false,
@@ -6214,6 +6220,7 @@
       "matches": "tv.youtube.com",
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "youtube",
         "hookType": "xhr_response",
@@ -6269,6 +6276,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "excludeSelectors.add": [
         ".captions-text",
         ".ytp-caption-segment"
@@ -9299,7 +9307,13 @@
       },
       "initialSelectorGlobalAttributes.remove": {
         "header": {}
-      }
+      },
+      "additionalExcludeSelectors.add": [
+        "[data-testid=user-header]",
+        "[data-testid^='recommend-button']",
+        "[data-testid=copy-link]",
+        ".css-mydst6 > a"
+      ]
     },
     {
       "id": "bugsKde",
@@ -9969,15 +9983,6 @@
       ],
       "additionalExcludeSelectors.add": [
         "span[class^='text-opac'] + span[class^='text-']"
-      ]
-    },
-    {
-      "id": "microsoftTeams",
-      "matches": [
-        "teams.live.com"
-      ],
-      "stayOriginalSelectors.add": [
-        "span[title][style='min-width: 20px; height: 20px;']"
       ]
     },
     {
@@ -13967,6 +13972,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "excludeSelectors.add": [
         ".jw-wrapper",
         "#immersive-translate-caption-window"
@@ -14002,36 +14008,6 @@
       }
     },
     {
-      "id": "common-vtt-jw",
-      "matches": [
-        "*.rottentomatoes.com",
-        "megaplay.buzz"
-      ],
-      "excludeSelectors.add": [
-        ".jw-wrapper"
-      ],
-      "mutationExcludeSelectors.add": [
-        ".jw-wrapper *"
-      ],
-      "selectionTranslation": {
-        "enable": false
-      },
-      "mainFrameMinTextCount": 0,
-      "mainFrameMinWordCount": 0,
-      "subtitleRule.add": {
-        "type": "subsrt",
-        "subsrtFormat": "vtt",
-        "hookType": "fetch|xhr",
-        "subtitleUrlRegExp": "\\.vtt",
-        "quickButtonRule": {
-          "appendSelector": ".jw-button-container",
-          "insertBeforeSelector": ".jw-icon-cc",
-          "ccEnableSelector": ".jw-icon-cc",
-          "isEnableCCObserver": true
-        }
-      }
-    },
-    {
       "id": "dailymotion",
       "matches": [
         "*.dailymotion.com"
@@ -14044,6 +14020,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "subsrt",
         "subsrtFormat": "srt",
@@ -14074,6 +14051,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "subsrt",
         "subsrtFormat": "vtt",
@@ -14104,6 +14082,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "subsrt",
         "subtitleUrlRegExp": "\\.vtt$",
@@ -14143,6 +14122,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "subsrt",
         "subtitleUrlRegExp": ".*captions.*\\.vtt$",
@@ -14209,6 +14189,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "subsrt",
         "subtitleUrlRegExp": "^https://subtitle\\.hitv\\.com/c1/subtitle",
@@ -14243,6 +14224,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "excludeSelectors.add": [
         "#immersive-translate-caption-window"
       ],
@@ -14408,6 +14390,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.vtt\\?.*",
@@ -14614,6 +14597,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "multi_attach_vtt",
         "hookType": "xhr",
@@ -14682,6 +14666,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "multi_attach_vtt",
         "hookType": "xhr",
@@ -14718,6 +14703,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "multi_attach_vtt",
         "hookType": "xhr",
@@ -14810,6 +14796,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "text_track_dynamic",
         "videoPlayerSelector": "video",
@@ -14853,6 +14840,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "text_track_dynamic",
         "videoPlayerSelector": "video",
@@ -15049,6 +15037,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "general",
         "subtitleUrlRegExp": "/transcript/translation/",
@@ -15148,6 +15137,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "xml",
         "hookType": "xhr",
@@ -15526,6 +15516,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "xml",
         "subtitleUrlRegExp": "\\_xml\\?",
@@ -15685,6 +15676,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "excludeSelectors.add": [
         "#overlay-container"
       ],
@@ -15797,6 +15789,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.vtt",
@@ -15830,6 +15823,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "webvtt",
         "subsrtFormat": "vtt",
@@ -15965,6 +15959,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "subsrt",
         "subtitleUrlRegExp": "\\.vtt",
@@ -18735,6 +18730,7 @@
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "quickButtonRule": {
           "appendSelector": ".w-bottom-bar-right-inner.w-css-reset",
@@ -18787,6 +18783,7 @@
       },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "subsrt",
         "subtitleUrlRegExp": ".*\\.vtt",
@@ -19174,6 +19171,59 @@
       ]
     },
     {
+      "id": "common-text-track",
+      "matches": [
+        "www.typing.com",
+        "*.video-stream-hosting.de",
+        "*.thieme.de"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video"
+      }
+    },
+    {
+      "id": "common-vtt-jw",
+      "matches": [
+        "*.rottentomatoes.com",
+        "megaplay.buzz",
+        "www.brighttalk.com"
+      ],
+      "excludeSelectors.add": [
+        ".jw-wrapper"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".jw-wrapper *"
+      ],
+      "selectionTranslation": {
+        "enable": false
+      },
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 0,
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "fetch|xhr",
+        "subtitleUrlRegExp": "\\.vtt",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "insertBeforeSelector": ".jw-icon-cc",
+          "ccEnableSelector": ".jw-icon-cc",
+          "isEnableCCObserver": true
+        },
+        "attachRule": {
+          "appendSelector": ".jw-wrapper",
+          "injectedCSS": [
+            ".jw-text-track-display { display: none!important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "formatPreSites",
       "matches": [
         "macro.com"
@@ -19555,22 +19605,8 @@
         ".btn"
       ],
       "_comment": "给部分网页开后门翻译 header标签"
-    },
-    {
-      "id": "text-track",
-      "matches": [
-        "www.typing.com",
-        "*.video-stream-hosting.de",
-        "*.thieme.de"
-      ],
-      "mainFrameMinTextCount": 0,
-      "mainFrameMinWordCount": 0,
-      "subtitleRule.add": {
-        "type": "text_track",
-        "videoPlayerSelector": "video"
-      }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-10T08:22:10.000Z",
+  "buildinConfigUpdatedAt": "2025-10-10T16:01:20.211Z",
   "latestVersion": "1.22.2"
 }
