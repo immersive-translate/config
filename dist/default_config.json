@@ -4331,6 +4331,9 @@
             }
           }
         }
+      ],
+      "stayOriginalTags.remove": [
+        "SAMP"
       ]
     },
     {
@@ -12846,7 +12849,8 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          "img.ts-main-image"
+          "img.ts-main-image",
+          "section[data-image-data] img"
         ],
         "platforms": [
           "chrome",
@@ -16610,7 +16614,10 @@
       ],
       "extraBlockSelectors.add": [
         ".inline-flex span"
-      ]
+      ],
+      "aiRule": {
+        "messageWrapperSelector": "[class*='space-y-1.5 break-words pr-8']"
+      }
     },
     {
       "id": "ipinfo",
@@ -19564,6 +19571,6 @@
       }
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-10T06:58:24.192Z",
+  "buildinConfigUpdatedAt": "2025-10-10T07:08:49.133Z",
   "latestVersion": "1.21.8"
 }
