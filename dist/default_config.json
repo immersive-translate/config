@@ -18593,7 +18593,9 @@
       "matches": [
         "seller.tiktok.com",
         "seller-my.tiktok.com",
-        "affiliate.tiktok*.com"
+        "affiliate.tiktok*.com",
+        "seller.*.tiktokglobalshop.com",
+        "seller.tiktokshopglobalselling.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -18604,6 +18606,10 @@
       ],
       "excludeTags.remove": [
         "PRE"
+      ],
+      "injectedCss.add": [
+        "[data-tid=m4b_overflow_text_multiply] {height:unset!important;-webkit-line-clamp:unset!important;}",
+        "[class^=replyText],[class^=productItemInfo],[class^=reviewText] {height:unset!important;-webkit-line-clamp:unset!important;}"
       ]
     },
     {
@@ -19595,6 +19601,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-11T07:25:16.146Z",
+  "buildinConfigUpdatedAt": "2025-10-11T16:10:03.894Z",
   "latestVersion": "1.22.2"
 }
