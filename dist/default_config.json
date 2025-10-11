@@ -5058,6 +5058,7 @@
       "extraInlineSelectors.add": [
         ".live-transcription-subtitle__item"
       ],
+      "toastErrorMinTimes": 2,
       "subtitleRule.add": {
         "type": "live",
         "injectedCss": [
@@ -5099,6 +5100,7 @@
       "stayOriginalSelectors.add": [
         "span[title][style='min-width: 20px; height: 20px;']"
       ],
+      "toastErrorMinTimes": 2,
       "subtitleRule.add": {
         "type": "live",
         "injectedCss": [
@@ -5135,6 +5137,7 @@
       "extraInlineSelectors.add": [
         ".ygicle.VbkSUe"
       ],
+      "toastErrorMinTimes": 2,
       "subtitleRule.add": {
         "type": "live",
         "injectedCss": [
@@ -7732,20 +7735,6 @@
       "id": "thehighestofthemountains",
       "matches": "www.thehighestofthemountains.com",
       "extraBlockSelectors.add": "div"
-    },
-    {
-      "id": "telegraph1",
-      "matches": "te.legra.ph",
-      "normalizeBody": "div.ql-editor[contenteditable='false']",
-      "urlChangeDelay": 500
-    },
-    {
-      "id": "telegraph2",
-      "matches": [
-        "telegra.ph"
-      ],
-      "normalizeBody": "div.ql-editor[contenteditable='false']",
-      "wrapperPrefix": "\n"
     },
     {
       "id": "annasArchive",
@@ -14232,9 +14221,9 @@
         "#immersive-translate-caption-window *"
       ],
       "subtitleRule.add": {
-        "type": "subsrt",
+        "type": "text_track_dynamic",
         "videoPlayerSelector": ".vjs-tech",
-        "subtitleUrlRegExp": ".*\\.(vtt)",
+        "subtitleUrlRegExp": ".*\\.(vtt|webvtt)",
         "quickButtonRule": {
           "appendSelector": ".styles_columns__S4HQf:last-child",
           "ccEnableSelector": "div[data-testid='bottom-bar'] button[data-testid='subtitle-settings-button']"
@@ -14243,9 +14232,6 @@
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ]
-      },
-      "subtitleRule.add_v.[1.8.4]": {
-        "subtitleUrlRegExp": ".*\\.(vtt|webvtt)"
       }
     },
     {
@@ -18042,7 +18028,8 @@
       "id": "bb-rich",
       "selectorMatches": [
         "bb-rich-text-editor",
-        ".bb-editor-root"
+        ".bb-editor-root",
+        ".ql-editor"
       ],
       "likePreSelectors.add": [
         "bb-rich-text-editor",
@@ -18056,6 +18043,7 @@
         ".bb-editor-root",
         "#content-tab-panel-content"
       ],
+      "repeatTranslateNum": 1,
       "isTransformPreTagNewLine": true,
       "forceFormatPre": true
     },
@@ -19607,6 +19595,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-11T05:11:35.060Z",
+  "buildinConfigUpdatedAt": "2025-10-11T07:25:16.146Z",
   "latestVersion": "1.22.2"
 }
