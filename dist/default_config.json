@@ -671,7 +671,7 @@
   "h5FloatBallMainBtnTooltipShownCount": 0,
   "advanceMergeConfig": [
     {
-      "condition": "abTagNumber<1",
+      "condition": "abTagNumber<3",
       "advanceConfig": {
         "translationServices.add": {
           "siliconcloud-free.add_v.[1.12.8]": {
@@ -19607,6 +19607,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-10T16:01:20.211Z",
+  "buildinConfigUpdatedAt": "2025-10-11T05:11:35.060Z",
   "latestVersion": "1.22.2"
 }
