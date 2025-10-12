@@ -4851,19 +4851,17 @@
         "[aria-label=Grok] [class='css-175oi2r r-1habvwh r-vqp9x9 r-1q9bdsx r-1loqt21 r-9njtsq r-1wtj0ep r-nsbfu8 r-xbdcod r-13c7hvr'] > div:last-child",
         "[role='tab']"
       ],
-      "globalStyles": {
-        "[data-testid='card.layoutLarge.detail'] > div:nth-child(2)": "-webkit-line-clamp: unset;",
-        "[data-testid='card.layoutSmall.detail'] > div:nth-child(2)": "-webkit-line-clamp: unset;",
-        "[data-testid='tweetText'],[style*='-webkit-line-clamp']": "-webkit-line-clamp: unset;",
-        "[role=dialog] [style*='webkit-line-clamp']": "-webkit-line-clamp: unset;"
-      },
       "extraBlockSelectors.add": [
         "[data-testid=\"tweetText\"] div.r-6koalj"
       ],
       "injectedCss.add": [
+        "[data-testid='card.layoutLarge.detail'] > div:nth-child(2) {-webkit-line-clamp: unset;}",
+        "[data-testid='card.layoutSmall.detail'] > div:nth-child(2) {-webkit-line-clamp: unset;}",
+        "[data-testid='tweetText'],[style*='-webkit-line-clamp'] {-webkit-line-clamp: unset;}",
+        "[role=dialog] [style*='webkit-line-clamp'] {-webkit-line-clamp: unset;}",
         ".r-h9hxbl{width:unset;}",
-        ".imt-img { object-fit: cover !important; }",
-        "[aria-label=Grok] [data-testid=ScrollSnap-SwipeableList] [role=presentation] > div > div { max-height: unset !important; }"
+        "[aria-label=Grok] [data-testid=ScrollSnap-SwipeableList] [role=presentation] > div > div { max-height: unset !important; }",
+        ".css-9pa8cd.imt-img {top: 50%!important;left: 50%!important;transform: translate(-50%, -50%)!important;position:absolute!important;height:unset!important;object-fit: cover !important;}"
       ],
       "likePreSelectors.add_v.[1.11.5]": [
         "[data-testid=tweetText]"
@@ -19165,6 +19163,14 @@
       ]
     },
     {
+      "id": "marquee-gs",
+      "matches": "marquee.gs.com",
+      "additionalExcludeSelectors.add": [
+        "[class*='article-header-sub-header']",
+        "[role=img]"
+      ]
+    },
+    {
       "id": "common-text-track",
       "matches": [
         "www.typing.com",
@@ -19387,7 +19393,8 @@
         "ieeeforms.wufoo.com",
         "www.midjourney.com",
         "fifakitcreator.com",
-        "app.voxy.com"
+        "app.voxy.com",
+        "www.zome.*"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -19601,6 +19608,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-11T16:10:03.894Z",
+  "buildinConfigUpdatedAt": "2025-10-12T16:13:16.391Z",
   "latestVersion": "1.22.2"
 }
