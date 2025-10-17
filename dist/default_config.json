@@ -2054,6 +2054,9 @@
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
     },
+    "siliconcloud.add_v.[1.21.1]": {
+      "freeModels": []
+    },
     "lingyiwanwu": {
       "extends": "ai",
       "model": "yi-medium",
@@ -2315,6 +2318,10 @@
       "provider": "custom",
       "model": "THUDM/glm-4-9b-chat",
       "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/glm-4-9b-chat",
+      "freeModels": [
+        "Qwen/Qwen2.5-7B-Instruct",
+        "THUDM/glm-4-9b-chat"
+      ],
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
@@ -19655,6 +19662,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-16T23:49:52.000Z",
-  "latestVersion": "1.22.2"
+  "buildinConfigUpdatedAt": "2025-10-17T09:34:54.907Z",
+  "latestVersion": "1.22.3"
 }
