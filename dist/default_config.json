@@ -4298,7 +4298,8 @@
       "wrapperPrefix": "<br />",
       "shareConfig.add": {
         "cloneIframes": [
-          "#chapters iframe"
+          "#chapters iframe",
+          ".chapter-preview-iframe"
         ],
         "removeSelectors": [
           ".immersive-translate-error-modal-shadow-root"
@@ -6814,7 +6815,8 @@
       "excludeSelectors": ".project-description a",
       "selectors": [
         ".project-description",
-        "div.project-comment-text"
+        "div.project-comment-text",
+        ".asset-caption"
       ],
       "detectParagraphLanguage": true
     },
@@ -11659,6 +11661,9 @@
         "imageSelectors": [
           "p>img"
         ],
+        "inValidSrcRegex": [
+          "loading-image.gif"
+        ],
         "platforms": [
           "chrome",
           "firefox",
@@ -15871,6 +15876,16 @@
       }
     },
     {
+      "id": "imigresen-online",
+      "matches": "imigresen-online.imi.gov.my",
+      "excludeSelectors.remove": [
+        "[default-translate]"
+      ],
+      "excludeSelectors.add": [
+        "#clock"
+      ]
+    },
+    {
       "id": "orvehogar",
       "matches": [
         "www.orvehogar.com"
@@ -19662,6 +19677,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-17T09:34:23.000Z",
+  "buildinConfigUpdatedAt": "2025-10-17T10:45:26.403Z",
   "latestVersion": "1.22.3"
 }
