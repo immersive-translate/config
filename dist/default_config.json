@@ -2278,11 +2278,7 @@
       "defaultVisible": true,
       "guestTrialLimit": 5,
       "disabledAt": "2025-07-11",
-      "hiddenPro": true,
-      "supportFeatures": [
-        "aiWriting",
-        "selectionTranslation"
-      ]
+      "hiddenPro": true
     },
     "zhipu-air-pro.add_v.[1.20.12]": {
       "disabledAt": ""
@@ -2551,15 +2547,6 @@
       "extends": "claude"
     },
     "mock": {
-      "placeholderDelimiters": [
-        "<code>",
-        "</code>"
-      ],
-      "limit": 100,
-      "type": "mock",
-      "group": "custom"
-    },
-    "mock2": {
       "placeholderDelimiters": [
         "<code>",
         "</code>"
@@ -3681,6 +3668,7 @@
     "asideMaxWordCountPerParagraph": 12,
     "lineBreakMaxTextCount": 0,
     "lineBreakRegexStr": "etc\\.|Mr\\.|Mrs\\.|Ms\\.|Dr\\.|Prof\\.|Sr\\.|Jr\\.|U\\.S\\.|U\\.K\\.|Co\\.|Inc\\.|Ltd\\.|St\\.",
+    "customAbbreviations": [],
     "globalAttributes": {
       "x-p": {
         "translate": "unset;"
@@ -19678,6 +19666,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-19T05:50:05.035Z",
-  "latestVersion": "1.22.4"
+  "buildinConfigUpdatedAt": "2025-10-20T09:50:43.465Z",
+  "latestVersion": "1.22.5"
 }
