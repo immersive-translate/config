@@ -3,6 +3,11 @@ on:
   repository_dispatch:
     types:
       - deploy-cn-rule
+  push:
+    branches:
+      - main
+    paths:
+      - 'dist/**'
   workflow_dispatch:
     inputs:
       branch:

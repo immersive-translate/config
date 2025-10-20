@@ -1,4 +1,5 @@
 name: Publish Develop rule
+# Diff config 版本
 on:
   repository_dispatch:
     types:
