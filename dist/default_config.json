@@ -8115,7 +8115,7 @@
         "https://janitorai.com"
       ],
       "excludeSelectors": [
-        "[data-testid=virtuoso-scroller] .css-10c6i1g *"
+        "[data-testid=virtuoso-scroller] .css-104fsj *"
       ],
       "excludeTags.remove": [
         "PRE",
@@ -8126,11 +8126,12 @@
       ],
       "aiRule": {
         "streamingSelector": "button[aria-label=Cancel]",
-        "messageWrapperSelector": "[data-testid=virtuoso-scroller] .css-10c6i1g",
+        "messageWrapperSelector": "[data-testid=virtuoso-scroller] .css-104fsj",
         "streamingChange": false,
         "streamingDeepChild": true,
         "streamingDelayTime": 2000
-      }
+      },
+      "_comment": "它的流式的段落无法变更，只能等到结束之后一起翻译"
     },
     {
       "id": "glasp",
@@ -19666,6 +19667,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-20T09:48:54.000Z",
+  "buildinConfigUpdatedAt": "2025-10-20T14:37:12.899Z",
   "latestVersion": "1.22.5"
 }
