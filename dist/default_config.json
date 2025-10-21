@@ -5633,7 +5633,9 @@
         "#org-new-form",
         ".trial-info-large",
         ".dfd-trial__container-form",
-        "dialog-helper"
+        "dialog-helper",
+        ".blankslate-heading",
+        ".activity-overview-box"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -18810,7 +18812,7 @@
       "matches": [
         "ahrefs.com",
         "*.wistia.net",
-        "platform.thinkific.com",
+        "*.thinkific.com",
         "courses.kevinpowell.co",
         "learn.ni.com",
         "cgcookie.com",
@@ -19668,6 +19670,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-21T02:41:20.018Z",
+  "buildinConfigUpdatedAt": "2025-10-21T15:15:48.394Z",
   "latestVersion": "1.22.5"
 }
