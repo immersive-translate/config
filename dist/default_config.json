@@ -12925,7 +12925,8 @@
     {
       "id": "yanmaga.jp",
       "matches": [
-        "yanmaga.jp"
+        "yanmaga.jp",
+        "viewer.bookhodai.jp"
       ],
       "imageRule.add": {
         "enable": true,
@@ -19667,6 +19668,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-20T14:37:12.899Z",
+  "buildinConfigUpdatedAt": "2025-10-21T02:41:20.018Z",
   "latestVersion": "1.22.5"
 }
