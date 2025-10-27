@@ -3703,7 +3703,6 @@
       "side.selectors": [
         "nav",
         "aside",
-        "[class*='Sidebar']",
         "#sidenav"
       ],
       "side.enableTranslate": true,
@@ -11126,7 +11125,8 @@
           "chrome",
           "firefox",
           "imtIOSNew",
-          "safari"
+          "safari",
+          "imtIOS"
         ],
         "loadingSelectors": [
           "section"
@@ -19670,6 +19670,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-27T02:25:39.780Z",
+  "buildinConfigUpdatedAt": "2025-10-27T02:53:44.449Z",
   "latestVersion": "1.22.6"
 }
