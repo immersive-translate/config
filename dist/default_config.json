@@ -7038,6 +7038,20 @@
       ]
     },
     {
+      "id": "deepwiki",
+      "matches": "deepwiki.com",
+      "excludeSelectors.add": [
+        "[class*='flex items-center break-all rounded-l px-2 py-1.5 bg-[#e5e5e5] text-[#333333] dark:bg-[#252525] dark:text-[#e4e4e4] rounded-r']",
+        "[class*='mb-1 mr-1 inline-flex items-stretch font-mono text-xs !no-underline transition-opacity hover:opacity-75']"
+      ],
+      "preTranslateLimiter.add": {
+        "side.selectors": [
+          "[class*='flex h-full w-full max-w-full flex-shrink-0 flex-col overflow-hidden']",
+          "[class*='hidden overflow-hidden transition-[border-radius] xl:sticky xl:right-0 xl:top-20 xl:block xl:h-[calc(100vh-82px)] xl:w-64 xl:flex-shrink-0 2xl:w-72']"
+        ]
+      }
+    },
+    {
       "id": "libreddit",
       "matches": "libreddit.de",
       "selectors": [
@@ -11116,6 +11130,31 @@
           "imtAndroid"
         ]
       }
+    },
+    {
+      "id": "readcomicsonline",
+      "matches": [
+        "readcomicsonline.ru"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#all img.img-responsive",
+          "#ppp img.img-responsive"
+        ],
+        "loadingStyle": "z-index: 9999;",
+        "inValidSrcRegex": [
+          "data:image/gif"
+        ]
+      },
+      "platforms": [
+        "chrome",
+        "firefox",
+        "imtIOSNew",
+        "safari",
+        "imtAndroid"
+      ]
     },
     {
       "id": "nhentai",
@@ -18728,7 +18767,8 @@
         "blog.partykit.io",
         "docs.lemonsqueezy.com",
         "www.hcompany.ai",
-        "www.coingecko.com"
+        "www.coingecko.com",
+        "www.nycitycenter.org"
       ],
       "injectedCss": [
         ":root, font {font-feature-settings:normal;}"
@@ -19680,6 +19720,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-27T09:12:01.222Z",
+  "buildinConfigUpdatedAt": "2025-10-27T11:06:49.078Z",
   "latestVersion": "1.22.6"
 }
