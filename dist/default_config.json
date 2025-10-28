@@ -5645,7 +5645,10 @@
         ".dfd-trial__container-form",
         "dialog-helper",
         ".blankslate-heading",
-        ".activity-overview-box"
+        ".activity-overview-box",
+        "#spaces-list",
+        "[class*='ContentView-module__serviceDescription']",
+        ".BannerDescription"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -5681,7 +5684,8 @@
         ".review-thread-reply",
         ".codeRepository",
         "a[data-hovercard-type]",
-        "[title='Label: Private']"
+        "[title='Label: Private']",
+        "[aria-label*='language']"
       ],
       "extraBlockSelectors.add": [],
       "extraInlineSelectors": [
@@ -5710,9 +5714,10 @@
           "side"
         ],
         "side.selectors": [
-          "aside.feed-right-sidebar"
-        ],
-        "side.enableTranslate": true
+          "aside.feed-right-sidebar",
+          "aside[aria-labelledby*='copilot-navigation']",
+          "[data-testid*='facets-pane']"
+        ]
       },
       "isTransformPreTagNewLine": true,
       "aiWriting.add": {
@@ -10679,11 +10684,12 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          "center > p .bgimglazy-load"
+          "center img.bgimglazy-load"
         ],
         "inValidSrcRegex": [
           "preloader.gif"
         ],
+        "loadingStyle": "z-index: 9999;",
         "platforms": [
           "chrome",
           "firefox",
@@ -12203,6 +12209,7 @@
       "matches": [
         "www.pixiv.net"
       ],
+      "injectedCss": "[id*='expandable-paragraph'] {max-height:unset!important;}",
       "imageRule.add": {
         "enable": true,
         "type": "manga",
@@ -16982,7 +16989,6 @@
           "chrome",
           "firefox",
           "imtIOSNew",
-          "safari",
           "imtAndroid",
           "imtIOS"
         ]
@@ -19507,7 +19513,8 @@
         "www.midjourney.com",
         "fifakitcreator.com",
         "app.voxy.com",
-        "www.zome.*"
+        "www.zome.*",
+        "electrical-engineering-portal.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -19594,7 +19601,8 @@
         "mail.shanghai.*",
         "help.autodesk.com",
         "*.vitalsource.com",
-        "*.sumtotal.host"
+        "*.sumtotal.host",
+        "academy.notion.com"
       ],
       "enableDeepFrameTranslatePage": true
     },
@@ -19721,6 +19729,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-28T08:50:04.839Z",
+  "buildinConfigUpdatedAt": "2025-10-28T11:08:23.460Z",
   "latestVersion": "1.22.6"
 }
