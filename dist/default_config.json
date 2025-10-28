@@ -681,7 +681,7 @@
       }
     },
     {
-      "condition": "abTagNumber<5",
+      "condition": "abTagNumber<10",
       "advanceConfig": {
         "translationServices.add": {
           "zhipu-free.add_v.[0.0.1]": {
@@ -19720,6 +19720,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-28T06:36:22.168Z",
+  "buildinConfigUpdatedAt": "2025-10-28T07:26:05.132Z",
   "latestVersion": "1.22.6"
 }
