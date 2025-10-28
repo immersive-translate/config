@@ -2371,10 +2371,11 @@
       ]
     },
     "claude-pro": {
-      "name": "Claude 3.5 Haiku",
+      "name": "Claude 4.5 Haiku",
       "type": "claude",
       "group": "pro",
       "extends": "claude",
+      "proModel": "claude-haiku-4.5-20251001",
       "provider": "pro",
       "visible": true,
       "supportFeatures": [
@@ -2474,12 +2475,12 @@
       ]
     },
     "claude-max": {
-      "name": "Claude 4 Sonnet",
+      "name": "Claude 4.5 Sonnet",
       "type": "claude",
       "group": "max",
       "extends": "claude",
       "provider": "pro",
-      "proModel": "claude-sonnet-4-20250514",
+      "proModel": "claude-sonnet-4.5-20250929",
       "visible": true,
       "supportFeatures": [
         "aiWriting",
@@ -19720,6 +19721,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-28T07:26:05.132Z",
+  "buildinConfigUpdatedAt": "2025-10-28T08:02:02.422Z",
   "latestVersion": "1.22.6"
 }
