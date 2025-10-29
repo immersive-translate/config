@@ -14896,7 +14896,8 @@
         "loadingContainerSelector": ".vp-telecine",
         "loadingStyle": "bottom: unset; top: 5%; font-size: 12px;",
         "injectedCss": [
-          "#immersive-translateQuickButton {visibility: inherit!important;}"
+          "#immersive-translateQuickButton {visibility: inherit!important;}",
+          "[class^=ControlBarButtonsAndMenusV2_module_collapsibleWrapper] { overflow: unset !important }"
         ],
         "quickButtonRule": {
           "appendSelector": "[data-control-bar=\"true\"] > div > div:nth-child(2) > div",
@@ -19729,6 +19730,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-28T11:08:23.460Z",
+  "buildinConfigUpdatedAt": "2025-10-29T07:31:27.208Z",
   "latestVersion": "1.22.6"
 }
