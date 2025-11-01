@@ -3796,7 +3796,7 @@
       "h3 br",
       "h4 br",
       ".easyscholar-ranking",
-      ".textLayer > span[role=presentation]",
+      ".pdfViewer .textLayer span[role=presentation]",
       ".rpv-core__text-layer > span[role=presentation]",
       "time",
       ".countdown",
@@ -4185,31 +4185,6 @@
         "p": [
           "/^$/"
         ]
-      }
-    },
-    {
-      "id": "sci-hub.pdfWebPage",
-      "matches": [
-        "sci-hub.*",
-        "www.scihubmirror.com",
-        "*.sci-hub.*"
-      ],
-      "excludeMatches": [
-        "https://x.sci-hub.org.cn/scholar"
-      ],
-      "waitForSelectorsTimeout": 1,
-      "pdfUrlExtractRule": {
-        "selector": "#pdf",
-        "attribute": "src"
-      }
-    },
-    {
-      "id": "ieeexplore.pdfWebPage",
-      "matches": "https://ieeexplore.ieee.org/stamp/stamp.jsp",
-      "waitForSelectorsTimeout": 1,
-      "pdfUrlExtractRule": {
-        "selector": "body > iframe",
-        "attribute": "src"
       }
     },
     {
@@ -5798,7 +5773,8 @@
         "https://www.facebook.com/settings*",
         "https://www.facebook.com/ads/library/*",
         "https://developers.facebook.com/*",
-        "https://www.facebook.com/v20.0/plugins/*"
+        "https://www.facebook.com/v20.0/plugins/*",
+        "https://www.facebook.com/support*"
       ],
       "selectors": [
         "div[dir=auto][style]",
@@ -9645,6 +9621,9 @@
     {
       "id": "ieeexplore",
       "matches": "ieeexplore.ieee.org",
+      "excludeMatches": [
+        "ieeexplore.ieee.org/*/getPDF.jsp*"
+      ],
       "stayOriginalSelectors": [
         "a[ref-type]",
         ".inline-formula",
@@ -16339,6 +16318,9 @@
     {
       "id": "jstor",
       "matches": "www.jstor.org",
+      "excludeMatches": [
+        "www.jstor.org/stable/pdf*"
+      ],
       "excludeSelectors.add": [
         ".audio-duration",
         "[data-qa='card-item-count']"
@@ -16576,7 +16558,7 @@
       "id": "pubs.acs.org",
       "matches": "pubs.acs.org",
       "excludeMatches": [
-        "https://pubs.acs.org/doi/pdf*"
+        "pubs.acs.org/doi/pdf*"
       ],
       "mainFrameSelector": [
         ".article_abstract",
@@ -19293,6 +19275,13 @@
       ]
     },
     {
+      "id": "nof1.ai",
+      "matches": [
+        "nof1.ai"
+      ],
+      "excludeSelectors.add": []
+    },
+    {
       "id": "common-text-track",
       "matches": [
         "www.typing.com",
@@ -19517,7 +19506,8 @@
         "fifakitcreator.com",
         "app.voxy.com",
         "www.zome.*",
-        "electrical-engineering-portal.com"
+        "electrical-engineering-portal.com",
+        "www.surveymonkey.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -19732,6 +19722,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-01T05:09:17.369Z",
+  "buildinConfigUpdatedAt": "2025-11-01T10:30:04.484Z",
   "latestVersion": "1.22.7"
 }
