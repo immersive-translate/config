@@ -681,6 +681,16 @@
       }
     },
     {
+      "condition": "abTagNumber<10",
+      "advanceConfig": {
+        "translationServices.add": {
+          "zhipu-free.add_v.[0.0.1]": {
+            "apiUrl": "https://aigw1.immersivetranslate.cn/api/paas/v4/chat/completions"
+          }
+        }
+      }
+    },
+    {
       "condition": "imtAndroidVersionNumber>10107",
       "advanceConfig": {
         "monkeyH5FloatBall.add": {
@@ -4068,7 +4078,8 @@
       ],
       "matches": [
         "https://*.immersivetranslate.*/subtitle*",
-        "http://localhost:38001/download-subtitle*"
+        "http://localhost:38001/download-subtitle*",
+        "https://*.immersivetranslate.*/*/subtitle*"
       ],
       "pairs": {
         ".source-text": ".target-text"
@@ -4521,7 +4532,8 @@
     {
       "id": "immersive-word",
       "matches": [
-        "https://*.immersivetranslate.*/word*"
+        "https://*.immersivetranslate.*/word*",
+        "https://*.immersivetranslate.*/*/word*"
       ],
       "excludeSelectors.add": [
         "#imt-navbar *",
@@ -4557,7 +4569,8 @@
         "https://immersivetranslate.*",
         "https://*.immersivetranslate.*",
         "http://localhost:38001",
-        "https://app.infread.com"
+        "https://app.infread.com",
+        "https://*.immersivetranslate/*.*"
       ],
       "excludeSelectors.add": [
         "#imt-navbar *",
@@ -14360,16 +14373,14 @@
       "mutationExcludeSelectors.add": [
         ".pzp-pc__video *"
       ],
-      "excludeMatches": [
-        "weverse.io/*/live/*"
-      ],
       "subtitleRule.add": {
         "type": "subsrt",
         "subsrtFormat": "vtt",
         "subtitleUrlRegExp": ".*\\.vtt",
         "quickButtonRule": {
           "appendSelector": ".pzp-pc__bottom-buttons-right",
-          "insertBeforeSelector": "button.pzp-pc-subtitle-button"
+          "insertBeforeSelector": "button.pzp-pc-subtitle-button",
+          "ccEnableSelector": "button.pzp-pc-subtitle-button"
         },
         "attachRule": {
           "appendSelector": ".pzp-pc__video",
@@ -14888,7 +14899,7 @@
         "loadingStyle": "bottom: unset; top: 5%; font-size: 12px;",
         "injectedCss": [
           "#immersive-translateQuickButton {visibility: inherit!important;}",
-          "[class^=ControlBarButtonsAndMenusV2_module_collapsibleWrapper] { overflow: unset !important }"
+          "[class^=ControlBarButtonsAndMenus_module_collapsibleWrapper] { overflow: unset !important }"
         ],
         "quickButtonRule": {
           "appendSelector": "[data-control-bar=\"true\"] > div > div:nth-child(2) > div",
@@ -19016,7 +19027,7 @@
           "injectCSS": ".logo svg {height: 18px; width: 18px}"
         },
         "attachRule": {
-          "appendSelector": "#player .playkit-container",
+          "appendSelector": ".playkit-container",
           "injectedGlobalCSS": [
             ".playkit-subtitles { display: none !important; }"
           ]
@@ -19105,7 +19116,7 @@
         "type": "subsrt",
         "subsrtFormat": "vtt",
         "hookType": "xhr",
-        "subtitleUrlRegExp": "subtitle/.*.vtt"
+        "subtitleUrlRegExp": "(?:subtitle|captions)/.*\\.vtt"
       }
     },
     {
@@ -19721,6 +19732,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-10-30T09:05:33.000Z",
+  "buildinConfigUpdatedAt": "2025-11-01T05:09:17.369Z",
   "latestVersion": "1.22.7"
 }
