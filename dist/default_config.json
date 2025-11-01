@@ -681,16 +681,6 @@
       }
     },
     {
-      "condition": "abTagNumber<10",
-      "advanceConfig": {
-        "translationServices.add": {
-          "zhipu-free.add_v.[0.0.1]": {
-            "apiUrl": "https://aigw1.immersivetranslate.cn/api/paas/v4/chat/completions"
-          }
-        }
-      }
-    },
-    {
       "condition": "imtAndroidVersionNumber>10107",
       "advanceConfig": {
         "monkeyH5FloatBall.add": {
@@ -19732,6 +19722,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-01T11:42:51.306Z",
+  "buildinConfigUpdatedAt": "2025-11-01T15:14:53.669Z",
   "latestVersion": "1.22.7"
 }
