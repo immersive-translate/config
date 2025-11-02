@@ -5885,6 +5885,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
+        "preTranslation": true,
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
@@ -6096,6 +6097,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
+        "preTranslation": true,
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
@@ -6168,6 +6170,7 @@
       },
       "subtitleRule.add": {
         "type": "youtube",
+        "preTranslation": true,
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
@@ -6220,9 +6223,9 @@
       "domCheckTimeout": 0,
       "subtitleRule.add": {
         "type": "youtube",
+        "preTranslation": true,
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
-        "preTranslation": true,
         "humanPreferred": false,
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
         "translateSelectors": [
@@ -6280,6 +6283,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
+        "preTranslation": true,
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "subtitleUrlRegExp": "/api/timedtext",
@@ -19722,6 +19726,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-01T15:14:53.669Z",
+  "buildinConfigUpdatedAt": "2025-11-02T16:38:33.656Z",
   "latestVersion": "1.22.7"
 }
