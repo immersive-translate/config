@@ -10580,7 +10580,8 @@
     {
       "id": "comic-meteor",
       "matches": [
-        "comic-meteor.jp"
+        "comic-meteor.jp",
+        "omegascans.org"
       ],
       "imageRule.add": {
         "enable": true,
@@ -10588,6 +10589,7 @@
         "imageSelectors": [
           "#content img"
         ],
+        "loadingStyle": "z-index: 9999;",
         "platforms": [
           "chrome",
           "firefox",
@@ -10773,9 +10775,9 @@
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
-          "#readerContainer img"
+          "#readerContainer img",
+          "#p2pReader [data-sentry-component='BouncyImage'] img"
         ],
-        "injectedCss": ".imt-image-status {top:15%!important;}",
         "platforms": [
           "chrome",
           "firefox",
@@ -17745,7 +17747,8 @@
         "type": "manga",
         "imageSelectors": [
           "div[role='region'] img[data-index]",
-          "#viewer img[data-index]"
+          "#viewer img[data-index]",
+          ".event_detail_top img"
         ],
         "opImageType": "append",
         "inValidSrcRegex": [
@@ -19737,6 +19740,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-03T08:35:37.648Z",
+  "buildinConfigUpdatedAt": "2025-11-03T11:15:10.543Z",
   "latestVersion": "1.22.7"
 }
