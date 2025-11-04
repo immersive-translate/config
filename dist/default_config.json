@@ -5687,7 +5687,8 @@
         ".codeRepository",
         "a[data-hovercard-type]",
         "[title='Label: Private']",
-        "[aria-label*='language']"
+        "[aria-label*='language']",
+        ".js-suggested-changes-blob.diff-view"
       ],
       "extraBlockSelectors.add": [],
       "extraInlineSelectors": [
@@ -10573,7 +10574,8 @@
         "뉴토끼대피소.com",
         "funbe537.com",
         "happytoon01.com",
-        "tkor*.com"
+        "tkor*.com",
+        "m.블랙툰.co"
       ],
       "imageRule.add": {
         "enable": true,
@@ -10582,6 +10584,9 @@
           "#toon_content_imgs img",
           "#toon_img img",
           ".webtoon-read-section img"
+        ],
+        "inValidSrcRegex": [
+          "loading.svg"
         ],
         "platforms": [
           "chrome",
@@ -10821,6 +10826,17 @@
           "imtIOSNew",
           "safari",
           "imtAndroid"
+        ]
+      }
+    },
+    {
+      "id": "ranfren.neocities.org",
+      "matches": "ranfren.neocities.org",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "center img"
         ]
       }
     },
@@ -11249,7 +11265,8 @@
         "manhuaread.com",
         "www.mangaread.org",
         "mangaforfree.net",
-        "bakamh.com"
+        "bakamh.com",
+        "yakshascans.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -11717,8 +11734,30 @@
       }
     },
     {
+      "id": "dokusho-ojikan.jp",
+      "matches": "dokusho-ojikan.jp",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "urlFetchType": "canvasArgs",
+        "imageSelectors": [
+          ".content.zoomable canvas"
+        ],
+        "opImageType": "append"
+      },
+      "platforms": [
+        "chrome",
+        "firefox",
+        "imtIOSNew",
+        "safari",
+        "imtAndroid"
+      ]
+    },
+    {
       "id": "newtoki468",
-      "matches": "newtoki468.com",
+      "matches": [
+        "newtoki*.com"
+      ],
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
@@ -16868,7 +16907,8 @@
     {
       "id": "arenascan",
       "matches": [
-        "arenascan.com"
+        "arenascan.com",
+        "luvyaa.my.id"
       ],
       "imageRule.add": {
         "enable": true,
@@ -18270,6 +18310,14 @@
       "matches": "*.xfiction.org",
       "mainFrameSelector.add": [
         "tw-story"
+      ]
+    },
+    {
+      "id": "new.rayyan.ai",
+      "matches": "new.rayyan.ai",
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
       ]
     },
     {
@@ -19758,6 +19806,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-04T10:45:15.131Z",
+  "buildinConfigUpdatedAt": "2025-11-04T11:02:32.742Z",
   "latestVersion": "1.22.7"
 }
