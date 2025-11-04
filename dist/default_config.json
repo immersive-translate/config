@@ -671,6 +671,21 @@
   "h5FloatBallMainBtnTooltipShownCount": 0,
   "advanceMergeConfig": [
     {
+      "condition": "abTagNumber<3",
+      "advanceConfig": {
+        "translationServices.add_v.[1.12.9]": {
+          "siliconcloud.add_v.[1.12.9]": {
+            "model": "THUDM/GLM-4-9B-0414",
+            "models": "Qwen/Qwen3-8B|THUDM/GLM-4-9B-0414|tencent/Hunyuan-MT-7B"
+          },
+          "siliconcloud-free.add_v.[1.12.9]": {
+            "model": "THUDM/GLM-4-9B-0414",
+            "models": "Qwen/Qwen3-8B|THUDM/GLM-4-9B-0414"
+          }
+        }
+      }
+    },
+    {
       "condition": "abTagNumber<1",
       "advanceConfig": {
         "translationServices.add": {
@@ -2043,6 +2058,8 @@
       "model": "Qwen/Qwen2.5-7B-Instruct",
       "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/glm-4-9b-chat|tencent/Hunyuan-MT-7B",
       "freeModels": [
+        "THUDM/GLM-4-9B-0414",
+        "Qwen/Qwen3-8B",
         "Qwen/Qwen2.5-7B-Instruct",
         "THUDM/glm-4-9b-chat"
       ],
@@ -2071,9 +2088,6 @@
     "siliconcloud.add_v.[1.15.3]": {
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
-    },
-    "siliconcloud.add_v.[1.21.1]": {
-      "freeModels": []
     },
     "lingyiwanwu": {
       "extends": "ai",
@@ -2333,10 +2347,6 @@
       "provider": "custom",
       "model": "THUDM/glm-4-9b-chat",
       "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/glm-4-9b-chat",
-      "freeModels": [
-        "Qwen/Qwen2.5-7B-Instruct",
-        "THUDM/glm-4-9b-chat"
-      ],
       "modelsHidden": true,
       "supportFeatures": [
         "aiWriting",
@@ -19748,6 +19758,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-04T05:39:45.183Z",
+  "buildinConfigUpdatedAt": "2025-11-04T10:45:15.131Z",
   "latestVersion": "1.22.7"
 }
