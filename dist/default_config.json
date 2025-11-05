@@ -686,7 +686,7 @@
       }
     },
     {
-      "condition": "abTagNumber<1",
+      "condition": "abTagNumber<2",
       "advanceConfig": {
         "translationServices.add": {
           "siliconcloud-free.add_v.[1.12.8]": {
@@ -19806,6 +19806,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-04T11:02:32.742Z",
+  "buildinConfigUpdatedAt": "2025-11-05T05:26:28.022Z",
   "latestVersion": "1.22.7"
 }
