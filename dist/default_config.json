@@ -16,6 +16,10 @@
   "enableMachineTranslateTerms": false,
   "termsDomainWithSelf": false,
   "disableOpenUpgradePage": false,
+  "sensitiveConfig": {
+    "telemetry": true,
+    "sensitiveMode": "close"
+  },
   "immediateTranslationPattern": {
     "matches": [
       "twitter.com",
@@ -99,6 +103,11 @@
   "enableSelfServiceReport": true,
   "enablePerformanceReport": false,
   "enableProSecretAPIKey": false,
+  "batchReportConfig": {
+    "enabled": true,
+    "maxSize": 5,
+    "maxWaitMs": 300000
+  },
   "performanceBlockUrls": [
     "https://www.chase.com",
     "https://www.bankofamerica.com",
@@ -689,8 +698,20 @@
       "condition": "abTagNumber<2",
       "advanceConfig": {
         "translationServices.add": {
-          "siliconcloud-free.add_v.[1.12.8]": {
-            "enableImtServe": true
+          "siliconcloud-free.add_v.[1.23.1]": {
+            "enableImtServe": true,
+            "apiUrl": ""
+          }
+        }
+      }
+    },
+    {
+      "condition": "abTagNumber<2",
+      "advanceConfig": {
+        "translationServices.add": {
+          "zhipu-free.add_v.[1.23.1]": {
+            "enableImtServe": true,
+            "apiUrl": ""
           }
         }
       }
@@ -931,7 +952,9 @@
       "comma"
     ],
     "space": [
-      " "
+      " ",
+      " ",
+      "　"
     ],
     ";": [
       "；",
@@ -2307,10 +2330,15 @@
       "model": "glm-4.5-air",
       "proModel": "glm-4.5-air",
       "immersiveProApiUrl": "https://api2.immersivetranslate.com/bigmodel-air/translate",
+      "immersiveProStreamApiUrl": "https://api2.immersivetranslate.com/bigmodel-air/translate/stream",
       "defaultVisible": true,
       "guestTrialLimit": 5,
       "disabledAt": "2025-07-11",
-      "hiddenPro": true
+      "hiddenPro": true,
+      "supportFeatures": [
+        "aiWriting",
+        "selectionTranslation"
+      ]
     },
     "zhipu-air-pro.add_v.[1.20.12]": {
       "disabledAt": ""
@@ -2842,8 +2870,7 @@
       "google",
       "bing",
       "zhipu",
-      "siliconcloud",
-      "transmart"
+      "siliconcloud"
     ],
     "detectParagraphLanguage": false,
     "paragraphFirstLetterFontSize": 35,
@@ -3335,6 +3362,7 @@
     "pairs": {},
     "aiRule": {},
     "subtitleRule": {
+      "id": "",
       "isInject": true,
       "preTranslation": false,
       "humanPreferred": true,
@@ -9676,7 +9704,23 @@
       "bodyRule.add": {
         "bodySelector": ".layout__content-wrapper",
         "articleSelector": ".article__content-container"
-      }
+      },
+      "subtitleRule.add": {
+        "type": "subsrt1",
+        "subsrtFormat": "vtt",
+        "formatAsrSubtitles": true,
+        "subtitleUrlRegExp": "/global/.*\\.vtt$",
+        "hookType": "fetch|xhr",
+        "quickButtonRule": {
+          "appendSelector": "[class='sc-irCjQH eHfgKW']",
+          "insertBeforeSelector": "[data-testid=\"player-ux-track-selector-button\"]"
+        },
+        "attachRule": {
+          "appendSelector": "#overlay-root",
+          "injectedGlobalCSS": "[data-testid=caption_renderer_overlay] {display:none!important;}"
+        }
+      },
+      "_comment": "多视频页面不好处理，暂时不支持"
     },
     {
       "id": "githubBlog",
@@ -9707,6 +9751,7 @@
         ".bili-video-card__info--author, .bili-video-card__info--date",
         "#pictures,#note,#info,#footer,#expander-footer,.playinfo,.upname,#bilibili-player"
       ],
+      "enableInputDeepActive": true,
       "subtitleRule.add": {
         "type": "general",
         "subtitleUrlRegExp": "aisubtitle.hdslb.com/bfs",
@@ -14612,6 +14657,7 @@
       ],
       "domCheckTimeout": 1,
       "subtitleRule.add": {
+        "id": "ted",
         "type": "multi_attach_vtt",
         "hookType": "fetch",
         "quickButtonRule": {
@@ -19806,6 +19852,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-05T05:26:28.022Z",
-  "latestVersion": "1.22.7"
+  "buildinConfigUpdatedAt": "2025-11-05T11:59:50.310Z",
+  "latestVersion": "1.23.1"
 }
