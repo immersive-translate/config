@@ -3364,7 +3364,7 @@
     "subtitleRule": {
       "id": "",
       "isInject": true,
-      "preTranslation": false,
+      "preTranslation": true,
       "humanPreferred": true,
       "meetingAutoEnableSubtitle": true,
       "aiSubtitlePreferred": true,
@@ -5937,7 +5937,6 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
-        "preTranslation": true,
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
@@ -6149,7 +6148,6 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
-        "preTranslation": true,
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
@@ -6222,7 +6220,6 @@
       },
       "subtitleRule.add": {
         "type": "youtube",
-        "preTranslation": true,
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
@@ -6275,7 +6272,6 @@
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "youtube",
-        "preTranslation": true,
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "humanPreferred": false,
@@ -6335,7 +6331,6 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
-        "preTranslation": true,
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "subtitleUrlRegExp": "/api/timedtext",
@@ -19852,6 +19847,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-05T12:11:03.000Z",
+  "buildinConfigUpdatedAt": "2025-11-07T04:37:12.505Z",
   "latestVersion": "1.23.1"
 }
