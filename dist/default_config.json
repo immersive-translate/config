@@ -106,7 +106,7 @@
   "batchReportConfig": {
     "enabled": true,
     "maxSize": 5,
-    "maxWaitMs": 300000
+    "maxWaitMs": 30000
   },
   "performanceBlockUrls": [
     "https://www.chase.com",
@@ -2885,7 +2885,8 @@
     "inputExecCommandDeleteEnable": false,
     "inputConfig": {
       "clearContentEnable": true,
-      "execCommandDeleteEnable": false
+      "execCommandDeleteEnable": false,
+      "enableRangeDeleteContent": false
     },
     "mutationExcludeSelectors": [
       "span.highlighter--highlighted",
@@ -9700,18 +9701,26 @@
         "bodySelector": ".layout__content-wrapper",
         "articleSelector": ".article__content-container"
       },
-      "subtitleRule.add": {
-        "type": "subsrt1",
+      "subtitleRule.add_v.[1.23.2]": {
+        "type": "subsrt",
         "subsrtFormat": "vtt",
         "formatAsrSubtitles": true,
-        "subtitleUrlRegExp": "/global/.*\\.vtt$",
+        "subtitleUrlRegExp": "/global/(.*)/t/.*\\.vtt$",
+        "urlRootSelector": "[data-bolt-id='$1']",
         "hookType": "fetch|xhr",
         "quickButtonRule": {
           "appendSelector": "[class='sc-irCjQH eHfgKW']",
-          "insertBeforeSelector": "[data-testid=\"player-ux-track-selector-button\"]"
+          "insertBeforeSelector": "[data-testid=\"player-ux-track-selector-button\"]",
+          "injectCSS": ".imt-quick-subtitle-button {top:20%;align-items:unset;}"
         },
         "attachRule": {
+          "realCurrentTimeSelector": "[data-testid='player-ux-scrubber-timestamp']",
+          "realCurrentTimeRegex": "-((?:\\d+:)?(?:\\d+:)?\\d+)",
+          "realCurrentType": "-",
           "appendSelector": "#overlay-root",
+          "injectedCSS": [
+            ".imt-caption-window {bottom:unset!important;top:5%;}"
+          ],
           "injectedGlobalCSS": "[data-testid=caption_renderer_overlay] {display:none!important;}"
         }
       },
@@ -9747,6 +9756,9 @@
         "#pictures,#note,#info,#footer,#expander-footer,.playinfo,.upname,#bilibili-player"
       ],
       "enableInputDeepActive": true,
+      "inputConfig.add": {
+        "enableRangeDeleteContent": true
+      },
       "subtitleRule.add": {
         "type": "general",
         "subtitleUrlRegExp": "aisubtitle.hdslb.com/bfs",
@@ -19847,6 +19859,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-07T04:37:12.505Z",
-  "latestVersion": "1.23.1"
+  "buildinConfigUpdatedAt": "2025-11-07T13:51:48.129Z",
+  "latestVersion": "1.23.2"
 }
