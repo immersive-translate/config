@@ -4737,7 +4737,8 @@
         "opImageType": "append",
         "urlFetchType": "canvasArgs",
         "imageSelectors": [
-          ".scramble-page canvas"
+          ".scramble-page canvas",
+          ".center img "
         ],
         "loadingStyle": "z-index: 999",
         "platforms": [
@@ -5561,15 +5562,11 @@
         "[data-testid=SiteFooter]",
         "[class^=refinitiv-promo-bar__container]",
         "[data-testid=ResponsiveAdSlot]",
-        "[data-testid=SiteHeader]",
         "[data-testid=HomeTickerV2]"
       ],
       "bodyRule.add": {
         "bodySelector": "[data-testid=MainContent]",
         "articleSelector": "[data-testid=ArticleBody]"
-      },
-      "preTranslateLimiter.add_v.[1.12.1]": {
-        "header.enableTranslate": true
       },
       "subtitleRule.add": {
         "type": "subsrt",
@@ -5579,8 +5576,7 @@
         "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
-          "insertBeforeSelector": ".jw-icon-cc",
-          "ccEnableSelector": ".jw-icon-cc"
+          "insertBeforeSelector": ".jw-icon-cc"
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
@@ -18757,6 +18753,13 @@
       ]
     },
     {
+      "id": "trade-padre",
+      "matches": [
+        "trade.padre.gg"
+      ],
+      "richMoreWordPercent": "0.5"
+    },
+    {
       "id": "pytorch",
       "matches": [
         "pytorch.org"
@@ -19859,6 +19862,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-07T14:05:06.000Z",
+  "buildinConfigUpdatedAt": "2025-11-10T15:46:24.037Z",
   "latestVersion": "1.23.3"
 }
