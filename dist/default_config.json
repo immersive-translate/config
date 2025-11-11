@@ -10762,7 +10762,8 @@
           "chrome",
           "firefox",
           "safari",
-          "imtAndroid"
+          "imtAndroid",
+          "imtIOSNew"
         ]
       }
     },
@@ -11392,7 +11393,8 @@
       "platforms": [
         "chrome",
         "firefox",
-        "safari"
+        "safari",
+        "imtIOSNew"
       ]
     },
     {
@@ -13034,7 +13036,8 @@
         "chrome",
         "firefox",
         "safari",
-        "imtAndroid"
+        "imtAndroid",
+        "imtIOSNew"
       ]
     },
     {
@@ -13080,7 +13083,8 @@
         "chrome",
         "firefox",
         "safari",
-        "imtAndroid"
+        "imtAndroid",
+        "imtIOSNew"
       ]
     },
     {
@@ -17590,7 +17594,8 @@
           "chrome",
           "firefox",
           "safari",
-          "imtAndroid"
+          "imtAndroid",
+          "imtIOSNew"
         ],
         "type": "manga",
         "backgroundImgSelectors": [
@@ -17607,7 +17612,8 @@
           "chrome",
           "firefox",
           "safari",
-          "imtAndroid"
+          "imtAndroid",
+          "imtIOSNew"
         ],
         "type": "manga",
         "backgroundImgSelectors": [
@@ -17979,7 +17985,8 @@
         "chrome",
         "firefox",
         "safari",
-        "imtAndroid"
+        "imtAndroid",
+        "imtIOSNew"
       ]
     },
     {
@@ -19862,6 +19869,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-10T15:46:24.037Z",
+  "buildinConfigUpdatedAt": "2025-11-11T04:08:48.261Z",
   "latestVersion": "1.23.3"
 }
