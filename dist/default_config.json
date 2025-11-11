@@ -104,9 +104,12 @@
   "enablePerformanceReport": false,
   "enableProSecretAPIKey": false,
   "batchReportConfig": {
-    "enabled": true,
+    "enabled": false,
     "maxSize": 5,
-    "maxWaitMs": 30000
+    "maxWaitMs": 2000
+  },
+  "batchReportConfig.add_v.[1.23.3]": {
+    "enabled": true
   },
   "performanceBlockUrls": [
     "https://www.chase.com",
@@ -19869,6 +19872,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-11T09:10:08.661Z",
+  "buildinConfigUpdatedAt": "2025-11-11T11:00:56.484Z",
   "latestVersion": "1.23.3"
 }
