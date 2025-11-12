@@ -16154,8 +16154,18 @@
       "subtitleRule.add": {
         "type": "subsrt",
         "hookType": "xhr",
-        "subtitleUrlRegExp": "\\.vtt",
-        "videoPlayerSelector": "video"
+        "subtitleUrlRegExp": "[1-9a-z]{12}.vtt",
+        "videoPlayerSelector": "video",
+        "quickButtonRule": {
+          "appendSelector": "[class^='VodController_buttons']",
+          "insertBeforeSelector": "[class*='VodController_subtitle']"
+        },
+        "attachRule": {
+          "appendSelector": "[class^='PlayerLayout_container']",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-cue {display:none !important;}"
+          ]
+        }
       }
     },
     {
@@ -19872,6 +19882,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-11T11:00:56.484Z",
+  "buildinConfigUpdatedAt": "2025-11-12T02:50:22.590Z",
   "latestVersion": "1.23.3"
 }
