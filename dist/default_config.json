@@ -2519,6 +2519,8 @@
       "provider": "pro",
       "proModel": "gpt-5-chat",
       "model": "gpt-5-chat",
+      "proLimit": 5,
+      "limit": 5,
       "visible": true,
       "supportFeatures": [
         "aiWriting",
@@ -2530,6 +2532,8 @@
       "type": "claude",
       "group": "max",
       "extends": "claude",
+      "proLimit": 6,
+      "limit": 6,
       "provider": "pro",
       "proModel": "claude-sonnet-4.5-20250929",
       "visible": true,
@@ -2545,10 +2549,10 @@
       "extends": "gemini",
       "provider": "pro",
       "proLimit": 5,
+      "limit": 5,
       "proModel": "gemini-2.5-pro",
       "model": "gemini-2.5-pro",
       "visible": true,
-      "limit": 5,
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
@@ -2560,6 +2564,8 @@
       "provider": "pro",
       "type": "custom-ai",
       "visible": true,
+      "proLimit": 5,
+      "limit": 5,
       "model": "qwen3-max-preview",
       "proModel": "qwen3-max-preview",
       "defaultVisible": true,
@@ -2579,6 +2585,8 @@
       "name": "Kimi K2",
       "provider": "pro",
       "type": "custom-ai",
+      "proLimit": 5,
+      "limit": 5,
       "visible": true,
       "model": "Kimi-K2-0905",
       "proModel": "Kimi-K2-0905",
@@ -19882,6 +19890,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-12T02:50:22.590Z",
+  "buildinConfigUpdatedAt": "2025-11-12T03:02:59.476Z",
   "latestVersion": "1.23.3"
 }
