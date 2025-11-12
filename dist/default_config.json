@@ -6812,8 +6812,11 @@
       }
     },
     {
-      "id": "societyforpsychotherapy",
-      "matches": "societyforpsychotherapy.org",
+      "id": "societyforpsychotherapy_cbtm",
+      "matches": [
+        "societyforpsychotherapy.org",
+        "cbtm.manifestlao.com"
+      ],
       "preTranslateLimiter.add": {
         "header.enableTranslate": true
       }
@@ -10871,13 +10874,15 @@
       "id": "mangatoto",
       "matches": [
         "mangatoto.com",
-        "batotoo.com"
+        "batotoo.com",
+        "mangatoto.net"
       ],
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
           "div[name='image-item'] img",
-          "img.page-img"
+          "img.page-img",
+          "#viewer img"
         ],
         "loadingStyle": "z-index: 9999;",
         "platforms": [
@@ -19890,6 +19895,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-12T07:34:01.389Z",
+  "buildinConfigUpdatedAt": "2025-11-12T11:20:05.721Z",
   "latestVersion": "1.23.3"
 }
