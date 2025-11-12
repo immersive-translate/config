@@ -16162,7 +16162,7 @@
       "subtitleRule.add": {
         "type": "subsrt",
         "hookType": "xhr",
-        "subtitleUrlRegExp": "[1-9a-z]{12}.vtt",
+        "subtitleUrlRegExp": "track.*([0-9a-z]{12}\\.vtt|[0-9a-z-]{36}\\?ts=)",
         "videoPlayerSelector": "video",
         "quickButtonRule": {
           "appendSelector": "[class^='VodController_buttons']",
@@ -19890,6 +19890,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-12T03:05:39.870Z",
+  "buildinConfigUpdatedAt": "2025-11-12T07:34:01.389Z",
   "latestVersion": "1.23.3"
 }
