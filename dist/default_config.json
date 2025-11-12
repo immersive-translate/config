@@ -2411,6 +2411,7 @@
       "extends": "openai",
       "provider": "pro",
       "visible": true,
+      "limit": 10,
       "temperature": 1,
       "bodyConfigs": {
         "reasoning_effort": "minimal"
@@ -2428,6 +2429,7 @@
       "proModel": "claude-haiku-4.5-20251001",
       "provider": "pro",
       "visible": true,
+      "limit": 10,
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
@@ -2440,6 +2442,7 @@
       "extends": "deepseek",
       "provider": "pro",
       "visible": true,
+      "limit": 10,
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
@@ -2471,6 +2474,7 @@
       "models": "qwen-mt-turbo|qwen-mt-plus",
       "defaultVisible": true,
       "group": "pro",
+      "limit": 10,
       "disabledAt": "2025-01-01"
     },
     "qwen-mt-pro.add_v.[1.20.9]": {
@@ -2491,6 +2495,7 @@
       "model": "qwen-plus-latest",
       "proModel": "qwen-plus-latest",
       "defaultVisible": true,
+      "limit": 10,
       "group": "pro",
       "disabledAt": "2025-01-01",
       "supportFeatures": [
@@ -2519,7 +2524,6 @@
       "provider": "pro",
       "proModel": "gpt-5-chat",
       "model": "gpt-5-chat",
-      "proLimit": 5,
       "limit": 5,
       "visible": true,
       "supportFeatures": [
@@ -2532,7 +2536,6 @@
       "type": "claude",
       "group": "max",
       "extends": "claude",
-      "proLimit": 6,
       "limit": 6,
       "provider": "pro",
       "proModel": "claude-sonnet-4.5-20250929",
@@ -2548,7 +2551,6 @@
       "group": "max",
       "extends": "gemini",
       "provider": "pro",
-      "proLimit": 5,
       "limit": 5,
       "proModel": "gemini-2.5-pro",
       "model": "gemini-2.5-pro",
@@ -2564,7 +2566,6 @@
       "provider": "pro",
       "type": "custom-ai",
       "visible": true,
-      "proLimit": 5,
       "limit": 5,
       "model": "qwen3-max-preview",
       "proModel": "qwen3-max-preview",
@@ -2585,7 +2586,6 @@
       "name": "Kimi K2",
       "provider": "pro",
       "type": "custom-ai",
-      "proLimit": 5,
       "limit": 5,
       "visible": true,
       "model": "Kimi-K2-0905",
@@ -19890,6 +19890,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-12T03:02:59.476Z",
+  "buildinConfigUpdatedAt": "2025-11-12T03:05:39.870Z",
   "latestVersion": "1.23.3"
 }
