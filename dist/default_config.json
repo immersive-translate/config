@@ -4881,7 +4881,8 @@
         "[class='css-175oi2r r-uef6q5 r-dnmrzs r-97e31f r-13qz1uu r-13awgt0 r-dgnwoc r-1me0s30 r-t3sqpr r-1dqxon3']",
         "[class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0']",
         "[data-testid='inlinePrompt']",
-        "[data-testid='trend']"
+        "[data-testid='trend']",
+        "span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-n6v787 r-1cwl3u0']"
       ],
       "excludeSelectors": [
         "[aria-describedby][role=button]",
@@ -11331,7 +11332,8 @@
         "www.mangaread.org",
         "mangaforfree.net",
         "bakamh.com",
-        "yakshascans.com"
+        "yakshascans.com",
+        "topcomicporno.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -19592,7 +19594,8 @@
         "alar.95chat.cloud",
         "novel.prcm.jp",
         "im.jinritemai.com",
-        "lftp.yar.ru"
+        "lftp.yar.ru",
+        "*.mercadolibre.com"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -19895,6 +19898,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-12T11:20:05.721Z",
+  "buildinConfigUpdatedAt": "2025-11-13T07:03:58.841Z",
   "latestVersion": "1.23.3"
 }
