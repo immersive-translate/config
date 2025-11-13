@@ -20,6 +20,22 @@
     "telemetry": true,
     "sensitiveMode": "close"
   },
+  "accurateConfigs": {
+    "AO3": {
+      "enable": false,
+      "matches": [
+        "https://archiveofourown.org/*",
+        "https://isnull.info/*",
+        "https://i.aois.top/*",
+        "https://xn--iao3-lw4b.ws/*"
+      ],
+      "translationService": "deepseek-pro",
+      "serviceConfig": {
+        "assistantId": "ao3",
+        "enableAIContext": true
+      }
+    }
+  },
   "immediateTranslationPattern": {
     "matches": [
       "twitter.com",
@@ -2643,7 +2659,8 @@
     "toggleTranslatePage": "Alt+A",
     "toggleTranslateTheWholePage": "Alt+W",
     "toggleSidePanel": "Alt+S",
-    "openAiWritingModal": "Alt+I",
+    "translateInputBox": "Alt+I",
+    "openAiWritingModal": "",
     "toggleOnlyTransation": "",
     "toggleTranslateToThePageEndImmediately": "",
     "toggleTranslationMask": "",
@@ -2804,6 +2821,10 @@
       2,
       0
     ],
+    "skipIgnoreSelectors": [
+      "select",
+      "option"
+    ],
     "pageLangDetectWeight": {
       "html": 1,
       "body": 1,
@@ -2893,11 +2914,20 @@
     "mutationObserverLimitTargetSelectors": [],
     "condition": {},
     "normalizeBody": "",
-    "inputExecCommandDeleteEnable": false,
     "inputConfig": {
       "clearContentEnable": true,
       "execCommandDeleteEnable": false,
-      "enableRangeDeleteContent": false
+      "enableRangeDeleteContent": false,
+      "autoLanguageEnable": true,
+      "autoLanguagePageEnable": false,
+      "autoLanguageSites": [
+        "Youtube",
+        "Twitter",
+        "Telegram",
+        "Whatsapp",
+        "Reddit"
+      ],
+      "autoLanguageSitesMainland": []
     },
     "mutationExcludeSelectors": [
       "span.highlighter--highlighted",
@@ -5038,6 +5068,11 @@
           }
         ]
       },
+      "inputConfig.add": {
+        "autoLanguageSelectors": [
+          "parentElementTo [role=dialog] [data-testid=tweetText]"
+        ]
+      },
       "imageRule.add": {
         "opImageType": "append",
         "imageStyle": "opacity:1;position:unset;"
@@ -5444,7 +5479,11 @@
         "[data-testid=post_author_link]"
       ],
       "inputConfig.add": {
-        "clearContentEnable": false
+        "clearContentEnable": false,
+        "autoLanguageSelectors": [
+          "parentElementTo shreddit-comment [slot=comment]",
+          "shreddit-post-text-body .text-neutral-content"
+        ]
       },
       "bodyRule.add": {
         "enable": false
@@ -6155,6 +6194,12 @@
           }
         }
       ],
+      "inputConfig.add": {
+        "autoLanguageSelectors": [
+          "parentElementTo #comment yt-attributed-string#content-text",
+          "#description-inline-expander"
+        ]
+      },
       "subtitleRule.add": {
         "type": "youtube",
         "hookType": "xhr_response",
@@ -6764,7 +6809,10 @@
         ],
         "tutorialsText": "输入中文后快速连击 3 次空格键翻译，与外国人轻松对话",
         "placeholderType": "dom",
-        "enableMutationObserver": true
+        "enableMutationObserver": true,
+        "autoLanguageSelectors": [
+          "[id^='message-content'] > span"
+        ]
       }
     },
     {
@@ -6809,7 +6857,10 @@
         ],
         "tutorialsText": "输入中文后快速连击 3 次空格键翻译，与外国人轻松对话",
         "placeholderType": "dom",
-        "enableMutationObserver": true
+        "enableMutationObserver": true,
+        "autoLanguageSelectors": [
+          ".bubble-content .message .translatable-message"
+        ]
       }
     },
     {
@@ -9153,7 +9204,10 @@
           "#main .lexical-rich-text-input div[aria-hidden='true'] > div"
         ],
         "tutorialsText": "输入中文后快速连击 3 次空格键翻译，与外国人轻松对话",
-        "placeholderType": "dom"
+        "placeholderType": "dom",
+        "autoLanguageSelectors": [
+          ".focusable-list-item .selectable-text.copyable-text"
+        ]
       }
     },
     {
@@ -10207,9 +10261,9 @@
       "additionalExcludeSelectors.remove": [
         ".notranslate"
       ],
-      "inputExecCommandDeleteEnable": true,
       "inputConfig.add": {
-        "execCommandDeleteEnable": true
+        "execCommandDeleteEnable": true,
+        "enableRangeDeleteContent": true
       }
     },
     {
@@ -13874,7 +13928,12 @@
         ".cil-subject",
         ".cil-body-wrapper",
         ".text-body"
-      ]
+      ],
+      "inputConfig.add": {
+        "autoLanguageSelectors": [
+          ".html-body -> .message-content"
+        ]
+      }
     },
     {
       "id": "imdb",
@@ -19898,6 +19957,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-13T11:47:19.669Z",
-  "latestVersion": "1.23.3"
+  "buildinConfigUpdatedAt": "2025-11-13T12:28:20.918Z",
+  "latestVersion": "1.23.4"
 }
