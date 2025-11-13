@@ -108,7 +108,7 @@
     "maxSize": 5,
     "maxWaitMs": 2000
   },
-  "batchReportConfig.add_v.[1.23.3]": {
+  "batchReportConfig.add_v.[1.23.4]": {
     "enabled": true
   },
   "performanceBlockUrls": [
@@ -19898,6 +19898,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-13T07:03:58.841Z",
+  "buildinConfigUpdatedAt": "2025-11-13T11:47:19.669Z",
   "latestVersion": "1.23.3"
 }
