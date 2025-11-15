@@ -4168,7 +4168,8 @@
       ],
       "matches": [
         "https://*.immersivetranslate.*/subtitle*",
-        "http://localhost:38001/download-subtitle*",
+        "https://*.immersivetranslate.*/*/download-subtitle",
+        "http://localhost:38001/*/download-subtitle*",
         "https://*.immersivetranslate.*/*/subtitle*"
       ],
       "pairs": {
@@ -4845,25 +4846,26 @@
         "mobile.twitter.com",
         "tweetdeck.twitter.com",
         "pro.twitter.com",
-        "https://platform.twitter.com/embed*",
+        "platform.twitter.com/embed*",
         "x.com",
         "mobile.x.com",
         "tweetdeck.x.com",
         "pro.x.com",
-        "https://platform.x.com/embed*"
+        "platform.x.com/embed*"
       ],
       "excludeMatches": [
-        "https://twitter.com/i/premium_sign_up",
-        "https://twitter.com/settings/subscription",
-        "https://twitter.com/jobs/*",
-        "https://x.com/i/premium_sign_up",
-        "https://x.com/settings/subscription",
-        "https://x.com/settings/account",
-        "https://x.com/jobs/*",
-        "https://x.com/*/tos*",
-        "https://x.com/*/privacy*",
-        "https://x.com/account/access*",
-        "https://x.com/i/account_analytics*"
+        "twitter.com/i/premium_sign_up",
+        "twitter.com/settings/subscription",
+        "twitter.com/jobs/*",
+        "x.com/i/premium_sign_up",
+        "x.com/settings/subscription",
+        "x.com/settings/account",
+        "x.com/jobs/*",
+        "x.com/*/tos*",
+        "x.com/*/privacy*",
+        "x.com/account/access*",
+        "x.com/i/account_analytics*",
+        "x.com/i/chat*"
       ],
       "withAITitleBlockUrls": [
         "^https://x.com/home"
@@ -14471,7 +14473,8 @@
         "subtitleUrlRegExp": ".*\\.(vtt|webvtt)",
         "quickButtonRule": {
           "appendSelector": ".styles_columns__S4HQf:last-child",
-          "ccEnableSelector": "div[data-testid='bottom-bar'] button[data-testid='subtitle-settings-button']"
+          "ccEnableSelector": "div[data-testid='bottom-bar'] button[data-testid='subtitle-settings-button']",
+          "injectCSS": ".imt-quick-subtitle-pop-content {right: 80px !important;}"
         },
         "enableHookDownload": true,
         "rtlInjectedCss": [
@@ -19957,6 +19960,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-14T06:52:29.000Z",
+  "buildinConfigUpdatedAt": "2025-11-15T17:08:15.403Z",
   "latestVersion": "1.23.5"
 }
