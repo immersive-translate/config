@@ -27,7 +27,8 @@
         "https://archiveofourown.org/*",
         "https://isnull.info/*",
         "https://i.aois.top/*",
-        "https://xn--iao3-lw4b.ws/*"
+        "https://xn--iao3-lw4b.ws/*",
+        "https://browser.immersivetranslate.*/ebook-reader/*"
       ],
       "translationService": "deepseek-pro",
       "serviceConfig": {
@@ -7746,6 +7747,15 @@
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "xhr"
+      }
+    },
+    {
+      "id": "sellercentral-amazon-message",
+      "matches": [
+        "https://sellercentral.amazon.*/messaging/inbox*"
+      ],
+      "bodyRule.add": {
+        "bodySelector": "#case-messages"
       }
     },
     {
@@ -19522,13 +19532,15 @@
       "matches": [
         "www.typing.com",
         "*.video-stream-hosting.de",
-        "*.thieme.de"
+        "*.thieme.de",
+        "videos.sproutvideo.com"
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "text_track",
+        "allowHideModeTextTrack": true,
         "videoPlayerSelector": "video"
       }
     },
@@ -19961,6 +19973,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-18T02:24:54.000Z",
+  "buildinConfigUpdatedAt": "2025-11-18T16:08:37.631Z",
   "latestVersion": "1.23.6"
 }
