@@ -3406,6 +3406,10 @@
     "aiRule": {},
     "subtitleRule": {
       "id": "",
+      "defaultFallbackServices": [
+        "bing",
+        "google"
+      ],
       "isInject": true,
       "preTranslation": true,
       "humanPreferred": true,
@@ -19973,6 +19977,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-18T16:08:37.631Z",
+  "buildinConfigUpdatedAt": "2025-11-19T09:04:05.332Z",
   "latestVersion": "1.23.6"
 }
