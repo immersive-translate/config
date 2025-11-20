@@ -1552,7 +1552,8 @@
           "models": [
             "gpt-5$",
             "gpt-5-mini",
-            "gpt-5-nano"
+            "gpt-5-nano",
+            "gpt-5.1$"
           ],
           "bodyConfigs": {
             "reasoning_effort": "minimal",
@@ -1575,7 +1576,8 @@
           "models": [
             "gpt-5$",
             "gpt-5-mini",
-            "gpt-5-nano"
+            "gpt-5-nano",
+            "gpt-5.1$"
           ],
           "apiUrl": "/responses",
           "bodyConfigs": {
@@ -2538,13 +2540,13 @@
       "limit": 8
     },
     "openai-max": {
-      "name": "GPT-5",
+      "name": "GPT-5.1",
       "type": "openai",
       "group": "max",
       "extends": "openai",
       "provider": "pro",
-      "proModel": "gpt-5-chat",
-      "model": "gpt-5-chat",
+      "proModel": "gpt-5.1",
+      "model": "gpt-5.1",
       "limit": 5,
       "visible": true,
       "supportFeatures": [
@@ -3069,6 +3071,18 @@
                 "type": "disabled"
               }
             }
+          },
+          {
+            "models": [
+              "gpt-5$",
+              "gpt-5-mini",
+              "gpt-5-nano",
+              "gpt-5.1$"
+            ],
+            "bodyConfigs": {
+              "reasoning_effort": "minimal",
+              "temperature.remove": ""
+            }
           }
         ]
       }
@@ -3255,7 +3269,8 @@
             "models": [
               "gpt-5$",
               "gpt-5-mini",
-              "gpt-5-nano"
+              "gpt-5-nano",
+              "gpt-5.1$"
             ],
             "bodyConfigs": {
               "reasoning_effort": "minimal",
@@ -19981,6 +19996,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-20T03:29:04.142Z",
+  "buildinConfigUpdatedAt": "2025-11-20T07:41:46.731Z",
   "latestVersion": "1.23.7"
 }
