@@ -2263,21 +2263,14 @@
         {
           "models": [
             "glm-4.5",
-            "glm-4.5.*"
+            "glm-4.5.*",
+            "GLM-4.6",
+            "GLM-4.6.*"
           ],
           "bodyConfigs": {
             "thinking": {
               "type": "disabled"
             }
-          }
-        },
-        {
-          "models": [
-            "GLM-4.6",
-            "GLM-4.6.*"
-          ],
-          "bodyConfigs": {
-            "enable_thinking": false
           }
         }
       ]
@@ -2320,21 +2313,14 @@
         {
           "models": [
             "glm-4.5",
-            "glm-4.5.*"
+            "glm-4.5.*",
+            "GLM-4.6",
+            "GLM-4.6.*"
           ],
           "bodyConfigs": {
             "thinking": {
               "type": "disabled"
             }
-          }
-        },
-        {
-          "models": [
-            "GLM-4.6",
-            "GLM-4.6.*"
-          ],
-          "bodyConfigs": {
-            "enable_thinking": false
           }
         }
       ]
@@ -19995,6 +19981,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-20T03:20:30.166Z",
+  "buildinConfigUpdatedAt": "2025-11-20T03:29:04.142Z",
   "latestVersion": "1.23.7"
 }
