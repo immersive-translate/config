@@ -5894,14 +5894,15 @@
       "id": "facebook",
       "matches": "*.facebook.com",
       "excludeMatches": [
-        "https://www.facebook.com/business/*",
-        "https://business.facebook.com/*",
-        "https://www.facebook.com/help*",
-        "https://www.facebook.com/settings*",
-        "https://www.facebook.com/ads/library/*",
-        "https://developers.facebook.com/*",
-        "https://www.facebook.com/v20.0/plugins/*",
-        "https://www.facebook.com/support*"
+        "www.facebook.com/business/*",
+        "business.facebook.com/*",
+        "www.facebook.com/help*",
+        "www.facebook.com/settings*",
+        "www.facebook.com/ads/library/*",
+        "developers.facebook.com/*",
+        "www.facebook.com/v20.0/plugins/*",
+        "www.facebook.com/support*",
+        "www.facebook.com/terms*"
       ],
       "selectors": [
         "div[dir=auto][style]",
@@ -10545,9 +10546,7 @@
       },
       "likePreSelectors.add": [
         "[elevation='subtle'] .sc-brSvTw > :first-child > :first-child",
-        ".sc-eGRUor.jQrKLC",
-        "[class='sc-990a20cf-6 kTpbRT']",
-        "[class='sc-bd2a2bb7-3 jMfRKN']"
+        ".cm-gBCCZY"
       ],
       "isTransformPreTagNewLine": true,
       "forceFormatPre": true
@@ -13696,7 +13695,6 @@
         "type": "webvtt",
         "enableHookDownload": true,
         "subtitleUrlRegExp": "\\.vtt$",
-        "loadingContainerSelector": "[data-testid='playerContainer']",
         "injectedCss": [
           "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container {max-height: 60px}"
         ],
@@ -18983,7 +18981,8 @@
         "drjoedispenza.com",
         "www.x-mol.com",
         "webvpn.bnu.*",
-        "www.connectedpapers.com"
+        "www.connectedpapers.com",
+        "isappscience.org"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
@@ -19000,7 +18999,8 @@
         "[class*='titleTypography'] {-webkit-line-clamp: unset !important;}",
         ".div-text-line-three { -webkit-line-clamp: unset; max-height: unset;}",
         ".data-title { -webkit-line-clamp: unset!important; max-height: unset!important;}",
-        ".paper-title,.search-result-abstract.folded,.list-group-item-mod h5 { -webkit-line-clamp: unset!important; max-height: unset!important;}"
+        ".paper-title,.search-result-abstract.folded,.list-group-item-mod h5 { -webkit-line-clamp: unset!important; max-height: unset!important;}",
+        ".kb-advanced-heading-link,.limited-text { -webkit-line-clamp: unset!important; max-height: unset!important;}"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -19527,6 +19527,15 @@
       ]
     },
     {
+      "id": "radix-ui",
+      "matches": "www.radix-ui.com",
+      "preTranslateLimiter.add": {
+        "side.selectors": [
+          ".rt-ScrollAreaViewport"
+        ]
+      }
+    },
+    {
       "id": "f95zone",
       "matches": "f95zone.to",
       "additionalExcludeSelectors.add": [
@@ -19549,6 +19558,29 @@
         "nof1.ai"
       ],
       "excludeSelectors.add": []
+    },
+    {
+      "id": "folo",
+      "matches": "app.folo.is",
+      "repeatTranslateNum": 1
+    },
+    {
+      "id": "font.block",
+      "matches": [
+        "skyvipservices.com"
+      ],
+      "injectedCss.add": [
+        "font {display:block !important;}"
+      ]
+    },
+    {
+      "id": "arena",
+      "matches": [
+        "lmarena.ai"
+      ],
+      "excludeSelectors.add": [
+        "table"
+      ]
     },
     {
       "id": "common-text-track",
@@ -19693,7 +19725,9 @@
         "novel.prcm.jp",
         "im.jinritemai.com",
         "lftp.yar.ru",
-        "*.mercadolibre.com"
+        "*.mercadolibre.com",
+        "corpus-texmex.irisa.*",
+        "www.imageen.com"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -19839,7 +19873,10 @@
       "additionalExcludeSelectors.remove": [
         ".notranslate",
         "[translate=no]"
-      ]
+      ],
+      "bodyRule.add": {
+        "bodySelector": "article"
+      }
     },
     {
       "id": "htmlLangFirst",
@@ -19981,7 +20018,7 @@
         "header p",
         "header nav"
       ],
-      "preTranslateLimiter.add_v.[1.12.1]": {
+      "preTranslateLimiter.add": {
         "header.enableTranslate": true
       },
       "excludeSelectors.add": [
@@ -19996,6 +20033,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-22T04:24:04.000Z",
+  "buildinConfigUpdatedAt": "2025-11-22T16:09:44.029Z",
   "latestVersion": "1.23.8"
 }
