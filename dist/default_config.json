@@ -7711,6 +7711,23 @@
       "paragraphMinWordCount": 2
     },
     {
+      "id": "kelbyone",
+      "matches": "members.kelbyone.com",
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": ".*\\.srt",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "insertBeforeSelector": ".jw-icon-cc"
+        },
+        "attachRule": {
+          "appendSelector": ".jw-wrapper.jw-reset",
+          "injectedGlobalCSS": ".jw-text-track-display { display:none!important; }"
+        }
+      }
+    },
+    {
       "id": "primevideo",
       "matches": [
         "www.primevideo.com",
@@ -11485,6 +11502,23 @@
       }
     },
     {
+      "id": "manhwabuddy",
+      "matches": "manhwabuddy.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".reading-content img"
+        ]
+      },
+      "platforms": [
+        "chrome",
+        "firefox",
+        "safari",
+        "imtIOSNew"
+      ]
+    },
+    {
       "id": "toongod",
       "matches": [
         "toongod.cc"
@@ -12298,6 +12332,24 @@
       }
     },
     {
+      "id": "mangasincensura",
+      "matches": "www.mangasincensura.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".cc-imagewrapper img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "manhwa-raw",
       "matches": [
         "manhwa-raw.com",
@@ -12319,6 +12371,24 @@
           "firefox",
           "imtIOSNew",
           "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
+      "id": "mangarawad",
+      "matches": "mangarawad.org",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".page-chapter img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtIOSNew",
           "imtAndroid"
         ]
       }
@@ -14216,6 +14286,25 @@
       }
     },
     {
+      "id": "anthropic-course",
+      "matches": "anthropic.skilljar.com",
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": ".*\\.srt",
+        "hookType": "xhr",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "insertBeforeSelector": ".jw-icon-cc"
+        },
+        "attachRule": {
+          "appendSelector": ".jw-wrapper",
+          "injectedGlobalCSS": [
+            ".jw-text-track-container {display: none;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "fmoviesz",
       "matches": [
         "fmovies24.to",
@@ -14737,7 +14826,6 @@
           ".timed-text-css-box-inner:last-child {display: block!important;}"
         ],
         "videoPlayerSelector": "video",
-        "loadingContainerSelector": "[data-testid='player']",
         "quickButtonRule": {
           "appendSelector": "[class^='PlayerControls_bottomControls'] > div > div:last-child",
           "insertBeforeSelector": "[class^='PlayerControls_bottomControls'] > div > div:last-child > div:last-child"
@@ -15052,7 +15140,8 @@
     {
       "id": "vimeo",
       "matches": [
-        "vimeo.com"
+        "vimeo.com",
+        "training.leveleffect.com"
       ],
       "excludeSelectors.add": [
         ".vp-captions"
@@ -20033,6 +20122,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-22T16:09:44.029Z",
+  "buildinConfigUpdatedAt": "2025-11-24T12:00:13.623Z",
   "latestVersion": "1.23.8"
 }
