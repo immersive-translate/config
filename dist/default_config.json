@@ -1755,6 +1755,43 @@
               }
             ]
           }
+        },
+        {
+          "models": [
+            "gemini-3-pro",
+            "gemini-3-pro-preview"
+          ],
+          "bodyConfigs": {
+            "temperature.remove": "",
+            "generationConfig": {
+              "temperature": 1,
+              "topK": 1,
+              "topP": 1,
+              "maxOutputTokens": 2048,
+              "stopSequences": [],
+              "thinkingConfig": {
+                "thinkingLevel": "low"
+              }
+            },
+            "safetySettings": [
+              {
+                "category": "HARM_CATEGORY_HARASSMENT",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_HATE_SPEECH",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                "threshold": "BLOCK_NONE"
+              }
+            ]
+          }
         }
       ]
     },
@@ -2569,14 +2606,14 @@
       ]
     },
     "gemini-max": {
-      "name": "Gemini 2.5 Pro",
+      "name": "Gemini 3 Pro",
       "type": "gemini",
       "group": "max",
       "extends": "gemini",
       "provider": "pro",
       "limit": 5,
-      "proModel": "gemini-2.5-pro",
-      "model": "gemini-2.5-pro",
+      "proModel": "gemini-3-pro-preview",
+      "model": "gemini-3-pro-preview",
       "visible": true,
       "supportFeatures": [
         "aiWriting",
@@ -3063,6 +3100,43 @@
           },
           {
             "models": [
+              "gemini-3-pro",
+              "gemini-3-pro-preview"
+            ],
+            "bodyConfigs": {
+              "temperature.remove": "",
+              "generationConfig": {
+                "temperature": 1,
+                "topK": 1,
+                "topP": 1,
+                "maxOutputTokens": 2048,
+                "stopSequences": [],
+                "thinkingConfig": {
+                  "thinkingLevel": "low"
+                }
+              },
+              "safetySettings": [
+                {
+                  "category": "HARM_CATEGORY_HARASSMENT",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_HATE_SPEECH",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                  "threshold": "BLOCK_NONE"
+                }
+              ]
+            }
+          },
+          {
+            "models": [
               "glm-4.5",
               "glm-4.5.*"
             ],
@@ -3244,6 +3318,43 @@
                 "topP": 1,
                 "maxOutputTokens": 2048,
                 "stopSequences": []
+              },
+              "safetySettings": [
+                {
+                  "category": "HARM_CATEGORY_HARASSMENT",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_HATE_SPEECH",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                  "threshold": "BLOCK_NONE"
+                }
+              ]
+            }
+          },
+          {
+            "models": [
+              "gemini-3-pro",
+              "gemini-3-pro-preview"
+            ],
+            "bodyConfigs": {
+              "temperature.remove": "",
+              "generationConfig": {
+                "temperature": 1,
+                "topK": 1,
+                "topP": 1,
+                "maxOutputTokens": 2048,
+                "stopSequences": [],
+                "thinkingConfig": {
+                  "thinkingLevel": "low"
+                }
               },
               "safetySettings": [
                 {
@@ -20122,6 +20233,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-24T12:00:13.623Z",
+  "buildinConfigUpdatedAt": "2025-11-25T02:34:31.597Z",
   "latestVersion": "1.23.8"
 }
