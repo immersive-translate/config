@@ -5864,7 +5864,9 @@
         ".BannerDescription",
         "copilot-user-settings",
         "h2:has(~ copilot-user-settings)",
-        "div:has(~ copilot-user-settings)"
+        "div:has(~ copilot-user-settings)",
+        "[class='f4 color-fg-muted col-md-6 mx-auto']",
+        "[class='col-lg-9 position-relative pr-lg-5 mb-6 mr-lg-5']"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -11550,7 +11552,8 @@
         "mangaforfree.net",
         "bakamh.com",
         "yakshascans.com",
-        "topcomicporno.com"
+        "topcomicporno.com",
+        "toonclash.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -20233,6 +20236,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-25T02:34:31.597Z",
+  "buildinConfigUpdatedAt": "2025-11-25T11:16:31.241Z",
   "latestVersion": "1.23.8"
 }
