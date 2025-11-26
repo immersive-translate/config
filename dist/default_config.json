@@ -18,7 +18,21 @@
   "disableOpenUpgradePage": false,
   "sensitiveConfig": {
     "telemetry": true,
-    "sensitiveMode": "close"
+    "sensitiveMode": "close",
+    "maskConfig": {
+      "maskPhoneNumber": true,
+      "maskBankNumber": true,
+      "maskPayment": true,
+      "maskPassword": true,
+      "maskRandomSeed": true,
+      "maskPrivateKey": true,
+      "maskEmail": true,
+      "maskVerificationCode": false,
+      "maskOrganization": false,
+      "maskAddress": false,
+      "maskUserName": false,
+      "maskUrl": false
+    }
   },
   "accurateConfigs": {
     "AO3": {
@@ -1077,7 +1091,8 @@
     "public-beta-api.siliconflow.cn",
     "api.siliconflow.cn",
     "open.bigmodel.cn",
-    "qianfan.baidubce.com"
+    "qianfan.baidubce.com",
+    "aigw1.immersivetranslate.com"
   ],
   "telemetry": true,
   "loadingTheme": "spinner",
@@ -2416,6 +2431,22 @@
       "group": "free",
       "extends": "bing"
     },
+    "babel-lite-free": {
+      "type": "bing",
+      "group": "free",
+      "name": "Babel Lite (Beta)",
+      "maxTextGroupLengthPerRequest": 1,
+      "enableRichTranslate": true,
+      "maxTextLengthPerRequest": 600,
+      "limit": 20,
+      "retry": 2,
+      "hidden": true
+    },
+    "babel-lite-free.add_v.[1.23.9]": {
+      "type": "babel-lite",
+      "visible": true,
+      "hidden": false
+    },
     "zhipu-free": {
       "extends": "zhipu",
       "type": "zhipu",
@@ -3523,7 +3554,7 @@
       "^[\\u200B\\u200C\\u200D\\u2060\\uFEFF]+$",
       "^[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]$",
       "^[a-zA-Z]{1}$",
-      "^$",
+      "^[•]$",
       "<img id=0>",
       "<canvas id=0>"
     ],
@@ -20236,6 +20267,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-25T11:16:31.241Z",
-  "latestVersion": "1.23.8"
+  "buildinConfigUpdatedAt": "2025-11-26T08:39:55.433Z",
+  "latestVersion": "1.23.9"
 }
