@@ -14734,12 +14734,11 @@
         "#immersive-translate-caption-window *"
       ],
       "subtitleRule.add": {
-        "type": "text_track_dynamic",
+        "type": "subsrt",
         "videoPlayerSelector": ".vjs-tech",
         "subtitleUrlRegExp": ".*\\.(vtt|webvtt)",
         "quickButtonRule": {
           "appendSelector": ".styles_columns__S4HQf:last-child",
-          "ccEnableSelector": "div[data-testid='bottom-bar'] button[data-testid='subtitle-settings-button']",
           "injectCSS": ".imt-quick-subtitle-pop-content {right: 80px !important;}"
         },
         "enableHookDownload": true,
@@ -20267,6 +20266,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-26T08:39:28.000Z",
+  "buildinConfigUpdatedAt": "2025-11-26T08:46:22.640Z",
   "latestVersion": "1.23.9"
 }
