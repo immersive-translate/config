@@ -14717,6 +14717,20 @@
       }
     },
     {
+      "id": "smartpoly.teachable.com",
+      "matches": "smartpoly.teachable.com",
+      "subtitleRule.add": {
+        "type": "webvtt",
+        "hookType": "xhr|fetch",
+        "videoPlayerSelector": ".vjs-tech",
+        "subtitleUrlRegExp": ".*\\.(vtt|webvtt)",
+        "quickButtonRule": {
+          "appendSelector": ".styles_columns__S4HQf:last-child",
+          "injectCSS": ".imt-quick-subtitle-pop-content {right: 80px !important;}"
+        }
+      }
+    },
+    {
       "id": "themotionmagic",
       "matches": [
         "player.hotmart.com"
@@ -17326,6 +17340,26 @@
         ],
         "inValidSrcRegex": [
           ".svg"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
+      "id": "manhuaplus",
+      "matches": [
+        "manhuaplus.org"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".readImg img"
         ],
         "platforms": [
           "chrome",
@@ -20266,6 +20300,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-26T08:46:22.640Z",
+  "buildinConfigUpdatedAt": "2025-11-27T12:08:54.022Z",
   "latestVersion": "1.23.9"
 }
