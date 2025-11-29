@@ -2252,9 +2252,12 @@
       "translationEnableRichTranslate": true
     },
     "azure-openai": {
-      "extends": "custom-ai",
+      "extends": "ai",
       "model": "gpt-4o-mini",
       "provider": "custom",
+      "models": "gpt-3.5-turbo|gpt-4o-mini|gpt-4o|gpt-4|gpt-4-0125-preview|gpt-4-turbo|gpt-4.1-mini|gpt-4.1-nano|gpt-4.1|gpt-4.5-preview|claude-3-haiku-20240307|claude-3-sonnet-20240229|claude-3-opus-20240229|ERNIE-4.0-8K|ERNIE-3.5-8K|ERNIE-Speed-8K|ERNIE-Speed-128K|chatglm_turbo|chatglm_pro|chatglm_std|chatglm_lite|glm-4|glm-4v|glm-3-turbo|qwen-turbo|qwen-plus|qwen-max|qwen-max-longcontext|SparkDesk|hunyuan|gemini-1.5-flash-preview-0514|llama2:7b|llama3:latest|llama3.3|llama3.2|llama3.2:1b|llama3.1|llama3.1:405b|command-r|moonshot-v1-8k|moonshot-v1-32k|moonshot-v1-128k|Baichuan2-Turbo|Baichuan2-Turbo-192k|llama3-70b-8192|deepseek-chat|deepseek-r1:1.5b|deepseek-r1:8b|deepseek-r1:14b|deepseek-r1:32b",
+      "defaultMaxTextGroupLengthPerRequest": 4,
+      "maxTextGroupLengthPerRequest": 4,
       "limit": 5,
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://api.cognitive.microsofttranslator.com/",
@@ -20300,6 +20303,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-27T12:08:54.022Z",
+  "buildinConfigUpdatedAt": "2025-11-29T13:19:36.652Z",
   "latestVersion": "1.23.9"
 }
