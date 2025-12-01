@@ -2032,7 +2032,7 @@
       "disabledAt": "2025-07-10"
     },
     "qianfan2": {
-      "extends": "custom-ai",
+      "extends": "ai",
       "provider": "custom",
       "model": "ernie-speed-128k",
       "models": "ernie-speed-128k|ernie-speed-pro-128k|ernie-4.5-turbo-128k|ernie-4.5-turbo-128k-preview|ernie-4.5-turbo-32k|ernie-4.5-8k-preview",
@@ -2040,7 +2040,9 @@
       "apiUrl": "https://qianfan.baidubce.com/v2/chat/completions",
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true
+      "translationEnableRichTranslate": true,
+      "defaultMaxTextGroupLengthPerRequest": 4,
+      "maxTextGroupLengthPerRequest": 4
     },
     "deepseek": {
       "visible": true,
@@ -2266,7 +2268,7 @@
       "translationEnableRichTranslate": true
     },
     "openrouter": {
-      "extends": "custom-ai",
+      "extends": "ai",
       "name": "OpenRouter",
       "model": "google/gemini-2.0-flash-001",
       "models": "deepseek/deepseek-chat-v3-0324:free|google/gemini-2.0-flash-exp:free|qwen/qwq-32b:free|google/gemini-2.0-flash-001|openai/gpt-4o-mini|google/gemini-flash-1.5-8b|google/gemini-flash-1.5-8b|google/gemini-2.0-flash-lite-001|google/gemini-flash-1.5|google/gemma-3-27b-it:free|nvidia/llama-3.1-nemotron-ultra-253b-v1:free",
@@ -2276,6 +2278,8 @@
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
+      "defaultMaxTextGroupLengthPerRequest": 4,
+      "maxTextGroupLengthPerRequest": 4,
       "headerConfigs": {
         "HTTP-Referer": "https://immersivetranslate.com",
         "X-Title": "Immersive Translate"
@@ -2459,6 +2463,7 @@
       "models": "glm-4-flash|glm-4-flash-250414",
       "provider": "custom",
       "modelsHidden": true,
+      "retry": 2,
       "apiUrl": "https://aigw1.immersivetranslate.com/api/paas/v4/chat/completions",
       "supportFeatures": [
         "aiWriting",
@@ -2473,6 +2478,7 @@
       "model": "THUDM/glm-4-9b-chat",
       "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/glm-4-9b-chat",
       "modelsHidden": true,
+      "retry": 2,
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
@@ -9407,7 +9413,7 @@
         "tutorialsText": "输入中文后快速连击 3 次空格键翻译，与外国人轻松对话",
         "placeholderType": "dom",
         "autoLanguageSelectors": [
-          ".focusable-list-item .selectable-text.copyable-text"
+          ".message-in.focusable-list-item .selectable-text.copyable-text"
         ]
       }
     },
@@ -20303,6 +20309,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-11-29T13:19:36.652Z",
+  "buildinConfigUpdatedAt": "2025-12-01T02:09:59.027Z",
   "latestVersion": "1.23.9"
 }
