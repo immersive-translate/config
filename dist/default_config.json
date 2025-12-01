@@ -3563,7 +3563,7 @@
       "^[\\u200B\\u200C\\u200D\\u2060\\uFEFF]+$",
       "^[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]$",
       "^[a-zA-Z]{1}$",
-      "^[•]$",
+      "^[•↓]$",
       "<img id=0>",
       "<canvas id=0>"
     ],
@@ -5089,7 +5089,6 @@
         "[class='css-175oi2r r-uef6q5 r-dnmrzs r-97e31f r-13qz1uu r-13awgt0 r-dgnwoc r-1me0s30 r-t3sqpr r-1dqxon3']",
         "[class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0']",
         "[data-testid='inlinePrompt']",
-        "[data-testid='trend']",
         "span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-n6v787 r-1cwl3u0']"
       ],
       "excludeSelectors": [
@@ -5107,7 +5106,9 @@
         "[data-testid=socialContext]",
         "[data-testid=tweet-text-show-more-link]",
         "[aria-label=Grok] [class='css-175oi2r r-1habvwh r-vqp9x9 r-1q9bdsx r-1loqt21 r-9njtsq r-1wtj0ep r-nsbfu8 r-xbdcod r-13c7hvr'] > div:last-child",
-        "[role='tab']"
+        "[role='tab']",
+        "[data-testid=hoverCardParent] [role=menuitem]",
+        "[data-testid=sidebarColumn]"
       ],
       "extraBlockSelectors.add": [
         "[data-testid=\"tweetText\"] div.r-6koalj"
@@ -7219,7 +7220,6 @@
         "div.adDDi",
         "#headerSection",
         "#rateChatDiv",
-        "[id=bres]",
         ".title-D5Lgyj",
         "[data-attrid='VisualDigestVideoResult']",
         ".search-enhance-WDIEkP h4",
@@ -17491,7 +17491,8 @@
           "[class*=\"_page_container\"] img",
           "[class*=\"imageViewerRender\"] canvas",
           ".area-main img",
-          "#main li>img"
+          "#main li>img",
+          "ul.contents-img li > img"
         ],
         "injectedCss": "#immersiveTranslateImgLoading { z-index:999 !important; }",
         "platforms": [
@@ -19468,6 +19469,15 @@
       }
     },
     {
+      "id": "barotem",
+      "matches": "www.barotem.com",
+      "injectedCss.add": [
+        ".product_name {-webkit-line-clamp: unset!important;}",
+        ".lists_goods_content > div {height: unset!important; min-height: 76px}",
+        ".immersive-translate-target-inner {font-family: sans-serif !important;}"
+      ]
+    },
+    {
       "id": "msn",
       "matches": "www.msn.com",
       "injectedCss.add": [
@@ -19859,6 +19869,18 @@
       ]
     },
     {
+      "id": "vercel",
+      "matches": [
+        "vercel.com"
+      ],
+      "excludeSelectors.add": [
+        "[class^=fade-in-words]"
+      ],
+      "preTranslateLimiter.add": {
+        "header.enableTranslate": true
+      }
+    },
+    {
       "id": "common-text-track",
       "matches": [
         "www.typing.com",
@@ -20091,7 +20113,8 @@
         "app.voxy.com",
         "www.zome.*",
         "electrical-engineering-portal.com",
-        "www.surveymonkey.com"
+        "www.surveymonkey.com",
+        "www.rawpixel.com"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -20309,6 +20332,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-01T02:09:59.027Z",
+  "buildinConfigUpdatedAt": "2025-12-01T15:35:14.692Z",
   "latestVersion": "1.23.9"
 }
