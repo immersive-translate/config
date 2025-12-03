@@ -1568,7 +1568,8 @@
           "models": [
             "gpt-5$",
             "gpt-5-mini",
-            "gpt-5-nano"
+            "gpt-5-nano",
+            "doubao-seed-1-6-"
           ],
           "bodyConfigs": {
             "reasoning_effort": "minimal",
@@ -1869,7 +1870,7 @@
     },
     "openai": {
       "model": "gpt-4o-mini",
-      "models": "gpt-5|gpt-5-chat|gpt-5-mini|gpt-5-nano|gpt-4.1-mini|gpt-4o-mini|gpt-4o|gpt-4.1|gpt-4.1-nano|gpt-4.5-preview",
+      "models": "gpt-5.1|gpt-5|gpt-5-chat|gpt-5-mini|gpt-5-nano|gpt-4.1-mini|gpt-4o-mini|gpt-4o|gpt-4.1|gpt-4.1-nano|gpt-4.5-preview",
       "proModel": "gpt-4.1-mini",
       "visible": true,
       "placeholderDelimiters": [
@@ -20353,6 +20354,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-03T08:08:30.326Z",
+  "buildinConfigUpdatedAt": "2025-12-03T08:32:35.545Z",
   "latestVersion": "1.23.9"
 }
