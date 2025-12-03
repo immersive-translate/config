@@ -6179,7 +6179,8 @@
         "loadingContainerSelector": ".ytp-caption-window-container",
         "videoADSelector": ".ytp-ad-player-overlay",
         "injectedCss": [
-          "#player-shorts-container .ytp-caption-window-bottom {top: 40px; bottom: unset!important;}"
+          "#player-shorts-container .ytp-caption-window-bottom {top: 40px; bottom: unset!important;}",
+          ".ytwPlayerTopControlsHost {position: relative; z-index: 100;}"
         ],
         "videoSelector": ".html5-video-player.playing-mode video,.html5-video-player.paused-mode video",
         "translationOnlyPattern": [
@@ -20333,6 +20334,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-03T03:56:26.000Z",
+  "buildinConfigUpdatedAt": "2025-12-03T07:31:56.407Z",
   "latestVersion": "1.23.9"
 }
