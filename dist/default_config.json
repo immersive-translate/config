@@ -718,11 +718,11 @@
       "advanceConfig": {
         "translationServices.add_v.[1.12.9]": {
           "siliconcloud.add_v.[1.12.9]": {
-            "model": "THUDM/GLM-4-9B-0414",
+            "model": "Qwen/Qwen3-8B",
             "models": "Qwen/Qwen3-8B|THUDM/GLM-4-9B-0414|tencent/Hunyuan-MT-7B"
           },
           "siliconcloud-free.add_v.[1.12.9]": {
-            "model": "THUDM/GLM-4-9B-0414",
+            "model": "Qwen/Qwen3-8B",
             "models": "Qwen/Qwen3-8B|THUDM/GLM-4-9B-0414"
           }
         }
@@ -1568,11 +1568,19 @@
           "models": [
             "gpt-5$",
             "gpt-5-mini",
-            "gpt-5-nano",
-            "gpt-5.1$"
+            "gpt-5-nano"
           ],
           "bodyConfigs": {
             "reasoning_effort": "minimal",
+            "temperature.remove": ""
+          }
+        },
+        {
+          "models": [
+            "gpt-5.1$"
+          ],
+          "bodyConfigs": {
+            "reasoning_effort": "none",
             "temperature.remove": ""
           }
         },
@@ -1592,14 +1600,25 @@
           "models": [
             "gpt-5$",
             "gpt-5-mini",
-            "gpt-5-nano",
-            "gpt-5.1$"
+            "gpt-5-nano"
           ],
           "apiUrl": "/responses",
           "bodyConfigs": {
             "temperature.remove": "",
             "reasoning": {
               "effort": "minimal"
+            }
+          }
+        },
+        {
+          "models": [
+            "gpt-5.1$"
+          ],
+          "apiUrl": "/responses",
+          "bodyConfigs": {
+            "temperature.remove": "",
+            "reasoning": {
+              "effort": "none"
             }
           }
         }
@@ -20334,6 +20353,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-03T07:31:56.407Z",
+  "buildinConfigUpdatedAt": "2025-12-03T08:08:30.326Z",
   "latestVersion": "1.23.9"
 }
