@@ -5734,7 +5734,8 @@
         "#subgrid-container h1, #subgrid-container h2",
         ".i18n-subreddit-description",
         "#streaming-response",
-        "#response-container_streaming"
+        "#response-container_streaming",
+        "search-telemetry-tracker > a.text-neutral-content-strong"
       ],
       "excludeSelectors": [
         ".text-neutral-content-weak"
@@ -20354,6 +20355,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-03T08:32:35.545Z",
-  "latestVersion": "1.23.9"
+  "buildinConfigUpdatedAt": "2025-12-04T06:10:48.427Z",
+  "latestVersion": "1.23.10"
 }
