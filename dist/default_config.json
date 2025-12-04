@@ -14466,18 +14466,28 @@
       "id": "anthropic-course",
       "matches": "anthropic.skilljar.com",
       "subtitleRule.add": {
-        "type": "subsrt",
+        "type": "multi_attach_vtt",
         "subtitleUrlRegExp": ".*\\.srt",
-        "hookType": "xhr",
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
           "insertBeforeSelector": ".jw-icon-cc"
         },
+        "activeLangSelector": ".jw-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active",
+        "videoSelector": "video",
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ],
         "attachRule": {
           "appendSelector": ".jw-wrapper",
           "injectedGlobalCSS": [
-            ".jw-text-track-container {display: none;}"
+            ".jw-text-track-container {display: none;}",
+            "@media (min-width: 576px) { video::cue {opacity: 0} }"
           ]
+        }
+      },
+      "subtitleRule.add_v.[1.7.6]": {
+        "multiSetting": {
+          "activeLangSelector": ".jw-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active"
         }
       }
     },
@@ -20355,6 +20365,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-04T06:10:15.000Z",
+  "buildinConfigUpdatedAt": "2025-12-04T06:33:49.284Z",
   "latestVersion": "1.23.10"
 }
