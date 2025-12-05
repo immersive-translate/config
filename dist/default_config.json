@@ -14566,11 +14566,11 @@
       "mainFrameMinWordCount": 0,
       "domCheckTimeout": 1,
       "subtitleRule.add": {
-        "type": "subsrt",
+        "type": "webvtt",
         "subsrtFormat": "srt",
-        "hookType": "fetch|xhr",
+        "hookType": "xhr|fetch",
         "loadingContainerSelector": ".player",
-        "subtitleUrlRegExp": "/video/.*\\.srt",
+        "subtitleUrlRegExp": "/video/.*\\.vtt",
         "injectedCss": [
           "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container { position: relative; bottom: 50px; right: 60px; }"
         ],
@@ -14882,8 +14882,7 @@
         "subtitleUrlRegExp": ".*\\.vtt",
         "quickButtonRule": {
           "appendSelector": ".pzp-pc__bottom-buttons-right",
-          "insertBeforeSelector": "button.pzp-pc-subtitle-button",
-          "ccEnableSelector": "button.pzp-pc-subtitle-button"
+          "insertBeforeSelector": "button.pzp-pc-subtitle-button"
         },
         "attachRule": {
           "appendSelector": ".pzp-pc__video",
@@ -18488,6 +18487,24 @@
       }
     },
     {
+      "id": "mangahub",
+      "matches": "mangahub.ru",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".reader-viewer-scan img[src]"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "xgo",
       "matches": [
         "www.xgo.ing"
@@ -20058,7 +20075,8 @@
         "lftp.yar.ru",
         "*.mercadolibre.com",
         "corpus-texmex.irisa.*",
-        "www.imageen.com"
+        "www.imageen.com",
+        "seller-id.tokopedia.com"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -20365,6 +20383,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-04T06:33:49.284Z",
+  "buildinConfigUpdatedAt": "2025-12-05T10:26:25.440Z",
   "latestVersion": "1.23.10"
 }
