@@ -19724,7 +19724,8 @@
       ],
       "preTranslateLimiter.add_v.[1.12.1]": {
         "header.enableTranslate": true
-      }
+      },
+      "longBuildPageLength": 10000
     },
     {
       "id": "xiaosaas",
@@ -20044,6 +20045,19 @@
       ]
     },
     {
+      "id": "cms",
+      "matches": "silverbullet.md",
+      "isTransformPreTagNewLine": true,
+      "likePreSelectors.add": [
+        "#sb-main"
+      ],
+      "forceFormatPre": true,
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ]
+    },
+    {
       "id": "preSites",
       "matches": [
         "mail.jabber.org",
@@ -20256,7 +20270,8 @@
         "help.autodesk.com",
         "*.vitalsource.com",
         "*.sumtotal.host",
-        "academy.notion.com"
+        "academy.notion.com",
+        "www.unigui.com"
       ],
       "enableDeepFrameTranslatePage": true
     },
@@ -20383,6 +20398,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-05T10:26:25.440Z",
+  "buildinConfigUpdatedAt": "2025-12-06T16:26:47.802Z",
   "latestVersion": "1.23.10"
 }
