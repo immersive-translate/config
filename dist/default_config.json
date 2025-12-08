@@ -34,6 +34,7 @@
       "maskUrl": false
     }
   },
+  "improveQuality": false,
   "accurateConfigs": {
     "AO3": {
       "enable": false,
@@ -1071,6 +1072,7 @@
     "translate.volcengine.com",
     "api.niutrans.com",
     "api2.immersivetranslate.com",
+    "test-api2.immersivetranslate.com",
     "api.cognitive.microsofttranslator.com",
     "api.groq.com",
     "api.x.ai",
@@ -20398,6 +20400,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-06T16:26:47.802Z",
-  "latestVersion": "1.23.10"
+  "buildinConfigUpdatedAt": "2025-12-08T09:47:22.620Z",
+  "latestVersion": "1.24.1"
 }
