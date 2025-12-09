@@ -4897,7 +4897,10 @@
     },
     {
       "id": "shopee",
-      "matches": "seller.shopee.*",
+      "matches": [
+        "seller.shopee.*",
+        "shopee.tw"
+      ],
       "isTransformPreTagNewLine": true,
       "globalStyles.add": {
         ".ellipsis-content": "-webkit-line-clamp:unset;"
@@ -11387,6 +11390,13 @@
           "imtAndroid"
         ]
       }
+    },
+    {
+      "id": "ideastatica",
+      "matches": "www.ideastatica.com",
+      "additionalStayOriginalSelectors.remove": [
+        ".math-container"
+      ]
     },
     {
       "id": "yymanhua",
@@ -20400,6 +20410,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-08T10:04:59.000Z",
+  "buildinConfigUpdatedAt": "2025-12-09T11:59:10.076Z",
   "latestVersion": "1.24.1"
 }
