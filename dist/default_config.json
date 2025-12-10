@@ -5934,7 +5934,8 @@
         "h2:has(~ copilot-user-settings)",
         "div:has(~ copilot-user-settings)",
         "[class='f4 color-fg-muted col-md-6 mx-auto']",
-        "[class='col-lg-9 position-relative pr-lg-5 mb-6 mr-lg-5']"
+        "[class='col-lg-9 position-relative pr-lg-5 mb-6 mr-lg-5']",
+        "[class*='IssueIndexPage-module__middlePaneGrid'] div[class='p-4 text-center rounded-2 border color-border-muted']"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -10062,7 +10063,7 @@
       "subtitleRule.add": {
         "type": "general",
         "subtitleUrlRegExp": "aisubtitle.hdslb.com/bfs",
-        "loadingContainerSelector": ".bpx-player-subtitle-panel",
+        "loadingContainerSelector": ".bpx-player-subtitle-wrap",
         "generalSetting": {
           "itemsPath": "body",
           "textKey": "content",
@@ -20410,6 +20411,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-09T11:59:10.076Z",
+  "buildinConfigUpdatedAt": "2025-12-10T12:54:31.383Z",
   "latestVersion": "1.24.1"
 }
