@@ -102,7 +102,10 @@
         "upgradeTitle": "Subscribe (30% off)"
       }
     },
-    "upgradeUrl": "https://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension&utm_campaign=side_panel_footer_upgrade"
+    "upgradeUrl": "https://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension&utm_campaign=side_panel_footer_upgrade",
+    "rewardCenter": {
+      "disabledAt": "2025-01-01 00:00:00"
+    }
   },
   "aiAssistantIds": [
     "paraphrase",
@@ -734,7 +737,7 @@
       "advanceConfig": {
         "translationServices.add": {
           "siliconcloud-free.add_v.[1.23.1]": {
-            "enableImtServe": true,
+            "enableImtServe": false,
             "apiUrl": ""
           }
         }
@@ -20420,6 +20423,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-11T03:44:46.849Z",
+  "buildinConfigUpdatedAt": "2025-12-11T14:41:14.179Z",
   "latestVersion": "1.24.1"
 }
