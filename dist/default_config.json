@@ -15860,8 +15860,8 @@
     {
       "id": "mubi",
       "matches": [
-        "https://mubi_down.com",
-        "https://mubi_down.de"
+        "https://mubi.com",
+        "https://mubi.de"
       ],
       "subtitleRule.add": {
         "type": "mubi",
@@ -15881,7 +15881,7 @@
           ]
         }
       },
-      "_comment": "暂时下线"
+      "_comment": "2024-09-28：暂时下线， 2025-12-12 恢复上线"
     },
     {
       "id": "hulu",
@@ -20423,6 +20423,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-12T08:12:11.081Z",
+  "buildinConfigUpdatedAt": "2025-12-12T09:16:45.648Z",
   "latestVersion": "1.24.1"
 }
