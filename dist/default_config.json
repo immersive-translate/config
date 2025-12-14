@@ -4850,6 +4850,7 @@
       "withAITitleBlockUrls": [
         "immersivetranslate.*/text"
       ],
+      "enableAutoTranslateByReferrer": false,
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
       "detectParagraphLanguage": true,
@@ -5743,7 +5744,9 @@
         ".i18n-subreddit-description",
         "#streaming-response",
         "#response-container_streaming",
-        "search-telemetry-tracker > a.text-neutral-content-strong"
+        "search-telemetry-tracker > a.text-neutral-content-strong",
+        "span[data-testid='guides-title']",
+        ".rendererd-rtjson > p"
       ],
       "excludeSelectors": [
         ".text-neutral-content-weak"
@@ -6696,7 +6699,8 @@
         "hr+div span[dir=auto][style]",
         "span[dir=auto] > div > span",
         "div > h1[dir=auto]",
-        ".x1fkh5qu.x1ddbhtg.x1dlrdel"
+        ".x1fkh5qu.x1ddbhtg.x1dlrdel",
+        "a[href*='explore/locations/']"
       ],
       "wrapperSuffix": "",
       "immediatelyInjectedCss": [
@@ -13289,8 +13293,10 @@
         "opImageType": "append",
         "urlFetchType": "canvasArgs",
         "imageSelectors": [
-          ".view-sheet-container canvas"
+          ".view-sheet-container canvas",
+          ".viewport canvas"
         ],
+        "loadingStyle": "z-index: 9999;",
         "platforms": [
           "chrome",
           "firefox",
@@ -19922,6 +19928,16 @@
       "excludeSelectors.add": []
     },
     {
+      "id": "toneking",
+      "matches": [
+        "www.toneking.com"
+      ],
+      "injectedCss.add": [
+        "ul li {text-wrap:unset!important;}"
+      ],
+      "_comment": "解决莫名奇妙的ul li text-wrap: pretty 卡顿问题"
+    },
+    {
       "id": "folo",
       "matches": "app.folo.is",
       "repeatTranslateNum": 1
@@ -20423,6 +20439,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-12T09:16:45.648Z",
+  "buildinConfigUpdatedAt": "2025-12-14T08:41:32.475Z",
   "latestVersion": "1.24.1"
 }
