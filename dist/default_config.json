@@ -10840,14 +10840,16 @@
         ".video-container *"
       ],
       "subtitleRule.add": {
-        "type": "subsrt",
+        "type": "multi_attach_vtt",
         "subtitleUrlRegExp": "\\.vtt$",
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
           "insertBeforeSelector": ".vjs-playback-rate"
         },
+        "activeLangSelector": "li.vjs-menu-item.vjs-captions-menu-item.vjs-selected > span",
+        "langTextRegex": "(\\S+)\\s+Captions",
         "attachRule": {
-          "appendSelector": "#video-sidebar-wrapper",
+          "appendSelector": ".video-js",
           "injectedGlobalCSS": [
             ".vjs-text-track-display { display: none !important; }"
           ]
@@ -12370,7 +12372,8 @@
         "rimacomiplus.jp",
         "kuragebunch.com",
         "comic-gardo.com",
-        "ichicomi.com"
+        "ichicomi.com",
+        "rookie.shonenjump.com"
       ],
       "selectorMatches": [
         "img.page-image.js-page-image"
@@ -12384,7 +12387,8 @@
           "[class='-cv-page-canvas'] canvas",
           ".link-slot img",
           ".c-viewer__comic img",
-          ".c-viewer__comic canvas"
+          ".c-viewer__comic canvas",
+          "img.js-page-image"
         ],
         "urlFetchType": "canvasArgs",
         "opImageType": "append",
@@ -12425,6 +12429,25 @@
         ],
         "inValidSrcRegex": [
           "data:,"
+        ]
+      }
+    },
+    {
+      "id": "jumptoon-next",
+      "matches": [
+        "jumptoon-next.com"
+      ],
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          "section img[data-nimg]"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
         ]
       }
     },
@@ -12582,8 +12605,31 @@
       }
     },
     {
+      "id": "lrr.tvc-16.science",
+      "matches": [
+        "lrr.tvc-16.science"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "img.reader-image"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtIOSNew",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "mangarawad",
-      "matches": "mangarawad.org",
+      "matches": [
+        "mangarawad.org",
+        "mangarawad.blog"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
@@ -15385,13 +15431,13 @@
       "subtitleRule.add": {
         "type": "text_track_dynamic",
         "videoPlayerSelector": "video",
-        "loadingContainerSelector": ".player_container",
+        "loadingContainerSelector": "[data-testid=\"vh-player-container\"]",
         "loadingStyle": "bottom: unset; top: 5%;",
         "injectedCss": [
           "#immersive-translateQuickButton {visibility: inherit!important;}"
         ],
         "quickButtonRule": {
-          "appendSelector": "[data-control-bar=\"true\"] > div",
+          "appendSelector": "[class*='ControlBarButtonsAndMenus_module_collapsibleContent']",
           "insertBeforeSelector": "[data-volume-control-container=\"true\"]",
           "ccEnableSelector": "[data-cc-button=\"true\"]",
           "injectCSS": ".imt-quick-subtitle-button {margin-right: 0px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}"
@@ -20028,6 +20074,21 @@
       }
     },
     {
+      "id": "common-ebutt",
+      "matches": [
+        "www.tagesschau.de"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 1,
+      "subtitleRule.add": {
+        "type": "ebutt",
+        "hookType": "fetch",
+        "enableHookDownload": true,
+        "subtitleUrlRegExp": "\\.xml$"
+      }
+    },
+    {
       "id": "formatPreSites",
       "matches": [
         "macro.com"
@@ -20439,6 +20500,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-14T08:41:32.475Z",
+  "buildinConfigUpdatedAt": "2025-12-15T14:47:46.576Z",
   "latestVersion": "1.24.1"
 }
