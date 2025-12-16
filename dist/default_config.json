@@ -2082,7 +2082,7 @@
       "enableRichTranslate": false,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
-      "proModel": "deepseek-chat",
+      "proModel": "DeepSeek-V3.2-Fast",
       "enableFallback": true,
       "proLimit": 10,
       "requestTimeout": 200000,
@@ -2562,7 +2562,7 @@
       ]
     },
     "deepseek-pro": {
-      "name": "DeepSeek V3",
+      "name": "DeepSeek-V3.2",
       "type": "deepseek",
       "group": "pro",
       "extends": "deepseek",
@@ -20500,6 +20500,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-15T14:47:46.576Z",
+  "buildinConfigUpdatedAt": "2025-12-16T03:24:47.275Z",
   "latestVersion": "1.24.1"
 }
