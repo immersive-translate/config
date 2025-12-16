@@ -4955,6 +4955,15 @@
       ]
     },
     {
+      "id": "git-scm",
+      "matches": [
+        "git-scm.com"
+      ],
+      "stayOriginalSelectors.add": [
+        "em"
+      ]
+    },
+    {
       "id": "twmanga",
       "matches": [
         "www.twmanga.com"
@@ -20523,6 +20532,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-16T10:52:36.062Z",
+  "buildinConfigUpdatedAt": "2025-12-16T13:14:15.113Z",
   "latestVersion": "1.24.1"
 }
