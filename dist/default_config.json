@@ -12362,6 +12362,28 @@
       "_comment": "all"
     },
     {
+      "id": "mechacomic.jp",
+      "matches": "mechacomic.jp",
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          "img[class*='PageContainer__Image']"
+        ],
+        "inValidSrcRegex": [
+          "data:image/gif",
+          "data:image/png"
+        ],
+        "loadingStyle": "z-index: 9999;",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "shonenjumpplus",
       "matches": [
         "shonenjumpplus.com",
@@ -13499,7 +13521,8 @@
       "id": "cmoa",
       "matches": [
         "www.cmoa.jp",
-        "booklive.jp"
+        "booklive.jp",
+        "www.yomonga.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -20500,6 +20523,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-16T03:24:47.275Z",
+  "buildinConfigUpdatedAt": "2025-12-16T10:52:36.062Z",
   "latestVersion": "1.24.1"
 }
