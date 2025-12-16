@@ -5479,6 +5479,18 @@
       }
     },
     {
+      "id": "polymarket",
+      "matches": "polymarket.com",
+      "injectedCss.add": [
+        "div[data-index] p.decoration-2 {-webkit-line-clamp:unset;}",
+        "div[data-index] .items-start.relative.gap-2.px-3.flex.w-full {height:unset; max-height:unset;}",
+        "div[data-index] .absolute.w-full {position:unset;}"
+      ],
+      "excludeSelectors.add": [
+        "div[data-index] button"
+      ]
+    },
+    {
       "id": "hoyolab",
       "matches": "www.hoyolab.com",
       "excludeTags.remove": [
@@ -20532,6 +20544,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-16T13:14:15.113Z",
+  "buildinConfigUpdatedAt": "2025-12-16T13:52:31.900Z",
   "latestVersion": "1.24.1"
 }
