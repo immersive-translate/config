@@ -16,6 +16,7 @@
   "enableMachineTranslateTerms": false,
   "termsDomainWithSelf": false,
   "disableOpenUpgradePage": false,
+  "forceAutoTranslate": false,
   "sensitiveConfig": {
     "telemetry": true,
     "sensitiveMode": "close",
@@ -33,6 +34,15 @@
       "maskUserName": false,
       "maskUrl": false
     }
+  },
+  "storeGuide": {
+    "enable": true,
+    "newUserDays": 7,
+    "startNextDay": true,
+    "usageDays": 3,
+    "usageCondition": "html.avgPerDay > 2 || input_translation.avgPerDay > 2 || videoSubtitle.avgPerDay > 2",
+    "countdownSeconds": 15,
+    "platform": "chrome|edge|firefox"
   },
   "improveQuality": false,
   "accurateConfigs": {
@@ -310,12 +320,13 @@
     "trialProShowLimit": 20
   },
   "ignoreReportEmailRegex": "@immersivetranslate.com|privaterelay.appleid.com",
+  "enableNewUserActivity": false,
   "discountActivity": {
     "enable": false,
     "upgradeShowCountCacheKey": "upgradeDiscountActivity20250618",
     "upgradeShowLimit": 20,
-    "start": "2025-6-15T16:00:00.000Z",
-    "end": "2025-6-19T16:00:00.000Z",
+    "start": "2025-06-15T16:00:00.000Z",
+    "end": "2025-06-19T16:00:00.000Z",
     "titleI18n": {
       "zh-CN": "618 大促",
       "zh-TW": "ON SALE",
@@ -717,6 +728,12 @@
   "pcFloatBallMainBtnTooltipShownCount": 0,
   "h5FloatBallMainBtnTooltipShownCount": 0,
   "advanceMergeConfig": [
+    {
+      "condition": "abTagNumber<5",
+      "advanceConfig": {
+        "enableNewUserActivity": true
+      }
+    },
     {
       "condition": "abTagNumber<10",
       "advanceConfig": {
@@ -3038,7 +3055,8 @@
         "Whatsapp",
         "Reddit"
       ],
-      "autoLanguageSitesMainland": []
+      "autoLanguageSitesMainland": [],
+      "confirmLongTextLength": 50
     },
     "mutationExcludeSelectors": [
       "span.highlighter--highlighted",
@@ -4841,7 +4859,7 @@
         "https://*.immersivetranslate.*",
         "http://localhost:38001",
         "https://app.infread.com",
-        "https://*.immersivetranslate/*.*"
+        "https://*.immersivetranslate.*/*"
       ],
       "excludeSelectors.add": [
         "#imt-navbar *",
@@ -20549,6 +20567,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-17T02:40:47.331Z",
-  "latestVersion": "1.24.1"
+  "buildinConfigUpdatedAt": "2025-12-17T07:59:16.809Z",
+  "latestVersion": "1.24.2"
 }
