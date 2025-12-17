@@ -1574,7 +1574,8 @@
             "gpt-5$",
             "gpt-5-mini",
             "gpt-5-nano",
-            "doubao-seed-1-6-"
+            "doubao-seed-1-6-",
+            "gpt-5.2-chat"
           ],
           "bodyConfigs": {
             "reasoning_effort": "minimal",
@@ -2643,13 +2644,13 @@
       "limit": 8
     },
     "openai-max": {
-      "name": "GPT-5.1",
+      "name": "GPT-5.2",
       "type": "openai",
       "group": "max",
       "extends": "openai",
       "provider": "pro",
-      "proModel": "gpt-5.1",
-      "model": "gpt-5.1",
+      "proModel": "gpt-5.2-chat",
+      "model": "gpt-5.2-chat",
       "limit": 5,
       "visible": true,
       "supportFeatures": [
@@ -3217,7 +3218,8 @@
               "gpt-5$",
               "gpt-5-mini",
               "gpt-5-nano",
-              "gpt-5.1$"
+              "gpt-5.1$",
+              "gpt-5.2-chat"
             ],
             "bodyConfigs": {
               "reasoning_effort": "minimal",
@@ -3447,7 +3449,8 @@
               "gpt-5$",
               "gpt-5-mini",
               "gpt-5-nano",
-              "gpt-5.1$"
+              "gpt-5.1$",
+              "gpt-5.2-chat"
             ],
             "bodyConfigs": {
               "reasoning_effort": "minimal",
@@ -5488,7 +5491,8 @@
       ],
       "excludeSelectors.add": [
         "div[data-index] button",
-        "number-flow-react"
+        "number-flow-react",
+        "nav button"
       ]
     },
     {
@@ -20545,6 +20549,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-16T13:54:28.215Z",
+  "buildinConfigUpdatedAt": "2025-12-17T02:40:47.331Z",
   "latestVersion": "1.24.1"
 }
