@@ -3026,6 +3026,7 @@
       "(<canvas>)"
     ],
     "secretRegexps": [],
+    "secretRegexpsV2": [],
     "detectionServiceOrder": [
       "google",
       "bing",
@@ -4587,15 +4588,6 @@
       "blockMinWordCount": 1,
       "containerMinTextCount": 1,
       "wrapperPrefix": "<br />",
-      "shareConfig.add": {
-        "cloneIframes": [
-          "#chapters iframe",
-          ".chapter-preview-iframe"
-        ],
-        "removeSelectors": [
-          ".immersive-translate-error-modal-shadow-root"
-        ]
-      },
       "advanceMergeConfig": [
         {
           "condition": "true",
@@ -20580,6 +20572,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-18T04:45:59.628Z",
+  "buildinConfigUpdatedAt": "2025-12-18T06:51:28.598Z",
   "latestVersion": "1.24.2"
 }
