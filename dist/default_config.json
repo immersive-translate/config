@@ -9503,7 +9503,7 @@
         "tutorialsText": "输入中文后快速连击 3 次空格键翻译，与外国人轻松对话",
         "placeholderType": "dom",
         "autoLanguageSelectors": [
-          ".message-in.focusable-list-item .selectable-text.copyable-text"
+          ".message-in.focusable-list-item [data-testid=selectable-text]"
         ]
       }
     },
@@ -20580,6 +20580,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-17T15:49:13.072Z",
+  "buildinConfigUpdatedAt": "2025-12-18T04:45:59.628Z",
   "latestVersion": "1.24.2"
 }
