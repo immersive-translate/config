@@ -2461,7 +2461,7 @@
       "immersiveProApiUrl": "https://api2.immersivetranslate.com/bigmodel-air/translate",
       "immersiveProStreamApiUrl": "https://api2.immersivetranslate.com/bigmodel-air/translate/stream",
       "defaultVisible": true,
-      "guestTrialLimit": 5,
+      "hidden": true,
       "disabledAt": "2025-07-11",
       "hiddenPro": true,
       "supportFeatures": [
@@ -4541,12 +4541,11 @@
     {
       "id": "isEbookBuilder",
       "matches": [
-        "https://*.immersivetranslate.*/ebook/make/",
-        "https://app.infread.com/ebook/make/",
-        "http://localhost:38001/ebook/make/",
-        "http://localhost:3000/*/ebook-make*/",
-        "https://*.immersivetranslate.*/*/ebook-make/",
-        "https://immersivetranslate.*/*/document/ebook-make/"
+        "https://*.immersivetranslate.*/ebook/make*",
+        "https://app.infread.com/ebook/make*",
+        "http://localhost:38001/ebook/make*",
+        "http://localhost:3000/*/ebook-make*",
+        "https://*.immersivetranslate.*/*/ebook-make*"
       ],
       "preTranslateLimiter.add_v.[1.12.1]": {
         "side.enableTranslate": true,
@@ -19457,6 +19456,7 @@
         "webvpn.bnu.*",
         "www.connectedpapers.com",
         "isappscience.org",
+        "www.dtmstation.com",
         "kalshi.com"
       ],
       "selectorMatches": [
@@ -19476,6 +19476,7 @@
         ".data-title { -webkit-line-clamp: unset!important; max-height: unset!important;}",
         ".paper-title,.search-result-abstract.folded,.list-group-item-mod h5 { -webkit-line-clamp: unset!important; max-height: unset!important;}",
         ".kb-advanced-heading-link,.limited-text { -webkit-line-clamp: unset!important; max-height: unset!important;}",
+        ".entry-card-title,.entry-card-snippet { -webkit-line-clamp: unset!important; max-height: unset!important;}",
         "span.line-clamp-2 { -webkit-line-clamp: unset!important; max-height: unset!important;}"
       ],
       "additionalExcludeSelectors.remove": [
@@ -20572,6 +20573,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-19T07:03:37.000Z",
-  "latestVersion": "1.24.2"
+  "buildinConfigUpdatedAt": "2025-12-19T09:06:46.982Z",
+  "latestVersion": "1.24.3"
 }
