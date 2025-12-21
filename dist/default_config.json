@@ -1557,9 +1557,7 @@
       "modelsOverrides": [
         {
           "models": [
-            "qwen3-.*",
-            "Qwen3-.*",
-            "qwen3:.*"
+            "qwen3-.*Thinking"
           ],
           "bodyConfigs": {
             "enable_thinking": false,
@@ -1570,12 +1568,14 @@
         },
         {
           "models": [
-            "Qwen/Qwen3-235B-A22B-Instruct-2507",
-            "Qwen/Qwen3-30B-A3B-Instruct-2507",
-            "Qwen/Qwen3-Coder-480B-A35B-Instruct",
-            "Qwen/Qwen3-Coder-30B-A3B-Instruct"
+            "doubao-seed-1-6",
+            "doubao-seed-1-8",
+            "doubao-1-5",
+            "doubao-seed-code"
           ],
-          "bodyConfigs": {}
+          "bodyConfigs": {
+            "reasoning_effort": "minimal"
+          }
         },
         {
           "models": [
@@ -1591,7 +1591,6 @@
             "gpt-5$",
             "gpt-5-mini",
             "gpt-5-nano",
-            "doubao-seed-1-6-",
             "gpt-5.2-chat"
           ],
           "bodyConfigs": {
@@ -8769,7 +8768,8 @@
         ".c-article-metrics-bar__wrapper",
         ".c-article__pill-button",
         "#author-information-content",
-        "#article-info-section"
+        "#article-info-section",
+        ".pdf-content"
       ],
       "preTranslateLimiter.add_v.[1.12.1]": {
         "header.enableTranslate": true
@@ -20062,12 +20062,14 @@
       "repeatTranslateNum": 1
     },
     {
-      "id": "font.block",
+      "id": "fontFmaily",
       "matches": [
-        "skyvipservices.com"
+        "skyvipservices.com",
+        "book.novelpia.com"
       ],
       "injectedCss.add": [
-        "font {display:block !important;}"
+        "font {display:block !important;}",
+        "#book-box font {font-family:unset!important;}"
       ]
     },
     {
@@ -20573,6 +20575,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-19T09:06:13.000Z",
+  "buildinConfigUpdatedAt": "2025-12-21T03:48:10.922Z",
   "latestVersion": "1.24.3"
 }
