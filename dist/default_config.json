@@ -14628,6 +14628,11 @@
       }
     },
     {
+      "id": "orchestraltools",
+      "matches": "www.orchestraltools.com",
+      "injectedCss": ".immersive-translate-target-wrapper *, .immersive-translate-target-wrapper {font-size: inherit !important;}"
+    },
+    {
       "id": "fmoviesz",
       "matches": [
         "fmovies24.to",
@@ -20267,7 +20272,8 @@
         "*.mercadolibre.com",
         "corpus-texmex.irisa.*",
         "www.imageen.com",
-        "seller-id.tokopedia.com"
+        "seller-id.tokopedia.com",
+        "tortoisegit.org"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -20575,6 +20581,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-21T04:02:06.000Z",
+  "buildinConfigUpdatedAt": "2025-12-22T14:15:12.466Z",
   "latestVersion": "1.24.3"
 }
