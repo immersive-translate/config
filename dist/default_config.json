@@ -668,7 +668,8 @@
       "https://onboarding.immersivetranslate.*",
       "https://*.immersivetranslate.*/*/intro/tutorial/step-1*",
       "https://*.immersivetranslate.*/*/new-guide/step-1*",
-      "https://*.immersivetranslate.*/*/new-guide/step-2*"
+      "https://*.immersivetranslate.*/*/new-guide/step-2*",
+      "https://*.immersivetranslate.*/*/new-quickstart/*"
     ],
     "guideContentBlockUrls": [
       "https://*.immersivetranslate.*/*/tutorial/*",
@@ -20585,6 +20586,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-23T08:36:14.428Z",
+  "buildinConfigUpdatedAt": "2025-12-23T08:37:57.541Z",
   "latestVersion": "1.24.4"
 }
