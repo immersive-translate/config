@@ -117,6 +117,11 @@
       "disabledAt": "2025-01-01 00:00:00"
     }
   },
+  "sidePanel.add_v.[1.24.2]": {
+    "rewardCenter": {
+      "disabledAt": ""
+    }
+  },
   "aiAssistantIds": [
     "paraphrase",
     "plain-english",
@@ -20580,6 +20585,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-23T06:47:18.000Z",
+  "buildinConfigUpdatedAt": "2025-12-23T08:36:14.428Z",
   "latestVersion": "1.24.4"
 }
