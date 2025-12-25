@@ -353,7 +353,6 @@
     "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
     "https://readcomiconline.li[ReadComicOnline][]",
-    "https://readcomic.me[ReadComic][chrome]",
     "https://comic-fuz.com/[COMIC FUZ][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://mangadex.org/[MangaDex][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
     "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox,imtIOSNew]",
@@ -364,7 +363,6 @@
     "https://comic-top.com[Comic Top][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://comic-walker.com/[ComicWalker][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://web-ace.jp/[Web Ace][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
-    "https://e-hentai.org/[E-Hentai][chrome,firefox,safari,imtIOSNew]",
     "https://nhentai.net[nHentai][chrome,firefox,safari,imtIOSNew]",
     "https://www.antbyw.com[Antbyw][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://www.idmzj.com[动漫之家]",
@@ -669,7 +667,7 @@
       "https://*.immersivetranslate.*/*/intro/tutorial/step-1*",
       "https://*.immersivetranslate.*/*/new-guide/step-1*",
       "https://*.immersivetranslate.*/*/new-guide/step-2*",
-      "https://*.immersivetranslate.*/*/new-quickstart/*"
+      "https://*.immersivetranslate.*/*/quickstart/*"
     ],
     "guideContentBlockUrls": [
       "https://*.immersivetranslate.*/*/tutorial/*",
@@ -706,7 +704,8 @@
       "https://onboarding.immersivetranslate.**",
       "https://*.immersivetranslate.*/*/intro/tutorial/step-1*",
       "https://*.immersivetranslate.*/*/new-guide/step-1*",
-      "https://*.immersivetranslate.*/*/new-guide/step-2*"
+      "https://*.immersivetranslate.*/*/new-guide/step-2*",
+      "https://*.immersivetranslate.*/*/quickstart/*"
     ],
     "guideContentBlockUrls": [
       "https://*.immersivetranslate.*/*/tutorial/*",
@@ -9478,7 +9477,8 @@
       "selectors": [
         "._akbu",
         "[role=list]",
-        ".copyable-text"
+        ".copyable-text",
+        ".quoted-mention"
       ],
       "wrapperPrefix": "\n",
       "wrapperSuffix": "<br/>",
@@ -12339,8 +12339,7 @@
     {
       "id": "readcomiconline",
       "matches": [
-        "readcomiconline.li",
-        "readcomic.me"
+        "readcomiconline.li"
       ],
       "imageRule.add": {
         "enable": true,
@@ -20609,6 +20608,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-24T11:42:02.618Z",
+  "buildinConfigUpdatedAt": "2025-12-25T08:22:50.282Z",
   "latestVersion": "1.24.4"
 }
