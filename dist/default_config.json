@@ -363,13 +363,10 @@
     "https://comic-top.com[Comic Top][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://comic-walker.com/[ComicWalker][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://web-ace.jp/[Web Ace][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
-    "https://nhentai.net[nHentai][chrome,firefox,safari,imtIOSNew]",
     "https://www.antbyw.com[Antbyw][chrome,firefox,safari,imtAndroid,imtIOSNew]",
-    "https://www.idmzj.com[动漫之家]",
     "https://jmanga.org[Jmanga][chrome,firefox,safari,imtIOSNew]",
     "https://twicomi.com/manga*[Twitter Comic][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
-    "https://wnacg.com[Wnacg][chrome,firefox,safari,imtIOSNew]",
-    "https://vw.mangaz.com[MangaZ][chrome,firefox,imtIOSNew]",
+    "https://www.mangaz.com[MangaZ][chrome,firefox,imtIOSNew]",
     "https://pash-up.jp[PASH UP][chrome]",
     "https://www.colamanga.com[COLAMANGA][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://www.ganganonline.com[GANGAN ONLINE][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
@@ -383,23 +380,15 @@
     "https://manhwatop.com[Manhwatop][chrome,firefox,imtAndroid,imtIOSNew]",
     "https://palcy.jp/[Palcy][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://comic-trail.com/[Comic-Trail][chrome,firefox,userscript,imtAndroid,imtIOS,imtIOSNew]",
-    "https://mangaflame.org/[Mangaflame][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://templetoons.com/[Templetoons][chrome,firefox,safari,imtIOSNew]",
     "https://batocomic.net/[Batocomic][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://comic-action.com/[Comic-action][chrome,firefox,safari,imtIOSNew]",
     "https://m.ac.qq.com/[腾讯动漫][chrome,firefox,safari,imtIOSNew]",
-    "https://www.mangajikan.com/[Mangajikan][chrome,firefox,safari,imtIOSNew]",
-    "https://Komiku.com/[komiku][chrome,firefox,safari,imtAndroid,imtIOSNew]",
-    "https://www.mangakoinu.com/[Mangakoinu][chrome,firefox,safari,imtIOSNew]",
     "https://www.sololevelingmangafree.com/[Sololevelingmangafree][chrome,firefox,safari,imtIOSNew]",
     "https://syosetu.si/[Syosetu][chrome,firefox,safari,imtIOSNew]",
-    "https://comick.io/[Comick][chrome,firefox,safari,imtIOSNew]",
-    "https://klmanga.rs/[Klmanga][chrome,firefox,safari,imtIOSNew]",
-    "https://www.sukima.me[Sukima][chrome,firefox,safari,userscript,imtIOSNew]",
+    "https://comick.dev/[Comick][chrome,firefox,safari,imtIOSNew]",
     "https://younganimal.com[YoungAnimal][chrome,firefox,safari,imtIOS,imtIOSNew]",
     "https://piccoma.com[Piccoma][chrome,firefox,safari,imtIOSNew]",
-    "https://www.mangasuika.com/[Mangasuika][chrome,firefox,safari,imtIOSNew]",
-    "https://www.firemanga.com/[Firemanga][chrome,firefox,safari,imtIOSNew]",
     "https://hentaizap.com/[Hentaizap][chrome,firefox,safari,imtIOSNew]",
     "https://jmanga.sh/[Jmanga][chrome,firefox,safari,imtIOSNew]",
     "https://hanime1.me/[Hanime1][chrome,firefox,safari,imtIOSNew]",
@@ -418,7 +407,7 @@
     "https://reaperscans.com/[Reaperscans][chrome,firefox,safari]",
     "https://manhuatop.com/[Manhuatop][chrome,firefox,safari]",
     "https://play.dlsite.com/[Dlsite][chrome,firefox,safari]",
-    "https://ww1.uzakichanmanga.com/[uzakichanmanga][chrome,firefox,safari]",
+    "https://ww2.uzakichanmanga.com/[uzakichanmanga][chrome,firefox,safari]",
     "https://pocket.shonenmagazine.com/[Shonenmagazine][chrome,firefox,safari]",
     "https://comic.naver.com[ComicNaver][chrome,firefox,safari,imtAndroid]",
     "https://comic-zenon.com/[comic-zenon][chrome,firefox,safari]",
@@ -7061,6 +7050,7 @@
           "[class*='sidebarList']"
         ]
       },
+      "injectedCss": "[class*='guildDetails'] > [class*='description'] {-webkit-line-clamp: unset;}",
       "inputConfig.add": {
         "tutorialsSelectors": [
           "[class*='placeholder'][aria-hidden='true']"
@@ -12241,7 +12231,6 @@
     {
       "id": "idmzj",
       "matches": [
-        "www.idmzj.com",
         "m.idmzj.com"
       ],
       "imageRule.add": {
@@ -18324,7 +18313,7 @@
     {
       "id": "uzakichanmanga",
       "matches": [
-        "ww1.uzakichanmanga.com"
+        "*.uzakichanmanga.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -20609,6 +20598,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-25T10:19:47.386Z",
+  "buildinConfigUpdatedAt": "2025-12-25T11:31:43.237Z",
   "latestVersion": "1.24.4"
 }
