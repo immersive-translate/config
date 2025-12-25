@@ -2424,7 +2424,8 @@
             "glm-4.5",
             "glm-4.5.*",
             "GLM-4.6",
-            "GLM-4.6.*"
+            "GLM-4.6.*",
+            "GLM-4.7"
           ],
           "bodyConfigs": {
             "thinking": {
@@ -2436,13 +2437,13 @@
     },
     "zhipu-pro": {
       "extends": "zhipu-base",
-      "name": "GLM-4.6",
+      "name": "GLM-4.7",
       "group": "pro",
       "type": "zhipu-pro",
       "provider": "pro",
       "visible": true,
-      "model": "GLM-4.6",
-      "proModel": "GLM-4.6",
+      "model": "GLM-4.7",
+      "proModel": "GLM-4.7",
       "defaultVisible": true,
       "supportFeatures": [
         "aiWriting",
@@ -20608,6 +20609,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-25T08:22:50.282Z",
+  "buildinConfigUpdatedAt": "2025-12-25T10:19:47.386Z",
   "latestVersion": "1.24.4"
 }
