@@ -4990,6 +4990,26 @@
       }
     },
     {
+      "id": "mgeko",
+      "matches": [
+        "www.mgeko.cc"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#chapter-reader img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "jmcomic",
       "matches": [
         "jmcomic-zzz.one"
@@ -16489,7 +16509,8 @@
         "loadingContainerSelector": "stream > div",
         "enableHookDownload": true,
         "quickButtonRule": {
-          "appendSelector": ".css-6mrf8j.css-1oxfqe2"
+          "appendSelector": ".css-6mrf8j.css-1oxfqe2",
+          "injectCSS": ".imt-quick-subtitle-pop-content {right: 75px !important;}"
         },
         "attachRule": {
           "appendSelector": "body",
@@ -20598,6 +20619,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-25T11:31:43.237Z",
+  "buildinConfigUpdatedAt": "2025-12-26T11:17:35.388Z",
   "latestVersion": "1.24.4"
 }
