@@ -4264,6 +4264,7 @@
     "additionalInlineSelectors": [
       ".MathJax_Preview",
       ".MathJax",
+      "math",
       ".highlighter--highlighted",
       ".rw-highlight",
       "ruby *",
@@ -20619,6 +20620,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-26T11:17:35.388Z",
+  "buildinConfigUpdatedAt": "2025-12-27T15:37:56.629Z",
   "latestVersion": "1.24.4"
 }
