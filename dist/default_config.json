@@ -1739,7 +1739,8 @@
         {
           "models": [
             "gemini-2.5-flash",
-            "gemini-2.5-flash-lite"
+            "gemini-2.5-flash-lite",
+            "gemini-3-flash-preview"
           ],
           "bodyConfigs": {
             "generationConfig": {
@@ -2587,13 +2588,13 @@
       ]
     },
     "gemini-pro": {
-      "name": "Gemini 2.5 Flash",
+      "name": "Gemini 3 Flash",
       "type": "gemini",
       "group": "pro",
       "extends": "gemini",
       "provider": "pro",
-      "model": "gemini-2.5-flash",
-      "proModel": "gemini-2.5-flash",
+      "model": "gemini-3-flash-preview",
+      "proModel": "gemini-3-flash-preview",
       "visible": true,
       "limit": 10,
       "supportFeatures": [
@@ -3147,6 +3148,43 @@
         "modelsOverrides": [
           {
             "models": [
+              "gemini-2.5-flash",
+              "gemini-2.5-flash-lite",
+              "gemini-3-flash-preview"
+            ],
+            "bodyConfigs": {
+              "generationConfig": {
+                "temperature": 0,
+                "topK": 1,
+                "topP": 1,
+                "maxOutputTokens": 2048,
+                "stopSequences": [],
+                "thinkingConfig": {
+                  "thinkingBudget": 0
+                }
+              },
+              "safetySettings": [
+                {
+                  "category": "HARM_CATEGORY_HARASSMENT",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_HATE_SPEECH",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                  "threshold": "BLOCK_NONE"
+                }
+              ]
+            }
+          },
+          {
+            "models": [
               "gemini-2.5-pro",
               "gemini-2.5-pro-preview"
             ],
@@ -3387,6 +3425,43 @@
       },
       "serviceConfigs": {
         "modelsOverrides": [
+          {
+            "models": [
+              "gemini-2.5-flash",
+              "gemini-2.5-flash-lite",
+              "gemini-3-flash-preview"
+            ],
+            "bodyConfigs": {
+              "generationConfig": {
+                "temperature": 0,
+                "topK": 1,
+                "topP": 1,
+                "maxOutputTokens": 2048,
+                "stopSequences": [],
+                "thinkingConfig": {
+                  "thinkingBudget": 0
+                }
+              },
+              "safetySettings": [
+                {
+                  "category": "HARM_CATEGORY_HARASSMENT",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_HATE_SPEECH",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                  "threshold": "BLOCK_NONE"
+                },
+                {
+                  "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                  "threshold": "BLOCK_NONE"
+                }
+              ]
+            }
+          },
           {
             "models": [
               "gemini-2.5-pro",
@@ -20620,6 +20695,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-29T01:58:50.621Z",
+  "buildinConfigUpdatedAt": "2025-12-29T03:23:43.170Z",
   "latestVersion": "1.24.4"
 }
