@@ -3051,7 +3051,7 @@
         "Reddit"
       ],
       "autoLanguageSitesMainland": [],
-      "confirmLongTextLength": 50
+      "confirmLongTextLength": 200
     },
     "mutationExcludeSelectors": [
       "span.highlighter--highlighted",
@@ -20620,6 +20620,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-27T15:37:56.629Z",
+  "buildinConfigUpdatedAt": "2025-12-29T01:58:50.621Z",
   "latestVersion": "1.24.4"
 }
