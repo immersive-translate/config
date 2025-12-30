@@ -631,7 +631,9 @@
   "inputStartingTriggerKey": "/",
   "inputTrailingTriggerKey": "space",
   "inputTrailingTriggerKeyRepeatTimes": 3,
+  "inputTrailingTriggerKeyRepeatTimes.add_v.[1.24.1]": 2,
   "inputTrailingTriggerKeyTimeout": 200,
+  "inputTrailingTriggerKeyTimeout.add_v.[1.24.1]": 300,
   "inputTrailingMobileTriggerKeyTimeout": 300,
   "mutationBlockUrls": [
     "*.larkoffice.com",
@@ -20696,6 +20698,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-29T11:25:57.812Z",
+  "buildinConfigUpdatedAt": "2025-12-30T09:55:41.794Z",
   "latestVersion": "1.24.4"
 }
