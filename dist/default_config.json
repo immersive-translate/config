@@ -948,6 +948,16 @@
           }
         ]
       }
+    },
+    {
+      "condition": "abTagNumber<5",
+      "advanceConfig": {
+        "generalRule": {
+          "aiWriting.add": {
+            "mode": "professional"
+          }
+        }
+      }
     }
   ],
   "inputLanguageCodeAlias": {
@@ -3294,6 +3304,7 @@
     },
     "aiWriting": {
       "enable": true,
+      "mode": "simple",
       "urlPattern": {
         "matches": [],
         "excludeMatches": []
@@ -3301,11 +3312,8 @@
       "prompts": {
         "summaryPrompt": "You are a professional {{ai_writing_scene}} analysis assistant, skilled at summarizing and analyzing {{ai_writing_scene}}. Please provide a concise and clear summary based on the following {{ai_writing_scene}} content. Reply in {{target_language}} language. DO NOT exceed 150 words! Output only the summary, without any additional content.",
         "suggestionPrompt": "You are an expert assistant in {{ai_writing_scene}} analysis. Your task is to generate exactly 3 concise, actionable reply suggestions based on the provided {{ai_writing_scene}} content.\n\nInstructions:\n1. Respond exclusively in {{target_language}}.\n2. Each suggestion must be concise, actionable, and contextually relevant.\n3. Consider the current status and context of the {{ai_writing_scene}}.\n4. Format your output strictly as a raw JSON array of strings without markdown code blocks.\n\n{{ai_writing_style}}\n\nOutput Example:\n[\"suggestion1\", \"suggestion2\", \"suggestion3\"]",
-        "polishReplyPrompt": "You are a professional {{ai_writing_scene}} reply assistant, skilled at refining and enhancing replies for {{ai_writing_scene}} communications. Based on the provided context and user's draft reply, polish and improve the reply following the instructions below.\n\n**Instructions:**\n1. Improve clarity, professionalism, and readability.\n2. Ensure relevance to the provided {{ai_writing_scene}} context.\n3. Correct grammar, spelling, and punctuation errors.\n4. Enhance helpfulness and actionability.\n5. Preserve the original intent and tone.\n6. Respond exclusively in {{target_language}}.\n7. Output only the result, without any additional content.\n\n{{ai_writing_style}}\n\n**{{ai_writing_scene}} Context:**\n{{ai_writing_context}}\n\n{{current_site_info}}",
-        "generalSystemPrompt": "You are a professional writing assistant, skilled at refining and enhancing content for user input. Polish and improve the content following the instructions below.\n\n**Instructions:**\n1. Improve clarity, professionalism, and readability.\n2. Correct grammar, spelling, and punctuation errors.\n3. Enhance helpfulness and actionability.\n4. Preserve the original intent and tone.\n5. Respond exclusively in {{target_language}}.\n\n{{ai_writing_style}}\n\n{{current_site_info}}",
-        "deepseek-pro": {
-          "polishReplyPrompt": "You are a professional {{ai_writing_scene}} reply assistant, skilled at refining and enhancing replies for {{ai_writing_scene}} communications. Based on the provided context and user's draft reply, polish and improve the reply following the instructions below.\n\n**Instructions:**\n1. Improve clarity, professionalism, and readability.\n2. Ensure relevance to the provided {{ai_writing_scene}} context.\n3. Correct grammar, spelling, and punctuation errors.\n4. Enhance helpfulness and actionability.\n5. Preserve the original intent and tone.\n6. Respond exclusively in {{target_language}}.\n7. Output only the result, without any additional content\n8. Unless a specific writing style is requested, there's no need for extra polite tone words. \n\n{{ai_writing_style}}\n\n**{{ai_writing_scene}} Context:**\n{{ai_writing_context}}\n\n{{current_site_info}}"
-        }
+        "polishReplyPrompt": "You are a **Context-Aware Communications Assistant** specifically for **{{ai_writing_scene}}**.\nYour goal is to generate or refine professional responses that fit the conventions of this platform (e.g., proper formatting for GitHub Markdown or professional email etiquette).\n### CORE LOGIC Analyze the 'USER_INPUT' relative to the provided 'CONTEXT': 1. **IF INSTRUCTION:** Draft a complete response based on the command. 2. **IF DRAFT:** Polish and professionalize the raw text. 3. **IF AMBIGUOUS/CHAT:** Do NOT answer directly. Rephrase it as a message intended for the recipient.\n### CRITICAL RULES - **Adhere STRICTLY** to the 'STYLE GUIDELINES' (Tone, Length, Persona). - **Platform Authenticity:** Ensure the output matches **{{ai_writing_scene}}** norms. - **Output:** ONLY the final message body. No conversational fillers.\n## INPUT: ### SCENE: {{ai_writing_scene}}\n### CONTEXT (Relevant Thread/Details) {{ai_writing_context}}\n### STYLE GUIDELINES {{ai_writing_style}}\n### TARGET LANGUAGE {{target_language}}",
+        "generalSystemPrompt": "You are a professional writing assistant, skilled at refining and enhancing content for user input. Polish and improve the content following the instructions below.\n\n**Instructions:**\n1. Improve clarity, professionalism, and readability.\n2. Correct grammar, spelling, and punctuation errors.\n3. Enhance helpfulness and actionability.\n4. Preserve the original intent and tone.\n5. Respond exclusively in {{target_language}}.\n\n{{ai_writing_style}}\n\n{{current_site_info}}"
       },
       "promptStyle": {
         "length": {
@@ -3550,6 +3558,14 @@
         ]
       }
     },
+    "aiWriting.add_v.[1.24.5]": {
+      "prompts": {
+        "summaryPrompt": "You are a professional {{ai_writing_scene}} analysis assistant, skilled at summarizing and analyzing {{ai_writing_scene}}. Please provide a concise and clear summary based on the following {{ai_writing_scene}} content. Reply in {{target_language}} language. DO NOT exceed 150 words! Output only the summary, without any additional content.",
+        "suggestionPrompt": "You are an expert assistant in {{ai_writing_scene}} analysis. Your task is to generate exactly 3 concise, actionable reply suggestions based on the provided {{ai_writing_scene}} content.\n\nInstructions:\n1. Respond exclusively in {{target_language}}.\n2. Each suggestion must be concise, actionable, and contextually relevant.\n3. Consider the current status and context of the {{ai_writing_scene}}.\n4. Format your output strictly as a raw JSON array of strings without markdown code blocks.\n\n{{ai_writing_style}}\n\nOutput Example:\n[\"suggestion1\", \"suggestion2\", \"suggestion3\"]",
+        "polishReplyPrompt": "You are a **Context-Aware Communications Assistant** specifically for **{{ai_writing_scene}}**.\nYour goal is to generate or refine professional responses that fit the conventions of this platform (e.g., proper formatting for GitHub Markdown or professional email etiquette).\n### CORE LOGIC Analyze the actual user input within the <input> tag based on the provided 'CONTEXT' 1. **IF INSTRUCTION:** Draft a complete response based on the command. 2. **IF DRAFT:** Polish and professionalize the raw text. 3. **IF AMBIGUOUS/CHAT:** Do NOT answer directly. Rephrase it as a message intended for the recipient.\n### CRITICAL RULES - **Adhere STRICTLY** to the 'STYLE GUIDELINES' (Tone, Length, Persona). - **Platform Authenticity:** Ensure the output matches **{{ai_writing_scene}}** norms. - **Output:** ONLY the final message body. No conversational fillers. - **Prohibited:** Outputting context, style guidelines, target language information, etc., is prohibited.",
+        "generalSystemPrompt": "You are a professional writing assistant, skilled at refining and enhancing content for user input. Polish and improve the content following the instructions below.\n\n**Instructions:**\n1. Improve clarity, professionalism, and readability.\n2. Correct grammar, spelling, and punctuation errors.\n3. Enhance helpfulness and actionability.\n4. Preserve the original intent and tone.\n5. Respond exclusively in {{target_language}}.\n\n{{ai_writing_style}}\n\n{{current_site_info}}"
+      }
+    },
     "enableAutoTranslateByReferrer": true,
     "mutationConfig": {
       "consumeTimeout": 100,
@@ -3557,6 +3573,7 @@
       "checkSelfUpdate": true
     },
     "imageRule": {
+      "enableFreeCredit": false,
       "type": "common",
       "enableMangaFloatBall": true,
       "blockToolsUrls": [
@@ -6154,11 +6171,12 @@
         "scene": "github-issue",
         "appendSelector": ".Footer-module__childrenStyling--cH0iq",
         "insertBeforeSelector": ".IssueActions-module__IssueActionsButtonGroup--Usbpc",
-        "titleSelector": ".prc-Heading-Heading-6CmGO .markdown-title",
+        "titleSelector": ".markdown-title",
         "contentSelector": "#issue-body-viewer .markdown-body",
         "commentSelector": ".react-issue-comment",
-        "insertInputSelector": ".prc-Textarea-TextArea-13q4j",
-        "injectDelay": 1000
+        "insertInputSelector": "[class*=\"prc-Textarea\"]",
+        "injectDelay": 1000,
+        "injectCSS": ".immersive-translate-ai-writing-button { color: #25292e; background-color: #f6f8fa; border-color: #818B981A; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important;} .immersive-translate-ai-writing-action-wrapper { gap: 0;} .immersive-translate-ai-writing-more-action-icon { background-color: #f6f8fa; height: 29px; border: 1px solid #818B981A; border-left: none !important; border-top-right-radius: 6px !important; border-bottom-right-radius: 6px !important; display: flex; align-items: center; justify-content: center;} .dark .immersive-translate-ai-writing-button { color: #fff; background-color: #212830; border-color: #818B981A; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important;} .dark .immersive-translate-ai-writing-more-action-icon { background-color: #212830; height: 29px; border: 1px solid #818B981A; border-left: none !important; border-top-right-radius: 6px !important; border-bottom-right-radius: 6px !important; display: flex; align-items: center; justify-content: center;} .button-logo { color: #EA4C89; }"
       }
     },
     {
@@ -7025,12 +7043,12 @@
       "aiWriting.add": {
         "scene": "email",
         "appendSelector": ".btC",
-        "insertBeforeSelector": ".oc.gU",
+        "insertBeforeSelector": ".gU.a0z",
         "titleSelector": "h2.hP",
         "contentSelector": "",
         "commentSelector": ".gs",
         "insertInputSelector": ".editable",
-        "injectCSS": ".immersive-translate-ai-writing-button {margin-left:12px; border-radius: 20px; padding: 6px 12px;}"
+        "injectCSS": ".immersive-translate-ai-writing-button {margin-left:12px; border-radius: 20px; padding: 6px 12px; color: #444746; background: #fff; border-color: #444746;} .button-logo {color: #444746}"
       }
     },
     {
@@ -14187,6 +14205,12 @@
         ],
         "quickButtonRule": {
           "appendSelector": "[data-testid=\"playback_controls\"] [class*=\"ControlsFooterBottomRight\"]"
+        },
+        "attachRule": {
+          "appendSelector": "[data-testid='caption_renderer_overlay']",
+          "injectedGlobalCSS": [
+            "[data-testid='cueBoxRowTextCue'] { display: none; }"
+          ]
         }
       }
     },
@@ -14435,8 +14459,8 @@
       "matches": "app.letsjelly.com",
       "aiWriting.add": {
         "scene": "email",
-        "appendSelector": "form[data-controller='reply'] .field.submit",
-        "insertBeforeSelector": "form[data-controller='reply'] .button.ml-auto",
+        "appendSelector": ".reply-button-container",
+        "insertBeforeSelector": "",
         "titleSelector": ".h1-subject-button",
         "contentSelector": "",
         "commentSelector": ".conversation-list .message.seen",
@@ -20707,6 +20731,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-31T03:47:31.081Z",
-  "latestVersion": "1.24.4"
+  "buildinConfigUpdatedAt": "2025-12-31T09:49:10.887Z",
+  "latestVersion": "1.24.5"
 }
