@@ -4851,6 +4851,15 @@
       "waitForSelectorsTimeout": 1
     },
     {
+      "id": "babelR-render",
+      "selectorMatches": [
+        ".babelR-offline-reflow-container"
+      ],
+      "excludeSelectors": [
+        ".babelR-offline-reflow-container"
+      ]
+    },
+    {
       "id": "onboarding",
       "matches": [
         "https://onboarding.immersivetranslate.*",
@@ -20698,6 +20707,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2025-12-30T09:55:41.794Z",
+  "buildinConfigUpdatedAt": "2025-12-31T03:47:31.081Z",
   "latestVersion": "1.24.4"
 }
