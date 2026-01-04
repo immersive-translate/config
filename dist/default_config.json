@@ -3695,7 +3695,8 @@
       "[dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {text-align:left;direction:ltr;}",
       ".immersive-translate-target-wrapper {word-break:break-word; user-select:text;}",
       "[imt-state=dual] .immersive-translate-target-translation-block-wrapper-theme-dividingLine::before {display:block;}",
-      "[imt-trans-position=before] .immersive-translate-target-translation-block-wrapper {display:block!important;}"
+      "[imt-trans-position=before] .immersive-translate-target-translation-block-wrapper {display:block!important;}",
+      "#mount [data-theme].imt-fb-container {background-color: transparent !important;}"
     ],
     "isOnBoardingPage": false,
     "isEbook": false,
@@ -20950,6 +20951,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-04T14:49:32.062Z",
+  "buildinConfigUpdatedAt": "2026-01-04T15:33:35.980Z",
   "latestVersion": "1.24.6"
 }
