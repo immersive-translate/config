@@ -6385,7 +6385,8 @@
           "showSupportTips": true,
           "injectedCSS": [
             ".imt-caption-container {z-index:1;}",
-            ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}"
+            ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}",
+            ".imt-caption-window {width: 90%;}"
           ],
           "injectedGlobalCSS": [
             ".caption-window {display: none;} ",
@@ -6608,7 +6609,8 @@
           "showSupportTips": true,
           "injectedCSS": [
             ".imt-caption-container {z-index:40;}",
-            ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}"
+            ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}",
+            ".imt-caption-window {width: 90%;}"
           ],
           "injectedGlobalCSS": [
             ".caption-window {display: none;} ",
@@ -6679,7 +6681,8 @@
           "appendSelector": ".html5-video-player.playing-mode,.html5-video-player",
           "injectedCSS": [
             ".imt-caption-container {z-index:40;}",
-            ".imt-caption-window {margin-bottom: 0; bottom: 2%;}"
+            ".imt-caption-window {margin-bottom: 0; bottom: 2%;}",
+            ".imt-caption-window {width: 90%;}"
           ],
           "injectedGlobalCSS": [
             ".caption-window {display: none;} ",
@@ -6729,7 +6732,8 @@
           "appendSelector": ".html5-video-player",
           "injectedCSS": [
             ".imt-caption-container {z-index:40;}",
-            ".imt-caption-window {margin-bottom: 2%;}"
+            ".imt-caption-window {margin-bottom: 2%;}",
+            ".imt-caption-window {width: 90%;}"
           ],
           "injectedGlobalCSS": [
             ".caption-window {display: none;} ",
@@ -6788,7 +6792,8 @@
           "appendSelector": ".html5-video-player",
           "injectedCSS": [
             ".imt-caption-container {z-index:40;}",
-            ".imt-caption-window {margin-bottom: 2%;}"
+            ".imt-caption-window {margin-bottom: 2%;}",
+            ".imt-caption-window {width: 90%;}"
           ],
           "injectedGlobalCSS": [
             ".caption-window {display: none;} ",
@@ -20727,6 +20732,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-03T03:24:47.441Z",
+  "buildinConfigUpdatedAt": "2026-01-04T01:43:12.107Z",
   "latestVersion": "1.24.6"
 }
