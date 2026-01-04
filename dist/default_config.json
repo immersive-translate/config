@@ -2114,6 +2114,14 @@
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
+      ],
+      "langOverrides.add": [
+        {
+          "id": "auto2ko"
+        },
+        {
+          "id": "auto2pt"
+        }
       ]
     },
     "deepseek.add_v.[1.15.3]": {
@@ -4487,6 +4495,9 @@
       "pairs": {
         ".source-text": ".target-text"
       },
+      "withAITitleBlockUrls": [
+        "immersivetranslate.*/subtitle"
+      ],
       "paragraphMinTextCount": 4,
       "paragraphMinWordCount": 2,
       "isTranslateTitle": false,
@@ -20939,6 +20950,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-04T11:20:52.267Z",
+  "buildinConfigUpdatedAt": "2026-01-04T14:49:32.062Z",
   "latestVersion": "1.24.6"
 }
