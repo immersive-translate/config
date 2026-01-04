@@ -5398,7 +5398,8 @@
           "isDelay": true,
           "injectedCSS": [
             ".imt-caption-container {z-index:0;}",
-            ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}"
+            ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}",
+            ".imt-caption-window {width: 90%;}"
           ],
           "injectedGlobalCSS": [
             ".r-1peqgm7 #immersive-translate-caption-window {bottom: 60px;}",
@@ -5468,7 +5469,8 @@
           "injectedCSS": [
             ".imt-caption-container {z-index:10;}",
             ".imt-cue {font-size: 16px !important;}",
-            ".vjs-text-track-cue {display:none !important;}"
+            ".vjs-text-track-cue {display:none !important;}",
+            ".imt-caption-window {width: 90%;}"
           ]
         },
         "rtlInjectedCss": [
@@ -5958,7 +5960,8 @@
           "appendSelector": "#bitmovin-player",
           "injectedCSS": [
             ".imt-caption-container {z-index: 10;}",
-            ".imt-caption-window {margin-bottom: 0; bottom: 12%!important;top: unset!important;}"
+            ".imt-caption-window {margin-bottom: 0; bottom: 12%!important;top: unset!important;}",
+            ".imt-caption-window {width: 90%;}"
           ],
           "injectedGlobalCSS": [
             ".bmpui-subtitle-position-vtt {display: none!important;} "
@@ -6304,6 +6307,9 @@
           "appendSelector": "._53j5._37u6._9kkd",
           "injectedGlobalCSS": [
             "._30vn._30vp._5z68 {display: none!important;} "
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -7329,6 +7335,9 @@
         ],
         "attachRule": {
           "appendSelector": ".video-js",
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
+          ],
           "injectedGlobalCSS": [
             ".vjs-text-track-display {display: none;}",
             ".captions-text: {margin-bottom: 10%;}"
@@ -7787,7 +7796,10 @@
         ],
         "attachRule": {
           "appendSelector": ".plyr--video",
-          "injectedGlobalCSS": ""
+          "injectedGlobalCSS": "",
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
+          ]
         },
         "quickButtonRule": {
           "appendSelector": ".plyr__controls",
@@ -7861,7 +7873,10 @@
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
         ],
         "attachRule": {
-          "appendSelector": "#vplayer"
+          "appendSelector": "#vplayer",
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
+          ]
         },
         "quickButtonRule": {
           "appendSelector": "#vplayer .jw-button-container",
@@ -8082,7 +8097,10 @@
         },
         "attachRule": {
           "appendSelector": ".jw-wrapper.jw-reset",
-          "injectedGlobalCSS": ".jw-text-track-display { display:none!important; }"
+          "injectedGlobalCSS": ".jw-text-track-display { display:none!important; }",
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
+          ]
         }
       }
     },
@@ -8215,6 +8233,9 @@
         },
         "attachRule": {
           "appendSelector": ".bvp-playlist-player__container",
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
+          ],
           "injectedGlobalCSS": [
             ".vjs-text-track-display {display:none!important;}"
           ]
@@ -9755,7 +9776,10 @@
         "allowHideModeTextTrack": true,
         "attachRule": {
           "appendSelector": ".VideoLayersContainer",
-          "injectedGlobalCSS": "[data-name=\"ClosedCaptions\"] {display:none;}"
+          "injectedGlobalCSS": "[data-name=\"ClosedCaptions\"] {display:none;}",
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
+          ]
         }
       }
     },
@@ -10199,7 +10223,8 @@
           "realCurrentType": "-",
           "appendSelector": "#overlay-root",
           "injectedCSS": [
-            ".imt-caption-window {bottom:unset!important;top:5%;}"
+            ".imt-caption-window {bottom:unset!important;top:5%;}",
+            ".imt-caption-window {width: 90%;}"
           ],
           "injectedGlobalCSS": "[data-testid=caption_renderer_overlay] {display:none!important;}"
         }
@@ -10765,7 +10790,8 @@
           "appendSelector": ".watch-video--player-view > div",
           "injectedGlobalCSS": ".player-timedtext {display:none!important;}",
           "injectedCSS": [
-            ".imt-caption-window {margin-bottom: 0; bottom: 10%;}"
+            ".imt-caption-window {margin-bottom: 0; bottom: 10%;}",
+            ".imt-caption-window {width: 90%;}"
           ],
           "isDelay": true
         },
@@ -10828,6 +10854,9 @@
         },
         "attachRule": {
           "appendSelector": ".jwplayer",
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
+          ],
           "injectedGlobalCSS": [
             ".jw-text-track-container {display:none!important;}"
           ]
@@ -10855,6 +10884,9 @@
           "appendSelector": "video-js[id^='vjs_video']",
           "injectedGlobalCSS": [
             ".vjs-text-track-display { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -10989,6 +11021,9 @@
           "appendSelector": "video-js[id^='vjs_video']",
           "injectedGlobalCSS": [
             ".vjs-text-track-display { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -11015,6 +11050,9 @@
           "appendSelector": ".video-js",
           "injectedGlobalCSS": [
             ".vjs-text-track-display { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -11039,6 +11077,9 @@
           "appendSelector": "div[data-vjs-player]",
           "injectedGlobalCSS": [
             ".vjs-text-track-display { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -11094,6 +11135,9 @@
           "appendSelector": "#video-player",
           "injectedGlobalCSS": [
             "div[data-subtitles-container='true'] { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -13999,7 +14043,9 @@
           "injectedGlobalCSS": [
             ".vjs-text-track-display { display: none !important; }"
           ],
-          "injectedCSS": []
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
+          ]
         }
       }
     },
@@ -14026,6 +14072,9 @@
           "appendSelector": "div[data-id=\"hls\"]",
           "injectedGlobalCSS": [
             "div[data-id=\"captionsComponent\"] { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -14102,7 +14151,8 @@
             "[data-rt=\"subtitles-container\"] {display: none !important; }"
           ],
           "injectedCSS": [
-            ".imt-caption-window {bottom: 60px;}"
+            ".imt-caption-window {bottom: 60px;}",
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -14243,6 +14293,9 @@
           "appendSelector": ".mv-video-item",
           "injectedGlobalCSS": [
             ".vjs-text-track-display { display: none; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -14272,7 +14325,8 @@
         "attachRule": {
           "appendSelector": "[data-testid=\"vmplayer\"]",
           "injectedCSS": [
-            ".imt-caption-window {margin-bottom: 0; bottom: 7%;}"
+            ".imt-caption-window {margin-bottom: 0; bottom: 7%;}",
+            ".imt-caption-window {width: 90%;}"
           ],
           "injectedGlobalCSS": [
             ".vjs-text-track-display {display: none;}",
@@ -14358,6 +14412,9 @@
           "appendSelector": ".bmpui-ui-viu-subtitle-overlay",
           "injectedGlobalCSS": [
             ".bmpui-ui-viu-subtitle-overlay > .bmpui-container-wrapper { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -14437,6 +14494,9 @@
           "appendSelector": "#player-wrapper",
           "injectedGlobalCSS": [
             ".text-track { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -14508,6 +14568,9 @@
           "appendSelector": "#imdbnext-vp-jw-single",
           "injectedGlobalCSS": [
             ".jw-text-track-display { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -14532,7 +14595,8 @@
             ".fe-mrphs__subtitles {display: none !important;}"
           ],
           "injectedCSS": [
-            ".imt-caption-window {margin-bottom: 0; bottom: 7%;}"
+            ".imt-caption-window {margin-bottom: 0; bottom: 7%;}",
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -14588,6 +14652,9 @@
           "appendSelector": "[data-e2e='vlp-video-player']",
           "injectedGlobalCSS": [
             "video::cue {opacity: 0}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -14611,6 +14678,9 @@
           "appendSelector": "[id^='vjs_video'][data-vjs-player]",
           "injectedGlobalCSS": [
             "video::cue {opacity: 0}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -14747,6 +14817,9 @@
           "injectedGlobalCSS": [
             ".jw-text-track-container {display: none;}",
             "@media (min-width: 576px) { video::cue {opacity: 0} }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       },
@@ -14812,6 +14885,9 @@
           "injectedGlobalCSS": [
             ".jw-text-track-container {display: none;}",
             "@media (min-width: 576px) { video::cue {opacity: 0} }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       },
@@ -14879,6 +14955,9 @@
           "appendSelector": "#vilos",
           "injectedGlobalCSS": [
             ".textTrackLayer{display: none;}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -14918,7 +14997,8 @@
             "#video-player-container > div:nth-child(3) > div div[cn=gap-2] { z-index: 21474836471; }"
           ],
           "injectedCSS": [
-            ".imt-caption-container {z-index:40;}"
+            ".imt-caption-container {z-index:40;}",
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -14955,6 +15035,9 @@
           "appendSelector": ".page-wrap .video-js",
           "injectedGlobalCSS": [
             "div.vjs-text-track-display > div > div { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -14988,6 +15071,9 @@
           "appendSelector": "#vjs_video_3",
           "injectedGlobalCSS": [
             "div.vjs-text-track-display > div > div { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -15024,6 +15110,9 @@
           "appendSelector": "container",
           "injectedGlobalCSS": [
             "mango-subtitle { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -15103,6 +15192,9 @@
           "appendSelector": ".popout-location div.h-screen.select-none",
           "injectedGlobalCSS": [
             ".popout-location .absolute p.pointer-events-none {display: none;}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -15131,6 +15223,9 @@
           "appendSelector": "[data-layout=\"video\"]",
           "injectedGlobalCSS": [
             ".vds-captions {display:none!important;}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -15158,6 +15253,9 @@
           "appendSelector": ".pzp-pc__video",
           "injectedGlobalCSS": [
             ".pzp-pc-subtitle-text { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -15188,6 +15286,9 @@
           "appendSelector": "#vjs_video_3",
           "injectedGlobalCSS": [
             "div.vjs-text-track-cue { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -15226,6 +15327,9 @@
           "appendSelector": "div.video-js",
           "injectedGlobalCSS": [
             "div.vjs-text-track-display { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -15254,6 +15358,9 @@
           "appendSelector": "#vjs_video_3",
           "injectedGlobalCSS": [
             "div.vjs-text-track-cue { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -15351,7 +15458,8 @@
         "attachRule": {
           "appendSelector": "#maincontent media-controller",
           "injectedCSS": [
-            ".imt-caption-container {z-index:10;}"
+            ".imt-caption-container {z-index:10;}",
+            ".imt-caption-window {width: 90%;}"
           ],
           "realCurrentTimeSelector": "span.text-textPrimary-onDark.font-normal.text-tui-sm.leading-tui-md.tracking-tui-tight",
           "realCurrentTimeRegex": "((?:\\d+:)?(?:\\d+:)?\\d+)\\s*[\\/|of|\\-]",
@@ -15397,6 +15505,9 @@
           "appendSelector": "#vjs_video_3",
           "injectedGlobalCSS": [
             ".vjs-text-track-display {display: none;}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       },
@@ -15433,6 +15544,9 @@
           "appendSelector": ".jw-wrapper",
           "injectedGlobalCSS": [
             ".jw-captions { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         },
         "multiSetting": {
@@ -15467,6 +15581,9 @@
           "appendSelector": ".jw-wrapper",
           "injectedGlobalCSS": [
             ".jw-captions { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         },
         "multiSetting": {
@@ -15504,6 +15621,9 @@
           "appendSelector": ".jw-media",
           "injectedGlobalCSS": [
             ".jw-captions { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         },
         "multiSetting": {
@@ -15541,6 +15661,9 @@
           "appendSelector": "#vjs_video_3",
           "injectedGlobalCSS": [
             ".vjs-text-track-display { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         },
         "multiSetting": {
@@ -15575,6 +15698,9 @@
           "appendSelector": ".vidPlayerWrap .media-player",
           "injectedGlobalCSS": [
             ".vds-captions { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         },
         "multiSetting": {
@@ -15685,6 +15811,9 @@
           "appendSelector": ".vp-telecine",
           "injectedGlobalCSS": [
             ".vp-captions { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         },
         "rtlInjectedCss": [
@@ -15757,6 +15886,9 @@
           "appendSelector": ".w-video-wrapper",
           "injectedGlobalCSS": [
             ".w-captions-line { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -15888,7 +16020,8 @@
         "attachRule": {
           "appendSelector": ".video-player",
           "injectedCSS": [
-            ".imt-caption-container {z-index:9;}"
+            ".imt-caption-container {z-index:9;}",
+            ".imt-caption-window {width: 90%;}"
           ],
           "injectedGlobalCSS": [
             ".closed-captions {display: none!important;}"
@@ -15927,7 +16060,8 @@
             ".ardplayer-untertitel div[lang] {display:none!important;}"
           ],
           "injectedCSS": [
-            ".imt-caption-window {margin-bottom: 0; bottom: 20%;}"
+            ".imt-caption-window {margin-bottom: 0; bottom: 20%;}",
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -15985,6 +16119,9 @@
           "appendSelector": ".p_subtitlesContainer",
           "injectedGlobalCSS": [
             ".p_subtitlesContainer .p_paragraph {display: none !important;}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         },
         "xmlSetting": {
@@ -16058,6 +16195,9 @@
           "injectedGlobalCSS": [
             ".zdfplayer-cue-inline { display: none !important; }",
             "[class^='subtitle-container-'] { visibility: visible; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       },
@@ -16082,6 +16222,9 @@
           "appendSelector": ".shaka-video-container",
           "injectedGlobalCSS": [
             "@media (min-width: 576px) { video::cue {opacity: 0} }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -16123,6 +16266,9 @@
           "appendSelector": ".video-player",
           "injectedGlobalCSS": [
             ".clpp-text-container {display: none;}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       },
@@ -16241,6 +16387,9 @@
           "appendSelector": ".aspect-video",
           "injectedGlobalCSS": [
             ".pointer-events-none.text-white {display: none!important;} "
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -16270,7 +16419,8 @@
             ".theoplayer-texttracks {display: none!important;} "
           ],
           "injectedCSS": [
-            ".imt-caption-window {bottom: 60px;}"
+            ".imt-caption-window {bottom: 60px;}",
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -16319,6 +16469,9 @@
           "appendSelector": ".iqp-player-g.iqp-player.iqp-player-pc",
           "injectedGlobalCSS": [
             "iqpdiv[data-player-hook='subtitleelem'] {display: none;}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         },
         "xmlSetting": {
@@ -16358,7 +16511,10 @@
           "injectCSS": ".imt-quick-subtitle-pop-content {right: 65px !important;}"
         },
         "attachRule": {
-          "appendSelector": ".avia-container"
+          "appendSelector": ".avia-container",
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
+          ]
         },
         "xmlSetting": {
           "subtitleItemSelector": "p",
@@ -16399,7 +16555,8 @@
             ".vjs-text-track-display { display: none; }"
           ],
           "injectedCSS": [
-            ".imt-caption-window { bottom: 5%; }"
+            ".imt-caption-window { bottom: 5%; }",
+            ".imt-caption-window {width: 90%;}"
           ]
         },
         "multiSetting": {
@@ -16434,7 +16591,8 @@
         "attachRule": {
           "appendSelector": "#player-video",
           "injectedCSS": [
-            ".jw-text-track-display { display: none; }"
+            ".jw-text-track-display { display: none; }",
+            ".imt-caption-window {width: 90%;}"
           ]
         },
         "multiSetting": {
@@ -16468,6 +16626,9 @@
           "appendSelector": ".jw-media",
           "injectedGlobalCSS": [
             ".jw-text-track-container { display: none; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -16524,6 +16685,9 @@
           "appendSelector": "#video-container",
           "injectedGlobalCSS": [
             ".vjs-text-track-display {display: none;}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -16553,6 +16717,9 @@
           "appendSelector": "#gl-id-video-container",
           "injectedGlobalCSS": [
             ".bmpui-ui-subtitle-overlay {display: none;}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -16580,6 +16747,9 @@
           "appendSelector": "[data-testid=\"video-player\"] > div",
           "injectedGlobalCSS": [
             ".vjs-text-track-display {display: none;}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -16628,7 +16798,8 @@
         "attachRule": {
           "appendSelector": "body",
           "injectedCSS": [
-            ".imt-caption-window {margin-bottom: 0; bottom: 7%;}"
+            ".imt-caption-window {margin-bottom: 0; bottom: 7%;}",
+            ".imt-caption-window {width: 90%;}"
           ],
           "injectedGlobalCSS": [
             "@media (min-width: 576px) { video::cue {opacity: 0} }"
@@ -16832,6 +17003,9 @@
           "appendSelector": "[class^='PlayerLayout_container']",
           "injectedGlobalCSS": [
             ".vjs-text-track-cue {display:none !important;}"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -16950,6 +17124,9 @@
         "videoPlayerSelector": "video",
         "attachRule": {
           "appendSelector": "#vidwidthsizer > .video > div:nth-of-type(2) > div",
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
+          ],
           "injectedGlobalCSS": [
             ".vjs-text-track-display {display: none;}"
           ]
@@ -19802,7 +19979,8 @@
             ".w-bottom-bar-right-inner.w-css-reset { z-index: 2147483647; }"
           ],
           "injectedCSS": [
-            ".imt-caption-window {margin-bottom: 0;}"
+            ".imt-caption-window {margin-bottom: 0;}",
+            ".imt-caption-window {width: 90%;}"
           ],
           "isDelay": true
         }
@@ -19920,6 +20098,9 @@
           "appendSelector": ".playkit-container",
           "injectedGlobalCSS": [
             ".playkit-subtitles { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -19946,6 +20127,9 @@
           "appendSelector": ".jw-wrapper.jw-reset",
           "injectedGlobalCSS": [
             ".jw-captions { display: none !important; }"
+          ],
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -20298,7 +20482,8 @@
         "attachRule": {
           "appendSelector": ".jw-wrapper",
           "injectedCSS": [
-            ".jw-text-track-display { display: none!important; }"
+            ".jw-text-track-display { display: none!important; }",
+            ".imt-caption-window {width: 90%;}"
           ]
         }
       }
@@ -20732,6 +20917,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-04T01:43:12.107Z",
+  "buildinConfigUpdatedAt": "2026-01-04T02:13:40.321Z",
   "latestVersion": "1.24.6"
 }
