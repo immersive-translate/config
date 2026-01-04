@@ -4872,10 +4872,11 @@
     {
       "id": "babelR-render",
       "selectorMatches": [
-        ".babelR-offline-reflow-container"
+        ".babelR-offline-render"
       ],
       "excludeSelectors": [
-        ".babelR-offline-reflow-container"
+        ".babelR-offline-reflow-container",
+        ".babelR-offline-preserve-container"
       ]
     },
     {
@@ -18684,6 +18685,26 @@
       }
     },
     {
+      "id": "webtoonraw",
+      "matches": [
+        "webtoonraw.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#chapter_boxImages img.image-chapter"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "webtoons",
       "matches": [
         "www.webtoons.com",
@@ -20918,6 +20939,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-04T09:23:22.136Z",
+  "buildinConfigUpdatedAt": "2026-01-04T11:20:52.267Z",
   "latestVersion": "1.24.6"
 }
