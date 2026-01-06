@@ -387,6 +387,7 @@
     "https://www.sololevelingmangafree.com/[Sololevelingmangafree][chrome,firefox,safari,imtIOSNew]",
     "https://syosetu.si/[Syosetu][chrome,firefox,safari,imtIOSNew]",
     "https://comick.dev/[Comick][chrome,firefox,safari,imtIOSNew]",
+    "https://comick.art/[Comick][chrome,firefox,safari,imtIOSNew]",
     "https://younganimal.com[YoungAnimal][chrome,firefox,safari,imtIOS,imtIOSNew]",
     "https://piccoma.com[Piccoma][chrome,firefox,safari,imtIOSNew]",
     "https://hentaizap.com/[Hentaizap][chrome,firefox,safari,imtIOSNew]",
@@ -12764,13 +12765,15 @@
     {
       "id": "comick",
       "matches": [
-        "comick.io"
+        "comick.io",
+        "comick.art"
       ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          ".reader-container div[id*=\"page\"] img"
+          ".reader-container div[id*=\"page\"] img",
+          ".overflow-auto.select-none > img"
         ],
         "platforms": [
           "chrome",
@@ -13732,6 +13735,47 @@
           ".slick-slide img",
           "img[id*='r-bannerImg-after_viewer']"
         ]
+      },
+      "platforms": [
+        "chrome",
+        "firefox",
+        "safari",
+        "imtAndroid",
+        "imtIOSNew"
+      ]
+    },
+    {
+      "id": "global.manga",
+      "matches": "global.manga-up.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "[class*='page_container'] img"
+        ],
+        "loadingStyle": "z-index: 9999;"
+      },
+      "platforms": [
+        "chrome",
+        "firefox",
+        "safari",
+        "imtAndroid",
+        "imtIOSNew"
+      ]
+    },
+    {
+      "id": "mangaball",
+      "matches": "mangaball.net",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#mangaPages img"
+        ],
+        "inValidSrcRegex": [
+          "data:image/svg"
+        ],
+        "loadingStyle": "top: 10%"
       },
       "platforms": [
         "chrome",
@@ -20932,6 +20976,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-06T07:34:51.624Z",
+  "buildinConfigUpdatedAt": "2026-01-06T11:31:56.827Z",
   "latestVersion": "1.24.6"
 }
