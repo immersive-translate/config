@@ -6038,7 +6038,8 @@
         "https://github.com/codespaces",
         "https://github.com/customer-stories/*",
         "https://github.com/signup",
-        "https://github.com/login"
+        "https://github.com/login",
+        "https://github.com/marketplace"
       ],
       "mutationExcludeSelectors": [
         ".react-blob-sticky-header *"
@@ -6090,7 +6091,7 @@
         "[id^=pullrequestreview]",
         "[class^='ChatMessage']",
         "a[data-hovercard-type='issue']",
-        "[class*=prc-FormControl] > [class*=prc-Text]",
+        "[class*=prc-FormControl] > [class*=prc-Text], [class*=prc-FormControl] [class*=prc-FormControl-LabelContainer] [class*=prc-Text]",
         "[data-testid='beginners-playlist-section']",
         "[data-testid='getting-started-checklist-section']",
         "[data-testid='docs-section']",
@@ -6149,7 +6150,8 @@
         "a[data-hovercard-type]",
         "[title='Label: Private']",
         "[aria-label*='language']",
-        ".js-suggested-changes-blob.diff-view"
+        ".js-suggested-changes-blob.diff-view",
+        "h1[data-component=PH_Title] span[class*='issueNumberText']"
       ],
       "extraBlockSelectors.add": [],
       "extraInlineSelectors": [
@@ -9748,12 +9750,18 @@
     },
     {
       "id": "wsj",
-      "matches": "www.wsj.com",
+      "matches": [
+        "www.wsj.com",
+        "cn.wsj.com"
+      ],
       "excludeSelectors": [
         "header",
         "footer",
         "nav",
         "[aria-label='Markets summary']"
+      ],
+      "extraBlockSelectors.add": [
+        ".series-nav__link-thumbnail"
       ],
       "injectedCss.add": [
         ".immersive-translate-target-wrapper br {display:none;}",
@@ -9768,9 +9776,9 @@
         ],
         "quickButtonRule": {
           "injectCSS": ".label { display: none; }",
-          "appendSelector": "[id^=\"video-controls-video\"]",
-          "insertBeforeSelector": "[id^=\"video-cc-video\"]",
-          "ccEnableSelector": "[id^=\"video-cc-video\"]"
+          "appendSelector": ".video-controls",
+          "insertBeforeSelector": ".video-cc.f-r",
+          "ccEnableSelector": ".video-cc.f-r"
         }
       }
     },
@@ -9793,24 +9801,6 @@
           "injectedCSS": [
             ".imt-caption-window {width: 90%;}"
           ]
-        }
-      }
-    },
-    {
-      "id": "wsj-cn",
-      "matches": "cn.wsj.com",
-      "excludeSelectors": [
-        "[class*=\"VideoWrapper\"]"
-      ],
-      "subtitleRule.add": {
-        "type": "text_track",
-        "videoPlayerSelector": "video",
-        "loadingContainerSelector": ".video-inner",
-        "quickButtonRule": {
-          "injectCSS": ".label { display: none; }",
-          "appendSelector": "[id^=\"video-controls-vc\"]",
-          "insertBeforeSelector": "[id^=\"video-cc-vc\"]",
-          "ccEnableSelector": "[id^=\"video-cc-vc\"]"
         }
       }
     },
@@ -19846,7 +19836,8 @@
         "www.connectedpapers.com",
         "isappscience.org",
         "www.dtmstation.com",
-        "kalshi.com"
+        "kalshi.com",
+        "engoo.com"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
@@ -19866,7 +19857,8 @@
         ".paper-title,.search-result-abstract.folded,.list-group-item-mod h5 { -webkit-line-clamp: unset!important; max-height: unset!important;}",
         ".kb-advanced-heading-link,.limited-text { -webkit-line-clamp: unset!important; max-height: unset!important;}",
         ".entry-card-title,.entry-card-snippet { -webkit-line-clamp: unset!important; max-height: unset!important;}",
-        "span.line-clamp-2 { -webkit-line-clamp: unset!important; max-height: unset!important;}"
+        "span.line-clamp-2 { -webkit-line-clamp: unset!important; max-height: unset!important;}",
+        ".css-1yo0yr8 {-webkit-line-clamp: unset!important; max-height: unset!important;}"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -20667,7 +20659,8 @@
         "corpus-texmex.irisa.*",
         "www.imageen.com",
         "seller-id.tokopedia.com",
-        "tortoisegit.org"
+        "tortoisegit.org",
+        "www.dove.com"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -20976,6 +20969,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-06T11:42:46.411Z",
+  "buildinConfigUpdatedAt": "2026-01-07T15:39:32.928Z",
   "latestVersion": "1.24.6"
 }
