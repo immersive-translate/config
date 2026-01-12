@@ -1677,7 +1677,7 @@
       "proLimit": 10,
       "maxTextGroupLengthPerRequest": 1,
       "maxTextLengthPerRequest": 3000,
-      "maxTextGroupLengthPerRequestForSubtitle": 3,
+      "maxTextGroupLengthPerRequestForSubtitle": 5,
       "translationTextSeparator": "\n<Keep This Symbol>",
       "langOverrides": [],
       "bodyConfigs": {
@@ -1878,7 +1878,7 @@
       "limit": 0.3,
       "maxTextGroupLengthPerRequest": 1,
       "maxTextLengthPerRequest": 2000,
-      "maxTextGroupLengthPerRequestForSubtitle": 3,
+      "maxTextGroupLengthPerRequestForSubtitle": 5,
       "bodyConfigs": {
         "max_tokens": 2048
       },
@@ -1978,7 +1978,7 @@
           "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}"
         }
       ],
-      "maxTextGroupLengthPerRequestForSubtitle": 3,
+      "maxTextGroupLengthPerRequestForSubtitle": 5,
       "newlinePlaceholderDelimiters": [
         "\n<br>\n"
       ],
@@ -2071,7 +2071,7 @@
       "limit": 5,
       "maxTextGroupLengthPerRequest": 1,
       "maxTextLengthPerRequest": 1200,
-      "maxTextGroupLengthPerRequestForSubtitle": 3,
+      "maxTextGroupLengthPerRequestForSubtitle": 5,
       "bodyConfigs": {
         "max_tokens": 2048
       },
@@ -3847,6 +3847,13 @@
         "Source Code Pro"
       ]
     },
+    "subtitleRule.add.[1.23.3]": {
+      "velocityGroup": [
+        5,
+        5,
+        5
+      ]
+    },
     "ytAsrConfig": {
       "enable": true,
       "wordsRegex": "etc\\.|Mr\\.|Mrs\\.|Ms\\.|Dr\\.|Prof\\.|Sr\\.|Jr\\.|U\\.S\\.|U\\.K\\.|Co\\.|Inc\\.|Ltd\\.|St\\.|p\\.a\\.|\\d+\\.",
@@ -5165,7 +5172,8 @@
       "paragraphMinWordCount": 2,
       "paragraphMinTextCount": 4,
       "injectedCss.add": [
-        ".immersive-translate-target-translation-block-wrapper { display: block !important; }"
+        ".immersive-translate-target-translation-block-wrapper { display: block !important; }",
+        ".mwe-popups-extract {max-height:unset!important;height:unset!important;}"
       ],
       "excludeSelectors": [
         ".mw-editsection",
@@ -11860,7 +11868,10 @@
         "bakamh.com",
         "yakshascans.com",
         "topcomicporno.com",
-        "toonclash.com"
+        "toonclash.com",
+        "rawdex.net",
+        "reset-scans.org",
+        "cultivationmanhua.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -12881,6 +12892,13 @@
       }
     },
     {
+      "id": "runoob",
+      "matches": "www.runoob.com",
+      "excludeSelectors.add": [
+        ".example_code"
+      ]
+    },
+    {
       "id": "manhwato",
       "matches": [
         "manhwato.com"
@@ -12926,6 +12944,26 @@
           "chrome",
           "firefox",
           "imtIOSNew",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
+      "id": "manga-park",
+      "matches": [
+        "manga-park.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".manga-image"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
           "imtAndroid"
         ]
       }
@@ -19836,7 +19874,8 @@
         "isappscience.org",
         "www.dtmstation.com",
         "kalshi.com",
-        "engoo.com"
+        "engoo.com",
+        "puchipurabu.com"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
@@ -20968,6 +21007,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-12T10:17:40.203Z",
+  "buildinConfigUpdatedAt": "2026-01-12T11:04:16.798Z",
   "latestVersion": "1.24.6"
 }
