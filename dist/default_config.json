@@ -19546,6 +19546,15 @@
       ]
     },
     {
+      "id": "models.com",
+      "matches": [
+        "models.com"
+      ],
+      "skipBuildContainerSelectors.remove": [
+        "em"
+      ]
+    },
+    {
       "id": "sp.nexusmods",
       "selectorMatches": ".next-container section [data-lexical-editor]",
       "likePreSelectors.add": [
@@ -20718,7 +20727,8 @@
         "taylor.town",
         "www.flatpanelshd.com",
         "www.rarlab.com",
-        "bugs.mysql.com"
+        "bugs.mysql.com",
+        "crushon.ai"
       ],
       "isTransformPreTagNewLine": true,
       "excludeTags.remove": [
@@ -21007,6 +21017,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-12T11:04:16.798Z",
+  "buildinConfigUpdatedAt": "2026-01-13T13:05:25.003Z",
   "latestVersion": "1.24.6"
 }
