@@ -6316,7 +6316,8 @@
         "[role='presentation']"
       ],
       "excludeSelectors.add": [
-        "[data-ad-comet-preview=message] [role=button]"
+        "[data-ad-comet-preview=message] [role=button]",
+        "[data-ad-rendering-role=profile_name]"
       ],
       "insertPosition": "afterend",
       "preWhitespaceDetectedTags": [
@@ -11182,7 +11183,7 @@
         "*.xn--h10b90bbmq49b63sq4e.com",
         "m.뉴토끼대피소.com",
         "뉴토끼대피소.com",
-        "funbe537.com",
+        "funbe*.com",
         "happytoon01.com",
         "tkor*.com",
         "m.블랙툰.co"
@@ -11415,6 +11416,25 @@
           "firefox",
           "imtIOSNew",
           "safari"
+        ]
+      }
+    },
+    {
+      "id": "comix",
+      "matches": [
+        "comix.to"
+      ],
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          ".read-viewer img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
         ]
       }
     },
@@ -13709,7 +13729,8 @@
     {
       "id": "rawkuma.net",
       "matches": [
-        "rawkuma.net"
+        "rawkuma.net",
+        "florascans.net"
       ],
       "imageRule.add": {
         "enable": true,
@@ -21044,6 +21065,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-15T11:16:34.214Z",
+  "buildinConfigUpdatedAt": "2026-01-15T11:21:31.365Z",
   "latestVersion": "1.25.1"
 }
