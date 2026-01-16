@@ -3072,8 +3072,9 @@
     "detectionServiceOrder": [
       "google",
       "bing",
-      "zhipu",
-      "siliconcloud"
+      "babel-lite-free",
+      "siliconcloud",
+      "zhipu"
     ],
     "detectParagraphLanguage": false,
     "paragraphFirstLetterFontSize": 35,
@@ -21066,6 +21067,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-16T03:32:59.621Z",
+  "buildinConfigUpdatedAt": "2026-01-16T11:46:15.731Z",
   "latestVersion": "1.25.1"
 }
