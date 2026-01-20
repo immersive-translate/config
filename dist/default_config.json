@@ -2536,7 +2536,7 @@
       "extends": "zhipu",
       "type": "zhipu",
       "group": "free",
-      "name": "GLM-4 Flash",
+      "name": "GLM-4 Flash ⚠️",
       "model": "glm-4-flash-250414",
       "models": "glm-4-flash|glm-4-flash-250414",
       "provider": "custom",
@@ -5300,7 +5300,7 @@
         ".DocsMarkdown--link-external-icon"
       ],
       "rich.additionalStayOriginalSelectors.remove": [
-        "[data-testid=\"tweetText\"] a",
+        "[data-testid='tweetText'] a",
         "[data-testid='UserDescription'] a",
         "[data-testid='HoverCard'] a",
         "[data-testid='UserCell'] a",
@@ -5309,10 +5309,11 @@
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
       "selectors": [
-        "[data-testid=\"tweetText\"]",
+        "[data-testid='tweetText']",
         "[style*='-webkit-line-clamp']",
         ".tweet-text",
         "[data-testid='tweet'] [class='css-175oi2r r-13awgt0 r-eqz5dr r-iphfwy r-3o4zer r-ttdzmv']",
+        "[data-testid='tweet'] .css-175oi2r span",
         ".js-quoted-tweet-text",
         "[data-testid='card.layoutSmall.detail'] > div:nth-child(2)",
         "[data-testid='developerBuiltCardContainer'] > div:nth-child(2)",
@@ -8728,7 +8729,11 @@
         ],
         "tutorialsText": "输入中文后快速连击 3 次空格键翻译，获得不同的 AI 回复",
         "placeholderType": "attribute"
-      }
+      },
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ]
     },
     {
       "id": "poe",
@@ -21094,6 +21099,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-17T12:29:36.518Z",
+  "buildinConfigUpdatedAt": "2026-01-20T09:41:14.340Z",
   "latestVersion": "1.25.1"
 }
