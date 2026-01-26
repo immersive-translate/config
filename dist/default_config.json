@@ -152,6 +152,7 @@
   "enableAiAssistant": true,
   "enableSelfServiceReport": true,
   "enablePerformanceReport": false,
+  "enablePerformanceReport.add_v.[1.25.3]": true,
   "enableProSecretAPIKey": false,
   "batchReportConfig": {
     "enabled": false,
@@ -2626,6 +2627,29 @@
         "aiWriting",
         "selectionTranslation"
       ]
+    },
+    "hunyuan-pro": {
+      "name": "HY 2.0 Instruct",
+      "type": "hunyuan",
+      "group": "pro",
+      "extends": "hunyuan",
+      "provider": "pro",
+      "model": "hunyuan-2.0-instruct-20251111",
+      "proModel": "hunyuan-2.0-instruct-20251111",
+      "visible": true,
+      "limit": 5,
+      "defaultMaxTextGroupLengthPerRequest": 4,
+      "maxTextGroupLengthPerRequest": 4,
+      "maxTextGroupLengthPerRequestForSubtitle": 5,
+      "enableFallback": true,
+      "disabledAt": "2026-01-01",
+      "supportFeatures": [
+        "aiWriting",
+        "selectionTranslation"
+      ]
+    },
+    "hunyuan-pro.add_v.[1.25.3]": {
+      "disabledAt": ""
     },
     "gemini-pro": {
       "name": "Gemini 3 Flash",
@@ -8931,25 +8955,19 @@
         ".forum_topic_reply_count",
         ".forum_topic_lastpost",
         ".forum_topic_award_count",
-        ".discussion_search_pagingcontrols"
+        ".discussion_search_pagingcontrols",
+        ".found_helpful,.vote_header,.date_posted,.early_access_review,.apphub_CardContentAuthorBlock"
       ]
     },
     {
       "id": "steampoweredApp",
       "matches": "store.steampowered.com/app/*",
-      "selectors": [
-        ".game_description_snippet",
-        ".game_area_description",
-        "#earlyAccessHeader",
-        "[id^='ReviewContent'] .content",
-        ".ModalOverlayContent"
-      ],
+      "selectors": [],
       "excludeSelectors": [
         "#global_actions",
         "#store_controls",
         "#foryou_tab",
         "[class*=persona]",
-        "[class*=game_title_area]",
         "a.btn_medium",
         ".persona_name",
         ".hours.ellipsis",
@@ -8970,7 +8988,10 @@
         ".vote_button_ctn",
         "#VoteUpDownBtnCtn",
         "#footer",
-        "#ViewAllReviewssummary"
+        "#ViewAllReviewssummary",
+        ".user_reviews",
+        ".ReviewContentCtn .title",
+        ".author_counts,.control_block,.vote_info"
       ],
       "atomicBlockSelectors": [
         ".game_area_sys_req_leftCol",
@@ -21137,6 +21158,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-23T12:03:55.963Z",
-  "latestVersion": "1.25.2"
+  "buildinConfigUpdatedAt": "2026-01-26T11:33:01.963Z",
+  "latestVersion": "1.25.3"
 }
