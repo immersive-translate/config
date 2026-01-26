@@ -2537,7 +2537,7 @@
       "extends": "zhipu",
       "type": "zhipu",
       "group": "free",
-      "name": "GLM-4 Flash",
+      "name": "GLM-4 Flash ⚠️",
       "model": "glm-4-flash-250414",
       "models": "glm-4-flash|glm-4-flash-250414",
       "provider": "custom",
@@ -6202,7 +6202,8 @@
         "div:has(~ copilot-user-settings)",
         "[class='f4 color-fg-muted col-md-6 mx-auto']",
         "[class='col-lg-9 position-relative pr-lg-5 mb-6 mr-lg-5']",
-        "[class*='IssueIndexPage-module__middlePaneGrid'] div[class='p-4 text-center rounded-2 border color-border-muted']"
+        "[class*='IssueIndexPage-module__middlePaneGrid'] div[class='p-4 text-center rounded-2 border color-border-muted']",
+        "[class*='ModelsPlaygroundRoute-module__playgroundContainer']"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -9815,8 +9816,6 @@
         ".body-wrapper",
         "body"
       ],
-      "isTransformPreTagNewLine": true,
-      "forceFormatPre": true,
       "urlChangeDelay": 400,
       "mutationConfig.add": {
         "enableUrlChange": true,
@@ -11857,7 +11856,8 @@
         "type": "manga",
         "imageSelectors": [
           "#imgarea img",
-          "#img_list img"
+          "#img_list img",
+          "#content img"
         ],
         "loadingSelectors": [
           "a",
@@ -21158,6 +21158,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-26T11:32:32.000Z",
+  "buildinConfigUpdatedAt": "2026-01-26T16:02:19.651Z",
   "latestVersion": "1.25.3"
 }
