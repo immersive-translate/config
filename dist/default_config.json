@@ -5300,7 +5300,8 @@
         "x.com/*/privacy*",
         "x.com/account/access*",
         "x.com/i/account_analytics*",
-        "x.com/i/chat*"
+        "x.com/i/chat*",
+        "x.com/settings*"
       ],
       "withAITitleBlockUrls": [
         "^https://x.com/home"
@@ -7347,16 +7348,6 @@
         "autoLanguageSelectors": [
           ".bubble-content .message .translatable-message"
         ]
-      }
-    },
-    {
-      "id": "societyforpsychotherapy_cbtm",
-      "matches": [
-        "societyforpsychotherapy.org",
-        "cbtm.manifestlao.com"
-      ],
-      "preTranslateLimiter.add": {
-        "header.enableTranslate": true
       }
     },
     {
@@ -9795,11 +9786,19 @@
       "matches": "*.yahoo.*",
       "additionalExcludeSelectors.add": [
         "._ys_jiqava",
-        "#ybar-inner-wrap",
         "#Col2-5-Rmp-Proxy",
         ".readmore",
         ".ticker-item-wrapper",
-        ".ticker-list"
+        ".ticker-list",
+        ".footer"
+      ],
+      "injectedCss.add": [
+        "[class*='line-clamp'],h3.clamp {-webkit-line-clamp:unset!important;}",
+        "#atomic .Mt\\(20px\\) {margin-top: 100px;}",
+        "[class*='LineClamp'] {-webkit-line-clamp:unset;max-height:unset;}",
+        "a[class*='js-content-viewer']> div[class*='Td\\(n\\)'] {overflow: scroll;}",
+        "[class*='_ys_24482e'] {-webkit-line-clamp:unset;}",
+        "#Aside > :first-child {overflow:scroll;}"
       ],
       "extraBlockSelectors.add": [
         ".SIPGg",
@@ -9811,6 +9810,10 @@
         "body"
       ],
       "urlChangeDelay": 400,
+      "preTranslateLimiter.add": {
+        "header.enableTranslate": true,
+        "side.enableTranslate": true
+      },
       "mutationConfig.add": {
         "enableUrlChange": true,
         "buildTimeout": 1000,
@@ -9824,14 +9827,7 @@
           }
         }
       ],
-      "detectParagraphLanguage": true,
-      "globalStyles": {
-        "#atomic .Mt\\(20px\\)": "margin-top: 100px;",
-        "[class*='LineClamp']": "-webkit-line-clamp:unset;max-height:unset;",
-        "a[class*='js-content-viewer']> div[class*='Td\\(n\\)']": "overflow: scroll;",
-        "[class*='_ys_24482e']": "-webkit-line-clamp:unset;",
-        "#Aside > :first-child": "overflow:scroll;"
-      }
+      "detectParagraphLanguage": true
     },
     {
       "id": "wsj",
@@ -17802,6 +17798,10 @@
         ".summary > h3",
         ".notes > h3"
       ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
       "skipBuildContainerSelectors.remove": [
         "em"
       ],
@@ -20850,7 +20850,8 @@
         "seller-id.tokopedia.com",
         "tortoisegit.org",
         "www.dove.com",
-        "man7.org"
+        "man7.org",
+        "phrack.org"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -21145,6 +21146,11 @@
         "header p",
         "header nav"
       ],
+      "matches": [
+        "societyforpsychotherapy.org",
+        "cbtm.manifestlao.com",
+        "notefolio.net"
+      ],
       "preTranslateLimiter.add": {
         "header.enableTranslate": true
       },
@@ -21160,6 +21166,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-28T07:27:24.958Z",
+  "buildinConfigUpdatedAt": "2026-01-28T14:36:58.027Z",
   "latestVersion": "1.25.3"
 }
