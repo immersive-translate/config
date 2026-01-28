@@ -727,12 +727,6 @@
   "h5FloatBallMainBtnTooltipShownCount": 0,
   "advanceMergeConfig": [
     {
-      "condition": "abTagNumber<5",
-      "advanceConfig": {
-        "enableNewUserActivity": true
-      }
-    },
-    {
       "condition": "abTagNumber<10",
       "advanceConfig": {
         "translationServices.add_v.[1.12.9]": {
@@ -21166,6 +21160,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-27T16:45:03.307Z",
+  "buildinConfigUpdatedAt": "2026-01-28T07:27:24.958Z",
   "latestVersion": "1.25.3"
 }
