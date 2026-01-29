@@ -7329,6 +7329,10 @@
         ".document-wrapper",
         ".message.spoilers-container custom-emoji-element"
       ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
       "detectParagraphLanguage": true,
       "advanceMergeConfig": [
         {
@@ -20943,6 +20947,9 @@
         "www.surveymonkey.com",
         "www.rawpixel.com"
       ],
+      "selectorMatches": [
+        "html[translate=no]"
+      ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
         "[translate=no]"
@@ -21166,6 +21173,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-29T08:44:16.139Z",
+  "buildinConfigUpdatedAt": "2026-01-29T14:44:51.225Z",
   "latestVersion": "1.25.3"
 }
