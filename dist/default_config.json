@@ -20036,7 +20036,8 @@
         ".kb-advanced-heading-link,.limited-text { -webkit-line-clamp: unset!important; max-height: unset!important;}",
         ".entry-card-title,.entry-card-snippet { -webkit-line-clamp: unset!important; max-height: unset!important;}",
         "span.line-clamp-2 { -webkit-line-clamp: unset!important; max-height: unset!important;}",
-        ".css-1yo0yr8 {-webkit-line-clamp: unset!important; max-height: unset!important;}"
+        ".css-1yo0yr8 {-webkit-line-clamp: unset!important; max-height: unset!important;}",
+        "[class*='line-clamp-'] {-webkit-line-clamp: unset!important; max-height: unset!important;}"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -21155,6 +21156,9 @@
         "cbtm.manifestlao.com",
         "notefolio.net"
       ],
+      "injectedCss.add": [
+        "[class*='line-clamp-'] {-webkit-line-clamp: unset!important; max-height: unset!important;}"
+      ],
       "preTranslateLimiter.add": {
         "header.enableTranslate": true
       },
@@ -21170,6 +21174,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-31T13:10:57.942Z",
+  "buildinConfigUpdatedAt": "2026-01-31T15:21:33.361Z",
   "latestVersion": "1.25.3"
 }
