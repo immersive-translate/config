@@ -20666,6 +20666,35 @@
       }
     },
     {
+      "id": "moltbook",
+      "matches": "www.moltbook.com",
+      "excludeSelectors.add": [
+        "[class='flex items-center gap-1 sm:gap-2 text-[10px] sm:text-xs text-[#7c7c7c] mb-1.5 sm:mb-2 flex-wrap']",
+        "[class='flex items-center gap-2 sm:gap-4 text-[10px] sm:text-xs text-[#7c7c7c]']",
+        "[class='flex items-center gap-2 p-2 rounded-lg transition-all duration-200 group animate-fadeIn bg-gradient-to-r from-[#ffd700]/10 to-transparent hover:from-[#ffd700]/20']",
+        "[class='flex flex-col items-center gap-0.5 sm:gap-1 text-center min-w-[32px] sm:min-w-[40px]']",
+        "[class='bg-white border border-[#e0e0e0] rounded-lg overflow-hidden'] .p-2",
+        "[class='text-xs text-[#818384] mb-2']",
+        "[class='w-12 bg-[#161617] rounded-l-lg flex flex-col items-center py-3 text-sm']",
+        "[class='bg-[#1a1a1b] px-4 py-3 flex items-center justify-between sticky top-[52px] z-40 rounded-t-lg border border-[#333] shadow-md']",
+        "[class='flex items-center gap-3 text-xs text-[#818384]']",
+        "a[class='text-[#d7dadc] font-medium hover:underline']"
+      ],
+      "injectedCss.add": [
+        "[class*='line-clamp']{-webkit-line-clamp:unset !important;}"
+      ]
+    },
+    {
+      "id": "dynamic-repets",
+      "matches": [
+        "khovar.tj"
+      ],
+      "excludeSelectors.add": [
+        ".slide_container [style*='position: absolute']"
+      ],
+      "_comment": "1.25.3 在这种情况下会导致脏段落重新翻译"
+    },
+    {
       "id": "floatSites",
       "matches": [
         "docs.stripe.com"
@@ -21174,6 +21203,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-01-31T15:21:33.361Z",
+  "buildinConfigUpdatedAt": "2026-02-01T06:54:38.642Z",
   "latestVersion": "1.25.3"
 }
