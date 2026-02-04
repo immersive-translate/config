@@ -7653,21 +7653,13 @@
         ".notion-html body",
         ".notion-app"
       ],
+      "likePreSelectors.add": [
+        "#main"
+      ],
+      "isTransformPreTagNewLine": true,
       "excludeSelectors": [
         ".notion-code-block"
-      ]
-    },
-    {
-      "id": "notion_so",
-      "matches": [
-        "www.notion.so"
       ],
-      "preTranslateLimiter.add_v.[1.12.1]": {
-        "header.enableTranslate": true
-      },
-      "initialSelectorGlobalAttributes.remove": {
-        "header": {}
-      },
       "injectedCss": [
         "[aria-label='Templates'] font br {display:none;}"
       ]
@@ -21203,6 +21195,6 @@
       "_comment": "给部分网页开后门翻译 header标签"
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-03T02:42:25.586Z",
+  "buildinConfigUpdatedAt": "2026-02-04T12:27:36.705Z",
   "latestVersion": "1.25.3"
 }
