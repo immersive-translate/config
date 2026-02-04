@@ -20923,61 +20923,6 @@
       "isTransformPreTagNewLine": true
     },
     {
-      "id": "NoTranslate",
-      "matches": [
-        "*.tiktok.com",
-        "altis.world",
-        "*.newthingsunderthesun.com",
-        "*.gumroad.com",
-        "edstem.org",
-        "actions.tldrnewsletter.com",
-        "community.linkingyourthinking.com",
-        "winaero.com",
-        "community.afforai.com",
-        "www.perplexity.ai",
-        "hdsr.mitpress.mit.edu",
-        "rent.men",
-        "*.rwth-aachen.*",
-        "www.backcountry.com",
-        "intranet.alxswe.com",
-        "www.steepandcheap.com",
-        "whoer.is",
-        "community.seniorswc.com",
-        "www.skool.com",
-        "sfget.jp",
-        "talentcentral.eu.shl.com",
-        "www.crd.york.ac.*",
-        "www.campo.fau.de",
-        "s.hoothin.com",
-        "feedback.featurebase.app",
-        "typefully.com",
-        "*.affine.*",
-        "*.shopify.com",
-        "*.marscode.com",
-        "nexus.evenant.com",
-        "portal.achieve3000.net",
-        "triumph-cubic.com",
-        "ieeeforms.wufoo.com",
-        "www.midjourney.com",
-        "fifakitcreator.com",
-        "app.voxy.com",
-        "www.zome.*",
-        "electrical-engineering-portal.com",
-        "www.surveymonkey.com",
-        "www.rawpixel.com"
-      ],
-      "selectorMatches": [
-        "html[translate=no]"
-      ],
-      "additionalExcludeSelectors.remove": [
-        ".notranslate",
-        "[translate=no]"
-      ],
-      "excludeTags.remove": [
-        "PRE"
-      ]
-    },
-    {
       "id": "bodyNoTranslateSite",
       "selectorMatches": [
         "body[translate=no]",
@@ -21193,8 +21138,63 @@
         ".btn"
       ],
       "_comment": "给部分网页开后门翻译 header标签"
+    },
+    {
+      "id": "NoTranslate",
+      "matches": [
+        "*.tiktok.com",
+        "altis.world",
+        "*.newthingsunderthesun.com",
+        "*.gumroad.com",
+        "edstem.org",
+        "actions.tldrnewsletter.com",
+        "community.linkingyourthinking.com",
+        "winaero.com",
+        "community.afforai.com",
+        "www.perplexity.ai",
+        "hdsr.mitpress.mit.edu",
+        "rent.men",
+        "*.rwth-aachen.*",
+        "www.backcountry.com",
+        "intranet.alxswe.com",
+        "www.steepandcheap.com",
+        "whoer.is",
+        "community.seniorswc.com",
+        "www.skool.com",
+        "sfget.jp",
+        "talentcentral.eu.shl.com",
+        "www.crd.york.ac.*",
+        "www.campo.fau.de",
+        "s.hoothin.com",
+        "feedback.featurebase.app",
+        "typefully.com",
+        "*.affine.*",
+        "*.shopify.com",
+        "*.marscode.com",
+        "nexus.evenant.com",
+        "portal.achieve3000.net",
+        "triumph-cubic.com",
+        "ieeeforms.wufoo.com",
+        "www.midjourney.com",
+        "fifakitcreator.com",
+        "app.voxy.com",
+        "www.zome.*",
+        "electrical-engineering-portal.com",
+        "www.surveymonkey.com",
+        "www.rawpixel.com"
+      ],
+      "selectorMatches": [
+        "html[translate=no]"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
+      "excludeTags.remove": [
+        "PRE"
+      ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-04T12:27:36.705Z",
+  "buildinConfigUpdatedAt": "2026-02-04T14:31:28.484Z",
   "latestVersion": "1.25.3"
 }
