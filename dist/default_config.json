@@ -40,7 +40,7 @@
     "newUserDays": 7,
     "startNextDay": true,
     "usageDays": 3,
-    "usageCondition": "html.avgPerDay > 2 || input_translation.avgPerDay > 2 || videoSubtitle.avgPerDay > 2",
+    "usageCondition": "html.avgPerDay > 2 || input_translation.avgPerDay > 2 || videoSubtitle.avgPerDay > 2 || web_page.avgPerDay > 2 || input.avgPerDay > 2 || subtitle_video.avgPerDay > 2",
     "countdownSeconds": 15,
     "platform": "chrome|edge|firefox"
   },
@@ -725,6 +725,22 @@
   },
   "pcFloatBallMainBtnTooltipShownCount": 0,
   "h5FloatBallMainBtnTooltipShownCount": 0,
+  "translationUsageLimit": {
+    "enable": false,
+    "usageScenes": [
+      "web_page",
+      "subtitle_video",
+      "mouse_hover",
+      "selection",
+      "input"
+    ],
+    "totalLimit": {
+      "unregisteredSoft": 20,
+      "unregisteredHard": 30,
+      "soft": 40,
+      "hard": 90
+    }
+  },
   "advanceMergeConfig": [
     {
       "condition": "abTagNumber<10",
@@ -944,6 +960,62 @@
           }
         ]
       }
+    },
+    {
+      "condition": "abTagNumber==0 && interfaceLanguage==zh-CN && installedAtTimestamp>1770220800000",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "enable": true,
+          "totalLimit": {
+            "unregisteredSoft": 20,
+            "unregisteredHard": 30,
+            "soft": 40,
+            "hard": 90
+          }
+        }
+      }
+    },
+    {
+      "condition": "abTagNumber==1 && interfaceLanguage==zh-CN && installedAtTimestamp>1770220800000",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "enable": true,
+          "totalLimit": {
+            "unregisteredSoft": 20,
+            "unregisteredHard": 30,
+            "soft": 40,
+            "hard": 50
+          }
+        }
+      }
+    },
+    {
+      "condition": "abTagNumber==0 && interfaceLanguage!=zh-CN && installedAtTimestamp>1770220800000",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "enable": true,
+          "totalLimit": {
+            "unregisteredSoft": 20,
+            "unregisteredHard": 30,
+            "soft": 40,
+            "hard": 60
+          }
+        }
+      }
+    },
+    {
+      "condition": "abTagNumber==1 && interfaceLanguage!=zh-CN && installedAtTimestamp>1770220800000",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "enable": true,
+          "totalLimit": {
+            "unregisteredSoft": 20,
+            "unregisteredHard": 30,
+            "soft": 40,
+            "hard": 50
+          }
+        }
+      }
     }
   ],
   "inputLanguageCodeAlias": {
@@ -1019,7 +1091,6 @@
     "http://192.168.31.183:8000/dist/userscript/options/",
     "https://www.deepl.com/translator",
     "translate.google.com",
-    "https://steamcommunity.com/sharedfiles/filedetails*",
     "http://localhost:8000/options/",
     "http://192.168.50.9:8000/options/",
     "https://silverbullet.md/",
@@ -1541,6 +1612,9 @@
         "翻译为简体中文（仅输出译文内容）：",
         "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释， 不加注释。原文为:",
         ";; 把下一行文本作为纯文本输入，并将其翻译为简体中文，仅输出翻译。如果某些内容无需翻译（如专有名词、代码等），则保持原文不变。不要解释，输入文本:"
+      ],
+      "removeItemResRegexs": [
+        "%%"
       ],
       "translationTextSeparator": "\n\n%%\n\n",
       "proRequestTimeout": 45000,
@@ -2511,6 +2585,7 @@
       "maxTextLengthPerRequest": 600,
       "limit": 20,
       "retry": 2,
+      "concurrencyLimit": 40,
       "hidden": true
     },
     "babel-lite-free.add_v.[1.23.9]": {
@@ -2529,6 +2604,7 @@
       "modelsHidden": true,
       "limit": 4,
       "retry": 2,
+      "concurrencyLimit": 40,
       "apiUrl": "https://aigw1.immersivetranslate.com/api/paas/v4/chat/completions",
       "supportFeatures": [
         "aiWriting",
@@ -2544,6 +2620,7 @@
       "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/glm-4-9b-chat",
       "modelsHidden": true,
       "retry": 2,
+      "concurrencyLimit": 40,
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
@@ -3112,6 +3189,11 @@
       "clearContentEnable": true,
       "execCommandDeleteEnable": false,
       "enableRangeDeleteContent": false,
+      "triggerGapMs": 250,
+      "triggerIdleMs": 600,
+      "triggerCancelWindowMs": 3000,
+      "triggerToleranceCount": 1,
+      "triggerMinDurationMs": 1500,
       "autoLanguageEnable": true,
       "autoLanguagePageEnable": false,
       "autoLanguageSites": [
@@ -21186,6 +21268,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-05T07:04:04.110Z",
-  "latestVersion": "1.25.3"
+  "buildinConfigUpdatedAt": "2026-02-05T07:31:50.156Z",
+  "latestVersion": "1.26.1"
 }
