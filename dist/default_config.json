@@ -1029,6 +1029,7 @@
     "http://192.168.31.183:8000/dist/userscript/options/",
     "https://www.deepl.com/translator",
     "translate.google.com",
+    "https://steamcommunity.com/sharedfiles/filedetails*",
     "http://localhost:8000/options/",
     "http://192.168.50.9:8000/options/",
     "https://silverbullet.md/",
@@ -21195,6 +21196,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-04T14:31:28.484Z",
+  "buildinConfigUpdatedAt": "2026-02-05T06:24:04.085Z",
   "latestVersion": "1.25.3"
 }
