@@ -8441,7 +8441,8 @@
         "span[id^=cap]"
       ],
       "excludeSelectors.add": [
-        ".bibliography"
+        ".bibliography",
+        ".author-group"
       ],
       "globalAttributes.add": {
         "#abspara0010 br": {
@@ -21300,6 +21301,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-06T09:19:29.000Z",
+  "buildinConfigUpdatedAt": "2026-02-06T10:23:16.078Z",
   "latestVersion": "1.26.2"
 }
