@@ -4396,8 +4396,8 @@
       "STYLE",
       "TEXTAREA",
       "SVG",
-      "svg",
       "G",
+      "I",
       "NOSCRIPT",
       "BUTTON",
       "BASE",
@@ -6213,7 +6213,8 @@
         "https://github.com/customer-stories/*",
         "https://github.com/signup",
         "https://github.com/login",
-        "https://github.com/marketplace"
+        "https://github.com/marketplace",
+        "https://github.com/github-copilot*"
       ],
       "mutationExcludeSelectors": [
         ".react-blob-sticky-header *"
@@ -17871,9 +17872,7 @@
         "archiveofourown.org/works*chapters/*"
       ],
       "excludeSelectors.add": [
-        ".meta",
-        ".navigation",
-        ".byline",
+        ".meta,.navigation,.byline,.pagination,.datetime,.stats",
         "#add_comment",
         "#footer",
         ".summary > h3",
@@ -17885,13 +17884,9 @@
     },
     {
       "id": "archiveofourown",
-      "matches": [
-        "archiveofourown.org"
-      ],
+      "matches": "archiveofourown.org",
       "excludeSelectors.add": [
-        ".meta",
-        ".navigation",
-        ".byline",
+        ".meta,.navigation,.byline,.pagination,.datetime,.stats",
         "#add_comment",
         "#footer",
         ".summary > h3",
@@ -18024,7 +18019,15 @@
       "additionalExcludeSelectors.add": [
         "ancestors-breadcrumbs",
         "depth-finder[role='tree']",
-        "repository-detail"
+        "repository-detail",
+        "issue-metadata-sidebar",
+        "nav",
+        ".bv2-event-user",
+        ".b-description-heading",
+        "b-attachment-viewer"
+      ],
+      "injectedCss.add": [
+        "font svg {display:none;}"
       ]
     },
     {
@@ -20113,7 +20116,8 @@
         "www.dtmstation.com",
         "kalshi.com",
         "engoo.com",
-        "puchipurabu.com"
+        "puchipurabu.com",
+        "www.wildberries.ru"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
@@ -20135,7 +20139,8 @@
         ".entry-card-title,.entry-card-snippet { -webkit-line-clamp: unset!important; max-height: unset!important;}",
         "span.line-clamp-2 { -webkit-line-clamp: unset!important; max-height: unset!important;}",
         ".css-1yo0yr8 {-webkit-line-clamp: unset!important; max-height: unset!important;}",
-        "[class*='line-clamp-'] {-webkit-line-clamp: unset!important; max-height: unset!important;}"
+        "[class*='line-clamp-'] {-webkit-line-clamp: unset!important; max-height: unset!important;}",
+        ".product-card__brand-wrap {white-space:unset;}"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -21301,6 +21306,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-06T10:23:16.078Z",
+  "buildinConfigUpdatedAt": "2026-02-06T15:29:46.345Z",
   "latestVersion": "1.26.2"
 }
