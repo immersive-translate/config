@@ -2533,6 +2533,7 @@
       "visible": true,
       "model": "GLM-4.7",
       "proModel": "GLM-4.7",
+      "concurrencyLimit": 50,
       "defaultVisible": true,
       "supportFeatures": [
         "aiWriting",
@@ -2552,6 +2553,7 @@
       "visible": true,
       "model": "glm-4.5-air",
       "proModel": "glm-4.5-air",
+      "concurrencyLimit": 50,
       "immersiveProApiUrl": "https://api2.immersivetranslate.com/bigmodel-air/translate",
       "immersiveProStreamApiUrl": "https://api2.immersivetranslate.com/bigmodel-air/translate/stream",
       "defaultVisible": true,
@@ -2585,7 +2587,7 @@
       "maxTextLengthPerRequest": 600,
       "limit": 20,
       "retry": 2,
-      "concurrencyLimit": 40,
+      "concurrencyLimit": 20,
       "hidden": true
     },
     "babel-lite-free.add_v.[1.23.9]": {
@@ -2604,7 +2606,7 @@
       "modelsHidden": true,
       "limit": 4,
       "retry": 2,
-      "concurrencyLimit": 40,
+      "concurrencyLimit": 20,
       "apiUrl": "https://aigw1.immersivetranslate.com/api/paas/v4/chat/completions",
       "supportFeatures": [
         "aiWriting",
@@ -2620,7 +2622,7 @@
       "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/glm-4-9b-chat",
       "modelsHidden": true,
       "retry": 2,
-      "concurrencyLimit": 40,
+      "concurrencyLimit": 20,
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
@@ -2649,6 +2651,7 @@
       "type": "openai",
       "group": "pro",
       "proModel": "gpt-5-mini",
+      "concurrencyLimit": 50,
       "model": "gpt-4.1-mini",
       "extends": "openai",
       "provider": "pro",
@@ -2669,6 +2672,7 @@
       "group": "pro",
       "extends": "claude",
       "proModel": "claude-haiku-4.5-20251001",
+      "concurrencyLimit": 50,
       "provider": "pro",
       "visible": true,
       "limit": 10,
@@ -2682,6 +2686,7 @@
       "type": "deepseek",
       "group": "pro",
       "extends": "deepseek",
+      "concurrencyLimit": 50,
       "provider": "pro",
       "visible": true,
       "limit": 10,
@@ -2698,6 +2703,7 @@
       "provider": "pro",
       "model": "hunyuan-2.0-instruct-20251111",
       "proModel": "hunyuan-2.0-instruct-20251111",
+      "concurrencyLimit": 50,
       "visible": true,
       "limit": 5,
       "defaultMaxTextGroupLengthPerRequest": 4,
@@ -2721,6 +2727,7 @@
       "provider": "pro",
       "model": "gemini-3-flash-preview",
       "proModel": "gemini-3-flash-preview",
+      "concurrencyLimit": 50,
       "visible": true,
       "limit": 10,
       "supportFeatures": [
@@ -2736,6 +2743,7 @@
       "visible": true,
       "model": "qwen-mt-plus",
       "proModel": "qwen-mt-plus",
+      "concurrencyLimit": 50,
       "models": "qwen-mt-turbo|qwen-mt-plus",
       "defaultVisible": true,
       "group": "pro",
@@ -2759,6 +2767,7 @@
       "visible": true,
       "model": "qwen-plus-latest",
       "proModel": "qwen-plus-latest",
+      "concurrencyLimit": 50,
       "defaultVisible": true,
       "limit": 10,
       "group": "pro",
@@ -2780,6 +2789,7 @@
       "visible": true,
       "model": "grok-4-1-fast-non-reasoning",
       "proModel": "grok-4-1-fast-non-reasoning",
+      "concurrencyLimit": 50,
       "defaultVisible": true,
       "limit": 10,
       "group": "pro",
@@ -2798,6 +2808,7 @@
       "group": "pro",
       "extends": "deepl",
       "provider": "pro",
+      "concurrencyLimit": 50,
       "visible": true,
       "limit": 8
     },
@@ -2808,6 +2819,7 @@
       "extends": "openai",
       "provider": "pro",
       "proModel": "gpt-5.2-chat",
+      "concurrencyLimit": 50,
       "model": "gpt-5.2-chat",
       "limit": 5,
       "visible": true,
@@ -2824,6 +2836,7 @@
       "limit": 6,
       "provider": "pro",
       "proModel": "claude-sonnet-4.5-20250929",
+      "concurrencyLimit": 50,
       "visible": true,
       "supportFeatures": [
         "aiWriting",
@@ -2838,6 +2851,7 @@
       "provider": "pro",
       "limit": 5,
       "proModel": "gemini-3-pro-preview",
+      "concurrencyLimit": 50,
       "model": "gemini-3-pro-preview",
       "visible": true,
       "supportFeatures": [
@@ -2854,6 +2868,7 @@
       "limit": 5,
       "model": "qwen3-max-preview",
       "proModel": "qwen3-max-preview",
+      "concurrencyLimit": 50,
       "defaultVisible": true,
       "group": "max",
       "disabledAt": "2025-01-01",
@@ -2875,6 +2890,7 @@
       "visible": true,
       "model": "Kimi-K2-0905",
       "proModel": "Kimi-K2-0905",
+      "concurrencyLimit": 50,
       "defaultVisible": true,
       "group": "max",
       "disabledAt": "2025-01-01",
@@ -6271,7 +6287,8 @@
         "[class='f4 color-fg-muted col-md-6 mx-auto']",
         "[class='col-lg-9 position-relative pr-lg-5 mb-6 mr-lg-5']",
         "[class*='IssueIndexPage-module__middlePaneGrid'] div[class='p-4 text-center rounded-2 border color-border-muted']",
-        "[class*='ModelsPlaygroundRoute-module__playgroundContainer']"
+        "[class*='ModelsPlaygroundRoute-module__playgroundContainer']",
+        ".markdown-body"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -8997,11 +9014,11 @@
     {
       "id": "steamcommunity",
       "matches": "steamcommunity.com",
-      "globalStyles": {
-        ".forum_topic,.rightbox_list_option": "height:auto;",
-        ".forum_topic_name": "white-space:normal;line-height: 1.25rem; padding: 6px 20px 0 0;",
-        ".forum_topic_op": "clear: left; padding: 0 0 6px 2rem;"
-      },
+      "injectedCss.add": [
+        ".forum_topic,.rightbox_list_option,.appHubShortcut {height: unset;}",
+        ".forum_topic_name {white-space:normal;line-height: 1.25rem; padding: 6px 20px 0 0;}",
+        ".forum_topic_op {clear: left; padding: 0 0 6px 2rem;}"
+      ],
       "excludeSelectors": [
         ".forum_paging",
         ".forum_topic_reply_count",
@@ -9009,6 +9026,21 @@
         ".forum_topic_award_count",
         ".discussion_search_pagingcontrols",
         ".found_helpful,.vote_header,.date_posted,.early_access_review,.apphub_CardContentAuthorBlock"
+      ],
+      "extraBlockSelectors.add": [
+        ".apphub_sectionTab"
+      ],
+      "advanceMergeConfig": [
+        {
+          "condition": "isSteam==true",
+          "advanceConfig": {
+            "generalRule": {
+              "excludeSelectors.add": [
+                "#modalContentFrameContainer"
+              ]
+            }
+          }
+        }
       ]
     },
     {
@@ -21268,6 +21300,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-05T07:31:17.000Z",
-  "latestVersion": "1.26.1"
+  "buildinConfigUpdatedAt": "2026-02-06T09:19:55.338Z",
+  "latestVersion": "1.26.2"
 }
