@@ -4397,7 +4397,6 @@
       "TEXTAREA",
       "SVG",
       "G",
-      "I",
       "NOSCRIPT",
       "BUTTON",
       "BASE",
@@ -5442,7 +5441,7 @@
         "[data-testid='inlinePrompt']",
         "span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-n6v787 r-1cwl3u0']"
       ],
-      "excludeSelectors": [
+      "additionalExcludeSelectors.add": [
         "[aria-describedby][role=button]",
         "header",
         "[data-testid='radioGroupplayback_rate'] div",
@@ -5452,14 +5451,15 @@
         "[aria-label=Grok] button",
         "[aria-label=Grok] [style*='rgb(89, 93, 98)']",
         "[aria-label=Grok] .r-uho16t",
-        "time",
         "[data-testid=User-Name]",
         "[data-testid=socialContext]",
         "[data-testid=tweet-text-show-more-link]",
         "[aria-label=Grok] [class='css-175oi2r r-1habvwh r-vqp9x9 r-1q9bdsx r-1loqt21 r-9njtsq r-1wtj0ep r-nsbfu8 r-xbdcod r-13c7hvr'] > div:last-child",
         "[role='tab']",
         "[data-testid=hoverCardParent] [role=menuitem]",
-        "[data-testid=sidebarColumn]"
+        "[data-testid=sidebarColumn]",
+        "h2[role=heading]",
+        "[class='css-175oi2r r-1awozwy r-18u37iz r-1wtj0ep r-6gpygo'],[class='css-175oi2r r-1d09ksm r-18u37iz r-1wbh5a2 r-1471scf'],[class='css-175oi2r r-1kbdv8c r-18u37iz r-1wtj0ep r-1ye8kvj r-1s2bzr4']"
       ],
       "extraBlockSelectors.add": [
         "[data-testid=\"tweetText\"] div.r-6koalj"
@@ -18024,7 +18024,8 @@
         "nav",
         ".bv2-event-user",
         ".b-description-heading",
-        "b-attachment-viewer"
+        "b-attachment-viewer",
+        "i"
       ],
       "injectedCss.add": [
         "font svg {display:none;}"
@@ -21306,6 +21307,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-06T15:29:46.345Z",
+  "buildinConfigUpdatedAt": "2026-02-08T15:24:46.775Z",
   "latestVersion": "1.26.2"
 }
