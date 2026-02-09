@@ -4634,7 +4634,7 @@
     {
       "id": "isSubtitleBuilder",
       "isSubtitleBuilder": true,
-      "pageType": "ebookBuilder",
+      "pageType": "subtitleBuilder",
       "selectorMatches": [
         "meta[name='immersive-translate-subtitle-builder'][content='true']"
       ],
@@ -4650,8 +4650,8 @@
       "withAITitleBlockUrls": [
         "immersivetranslate.*/subtitle"
       ],
-      "paragraphMinTextCount": 0,
-      "paragraphMinWordCount": 0,
+      "paragraphMinTextCount": 4,
+      "paragraphMinWordCount": 2,
       "isTranslateTitle": false,
       "isInjectVersion": true,
       "isInjectMeta": true,
@@ -5132,7 +5132,6 @@
       "mutationExcludeSelectors.add": [
         "#imt-navbar"
       ],
-      "pageType": "ebookBuilder",
       "skipIgnoreSelectors": [
         ".original-body"
       ],
@@ -21309,6 +21308,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-09T10:54:36.744Z",
+  "buildinConfigUpdatedAt": "2026-02-09T11:02:09.283Z",
   "latestVersion": "1.26.2"
 }
