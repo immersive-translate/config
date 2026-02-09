@@ -4653,8 +4653,8 @@
       "paragraphMinTextCount": 4,
       "paragraphMinWordCount": 2,
       "isTranslateTitle": false,
-      "isInjectMeta": true,
       "isInjectVersion": true,
+      "isInjectMeta": true,
       "allowInnerInvoke": true,
       "wrapperPrefix": "",
       "wrapperSuffix": "",
@@ -4748,6 +4748,7 @@
       },
       "wrapperPrefix": "",
       "isInjectVersion": true,
+      "isInjectMeta": true,
       "excludeSelectorsRegexes": {
         "p": [
           "/^$/"
@@ -4814,6 +4815,7 @@
       "isTranslateTitle": false,
       "targetWrapperTag": "span",
       "isInjectVersion": "true",
+      "isInjectMeta": "true",
       "enableRichTranslate": true,
       "allowInnerInvoke": true,
       "selectorMatches": [
@@ -4835,7 +4837,6 @@
       "bodyRule.add": {
         "enable": false
       },
-      "isInjectMeta": true,
       "paragraphMinTextCount": 1,
       "paragraphMinWordCount": 1,
       "blockMinTextCount": 1,
@@ -21307,6 +21308,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-08T15:24:46.775Z",
+  "buildinConfigUpdatedAt": "2026-02-09T04:47:07.606Z",
   "latestVersion": "1.26.2"
 }
