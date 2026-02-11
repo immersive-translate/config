@@ -3086,6 +3086,9 @@
   ],
   "generalRule": {
     "_comment": "",
+    "parseImmediateTypes": [
+      "hotkey-hover"
+    ],
     "privacyProtocolVersion": "",
     "privacyProtocolEnableTime": "2025-10-31T00:00:00Z",
     "domCheckTimeout": 500,
@@ -6818,8 +6821,8 @@
           "#shorts-player .ytp-caption-window-bottom {top: 2%; bottom: unset!important;} #immersive-translate-quick-button-container,.immersive-translate-quick-button-container {font-size: 12px;z-index:1001;}"
         ],
         "quickButtonRule": {
-          "appendSelector": ".ytp-chrome-controls",
-          "insertBeforeSelector": ".ytp-right-controls"
+          "appendSelector": ".ytp-right-controls",
+          "insertBeforeSelector": ".ytp-right-controls-left"
         },
         "videoSelector": ".html5-video-player.playing-mode video,.html5-video-player.paused-mode video",
         "rtlInjectedCss": [
@@ -21328,6 +21331,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-11T11:54:14.030Z",
-  "latestVersion": "1.26.2"
+  "buildinConfigUpdatedAt": "2026-02-11T12:28:59.238Z",
+  "latestVersion": "1.26.4"
 }
