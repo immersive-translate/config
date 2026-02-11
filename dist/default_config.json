@@ -3206,9 +3206,9 @@
       "execCommandDeleteEnable": false,
       "enableRangeDeleteContent": false,
       "triggerGapMs": 250,
-      "triggerIdleMs": 600,
+      "triggerIdleMs": 250,
       "triggerCancelWindowMs": 3000,
-      "triggerToleranceCount": 1,
+      "triggerToleranceCount": 2,
       "triggerMinDurationMs": 1500,
       "autoLanguageEnable": true,
       "autoLanguagePageEnable": false,
@@ -21328,6 +21328,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-11T09:09:23.738Z",
+  "buildinConfigUpdatedAt": "2026-02-11T09:12:37.379Z",
   "latestVersion": "1.26.2"
 }
