@@ -46,12 +46,11 @@ jobs:
       - name: generate cn config
         run: make generatecnconfig target=repo/dist/default_config.json
       - name: Publish CN Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.IMMERSIVE_CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.IMMERSIVE_CLOUDFLARE_ACCOUNT_ID }}
-          projectName: cn-config
-          directory: repo/dist
+          command: pages deploy ./repo/dist --project-name=cn-config
       - name: build worker
         run: cd repo && make build
       - name: update worker name
