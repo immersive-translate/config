@@ -41,6 +41,13 @@ jobs:
           echo "::set-output name=version::$(echo $content | jq -r '.version')"
       - name: generate cn config
         run: make generatecnconfig target=repo/dist/default_config.json
+      - name: Publish CN Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.IMMERSIVE_CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.IMMERSIVE_CLOUDFLARE_ACCOUNT_ID }}
+          projectName: cn-config
+          directory: repo/dist
       - name: build worker
         run: cd repo && make build
       - name: update worker name
@@ -52,4 +59,3 @@ jobs:
           accountId: ${{secrets.IMMERSIVE_CLOUDFLARE_ACCOUNT_ID}}
           workingDirectory: ./repo/
           command: deploy ./.cache/worker.js --env prod
-
