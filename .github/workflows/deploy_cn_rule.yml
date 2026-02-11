@@ -8,6 +8,10 @@ on:
       - main
     paths:
       - 'dist/**'
+      - '.github/workflows/deploy_cn_rule.yml'
+      - "wrangler.toml"
+      - "worker.template.js"
+      - "Makefile"
   workflow_dispatch:
     inputs:
       branch:
