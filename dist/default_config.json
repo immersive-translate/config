@@ -146,7 +146,7 @@
     "web3",
     "bilingual-mix"
   ],
-  "interval": 3600000,
+  "interval": 21600000,
   "beta": false,
   "cache": true,
   "enableAiAssistant": true,
@@ -21328,6 +21328,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-09T12:38:49.479Z",
+  "buildinConfigUpdatedAt": "2026-02-11T06:59:44.477Z",
   "latestVersion": "1.26.2"
 }
