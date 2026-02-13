@@ -6238,7 +6238,10 @@
         "https://github.com/signup",
         "https://github.com/login",
         "https://github.com/marketplace",
-        "https://github.com/github-copilot*"
+        "https://github.com/github-copilot*",
+        "https://github.com/collections*",
+        "https://github.com/resources/events*",
+        "https://github.com/pricing*"
       ],
       "mutationExcludeSelectors": [
         ".react-blob-sticky-header *"
@@ -6313,7 +6316,8 @@
         "[class='col-lg-9 position-relative pr-lg-5 mb-6 mr-lg-5']",
         "[class*='IssueIndexPage-module__middlePaneGrid'] div[class='p-4 text-center rounded-2 border color-border-muted']",
         "[class*='ModelsPlaygroundRoute-module__playgroundContainer']",
-        ".markdown-body"
+        ".markdown-body",
+        "article [class='f6 color-fg-muted mt-1']"
       ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
@@ -6676,6 +6680,54 @@
         ".chat-line__no-background span[aria-hidden=true]",
         "[data-a-target=animated-channel-viewers-count],.live-time"
       ]
+    },
+    {
+      "id": "yotube-embed",
+      "matches": "https://www.youtube.com/embed*",
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 1,
+      "subtitleRule.add": {
+        "type": "youtube",
+        "hookType": "xhr_response",
+        "allowFreeUserLive": true,
+        "subtitleUrlRegExp": "(/api/timedtext|videoplayback\\?expire.*text)",
+        "translateSelectors": [
+          ".caption-window",
+          ".caption-visual-line"
+        ],
+        "videoPlayerSelector": ".html5-video-player.playing-mode,.html5-video-player.paused-mode",
+        "loadingContainerSelector": ".ytp-caption-window-container",
+        "videoADSelector": ".ytp-ad-player-overlay",
+        "subtitleButtonSelector": ".html5-video-player.playing-mode .ytp-subtitles-button,.html5-video-player.paused-mode .ytp-subtitles-button",
+        "languageSelector": ".ytp-menuitem-label",
+        "injectedCss": [
+          "#shorts-player .ytp-caption-window-bottom {top: 2%; bottom: unset!important;} #immersive-translate-quick-button-container,.immersive-translate-quick-button-container {font-size: 12px;z-index:1001;}"
+        ],
+        "quickButtonRule": {
+          "appendSelector": ".ytp-chrome-controls",
+          "insertBeforeSelector": ".ytp-right-controls"
+        },
+        "videoSelector": ".html5-video-player.playing-mode video,.html5-video-player.paused-mode video",
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ],
+        "attachRule": {
+          "appendSelector": ".html5-video-player.playing-mode,.html5-video-player.paused-mode",
+          "showSupportTips": false,
+          "injectedCSS": [
+            ".imt-caption-container {z-index:40;}",
+            ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}",
+            ".imt-caption-window {width: 90%;}"
+          ],
+          "injectedGlobalCSS": [
+            ".caption-window {display: none;} ",
+            "#shorts-player #immersive-translate-caption-window { height: 20%;}",
+            ".html5-video-player:not(.ytp-autohide) #immersive-translate-caption-window {bottom: 60px;}"
+          ]
+        },
+        "allowTempEnableSubtitle": true
+      }
     },
     {
       "id": "youtube",
@@ -20976,6 +21028,7 @@
     {
       "id": "preSites",
       "matches": [
+        "mail.163.com",
         "mail.jabber.org",
         "antirez.com",
         "patchwork.kernel.org",
@@ -21331,6 +21384,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-11T12:28:28.000Z",
+  "buildinConfigUpdatedAt": "2026-02-13T06:26:59.306Z",
   "latestVersion": "1.26.4"
 }
