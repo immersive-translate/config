@@ -6113,7 +6113,8 @@
         "#response-container_streaming",
         "search-telemetry-tracker > a.text-neutral-content-strong",
         "span[data-testid='guides-title']",
-        ".rendererd-rtjson > p"
+        ".rendererd-rtjson > p",
+        "community-recommendation p"
       ],
       "excludeSelectors": [
         ".text-neutral-content-weak"
@@ -6483,7 +6484,8 @@
         ".fb_content.clearfix",
         "[role='main']",
         "[role='region']",
-        "[role='presentation']"
+        "[role='presentation']",
+        "form#platformDialogForm"
       ],
       "excludeSelectors.add": [
         "[data-ad-comet-preview=message] [role=button]",
@@ -7419,7 +7421,8 @@
         "[class^='embedTitle']",
         "[class^='embedDescription']",
         "[class^='promptContent']",
-        "li[class^='container'] > div[class^='header']"
+        "li[class^='container'] > div[class^='header']",
+        "li [id^='message-content']"
       ],
       "excludeSelectors.add": [
         "[class*='username']",
@@ -7430,12 +7433,12 @@
         "li[class^='card'] div[class^='message']",
         "[data-list-item-id^='forum-channel-list'] div[class^='headerText']"
       ],
-      "globalStyles": {
-        "main div[class^=headerText]": "max-height: unset;",
-        "main div[class^=message]": "max-height: unset;",
-        "main div[class^=text]": "max-height: unset;",
-        "h3[data-text-variant='heading-lg/semibold']": "-webkit-line-clamp: unset;line-height: unset;"
-      },
+      "injectedCss.add": [
+        "main div[class^=headerText],main div[class^=message],main div[class^=text] {max-height: unset;}",
+        "h3[data-text-variant='heading-lg/semibold'] {-webkit-line-clamp: unset;line-height: unset;}",
+        "[class*='guildDetails'] > [class*='description'] {-webkit-line-clamp: unset;}",
+        "li[data-item-role=item] * {max-height:unset;height:unset;}"
+      ],
       "enableRichTranslate": false,
       "detectParagraphLanguage": true,
       "wrapperPrefix": "<br />",
@@ -7457,7 +7460,6 @@
           "[class*='sidebarList']"
         ]
       },
-      "injectedCss": "[class*='guildDetails'] > [class*='description'] {-webkit-line-clamp: unset;}",
       "inputConfig.add": {
         "tutorialsSelectors": [
           "[class*='placeholder'][aria-hidden='true']"
@@ -8334,7 +8336,10 @@
       "id": "tripadvisor",
       "matches": "www.tripadvisor.com",
       "paragraphMinTextCount": 4,
-      "paragraphMinWordCount": 2
+      "paragraphMinWordCount": 2,
+      "injectedCss.add": [
+        ".ZTpaU,.alvrA {-webkit-line-clamp:unset;}"
+      ]
     },
     {
       "id": "kelbyone",
@@ -9596,13 +9601,6 @@
       }
     },
     {
-      "id": "perplexity.ai.2024recap",
-      "matches": "https://www.perplexity.ai/2024recap",
-      "selectors": [
-        "header"
-      ]
-    },
-    {
       "id": "react",
       "matches": "react.dev",
       "injectedCss": [
@@ -9629,19 +9627,6 @@
       "additionalStayOriginalSelectors": [
         "a.citation",
         "[class='my-md pb-xs pt-sm']"
-      ],
-      "selectors": [
-        ".prose",
-        ".my-md",
-        ".line-clamp-2",
-        ".line-clamp-1",
-        "[data-testid=thread-title]",
-        "[class='rounded-md duration-150']",
-        "[data-testid*=article-]",
-        "[data-framer-name='Content']",
-        "[data-framer-root]",
-        "[class='py-sm group flex cursor-pointer items-center justify-between']",
-        "[data-testid='answer-mode-tabs']"
       ],
       "additionalExcludeSelectors.add": [
         "[data-framer-name='Desktop']"
@@ -17644,8 +17629,7 @@
         ".ltx_bibliography",
         ".ltx_tag.ltx_tag_item",
         ".ltx_listing.ltx_lstlisting.ltx_listing",
-        ".ltx_eqn_table",
-        ".ltx_figure_panel"
+        ".ltx_eqn_table"
       ],
       "stayOriginalSelectors.add": [
         ".ltx_note"
@@ -18159,11 +18143,12 @@
     },
     {
       "id": "sp-codeSites",
-      "matches": [
-        "docs.wxwidgets.org"
-      ],
+      "matches": "docs.wxwidgets.org",
       "additionalExcludeSelectors.add": [
         ".doxygen-awesome-fragment-wrapper"
+      ],
+      "injectedCss.add": [
+        ".textblock p > font{display:flex;}"
       ]
     },
     {
@@ -19436,13 +19421,6 @@
       ]
     },
     {
-      "id": "m163",
-      "matches": "m.163.com",
-      "globalStyles": {
-        ".card-recommend-oneImg article h4": "max-height:unset;-webkit-line-clamp:unset;"
-      }
-    },
-    {
       "id": "curseforge",
       "matches": "www.curseforge.com",
       "globalStyles": {
@@ -20037,7 +20015,8 @@
       "additionalExcludeSelectors.remove": [
         ".notranslate",
         "[translate=no]"
-      ]
+      ],
+      "richMoreWordPercent": 0.5
     },
     {
       "id": "doc2x",
@@ -20194,7 +20173,8 @@
         "kalshi.com",
         "engoo.com",
         "puchipurabu.com",
-        "www.wildberries.ru"
+        "www.wildberries.ru",
+        "m.163.com"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
@@ -20217,7 +20197,8 @@
         "span.line-clamp-2 { -webkit-line-clamp: unset!important; max-height: unset!important;}",
         ".css-1yo0yr8 {-webkit-line-clamp: unset!important; max-height: unset!important;}",
         "[class*='line-clamp-'] {-webkit-line-clamp: unset!important; max-height: unset!important;}",
-        ".product-card__brand-wrap {white-space:unset;}"
+        ".product-card__brand-wrap {white-space:unset;}",
+        ".card-recommend-oneImg article h4 {max-height:unset;-webkit-line-clamp:unset;}"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -21314,6 +21295,10 @@
       "injectedCss.add": [
         "[class*='line-clamp-'] {-webkit-line-clamp: unset!important; max-height: unset!important;}"
       ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
       "preTranslateLimiter.add": {
         "header.enableTranslate": true
       },
@@ -21370,7 +21355,10 @@
         "www.zome.*",
         "electrical-engineering-portal.com",
         "www.surveymonkey.com",
-        "www.rawpixel.com"
+        "www.rawpixel.com",
+        "mail.cstnet.cn",
+        "mail.nudt.edu.cn",
+        "lkml.org"
       ],
       "selectorMatches": [
         "html[translate=no]"
@@ -21384,6 +21372,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-13T06:26:59.306Z",
+  "buildinConfigUpdatedAt": "2026-02-15T15:53:02.427Z",
   "latestVersion": "1.26.4"
 }
