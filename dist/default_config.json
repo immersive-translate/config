@@ -3163,8 +3163,7 @@
     },
     "skipBuildContainerSelectors": [
       "br",
-      "hr",
-      "em"
+      "hr"
     ],
     "buildContainerSelectors": [
       "td"
@@ -5263,15 +5262,6 @@
       ],
       "mutationExcludeSelectors.add": [
         "[class^='Body__PostBodyText']"
-      ]
-    },
-    {
-      "id": "git-scm",
-      "matches": [
-        "git-scm.com"
-      ],
-      "stayOriginalSelectors.add": [
-        "em"
       ]
     },
     {
@@ -8230,9 +8220,7 @@
         ".google-symbols"
       ],
       "selectors": [
-        "h1",
-        "h2",
-        "h3",
+        "h1,h2,h3",
         "article section",
         "[aria-hidden='false'] pre",
         "article p",
@@ -8242,7 +8230,8 @@
         "pre > div > div > div",
         "div > p > span",
         "section p,section span",
-        "a div span"
+        "a div span",
+        ".ppapp-form-info,.request-form"
       ],
       "excludeSelectors": [
         "[aria-label='Post Preview Reading Time']",
@@ -8395,25 +8384,29 @@
       "matches": "www.amazon.*",
       "paragraphMinTextCount": 4,
       "paragraphMinWordCount": 2,
-      "repeatTranslateNum": 5,
+      "repeatTranslateNum": 10,
+      "repeatTranslateNum.add_v.[1.25.3]": 0,
       "extraBlockSelectors.add": [
         ".a-size-small.a-link-normal.page-banner-link.a-nowrap"
       ],
-      "globalStyles": {
-        ".a-carousel-viewport": "height:unset;",
-        "[class*='clamp']": "max-height: unset;-webkit-line-clamp: unset;",
-        "[data-rows]": "max-height: unset;-webkit-line-clamp: unset;",
-        "[data-a-expander-name='review_text_read_more']": " max-height: unset;",
-        ".compact.primaryText.primaryTextOnly": "max-height: unset;-webkit-line-clamp: unset;",
-        ".format": "-webkit-line-clamp: unset;",
-        "[class*='textButton']": "-webkit-line-clamp: unset;"
-      },
+      "injectedCss.add": [
+        ".a-carousel-viewport {height:unset;}",
+        "[class*='clamp'] {max-height: unset!important;-webkit-line-clamp: unset!important;}",
+        "[data-rows] {max-height: unset!important;-webkit-line-clamp: unset!important;}",
+        "[data-a-expander-name='review_text_read_more'] { max-height: unset;}",
+        ".compact.primaryText.primaryTextOnly {max-height: unset;-webkit-line-clamp: unset;}",
+        ".format {-webkit-line-clamp: unset;}",
+        ".dcl-truncate,[class*='textButton'],span[data-a-max-rows] {max-height:unset!important;-webkit-line-clamp: unset!important;}"
+      ],
       "additionalExcludeSelectors.add": [
         "#navFooter",
         ".s-price-instructions-style",
         "[class*='-star ']",
         "[data-hook='acr-average-stars-rating-text']",
-        ".a-color-price"
+        ".a-color-price,.a-price",
+        "[data-testid='price-section']",
+        "[data-component='dui-badge']",
+        "#glow-ingress-block,#nav-link-accountList,#nav-orders,#nav-cart"
       ],
       "bodyRule.add": {
         "enable": false
@@ -8422,6 +8415,9 @@
         "type": "webvtt",
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "xhr"
+      },
+      "preTranslateLimiter.add": {
+        "header.enableTranslate": true
       }
     },
     {
@@ -19830,15 +19826,9 @@
       ],
       "skipBuildContainerSelectors.remove": [
         "em"
-      ]
-    },
-    {
-      "id": "models.com",
-      "matches": [
-        "models.com"
       ],
-      "skipBuildContainerSelectors.remove": [
-        "em"
+      "injectedCss.add": [
+        "[class*='line-clamp-'] {-webkit-line-clamp: unset!important; max-height: unset!important;}"
       ]
     },
     {
@@ -20174,11 +20164,14 @@
         "engoo.com",
         "puchipurabu.com",
         "www.wildberries.ru",
-        "m.163.com"
+        "m.163.com",
+        "discord.com/discovery*",
+        "zhenghedata.com"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
-        ".plugin-product-comment-collections"
+        ".plugin-product-comment-collections",
+        "[class*='line-clamp-']"
       ],
       "injectedCss.add": [
         ".side_list a,.title a,.tit,.item-title {-webkit-line-clamp:unset!important;height:unset!important;}",
@@ -20196,9 +20189,11 @@
         ".entry-card-title,.entry-card-snippet { -webkit-line-clamp: unset!important; max-height: unset!important;}",
         "span.line-clamp-2 { -webkit-line-clamp: unset!important; max-height: unset!important;}",
         ".css-1yo0yr8 {-webkit-line-clamp: unset!important; max-height: unset!important;}",
-        "[class*='line-clamp-'] {-webkit-line-clamp: unset!important; max-height: unset!important;}",
+        "[class*='line-clamp-'],[class*='line-clamp-'] font {white-space:unset!important;-webkit-line-clamp: unset!important; max-height: unset!important;}",
         ".product-card__brand-wrap {white-space:unset;}",
-        ".card-recommend-oneImg article h4 {max-height:unset;-webkit-line-clamp:unset;}"
+        ".card-recommend-oneImg article h4 {max-height:unset;-webkit-line-clamp:unset;}",
+        ".description__4cb8a {max-height:unset;-webkit-line-clamp:unset;}",
+        ".link-container {height:unset!important;-webkit-line-clamp:unset!important;}"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -20815,6 +20810,25 @@
       ]
     },
     {
+      "id": "murlok",
+      "matches": [
+        "murlok.io"
+      ],
+      "injectedCss.add": [
+        ".vi-media-object {display:flex;}"
+      ]
+    },
+    {
+      "id": "remove_em",
+      "matches": [
+        "git-scm.com",
+        "models.com"
+      ],
+      "stayOriginalSelectors.add": [
+        "em"
+      ]
+    },
+    {
       "id": "vercel",
       "matches": [
         "vercel.com"
@@ -21358,7 +21372,8 @@
         "www.rawpixel.com",
         "mail.cstnet.cn",
         "mail.nudt.edu.cn",
-        "lkml.org"
+        "lkml.org",
+        "mail.qq.com"
       ],
       "selectorMatches": [
         "html[translate=no]"
@@ -21372,6 +21387,6 @@
       ]
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-15T15:53:02.427Z",
+  "buildinConfigUpdatedAt": "2026-02-16T16:58:41.591Z",
   "latestVersion": "1.26.4"
 }
