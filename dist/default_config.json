@@ -5213,12 +5213,12 @@
       "id": "shopee",
       "matches": [
         "seller.shopee.*",
-        "shopee.tw"
+        "shopee.*"
+      ],
+      "injectedCss.add": [
+        ".WBVL_7,.ellipsis-content {-webkit-line-clamp:unset!important;}"
       ],
       "isTransformPreTagNewLine": true,
-      "globalStyles.add": {
-        ".ellipsis-content": "-webkit-line-clamp:unset;"
-      },
       "excludeTags.remove": [
         "PRE"
       ],
@@ -6028,7 +6028,8 @@
         "[role=main] .md-container",
         ".room-message-text",
         ".crosspost-title",
-        "div.md[id^=t3_]"
+        "div.md[id^=t3_]",
+        ".pt-md"
       ],
       "excludeSelectors.add": [
         "shreddit-comment-action-row",
@@ -7297,7 +7298,8 @@
         "#gs_opinion",
         ".gs_rt",
         ".gsh_csp",
-        ".gs_fma_wpr"
+        ".gs_fma_wpr",
+        "#gs_as_hp_main"
       ],
       "extraInlineSelectors": [
         "br"
@@ -9964,8 +9966,10 @@
       "likePreSelectors.add": [
         ".highLightSearchTarget",
         ".body-wrapper",
-        "body"
+        "body",
+        ".highLightSearchTarget"
       ],
+      "isTransformPreTagNewLine": true,
       "urlChangeDelay": 400,
       "preTranslateLimiter.add": {
         "header.enableTranslate": true,
@@ -16128,6 +16132,9 @@
         ".notranslate",
         "[translate=no]"
       ],
+      "preTranslateLimiter.add": {
+        "header.enableTranslate": true
+      },
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "domCheckTimeout": 1,
@@ -20026,16 +20033,6 @@
       ]
     },
     {
-      "id": "atcoder",
-      "matches": [
-        "atcoder.jp"
-      ],
-      "excludeSelectors.add": [
-        ".nav-tabs"
-      ],
-      "enableRichTranslate": false
-    },
-    {
       "id": "trade",
       "matches": [
         "axiom.trade"
@@ -21093,45 +21090,6 @@
       ]
     },
     {
-      "id": "NoPreSiteTranslate",
-      "matches": [
-        "kalimat.anghami.com",
-        "changewindows.org",
-        "scispace.com",
-        "ww2.mathworks.cn"
-      ],
-      "additionalExcludeSelectors.remove": [
-        ".notranslate",
-        "[translate=no]"
-      ],
-      "isTransformPreTagNewLine": true
-    },
-    {
-      "id": "bodyNoTranslateSite",
-      "selectorMatches": [
-        "body[translate=no]",
-        "body[class=notranslate]",
-        "body[class^='notranslate']",
-        "#app[translate=no]",
-        "#root[translate=no]",
-        "#editor-core-root [translate=no]",
-        ".notranslate.chrome",
-        ".main-content [translate=no]",
-        "body.notranslate.rtb-desktop",
-        ".survey-body .notranslate",
-        ".ProseMirror[translate=no]",
-        "#mainWrapper[translate=no]",
-        "body.notranslate"
-      ],
-      "excludeMatches": [
-        "eproofing.springer.com/*/journals/*"
-      ],
-      "additionalExcludeSelectors.remove": [
-        ".notranslate",
-        "[translate=no]"
-      ]
-    },
-    {
       "id": "otherMathSites",
       "selectorMatches": [
         "math",
@@ -21373,10 +21331,31 @@
         "mail.cstnet.cn",
         "mail.nudt.edu.cn",
         "lkml.org",
-        "mail.qq.com"
+        "mail.qq.com",
+        "kalimat.anghami.com",
+        "changewindows.org",
+        "scispace.com",
+        "ww2.mathworks.cn",
+        "paragon-eu.amazon.com"
+      ],
+      "excludeMatches": [
+        "eproofing.springer.com/*/journals/*"
       ],
       "selectorMatches": [
-        "html[translate=no]"
+        "html[translate=no]",
+        "body[translate=no]",
+        "body[class=notranslate]",
+        "body[class^='notranslate']",
+        "#app[translate=no]",
+        "#root[translate=no]",
+        "#editor-core-root [translate=no]",
+        ".notranslate.chrome",
+        ".main-content [translate=no]",
+        "body.notranslate.rtb-desktop",
+        ".survey-body .notranslate",
+        ".ProseMirror[translate=no]",
+        "#mainWrapper[translate=no]",
+        "body.notranslate"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -21384,9 +21363,10 @@
       ],
       "excludeTags.remove": [
         "PRE"
-      ]
+      ],
+      "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-16T16:58:41.591Z",
+  "buildinConfigUpdatedAt": "2026-02-18T13:01:36.972Z",
   "latestVersion": "1.26.4"
 }
