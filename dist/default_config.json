@@ -7413,8 +7413,7 @@
         "[class^='embedTitle']",
         "[class^='embedDescription']",
         "[class^='promptContent']",
-        "li[class^='container'] > div[class^='header']",
-        "li [id^='message-content']"
+        "li[class^='container'] > div[class^='header']"
       ],
       "excludeSelectors.add": [
         "[class*='username']",
@@ -7428,8 +7427,7 @@
       "injectedCss.add": [
         "main div[class^=headerText],main div[class^=message],main div[class^=text] {max-height: unset;}",
         "h3[data-text-variant='heading-lg/semibold'] {-webkit-line-clamp: unset;line-height: unset;}",
-        "[class*='guildDetails'] > [class*='description'] {-webkit-line-clamp: unset;}",
-        "li[data-item-role=item] * {max-height:unset;height:unset;}"
+        "[class*='guildDetails'] > [class*='description'] {-webkit-line-clamp: unset;}"
       ],
       "enableRichTranslate": false,
       "detectParagraphLanguage": true,
@@ -19836,7 +19834,8 @@
       ],
       "injectedCss.add": [
         "[class*='line-clamp-'] {-webkit-line-clamp: unset!important; max-height: unset!important;}"
-      ]
+      ],
+      "_comment": "适合仅译文模式翻译"
     },
     {
       "id": "sp.nexusmods",
@@ -21367,6 +21366,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-18T13:01:36.972Z",
+  "buildinConfigUpdatedAt": "2026-02-20T14:35:56.191Z",
   "latestVersion": "1.26.4"
 }
