@@ -11819,7 +11819,8 @@
     {
       "id": "hitomi",
       "matches": [
-        "hitomi.la"
+        "hitomi.la",
+        "hitomi.si"
       ],
       "imageRule.add": {
         "enable": true,
@@ -11827,7 +11828,8 @@
         "opImageType": "insertFirst",
         "imageSelectors": [
           "#comicImages img",
-          "#mobileImages img"
+          "#mobileImages img",
+          ".chapter-img > img"
         ],
         "imageStyle": "margin:auto;",
         "injectedCss": "#comicImages.fitVertical img {margin:auto;}",
@@ -11851,6 +11853,27 @@
         "imageStyle": "margin:auto;",
         "loadingSelectors": [
           "picture"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
+      "id": "www.comic-ryu.jp",
+      "matches": "www.comic-ryu.jp",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".swiper-slide img[class*='comic-img']"
+        ],
+        "loadingSelectors": [
+          "div"
         ],
         "platforms": [
           "chrome",
@@ -11941,7 +11964,8 @@
     {
       "id": "jmanga",
       "matches": [
-        "jmanga.*"
+        "jmanga.*",
+        "*.jmanga.*"
       ],
       "imageRule.add": {
         "enable": true,
@@ -18466,7 +18490,7 @@
       "id": "kaijimanga",
       "matches": [
         "w9.kaijimanga.com",
-        "rawfree.at"
+        "rawfree.*"
       ],
       "imageRule.add": {
         "enable": true,
@@ -20644,6 +20668,15 @@
       ]
     },
     {
+      "id": "solidity-by-example",
+      "matches": [
+        "solidity-by-example.org"
+      ],
+      "additionalStayOriginalSelectors.remove": [
+        ".code"
+      ]
+    },
+    {
       "id": "kemono.cr",
       "matches": [
         "kemono.cr"
@@ -21366,6 +21399,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-20T14:35:56.191Z",
+  "buildinConfigUpdatedAt": "2026-02-24T14:18:42.655Z",
   "latestVersion": "1.26.4"
 }
