@@ -743,32 +743,6 @@
   },
   "advanceMergeConfig": [
     {
-      "condition": "abTagNumber<10",
-      "advanceConfig": {
-        "translationServices.add_v.[1.12.9]": {
-          "siliconcloud.add_v.[1.12.9]": {
-            "model": "Qwen/Qwen3-8B",
-            "models": "Qwen/Qwen3-8B|THUDM/GLM-4-9B-0414|tencent/Hunyuan-MT-7B"
-          },
-          "siliconcloud-free.add_v.[1.12.9]": {
-            "model": "THUDM/GLM-4-9B-0414",
-            "models": "Qwen/Qwen3-8B|THUDM/GLM-4-9B-0414"
-          }
-        }
-      }
-    },
-    {
-      "condition": "abTagNumber<10",
-      "advanceConfig": {
-        "translationServices.add": {
-          "siliconcloud-free.add_v.[1.23.1]": {
-            "enableImtServe": true,
-            "apiUrl": ""
-          }
-        }
-      }
-    },
-    {
       "condition": "abTagNumber<2",
       "advanceConfig": {
         "translationServices.add": {
@@ -2627,6 +2601,12 @@
         "aiWriting",
         "selectionTranslation"
       ]
+    },
+    "siliconcloud-free.add_v.[1.23.1]": {
+      "model": "THUDM/GLM-4-9B-0414",
+      "models": "Qwen/Qwen3-8B|THUDM/GLM-4-9B-0414",
+      "enableImtServe": true,
+      "apiUrl": ""
     },
     "transmart-free": {
       "type": "transmart",
@@ -9924,7 +9904,6 @@
       "matches": [
         "orm.drizzle.team"
       ],
-      "urlChangeDelay": 400,
       "mutationConfig.add": {
         "enableUrlChange": true
       },
@@ -11721,6 +11700,25 @@
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
           "chrome"
+        ]
+      }
+    },
+    {
+      "id": "hentairox.com",
+      "matches": "hentairox.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".container img[class*='image']"
+        ],
+        "enableImageSrcObserver": true,
+        "platforms": [
+          "chrome",
+          "firefox",
+          "safari",
+          "imtAndroid",
+          "imtIOSNew"
         ]
       }
     },
@@ -13832,7 +13830,8 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          "#chapter-images-id img[class*=\"lazyloaded\"]"
+          "#chapter-images-id img[class*=\"lazyloaded\"]",
+          "img.vw-image"
         ],
         "platforms": [
           "chrome",
@@ -14064,7 +14063,8 @@
           ".pt-img img",
           ".slick-slide img",
           "img[id*='r-bannerImg-after_viewer']"
-        ]
+        ],
+        "enableImageSrcObserver": true
       },
       "platforms": [
         "chrome",
@@ -21399,6 +21399,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-24T14:18:42.655Z",
+  "buildinConfigUpdatedAt": "2026-02-25T12:05:03.108Z",
   "latestVersion": "1.26.4"
 }
