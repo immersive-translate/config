@@ -6330,7 +6330,9 @@
         ".js-suggested-changes-blob.diff-view",
         "h1[data-component=PH_Title] span[class*='issueNumberText']"
       ],
-      "extraBlockSelectors.add": [],
+      "extraBlockSelectors.add": [
+        "bdi"
+      ],
       "extraInlineSelectors": [
         "g-emoji",
         "a.anchor"
@@ -21399,6 +21401,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-26T06:25:04.867Z",
+  "buildinConfigUpdatedAt": "2026-02-26T15:17:36.761Z",
   "latestVersion": "1.26.4"
 }
