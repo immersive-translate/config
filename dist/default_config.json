@@ -20186,12 +20186,12 @@
         "www.wildberries.ru",
         "m.163.com",
         "discord.com/discovery*",
-        "zhenghedata.com"
+        "zhenghedata.com",
+        "yoeshop.ssweet.*"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
-        ".plugin-product-comment-collections",
-        "[class*='line-clamp-']"
+        ".plugin-product-comment-collections"
       ],
       "injectedCss.add": [
         ".side_list a,.title a,.tit,.item-title {-webkit-line-clamp:unset!important;height:unset!important;}",
@@ -21399,6 +21399,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-25T12:05:03.108Z",
+  "buildinConfigUpdatedAt": "2026-02-26T06:25:04.867Z",
   "latestVersion": "1.26.4"
 }
