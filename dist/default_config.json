@@ -12136,6 +12136,32 @@
       }
     },
     {
+      "id": "iframe-manga",
+      "matches": [
+        "freeonlinehd.site",
+        "weebrook.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".page-break img[class*='lazyloaded']"
+        ],
+        "inValidSrcRegex": [
+          "blank.gif"
+        ],
+        "injectedCss": ".imt-image-status {top:10%!important;}",
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "mangadistrict-manhwaclan",
       "matches": [
         "mangadistrict2.com",
@@ -12149,13 +12175,16 @@
         "toonclash.com",
         "rawdex.net",
         "reset-scans.org",
-        "cultivationmanhua.com"
+        "cultivationmanhua.com",
+        "freeonlinehd.site",
+        "weebrook.com"
       ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          ".page-break.no-gaps img"
+          ".page-break.no-gaps img",
+          ".page-break img[class*='lazyloaded']"
         ],
         "loadingSelectors": [
           "div"
@@ -21401,6 +21430,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-27T03:23:45.000Z",
+  "buildinConfigUpdatedAt": "2026-02-27T11:27:26.484Z",
   "latestVersion": "1.26.5"
 }
