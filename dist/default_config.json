@@ -2707,7 +2707,7 @@
       "provider": "pro",
       "model": "gemini-3-flash-preview",
       "proModel": "gemini-3-flash-preview",
-      "concurrencyLimit": 50,
+      "concurrencyLimit": 4,
       "visible": true,
       "limit": 10,
       "supportFeatures": [
@@ -2831,7 +2831,7 @@
       "provider": "pro",
       "limit": 5,
       "proModel": "gemini-3-pro-preview",
-      "concurrencyLimit": 50,
+      "concurrencyLimit": 4,
       "model": "gemini-3-pro-preview",
       "visible": true,
       "supportFeatures": [
@@ -21461,6 +21461,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-28T08:48:40.602Z",
+  "buildinConfigUpdatedAt": "2026-02-28T09:10:20.078Z",
   "latestVersion": "1.26.5"
 }
