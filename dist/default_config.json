@@ -2700,7 +2700,7 @@
       "disabledAt": ""
     },
     "gemini-pro": {
-      "name": "Gemini 3 Flash",
+      "name": "Gemini 3 Flash ⚠️",
       "type": "gemini",
       "group": "pro",
       "extends": "gemini",
@@ -2824,7 +2824,7 @@
       ]
     },
     "gemini-max": {
-      "name": "Gemini 3 Pro",
+      "name": "Gemini 3 Pro ⚠️",
       "type": "gemini",
       "group": "max",
       "extends": "gemini",
@@ -11090,6 +11090,37 @@
       }
     },
     {
+      "id": "marketsurge",
+      "matches": [
+        "marketsurge.investors.com"
+      ],
+      "excludeSelectors": [
+        ".jwplayer"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".jwplayer *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subtitleUrlRegExp": ".*\\.srt",
+        "loadingContainerSelector": ".jwplayer",
+        "quickButtonRule": {
+          "appendSelector": ".jw-reset.jw-button-container",
+          "insertBeforeSelector": ".jw-settings-submenu-button",
+          "injectCSS": ".imt-quick-subtitle-pop-content {z-index: 999999;}"
+        },
+        "attachRule": {
+          "appendSelector": ".jwplayer",
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
+          ],
+          "injectedGlobalCSS": [
+            ".jw-text-track-container {display:none!important;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "nmaart",
       "matches": "www.nma.art",
       "excludeSelectors": [
@@ -15001,7 +15032,7 @@
     {
       "id": "vk.com",
       "matches": [
-        "vk.com/video",
+        "vk.com/video*",
         "vkvideo.ru"
       ],
       "subtitleRule.add_v.[1.4.12]": {
@@ -21430,6 +21461,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-27T11:27:26.484Z",
+  "buildinConfigUpdatedAt": "2026-02-28T08:48:40.602Z",
   "latestVersion": "1.26.5"
 }
