@@ -950,20 +950,6 @@
       }
     },
     {
-      "condition": "abTagNumber==1 && interfaceLanguage==zh-CN && installedAtTimestamp>1770220800000",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "enable": true,
-          "totalLimit": {
-            "unregisteredSoft": 20,
-            "unregisteredHard": 30,
-            "soft": 40,
-            "hard": 50
-          }
-        }
-      }
-    },
-    {
       "condition": "abTagNumber==0 && interfaceLanguage!=zh-CN && installedAtTimestamp>1770220800000",
       "advanceConfig": {
         "translationUsageLimit.add": {
@@ -978,7 +964,49 @@
       }
     },
     {
-      "condition": "abTagNumber==1 && interfaceLanguage!=zh-CN && installedAtTimestamp>1770220800000",
+      "condition": "abTagNumber==1 && installedAtTimestamp>1770220800000",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "enable": true,
+          "totalLimit": {
+            "unregisteredSoft": 20,
+            "unregisteredHard": 30,
+            "soft": 40,
+            "hard": 50
+          }
+        }
+      }
+    },
+    {
+      "condition": "abTagNumber>1 && abTagNumber<4 && interfaceLanguage==zh-CN && installedAtTimestamp>1770220800000",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "enable": true,
+          "totalLimit": {
+            "unregisteredSoft": 20,
+            "unregisteredHard": 30,
+            "soft": 40,
+            "hard": 90
+          }
+        }
+      }
+    },
+    {
+      "condition": "abTagNumber>1 && abTagNumber<4 && interfaceLanguage!=zh-CN && installedAtTimestamp>1770220800000",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "enable": true,
+          "totalLimit": {
+            "unregisteredSoft": 20,
+            "unregisteredHard": 30,
+            "soft": 40,
+            "hard": 60
+          }
+        }
+      }
+    },
+    {
+      "condition": "abTagNumber>7 && abTagNumber<10 && installedAtTimestamp>1770220800000",
       "advanceConfig": {
         "translationUsageLimit.add": {
           "enable": true,
@@ -21461,6 +21489,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-02-28T09:10:20.078Z",
+  "buildinConfigUpdatedAt": "2026-03-02T03:28:29.426Z",
   "latestVersion": "1.26.5"
 }
