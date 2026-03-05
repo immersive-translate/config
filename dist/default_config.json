@@ -2596,7 +2596,7 @@
       "models": "glm-4-flash|glm-4-flash-250414",
       "provider": "custom",
       "modelsHidden": true,
-      "limit": 4,
+      "limit": 6,
       "retry": 2,
       "concurrencyLimit": 20,
       "apiUrl": "https://aigw1.immersivetranslate.com/api/paas/v4/chat/completions",
@@ -21498,6 +21498,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-04T08:31:07.362Z",
+  "buildinConfigUpdatedAt": "2026-03-05T08:02:01.955Z",
   "latestVersion": "1.26.6"
 }
