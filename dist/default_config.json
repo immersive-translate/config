@@ -1281,7 +1281,7 @@
       "limit": 1,
       "maxTextLengthPerRequest": 1200,
       "maxTextGroupLengthPerRequest": 5,
-      "translationTextSeparator": "\n%%\n",
+      "translationTextSeparator": "\n\n%%\n\n",
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true
     },
@@ -1294,7 +1294,7 @@
       "provider": "custom",
       "maxTextLengthPerRequest": 1200,
       "maxTextGroupLengthPerRequest": 5,
-      "translationTextSeparator": "\n%%\n",
+      "translationTextSeparator": "\n\n%%\n\n",
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "ignoreResRegexs": [
@@ -1608,7 +1608,7 @@
       "removeItemResRegexs": [
         "%%"
       ],
-      "translationTextSeparator": "\n%%\n",
+      "translationTextSeparator": "\n\n%%\n\n",
       "proRequestTimeout": 45000,
       "requestTimeout": 101000,
       "maxTokensRatio": 8,
@@ -1766,7 +1766,7 @@
     },
     "gemini.add_v.[1.3.4]": {
       "extends": "ai",
-      "translationTextSeparator": "\n%%\n",
+      "translationTextSeparator": "\n\n%%\n\n",
       "assistantId": "common",
       "provider": "pro"
     },
@@ -21498,6 +21498,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-05T08:02:01.955Z",
+  "buildinConfigUpdatedAt": "2026-03-06T09:06:20.340Z",
   "latestVersion": "1.26.6"
 }
