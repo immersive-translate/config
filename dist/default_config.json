@@ -5452,7 +5452,7 @@
         "[class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0']",
         "[data-testid='inlinePrompt']",
         "span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-n6v787 r-1cwl3u0']",
-        "[data-testid=primaryColumn] span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3']"
+        "[data-testid=primaryColumn] [class='css-175oi2r r-kzbkwu r-3pj75a'] > div > span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3']"
       ],
       "additionalExcludeSelectors.add": [
         "[aria-describedby][role=button]",
@@ -21498,6 +21498,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-06T09:12:32.515Z",
+  "buildinConfigUpdatedAt": "2026-03-06T10:23:50.423Z",
   "latestVersion": "1.26.6"
 }
