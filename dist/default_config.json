@@ -936,7 +936,7 @@
       }
     },
     {
-      "condition": "abTagNumber==0 && interfaceLanguage==zh-CN && installedAtTimestamp>1770220800000",
+      "condition": "abTagNumber==0 && interfaceLanguage==zh-CN",
       "advanceConfig": {
         "translationUsageLimit.add": {
           "enable": true,
@@ -950,7 +950,7 @@
       }
     },
     {
-      "condition": "abTagNumber==0 && interfaceLanguage!=zh-CN && installedAtTimestamp>1770220800000",
+      "condition": "abTagNumber==0 && interfaceLanguage!=zh-CN",
       "advanceConfig": {
         "translationUsageLimit.add": {
           "enable": true,
@@ -3084,6 +3084,16 @@
   ],
   "generalRule": {
     "_comment": "",
+    "advanceMergeConfig": [
+      {
+        "condition": "translationService == google-free || translationService == bing-free || inputTranslationService == google-free || inputTranslationService == bing-free || mouseHoverTranslationService == google-free || mouseHoverTranslationService == bing-free || clientImageTranslationService == google-free || clientImageTranslationService == bing-free || subtitleTranslateService == google-free || subtitleTranslateService == bing-free",
+        "advanceConfig": {
+          "translationUsageLimit.add": {
+            "enable": false
+          }
+        }
+      }
+    ],
     "parseImmediateTypes": [
       "hotkey-hover"
     ],
@@ -12274,17 +12284,25 @@
     },
     {
       "id": "wn01",
-      "matches": "www.wn01.cc",
+      "matches": "www.wn01.*",
       "imageRule.add": {
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          "#img_list img"
+          "#img_list img",
+          "#content img[id*=img]"
         ],
         "loadingSelectors": [
           "div"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
       }
     },
     {
@@ -12323,6 +12341,24 @@
         "firefox",
         "safari",
         "imtIOSNew"
+      ]
+    },
+    {
+      "id": "zerobywai",
+      "matches": "www.zerobywai.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#reader-stage img.loaded"
+        ]
+      },
+      "platforms": [
+        "chrome",
+        "firefox",
+        "safari",
+        "imtIOSNew",
+        "imtAndroid"
       ]
     },
     {
@@ -21498,6 +21534,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-09T07:50:57.540Z",
+  "buildinConfigUpdatedAt": "2026-03-09T09:32:58.690Z",
   "latestVersion": "1.26.6"
 }
