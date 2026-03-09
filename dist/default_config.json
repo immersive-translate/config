@@ -936,7 +936,7 @@
       }
     },
     {
-      "condition": "abTagNumber==0 && interfaceLanguage==zh-CN",
+      "condition": "abTagNumber==0 && interfaceLanguage==zh-CN && installedAtTimestamp>1770220800000",
       "advanceConfig": {
         "translationUsageLimit.add": {
           "enable": true,
@@ -950,7 +950,7 @@
       }
     },
     {
-      "condition": "abTagNumber==0 && interfaceLanguage!=zh-CN",
+      "condition": "abTagNumber==0 && interfaceLanguage!=zh-CN && installedAtTimestamp>1770220800000",
       "advanceConfig": {
         "translationUsageLimit.add": {
           "enable": true,
@@ -21498,6 +21498,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-06T16:34:31.226Z",
+  "buildinConfigUpdatedAt": "2026-03-09T07:50:57.540Z",
   "latestVersion": "1.26.6"
 }
