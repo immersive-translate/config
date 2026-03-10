@@ -5852,6 +5852,25 @@
       ]
     },
     {
+      "id": "tv.apple",
+      "matches": "tv.apple.com",
+      "subtitleRule.add": {
+        "type": "text_track_dynamic",
+        "videoSelector": "video",
+        "videoPlayerSelector": "video",
+        "quickButtonRule": {
+          "appendSelector": ".video-player__controls",
+          "injectCSS": ".imt-quick-subtitle-pop-content {max-height: 150px !important; right: 50px !important;}"
+        },
+        "attachRule": {
+          "appendSelector": ".video-player__video-container",
+          "injectedCSS": [
+            ".imt-caption-container {bottom: 15%;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "chatter.hume.ai",
       "matches": "chatter.hume.ai",
       "extraInlineSelectors.add": [
@@ -16346,19 +16365,6 @@
       }
     },
     {
-      "id": "tv.apple",
-      "matches": "https://tv.apple.com/",
-      "subtitleRule.add": {
-        "type": "text_track_dynamic",
-        "videoSelector": "video",
-        "videoPlayerSelector": "video",
-        "quickButtonRule": {
-          "appendSelector": ".video-player__controls",
-          "injectCSS": ".imt-quick-subtitle-pop-content {max-height: 150px !important; right: 50px !important;}"
-        }
-      }
-    },
-    {
       "id": "threejs-journey",
       "matches": "threejs-journey.com",
       "excludeSelectors.add": [
@@ -21547,6 +21553,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-10T07:09:49.562Z",
+  "buildinConfigUpdatedAt": "2026-03-10T09:39:23.998Z",
   "latestVersion": "1.26.6"
 }
