@@ -2725,9 +2725,9 @@
       "provider": "pro",
       "model": "gemini-3-flash-preview",
       "proModel": "gemini-3-flash-preview",
-      "concurrencyLimit": 4,
-      "visible": true,
+      "concurrencyLimit": 10,
       "limit": 10,
+      "visible": true,
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
@@ -2847,9 +2847,9 @@
       "group": "max",
       "extends": "gemini",
       "provider": "pro",
+      "concurrencyLimit": 10,
       "limit": 5,
       "proModel": "gemini-3-pro-preview",
-      "concurrencyLimit": 4,
       "model": "gemini-3-pro-preview",
       "visible": true,
       "supportFeatures": [
@@ -21553,6 +21553,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-10T09:39:23.998Z",
+  "buildinConfigUpdatedAt": "2026-03-10T11:58:12.860Z",
   "latestVersion": "1.26.6"
 }
