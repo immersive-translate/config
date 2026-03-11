@@ -373,6 +373,7 @@
     "https://www.ganganonline.com[GANGAN ONLINE][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://battwo.com[BATOTO][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://asuracomic.net[Asura Scans][chrome,firefox,safari,imtIOSNew]",
+    "https://asurascanz.com[Asura Scans][chrome,safari,imtIOSNew]",
     "https://allmanga.to[All Manga][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://manhwaclan.com[Manhwaclan][chrome,firefox,safari,imtIOSNew]",
     "https://www.corocoro.jp[CoroCoro][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
@@ -12581,6 +12582,23 @@
       }
     },
     {
+      "id": "asurascanz",
+      "matches": "asurascanz.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#readerarea img[loading='lazy'][alt*=' - PAGE ']"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "lezhinus",
       "matches": "www.lezhinus.com",
       "imageRule.add.[1.13.8]": {
@@ -21553,6 +21571,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-11T10:17:13.356Z",
+  "buildinConfigUpdatedAt": "2026-03-11T15:34:45.168Z",
   "latestVersion": "1.26.6"
 }
