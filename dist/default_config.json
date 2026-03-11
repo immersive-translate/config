@@ -2718,7 +2718,7 @@
       "disabledAt": ""
     },
     "gemini-pro": {
-      "name": "Gemini 3 Flash ⚠️",
+      "name": "Gemini 3 Flash",
       "type": "gemini",
       "group": "pro",
       "extends": "gemini",
@@ -2842,7 +2842,7 @@
       ]
     },
     "gemini-max": {
-      "name": "Gemini 3 Pro ⚠️",
+      "name": "Gemini 3 Pro",
       "type": "gemini",
       "group": "max",
       "extends": "gemini",
@@ -21553,6 +21553,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-10T11:58:12.860Z",
+  "buildinConfigUpdatedAt": "2026-03-11T10:17:13.356Z",
   "latestVersion": "1.26.6"
 }
