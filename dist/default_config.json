@@ -19513,6 +19513,27 @@
       }
     },
     {
+      "id": "t1.xtoon365.com",
+      "matches": "t1.xtoon365.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "img.lazy-read"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ],
+        "inValidSrcRegex": [
+          "/bg_detail.png"
+        ]
+      }
+    },
+    {
       "id": "02.ikiru.wtf",
       "matches": "02.ikiru.wtf",
       "imageRule.add": {
@@ -21572,6 +21593,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-12T05:49:01.631Z",
+  "buildinConfigUpdatedAt": "2026-03-12T15:21:57.803Z",
   "latestVersion": "1.26.6"
 }
