@@ -6735,8 +6735,9 @@
           "#shorts-player .ytp-caption-window-bottom {top: 2%; bottom: unset!important;} #immersive-translate-quick-button-container,.immersive-translate-quick-button-container {font-size: 12px;z-index:1001;}"
         ],
         "quickButtonRule": {
-          "appendSelector": ".ytp-chrome-controls",
-          "insertBeforeSelector": ".ytp-right-controls"
+          "appendSelector": ".ytp-right-controls",
+          "insertBeforeSelector": ".ytp-subtitles-button",
+          "injectedGlobalCSS": ".immersive-translate-quick-button-container {display: inline-block; vertical-align: top; height: 42px;}"
         },
         "videoSelector": ".html5-video-player.playing-mode video,.html5-video-player.paused-mode video",
         "rtlInjectedCss": [
@@ -21571,6 +21572,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-11T15:34:45.168Z",
+  "buildinConfigUpdatedAt": "2026-03-12T05:49:01.631Z",
   "latestVersion": "1.26.6"
 }
