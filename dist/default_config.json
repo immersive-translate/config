@@ -5571,6 +5571,54 @@
           "mutationChangeDelay": 1000
         }
       },
+      "shareCardRule": {
+        "type": "x",
+        "enable": true,
+        "tweetContainerSelector": "article[data-testid='tweet']",
+        "expandTextSelector": "[data-testid='tweet-text-show-more-link']",
+        "shareButtonSelectors": [
+          "article[data-testid='tweet'] button[aria-haspopup='menu']"
+        ],
+        "shareButtonExcludeSelectors": [
+          "button[data-testid='caret']"
+        ],
+        "statusLinkSelectors": [
+          "a[href*='/status/']"
+        ],
+        "textSelectors": [
+          "[data-testid='tweetText']"
+        ],
+        "excludeSelectors": [
+          "[role='link']"
+        ],
+        "paragraphRootSelector": "[data-imt-p='1']",
+        "nameSelectors": [
+          "[data-testid='User-Name'] span"
+        ],
+        "handleSelectors": [
+          "[data-testid='User-Name'] a[href^='/']",
+          "[data-testid='User-Name'] span"
+        ],
+        "avatarSelectors": [
+          "[data-testid='Tweet-User-Avatar'] img",
+          "img[src*='profile_images']"
+        ],
+        "mediaImageSelectors": [
+          "[data-testid='tweetPhoto'] img",
+          "img[src*='twimg.com/media']"
+        ],
+        "timeSelector": "time",
+        "quickEntryRules": [
+          {
+            "appendSelector": "div[data-testid='Dropdown']",
+            "insertBeforeSelector": "[role='menuitem']:nth-child(2)"
+          },
+          {
+            "appendSelector": "div[data-testid='sheetDialog']",
+            "insertBeforeSelector": "[role='menuitem']:nth-child(2)"
+          }
+        ]
+      },
       "mutationConfig.add": {
         "consumeTimeout": 1000
       },
@@ -21593,6 +21641,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-12T15:21:57.803Z",
+  "buildinConfigUpdatedAt": "2026-03-16T07:50:51.435Z",
   "latestVersion": "1.26.6"
 }
