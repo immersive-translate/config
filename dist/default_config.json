@@ -1661,7 +1661,8 @@
         },
         {
           "models": [
-            "gpt-5.1$"
+            "gpt-5.1$",
+            "gpt-5.4$"
           ],
           "bodyConfigs": {
             "reasoning_effort": "none",
@@ -1709,7 +1710,7 @@
       ]
     },
     "gemini": {
-      "proModel": "gemini-2.0-flash",
+      "proModel": "gemini-3-flash-preview",
       "model": "gemini-2.5-flash",
       "models": "gemini-3-pro-preview|gemini-3-flash-preview|gemini-2.5-flash|gemini-2.5-flash-lite|gemini-2.5-pro|gemini-2.0-flash|gemini-2.0-flash-lite",
       "visible": true,
@@ -1878,6 +1879,8 @@
         },
         {
           "models": [
+            "gemini-3.1-pro",
+            "gemini-3.1-pro-preview",
             "gemini-3-pro",
             "gemini-3-pro-preview"
           ],
@@ -1941,7 +1944,7 @@
         "anthropic-dangerous-direct-browser-access": "true"
       },
       "assistantId": "common",
-      "proModel": "claude-3-5-haiku-20241022",
+      "proModel": "claude-haiku-4.5-20251001",
       "proLimit": 10,
       "temperature": 0,
       "enableRichTranslate": true,
@@ -1955,7 +1958,7 @@
     "openai": {
       "model": "gpt-4o-mini",
       "models": "gpt-5.1|gpt-5|gpt-5-chat|gpt-5-mini|gpt-5-nano|gpt-4.1-mini|gpt-4o-mini|gpt-4o|gpt-4.1|gpt-4.1-nano|gpt-4.5-preview",
-      "proModel": "gpt-4.1-mini",
+      "proModel": "gpt-5-mini",
       "visible": true,
       "placeholderDelimiters": [
         "{",
@@ -2527,6 +2530,7 @@
       "model": "GLM-4.7",
       "proModel": "GLM-4.7",
       "concurrencyLimit": 50,
+      "proLimit": 20,
       "defaultVisible": true,
       "supportFeatures": [
         "aiWriting",
@@ -2651,7 +2655,7 @@
       "group": "pro",
       "proModel": "gpt-5-mini",
       "concurrencyLimit": 50,
-      "model": "gpt-4.1-mini",
+      "model": "gpt-5-mini",
       "extends": "openai",
       "provider": "pro",
       "visible": true,
@@ -2671,6 +2675,7 @@
       "group": "pro",
       "extends": "claude",
       "proModel": "claude-haiku-4.5-20251001",
+      "model": "claude-haiku-4.5-20251001",
       "concurrencyLimit": 50,
       "provider": "pro",
       "visible": true,
@@ -2688,7 +2693,7 @@
       "concurrencyLimit": 50,
       "provider": "pro",
       "visible": true,
-      "limit": 10,
+      "limit": 20,
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
@@ -2702,9 +2707,9 @@
       "provider": "pro",
       "model": "hunyuan-2.0-instruct-20251111",
       "proModel": "hunyuan-2.0-instruct-20251111",
-      "concurrencyLimit": 50,
+      "concurrencyLimit": 20,
       "visible": true,
-      "limit": 5,
+      "limit": 10,
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequestForSubtitle": 5,
@@ -2726,7 +2731,7 @@
       "provider": "pro",
       "model": "gemini-3-flash-preview",
       "proModel": "gemini-3-flash-preview",
-      "concurrencyLimit": 10,
+      "concurrencyLimit": 20,
       "limit": 10,
       "visible": true,
       "supportFeatures": [
@@ -2760,15 +2765,15 @@
     },
     "qwen-pro": {
       "extends": "qwen",
-      "name": "Qwen Plus",
+      "name": "Qwen 3.5 Plus",
       "provider": "pro",
       "type": "custom-ai",
       "visible": true,
-      "model": "qwen-plus-latest",
-      "proModel": "qwen-plus-latest",
+      "model": "qwen3.5-plus",
+      "proModel": "qwen3.5-plus",
       "concurrencyLimit": 50,
       "defaultVisible": true,
-      "limit": 10,
+      "limit": 20,
       "group": "pro",
       "disabledAt": "2025-01-01",
       "supportFeatures": [
@@ -2812,15 +2817,15 @@
       "limit": 8
     },
     "openai-max": {
-      "name": "GPT-5.2",
+      "name": "GPT-5.4",
       "type": "openai",
       "group": "max",
       "extends": "openai",
       "provider": "pro",
-      "proModel": "gpt-5.2-chat",
+      "proModel": "gpt-5.4",
       "concurrencyLimit": 50,
-      "model": "gpt-5.2-chat",
-      "limit": 5,
+      "model": "gpt-5.4",
+      "limit": 10,
       "visible": true,
       "supportFeatures": [
         "aiWriting",
@@ -2828,13 +2833,13 @@
       ]
     },
     "claude-max": {
-      "name": "Claude 4.5 Sonnet",
+      "name": "Claude Sonnet 4.6",
       "type": "claude",
       "group": "max",
       "extends": "claude",
       "limit": 6,
       "provider": "pro",
-      "proModel": "claude-sonnet-4.5-20250929",
+      "proModel": "claude-sonnet-4-6",
       "concurrencyLimit": 50,
       "visible": true,
       "supportFeatures": [
@@ -2843,15 +2848,15 @@
       ]
     },
     "gemini-max": {
-      "name": "Gemini 3 Pro",
+      "name": "Gemini 3.1 Pro",
       "type": "gemini",
       "group": "max",
       "extends": "gemini",
       "provider": "pro",
       "concurrencyLimit": 10,
       "limit": 5,
-      "proModel": "gemini-3-pro-preview",
-      "model": "gemini-3-pro-preview",
+      "proModel": "gemini-3.1-pro-preview",
+      "model": "gemini-3.1-pro-preview",
       "visible": true,
       "supportFeatures": [
         "aiWriting",
@@ -2882,13 +2887,13 @@
     },
     "kimi-max": {
       "extends": "kimi",
-      "name": "Kimi K2",
+      "name": "Kimi K2.5",
       "provider": "pro",
       "type": "custom-ai",
       "limit": 5,
       "visible": true,
-      "model": "Kimi-K2-0905",
-      "proModel": "Kimi-K2-0905",
+      "model": "kimi-k2.5",
+      "proModel": "kimi-k2.5",
       "concurrencyLimit": 50,
       "defaultVisible": true,
       "group": "max",
@@ -3397,6 +3402,8 @@
           },
           {
             "models": [
+              "gemini-3.1-pro",
+              "gemini-3.1-pro-preview",
               "gemini-3-pro",
               "gemini-3-pro-preview"
             ],
@@ -3674,6 +3681,8 @@
           },
           {
             "models": [
+              "gemini-3.1-pro",
+              "gemini-3.1-pro-preview",
               "gemini-3-pro",
               "gemini-3-pro-preview"
             ],
@@ -3715,7 +3724,8 @@
               "gpt-5-mini",
               "gpt-5-nano",
               "gpt-5.1$",
-              "gpt-5.2-chat"
+              "gpt-5.2-chat",
+              "gpt-5.4"
             ],
             "bodyConfigs": {
               "reasoning_effort": "minimal",
@@ -21641,6 +21651,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-16T07:50:51.435Z",
+  "buildinConfigUpdatedAt": "2026-03-18T07:47:46.590Z",
   "latestVersion": "1.26.6"
 }
