@@ -965,7 +965,7 @@
       }
     },
     {
-      "condition": "abTagNumber==1 && installedAtTimestamp>1770220800000",
+      "condition": "abTagNumber==1",
       "advanceConfig": {
         "translationUsageLimit.add": {
           "enable": true,
@@ -979,7 +979,7 @@
       }
     },
     {
-      "condition": "abTagNumber>1 && abTagNumber<6 && interfaceLanguage==zh-CN && installedAtTimestamp>1770220800000",
+      "condition": "abTagNumber>1 && abTagNumber<6 && interfaceLanguage==zh-CN",
       "advanceConfig": {
         "translationUsageLimit.add": {
           "enable": true,
@@ -993,7 +993,7 @@
       }
     },
     {
-      "condition": "abTagNumber>1 && abTagNumber<6 && interfaceLanguage!=zh-CN && installedAtTimestamp>1770220800000",
+      "condition": "abTagNumber>1 && abTagNumber<6 && interfaceLanguage!=zh-CN",
       "advanceConfig": {
         "translationUsageLimit.add": {
           "enable": true,
@@ -1007,7 +1007,7 @@
       }
     },
     {
-      "condition": "abTagNumber>5 && abTagNumber<10 && installedAtTimestamp>1770220800000",
+      "condition": "abTagNumber>5 && abTagNumber<10",
       "advanceConfig": {
         "translationUsageLimit.add": {
           "enable": true,
@@ -21651,6 +21651,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-19T10:05:11.695Z",
+  "buildinConfigUpdatedAt": "2026-03-20T03:16:08.896Z",
   "latestVersion": "1.26.6"
 }
