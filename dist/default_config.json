@@ -5661,12 +5661,13 @@
           "appendSelector": "video<-parent",
           "isDelay": true,
           "injectedCSS": [
-            ".imt-caption-container {z-index:0;}",
             ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}",
             ".imt-caption-window {width: 90%;}"
           ],
           "injectedGlobalCSS": [
             ".r-1peqgm7 #immersive-translate-caption-window {bottom: 60px;}",
+            "[data-testid=\"videoComponent\"]:hover #immersive-translate-caption-window {bottom: 60px;}",
+            "[data-testid=\"videoComponent\"]:focus-within #immersive-translate-caption-window {bottom: 60px;}",
             "[data-testid=\"modalContainer\"] #immersive-translate-caption-window {bottom: unset !important; height: 180px !important;}"
           ]
         },
@@ -21738,6 +21739,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-23T03:45:34.115Z",
+  "buildinConfigUpdatedAt": "2026-03-23T11:01:20.649Z",
   "latestVersion": "1.26.6"
 }
