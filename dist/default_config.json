@@ -11865,6 +11865,51 @@
       }
     },
     {
+      "id": "rawlazy",
+      "matches": [
+        "rawlazy.io"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".z_content img"
+        ],
+        "inValidSrcRegex": [
+          "load.gif"
+        ],
+        "enableImageSrcObserver": true,
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
+      "id": "utoon",
+      "matches": [
+        "utoon.net"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".reading-content .page-break img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOS",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "klz9",
       "matches": [
         "klz9.com"
@@ -21693,6 +21738,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-23T03:27:11.116Z",
+  "buildinConfigUpdatedAt": "2026-03-23T03:45:34.115Z",
   "latestVersion": "1.26.6"
 }
