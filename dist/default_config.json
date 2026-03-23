@@ -5362,7 +5362,8 @@
       "paragraphMinTextCount": 4,
       "injectedCss.add": [
         ".immersive-translate-target-translation-block-wrapper { display: block !important; }",
-        ".mwe-popups-extract {max-height:unset!important;height:unset!important;}"
+        ".mwe-popups-extract {max-height:unset!important;height:unset!important;}",
+        ".immersive-translate-target-wrapper {content-visibility:auto;}"
       ],
       "excludeSelectors": [
         ".mw-editsection",
@@ -6020,6 +6021,9 @@
         "a.hn-item-title",
         ".hn-comment-text",
         ".hn-story-title"
+      ],
+      "injectedCss.add": [
+        ".immersive-translate-target-wrapper {content-visibility:auto;}"
       ],
       "excludeSelectors": [
         ".reply",
@@ -8641,7 +8645,8 @@
       },
       "injectedCss.add": [
         "h2 {font-size:unset;}",
-        ".u-clamp-2-lines {-webkit-line-clamp:unset!important;}"
+        ".u-clamp-2-lines {-webkit-line-clamp:unset!important;}",
+        ".immersive-translate-target-wrapper {content-visibility:auto;}"
       ],
       "enableRichTranslate": false,
       "enableRichTranslate.add_v.[1.9.7]": true,
@@ -9304,6 +9309,9 @@
         "#author-information-content",
         "#article-info-section",
         ".pdf-content"
+      ],
+      "injectedCss.add": [
+        ".immersive-translate-target-wrapper {content-visibility:auto;}"
       ],
       "preTranslateLimiter.add_v.[1.12.1]": {
         "header.enableTranslate": true
@@ -10741,7 +10749,8 @@
         "#Scholarscope_HighlightOrigin > p font,#Scholarscope_HighlightContent > p font {display: inline!important;}",
         "#Scholarscope_HighlightOrigin > p font br,#Scholarscope_HighlightContent > p font br {display: none!important;}",
         ".title-translate {display:block;}",
-        ".immersive-translate-target-inner br{display:none;}"
+        ".immersive-translate-target-inner br{display:none;}",
+        ".immersive-translate-target-wrapper {content-visibility:auto;}"
       ],
       "preTranslateLimiter.add_v.[1.12.1]": {
         "header.enableTranslate": true
@@ -21739,6 +21748,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-23T11:01:20.649Z",
+  "buildinConfigUpdatedAt": "2026-03-23T11:16:51.495Z",
   "latestVersion": "1.26.6"
 }
