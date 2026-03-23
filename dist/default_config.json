@@ -11845,6 +11845,26 @@
       }
     },
     {
+      "id": "readmanga18",
+      "matches": [
+        "readmanga18.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".read-content img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "klz9",
       "matches": [
         "klz9.com"
@@ -12649,6 +12669,28 @@
         "imageSelectors": [
           "#readerarea img[loading='lazy'][alt*=' - PAGE ']"
         ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari"
+        ]
+      }
+    },
+    {
+      "id": "asurascans",
+      "matches": "asurascans.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "[data-page] img"
+        ],
+        "loadingSelectors": [
+          "[data-page]"
+        ],
+        "injectedCss": "#immersiveTranslateImgLoading { z-index:999 !important; }",
+        "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
           "chrome",
           "firefox",
@@ -21651,6 +21693,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-20T03:16:08.896Z",
+  "buildinConfigUpdatedAt": "2026-03-23T03:27:11.116Z",
   "latestVersion": "1.26.6"
 }
