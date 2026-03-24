@@ -297,7 +297,7 @@
     "bilin_translate"
   ],
   "enabled": true,
-  "minVersion": "1.17.3",
+  "minVersion": "1.21.0",
   "showOpenaiOnSafari": true,
   "showUnconfiguredTranslationServiceInPopup": true,
   "managedHostFallbacks": {
@@ -21968,6 +21968,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-24T08:11:31.000Z",
+  "buildinConfigUpdatedAt": "2026-03-24T14:35:26.357Z",
   "latestVersion": "1.27.1"
 }
