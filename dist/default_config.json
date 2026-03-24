@@ -300,6 +300,34 @@
   "minVersion": "1.17.3",
   "showOpenaiOnSafari": true,
   "showUnconfiguredTranslationServiceInPopup": true,
+  "managedHostFallbacks": {
+    "api2": [
+      "immersivetranslate.com",
+      "imtintl.com"
+    ],
+    "aigw1": [
+      "immersivetranslate.com",
+      "imtintl.com"
+    ],
+    "analytics": [
+      "immersivetranslate.com"
+    ],
+    "config": [
+      "immersivetranslate.com",
+      "imtintl.com"
+    ],
+    "ai": [
+      "immersivetranslate.com",
+      "imtintl.com"
+    ],
+    "lang-detect": [
+      "immersivetranslate.com"
+    ],
+    "s": [
+      "immersivetranslate.com",
+      "imtintl.com"
+    ]
+  },
   "donateUrl": "https://immersivetranslate.com/pricing",
   "uninstallUrl": "https://onboarding.immersivetranslate.com/uninstall",
   "feedbackUrl": "https://github.com/immersive-translate/immersive-translate/issues",
@@ -742,7 +770,58 @@
       "hard": 90
     }
   },
+  "defaultTranslationServicesOrder": [
+    "free-model",
+    "google-free",
+    "bing-free",
+    "siliconcloud-free",
+    "zhipu-free",
+    "deepseek-pro",
+    "openai-pro",
+    "claude-pro",
+    "gemini-pro",
+    "grok-pro",
+    "deepl-pro",
+    "zhipu-pro",
+    "qwen-pro",
+    "hunyuan-pro",
+    "openai-max",
+    "claude-max",
+    "gemini-max",
+    "qwen-max",
+    "kimi-max"
+  ],
+  "forceApplyFreeModel": null,
+  "enableFreeModelMode": false,
   "advanceMergeConfig": [
+    {
+      "condition": "isCNPlugin==true",
+      "advanceConfig": {
+        "managedHostFallbacks": {
+          "api2": [
+            "immersivetranslate.cn"
+          ],
+          "aigw1": [
+            "immersivetranslate.cn"
+          ],
+          "analytics": [
+            "immersivetranslate.cn"
+          ],
+          "config": [
+            "immersivetranslate.cn"
+          ],
+          "ai": [
+            "immersivetranslate.cn"
+          ],
+          "lang-detect": [
+            "immersivetranslate.cn"
+          ],
+          "s": [
+            "immersivetranslate.cn"
+          ]
+        }
+      }
+    },
     {
       "condition": "abTagNumber<2",
       "advanceConfig": {
@@ -953,6 +1032,7 @@
     {
       "condition": "abTagNumber==0 && interfaceLanguage!=zh-CN",
       "advanceConfig": {
+        "enableFreeModelMode": true,
         "translationUsageLimit.add": {
           "enable": true,
           "totalLimit": {
@@ -1018,6 +1098,103 @@
             "hard": 50
           }
         }
+      }
+    },
+    {
+      "condition": "interfaceLanguage==zh-CN",
+      "advanceConfig": {
+        "defaultTranslationServicesOrder": [
+          "free-model",
+          "google-free",
+          "bing-free",
+          "siliconcloud-free",
+          "zhipu-free",
+          "babel-lite-free",
+          "deepseek-pro",
+          "qwen-pro",
+          "gemini-pro",
+          "openai-pro",
+          "zhipu-pro",
+          "deepl-pro",
+          "openai-max",
+          "gemini-max",
+          "kimi-max",
+          "claude-max"
+        ]
+      }
+    },
+    {
+      "condition": "interfaceLanguage==zh-TW",
+      "advanceConfig": {
+        "defaultTranslationServicesOrder": [
+          "free-model",
+          "google-free",
+          "bing-free",
+          "gemini-pro",
+          "openai-pro",
+          "deepl-pro",
+          "openai-max",
+          "claude-max",
+          "gemini-max"
+        ]
+      }
+    },
+    {
+      "condition": "interfaceLanguage==zh-HK",
+      "advanceConfig": {
+        "defaultTranslationServicesOrder": [
+          "free-model",
+          "google-free",
+          "bing-free",
+          "siliconcloud-free",
+          "zhipu-free",
+          "babel-lite-free",
+          "gemini-pro",
+          "deepseek-pro",
+          "qwen-pro",
+          "openai-pro",
+          "zhipu-pro",
+          "deepl-pro",
+          "openai-max",
+          "gemini-max",
+          "kimi-max",
+          "claude-max"
+        ]
+      }
+    },
+    {
+      "condition": "interfaceLanguage==ja",
+      "advanceConfig": {
+        "defaultTranslationServicesOrder": [
+          "free-model",
+          "google-free",
+          "bing-free",
+          "deepl-pro",
+          "openai-pro",
+          "deepseek-pro",
+          "gemini-pro",
+          "qwen-pro",
+          "gemini-max",
+          "openai-max",
+          "claude-max"
+        ]
+      }
+    },
+    {
+      "condition": "interfaceLanguage==ko",
+      "advanceConfig": {
+        "defaultTranslationServicesOrder": [
+          "free-model",
+          "google-free",
+          "bing-free",
+          "deepl-pro",
+          "openai-pro",
+          "gemini-pro",
+          "qwen-pro",
+          "gemini-max",
+          "openai-max",
+          "claude-max"
+        ]
       }
     }
   ],
@@ -1420,8 +1597,8 @@
         "terms_prompt": "\n\nRequired Terminology: For terms in `Terms ->`:\n{{imt_terms_with_domain}}\n{{imt_terms_without_domain}}\nTerms -> \n{{imt_terms}}",
         "sub_terms_prompt": "\n\nRequired Terminology: For terms in `Terms ->`:\n{{imt_terms_with_domain}}\n{{imt_terms_without_domain}}\nTerms -> \n{{imt_terms}}"
       },
-      "systemPrompt": "You are a professional {{to}} native translator who needs to fluently translate text into {{to}}.\n\n## Translation Rules\n1. Output only the translated content, without explanations or additional content (such as \"Here's the translation:\" or \"Translation as follows:\")\n2. The returned translation must maintain exactly the same number of paragraphs and format as the original text\n3. If the text contains HTML tags, consider where the tags should be placed in the translation while maintaining fluency\n4. For content that should not be translated (such as proper nouns, code, etc.), keep the original text.\n5. If input contains %%, use %% in your output, if input has no %%, don't use %% in your output{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## OUTPUT FORMAT:\n- **Single paragraph input** → Output translation directly (no separators, no extra text)\n- **Multi-paragraph input** → Use %% as paragraph separator between translations\n\n## Examples\n### Multi-paragraph Input:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Multi-paragraph Output:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D\n\n### Single paragraph Input:\nSingle paragraph content\n\n### Single paragraph Output:\nDirect translation without separators",
-      "multipleSystemPrompt": "You are a professional {{to}} native translator who needs to fluently translate text into {{to}}.\n\n## Translation Rules\n1. Output only the translated content, without explanations or additional content (such as \"Here's the translation:\" or \"Translation as follows:\")\n2. The returned translation must maintain exactly the same number of paragraphs and format as the original text\n3. If the text contains HTML tags, consider where the tags should be placed in the translation while maintaining fluency\n4. For content that should not be translated (such as proper nouns, code, etc.), keep the original text{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## Input-Output Format Examples\n\n### Input Example:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Output Example:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+      "systemPrompt": "You are a professional {{to}} native translator who needs to fluently translate text into {{to}}.\n\n## Translation Rules\n1. Output only the translated content, without explanations or additional content (such as \"Here's the translation:\" or \"Translation as follows:\")\n2. The returned translation must maintain exactly the same number of paragraphs and format as the original text\n3. If the text contains HTML tags, consider where the tags should be placed in the translation while maintaining fluency\n4. For content that should not be translated (such as proper nouns, code, etc.), keep the original text.\n5. If input contains %%, use %% in your output, if input has no %%, don't use %% in your output{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## OUTPUT FORMAT:\n- **Single paragraph input** → Output translation directly (no separators, no extra text)\n- **Multi-paragraph input** → Use %% as paragraph separator between translations\n\n## Examples\n### Multi-paragraph Input:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Multi-paragraph Output:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D\n\n### Single paragraph Input:\nSingle paragraph content\n\n### Single paragraph Output:\nDirect translation without separators\n\n{{imt_style_guide}}",
+      "multipleSystemPrompt": "You are a professional {{to}} native translator who needs to fluently translate text into {{to}}.\n\n## Translation Rules\n1. Output only the translated content, without explanations or additional content (such as \"Here's the translation:\" or \"Translation as follows:\")\n2. The returned translation must maintain exactly the same number of paragraphs and format as the original text\n3. If the text contains HTML tags, consider where the tags should be placed in the translation while maintaining fluency\n4. For content that should not be translated (such as proper nouns, code, etc.), keep the original text{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## Input-Output Format Examples\n\n### Input Example:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Output Example:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D\n\n{{imt_style_guide}}",
       "prompt": "Translate to {{to}} (output translation only):\n\n{{text}}",
       "multiplePrompt": "Translate to {{to}}:\n\n{{text}}",
       "subtitlePrompt": "Translate to {{to}}:\n\n{{text}}",
@@ -1527,16 +1704,16 @@
         },
         {
           "id": "auto2ja",
-          "systemPrompt": "あなたは日本語のネイティブ翻訳者であり、テキストを流暢な日本語に翻訳します。以下のルールに従ってください：\n1. 翻訳内容のみを出力し、説明や追加コンテンツ（「以下は翻訳です：」「翻訳文は次の通りです：」など）を加えないでください\n2. テキストにHTMLタグが含まれている場合は、翻訳後もタグの位置を正確に保ち、翻訳が自然に流れるようにしてください\n3. 翻訳する必要のないコンテンツ（固有名詞、コードなど）については、原文のまま保持してください{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
-          "multipleSystemPrompt": "あなたは日本語のネイティブ翻訳者であり、テキストを流暢な日本語に翻訳する必要があります。\n\n## 翻訳ルール\n1. 翻訳内容のみを出力し、説明や追加コンテンツ（「以下は翻訳です：」「翻訳文は次の通りです：」など）を加えないでください\n2. 返される翻訳は、原文とまったく同じ段落数とフォーマットを維持する必要があります\n3. テキストにHTMLタグが含まれている場合は、翻訳の流暢さを保ちながら、タグを翻訳のどこに配置すべきかを考慮してください\n4. 翻訳する必要のないコンテンツ（固有名詞、コードなど）については、原文のまま保持してください{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 入出力形式の例\n\n### 入力例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 出力例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+          "systemPrompt": "あなたは日本語のネイティブ翻訳者であり、テキストを流暢な日本語に翻訳します。以下のルールに従ってください：\n1. 翻訳内容のみを出力し、説明や追加コンテンツ（「以下は翻訳です：」「翻訳文は次の通りです：」など）を加えないでください\n2. テキストにHTMLタグが含まれている場合は、翻訳後もタグの位置を正確に保ち、翻訳が自然に流れるようにしてください\n3. 翻訳する必要のないコンテンツ（固有名詞、コードなど）については、原文のまま保持してください{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+          "multipleSystemPrompt": "あなたは日本語のネイティブ翻訳者であり、テキストを流暢な日本語に翻訳する必要があります。\n\n## 翻訳ルール\n1. 翻訳内容のみを出力し、説明や追加コンテンツ（「以下は翻訳です：」「翻訳文は次の通りです：」など）を加えないでください\n2. 返される翻訳は、原文とまったく同じ段落数とフォーマットを維持する必要があります\n3. テキストにHTMLタグが含まれている場合は、翻訳の流暢さを保ちながら、タグを翻訳のどこに配置すべきかを考慮してください\n4. 翻訳する必要のないコンテンツ（固有名詞、コードなど）については、原文のまま保持してください{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 入出力形式の例\n\n### 入力例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 出力例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D\n\n{{imt_style_guide}}",
           "prompt": "日本語に翻訳してください（翻訳内容のみを出力）：\n\n{{text}}",
           "multiplePrompt": "日本語に翻訳してください：\n\n{{text}}",
           "subtitlePrompt": "日本語に翻訳してください：\n\n{{text}}"
         },
         {
           "id": "auto2ko",
-          "systemPrompt": "당신은 한국어 원어민 번역가로서 텍스트를 유창한 한국어로 번역합니다. 다음 규칙을 따르세요:\n1. 번역된 내용만 출력하고, 설명이나 추가 내용(예: \"다음은 번역입니다:\" 또는 \"번역은 다음과 같습니다:\" 등)을 추가하지 마세요\n2. 텍스트에 HTML 태그가 포함된 경우, 번역 후 태그 위치를 올바르게 유지하고 번역이 자연스럽게 흐르도록 하세요\n3. 번역할 필요가 없는 내용(고유명사, 코드 등)은 원문 그대로 유지하세요{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
-          "multipleSystemPrompt": "당신은 한국어 원어민 번역가로서 텍스트를 유창한 한국어로 번역해야 합니다.\n\n## 번역 규칙\n1. 번역된 내용만 출력하고, 설명이나 추가 내용(예: \"다음은 번역입니다:\" 또는 \"번역은 다음과 같습니다:\" 등)을 추가하지 마세요\n2. 반환된 번역은 원문과 정확히 동일한 단락 수와 형식을 유지해야 합니다\n3. 텍스트에 HTML 태그가 포함된 경우, 번역의 자연스러운 흐름을 유지하면서 태그를 번역의 어디에 배치해야 할지 고려하세요\n4. 번역할 필요가 없는 내용(고유명사, 코드 등)은 원문 그대로 유지하세요{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 입력/출력 형식 예시\n\n### 입력 예시:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 출력 예시:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+          "systemPrompt": "당신은 한국어 원어민 번역가로서 텍스트를 유창한 한국어로 번역합니다. 다음 규칙을 따르세요:\n1. 번역된 내용만 출력하고, 설명이나 추가 내용(예: \"다음은 번역입니다:\" 또는 \"번역은 다음과 같습니다:\" 등)을 추가하지 마세요\n2. 텍스트에 HTML 태그가 포함된 경우, 번역 후 태그 위치를 올바르게 유지하고 번역이 자연스럽게 흐르도록 하세요\n3. 번역할 필요가 없는 내용(고유명사, 코드 등)은 원문 그대로 유지하세요{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+          "multipleSystemPrompt": "당신은 한국어 원어민 번역가로서 텍스트를 유창한 한국어로 번역해야 합니다.\n\n## 번역 규칙\n1. 번역된 내용만 출력하고, 설명이나 추가 내용(예: \"다음은 번역입니다:\" 또는 \"번역은 다음과 같습니다:\" 등)을 추가하지 마세요\n2. 반환된 번역은 원문과 정확히 동일한 단락 수와 형식을 유지해야 합니다\n3. 텍스트에 HTML 태그가 포함된 경우, 번역의 자연스러운 흐름을 유지하면서 태그를 번역의 어디에 배치해야 할지 고려하세요\n4. 번역할 필요가 없는 내용(고유명사, 코드 등)은 원문 그대로 유지하세요{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 입력/출력 형식 예시\n\n### 입력 예시:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 출력 예시:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D\n\n{{imt_style_guide}}",
           "prompt": "한국어로 번역하세요(번역된 내용만 출력):\n\n{{text}}",
           "multiplePrompt": "한국어로 번역하세요:\n\n{{text}}",
           "subtitlePrompt": "한국어로 번역하세요:\n\n{{text}}"
@@ -2570,6 +2747,46 @@
       "group": "free",
       "extends": "google"
     },
+    "free-model": {
+      "type": "free-model",
+      "group": "free",
+      "visible": true,
+      "defaultVisible": true,
+      "retry": 1,
+      "limit": 20,
+      "supportFeatures": [
+        "aiWriting",
+        "selectionTranslation"
+      ],
+      "concurrencyLimit": 20,
+      "requestTimeout": 120000,
+      "sponsorIconUrls": {},
+      "fallbackService": null,
+      "streamFallbackService": null,
+      "serviceWhenFreeModelHidden": "siliconcloud-free",
+      "subServices": [
+        {
+          "serviceType": "siliconcloud",
+          "legacyServiceId": "siliconcloud-free",
+          "preferredProvider": "siliconflow"
+        },
+        {
+          "serviceType": "zhipu",
+          "legacyServiceId": "zhipu-free",
+          "preferredProvider": "glm"
+        },
+        {
+          "serviceType": "babel-lite",
+          "legacyServiceId": "babel-lite-free",
+          "preferredProvider": "babellite"
+        }
+      ],
+      "transitionalFreeServiceOrder": [
+        "free-model",
+        "google-free",
+        "bing-free"
+      ]
+    },
     "bing-free": {
       "type": "bing",
       "group": "free",
@@ -2615,8 +2832,8 @@
       "group": "free",
       "extends": "siliconcloud",
       "provider": "custom",
-      "model": "THUDM/glm-4-9b-chat",
-      "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/glm-4-9b-chat",
+      "model": "THUDM/GLM-4-9B-0414",
+      "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/GLM-4-9B-0414",
       "modelsHidden": true,
       "retry": 2,
       "concurrencyLimit": 20,
@@ -3201,6 +3418,7 @@
     "secretRegexps": [],
     "secretRegexpsV2": [],
     "detectionServiceOrder": [
+      "free-model",
       "google",
       "bing",
       "babel-lite-free",
@@ -21750,6 +21968,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-24T03:44:03.528Z",
-  "latestVersion": "1.26.6"
+  "buildinConfigUpdatedAt": "2026-03-24T08:12:06.534Z",
+  "latestVersion": "1.27.1"
 }
