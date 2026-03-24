@@ -8287,7 +8287,9 @@
       "selectors": [
         "div[class^='detail_wbtext']",
         ".weibo-text",
-        ".m-feed"
+        ".m-feed",
+        ".wbpro-feed-content",
+        ".wbpro-list .text"
       ],
       "stayOriginalSelectors.add": [
         ".expand"
@@ -21748,6 +21750,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-24T02:24:50.518Z",
+  "buildinConfigUpdatedAt": "2026-03-24T03:44:03.528Z",
   "latestVersion": "1.26.6"
 }
