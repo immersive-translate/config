@@ -20427,6 +20427,9 @@
       "matches": [
         "www.nexusmods.com"
       ],
+      "excludeMatches": [
+        "https://www.nexusmods.com/games/*"
+      ],
       "skipBuildContainerSelectors.remove": [
         "em"
       ],
@@ -21973,6 +21976,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-25T02:33:21.951Z",
+  "buildinConfigUpdatedAt": "2026-03-25T07:54:29.413Z",
   "latestVersion": "1.27.1"
 }
