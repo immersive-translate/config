@@ -4083,7 +4083,7 @@
     "injectedCss": [
       ".immersive-translate-target-wrapper[dir='rtl'] {text-align: right;display:block!important;}",
       "[dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {text-align:left;direction:ltr;}",
-      ".immersive-translate-target-wrapper {word-break:break-word; user-select:text;}",
+      ".immersive-translate-target-wrapper {word-break:break-word; user-select:text; font-feature-settings:normal;}",
       "[imt-state=dual] .immersive-translate-target-translation-block-wrapper-theme-dividingLine::before {display:block;}",
       "[imt-trans-position=before] .immersive-translate-target-translation-block-wrapper {display:block!important;}"
     ],
@@ -6739,8 +6739,7 @@
         "www.rmit.edu.au"
       ],
       "injectedCss": [
-        ".colfeature-content{height:unset!important;}",
-        ".text-component-inner{font-feature-settings:unset!important;}"
+        ".colfeature-content{height:unset!important;}"
       ]
     },
     {
@@ -20811,21 +20810,6 @@
       ]
     },
     {
-      "id": "simpleZh",
-      "matches": [
-        "deno.com",
-        "deno.land",
-        "blog.partykit.io",
-        "docs.lemonsqueezy.com",
-        "www.hcompany.ai",
-        "www.coingecko.com",
-        "www.nycitycenter.org"
-      ],
-      "injectedCss": [
-        ":root, font {font-feature-settings:normal;}"
-      ]
-    },
-    {
       "id": "wistia-hook",
       "matches": [
         "agencysupremacy.io",
@@ -21976,6 +21960,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-25T07:54:29.413Z",
+  "buildinConfigUpdatedAt": "2026-03-25T11:15:11.668Z",
   "latestVersion": "1.27.1"
 }
