@@ -1030,14 +1030,9 @@
       }
     },
     {
-      "condition": "interfaceLanguage!=zh-CN",
-      "advanceConfig": {
-        "enableFreeModelMode": true
-      }
-    },
-    {
       "condition": "abTagNumber==0 && interfaceLanguage!=zh-CN",
       "advanceConfig": {
+        "enableFreeModelMode": true,
         "translationUsageLimit.add": {
           "enable": true,
           "totalLimit": {
@@ -2852,6 +2847,11 @@
       "models": "Qwen/Qwen3-8B|THUDM/GLM-4-9B-0414",
       "enableImtServe": true,
       "apiUrl": ""
+    },
+    "hymt-free": {
+      "type": "hymt",
+      "group": "free",
+      "hidden": true
     },
     "transmart-free": {
       "type": "transmart",
@@ -21960,6 +21960,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-25T11:15:11.668Z",
-  "latestVersion": "1.27.1"
+  "buildinConfigUpdatedAt": "2026-03-27T11:10:38.491Z",
+  "latestVersion": "1.27.2"
 }
