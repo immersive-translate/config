@@ -11566,7 +11566,7 @@
         ".video-container *"
       ],
       "subtitleRule.add": {
-        "type": "subsrt",
+        "type": "webvtt",
         "subtitleUrlRegExp": ".*\\.vtt",
         "hookType": "xhr",
         "enableHookDownload": true,
@@ -21965,6 +21965,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-30T07:17:29.129Z",
+  "buildinConfigUpdatedAt": "2026-03-30T16:47:58.591Z",
   "latestVersion": "1.27.2"
 }
