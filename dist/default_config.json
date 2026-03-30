@@ -5658,8 +5658,6 @@
       ],
       "switchTranslateRestart": true,
       "enableRichTranslate": true,
-      "enableRichTranslate.add_v.[1.14.8]": false,
-      "enableRichTranslate.add_v.[1.14.9]": true,
       "additionalStayOriginalSelectors": [
         "[data-testid=\"tweetText\"] a",
         "[data-testid='UserDescription'] a",
@@ -5722,7 +5720,8 @@
         "[data-testid=hoverCardParent] [role=menuitem]",
         "[data-testid=sidebarColumn]",
         "h2[role=heading]",
-        "[class='css-175oi2r r-1awozwy r-18u37iz r-1wtj0ep r-6gpygo'],[class='css-175oi2r r-1d09ksm r-18u37iz r-1wbh5a2 r-1471scf'],[class='css-175oi2r r-1kbdv8c r-18u37iz r-1wtj0ep r-1ye8kvj r-1s2bzr4']"
+        "[class='css-175oi2r r-1awozwy r-18u37iz r-1wtj0ep r-6gpygo'],[class='css-175oi2r r-1d09ksm r-18u37iz r-1wbh5a2 r-1471scf'],[class='css-175oi2r r-1kbdv8c r-18u37iz r-1wtj0ep r-1ye8kvj r-1s2bzr4']",
+        ".imt-caption-container *"
       ],
       "extraBlockSelectors.add": [
         "[data-testid=\"tweetText\"] div.r-6koalj"
@@ -21965,6 +21964,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-03-30T03:13:13.683Z",
+  "buildinConfigUpdatedAt": "2026-03-30T03:15:32.916Z",
   "latestVersion": "1.27.2"
 }
