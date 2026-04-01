@@ -2826,7 +2826,7 @@
       "extends": "zhipu",
       "type": "zhipu",
       "group": "free",
-      "name": "GLM-4 Flash ⚠️",
+      "name": "GLM-4 Flash",
       "model": "glm-4-flash-250414",
       "models": "glm-4-flash|glm-4-flash-250414",
       "provider": "custom",
@@ -21902,6 +21902,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-01T06:48:13.495Z",
+  "buildinConfigUpdatedAt": "2026-04-01T16:22:14.892Z",
   "latestVersion": "1.27.2"
 }
