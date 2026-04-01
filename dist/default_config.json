@@ -5109,42 +5109,6 @@
       "blockMinWordCount": 1,
       "containerMinTextCount": 1,
       "wrapperPrefix": "<br />",
-      "advanceMergeConfig": [
-        {
-          "condition": "true",
-          "advanceConfig": {
-            "translationServices": {
-              "deepseek-pro.add": {
-                "proLimit": 5
-              },
-              "deepl-pro.add": {
-                "proLimit": 5
-              },
-              "zhipu-pro.add": {
-                "proLimit": 5
-              },
-              "openai-pro.add": {
-                "proLimit": 5
-              },
-              "claude-pro.add": {
-                "proLimit": 5
-              },
-              "gemini-pro.add": {
-                "proLimit": 5
-              },
-              "openai-max.add": {
-                "proLimit": 5
-              },
-              "claude-max.add": {
-                "proLimit": 5
-              },
-              "gemini-max.add": {
-                "proLimit": 5
-              }
-            }
-          }
-        }
-      ],
       "stayOriginalTags.remove": [
         "SAMP"
       ]
@@ -5223,40 +5187,6 @@
             "domReadyDetectTimeout": 0,
             "translationLanguagePattern.add": {
               "matches": []
-            }
-          }
-        },
-        {
-          "condition": "true",
-          "advanceConfig": {
-            "translationServices": {
-              "deepseek-pro.add": {
-                "proLimit": 5
-              },
-              "deepl-pro.add": {
-                "proLimit": 5
-              },
-              "zhipu-pro.add": {
-                "proLimit": 5
-              },
-              "openai-pro.add": {
-                "proLimit": 5
-              },
-              "claude-pro.add": {
-                "proLimit": 5
-              },
-              "gemini-pro.add": {
-                "proLimit": 5
-              },
-              "openai-max.add": {
-                "proLimit": 5
-              },
-              "claude-max.add": {
-                "proLimit": 5
-              },
-              "gemini-max.add": {
-                "proLimit": 5
-              }
             }
           }
         }
@@ -21972,6 +21902,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-01T02:42:55.794Z",
+  "buildinConfigUpdatedAt": "2026-04-01T06:48:13.495Z",
   "latestVersion": "1.27.2"
 }
