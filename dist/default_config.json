@@ -2504,7 +2504,7 @@
             ".*"
           ],
           "bodyConfigs": {
-            "think": false
+            "enable_thinking": false
           }
         }
       ]
@@ -21909,6 +21909,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-03T07:01:35.074Z",
+  "buildinConfigUpdatedAt": "2026-04-05T14:27:49.861Z",
   "latestVersion": "1.27.3"
 }
