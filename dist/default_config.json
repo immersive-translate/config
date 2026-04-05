@@ -2501,6 +2501,7 @@
       "modelsOverrides.add": [
         {
           "models": [
+            "THUDM/GLM-4-9B-0414",
             "Pro/zai-org/GLM-5",
             "Pro/zai-org/GLM-4.7",
             "deepseek-ai/DeepSeek-V3.2",
@@ -21927,6 +21928,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-05T16:26:10.949Z",
+  "buildinConfigUpdatedAt": "2026-04-05T16:29:45.536Z",
   "latestVersion": "1.27.3"
 }
