@@ -2804,6 +2804,11 @@
       "serviceWhenFreeModelHidden": "siliconcloud-free",
       "subServices": [
         {
+          "serviceType": "hymt",
+          "legacyServiceId": "hymt-free",
+          "preferredProvider": "hymt"
+        },
+        {
           "serviceType": "siliconcloud",
           "legacyServiceId": "siliconcloud-free",
           "preferredProvider": "siliconflow"
@@ -21926,6 +21931,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-08T11:10:56.231Z",
+  "buildinConfigUpdatedAt": "2026-04-08T11:15:16.624Z",
   "latestVersion": "1.27.3"
 }
