@@ -1848,8 +1848,7 @@
           "models": [
             "gpt-5$",
             "gpt-5-mini",
-            "gpt-5-nano",
-            "gpt-5.2-chat"
+            "gpt-5-nano"
           ],
           "bodyConfigs": {
             "reasoning_effort": "minimal",
@@ -3717,8 +3716,7 @@
               "gpt-5$",
               "gpt-5-mini",
               "gpt-5-nano",
-              "gpt-5.1$",
-              "gpt-5.2-chat"
+              "gpt-5.1$"
             ],
             "bodyConfigs": {
               "reasoning_effort": "minimal",
@@ -21928,6 +21926,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-07T04:56:30.344Z",
+  "buildinConfigUpdatedAt": "2026-04-08T11:10:56.231Z",
   "latestVersion": "1.27.3"
 }
