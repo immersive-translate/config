@@ -17957,7 +17957,7 @@
         "#immersive-translate-caption-window *"
       ],
       "subtitleRule.add": {
-        "type": "multi_attach_vtt",
+        "type": "webvtt",
         "hookType": "xhr",
         "subtitleUrlRegExp": "\\.vtt",
         "videoPlayerSelector": "video",
@@ -17966,12 +17966,6 @@
           "appendSelector": "media-control-bar > div:nth-of-type(2)",
           "insertBeforeSelector": "media-control-bar > div:nth-of-type(2) > div:nth-of-type(3)",
           "injectCSS": ".imt-quick-subtitle-pop-content { max-height: unset !important; }"
-        },
-        "attachRule": {
-          "appendSelector": "#cyfrin-video-player",
-          "injectedCSS": [
-            ".imt-caption-window {width: 90%;}"
-          ]
         }
       },
       "additionalExcludeSelectors.remove": [
@@ -21937,6 +21931,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-08T15:10:41.981Z",
+  "buildinConfigUpdatedAt": "2026-04-08T15:16:06.707Z",
   "latestVersion": "1.27.3"
 }
