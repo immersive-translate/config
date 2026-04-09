@@ -1833,9 +1833,7 @@
           "models": [
             "gpt-5$",
             "gpt-5-mini",
-            "gpt-5-nano",
-            "gpt-5.4-mini",
-            "gpt-5.4-nano"
+            "gpt-5-nano"
           ],
           "bodyConfigs": {
             "reasoning_effort": "minimal",
@@ -1846,7 +1844,9 @@
           "models": [
             "gpt-5.1$",
             "gpt-5.2$",
-            "gpt-5.4$"
+            "gpt-5.4$",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano"
           ],
           "bodyConfigs": {
             "reasoning_effort": "none",
@@ -1867,9 +1867,7 @@
           "models": [
             "gpt-5$",
             "gpt-5-mini",
-            "gpt-5-nano",
-            "gpt-5.4-mini",
-            "gpt-5.4-nano"
+            "gpt-5-nano"
           ],
           "apiUrl": "/responses",
           "bodyConfigs": {
@@ -1884,7 +1882,9 @@
             "gpt-5.1",
             "gpt-5.2",
             "gpt-5.3",
-            "gpt-5.4"
+            "gpt-5.4",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano"
           ],
           "apiUrl": "/responses",
           "bodyConfigs": {
@@ -2000,8 +2000,7 @@
         {
           "models": [
             "gemini-2.5-flash",
-            "gemini-2.5-flash-lite",
-            "gemini-3-flash-preview"
+            "gemini-2.5-flash-lite"
           ],
           "bodyConfigs": {
             "generationConfig": {
@@ -2072,8 +2071,48 @@
         },
         {
           "models": [
+            "gemini-3.1-flash",
+            "gemini-3.1-flash-lite",
+            "gemini-3-flash-preview",
+            "gemini-3-flash"
+          ],
+          "bodyConfigs": {
+            "generationConfig": {
+              "temperature": 0,
+              "topK": 1,
+              "topP": 1,
+              "maxOutputTokens": 2048,
+              "stopSequences": [],
+              "thinkingConfig": {
+                "thinkingLevel": "minimal"
+              }
+            },
+            "safetySettings": [
+              {
+                "category": "HARM_CATEGORY_HARASSMENT",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_HATE_SPEECH",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                "threshold": "BLOCK_NONE"
+              }
+            ]
+          }
+        },
+        {
+          "models": [
             "gemini-3.1-pro",
-            "gemini-3-pro"
+            "gemini-3.1-pro-preview",
+            "gemini-3-pro",
+            "gemini-3-pro-preview"
           ],
           "bodyConfigs": {
             "temperature.remove": "",
@@ -3714,7 +3753,9 @@
             "models": [
               "gpt-5.1$",
               "gpt-5.2$",
-              "gpt-5.4$"
+              "gpt-5.4$",
+              "gpt-5.4-mini",
+              "gpt-5.4-nano"
             ],
             "bodyConfigs": {
               "reasoning_effort": "none",
@@ -22016,6 +22057,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-09T14:21:45.720Z",
+  "buildinConfigUpdatedAt": "2026-04-09T15:06:05.559Z",
   "latestVersion": "1.28.1"
 }
