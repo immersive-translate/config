@@ -1,5 +1,5 @@
 {
-  "releaseVersion": "1.13.5",
+  "releaseVersion": "1.23.10",
   "immediateTranslationTextCount": 4999,
   "immediateTranslationScrollLimitScreens": 1,
   "translationStartMode": "dynamic",
@@ -63,23 +63,7 @@
     }
   },
   "immediateTranslationPattern": {
-    "matches": [
-      "twitter.com",
-      "x.com",
-      "*.twitter.com",
-      "*.x.com",
-      "medium.com",
-      "*.medium.com",
-      "https://old.reddit.com/",
-      "https://www.reddit.com/r/popular/",
-      "https://www.reddit.com/",
-      "https://www.reddit.com/hot/",
-      "https://www.reddit.com/new/",
-      "https://www.reddit.com/top/",
-      "https://www.reddit.com/.compact",
-      "https://app.immersivetranslate.*/pdf*",
-      "https://bsky.app"
-    ],
+    "matches": [],
     "excludeMatches": [],
     "selectorMatches": [
       "meta[property='al:ios:url'][content^='medium://']"
@@ -115,6 +99,43 @@
     "upgradeUrl": "https://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension&utm_campaign=side_panel_footer_upgrade",
     "rewardCenter": {
       "disabledAt": "2025-01-01 00:00:00"
+    },
+    "tutorialData": {
+      "googlemeet-1": {
+        "hidden": true
+      },
+      "googlemeet-2": {
+        "hidden": true
+      },
+      "googlemeet-3": {
+        "hidden": true
+      },
+      "teams-1": {
+        "hidden": true
+      },
+      "teams-2": {
+        "hidden": true
+      },
+      "teams-3": {
+        "hidden": true
+      }
+    },
+    "navItems": {
+      "text": {
+        "platform": ""
+      },
+      "file": {
+        "platform": ""
+      },
+      "video": {
+        "platform": ""
+      },
+      "image": {
+        "platform": ""
+      },
+      "tutorial": {
+        "platform": ""
+      }
     }
   },
   "sidePanel.add_v.[1.24.2]": {
@@ -149,6 +170,9 @@
   "interval": 3600000,
   "beta": false,
   "cache": true,
+  "enableBatchPatternDetection": true,
+  "batchPatternMinCount": 3,
+  "batchPatternConfidenceThreshold": 0.7,
   "enableAiAssistant": true,
   "enableSelfServiceReport": true,
   "enablePerformanceReport": false,
@@ -297,7 +321,7 @@
     "bilin_translate"
   ],
   "enabled": true,
-  "minVersion": "1.21.0",
+  "minVersion": "1.21.1",
   "showOpenaiOnSafari": true,
   "showUnconfiguredTranslationServiceInPopup": true,
   "managedHostFallbacks": {
@@ -655,7 +679,6 @@
     "*.lanhuapp.com",
     "https://*.immersivetranslate.*/text*"
   ],
-  "inputStyleBlockUrls": [],
   "inputTargetLanguage": "en",
   "enableEnToZhInputTargetLang": true,
   "inputStartingTriggerKey": "/",
@@ -789,7 +812,8 @@
     "claude-max",
     "gemini-max",
     "qwen-max",
-    "kimi-max"
+    "kimi-max",
+    "zhipu-max"
   ],
   "forceApplyFreeModel": null,
   "enableFreeModelMode": false,
@@ -1044,13 +1068,6 @@
       }
     },
     {
-      "condition": "interfaceLanguage==zh-CN && versionNumber>12701 && abTagNumber==0",
-      "advanceConfig": {
-        "translationService": "free-model",
-        "enableFreeModelMode": true
-      }
-    },
-    {
       "condition": "abTagNumber==0 && interfaceLanguage!=zh-CN",
       "advanceConfig": {
         "translationUsageLimit.add": {
@@ -1121,6 +1138,48 @@
       }
     },
     {
+      "condition": "abTagNumber>1 && abTagNumber<4 && interfaceLanguage==zh-CN && installedAtTimestamp>1770220800000",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "enable": true,
+          "totalLimit": {
+            "unregisteredSoft": 20,
+            "unregisteredHard": 30,
+            "soft": 40,
+            "hard": 90
+          }
+        }
+      }
+    },
+    {
+      "condition": "abTagNumber>1 && abTagNumber<4 && interfaceLanguage!=zh-CN && installedAtTimestamp>1770220800000",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "enable": true,
+          "totalLimit": {
+            "unregisteredSoft": 20,
+            "unregisteredHard": 30,
+            "soft": 40,
+            "hard": 60
+          }
+        }
+      }
+    },
+    {
+      "condition": "abTagNumber>7 && abTagNumber<10 && installedAtTimestamp>1770220800000",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "enable": true,
+          "totalLimit": {
+            "unregisteredSoft": 20,
+            "unregisteredHard": 30,
+            "soft": 40,
+            "hard": 50
+          }
+        }
+      }
+    },
+    {
       "condition": "interfaceLanguage==zh-CN",
       "advanceConfig": {
         "defaultTranslationServicesOrder": [
@@ -1139,7 +1198,8 @@
           "openai-max",
           "gemini-max",
           "kimi-max",
-          "claude-max"
+          "claude-max",
+          "zhipu-max"
         ]
       }
     },
@@ -1178,7 +1238,8 @@
           "openai-max",
           "gemini-max",
           "kimi-max",
-          "claude-max"
+          "claude-max",
+          "zhipu-max"
         ]
       }
     },
@@ -1521,18 +1582,14 @@
         "b"
       ],
       "limit": 10,
-      "tag_handling": "none",
+      "tag_handling": "smart",
       "html": "smart",
-      "enableRichTranslate": true,
+      "enableRichTranslate": false,
       "richIdName": "data-dl-uid",
       "richIdSymbol": "\"",
       "removeResRegexs": [
         "下载 app 送 18 元彩金"
-      ]
-    },
-    "deepl.add_v.[1.7.8]": {
-      "tag_handling": "smart",
-      "enableRichTranslate": false,
+      ],
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true
     },
@@ -1624,79 +1681,6 @@
       "subtitlePrompt": "Translate to {{to}}:\n\n{{text}}",
       "selectionSystemPrompt": "# Role Definition \nYou are a professional multilingual translation engine that can translate the provided text into {{to}}.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols, part of speech, definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis: \n【Current Context】: \"{{context_text}}\"\n# Translation Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech (keep concise, must use {{to}} language)\n - Provide contextual analysis\n - Include natural context examples\n\n2. For phrase/sentence input:\n - Return translation only\n - No additional information allowed\n\n3. Format Specifications:\n - Strictly follow example JSON structure\n - No Markdown code blocks\n - Use American phonetic symbols for English© words (maintain original system for other languages)\n \n# Language System Rules\n- The output must be entirely in the target language {{to}}\n- Accurately identify the source language\n- For Source language is English, use American phonetic symbols for phonetic symbols\n- For Source language is Chinese, Use standard Pinyin for phonetic symbols (with tone marks)\n- For other languages, use their native phonetic systems for phonetic symbols\n- DO NOT using languages other than those requested\n# Output Examples \n【Word Example】: \n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"adj.\",\n      \"meaning\": \"hello\",\n      \"example\": {\n        \"source\": \"Hello, how are you\",\n        \"target\": \"你好啊，最近怎么样\"\n      }\n    }\n  ],\n  \"translation\": \"你好\",\n  \"contextual_analysis\": \"Analysis of the word's meaning within the provided context\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions \n- Mixed output formats\n- Missing required fields\n- Unrequested additional information\n- Language system mixing",
       "selectionPrompt": "【Content to Translate】:\n\"{{text}}\"",
-      "langOverrides": [
-        {
-          "id": "auto2zh-CN",
-          "prompt": ";; 把下一行文本作为纯文本输入，并将其翻译为简体中文，{{html_only}}仅输出翻译。如果某些内容无需翻译（如专有名词、代码等），则保持原文不变。不要解释，输入文本:\n {{text}}",
-          "multipleSystemPrompt": ""
-        },
-        {
-          "id": "auto2zh-TW",
-          "prompt": ";; Treat next line as plain text input and translate it into Traditional Chinese (Taiwan style),{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
-          "multiplePrompt": "You will be given a YAML formatted input containing entries with \"id\" and \"{{imt_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_source_field}}\" field into Traditional Chinese (Taiwan),{{html_only}} Write the translation back into the \"{{imt_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{normal_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
-          "subtitlePrompt": "You will be given a YAML formatted subtitles containing entries with \"id\" and \"{{imt_sub_source_field}}\" fields. Here is the input:\n\n<yaml>\n{{yaml}}\n</yaml>\n\nFor each entry in the YAML, translate the contents of the \"{{imt_sub_source_field}}\" field into Traditional Chinese (Taiwan),{{html_only}} Write the translation back into the \"{{imt_sub_source_field}}\" field for that entry.\n\nHere is an example of the expected format:\n\n{{subtitle_result_yaml_example}}\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information."
-        },
-        {
-          "id": "zh-CN2ru",
-          "prompt": ";; Treat next line as 简体中文 and translate it into 俄语，{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
-          "multipleSystemPrompt": ""
-        },
-        {
-          "id": "ja2auto",
-          "prompt": ";; Treat next line as plain text input and translate it from 日语 into {{to}},{{html_only}} output translation ONLY. If translation is unnecessary (e.g. proper nouns, codes, etc.), return the original text. NO explanations. NO notes. Input:\n {{text}}",
-          "multipleSystemPrompt": ""
-        },
-        {
-          "id": "zh-CN2auto",
-          "subtitlePrompt": "You will be translating all \"{{imt_sub_source_field}}\" fields of a set of YAML-formatted video subtitles from Simplified Chinese into {{to}}. Here are the original subtitles in YAML format:\n\n<yaml_subtitles>\n{{yaml}}\n</yaml_subtitles>\n\nPlease translate ONLY the \"{{imt_sub_source_field}}\" field of each subtitle entry into Simplified Chinese. Do not translate or change the \"id\" fields.\n\nOutput the translated subtitles in the same YAML format, with each subtitle entry on its own line. The \"id\" fields should remain unchanged, and the \"{{imt_sub_source_field}}\" fields should contain your {{to}} translations.\n\nPlease return the translated YAML directly without wrapping <yaml> tag or include any additional information.",
-          "multipleSystemPrompt": ""
-        },
-        {
-          "id": "auto2zh-CN-NE",
-          "extends": "auto2zh-CN",
-          "systemPrompt": "你是一个东北人翻译，请用东北人的口吻进行翻译，尽可能贴近生活,只返回译文，不含任何解释",
-          "multipleSystemPrompt": ""
-        },
-        {
-          "id": "wyw2zh-CN",
-          "systemPrompt": "你是一个精通古文的学者，只返回白话文",
-          "prompt": "请将文言文用白话文解释:\n\n{{text}}",
-          "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文言文翻译为白话文，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}",
-          "multipleSystemPrompt": ""
-        },
-        {
-          "id": "auto2wyw",
-          "systemPrompt": "你是一个文言文翻译，请用文言文的方式进行翻译，尽可能贴近古风，只返回译文，不含任何解释。",
-          "prompt": "请翻译为文言文（避免解释原文）:\n\n{{text}}",
-          "multiplePrompt": "将下面 YAML 格式中所有的 {{imt_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_trans_field}} 字段中\n\n{{normal_result_yaml_example}}\n\n开始翻译:\n\n{{yaml}}",
-          "subtitlePrompt": "将下面 YAML 格式的视频字幕文本中所有的 {{imt_sub_source_field}} 字段中的文本翻译为文言文，并将翻译结果写在 {{imt_sub_trans_field}} 字段中，要求如下：\n\n1. 必须补全每一个 {{imt_sub_trans_field}} 字段，保留每一个 {{imt_sub_source_field}} 字段。\n2. 返回可解析的 YAML ：\n\n{{subtitle_result_yaml_example}}\n\n开始翻译：\n\n{{yaml}}",
-          "multipleSystemPrompt": ""
-        },
-        {
-          "id": "ja2zh-CN",
-          "selectionSystemPrompt": "# Role Definition\nYou are a professional Japanese translation engine specializing in **Japanese to {{to}}** translation.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols in Japanese, part of speech, definitions in {{to}}, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis: \n【Current Context】: \"{{context_text}}\"\n# Translation Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech (keep concise, must use {{to}} for explanations)\n - Provide contextual analysis in {{to}}\n - Include natural context examples in {{to}}\n\n2. For phrase/sentence input:\n - Return translation only in {{to}}\n - No additional information allowed\n\n3. Format Specifications:\n - Strictly follow the provided example JSON structure\n - Do not use Markdown code blocks\n - Use Japanese phonetic symbols (Hiragana, Katakana, or Kanji readings) for phonetic symbols\n - All explanations must be in **Chinese**\n\n# Output Examples\n【Word Example】: \n{\n  \"phonetic\": \"/こんにちは/\",\n  \"definitions\": [\n    {\n      \"pos\": \"动词\",\n      \"meaning\": \"问候\",\n      \"example\": {\n        \"source\": \"こんにちは、元気ですか？\",\n        \"target\": \"你好，最近怎么样？\"\n      }\n    }\n  ],\n  \"translation\": \"你好\",\n  \"contextual_analysis\": \"在当前上下文中，Hello 是你好的意思。\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"这是一个测试句子。\"\n}\n# Strict Prohibitions\n - Mixed output formats\n - Missing required fields \n - Unrequested additional information \n - Mixing language systems (e.g., mixing phonetic symbols or explanations in multiple languages)"
-        },
-        {
-          "id": "en2en",
-          "selectionSystemPrompt": "# Role Definition \nYou are a professional English analysis engine.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols, part of speech, definitions, example sentences)\n - Phrase/Sentence: Return the origin text only\n\n# Analysis Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech\n - Include natural context examples\n\n2. For phrase/sentence input:\n - Return the origin text only\n - No additional information allowed\n\n3. Format Specifications:\n - Strictly follow example JSON structure\n - No Markdown code blocks\n - Use American phonetic symbols\n - All explanations must be in English\n\n# Output Examples \n【Word Example】: \n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"adj.\",\n      \"meaning\": \"hello\",\n      \"example\": {\n        \"source\": \"Hello, how are you\",\n      }\n    }\n  ],\n  \"contextual_analysis\": \"Analysis of the word's meaning within the provided context\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions \n- Mixed output formats\n- Missing required fields\n- Unrequested additional information\n- Language system mixing",
-          "selectionPrompt": "【Content to Analyze】:\n\"{{text}}\""
-        },
-        {
-          "id": "zh-CN2en",
-          "selectionSystemPrompt": "# Role Definition You are a professional Chinese translation engine specializing in **Chinese to English** translation.\n# Core Capabilities  1. Input Type Recognition:\n - Single word: Provide dictionary functions (Pinyin, part of speech, English definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis:  【Current Context】: \"{{context_text}}\"\n# Translation Rules  1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech\n - Provide contextual analysis in English\n - Include natural context examples in English\n\n2. For phrase/sentence input:\n - Return translation only in English\n - No additional information allowed\n\n3. Format Specifications:\n - Strictly follow the provided example JSON structure\n - Do not use Markdown code blocks\n - Use standard Pinyin for phonetic symbols (with tone marks)\n - All explanations must be in **English**\n\n# Output Examples 【Word Example】:  {\n  \"phonetic\": \"nǐ hǎo\",\n  \"definitions\": [\n    {\n      \"pos\": \"verb\",\n      \"meaning\": \"greeting\",\n      \"example\": {\n        \"source\": \"你好，最近怎么样？\",\n        \"target\": \"Hello, how are you?\"\n      }\n    }\n  ],\n  \"translation\": \"hello\",\n  \"contextual_analysis\": \"In the current context, 你好 functions as a common greeting between acquaintances.\"\n}\n【Sentence Example】:  {\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions\n - Mixed output formats\n - Missing required fields \n - Unrequested additional information \n - Mixing language systems (e.g., Chinese characters in English explanations)\n - Incorrect Pinyin formatting"
-        }
-      ],
-      "langOverrides.add_v.[1.17.1]": [
-        {
-          "id": "zh-CN2ru"
-        },
-        {
-          "id": "ja2auto"
-        },
-        {
-          "id": "zh-CN2auto"
-        }
-      ],
       "langOverrides.add_v.[1.17.2]": [
         {
           "id": "auto2zh-CN",
@@ -1838,7 +1822,8 @@
           "models": [
             "o3-mini.*",
             "o3-mini",
-            "gpt-5.2-pro"
+            "gpt-5.2-pro",
+            "gpt-5.4-pro"
           ],
           "bodyConfigs": {
             "temperature.remove": ""
@@ -1848,7 +1833,9 @@
           "models": [
             "gpt-5$",
             "gpt-5-mini",
-            "gpt-5-nano"
+            "gpt-5-nano",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano"
           ],
           "bodyConfigs": {
             "reasoning_effort": "minimal",
@@ -1858,11 +1845,53 @@
         {
           "models": [
             "gpt-5.1$",
+            "gpt-5.2$",
             "gpt-5.4$"
           ],
           "bodyConfigs": {
             "reasoning_effort": "none",
             "temperature.remove": ""
+          }
+        },
+        {
+          "models": [
+            "gpt-5-chat-latest",
+            "gpt-5.2-chat",
+            "gpt-5.2-chat-latest"
+          ],
+          "bodyConfigs": {
+            "temperature.remove": ""
+          }
+        },
+        {
+          "models": [
+            "gpt-5$",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5.4-mini",
+            "gpt-5.4-nano"
+          ],
+          "apiUrl": "/responses",
+          "bodyConfigs": {
+            "temperature.remove": "",
+            "reasoning": {
+              "effort": "minimal"
+            }
+          }
+        },
+        {
+          "models": [
+            "gpt-5.1",
+            "gpt-5.2",
+            "gpt-5.3",
+            "gpt-5.4"
+          ],
+          "apiUrl": "/responses",
+          "bodyConfigs": {
+            "temperature.remove": "",
+            "reasoning": {
+              "effort": "none"
+            }
           }
         },
         {
@@ -1906,9 +1935,16 @@
       ]
     },
     "gemini": {
+      "extends": "ai",
+      "assistantId": "common",
+      "provider": "pro",
+      "enableRichTranslate": false,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
+      "keepGlossariesPrompt": "Translate the text but keep placeholders like {{xxx}} in their original positions. ",
       "proModel": "gemini-3-flash-preview",
       "model": "gemini-2.5-flash",
-      "models": "gemini-3-pro-preview|gemini-3-flash-preview|gemini-2.5-flash|gemini-2.5-flash-lite|gemini-2.5-pro|gemini-2.0-flash|gemini-2.0-flash-lite",
+      "models": "gemini-3.1-pro|gemini-3.1-flash|gemini-3.1-flash-lite|gemini-3-pro|gemini-3-flash-preview|gemini-3-flash|gemini-2.5-flash|gemini-2.5-flash-lite|gemini-2.5-flash-preview|gemini-2.5-pro|gemini-2.0-flash|gemini-2.0-flash-lite",
       "visible": true,
       "placeholderDelimiters": [
         "{",
@@ -1918,7 +1954,7 @@
       "glossaries": [],
       "disableWarning": false,
       "requestTimeout": 101000,
-      "randomPrefix": " ",
+      "randomPrefix": "none",
       "immediateTranslationTextCount": 5000,
       "translationDebounce": 300,
       "interval": 1050,
@@ -1926,10 +1962,10 @@
       "retry": 1,
       "prompt": "You are a professional,authentic translation engine,only returns translations.\nFor example:\n<Start>\nHello <Keep This Symbol>\nWorld <Keep This Symbol>\n<End>\nThe translation is:\n<Start>\n你好<Keep This Symbol>\n世界<Keep This Symbol>\n<End>\n\nTranslate the content to {{to}} Language:\n\n<Start>{{text}}<End>",
       "proLimit": 10,
-      "maxTextGroupLengthPerRequest": 1,
+      "maxTextGroupLengthPerRequest": 4,
       "maxTextLengthPerRequest": 3000,
       "maxTextGroupLengthPerRequestForSubtitle": 5,
-      "translationTextSeparator": "\n<Keep This Symbol>",
+      "translationTextSeparator": "\n\n%%\n\n",
       "langOverrides": [],
       "bodyConfigs": {
         "generationConfig": {
@@ -1960,44 +1996,6 @@
       },
       "ignoreResRegexs": [
         "BlockedReasonProhibitedContent"
-      ]
-    },
-    "gemini.add_v.[1.3.4]": {
-      "extends": "ai",
-      "translationTextSeparator": "\n\n%%\n\n",
-      "assistantId": "common",
-      "provider": "pro"
-    },
-    "gemini.add_v.[1.5.7]": {
-      "randomPrefix": "none",
-      "enableRichTranslate": false,
-      "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true,
-      "keepGlossariesPrompt": "Translate the text but keep placeholders like {{xxx}} in their original positions. ",
-      "removeResRegexs.add": [
-        "^##",
-        "^```",
-        "```$",
-        ";; Simplified Chinese translation: ",
-        "Simplified Chinese translation: ",
-        "^译文：",
-        "^原文：",
-        "^简化中文翻译：",
-        "^简体中文翻译：",
-        "^简体中文：",
-        "^;;# ",
-        "^原样输出，无需翻译$",
-        "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释，不加注释。原文为:"
-      ]
-    },
-    "gemini.add_v.[1.15.3]": {
-      "defaultMaxTextGroupLengthPerRequest": 4,
-      "maxTextGroupLengthPerRequest": 4,
-      "replaceTextRegexes": [
-        [
-          "n\\\\'t ",
-          "n't "
-        ]
       ],
       "modelsOverrides": [
         {
@@ -2076,9 +2074,7 @@
         {
           "models": [
             "gemini-3.1-pro",
-            "gemini-3.1-pro-preview",
-            "gemini-3-pro",
-            "gemini-3-pro-preview"
+            "gemini-3-pro"
           ],
           "bodyConfigs": {
             "temperature.remove": "",
@@ -2112,13 +2108,35 @@
             ]
           }
         }
+      ],
+      "defaultMaxTextGroupLengthPerRequest": 4,
+      "replaceTextRegexes": [
+        [
+          "n\\\\'t ",
+          "n't "
+        ]
+      ],
+      "removeResRegexs.add": [
+        "^##",
+        "^```",
+        "```$",
+        ";; Simplified Chinese translation: ",
+        "Simplified Chinese translation: ",
+        "^译文：",
+        "^原文：",
+        "^简化中文翻译：",
+        "^简体中文翻译：",
+        "^简体中文：",
+        "^;;# ",
+        "^原样输出，无需翻译$",
+        "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释，不加注释。原文为:"
       ]
     },
     "claude": {
       "visible": true,
       "extends": "ai",
-      "model": "claude-3-5-haiku-latest",
-      "models": "claude-sonnet-4-5|claude-haiku-4-5|claude-opus-4-5|claude-opus-4-1|claude-sonnet-4-0|claude-3-7-sonnet-latest|claude-opus-4-0|claude-3-5-haiku-latest",
+      "model": "claude-haiku-4-5",
+      "models": "claude-opus-4-6|claude-sonnet-4-6|claude-opus-4-5|claude-sonnet-4-5|claude-haiku-4-5|claude-opus-4-1|claude-opus-4|claude-sonnet-4|claude-sonnet-3-7",
       "placeholderDelimiters": [
         "{{",
         "}}",
@@ -2129,7 +2147,7 @@
       "translationDebounce": 300,
       "interval": 1050,
       "limit": 0.3,
-      "maxTextGroupLengthPerRequest": 1,
+      "maxTextGroupLengthPerRequest": 4,
       "maxTextLengthPerRequest": 2000,
       "maxTextGroupLengthPerRequestForSubtitle": 5,
       "bodyConfigs": {
@@ -2145,15 +2163,35 @@
       "temperature": 0,
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true
-    },
-    "claude.add_v.[1.15.3]": {
-      "defaultMaxTextGroupLengthPerRequest": 4,
-      "maxTextGroupLengthPerRequest": 4
+      "translationEnableRichTranslate": true,
+      "modelsOverrides": [
+        {
+          "models": [
+            "claude-opus-4-6",
+            "claude-sonnet-4-6"
+          ],
+          "bodyConfigs": {
+            "thinking": {
+              "type": "adaptive",
+              "effort": "low"
+            }
+          }
+        }
+      ],
+      "defaultMaxTextGroupLengthPerRequest": 4
     },
     "openai": {
-      "model": "gpt-4o-mini",
-      "models": "gpt-5.1|gpt-5|gpt-5-chat|gpt-5-mini|gpt-5-nano|gpt-4.1-mini|gpt-4o-mini|gpt-4o|gpt-4.1|gpt-4.1-nano|gpt-4.5-preview",
+      "extends": "ai",
+      "assistantId": "common",
+      "maxTextGroupLengthPerRequest": 4,
+      "enableRichTranslate": true,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
+      "enableAIContext": false,
+      "enableRichGlossaries": false,
+      "provider": "pro",
+      "model": "gpt-5.4-mini",
+      "models": "gpt-5.4|gpt-5.4-mini|gpt-5.4-nano|gpt-5.4-pro|gpt-5.3-codex|gpt-5.2|gpt-5-chat-latest|gpt-5|gpt-5-mini|gpt-5-nano|gpt-4.1-mini|gpt-4.1|gpt-4.1-nano",
       "proModel": "gpt-5-mini",
       "visible": true,
       "placeholderDelimiters": [
@@ -2179,87 +2217,13 @@
       "translationDebounce": 300,
       "interval": 1350,
       "requestTimeout": 101000,
-      "systemPrompt": "You are a professional, authentic translation engine, only returns translations.",
-      "prompt": "Translate the text to {{to}} Language, please do not explain my original text.:\n\n{{text}}",
-      "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}",
       "proLimit": 10,
-      "overrides": [
-        {
-          "if": "targetLanguage == zh-CN",
-          "prompt": "请翻译为简体中文（避免解释原文）:\n\n {{text}}",
-          "systemPrompt": "你是一个专业，地道的翻译引擎，你只返回译文，不含任何解释",
-          "multiplePrompt": "请把这几句字幕翻译为简体中文，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段译文\n\n{{text}}"
-        },
-        {
-          "if": "targetLanguage == zh-CN-NE",
-          "systemPrompt": "你是一个东北人翻译，请用东北人的口吻进行翻译，尽可能贴近生活，只返回译文，不含任何解释",
-          "prompt": "请翻译为{{to}}（避免解释原文）:\n\n {{text}}",
-          "multiplePrompt": "请把这几句字幕翻译为{{to}}，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段译文\n\n{{text}}"
-        },
-        {
-          "if": "sourceLanguage == zh-CN",
-          "systemPrompt": "你是一个专业，地道的翻译引擎，你只返回译文，不含任何解释",
-          "prompt": "请翻译为{{to}}（避免解释原文）:\n\n {{text}}",
-          "multiplePrompt": "请把这几句字幕翻译为{{to}}，为了通顺，你可能需要在下一句中包含上一句的部分内容，比如我给了你 5 段英文，你就必须返回 5 段译文\n\n{{text}}"
-        },
-        {
-          "if": "targetLanguage == zh-CN && sourceLanguage == wyw",
-          "systemPrompt": "你是一个精通古文的学者，只返回白话文",
-          "prompt": "请将文言文用白话文解释:\n\n {{text}}"
-        },
-        {
-          "if": "targetLanguage == zh-CN && sourceLanguage == ja",
-          "systemPrompt": "你是一个日语翻译专家，精通中日两种文化，只返回中文",
-          "prompt": "请将日语翻译成中文（避免解释原文）:\n\n {{text}}"
-        },
-        {
-          "if": "targetLanguage == zh-TW",
-          "prompt": "請翻譯為繁體中文（避免解釋原文）:\n\n {{text}}",
-          "systemPrompt": "你是一個專業，道地的翻譯引擎，你只會回譯文",
-          "multiplePrompt": "請把這幾句字幕翻譯為繁體中文，為了通順，你可能需要在下一句中包含上一句的部分內容，比如我給了你 5 段英文，你就必須返回 5 段譯文\n\n{{text}}"
-        },
-        {
-          "if": "targetLanguage == fr",
-          "prompt": "Traduisez le texte en français, s'il vous plaît ne pas expliquer mon texte d'origine.:\n\n{{text}}",
-          "systemPrompt": "Vous êtes un moteur de traduction professionnel et authentique qui ne renvoie que des traductions.",
-          "multiplePrompt": "Veuillez traduire ces sous-titres en chinois simplifié. Pour plus de fluidité, vous devrez peut-être inclure une partie de la phrase précédente dans la phrase suivante. Par exemple, si je vous donne 5 paragraphes en anglais, vous devez renvoyer 5 paragraphes de traduction:\n\n{{text}}"
-        },
-        {
-          "if": "targetLanguage == en",
-          "prompt": "Translate the text to {{to}} Language, please do not explain my original text.:\n\n{{text}}",
-          "systemPrompt": "You are a professional, authentic translation engine that only returns translations.",
-          "multiplePrompt": "Please translate these subtitles into {{to}}. For smoothness, you may need to include part of the previous sentence in the next sentence. For example, if I give you 5 paragraphs in English, you must return 5 paragraphs of translation.:\n\n{{text}}"
-        }
-      ],
       "maxTextGroupLengthPerRequestForSubtitle": 5,
       "newlinePlaceholderDelimiters": [
         "\n<br>\n"
       ],
-      "enableFallback": true
-    },
-    "openai.add_v.[1.3.4]": {
-      "extends": "ai",
-      "assistantId": "common",
-      "maxTextGroupLengthPerRequest": 1,
-      "enableRichTranslate": true,
-      "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true,
-      "enableAIContext": false,
-      "enableRichGlossaries": false,
-      "provider": "pro",
-      "langOverrides.add_v.[1.19.1]": [
-        {
-          "id": "zh-CN2ru"
-        },
-        {
-          "id": "auto2ru"
-        }
-      ],
-      "_comment": "让1.3.4之后的版本才能继承ai的配置，这个的配置顺序要高于openai默认配置"
-    },
-    "openai.add_v.[1.15.3]": {
-      "defaultMaxTextGroupLengthPerRequest": 4,
-      "maxTextGroupLengthPerRequest": 4
+      "enableFallback": true,
+      "defaultMaxTextGroupLengthPerRequest": 4
     },
     "custom-ai": {
       "extends": "ai",
@@ -2387,9 +2351,7 @@
         {
           "id": "auto2es"
         }
-      ]
-    },
-    "deepseek.add_v.[1.15.3]": {
+      ],
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
     },
@@ -2411,7 +2373,7 @@
       "extends": "ai",
       "name": "Qwen",
       "model": "qwen-plus-latest",
-      "models": "qwen-long|qwen-long-latest|qwq-plus|qwq-plus-latest|qwen-max|qwen-max-latest|qwen-turbo|qwen-turbo-latest|qwen2.5-32b-instruct|qwen2.5-72b-instruct|qwen3-32b|qwen3-235b-a22b",
+      "models": "qwen|qwen-flash|qwen-plus|qwen-plus-latest|qwen-turbo|qwen-turbo-latest|qwen2.5|qwen3|qwen3-0.6b|qwen3-1.7b|qwen3-14b|qwen3-235b-a22b|qwen3-235b-a22b-thinking-2507|qwen3-30b-a3b|qwen3-30b-a3b-thinking-2507|qwen3-32b|qwen3-4b|qwen3-8b|qwen3-coder-flash|qwen3-coder-next|qwen3-coder-plus|qwen3-max|qwen3-max-preview|qwen3-next-80b-a3b-thinking|qwen3-vl|qwen3.5|qwen3.5-122b-a10b|qwen3.5-27b|qwen3.5-35b-a3b|qwen3.5-397b-a17b|qwen3.5-flash|qwen3.5-plus|qwen3.6|qwen3.6-plus|qwq|qwq-32b|qwq-plus|qwq-plus-latest",
       "provider": "custom",
       "limit": 10,
       "enableRichTranslate": false,
@@ -2478,8 +2440,8 @@
     },
     "siliconcloud": {
       "extends": "ai",
-      "model": "Qwen/Qwen2.5-7B-Instruct",
-      "models": "Qwen/Qwen2.5-7B-Instruct|THUDM/glm-4-9b-chat|tencent/Hunyuan-MT-7B",
+      "model": "Qwen/Qwen3-8B",
+      "models": "Qwen/Qwen3-8B|Qwen/Qwen3-14B|Qwen/Qwen3-32B|Qwen/Qwen3.5-27B|Qwen/Qwen3.5-35B-A3B|Qwen/Qwen3.5-122B-A10B|Qwen/Qwen3.5-397B-A17B|Qwen/Qwen2.5-7B-Instruct|Qwen/Qwen2.5-14B-Instruct|Qwen/Qwen2.5-32B-Instruct|Qwen/Qwen2.5-72B-Instruct|THUDM/GLM-4-9B-0414|THUDM/GLM-4-32B-0414|Pro/zai-org/GLM-4.7|Pro/zai-org/GLM-5|deepseek-ai/DeepSeek-V3.2|Pro/deepseek-ai/DeepSeek-V3.2|deepseek-ai/DeepSeek-V3.1-Terminus|Pro/deepseek-ai/DeepSeek-V3.1-Terminus|deepseek-ai/DeepSeek-R1|Pro/deepseek-ai/DeepSeek-R1|tencent/Hunyuan-MT-7B|tencent/Hunyuan-A13B-Instruct|moonshotai/Kimi-K2-Instruct-0905|Pro/moonshotai/Kimi-K2-Instruct-0905|Pro/moonshotai/Kimi-K2.5|ByteDance-Seed/Seed-OSS-36B-Instruct|baidu/ERNIE-4.5-300B-A47B",
       "freeModels": [
         "THUDM/GLM-4-9B-0414",
         "Qwen/Qwen3-8B",
@@ -2489,7 +2451,7 @@
       "provider": "custom",
       "limit": 5,
       "requestTimeout": 6000000,
-      "maxTextGroupLengthPerRequest": 3,
+      "maxTextGroupLengthPerRequest": 4,
       "apiUrl": "https://api.siliconflow.cn/v1/chat/completions",
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
@@ -2497,10 +2459,9 @@
       "defaultHiddenLangs": [
         "zh-TW"
       ],
-      "modelsOverrides.add": [
+      "modelsOverrides": [
         {
           "models": [
-            "THUDM/GLM-4-9B-0414",
             "Pro/zai-org/GLM-5",
             "Pro/zai-org/GLM-4.7",
             "deepseek-ai/DeepSeek-V3.2",
@@ -2525,11 +2486,8 @@
             "enable_thinking": false
           }
         }
-      ]
-    },
-    "siliconcloud.add_v.[1.15.3]": {
-      "defaultMaxTextGroupLengthPerRequest": 4,
-      "maxTextGroupLengthPerRequest": 4
+      ],
+      "defaultMaxTextGroupLengthPerRequest": 4
     },
     "lingyiwanwu": {
       "extends": "ai",
@@ -2550,16 +2508,13 @@
       "models": "grok-3-mini-fast|grok-3-fast|grok-3-mini|grok-3|grok-4-0709|grok-2-1212|grok-2-vision-1212",
       "provider": "custom",
       "limit": 4,
-      "maxTextGroupLengthPerRequestForSubtitle": 1,
+      "maxTextGroupLengthPerRequestForSubtitle": 5,
       "apiUrl": "https://api.x.ai/v1/chat/completions",
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true
-    },
-    "grok.add_v.[1.15.3]": {
+      "translationEnableRichTranslate": true,
       "defaultMaxTextGroupLengthPerRequest": 4,
-      "maxTextGroupLengthPerRequest": 4,
-      "maxTextGroupLengthPerRequestForSubtitle": 5
+      "maxTextGroupLengthPerRequest": 4
     },
     "ollama": {
       "extends": "ai",
@@ -2636,7 +2591,7 @@
     "zhipu": {
       "extends": "ai",
       "model": "glm-4-flash",
-      "models": "glm-4.5|glm-4.5-air|glm-4.5-x|glm-4.5-airx|glm-4.5-flash|glm-4-flash|glm-4-flash-250414|glm-4-air|glm-4-airx|glm-4|glm-4-plus|glm-4-0520|glm-4-0520-plus",
+      "models": "glm-4|glm-4.5|GLM-4.5|glm-4.6|GLM-4.6|glm-4.7|GLM-4.7|glm-5|GLM-5|GLM-5-Turbo",
       "freeModels": [
         "glm-4-flash",
         "glm-4-flash-250414"
@@ -2668,13 +2623,14 @@
       "translationEnableRichTranslate": true,
       "enableFallback": true,
       "selectionSystemPrompt": "You are a professional multilingual translation engine.\nRULES: \n1. For single words: provide translation, phonetics, definitions grouped by part of speech, and example sentences.  \n2. For sentences/phrases:  provide translation only.  \n3. All responses must be in {{to}} language.  \n4. For English, Use American phonetics for phonetic symbols. \n5. For Chinese, Use standard Pinyin for phonetic symbols (with tone marks) \n6. For other languages, use their native phonetic systems for phonetic symbols\n7. Do not output languages other than those requested \n8. Consider context when analyzing words.  \n9. Output raw JSON without markdown code blocks. \nSINGLE WORD OUTPUT: \n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"excl.\",\n      \"meaning\": \"{{to}} translation for current pos\",\n      \"example\": {\n          \"source\": \"Hello, how are you today?\",\n          \"target\": \"{{to}} example\"\n       }\n    }\n  ],\n  \"translation\": \"translation in {{to}}\",\n  \"contextual_analysis\": \"contextual analysis use {{to}} language\"\n}\nSENTENCE/PHRASE OUTPUT: \n{\n  \"translation\": \"translation in {{to}}\"\n}\nCONTEXT: {{context_text}}",
-      "modelsOverrides.add": [
+      "modelsOverrides": [
         {
           "models": [
             "glm-4.5",
             "glm-4.5.*",
             "GLM-4.6",
-            "GLM-4.6.*"
+            "GLM-4.6.*",
+            "GLM-5"
           ],
           "bodyConfigs": {
             "thinking": {
@@ -2682,9 +2638,7 @@
             }
           }
         }
-      ]
-    },
-    "zhipu.add_v.[1.15.3]": {
+      ],
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
     },
@@ -2718,14 +2672,15 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "enableFallback": true,
-      "modelsOverrides.add": [
+      "modelsOverrides": [
         {
           "models": [
             "glm-4.5",
             "glm-4.5.*",
             "GLM-4.6",
             "GLM-4.6.*",
-            "GLM-4.7"
+            "GLM-4.7",
+            "GLM-5"
           ],
           "bodyConfigs": {
             "thinking": {
@@ -2754,7 +2709,8 @@
     },
     "zhipu-pro.add_v.[1.15.3]": {
       "defaultMaxTextGroupLengthPerRequest": 4,
-      "maxTextGroupLengthPerRequest": 4
+      "maxTextGroupLengthPerRequest": 4,
+      "maxTextGroupLengthPerRequestForSubtitle": 5
     },
     "zhipu-air-pro": {
       "extends": "zhipu-base",
@@ -2844,6 +2800,10 @@
       "maxTextLengthPerRequest": 600,
       "limit": 20,
       "retry": 2,
+      "removeResRegexs": [
+        "请将文本翻译成中文，不要解释任何句子，只需翻译或保留原样。",
+        "翻译成中文，不要解释任何句子，只需翻译或保留原文。"
+      ],
       "concurrencyLimit": 20,
       "hidden": true
     },
@@ -2893,6 +2853,11 @@
     },
     "hymt-free": {
       "type": "hymt",
+      "group": "free",
+      "hidden": true
+    },
+    "stepfun-free": {
+      "type": "stepfun",
       "group": "free",
       "hidden": true
     },
@@ -3173,6 +3138,26 @@
       "disabledAt": "",
       "hidden": false
     },
+    "zhipu-max": {
+      "extends": "zhipu-base",
+      "name": "GLM-5",
+      "group": "max",
+      "type": "zhipu-pro",
+      "provider": "pro",
+      "visible": true,
+      "model": "GLM-5",
+      "proModel": "GLM-5",
+      "concurrencyLimit": 50,
+      "proLimit": 20,
+      "defaultVisible": true,
+      "supportFeatures": [
+        "aiWriting",
+        "selectionTranslation"
+      ],
+      "defaultMaxTextGroupLengthPerRequest": 4,
+      "maxTextGroupLengthPerRequest": 4,
+      "maxTextGroupLengthPerRequestForSubtitle": 5
+    },
     "openai-custom": {
       "name": "OpenAI 1",
       "type": "openai",
@@ -3370,6 +3355,7 @@
     ],
     "privacyProtocolVersion": "",
     "privacyProtocolEnableTime": "2025-10-31T00:00:00Z",
+    "enableDynamicIgnore": true,
     "domCheckTimeout": 500,
     "floatEffectParagraphNum": -1,
     "floatBlockEffectParagraphs": 4,
@@ -3388,6 +3374,7 @@
       2,
       0
     ],
+    "deferredRenderRootMargin": "0% 0px 35% 0px",
     "skipIgnoreSelectors": [
       "select",
       "option"
@@ -3417,14 +3404,6 @@
     ],
     "isTranslateWhenServiceChanged": true,
     "excludeSelectorsRegexes": {
-      "td,th": [
-        "^[a-zA-Z0-9\\-_.]+$",
-        "^[0-9,]+\\s+tokens$",
-        "^Up to [a-zA-Z]*\\s+\\d*$",
-        "^(/[a-zA-Z0-9\\-_.]+)+$"
-      ]
-    },
-    "excludeSelectorsRegexes.add_v.[1.5.7]": {
       "td,th": [
         "/^[A-Z0-9\\-_.]+$/g",
         "^[0-9,]+\\s+tokens$",
@@ -3708,7 +3687,11 @@
           {
             "models": [
               "glm-4.5",
-              "glm-4.5.*"
+              "glm-4.5.*",
+              "GLM-4.6",
+              "GLM-4.6.*",
+              "GLM-4.7",
+              "GLM-5"
             ],
             "bodyConfigs": {
               "thinking": {
@@ -3725,6 +3708,27 @@
             ],
             "bodyConfigs": {
               "reasoning_effort": "minimal",
+              "temperature.remove": ""
+            }
+          },
+          {
+            "models": [
+              "gpt-5.1$",
+              "gpt-5.2$",
+              "gpt-5.4$"
+            ],
+            "bodyConfigs": {
+              "reasoning_effort": "none",
+              "temperature.remove": ""
+            }
+          },
+          {
+            "models": [
+              "gpt-5-chat-latest",
+              "gpt-5.2-chat",
+              "gpt-5.2-chat-latest"
+            ],
+            "bodyConfigs": {
               "temperature.remove": ""
             }
           }
@@ -3989,11 +3993,20 @@
               "gpt-5-mini",
               "gpt-5-nano",
               "gpt-5.1$",
-              "gpt-5.2-chat",
               "gpt-5.4"
             ],
             "bodyConfigs": {
-              "reasoning_effort": "minimal",
+              "reasoning_effort": "none",
+              "temperature.remove": ""
+            }
+          },
+          {
+            "models": [
+              "gpt-5-chat-latest",
+              "gpt-5.2-chat",
+              "gpt-5.2-chat-latest"
+            ],
+            "bodyConfigs": {
               "temperature.remove": ""
             }
           }
@@ -4018,6 +4031,7 @@
       "enableFreeCredit": true,
       "type": "common",
       "enableMangaFloatBall": true,
+      "enableAutoTranslateByReferrer": false,
       "blockToolsUrls": [
         "www.figma.com"
       ],
@@ -4131,7 +4145,6 @@
     ],
     "isOnBoardingPage": false,
     "isEbook": false,
-    "isEbookBuilder": false,
     "ignoreZhCNandZhTW": false,
     "showSponsorOnSafari": false,
     "noTranslateRegexp": [
@@ -4140,7 +4153,7 @@
       "^[\\u200B\\u200C\\u200D\\u2060\\uFEFF]+$",
       "^[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]$",
       "^[a-zA-Z]{1}$",
-      "^[•↓]$",
+      "^[•↓ · ]$",
       "<img id=0>",
       "<canvas id=0>"
     ],
@@ -4285,6 +4298,9 @@
         5,
         5
       ]
+    },
+    "shareCardRule": {
+      "enable": true
     },
     "ytAsrConfig": {
       "enable": true,
@@ -4456,7 +4472,6 @@
     "bodyRule.add_v.[1.4.9]": {
       "enable": true
     },
-    "isSubtitleBuilder": false,
     "minZIndex": 0,
     "initTranslationServiceAsSoonAsPossible": true,
     "targetWrapperTag": "font",
@@ -4572,6 +4587,21 @@
       ],
       "header.enableTranslate": false
     },
+    "mixedMode": {
+      "enabled": true,
+      "translationOnlySelectors": [
+        "header nav",
+        ".top-nav nav",
+        "button"
+      ],
+      "translationOnlyDetect": {
+        "enabled": false,
+        "triggerTypes": []
+      },
+      "dualUnlock": true,
+      "dualUnlockStyle": "-webkit-line-clamp: unset; line-clamp: unset; text-overflow: unset; max-height: none; height: auto; overflow: auto;",
+      "dualUnlockMaxDepth": 5
+    },
     "selectors": [],
     "preWhitespaceDetectedTags": [
       "DIV",
@@ -4613,7 +4643,6 @@
       "#immersive-translate-float-ball",
       ".social-share",
       ".post__footer",
-      ".btn",
       ".share-nav",
       ".o-share",
       "[data-toolbar=share]",
@@ -4635,6 +4664,7 @@
       "material-icon",
       "i.fa",
       "i[class^=fa-]",
+      ".imt-notranslate",
       ".notranslate",
       "[translate=no]",
       ".navmenu-container",
@@ -4684,7 +4714,6 @@
       "SVG",
       "G",
       "NOSCRIPT",
-      "BUTTON",
       "BASE",
       "PRE",
       "KBD",
@@ -4697,12 +4726,6 @@
       "AIO-CODE",
       "RELIN-TARGET",
       "DATETIME"
-    ],
-    "excludeTags.remove_v.[1.4.9]": [
-      "BUTTON"
-    ],
-    "additionalExcludeSelectors.remove_v.[1.4.9]": [
-      ".btn"
     ],
     "bodyTranslateTags": [
       "FOOTER",
@@ -4737,13 +4760,7 @@
       "d-math"
     ],
     "rich.stayOriginalTags.remove": [
-      "CODE",
-      "SUP",
-      "SUB"
-    ],
-    "rich.stayOriginalTags.remove_v.[1.8.3]": [
-      "SUP",
-      "SUB"
+      "CODE"
     ],
     "additionalStayOriginalTags": [],
     "inlineTags": [
@@ -4919,7 +4936,6 @@
   "rules": [
     {
       "id": "isSubtitleBuilder",
-      "isSubtitleBuilder": true,
       "pageType": "subtitleBuilder",
       "selectorMatches": [
         "meta[name='immersive-translate-subtitle-builder'][content='true']"
@@ -5003,9 +5019,6 @@
         "#viewerContainer p"
       ],
       "bodyRule.add": {
-        "enable": false
-      },
-      "bodyRule.add_v.[1.11.7]": {
         "enable": true,
         "bodySelector": "#viewerContainer",
         "articleSelector": "#viewerContainer"
@@ -5062,7 +5075,7 @@
       "injectedCss": [
         ".immersive-translate-target-translation-block-wrapper {display:block;}"
       ],
-      "preTranslateLimiter.add_v.[1.12.1]": {
+      "preTranslateLimiter.add": {
         "side.enableTranslate": true,
         "header.enableTranslate": true
       },
@@ -5102,7 +5115,6 @@
         "side.enableTranslate": true,
         "header.enableTranslate": true
       },
-      "isEbookBuilder": true,
       "pageType": "ebookBuilder",
       "toastErrorMinTimes": 0,
       "isTranslateWhenServiceChanged": false,
@@ -5138,6 +5150,7 @@
       "blockMinWordCount": 1,
       "containerMinTextCount": 1,
       "wrapperPrefix": "<br />",
+      "advanceMergeConfig": [],
       "stayOriginalTags.remove": [
         "SAMP"
       ]
@@ -5198,9 +5211,9 @@
       ],
       "pageType": "pdfProReader",
       "excludeSelectors": [
-        "table",
         ".mmd-context-menu",
-        ".preview-original-body *"
+        ".preview-original-body *",
+        "#imt-navbar"
       ],
       "mutationExcludeSelectors.add": [
         "#imt-navbar"
@@ -5236,23 +5249,12 @@
       },
       "excludeSelectorsRegexes": {
         "[class='inline-tabular'] > table > tbody > tr > td": [
-          "^[A-Z0-9\\-_.]{0,10}$",
-          "^[0-9,]+\\s+tokens$",
-          "^Up to [a-zA-Z]*\\s+\\d*$",
-          "^(/[A-Z0-9\\-_.]+)+$"
-        ]
-      },
-      "excludeSelectorsRegexes.add_v.[1.5.7]": {
-        "[class='inline-tabular'] > table > tbody > tr > td": [
           "/^[A-Z0-9\\-_.]+$/g",
           "^[0-9,]+\\s+tokens$",
           "^Up to [a-zA-Z]*\\s+\\d*$",
           "^(/[A-Z0-9\\-_.]+)+$"
         ]
       },
-      "excludeSelectors.remove.[1.4.8]": [
-        "table"
-      ],
       "extraInlineSelectors.add": [
         ".sub-table",
         ".sub-table td",
@@ -5706,6 +5708,9 @@
         "[data-testid=tweetText]",
         "[data-testid=tweetText] *"
       ],
+      "preTranslateLimiter.add_v.[1.24.5]": {
+        "header.enableTranslate": false
+      },
       "excludeSelectorsRegexes.add": {
         "[data-testid=tweetText] span": [
           "^[0-9a-zA-Z]{30,}$"
@@ -5751,6 +5756,26 @@
               }
             }
           }
+        },
+        {
+          "condition": "imtAndroidVersionNumber>0&&imtAndroidVersionNumber<20600",
+          "advanceConfig": {
+            "generalRule": {
+              "shareCardRule.add": {
+                "enable": false
+              }
+            }
+          }
+        },
+        {
+          "condition": "imtIOSVersionNumber>0&&imtIOSVersionNumber<20600",
+          "advanceConfig": {
+            "generalRule": {
+              "shareCardRule.add": {
+                "enable": false
+              }
+            }
+          }
         }
       ],
       "ignoreZhCNandZhTW": true,
@@ -5761,11 +5786,12 @@
       "paragraphMinWordCount": 1,
       "repeatTranslateNum": 0,
       "subtitleRule.add": {
-        "type": "live",
+        "type": "twitter",
         "isInject": false,
         "enableIOSFullScreenTextTrack": false,
         "injectedCss": [
-          "#layers[style='z-index: 1;'] [style='height: 100px;'] { height: 400px !important; }"
+          "#layers[style='z-index: 1;'] [style='height: 100px;'] { height: 400px !important; }",
+          "video::cue {white-space: pre-line;}"
         ],
         "liveSubtitleRule": {
           "containerSelector": ".css-175oi2r.r-13awgt0.r-1pi2tsx.r-13qz1uu > [role='listbox']",
@@ -5774,11 +5800,13 @@
             ".css-175oi2r.r-13awgt0.r-1pi2tsx.r-13qz1uu > [role='listbox'] .css-175oi2r.r-13awgt0.r-1lzbym2  > [dir=\"ltr\"] > span"
           ],
           "mutationChangeDelay": 1000
-        }
+        },
+        "videoPlayerSelector": "video",
+        "enableTriggerTranslate": true,
+        "loadingStyle": "bottom: unset; top: 5%;"
       },
-      "shareCardRule": {
+      "shareCardRule.add": {
         "type": "x",
-        "enable": true,
         "tweetContainerSelector": "article[data-testid='tweet']",
         "expandTextSelector": "[data-testid='tweet-text-show-more-link']",
         "shareButtonSelectors": [
@@ -5830,17 +5858,13 @@
       "bodyRule.add": {
         "enable": false
       },
+      "visibleObserverScreens": [
+        0,
+        0,
+        0,
+        0
+      ],
       "richMoreWordPercent": "0.5",
-      "subtitleRule.add_v.[1.2.1]": {
-        "type": "twitter",
-        "videoPlayerSelector": "video",
-        "enableTriggerTranslate": true,
-        "loadingStyle": "bottom: unset; top: 5%;",
-        "injectedCss": [
-          "#layers[style='z-index: 1;'] [style='height: 100px;'] { height: 400px !important; }",
-          "video::cue {white-space: pre-line;}"
-        ]
-      },
       "subtitleRule.add_v.[1.17.3]": {
         "multipleVideoContainerSelector": "[data-testid=\"videoComponent\"]",
         "quickButtonRule": {
@@ -6082,12 +6106,18 @@
       "injectedCss.add": [
         "div[data-index] p.decoration-2 {-webkit-line-clamp:unset;}",
         "div[data-index] .items-start.relative.gap-2.px-3.flex.w-full {height:unset; max-height:unset;}",
-        "div[data-index] .absolute.w-full {position:unset;}"
+        "div[data-index] .absolute.w-full {overflow:scroll;}"
       ],
+      "mixedMode": {
+        "translationOnlySelectors": [
+          "div[data-index] p.decoration-2",
+          "button"
+        ]
+      },
       "excludeSelectors.add": [
-        "div[data-index] button",
         "number-flow-react",
-        "nav button"
+        "button",
+        "a.inline-flex"
       ]
     },
     {
@@ -6197,7 +6227,8 @@
       ],
       "excludeSelectors.add": [
         ".vue-recycle-scroller"
-      ]
+      ],
+      "excludeSelectors.replace.[1.24.5]": []
     },
     {
       "id": "hackerNews",
@@ -6767,6 +6798,7 @@
       ],
       "excludeSelectors.add": [
         "[data-ad-comet-preview=message] [role=button]",
+        "object[type='nested/pressable']",
         "[data-ad-rendering-role=profile_name]"
       ],
       "insertPosition": "afterend",
@@ -6821,6 +6853,7 @@
       "matches": [
         "m.youtube.com"
       ],
+      "enableDynamicIgnore": false,
       "selectors": [
         ".comment-text",
         "#content-text",
@@ -7019,6 +7052,7 @@
     {
       "id": "youtube",
       "matches": "www.youtube.com",
+      "enableDynamicIgnore": false,
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
       "mainFrameMinTextCount": 0,
@@ -7101,7 +7135,7 @@
         "yt-formatted-string.ytd-transcript-segment-renderer",
         ".caption-visual-line"
       ],
-      "likePreSelectors.add_v.[1.11.7]": [
+      "likePreSelectors.add": [
         "#description-inline-expander .yt-core-attributed-string span",
         "#content-text span"
       ],
@@ -7195,6 +7229,7 @@
       "matches": [
         "www.youtubekids.com"
       ],
+      "enableDynamicIgnore": false,
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
       "mainFrameMinTextCount": 0,
@@ -7265,6 +7300,7 @@
     {
       "id": "tvYoutube",
       "matches": "tv.youtube.com",
+      "enableDynamicIgnore": false,
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "domCheckTimeout": 1,
@@ -7321,6 +7357,7 @@
         "www.youtube-nocookie.com",
         "music.youtube.com"
       ],
+      "enableDynamicIgnore": false,
       "extraBlockSelectors.add": [
         ".caption-visual-line"
       ],
@@ -7399,7 +7436,7 @@
       "excludeSelectors": [
         "hr+div span[dir=auto][style] > span"
       ],
-      "additionalExcludeSelectors.remove_v.[1.4.9]": [
+      "additionalExcludeSelectors.remove": [
         "h1 br"
       ],
       "selectors": [
@@ -8543,14 +8580,10 @@
       ],
       "excludeSelectors": [
         "[aria-label='Post Preview Reading Time']",
-        ".al.b.bl.ag.bp",
-        ".al.b.bl.ag.ai",
-        ".hx.hy.hz.ia.ib.ab",
-        ".qb.ab",
-        ".ai.bn.n.mj",
         ".speechify-ignore",
         "article pre"
       ],
+      "selectors.replace.[1.24.5]": [],
       "excludeTags.remove": [
         "PRE"
       ],
@@ -8716,6 +8749,9 @@
         "[data-component='dui-badge']",
         "#glow-ingress-block,#nav-link-accountList,#nav-orders,#nav-cart"
       ],
+      "paragraphMinTextCount.replace.[1.24.5]": 1,
+      "paragraphMinWordCount.replace.[1.24.5]": 1,
+      "repeatTranslateNum.replace.[1.24.5]": 0,
       "bodyRule.add": {
         "enable": false
       },
@@ -8779,9 +8815,17 @@
         "footer.bb-global-footer",
         ".vjs-text-track-display"
       ],
+      "excludeSelectors.remove_v.[1.24.5]": [
+        "nav"
+      ],
       "bodyRule.add": {
         "bodySelector": "main article",
         "articleSelector": ".body-content"
+      },
+      "mixedMode.add": {
+        "translationOnlySelectors": [
+          "[data-component=carousel] article span"
+        ]
       },
       "subtitleRule.add": {
         "type": "subsrt",
@@ -8799,6 +8843,26 @@
           ],
           "injectedGlobalCSS": [
             ".vjs-text-track-display {display:none!important;}"
+          ]
+        }
+      }
+    },
+    {
+      "id": "baiduPanVideo",
+      "matches": "pan.baidu.com",
+      "subtitleRule.add_v.[1.27.3]": {
+        "type": "live_attach",
+        "videoPlayerSelector": ".vp-video__player",
+        "videoSelector": ".vjs-tech",
+        "loadingContainerSelector": ".vp-video__player",
+        "captionContainerSelector": ".vp-video__subtitle-text",
+        "quickButtonRule": {
+          "appendSelector": ".vp-video__control-bar--setup"
+        },
+        "attachRule": {
+          "appendSelector": ".vp-video__player",
+          "injectedGlobalCSS": [
+            ".vp-video__subtitle-text.show { display: none !important; }"
           ]
         }
       }
@@ -8843,9 +8907,8 @@
         ".u-clamp-2-lines {-webkit-line-clamp:unset!important;}",
         ".immersive-translate-target-wrapper {content-visibility:auto;}"
       ],
-      "enableRichTranslate": false,
-      "enableRichTranslate.add_v.[1.9.7]": true,
-      "preTranslateLimiter.add_v.[1.12.1]": {
+      "enableRichTranslate": true,
+      "preTranslateLimiter.add": {
         "side.selectors": [
           "nav",
           "aside",
@@ -9312,6 +9375,10 @@
         "[aria-labelledby=cookie-banner-aria-label]",
         "footer",
         "[aria-label='Primary navigation']"
+      ],
+      "excludeSelectors.replace.[1.24.5]": [
+        "footer",
+        "[aria-labelledby=cookie-banner-aria-label]"
       ]
     },
     {
@@ -9911,7 +9978,7 @@
     {
       "id": "react",
       "matches": "react.dev",
-      "injectedCss": [
+      "injectedCss.add": [
         "[class*='h-\\[40px\\]'] {height: unset !important;}"
       ]
     },
@@ -10409,6 +10476,9 @@
         "#app > div > div > div > div > header",
         "#in-story-masthead",
         "[data-testid=masthead-container]"
+      ],
+      "excludeSelectors.replace.[1.24.5]": [
+        "#in-story-masthead"
       ],
       "injectedCss": [
         "a::after {position:relative!important;}",
@@ -10912,8 +10982,7 @@
         ".actions-buttons.sidebar",
         ".title-copy"
       ],
-      "enableRichTranslate": false,
-      "enableRichTranslate.add_v.[1.9.7]": true,
+      "enableRichTranslate": true,
       "extraBlockSelectors.add": [
         ".mixed-citation"
       ],
@@ -11377,6 +11446,7 @@
         "subtitleUrlRegExp": "^https://vtt.*\\.udemycdn\\.com/.*\\.vtt",
         "videoPlayerSelector": "video.shaka-video",
         "humanTrust": 85,
+        "hookType": "fetch|xhr",
         "loadingContainerSelector": ".shaka-video-container",
         "loadingStyle": "bottom: 15%;",
         "injectedCss": [
@@ -11386,9 +11456,6 @@
         "quickButtonRule": {
           "appendSelector": "[data-purpose=\"video-controls\"]"
         }
-      },
-      "subtitleRule.add_v.[1.4.1]": {
-        "hookType": "fetch|xhr"
       }
     },
     {
@@ -12452,6 +12519,7 @@
       ],
       "imageRule.add": {
         "enable": true,
+        "enableAutoTranslateByReferrer": true,
         "type": "manga",
         "imageSelectors": [
           "#imgarea img",
@@ -12484,6 +12552,7 @@
           "#all img.img-responsive",
           "#ppp img.img-responsive"
         ],
+        "enableAutoTranslateByReferrer": true,
         "loadingStyle": "z-index: 9999;",
         "inValidSrcRegex": [
           "data:image/gif"
@@ -12672,6 +12741,33 @@
           "firefox",
           "imtIOSNew",
           "safari"
+        ]
+      }
+    },
+    {
+      "id": "manhwaread",
+      "matches": [
+        "manhwaread.com",
+        "www.manhwaread.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#imagesList img.reading-image",
+          "#imagesList .reading-page img",
+          "#imagesList img"
+        ],
+        "inValidSrcRegex": [
+          "data:,"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
         ]
       }
     },
@@ -15496,7 +15592,7 @@
         "vk.com/video*",
         "vkvideo.ru"
       ],
-      "subtitleRule.add_v.[1.4.12]": {
+      "subtitleRule.add": {
         "type": "text_track",
         "videoPlayerSelector": ".videoplayer_media_provider",
         "loadingContainerSelector": "#video_player",
@@ -15710,9 +15806,7 @@
           "injectedCSS": [
             ".imt-caption-window {width: 90%;}"
           ]
-        }
-      },
-      "subtitleRule.add_v.[1.7.6]": {
+        },
         "multiSetting": {
           "activeLangSelector": ".jw-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active"
         }
@@ -15778,9 +15872,7 @@
           "injectedCSS": [
             ".imt-caption-window {width: 90%;}"
           ]
-        }
-      },
-      "subtitleRule.add_v.[1.7.6]": {
+        },
         "multiSetting": {
           "activeLangSelector": ".jw-settings-submenu-captions .jw-settings-submenu-items .jw-settings-item-active"
         }
@@ -15813,7 +15905,7 @@
         "quickButtonRule": {
           "appendSelector": ".controls_bottom_right",
           "insertBeforeSelector": ".subtitles_toggle_button",
-          "ccEnableSelector": "button.subtitles_toggle_button:not([disabled])"
+          "ccEnableSelector": "button.subtitles_toggle_button"
         }
       }
     },
@@ -16357,9 +16449,7 @@
             ".imt-caption-window { margin-bottom: 50px; }",
             "#immersive-translate-caption-window {opacity: 1 !important;}"
           ]
-        }
-      },
-      "subtitleRule.add_v.[1.7.6]": {
+        },
         "multiSetting": {
           "activeLangSelector": "input[name=\"subtitle-language\"].after\\:visible",
           "langValueSelector": "input[name=subtitle-language]",
@@ -16398,9 +16488,7 @@
           "injectedCSS": [
             ".imt-caption-window {width: 90%;}"
           ]
-        }
-      },
-      "subtitleRule.add_v.[1.7.6]": {
+        },
         "multiSetting": {
           "activeLangSelector": "li.vjs-menu-item.vjs-captions-menu-item.vjs-selected > span",
           "langTextRegex": "(\\S+)\\s+Captions"
@@ -16904,9 +16992,6 @@
           "ccEnableSelector": ".toggle-captions"
         }
       },
-      "subtitleRule.add_v.[1.7.1]": {
-        "attachRule": null
-      },
       "subtitleRule.add_v.[1.19.4]": {
         "type": "edx",
         "attachRule": {
@@ -17073,7 +17158,7 @@
         "type": "ebutt",
         "subtitleUrlRegExp": "mtt/.*.xml",
         "loadingContainerSelector": ".zdfplayer-video-container",
-        "hookType": "fetch",
+        "hookType": "fetch|xhr",
         "responseType": "document",
         "injectedCss": [
           "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container {display:inline-block;vertical-align:middle;margin-right:-16px;}"
@@ -17092,9 +17177,6 @@
             ".imt-caption-window {width: 90%;}"
           ]
         }
-      },
-      "subtitleRule.add_v.[1.4.1]": {
-        "hookType": "fetch|xhr"
       }
     },
     {
@@ -17178,20 +17260,14 @@
         ".CaptionBox"
       ],
       "subtitleRule.add": {
-        "type": "ebutt",
+        "type": "xml",
         "hookType": "fetch",
         "subtitleUrlRegExp": "\\.ttml$",
         "loadingContainerSelector": "#web-player-app",
         "quickButtonRule": {
           "appendSelector": ".PlayerSettingsGroup",
           "insertBeforeSelector": ".PlayerSettingsGroup .PlayerControlsButton"
-        }
-      },
-      "subtitleRule.add_v.[1.9.6]": {
-        "type": "xml",
-        "hookType": "fetch",
-        "subtitleUrlRegExp": "\\.ttml$",
-        "loadingContainerSelector": "#web-player-app",
+        },
         "injectedCss": [
           ".CaptionBox {white-space: pre-line;}"
         ],
@@ -17956,6 +18032,8 @@
       "mutationExcludeSelectors.add": [
         "#immersive-translate-caption-window *"
       ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
       "subtitleRule.add": {
         "type": "webvtt",
         "hookType": "xhr",
@@ -18236,7 +18314,7 @@
         "[data-testid^=replyBtn]",
         "[aria-label='View profile']"
       ],
-      "likePreSelectors.add_v.[1.11.5]": [
+      "likePreSelectors.add": [
         "[data-testid*=postThread] [data-word-wrap]",
         "[data-testid*=feedItem] [data-word-wrap]"
       ],
@@ -18593,13 +18671,12 @@
       "id": "queenslibrary.org",
       "matches": "queenslibrary.org",
       "injectedCss": [
-        [
-          "font.notranslate { all: unset;}"
-        ]
+        "font.notranslate { all: unset!important;}"
       ],
       "excludeSelectors.add": [
         "#Web-QBPL-Menu"
-      ]
+      ],
+      "excludeSelectors.replace.[1.24.5]": []
     },
     {
       "id": "ac.nowcoder",
@@ -20738,7 +20815,8 @@
       ],
       "selectorMatches": [
         "#plugin-product-comment",
-        ".plugin-product-comment-collections"
+        ".plugin-product-comment-collections",
+        "[class*='line-clamp-']"
       ],
       "injectedCss.add": [
         ".side_list a,.title a,.tit,.item-title {-webkit-line-clamp:unset!important;height:unset!important;}",
@@ -20839,20 +20917,15 @@
       "mainFrameMinWordCount": 0,
       "domCheckTimeout": 1,
       "subtitleRule.add": {
-        "type": "subsrt",
-        "subtitleUrlRegExp": ".*\\.vtt",
-        "hookType": "xhr",
+        "type": "general",
+        "subtitleUrlRegExp": "embed/captions/.*\\.json",
+        "hookType": "fetch",
         "injectedCss": [
           "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container { display: inline-block !important; height: 100%; position: absolute; bottom: 100%; right: 0;}"
         ],
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
-        ]
-      },
-      "subtitleRule.add_v.[1.10.3]": {
-        "type": "general",
-        "subtitleUrlRegExp": "embed/captions/.*\\.json",
-        "hookType": "fetch",
+        ],
         "loadingContainerSelector": "div[data-handle='captions']",
         "generalSetting": {
           "captionsPath": "captions",
@@ -20895,9 +20968,9 @@
       "mainFrameMinWordCount": 0,
       "domCheckTimeout": 1,
       "subtitleRule.add": {
-        "type": "subsrt",
-        "subtitleUrlRegExp": ".*\\.vtt",
-        "hookType": "xhr",
+        "type": "general",
+        "subtitleUrlRegExp": "embed/captions/.*\\.json",
+        "hookType": "fetch",
         "loadingContainerSelector": "div[data-handle='captions']",
         "injectedCss": [
           "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container { display: inline-block !important; height: 100%; position: absolute; bottom: 100%; right: 0;}"
@@ -20921,13 +20994,7 @@
             ".imt-caption-window {width: 90%;}"
           ],
           "isDelay": true
-        }
-      },
-      "subtitleRule.add_v.[1.10.3]": {
-        "type": "general",
-        "subtitleUrlRegExp": "embed/captions/.*\\.json",
-        "hookType": "fetch",
-        "loadingContainerSelector": "div[data-handle='captions']",
+        },
         "generalSetting": {
           "captionsPath": "captions",
           "itemsPath": "hash.lines",
@@ -21402,6 +21469,26 @@
       }
     },
     {
+      "id": "live_attach_basic",
+      "selectorMatches": [
+        "meta[name='immersive-translate-live-attach-basic'][content='true']"
+      ],
+      "subtitleRule.add": {
+        "type": "live_attach",
+        "videoSelector": "#live-video",
+        "loadingContainerSelector": "#live-caption-container",
+        "captionContainerSelector": "#live-caption-container",
+        "attachRule": {
+          "appendSelector": "#live-attach-stage",
+          "showSupportTips": false,
+          "injectedCSS": [
+            ".imt-caption-window {width: 88%;}",
+            ".imt-caption-window {bottom: 12%;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "moltbook",
       "matches": "www.moltbook.com",
       "excludeSelectors.add": [
@@ -21483,8 +21570,7 @@
         "quickButtonRule": {
           "appendSelector": ".jw-button-container",
           "insertBeforeSelector": ".jw-icon-cc",
-          "ccEnableSelector": ".jw-icon-cc",
-          "isEnableCCObserver": true
+          "ccEnableSelector": ".jw-icon-cc"
         },
         "attachRule": {
           "appendSelector": ".jw-wrapper",
@@ -21931,6 +22017,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-08T15:16:06.707Z",
-  "latestVersion": "1.27.3"
+  "buildinConfigUpdatedAt": "2026-04-09T10:53:00.834Z",
+  "latestVersion": "1.28.1"
 }
