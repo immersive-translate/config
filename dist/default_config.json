@@ -7140,11 +7140,11 @@
         ".immersive-translate-target-wrapper[dir=rtl] {text-align: right;}",
         "#commentCanvas .cmt {display:flex;flex-direction: column;}",
         "#commentCanvas .cmt font br {display: none;}",
-        "#video-title,h1.ytd-watch-metadata,.ytd-video-renderer,.yt-lockup-metadata-view-model-wiz__title {-webkit-line-clamp: unset;max-height: unset;}",
-        "yt-formatted-string#video-title,.ShortsLockupViewModelHostOutsideMetadataTitle {-webkit-line-clamp: unset;max-height: unset;}",
+        "#video-title,h1.ytd-watch-metadata,.ytd-video-renderer,.yt-lockup-metadata-view-model-wiz__title {-webkit-line-clamp: unset !important;max-height: unset !important;}",
+        "yt-formatted-string#video-title,.ShortsLockupViewModelHostOutsideMetadataTitle {-webkit-line-clamp: unset !important;max-height: unset !important;}",
         "ytd-expander.ytd-comment-renderer {--ytd-expander-max-lines: 1000;}",
         ".page-header-view-model-wiz__page-header-title--page-header-title-large {-webkit-line-clamp: unset !important;max-height: unset !important;}",
-        "#title,#video-title,.yt-lockup-metadata-view-model__title,.shortsLockupViewModelHostOutsideMetadataTitle,h1.ytd-watch-metadata,.ytwFeedAdMetadataViewModelHostTextsStyleStandardHeadline {-webkit-line-clamp: unset !important;max-height: unset !important;}"
+        "#title,#video-title,.yt-lockup-metadata-view-model__title,.ytLockupMetadataViewModelTitle,.shortsLockupViewModelHostOutsideMetadataTitle,h1.ytd-watch-metadata,.ytwFeedAdMetadataViewModelHostTextsStyleStandardHeadline {-webkit-line-clamp: unset !important;max-height: unset !important;}"
       ],
       "isTranslateTitle": false,
       "observeUrlChange": true,
@@ -22057,6 +22057,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-09T15:06:05.559Z",
+  "buildinConfigUpdatedAt": "2026-04-09T23:57:30.144Z",
   "latestVersion": "1.28.1"
 }
