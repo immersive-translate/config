@@ -178,6 +178,29 @@
   "enablePerformanceReport": false,
   "enablePerformanceReport.add_v.[1.25.3]": true,
   "enableProSecretAPIKey": false,
+  "performanceUrlPatternGroups": [
+    {
+      "matches": [
+        "www.reddit.com",
+        "old.reddit.com"
+      ],
+      "patterns": [
+        {
+          "pattern": "^/$",
+          "key": "url_scope",
+          "constant": "home"
+        },
+        {
+          "pattern": "^/(news)/?$",
+          "key": "url_scope"
+        },
+        {
+          "pattern": "^/r/([^/]+)(?:/.*)?$",
+          "key": "url_scope"
+        }
+      ]
+    }
+  ],
   "batchReportConfig": {
     "enabled": false,
     "maxSize": 5,
@@ -22057,6 +22080,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-10T09:43:32.869Z",
-  "latestVersion": "1.28.1"
+  "buildinConfigUpdatedAt": "2026-04-10T10:16:36.773Z",
+  "latestVersion": "1.28.2"
 }
