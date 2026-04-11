@@ -7196,7 +7196,8 @@
         "#title",
         ".product-item-title",
         ".product-item-price",
-        "#commentCanvas .cmt"
+        "#commentCanvas .cmt",
+        ".ytwTranscriptSegmentViewModelHost"
       ],
       "extraBlockSelectors.add": [
         "yt-formatted-string.ytd-transcript-segment-renderer",
@@ -22084,6 +22085,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-11T07:54:21.341Z",
+  "buildinConfigUpdatedAt": "2026-04-11T08:32:18.151Z",
   "latestVersion": "1.28.2"
 }
