@@ -6925,6 +6925,9 @@
         ".yt-spec-button-view-model",
         ".yt-core-attributed-string > span",
         ".yt-core-attributed-string",
+        ".shortsLockupViewModelHostMetadataTitle",
+        ".YtmCommentRendererText",
+        ".ytAttributedStringHost",
         ".title"
       ],
       "skipDynamicMarkSelectors": [
@@ -7177,6 +7180,7 @@
         "yt-formatted-string#content-text",
         "h1",
         "yt-formatted-string#video-title",
+        ".ytLockupMetadataViewModelTitle,.shortsLockupViewModelHostOutsideMetadataTitle",
         "yt-formatted-string.span",
         "span#video-title",
         "a#video-title",
@@ -22080,6 +22084,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-10T10:16:03.000Z",
+  "buildinConfigUpdatedAt": "2026-04-11T07:54:21.341Z",
   "latestVersion": "1.28.2"
 }
