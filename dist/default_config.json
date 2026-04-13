@@ -2231,10 +2231,10 @@
             "claude-opus-4-6",
             "claude-sonnet-4-6"
           ],
+          "apiUrl": "^https://api\\.anthropic\\.com(?:/|$)",
           "bodyConfigs": {
             "thinking": {
-              "type": "adaptive",
-              "effort": "low"
+              "type": "disabled"
             }
           }
         }
@@ -22094,6 +22094,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-13T06:36:31.846Z",
+  "buildinConfigUpdatedAt": "2026-04-13T10:43:45.207Z",
   "latestVersion": "1.28.2"
 }
