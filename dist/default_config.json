@@ -20857,6 +20857,15 @@
       ]
     },
     {
+      "id": "disableAutoHeight",
+      "matches": [
+        "app.intercom.com"
+      ],
+      "mixedMode.add": {
+        "enable": false
+      }
+    },
+    {
       "id": "autoHeight",
       "matches": [
         "*.sooplive.*",
@@ -22085,6 +22094,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-11T08:32:18.151Z",
+  "buildinConfigUpdatedAt": "2026-04-13T06:36:31.846Z",
   "latestVersion": "1.28.2"
 }
