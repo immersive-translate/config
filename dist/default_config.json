@@ -4654,8 +4654,7 @@
       "enabled": true,
       "translationOnlySelectors": [
         "header nav",
-        ".top-nav nav",
-        "button"
+        ".top-nav nav"
       ],
       "translationOnlyDetect": {
         "enabled": false,
@@ -22094,6 +22093,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-13T10:43:45.207Z",
+  "buildinConfigUpdatedAt": "2026-04-14T15:21:14.358Z",
   "latestVersion": "1.28.2"
 }
