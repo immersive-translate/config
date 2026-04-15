@@ -17,6 +17,7 @@
   "termsDomainWithSelf": false,
   "disableOpenUpgradePage": false,
   "forceAutoTranslate": false,
+  "popupVariant": "modern",
   "sensitiveConfig": {
     "telemetry": true,
     "sensitiveMode": "close",
@@ -654,6 +655,7 @@
   "enableInputTranslation": true,
   "enableFloatShare": true,
   "isShowInputTranslationConsent": true,
+  "disableInputLongTextConfirm": false,
   "isEnableGuideTips": true,
   "isEnableNotification": true,
   "enableShowFloatingBallGuide": true,
@@ -878,6 +880,12 @@
             "apiUrl": ""
           }
         }
+      }
+    },
+    {
+      "condition": "abTagNumber<5",
+      "advanceConfig": {
+        "popupVariant": "legacy"
       }
     },
     {
@@ -3526,6 +3534,7 @@
     "inputConfig": {
       "clearContentEnable": true,
       "execCommandDeleteEnable": false,
+      "enableOptionShortcutFallback": true,
       "enableRangeDeleteContent": false,
       "triggerGapMs": 250,
       "triggerIdleMs": 250,
@@ -22093,6 +22102,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-04-14T15:21:14.358Z",
-  "latestVersion": "1.28.2"
+  "buildinConfigUpdatedAt": "2026-04-15T11:12:55.769Z",
+  "latestVersion": "1.28.3"
 }
