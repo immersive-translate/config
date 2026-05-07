@@ -837,6 +837,7 @@
     "openai-pro",
     "claude-pro",
     "gemini-pro",
+    "plamo-pro",
     "grok-pro",
     "deepl-pro",
     "zhipu-pro",
@@ -1306,6 +1307,7 @@
           "free-model",
           "google-free",
           "bing-free",
+          "plamo-pro",
           "deepl-pro",
           "openai-pro",
           "deepseek-pro",
@@ -2629,6 +2631,24 @@
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4
     },
+    "plamo": {
+      "extends": "ai",
+      "name": "PLaMo",
+      "model": "plamo-2.2-prime",
+      "models": "plamo-2.2-prime|plamo-3.0-prime-beta",
+      "provider": "custom",
+      "limit": 4,
+      "maxTextGroupLengthPerRequestForSubtitle": 5,
+      "apiUrl": "https://api.platform.preferredai.jp/v1/chat/completions",
+      "enableRichTranslate": true,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
+      "defaultMaxTextGroupLengthPerRequest": 4,
+      "maxTextGroupLengthPerRequest": 4,
+      "bodyConfigs": {
+        "temperature": 0
+      }
+    },
     "ollama": {
       "extends": "ai",
       "name": "Ollama",
@@ -3151,6 +3171,28 @@
     "grok-pro.add_v.[1.25.1]": {
       "disabledAt": ""
     },
+    "plamo-pro": {
+      "extends": "plamo",
+      "name": "PLaMo 2.2 Prime",
+      "provider": "pro",
+      "type": "custom-ai",
+      "visible": true,
+      "model": "plamo-2.2-prime",
+      "proModel": "plamo-2.2-prime",
+      "concurrencyLimit": 50,
+      "defaultVisible": true,
+      "limit": 20,
+      "group": "pro",
+      "disabledAt": "2025-01-01",
+      "supportFeatures": [
+        "aiWriting",
+        "selectionTranslation"
+      ]
+    },
+    "plamo-pro.add_v.[1.28.6]": {
+      "type": "plamo",
+      "disabledAt": ""
+    },
     "deepl-pro": {
       "name": "DeepL Pro",
       "type": "deepl",
@@ -3494,6 +3536,7 @@
       2,
       0
     ],
+    "enableDeferredRender": true,
     "deferredRenderRootMargin": "0% 0px 35% 0px",
     "skipIgnoreSelectors": [
       "select",
@@ -4262,6 +4305,7 @@
     "injectedCss": [
       ".immersive-translate-target-wrapper[dir='rtl'] {text-align: right;display:block!important;}",
       "[dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {text-align:left;direction:ltr;}",
+      "[imt-translation-dir=rtl] [data-imt-translation-only] {text-align:right;}",
       ".immersive-translate-target-wrapper {word-break:break-word; user-select:text; font-feature-settings:normal;}",
       "[imt-state=dual] .immersive-translate-target-translation-block-wrapper-theme-dividingLine::before {display:block;}",
       "[imt-trans-position=before] .immersive-translate-target-translation-block-wrapper {display:block!important;}",
@@ -6186,12 +6230,14 @@
         ],
         "liveSubtitleRule": {
           "containerSelector": "div[data-tid=\"closed-caption-v2-virtual-list-content\"] > .ui-box",
+          "textContentSelector": "[data-tid='closed-caption-text']",
           "textSelectors": [
             "[data-tid='closed-caption-text']"
           ],
           "reportSelector": "[data-tid='closed-captions-renderer']",
           "mutationChangeDelay": 1000,
           "enableTriggerTranslate": true,
+          "preventRemoval": true,
           "isMeeting": true
         },
         "rtlInjectedCss": [
@@ -22357,6 +22403,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-07T01:08:25.097Z",
-  "latestVersion": "1.28.5"
+  "buildinConfigUpdatedAt": "2026-05-07T11:57:00.000Z",
+  "latestVersion": "1.29.1"
 }
