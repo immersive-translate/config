@@ -3279,8 +3279,10 @@
       "enableFallback": false,
       "iconType": "deepseek",
       "retry": 2,
-      "limit": 0,
-      "concurrencyLimit": 20
+      "limit": 10,
+      "concurrencyLimit": 20,
+      "defaultMaxTextGroupLengthPerRequest": 4,
+      "maxTextGroupLengthPerRequest": 4
     },
     "free-model-stream": {
       "extends": "ai",
@@ -22502,6 +22504,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-09T10:39:47.000Z",
+  "buildinConfigUpdatedAt": "2026-05-09T12:37:17.342Z",
   "latestVersion": "1.29.2"
 }
