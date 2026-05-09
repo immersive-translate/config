@@ -20080,7 +20080,9 @@
         "urlFetchType": "canvasArgs",
         "imageSelectors": [
           "div[class*='scrollViewCut'] img",
-          "div[class*='scrollViewCut'] canvas"
+          "div[class*='scrollViewCut'] canvas",
+          "div[data-cut-index] img",
+          "div[data-cut-index] canvas"
         ],
         "platforms": [
           "chrome",
@@ -22403,6 +22405,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-07T11:57:00.000Z",
+  "buildinConfigUpdatedAt": "2026-05-09T03:01:29.969Z",
   "latestVersion": "1.29.1"
 }
