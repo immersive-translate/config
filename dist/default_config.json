@@ -18,6 +18,8 @@
   "disableOpenUpgradePage": false,
   "forceAutoTranslate": false,
   "popupVariant": "legacy",
+  "tagsVersion": "1",
+  "dynamicI18nVersion": "1",
   "sensitiveConfig": {
     "telemetry": true,
     "sensitiveMode": "close",
@@ -169,13 +171,57 @@
     "bilingual-mix"
   ],
   "interval": 3600000,
+  "powerUser": {
+    "enabled": true,
+    "globalCooldownDays": 3,
+    "sceneCooldownDays": 14,
+    "silentModeCloseCount": 2,
+    "silentModeDays": 90,
+    "longReading": {
+      "enabled": true,
+      "minParagraphCount": 20,
+      "minStaySeconds": 30,
+      "autoHideMs": 8000,
+      "trialService": "pro-translate-trial",
+      "feedbackAutoCloseSeconds": 5,
+      "maxProTranslateUsedPercent": 50
+    },
+    "inputLongSentence": {
+      "enabled": true,
+      "minInputChars": 200,
+      "trialService": "pro-translate-trial",
+      "autoHideMs": 8000,
+      "maxProTranslateUsedPercent": 90
+    },
+    "mouseHoverLongSentence": {
+      "enabled": true,
+      "minSelectionChars": 100,
+      "minTriggerCount": 3,
+      "trialService": "pro-translate-trial",
+      "maxProTranslateUsedPercent": 90
+    },
+    "selectionLongSentence": {
+      "enabled": true,
+      "minSelectionChars": 100,
+      "minSelectionTriggerCount": 3,
+      "trialService": "pro-translate-trial",
+      "maxProTranslateUsedPercent": 90
+    },
+    "aiSubtitle": {
+      "enabled": true,
+      "minWatchSeconds": 30,
+      "autoHideMs": 10000
+    }
+  },
   "beta": false,
   "cache": true,
   "enableBatchPatternDetection": true,
   "batchPatternMinCount": 3,
   "batchPatternConfidenceThreshold": 0.7,
   "enableAiAssistant": true,
+  "enableSelectionTranslationGuideExperiment": true,
   "enableSelfServiceReport": true,
+  "enableTranslateLeaveReport": true,
   "enablePerformanceReport": false,
   "enablePerformanceReport.add_v.[1.25.3]": true,
   "enableProSecretAPIKey": false,
@@ -1510,6 +1556,14 @@
     "excludeMatches": []
   },
   "sameLangTranslationTheme": "background",
+  "serviceRecommendation": {
+    "enabled": true,
+    "enableGuide": true,
+    "defaultService": "deepseek-pro",
+    "langMap": {
+      "auto2ja": "plamo-pro"
+    }
+  },
   "translationServices": {
     "volcAlpha": {
       "placeholderDelimiters": [
@@ -2897,22 +2951,32 @@
         {
           "serviceType": "hymt",
           "legacyServiceId": "hymt-free",
-          "preferredProvider": "hymt"
+          "preferredProvider": "hymt",
+          "homepage": "https://cloud.tencent.com/document/product/1729/104753",
+          "docUrl": "https://github.com/Tencent-Hunyuan/HY-MT/blob/main/README_CN.md",
+          "sponsorIconId": "4"
         },
         {
           "serviceType": "siliconcloud",
           "legacyServiceId": "siliconcloud-free",
-          "preferredProvider": "siliconflow"
+          "preferredProvider": "siliconflow",
+          "introductionPlaceholder": "<picture style='display: block; width: 100px;height: 20px;'><source srcset='https://s.immersivetranslate.com/assets/r2-uploads/siliconFlow-dark.png' media='(prefers-color-scheme: dark)' /><img src='https://s.immersivetranslate.com/assets/r2-uploads/siliconFlow-light.png' /></picture>",
+          "homepage": "https://cloud.siliconflow.cn/",
+          "sponsorIconId": "3"
         },
         {
           "serviceType": "zhipu",
           "legacyServiceId": "zhipu-free",
-          "preferredProvider": "glm"
+          "preferredProvider": "glm",
+          "homepage": "https://open.bigmodel.cn/",
+          "sponsorIconId": "2"
         },
         {
           "serviceType": "babel-lite",
           "legacyServiceId": "babel-lite-free",
-          "preferredProvider": "babellite"
+          "preferredProvider": "babellite",
+          "homepage": "https://immersivetranslate.com/",
+          "sponsorIconId": "1"
         }
       ],
       "transitionalFreeServiceOrder": [
@@ -3202,6 +3266,34 @@
       "concurrencyLimit": 50,
       "visible": true,
       "limit": 8
+    },
+    "pro-translate-trial": {
+      "extends": "ai",
+      "type": "pro-translate-trial",
+      "group": "pro",
+      "provider": "pro",
+      "name": "DeepSeek-V4-Flash",
+      "visible": false,
+      "hidden": true,
+      "enableAIContext": true,
+      "enableFallback": false,
+      "iconType": "deepseek",
+      "retry": 2,
+      "limit": 0,
+      "concurrencyLimit": 20
+    },
+    "free-model-stream": {
+      "extends": "ai",
+      "type": "free-model-stream",
+      "group": "free",
+      "name": "free-model-stream",
+      "visible": false,
+      "hidden": true,
+      "defaultVisible": false,
+      "retry": 1,
+      "limit": 20,
+      "concurrencyLimit": 20,
+      "requestTimeout": 120000
     },
     "openai-max": {
       "name": "GPT-5.4",
@@ -6071,7 +6163,8 @@
         },
         "aiSubtitle": {
           "enable": true,
-          "maxDurationHours": 4
+          "maxDurationHours": 4,
+          "quotedPostClosestSelector": "div[role=\"link\"]"
         },
         "videoSelector": "video",
         "attachRule": {
@@ -6700,9 +6793,13 @@
         "[data-testid=HomeTickerV2]",
         "[data-testid=SiteFooter]",
         "[class^=refinitiv-promo-bar__container]",
-        "[data-testid=ResponsiveAdSlot]",
-        "[data-testid=HomeTickerV2]"
+        "[data-testid=ResponsiveAdSlot]"
       ],
+      "preTranslateLimiter.add": {
+        "header.selectors": [
+          "nav"
+        ]
+      },
       "bodyRule.add": {
         "bodySelector": "[data-testid=MainContent]",
         "articleSelector": "[data-testid=ArticleBody]"
@@ -22405,6 +22502,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-09T03:01:29.969Z",
-  "latestVersion": "1.29.1"
+  "buildinConfigUpdatedAt": "2026-05-09T10:33:08.599Z",
+  "latestVersion": "1.29.2"
 }
