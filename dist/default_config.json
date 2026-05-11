@@ -1148,13 +1148,6 @@
       }
     },
     {
-      "condition": "interfaceLanguage==zh-CN && versionNumber>12701 && abTagNumber<2 && installedAtTimestamp>1778428800000",
-      "advanceConfig": {
-        "translationService": "free-model",
-        "enableFreeModelMode": true
-      }
-    },
-    {
       "condition": "interfaceLanguage!=zh-CN && versionNumber>12802 && abTagNumber<7",
       "advanceConfig": {
         "enableFreeModelMode": true,
@@ -1172,6 +1165,13 @@
     },
     {
       "condition": "interfaceLanguage==zh-CN && versionNumber>12701 && abTagNumber==0",
+      "advanceConfig": {
+        "translationService": "free-model",
+        "enableFreeModelMode": true
+      }
+    },
+    {
+      "condition": "interfaceLanguage==zh-CN && versionNumber>12701 && abTagNumber<2 && installedAtTimestamp>1778428800000",
       "advanceConfig": {
         "translationService": "free-model",
         "enableFreeModelMode": true
@@ -22511,6 +22511,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-11T03:00:17.355Z",
+  "buildinConfigUpdatedAt": "2026-05-11T03:12:07.478Z",
   "latestVersion": "1.29.2"
 }
