@@ -867,9 +867,9 @@
       "input"
     ],
     "totalLimit": {
-      "unregisteredSoft": 20,
-      "unregisteredHard": 30,
-      "soft": 40,
+      "unregisteredSoft": 10,
+      "unregisteredHard": 10,
+      "soft": 20,
       "hard": 90
     }
   },
@@ -1127,20 +1127,6 @@
       }
     },
     {
-      "condition": "abTagNumber==0 && interfaceLanguage==zh-CN",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "enable": true,
-          "totalLimit": {
-            "unregisteredSoft": 20,
-            "unregisteredHard": 30,
-            "soft": 40,
-            "hard": 90
-          }
-        }
-      }
-    },
-    {
       "condition": "interfaceLanguage!=zh-CN && versionNumber>12701",
       "advanceConfig": {
         "translationService": "free-model",
@@ -1183,24 +1169,24 @@
         "translationUsageLimit.add": {
           "enable": true,
           "totalLimit": {
-            "unregisteredSoft": 20,
-            "unregisteredHard": 30,
-            "soft": 40,
+            "unregisteredSoft": 10,
+            "unregisteredHard": 10,
+            "soft": 20,
             "hard": 60
           }
         }
       }
     },
     {
-      "condition": "abTagNumber==1",
+      "condition": "abTagNumber==0 && interfaceLanguage==zh-CN",
       "advanceConfig": {
         "translationUsageLimit.add": {
           "enable": true,
           "totalLimit": {
-            "unregisteredSoft": 20,
-            "unregisteredHard": 30,
-            "soft": 40,
-            "hard": 50
+            "unregisteredSoft": 10,
+            "unregisteredHard": 10,
+            "soft": 20,
+            "hard": 90
           }
         }
       }
@@ -1211,9 +1197,9 @@
         "translationUsageLimit.add": {
           "enable": true,
           "totalLimit": {
-            "unregisteredSoft": 20,
-            "unregisteredHard": 30,
-            "soft": 40,
+            "unregisteredSoft": 10,
+            "unregisteredHard": 10,
+            "soft": 20,
             "hard": 90
           }
         }
@@ -1225,10 +1211,24 @@
         "translationUsageLimit.add": {
           "enable": true,
           "totalLimit": {
-            "unregisteredSoft": 20,
-            "unregisteredHard": 30,
-            "soft": 40,
+            "unregisteredSoft": 10,
+            "unregisteredHard": 10,
+            "soft": 20,
             "hard": 60
+          }
+        }
+      }
+    },
+    {
+      "condition": "abTagNumber==1",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "enable": true,
+          "totalLimit": {
+            "unregisteredSoft": 10,
+            "unregisteredHard": 10,
+            "soft": 20,
+            "hard": 50
           }
         }
       }
@@ -1239,51 +1239,9 @@
         "translationUsageLimit.add": {
           "enable": true,
           "totalLimit": {
-            "unregisteredSoft": 20,
-            "unregisteredHard": 30,
-            "soft": 40,
-            "hard": 50
-          }
-        }
-      }
-    },
-    {
-      "condition": "abTagNumber>1 && abTagNumber<4 && interfaceLanguage==zh-CN && installedAtTimestamp>1770220800000",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "enable": true,
-          "totalLimit": {
-            "unregisteredSoft": 20,
-            "unregisteredHard": 30,
-            "soft": 40,
-            "hard": 90
-          }
-        }
-      }
-    },
-    {
-      "condition": "abTagNumber>1 && abTagNumber<4 && interfaceLanguage!=zh-CN && installedAtTimestamp>1770220800000",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "enable": true,
-          "totalLimit": {
-            "unregisteredSoft": 20,
-            "unregisteredHard": 30,
-            "soft": 40,
-            "hard": 60
-          }
-        }
-      }
-    },
-    {
-      "condition": "abTagNumber>7 && abTagNumber<10 && installedAtTimestamp>1770220800000",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "enable": true,
-          "totalLimit": {
-            "unregisteredSoft": 20,
-            "unregisteredHard": 30,
-            "soft": 40,
+            "unregisteredSoft": 10,
+            "unregisteredHard": 10,
+            "soft": 20,
             "hard": 50
           }
         }
@@ -22511,6 +22469,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-12T03:16:07.048Z",
+  "buildinConfigUpdatedAt": "2026-05-12T05:38:55.027Z",
   "latestVersion": "1.29.2"
 }
