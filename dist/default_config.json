@@ -1127,43 +1127,6 @@
       }
     },
     {
-      "condition": "interfaceLanguage!=zh-CN && versionNumber>12701",
-      "advanceConfig": {
-        "translationService": "free-model",
-        "enableFreeModelMode": true
-      }
-    },
-    {
-      "condition": "interfaceLanguage!=zh-CN && versionNumber>12802 && abTagNumber<7",
-      "advanceConfig": {
-        "enableFreeModelMode": true,
-        "translationServices.add": {
-          "google-free": {
-            "disabledAt": "2026-04-19",
-            "migrateToService": "free-model"
-          },
-          "bing-free": {
-            "disabledAt": "2026-04-19",
-            "migrateToService": "free-model"
-          }
-        }
-      }
-    },
-    {
-      "condition": "interfaceLanguage==zh-CN && versionNumber>12701 && abTagNumber==0",
-      "advanceConfig": {
-        "translationService": "free-model",
-        "enableFreeModelMode": true
-      }
-    },
-    {
-      "condition": "interfaceLanguage==zh-CN && versionNumber>12701 && abTagNumber<10 && installedAtTimestamp>1778428800000",
-      "advanceConfig": {
-        "translationService": "free-model",
-        "enableFreeModelMode": true
-      }
-    },
-    {
       "condition": "abTagNumber==0 && interfaceLanguage!=zh-CN",
       "advanceConfig": {
         "translationUsageLimit.add": {
@@ -1344,6 +1307,60 @@
           "gemini-max",
           "openai-max",
           "claude-max"
+        ]
+      }
+    },
+    {
+      "condition": "interfaceLanguage!=zh-CN && versionNumber>12701",
+      "advanceConfig": {
+        "translationService": "free-model",
+        "enableFreeModelMode": true
+      }
+    },
+    {
+      "condition": "interfaceLanguage!=zh-CN && versionNumber>12802 && abTagNumber<7",
+      "advanceConfig": {
+        "enableFreeModelMode": true,
+        "translationServices.add": {
+          "google-free": {
+            "disabledAt": "2026-04-19",
+            "migrateToService": "free-model"
+          },
+          "bing-free": {
+            "disabledAt": "2026-04-19",
+            "migrateToService": "free-model"
+          }
+        }
+      }
+    },
+    {
+      "condition": "interfaceLanguage==zh-CN && versionNumber>12701 && abTagNumber==0",
+      "advanceConfig": {
+        "translationService": "free-model",
+        "enableFreeModelMode": true
+      }
+    },
+    {
+      "condition": "interfaceLanguage==zh-CN && versionNumber>12701 && abTagNumber<10 && installedAtTimestamp>1778428800000",
+      "advanceConfig": {
+        "translationService": "free-model",
+        "enableFreeModelMode": true,
+        "defaultTranslationServicesOrder": [
+          "free-model",
+          "siliconcloud-free",
+          "zhipu-free",
+          "babel-lite-free",
+          "deepseek-pro",
+          "qwen-pro",
+          "gemini-pro",
+          "openai-pro",
+          "zhipu-pro",
+          "deepl-pro",
+          "openai-max",
+          "gemini-max",
+          "kimi-max",
+          "claude-max",
+          "zhipu-max"
         ]
       }
     }
@@ -22469,6 +22486,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-12T10:07:17.493Z",
+  "buildinConfigUpdatedAt": "2026-05-12T10:30:10.488Z",
   "latestVersion": "1.29.2"
 }
