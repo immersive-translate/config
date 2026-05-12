@@ -1157,7 +1157,7 @@
       }
     },
     {
-      "condition": "interfaceLanguage==zh-CN && versionNumber>12701 && abTagNumber<5 && installedAtTimestamp>1778428800000",
+      "condition": "interfaceLanguage==zh-CN && versionNumber>12701 && abTagNumber<10 && installedAtTimestamp>1778428800000",
       "advanceConfig": {
         "translationService": "free-model",
         "enableFreeModelMode": true
@@ -9106,7 +9106,7 @@
           "insertBeforeSelector": ".vjs-playback-rate"
         },
         "attachRule": {
-          "appendSelector": ".bvp-playlist-player__container",
+          "appendSelector": ".video-js",
           "injectedCSS": [
             ".imt-caption-window {width: 90%;}"
           ],
@@ -22469,6 +22469,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-12T05:38:55.027Z",
+  "buildinConfigUpdatedAt": "2026-05-12T10:07:17.493Z",
   "latestVersion": "1.29.2"
 }
