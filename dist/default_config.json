@@ -858,7 +858,7 @@
   "pcFloatBallMainBtnTooltipShownCount": 0,
   "h5FloatBallMainBtnTooltipShownCount": 0,
   "translationUsageLimit": {
-    "enable": false,
+    "enable": true,
     "usageScenes": [
       "web_page",
       "subtitle_video",
@@ -870,7 +870,7 @@
       "unregisteredSoft": 10,
       "unregisteredHard": 10,
       "soft": 20,
-      "hard": 90
+      "hard": 50
     }
   },
   "defaultTranslationServicesOrder": [
@@ -1124,90 +1124,6 @@
             }
           }
         ]
-      }
-    },
-    {
-      "condition": "abTagNumber==0 && interfaceLanguage!=zh-CN",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "enable": true,
-          "totalLimit": {
-            "unregisteredSoft": 10,
-            "unregisteredHard": 10,
-            "soft": 20,
-            "hard": 60
-          }
-        }
-      }
-    },
-    {
-      "condition": "abTagNumber==0 && interfaceLanguage==zh-CN",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "enable": true,
-          "totalLimit": {
-            "unregisteredSoft": 10,
-            "unregisteredHard": 10,
-            "soft": 20,
-            "hard": 90
-          }
-        }
-      }
-    },
-    {
-      "condition": "abTagNumber>1 && abTagNumber<6 && interfaceLanguage==zh-CN",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "enable": true,
-          "totalLimit": {
-            "unregisteredSoft": 10,
-            "unregisteredHard": 10,
-            "soft": 20,
-            "hard": 90
-          }
-        }
-      }
-    },
-    {
-      "condition": "abTagNumber>1 && abTagNumber<6 && interfaceLanguage!=zh-CN",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "enable": true,
-          "totalLimit": {
-            "unregisteredSoft": 10,
-            "unregisteredHard": 10,
-            "soft": 20,
-            "hard": 60
-          }
-        }
-      }
-    },
-    {
-      "condition": "abTagNumber==1",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "enable": true,
-          "totalLimit": {
-            "unregisteredSoft": 10,
-            "unregisteredHard": 10,
-            "soft": 20,
-            "hard": 50
-          }
-        }
-      }
-    },
-    {
-      "condition": "abTagNumber>5 && abTagNumber<10",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "enable": true,
-          "totalLimit": {
-            "unregisteredSoft": 10,
-            "unregisteredHard": 10,
-            "soft": 20,
-            "hard": 50
-          }
-        }
       }
     },
     {
@@ -22487,6 +22403,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-13T10:09:01.678Z",
+  "buildinConfigUpdatedAt": "2026-05-13T11:29:16.385Z",
   "latestVersion": "1.29.3"
 }
