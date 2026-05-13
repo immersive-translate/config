@@ -12334,7 +12334,7 @@
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
-          ".read-viewer img"
+          ".rpage-main__inner img"
         ],
         "platforms": [
           "chrome",
@@ -22487,6 +22487,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-13T03:01:59.275Z",
+  "buildinConfigUpdatedAt": "2026-05-13T10:09:01.678Z",
   "latestVersion": "1.29.3"
 }
