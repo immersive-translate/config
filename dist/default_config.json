@@ -11897,7 +11897,8 @@
       },
       "likePreSelectors.add": [
         "[elevation='subtle'] .sc-brSvTw > :first-child > :first-child",
-        ".cm-gBCCZY"
+        ".cm-gBCCZY",
+        "[data-tag='comment-body']"
       ],
       "isTransformPreTagNewLine": true,
       "forceFormatPre": true
@@ -22486,6 +22487,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-12T10:52:10.000Z",
+  "buildinConfigUpdatedAt": "2026-05-13T03:01:59.275Z",
   "latestVersion": "1.29.3"
 }
