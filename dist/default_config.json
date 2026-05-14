@@ -3114,12 +3114,12 @@
     },
     "grok-pro": {
       "extends": "grok",
-      "name": "Grok 4.1 Fast",
+      "name": "Grok 4.3",
       "provider": "pro",
       "type": "grok",
       "visible": true,
-      "model": "grok-4-1-fast-non-reasoning",
-      "proModel": "grok-4-1-fast-non-reasoning",
+      "model": "grok-4-3",
+      "proModel": "grok-4-3",
       "concurrencyLimit": 50,
       "defaultVisible": true,
       "limit": 20,
@@ -22403,6 +22403,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-14T09:28:54.000Z",
+  "buildinConfigUpdatedAt": "2026-05-14T11:20:54.165Z",
   "latestVersion": "1.29.4"
 }
