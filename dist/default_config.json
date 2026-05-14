@@ -19,7 +19,7 @@
   "forceAutoTranslate": false,
   "popupVariant": "legacy",
   "tagsVersion": "1",
-  "dynamicI18nVersion": "1",
+  "dynamicI18nVersion": "2",
   "sensitiveConfig": {
     "telemetry": true,
     "sensitiveMode": "close",
@@ -22403,6 +22403,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-14T11:20:54.165Z",
+  "buildinConfigUpdatedAt": "2026-05-14T13:56:48.121Z",
   "latestVersion": "1.29.4"
 }
