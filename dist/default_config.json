@@ -5740,7 +5740,7 @@
         "opImageType": "append",
         "urlFetchType": "canvasArgs",
         "imageSelectors": [
-          ".scramble-page canvas",
+          ".scramble-page canvas[data]",
           ".center img "
         ],
         "loadingStyle": "z-index: 999",
@@ -13216,8 +13216,8 @@
         "type": "manga",
         "opImageType": "append",
         "imageSelectors": [
-          "#canvasCluster canvas",
-          "#viewport1 canvas"
+          "#canvasCluster canvas[data]",
+          "#viewport1 canvas[data]"
         ],
         "loadingSelectors": [
           "div"
@@ -13237,7 +13237,7 @@
         "opImageType": "append",
         "urlFetchType": "canvasArgs",
         "imageSelectors": [
-          ".PCM-viewer2_canvas_wrap canvas"
+          ".PCM-viewer2_canvas_wrap canvas[data]"
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
@@ -13258,7 +13258,7 @@
         "opImageType": "append",
         "urlFetchType": "canvasArgs",
         "imageSelectors": [
-          ".slick-track canvas"
+          ".slick-track canvas[data]"
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
@@ -13463,7 +13463,7 @@
         "type": "manga",
         "opImageType": "append",
         "imageSelectors": [
-          ".page_image canvas",
+          ".page_image canvas[data]",
           ".page_image img"
         ],
         "platforms": [
@@ -13607,7 +13607,7 @@
         "type": "manga",
         "urlFetchType": "canvasArgs",
         "imageSelectors": [
-          ".content.zoomable canvas"
+          ".content.zoomable canvas[data]"
         ],
         "opImageType": "append"
       },
@@ -13695,7 +13695,7 @@
         "urlFetchType": "canvasArgs",
         "imageSelectors": [
           ".UhCHi img[src*=bomtoon]",
-          ".printView canvas"
+          ".printView canvas[data]"
         ],
         "opImageType": "append",
         "loadingSelectors": [
@@ -13791,10 +13791,10 @@
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
-          ".js-page-area canvas",
+          ".js-page-area canvas[data]",
           "img.page-image.js-page-image",
           "img[class$=\"_page\"]",
-          "[class='-cv-page-canvas'] canvas"
+          "[class='-cv-page-canvas'] canvas[data]"
         ],
         "urlFetchType": "canvasArgs",
         "opImageType": "append",
@@ -13868,13 +13868,13 @@
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
-          ".js-page-area canvas",
+          ".js-page-area canvas[data]",
           "img.page-image.js-page-image",
           "img[class$=\"_page\"]",
-          "[class='-cv-page-canvas'] canvas",
+          "[class='-cv-page-canvas'] canvas[data]",
           ".link-slot img",
           ".c-viewer__comic img",
-          ".c-viewer__comic canvas",
+          ".c-viewer__comic canvas[data]",
           "img.js-page-image"
         ],
         "urlFetchType": "canvasArgs",
@@ -13947,8 +13947,8 @@
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
-          "#viewer-scroller canvas",
-          "body canvas"
+          "#viewer-scroller canvas[data]",
+          "body canvas[data]"
         ],
         "urlFetchType": "canvasArgs",
         "opImageType": "append",
@@ -13997,7 +13997,7 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          "[class^='_mainScreen'] canvas"
+          "[class^='_mainScreen'] canvas[data]"
         ],
         "injectedCss": ".imt-image-status {direction:ltr;}",
         "opImageType": "append",
@@ -14392,8 +14392,8 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          ".react-swipe-container  canvas",
-          "[role=\"presentation\"] canvas"
+          ".react-swipe-container  canvas[data]",
+          "[role=\"presentation\"] canvas[data]"
         ],
         "opImageType": "append",
         "inValidSrcRegex": [
@@ -14735,7 +14735,7 @@
         "opImageType": "insertFirst",
         "imageSelectors": [
           "#xCVPages img",
-          "#xCVPages canvas"
+          "#xCVPages canvas[data]"
         ],
         "platforms": [
           "chrome",
@@ -14756,7 +14756,7 @@
         "type": "manga",
         "opImageType": "insertFirst",
         "imageSelectors": [
-          ".image-container canvas"
+          ".image-container canvas[data]"
         ],
         "platforms": [
           "chrome",
@@ -14778,7 +14778,7 @@
         "opImageType": "append",
         "imageSelectors": [
           ".-cv-page-content img",
-          ".-cv-page-content canvas"
+          ".-cv-page-content canvas[data]"
         ],
         "platforms": [
           "chrome",
@@ -14880,8 +14880,8 @@
         "opImageType": "append",
         "urlFetchType": "canvasArgs",
         "imageSelectors": [
-          ".view-sheet-container canvas",
-          ".viewport canvas"
+          ".view-sheet-container canvas[data]",
+          ".viewport canvas[data]"
         ],
         "loadingStyle": "z-index: 9999;",
         "platforms": [
@@ -19305,7 +19305,7 @@
         "urlFetchType": "canvasArgs",
         "imageSelectors": [
           "[class*=\"_page_container\"] img",
-          "[class*=\"imageViewerRender\"] canvas",
+          "[class*=\"imageViewerRender\"] canvas[data]",
           ".area-main img",
           "#main li>img",
           "ul.contents-img li > img"
@@ -19946,7 +19946,7 @@
         "urlFetchType": "canvasArgs",
         "intersectionRootMargin": "0px 0px 100% 0px",
         "imageSelectors": [
-          ".scramble-page canvas",
+          ".scramble-page canvas[data]",
           ".scramble-page img"
         ],
         "inValidSrcRegex": [
@@ -20078,9 +20078,9 @@
         "urlFetchType": "canvasArgs",
         "imageSelectors": [
           "div[class*='scrollViewCut'] img",
-          "div[class*='scrollViewCut'] canvas",
+          "div[class*='scrollViewCut'] canvas[data]",
           "div[data-cut-index] img",
-          "div[data-cut-index] canvas"
+          "div[data-cut-index] canvas[data]"
         ],
         "platforms": [
           "chrome",
@@ -20218,7 +20218,7 @@
         "urlFetchType": "canvasArgs",
         "opImageType": "append",
         "imageSelectors": [
-          ".swiper-slide canvas"
+          ".swiper-slide canvas[data]"
         ]
       },
       "platforms": [
@@ -20238,7 +20238,7 @@
         "urlFetchType": "canvasArgs",
         "opImageType": "append",
         "imageSelectors": [
-          ".imgWrap canvas"
+          ".imgWrap canvas[data]"
         ]
       },
       "platforms": [
@@ -22403,6 +22403,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-14T16:03:51.929Z",
+  "buildinConfigUpdatedAt": "2026-05-15T02:24:37.221Z",
   "latestVersion": "1.29.4"
 }
