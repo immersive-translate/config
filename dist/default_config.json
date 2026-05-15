@@ -1257,6 +1257,35 @@
       }
     },
     {
+      "condition": "interfaceLanguage==zh-CN && versionNumber>12903 && abTagNumber==0",
+      "advanceConfig": {
+        "translationService": "free-model",
+        "enableFreeModelMode": true,
+        "translationServices.add": {
+          "bing.add": {
+            "defaultToService": "free-model"
+          }
+        },
+        "defaultTranslationServicesOrder": [
+          "free-model",
+          "siliconcloud-free",
+          "zhipu-free",
+          "babel-lite-free",
+          "deepseek-pro",
+          "qwen-pro",
+          "gemini-pro",
+          "openai-pro",
+          "zhipu-pro",
+          "deepl-pro",
+          "openai-max",
+          "gemini-max",
+          "kimi-max",
+          "claude-max",
+          "zhipu-max"
+        ]
+      }
+    },
+    {
       "condition": "interfaceLanguage==zh-CN && versionNumber>12701 && abTagNumber<10 && installedAtTimestamp>1778428800000",
       "advanceConfig": {
         "translationService": "free-model",
@@ -22403,6 +22432,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-15T03:33:29.312Z",
+  "buildinConfigUpdatedAt": "2026-05-15T06:59:54.288Z",
   "latestVersion": "1.29.4"
 }
