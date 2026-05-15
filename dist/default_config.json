@@ -564,7 +564,8 @@
     "https://www.orchisasia.org/[orchisasia][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://mangalib.org/[mangalib][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://novelcrow.com/[novelcrow][chrome,firefox,safari,imtAndroid,imtIOSNew]",
-    "https://cn.twbzmg.com/[cn.twbzmg.com][chrome,firefox,safari,imtAndroid,imtIOSNew]"
+    "https://cn.twbzmg.com/[cn.twbzmg.com][chrome,firefox,safari,imtAndroid,imtIOSNew]",
+    "https://nyxscans.com[Nyx Scans]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -12432,6 +12433,17 @@
       }
     },
     {
+      "id": "nyxscans",
+      "matches": "nyxscans.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "figure img[src*=nyxscans]"
+        ]
+      }
+    },
+    {
       "id": "hentairox.com",
       "matches": "hentairox.com",
       "imageRule.add": {
@@ -22431,6 +22443,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-15T09:43:13.061Z",
+  "buildinConfigUpdatedAt": "2026-05-15T15:49:31.764Z",
   "latestVersion": "1.29.4"
 }
