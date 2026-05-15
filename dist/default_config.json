@@ -1257,7 +1257,7 @@
       }
     },
     {
-      "condition": "interfaceLanguage==zh-CN && versionNumber>12903 && abTagNumber==0",
+      "condition": "interfaceLanguage==zh-CN && versionNumber>12903 && abTagNumber<2",
       "advanceConfig": {
         "translationService": "free-model",
         "enableFreeModelMode": true,
@@ -13716,14 +13716,13 @@
     {
       "id": "bomtoon",
       "matches": [
-        "www.bomtoon_notranslate.com",
         "www.bomtoon.com"
       ],
       "imageRule.add": {
         "type": "manga",
         "urlFetchType": "canvasArgs",
         "imageSelectors": [
-          ".UhCHi img[src*=bomtoon]",
+          "img[src*=bomtoon]",
           ".printView canvas[data]"
         ],
         "opImageType": "append",
@@ -22432,6 +22431,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-15T06:59:54.288Z",
+  "buildinConfigUpdatedAt": "2026-05-15T09:43:13.061Z",
   "latestVersion": "1.29.4"
 }
