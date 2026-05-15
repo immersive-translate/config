@@ -870,7 +870,7 @@
       "unregisteredSoft": 10,
       "unregisteredHard": 10,
       "soft": 20,
-      "hard": 50
+      "hard": 40
     }
   },
   "defaultTranslationServicesOrder": [
@@ -22403,6 +22403,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-15T02:24:37.221Z",
+  "buildinConfigUpdatedAt": "2026-05-15T03:33:29.312Z",
   "latestVersion": "1.29.4"
 }
