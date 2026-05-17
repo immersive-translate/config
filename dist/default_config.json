@@ -13203,44 +13203,52 @@
       }
     },
     {
-      "id": "piccoma.com",
-      "matches": "piccoma.com",
+      "id": "h-comic-canvas",
+      "matches": [
+        "www.sukima.me",
+        "piccoma.com"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
         "opImageType": "append",
         "urlFetchType": "canvasArgs",
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "loadingStyle": "z-index: 999",
         "imageSelectors": [
+          ".slick-track canvas[data]",
           ".PCM-viewer2_canvas_wrap canvas[data]"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
           "chrome",
           "firefox",
           "imtIOSNew",
+          "imtAndroid",
           "safari",
-          "imtAndroid"
+          "userscript"
         ]
       }
     },
     {
-      "id": "sukima",
-      "matches": "www.sukima.me",
+      "id": "v-comic",
+      "matches": [
+        "newmanhwa.com",
+        "ex.fangliding.*"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
-        "opImageType": "append",
-        "urlFetchType": "canvasArgs",
         "imageSelectors": [
-          ".slick-track canvas[data]"
+          "#reader figure img.is-loaded",
+          "#img"
         ],
-        "intersectionRootMargin": "0px 0px 200% 0px",
+        "loadingStyle": "z-index: 999",
         "platforms": [
           "chrome",
           "firefox",
           "imtIOSNew",
-          "safari",
-          "userscript"
+          "imtAndroid",
+          "safari"
         ]
       }
     },
@@ -14226,7 +14234,7 @@
           "imtIOSNew",
           "safari",
           "imtAndroid",
-          "imtIOS"
+          "imtIOSNew"
         ],
         "inValidSrcRegex": [
           "bg_transparency.png"
@@ -22376,6 +22384,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-17T13:39:59.565Z",
+  "buildinConfigUpdatedAt": "2026-05-17T14:31:52.118Z",
   "latestVersion": "1.29.4"
 }
