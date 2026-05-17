@@ -5720,46 +5720,6 @@
       ]
     },
     {
-      "id": "twmanga",
-      "matches": [
-        "www.twmanga.com"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "img.i-amphtml-fill-content"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
-      "id": "mgeko",
-      "matches": [
-        "www.mgeko.cc"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "#chapter-reader img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
       "id": "jmcomic",
       "matches": [
         "jmcomic-zzz.one"
@@ -12039,7 +11999,12 @@
         "funbe*.com",
         "happytoon01.com",
         "tkor*.com",
-        "m.블랙툰.co"
+        "m.블랙툰.co",
+        "www.twmanga.com",
+        "www.mgeko.cc",
+        "greentoon.net",
+        "dynasty-scans.com",
+        "mangaoi.net"
       ],
       "imageRule.add": {
         "enable": true,
@@ -12047,7 +12012,12 @@
         "imageSelectors": [
           "#toon_content_imgs img",
           "#toon_img img",
-          ".webtoon-read-section img"
+          ".webtoon-read-section img",
+          "img.i-amphtml-fill-content",
+          "#chapter-reader img",
+          ".toon_content img",
+          "#image img",
+          ".item-chapter img"
         ],
         "inValidSrcRegex": [
           "loading.svg"
@@ -12057,7 +12027,8 @@
           "firefox",
           "imtIOSNew",
           "safari",
-          "imtAndroid"
+          "imtAndroid",
+          "imtIOS"
         ]
       },
       "_comment": "通用韩漫配置项"
@@ -12075,26 +12046,6 @@
           "#content img"
         ],
         "loadingStyle": "z-index: 9999;",
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
-      "id": "greentoon.net",
-      "matches": [
-        "greentoon.net"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".toon_content img"
-        ],
         "platforms": [
           "chrome",
           "firefox",
@@ -12125,24 +12076,6 @@
           "firefox",
           "safari",
           "imtIOSNew",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
-      "id": "dynasty-scans",
-      "matches": "dynasty-scans.com",
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "#image img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
           "imtAndroid"
         ]
       }
@@ -22443,6 +22376,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-15T15:49:31.764Z",
+  "buildinConfigUpdatedAt": "2026-05-17T13:39:59.565Z",
   "latestVersion": "1.29.4"
 }
