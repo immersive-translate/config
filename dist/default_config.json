@@ -5720,30 +5720,6 @@
       ]
     },
     {
-      "id": "jmcomic",
-      "matches": [
-        "jmcomic-zzz.one"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "opImageType": "append",
-        "urlFetchType": "canvasArgs",
-        "imageSelectors": [
-          ".scramble-page canvas[data]",
-          ".center img "
-        ],
-        "loadingStyle": "z-index: 999",
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
       "id": "fenoxo",
       "matches": "www.fenoxo.com",
       "likePreSelectors.add": [
@@ -11991,6 +11967,31 @@
       }
     },
     {
+      "id": "ko-comic",
+      "matches": [
+        "*comic.naver.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".toon_view_lst img",
+          ".wt_viewer img"
+        ],
+        "platforms": [
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid",
+          "imtIOSNew"
+        ],
+        "inValidSrcRegex": [
+          "bg_transparency.png"
+        ]
+      }
+    },
+    {
       "id": "ko-commic",
       "matches": [
         "*.xn--h10b90bbmq49b63sq4e.com",
@@ -12000,6 +12001,7 @@
         "happytoon01.com",
         "tkor*.com",
         "m.블랙툰.co",
+        "블랙툰.co",
         "www.twmanga.com",
         "www.mgeko.cc",
         "greentoon.net",
@@ -12034,53 +12036,6 @@
       "_comment": "通用韩漫配置项"
     },
     {
-      "id": "comic-meteor",
-      "matches": [
-        "comic-meteor.jp",
-        "omegascans.org"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "#content img"
-        ],
-        "loadingStyle": "z-index: 9999;",
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
-      "id": "klmanga",
-      "matches": [
-        "klmanga.*"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".render .z_content img",
-          ".render img",
-          ".z_content img"
-        ],
-        "inValidSrcRegex": [
-          "load.gif"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "safari",
-          "imtIOSNew",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
       "id": "fawesome",
       "matches": [
         "fawesome.tv"
@@ -12092,28 +12047,6 @@
           "appendSelector": ".video-controls > .options.right",
           "insertBeforeSelector": ".cc-on-off"
         }
-      }
-    },
-    {
-      "id": "readallcomics",
-      "matches": "readallcomics.com",
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "center img.bgimglazy-load"
-        ],
-        "inValidSrcRegex": [
-          "preloader.gif"
-        ],
-        "loadingStyle": "z-index: 9999;",
-        "platforms": [
-          "chrome",
-          "firefox",
-          "safari",
-          "imtAndroid",
-          "imtIOSNew"
-        ]
       }
     },
     {
@@ -12159,150 +12092,6 @@
       "_comment": "all"
     },
     {
-      "id": "hentai",
-      "matches": [
-        "e-hentai.org"
-      ],
-      "excludeSelectors.add": [
-        "#i3"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "#i3 #img",
-          "#sd img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ],
-        "loadingSelectors": [
-          "#i3",
-          "div"
-        ]
-      }
-    },
-    {
-      "id": "globalcomix",
-      "matches": [
-        "globalcomix.com"
-      ],
-      "imageRule.add": {
-        "type": "manga",
-        "imageSelectors": [
-          "#readerContainer img",
-          "#p2pReader [data-sentry-component='BouncyImage'] img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
-      "id": "comix",
-      "matches": [
-        "comix.to"
-      ],
-      "imageRule.add": {
-        "type": "manga",
-        "imageSelectors": [
-          ".rpage-main__inner img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
-      "id": "mangatoto",
-      "matches": [
-        "mangatoto.com",
-        "batotoo.com",
-        "mangatoto.net"
-      ],
-      "imageRule.add": {
-        "type": "manga",
-        "imageSelectors": [
-          "div[name='image-item'] img",
-          "img.page-img",
-          "#viewer img"
-        ],
-        "loadingStyle": "z-index: 9999;",
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
-      "id": "ranfren.neocities.org",
-      "matches": "ranfren.neocities.org",
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "center img"
-        ]
-      }
-    },
-    {
-      "id": "manga18",
-      "matches": [
-        "manga18.club"
-      ],
-      "imageRule.add": {
-        "type": "manga",
-        "imageSelectors": [
-          ".image_story img"
-        ],
-        "loadingSelectors": [
-          "div"
-        ],
-        "injectedCss": ".imt-image-status {top:15%!important;}",
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
-      "id": "readmanga18",
-      "matches": [
-        "readmanga18.com"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".read-content img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
       "id": "rawlazy",
       "matches": [
         "rawlazy.io"
@@ -12327,27 +12116,6 @@
       }
     },
     {
-      "id": "utoon",
-      "matches": [
-        "utoon.net"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".reading-content .page-break img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOS",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
       "id": "klz9",
       "matches": [
         "klz9.com"
@@ -12362,17 +12130,6 @@
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
           "chrome"
-        ]
-      }
-    },
-    {
-      "id": "nyxscans",
-      "matches": "nyxscans.com",
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "figure img[src*=nyxscans]"
         ]
       }
     },
@@ -12411,42 +12168,6 @@
       }
     },
     {
-      "id": "manhuapica",
-      "matches": [
-        "manhuapica.com"
-      ],
-      "imageRule.add": {
-        "type": "manga",
-        "imageSelectors": [
-          "#chapter-images-id img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
-      "id": "Tencent-Manga",
-      "matches": [
-        "m.ac.qq.com"
-      ],
-      "imageRule.add": {
-        "type": "manga",
-        "imageSelectors": [
-          ".comic-pic"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
       "id": "fhentai",
       "matches": "fhentai.net",
       "imageRule.add": {
@@ -12456,151 +12177,6 @@
         ],
         "loadingSelectors": [
           "div"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
-      "id": "rawdevart.art",
-      "matches": [
-        "rawdevart.art"
-      ],
-      "imageRule.add": {
-        "type": "manga",
-        "imageSelectors": [
-          ".chapter-img img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
-      "id": "manga-shinchan.com",
-      "matches": [
-        "manga-shinchan.com"
-      ],
-      "imageRule.add": {
-        "type": "manga",
-        "imageSelectors": [
-          ".tiup_body div p img",
-          ".item__list-lists figure img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
-      "id": "cn.twbzmg.com",
-      "matches": [
-        "cn.twbzmg.com"
-      ],
-      "imageRule.add": {
-        "type": "manga",
-        "imageSelectors": [
-          ".comic-contain div amp-img img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
-      "id": "mangalib",
-      "matches": [
-        "mangalib.org"
-      ],
-      "imageRule.add": {
-        "type": "manga",
-        "imageSelectors": [
-          ".xo_ct img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
-      "id": "yaoimangaonline",
-      "matches": [
-        "yaoimangaonline.com"
-      ],
-      "imageRule.add": {
-        "type": "manga",
-        "imageSelectors": [
-          ".row div div p img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
-      "id": "nhentaiyaoi",
-      "matches": [
-        "nhentaiyaoi.net"
-      ],
-      "imageRule.add": {
-        "type": "manga",
-        "imageSelectors": [
-          ".post-fotos li a img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
-      "id": "orchisasia",
-      "matches": [
-        "www.orchisasia.org"
-      ],
-      "imageRule.add": {
-        "type": "manga",
-        "imageSelectors": [
-          ".page-break.no-gaps img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
-      "id": "novelcrow",
-      "matches": [
-        "novelcrow.com"
-      ],
-      "imageRule.add": {
-        "type": "manga",
-        "imageSelectors": [
-          ".page-break img"
         ],
         "platforms": [
           "chrome",
@@ -12680,102 +12256,11 @@
       }
     },
     {
-      "id": "www.comic-ryu.jp",
-      "matches": "www.comic-ryu.jp",
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".swiper-slide img[class*='comic-img']"
-        ],
-        "loadingSelectors": [
-          "div"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
-      "id": "177picyy",
-      "matches": "www.177picyy.com",
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".single-content img"
-        ],
-        "loadingSelectors": [
-          "p"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
       "id": "ideastatica",
       "matches": "www.ideastatica.com",
       "additionalStayOriginalSelectors.remove": [
         ".math-container"
       ]
-    },
-    {
-      "id": "yymanhua",
-      "matches": "yymanhua.com",
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "#cp_img img"
-        ],
-        "inValidSrcRegex": [
-          "loading.gif"
-        ],
-        "loadingSelectors": [
-          "div"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
-      "id": "antbyw",
-      "matches": "www.antbyw.com",
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "#jameson_manhua img",
-          "#jamesonreadtouch img"
-        ],
-        "inValidSrcRegex": [
-          "ajax-loader.gif"
-        ],
-        "loadingSelectors": [
-          "div"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ],
-        "intersectionRootMargin": "0px 0px 200% 0px"
-      }
     },
     {
       "id": "jmanga",
@@ -13206,7 +12691,8 @@
       "id": "h-comic-canvas",
       "matches": [
         "www.sukima.me",
-        "piccoma.com"
+        "piccoma.com",
+        "jmcomic-zzz.one"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13217,7 +12703,9 @@
         "loadingStyle": "z-index: 999",
         "imageSelectors": [
           ".slick-track canvas[data]",
-          ".PCM-viewer2_canvas_wrap canvas[data]"
+          ".PCM-viewer2_canvas_wrap canvas[data]",
+          ".scramble-page canvas[data]",
+          ".center img "
         ],
         "platforms": [
           "chrome",
@@ -13233,16 +12721,87 @@
       "id": "v-comic",
       "matches": [
         "newmanhwa.com",
-        "ex.fangliding.*"
+        "ex.fangliding.*",
+        "fxfx302.com",
+        "comic-meteor.jp",
+        "omegascans.org",
+        "klmanga.*",
+        "readallcomics.com",
+        "e-hentai.org",
+        "globalcomix.com",
+        "comix.to",
+        "mangatoto.com",
+        "batotoo.com",
+        "mangatoto.net",
+        "ranfren.neocities.org",
+        "manga18.club",
+        "readmanga18.com",
+        "utoon.net",
+        "nyxscans.com",
+        "manhuapica.com",
+        "m.ac.qq.com",
+        "rawdevart.art",
+        "manga-shinchan.com",
+        "cn.twbzmg.com",
+        "mangalib.org",
+        "yaoimangaonline.com",
+        "nhentaiyaoi.net",
+        "www.orchisasia.org",
+        "novelcrow.com",
+        "www.comic-ryu.jp",
+        "www.177picyy.com",
+        "yymanhua.com",
+        "www.antbyw.com"
       ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
         "imageSelectors": [
           "#reader figure img.is-loaded",
-          "#img"
+          "#img",
+          ".image-view img",
+          "#content img",
+          ".render .z_content img",
+          ".render img",
+          ".z_content img",
+          "center img.bgimglazy-load",
+          "#i3 #img",
+          "#sd img",
+          "#readerContainer img",
+          "#p2pReader [data-sentry-component='BouncyImage'] img",
+          ".rpage-main__inner img",
+          "div[name='image-item'] img",
+          "img.page-img",
+          "#viewer img",
+          "center img",
+          ".image_story img",
+          ".read-content img",
+          ".reading-content .page-break img",
+          "figure img[src*=nyxscans]",
+          "#chapter-images-id img",
+          ".comic-pic",
+          ".chapter-img img",
+          ".tiup_body div p img",
+          ".item__list-lists figure img",
+          ".comic-contain div amp-img img",
+          ".xo_ct img",
+          ".row div div p img",
+          ".post-fotos li a img",
+          ".page-break.no-gaps img",
+          ".page-break img",
+          ".swiper-slide img[class*='comic-img']",
+          ".single-content img",
+          "#cp_img img",
+          "#jameson_manhua img",
+          "#jamesonreadtouch img"
         ],
         "loadingStyle": "z-index: 999",
+        "inValidSrcRegex": [
+          "loading.gif",
+          "load.gif",
+          "preloader.gif",
+          "ajax-loader.gif"
+        ],
         "platforms": [
           "chrome",
           "firefox",
@@ -14212,48 +13771,6 @@
           "firefox",
           "imtIOSNew",
           "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
-      "id": "ko-comic",
-      "matches": [
-        "*comic.naver.com"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".toon_view_lst img",
-          ".wt_viewer img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid",
-          "imtIOSNew"
-        ],
-        "inValidSrcRegex": [
-          "bg_transparency.png"
-        ]
-      }
-    },
-    {
-      "id": "fxfx302",
-      "matches": "fxfx302.com",
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".image-view img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
           "imtAndroid"
         ]
       }
@@ -22384,6 +21901,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-17T14:31:52.118Z",
+  "buildinConfigUpdatedAt": "2026-05-17T15:06:40.681Z",
   "latestVersion": "1.29.4"
 }
