@@ -12751,7 +12751,9 @@
         "www.comic-ryu.jp",
         "www.177picyy.com",
         "yymanhua.com",
-        "www.antbyw.com"
+        "www.antbyw.com",
+        "www.ctccomic.com",
+        "nyaa.fan"
       ],
       "imageRule.add": {
         "enable": true,
@@ -12793,7 +12795,9 @@
           ".single-content img",
           "#cp_img img",
           "#jameson_manhua img",
-          "#jamesonreadtouch img"
+          "#jamesonreadtouch img",
+          "img#cc-comic",
+          ".chapter-img img.loaded"
         ],
         "loadingStyle": "z-index: 999",
         "inValidSrcRegex": [
@@ -21901,6 +21905,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-17T15:06:40.681Z",
+  "buildinConfigUpdatedAt": "2026-05-17T15:17:53.400Z",
   "latestVersion": "1.29.4"
 }
