@@ -5299,7 +5299,7 @@
       "wrapperPrefix": "<br />",
       "advanceMergeConfig": [
         {
-          "condition": "true",
+          "condition": "targetLanguage==zh-CN",
           "advanceConfig": {
             "sameLangTranslationTheme": "none"
           }
@@ -5364,7 +5364,7 @@
       "wrapperPrefix": "<br />",
       "advanceMergeConfig": [
         {
-          "condition": "true",
+          "condition": "targetLanguage==zh-CN",
           "advanceConfig": {
             "sameLangTranslationTheme": "none"
           }
@@ -21906,6 +21906,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-18T07:39:17.968Z",
+  "buildinConfigUpdatedAt": "2026-05-18T12:25:54.436Z",
   "latestVersion": "1.29.4"
 }
