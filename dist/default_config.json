@@ -5549,6 +5549,9 @@
       "mutationExcludeSelectors.add": [
         "#imt-navbar"
       ],
+      "injectedCss.add": [
+        ".docx-wrapper *{line-height:unset!important;}"
+      ],
       "skipIgnoreSelectors": [
         ".original-body"
       ],
@@ -21906,6 +21909,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-18T12:25:54.436Z",
+  "buildinConfigUpdatedAt": "2026-05-18T12:53:30.965Z",
   "latestVersion": "1.29.4"
 }
