@@ -5484,7 +5484,8 @@
       "extraInlineSelectors.add": [
         ".sub-table",
         ".sub-table td",
-        ".sub-table tr"
+        ".sub-table tr",
+        "em br"
       ],
       "detectParagraphLanguage": true,
       "isInjectVersion": true,
@@ -21905,6 +21906,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-17T15:17:53.400Z",
+  "buildinConfigUpdatedAt": "2026-05-18T07:39:17.968Z",
   "latestVersion": "1.29.4"
 }
