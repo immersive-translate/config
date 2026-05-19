@@ -20678,76 +20678,6 @@
       }
     },
     {
-      "id": "autoHeight",
-      "matches": [
-        "*.sooplive.*",
-        "zen-browser.app",
-        "message.alibaba.com",
-        "erp.91miaoshou.com",
-        "jddonline.com",
-        "cis.vemic.com",
-        "scripod.com",
-        "drjoedispenza.com",
-        "www.x-mol.com",
-        "webvpn.bnu.*",
-        "www.connectedpapers.com",
-        "isappscience.org",
-        "www.dtmstation.com",
-        "kalshi.com",
-        "engoo.com",
-        "puchipurabu.com",
-        "www.wildberries.ru",
-        "m.163.com",
-        "discord.com/discovery*",
-        "zhenghedata.com",
-        "yoeshop.ssweet.*"
-      ],
-      "selectorMatches": [
-        "#plugin-product-comment",
-        ".plugin-product-comment-collections",
-        "[class*='line-clamp-']"
-      ],
-      "injectedCss.add": [
-        ".side_list a,.title a,.tit,.item-title {-webkit-line-clamp:unset!important;height:unset!important;}",
-        "details {height:unset!important;}",
-        ".product-title {height:unset!important;-webkit-line-clamp:unset!important;}",
-        ".plugin-product-comment-content {height:unset!important;-webkit-line-clamp:unset!important;}",
-        "div.jdd-product-info-box {height:unset!important;}",
-        "span.hotData-text { -webkit-line-clamp: unset !important; line-clamp: unset !important;}",
-        "div.line-clamp-4 { -webkit-line-clamp: unset; max-height: unset;}",
-        "[class*='titleTypography'] {-webkit-line-clamp: unset !important;}",
-        ".div-text-line-three { -webkit-line-clamp: unset; max-height: unset;}",
-        ".data-title { -webkit-line-clamp: unset!important; max-height: unset!important;}",
-        ".paper-title,.search-result-abstract.folded,.list-group-item-mod h5 { -webkit-line-clamp: unset!important; max-height: unset!important;}",
-        ".kb-advanced-heading-link,.limited-text { -webkit-line-clamp: unset!important; max-height: unset!important;}",
-        ".entry-card-title,.entry-card-snippet { -webkit-line-clamp: unset!important; max-height: unset!important;}",
-        "span.line-clamp-2 { -webkit-line-clamp: unset!important; max-height: unset!important;}",
-        ".css-1yo0yr8 {-webkit-line-clamp: unset!important; max-height: unset!important;}",
-        "[class*='line-clamp-'],[class*='line-clamp-'] font {white-space:unset!important;-webkit-line-clamp: unset!important; max-height: unset!important;}",
-        ".product-card__brand-wrap {white-space:unset;}",
-        ".card-recommend-oneImg article h4 {max-height:unset;-webkit-line-clamp:unset;}",
-        ".description__4cb8a {max-height:unset;-webkit-line-clamp:unset;}",
-        ".link-container {height:unset!important;-webkit-line-clamp:unset!important;}"
-      ],
-      "additionalExcludeSelectors.remove": [
-        ".notranslate",
-        "[translate=no]"
-      ]
-    },
-    {
-      "id": "other-chatapps",
-      "matches": [
-        "app.salesmartly.com/chat"
-      ],
-      "selectors.add": [
-        ".chat__inbox_item_text_ordinary",
-        ".ivu-tooltip [title]"
-      ],
-      "injectedCss.add": [
-        "._ss_2FLBr4_u {height:unset!important;}"
-      ]
-    },
-    {
       "id": "wistia-hook",
       "matches": [
         "agencysupremacy.io",
@@ -21275,6 +21205,14 @@
       ]
     },
     {
+      "id": "tanstack",
+      "matches": "tanstack.com",
+      "mutationExcludeSelectors.add": [
+        "[data-button-portal].absolute",
+        "[data-button-portal].absolute *"
+      ]
+    },
+    {
       "id": "marquee-gs",
       "matches": "marquee.gs.com",
       "additionalExcludeSelectors.add": [
@@ -21394,6 +21332,76 @@
       ],
       "injectedCss.add": [
         "[class*='line-clamp']{-webkit-line-clamp:unset !important;}"
+      ]
+    },
+    {
+      "id": "autoHeight",
+      "matches": [
+        "*.sooplive.*",
+        "zen-browser.app",
+        "message.alibaba.com",
+        "erp.91miaoshou.com",
+        "jddonline.com",
+        "cis.vemic.com",
+        "scripod.com",
+        "drjoedispenza.com",
+        "www.x-mol.com",
+        "webvpn.bnu.*",
+        "www.connectedpapers.com",
+        "isappscience.org",
+        "www.dtmstation.com",
+        "kalshi.com",
+        "engoo.com",
+        "puchipurabu.com",
+        "www.wildberries.ru",
+        "m.163.com",
+        "discord.com/discovery*",
+        "zhenghedata.com",
+        "yoeshop.ssweet.*"
+      ],
+      "selectorMatches": [
+        "#plugin-product-comment",
+        ".plugin-product-comment-collections",
+        "[class*='line-clamp-']"
+      ],
+      "injectedCss.add": [
+        ".side_list a,.title a,.tit,.item-title {-webkit-line-clamp:unset!important;height:unset!important;}",
+        "details {height:unset!important;}",
+        ".product-title {height:unset!important;-webkit-line-clamp:unset!important;}",
+        ".plugin-product-comment-content {height:unset!important;-webkit-line-clamp:unset!important;}",
+        "div.jdd-product-info-box {height:unset!important;}",
+        "span.hotData-text { -webkit-line-clamp: unset !important; line-clamp: unset !important;}",
+        "div.line-clamp-4 { -webkit-line-clamp: unset; max-height: unset;}",
+        "[class*='titleTypography'] {-webkit-line-clamp: unset !important;}",
+        ".div-text-line-three { -webkit-line-clamp: unset; max-height: unset;}",
+        ".data-title { -webkit-line-clamp: unset!important; max-height: unset!important;}",
+        ".paper-title,.search-result-abstract.folded,.list-group-item-mod h5 { -webkit-line-clamp: unset!important; max-height: unset!important;}",
+        ".kb-advanced-heading-link,.limited-text { -webkit-line-clamp: unset!important; max-height: unset!important;}",
+        ".entry-card-title,.entry-card-snippet { -webkit-line-clamp: unset!important; max-height: unset!important;}",
+        "span.line-clamp-2 { -webkit-line-clamp: unset!important; max-height: unset!important;}",
+        ".css-1yo0yr8 {-webkit-line-clamp: unset!important; max-height: unset!important;}",
+        "[class*='line-clamp-'],[class*='line-clamp-'] font {white-space:unset!important;-webkit-line-clamp: unset!important; max-height: unset!important;}",
+        ".product-card__brand-wrap {white-space:unset;}",
+        ".card-recommend-oneImg article h4 {max-height:unset;-webkit-line-clamp:unset;}",
+        ".description__4cb8a {max-height:unset;-webkit-line-clamp:unset;}",
+        ".link-container {height:unset!important;-webkit-line-clamp:unset!important;}"
+      ],
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ]
+    },
+    {
+      "id": "other-chatapps",
+      "matches": [
+        "app.salesmartly.com/chat"
+      ],
+      "selectors.add": [
+        ".chat__inbox_item_text_ordinary",
+        ".ivu-tooltip [title]"
+      ],
+      "injectedCss.add": [
+        "._ss_2FLBr4_u {height:unset!important;}"
       ]
     },
     {
@@ -21909,6 +21917,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-19T02:21:08.932Z",
+  "buildinConfigUpdatedAt": "2026-05-19T06:34:43.439Z",
   "latestVersion": "1.29.4"
 }
