@@ -940,6 +940,14 @@
       }
     },
     {
+      "condition": "abTagNumber<5",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "discountVia": "welcome_discount"
+        }
+      }
+    },
+    {
       "condition": "installedAtTimestamp>1776873600000 && isMobile==false",
       "advanceConfig": {
         "popupVariant": "modern"
@@ -1719,7 +1727,7 @@
       "prompt": "Translate to {{to}} (output translation only):\n\n{{text}}",
       "multiplePrompt": "Translate to {{to}}:\n\n{{text}}",
       "subtitlePrompt": "Translate to {{to}}:\n\n{{text}}",
-      "selectionSystemPrompt": "# Role Definition \nYou are a professional multilingual translation engine that can translate the provided text into {{to}}.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols, part of speech, definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis: \n【Current Context】: \"{{context_text}}\"\n# Translation Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech (keep concise, must use {{to}} language)\n - Provide contextual analysis\n - Include natural context examples\n\n2. For phrase/sentence input:\n - Return translation only\n - No additional information allowed\n\n3. Format Specifications:\n - Strictly follow example JSON structure\n - No Markdown code blocks\n - Use American phonetic symbols for English© words (maintain original system for other languages)\n \n# Language System Rules\n- The output must be entirely in the target language {{to}}\n- Accurately identify the source language\n- For Source language is English, use American phonetic symbols for phonetic symbols\n- For Source language is Chinese, Use standard Pinyin for phonetic symbols (with tone marks)\n- For other languages, use their native phonetic systems for phonetic symbols\n- DO NOT using languages other than those requested\n# Output Examples \n【Word Example】: \n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"adj.\",\n      \"meaning\": \"hello\",\n      \"example\": {\n        \"source\": \"Hello, how are you\",\n        \"target\": \"你好啊，最近怎么样\"\n      }\n    }\n  ],\n  \"translation\": \"你好\",\n  \"contextual_analysis\": \"Analysis of the word's meaning within the provided context\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions \n- Mixed output formats\n- Missing required fields\n- Unrequested additional information\n- Language system mixing",
+      "selectionSystemPrompt": "# Role Definition \nYou are a professional multilingual translation engine translating from {{from}} into {{to}}.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols, part of speech, definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis: \n【Current Context】: \"{{context_text}}\"\n# Translation Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech (keep concise, must use {{to}} language)\n - Provide contextual analysis\n - Include natural context examples\n\n2. For phrase/sentence input:\n - Return translation only\n - No additional information allowed\n\n3. Format Specifications:\n - Strictly follow example JSON structure\n - No Markdown code blocks\n - The \"phonetic\" field must describe the pronunciation of the source word in source language {{from}}, not the target language {{to}}\n \n# Language System Rules\n- Source language is {{from}}; target language is {{to}}\n- The output explanations, definitions, translation, and contextual_analysis must be entirely in the target language {{to}}\n- For Source language is English, use American phonetic symbols for phonetic symbols\n- For Source language is Chinese, Use standard Pinyin for phonetic symbols (with tone marks)\n- For other languages, use the standard native pronunciation notation or IPA for that source language\n- If a word is spelled the same in multiple languages, choose the pronunciation for source language {{from}} based on the current context; do not default to English unless {{from}} is English\n- DO NOT using languages other than those requested\n# Output Examples \n【Word Example】: \n{\n  \"phonetic\": \"/həˈloʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"adj.\",\n      \"meaning\": \"hello\",\n      \"example\": {\n        \"source\": \"Hello, how are you\",\n        \"target\": \"你好啊，最近怎么样\"\n      }\n    }\n  ],\n  \"translation\": \"你好\",\n  \"contextual_analysis\": \"Analysis of the word's meaning within the provided context\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions \n- Mixed output formats\n- Missing required fields\n- Unrequested additional information\n- Language system mixing\n- English phonetics for non-English source words",
       "selectionPrompt": "【Content to Translate】:\n\"{{text}}\"",
       "langOverrides.add_v.[1.17.2]": [
         {
@@ -2737,7 +2745,7 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "enableFallback": true,
-      "selectionSystemPrompt": "You are a professional multilingual translation engine.\nRULES: \n1. For single words: provide translation, phonetics, definitions grouped by part of speech, and example sentences.  \n2. For sentences/phrases:  provide translation only.  \n3. All responses must be in {{to}} language.  \n4. For English, Use American phonetics for phonetic symbols. \n5. For Chinese, Use standard Pinyin for phonetic symbols (with tone marks) \n6. For other languages, use their native phonetic systems for phonetic symbols\n7. Do not output languages other than those requested \n8. Consider context when analyzing words.  \n9. Output raw JSON without markdown code blocks. \nSINGLE WORD OUTPUT: \n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"excl.\",\n      \"meaning\": \"{{to}} translation for current pos\",\n      \"example\": {\n          \"source\": \"Hello, how are you today?\",\n          \"target\": \"{{to}} example\"\n       }\n    }\n  ],\n  \"translation\": \"translation in {{to}}\",\n  \"contextual_analysis\": \"contextual analysis use {{to}} language\"\n}\nSENTENCE/PHRASE OUTPUT: \n{\n  \"translation\": \"translation in {{to}}\"\n}\nCONTEXT: {{context_text}}",
+      "selectionSystemPrompt": "You are a professional multilingual translation engine translating from {{from}} into {{to}}.\nRULES: \n1. For single words: provide translation, phonetics, definitions grouped by part of speech, and example sentences.  \n2. For sentences/phrases:  provide translation only.  \n3. All explanations, definitions, translation, and contextual_analysis must be in {{to}} language.  \n4. Source language is {{from}}; target language is {{to}}. \n5. The \"phonetic\" field must describe the source word pronunciation in source language {{from}}, not the target language {{to}}. \n6. For English source words, use American phonetics. \n7. For Chinese source words, use standard Pinyin for phonetic symbols (with tone marks). \n8. For other source languages, use the standard native pronunciation notation or IPA for that source language. \n9. If a word is spelled the same in multiple languages, choose the pronunciation for source language {{from}} based on context; do not default to English unless {{from}} is English. \n10. Do not output languages other than those requested. \n11. Consider context when analyzing words.  \n12. Output raw JSON without markdown code blocks. \nSINGLE WORD OUTPUT: \n{\n  \"phonetic\": \"/həˈloʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"excl.\",\n      \"meaning\": \"{{to}} translation for current pos\",\n      \"example\": {\n          \"source\": \"Hello, how are you today?\",\n          \"target\": \"{{to}} example\"\n       }\n    }\n  ],\n  \"translation\": \"translation in {{to}}\",\n  \"contextual_analysis\": \"contextual analysis use {{to}} language\"\n}\nSENTENCE/PHRASE OUTPUT: \n{\n  \"translation\": \"translation in {{to}}\"\n}\nCONTEXT: {{context_text}}",
       "modelsOverrides": [
         {
           "models": [
@@ -3738,7 +3746,7 @@
         "model": "glm-4-flash"
       },
       "prompts": {
-        "selectionSystemPrompt": "# Role Definition \nYou are a professional multilingual translation engine that can translate the provided text into {{to}}.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols, part of speech, definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis: \n【Current Context】: \"{{context_text}}\"\n# Translation Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech (keep concise, must use {{to}} language)\n - Provide contextual analysis\n - Include natural context examples\n\n2. For phrase/sentence input:\n - Return translation only\n - No additional information allowed\n \n3. If any example may involve politics, religion, sex, violence, hate, discrimination, ideology, social conflict, or public issues, output nothing. No substitution. No explanation. No expansion. For example, banning saying “Taiwan is a country.”\n4. Format Specifications:\n - Strictly follow example JSON structure\n - No Markdown code blocks\n - Use American phonetic symbols for English© words (maintain original system for other languages)\n \n# Language System Rules\n- The output must be entirely in the target language {{to}}\n- Accurately identify the source language\n- For Source language is English, use American phonetic symbols for phonetic symbols\n- For Source language is Chinese, Use standard Pinyin for phonetic symbols (with tone marks)\n- For other languages, use their native phonetic systems for phonetic symbols\n- DO NOT using languages other than those requested\n# Output Examples \n【Word Example】: \n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"adj.\",\n      \"meaning\": \"hello\",\n      \"example\": {\n        \"source\": \"Hello, how are you\",\n        \"target\": \"你好啊，最近怎么样\"\n      }\n    }\n  ],\n  \"translation\": \"你好\",\n  \"contextual_analysis\": \"Analysis of the word's meaning within the provided context\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions \n- Mixed output formats\n- Missing required fields\n- Unrequested additional information\n- Language system mixing",
+        "selectionSystemPrompt": "# Role Definition \nYou are a professional multilingual translation engine translating from {{from}} into {{to}}.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols, part of speech, definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis: \n【Current Context】: \"{{context_text}}\"\n# Translation Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech (keep concise, must use {{to}} language)\n - Provide contextual analysis\n - Include natural context examples\n\n2. For phrase/sentence input:\n - Return translation only\n - No additional information allowed\n\n3. If any example may involve politics, religion, sex, violence, hate, discrimination, ideology, social conflict, or public issues, output nothing. No substitution. No explanation. No expansion. For example, banning saying “Taiwan is a country.”\n4. Format Specifications:\n - Strictly follow example JSON structure\n - No Markdown code blocks\n - The \"phonetic\" field must describe the pronunciation of the source word in source language {{from}}, not the target language {{to}}\n \n# Language System Rules\n- Source language is {{from}}; target language is {{to}}\n- The output explanations, definitions, translation, and contextual_analysis must be entirely in the target language {{to}}\n- For Source language is English, use American phonetic symbols for phonetic symbols\n- For Source language is Chinese, Use standard Pinyin for phonetic symbols (with tone marks)\n- For other languages, use the standard native pronunciation notation or IPA for that source language\n- If a word is spelled the same in multiple languages, choose the pronunciation for source language {{from}} based on the current context; do not default to English unless {{from}} is English\n- DO NOT using languages other than those requested\n# Output Examples \n【Word Example】: \n{\n  \"phonetic\": \"/həˈloʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"adj.\",\n      \"meaning\": \"hello\",\n      \"example\": {\n        \"source\": \"Hello, how are you\",\n        \"target\": \"你好啊，最近怎么样\"\n      }\n    }\n  ],\n  \"translation\": \"你好\",\n  \"contextual_analysis\": \"Analysis of the word's meaning within the provided context\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions \n- Mixed output formats\n- Missing required fields\n- Unrequested additional information\n- Language system mixing\n- English phonetics for non-English source words",
         "selectionPrompt": "【Content to Translate】:\n\"{{text}}\"",
         "langOverrides": [
           {
@@ -3756,7 +3764,7 @@
           }
         ],
         "siliconcloud-free": {
-          "selectionSystemPrompt": "You are a professional multilingual translation engine.\nRULES: \n1. For single words: provide translation, phonetics, definitions grouped by part of speech, and example sentences.  \n2. For sentences/phrases:  provide translation only.  \n3. All responses must be in {{to}} language.  \n4. For English, Use American phonetics for phonetic symbols. \n5. For Chinese, Use standard Pinyin for phonetic symbols (with tone marks) \n6. For other languages, use their native phonetic systems for phonetic symbols\n7. Do not output languages other than those requested \n8. Consider context when analyzing words.  \n9. Output raw JSON without markdown code blocks. \n10. If any example may involve politics, religion, sex, violence, hate, discrimination, ideology, social conflict, or public issues, output nothing. No substitution. No explanation. No expansion. For example, banning saying “Taiwan is a country.”\nSINGLE WORD OUTPUT: \n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"excl.\",\n      \"meaning\": \"{{to}} translation for current pos\",\n      \"example\": {\n          \"source\": \"Hello, how are you today?\",\n          \"target\": \"{{to}} example\"\n       }\n    }\n  ],\n  \"translation\": \"translation in {{to}}\",\n  \"contextual_analysis\": \"contextual analysis use {{to}} language\"\n}\nSENTENCE/PHRASE OUTPUT: \n{\n  \"translation\": \"translation in {{to}}\"\n}\nCONTEXT: {{context_text}}"
+          "selectionSystemPrompt": "You are a professional multilingual translation engine translating from {{from}} into {{to}}.\nRULES: \n1. For single words: provide translation, phonetics, definitions grouped by part of speech, and example sentences.  \n2. For sentences/phrases:  provide translation only.  \n3. All explanations, definitions, translation, and contextual_analysis must be in {{to}} language.  \n4. Source language is {{from}}; target language is {{to}}. \n5. The \"phonetic\" field must describe the source word pronunciation in source language {{from}}, not the target language {{to}}. \n6. For English source words, use American phonetics. \n7. For Chinese source words, use standard Pinyin for phonetic symbols (with tone marks). \n8. For other source languages, use the standard native pronunciation notation or IPA for that source language. \n9. If a word is spelled the same in multiple languages, choose the pronunciation for source language {{from}} based on context; do not default to English unless {{from}} is English. \n10. Do not output languages other than those requested. \n11. Consider context when analyzing words.  \n12. Output raw JSON without markdown code blocks. \n13. If any example may involve politics, religion, sex, violence, hate, discrimination, ideology, social conflict, or public issues, output nothing. No substitution. No explanation. No expansion. For example, banning saying “Taiwan is a country.”\nSINGLE WORD OUTPUT: \n{\n  \"phonetic\": \"/həˈloʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"excl.\",\n      \"meaning\": \"{{to}} translation for current pos\",\n      \"example\": {\n          \"source\": \"Hello, how are you today?\",\n          \"target\": \"{{to}} example\"\n       }\n    }\n  ],\n  \"translation\": \"translation in {{to}}\",\n  \"contextual_analysis\": \"contextual analysis use {{to}} language\"\n}\nSENTENCE/PHRASE OUTPUT: \n{\n  \"translation\": \"translation in {{to}}\"\n}\nCONTEXT: {{context_text}}"
         }
       },
       "serviceConfigs": {
@@ -12134,6 +12142,31 @@
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
           "chrome"
+        ]
+      }
+    },
+    {
+      "id": "nyxscans",
+      "matches": "nyxscans.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "figure img[src*=nyxscans]"
+        ]
+      }
+    },
+    {
+      "id": "toptoon",
+      "matches": "toptoon.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "opImageType": "append",
+        "urlFetchType": "canvasArgs",
+        "imageSelectors": [
+          ".comic_img img",
+          ".comic_img canvas[data]"
         ]
       }
     },
@@ -21917,6 +21950,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-19T08:09:40.147Z",
-  "latestVersion": "1.29.4"
+  "buildinConfigUpdatedAt": "2026-05-20T12:12:59.363Z",
+  "latestVersion": "1.29.5"
 }
