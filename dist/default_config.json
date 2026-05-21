@@ -475,7 +475,6 @@
     "https://www.pixiv.net/manga[Pixiv][chrome,firefox,imtAndroid]",
     "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
-    "https://readcomiconline.li[ReadComicOnline][]",
     "https://comic-fuz.com/[COMIC FUZ][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://mangadex.org/[MangaDex][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
     "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox,imtIOSNew]",
@@ -493,7 +492,6 @@
     "https://pash-up.jp[PASH UP][chrome]",
     "https://www.colamanga.com[COLAMANGA][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://www.ganganonline.com[GANGAN ONLINE][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
-    "https://battwo.com[BATOTO][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://asuracomic.net[Asura Scans][chrome,firefox,safari,imtIOSNew]",
     "https://asurascanz.com[Asura Scans][chrome,safari,imtIOSNew]",
     "https://allmanga.to[All Manga][chrome,firefox,safari,imtAndroid,imtIOSNew]",
@@ -520,7 +518,6 @@
     "https://globalcomix.com/[Globalcomix][chrome,firefox,safari,imtIOSNew]",
     "https://klz9.com[KL][chrome]",
     "https://www.comemh8.com[comemh8][chrome]",
-    "https://xbato.com/[Xbato][chrome,firefox,safari]",
     "https://mangarawjp.me[Mangaraw][chrome,firefox,safari]",
     "https://manga.bilibili.com[Bilibili-Manga][chrome,firefox,safari]",
     "https://w9.kaijimanga.com[Kaijimanga][chrome,firefox,safari]",
@@ -21939,6 +21936,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-21T09:24:09.977Z",
+  "buildinConfigUpdatedAt": "2026-05-21T11:14:25.942Z",
   "latestVersion": "1.29.6"
 }
