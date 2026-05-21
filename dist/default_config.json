@@ -12791,7 +12791,9 @@
         "www.antbyw.com",
         "www.ctccomic.com",
         "nyaa.fan",
-        "www.mangago.me"
+        "www.mangago.me",
+        "rinkocomics.com",
+        "hanimeone.me"
       ],
       "imageRule.add": {
         "enable": true,
@@ -12836,9 +12838,12 @@
           "#jamesonreadtouch img",
           "img#cc-comic",
           ".chapter-img img.loaded",
-          "#pic_container img[style='']"
+          "#pic_container img[style='']",
+          ".chapter-image.loaded",
+          "#current-page-image"
         ],
         "loadingStyle": "z-index: 999",
+        "intersectionRootMargin": "0px 0px 200% 0px",
         "inValidSrcRegex": [
           "loading.gif",
           "load.gif",
@@ -21936,6 +21941,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-21T11:14:25.942Z",
+  "buildinConfigUpdatedAt": "2026-05-21T11:22:11.852Z",
   "latestVersion": "1.29.6"
 }
