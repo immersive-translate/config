@@ -18454,7 +18454,10 @@
     },
     {
       "id": "archiveofourown",
-      "matches": "archiveofourown.org",
+      "matches": [
+        "archiveofourown.org",
+        "ao3-cn.top"
+      ],
       "excludeSelectors.add": [
         ".meta,.navigation,.byline,.pagination,.datetime,.stats",
         "#add_comment",
@@ -18465,6 +18468,12 @@
       "additionalExcludeSelectors.remove": [
         ".notranslate",
         "[translate=no]"
+      ],
+      "stayOriginalTags.remove": [
+        "SUB"
+      ],
+      "injectedCss.add": [
+        "sub {line-height: unset !important;}"
       ],
       "skipBuildContainerSelectors.remove": [
         "em"
@@ -21941,6 +21950,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-21T11:22:11.852Z",
+  "buildinConfigUpdatedAt": "2026-05-21T12:55:18.422Z",
   "latestVersion": "1.29.6"
 }
