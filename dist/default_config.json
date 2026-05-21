@@ -2420,6 +2420,9 @@
         "aiWriting",
         "selectionTranslation"
       ],
+      "removeResRegexs": [
+        "\\<\\/think\\>"
+      ],
       "langOverrides.add": [
         {
           "id": "auto2ja"
@@ -21952,6 +21955,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-21T04:34:52.447Z",
+  "buildinConfigUpdatedAt": "2026-05-21T04:47:39.335Z",
   "latestVersion": "1.29.6"
 }
