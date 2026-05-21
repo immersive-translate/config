@@ -5894,7 +5894,8 @@
       ],
       "likePreSelectors.add_v.[1.11.5]": [
         "[data-testid=tweetText]",
-        "[data-testid=tweetText] *"
+        "[data-testid=tweetText] *",
+        "[data-testid=longformRichTextComponent] .longform-unstyled span[data-text]"
       ],
       "preTranslateLimiter.add_v.[1.24.5]": {
         "header.enableTranslate": false
@@ -12794,7 +12795,8 @@
         "www.mangago.me",
         "rinkocomics.com",
         "hanimeone.me",
-        "roliascan.com"
+        "roliascan.com",
+        "novelpia.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -12842,7 +12844,8 @@
           "#pic_container img[style='']",
           ".chapter-image.loaded",
           "#current-page-image",
-          "#chapter-images-container .comic-image[src^=http]"
+          "#chapter-images-container .comic-image[src^=http]",
+          ".comic-content img"
         ],
         "loadingStyle": "z-index: 999",
         "intersectionRootMargin": "0px 0px 200% 0px",
@@ -21961,6 +21964,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-21T13:38:44.907Z",
+  "buildinConfigUpdatedAt": "2026-05-21T15:11:29.864Z",
   "latestVersion": "1.29.6"
 }
