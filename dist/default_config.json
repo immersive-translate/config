@@ -18451,22 +18451,6 @@
       ]
     },
     {
-      "id": "archiveofourown-chapter",
-      "matches": [
-        "archiveofourown.org/works*chapters/*"
-      ],
-      "excludeSelectors.add": [
-        ".meta,.navigation,.byline,.pagination,.datetime,.stats",
-        "#add_comment",
-        "#footer",
-        ".summary > h3",
-        ".notes > h3"
-      ],
-      "buildContainerSelectors.add": [
-        "#main"
-      ]
-    },
-    {
       "id": "archiveofourown",
       "matches": "archiveofourown.org",
       "excludeSelectors.add": [
@@ -21955,6 +21939,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-21T04:47:39.335Z",
+  "buildinConfigUpdatedAt": "2026-05-21T09:24:09.977Z",
   "latestVersion": "1.29.6"
 }
