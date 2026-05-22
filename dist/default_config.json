@@ -869,6 +869,10 @@
       "unregisteredHard": 10,
       "soft": 20,
       "hard": 40
+    },
+    "usageSceneWeights": {
+      "mouse_hover": 0.1,
+      "selection": 0.1
     }
   },
   "defaultTranslationServicesOrder": [
@@ -21951,6 +21955,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-22T07:56:52.556Z",
+  "buildinConfigUpdatedAt": "2026-05-22T08:45:43.624Z",
   "latestVersion": "1.29.6"
 }
