@@ -12625,44 +12625,6 @@
       ]
     },
     {
-      "id": "zerobywai",
-      "matches": "www.zerobywai.com",
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "#reader-stage img.loaded"
-        ]
-      },
-      "platforms": [
-        "chrome",
-        "firefox",
-        "safari",
-        "imtIOSNew",
-        "imtAndroid"
-      ]
-    },
-    {
-      "id": "toongod",
-      "matches": [
-        "toongod.cc"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".reading-content img",
-          ".page-break > img"
-        ]
-      },
-      "platforms": [
-        "chrome",
-        "firefox",
-        "safari",
-        "imtIOSNew"
-      ]
-    },
-    {
       "id": "fantia",
       "matches": "fantia_notranslate.*",
       "imageRule.add": {
@@ -12787,7 +12749,12 @@
         "rinkocomics.com",
         "hanimeone.me",
         "roliascan.com",
-        "novelpia.com"
+        "novelpia.com",
+        "manhwaraw18.com",
+        "nhentai.to",
+        "www.zerobywai.com",
+        "toongod.cc",
+        "kingofshojo.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -12836,7 +12803,12 @@
           ".chapter-image.loaded",
           "#current-page-image",
           "#chapter-images-container .comic-image[src^=http]",
-          ".comic-content img"
+          ".comic-content img",
+          ".img-wrap img",
+          "#image-container img",
+          ".reading-content img",
+          ".page-break > img",
+          "#readerarea img"
         ],
         "loadingStyle": "z-index: 999",
         "intersectionRootMargin": "0px 0px 200% 0px",
@@ -18852,7 +18824,8 @@
           "[class*=\"imageViewerRender\"] canvas[data]",
           ".area-main img",
           "#main li>img",
-          "ul.contents-img li > img"
+          "ul.contents-img li > img",
+          ".work_parts_multitype_item img"
         ],
         "injectedCss": "#immersiveTranslateImgLoading { z-index:999 !important; }",
         "platforms": [
@@ -21955,6 +21928,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-22T08:45:43.624Z",
+  "buildinConfigUpdatedAt": "2026-05-23T16:48:35.263Z",
   "latestVersion": "1.29.6"
 }
