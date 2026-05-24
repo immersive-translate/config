@@ -20949,6 +20949,17 @@
       }
     },
     {
+      "id": "common-vtt",
+      "matches": [
+        "academy.dair.ai"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "hookType": "fetch|xhr",
+        "subtitleUrlRegExp": ".vtt"
+      }
+    },
+    {
       "id": "common-ebutt",
       "matches": [
         "www.tagesschau.de"
@@ -21387,6 +21398,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-24T15:43:56.907Z",
+  "buildinConfigUpdatedAt": "2026-05-24T15:52:24.770Z",
   "latestVersion": "1.29.6"
 }
