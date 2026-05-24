@@ -21346,6 +21346,16 @@
       ]
     },
     {
+      "id": "textSites",
+      "matches": [
+        "www.jjwxc.net"
+      ],
+      "mutationExcludeSelectors": [
+        "#note_danmu_wrapper,#note_danmu_wrapper *"
+      ],
+      "_comment": "就是容器根节点直接跟着文本节点，然后子节点会不断变化"
+    },
+    {
       "id": "autoHeight",
       "matches": [
         "*.sooplive.*",
@@ -21928,6 +21938,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-23T16:48:35.263Z",
+  "buildinConfigUpdatedAt": "2026-05-24T09:43:01.032Z",
   "latestVersion": "1.29.6"
 }
