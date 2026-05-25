@@ -5282,7 +5282,7 @@
         "meta[name='immersive-translate-ebook-viewer'][content='true']"
       ],
       "injectedCss": [
-        ".immersive-translate-target-translation-block-wrapper {display:block;}"
+        ".immersive-translate-target-translation-block-wrapper {display:block!important;}"
       ],
       "preTranslateLimiter.add": {
         "side.enableTranslate": true,
@@ -5353,7 +5353,7 @@
         "meta[name='immersive-translate-ebook-builder'][content='true']"
       ],
       "injectedCss": [
-        ".immersive-translate-target-translation-block-wrapper {display:block;}"
+        ".immersive-translate-target-translation-block-wrapper {display:block!important;}"
       ],
       "excludeSelectors": [
         "h1.notranslate",
@@ -21398,6 +21398,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-24T15:52:24.770Z",
+  "buildinConfigUpdatedAt": "2026-05-25T03:49:49.009Z",
   "latestVersion": "1.29.6"
 }
