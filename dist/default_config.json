@@ -10457,7 +10457,7 @@
         "placeholderType": "dom",
         "autoLanguageSelectors": [
           ".message-in.focusable-list-item [data-testid=selectable-text]",
-          ".message-out span[data-testid=tail-out] + div"
+          ".message-out span[data-testid=tail-out] + div [data-testid=selectable-text]"
         ]
       }
     },
@@ -21399,6 +21399,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-25T09:13:54.512Z",
+  "buildinConfigUpdatedAt": "2026-05-26T07:01:07.213Z",
   "latestVersion": "1.29.6"
 }
