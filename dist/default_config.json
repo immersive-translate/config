@@ -16330,8 +16330,9 @@
       "mainFrameMinWordCount": 0,
       "domCheckTimeout": 1,
       "subtitleRule.add": {
-        "type": "text_track_dynamic",
+        "type": "text_track",
         "videoPlayerSelector": "video",
+        "allowHideModeTextTrack": true,
         "loadingContainerSelector": "[data-testid=\"vh-player-container\"]",
         "loadingStyle": "bottom: unset; top: 5%;",
         "injectedCss": [
@@ -21415,6 +21416,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-27T11:11:07.655Z",
+  "buildinConfigUpdatedAt": "2026-05-27T14:18:48.612Z",
   "latestVersion": "1.29.8"
 }
