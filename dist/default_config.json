@@ -394,7 +394,7 @@
   "minVersion": "1.21.1",
   "showOpenaiOnSafari": true,
   "showUnconfiguredTranslationServiceInPopup": true,
-  "enableCfChallengeDialog": false,
+  "enableCfChallengeDialog": true,
   "managedHostFallbacks": {
     "api2": [
       "immersivetranslate.com",
@@ -21415,6 +21415,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-27T10:36:12.000Z",
+  "buildinConfigUpdatedAt": "2026-05-27T11:11:07.655Z",
   "latestVersion": "1.29.8"
 }
