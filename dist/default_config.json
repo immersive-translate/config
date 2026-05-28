@@ -12781,7 +12781,8 @@
         "revengeoftheiron-bloodedswordhound.one",
         "www.wn03.ru",
         "02.ikiru.wtf",
-        "mangahub.ru"
+        "mangahub.ru",
+        "ezmanga.org"
       ],
       "imageRule.add": {
         "enable": true,
@@ -12864,7 +12865,8 @@
           "div.entry-content p img",
           "div#img_list img",
           "[data-chapter-type='manga'] section[oncontextmenu] img",
-          ".reader-viewer-scan img[src]"
+          ".reader-viewer-scan img[src]",
+          ".r-page-img[src*='jpg']"
         ],
         "loadingStyle": "z-index: 999",
         "intersectionRootMargin": "0px 0px 200% 0px",
@@ -21417,6 +21419,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-27T16:01:10.868Z",
+  "buildinConfigUpdatedAt": "2026-05-28T02:13:12.373Z",
   "latestVersion": "1.29.8"
 }
