@@ -9043,9 +9043,6 @@
         "videoSelector": ".vjs-tech",
         "loadingContainerSelector": ".vp-video__player",
         "captionContainerSelector": ".vp-video__subtitle-text",
-        "quickButtonRule": {
-          "appendSelector": ".vp-video__control-bar--setup"
-        },
         "attachRule": {
           "appendSelector": ".vp-video__player",
           "injectedGlobalCSS": [
@@ -21420,6 +21417,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-28T08:25:12.938Z",
+  "buildinConfigUpdatedAt": "2026-05-28T09:04:46.872Z",
   "latestVersion": "1.29.8"
 }
