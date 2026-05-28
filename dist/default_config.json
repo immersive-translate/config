@@ -4385,6 +4385,7 @@
       "disabled": false,
       "hookType": "xhr",
       "showQuickButton": true,
+      "videoPlayerSelector": "video",
       "backgroundColor": "#080808",
       "backgroundOpacity": "75",
       "sourceTextColor": "#FFFFFF",
@@ -21419,6 +21420,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-28T02:13:12.373Z",
+  "buildinConfigUpdatedAt": "2026-05-28T08:25:12.938Z",
   "latestVersion": "1.29.8"
 }
