@@ -8802,7 +8802,8 @@
         "span[data-caps='initial']"
       ],
       "excludeSelectors": [
-        "footer.ds-footer"
+        "footer.ds-footer",
+        ".vjs-text-track-display"
       ],
       "injectedCss": [
         "a::before {position:relative!important;}",
@@ -21417,6 +21418,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-28T09:04:46.872Z",
-  "latestVersion": "1.29.8"
+  "buildinConfigUpdatedAt": "2026-05-28T11:22:26.844Z",
+  "latestVersion": "1.29.9"
 }
