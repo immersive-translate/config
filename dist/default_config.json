@@ -6097,7 +6097,8 @@
       "id": "common-vtt",
       "matches": [
         "gdc-search.github.io",
-        "www.epicweb.dev"
+        "www.epicweb.dev",
+        "www.aihero.dev"
       ],
       "subtitleRule.add": {
         "type": "webvtt",
@@ -21422,6 +21423,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-29T09:40:46.043Z",
+  "buildinConfigUpdatedAt": "2026-05-30T10:38:12.533Z",
   "latestVersion": "1.29.9"
 }
