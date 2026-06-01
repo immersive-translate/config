@@ -19,7 +19,7 @@
   "forceAutoTranslate": false,
   "popupVariant": "legacy",
   "tagsVersion": "1",
-  "dynamicI18nVersion": "2",
+  "dynamicI18nVersion": "3",
   "sensitiveConfig": {
     "telemetry": true,
     "sensitiveMode": "close",
@@ -1191,6 +1191,58 @@
           "claude-max",
           "zhipu-max"
         ]
+      }
+    },
+    {
+      "condition": "interfaceLanguage==zh-TW || interfaceLanguage==zh-HK",
+      "advanceConfig": {
+        "translationServices.add": {
+          "free-model.add_v.[0.0.0]": {
+            "subServices": [
+              {
+                "serviceType": "translategemma",
+                "legacyServiceId": "translategemma-free",
+                "preferredProvider": "translategemma",
+                "name": {
+                  "en": "TranslateGemma"
+                },
+                "introductionKey": "translationServices.translategemma.introduction",
+                "iconUrl": "https://s.immersivetranslate.com/assets/r2-uploads/gemma.png",
+                "sponsorIconId": "5"
+              },
+              {
+                "serviceType": "hymt",
+                "legacyServiceId": "hymt-free",
+                "preferredProvider": "hymt",
+                "homepage": "https://cloud.tencent.com/document/product/1729/104753",
+                "docUrl": "https://github.com/Tencent-Hunyuan/HY-MT/blob/main/README_CN.md",
+                "sponsorIconId": "4"
+              },
+              {
+                "serviceType": "siliconcloud",
+                "legacyServiceId": "siliconcloud-free",
+                "preferredProvider": "siliconflow",
+                "introductionPlaceholder": "<picture style='display: block; width: 100px;height: 20px;'><source srcset='https://s.immersivetranslate.com/assets/r2-uploads/siliconFlow-dark.png' media='(prefers-color-scheme: dark)' /><img src='https://s.immersivetranslate.com/assets/r2-uploads/siliconFlow-light.png' /></picture>",
+                "homepage": "https://cloud.siliconflow.cn/",
+                "sponsorIconId": "3"
+              },
+              {
+                "serviceType": "zhipu",
+                "legacyServiceId": "zhipu-free",
+                "preferredProvider": "glm",
+                "homepage": "https://open.bigmodel.cn/",
+                "sponsorIconId": "2"
+              },
+              {
+                "serviceType": "babel-lite",
+                "legacyServiceId": "babel-lite-free",
+                "preferredProvider": "babellite",
+                "homepage": "https://immersivetranslate.com/",
+                "sponsorIconId": "1"
+              }
+            ]
+          }
+        }
       }
     },
     {
@@ -21415,6 +21467,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-01T02:22:23.777Z",
+  "buildinConfigUpdatedAt": "2026-06-01T10:17:15.671Z",
   "latestVersion": "1.29.9"
 }
