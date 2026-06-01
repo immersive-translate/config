@@ -8972,7 +8972,8 @@
         "[data-a-expander-name='review_text_read_more'] { max-height: unset;}",
         ".compact.primaryText.primaryTextOnly {max-height: unset;-webkit-line-clamp: unset;}",
         ".format {-webkit-line-clamp: unset;}",
-        ".dcl-truncate,[class*='textButton'],span[data-a-max-rows] {max-height:unset!important;-webkit-line-clamp: unset!important;}"
+        ".dcl-truncate,[class*='textButton'],span[data-a-max-rows] {max-height:unset!important;-webkit-line-clamp: unset!important;}",
+        ".a-reactive-container-transition,.a-cardui-uninitialized {height:unset!important;max-height:unset!important;}"
       ],
       "additionalExcludeSelectors.add": [
         "#navFooter",
@@ -8982,7 +8983,8 @@
         ".a-color-price,.a-price",
         "[data-testid='price-section']",
         "[data-component='dui-badge']",
-        "#glow-ingress-block,#nav-link-accountList,#nav-orders,#nav-cart"
+        "#glow-ingress-block,#nav-link-accountList,#nav-orders,#nav-cart",
+        ".a-profile-content,[data-hook=product-variation-attributes],[data-hook=helpfulVoteWidget],[data-hook=reportAbuseButton],[data-hook=helpful-vote-statement]"
       ],
       "paragraphMinTextCount.replace.[1.24.5]": 1,
       "paragraphMinWordCount.replace.[1.24.5]": 1,
@@ -21468,6 +21470,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-01T15:18:43.010Z",
+  "buildinConfigUpdatedAt": "2026-06-01T15:54:57.093Z",
   "latestVersion": "1.29.9"
 }
