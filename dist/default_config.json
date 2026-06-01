@@ -942,14 +942,6 @@
       }
     },
     {
-      "condition": "abTagNumber<5",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "discountVia": "welcome_discount"
-        }
-      }
-    },
-    {
       "condition": "installedAtTimestamp>1776873600000 && isMobile==false",
       "advanceConfig": {
         "popupVariant": "modern"
@@ -21423,6 +21415,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-05-30T10:38:12.533Z",
+  "buildinConfigUpdatedAt": "2026-06-01T02:22:23.777Z",
   "latestVersion": "1.29.9"
 }
