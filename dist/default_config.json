@@ -4392,7 +4392,8 @@
       "[imt-state=dual] .immersive-translate-target-translation-block-wrapper-theme-dividingLine::before {display:block;}",
       "[imt-trans-position=before] .immersive-translate-target-translation-block-wrapper {display:block!important;}",
       "[data-imt-clamp-unlocked] {scrollbar-width: none;-ms-overflow-style: none;}",
-      "[data-imt-clamp-unlocked]::-webkit-scrollbar {display: none;}"
+      "[data-imt-clamp-unlocked]::-webkit-scrollbar {display: none;}",
+      "table [data-imt-split-divider] {display: none !important;}"
     ],
     "isOnBoardingPage": false,
     "isEbook": false,
@@ -21467,6 +21468,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-01T10:17:15.671Z",
+  "buildinConfigUpdatedAt": "2026-06-01T15:18:43.010Z",
   "latestVersion": "1.29.9"
 }
