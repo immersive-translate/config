@@ -18,6 +18,11 @@
   "disableOpenUpgradePage": false,
   "forceAutoTranslate": false,
   "popupVariant": "legacy",
+  "activeCampaignTags": {
+    "enabled": true,
+    "cacheTtlMinutes": 720,
+    "failureCacheTtlMinutes": 5
+  },
   "tagsVersion": "1",
   "dynamicI18nVersion": "3",
   "sensitiveConfig": {
@@ -395,33 +400,29 @@
   "showOpenaiOnSafari": true,
   "showUnconfiguredTranslationServiceInPopup": true,
   "enableCfChallengeDialog": true,
-  "managedHostFallbacks": {
-    "api2": [
-      "immersivetranslate.com",
-      "imtintl.com"
+  "managedHostStrategy": {
+    "backup": [
+      {
+        "host": "imtintl.com",
+        "subdomains": [
+          "api2",
+          "aigw1",
+          "config",
+          "ai",
+          "s"
+        ]
+      }
     ],
-    "aigw1": [
-      "immersivetranslate.com",
-      "imtintl.com"
+    "acceleration": [
+      {
+        "host": "imtedge.com",
+        "subdomains": [
+          "api2",
+          "lang-detect"
+        ]
+      }
     ],
-    "analytics": [
-      "immersivetranslate.com"
-    ],
-    "config": [
-      "immersivetranslate.com",
-      "imtintl.com"
-    ],
-    "ai": [
-      "immersivetranslate.com",
-      "imtintl.com"
-    ],
-    "lang-detect": [
-      "immersivetranslate.com"
-    ],
-    "s": [
-      "immersivetranslate.com",
-      "imtintl.com"
-    ]
+    "accelerationProbeTtlMinutes": 30
   },
   "donateUrl": "https://immersivetranslate.com/pricing",
   "uninstallUrl": "https://onboarding.immersivetranslate.com/uninstall",
@@ -874,7 +875,8 @@
     "usageSceneWeights": {
       "mouse_hover": 0.1,
       "selection": 0.1
-    }
+    },
+    "showDiscount": true
   },
   "defaultTranslationServicesOrder": [
     "free-model",
@@ -902,34 +904,6 @@
   "forceApplyFreeModel": null,
   "enableFreeModelMode": false,
   "advanceMergeConfig": [
-    {
-      "condition": "isCNPlugin==true",
-      "advanceConfig": {
-        "managedHostFallbacks": {
-          "api2": [
-            "immersivetranslate.cn"
-          ],
-          "aigw1": [
-            "immersivetranslate.cn"
-          ],
-          "analytics": [
-            "immersivetranslate.cn"
-          ],
-          "config": [
-            "immersivetranslate.cn"
-          ],
-          "ai": [
-            "immersivetranslate.cn"
-          ],
-          "lang-detect": [
-            "immersivetranslate.cn"
-          ],
-          "s": [
-            "immersivetranslate.cn"
-          ]
-        }
-      }
-    },
     {
       "condition": "abTagNumber<2",
       "advanceConfig": {
@@ -3712,6 +3686,7 @@
       "execCommandDeleteEnable": false,
       "enableOptionShortcutFallback": true,
       "enableRangeDeleteContent": false,
+      "enableTargetLanguageBar": true,
       "triggerGapMs": 250,
       "triggerIdleMs": 250,
       "triggerCancelWindowMs": 3000,
@@ -21470,6 +21445,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-01T15:54:57.093Z",
-  "latestVersion": "1.29.9"
+  "buildinConfigUpdatedAt": "2026-06-03T11:40:10.000Z",
+  "latestVersion": "1.30.1"
 }
