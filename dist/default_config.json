@@ -20858,7 +20858,8 @@
         "m.163.com",
         "discord.com/discovery*",
         "zhenghedata.com",
-        "yoeshop.ssweet.*"
+        "yoeshop.ssweet.*",
+        "sinocism.com"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
@@ -20890,7 +20891,10 @@
       "additionalExcludeSelectors.remove": [
         ".notranslate",
         "[translate=no]"
-      ]
+      ],
+      "mixedMode.add": {
+        "dualUnlock": true
+      }
     },
     {
       "id": "other-chatapps",
@@ -21445,6 +21449,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-03T13:18:21.194Z",
+  "buildinConfigUpdatedAt": "2026-06-05T07:40:56.883Z",
   "latestVersion": "1.30.1"
 }
