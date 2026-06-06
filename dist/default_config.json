@@ -1749,6 +1749,7 @@
       "subtitlePrompt": "Translate to {{to}}:\n\n{{text}}",
       "selectionSystemPrompt": "# Role Definition \nYou are a professional multilingual translation engine translating from {{from}} into {{to}}.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols, part of speech, definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis: \n【Current Context】: \"{{context_text}}\"\n# Translation Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech (keep concise, must use {{to}} language)\n - Provide contextual analysis\n - Include natural context examples\n\n2. For phrase/sentence input:\n - Return translation only\n - No additional information allowed\n\n3. Format Specifications:\n - Strictly follow example JSON structure\n - No Markdown code blocks\n - The \"phonetic\" field must describe the pronunciation of the source word in source language {{from}}, not the target language {{to}}\n \n# Language System Rules\n- Source language is {{from}}; target language is {{to}}\n- The output explanations, definitions, translation, and contextual_analysis must be entirely in the target language {{to}}\n- For Source language is English, use American phonetic symbols for phonetic symbols\n- For Source language is Chinese, Use standard Pinyin for phonetic symbols (with tone marks)\n- For other languages, use the standard native pronunciation notation or IPA for that source language\n- If a word is spelled the same in multiple languages, choose the pronunciation for source language {{from}} based on the current context; do not default to English unless {{from}} is English\n- DO NOT using languages other than those requested\n# Output Examples \n【Word Example】: \n{\n  \"phonetic\": \"/həˈloʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"adj.\",\n      \"meaning\": \"hello\",\n      \"example\": {\n        \"source\": \"Hello, how are you\",\n        \"target\": \"你好啊，最近怎么样\"\n      }\n    }\n  ],\n  \"translation\": \"你好\",\n  \"contextual_analysis\": \"Analysis of the word's meaning within the provided context\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions \n- Mixed output formats\n- Missing required fields\n- Unrequested additional information\n- Language system mixing\n- English phonetics for non-English source words",
       "selectionPrompt": "【Content to Translate】:\n\"{{text}}\"",
+      "maxTextGroupLengthPerRequestForSubtitle": 4,
       "langOverrides.add_v.[1.17.2]": [
         {
           "id": "auto2zh-CN",
@@ -2033,7 +2034,7 @@
       "proLimit": 10,
       "maxTextGroupLengthPerRequest": 4,
       "maxTextLengthPerRequest": 3000,
-      "maxTextGroupLengthPerRequestForSubtitle": 5,
+      "maxTextGroupLengthPerRequestForSubtitle": 4,
       "translationTextSeparator": "\n\n%%\n\n",
       "langOverrides": [],
       "bodyConfigs": {
@@ -2257,7 +2258,7 @@
       "limit": 0.3,
       "maxTextGroupLengthPerRequest": 4,
       "maxTextLengthPerRequest": 2000,
-      "maxTextGroupLengthPerRequestForSubtitle": 5,
+      "maxTextGroupLengthPerRequestForSubtitle": 4,
       "bodyConfigs": {
         "max_tokens": 2048
       },
@@ -2326,7 +2327,7 @@
       "interval": 1350,
       "requestTimeout": 101000,
       "proLimit": 10,
-      "maxTextGroupLengthPerRequestForSubtitle": 5,
+      "maxTextGroupLengthPerRequestForSubtitle": 4,
       "newlinePlaceholderDelimiters": [
         "\n<br>\n"
       ],
@@ -2396,7 +2397,7 @@
       "limit": 5,
       "maxTextGroupLengthPerRequest": 1,
       "maxTextLengthPerRequest": 1200,
-      "maxTextGroupLengthPerRequestForSubtitle": 5,
+      "maxTextGroupLengthPerRequestForSubtitle": 4,
       "bodyConfigs": {
         "max_tokens": 2048
       },
@@ -2636,7 +2637,7 @@
       "models": "grok-3-mini-fast|grok-3-fast|grok-3-mini|grok-3|grok-4-0709|grok-2-1212|grok-2-vision-1212",
       "provider": "custom",
       "limit": 4,
-      "maxTextGroupLengthPerRequestForSubtitle": 5,
+      "maxTextGroupLengthPerRequestForSubtitle": 4,
       "apiUrl": "https://api.x.ai/v1/chat/completions",
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
@@ -2651,7 +2652,7 @@
       "models": "plamo-2.2-prime|plamo-3.0-prime-beta",
       "provider": "custom",
       "limit": 4,
-      "maxTextGroupLengthPerRequestForSubtitle": 5,
+      "maxTextGroupLengthPerRequestForSubtitle": 4,
       "apiUrl": "https://api.platform.preferredai.jp/v1/chat/completions",
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
@@ -3100,7 +3101,7 @@
       "limit": 10,
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4,
-      "maxTextGroupLengthPerRequestForSubtitle": 5,
+      "maxTextGroupLengthPerRequestForSubtitle": 4,
       "enableFallback": true,
       "disabledAt": "2026-01-01",
       "supportFeatures": [
@@ -4430,9 +4431,9 @@
       "freeAiSubtitleCacheNewUserLimitDay": 10,
       "aiSubtitleMaxTextLength": 500,
       "velocityGroup": [
-        5,
-        5,
-        5
+        4,
+        4,
+        4
       ],
       "fonts": [
         "Microsoft YaHei",
@@ -21449,6 +21450,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-05T07:40:56.883Z",
+  "buildinConfigUpdatedAt": "2026-06-06T11:28:58.002Z",
   "latestVersion": "1.30.1"
 }
