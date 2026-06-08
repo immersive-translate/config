@@ -31,7 +31,7 @@
         "id": "ad-banner-20260608-free-zhCN",
         "i18n": {
           "zh-CN": {
-            "title": "",
+            "title": " ",
             "description": ""
           },
           "zh-TW": {
@@ -21809,6 +21809,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-08T03:41:17.160Z",
+  "buildinConfigUpdatedAt": "2026-06-08T06:12:45.501Z",
   "latestVersion": "1.30.1"
 }
