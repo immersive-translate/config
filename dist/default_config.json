@@ -19,9 +19,9 @@
   "forceAutoTranslate": false,
   "popupVariant": "legacy",
   "activeCampaignTags": {
-    "enabled": false,
+    "enabled": true,
     "cacheTtlMinutes": 1440,
-    "failureCacheTtlMinutes": 5
+    "failureCacheTtlMinutes": 120
   },
   "adBanner": {
     "enable": true,
@@ -21809,6 +21809,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-08T08:37:34.993Z",
+  "buildinConfigUpdatedAt": "2026-06-08T10:05:24.236Z",
   "latestVersion": "1.30.1"
 }
