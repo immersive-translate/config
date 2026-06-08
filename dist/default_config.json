@@ -10839,6 +10839,7 @@
         "tutorialsText": "输入中文后快速连击 3 次空格键翻译，与外国人轻松对话",
         "placeholderType": "dom",
         "autoLanguageSelectors": [
+          "[data-testid=msg-container] [data-testid=selectable-text]",
           ".message-in.focusable-list-item [data-testid=selectable-text]",
           ".message-out span[data-testid=tail-out] + div [data-testid=selectable-text]"
         ]
@@ -21808,6 +21809,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-08T00:52:39.957Z",
+  "buildinConfigUpdatedAt": "2026-06-08T03:41:17.160Z",
   "latestVersion": "1.30.1"
 }
