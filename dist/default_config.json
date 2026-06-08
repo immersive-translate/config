@@ -1021,7 +1021,7 @@
   "enableFreeModelMode": false,
   "advanceMergeConfig": [
     {
-      "condition": "year-pro==P3",
+      "condition": "618-year-pro==P3",
       "advanceConfig": {
         "adBanner": {
           "enable": true,
@@ -1142,7 +1142,7 @@
       }
     },
     {
-      "condition": "month-max==P2 || month-pro==P1",
+      "condition": "618-month-max==P2 || 618-month-pro==P1",
       "advanceConfig": {
         "adBanner": {
           "enable": true,
@@ -21808,6 +21808,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-07T18:19:36.811Z",
+  "buildinConfigUpdatedAt": "2026-06-08T00:52:39.957Z",
   "latestVersion": "1.30.1"
 }
