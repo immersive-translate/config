@@ -13168,7 +13168,8 @@
         "02.ikiru.wtf",
         "mangahub.ru",
         "ezmanga.org",
-        "magustoon.org"
+        "magustoon.org",
+        "manhwa18.net"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13252,7 +13253,8 @@
           "[data-chapter-type='manga'] section[oncontextmenu] img",
           ".reader-viewer-scan img[src]",
           ".r-page-img[src*='jpg']",
-          ".image-container img"
+          ".image-container img",
+          ".m18-reading img[src*=jpg]"
         ],
         "loadingStyle": "z-index: 999",
         "intersectionRootMargin": "0px 0px 200% 0px",
@@ -21809,6 +21811,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-08T10:18:27.893Z",
+  "buildinConfigUpdatedAt": "2026-06-09T17:44:37.318Z",
   "latestVersion": "1.30.1"
 }
