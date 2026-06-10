@@ -23,6 +23,9 @@
     "cacheTtlMinutes": 1440,
     "failureCacheTtlMinutes": 120
   },
+  "activeCampaignTags.add_v.[1.30.2]": {
+    "enabled": true
+  },
   "adBanner": {
     "enable": true,
     "closedStorageKey": "adBanner_closed_20260608",
@@ -822,6 +825,7 @@
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
+  "enableWebViewInputTranslationDot": false,
   "enableFloatShare": true,
   "isShowInputTranslationConsent": true,
   "disableInputLongTextConfirm": false,
@@ -991,7 +995,8 @@
       "mouse_hover": 0.1,
       "selection": 0.1
     },
-    "showDiscount": true
+    "showDiscount": true,
+    "useNewSoftUpgradeStyle": false
   },
   "defaultTranslationServicesOrder": [
     "free-model",
@@ -1269,6 +1274,14 @@
             "enableImtServe": true,
             "apiUrl": ""
           }
+        }
+      }
+    },
+    {
+      "condition": "isPro==false && abTagNumber<2",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "useNewSoftUpgradeStyle": true
         }
       }
     },
@@ -2081,6 +2094,7 @@
       "apiUrl": "https://api.deepl.com/jsonrpc"
     },
     "ai": {
+      "apiPath": "/chat/completions",
       "env": {
         "html_only": "\n\nPs. if the text contains html tags, please consider after translate, where the tags should be in translated result, meanwhile keep the result fluently.",
         "imt_source_field": "text",
@@ -2601,6 +2615,7 @@
     "claude": {
       "visible": true,
       "extends": "ai",
+      "apiPath": "/messages",
       "model": "claude-haiku-4-5",
       "models": "claude-opus-4-6|claude-sonnet-4-6|claude-opus-4-5|claude-sonnet-4-5|claude-haiku-4-5|claude-opus-4-1|claude-opus-4|claude-sonnet-4|claude-sonnet-3-7",
       "placeholderDelimiters": [
@@ -21792,6 +21807,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-10T03:50:54.251Z",
-  "latestVersion": "1.30.1"
+  "buildinConfigUpdatedAt": "2026-06-10T10:16:43.456Z",
+  "latestVersion": "1.30.2"
 }
