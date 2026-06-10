@@ -749,7 +749,6 @@
     "https://www.dr.dk/[DR]",
     "https://www.pbs.org/[PBS]",
     "https://www.viki.com/[Viki]",
-    "https://play.aetv.com/[A&E]",
     "https://w.mgtv.com/[MGTV]",
     "https://dev.epicgames.com/[DevEpicGames]",
     "https://app.zoom.us/[ZOOM]",
@@ -15202,24 +15201,6 @@
       }
     },
     {
-      "id": "aetv",
-      "matches": [
-        "play.aetv.com"
-      ],
-      "subtitleRule.add": {
-        "type": "text_track_dynamic",
-        "videoPlayerSelector": "video[data-pdk-active-track]",
-        "quickButtonRule": {
-          "appendSelector": ".tpBottomFloatRegion > [class='tpRow']",
-          "injectCSS": ".imt-quick-subtitle-pop-content { max-height: 150px !important; }"
-        },
-        "injectedCss": [
-          ".ttr-left:first-child {margin-bottom:1.5em}",
-          "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container {grid-column: 10;grid-row: 2;}"
-        ]
-      }
-    },
-    {
       "id": "hbomax",
       "matches": [
         "play.max.com",
@@ -21811,6 +21792,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-09T17:44:37.318Z",
+  "buildinConfigUpdatedAt": "2026-06-10T03:50:54.251Z",
   "latestVersion": "1.30.1"
 }
