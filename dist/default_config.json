@@ -2094,7 +2094,6 @@
       "apiUrl": "https://api.deepl.com/jsonrpc"
     },
     "ai": {
-      "apiPath": "/chat/completions",
       "env": {
         "html_only": "\n\nPs. if the text contains html tags, please consider after translate, where the tags should be in translated result, meanwhile keep the result fluently.",
         "imt_source_field": "text",
@@ -2615,7 +2614,6 @@
     "claude": {
       "visible": true,
       "extends": "ai",
-      "apiPath": "/messages",
       "model": "claude-haiku-4-5",
       "models": "claude-opus-4-6|claude-sonnet-4-6|claude-opus-4-5|claude-sonnet-4-5|claude-haiku-4-5|claude-opus-4-1|claude-opus-4|claude-sonnet-4|claude-sonnet-3-7",
       "placeholderDelimiters": [
@@ -21807,6 +21805,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-10T10:16:20.000Z",
+  "buildinConfigUpdatedAt": "2026-06-13T07:26:21.577Z",
   "latestVersion": "1.30.2"
 }
