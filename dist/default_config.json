@@ -929,13 +929,15 @@
     "fixedPosition": "right",
     "upgradeVisible": true,
     "upgradeShowLimit": 20,
-    "transparency": 30
+    "transparency": 30,
+    "actionButtonsShowDelay": 500
   },
   "pcFloatBall": {
     "enable": true,
     "enableSidePanel": true,
-    "enablePinSidePanel": true,
+    "enablePinSidePanel": false,
     "transparency": 30,
+    "actionButtonsShowDelay": 500,
     "blockUrls": [
       "*immersivetranslate.*/preview",
       "*.immersivetranslate.*/download-subtitle*",
@@ -1325,6 +1327,19 @@
       "condition": "iosSystemVersion==18_3",
       "advanceConfig": {
         "useOnlineOptions": true
+      }
+    },
+    {
+      "condition": "versionNumber>13000",
+      "advanceConfig": {
+        "generalRule": {
+          "imageRule.add": {
+            "supportPlatform": {
+              "firefox_pc": "all",
+              "safari_pc": "all"
+            }
+          }
+        }
       }
     },
     {
@@ -2094,6 +2109,7 @@
       "apiUrl": "https://api.deepl.com/jsonrpc"
     },
     "ai": {
+      "baseUrlApiPath": "/chat/completions",
       "env": {
         "html_only": "\n\nPs. if the text contains html tags, please consider after translate, where the tags should be in translated result, meanwhile keep the result fluently.",
         "imt_source_field": "text",
@@ -2614,6 +2630,7 @@
     "claude": {
       "visible": true,
       "extends": "ai",
+      "baseUrlApiPath": "/messages",
       "model": "claude-haiku-4-5",
       "models": "claude-opus-4-6|claude-sonnet-4-6|claude-opus-4-5|claude-sonnet-4-5|claude-haiku-4-5|claude-opus-4-1|claude-opus-4|claude-sonnet-4|claude-sonnet-3-7",
       "placeholderDelimiters": [
@@ -4650,7 +4667,7 @@
       "errorInterval": 5000,
       "clientOcrTimeout": 20000,
       "clientTranslateTimeout": 12000,
-      "enableImageTranslation": "pro",
+      "enableImageTranslation": "all",
       "supportPlatform": {
         "chrome_pc": "all"
       },
@@ -7202,6 +7219,9 @@
         ".markdown-body",
         "article [class='f6 color-fg-muted mt-1']"
       ],
+      "excludeSelectors.add": [
+        "a[data-hovercard-type]"
+      ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
         "li>div[class*='Box-sc'],div[class*='Box-sc']>button[class*='prc-Token-TokenBase'],li[class*='card-label-module']>button[class*='prc-Token-TokenBase'] {height:unset!important;}",
@@ -7235,11 +7255,11 @@
         ".timeline-comment-header",
         ".review-thread-reply",
         ".codeRepository",
-        "a[data-hovercard-type]",
         "[title='Label: Private']",
         "[aria-label*='language']",
         ".js-suggested-changes-blob.diff-view",
-        "h1[data-component=PH_Title] span[class*='issueNumberText']"
+        "h1[data-component=PH_Title] span[class*='issueNumberText']",
+        "[data-testid=list-row-repo-name-and-number]"
       ],
       "extraBlockSelectors.add": [
         "bdi"
@@ -21805,6 +21825,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-13T07:26:21.577Z",
+  "buildinConfigUpdatedAt": "2026-06-13T08:43:57.265Z",
   "latestVersion": "1.30.2"
 }
