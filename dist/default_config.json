@@ -6110,13 +6110,6 @@
       ]
     },
     {
-      "id": "xiapi",
-      "matches": "*.xiapibuy.*",
-      "globalStyles.add": {
-        ".WBVL_7,.tauwWr.jqRqhn": "-webkit-line-clamp:unset;max-height:unset;height:unset;"
-      }
-    },
-    {
       "id": "fanbox",
       "matches": [
         "*.fanbox.cc"
@@ -6506,7 +6499,8 @@
       "matches": [
         "gdc-search.github.io",
         "www.epicweb.dev",
-        "www.aihero.dev"
+        "www.aihero.dev",
+        "www.codewithantonio.com"
       ],
       "subtitleRule.add": {
         "type": "webvtt",
@@ -8930,36 +8924,6 @@
       }
     },
     {
-      "id": "yourporn",
-      "matches": "https://www.youporn.com/*",
-      "extraBlockSelectors.add": [
-        ".button"
-      ],
-      "globalStyles": {
-        ".video-box": "max-height:unset;",
-        ".video-box-title": "white-space:unset;"
-      }
-    },
-    {
-      "id": "modelhub",
-      "matches": "https://www.modelhub.com/*",
-      "globalStyles": {
-        ".videoTitle": "height:unset;",
-        "a": "height:unset;"
-      }
-    },
-    {
-      "id": "xvideos",
-      "matches": "https://www.xvideos.com/*",
-      "globalStyles": {
-        ".title": "-webkit-line-clamp:unset;max-height:unset;",
-        ".mozaique": "display:flex; flex-wrap:wrap;"
-      },
-      "excludeSelectors": [
-        ".video-hd-mark"
-      ]
-    },
-    {
       "id": "missav",
       "matches": "https://missav.*/*",
       "globalStyles": {
@@ -9262,15 +9226,6 @@
       ],
       "paragraphMinTextCount": 4,
       "paragraphMinWordCount": 2
-    },
-    {
-      "id": "tripadvisor",
-      "matches": "www.tripadvisor.com",
-      "paragraphMinTextCount": 4,
-      "paragraphMinWordCount": 2,
-      "injectedCss.add": [
-        ".ZTpaU,.alvrA {-webkit-line-clamp:unset;}"
-      ]
     },
     {
       "id": "kelbyone",
@@ -9634,13 +9589,6 @@
       }
     },
     {
-      "id": "afreecatv",
-      "matches": "www.afreecatv.com",
-      "globalStyles": {
-        "a.title": "max-height:unset;-webkit-line-clamp:unset;"
-      }
-    },
-    {
       "id": "opennet",
       "matches": "opennet.ru",
       "excludeTags.add": [
@@ -9726,20 +9674,6 @@
       }
     },
     {
-      "id": "getpocket",
-      "matches": "getpocket.com",
-      "selectors": [
-        "h2",
-        "div.excerpt p",
-        "article",
-        "h1"
-      ],
-      "globalStyles": {
-        "h2.title": "max-height:unset;-webkit-line-clamp:unset;",
-        "div.excerpt p": "max-height:unset;-webkit-line-clamp:unset;"
-      }
-    },
-    {
       "id": "fandom",
       "matches": "*.fandom.com",
       "urlChangeDelay": 800,
@@ -9790,18 +9724,6 @@
       },
       "atomicBlockSelectors": [
         "div.slide-contents-item"
-      ]
-    },
-    {
-      "id": "you",
-      "matches": "https://you.com/search",
-      "globalStyles": {
-        "h3": "max-height:unset;-webkit-line-clamp:unset;",
-        ".caKYaC": "max-height:unset;-webkit-line-clamp:unset;",
-        ".dDwDsu": "max-height:unset;-webkit-line-clamp:unset;"
-      },
-      "excludeSelectors": [
-        "div.hpIWZO"
       ]
     },
     {
@@ -10425,21 +10347,6 @@
       ]
     },
     {
-      "id": "fiverr-main",
-      "matches": "*.fiverr.com",
-      "globalStyles": {
-        "h3 > a": "-webkit-line-clamp:unset;overflow:unset;",
-        "h3": "-webkit-line-clamp:unset;overflow:unset;",
-        "h5": "-webkit-line-clamp:unset;overflow:unset;",
-        "p": "-webkit-line-clamp:unset;overflow:unset;",
-        ".YLycza2.u9KHmsf": "height:unset;max-height:unset;",
-        ".lt2ar2q.EhHcMiw": "height:unset; max-height: unset;"
-      },
-      "excludeSelectors": [
-        ".popular"
-      ]
-    },
-    {
       "id": "jira",
       "matches": [
         "jira.*.com/browse/*",
@@ -11055,13 +10962,6 @@
       ]
     },
     {
-      "id": "feeder",
-      "matches": "https://feeder.co/*",
-      "globalStyles": {
-        ".item-summary": "-webkit-line-clamp:unset;"
-      }
-    },
-    {
       "id": "elektrotechnik",
       "matches": "https://www.elektrotechnik.rwth-aachen.de/*",
       "globalAttributes.add": {
@@ -11515,18 +11415,6 @@
       }
     },
     {
-      "id": "time",
-      "matches": "time.com",
-      "excludeSelectors": [
-        ".date-and-duration"
-      ],
-      "globalStyles": {
-        ".headline": "-webkit-line-clamp:unset;overflow:unset;height:unset;",
-        "h3": "-webkit-line-clamp:unset;overflow:unset;",
-        "p": "-webkit-line-clamp:unset;overflow:unset;"
-      }
-    },
-    {
       "id": "docs-swift",
       "matches": "docs.swift.org",
       "selectors": [
@@ -11630,20 +11518,6 @@
       ]
     },
     {
-      "id": "cnet",
-      "matches": "www.cnet.com",
-      "globalStyles": {
-        "h3,div,span,p": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;"
-      }
-    },
-    {
-      "id": "dolmods",
-      "matches": "dolmods.net",
-      "globalStyles": {
-        "[class*='max-h']": "max-height:unset!important;"
-      }
-    },
-    {
       "id": "digitimes",
       "matches": "www.digitimes.com",
       "globalStyles": {
@@ -11721,13 +11595,6 @@
       ],
       "globalStyles": {
         ".mail-list-page-wide-item": "height:unset;"
-      }
-    },
-    {
-      "id": "nikkei",
-      "matches": "www.nikkei.com",
-      "globalStyles": {
-        "h3,div,span,p": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;"
       }
     },
     {
@@ -11990,6 +11857,9 @@
       ],
       "mutationExcludeSelectors.add": [
         ".player-timedtext *"
+      ],
+      "additionalExcludeSelectors.add": [
+        ".source-cue"
       ],
       "subtitleRule.add": {
         "type": "netflix",
@@ -19774,13 +19644,6 @@
       ]
     },
     {
-      "id": "z-lib",
-      "matches": "*.z-lib.*",
-      "globalStyles": {
-        ".title,.book-info": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;"
-      }
-    },
-    {
       "id": "otter.ai",
       "matches": "otter.ai",
       "richMoreWordPercent": 0.8
@@ -19803,13 +19666,6 @@
         ".project-card .description": "height:unset;-webkit-line-clamp:unset;",
         "ul.details-list": "height:unset;",
         ".project-card .categories": "height:unset;"
-      }
-    },
-    {
-      "id": "duckduckgo",
-      "matches": "duckduckgo.com",
-      "globalStyles": {
-        "div[data-result='snippet'] > div > span": "-webkit-line-clamp:unset;"
       }
     },
     {
@@ -19838,13 +19694,6 @@
       ]
     },
     {
-      "id": "rebang",
-      "matches": "rebang.today",
-      "globalStyles": {
-        ".multirow-ellipsis-3": "-webkit-line-clamp:unset;"
-      }
-    },
-    {
       "id": "monmouthcoffee",
       "matches": "www.monmouthcoffee.*",
       "additionalExcludeSelectors.add": [
@@ -19864,14 +19713,6 @@
       "additionalExcludeSelectors.remove": [
         "h4 br"
       ]
-    },
-    {
-      "id": "appsumo",
-      "matches": "appsumo.com",
-      "excludeSelectors": [],
-      "globalStyles": {
-        "[class*='line-clamp']": "-webkit-line-clamp: unset"
-      }
     },
     {
       "id": "bb-rich",
@@ -21212,6 +21053,89 @@
       "_comment": "就是容器根节点直接跟着文本节点，然后子节点会不断变化"
     },
     {
+      "id": "common-text-track",
+      "matches": [
+        "www.typing.com",
+        "*.video-stream-hosting.de",
+        "*.thieme.de",
+        "videos.sproutvideo.com"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 1,
+      "subtitleRule.add": {
+        "type": "text_track",
+        "allowHideModeTextTrack": true,
+        "videoPlayerSelector": "video"
+      }
+    },
+    {
+      "id": "common-vtt-jw",
+      "matches": [
+        "*.rottentomatoes.com",
+        "megaplay.buzz",
+        "www.brighttalk.com"
+      ],
+      "excludeSelectors.add": [
+        ".jw-wrapper"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".jw-wrapper *"
+      ],
+      "selectionTranslation": {
+        "enable": false
+      },
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 1,
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "fetch|xhr",
+        "subtitleUrlRegExp": "\\.vtt",
+        "quickButtonRule": {
+          "appendSelector": ".jw-button-container",
+          "insertBeforeSelector": ".jw-icon-cc",
+          "ccEnableSelector": ".jw-icon-cc"
+        },
+        "attachRule": {
+          "appendSelector": ".jw-wrapper",
+          "injectedCSS": [
+            ".jw-text-track-display { display: none!important; }",
+            ".imt-caption-window {width: 90%;}"
+          ]
+        }
+      }
+    },
+    {
+      "id": "common-vtt",
+      "matches": [
+        "academy.dair.ai",
+        "cloudnestra.com",
+        "maven.com"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "hookType": "fetch|xhr",
+        "subtitleUrlRegExp": ".vtt"
+      }
+    },
+    {
+      "id": "common-ebutt",
+      "matches": [
+        "www.tagesschau.de"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 1,
+      "subtitleRule.add": {
+        "type": "ebutt",
+        "hookType": "fetch",
+        "enableHookDownload": true,
+        "subtitleUrlRegExp": "\\.xml$"
+      }
+    },
+    {
       "id": "autoHeight",
       "matches": [
         "*.sooplive.*",
@@ -21235,7 +21159,25 @@
         "discord.com/discovery*",
         "zhenghedata.com",
         "yoeshop.ssweet.*",
-        "sinocism.com"
+        "sinocism.com",
+        "*.z-lib.*",
+        "duckduckgo.com",
+        "www.postype.com",
+        "rebang.today",
+        "appsumo.com",
+        "*.xiapibuy.*",
+        "www.modelhub.com",
+        "www.xvideos.com",
+        "www.tripadvisor.com",
+        "www.afreecatv.com",
+        "getpocket.com",
+        "https://you.com/search",
+        "*.fiverr.com",
+        "https://feeder.co/*",
+        "time.com",
+        "www.cnet.com",
+        "www.nikkei.com",
+        "dolmods.net"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
@@ -21303,88 +21245,6 @@
       "injectedCss.add": [
         ".immersive-translate-target-translation-block-wrapper {display: inline !important;}"
       ]
-    },
-    {
-      "id": "common-text-track",
-      "matches": [
-        "www.typing.com",
-        "*.video-stream-hosting.de",
-        "*.thieme.de",
-        "videos.sproutvideo.com"
-      ],
-      "mainFrameMinTextCount": 0,
-      "mainFrameMinWordCount": 0,
-      "domCheckTimeout": 1,
-      "subtitleRule.add": {
-        "type": "text_track",
-        "allowHideModeTextTrack": true,
-        "videoPlayerSelector": "video"
-      }
-    },
-    {
-      "id": "common-vtt-jw",
-      "matches": [
-        "*.rottentomatoes.com",
-        "megaplay.buzz",
-        "www.brighttalk.com"
-      ],
-      "excludeSelectors.add": [
-        ".jw-wrapper"
-      ],
-      "mutationExcludeSelectors.add": [
-        ".jw-wrapper *"
-      ],
-      "selectionTranslation": {
-        "enable": false
-      },
-      "mainFrameMinTextCount": 0,
-      "mainFrameMinWordCount": 0,
-      "domCheckTimeout": 1,
-      "subtitleRule.add": {
-        "type": "subsrt",
-        "subsrtFormat": "vtt",
-        "hookType": "fetch|xhr",
-        "subtitleUrlRegExp": "\\.vtt",
-        "quickButtonRule": {
-          "appendSelector": ".jw-button-container",
-          "insertBeforeSelector": ".jw-icon-cc",
-          "ccEnableSelector": ".jw-icon-cc"
-        },
-        "attachRule": {
-          "appendSelector": ".jw-wrapper",
-          "injectedCSS": [
-            ".jw-text-track-display { display: none!important; }",
-            ".imt-caption-window {width: 90%;}"
-          ]
-        }
-      }
-    },
-    {
-      "id": "common-vtt",
-      "matches": [
-        "academy.dair.ai",
-        "cloudnestra.com"
-      ],
-      "subtitleRule.add": {
-        "type": "subsrt",
-        "hookType": "fetch|xhr",
-        "subtitleUrlRegExp": ".vtt"
-      }
-    },
-    {
-      "id": "common-ebutt",
-      "matches": [
-        "www.tagesschau.de"
-      ],
-      "mainFrameMinTextCount": 0,
-      "mainFrameMinWordCount": 0,
-      "domCheckTimeout": 1,
-      "subtitleRule.add": {
-        "type": "ebutt",
-        "hookType": "fetch",
-        "enableHookDownload": true,
-        "subtitleUrlRegExp": "\\.xml$"
-      }
     },
     {
       "id": "preSiteColumn",
@@ -21469,6 +21329,19 @@
       "additionalExcludeSelectors.remove": [
         ".notranslate",
         "[translate=no]"
+      ]
+    },
+    {
+      "id": "mailSites",
+      "matches": [
+        "mail.126.com"
+      ],
+      "injectedCss.add": [
+        ".mail-list-frome {display:none;}"
+      ],
+      "excludeSelectors.add": [
+        ".mail-list-time",
+        ".mail-list-frome"
       ]
     },
     {
@@ -21564,6 +21437,9 @@
           }
         }
       ],
+      "preTranslateLimiter.add": {
+        "header.enableTranslate": true
+      },
       "additionalExcludeSelectors.remove": [
         ".notranslate",
         "[translate=no]"
@@ -21825,6 +21701,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-13T08:43:57.265Z",
+  "buildinConfigUpdatedAt": "2026-06-15T02:58:59.487Z",
   "latestVersion": "1.30.2"
 }
