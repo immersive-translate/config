@@ -821,7 +821,8 @@
     "https://updraft.cyfrin.io/[Updraft]",
     "https://mediaspace.illinois.edu/[MediaSpace]",
     "https://www.nbcnews.com/[NBCNEWS]",
-    "https://fawesome.tv[Fawesome]"
+    "https://fawesome.tv[Fawesome]",
+    "https://maven.com/[Maven]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -21707,6 +21708,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-16T07:14:02.307Z",
+  "buildinConfigUpdatedAt": "2026-06-16T11:20:47.745Z",
   "latestVersion": "1.30.2"
 }
