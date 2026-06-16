@@ -21224,7 +21224,7 @@
     {
       "id": "other-chatapps",
       "matches": [
-        "app.salesmartly.com/chat"
+        "app.salesmartly.com"
       ],
       "selectors.add": [
         ".chat__inbox_item_text_ordinary",
@@ -21708,6 +21708,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-16T11:20:47.745Z",
+  "buildinConfigUpdatedAt": "2026-06-16T12:17:07.079Z",
   "latestVersion": "1.30.2"
 }
