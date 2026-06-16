@@ -1343,7 +1343,13 @@
       }
     },
     {
-      "condition": "imtAndroidVersionNumber>10110",
+      "condition": "imtAndroidVersionNumber>20606",
+      "advanceConfig": {
+        "useOnlineOptions": true
+      }
+    },
+    {
+      "condition": "imtAndroidVersionNumber>20110",
       "advanceConfig": {
         "generalRule": {
           "imageRule.add": {
@@ -21701,6 +21707,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-15T09:56:21.094Z",
+  "buildinConfigUpdatedAt": "2026-06-16T07:14:02.307Z",
   "latestVersion": "1.30.2"
 }
