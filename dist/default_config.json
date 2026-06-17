@@ -15706,6 +15706,17 @@
       "injectedCss": ".immersive-translate-target-wrapper *, .immersive-translate-target-wrapper {font-size: inherit !important;}"
     },
     {
+      "id": "bank",
+      "matches": [
+        "xfb.nbcb.com.cn"
+      ],
+      "extraBlockSelectors.add": [
+        ".ibm, .ibt",
+        ".cell-box",
+        "[role=tab]"
+      ]
+    },
+    {
       "id": "fmoviesz",
       "matches": [
         "fmovies24.to",
@@ -21740,6 +21751,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-17T04:58:32.845Z",
+  "buildinConfigUpdatedAt": "2026-06-17T07:03:02.265Z",
   "latestVersion": "1.30.2"
 }
