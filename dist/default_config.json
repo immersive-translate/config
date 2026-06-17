@@ -20773,6 +20773,31 @@
       }
     },
     {
+      "id": "master-dev",
+      "matches": [
+        "master.dev"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "fetch|xhr",
+        "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-fullscreen-control"
+        },
+        "injectedCss": [
+          "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container { order: 2; }"
+        ],
+        "attachRule": {
+          "appendSelector": "div#vjs_video_3",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display { display:none!important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "futuretools",
       "matches": "www.futuretools.io",
       "globalStyles": {
@@ -21162,31 +21187,6 @@
         "type": "subsrt",
         "hookType": "fetch|xhr",
         "subtitleUrlRegExp": ".vtt"
-      }
-    },
-    {
-      "id": "master-dev",
-      "matches": [
-        "master.dev"
-      ],
-      "subtitleRule.add": {
-        "type": "subsrt",
-        "subsrtFormat": "vtt",
-        "hookType": "fetch|xhr",
-        "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
-        "quickButtonRule": {
-          "appendSelector": ".vjs-control-bar",
-          "insertBeforeSelector": ".vjs-fullscreen-control"
-        },
-        "injectedCss": [
-          "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container { order: 2; }"
-        ],
-        "attachRule": {
-          "appendSelector": "div#vjs_video_3",
-          "injectedGlobalCSS": [
-            ".vjs-text-track-display { display:none!important; }"
-          ]
-        }
       }
     },
     {
@@ -21770,6 +21770,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-17T08:13:07.211Z",
+  "buildinConfigUpdatedAt": "2026-06-17T08:48:12.724Z",
   "latestVersion": "1.30.2"
 }
