@@ -16659,7 +16659,7 @@
       "mainFrameMinWordCount": 0,
       "domCheckTimeout": 1,
       "subtitleRule.add": {
-        "type": "text_track_dynamic",
+        "type": "text_track",
         "videoPlayerSelector": "video",
         "allowHideModeTextTrack": true,
         "loadingContainerSelector": ".vp-telecine",
@@ -16673,6 +16673,12 @@
           "insertBeforeSelector": "[data-control-bar=\"true\"] > div > div:nth-child(2) > div div[class*=\"ControlBarButtonsAndMenus\"]",
           "ccEnableSelector": "[data-cc-button=\"true\"]",
           "injectCSS": ".imt-quick-subtitle-button {margin: 0 6px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}"
+        },
+        "attachRule": {
+          "appendSelector": "#player",
+          "injectedGlobalCSS": [
+            ".vp-captions { display: none !important; }"
+          ]
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}",
@@ -21708,6 +21714,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-16T12:17:07.079Z",
+  "buildinConfigUpdatedAt": "2026-06-17T03:10:09.060Z",
   "latestVersion": "1.30.2"
 }
