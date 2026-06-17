@@ -823,7 +823,8 @@
     "https://www.nbcnews.com/[NBCNEWS]",
     "https://fawesome.tv[Fawesome]",
     "https://maven.com/[Maven]",
-    "https://master.dev[Master.dev]"
+    "https://master.dev[Master.dev]",
+    "https://whop.com[Whop.com]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -17987,6 +17988,24 @@
       }
     },
     {
+      "id": "whop-com",
+      "matches": [
+        "whop.com"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "xhr",
+        "videoPlayerSelector": "mux-player -> mux-video -> video",
+        "loadingContainerSelector": "mux-player",
+        "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
+        "quickButtonRule": {
+          "appendSelector": "mux-player -> media-theme -> media-control-bar[part='control-bar bottom']",
+          "injectCSS": ".imt-quick-subtitle-pop-content {right: 92px !important; min-height: 75px} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
+        }
+      }
+    },
+    {
       "id": "feynmanlectures",
       "matches": "www.feynmanlectures.caltech.edu",
       "excludeSelectors.add": [
@@ -21751,6 +21770,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-17T07:03:02.265Z",
+  "buildinConfigUpdatedAt": "2026-06-17T08:13:07.211Z",
   "latestVersion": "1.30.2"
 }
