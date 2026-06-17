@@ -822,7 +822,8 @@
     "https://mediaspace.illinois.edu/[MediaSpace]",
     "https://www.nbcnews.com/[NBCNEWS]",
     "https://fawesome.tv[Fawesome]",
-    "https://maven.com/[Maven]"
+    "https://maven.com/[Maven]",
+    "https://master.dev[Master.dev]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -21134,6 +21135,31 @@
       }
     },
     {
+      "id": "master-dev",
+      "matches": [
+        "master.dev"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "fetch|xhr",
+        "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
+        "quickButtonRule": {
+          "appendSelector": ".vjs-control-bar",
+          "insertBeforeSelector": ".vjs-fullscreen-control"
+        },
+        "injectedCss": [
+          "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container { order: 2; }"
+        ],
+        "attachRule": {
+          "appendSelector": "div#vjs_video_3",
+          "injectedGlobalCSS": [
+            ".vjs-text-track-display { display:none!important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "common-ebutt",
       "matches": [
         "www.tagesschau.de"
@@ -21714,6 +21740,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-17T03:10:09.060Z",
+  "buildinConfigUpdatedAt": "2026-06-17T04:58:32.845Z",
   "latestVersion": "1.30.2"
 }
