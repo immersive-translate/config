@@ -21248,7 +21248,8 @@
         "www.typing.com",
         "*.video-stream-hosting.de",
         "*.thieme.de",
-        "videos.sproutvideo.com"
+        "videos.sproutvideo.com",
+        "www.ixl.com"
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
@@ -21891,6 +21892,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-18T02:22:49.551Z",
+  "buildinConfigUpdatedAt": "2026-06-18T03:17:49.867Z",
   "latestVersion": "1.30.2"
 }
