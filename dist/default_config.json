@@ -15099,8 +15099,9 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subtitleUrlRegExp": "\\.srt$",
-        "hookType": "fetch",
+        "subtitleUrlRegExp": "\\.srt(?:$|[?#])",
+        "hookType": "fetch|xhr",
+        "loadingContainerSelector": "div[data-id=\"hls\"]",
         "quickButtonRule": {
           "appendSelector": ".T8nOy",
           "insertBeforeSelector": "#languageArea"
@@ -21916,6 +21917,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-18T10:09:30.870Z",
+  "buildinConfigUpdatedAt": "2026-06-18T10:30:46.627Z",
   "latestVersion": "1.30.2"
 }
