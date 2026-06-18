@@ -824,7 +824,8 @@
     "https://fawesome.tv[Fawesome]",
     "https://maven.com/[Maven]",
     "https://master.dev[Master.dev]",
-    "https://whop.com[Whop.com]"
+    "https://whop.com[Whop.com]",
+    "https://lennysnewsletter.com[Lennysnewsletter.com]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -8228,7 +8229,8 @@
       "id": "substack",
       "matches": [
         "*.substack.com",
-        "newsletter.rootsofprogress.org"
+        "newsletter.rootsofprogress.org",
+        "www.lennysnewsletter.com"
       ],
       "selectorMatches": [
         "link[href^='https://substackcdn.com/bundle/'][rel=preload]"
@@ -8262,7 +8264,29 @@
         ".tweet-link-bottom",
         ".expanded-link"
       ],
-      "richMoreWordPercent": 0.8
+      "richMoreWordPercent": 0.8,
+      "subtitleRule.add": {
+        "type": "general",
+        "generalSetting": {
+          "textKey": "text",
+          "startKey": "start",
+          "endKey": "end"
+        },
+        "hookType": "fetch",
+        "subtitleUrlRegExp": "transcription\\.json(?:$|[?#])",
+        "loadingContainerSelector": "div[class^=\"video-wrapper-\"]",
+        "quickButtonRule": {
+          "appendSelector": "div[class^=\"video-wrapper-\"]->div[class^=\"bottomInnerControlsContainer-\"] div.pencraft.pc-display-flex.pc-paddingLeft-4.pc-paddingRight-4.pc-reset > div.pencraft.pc-display-flex.pc-gap-8.pc-alignItems-center.pc-reset:last-child",
+          "insertBeforeSelector": "div[class^=\"video-wrapper-\"]->div[class^=\"bottomInnerControlsContainer-\"] div.pencraft.pc-display-flex.pc-paddingLeft-4.pc-paddingRight-4.pc-reset > div.pencraft.pc-display-flex.pc-gap-8.pc-alignItems-center.pc-reset:last-child > span:nth-child(3)"
+        },
+        "videoSelector": "div.video-player.video-player-with-background > video",
+        "attachRule": {
+          "appendSelector": "div.video-player.video-player-with-background",
+          "injectedGlobalCSS": [
+            "div[class^=\"video-wrapper-\"] div[class^=\"captionsContainer-\"] { display: none !important; }"
+          ]
+        }
+      }
     },
     {
       "id": "seekingalpha",
@@ -21892,6 +21916,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-18T03:17:49.867Z",
+  "buildinConfigUpdatedAt": "2026-06-18T10:09:30.870Z",
   "latestVersion": "1.30.2"
 }
