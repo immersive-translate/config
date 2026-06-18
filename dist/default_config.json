@@ -1272,6 +1272,127 @@
       }
     },
     {
+      "condition": "versionNumber>13001 && usageLimitHardHit == true && usageLimitTotalCount > 40",
+      "advanceConfig": {
+        "adBanner": {
+          "enable": true,
+          "closedStorageKey": "adBanner_closed_20260608",
+          "items": [
+            {
+              "id": "ad-banner-20260608-paywall-zhCN",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-paywall-zhCN.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260608-paywall-zhCN",
+              "startTime": "2026-06-08 00:00:00",
+              "endTime": "2026-06-22 00:00:00",
+              "condition": "interfaceLanguage==zh-CN"
+            },
+            {
+              "id": "ad-banner-20260608-paywall-zhTW",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-paywall-zhTW.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260608-paywall-zhTW",
+              "startTime": "2026-06-08 00:00:00",
+              "endTime": "2026-06-22 00:00:00",
+              "condition": "interfaceLanguage==zh-TW || interfaceLanguage==zh-HK"
+            },
+            {
+              "id": "ad-banner-20260608-paywall-ja",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-paywall-ja.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260608-paywall-ja",
+              "startTime": "2026-06-08 00:00:00",
+              "endTime": "2026-06-22 00:00:00",
+              "condition": "interfaceLanguage==ja"
+            },
+            {
+              "id": "ad-banner-20260608-paywall-ko",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-paywall-ko.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260608-paywall-ko",
+              "startTime": "2026-06-08 00:00:00",
+              "endTime": "2026-06-22 00:00:00",
+              "condition": "interfaceLanguage==ko"
+            },
+            {
+              "id": "ad-banner-20260608-paywall-en",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-paywall-en.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260608-paywall-en",
+              "startTime": "2026-06-08 00:00:00",
+              "endTime": "2026-06-22 00:00:00",
+              "condition": "interfaceLanguage!=zh-CN && interfaceLanguage!=zh-TW && interfaceLanguage!=zh-HK && interfaceLanguage!=ja && interfaceLanguage!=ko"
+            }
+          ]
+        }
+      }
+    },
+    {
       "condition": "abTagNumber<2",
       "advanceConfig": {
         "translationServices.add": {
@@ -21770,6 +21891,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-17T08:48:12.724Z",
+  "buildinConfigUpdatedAt": "2026-06-18T02:20:25.822Z",
   "latestVersion": "1.30.2"
 }
