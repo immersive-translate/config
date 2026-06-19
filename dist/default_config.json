@@ -3604,6 +3604,12 @@
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
+      ],
+      "removeItemResRegexs": [
+        "^%%",
+        "^%",
+        "%%$",
+        "%$"
       ]
     },
     "hunyuan-pro": {
@@ -21917,6 +21923,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-19T17:40:12.549Z",
+  "buildinConfigUpdatedAt": "2026-06-19T17:48:26.274Z",
   "latestVersion": "1.30.2"
 }
