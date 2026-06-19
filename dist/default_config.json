@@ -2031,7 +2031,7 @@
   "serviceRecommendation": {
     "enabled": true,
     "enableGuide": true,
-    "defaultService": "deepseek-pro",
+    "defaultService": "qwen-pro",
     "langMap": {
       "auto2ja": "plamo-pro"
     }
@@ -21917,6 +21917,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-18T10:30:46.627Z",
+  "buildinConfigUpdatedAt": "2026-06-19T17:40:12.549Z",
   "latestVersion": "1.30.2"
 }
