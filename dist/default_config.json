@@ -15692,7 +15692,7 @@
       ],
       "subtitleRule.add": {
         "type": "text_track",
-        "videoPlayerSelector": ".vjs-tech",
+        "videoPlayerSelector": "[data-testid=playerContainer] video",
         "loadingContainerSelector": ".rc-VideoControlsContainer",
         "loadingStyle": "bottom: unset; top: 5%;",
         "quickButtonRule": {
@@ -15701,7 +15701,7 @@
         },
         "enableIOSFullScreenTextTrack": false,
         "attachRule": {
-          "appendSelector": "[id^='vjs_video'][data-vjs-player]",
+          "appendSelector": "[data-testid=playerContainer]",
           "injectedGlobalCSS": [
             "video::cue {opacity: 0}"
           ],
@@ -21923,6 +21923,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-19T17:48:26.274Z",
+  "buildinConfigUpdatedAt": "2026-06-20T02:51:34.218Z",
   "latestVersion": "1.30.2"
 }
