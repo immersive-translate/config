@@ -13151,6 +13151,7 @@
         "klmanga.*",
         "readallcomics.com",
         "e-hentai.org",
+        "nhentai.xxx",
         "globalcomix.com",
         "mangatoto.com",
         "batotoo.com",
@@ -13316,7 +13317,8 @@
           ".reader-viewer-scan img[src]",
           ".r-page-img[src*='jpg']",
           ".image-container img",
-          ".m18-reading img[src*=jpg]"
+          ".m18-reading img[src*=jpg]",
+          "img#fimg"
         ],
         "loadingStyle": "z-index: 999",
         "intersectionRootMargin": "0px 0px 200% 0px",
@@ -21923,6 +21925,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-20T02:51:34.218Z",
+  "buildinConfigUpdatedAt": "2026-06-20T03:20:01.723Z",
   "latestVersion": "1.30.2"
 }
