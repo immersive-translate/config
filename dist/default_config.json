@@ -826,7 +826,8 @@
     "https://maven.com/[Maven]",
     "https://master.dev[Master.dev]",
     "https://whop.com[Whop.com]",
-    "https://lennysnewsletter.com[Lennysnewsletter.com]"
+    "https://lennysnewsletter.com[Lennysnewsletter.com]",
+    "https://dramawave.chartdrama.com[Dramawave]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -21307,6 +21308,28 @@
       "_comment": "就是容器根节点直接跟着文本节点，然后子节点会不断变化"
     },
     {
+      "id": "dramawave-chartdrama",
+      "matches": [
+        "dramawave.chartdrama.com"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 1,
+      "subtitleRule.add": {
+        "type": "text_track",
+        "allowHideModeTextTrack": true,
+        "videoPlayerSelector": "video.video-sub",
+        "videoSelector": "video.video-sub",
+        "loadingContainerSelector": "div.player-video-frame",
+        "attachRule": {
+          "appendSelector": "div.player-video-frame",
+          "injectedCSS": [
+            ".imt-caption-window {width: 90%;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "common-text-track",
       "matches": [
         "www.typing.com",
@@ -21956,6 +21979,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-22T08:18:06.943Z",
+  "buildinConfigUpdatedAt": "2026-06-22T09:07:54.896Z",
   "latestVersion": "1.30.2"
 }
