@@ -900,8 +900,8 @@
   "joinJobs": [],
   "monkeyH5FloatBall": {
     "enable": true,
-    "enableSidePanel": true,
-    "enablePinSidePanel": true,
+    "enableSidePanel": false,
+    "enablePinSidePanel": false,
     "blockUrls": [
       "*immersivetranslate.*/preview",
       "*.immersivetranslate.*/download-subtitle*",
@@ -935,15 +935,15 @@
     "fixedPosition": "right",
     "upgradeVisible": true,
     "upgradeShowLimit": 20,
-    "transparency": 30,
-    "actionButtonsShowDelay": 500
+    "transparency": 30
   },
   "pcFloatBall": {
     "enable": true,
-    "enableSidePanel": true,
+    "enableSidePanel": false,
     "enablePinSidePanel": false,
+    "autoPinSidePanelUsageThreshold": 2,
     "transparency": 30,
-    "actionButtonsShowDelay": 500,
+    "hoverSidePanelDelay": 500,
     "blockUrls": [
       "*immersivetranslate.*/preview",
       "*.immersivetranslate.*/download-subtitle*",
@@ -1012,6 +1012,7 @@
     "bing-free",
     "siliconcloud-free",
     "zhipu-free",
+    "babelfast-pro",
     "deepseek-pro",
     "openai-pro",
     "claude-pro",
@@ -1622,70 +1623,6 @@
       }
     },
     {
-      "condition": "interfaceLanguage==zh-CN",
-      "advanceConfig": {
-        "defaultTranslationServicesOrder": [
-          "free-model",
-          "google-free",
-          "bing-free",
-          "siliconcloud-free",
-          "zhipu-free",
-          "babel-lite-free",
-          "deepseek-pro",
-          "qwen-pro",
-          "gemini-pro",
-          "openai-pro",
-          "zhipu-pro",
-          "deepl-pro",
-          "openai-max",
-          "gemini-max",
-          "kimi-max",
-          "claude-max",
-          "zhipu-max"
-        ]
-      }
-    },
-    {
-      "condition": "interfaceLanguage==zh-TW",
-      "advanceConfig": {
-        "defaultTranslationServicesOrder": [
-          "free-model",
-          "google-free",
-          "bing-free",
-          "gemini-pro",
-          "openai-pro",
-          "deepl-pro",
-          "openai-max",
-          "claude-max",
-          "gemini-max"
-        ]
-      }
-    },
-    {
-      "condition": "interfaceLanguage==zh-HK",
-      "advanceConfig": {
-        "defaultTranslationServicesOrder": [
-          "free-model",
-          "google-free",
-          "bing-free",
-          "siliconcloud-free",
-          "zhipu-free",
-          "babel-lite-free",
-          "gemini-pro",
-          "deepseek-pro",
-          "qwen-pro",
-          "openai-pro",
-          "zhipu-pro",
-          "deepl-pro",
-          "openai-max",
-          "gemini-max",
-          "kimi-max",
-          "claude-max",
-          "zhipu-max"
-        ]
-      }
-    },
-    {
       "condition": "interfaceLanguage==zh-TW || interfaceLanguage==zh-HK",
       "advanceConfig": {
         "translationServices.add": {
@@ -1738,12 +1675,96 @@
       }
     },
     {
+      "condition": "interfaceLanguage==zh-CN",
+      "advanceConfig": {
+        "defaultTranslationServicesOrder": [
+          "free-model",
+          "google-free",
+          "bing-free",
+          "siliconcloud-free",
+          "zhipu-free",
+          "babel-lite-free",
+          "babelfast-pro",
+          "deepseek-pro",
+          "qwen-pro",
+          "gemini-pro",
+          "openai-pro",
+          "zhipu-pro",
+          "deepl-pro",
+          "openai-max",
+          "gemini-max",
+          "kimi-max",
+          "claude-max",
+          "zhipu-max"
+        ]
+      }
+    },
+    {
+      "condition": "versionNumber>12701",
+      "advanceConfig": {
+        "translationService": "free-model",
+        "enableFreeModelMode": true
+      }
+    },
+    {
+      "condition": "interfaceLanguage==zh-CN && versionNumber>12701",
+      "advanceConfig": {
+        "defaultTranslationServicesOrder.remove": [
+          "google-free",
+          "bing-free"
+        ]
+      }
+    },
+    {
+      "condition": "interfaceLanguage==zh-TW",
+      "advanceConfig": {
+        "defaultTranslationServicesOrder": [
+          "free-model",
+          "google-free",
+          "bing-free",
+          "babelfast-pro",
+          "gemini-pro",
+          "openai-pro",
+          "deepl-pro",
+          "openai-max",
+          "claude-max",
+          "gemini-max"
+        ]
+      }
+    },
+    {
+      "condition": "interfaceLanguage==zh-HK",
+      "advanceConfig": {
+        "defaultTranslationServicesOrder": [
+          "free-model",
+          "google-free",
+          "bing-free",
+          "siliconcloud-free",
+          "zhipu-free",
+          "babel-lite-free",
+          "babelfast-pro",
+          "gemini-pro",
+          "deepseek-pro",
+          "qwen-pro",
+          "openai-pro",
+          "zhipu-pro",
+          "deepl-pro",
+          "openai-max",
+          "gemini-max",
+          "kimi-max",
+          "claude-max",
+          "zhipu-max"
+        ]
+      }
+    },
+    {
       "condition": "interfaceLanguage==ja",
       "advanceConfig": {
         "defaultTranslationServicesOrder": [
           "free-model",
           "google-free",
           "bing-free",
+          "babelfast-pro",
           "plamo-pro",
           "deepl-pro",
           "openai-pro",
@@ -1763,6 +1784,7 @@
           "free-model",
           "google-free",
           "bing-free",
+          "babelfast-pro",
           "deepl-pro",
           "openai-pro",
           "gemini-pro",
@@ -1771,13 +1793,6 @@
           "openai-max",
           "claude-max"
         ]
-      }
-    },
-    {
-      "condition": "interfaceLanguage!=zh-CN && versionNumber>12701",
-      "advanceConfig": {
-        "translationService": "free-model",
-        "enableFreeModelMode": true
       }
     },
     {
@@ -1797,13 +1812,6 @@
       }
     },
     {
-      "condition": "interfaceLanguage==zh-CN && versionNumber>12701 && abTagNumber==0",
-      "advanceConfig": {
-        "translationService": "free-model",
-        "enableFreeModelMode": true
-      }
-    },
-    {
       "condition": "interfaceLanguage==zh-CN && versionNumber>12903 && abTagNumber<5",
       "advanceConfig": {
         "translationService": "free-model",
@@ -1812,48 +1820,7 @@
           "bing.add": {
             "defaultToService": "free-model"
           }
-        },
-        "defaultTranslationServicesOrder": [
-          "free-model",
-          "siliconcloud-free",
-          "zhipu-free",
-          "babel-lite-free",
-          "deepseek-pro",
-          "qwen-pro",
-          "gemini-pro",
-          "openai-pro",
-          "zhipu-pro",
-          "deepl-pro",
-          "openai-max",
-          "gemini-max",
-          "kimi-max",
-          "claude-max",
-          "zhipu-max"
-        ]
-      }
-    },
-    {
-      "condition": "interfaceLanguage==zh-CN && versionNumber>12701 && abTagNumber<10 && installedAtTimestamp>1778428800000",
-      "advanceConfig": {
-        "translationService": "free-model",
-        "enableFreeModelMode": true,
-        "defaultTranslationServicesOrder": [
-          "free-model",
-          "siliconcloud-free",
-          "zhipu-free",
-          "babel-lite-free",
-          "deepseek-pro",
-          "qwen-pro",
-          "gemini-pro",
-          "openai-pro",
-          "zhipu-pro",
-          "deepl-pro",
-          "openai-max",
-          "gemini-max",
-          "kimi-max",
-          "claude-max",
-          "zhipu-max"
-        ]
+        }
       }
     }
   ],
@@ -2125,7 +2092,7 @@
       "prompt": "",
       "limit": 1,
       "maxTextLengthPerRequest": 1200,
-      "maxTextGroupLengthPerRequest": 5,
+      "maxTextGroupLengthPerRequest": 4,
       "translationTextSeparator": "\n\n%%\n\n",
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true
@@ -3368,7 +3335,7 @@
       "visible": true,
       "model": "GLM-4.7",
       "proModel": "GLM-4.7",
-      "concurrencyLimit": 50,
+      "concurrencyLimit": 100,
       "proLimit": 20,
       "defaultVisible": true,
       "supportFeatures": [
@@ -3699,6 +3666,25 @@
     "qwen-pro.add_v.[1.21.1]": {
       "type": "qwen",
       "disabledAt": ""
+    },
+    "babelfast-pro": {
+      "name": "Babel Fast (Beta)",
+      "type": "babelfast",
+      "iconType": "babel-lite",
+      "group": "pro",
+      "provider": "pro",
+      "visible": true,
+      "defaultVisible": true,
+      "concurrencyLimit": 50,
+      "limit": 50,
+      "requestTimeout": 120000,
+      "maxTextGroupLengthPerRequest": 20,
+      "maxTextLengthPerRequest": 7900,
+      "preferredProvider": "babelfast",
+      "withTerms": true,
+      "enableAIContext": true,
+      "context": "{{summary_context}}\n{{terms_prompt}}",
+      "enableFallback": false
     },
     "grok-pro": {
       "extends": "grok",
@@ -4956,6 +4942,7 @@
       "freeAiSubtitleCacheEndTime": "2025-09-30",
       "freeAiSubtitleCacheNewUserLimitDay": 10,
       "aiSubtitleMaxTextLength": 500,
+      "proLiveSubtitleTranslateService": "deepl-pro",
       "velocityGroup": [
         4,
         4,
@@ -5863,6 +5850,18 @@
           "advanceConfig": {
             "sameLangTranslationTheme": "none"
           }
+        },
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "translationServices": {
+              "babelfast-pro.add": {
+                "limit": 5,
+                "concurrencyLimit": 5,
+                "maxTextGroupLengthPerRequest": 10
+              }
+            }
+          }
         }
       ],
       "targetWrapperTag": "span",
@@ -5927,6 +5926,18 @@
           "condition": "targetLanguage==zh-CN",
           "advanceConfig": {
             "sameLangTranslationTheme": "none"
+          }
+        },
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "translationServices": {
+              "babelfast-pro.add": {
+                "limit": 5,
+                "concurrencyLimit": 5,
+                "maxTextGroupLengthPerRequest": 10
+              }
+            }
           }
         }
       ],
@@ -6015,6 +6026,13 @@
             "domReadyDetectTimeout": 0,
             "translationLanguagePattern.add": {
               "matches": []
+            },
+            "translationServices": {
+              "babelfast-pro.add": {
+                "limit": 5,
+                "concurrencyLimit": 5,
+                "maxTextGroupLengthPerRequest": 10
+              }
             }
           }
         }
@@ -6133,7 +6151,14 @@
         {
           "condition": "true",
           "advanceConfig": {
-            "domReadyDetectTimeout": 0
+            "domReadyDetectTimeout": 0,
+            "translationServices": {
+              "babelfast-pro.add": {
+                "limit": 5,
+                "concurrencyLimit": 5,
+                "maxTextGroupLengthPerRequest": 10
+              }
+            }
           }
         }
       ],
@@ -7628,7 +7653,6 @@
       "subtitleRule.add": {
         "type": "youtube",
         "hookType": "xhr_response",
-        "proLiveSubtitleTranslateService": "deepl-pro",
         "allowFreeUserLive": true,
         "subtitleUrlRegExp": "(/api/timedtext)",
         "translateSelectors": [
@@ -9436,7 +9460,8 @@
         "injectedCss": [
           "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container { display: inline-block; }"
         ]
-      }
+      },
+      "_comment": "应该是有广告会破坏时间轴，所以暂时不加自托管"
     },
     {
       "id": "amazon",
@@ -12926,6 +12951,24 @@
       }
     },
     {
+      "id": "toonily",
+      "matches": "toonily.com",
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          ".page-break.no-gaps img"
+        ],
+        "inValidSrcRegex": [
+          "blank.gif"
+        ],
+        "injectedCss": ".imt-image-status {top:10%!important;}",
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome"
+        ]
+      }
+    },
+    {
       "id": "mangadistrict-manhwaclan",
       "matches": [
         "mangadistrict2.com",
@@ -13116,7 +13159,8 @@
         "www.sukima.me",
         "piccoma.com",
         "jmcomic-zzz.one",
-        "comix.to"
+        "comix.to",
+        "pocket.shonenmagazine.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13131,7 +13175,8 @@
           ".scramble-page canvas[data]",
           ".center img ",
           ".rpage-main__inner img",
-          ".rpage-page__img[data]"
+          ".rpage-page__img[data]",
+          ".c-viewer__comic canvas[data]"
         ],
         "platforms": [
           "chrome",
@@ -13235,7 +13280,9 @@
         "mangahub.ru",
         "ezmanga.org",
         "magustoon.org",
-        "manhwa18.net"
+        "manhwa18.net",
+        "violetscans.org",
+        "www.publicdiplomacymagazine.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13321,6 +13368,7 @@
           ".r-page-img[src*='jpg']",
           ".image-container img",
           ".m18-reading img[src*=jpg]",
+          "#readerarea img.ts-main-image",
           "img#fimg"
         ],
         "loadingStyle": "z-index: 999",
@@ -13329,7 +13377,8 @@
           "loading.gif",
           "load.gif",
           "preloader.gif",
-          "ajax-loader.gif"
+          "ajax-loader.gif",
+          "readerarea.svg"
         ],
         "platforms": [
           "chrome",
@@ -15676,7 +15725,7 @@
         "loadingStyle": "bottom: unset; top: 5%;",
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
-          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;margin:0 12px 0 0!important;} .imt-quick-subtitle-pop-content {right: 75px !important;} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
+          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;margin:0 12px 0 0!important;} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
         },
         "enableIOSFullScreenTextTrack": false,
         "attachRule": {
@@ -15702,7 +15751,7 @@
         "loadingStyle": "bottom: unset; top: 5%;",
         "quickButtonRule": {
           "appendSelector": ".icon-container",
-          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;margin:0!important;} .imt-quick-subtitle-pop-content {right: 75px !important;} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
+          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;margin:0!important;} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
         },
         "enableIOSFullScreenTextTrack": false,
         "attachRule": {
@@ -18320,13 +18369,8 @@
         "#modelSelector",
         ".leaderboard-content",
         "#selected-count",
-        "#selected-cat"
-      ],
-      "buildContainerSelectors.add": [
-        "rich-text-editor"
-      ],
-      "likePreSelectors.add": [
-        "rich-text-editor"
+        "#selected-cat",
+        ".GmuOkf,.d8aLif,.JYW4cc"
       ],
       "isTransformPreTagNewLine": true,
       "forceFormatPre": true
@@ -20729,6 +20773,7 @@
         "subtitleUrlRegExp": "embed/captions/.*\\.json",
         "hookType": "fetch",
         "loadingContainerSelector": "div[data-handle='captions']",
+        "videoSelector": "video",
         "injectedCss": [
           "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container { display: inline-block !important; height: 100%; position: absolute; bottom: 100%; right: 0;}"
         ],
@@ -20752,6 +20797,8 @@
           ],
           "isDelay": true
         },
+        "liveAttachTimeOffsetSeconds": 0,
+        "captionContainerSelector": "[data-handle='captions']",
         "generalSetting": {
           "captionsPath": "captions",
           "itemsPath": "hash.lines",
@@ -21979,6 +22026,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-22T09:07:54.896Z",
-  "latestVersion": "1.30.2"
+  "buildinConfigUpdatedAt": "2026-06-22T13:13:09.000Z",
+  "latestVersion": "1.30.3"
 }
