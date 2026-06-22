@@ -700,6 +700,7 @@
     "https://www.coursera.org/[Coursera]",
     "https://www.udemy.com/[Udemy]",
     "https://www.bloomberg.com[Bloomberg]",
+    "https://www.foxnews.com/video[Fox News]",
     "https://nebula.tv/videos[Nebula]",
     "https://www.bilibili.com[Bilibili]",
     "https://www.ted.com/[TED]",
@@ -15746,6 +15747,35 @@
       "_comment": "shadowrott 字幕样式什么的似乎不好插入"
     },
     {
+      "id": "foxnews-video",
+      "matches": [
+        "https://static.foxnews.com/static/orion/html/video/iframe/vod.html*"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 1,
+      "excludeSelectors.add": [
+        "#player"
+      ],
+      "mutationExcludeSelectors.add": [
+        "#player *"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": "media/v1/text/vtt/.*/text\\.vtt(?:$|[?#])",
+        "hookType": "fetch|xhr",
+        "loadingContainerSelector": ".amp-captioning",
+        "enableHookDownload": true,
+        "quickButtonRule": {
+          "appendSelector": ".amp-controls",
+          "insertBeforeSelector": ".amp-settings",
+          "ccEnableSelector": ".amp-cc",
+          "injectCSS": ".label { display: none; } .logo,.logo svg { width: 18px !important; height: 18px !important; } .imt-quick-subtitle-button { margin: 0 6px; }"
+        }
+      }
+    },
+    {
       "id": "quark",
       "matches": [
         "pan.quark.*"
@@ -21925,6 +21955,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-22T06:21:53.427Z",
+  "buildinConfigUpdatedAt": "2026-06-22T08:02:19.014Z",
   "latestVersion": "1.30.2"
 }
