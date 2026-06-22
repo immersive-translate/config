@@ -12834,7 +12834,8 @@
         "type": "manga",
         "imageSelectors": [
           "#all img.img-responsive",
-          "#ppp img.img-responsive"
+          "#ppp img.img-responsive",
+          "img#reader-img"
         ],
         "enableAutoTranslateByReferrer": true,
         "loadingStyle": "z-index: 9999;",
@@ -21955,6 +21956,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-22T08:02:19.014Z",
+  "buildinConfigUpdatedAt": "2026-06-22T08:18:06.943Z",
   "latestVersion": "1.30.2"
 }
