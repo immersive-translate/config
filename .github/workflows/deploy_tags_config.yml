@@ -27,7 +27,7 @@ jobs:
       - name: Setup Deno
         uses: denoland/setup-deno@v1
         with:
-          deno-version: v1.46.2
+          deno-version: v2.8.1
       - name: test
         run: make test
       - name: generate repo/dist/tags-config.json
