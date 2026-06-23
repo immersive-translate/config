@@ -939,8 +939,8 @@
   },
   "pcFloatBall": {
     "enable": true,
-    "enableSidePanel": false,
-    "enablePinSidePanel": false,
+    "enableSidePanel": true,
+    "enablePinSidePanel": true,
     "autoPinSidePanelUsageThreshold": 2,
     "transparency": 30,
     "hoverSidePanelDelay": 500,
@@ -976,6 +976,10 @@
     "fixedPosition": "right",
     "upgradeVisible": true,
     "upgradeShowLimit": 20
+  },
+  "pcFloatBall.add_v.[1.30.3]": {
+    "enableSidePanel": false,
+    "enablePinSidePanel": false
   },
   "floatBallTooltipRule": {
     "mainBtnTooltipImmediateShowCount": 5,
@@ -22025,6 +22029,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-23T04:12:53.879Z",
+  "buildinConfigUpdatedAt": "2026-06-23T11:23:47.785Z",
   "latestVersion": "1.30.3"
 }
