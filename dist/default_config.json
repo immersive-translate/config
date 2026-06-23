@@ -670,7 +670,6 @@
     "https://jumptoon.com/[Jumptoon][chrome,firefox,safari,imtAndroid]",
     "https://www.baozimh.com/[Fenoxo][chrome,firefox,safari,imtAndroid]",
     "https://ww2.mangafreak.me/[MangaFreak][chrome,firefox,safari,imtAndroid]",
-    "https://www.cmoa.jp/[cmoa][chrome,firefox,safari,imtAndroid]",
     "https://comic-gardo.com/[ComicGardo][chrome,firefox,safari,imtAndroid]",
     "https://booklive.jp/[Booklive][chrome,firefox,safari,imtAndroid]",
     "https://www.mrblue.com/[MrBlue][chrome,firefox,safari,imtAndroid]",
@@ -14883,7 +14882,6 @@
     {
       "id": "cmoa",
       "matches": [
-        "www.cmoa.jp",
         "booklive.jp",
         "www.yomonga.com"
       ],
@@ -14903,7 +14901,8 @@
         "safari",
         "imtAndroid",
         "imtIOSNew"
-      ]
+      ],
+      "_comment": "www.cmoa.jp 这个站点适配有点问题"
     },
     {
       "id": "global.manga",
@@ -22029,6 +22028,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-23T11:23:47.785Z",
+  "buildinConfigUpdatedAt": "2026-06-23T14:46:53.035Z",
   "latestVersion": "1.30.3"
 }
