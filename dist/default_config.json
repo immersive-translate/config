@@ -7697,7 +7697,6 @@
       "subtitleRule.add_v.[1.17.3]": {
         "quickButtonRule": {
           "appendSelector": ".player-controls-top",
-          "insertBeforeSelector": ".ytwPlayerAutonavToggleHost",
           "injectCSS": ".logo,.logo svg { height: 20px !important; width: 20px !important;} .imt-quick-subtitle-pop-content {bottom: unset !important; top: 40px !important;}",
           "injectedGlobalCSS": ".player-controls-top.with-video-details { z-index: 10; }"
         },
@@ -22026,6 +22025,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-22T13:13:09.000Z",
+  "buildinConfigUpdatedAt": "2026-06-23T04:12:53.879Z",
   "latestVersion": "1.30.3"
 }
