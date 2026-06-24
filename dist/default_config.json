@@ -3671,7 +3671,7 @@
       "disabledAt": ""
     },
     "babelfast-pro": {
-      "name": "Babel Fast (Beta)",
+      "name": "BabelFast (Beta)",
       "type": "babelfast",
       "iconType": "babel-lite",
       "group": "pro",
@@ -22028,6 +22028,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-24T03:19:27.059Z",
+  "buildinConfigUpdatedAt": "2026-06-24T03:52:56.196Z",
   "latestVersion": "1.30.3"
 }
