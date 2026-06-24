@@ -11919,7 +11919,9 @@
       "selectorMatches": [
         ".md-container[data-md-component]"
       ],
-      "excludeSelectors": [],
+      "excludeSelectors": [
+        ".dstack-termy-has-copy"
+      ],
       "selectors": [
         "article",
         ".md-sidebar__inner"
@@ -22028,6 +22030,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-24T03:52:56.196Z",
+  "buildinConfigUpdatedAt": "2026-06-24T08:05:48.737Z",
   "latestVersion": "1.30.3"
 }
