@@ -999,7 +999,7 @@
     "totalLimit": {
       "unregisteredSoft": 10,
       "unregisteredHard": 10,
-      "soft": 20,
+      "soft": 40,
       "hard": 40
     },
     "usageSceneWeights": {
@@ -22030,6 +22030,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-24T08:05:48.737Z",
+  "buildinConfigUpdatedAt": "2026-06-25T08:05:19.412Z",
   "latestVersion": "1.30.3"
 }
