@@ -31,7 +31,7 @@
     "closedStorageKey": "adBanner_closed_20260626",
     "items": [
       {
-        "id": "ad-banner-20260626-free-zhCN",
+        "id": "ad-banner-20260626-free-3day-zhCN",
         "i18n": {
           "zh-CN": {
             "title": " ",
@@ -46,14 +46,234 @@
             "description": ""
           }
         },
-        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-free-zhCN.png",
-        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-zhCN",
-        "startTime": "2026-06-08 00:00:00",
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/free/618-banner-free-zhCN.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-3day-zhCN",
+        "startTime": "2026-06-26 00:00:00",
+        "endTime": "2026-06-27 00:00:00",
+        "condition": "isPro==false && interfaceLanguage==zh-CN"
+      },
+      {
+        "id": "ad-banner-20260626-free-3day-zhTW",
+        "i18n": {
+          "zh-CN": {
+            "title": "",
+            "description": ""
+          },
+          "zh-TW": {
+            "title": "",
+            "description": ""
+          },
+          "en": {
+            "title": "",
+            "description": ""
+          }
+        },
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/free/618-banner-free-zhTW.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-3day-zhTW",
+        "startTime": "2026-06-26 00:00:00",
+        "endTime": "2026-06-27 00:00:00",
+        "condition": "isPro==false && (interfaceLanguage==zh-TW || interfaceLanguage==zh-HK)"
+      },
+      {
+        "id": "ad-banner-20260626-free-3day-ja",
+        "i18n": {
+          "zh-CN": {
+            "title": "",
+            "description": ""
+          },
+          "zh-TW": {
+            "title": "",
+            "description": ""
+          },
+          "en": {
+            "title": "",
+            "description": ""
+          }
+        },
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/free/618-banner-free-ja.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-3day-ja",
+        "startTime": "2026-06-26 00:00:00",
+        "endTime": "2026-06-27 00:00:00",
+        "condition": "isPro==false && interfaceLanguage==ja"
+      },
+      {
+        "id": "ad-banner-20260626-free-3day-ko",
+        "i18n": {
+          "zh-CN": {
+            "title": "",
+            "description": ""
+          },
+          "zh-TW": {
+            "title": "",
+            "description": ""
+          },
+          "en": {
+            "title": "",
+            "description": ""
+          }
+        },
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/free/618-banner-free-ko.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-3day-ko",
+        "startTime": "2026-06-26 00:00:00",
+        "endTime": "2026-06-27 00:00:00",
+        "condition": "isPro==false && interfaceLanguage==ko"
+      },
+      {
+        "id": "ad-banner-20260626-free-3day-en",
+        "i18n": {
+          "zh-CN": {
+            "title": "",
+            "description": ""
+          },
+          "zh-TW": {
+            "title": "",
+            "description": ""
+          },
+          "en": {
+            "title": "",
+            "description": ""
+          }
+        },
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/free/618-banner-free-en.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-3day-en",
+        "startTime": "2026-06-26 00:00:00",
+        "endTime": "2026-06-27 00:00:00",
+        "condition": "isPro==false && interfaceLanguage!=zh-CN && interfaceLanguage!=zh-TW && interfaceLanguage!=zh-HK && interfaceLanguage!=ja && interfaceLanguage!=ko"
+      },
+      {
+        "id": "ad-banner-20260626-free-2day-zhCN",
+        "i18n": {
+          "zh-CN": {
+            "title": " ",
+            "description": ""
+          },
+          "zh-TW": {
+            "title": "",
+            "description": ""
+          },
+          "en": {
+            "title": "",
+            "description": ""
+          }
+        },
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/free/618-banner-free-zhCN.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-2day-zhCN",
+        "startTime": "2026-06-27 00:00:00",
+        "endTime": "2026-06-28 00:00:00",
+        "condition": "isPro==false && interfaceLanguage==zh-CN"
+      },
+      {
+        "id": "ad-banner-20260626-free-2day-zhTW",
+        "i18n": {
+          "zh-CN": {
+            "title": "",
+            "description": ""
+          },
+          "zh-TW": {
+            "title": "",
+            "description": ""
+          },
+          "en": {
+            "title": "",
+            "description": ""
+          }
+        },
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/free/618-banner-free-zhTW.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-2day-zhTW",
+        "startTime": "2026-06-27 00:00:00",
+        "endTime": "2026-06-28 00:00:00",
+        "condition": "isPro==false && (interfaceLanguage==zh-TW || interfaceLanguage==zh-HK)"
+      },
+      {
+        "id": "ad-banner-20260626-free-2day-ja",
+        "i18n": {
+          "zh-CN": {
+            "title": "",
+            "description": ""
+          },
+          "zh-TW": {
+            "title": "",
+            "description": ""
+          },
+          "en": {
+            "title": "",
+            "description": ""
+          }
+        },
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/free/618-banner-free-ja.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-2day-ja",
+        "startTime": "2026-06-27 00:00:00",
+        "endTime": "2026-06-28 00:00:00",
+        "condition": "isPro==false && interfaceLanguage==ja"
+      },
+      {
+        "id": "ad-banner-20260626-free-2day-ko",
+        "i18n": {
+          "zh-CN": {
+            "title": "",
+            "description": ""
+          },
+          "zh-TW": {
+            "title": "",
+            "description": ""
+          },
+          "en": {
+            "title": "",
+            "description": ""
+          }
+        },
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/free/618-banner-free-ko.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-2day-ko",
+        "startTime": "2026-06-27 00:00:00",
+        "endTime": "2026-06-28 00:00:00",
+        "condition": "isPro==false && interfaceLanguage==ko"
+      },
+      {
+        "id": "ad-banner-20260626-free-2day-en",
+        "i18n": {
+          "zh-CN": {
+            "title": "",
+            "description": ""
+          },
+          "zh-TW": {
+            "title": "",
+            "description": ""
+          },
+          "en": {
+            "title": "",
+            "description": ""
+          }
+        },
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/free/618-banner-free-en.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-2day-en",
+        "startTime": "2026-06-27 00:00:00",
+        "endTime": "2026-06-28 00:00:00",
+        "condition": "isPro==false && interfaceLanguage!=zh-CN && interfaceLanguage!=zh-TW && interfaceLanguage!=zh-HK && interfaceLanguage!=ja && interfaceLanguage!=ko"
+      },
+      {
+        "id": "ad-banner-20260626-free-1day-zhCN",
+        "i18n": {
+          "zh-CN": {
+            "title": " ",
+            "description": ""
+          },
+          "zh-TW": {
+            "title": "",
+            "description": ""
+          },
+          "en": {
+            "title": "",
+            "description": ""
+          }
+        },
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/free/618-banner-free-zhCN.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-1day-zhCN",
+        "startTime": "2026-06-28 00:00:00",
         "endTime": "2026-06-29 00:00:00",
         "condition": "isPro==false && interfaceLanguage==zh-CN"
       },
       {
-        "id": "ad-banner-20260626-free-zhTW",
+        "id": "ad-banner-20260626-free-1day-zhTW",
         "i18n": {
           "zh-CN": {
             "title": "",
@@ -68,14 +288,14 @@
             "description": ""
           }
         },
-        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-free-zhTW.png",
-        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-zhTW",
-        "startTime": "2026-06-08 00:00:00",
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/free/618-banner-free-zhTW.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-1day-zhTW",
+        "startTime": "2026-06-28 00:00:00",
         "endTime": "2026-06-29 00:00:00",
         "condition": "isPro==false && (interfaceLanguage==zh-TW || interfaceLanguage==zh-HK)"
       },
       {
-        "id": "ad-banner-20260626-free-ja",
+        "id": "ad-banner-20260626-free-1day-ja",
         "i18n": {
           "zh-CN": {
             "title": "",
@@ -90,14 +310,14 @@
             "description": ""
           }
         },
-        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-free-ja.png",
-        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-ja",
-        "startTime": "2026-06-08 00:00:00",
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/free/618-banner-free-ja.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-1day-ja",
+        "startTime": "2026-06-28 00:00:00",
         "endTime": "2026-06-29 00:00:00",
         "condition": "isPro==false && interfaceLanguage==ja"
       },
       {
-        "id": "ad-banner-20260626-free-ko",
+        "id": "ad-banner-20260626-free-1day-ko",
         "i18n": {
           "zh-CN": {
             "title": "",
@@ -112,14 +332,14 @@
             "description": ""
           }
         },
-        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-free-ko.png",
-        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-ko",
-        "startTime": "2026-06-08 00:00:00",
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/free/618-banner-free-ko.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-1day-ko",
+        "startTime": "2026-06-28 00:00:00",
         "endTime": "2026-06-29 00:00:00",
         "condition": "isPro==false && interfaceLanguage==ko"
       },
       {
-        "id": "ad-banner-20260626-free-en",
+        "id": "ad-banner-20260626-free-1day-en",
         "i18n": {
           "zh-CN": {
             "title": "",
@@ -134,9 +354,9 @@
             "description": ""
           }
         },
-        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-free-en.png",
-        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-en",
-        "startTime": "2026-06-08 00:00:00",
+        "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/free/618-banner-free-en.png",
+        "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-free-1day-en",
+        "startTime": "2026-06-28 00:00:00",
         "endTime": "2026-06-29 00:00:00",
         "condition": "isPro==false && interfaceLanguage!=zh-CN && interfaceLanguage!=zh-TW && interfaceLanguage!=zh-HK && interfaceLanguage!=ja && interfaceLanguage!=ko"
       }
@@ -1045,7 +1265,7 @@
           "closedStorageKey": "adBanner_closed_20260626",
           "items": [
             {
-              "id": "ad-banner-20260626-pro-zhCN",
+              "id": "ad-banner-20260626-pro-3day-zhCN",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1060,14 +1280,234 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-pro-zhCN.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-zhCN",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/pro/618-banner-pro-zhCN.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-3day-zhCN",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage==zh-CN"
+            },
+            {
+              "id": "ad-banner-20260626-pro-3day-zhTW",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/pro/618-banner-pro-zhTW.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-3day-zhTW",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage==zh-TW || interfaceLanguage==zh-HK"
+            },
+            {
+              "id": "ad-banner-20260626-pro-3day-ja",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/pro/618-banner-pro-ja.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-3day-ja",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage==ja"
+            },
+            {
+              "id": "ad-banner-20260626-pro-3day-ko",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/pro/618-banner-pro-ko.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-3day-ko",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage==ko"
+            },
+            {
+              "id": "ad-banner-20260626-pro-3day-en",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/pro/618-banner-pro-en.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-3day-en",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage!=zh-CN && interfaceLanguage!=zh-TW && interfaceLanguage!=zh-HK && interfaceLanguage!=ja && interfaceLanguage!=ko"
+            },
+            {
+              "id": "ad-banner-20260626-pro-2day-zhCN",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/pro/618-banner-pro-zhCN.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-2day-zhCN",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage==zh-CN"
+            },
+            {
+              "id": "ad-banner-20260626-pro-2day-zhTW",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/pro/618-banner-pro-zhTW.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-2day-zhTW",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage==zh-TW || interfaceLanguage==zh-HK"
+            },
+            {
+              "id": "ad-banner-20260626-pro-2day-ja",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/pro/618-banner-pro-ja.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-2day-ja",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage==ja"
+            },
+            {
+              "id": "ad-banner-20260626-pro-2day-ko",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/pro/618-banner-pro-ko.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-2day-ko",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage==ko"
+            },
+            {
+              "id": "ad-banner-20260626-pro-2day-en",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/pro/618-banner-pro-en.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-2day-en",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage!=zh-CN && interfaceLanguage!=zh-TW && interfaceLanguage!=zh-HK && interfaceLanguage!=ja && interfaceLanguage!=ko"
+            },
+            {
+              "id": "ad-banner-20260626-pro-1day-zhCN",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/pro/618-banner-pro-zhCN.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-1day-zhCN",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage==zh-CN"
             },
             {
-              "id": "ad-banner-20260626-pro-zhTW",
+              "id": "ad-banner-20260626-pro-1day-zhTW",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1082,14 +1522,14 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-pro-zhTW.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-zhTW",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/pro/618-banner-pro-zhTW.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-1day-zhTW",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage==zh-TW || interfaceLanguage==zh-HK"
             },
             {
-              "id": "ad-banner-20260626-pro-ja",
+              "id": "ad-banner-20260626-pro-1day-ja",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1104,14 +1544,14 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-pro-ja.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-ja",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/pro/618-banner-pro-ja.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-1day-ja",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage==ja"
             },
             {
-              "id": "ad-banner-20260626-pro-ko",
+              "id": "ad-banner-20260626-pro-1day-ko",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1126,14 +1566,14 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-pro-ko.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-ko",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/pro/618-banner-pro-ko.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-1day-ko",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage==ko"
             },
             {
-              "id": "ad-banner-20260626-pro-en",
+              "id": "ad-banner-20260626-pro-1day-en",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1148,9 +1588,9 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-pro-en.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-en",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/pro/618-banner-pro-en.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-pro-1day-en",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage!=zh-CN && interfaceLanguage!=zh-TW && interfaceLanguage!=zh-HK && interfaceLanguage!=ja && interfaceLanguage!=ko"
             }
@@ -1166,7 +1606,7 @@
           "closedStorageKey": "adBanner_closed_20260626",
           "items": [
             {
-              "id": "ad-banner-20260626-monthly-zhCN",
+              "id": "ad-banner-20260626-monthly-3day-zhCN",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1181,14 +1621,234 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-monthly-zhCN.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-zhCN",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/monthly/618-banner-monthly-zhCN.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-3day-zhCN",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage==zh-CN"
+            },
+            {
+              "id": "ad-banner-20260626-monthly-3day-zhTW",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/monthly/618-banner-monthly-zhTW.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-3day-zhTW",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage==zh-TW || interfaceLanguage==zh-HK"
+            },
+            {
+              "id": "ad-banner-20260626-monthly-3day-ja",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/monthly/618-banner-monthly-ja.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-3day-ja",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage==ja"
+            },
+            {
+              "id": "ad-banner-20260626-monthly-3day-ko",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/monthly/618-banner-monthly-ko.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-3day-ko",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage==ko"
+            },
+            {
+              "id": "ad-banner-20260626-monthly-3day-en",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/monthly/618-banner-monthly-en.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-3day-en",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage!=zh-CN && interfaceLanguage!=zh-TW && interfaceLanguage!=zh-HK && interfaceLanguage!=ja && interfaceLanguage!=ko"
+            },
+            {
+              "id": "ad-banner-20260626-monthly-2day-zhCN",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/monthly/618-banner-monthly-zhCN.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-2day-zhCN",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage==zh-CN"
+            },
+            {
+              "id": "ad-banner-20260626-monthly-2day-zhTW",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/monthly/618-banner-monthly-zhTW.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-2day-zhTW",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage==zh-TW || interfaceLanguage==zh-HK"
+            },
+            {
+              "id": "ad-banner-20260626-monthly-2day-ja",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/monthly/618-banner-monthly-ja.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-2day-ja",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage==ja"
+            },
+            {
+              "id": "ad-banner-20260626-monthly-2day-ko",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/monthly/618-banner-monthly-ko.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-2day-ko",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage==ko"
+            },
+            {
+              "id": "ad-banner-20260626-monthly-2day-en",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/monthly/618-banner-monthly-en.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-2day-en",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage!=zh-CN && interfaceLanguage!=zh-TW && interfaceLanguage!=zh-HK && interfaceLanguage!=ja && interfaceLanguage!=ko"
+            },
+            {
+              "id": "ad-banner-20260626-monthly-1day-zhCN",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/monthly/618-banner-monthly-zhCN.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-1day-zhCN",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage==zh-CN"
             },
             {
-              "id": "ad-banner-20260626-monthly-zhTW",
+              "id": "ad-banner-20260626-monthly-1day-zhTW",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1203,14 +1863,14 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-monthly-zhTW.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-zhTW",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/monthly/618-banner-monthly-zhTW.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-1day-zhTW",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage==zh-TW || interfaceLanguage==zh-HK"
             },
             {
-              "id": "ad-banner-20260626-monthly-ja",
+              "id": "ad-banner-20260626-monthly-1day-ja",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1225,14 +1885,14 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-monthly-ja.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-ja",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/monthly/618-banner-monthly-ja.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-1day-ja",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage==ja"
             },
             {
-              "id": "ad-banner-20260626-monthly-ko",
+              "id": "ad-banner-20260626-monthly-1day-ko",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1247,14 +1907,14 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-monthly-ko.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-ko",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/monthly/618-banner-monthly-ko.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-1day-ko",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage==ko"
             },
             {
-              "id": "ad-banner-20260626-monthly-en",
+              "id": "ad-banner-20260626-monthly-1day-en",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1269,9 +1929,9 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-monthly-en.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-en",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/monthly/618-banner-monthly-en.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-monthly-1day-en",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage!=zh-CN && interfaceLanguage!=zh-TW && interfaceLanguage!=zh-HK && interfaceLanguage!=ja && interfaceLanguage!=ko"
             }
@@ -1287,7 +1947,7 @@
           "closedStorageKey": "adBanner_closed_20260626",
           "items": [
             {
-              "id": "ad-banner-20260626-paywall-zhCN",
+              "id": "ad-banner-20260626-paywall-3day-zhCN",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1302,14 +1962,234 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-paywall-zhCN.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-zhCN",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/paywall/618-banner-paywall-zhCN.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-3day-zhCN",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage==zh-CN"
+            },
+            {
+              "id": "ad-banner-20260626-paywall-3day-zhTW",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/paywall/618-banner-paywall-zhTW.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-3day-zhTW",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage==zh-TW || interfaceLanguage==zh-HK"
+            },
+            {
+              "id": "ad-banner-20260626-paywall-3day-ja",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/paywall/618-banner-paywall-ja.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-3day-ja",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage==ja"
+            },
+            {
+              "id": "ad-banner-20260626-paywall-3day-ko",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/paywall/618-banner-paywall-ko.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-3day-ko",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage==ko"
+            },
+            {
+              "id": "ad-banner-20260626-paywall-3day-en",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/3day/paywall/618-banner-paywall-en.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-3day-en",
+              "startTime": "2026-06-26 00:00:00",
+              "endTime": "2026-06-27 00:00:00",
+              "condition": "interfaceLanguage!=zh-CN && interfaceLanguage!=zh-TW && interfaceLanguage!=zh-HK && interfaceLanguage!=ja && interfaceLanguage!=ko"
+            },
+            {
+              "id": "ad-banner-20260626-paywall-2day-zhCN",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/paywall/618-banner-paywall-zhCN.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-2day-zhCN",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage==zh-CN"
+            },
+            {
+              "id": "ad-banner-20260626-paywall-2day-zhTW",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/paywall/618-banner-paywall-zhTW.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-2day-zhTW",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage==zh-TW || interfaceLanguage==zh-HK"
+            },
+            {
+              "id": "ad-banner-20260626-paywall-2day-ja",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/paywall/618-banner-paywall-ja.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-2day-ja",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage==ja"
+            },
+            {
+              "id": "ad-banner-20260626-paywall-2day-ko",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/paywall/618-banner-paywall-ko.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-2day-ko",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage==ko"
+            },
+            {
+              "id": "ad-banner-20260626-paywall-2day-en",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/2day/paywall/618-banner-paywall-en.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-2day-en",
+              "startTime": "2026-06-27 00:00:00",
+              "endTime": "2026-06-28 00:00:00",
+              "condition": "interfaceLanguage!=zh-CN && interfaceLanguage!=zh-TW && interfaceLanguage!=zh-HK && interfaceLanguage!=ja && interfaceLanguage!=ko"
+            },
+            {
+              "id": "ad-banner-20260626-paywall-1day-zhCN",
+              "i18n": {
+                "zh-CN": {
+                  "title": "",
+                  "description": ""
+                },
+                "zh-TW": {
+                  "title": "",
+                  "description": ""
+                },
+                "en": {
+                  "title": "",
+                  "description": ""
+                }
+              },
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/paywall/618-banner-paywall-zhCN.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-1day-zhCN",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage==zh-CN"
             },
             {
-              "id": "ad-banner-20260626-paywall-zhTW",
+              "id": "ad-banner-20260626-paywall-1day-zhTW",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1324,14 +2204,14 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-paywall-zhTW.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-zhTW",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/paywall/618-banner-paywall-zhTW.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-1day-zhTW",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage==zh-TW || interfaceLanguage==zh-HK"
             },
             {
-              "id": "ad-banner-20260626-paywall-ja",
+              "id": "ad-banner-20260626-paywall-1day-ja",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1346,14 +2226,14 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-paywall-ja.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-ja",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/paywall/618-banner-paywall-ja.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-1day-ja",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage==ja"
             },
             {
-              "id": "ad-banner-20260626-paywall-ko",
+              "id": "ad-banner-20260626-paywall-1day-ko",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1368,14 +2248,14 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-paywall-ko.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-ko",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/paywall/618-banner-paywall-ko.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-1day-ko",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage==ko"
             },
             {
-              "id": "ad-banner-20260626-paywall-en",
+              "id": "ad-banner-20260626-paywall-1day-en",
               "i18n": {
                 "zh-CN": {
                   "title": "",
@@ -1390,9 +2270,9 @@
                   "description": ""
                 }
               },
-              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/618-banner-paywall-en.png",
-              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-en",
-              "startTime": "2026-06-08 00:00:00",
+              "backgroundImage": "https://s.immersivetranslate.com/assets/r2-uploads/618-banner/1day/paywall/618-banner-paywall-en.png",
+              "targetUrl": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad-banner-20260626-paywall-1day-en",
+              "startTime": "2026-06-28 00:00:00",
               "endTime": "2026-06-29 00:00:00",
               "condition": "interfaceLanguage!=zh-CN && interfaceLanguage!=zh-TW && interfaceLanguage!=zh-HK && interfaceLanguage!=ja && interfaceLanguage!=ko"
             }
@@ -22049,6 +22929,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-26T10:50:34.311Z",
+  "buildinConfigUpdatedAt": "2026-06-26T13:29:13.168Z",
   "latestVersion": "1.30.3"
 }
