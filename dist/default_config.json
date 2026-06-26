@@ -877,6 +877,7 @@
     "https://www.webtoons.com/[Webtoons][chrome,firefox,safari]",
     "https://www.lezhin.com/[Lezhin Comics][chrome,firefox,safari]",
     "https://www.beltoon.jp/[BeLTOON][chrome,safari,imtAndroid,imtIOSNew]",
+    "https://manhwaclub.net[ManhwaClub][chrome,safari,imtAndroid,imtIOSNew]",
     "https://klmanga.my/[KLMANGA][chrome,firefox,safari,imtAndroid]",
     "https://sololevelingfree.vip/[SoloLevelingFree][chrome,firefox,safari,imtAndroid]",
     "https://rawkuma.net/[Rawkuma][chrome,firefox,safari,imtAndroid]",
@@ -13941,6 +13942,24 @@
       }
     },
     {
+      "id": "manhwaclub",
+      "matches": "manhwaclub.net",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".reading-content .page-break.no-gaps img.wp-manga-chapter-img"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "imtIOSNew",
+          "imtAndroid",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "manhwaread",
       "matches": [
         "manhwaread.com",
@@ -22929,6 +22948,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-26T13:29:13.168Z",
+  "buildinConfigUpdatedAt": "2026-06-26T14:10:28.993Z",
   "latestVersion": "1.30.3"
 }
