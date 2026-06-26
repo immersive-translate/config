@@ -656,6 +656,7 @@
     "https://comic-zenon.com/[comic-zenon][chrome,firefox,safari]",
     "https://www.webtoons.com/[Webtoons][chrome,firefox,safari]",
     "https://www.lezhin.com/[Lezhin Comics][chrome,firefox,safari]",
+    "https://www.beltoon.jp/[BeLTOON][chrome,safari,imtAndroid,imtIOSNew]",
     "https://klmanga.my/[KLMANGA][chrome,firefox,safari,imtAndroid]",
     "https://sololevelingfree.vip/[SoloLevelingFree][chrome,firefox,safari,imtAndroid]",
     "https://rawkuma.net/[Rawkuma][chrome,firefox,safari,imtAndroid]",
@@ -19731,6 +19732,23 @@
       }
     },
     {
+      "id": "beltoon",
+      "matches": "www.beltoon.jp/viewer/*",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#__next .printView div[width][height] > img[alt='image']"
+        ],
+        "platforms": [
+          "chrome",
+          "imtIOSNew",
+          "imtAndroid",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "ridibooks.com",
       "matches": "ridibooks.com",
       "imageRule.add": {
@@ -22031,6 +22049,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-26T10:02:45.594Z",
+  "buildinConfigUpdatedAt": "2026-06-26T10:50:34.311Z",
   "latestVersion": "1.30.3"
 }
