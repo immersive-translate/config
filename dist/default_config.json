@@ -6808,12 +6808,6 @@
       "wrapperPrefix": "<br />",
       "advanceMergeConfig": [
         {
-          "condition": "targetLanguage==zh-CN",
-          "advanceConfig": {
-            "sameLangTranslationTheme": "none"
-          }
-        },
-        {
           "condition": "true",
           "advanceConfig": {
             "translationServices": {
@@ -7795,7 +7789,10 @@
     },
     {
       "id": "threads",
-      "matches": "www.threads.net",
+      "matches": [
+        "www.threads.net",
+        "www.threads.com"
+      ],
       "stayOriginalSelectors": [
         ".x1rg5ohu",
         ".xat24cr.xdj266r a"
@@ -7803,7 +7800,7 @@
       "excludeSelectors.add": [
         ".x6s0dn4.x40hh3e.xrvj5dj.xxfwaov",
         ".x6s0dn4.x78zum5",
-        ".xpvyfi4.x1xdureb.x1agbcgv",
+        ".xpvyfi4.x1xdureb.x1agbcgv,.xqcrz7y.x1xdureb.x1agbcgv",
         ".xpvyfi4.x1npkx4u.x1ms6mhf"
       ],
       "globalStyles": {
@@ -8341,8 +8338,7 @@
       "isTransformPreTagNewLine": true,
       "aiWriting.add": {
         "scene": "github-issue",
-        "appendSelector": ".Footer-module__childrenStyling__X_d9fuO",
-        "insertBeforeSelector": ".IssueActions-module__IssueActionsButtonGroup__GaNtxge",
+        "appendSelector": "[data-testid=\"markdown-editor-footer\"] > div:last-child",
         "titleSelector": ".markdown-title",
         "contentSelector": "#issue-body-viewer .markdown-body",
         "commentSelector": ".react-issue-comment",
@@ -22948,6 +22944,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-26T14:10:28.993Z",
+  "buildinConfigUpdatedAt": "2026-06-27T12:02:11.088Z",
   "latestVersion": "1.30.3"
 }
