@@ -5380,13 +5380,9 @@
         {
           "condition": "true",
           "advanceConfig": {
-            "translationServices": {
-              "babelfast-pro.add": {
-                "limit": 5,
-                "concurrencyLimit": 5,
-                "maxTextGroupLengthPerRequest": 10
-              }
-            }
+            "defaultTranslationServicesOrder.remove": [
+              "babelfast-pro"
+            ]
           }
         }
       ],
@@ -5451,13 +5447,9 @@
         {
           "condition": "true",
           "advanceConfig": {
-            "translationServices": {
-              "babelfast-pro.add": {
-                "limit": 5,
-                "concurrencyLimit": 5,
-                "maxTextGroupLengthPerRequest": 10
-              }
-            }
+            "defaultTranslationServicesOrder.remove": [
+              "babelfast-pro"
+            ]
           }
         }
       ],
@@ -5547,13 +5539,9 @@
             "translationLanguagePattern.add": {
               "matches": []
             },
-            "translationServices": {
-              "babelfast-pro.add": {
-                "limit": 5,
-                "concurrencyLimit": 5,
-                "maxTextGroupLengthPerRequest": 10
-              }
-            }
+            "defaultTranslationServicesOrder.remove": [
+              "babelfast-pro"
+            ]
           }
         }
       ],
@@ -5672,13 +5660,9 @@
           "condition": "true",
           "advanceConfig": {
             "domReadyDetectTimeout": 0,
-            "translationServices": {
-              "babelfast-pro.add": {
-                "limit": 5,
-                "concurrencyLimit": 5,
-                "maxTextGroupLengthPerRequest": 10
-              }
-            }
+            "defaultTranslationServicesOrder.remove": [
+              "babelfast-pro"
+            ]
           }
         }
       ],
@@ -21061,7 +21045,8 @@
         "time.com",
         "www.cnet.com",
         "www.nikkei.com",
-        "dolmods.net"
+        "dolmods.net",
+        "detail.1688.com"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
@@ -21585,6 +21570,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-29T02:22:25.386Z",
+  "buildinConfigUpdatedAt": "2026-06-29T15:23:23.647Z",
   "latestVersion": "1.30.3"
 }
