@@ -482,6 +482,7 @@
     "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
     "https://comic-fuz.com/[COMIC FUZ][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://mangadex.org/[MangaDex][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
+    "https://mangadna.com/[MangaDNA][chrome,safari,imtAndroid,imtIOSNew]",
     "https://www.yamibo.com/site/manga[Yamibo][chrome,firefox,imtIOSNew]",
     "https://shonenjumpplus.com[ShonenJumpPlus][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://www.rimacomiplus.jp[Rimacomiplus][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
@@ -14469,6 +14470,27 @@
       ]
     },
     {
+      "id": "mangadna",
+      "matches": "mangadna.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".read-content img.loading.myx01[data-src][alt*=' Page ']"
+        ],
+        "loadingSelectors": [
+          "div"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px"
+      },
+      "platforms": [
+        "chrome",
+        "safari",
+        "imtAndroid",
+        "imtIOSNew"
+      ]
+    },
+    {
       "id": "yanmaga.jp",
       "matches": [
         "yanmaga.jp",
@@ -21570,6 +21592,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-29T15:23:23.647Z",
+  "buildinConfigUpdatedAt": "2026-06-30T07:47:17.989Z",
   "latestVersion": "1.30.3"
 }
