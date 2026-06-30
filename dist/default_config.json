@@ -544,6 +544,8 @@
     "https://www.beltoon.jp/[BeLTOON][chrome,safari,imtAndroid,imtIOSNew]",
     "https://manhwaclub.net[ManhwaClub][chrome,safari,imtAndroid,imtIOSNew]",
     "https://atsu.moe[Atsumaru][chrome,safari,imtAndroid,imtIOSNew]",
+    "https://www.cmoa.jp[Comic CMOA][chrome,safari,imtAndroid,imtIOSNew]",
+    "https://televikun-super-hero-comics.com[Televi-Kun Super Hero Comics][chrome,safari,imtAndroid,imtIOSNew]",
     "https://klmanga.my/[KLMANGA][chrome,firefox,safari,imtAndroid]",
     "https://sololevelingfree.vip/[SoloLevelingFree][chrome,firefox,safari,imtAndroid]",
     "https://rawkuma.net/[Rawkuma][chrome,firefox,safari,imtAndroid]",
@@ -14426,7 +14428,8 @@
       "id": "cmoa",
       "matches": [
         "booklive.jp",
-        "www.yomonga.com"
+        "www.yomonga.com",
+        "www.cmoa.jp"
       ],
       "imageRule.add": {
         "enable": true,
@@ -14446,6 +14449,24 @@
         "imtIOSNew"
       ],
       "_comment": "www.cmoa.jp 这个站点适配有点问题"
+    },
+    {
+      "id": "televikun-super-hero-comics",
+      "matches": "televikun-super-hero-comics.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".pt-img img"
+        ],
+        "enableImageSrcObserver": true,
+        "platforms": [
+          "chrome",
+          "safari",
+          "imtAndroid",
+          "imtIOSNew"
+        ]
+      }
     },
     {
       "id": "global.manga",
@@ -21611,6 +21632,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-30T08:29:04.143Z",
+  "buildinConfigUpdatedAt": "2026-06-30T15:04:00.813Z",
   "latestVersion": "1.30.3"
 }
