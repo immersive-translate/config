@@ -543,6 +543,7 @@
     "https://www.lezhin.com/[Lezhin Comics][chrome,firefox,safari]",
     "https://www.beltoon.jp/[BeLTOON][chrome,safari,imtAndroid,imtIOSNew]",
     "https://manhwaclub.net[ManhwaClub][chrome,safari,imtAndroid,imtIOSNew]",
+    "https://atsu.moe[Atsumaru][chrome,safari,imtAndroid,imtIOSNew]",
     "https://klmanga.my/[KLMANGA][chrome,firefox,safari,imtAndroid]",
     "https://sololevelingfree.vip/[SoloLevelingFree][chrome,firefox,safari,imtAndroid]",
     "https://rawkuma.net/[Rawkuma][chrome,firefox,safari,imtAndroid]",
@@ -13942,6 +13943,24 @@
       "_comment": "all"
     },
     {
+      "id": "atsu-moe",
+      "matches": "atsu.moe/read/*",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "img[src*='/static/pages/']"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "imtIOSNew",
+          "imtAndroid",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "kuaikanmanhua",
       "matches": [
         "*.kuaikanmanhua_notranslate.com"
@@ -21592,6 +21611,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-30T07:47:17.989Z",
+  "buildinConfigUpdatedAt": "2026-06-30T08:29:04.143Z",
   "latestVersion": "1.30.3"
 }
