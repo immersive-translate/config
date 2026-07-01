@@ -3806,8 +3806,17 @@
         "excludeMatches": []
       },
       "enableAutoRead": false,
+      "enableWhenSameLanguage": true,
       "triggerMode": "mini",
       "triggerModeForIcon": "hover",
+      "screenshotArea": {
+        "enable": false,
+        "debugPreview": false,
+        "triggerKey": "z",
+        "recognitionMode": "standard",
+        "service": "qwen-pro",
+        "model": "qwen3.5-plus"
+      },
       "proService": {
         "service": "openai",
         "model": "gpt-5-mini"
@@ -5387,7 +5396,17 @@
           "advanceConfig": {
             "defaultTranslationServicesOrder.remove": [
               "babelfast-pro"
-            ]
+            ],
+            "defaultTranslationServicesOrder.add_v.[1.31.1]": [
+              "babelfast-pro"
+            ],
+            "translationServices": {
+              "babelfast-pro.add_v.[1.31.1]": {
+                "limit": 5,
+                "concurrencyLimit": 5,
+                "maxTextGroupLengthPerRequest": 10
+              }
+            }
           }
         }
       ],
@@ -5454,7 +5473,17 @@
           "advanceConfig": {
             "defaultTranslationServicesOrder.remove": [
               "babelfast-pro"
-            ]
+            ],
+            "defaultTranslationServicesOrder.add_v.[1.31.1]": [
+              "babelfast-pro"
+            ],
+            "translationServices": {
+              "babelfast-pro.add_v.[1.31.1]": {
+                "limit": 5,
+                "concurrencyLimit": 5,
+                "maxTextGroupLengthPerRequest": 10
+              }
+            }
           }
         }
       ],
@@ -5546,7 +5575,17 @@
             },
             "defaultTranslationServicesOrder.remove": [
               "babelfast-pro"
-            ]
+            ],
+            "defaultTranslationServicesOrder.add_v.[1.31.1]": [
+              "babelfast-pro"
+            ],
+            "translationServices": {
+              "babelfast-pro.add_v.[1.31.1]": {
+                "limit": 5,
+                "concurrencyLimit": 5,
+                "maxTextGroupLengthPerRequest": 10
+              }
+            }
           }
         }
       ],
@@ -5667,7 +5706,17 @@
             "domReadyDetectTimeout": 0,
             "defaultTranslationServicesOrder.remove": [
               "babelfast-pro"
-            ]
+            ],
+            "defaultTranslationServicesOrder.add_v.[1.31.1]": [
+              "babelfast-pro"
+            ],
+            "translationServices": {
+              "babelfast-pro.add_v.[1.31.1]": {
+                "limit": 5,
+                "concurrencyLimit": 5,
+                "maxTextGroupLengthPerRequest": 10
+              }
+            }
           }
         }
       ],
@@ -12708,7 +12757,8 @@
         "piccoma.com",
         "jmcomic-zzz.one",
         "comix.to",
-        "pocket.shonenmagazine.com"
+        "pocket.shonenmagazine.com",
+        "youngchampion.jp"
       ],
       "imageRule.add": {
         "enable": true,
@@ -12724,7 +12774,8 @@
           ".center img ",
           ".rpage-main__inner img",
           ".rpage-page__img[data]",
-          ".c-viewer__comic canvas[data]"
+          ".c-viewer__comic canvas[data]",
+          ".-cv-page-canvas canvas[data]"
         ],
         "platforms": [
           "chrome",
@@ -13411,7 +13462,8 @@
     {
       "id": "readcomiconline",
       "matches": [
-        "readcomiconline.li"
+        "readcomiconline.li",
+        "rcostation.xyz"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13529,6 +13581,10 @@
         "urlFetchType": "canvasArgs",
         "opImageType": "append",
         "loadingSelectors": [
+          "[data-testid=\"viewer-action-area\"]",
+          ".min-h-init-viewer",
+          ".js-page-area",
+          ".c-viewer__comic",
           "p"
         ],
         "loadingStyle": "z-index: 9999;"
@@ -13932,12 +13988,16 @@
         "enable": true,
         "type": "manga",
         "opImageType": "append",
+        "enableParentTriggerTools": true,
         "imageSelectors": [
-          "[class*='viewer_wrapper'] img"
+          "[class*='viewer_wrapper'] img",
+          "[class*='InternalViewer_viewer'] img",
+          "[class*='InternalViewer_verticalViewer'] img"
         ],
         "loadingSelectors": [
           "[data-testid=\"placeholder\"]"
         ],
+        "loadingStyle": "z-index: 9999;",
         "inValidSrcRegex": [
           ".svg"
         ]
@@ -21651,6 +21711,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-01T08:27:29.404Z",
-  "latestVersion": "1.30.3"
+  "buildinConfigUpdatedAt": "2026-07-01T12:27:01.508Z",
+  "latestVersion": "1.31.1"
 }
