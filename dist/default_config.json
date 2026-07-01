@@ -543,6 +543,7 @@
     "https://www.lezhin.com/[Lezhin Comics][chrome,firefox,safari]",
     "https://www.beltoon.jp/[BeLTOON][chrome,safari,imtAndroid,imtIOSNew]",
     "https://manhwaclub.net[ManhwaClub][chrome,safari,imtAndroid,imtIOSNew]",
+    "https://jinmangas.com[JinMangas][chrome,safari,imtAndroid,imtIOSNew]",
     "https://atsu.moe[Atsumaru][chrome,safari,imtAndroid,imtIOSNew]",
     "https://www.cmoa.jp[Comic CMOA][chrome,safari,imtAndroid,imtIOSNew]",
     "https://televikun-super-hero-comics.com[Televi-Kun Super Hero Comics][chrome,safari,imtAndroid,imtIOSNew]",
@@ -12585,6 +12586,24 @@
       }
     },
     {
+      "id": "jinmangas",
+      "matches": "jinmangas.com",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".reading-content .page-break.no-gaps img.wp-manga-chapter-img"
+        ],
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome",
+          "safari",
+          "imtAndroid",
+          "imtIOSNew"
+        ]
+      }
+    },
+    {
       "id": "manhwaread",
       "matches": [
         "manhwaread.com",
@@ -21632,6 +21651,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-06-30T15:04:00.813Z",
+  "buildinConfigUpdatedAt": "2026-07-01T08:27:29.404Z",
   "latestVersion": "1.30.3"
 }
