@@ -1,117 +1,173 @@
 {
-  "dynamicI18nVersion": "3",
+  "dynamicI18nVersion": "4",
   "locales": {
     "aeb": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> متاع Preferred Networks هو موديل لغة كبير ياباني الأصل، طوّرتو شركة AI من أهم الشركات في اليابان. يفهم مليح ستيل اليابانية وثقافتها، ويعطي ترجمة طبيعية برشة في سياقات صعيبة كيما كلام الاحترام، اللعب بالكلمات، الأنمي واللايت نوفل. كي تكون الترجمة لليابانية، PLaMo يرجّع إحساس ياباني أصلي للقراءة العميقة، متابعة الأنمي، والتواصل بين الثقافات.",
-      "translationServices.translategemma.introduction": "موديل ترجمة احترافي من Google، متدرّب ومتحسّن خصيصًا لمهام الترجمة. مقارنة بموديلات الشات العامة، يعطي ترجمات متعددة اللغات أدقّ وأكثر ثباتًا."
+      "translationServices.translategemma.introduction": "موديل ترجمة احترافي من Google، متدرّب ومتحسّن خصيصًا لمهام الترجمة. مقارنة بموديلات الشات العامة، يعطي ترجمات متعددة اللغات أدقّ وأكثر ثباتًا.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "أغلى غلطة تنجم تعملها هي تحاول توفّر فلوسك وأنت تضيّع وقتك. الناس اللي يحقّقوا أداء ممتاز ما يتنازلوش على نظرتهم."
     },
     "ar": {
       "translationServices.plamo.introduction": "يُعد <homepage>PLaMo</homepage> من Preferred Networks نموذجًا لغويًا كبيرًا يابانيًّا أصيلًا، طوّرته إحدى شركات الذكاء الاصطناعي الرائدة في اليابان. يفهم الأسلوب الثقافي للغة اليابانية بعمق، ويقدّم ترجمات يابانية طبيعية تتفوّق على النماذج التقليدية في سياقات معقّدة مثل صيغ الاحترام، والتلاعب بالألفاظ، والأنمي، والروايات الخفيفة. عند الترجمة إلى اليابانية، يمنحك PLaMo تعبيرًا يابانيًا أصيلًا للقراءة المتعمقة، ومتابعة الأنمي والدراما، والتواصل بين الثقافات.",
-      "translationServices.translategemma.introduction": "نموذج ترجمة احترافي من Google تم تدريبه وتحسينه خصيصًا لمهام الترجمة. وبالمقارنة مع نماذج الدردشة العامة، فإنه يوفر ترجمات متعددة اللغات أكثر دقة واستقرارًا."
+      "translationServices.translategemma.introduction": "نموذج ترجمة احترافي من Google تم تدريبه وتحسينه خصيصًا لمهام الترجمة. وبالمقارنة مع نماذج الدردشة العامة، فإنه يوفر ترجمات متعددة اللغات أكثر دقة واستقرارًا.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "أغلى خطأ يمكن أن ترتكبه هو محاولة توفير المال عبر إضاعة الوقت. أصحاب الأداء النخبوي يرفضون التنازل عن منظورهم."
     },
     "ars": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> من Preferred Networks هو نموذج لغوي كبير ياباني الأصل، طوّرته شركة ذكاء اصطناعي رائدة في اليابان. يفهم روح اللغة اليابانية وثقافتها، ويعطي ترجمة يابانية طبيعية جدًا في السياقات الصعبة مثل عبارات الاحترام، والتلاعب بالكلمات، والأنمي، والروايات الخفيفة. إذا كانت الترجمة إلى اليابانية، يساعدك PLaMo على الحصول على تعبير ياباني أصيل للقراءة العميقة، ومتابعة الأنمي، والتواصل بين الثقافات.",
-      "translationServices.translategemma.introduction": "نموذج ترجمة احترافي من Google، مدرّب ومحسّن خصيصًا لمهام الترجمة. مقارنةً بنماذج الدردشة العامة، يقدّم ترجمات متعددة اللغات أكثر دقة وثباتًا."
+      "translationServices.translategemma.introduction": "نموذج ترجمة احترافي من Google، مدرّب ومحسّن خصيصًا لمهام الترجمة. مقارنةً بنماذج الدردشة العامة، يقدّم ترجمات متعددة اللغات أكثر دقة وثباتًا.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "أغلى خطأ ممكن تسويه هو إنك تحاول توفر فلوسك وأنت تضيع وقتك. أصحاب الأداء النخبوي ما يرضون يساومون على منظورهم."
     },
     "arz": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> من Preferred Networks هو موديل لغة كبير ياباني أصلي، طورته شركة AI رائدة في اليابان. بيفهم إحساس وثقافة اللغة اليابانية بعمق، وبيطلع ترجمة طبيعية جدًا في سياقات معقدة زي صيغ الاحترام، التلاعب بالكلام، الأنمي واللايت نوفل. لما تترجم للياباني، PLaMo بيوصل تعبير ياباني أصيل للقراءة العميقة، متابعة الأنمي، والتواصل بين الثقافات.",
-      "translationServices.translategemma.introduction": "موديل ترجمة احترافي من Google، متدرّب ومتظبط مخصوص لمهام الترجمة. بالمقارنة مع موديلات الشات العامة، بيقدم ترجمات متعددة اللغات أدق وأكثر ثباتًا."
+      "translationServices.translategemma.introduction": "موديل ترجمة احترافي من Google، متدرّب ومتظبط مخصوص لمهام الترجمة. بالمقارنة مع موديلات الشات العامة، بيقدم ترجمات متعددة اللغات أدق وأكثر ثباتًا.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "أغلى غلطة ممكن تعملها هي إنك تحاول توفر فلوسك بإهدار وقتك. أصحاب الأداء النخبوي بيرفضوا يتنازلوا عن منظورهم."
     },
     "be": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> ад Preferred Networks — гэта японска-арыентаваная вялікая моўная мадэль, распрацаваная адной з вядучых AI-кампаній Японіі. Яна глыбока разумее культурны стыль японскай мовы і дае значна больш натуральныя пераклады, чым звычайныя мадэлі, у складаных кантэкстах накшталт ганаровых формаў, гульні слоў, анімэ і лайт-новелаў. Пры перакладзе на японскую PLaMo аднаўляе аўтэнтычнае японскае гучанне для глыбокага чытання, прагляду анімэ і міжкультурнай камунікацыі.",
-      "translationServices.translategemma.introduction": "Прафесійная мадэль перакладу ад Google, спецыяльна навучаная і аптымізаваная для задач перакладу. У параўнанні з універсальнымі чат-мадэлямі яна забяспечвае больш дакладныя і стабільныя шматмоўныя пераклады."
+      "translationServices.translategemma.introduction": "Прафесійная мадэль перакладу ад Google, спецыяльна навучаная і аптымізаваная для задач перакладу. У параўнанні з універсальнымі чат-мадэлямі яна забяспечвае больш дакладныя і стабільныя шматмоўныя пераклады.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "Самая дарагая памылка, якую вы можаце зрабіць, — спрабаваць эканоміць грошы, марнуючы час. Людзі найвышэйшага ўзроўню не ідуць на кампраміс са сваім поглядам."
     },
     "de": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> von Preferred Networks ist ein japanisch-natives LLM, entwickelt von einem der führenden KI-Unternehmen Japans. Es versteht die kulturellen Nuancen des Japanischen sehr genau und liefert in komplexen Kontexten wie Höflichkeitsformen, Wortspielen, Anime und Light Novels deutlich natürlichere Übersetzungen als herkömmliche Modelle. Beim Übersetzen ins Japanische gibt PLaMo eine authentische japanische Ausdrucksweise für vertieftes Lesen, Anime und interkulturelle Kommunikation wieder.",
-      "translationServices.translategemma.introduction": "Ein professionelles Übersetzungsmodell von Google, das speziell für Übersetzungsaufgaben trainiert und optimiert wurde. Im Vergleich zu allgemeinen Chat-Modellen liefert es präzisere und konsistentere mehrsprachige Übersetzungen."
+      "translationServices.translategemma.introduction": "Ein professionelles Übersetzungsmodell von Google, das speziell für Übersetzungsaufgaben trainiert und optimiert wurde. Im Vergleich zu allgemeinen Chat-Modellen liefert es präzisere und konsistentere mehrsprachige Übersetzungen.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "Der teuerste Fehler, den du machen kannst, ist, durch Zeitverschwendung Geld sparen zu wollen. Spitzenleister gehen bei ihrer Perspektive keine Kompromisse ein."
     },
     "en": {
       "translationServices.plamo.introduction": "Preferred Networks’s <homepage>PLaMo</homepage> is a Japanese-native LLM built specifically for deep understanding of the Japanese language and its cultural nuances. With exceptional handling of honorifics, wordplay, anime and light novel expressions, and other context-heavy Japanese content, PLaMo delivers translations that feel far more natural and authentic than conventional models. When translating into Japanese, PLaMo delivers natural and authentic Japanese expression for reading, anime, and cross-cultural communication.",
-      "translationServices.translategemma.introduction": "A professional translation model from Google, specifically trained and optimized for translation tasks. Compared with general-purpose chat models, it delivers more accurate and consistent multilingual translations."
+      "translationServices.translategemma.introduction": "A professional translation model from Google, specifically trained and optimized for translation tasks. Compared with general-purpose chat models, it delivers more accurate and consistent multilingual translations.",
+      "sampleSourceText": "あなたが犯せる最も高い代償のミスは、時間を無駄にしてまでお金を節約しようとすること。エリートパフォーマーは自らの視点を決して妥協しない。",
+      "sampleTargetText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective."
     },
     "es": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage>, de Preferred Networks, es un LLM nativo del japonés desarrollado por una de las principales empresas de IA de Japón. Comprende a fondo los matices culturales del japonés y ofrece traducciones mucho más naturales que los modelos convencionales en contextos complejos como honoríficos, juegos de palabras, anime y novelas ligeras. Al traducir al japonés, PLaMo reproduce una expresión japonesa auténtica para lectura profunda, anime y comunicación intercultural.",
-      "translationServices.translategemma.introduction": "Un modelo de traducción profesional de Google, entrenado y optimizado específicamente para tareas de traducción. En comparación con los modelos de chat de propósito general, ofrece traducciones multilingües más precisas y consistentes."
+      "translationServices.translategemma.introduction": "Un modelo de traducción profesional de Google, entrenado y optimizado específicamente para tareas de traducción. En comparación con los modelos de chat de propósito general, ofrece traducciones multilingües más precisas y consistentes.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "El error más caro que puedes cometer es intentar ahorrar dinero desperdiciando tiempo. Los profesionales de élite se niegan a comprometer su perspectiva."
     },
     "fa": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> از Preferred Networks یک مدل زبانی بزرگ بومی ژاپنی است که توسط یکی از شرکت‌های پیشرو هوش مصنوعی ژاپن توسعه یافته است. این مدل ظرافت‌های فرهنگی زبان ژاپنی را عمیقاً درک می‌کند و در زمینه‌های پیچیده‌ای مانند زبان احترام‌آمیز، بازی‌های زبانی، انیمه و لایت‌ناول، ترجمه‌هایی بسیار طبیعی‌تر از مدل‌های معمول ارائه می‌دهد. هنگام ترجمه به ژاپنی، PLaMo بیان ژاپنی اصیل و طبیعی را برای مطالعه عمیق، دنبال کردن انیمه و ارتباط میان‌فرهنگی بازآفرینی می‌کند.",
-      "translationServices.translategemma.introduction": "یک مدل ترجمه حرفه‌ای از Google که به‌طور ویژه برای وظایف ترجمه آموزش داده و بهینه‌سازی شده است. در مقایسه با مدل‌های گفت‌وگوی عمومی، ترجمه‌های چندزبانه دقیق‌تر و پایدار‌تری ارائه می‌دهد."
+      "translationServices.translategemma.introduction": "یک مدل ترجمه حرفه‌ای از Google که به‌طور ویژه برای وظایف ترجمه آموزش داده و بهینه‌سازی شده است. در مقایسه با مدل‌های گفت‌وگوی عمومی، ترجمه‌های چندزبانه دقیق‌تر و پایدار‌تری ارائه می‌دهد.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "پرهزینه‌ترین اشتباهی که می‌توانید مرتکب شوید این است که با اتلاف وقت بخواهید در هزینه صرفه‌جویی کنید. افراد نخبه هرگز بر سر زاویه دید خود سازش نمی‌کنند."
     },
     "fr": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage>, de Preferred Networks, est un LLM natif japonais développé par l'une des principales entreprises d'IA du Japon. Il comprend en profondeur les nuances culturelles du japonais et produit des traductions bien plus naturelles que les modèles conventionnels dans les contextes complexes, comme les honorifiques, les jeux de mots, l'anime et les light novels. Pour traduire vers le japonais, PLaMo restitue une expression japonaise authentique pour la lecture approfondie, l'anime et la communication interculturelle.",
-      "translationServices.translategemma.introduction": "Un modèle de traduction professionnel de Google, spécialement entraîné et optimisé pour les tâches de traduction. Par rapport aux modèles de conversation généralistes, il offre des traductions multilingues plus précises et plus cohérentes."
+      "translationServices.translategemma.introduction": "Un modèle de traduction professionnel de Google, spécialement entraîné et optimisé pour les tâches de traduction. Par rapport aux modèles de conversation généralistes, il offre des traductions multilingues plus précises et plus cohérentes.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "L’erreur la plus coûteuse que vous puissiez commettre est d’essayer d’économiser de l’argent en gaspillant du temps. Les profils d’élite refusent de compromettre leur perspective."
     },
     "he": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> של Preferred Networks הוא LLM יפני מקורי שפותח על ידי אחת מחברות ה-AI המובילות ביפן. הוא מבין לעומק את הסגנון התרבותי של היפנית, ומספק תרגומים טבעיים בהרבה ממודלים רגילים בהקשרים מורכבים כמו לשון כבוד, משחקי מילים, אנימה ורומנים קלים. כשמתרגמים ליפנית, PLaMo משחזר הבעה יפנית טבעית ואותנטית לקריאה מעמיקה, לצפייה באנימה ולתקשורת בין-תרבותית.",
-      "translationServices.translategemma.introduction": "מודל תרגום מקצועי מבית Google, שאומן ואופטם במיוחד למשימות תרגום. בהשוואה למודלי צ'אט כלליים, הוא מספק תרגומים רב-לשוניים מדויקים ויציבים יותר."
+      "translationServices.translategemma.introduction": "מודל תרגום מקצועי מבית Google, שאומן ואופטם במיוחד למשימות תרגום. בהשוואה למודלי צ'אט כלליים, הוא מספק תרגומים רב-לשוניים מדויקים ויציבים יותר.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "הטעות היקרה ביותר שאפשר לעשות היא לנסות לחסוך כסף על ידי בזבוז זמן. מצטייני-על מסרבים להתפשר על נקודת המבט שלהם."
     },
     "hi": {
       "translationServices.plamo.introduction": "Preferred Networks का <homepage>PLaMo</homepage> जापान की अग्रणी AI कंपनी द्वारा विकसित जापानी-नेटिव LLM है। यह जापानी भाषा की सांस्कृतिक शैली को गहराई से समझता है और सम्मानसूचक भाषा, शब्द-खेल, anime और light novel जैसे जटिल संदर्भों में पारंपरिक मॉडलों से कहीं अधिक स्वाभाविक अनुवाद देता है। जापानी में अनुवाद करते समय, PLaMo गहन पढ़ाई, anime देखने और अंतर-सांस्कृतिक संवाद के लिए असली जापानी अभिव्यक्ति को पुनः प्रस्तुत करता है।",
-      "translationServices.translategemma.introduction": "Google का एक पेशेवर अनुवाद मॉडल, जिसे विशेष रूप से अनुवाद कार्यों के लिए प्रशिक्षित और अनुकूलित किया गया है। सामान्य चैट मॉडल की तुलना में यह अधिक सटीक और स्थिर बहुभाषी अनुवाद प्रदान करता है।"
+      "translationServices.translategemma.introduction": "Google का एक पेशेवर अनुवाद मॉडल, जिसे विशेष रूप से अनुवाद कार्यों के लिए प्रशिक्षित और अनुकूलित किया गया है। सामान्य चैट मॉडल की तुलना में यह अधिक सटीक और स्थिर बहुभाषी अनुवाद प्रदान करता है।",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "आप जो सबसे महंगी गलती कर सकते हैं, वह है समय बर्बाद करके पैसे बचाने की कोशिश करना। श्रेष्ठ प्रदर्शन करने वाले अपने दृष्टिकोण से समझौता करने से इनकार करते हैं।"
     },
     "hu": {
       "translationServices.plamo.introduction": "A Preferred Networks <homepage>PLaMo</homepage> modellje egy japán natív LLM, amelyet Japán egyik vezető AI-vállalata fejlesztett. Mélyen érti a japán nyelv kulturális árnyalatait, ezért a megszólítások, szójátékok, animék, light novelek és más erősen kontextusfüggő tartalmak esetén is sokkal természetesebb fordítást ad, mint a hagyományos modellek. Japánra fordítva a PLaMo hiteles japán kifejezésmódot nyújt elmélyült olvasáshoz, animékhez és kultúrák közötti kommunikációhoz.",
-      "translationServices.translategemma.introduction": "A Google professzionális fordítómodellje, amelyet kifejezetten fordítási feladatokra képeztek és optimalizáltak. Az általános csevegőmodellekhez képest pontosabb és stabilabb többnyelvű fordításokat nyújt."
+      "translationServices.translategemma.introduction": "A Google professzionális fordítómodellje, amelyet kifejezetten fordítási feladatokra képeztek és optimalizáltak. Az általános csevegőmodellekhez képest pontosabb és stabilabb többnyelvű fordításokat nyújt.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "A legdrágább hiba, amit elkövethetsz, ha időpazarlással próbálsz pénzt megtakarítani. Az elit teljesítők nem hajlandók kompromisszumot kötni a nézőpontjukban."
     },
     "id": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> dari Preferred Networks adalah LLM asli Jepang yang dikembangkan oleh salah satu perusahaan AI terkemuka di Jepang. Model ini memahami gaya budaya bahasa Jepang secara mendalam, sehingga mampu menghasilkan terjemahan yang jauh lebih alami daripada model konvensional dalam konteks rumit seperti honorifik, permainan kata, anime, dan light novel. Saat menerjemahkan ke bahasa Jepang, PLaMo menghadirkan nuansa Jepang yang autentik untuk membaca mendalam, menonton anime, dan komunikasi lintas budaya.",
-      "translationServices.translategemma.introduction": "Model terjemahan profesional dari Google yang dilatih dan dioptimalkan secara khusus untuk tugas penerjemahan. Dibandingkan dengan model percakapan umum, model ini memberikan hasil terjemahan multibahasa yang lebih akurat dan konsisten."
+      "translationServices.translategemma.introduction": "Model terjemahan profesional dari Google yang dilatih dan dioptimalkan secara khusus untuk tugas penerjemahan. Dibandingkan dengan model percakapan umum, model ini memberikan hasil terjemahan multibahasa yang lebih akurat dan konsisten.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "Kesalahan paling mahal yang bisa Anda lakukan adalah mencoba menghemat uang dengan membuang-buang waktu. Para pelaku terbaik menolak berkompromi pada perspektif mereka."
     },
     "it": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> di Preferred Networks è un LLM nativo giapponese sviluppato da una delle principali aziende di IA del Giappone. Comprende a fondo lo stile culturale della lingua giapponese e offre traduzioni molto più naturali dei modelli convenzionali in contesti complessi come onorifici, giochi di parole, anime e light novel. Quando traduci verso il giapponese, PLaMo restituisce un'espressione giapponese autentica per lettura approfondita, anime e comunicazione interculturale.",
-      "translationServices.translategemma.introduction": "Un modello di traduzione professionale di Google, addestrato e ottimizzato specificamente per le attività di traduzione. Rispetto ai modelli di chat generici, offre traduzioni multilingue più accurate e stabili."
+      "translationServices.translategemma.introduction": "Un modello di traduzione professionale di Google, addestrato e ottimizzato specificamente per le attività di traduzione. Rispetto ai modelli di chat generici, offre traduzioni multilingue più accurate e stabili.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "L’errore più costoso che puoi commettere è cercare di risparmiare denaro sprecando tempo. Chi performa ai massimi livelli rifiuta di scendere a compromessi sulla propria prospettiva."
     },
     "ja": {
       "translationServices.plamo.introduction": "Preferred Networks の <homepage>PLaMo</homepage> は、日本を代表する AI 企業が開発した、日本語ネイティブの大規模言語モデルです。日本語の文化的なニュアンスを深く理解し、敬語、言葉遊び、アニメ、ライトノベルなど文脈依存の強い表現でも、従来のモデルよりはるかに自然で本物らしい翻訳を提供します。日本語への翻訳では、深い読書、アニメ視聴、異文化コミュニケーションにふさわしい、自然でリアルな日本語表現を再現します。",
-      "translationServices.translategemma.introduction": "Google が提供するプロフェッショナル向け翻訳モデルです。翻訳タスク向けに特別な学習と最適化が行われており、汎用チャットモデルと比較して、より正確で安定した多言語翻訳を提供します。"
+      "translationServices.translategemma.introduction": "Google が提供するプロフェッショナル向け翻訳モデルです。翻訳タスク向けに特別な学習と最適化が行われており、汎用チャットモデルと比較して、より正確で安定した多言語翻訳を提供します。",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "あなたが犯せる最も高い代償のミスは、時間を無駄にしてまでお金を節約しようとすること。エリートパフォーマーは自らの視点を決して妥協しない。"
     },
     "kk": {
       "translationServices.plamo.introduction": "Preferred Networks әзірлеген <homepage>PLaMo</homepage> — Жапонияның жетекші AI компаниясы жасаған, жапон тіліне табиғи бейімделген LLM. Ол жапон тілінің мәдени реңктерін терең түсінеді және құрмет формалары, сөз ойыны, аниме мен лайт-новел сияқты күрделі контекстерде әдеттегі модельдерге қарағанда әлдеқайда табиғи аударма береді. Жапон тіліне аударғанда, PLaMo терең оқу, аниме көру және мәдениетаралық қарым-қатынас үшін шынайы жапондық мәнерді жеткізеді.",
-      "translationServices.translategemma.introduction": "Google ұсынған кәсіби аударма моделі, аударма тапсырмалары үшін арнайы оқытылып, оңтайландырылған. Жалпы мақсаттағы чат модельдерімен салыстырғанда, ол көптілді аудармаларды дәлірек әрі тұрақтырақ береді."
+      "translationServices.translategemma.introduction": "Google ұсынған кәсіби аударма моделі, аударма тапсырмалары үшін арнайы оқытылып, оңтайландырылған. Жалпы мақсаттағы чат модельдерімен салыстырғанда, ол көптілді аудармаларды дәлірек әрі тұрақтырақ береді.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "Сіз жасай алатын ең қымбат қателік — уақытты босқа өткізіп, ақша үнемдеуге тырысу. Элиталық нәтижеге жететіндер өз көзқарасына келгенде ымыраға келмейді."
     },
     "ko": {
       "translationServices.plamo.introduction": "Preferred Networks의 <homepage>PLaMo</homepage>는 일본의 선도적인 AI 기업이 개발한 일본어 네이티브 LLM입니다. 일본어의 문화적 어감을 깊이 이해해 경어, 말장난, 애니메이션, 라이트 노벨처럼 맥락이 복잡한 콘텐츠에서도 일반 모델보다 훨씬 자연스럽고 현지감 있는 번역을 제공합니다. 일본어로 번역할 때 PLaMo는 깊이 있는 읽기, 애니메이션 감상, 문화 간 소통에 어울리는 진짜 일본어다운 표현을 재현합니다.",
-      "translationServices.translategemma.introduction": "Google의 전문 번역 모델로, 번역 작업에 특화된 학습과 최적화를 거쳤습니다. 범용 채팅 모델보다 더 정확하고 안정적인 다국어 번역 결과를 제공합니다."
+      "translationServices.translategemma.introduction": "Google의 전문 번역 모델로, 번역 작업에 특화된 학습과 최적화를 거쳤습니다. 범용 채팅 모델보다 더 정확하고 안정적인 다국어 번역 결과를 제공합니다.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "당신이 저지를 수 있는 가장 비싼 실수는 시간을 낭비해 돈을 아끼려는 것입니다. 최상위 성과자들은 자신의 관점을 타협하지 않습니다."
     },
     "my": {
       "translationServices.plamo.introduction": "Preferred Networks ၏ <homepage>PLaMo</homepage> သည် ဂျပန်နိုင်ငံရှိ ထိပ်တန်း AI ကုမ္ပဏီတစ်ခုက ဖန်တီးထားသော ဂျပန်ဘာသာစကားမူရင်း LLM ဖြစ်သည်။ ဂျပန်ဘာသာ၏ ယဉ်ကျေးမှုဆိုင်ရာ နူးညံ့သောအဓိပ္ပါယ်များကို နက်နက်ရှိုင်းရှိုင်း နားလည်ပြီး၊ လေးစားစကား၊ စကားလုံးကစားနည်း၊ anime နှင့် light novel ကဲ့သို့ ဆက်စပ်အဓိပ္ပါယ်များစွာလိုအပ်သော အကြောင်းအရာများတွင် သာမန်မော်ဒယ်များထက် ပို၍ သဘာဝကျသော ဘာသာပြန်ချက်များကို ပေးနိုင်သည်။ ဂျပန်ဘာသာသို့ ဘာသာပြန်သောအခါ PLaMo သည် နက်ရှိုင်းစွာ ဖတ်ရှုခြင်း၊ anime ကြည့်ရှုခြင်းနှင့် ယဉ်ကျေးမှုများအကြား ဆက်သွယ်ခြင်းအတွက် စစ်မှန်သော ဂျပန်စကားရိပ်ကို ပြန်လည်ဖော်ပြပေးသည်။",
-      "translationServices.translategemma.introduction": "Google မှ ထုတ်လုပ်ထားသော ပရော်ဖက်ရှင်နယ် ဘာသာပြန်မော်ဒယ်ဖြစ်ပြီး ဘာသာပြန်လုပ်ငန်းများအတွက် အထူးလေ့ကျင့်ပြီး အကောင်းဆုံးပြုလုပ်ထားသည်။ အထွေထွေ chat မော်ဒယ်များနှင့် နှိုင်းယှဉ်လျှင် ပိုမိုတိကျပြီး တည်ငြိမ်သော ဘာသာစကားမျိုးစုံ ဘာသာပြန်ရလဒ်များကို ပေးနိုင်သည်။"
+      "translationServices.translategemma.introduction": "Google မှ ထုတ်လုပ်ထားသော ပရော်ဖက်ရှင်နယ် ဘာသာပြန်မော်ဒယ်ဖြစ်ပြီး ဘာသာပြန်လုပ်ငန်းများအတွက် အထူးလေ့ကျင့်ပြီး အကောင်းဆုံးပြုလုပ်ထားသည်။ အထွေထွေ chat မော်ဒယ်များနှင့် နှိုင်းယှဉ်လျှင် ပိုမိုတိကျပြီး တည်ငြိမ်သော ဘာသာစကားမျိုးစုံ ဘာသာပြန်ရလဒ်များကို ပေးနိုင်သည်။",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "သင်လုပ်နိုင်သည့် အကုန်အကျအများဆုံး အမှားမှာ အချိန်ကို ဖြုန်းပြီး ငွေချွေတာရန် ကြိုးစားခြင်းဖြစ်သည်။ ထိပ်တန်း စွမ်းဆောင်သူများသည် မိမိတို့၏ အမြင်အပေါ် ဘယ်တော့မှ အလျှော့မပေးကြ။"
     },
     "pt-BR": {
       "translationServices.plamo.introduction": "O <homepage>PLaMo</homepage>, da Preferred Networks, é um LLM nativo de japonês desenvolvido por uma das principais empresas de IA do Japão. Ele entende profundamente o estilo cultural do japonês e entrega traduções muito mais naturais que os modelos convencionais em contextos complexos, como honoríficos, trocadilhos, anime e light novels. Ao traduzir para o japonês, o PLaMo reproduz uma expressão japonesa autêntica para leitura aprofundada, anime e comunicação intercultural.",
-      "translationServices.translategemma.introduction": "Um modelo de tradução profissional do Google, treinado e otimizado especificamente para tarefas de tradução. Em comparação com modelos de chat de uso geral, oferece traduções multilíngues mais precisas e consistentes."
+      "translationServices.translategemma.introduction": "Um modelo de tradução profissional do Google, treinado e otimizado especificamente para tarefas de tradução. Em comparação com modelos de chat de uso geral, oferece traduções multilíngues mais precisas e consistentes.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "O erro mais caro que você pode cometer é tentar economizar dinheiro desperdiçando tempo. Profissionais de elite se recusam a comprometer sua perspectiva."
     },
     "pt-PT": {
       "translationServices.plamo.introduction": "O <homepage>PLaMo</homepage>, da Preferred Networks, é um LLM nativo de japonês desenvolvido por uma das principais empresas de IA do Japão. Compreende profundamente o estilo cultural do japonês e oferece traduções muito mais naturais do que os modelos convencionais em contextos complexos, como honoríficos, trocadilhos, anime e light novels. Ao traduzir para japonês, o PLaMo reproduz uma expressão japonesa autêntica para leitura aprofundada, anime e comunicação intercultural.",
-      "translationServices.translategemma.introduction": "Um modelo de tradução profissional da Google, treinado e otimizado especificamente para tarefas de tradução. Em comparação com modelos de conversação genéricos, oferece traduções multilingues mais precisas e consistentes."
+      "translationServices.translategemma.introduction": "Um modelo de tradução profissional da Google, treinado e otimizado especificamente para tarefas de tradução. Em comparação com modelos de conversação genéricos, oferece traduções multilingues mais precisas e consistentes.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "O erro mais caro que podes cometer é tentar poupar dinheiro desperdiçando tempo. Os profissionais de elite recusam comprometer a sua perspetiva."
     },
     "ru": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> от Preferred Networks — это LLM, изначально ориентированная на японский язык и разработанная одной из ведущих AI-компаний Японии. Она глубоко понимает культурные оттенки японского и создает гораздо более естественные переводы, чем обычные модели, в сложных контекстах вроде вежливых форм, игры слов, аниме и ранобэ. При переводе на японский PLaMo передает подлинное японское звучание для глубокого чтения, просмотра аниме и межкультурного общения.",
-      "translationServices.translategemma.introduction": "Профессиональная модель перевода от Google, специально обученная и оптимизированная для задач перевода. По сравнению с универсальными чат-моделями обеспечивает более точный и стабильный многоязычный перевод."
+      "translationServices.translategemma.introduction": "Профессиональная модель перевода от Google, специально обученная и оптимизированная для задач перевода. По сравнению с универсальными чат-моделями обеспечивает более точный и стабильный многоязычный перевод.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "Самая дорогая ошибка, которую вы можете совершить, — пытаться экономить деньги, тратя время впустую. Люди с выдающимися результатами не готовы жертвовать своей перспективой."
     },
     "tr": {
       "translationServices.plamo.introduction": "Preferred Networks'ün <homepage>PLaMo</homepage> modeli, Japonya'nın önde gelen AI şirketlerinden biri tarafından geliştirilen Japonca yerel bir LLM'dir. Japoncanın kültürel üslubunu derinlemesine anlar; saygı ifadeleri, kelime oyunları, anime ve light novel gibi bağlamı yoğun içeriklerde geleneksel modellere göre çok daha doğal çeviriler sunar. Japoncaya çevirirken PLaMo; derin okuma, anime takibi ve kültürler arası iletişim için gerçek Japonca hissini yeniden üretir.",
-      "translationServices.translategemma.introduction": "Google tarafından geliştirilen profesyonel bir çeviri modeli olup, çeviri görevleri için özel olarak eğitilmiş ve optimize edilmiştir. Genel amaçlı sohbet modellerine kıyasla daha doğru ve daha tutarlı çok dilli çeviriler sunar."
+      "translationServices.translategemma.introduction": "Google tarafından geliştirilen profesyonel bir çeviri modeli olup, çeviri görevleri için özel olarak eğitilmiş ve optimize edilmiştir. Genel amaçlı sohbet modellerine kıyasla daha doğru ve daha tutarlı çok dilli çeviriler sunar.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "Yapabileceğiniz en pahalı hata, zamanı boşa harcayarak para tasarrufu yapmaya çalışmaktır. Elit performans gösterenler kendi bakış açılarından ödün vermeyi reddeder."
     },
     "uk": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> від Preferred Networks — це японсько-нативна LLM, розроблена однією з провідних AI-компаній Японії. Вона глибоко розуміє культурний стиль японської мови й забезпечує значно природніші переклади, ніж звичайні моделі, у складних контекстах на кшталт ввічливих форм, гри слів, аніме та ранобе. Під час перекладу японською PLaMo відтворює автентичне японське звучання для глибокого читання, перегляду аніме та міжкультурної комунікації.",
-      "translationServices.translategemma.introduction": "Професійна модель перекладу від Google, спеціально навчена й оптимізована для завдань перекладу. Порівняно з універсальними чат-моделями вона забезпечує точніші та стабільніші багатомовні переклади."
+      "translationServices.translategemma.introduction": "Професійна модель перекладу від Google, спеціально навчена й оптимізована для завдань перекладу. Порівняно з універсальними чат-моделями вона забезпечує точніші та стабільніші багатомовні переклади.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "Найдорожча помилка, якої ви можете припуститися, — намагатися заощадити гроші, марнуючи час. Люди з найвищими результатами відмовляються йти на компроміс щодо власної перспективи."
     },
     "vi": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> của Preferred Networks là LLM thuần Nhật do một công ty AI hàng đầu Nhật Bản phát triển. Mô hình này am hiểu sâu sắc phong cách văn hóa của tiếng Nhật, mang lại bản dịch tự nhiên hơn hẳn các mô hình thông thường trong những ngữ cảnh phức tạp như kính ngữ, chơi chữ, anime và light novel. Khi dịch sang tiếng Nhật, PLaMo tái hiện sắc thái Nhật ngữ chân thực cho đọc chuyên sâu, theo dõi anime và giao tiếp liên văn hóa.",
-      "translationServices.translategemma.introduction": "Một mô hình dịch thuật chuyên nghiệp của Google, được huấn luyện và tối ưu riêng cho các tác vụ dịch thuật. So với các mô hình trò chuyện đa dụng, mô hình này mang lại bản dịch đa ngôn ngữ chính xác và ổn định hơn."
+      "translationServices.translategemma.introduction": "Một mô hình dịch thuật chuyên nghiệp của Google, được huấn luyện và tối ưu riêng cho các tác vụ dịch thuật. So với các mô hình trò chuyện đa dụng, mô hình này mang lại bản dịch đa ngôn ngữ chính xác và ổn định hơn.",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "Sai lầm đắt giá nhất bạn có thể mắc phải là cố tiết kiệm tiền bằng cách lãng phí thời gian. Những người có hiệu suất đỉnh cao không bao giờ thỏa hiệp với góc nhìn của mình."
     },
     "zh-CN": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> 是由日本领先 AI 公司 Preferred Networks 开发的日语原生大模型。它深谙日语的文化风格，在敬语、双关语、二次元及轻小说等复杂语境下，能提供远超其他模型的地道译文。在目标语言为日语的翻译场景里，无论是深度阅读、影视追番还是跨文化交流，PLaMo 都能还原最真实的日系语感。",
-      "translationServices.translategemma.introduction": "Google 推出的专业翻译模型，针对翻译任务进行专项训练和强化优化。相比通用聊天模型，可提供更准确、更稳定的多语言翻译效果。"
+      "translationServices.translategemma.introduction": "Google 推出的专业翻译模型，针对翻译任务进行专项训练和强化优化。相比通用聊天模型，可提供更准确、更稳定的多语言翻译效果。",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "你能犯的最昂贵的错误，就是试图通过浪费时间来省钱。真正的顶尖高手，绝不会在自己的视野和眼界上妥协将就。"
     },
     "zh-HK": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> 係由日本頂尖 AI 公司 Preferred Networks 開發嘅日語原生大型語言模型。佢深入理解日語嘅文化語感，喺敬語、雙關語、動漫同輕小說等複雜語境下，都可以提供遠比一般模型更地道嘅譯文。當目標語言係日語時，無論係深度閱讀、追番，定係跨文化交流，PLaMo 都可以還原最自然、真實嘅日系語感。",
-      "translationServices.translategemma.introduction": "Google 推出的專業翻譯模型，針對翻譯任務進行專項訓練及強化優化。相比通用聊天模型，可提供更準確、更穩定的多語言翻譯效果。"
+      "translationServices.translategemma.introduction": "Google 推出的專業翻譯模型，針對翻譯任務進行專項訓練及強化優化。相比通用聊天模型，可提供更準確、更穩定的多語言翻譯效果。",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "你能犯的最昂貴的錯誤，就是試圖透過浪費時間來省錢。真正的頂尖高手，絕不會在自己的視野和眼界上妥協將就。"
     },
     "zh-TW": {
       "translationServices.plamo.introduction": "<homepage>PLaMo</homepage> 是由日本頂尖 AI 公司 Preferred Networks 開發的日語原生大型語言模型。它深諳日語的文化語感，在敬語、雙關語、動漫與輕小說等複雜語境下，能提供遠比一般模型更道地的譯文。當目標語言是日語時，無論是深度閱讀、追番還是跨文化交流，PLaMo 都能還原最自然、真實的日系語感。",
-      "translationServices.translategemma.introduction": "Google 推出的專業翻譯模型，針對翻譯任務進行專項訓練與強化最佳化。相較於通用聊天模型，可提供更準確、更穩定的多語言翻譯效果。"
+      "translationServices.translategemma.introduction": "Google 推出的專業翻譯模型，針對翻譯任務進行專項訓練與強化最佳化。相較於通用聊天模型，可提供更準確、更穩定的多語言翻譯效果。",
+      "sampleSourceText": "The most expensive mistake you can make is trying to save money by wasting time. Elite performers refuse to compromise on their perspective.",
+      "sampleTargetText": "你能犯的最昂貴的錯誤，就是試圖透過浪費時間來省錢。真正的頂尖高手，絕不會在自己的視野和眼界上妥協將就。"
     }
   }
 }
