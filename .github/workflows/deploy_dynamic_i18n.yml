@@ -21,7 +21,7 @@ jobs:
       - name: Setup Deno
         uses: denoland/setup-deno@v1
         with:
-          deno-version: v1.46.2
+          deno-version: v2.8.1
       - name: Generate dynamic i18n
         run: make generatedynamici18n target=repo/dist/dynamic-i18n.json
       - name: commit
