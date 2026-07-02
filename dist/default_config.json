@@ -5396,17 +5396,7 @@
           "advanceConfig": {
             "defaultTranslationServicesOrder.remove": [
               "babelfast-pro"
-            ],
-            "defaultTranslationServicesOrder.add_v.[1.31.1]": [
-              "babelfast-pro"
-            ],
-            "translationServices": {
-              "babelfast-pro.add_v.[1.31.1]": {
-                "limit": 5,
-                "concurrencyLimit": 5,
-                "maxTextGroupLengthPerRequest": 10
-              }
-            }
+            ]
           }
         }
       ],
@@ -5473,17 +5463,7 @@
           "advanceConfig": {
             "defaultTranslationServicesOrder.remove": [
               "babelfast-pro"
-            ],
-            "defaultTranslationServicesOrder.add_v.[1.31.1]": [
-              "babelfast-pro"
-            ],
-            "translationServices": {
-              "babelfast-pro.add_v.[1.31.1]": {
-                "limit": 5,
-                "concurrencyLimit": 5,
-                "maxTextGroupLengthPerRequest": 10
-              }
-            }
+            ]
           }
         }
       ],
@@ -21711,6 +21691,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-01T12:26:41.000Z",
+  "buildinConfigUpdatedAt": "2026-07-02T03:26:14.719Z",
   "latestVersion": "1.31.1"
 }
