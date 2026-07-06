@@ -6219,8 +6219,7 @@
         "quickButtonRules": [
           {
             "appendSelector": "button[data-testid=\"captions\"]<-parent<-parent",
-            "insertBeforeSelector": "button[data-testid=\"captions\"]<-parent",
-            "injectCSS": ".imt-quick-subtitle-pop-content { transform: unset !important; } .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} "
+            "injectCSS": ".imt-quick-subtitle-pop-content { transform: translateX(17px) !important; } .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} "
           },
           {
             "appendSelector": "button[role=\"button\"]>div>svg<-parent<-parent<-parent<-parent",
@@ -21738,6 +21737,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-02T09:52:58.304Z",
-  "latestVersion": "1.31.1"
+  "buildinConfigUpdatedAt": "2026-07-06T02:43:55.290Z",
+  "latestVersion": "1.31.2"
 }
