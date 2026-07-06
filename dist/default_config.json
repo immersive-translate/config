@@ -18930,23 +18930,6 @@
       }
     },
     {
-      "id": "jcomic",
-      "matches": "jcomic.net",
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".container img"
-        ],
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
       "id": "sololevelingmangafree",
       "matches": "www.sololevelingmangafree.com",
       "imageRule.add": {
@@ -21751,6 +21734,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-06T04:10:13.707Z",
+  "buildinConfigUpdatedAt": "2026-07-06T11:26:41.002Z",
   "latestVersion": "1.31.2"
 }
