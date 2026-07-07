@@ -13780,7 +13780,8 @@
       "id": "manhwa-raw",
       "matches": [
         "manhwa-raw.com",
-        "ero18x.com"
+        "ero18x.com",
+        "mangaforfree.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -21735,6 +21736,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-07T14:06:33.984Z",
+  "buildinConfigUpdatedAt": "2026-07-07T14:53:23.178Z",
   "latestVersion": "1.31.2"
 }
