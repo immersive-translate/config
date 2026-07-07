@@ -12922,7 +12922,8 @@
         "magustoon.org",
         "manhwa18.net",
         "violetscans.org",
-        "www.publicdiplomacymagazine.com"
+        "www.publicdiplomacymagazine.com",
+        "raw1001.net"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13009,7 +13010,8 @@
           ".image-container img",
           ".m18-reading img[src*=jpg]",
           "#readerarea img.ts-main-image",
-          "img#fimg"
+          "img#fimg",
+          ".readImg img"
         ],
         "loadingStyle": "z-index: 999",
         "intersectionRootMargin": "0px 0px 200% 0px",
@@ -21736,6 +21738,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-07T14:53:23.178Z",
+  "buildinConfigUpdatedAt": "2026-07-07T15:51:00.507Z",
   "latestVersion": "1.31.2"
 }
