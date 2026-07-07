@@ -916,7 +916,6 @@
     "deepl-pro",
     "zhipu-pro",
     "qwen-pro",
-    "hunyuan-pro",
     "openai-max",
     "claude-max",
     "gemini-max",
@@ -3181,20 +3180,22 @@
       "model": "hunyuan-2.0-instruct-20251111",
       "proModel": "hunyuan-2.0-instruct-20251111",
       "concurrencyLimit": 20,
-      "visible": true,
+      "visible": false,
       "limit": 10,
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequestForSubtitle": 4,
       "enableFallback": true,
-      "disabledAt": "2026-01-01",
+      "disabledAt": "2026-07-07",
+      "migrateToService": "babelfast-pro",
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
       ]
     },
     "hunyuan-pro.add_v.[1.25.3]": {
-      "disabledAt": ""
+      "disabledAt": "2026-07-07",
+      "migrateToService": "babelfast-pro"
     },
     "gemini-pro": {
       "name": "Gemini 3 Flash",
@@ -21734,6 +21735,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-06T11:26:41.002Z",
+  "buildinConfigUpdatedAt": "2026-07-07T08:04:43.956Z",
   "latestVersion": "1.31.2"
 }
