@@ -15042,7 +15042,7 @@
       "subtitleRule.add": {
         "type": "webvtt",
         "enableHookDownload": true,
-        "subtitleUrlRegExp": "\\.vtt$",
+        "subtitleUrlRegExp": "\\.vtt",
         "injectedCss": [
           "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container {max-height: 60px}"
         ],
@@ -21735,6 +21735,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-07T08:04:43.956Z",
+  "buildinConfigUpdatedAt": "2026-07-07T14:06:33.984Z",
   "latestVersion": "1.31.2"
 }
