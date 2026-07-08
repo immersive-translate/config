@@ -16851,8 +16851,10 @@
       },
       "subtitleRule.add_v.[1.19.4]": {
         "type": "edx",
+        "showQuickButton": true,
+        "multipleVideoContainerSelector": ".video[data-metadata]",
         "attachRule": {
-          "appendSelector": ".video-player",
+          "appendSelector": ".tc-wrapper .video-player",
           "injectedCSS": [
             ".imt-caption-container {z-index:9;}",
             ".imt-caption-window {width: 90%;}"
@@ -21738,6 +21740,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-07T15:51:00.507Z",
-  "latestVersion": "1.31.2"
+  "buildinConfigUpdatedAt": "2026-07-08T02:24:38.962Z",
+  "latestVersion": "1.31.3"
 }
