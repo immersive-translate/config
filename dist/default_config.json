@@ -19411,7 +19411,8 @@
           "div[class*='scrollViewCut'] img",
           "div[class*='scrollViewCut'] canvas[data]",
           "div[data-cut-index] img",
-          "div[data-cut-index] canvas[data]"
+          "div[data-cut-index] canvas[data]",
+          ".scroll-view > div >  img"
         ],
         "platforms": [
           "chrome",
@@ -21741,6 +21742,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-09T03:41:44.056Z",
+  "buildinConfigUpdatedAt": "2026-07-09T09:07:53.505Z",
   "latestVersion": "1.31.3"
 }
