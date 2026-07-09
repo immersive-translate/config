@@ -7163,7 +7163,8 @@
         "immersive-translate-text"
       ],
       "injectedCss.add": [
-        "._4ik4._4ik5 {max-height:unset!important;}"
+        "._4ik4._4ik5 {max-height:unset!important;}",
+        ".native-text.rslh {line-height:unset!important;}"
       ],
       "skipTrailTextRegex": "…",
       "detectParagraphLanguage": true,
@@ -21740,6 +21741,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-08T02:23:42.000Z",
+  "buildinConfigUpdatedAt": "2026-07-09T03:41:44.056Z",
   "latestVersion": "1.31.3"
 }
