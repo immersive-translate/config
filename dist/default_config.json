@@ -13014,7 +13014,7 @@
           "img#fimg",
           ".readImg img"
         ],
-        "loadingStyle": "z-index: 999",
+        "loadingStyle": "z-index: 999; top: 10%;",
         "intersectionRootMargin": "0px 0px 200% 0px",
         "inValidSrcRegex": [
           "loading.gif",
@@ -21742,6 +21742,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-09T09:07:53.505Z",
+  "buildinConfigUpdatedAt": "2026-07-09T09:15:57.828Z",
   "latestVersion": "1.31.3"
 }
