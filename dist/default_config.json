@@ -5884,6 +5884,7 @@
           "[class^='LazyImage__ImageWrapper'] img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12060,6 +12061,7 @@
           ".wt_viewer img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12106,6 +12108,7 @@
           "loading.svg"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12188,6 +12191,7 @@
         ],
         "enableImageSrcObserver": true,
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12250,6 +12254,7 @@
         ],
         "enableImageSrcObserver": true,
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "safari",
@@ -12285,6 +12290,7 @@
           "div"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12353,6 +12359,7 @@
           "picture"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12381,6 +12388,7 @@
           ".container-reader-chapter img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12445,6 +12453,7 @@
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12497,6 +12506,7 @@
           "div[id^=page] img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12545,6 +12555,7 @@
         "injectedCss": ".imt-image-status {top:10%!important;}",
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12605,6 +12616,7 @@
         "injectedCss": ".imt-image-status {top:10%!important;}",
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12629,6 +12641,7 @@
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12651,6 +12664,7 @@
           "div"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12669,6 +12683,7 @@
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "imtIOSNew",
           "imtAndroid",
@@ -12687,6 +12702,7 @@
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "safari",
           "imtAndroid",
@@ -12713,6 +12729,7 @@
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12764,6 +12781,7 @@
         ],
         "loadingStyle": "z-index: 9999;",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12820,6 +12838,7 @@
           ".-cv-page-canvas canvas[data]"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -12924,7 +12943,13 @@
         "manhwa18.net",
         "violetscans.org",
         "www.publicdiplomacymagazine.com",
-        "raw1001.net"
+        "raw1001.net",
+        "mkissa.to",
+        "syosetu.si",
+        "www.iqiyi.com/manhua/*",
+        "mangarawjp.me",
+        "cartoonporn.to",
+        "e621.net"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13012,7 +13037,13 @@
           ".m18-reading img[src*=jpg]",
           "#readerarea img.ts-main-image",
           "img#fimg",
-          ".readImg img"
+          ".readImg img",
+          "img.reader-page__img",
+          ".render img",
+          ".main-container img",
+          ".MainContainer .ng-scope img",
+          ".images-list img",
+          "img#image"
         ],
         "loadingStyle": "z-index: 999; top: 10%;",
         "intersectionRootMargin": "0px 0px 200% 0px",
@@ -13024,6 +13055,7 @@
           "readerarea.svg"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13086,6 +13118,7 @@
         "injectedCss": ".imt-image-status {z-index:2147483647 !important;}",
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13109,6 +13142,7 @@
         "injectedCss": ".imt-image-status {top:5%!important;}",
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13126,6 +13160,7 @@
           "#readerarea img[loading='lazy'][alt*=' - PAGE ']"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13148,6 +13183,7 @@
         "injectedCss": "#immersiveTranslateImgLoading { z-index:999 !important; }",
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13188,6 +13224,7 @@
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13210,6 +13247,7 @@
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13229,6 +13267,7 @@
           ".page_image img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox"
         ]
@@ -13322,6 +13361,7 @@
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13378,6 +13418,7 @@
           "loading-image.gif"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13398,6 +13439,7 @@
           "#content img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13422,6 +13464,7 @@
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13465,6 +13508,7 @@
         ],
         "urlFetchType": "img",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13585,6 +13629,7 @@
         ],
         "loadingStyle": "z-index: 9999;",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13687,6 +13732,7 @@
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13709,6 +13755,7 @@
         "opImageType": "append",
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13750,6 +13797,7 @@
           ".overflow-auto.select-none > img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13771,6 +13819,7 @@
         ],
         "injectedCss": ".imt-image-status {top:10%!important;}",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13798,6 +13847,7 @@
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13821,6 +13871,7 @@
           "data:image/gif"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "safari",
@@ -13853,6 +13904,7 @@
         "injectedCss": ".imt-image-status {top:5%!important;}",
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13879,6 +13931,7 @@
         ],
         "injectedCss": ".imt-image-status {top:5%!important;}",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -13908,6 +13961,7 @@
           ".manga-page img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtAndroid",
@@ -13955,6 +14009,7 @@
           "loading-image.gif"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox"
         ],
@@ -14079,6 +14134,7 @@
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
+          "other",
           "chrome",
           "imtIOSNew",
           "imtAndroid",
@@ -14135,6 +14191,7 @@
         ],
         "injectedCss": ".imt-image-status {top:5%!important;}",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14156,6 +14213,7 @@
         ],
         "injectedCss": ".imt-image-status {top:5%!important;}",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14178,6 +14236,7 @@
           ".IllustItemThumb"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14204,6 +14263,7 @@
         ],
         "injectedCss": ".imt-image-status {z-index:999 !important;}",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14225,6 +14285,7 @@
         ],
         "injectedCss": ".imt-loading {z-index:999 !important;}",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14244,6 +14305,7 @@
           ".imageChap img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14263,6 +14325,7 @@
           ".ng-scope img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14284,6 +14347,7 @@
           "div > img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14306,6 +14370,7 @@
         ],
         "injectedCss": ".imt-image-status {top:10%!important;}",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14327,6 +14392,7 @@
           ".fw_img img#fimg:first-of-type"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14348,6 +14414,7 @@
           "#xCVPages canvas[data]"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14369,6 +14436,7 @@
           ".image-container canvas[data]"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14391,6 +14459,7 @@
           ".-cv-page-content canvas[data]"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14412,6 +14481,7 @@
           "img.vw-image"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14432,6 +14502,7 @@
           "canvas.page-image"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14456,6 +14527,7 @@
         ],
         "loadingStyle": "z-index: 9999;",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14475,6 +14547,7 @@
           "#comic-content-wrapper img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14496,6 +14569,7 @@
         ],
         "loadingStyle": "z-index: 9999;",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14540,6 +14614,7 @@
           ".svg"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14585,6 +14660,7 @@
         ],
         "enableImageSrcObserver": true,
         "platforms": [
+          "other",
           "chrome",
           "safari",
           "imtAndroid",
@@ -14690,6 +14766,7 @@
           "div#tnimg img.lazyload-img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14709,6 +14786,7 @@
           "div#chapter-content img[data-src]"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14729,6 +14807,7 @@
         ],
         "loadingStyle": "z-index: 9999;",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14750,6 +14829,7 @@
         ],
         "loadingStyle": "z-index: 9999;",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -14773,6 +14853,7 @@
           ".image-container img[loading='lazy']"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -18689,6 +18770,7 @@
           ".svg"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -18709,6 +18791,7 @@
           "#image-container img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -18740,6 +18823,7 @@
         ],
         "injectedCss": "#immersiveTranslateImgLoading { z-index:999 !important; }",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -18758,6 +18842,7 @@
           "div.page-break > img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -18775,6 +18860,7 @@
           "img[id*='row']"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -18818,6 +18904,7 @@
           "imagecover3.jpg"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -18841,6 +18928,7 @@
         ],
         "injectedCss": ".imt-image-status {top:5%!important;}",
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -18861,6 +18949,7 @@
           ".entry-content img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -18878,6 +18967,7 @@
           ".more-box img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -18895,6 +18985,7 @@
           ".images-chapter img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -18912,6 +19003,7 @@
           ".more-box img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -18929,6 +19021,7 @@
           ".read-container p img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -18946,6 +19039,7 @@
           ".entry-inner p img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -18965,6 +19059,7 @@
           "#default-tab-thumbnail img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19050,6 +19145,7 @@
       "imageRule.add": {
         "enable": true,
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19071,6 +19167,7 @@
       "imageRule.add": {
         "enable": true,
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19086,98 +19183,12 @@
       }
     },
     {
-      "id": "syosetu",
-      "matches": "syosetu.si",
-      "imageRule.add": {
-        "enable": true,
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ],
-        "type": "manga",
-        "imageSelectors": [
-          ".render img"
-        ],
-        "inValidSrcRegex": [
-          "load.gif"
-        ]
-      }
-    },
-    {
-      "id": "iqiyi-manga",
-      "matches": "www.iqiyi.com/manhua/*",
-      "imageRule.add": {
-        "enable": true,
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ],
-        "type": "manga",
-        "imageSelectors": [
-          ".main-container img"
-        ]
-      }
-    },
-    {
-      "id": "mangarawjp",
-      "matches": "mangarawjp.me",
-      "imageRule.add": {
-        "enable": true,
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ],
-        "type": "manga",
-        "imageSelectors": [
-          ".MainContainer .ng-scope img"
-        ]
-      }
-    },
-    {
-      "id": "cartoonporn",
-      "matches": "cartoonporn.to",
-      "imageRule.add": {
-        "enable": true,
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ],
-        "type": "manga",
-        "imageSelectors": [
-          ".images-list img"
-        ]
-      }
-    },
-    {
-      "id": "e621",
-      "matches": "e621.net",
-      "imageRule.add": {
-        "enable": true,
-        "platforms": [
-          "chrome",
-          "firefox",
-          "imtIOSNew"
-        ],
-        "type": "manga",
-        "imageSelectors": [
-          "img#image"
-        ]
-      }
-    },
-    {
       "id": "comic.pixiv.net",
       "matches": "comic.pixiv.net",
       "imageRule.add": {
         "enable": true,
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "safari",
@@ -19196,6 +19207,7 @@
       "imageRule.add": {
         "enable": true,
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "safari",
@@ -19217,6 +19229,7 @@
       "imageRule.add": {
         "enable": true,
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19235,6 +19248,7 @@
       "imageRule.add": {
         "enable": true,
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19259,6 +19273,7 @@
         ],
         "enableImageSrcObserver": true,
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19279,6 +19294,7 @@
           "#post-hentai img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19304,6 +19320,7 @@
           "blank.jpg"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19323,6 +19340,7 @@
           "img.aligncenter"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19342,6 +19360,7 @@
           "#chapter_imgs img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19364,6 +19383,7 @@
           "/static/loading.gif"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19388,6 +19408,7 @@
           "bg_transparency.png"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19415,6 +19436,7 @@
           ".scroll-view > div >  img"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19433,6 +19455,7 @@
           "#__next .printView div[width][height] > img[alt='image']"
         ],
         "platforms": [
+          "other",
           "chrome",
           "imtIOSNew",
           "imtAndroid",
@@ -19456,6 +19479,7 @@
           "data:image/svg"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19552,6 +19576,7 @@
           "img.lazy-read"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -19573,6 +19598,7 @@
           "img.lazy-read"
         ],
         "platforms": [
+          "other",
           "chrome",
           "firefox",
           "imtIOSNew",
@@ -21742,6 +21768,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-09T09:15:57.828Z",
+  "buildinConfigUpdatedAt": "2026-07-10T13:00:25.804Z",
   "latestVersion": "1.31.3"
 }
