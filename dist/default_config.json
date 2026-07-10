@@ -15701,6 +15701,9 @@
     {
       "id": "anthropic-course",
       "matches": "anthropic.skilljar.com",
+      "injectedCss.add": [
+        ".lesson-modular {height:unset;}"
+      ],
       "subtitleRule.add": {
         "type": "multi_attach_vtt",
         "subtitleUrlRegExp": ".*\\.srt",
@@ -21768,6 +21771,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-10T13:00:25.804Z",
+  "buildinConfigUpdatedAt": "2026-07-10T16:25:20.965Z",
   "latestVersion": "1.31.3"
 }
