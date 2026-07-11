@@ -12818,7 +12818,9 @@
         "jmcomic-zzz.one",
         "comix.to",
         "pocket.shonenmagazine.com",
-        "youngchampion.jp"
+        "youngchampion.jp",
+        "manga-one.com",
+        "book.dmm.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -12835,8 +12837,11 @@
           ".rpage-main__inner img",
           ".rpage-page__img[data]",
           ".c-viewer__comic canvas[data]",
-          ".-cv-page-canvas canvas[data]"
+          ".-cv-page-canvas canvas[data]",
+          "[class*='slide_container'] img",
+          ".page canvas[data]"
         ],
+        "injectedCss": "canvas.imt-img {display: block!important;}",
         "platforms": [
           "other",
           "chrome",
@@ -12949,7 +12954,9 @@
         "www.iqiyi.com/manhua/*",
         "mangarawjp.me",
         "cartoonporn.to",
-        "e621.net"
+        "e621.net",
+        "tapas.io",
+        "kagane.to"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13043,7 +13050,9 @@
           ".main-container img",
           ".MainContainer .ng-scope img",
           ".images-list img",
-          "img#image"
+          "img#image",
+          "img.content__img",
+          ".blob-image-page img"
         ],
         "loadingStyle": "z-index: 999; top: 10%;",
         "intersectionRootMargin": "0px 0px 200% 0px",
@@ -13052,7 +13061,8 @@
           "load.gif",
           "preloader.gif",
           "ajax-loader.gif",
-          "readerarea.svg"
+          "readerarea.svg",
+          "image/gif"
         ],
         "platforms": [
           "other",
@@ -21771,6 +21781,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-10T16:25:20.965Z",
+  "buildinConfigUpdatedAt": "2026-07-11T13:37:11.454Z",
   "latestVersion": "1.31.3"
 }
