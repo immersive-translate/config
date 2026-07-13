@@ -9484,13 +9484,12 @@
     {
       "id": "huggingface",
       "matches": "huggingface.co",
-      "globalStyles": {
-        ".line-clamp-2": "-webkit-line-clamp:unset;max-height:unset;"
-      },
+      "injectedCss.add": [
+        ".line-clamp-2,h2 {-webkit-line-clamp:unset;max-height:unset;}"
+      ],
       "excludeSelectors.add": [
         "thead",
         "ul.text-base",
-        "a.group > div.flex-1",
         "div.absolute.truncate",
         "nav",
         "ul[class*='dark:border-gray-800']",
@@ -17170,7 +17169,8 @@
       ],
       "subtitleRule.add": {
         "type": "disneyplus",
-        "subtitleUrlRegExp": "\\.vtt"
+        "subtitleUrlRegExp": "\\.vtt",
+        "enableHookDownload": true
       }
     },
     {
@@ -21781,6 +21781,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-11T13:37:11.454Z",
+  "buildinConfigUpdatedAt": "2026-07-13T01:11:42.007Z",
   "latestVersion": "1.31.3"
 }
