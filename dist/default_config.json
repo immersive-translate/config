@@ -16727,7 +16727,7 @@
           "injectCSS": ".imt-quick-subtitle-button {margin: 0 6px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}"
         },
         "attachRule": {
-          "appendSelector": "#player",
+          "appendSelector": "#player,.vp-video",
           "injectedGlobalCSS": [
             ".vp-captions { display: none !important; }"
           ]
@@ -21781,6 +21781,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-13T01:11:42.007Z",
+  "buildinConfigUpdatedAt": "2026-07-13T06:17:20.937Z",
   "latestVersion": "1.31.3"
 }
