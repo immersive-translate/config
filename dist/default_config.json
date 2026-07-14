@@ -717,7 +717,8 @@
     "https://master.dev[Master.dev]",
     "https://whop.com[Whop.com]",
     "https://lennysnewsletter.com[Lennysnewsletter.com]",
-    "https://dramawave.chartdrama.com[Dramawave]"
+    "https://dramawave.chartdrama.com[Dramawave]",
+    "https://start.dev[StartDev]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -16755,6 +16756,24 @@
       }
     },
     {
+      "id": "start-dev",
+      "matches": [
+        "start.dev"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track_dynamic",
+        "videoPlayerSelector": "mux-player -> mux-video -> video",
+        "loadingContainerSelector": "mux-player",
+        "quickButtonRule": {
+          "appendSelector": "mux-player -> media-theme -> media-control-bar[part='control-bar bottom']",
+          "insertBeforeSelector": "mux-player -> media-theme -> media-control-bar[part='control-bar bottom'] media-captions-menu-button",
+          "injectCSS": ".logo,.logo svg { height: 18px !important; width: 18px !important;}"
+        },
+        "enableIOSFullScreenTextTrack": false,
+        "enableHookDownload": true
+      }
+    },
+    {
       "id": "tv.adobe",
       "matches": "https://*.tv.adobe.com",
       "excludeSelectors.add": [
@@ -21781,6 +21800,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-14T05:48:44.370Z",
+  "buildinConfigUpdatedAt": "2026-07-14T10:42:07.985Z",
   "latestVersion": "1.31.3"
 }
