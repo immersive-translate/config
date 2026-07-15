@@ -7810,10 +7810,7 @@
       "injectedCss.add": "article ._aagw {position:unset !important;}",
       "immediatelyInjectedCss": [
         "article ._aagw {position:unset !important;}"
-      ],
-      "imageRule.add": {
-        "enableParentTriggerTools": true
-      }
+      ]
     },
     {
       "id": "otherInstagram",
@@ -7838,9 +7835,6 @@
       "immediatelyInjectedCss": [
         "article ._aagw {position:unset !important;}"
       ],
-      "imageRule.add": {
-        "enableParentTriggerTools": true
-      },
       "preTranslateLimiter.add_v.[1.12.1]": {
         "header.selectors": []
       }
@@ -14098,7 +14092,6 @@
         "enable": true,
         "type": "manga",
         "opImageType": "append",
-        "enableParentTriggerTools": true,
         "imageSelectors": [
           "[class*='viewer_wrapper'] img",
           "[class*='InternalViewer_viewer'] img",
@@ -21800,6 +21793,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-14T10:42:07.985Z",
+  "buildinConfigUpdatedAt": "2026-07-15T07:05:22.737Z",
   "latestVersion": "1.31.3"
 }
