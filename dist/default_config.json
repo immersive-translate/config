@@ -21203,7 +21203,8 @@
       "matches": [
         "academy.dair.ai",
         "cloudnestra.com",
-        "maven.com"
+        "maven.com",
+        "www.sbs.com.au"
       ],
       "subtitleRule.add": {
         "type": "subsrt",
@@ -21793,6 +21794,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-15T07:05:22.737Z",
+  "buildinConfigUpdatedAt": "2026-07-15T10:43:17.999Z",
   "latestVersion": "1.31.3"
 }
