@@ -718,7 +718,8 @@
     "https://whop.com[Whop.com]",
     "https://lennysnewsletter.com[Lennysnewsletter.com]",
     "https://dramawave.chartdrama.com[Dramawave]",
-    "https://start.dev[StartDev]"
+    "https://start.dev[StartDev]",
+    "https://learn.mit.edu/[LearnMIT]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -16928,7 +16929,8 @@
       "id": "edx",
       "matches": [
         "*.edx.org",
-        "courses.mitxonline.mit.edu"
+        "courses.mitxonline.mit.edu",
+        "courses.learn.mit.edu"
       ],
       "additionalExcludeSelectors.add": [
         ".closed-captions",
@@ -21794,6 +21796,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-15T10:43:17.999Z",
+  "buildinConfigUpdatedAt": "2026-07-16T06:34:56.379Z",
   "latestVersion": "1.31.3"
 }
