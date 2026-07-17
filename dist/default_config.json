@@ -7319,12 +7319,23 @@
           "injectCSS": ".logo,.logo svg { height: 20px !important; width: 20px !important;} .imt-quick-subtitle-pop-content {bottom: unset !important; top: 40px !important;}",
           "injectedGlobalCSS": ".player-controls-top.with-video-details { z-index: 10; }"
         },
+        "quickButtonRules": [
+          {
+            "appendSelector": ".mobile-topbar-header-content",
+            "insertBeforeSelector": ".icon-button",
+            "urlPattern": [
+              "m.youtube.com/shorts*"
+            ],
+            "retryCheckMs": 5000,
+            "retryIntervalMs": 250,
+            "injectCSS": ".imt-quick-subtitle-pop-content { top: 44px; bottom: unset; transform: translateX(40%); } "
+          }
+        ],
         "aiSubtitle": {
           "enable": true,
           "urlRegex": [
             "m.youtube.com/watch*",
             "m.youtube.com/embed*",
-            "m.youtube.com/shorts*",
             "m.youtube.com/live*"
           ],
           "maxDurationHours": 4
@@ -21829,6 +21840,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-17T07:49:33.000Z",
+  "buildinConfigUpdatedAt": "2026-07-17T08:26:09.474Z",
   "latestVersion": "1.31.4"
 }
