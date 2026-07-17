@@ -12951,7 +12951,8 @@
         "cartoonporn.to",
         "e621.net",
         "tapas.io",
-        "kagane.to"
+        "kagane.to",
+        "soraraw.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13047,7 +13048,8 @@
           ".images-list img",
           "img#image",
           "img.content__img",
-          ".blob-image-page img"
+          ".blob-image-page img",
+          ".swiper-horizontal-reader .swiper-slide img"
         ],
         "loadingStyle": "z-index: 999; top: 10%;",
         "intersectionRootMargin": "0px 0px 200% 0px",
@@ -21796,6 +21798,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-16T06:34:56.379Z",
+  "buildinConfigUpdatedAt": "2026-07-17T04:03:39.359Z",
   "latestVersion": "1.31.3"
 }
