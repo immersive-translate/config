@@ -13713,7 +13713,8 @@
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
-          "#page-wrapper img"
+          "#page-wrapper img",
+          ".reader__page img.reader-img"
         ],
         "inValidSrcRegex": [
           "data:,"
@@ -21798,6 +21799,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-17T04:03:39.359Z",
+  "buildinConfigUpdatedAt": "2026-07-17T06:32:22.219Z",
   "latestVersion": "1.31.3"
 }
