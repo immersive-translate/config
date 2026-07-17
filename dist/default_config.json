@@ -7367,6 +7367,16 @@
               }
             }
           }
+        },
+        {
+          "condition": "platform==imtAndroid || platform==imtIOSNew || platform==imtIOS",
+          "advanceConfig": {
+            "generalRule": {
+              "subtitleRule.add": {
+                "quickButtonRules": []
+              }
+            }
+          }
         }
       ]
     },
@@ -7543,6 +7553,16 @@
                   ],
                   "maxDurationHours": 4
                 }
+              }
+            }
+          }
+        },
+        {
+          "condition": "platform==imtAndroid || platform==imtIOSNew || platform==imtIOS",
+          "advanceConfig": {
+            "generalRule": {
+              "subtitleRule.add": {
+                "quickButtonRules": []
               }
             }
           }
@@ -21840,6 +21860,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-17T08:26:53.000Z",
+  "buildinConfigUpdatedAt": "2026-07-17T08:38:48.148Z",
   "latestVersion": "1.31.5"
 }
