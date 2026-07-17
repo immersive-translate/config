@@ -827,7 +827,12 @@
     "fixedPosition": "right",
     "upgradeVisible": true,
     "upgradeShowLimit": 20,
-    "transparency": 30
+    "transparency": 30,
+    "actionButtons": {
+      "favorite": true,
+      "settings": true,
+      "feedback": true
+    }
   },
   "pcFloatBall": {
     "enable": true,
@@ -867,7 +872,12 @@
     "afterInstalledAt": "2023-10-28",
     "fixedPosition": "right",
     "upgradeVisible": true,
-    "upgradeShowLimit": 20
+    "upgradeShowLimit": 20,
+    "actionButtons": {
+      "favorite": true,
+      "settings": true,
+      "feedback": true
+    }
   },
   "pcFloatBall.add_v.[1.30.3]": {
     "enableSidePanel": false,
@@ -4364,7 +4374,8 @@
     "mutationConfig": {
       "consumeTimeout": 100,
       "buildTimeout": 100,
-      "checkSelfUpdate": true
+      "checkSelfUpdate": true,
+      "enableObserver": true
     },
     "imageRule": {
       "enableFreeCredit": true,
@@ -4389,6 +4400,8 @@
       "hoverMinHeight": 100,
       "toolsMinWidth": 280,
       "toolsMinHeight": 280,
+      "mangaTargetWaitMs": 3000,
+      "mangaNotFoundDialogCooldownMs": 5000,
       "concurrency": 2,
       "queryIntervalTime": 1000,
       "errorTimes": 1,
@@ -5644,7 +5657,8 @@
       ],
       "mutationConfig.add": {
         "buildTimeout": 1000,
-        "consumeTimeout": 1000
+        "consumeTimeout": 1000,
+        "enableObserver": false
       },
       "excludeSelectorsRegexes": {
         "[class='inline-tabular'] > table > tbody > tr > td": [
@@ -7514,8 +7528,7 @@
                   "urlRegex": [
                     "www.youtube.com/live*",
                     "www.youtube.com/watch*",
-                    "www.youtube.com/embed*",
-                    "www.youtube.com/shorts*"
+                    "www.youtube.com/embed*"
                   ],
                   "maxDurationHours": 4
                 }
@@ -7561,6 +7574,18 @@
           "insertBeforeSelector": ".ytp-right-controls-left",
           "injectedGlobalCSS": ".ytp-chrome-controls {position: relative; z-index: 70;}"
         },
+        "quickButtonRules": [
+          {
+            "appendSelector": "#right-controls",
+            "insertBeforeSelector": "#right-controls > div",
+            "urlPattern": [
+              "www.youtube.com/shorts*"
+            ],
+            "retryCheckMs": 5000,
+            "retryIntervalMs": 250,
+            "injectCSS": ".imt-quick-subtitle-pop-content { top: 44px; bottom: unset; transform: translateX(40%); } "
+          }
+        ],
         "videoSelector": ".html5-video-player.playing-mode video,.html5-video-player.paused-mode video",
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
@@ -12950,6 +12975,7 @@
         "mangarawjp.me",
         "cartoonporn.to",
         "e621.net",
+        "jcomic.net",
         "tapas.io",
         "kagane.to",
         "soraraw.com"
@@ -13047,9 +13073,13 @@
           ".MainContainer .ng-scope img",
           ".images-list img",
           "img#image",
+          "img.comic-thumb",
           "img.content__img",
           ".blob-image-page img",
           ".swiper-horizontal-reader .swiper-slide img"
+        ],
+        "credentialUrlMatches": [
+          "https://images.jcomic.net/*"
         ],
         "loadingStyle": "z-index: 999; top: 10%;",
         "intersectionRootMargin": "0px 0px 200% 0px",
@@ -21799,6 +21829,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-17T06:32:22.219Z",
-  "latestVersion": "1.31.3"
+  "buildinConfigUpdatedAt": "2026-07-17T07:42:51.645Z",
+  "latestVersion": "1.31.4"
 }
