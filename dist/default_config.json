@@ -6536,9 +6536,11 @@
       ],
       "excludeSelectors.add": [
         ".x6s0dn4.x40hh3e.xrvj5dj.xxfwaov",
-        ".x6s0dn4.x78zum5",
         ".xpvyfi4.x1xdureb.x1agbcgv,.xqcrz7y.x1xdureb.x1agbcgv",
-        ".xpvyfi4.x1npkx4u.x1ms6mhf"
+        ".xpvyfi4.x1npkx4u.x1ms6mhf",
+        ".x6s0dn4.x78zum5.xl56j7k.xezivpi",
+        ".x6s0dn4.xfex06f.x78zum5.xl56j7k",
+        ".x78zum5.xdt5ytf.x1iyjqo2.xl56j7k.x1r0jzty"
       ],
       "globalStyles": {
         "span,.x569fbc": "max-height:unset;-webkit-line-clamp:unset;height:unset;white-space:unset;"
@@ -21860,6 +21862,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-17T08:38:48.148Z",
+  "buildinConfigUpdatedAt": "2026-07-18T14:18:07.889Z",
   "latestVersion": "1.31.5"
 }
