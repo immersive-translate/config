@@ -1478,6 +1478,7 @@
     ]
   },
   "blockUrls": [
+    "https://hci.joywise.net/",
     "https://dash.immersivetranslate.*/auth-done/",
     "http://localhost:8000/dist/userscript/options/",
     "http://localhost:8000/auth-done/",
@@ -6040,6 +6041,7 @@
         "[class='css-175oi2r r-kemksi r-1kqtdi0 r-1q9bdsx r-1phboty r-rs99b7 r-1udh08x r-13qz1uu']",
         "[class='css-175oi2r r-uef6q5 r-dnmrzs r-97e31f r-13qz1uu r-13awgt0 r-dgnwoc r-1me0s30 r-t3sqpr r-1dqxon3']",
         "[class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0']",
+        "[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3']",
         "[data-testid='inlinePrompt']",
         "span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-n6v787 r-1cwl3u0']",
         "[data-testid=primaryColumn] [class='css-175oi2r r-kzbkwu r-3pj75a'] > div > span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3']",
@@ -21862,6 +21864,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-18T14:18:07.889Z",
+  "buildinConfigUpdatedAt": "2026-07-20T03:43:33.246Z",
   "latestVersion": "1.31.5"
 }
