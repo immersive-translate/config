@@ -573,7 +573,8 @@
     "https://mangalib.org/[mangalib][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://novelcrow.com/[novelcrow][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://cn.twbzmg.com/[cn.twbzmg.com][chrome,firefox,safari,imtAndroid,imtIOSNew]",
-    "https://nyxscans.com[Nyx Scans]"
+    "https://nyxscans.com[Nyx Scans]",
+    "https://qimanga.com[Qi Manga]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -13017,7 +13018,8 @@
         "jcomic.net",
         "tapas.io",
         "kagane.to",
-        "soraraw.com"
+        "soraraw.com",
+        "qimanga.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13115,7 +13117,8 @@
           "img.comic-thumb",
           "img.content__img",
           ".blob-image-page img",
-          ".swiper-horizontal-reader .swiper-slide img"
+          ".swiper-horizontal-reader .swiper-slide img",
+          ".r-page img"
         ],
         "credentialUrlMatches": [
           "https://images.jcomic.net/*"
@@ -21874,6 +21877,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-20T07:15:22.847Z",
+  "buildinConfigUpdatedAt": "2026-07-20T08:29:44.424Z",
   "latestVersion": "1.31.5"
 }
