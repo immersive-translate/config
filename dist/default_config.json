@@ -1620,6 +1620,8 @@
       "defaultVisible": true,
       "requestTimeout": 15000,
       "retry": 1,
+      "limit": 5,
+      "concurrencyLimit": 50,
       "placeholderDelimiters": [
         "{",
         "}"
@@ -1627,6 +1629,22 @@
       "maxTextGroupLengthPerRequest": 50,
       "enableRichTranslate": true,
       "enableBrowserApi": true
+    },
+    "bing": {
+      "defaultVisible": true,
+      "maxTextLengthPerRequest": 1800,
+      "requestTimeout": 10000,
+      "limit": 5,
+      "concurrencyLimit": 50,
+      "retry": 1,
+      "placeholderDelimiters": [
+        "<code>",
+        "</code>",
+        "b"
+      ],
+      "enableRichTranslate": true,
+      "enableRichGlossaries": false,
+      "richTag": "c"
     },
     "transmart": {
       "limit": 20,
@@ -1746,20 +1764,6 @@
         "{",
         "}"
       ]
-    },
-    "bing": {
-      "defaultVisible": true,
-      "maxTextLengthPerRequest": 1800,
-      "requestTimeout": 10000,
-      "retry": 1,
-      "placeholderDelimiters": [
-        "<code>",
-        "</code>",
-        "b"
-      ],
-      "enableRichTranslate": true,
-      "enableRichGlossaries": false,
-      "richTag": "c"
     },
     "yandex": {
       "defaultVisible": true,
@@ -20074,7 +20078,13 @@
       "id": "taobao",
       "matches": "*.taobao.com",
       "excludeSelectors.add": [
-        ".text-price"
+        ".text-price",
+        ".ww_conversation_list",
+        ".good-entershop",
+        ".site-nav-bd-l"
+      ],
+      "excludeTags.remove": [
+        "PRE"
       ]
     },
     {
@@ -21864,6 +21874,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-20T03:43:33.246Z",
+  "buildinConfigUpdatedAt": "2026-07-20T07:15:22.847Z",
   "latestVersion": "1.31.5"
 }
