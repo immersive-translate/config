@@ -13021,7 +13021,8 @@
         "tapas.io",
         "kagane.to",
         "soraraw.com",
-        "qimanga.com"
+        "qimanga.com",
+        "gomuraw.biz"
       ],
       "imageRule.add": {
         "enable": true,
@@ -21900,6 +21901,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-21T11:04:37.566Z",
+  "buildinConfigUpdatedAt": "2026-07-21T11:07:44.662Z",
   "latestVersion": "1.31.5"
 }
