@@ -14225,7 +14225,8 @@
     {
       "id": "kuaikanmanhua",
       "matches": [
-        "*.kuaikanmanhua_notranslate.com"
+        "*.kuaikanmanhua_notranslate.com",
+        "www.kuaikanmanhua.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -21878,6 +21879,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-21T03:28:55.734Z",
+  "buildinConfigUpdatedAt": "2026-07-21T08:50:24.696Z",
   "latestVersion": "1.31.5"
 }
