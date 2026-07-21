@@ -574,7 +574,8 @@
     "https://novelcrow.com/[novelcrow][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://cn.twbzmg.com/[cn.twbzmg.com][chrome,firefox,safari,imtAndroid,imtIOSNew]",
     "https://nyxscans.com[Nyx Scans]",
-    "https://qimanga.com[Qi Manga]"
+    "https://qimanga.com[Qi Manga]",
+    "https://mgread.io[MG Read]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -14856,6 +14857,26 @@
       }
     },
     {
+      "id": "mgread.io",
+      "matches": [
+        "mgread.io"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "div#chapter-content img"
+        ],
+        "platforms": [
+          "other",
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "manhwa18.com",
       "matches": [
         "manhwa18.com"
@@ -21879,6 +21900,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-21T08:50:24.696Z",
+  "buildinConfigUpdatedAt": "2026-07-21T11:04:37.566Z",
   "latestVersion": "1.31.5"
 }
