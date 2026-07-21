@@ -11715,7 +11715,13 @@
       ],
       "subtitleRule.add": {
         "type": "netflix",
+        "supportedDisplayModes": [
+          "attach",
+          "native"
+        ],
+        "defaultDisplayMode": "attach",
         "loadingContainerSelector": ".watch-video",
+        "hookType": "fetch|xhr",
         "subtitleUrlRegExp": "^https://.+?.oca.nflxvideo.net/\\?([ovet]=[^=]+){4}$",
         "loadingStyle": "bottom: 15%;",
         "quickButtonRule": {
@@ -19598,7 +19604,8 @@
         "imageSelectors": [
           "div[role='region'] img[data-index]",
           "#viewer img[data-index]",
-          ".event_detail_top img"
+          ".event_detail_top img",
+          "img.wv-sio22q"
         ],
         "opImageType": "append",
         "inValidSrcRegex": [
@@ -21901,6 +21908,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-21T11:07:44.662Z",
-  "latestVersion": "1.31.5"
+  "buildinConfigUpdatedAt": "2026-07-21T11:13:44.153Z",
+  "latestVersion": "1.31.6"
 }
