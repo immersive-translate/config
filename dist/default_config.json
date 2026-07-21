@@ -12118,7 +12118,8 @@
         "type": "manga",
         "imageSelectors": [
           ".toon_view_lst img",
-          ".wt_viewer img"
+          ".wt_viewer img",
+          ".swiper-slide img"
         ],
         "platforms": [
           "other",
@@ -21877,6 +21878,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-20T08:29:44.424Z",
+  "buildinConfigUpdatedAt": "2026-07-21T03:28:55.734Z",
   "latestVersion": "1.31.5"
 }
