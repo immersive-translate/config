@@ -14523,7 +14523,8 @@
         "type": "manga",
         "opImageType": "insertFirst",
         "imageSelectors": [
-          ".image-container canvas[data]"
+          ".image-container canvas[data]",
+          "canvas#aniber-reader.aniber-reader-stage"
         ],
         "platforms": [
           "other",
@@ -21909,6 +21910,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-22T06:41:13.362Z",
+  "buildinConfigUpdatedAt": "2026-07-22T08:44:29.930Z",
   "latestVersion": "1.31.6"
 }
