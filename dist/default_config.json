@@ -1162,6 +1162,11 @@
     {
       "condition": "isPro==true",
       "advanceConfig": {
+        "generalRule": {
+          "subtitleRule.add": {
+            "defaultLiveSubtitleTranslateService": "babelfast-pro"
+          }
+        },
         "translationServices.add": {
           "deepl.add_v.[1.21.7]": {
             "provider": "pro"
@@ -21910,6 +21915,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-22T08:44:29.930Z",
-  "latestVersion": "1.31.6"
+  "buildinConfigUpdatedAt": "2026-07-22T12:14:48.883Z",
+  "latestVersion": "1.31.7"
 }
