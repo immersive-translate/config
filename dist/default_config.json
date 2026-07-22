@@ -8222,7 +8222,7 @@
       "wrapperSuffix": "",
       "paragraphMinTextCount": 4,
       "paragraphMinWordCount": 2,
-      "enableInputDeepActive": true,
+      "enableInputDeepActive": false,
       "advanceMergeConfig": [
         {
           "condition": "true",
@@ -21909,6 +21909,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-22T06:11:36.454Z",
+  "buildinConfigUpdatedAt": "2026-07-22T06:41:13.362Z",
   "latestVersion": "1.31.6"
 }
