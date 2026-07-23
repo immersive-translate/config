@@ -13034,7 +13034,8 @@
         "kagane.to",
         "soraraw.com",
         "qimanga.com",
-        "gomuraw.biz"
+        "gomuraw.biz",
+        "atsu.moe"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13133,7 +13134,8 @@
           "img.content__img",
           ".blob-image-page img",
           ".swiper-horizontal-reader .swiper-slide img",
-          ".r-page img"
+          ".r-page img",
+          "data-reader-page img"
         ],
         "credentialUrlMatches": [
           "https://images.jcomic.net/*"
@@ -21915,6 +21917,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-22T12:14:01.000Z",
+  "buildinConfigUpdatedAt": "2026-07-23T06:46:04.162Z",
   "latestVersion": "1.31.7"
 }
