@@ -4949,7 +4949,8 @@
       ],
       "side.enableTranslate": true,
       "header.selectors": [
-        "header"
+        "header",
+        ".main-navbar"
       ],
       "header.enableTranslate": false
     },
@@ -21917,6 +21918,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-23T06:46:04.162Z",
+  "buildinConfigUpdatedAt": "2026-07-23T10:22:31.492Z",
   "latestVersion": "1.31.7"
 }
