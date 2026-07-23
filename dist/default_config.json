@@ -21813,10 +21813,12 @@
       "matches": [
         "societyforpsychotherapy.org",
         "cbtm.manifestlao.com",
-        "notefolio.net"
+        "notefolio.net",
+        "finance.sina.*"
       ],
       "injectedCss.add": [
-        "[class*='line-clamp-'] {-webkit-line-clamp: unset!important; max-height: unset!important;}"
+        "[class*='line-clamp-'] {-webkit-line-clamp: unset!important; max-height: unset!important;}",
+        ".top-bar {overflow:hidden;}"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -21826,7 +21828,8 @@
         "header.enableTranslate": true
       },
       "excludeSelectors.add": [
-        ".site-header"
+        ".site-header",
+        ".main-navbar"
       ],
       "initialSelectorGlobalAttributes.remove": {
         "header": {}
@@ -21918,6 +21921,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-23T10:22:31.492Z",
+  "buildinConfigUpdatedAt": "2026-07-23T10:51:26.277Z",
   "latestVersion": "1.31.7"
 }
