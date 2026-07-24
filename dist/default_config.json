@@ -16008,8 +16008,9 @@
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "subsrt",
-        "subtitleUrlRegExp": "\\.vtt$",
-        "hookType": "xhr",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
+        "hookType": "fetch|xhr",
         "loadingContainerSelector": "#video-player-container",
         "injectedCss": [],
         "quickButtonRule": {
@@ -21921,6 +21922,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-23T10:51:26.277Z",
+  "buildinConfigUpdatedAt": "2026-07-24T08:37:59.341Z",
   "latestVersion": "1.31.7"
 }
