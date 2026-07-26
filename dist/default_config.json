@@ -13036,7 +13036,8 @@
         "soraraw.com",
         "qimanga.com",
         "gomuraw.biz",
-        "atsu.moe"
+        "atsu.moe",
+        "webtoonscan.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -21271,13 +21272,35 @@
       }
     },
     {
+      "id": "sbs",
+      "matches": "www.sbs.com.au",
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "hookType": "fetch|xhr",
+        "subtitleUrlRegExp": ".vtt",
+        "enableHookDownload": true,
+        "quickButtonRule": {
+          "appendSelector": ".bmpui-ui-subtitleaudiosettingstogglebutton<-.bmpui-container-wrapper",
+          "insertBeforeSelector": ".bmpui-ui-subtitleaudiosettingstogglebutton",
+          "injectCSS": ".imt-quick-subtitle-button { height: 70%; }"
+        },
+        "attachRule": {
+          "appendSelector": ".bmpui-ui-subtitle-overlay",
+          "injectedCSS": [
+            ".bmpui-ui-subtitle-label { display: none!important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "common-text-track",
       "matches": [
         "www.typing.com",
         "*.video-stream-hosting.de",
         "*.thieme.de",
         "videos.sproutvideo.com",
-        "www.ixl.com"
+        "www.ixl.com",
+        "play.gumlet.io"
       ],
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
@@ -21331,8 +21354,7 @@
       "matches": [
         "academy.dair.ai",
         "cloudnestra.com",
-        "maven.com",
-        "www.sbs.com.au"
+        "maven.com"
       ],
       "subtitleRule.add": {
         "type": "subsrt",
@@ -21925,6 +21947,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-25T14:16:23.552Z",
+  "buildinConfigUpdatedAt": "2026-07-26T09:20:41.881Z",
   "latestVersion": "1.31.7"
 }
