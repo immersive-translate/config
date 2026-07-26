@@ -19331,7 +19331,10 @@
     },
     {
       "id": "comic.pixiv.net",
-      "matches": "comic.pixiv.net",
+      "matches": [
+        "comic.pixiv.net",
+        "comic-store-viewer.pixiv.net"
+      ],
       "imageRule.add": {
         "enable": true,
         "platforms": [
@@ -21947,6 +21950,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-26T12:10:00.318Z",
+  "buildinConfigUpdatedAt": "2026-07-26T15:44:32.353Z",
   "latestVersion": "1.31.7"
 }
