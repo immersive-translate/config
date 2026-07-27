@@ -798,7 +798,6 @@
     "enablePinSidePanel": false,
     "blockUrls": [
       "*immersivetranslate.*/preview",
-      "*.immersivetranslate.*/download-subtitle*",
       "*immersivetranslate.*/accounts/login*",
       "dash.immersivetranslate.*/*"
     ],
@@ -845,7 +844,6 @@
     "hoverSidePanelDelay": 500,
     "blockUrls": [
       "*immersivetranslate.*/preview",
-      "*.immersivetranslate.*/download-subtitle*",
       "dash.immersivetranslate.*/*",
       "https://steamloopback.host/index.html*"
     ],
@@ -21950,6 +21948,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-27T08:14:41.779Z",
+  "buildinConfigUpdatedAt": "2026-07-27T11:00:33.266Z",
   "latestVersion": "1.31.7"
 }
