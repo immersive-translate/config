@@ -12081,7 +12081,7 @@
     {
       "id": "khanacademy",
       "matches": [
-        "www.khanacademy.org"
+        "*.khanacademy.org"
       ],
       "subtitleRule.add": {
         "type": "text_track",
@@ -21950,6 +21950,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-26T15:44:32.353Z",
+  "buildinConfigUpdatedAt": "2026-07-27T08:14:41.779Z",
   "latestVersion": "1.31.7"
 }
