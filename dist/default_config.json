@@ -719,6 +719,7 @@
     "https://master.dev[Master.dev]",
     "https://whop.com[Whop.com]",
     "https://lennysnewsletter.com[Lennysnewsletter.com]",
+    "https://app.tonebase.co[App.tonebase.co]",
     "https://app.acilearning.com[App.acilearning.com]",
     "https://dramawave.chartdrama.com[Dramawave]",
     "https://start.dev[StartDev]",
@@ -21372,6 +21373,26 @@
       }
     },
     {
+      "id": "app-tonebase",
+      "matches": [
+        "app.tonebase.co"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
+        "loadingContainerSelector": "div.jsx-1348039502.videoWrapper.--regular.--noScores",
+        "quickButtonRule": {
+          "appendSelector": "div.jsx-2174343501.jsx-1145801038.jsx-3059934846.playerVolumeControlsWrapper"
+        },
+        "videoSelector": "video#lesson-video-player",
+        "attachRule": {
+          "appendSelector": "div.jsx-1348039502.videoWrapper.--regular.--noScores"
+        }
+      }
+    },
+    {
       "id": "common-vtt",
       "matches": [
         "academy.dair.ai",
@@ -21969,6 +21990,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-28T09:02:04.662Z",
+  "buildinConfigUpdatedAt": "2026-07-28T10:21:20.800Z",
   "latestVersion": "1.31.7"
 }
