@@ -1007,23 +1007,6 @@
           "closedStorageKey": "adBanner_closed_reward_center_20260701",
           "items": [
             {
-              "id": "reward-center-banner-20260701-logged-in",
-              "backgroundImage": {
-                "zh-CN": "https://s.immersivetranslate.com/assets/r2-uploads/reward-center-banner-2/zh-cn.png",
-                "zh-TW": "https://s.immersivetranslate.com/assets/r2-uploads/reward-center-banner-2/zh-tw.png",
-                "zh-HK": "https://s.immersivetranslate.com/assets/r2-uploads/reward-center-banner-2/zh-tw.png",
-                "ja": "https://s.immersivetranslate.com/assets/r2-uploads/reward-center-banner-2/ja.png",
-                "ko": "https://s.immersivetranslate.com/assets/r2-uploads/reward-center-banner-2/ko.png",
-                "en": "https://s.immersivetranslate.com/assets/r2-uploads/reward-center-banner-2/en.png"
-              },
-              "action": {
-                "type": "openRewardCenter"
-              },
-              "startTime": "2026-07-01 00:00:00",
-              "endTime": "2027-07-01 00:00:00",
-              "condition": "isLogin==true && isPro==false && isMax==false && isTeam==false && isCNPlugin==false && isRewardCenterDisabled==false"
-            },
-            {
               "id": "reward-center-banner-20260701-guest",
               "backgroundImage": {
                 "zh-CN": "https://s.immersivetranslate.com/assets/r2-uploads/reward-center-banner-2/zh-cn.png",
@@ -8964,6 +8947,18 @@
         "article",
         "article h2",
         "article p"
+      ]
+    },
+    {
+      "id": "j7tracker",
+      "matches": "j7tracker.io",
+      "excludeSelectors.add": [
+        ".tweet-author",
+        ".ai-suggestions-panel",
+        ".following-update-content",
+        "[class*='-header']",
+        "button",
+        ".pause-indicator"
       ]
     },
     {
@@ -21948,6 +21943,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-27T11:00:33.266Z",
+  "buildinConfigUpdatedAt": "2026-07-28T02:55:57.422Z",
   "latestVersion": "1.31.7"
 }
