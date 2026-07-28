@@ -719,6 +719,7 @@
     "https://master.dev[Master.dev]",
     "https://whop.com[Whop.com]",
     "https://lennysnewsletter.com[Lennysnewsletter.com]",
+    "https://app.acilearning.com[App.acilearning.com]",
     "https://dramawave.chartdrama.com[Dramawave]",
     "https://start.dev[StartDev]",
     "https://learn.mit.edu/[LearnMIT]"
@@ -21346,6 +21347,31 @@
       }
     },
     {
+      "id": "app-acilearning",
+      "matches": [
+        "app.acilearning.com"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "\\/tracks\\/[^/?]+\\.vtt(?:$|[?#])",
+        "loadingContainerSelector": "#itprotvPlayer",
+        "quickButtonRule": {
+          "appendSelector": "#itprotvPlayer .jw-button-container",
+          "insertBeforeSelector": "#itprotvPlayer .jw-icon-cc",
+          "injectCSS": ".imt-quick-subtitle-button { height: 60px; margin: 0 12px; }"
+        },
+        "videoSelector": "video.jw-video.jw-reset",
+        "attachRule": {
+          "appendSelector": "div#itprotvPlayer",
+          "injectedGlobalCSS": [
+            "#itprotvPlayer .jw-captions { display: none !important; }"
+          ]
+        }
+      }
+    },
+    {
       "id": "common-vtt",
       "matches": [
         "academy.dair.ai",
@@ -21943,6 +21969,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-28T02:55:57.422Z",
+  "buildinConfigUpdatedAt": "2026-07-28T09:02:04.662Z",
   "latestVersion": "1.31.7"
 }
