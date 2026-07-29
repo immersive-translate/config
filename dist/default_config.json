@@ -13813,7 +13813,8 @@
         "type": "manga",
         "imageSelectors": [
           "#page-wrapper img",
-          ".reader__page img.reader-img"
+          ".reader__page img.reader-img",
+          ".swiper-slide-active .reader-img"
         ],
         "inValidSrcRegex": [
           "data:,"
@@ -22003,6 +22004,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-29T09:28:25.000Z",
+  "buildinConfigUpdatedAt": "2026-07-29T10:13:30.476Z",
   "latestVersion": "1.31.8"
 }
