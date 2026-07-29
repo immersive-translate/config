@@ -181,10 +181,10 @@
   "interval": 3600000,
   "messageCenter": {
     "enable": true,
-    "hasNewRefreshHours": 0,
+    "hasNewRefreshHours": 24,
     "l3": {
       "enable": true,
-      "silentHours": 0
+      "silentHours": 24
     }
   },
   "powerUser": {
@@ -22003,6 +22003,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-29T08:57:46.633Z",
+  "buildinConfigUpdatedAt": "2026-07-29T09:28:53.822Z",
   "latestVersion": "1.31.8"
 }
