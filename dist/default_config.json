@@ -13032,7 +13032,8 @@
         "qimanga.com",
         "gomuraw.biz",
         "atsu.moe",
-        "webtoonscan.com"
+        "webtoonscan.com",
+        "www.zipcomic.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13132,7 +13133,8 @@
           ".blob-image-page img",
           ".swiper-horizontal-reader .swiper-slide img",
           ".r-page img",
-          "data-reader-page img"
+          "data-reader-page img",
+          ".viewer-canvas img"
         ],
         "credentialUrlMatches": [
           "https://images.jcomic.net/*"
@@ -21990,6 +21992,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-28T10:21:20.800Z",
+  "buildinConfigUpdatedAt": "2026-07-29T02:39:46.282Z",
   "latestVersion": "1.31.7"
 }
