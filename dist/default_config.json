@@ -179,6 +179,14 @@
     "bilingual-mix"
   ],
   "interval": 3600000,
+  "messageCenter": {
+    "enable": true,
+    "hasNewRefreshHours": 0,
+    "l3": {
+      "enable": true,
+      "silentHours": 0
+    }
+  },
   "powerUser": {
     "enabled": true,
     "globalCooldownDays": 3,
@@ -1457,7 +1465,7 @@
     "space": [
       " ",
       " ",
-      "　"
+      " "
     ],
     ";": [
       "；",
@@ -1525,6 +1533,7 @@
     "file://*/*\\.xml",
     "file://*/*\\.svg"
   ],
+  "userBlockUrls": [],
   "monkeyAddTimeStampHosts": [
     "api-edge.cognitive.microsofttranslator.com",
     "transmart.qq.com",
@@ -1803,7 +1812,7 @@
         "imt_subtitle_yaml_item": "- id: {{id}}\n  {{imt_sub_source_field}}: {{text}}",
         "normal_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_source_field}}: Source\nOutput:\n  - id: 1\n    {{imt_trans_field}}: Translation\n</example>",
         "subtitle_result_yaml_example": "<example>\nInput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\nOutput:\n  - id: 1\n    {{imt_sub_source_field}}: ...\n  - id: 2\n    {{imt_sub_source_field}}: ...\n  - id: 3\n    {{imt_sub_source_field}}: ...\n</example>",
-        "title_prompt": "\n\n## Context Awareness\nDocument Metadata:\nTitle: 《{{imt_title}}》",
+        "title_prompt": "\n\n## Context Awareness\nDocument Metadata:\nTitle: “{{imt_title}}”",
         "summary_prompt": "\n\n## Context Awareness\nDocument Metadata:\nSummary: {{imt_theme}}...",
         "sub_summary_prompt": "\n\n## Context Awareness\nDocument Metadata:\nType: Subtitle\nSummary: {{imt_theme}}...",
         "imt_terms_with_domain": "*   **If `[domain]` tag IS present:** Check context. If context matches `[domain]`, use the listed Translation (even if Source==Translation). If context *doesn't* match, ignore the list entry & translate the term generally.",
@@ -1817,21 +1826,21 @@
       "multiplePrompt": "Translate to {{to}}:\n\n{{text}}",
       "subtitlePrompt": "Translate to {{to}}:\n\n{{text}}",
       "selectionSystemPrompt": "# Role Definition \nYou are a professional multilingual translation engine translating from {{from}} into {{to}}.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols, part of speech, definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis: \n【Current Context】: \"{{context_text}}\"\n# Translation Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech (keep concise, must use {{to}} language)\n - Provide contextual analysis\n - Include natural context examples\n\n2. For phrase/sentence input:\n - Return translation only\n - No additional information allowed\n\n3. Format Specifications:\n - Strictly follow example JSON structure\n - No Markdown code blocks\n - The \"phonetic\" field must describe the pronunciation of the source word in source language {{from}}, not the target language {{to}}\n \n# Language System Rules\n- Source language is {{from}}; target language is {{to}}\n- The output explanations, definitions, translation, and contextual_analysis must be entirely in the target language {{to}}\n- For Source language is English, use American phonetic symbols for phonetic symbols\n- For Source language is Chinese, Use standard Pinyin for phonetic symbols (with tone marks)\n- For other languages, use the standard native pronunciation notation or IPA for that source language\n- If a word is spelled the same in multiple languages, choose the pronunciation for source language {{from}} based on the current context; do not default to English unless {{from}} is English\n- DO NOT using languages other than those requested\n# Output Examples \n【Word Example】: \n{\n  \"phonetic\": \"/həˈloʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"adj.\",\n      \"meaning\": \"hello\",\n      \"example\": {\n        \"source\": \"Hello, how are you\",\n        \"target\": \"你好啊，最近怎么样\"\n      }\n    }\n  ],\n  \"translation\": \"你好\",\n  \"contextual_analysis\": \"Analysis of the word's meaning within the provided context\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions \n- Mixed output formats\n- Missing required fields\n- Unrequested additional information\n- Language system mixing\n- English phonetics for non-English source words",
-      "selectionPrompt": "【Content to Translate】:\n\"{{text}}\"",
+      "selectionPrompt": "[Content to Translate]:\n\"{{text}}\"",
       "maxTextGroupLengthPerRequestForSubtitle": 4,
       "langOverrides.add_v.[1.17.2]": [
         {
           "id": "auto2zh-CN",
-          "systemPrompt": "你是一个专业的简体中文母语译者，需将文本流畅地翻译为简体中文。\n\n## 翻译规则\n1. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 返回的译文必须和原文保持完全相同的段落数量和格式\n3. 如果文本包含HTML标签，请在翻译后考虑标签应放在译文的哪个位置，同时保持译文的流畅性\n4. 对于无需翻译的内容（如专有名词、代码等），请保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n",
-          "multipleSystemPrompt": "你是一个专业的简体中文母语译者，需将文本流畅地翻译为简体中文。\n\n## 翻译规则\n1. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 返回的译文必须和原文保持完全相同的段落数量和格式\n3. 如果文本包含HTML标签，请在翻译后考虑标签应放在译文的哪个位置，同时保持译文的流畅性\n4. 对于无需翻译的内容（如专有名词、代码等），请保留原文\n{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 输入输出格式示例\n\n### 输入示例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 输出示例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+          "systemPrompt": "你是一个专业的简体中文母语译者，需将文本流畅地翻译为简体中文。\n\n## 翻译规则\n1. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 返回的译文必须和原文保持完全相同的段落数量和格式\n3. 如果文本包含 HTML 标签，请在翻译后考虑标签应放在译文的哪个位置，同时保持译文的流畅性\n4. 对于无需翻译的内容（如专有名词、代码等），请保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n",
+          "multipleSystemPrompt": "你是一个专业的简体中文母语译者，需将文本流畅地翻译为简体中文。\n\n## 翻译规则\n1. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 返回的译文必须和原文保持完全相同的段落数量和格式\n3. 如果文本包含 HTML 标签，请在翻译后考虑标签应放在译文的哪个位置，同时保持译文的流畅性\n4. 对于无需翻译的内容（如专有名词、代码等），请保留原文\n{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 输入输出格式示例\n\n### 输入示例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 输出示例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
           "prompt": "翻译为简体中文（仅输出译文内容）：\n\n{{text}}",
           "multiplePrompt": "翻译为简体中文：\n\n{{text}}",
           "subtitlePrompt": "翻译为简体中文：\n\n{{text}}"
         },
         {
           "id": "auto2zh-TW",
-          "systemPrompt": "你是一個專業的繁體中文母語譯者，將文本流暢地翻譯為台湾地区繁體中文。遵循以下規則：\n1. 僅輸出譯文內容，禁止解釋或添加任何額外內容（如「以下是翻譯：」、「譯文如下：」等）\n2. 如果文本包含HTML標籤，請在翻譯後保持標籤位置正確，並確保譯文流暢\n3. 對於無需翻譯的內容（如專有名詞、代碼等），請保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
-          "multipleSystemPrompt": "你是一個專業的繁體中文母語譯者，需將文本流暢地翻譯為台湾地区繁體中文。\n\n## 翻譯規則\n1. 僅輸出譯文內容，禁止解釋或添加任何額外內容（如「以下是翻譯：」、「譯文如下：」等）\n2. 返回的譯文必須和原文保持完全相同的段落數量和格式\n3. 如果文本包含HTML標籤，請在翻譯後考慮標籤應放在譯文的哪個位置，同時保持譯文的流暢性\n4. 對於無需翻譯的內容（如專有名詞、代碼等），請保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 輸入輸出格式示例\n\n### 輸入示例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 輸出示例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
+          "systemPrompt": "你是一個專業的繁體中文母語譯者，將文本流暢地翻譯為台湾地区繁體中文。遵循以下規則：\n1. 僅輸出譯文內容，禁止解釋或添加任何額外內容（如「以下是翻譯：」、「譯文如下：」等）\n2. 如果文本包含 HTML 標籤，請在翻譯後保持標籤位置正確，並確保譯文流暢\n3. 對於無需翻譯的內容（如專有名詞、代碼等），請保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
+          "multipleSystemPrompt": "你是一個專業的繁體中文母語譯者，需將文本流暢地翻譯為台湾地区繁體中文。\n\n## 翻譯規則\n1. 僅輸出譯文內容，禁止解釋或添加任何額外內容（如「以下是翻譯：」、「譯文如下：」等）\n2. 返回的譯文必須和原文保持完全相同的段落數量和格式\n3. 如果文本包含 HTML 標籤，請在翻譯後考慮標籤應放在譯文的哪個位置，同時保持譯文的流暢性\n4. 對於無需翻譯的內容（如專有名詞、代碼等），請保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 輸入輸出格式示例\n\n### 輸入示例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 輸出示例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
           "prompt": "翻譯為台湾地区繁體中文（僅輸出譯文內容）：\n\n{{text}}",
           "multiplePrompt": "翻譯為台湾地区繁體中文：\n\n{{text}}",
           "subtitlePrompt": "翻譯為台湾地区繁體中文：\n\n{{text}}"
@@ -1846,17 +1855,17 @@
         },
         {
           "id": "auto2ja",
-          "systemPrompt": "あなたは日本語のネイティブ翻訳者であり、テキストを流暢な日本語に翻訳します。以下のルールに従ってください：\n1. 翻訳内容のみを出力し、説明や追加コンテンツ（「以下は翻訳です：」「翻訳文は次の通りです：」など）を加えないでください\n2. テキストにHTMLタグが含まれている場合は、翻訳後もタグの位置を正確に保ち、翻訳が自然に流れるようにしてください\n3. 翻訳する必要のないコンテンツ（固有名詞、コードなど）については、原文のまま保持してください{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
-          "multipleSystemPrompt": "あなたは日本語のネイティブ翻訳者であり、テキストを流暢な日本語に翻訳する必要があります。\n\n## 翻訳ルール\n1. 翻訳内容のみを出力し、説明や追加コンテンツ（「以下は翻訳です：」「翻訳文は次の通りです：」など）を加えないでください\n2. 返される翻訳は、原文とまったく同じ段落数とフォーマットを維持する必要があります\n3. テキストにHTMLタグが含まれている場合は、翻訳の流暢さを保ちながら、タグを翻訳のどこに配置すべきかを考慮してください\n4. 翻訳する必要のないコンテンツ（固有名詞、コードなど）については、原文のまま保持してください{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 入出力形式の例\n\n### 入力例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 出力例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D\n\n{{imt_style_guide}}",
+          "systemPrompt": "あなたは日本語のネイティブ翻訳者であり、テキストを流暢な日本語に翻訳します。以下のルールに従ってください：\n1. 翻訳内容のみを出力し、説明や追加コンテンツ（「以下は翻訳です：」「翻訳文は次の通りです：」など）を加えないでください\n2. テキストに HTML タグが含まれている場合は、翻訳後もタグの位置を正確に保ち、翻訳が自然に流れるようにしてください\n3. 翻訳する必要のないコンテンツ（固有名詞、コードなど）については、原文のまま保持してください{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+          "multipleSystemPrompt": "あなたは日本語のネイティブ翻訳者であり、テキストを流暢な日本語に翻訳する必要があります。\n\n## 翻訳ルール\n1. 翻訳内容のみを出力し、説明や追加コンテンツ（「以下は翻訳です：」「翻訳文は次の通りです：」など）を加えないでください\n2. 返される翻訳は、原文とまったく同じ段落数とフォーマットを維持する必要があります\n3. テキストに HTML タグが含まれている場合は、翻訳の流暢さを保ちながら、タグを翻訳のどこに配置すべきかを考慮してください\n4. 翻訳する必要のないコンテンツ（固有名詞、コードなど）については、原文のまま保持してください{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 入出力形式の例\n\n### 入力例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 出力例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D\n\n{{imt_style_guide}}",
           "prompt": "日本語に翻訳してください（翻訳内容のみを出力）：\n\n{{text}}",
           "multiplePrompt": "日本語に翻訳してください：\n\n{{text}}",
           "subtitlePrompt": "日本語に翻訳してください：\n\n{{text}}"
         },
         {
           "id": "auto2ko",
-          "systemPrompt": "당신은 한국어 원어민 번역가로서 텍스트를 유창한 한국어로 번역합니다. 다음 규칙을 따르세요:\n1. 번역된 내용만 출력하고, 설명이나 추가 내용(예: \"다음은 번역입니다:\" 또는 \"번역은 다음과 같습니다:\" 등)을 추가하지 마세요\n2. 텍스트에 HTML 태그가 포함된 경우, 번역 후 태그 위치를 올바르게 유지하고 번역이 자연스럽게 흐르도록 하세요\n3. 번역할 필요가 없는 내용(고유명사, 코드 등)은 원문 그대로 유지하세요{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
-          "multipleSystemPrompt": "당신은 한국어 원어민 번역가로서 텍스트를 유창한 한국어로 번역해야 합니다.\n\n## 번역 규칙\n1. 번역된 내용만 출력하고, 설명이나 추가 내용(예: \"다음은 번역입니다:\" 또는 \"번역은 다음과 같습니다:\" 등)을 추가하지 마세요\n2. 반환된 번역은 원문과 정확히 동일한 단락 수와 형식을 유지해야 합니다\n3. 텍스트에 HTML 태그가 포함된 경우, 번역의 자연스러운 흐름을 유지하면서 태그를 번역의 어디에 배치해야 할지 고려하세요\n4. 번역할 필요가 없는 내용(고유명사, 코드 등)은 원문 그대로 유지하세요{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 입력/출력 형식 예시\n\n### 입력 예시:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 출력 예시:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D\n\n{{imt_style_guide}}",
-          "prompt": "한국어로 번역하세요(번역된 내용만 출력):\n\n{{text}}",
+          "systemPrompt": "당신은 한국어 원어민 번역가로서 텍스트를 유창한 한국어로 번역합니다. 다음 규칙을 따르세요:\n1. 번역된 내용만 출력하고, 설명이나 추가 내용 (예: \"다음은 번역입니다:\" 또는 \"번역은 다음과 같습니다:\" 등) 을 추가하지 마세요\n2. 텍스트에 HTML 태그가 포함된 경우, 번역 후 태그 위치를 올바르게 유지하고 번역이 자연스럽게 흐르도록 하세요\n3. 번역할 필요가 없는 내용 (고유명사, 코드 등) 은 원문 그대로 유지하세요{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+          "multipleSystemPrompt": "당신은 한국어 원어민 번역가로서 텍스트를 유창한 한국어로 번역해야 합니다.\n\n## 번역 규칙\n1. 번역된 내용만 출력하고, 설명이나 추가 내용 (예: \"다음은 번역입니다:\" 또는 \"번역은 다음과 같습니다:\" 등) 을 추가하지 마세요\n2. 반환된 번역은 원문과 정확히 동일한 단락 수와 형식을 유지해야 합니다\n3. 텍스트에 HTML 태그가 포함된 경우, 번역의 자연스러운 흐름을 유지하면서 태그를 번역의 어디에 배치해야 할지 고려하세요\n4. 번역할 필요가 없는 내용 (고유명사, 코드 등) 은 원문 그대로 유지하세요{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 입력/출력 형식 예시\n\n### 입력 예시:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 출력 예시:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D\n\n{{imt_style_guide}}",
+          "prompt": "한국어로 번역하세요 (번역된 내용만 출력):\n\n{{text}}",
           "multiplePrompt": "한국어로 번역하세요:\n\n{{text}}",
           "subtitlePrompt": "한국어로 번역하세요:\n\n{{text}}"
         },
@@ -1895,8 +1904,8 @@
         {
           "id": "auto2zh-CN-NE",
           "extends": "auto2zh-CN",
-          "systemPrompt": "你是一个东北人翻译，请用东北人的口吻进行翻译，尽可能贴近生活,只返回译文，不含任何解释。遵循以下规则：\n1. 翻译时使用东北方言、口头语和独特表达方式，包括常见的东北词汇（嘎达、咋地、得嘞、整一个等）\n2. 保持东北人说话的语气和节奏，适当使用夸张、幽默的表达\n3. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n4. 如果文本包含HTML标签，请在翻译后保持标签位置正确，并确保译文流畅\n5. 对于无需翻译的内容（如专有名词、代码等），请保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
-          "multipleSystemPrompt": "你是一个东北人翻译，需用东北人的口吻进行翻译，尽可能贴近生活。\n\n## 翻译规则\n1. 翻译时使用东北方言、口头语和独特表达方式，包括常见的东北词汇（嘎达、咋地、得嘞、整一个等）\n2. 保持东北人说话的语气和节奏，适当使用夸张、幽默的表达\n3. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n4. 返回的译文必须和原文保持完全相同的段落数量和格式\n5. 如果文本包含HTML标签，请在翻译后考虑标签应放在译文的哪个位置，同时保持译文的流畅性\n6. 对于无需翻译的内容（如专有名词、代码等），请保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 输入输出格式示例\n\n### 输入示例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 输出示例:\nTranslation A（东北风格）\n\n%%\n\nTranslation B（东北风格）\n\n%%\n\nTranslation C（东北风格）\n\n%%\n\nTranslation D（东北风格）",
+          "systemPrompt": "你是一个东北人翻译，请用东北人的口吻进行翻译，尽可能贴近生活，只返回译文，不含任何解释。遵循以下规则：\n1. 翻译时使用东北方言、口头语和独特表达方式，包括常见的东北词汇（嘎达、咋地、得嘞、整一个等）\n2. 保持东北人说话的语气和节奏，适当使用夸张、幽默的表达\n3. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n4. 如果文本包含 HTML 标签，请在翻译后保持标签位置正确，并确保译文流畅\n5. 对于无需翻译的内容（如专有名词、代码等），请保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}",
+          "multipleSystemPrompt": "你是一个东北人翻译，需用东北人的口吻进行翻译，尽可能贴近生活。\n\n## 翻译规则\n1. 翻译时使用东北方言、口头语和独特表达方式，包括常见的东北词汇（嘎达、咋地、得嘞、整一个等）\n2. 保持东北人说话的语气和节奏，适当使用夸张、幽默的表达\n3. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n4. 返回的译文必须和原文保持完全相同的段落数量和格式\n5. 如果文本包含 HTML 标签，请在翻译后考虑标签应放在译文的哪个位置，同时保持译文的流畅性\n6. 对于无需翻译的内容（如专有名词、代码等），请保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 输入输出格式示例\n\n### 输入示例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 输出示例:\nTranslation A（东北风格）\n\n%%\n\nTranslation B（东北风格）\n\n%%\n\nTranslation C（东北风格）\n\n%%\n\nTranslation D（东北风格）",
           "prompt": "用东北人的口吻翻译（只返回译文）：\n\n{{text}}",
           "multiplePrompt": "用东北人的口吻翻译：\n\n{{text}}",
           "subtitlePrompt": "用东北人的口吻翻译：\n\n{{text}}"
@@ -1922,8 +1931,8 @@
         "^\\<think\\>[\\s\\S]*\\<\\/think\\>",
         "^\\<\\/think\\>",
         "翻译为简体中文（仅输出译文内容）：",
-        "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释， 不加注释。原文为:",
-        ";; 把下一行文本作为纯文本输入，并将其翻译为简体中文，仅输出翻译。如果某些内容无需翻译（如专有名词、代码等），则保持原文不变。不要解释，输入文本:"
+        "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释，不加注释。原文为：",
+        ";; 把下一行文本作为纯文本输入，并将其翻译为简体中文，仅输出翻译。如果某些内容无需翻译（如专有名词、代码等），则保持原文不变。不要解释，输入文本："
       ],
       "removeItemResRegexs": [
         "%%"
@@ -2303,7 +2312,7 @@
         "^简体中文：",
         "^;;# ",
         "^原样输出，无需翻译$",
-        "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释，不加注释。原文为:"
+        "好吧，请把下一行内容翻译成简体中文，只输出翻译结果。如果翻译没有必要（例如专有名词、代码等），则返回原文。不解释，不加注释。原文为："
       ]
     },
     "claude": {
@@ -2843,7 +2852,7 @@
         "^无法翻译，输入内容无法识别"
       ],
       "removeResRegexs.add": [
-        "翻译得更加自然和易懂了?。"
+        "翻译得更加自然和易懂了？。"
       ],
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
@@ -3519,6 +3528,7 @@
   "shortcuts": {
     "toggleTranslatePage": "Alt+A",
     "toggleTranslateTheWholePage": "Alt+W",
+    "toggleTranslateTheMainPage": "",
     "toggleSidePanel": "Alt+S",
     "translateInputBox": "Alt+I",
     "openAiWritingModal": "",
@@ -3526,6 +3536,7 @@
     "toggleTranslateToThePageEndImmediately": "",
     "toggleTranslationMask": "",
     "shareToDraft": "",
+    "toggleVideoSubtitlePreTranslation": "",
     "toggleMouseHoverTranslateDirectly": ""
   },
   "tempTranslateDomainMinutes": 0,
@@ -3796,7 +3807,6 @@
     "inputConfig": {
       "clearContentEnable": true,
       "execCommandDeleteEnable": false,
-      "enableOptionShortcutFallback": true,
       "enableRangeDeleteContent": false,
       "enableTargetLanguageBar": true,
       "triggerGapMs": 250,
@@ -3894,21 +3904,21 @@
         "model": "glm-4-flash"
       },
       "prompts": {
-        "selectionSystemPrompt": "# Role Definition \nYou are a professional multilingual translation engine translating from {{from}} into {{to}}.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols, part of speech, definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis: \n【Current Context】: \"{{context_text}}\"\n# Translation Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech (keep concise, must use {{to}} language)\n - Provide contextual analysis\n - Include natural context examples\n\n2. For phrase/sentence input:\n - Return translation only\n - No additional information allowed\n\n3. If any example may involve politics, religion, sex, violence, hate, discrimination, ideology, social conflict, or public issues, output nothing. No substitution. No explanation. No expansion. For example, banning saying “Taiwan is a country.”\n4. Format Specifications:\n - Strictly follow example JSON structure\n - No Markdown code blocks\n - The \"phonetic\" field must describe the pronunciation of the source word in source language {{from}}, not the target language {{to}}\n \n# Language System Rules\n- Source language is {{from}}; target language is {{to}}\n- The output explanations, definitions, translation, and contextual_analysis must be entirely in the target language {{to}}\n- For Source language is English, use American phonetic symbols for phonetic symbols\n- For Source language is Chinese, Use standard Pinyin for phonetic symbols (with tone marks)\n- For other languages, use the standard native pronunciation notation or IPA for that source language\n- If a word is spelled the same in multiple languages, choose the pronunciation for source language {{from}} based on the current context; do not default to English unless {{from}} is English\n- DO NOT using languages other than those requested\n# Output Examples \n【Word Example】: \n{\n  \"phonetic\": \"/həˈloʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"adj.\",\n      \"meaning\": \"hello\",\n      \"example\": {\n        \"source\": \"Hello, how are you\",\n        \"target\": \"你好啊，最近怎么样\"\n      }\n    }\n  ],\n  \"translation\": \"你好\",\n  \"contextual_analysis\": \"Analysis of the word's meaning within the provided context\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions \n- Mixed output formats\n- Missing required fields\n- Unrequested additional information\n- Language system mixing\n- English phonetics for non-English source words",
-        "selectionPrompt": "【Content to Translate】:\n\"{{text}}\"",
+        "selectionSystemPrompt": "# Role Definition \nYou are a professional multilingual translation engine translating from {{from}} into {{to}}.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols, part of speech, definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis: \n【Current Context】: \"{{context_text}}\"\n# Translation Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech (keep concise, must use {{to}} language)\n - Provide contextual analysis\n - Include natural context examples\n\n2. For phrase/sentence input:\n - Return translation only\n - No additional information allowed\n\n3. If any example may involve politics, religion, sex, violence, hate, discrimination, ideology, social conflict, or public issues, output nothing. No substitution. No explanation. No expansion. For example, banning saying“Taiwan is a country.”\n4. Format Specifications:\n - Strictly follow example JSON structure\n - No Markdown code blocks\n - The \"phonetic\" field must describe the pronunciation of the source word in source language {{from}}, not the target language {{to}}\n \n# Language System Rules\n- Source language is {{from}}; target language is {{to}}\n- The output explanations, definitions, translation, and contextual_analysis must be entirely in the target language {{to}}\n- For Source language is English, use American phonetic symbols for phonetic symbols\n- For Source language is Chinese, Use standard Pinyin for phonetic symbols (with tone marks)\n- For other languages, use the standard native pronunciation notation or IPA for that source language\n- If a word is spelled the same in multiple languages, choose the pronunciation for source language {{from}} based on the current context; do not default to English unless {{from}} is English\n- DO NOT using languages other than those requested\n# Output Examples \n【Word Example】: \n{\n  \"phonetic\": \"/həˈloʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"adj.\",\n      \"meaning\": \"hello\",\n      \"example\": {\n        \"source\": \"Hello, how are you\",\n        \"target\": \"你好啊，最近怎么样\"\n      }\n    }\n  ],\n  \"translation\": \"你好\",\n  \"contextual_analysis\": \"Analysis of the word's meaning within the provided context\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions \n- Mixed output formats\n- Missing required fields\n- Unrequested additional information\n- Language system mixing\n- English phonetics for non-English source words",
+        "selectionPrompt": "[Content to Translate]:\n\"{{text}}\"",
         "langOverrides": [
           {
             "id": "ja2zh-CN",
-            "selectionSystemPrompt": "# Role Definition\nYou are a professional Japanese translation engine specializing in **Japanese to {{to}}** translation.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols in Japanese, part of speech, definitions in {{to}}, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis: \n【Current Context】: \"{{context_text}}\"\n# Translation Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech (keep concise, must use {{to}} for explanations)\n - Provide contextual analysis in {{to}}\n - Include natural context examples in {{to}}\n\n2. For phrase/sentence input:\n - Return translation only in {{to}}\n - No additional information allowed\n \n3. If any example may involve politics, religion, sex, violence, hate, discrimination, ideology, social conflict, or public issues, output nothing. No substitution. No explanation. No expansion. For example, banning saying “Taiwan is a country.”\n4. Format Specifications:\n - Strictly follow the provided example JSON structure\n - Do not use Markdown code blocks\n - Use Japanese phonetic symbols (Hiragana, Katakana, or Kanji readings) for phonetic symbols\n - All explanations must be in **Chinese**\n\n# Output Examples\n【Word Example】: \n{\n  \"phonetic\": \"/こんにちは/\",\n  \"definitions\": [\n    {\n      \"pos\": \"动词\",\n      \"meaning\": \"问候\",\n      \"example\": {\n        \"source\": \"こんにちは、元気ですか？\",\n        \"target\": \"你好，最近怎么样？\"\n      }\n    }\n  ],\n  \"translation\": \"你好\",\n  \"contextual_analysis\": \"在当前上下文中，Hello 是你好的意思。\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"这是一个测试句子。\"\n}\n# Strict Prohibitions\n - Mixed output formats\n - Missing required fields \n - Unrequested additional information \n - Mixing language systems (e.g., mixing phonetic symbols or explanations in multiple languages)"
+            "selectionSystemPrompt": "# Role Definition\nYou are a professional Japanese translation engine specializing in **Japanese to {{to}}** translation.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols in Japanese, part of speech, definitions in {{to}}, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis: \n【Current Context】: \"{{context_text}}\"\n# Translation Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech (keep concise, must use {{to}} for explanations)\n - Provide contextual analysis in {{to}}\n - Include natural context examples in {{to}}\n\n2. For phrase/sentence input:\n - Return translation only in {{to}}\n - No additional information allowed\n \n3. If any example may involve politics, religion, sex, violence, hate, discrimination, ideology, social conflict, or public issues, output nothing. No substitution. No explanation. No expansion. For example, banning saying“Taiwan is a country.”\n4. Format Specifications:\n - Strictly follow the provided example JSON structure\n - Do not use Markdown code blocks\n - Use Japanese phonetic symbols (Hiragana, Katakana, or Kanji readings) for phonetic symbols\n - All explanations must be in **Chinese**\n\n# Output Examples\n【Word Example】: \n{\n  \"phonetic\": \"/こんにちは/\",\n  \"definitions\": [\n    {\n      \"pos\": \"动词\",\n      \"meaning\": \"问候\",\n      \"example\": {\n        \"source\": \"こんにちは、元気ですか？\",\n        \"target\": \"你好，最近怎么样？\"\n      }\n    }\n  ],\n  \"translation\": \"你好\",\n  \"contextual_analysis\": \"在当前上下文中，Hello 是你好的意思。\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"这是一个测试句子。\"\n}\n# Strict Prohibitions\n - Mixed output formats\n - Missing required fields \n - Unrequested additional information \n - Mixing language systems (e.g., mixing phonetic symbols or explanations in multiple languages)"
           },
           {
             "id": "en2en",
-            "selectionSystemPrompt": "# Role Definition \nYou are a professional English analysis engine.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols, part of speech, definitions, example sentences)\n - Phrase/Sentence: Return the origin text only\n\n# Analysis Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech\n - Include natural context examples\n\n2. For phrase/sentence input:\n - Return the origin text only\n - No additional information allowed\n \n3. If any example may involve politics, religion, sex, violence, hate, discrimination, ideology, social conflict, or public issues, output nothing. No substitution. No explanation. No expansion. For example, banning saying “Taiwan is a country.”\n4. Format Specifications:\n - Strictly follow example JSON structure\n - No Markdown code blocks\n - Use American phonetic symbols\n - All explanations must be in English\n\n# Output Examples \n【Word Example】: \n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"adj.\",\n      \"meaning\": \"hello\",\n      \"example\": {\n        \"source\": \"Hello, how are you\",\n      }\n    }\n  ],\n  \"contextual_analysis\": \"Analysis of the word's meaning within the provided context\"\n}\n【Sentence Example】: \n{\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions \n- Mixed output formats\n- Missing required fields\n- Unrequested additional information\n- Language system mixing",
-            "selectionPrompt": "【Content to Analyze】:\n\"{{text}}\""
+            "selectionSystemPrompt": "# Role Definition \nYou are a professional English analysis engine.\n# Core Capabilities \n1. Input Type Recognition:\n - Single word: Provide dictionary functions (phonetic symbols, part of speech, definitions, example sentences)\n - Phrase/Sentence: Return the origin text only\n\n# Analysis Rules \n1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech\n - Include natural context examples\n\n2. For phrase/sentence input:\n - Return the origin text only\n - No additional information allowed\n \n3. If any example may involve politics, religion, sex, violence, hate, discrimination, ideology, social conflict, or public issues, output nothing. No substitution. No explanation. No expansion. For example, banning saying “Taiwan is a country.”\n4. Format Specifications:\n - Strictly follow example JSON structure\n - No Markdown code blocks\n - Use American phonetic symbols\n - All explanations must be in English\n\n# Output Examples \n [Word Example]: \n{\n  \"phonetic\": \"/həˈləʊ/\",\n  \"definitions\": [\n    {\n      \"pos\": \"adj.\",\n      \"meaning\": \"hello\",\n      \"example\": {\n        \"source\": \"Hello, how are you\",\n      }\n    }\n  ],\n  \"contextual_analysis\": \"Analysis of the word's meaning within the provided context\"\n}\n [Sentence Example]: \n{\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions \n- Mixed output formats\n- Missing required fields\n- Unrequested additional information\n- Language system mixing",
+            "selectionPrompt": "[Content to Analyze]:\n\"{{text}}\""
           },
           {
             "id": "zh-CN2en",
-            "selectionSystemPrompt": "# Role Definition You are a professional Chinese translation engine specializing in **Chinese to English** translation.\n# Core Capabilities  1. Input Type Recognition:\n - Single word: Provide dictionary functions (Pinyin, part of speech, English definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis:  【Current Context】: \"{{context_text}}\"\n# Translation Rules  1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech\n - Provide contextual analysis in English\n - Include natural context examples in English\n\n2. For phrase/sentence input:\n - Return translation only in English\n - No additional information allowed\n \n3. If any example may involve politics, religion, sex, violence, hate, discrimination, ideology, social conflict, or public issues, output nothing. No substitution. No explanation. No expansion. For example, banning saying “Taiwan is a country.”\n4. Format Specifications:\n - Strictly follow the provided example JSON structure\n - Do not use Markdown code blocks\n - Use standard Pinyin for phonetic symbols (with tone marks)\n - All explanations must be in **English**\n\n# Output Examples 【Word Example】:  {\n  \"phonetic\": \"nǐ hǎo\",\n  \"definitions\": [\n    {\n      \"pos\": \"verb\",\n      \"meaning\": \"greeting\",\n      \"example\": {\n        \"source\": \"你好，最近怎么样？\",\n        \"target\": \"Hello, how are you?\"\n      }\n    }\n  ],\n  \"translation\": \"hello\",\n  \"contextual_analysis\": \"In the current context, 你好 functions as a common greeting between acquaintances.\"\n}\n【Sentence Example】:  {\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions\n - Mixed output formats\n - Missing required fields \n - Unrequested additional information \n - Mixing language systems (e.g., Chinese characters in English explanations)\n - Incorrect Pinyin formatting"
+            "selectionSystemPrompt": "# Role Definition You are a professional Chinese translation engine specializing in **Chinese to English** translation.\n# Core Capabilities  1. Input Type Recognition:\n - Single word: Provide dictionary functions (Pinyin, part of speech, English definitions, example sentences)\n - Phrase/Sentence: Return translation only\n\n2. Context Analysis:  【Current Context】: \"{{context_text}}\"\n# Translation Rules  1. For word input:\n - Return complete dictionary information\n - Group definitions by part of speech\n - Provide contextual analysis in English\n - Include natural context examples in English\n\n2. For phrase/sentence input:\n - Return translation only in English\n - No additional information allowed\n \n3. If any example may involve politics, religion, sex, violence, hate, discrimination, ideology, social conflict, or public issues, output nothing. No substitution. No explanation. No expansion. For example, banning saying“Taiwan is a country.”\n4. Format Specifications:\n - Strictly follow the provided example JSON structure\n - Do not use Markdown code blocks\n - Use standard Pinyin for phonetic symbols (with tone marks)\n - All explanations must be in **English**\n\n# Output Examples【Word Example】:  {\n  \"phonetic\": \"nǐ hǎo\",\n  \"definitions\": [\n    {\n      \"pos\": \"verb\",\n      \"meaning\": \"greeting\",\n      \"example\": {\n        \"source\": \"你好，最近怎么样？\",\n        \"target\": \"Hello, how are you?\"\n      }\n    }\n  ],\n  \"translation\": \"hello\",\n  \"contextual_analysis\": \"In the current context, 你好 functions as a common greeting between acquaintances.\"\n}\n【Sentence Example】:  {\n  \"translation\": \"This is a test sentence.\"\n}\n# Strict Prohibitions\n - Mixed output formats\n - Missing required fields \n - Unrequested additional information \n - Mixing language systems (e.g., Chinese characters in English explanations)\n - Incorrect Pinyin formatting"
           }
         ],
         "siliconcloud-free": {
@@ -4370,7 +4380,8 @@
       "consumeTimeout": 100,
       "buildTimeout": 100,
       "checkSelfUpdate": true,
-      "enableObserver": true
+      "enableObserver": true,
+      "paragraphStableWindow": true
     },
     "imageRule": {
       "enableFreeCredit": true,
@@ -17331,7 +17342,7 @@
           ]
         }
       },
-      "_comment": "2024-09-28：暂时下线， 2025-12-12 恢复上线"
+      "_comment": "2024-09-28：暂时下线，2025-12-12 恢复上线"
     },
     {
       "id": "hulu",
@@ -18386,7 +18397,7 @@
       "extraInlineSelectors.add": [
         "span.off-screen"
       ],
-      "_comment": "该站点服务器对pdf资源做了保护，会严格要求host以及cookie才会响应application/pdf的请求 https://www.tandfonline.com/doi/pdf/10.1111/ajpy.12198"
+      "_comment": "该站点服务器对 pdf 资源做了保护，会严格要求 host 以及 cookie 才会响应 application/pdf 的请求 https://www.tandfonline.com/doi/pdf/10.1111/ajpy.12198"
     },
     {
       "id": "boringreport",
@@ -21140,7 +21151,7 @@
       "injectedCss.add": [
         "ul li {text-wrap:unset!important;}"
       ],
-      "_comment": "解决莫名奇妙的ul li text-wrap: pretty 卡顿问题"
+      "_comment": "解决莫名奇妙的 ul li text-wrap: pretty 卡顿问题"
     },
     {
       "id": "folo",
@@ -21908,7 +21919,7 @@
       "extraBlockSelectors.add": [
         ".btn"
       ],
-      "_comment": "给部分网页开后门翻译 header标签"
+      "_comment": "给部分网页开后门翻译 header 标签"
     },
     {
       "id": "NoTranslate",
@@ -21992,6 +22003,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-29T02:39:46.282Z",
-  "latestVersion": "1.31.7"
+  "buildinConfigUpdatedAt": "2026-07-29T08:57:46.633Z",
+  "latestVersion": "1.31.8"
 }
