@@ -1033,6 +1033,23 @@
               "startTime": "2026-07-01 00:00:00",
               "endTime": "2027-07-01 00:00:00",
               "condition": "isLogin==false && isPro==false && isMax==false && isTeam==false && isCNPlugin==false && isRewardCenterDisabled==false"
+            },
+            {
+              "id": "area-translation-banner-20260730",
+              "backgroundImage": {
+                "zh-CN": "https://s.immersivetranslate.com/assets/r2-uploads/drag-slect/zh-CN.png",
+                "zh-TW": "https://s.immersivetranslate.com/assets/r2-uploads/drag-slect/zh-TW.png",
+                "zh-HK": "https://s.immersivetranslate.com/assets/r2-uploads/drag-slect/zh-TW.png",
+                "ja": "https://s.immersivetranslate.com/assets/r2-uploads/drag-slect/ja.png",
+                "ko": "https://s.immersivetranslate.com/assets/r2-uploads/drag-slect/ko.png",
+                "en": "https://s.immersivetranslate.com/assets/r2-uploads/drag-slect/en.png"
+              },
+              "action": {
+                "type": "openUrl",
+                "url": "https://immersivetranslate.com/area-translation/"
+              },
+              "startTime": "2026-07-30 00:00:00",
+              "endTime": "2027-07-30 00:00:00"
             }
           ]
         }
@@ -22007,6 +22024,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-30T11:38:18.000Z",
+  "buildinConfigUpdatedAt": "2026-07-30T16:40:46.229Z",
   "latestVersion": "1.31.9"
 }
