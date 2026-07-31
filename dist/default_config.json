@@ -12403,6 +12403,21 @@
       ]
     },
     {
+      "id": "baramangaonline",
+      "matches": [
+        "baramangaonline.com"
+      ],
+      "imageRule.add": {
+        "type": "manga",
+        "imageSelectors": [
+          ".entry-inner img"
+        ],
+        "loadingSelectors": [
+          "div"
+        ]
+      }
+    },
+    {
       "id": "visortmo",
       "matches": [
         "visortmo_notranslate.com"
@@ -22017,6 +22032,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-31T08:47:51.165Z",
+  "buildinConfigUpdatedAt": "2026-07-31T08:53:57.699Z",
   "latestVersion": "1.31.9"
 }
