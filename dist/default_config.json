@@ -20853,9 +20853,12 @@
         ".jw-wrapper.jw-reset *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
-        "subtitleUrlRegExp": "\\.vtt$",
-        "hookType": "xhr",
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
+        "hookType": "fetch|xhr",
+        "loadingContainerSelector": ".jw-wrapper.jw-reset",
+        "videoSelector": "video.jw-video.jw-reset",
         "quickButtonRule": {
           "appendSelector": ".jw-controlbar.jw-reset .jw-button-container",
           "insertBeforeSelector": ".jw-controlbar.jw-reset .jw-button-container .jw-icon-cc",
@@ -22023,6 +22026,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-31T06:35:54.350Z",
+  "buildinConfigUpdatedAt": "2026-07-31T08:42:00.519Z",
   "latestVersion": "1.31.9"
 }
