@@ -15623,6 +15623,21 @@
       }
     },
     {
+      "id": "vk.com",
+      "matches": [
+        "vk.com/video*"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": ".videoplayer_media_provider",
+        "loadingContainerSelector": "#video_player",
+        "quickButtonRule": {
+          "appendSelector": ".videoplayer_controls",
+          "insertBeforeSelector": ".videoplayer_btn_subtitles"
+        }
+      }
+    },
+    {
       "id": "egghead",
       "matches": [
         "egghead.io"
@@ -22008,6 +22023,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-31T06:31:57.265Z",
+  "buildinConfigUpdatedAt": "2026-07-31T06:35:54.350Z",
   "latestVersion": "1.31.9"
 }
