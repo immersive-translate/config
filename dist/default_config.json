@@ -1004,10 +1004,10 @@
       }
     },
     {
-      "condition": "versionNumber>13004",
+      "condition": "versionNumber>13108",
       "advanceConfig": {
         "adBanner": {
-          "enable": false,
+          "enable": true,
           "closedStorageKey": "adBanner_closed_reward_center_20260701",
           "items": [
             {
@@ -22026,6 +22026,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-01T13:38:07.024Z",
+  "buildinConfigUpdatedAt": "2026-08-01T15:45:36.193Z",
   "latestVersion": "1.31.9"
 }
