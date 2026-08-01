@@ -17,7 +17,7 @@
   "termsDomainWithSelf": false,
   "disableOpenUpgradePage": false,
   "forceAutoTranslate": false,
-  "popupVariant": "legacy",
+  "popupVariant": "modern",
   "activeCampaignTags": {
     "enabled": false,
     "cacheTtlMinutes": 1440,
@@ -965,12 +965,6 @@
         "translationUsageLimit.add": {
           "useNewSoftUpgradeStyle": true
         }
-      }
-    },
-    {
-      "condition": "installedAtTimestamp>1776873600000",
-      "advanceConfig": {
-        "popupVariant": "modern"
       }
     },
     {
@@ -22032,6 +22026,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-01T07:03:56.722Z",
+  "buildinConfigUpdatedAt": "2026-08-01T13:38:07.024Z",
   "latestVersion": "1.31.9"
 }
