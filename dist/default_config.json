@@ -968,7 +968,7 @@
       }
     },
     {
-      "condition": "installedAtTimestamp>1776873600000 || abTagNumber<5",
+      "condition": "installedAtTimestamp>1776873600000",
       "advanceConfig": {
         "popupVariant": "modern"
       }
@@ -22032,6 +22032,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-07-31T14:39:31.922Z",
+  "buildinConfigUpdatedAt": "2026-08-01T07:03:56.722Z",
   "latestVersion": "1.31.9"
 }
