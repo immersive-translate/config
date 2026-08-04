@@ -15192,9 +15192,6 @@
       "shadowRootSelectors": [
         "div[style^='visibility: visible'"
       ],
-      "globalStyles": {
-        "p[data-p-id]": "orphans: 1 !important;"
-      },
       "imageRule.add": {
         "enable": true,
         "type": "manga",
@@ -22217,6 +22214,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-04T03:10:14.363Z",
+  "buildinConfigUpdatedAt": "2026-08-04T09:29:59.652Z",
   "latestVersion": "1.31.9"
 }
