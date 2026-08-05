@@ -2191,6 +2191,7 @@
         },
         {
           "models": [
+            "gpt-5.6",
             "gpt-5.1$",
             "gpt-5.2$",
             "gpt-5.4$",
@@ -2229,6 +2230,7 @@
         },
         {
           "models": [
+            "gpt-5.6",
             "gpt-5.1",
             "gpt-5.2",
             "gpt-5.3",
@@ -2591,8 +2593,8 @@
       "enableRichGlossaries": false,
       "provider": "pro",
       "model": "gpt-5.4-mini",
-      "models": "gpt-5.5|gpt-5.4|gpt-5.4-mini|gpt-5.4-nano|gpt-5.4-pro|gpt-5.3-codex|gpt-5.2|gpt-5-chat-latest|gpt-5|gpt-5-mini|gpt-5-nano|gpt-4.1-mini|gpt-4.1|gpt-4.1-nano",
-      "proModel": "gpt-5-mini",
+      "models": "gpt-5.6-sol|gpt-5.6-terra|gpt-5.6-luna|gpt-5.5|gpt-5.4|gpt-5.4-mini|gpt-5.4-nano|gpt-5.4-pro|gpt-5.3-codex|gpt-5.2|gpt-5-chat-latest|gpt-5|gpt-5-mini|gpt-5-nano|gpt-4.1-mini|gpt-4.1|gpt-4.1-nano",
+      "proModel": "gpt-5.6-luna",
       "visible": true,
       "placeholderDelimiters": [
         "{",
@@ -3334,20 +3336,17 @@
       "visible": false
     },
     "openai-pro": {
-      "name": "GPT-5 mini",
+      "name": "GPT-5.6 Luna",
       "type": "openai",
       "group": "pro",
-      "proModel": "gpt-5-mini",
+      "proModel": "gpt-5.6-luna",
       "concurrencyLimit": 50,
-      "model": "gpt-5-mini",
+      "model": "gpt-5.6-luna",
       "extends": "openai",
       "provider": "pro",
       "visible": true,
       "limit": 20,
       "temperature": 1,
-      "bodyConfigs": {
-        "reasoning_effort": "minimal"
-      },
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
@@ -4294,7 +4293,7 @@
     "selectionTranslation.add_v.[1.21.1]": {
       "proService": {
         "service": "openai-pro",
-        "model": "gpt-5-mini"
+        "model": "gpt-5.6-luna"
       },
       "commonService": {
         "service": "zhipu-free",
@@ -22214,6 +22213,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-04T09:29:59.652Z",
+  "buildinConfigUpdatedAt": "2026-08-05T09:15:25.695Z",
   "latestVersion": "1.31.9"
 }
