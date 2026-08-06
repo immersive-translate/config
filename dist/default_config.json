@@ -22149,6 +22149,7 @@
     {
       "id": "NoTranslate",
       "matches": [
+        "prepful.ai",
         "*.tiktok.com",
         "altis.world",
         "*.newthingsunderthesun.com",
@@ -22228,6 +22229,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-05T10:12:19.150Z",
+  "buildinConfigUpdatedAt": "2026-08-06T07:14:00.816Z",
   "latestVersion": "1.31.9"
 }
