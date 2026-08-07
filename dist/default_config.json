@@ -1044,6 +1044,10 @@
     "autoPinSidePanelUsageThreshold": 2,
     "transparency": 30,
     "hoverSidePanelDelay": 500,
+    "smallHostViewport": {
+      "maxWidth": 500,
+      "maxHeight": 500
+    },
     "blockUrls": [
       "*immersivetranslate.*/preview",
       "dash.immersivetranslate.*/*",
@@ -1822,7 +1826,7 @@
       "defaultVisible": true,
       "requestTimeout": 15000,
       "retry": 1,
-      "limit": 5,
+      "limit": 20,
       "concurrencyLimit": 50,
       "placeholderDelimiters": [
         "{",
@@ -1836,7 +1840,7 @@
       "defaultVisible": true,
       "maxTextLengthPerRequest": 1800,
       "requestTimeout": 10000,
-      "limit": 5,
+      "limit": 20,
       "concurrencyLimit": 50,
       "retry": 1,
       "placeholderDelimiters": [
@@ -21073,7 +21077,8 @@
         "quickButtonRule": {
           "appendSelector": ".jw-controlbar.jw-reset .jw-button-container",
           "insertBeforeSelector": ".jw-controlbar.jw-reset .jw-button-container .jw-icon-cc",
-          "injectCSS": ".logo svg {height: 18px; width: 18px}"
+          "injectCSS": ".logo svg {height: 18px; width: 18px}",
+          "ccEnableSelector": ".jw-icon-cc[aria-label='Closed Captions']"
         }
       }
     },
@@ -22229,6 +22234,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-06T07:14:00.816Z",
-  "latestVersion": "1.31.9"
+  "buildinConfigUpdatedAt": "2026-08-07T06:13:34.815Z",
+  "latestVersion": "1.32.1"
 }
