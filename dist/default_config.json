@@ -1503,7 +1503,6 @@
       "condition": "interfaceLanguage==zh-CN && versionNumber>12701",
       "advanceConfig": {
         "defaultTranslationServicesOrder.remove": [
-          "google-free",
           "bing-free"
         ]
       }
@@ -1593,10 +1592,6 @@
       "advanceConfig": {
         "enableFreeModelMode": true,
         "translationServices.add": {
-          "google-free": {
-            "disabledAt": "2026-04-19",
-            "migrateToService": "free-model"
-          },
           "bing-free": {
             "disabledAt": "2026-04-19",
             "migrateToService": "free-model"
@@ -1608,7 +1603,12 @@
       "condition": "interfaceLanguage==zh-CN && versionNumber>12903 && abTagNumber<10",
       "advanceConfig": {
         "translationService": "free-model",
-        "enableFreeModelMode": true
+        "enableFreeModelMode": true,
+        "translationServices.add": {
+          "bing.add": {
+            "defaultToService": "free-model"
+          }
+        }
       }
     }
   ],
@@ -13260,7 +13260,9 @@
         "gomuraw.biz",
         "atsu.moe",
         "webtoonscan.com",
-        "www.zipcomic.com"
+        "www.zipcomic.com",
+        "batcave.biz",
+        "www.twbzmg.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13361,7 +13363,9 @@
           ".swiper-horizontal-reader .swiper-slide img",
           ".r-page img",
           "data-reader-page img",
-          ".viewer-canvas img"
+          ".viewer-canvas img",
+          ".reader__item-wrap img",
+          "amp-img img"
         ],
         "credentialUrlMatches": [
           "https://images.jcomic.net/*"
@@ -22233,6 +22237,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-10T08:33:43.484Z",
+  "buildinConfigUpdatedAt": "2026-08-10T09:59:43.256Z",
   "latestVersion": "1.32.2"
 }
