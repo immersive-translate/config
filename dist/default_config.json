@@ -3204,9 +3204,9 @@
         "selectionTranslation"
       ],
       "concurrencyLimit": 20,
-      "requestTimeout": 120000,
+      "requestTimeout": 30000,
       "sponsorIconUrls": {},
-      "fallbackService": null,
+      "fallbackService": "bing",
       "streamFallbackService": null,
       "serviceWhenFreeModelHidden": "siliconcloud-free",
       "subServices": [
@@ -15653,6 +15653,9 @@
       "injectedCss.add": [
         ".linked-area *,.e2049567 {max-height: unset !important;-webkit-line-clamp:unset;}"
       ],
+      "mutationConfig.add": {
+        "paragraphStableWindow": false
+      },
       "subtitleRule.add": {
         "type": "webvtt",
         "subtitleUrlRegExp": "/.*ambry/\\?x-li-ambry-ep=.*|.*video-captions-webvtt.*/",
@@ -22235,6 +22238,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-08T15:53:47.931Z",
+  "buildinConfigUpdatedAt": "2026-08-10T07:54:07.294Z",
   "latestVersion": "1.32.2"
 }
