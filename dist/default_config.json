@@ -1608,12 +1608,7 @@
       "condition": "interfaceLanguage==zh-CN && versionNumber>12903 && abTagNumber<10",
       "advanceConfig": {
         "translationService": "free-model",
-        "enableFreeModelMode": true,
-        "translationServices.add": {
-          "bing.add": {
-            "defaultToService": "free-model"
-          }
-        }
+        "enableFreeModelMode": true
       }
     }
   ],
@@ -22238,6 +22233,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-10T07:57:21.694Z",
+  "buildinConfigUpdatedAt": "2026-08-10T08:09:16.179Z",
   "latestVersion": "1.32.2"
 }
