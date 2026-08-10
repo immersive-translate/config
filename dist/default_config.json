@@ -13262,7 +13262,12 @@
         "webtoonscan.com",
         "www.zipcomic.com",
         "batcave.biz",
-        "www.twbzmg.com"
+        "www.twbzmg.com",
+        "demonicscans.org",
+        "18comic.vip",
+        "www.wn09.shop",
+        "nyraxmanga.com",
+        "tiamanhwa.net"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13365,7 +13370,12 @@
           "data-reader-page img",
           ".viewer-canvas img",
           ".reader__item-wrap img",
-          "amp-img img"
+          "amp-img img",
+          "img.imgholder",
+          "img.lazy_img",
+          "#v-container img",
+          "img.ts-main-image",
+          "img.wp-manga-chapter-img"
         ],
         "credentialUrlMatches": [
           "https://images.jcomic.net/*"
@@ -22237,6 +22247,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-10T09:59:43.256Z",
+  "buildinConfigUpdatedAt": "2026-08-10T13:30:16.209Z",
   "latestVersion": "1.32.2"
 }
