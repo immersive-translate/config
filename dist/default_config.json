@@ -27,7 +27,7 @@
     "enabled": true
   },
   "tagsVersion": "1",
-  "dynamicI18nVersion": "5",
+  "dynamicI18nVersion": "6",
   "sensitiveConfig": {
     "telemetry": true,
     "sensitiveMode": "close",
@@ -22233,6 +22233,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-10T08:09:16.179Z",
+  "buildinConfigUpdatedAt": "2026-08-10T08:33:43.484Z",
   "latestVersion": "1.32.2"
 }
