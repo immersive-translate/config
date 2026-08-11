@@ -5715,6 +5715,7 @@
       "isInjectVersion": "true",
       "isInjectMeta": "true",
       "enableRichTranslate": true,
+      "forceAutoTranslate": false,
       "allowInnerInvoke": true,
       "selectorMatches": [
         "meta[name='immersive-translate-ebook-builder'][content='true']"
@@ -22247,6 +22248,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-11T08:55:28.823Z",
+  "buildinConfigUpdatedAt": "2026-08-11T13:04:15.830Z",
   "latestVersion": "1.32.2"
 }
