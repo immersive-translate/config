@@ -1,5 +1,5 @@
 {
-  "releaseVersion": "1.23.10",
+  "releaseVersion": "1.30.2",
   "immediateTranslationTextCount": 4999,
   "immediateTranslationScrollLimitScreens": 1,
   "translationStartMode": "dynamic",
@@ -504,6 +504,7 @@
     "https://twicomi.com/manga*[Twitter Comic][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://www.mangaz.com[MangaZ][chrome,firefox,imtIOSNew]",
     "https://pash-up.jp[PASH UP][chrome]",
+    "https://bookwalker.jp/[BOOK☆WALKER][chrome]",
     "https://www.colamanga.com[COLAMANGA][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://www.ganganonline.com[GANGAN ONLINE][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://asuracomic.net[Asura Scans][chrome,firefox,safari,imtIOSNew]",
@@ -3347,6 +3348,9 @@
       "visible": true,
       "limit": 20,
       "temperature": 1,
+      "unsupportedLanguages": [
+        "mn-Mong"
+      ],
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
@@ -3467,6 +3471,9 @@
       "limit": 30,
       "group": "pro",
       "disabledAt": "2025-01-01",
+      "unsupportedLanguages": [
+        "mn-Mong"
+      ],
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
@@ -3493,7 +3500,10 @@
       "withTerms": true,
       "enableAIContext": true,
       "context": "{{summary_context}}\n{{terms_prompt}}",
-      "enableFallback": false
+      "enableFallback": false,
+      "unsupportedLanguages": [
+        "mn-Mong"
+      ]
     },
     "grok-pro": {
       "extends": "grok",
@@ -3682,6 +3692,9 @@
       "concurrencyLimit": 50,
       "proLimit": 20,
       "defaultVisible": true,
+      "unsupportedLanguages": [
+        "mn-Mong"
+      ],
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
@@ -4741,6 +4754,7 @@
       "disabled": false,
       "hookType": "xhr",
       "showQuickButton": true,
+      "quickMenuRenderMode": "inline",
       "videoPlayerSelector": "video",
       "backgroundColor": "#080808",
       "backgroundOpacity": "75",
@@ -4749,7 +4763,7 @@
       "sourceFontSize": "100",
       "translationMode": "dual",
       "translationPosition": "bottom",
-      "textShadowType": "none",
+      "textShadowType": "shadow",
       "translationFontSize": "100",
       "sourceFontFamily": "none",
       "translationFontFamily": "none",
@@ -6249,7 +6263,7 @@
         "[class='css-175oi2r r-kemksi r-1kqtdi0 r-1q9bdsx r-1phboty r-rs99b7 r-1udh08x r-13qz1uu']",
         "[class='css-175oi2r r-uef6q5 r-dnmrzs r-97e31f r-13qz1uu r-13awgt0 r-dgnwoc r-1me0s30 r-t3sqpr r-1dqxon3']",
         "[class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0']",
-        "[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3']",
+        "[data-testid='UserCell'] [class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3']",
         "[data-testid='inlinePrompt']",
         "span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-n6v787 r-1cwl3u0']",
         "[data-testid=primaryColumn] [class='css-175oi2r r-kzbkwu r-3pj75a'] > div > span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3']",
@@ -6265,7 +6279,7 @@
         "[aria-label=Grok] button",
         "[aria-label=Grok] [style*='rgb(89, 93, 98)']",
         "[aria-label=Grok] .r-uho16t",
-        "[data-testid=User-Name]",
+        "[data-testid=User-Name],[data-testid=UserProfileHeader_Items]",
         "[data-testid=socialContext]",
         "[data-testid=tweet-text-show-more-link]",
         "[aria-label=Grok] [class='css-175oi2r r-1habvwh r-vqp9x9 r-1q9bdsx r-1loqt21 r-9njtsq r-1wtj0ep r-nsbfu8 r-xbdcod r-13c7hvr'] > div:last-child",
@@ -6461,16 +6475,19 @@
         "quickButtonRules": [
           {
             "appendSelector": "button[data-testid=\"captions\"]<-parent<-parent",
-            "injectCSS": ".imt-quick-subtitle-pop-content { transform: translateX(17px) !important; } .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} "
+            "injectCSS": ".imt-quick-subtitle-pop-content { transform: translateX(17px) !important; } .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} ",
+            "injectCSS.add_v.[1.32.3]": ".logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} "
           },
           {
             "appendSelector": "button[role=\"button\"]>div>svg<-parent<-parent<-parent<-parent",
-            "injectCSS": ".imt-quick-subtitle-pop-content { transform: unset !important;  bottom: 28px; !important;} .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} "
+            "injectCSS": ".imt-quick-subtitle-pop-content { transform: unset !important;  bottom: 28px; !important;} .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} ",
+            "injectCSS.add_v.[1.32.3]": ".logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} "
           },
           {
             "appendSelector": "div<-[data-testid*=\"cellInnerDiv-tweet\"]->[data-testid*=\"immersive-tweet-ui-content-container\"] button[role=\"button\"]<-parent",
             "insertBeforeSelector": "div<-[data-testid*=\"cellInnerDiv-tweet\"]->[data-testid*=\"immersive-tweet-ui-content-container\"] button[role=\"button\"]",
-            "injectCSS": ".imt-quick-subtitle-button { margin: 0 6px !important; } .imt-quick-subtitle-pop-content { transform: translateY(calc(65%)) !important; right: 35px;  } .logo,.logo svg { height: 24px !important; width: 24px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important; right: 35px; top: 0} "
+            "injectCSS": ".imt-quick-subtitle-button { margin: 0 6px !important; } .imt-quick-subtitle-pop-content { transform: translateY(calc(65%)) !important; right: 35px;  } .logo,.logo svg { height: 24px !important; width: 24px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important; right: 35px; top: 0} ",
+            "injectCSS.add_v.[1.32.3]": ".imt-quick-subtitle-button { margin: 0 6px !important; } .logo,.logo svg { height: 24px !important; width: 24px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important; right: 35px; top: 0} "
           }
         ]
       },
@@ -6554,6 +6571,7 @@
       "toastErrorMinTimes": 2,
       "subtitleRule.add": {
         "type": "live",
+        "disableLiveSubtitleParallelTranslation": true,
         "injectedCss": [
           ".live-transcription-subtitle__item { max-height: none !important; }",
           "#live-transcription-subtitle {flex-direction: column;color: white;}"
@@ -6561,11 +6579,13 @@
         "liveSubtitleRule": {
           "containerSelector": ".live-transcription-subtitle__box",
           "textSelectors": [
+            "#live-transcription-subtitle",
             ".live-transcription-subtitle"
           ],
           "reportSelector": ".meeting-client-inner",
           "mutationChangeDelay": 1000,
           "enableTriggerTranslate": true,
+          "preventRemoval": true,
           "isMeeting": true
         },
         "rtlInjectedCss": [
@@ -6596,6 +6616,7 @@
       "toastErrorMinTimes": 2,
       "subtitleRule.add": {
         "type": "live",
+        "disableLiveSubtitleParallelTranslation": true,
         "injectedCss": [
           ".fui-Flex.___8puuoi0.f22iagw.f18w1nra.f1en88kg { flex-direction: column !important; }",
           "font.immersive-translate-target-wrapper br { display: none; }"
@@ -6635,6 +6656,7 @@
       "toastErrorMinTimes": 2,
       "subtitleRule.add": {
         "type": "live",
+        "disableLiveSubtitleParallelTranslation": true,
         "injectedCss": [
           ".bh44bd.VbkSUe { font-size: 1.2rem !important; }",
           "font.immersive-translate-target-wrapper { font-size: 1.2rem; display: inline-block; }",
@@ -6717,7 +6739,8 @@
         "videoPlayerSelector": "video",
         "quickButtonRule": {
           "appendSelector": ".video-player__controls",
-          "injectCSS": ".imt-quick-subtitle-pop-content {max-height: 150px !important; right: 50px !important;}"
+          "injectCSS": ".imt-quick-subtitle-pop-content {max-height: 150px !important; right: 50px !important;}",
+          "injectCSS.add_v.[1.32.3]": ".imt-quick-subtitle-pop-content {max-height: 150px !important;}"
         },
         "attachRule": {
           "appendSelector": ".video-player__video-container",
@@ -6957,7 +6980,8 @@
         "quickButtonRule": {
           "ccEnableSelector": "shreddit-player-2 -> shreddit-media-ui -> [aria-label='Toggle captions']",
           "appendSelector": "shreddit-player-2 -> shreddit-media-ui -> .disappearing-controls",
-          "injectCSS": ".imt-quick-subtitle-pop-content {max-height: unset!important;width:fit-content;right:32px;}"
+          "injectCSS": ".imt-quick-subtitle-pop-content {max-height: unset!important;width:fit-content;right:32px;}",
+          "injectCSS.add_v.[1.32.3]": ".imt-quick-subtitle-pop-content {max-height: unset!important;width:fit-content;}"
         }
       }
     },
@@ -7029,7 +7053,8 @@
         "quickButtonRule": {
           "ccEnableSelector": "shreddit-player-2 -> shreddit-media-ui -> [aria-label='Toggle captions']",
           "appendSelector": "shreddit-player-2 -> shreddit-media-ui -> .disappearing-controls",
-          "injectCSS": ".imt-quick-subtitle-pop-content {max-height: unset!important;width:fit-content;right:32px;}"
+          "injectCSS": ".imt-quick-subtitle-pop-content {max-height: unset!important;width:fit-content;right:32px;}",
+          "injectCSS.add_v.[1.32.3]": ".imt-quick-subtitle-pop-content {max-height: unset!important;width:fit-content;}"
         }
       }
     },
@@ -7529,6 +7554,7 @@
         "quickButtonRule": {
           "appendSelector": ".player-controls-top",
           "injectCSS": ".logo,.logo svg { height: 20px !important; width: 20px !important;} .imt-quick-subtitle-pop-content {bottom: unset !important; top: 40px !important;}",
+          "injectCSS.add_v.[1.32.3]": ".logo,.logo svg { height: 20px !important; width: 20px !important;} .imt-quick-subtitle-ai-subtitle-tip {top: 43px !important; bottom: unset !important;}",
           "injectedGlobalCSS": ".player-controls-top.with-video-details { z-index: 10; }"
         },
         "quickButtonRules": [
@@ -7540,7 +7566,8 @@
             ],
             "retryCheckMs": 5000,
             "retryIntervalMs": 250,
-            "injectCSS": ".imt-quick-subtitle-pop-content { top: 44px; bottom: unset; transform: translateX(40%); } "
+            "injectCSS": ".imt-quick-subtitle-pop-content { top: 44px; bottom: unset; transform: translateX(40%); } ",
+            "injectCSS.add_v.[1.32.3]": ".imt-quick-subtitle-ai-subtitle-tip {top: 43px !important; bottom: unset !important;}"
           }
         ],
         "aiSubtitle": {
@@ -7826,7 +7853,8 @@
             ],
             "retryCheckMs": 5000,
             "retryIntervalMs": 250,
-            "injectCSS": ".imt-quick-subtitle-pop-content { top: 44px; bottom: unset; transform: translateX(40%); } "
+            "injectCSS": ".imt-quick-subtitle-pop-content { top: 44px; bottom: unset; transform: translateX(40%); } ",
+            "injectCSS.add_v.[1.32.3]": ""
           }
         ],
         "videoSelector": ".html5-video-player.playing-mode video,.html5-video-player.paused-mode video",
@@ -8572,7 +8600,8 @@
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
           "insertBeforeSelector": ".vjs-playback-rate",
-          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 38px !important;}"
+          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 38px !important;}",
+          "injectCSS.add_v.[1.32.3]": ".imt-quick-subtitle-button { font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
         },
         "videoSelector": "video",
         "rtlInjectedCss": [
@@ -11941,7 +11970,8 @@
         "quickButtonRule": {
           "appendSelector": "[data-uia=\"control-audio-subtitle\"]<-parent<-parent",
           "insertBeforeSelector": "[data-uia=\"control-audio-subtitle\"]<-parent",
-          "injectCSS": ".imt-quick-subtitle-button {height: 60%; margin-right: 50px; font-size: 20px; } .logo,.logo svg { height: 36px; width: 36px} .label { display: none; } .imt-quick-subtitle-pop-content {transform: translateX(50%); right: 0}"
+          "injectCSS": ".imt-quick-subtitle-button {height: 60%; margin-right: 50px; font-size: 20px; } .logo,.logo svg { height: 36px; width: 36px} .label { display: none; } .imt-quick-subtitle-pop-content {transform: translateX(50%); right: 0}",
+          "injectCSS.add_v.[1.32.3]": ".imt-quick-subtitle-button {height: 60%; margin-top: 5px; margin-left: -25px; margin-right: 40px; font-size: 20px; } .logo,.logo svg { height: 36px; width: 36px} .label { display: none; }"
         },
         "attachRule": {
           "appendSelector": ".watch-video--player-view > div",
@@ -13103,6 +13133,24 @@
           "div"
         ],
         "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome"
+        ]
+      }
+    },
+    {
+      "id": "bookwalker",
+      "matches": "viewer.bookwalker.jp",
+      "imageRule.add_v.[1.32.3]": {
+        "enable": true,
+        "type": "manga",
+        "opImageType": "append",
+        "imageSelectors": [
+          "#renderer .currentScreen canvas:not(.imt-img)"
+        ],
+        "mangaRefreshSelectors": [
+          "#pageSliderCounter"
+        ],
         "platforms": [
           "chrome"
         ]
@@ -15285,7 +15333,8 @@
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
           "insertBeforeSelector": ".vjs-volume-panel",
-          "injectCSS": " .label { display: none; } .imt-quick-subtitle-pop-content {transform: translateX(43%); right: 0; z-index: 2147483647 } "
+          "injectCSS": " .label { display: none; } .imt-quick-subtitle-pop-content {transform: translateX(43%); right: 0; z-index: 2147483647 } ",
+          "injectCSS.add_v.[1.32.3]": ".label { display: none; } .imt-quick-subtitle-pop-content {z-index: 2147483647;}"
         },
         "attachRule": {
           "appendSelector": "div[id^='vjs_video']",
@@ -15932,7 +15981,8 @@
         "videoPlayerSelector": "mux-player -> mux-video -> video",
         "quickButtonRule": {
           "appendSelector": "mux-player -> media-theme -> media-control-bar[part='control-bar bottom']",
-          "injectCSS": ".imt-quick-subtitle-pop-content {right: 92px !important; min-height: 75px} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
+          "injectCSS": ".imt-quick-subtitle-pop-content {right: 92px !important; min-height: 75px} .logo,.logo svg { height: 18px !important; width: 18px !important;}",
+          "injectCSS.add_v.[1.32.3]": ".imt-quick-subtitle-pop-content {min-height: 75px} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
         },
         "enableIOSFullScreenTextTrack": false
       }
@@ -16404,7 +16454,8 @@
         "subtitleUrlRegExp": ".*\\.(vtt|webvtt)",
         "quickButtonRule": {
           "appendSelector": ".styles_columns__S4HQf:last-child",
-          "injectCSS": ".imt-quick-subtitle-pop-content {right: 80px !important;}"
+          "injectCSS": ".imt-quick-subtitle-pop-content {right: 80px !important;}",
+          "injectCSS.add_v.[1.32.3]": ""
         }
       }
     },
@@ -16431,7 +16482,8 @@
         "subtitleUrlRegExp": ".*\\.(vtt|webvtt)",
         "quickButtonRule": {
           "appendSelector": ".styles_columns__S4HQf:last-child",
-          "injectCSS": ".imt-quick-subtitle-pop-content {right: 80px !important;}"
+          "injectCSS": ".imt-quick-subtitle-pop-content {right: 80px !important;}",
+          "injectCSS.add_v.[1.32.3]": ""
         },
         "enableHookDownload": true,
         "rtlInjectedCss": [
@@ -16723,7 +16775,8 @@
         "quickButtonRule": {
           "appendSelector": ".pointer-events-none #media-control-bar",
           "insertBeforeSelector": ".pointer-events-none #media-control-bar .media-volume-wrapper",
-          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 38px !important;}"
+          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 38px !important;}",
+          "injectCSS.add_v.[1.32.3]": ".imt-quick-subtitle-button { font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
         },
         "activeLangSelector": "input[name=\"subtitle-language\"].after\\:visible",
         "videoPlayerSelector": "#video",
@@ -17033,7 +17086,8 @@
           "appendSelector": "[class*='ControlBarButtonsAndMenus_module_collapsibleContent']",
           "insertBeforeSelector": "[data-volume-control-container=\"true\"]",
           "ccEnableSelector": "[data-cc-button=\"true\"]",
-          "injectCSS": ".imt-quick-subtitle-button {margin-right: 0px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}"
+          "injectCSS": ".imt-quick-subtitle-button {margin-right: 0px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}",
+          "injectCSS.add_v.[1.32.3]": ".imt-quick-subtitle-button {margin-right: 0px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
         }
       }
     },
@@ -17081,7 +17135,8 @@
           "appendSelector": "[data-control-bar=\"true\"] > div > div:nth-child(2) > div",
           "insertBeforeSelector": "[data-control-bar=\"true\"] > div > div:nth-child(2) > div div[class*=\"ControlBarButtonsAndMenus\"]",
           "ccEnableSelector": "[data-cc-button=\"true\"]",
-          "injectCSS": ".imt-quick-subtitle-button {margin: 0 6px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}"
+          "injectCSS": ".imt-quick-subtitle-button {margin: 0 6px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 28px !important;}",
+          "injectCSS.add_v.[1.32.3]": ".imt-quick-subtitle-button {margin: 0 6px; font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
         },
         "attachRule": {
           "appendSelector": "#player,.vp-video",
@@ -17166,7 +17221,8 @@
         "quickButtonRule": {
           "appendSelector": ".js-controls .right",
           "insertBeforeSelector": ".js-subtitles",
-          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 38px !important;}"
+          "injectCSS": ".imt-quick-subtitle-button { font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;} .imt-quick-subtitle-pop-content {bottom: 38px !important;}",
+          "injectCSS.add_v.[1.32.3]": ".imt-quick-subtitle-button { font-size: 12px;} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
         }
       }
     },
@@ -17210,6 +17266,7 @@
         "loadingContainerSelector": "#coreplayer",
         "quickButtonRule": {
           "injectCSS": ".imt-quick-subtitle-pop-content {right: 60px !important;}",
+          "injectCSS.add_v.[1.32.3]": "",
           "appendSelector": ".fp-controls"
         }
       }
@@ -17806,7 +17863,8 @@
         ],
         "quickButtonRule": {
           "appendSelector": "slot-fb > .avia-control-group-right",
-          "injectCSS": ".imt-quick-subtitle-pop-content {right: 65px !important;}"
+          "injectCSS": ".imt-quick-subtitle-pop-content {right: 65px !important;}",
+          "injectCSS.add_v.[1.32.3]": ""
         },
         "attachRule": {
           "appendSelector": ".avia-container",
@@ -18091,7 +18149,8 @@
         "enableHookDownload": true,
         "quickButtonRule": {
           "appendSelector": ".css-6mrf8j.css-1oxfqe2",
-          "injectCSS": ".imt-quick-subtitle-pop-content {right: 75px !important;}"
+          "injectCSS": ".imt-quick-subtitle-pop-content {right: 75px !important;}",
+          "injectCSS.add_v.[1.32.3]": ""
         },
         "attachRule": {
           "appendSelector": "body",
@@ -18433,7 +18492,8 @@
         "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
         "quickButtonRule": {
           "appendSelector": "mux-player -> media-theme -> media-control-bar[part='control-bar bottom']",
-          "injectCSS": ".imt-quick-subtitle-pop-content {right: 92px !important; min-height: 75px} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
+          "injectCSS": ".imt-quick-subtitle-pop-content {right: 92px !important; min-height: 75px} .logo,.logo svg { height: 18px !important; width: 18px !important;}",
+          "injectCSS.add_v.[1.32.3]": ".imt-quick-subtitle-pop-content {min-height: 75px} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
         }
       }
     },
@@ -20934,7 +20994,8 @@
         "quickButtonRule": {
           "appendSelector": ".w-bottom-bar-right-inner.w-css-reset",
           "insertBeforeSelector": ".w-bottom-bar-right-inner.w-css-reset>.w-css-reset:first-child",
-          "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: 120px !important; bottom 30px;right:80px !important; }"
+          "injectCSS": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: 120px !important; bottom 30px;right:80px !important; }",
+          "injectCSS.add_v.[1.32.3]": ".label { display: none; } .imt-quick-subtitle-pop-content { max-height: 120px !important; }"
         },
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
@@ -22248,6 +22309,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-11T13:04:15.830Z",
-  "latestVersion": "1.32.2"
+  "buildinConfigUpdatedAt": "2026-08-12T09:57:33.000Z",
+  "latestVersion": "1.32.3"
 }
