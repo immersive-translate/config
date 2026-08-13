@@ -21793,7 +21793,11 @@
         "www.cnet.com",
         "www.nikkei.com",
         "dolmods.net",
-        "detail.1688.com"
+        "detail.1688.com",
+        "herdr.dev"
+      ],
+      "excludeMatches": [
+        "https://followin.io/*"
       ],
       "selectorMatches": [
         "#plugin-product-comment",
@@ -21820,7 +21824,8 @@
         ".product-card__brand-wrap {white-space:unset;}",
         ".card-recommend-oneImg article h4 {max-height:unset;-webkit-line-clamp:unset;}",
         ".description__4cb8a {max-height:unset;-webkit-line-clamp:unset;}",
-        ".link-container {height:unset!important;-webkit-line-clamp:unset!important;}"
+        ".link-container {height:unset!important;-webkit-line-clamp:unset!important;}",
+        ".plugin-desc {max-height:unset;-webkit-line-clamp:unset;}"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -21881,12 +21886,14 @@
       "matches": [
         "macro.com",
         "silverbullet.md",
-        "m.munpia.com"
+        "m.munpia.com",
+        "followin.io"
       ],
       "likePreSelectors.add": [
         "[data-block-type=md] [style^=scrollbar-gutter]",
         "#sb-main",
-        ".content article"
+        ".content article",
+        "#article-content .whitespace-pre-wrap"
       ],
       "forceFormatPre": true,
       "isTransformPreTagNewLine": true,
@@ -22318,6 +22325,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-13T15:25:17.094Z",
+  "buildinConfigUpdatedAt": "2026-08-13T16:48:58.487Z",
   "latestVersion": "1.32.3"
 }
