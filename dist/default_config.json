@@ -4733,7 +4733,8 @@
       "^[a-zA-Z]{1}$",
       "^[•↓ · ]$",
       "<img id=0>",
-      "<canvas id=0>"
+      "<canvas id=0>",
+      "•••"
     ],
     "waitForSelectors": [],
     "isInjectOptionsUrl": false,
@@ -8496,7 +8497,8 @@
         ".reply-markup-button-text",
         ".bot-commands-list-element-description",
         "[class*='tabs-tab page-password active']",
-        "#auth-qr-form"
+        "#auth-qr-form",
+        ".document-message"
       ],
       "extraBlockSelectors.add": [
         ".message.spoilers-container em",
@@ -8505,7 +8507,7 @@
       "excludeSelectors": [
         ".time",
         ".peer-title",
-        ".document-wrapper",
+        ".document.ext-rar,.bubble-name-forwarded",
         ".message.spoilers-container custom-emoji-element"
       ],
       "additionalExcludeSelectors.remove": [
@@ -21868,13 +21870,21 @@
     {
       "id": "formatPreSites",
       "matches": [
-        "macro.com"
+        "macro.com",
+        "silverbullet.md",
+        "m.munpia.com"
       ],
       "likePreSelectors.add": [
-        "[data-block-type=md] [style^=scrollbar-gutter]"
+        "[data-block-type=md] [style^=scrollbar-gutter]",
+        "#sb-main",
+        ".content article"
       ],
       "forceFormatPre": true,
       "isTransformPreTagNewLine": true,
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
       "_comment": "专门处理格式化的内容"
     },
     {
@@ -21921,19 +21931,6 @@
         "#tabs-content-wrap {overflow:scroll;}",
         ".ReactVirtualized__Grid__innerScrollContainer {overflow:scroll!important;}",
         ".b--wrap {overflow:scroll!important;}"
-      ]
-    },
-    {
-      "id": "cms",
-      "matches": "silverbullet.md",
-      "isTransformPreTagNewLine": true,
-      "likePreSelectors.add": [
-        "#sb-main"
-      ],
-      "forceFormatPre": true,
-      "additionalExcludeSelectors.remove": [
-        ".notranslate",
-        "[translate=no]"
       ]
     },
     {
@@ -21987,7 +21984,8 @@
         "tortoisegit.org",
         "man.uex.se",
         "www.dove.com",
-        "phrack.org"
+        "phrack.org",
+        "m.munpia.com"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -22311,6 +22309,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-13T08:21:02.045Z",
+  "buildinConfigUpdatedAt": "2026-08-13T10:06:47.798Z",
   "latestVersion": "1.32.3"
 }
