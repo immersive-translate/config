@@ -3550,6 +3550,11 @@
       "limit": 20,
       "group": "pro",
       "disabledAt": "2025-01-01",
+      "unsupportedLanguages": [
+        "si",
+        "mn",
+        "mn-Mong"
+      ],
       "supportFeatures": [
         "aiWriting",
         "selectionTranslation"
@@ -22325,6 +22330,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-13T16:48:58.487Z",
-  "latestVersion": "1.32.3"
+  "buildinConfigUpdatedAt": "2026-08-14T03:07:12.472Z",
+  "latestVersion": "1.32.4"
 }
