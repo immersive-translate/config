@@ -1611,6 +1611,17 @@
           }
         }
       }
+    },
+    {
+      "condition": "versionNumber<13205 && interfaceLanguage!=zh-CN",
+      "advanceConfig": {
+        "messageCenter.add": {
+          "l3": {
+            "enable": false,
+            "silentHours": 24
+          }
+        }
+      }
     }
   ],
   "inputLanguageCodeAlias": {
@@ -22330,6 +22341,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-14T03:13:48.000Z",
+  "buildinConfigUpdatedAt": "2026-08-14T09:51:42.824Z",
   "latestVersion": "1.32.4"
 }
