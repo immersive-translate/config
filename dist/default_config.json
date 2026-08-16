@@ -6270,11 +6270,8 @@
       "blockMinWordCount": 0,
       "selectors": [
         "[data-testid='tweetText']",
-        "[style*='-webkit-line-clamp']",
-        ".tweet-text",
         "[data-testid='tweet'] [class='css-175oi2r r-13awgt0 r-eqz5dr r-iphfwy r-3o4zer r-ttdzmv']",
         "[data-testid='tweet'] .css-175oi2r span",
-        ".js-quoted-tweet-text",
         "[data-testid='card.layoutSmall.detail'] > div:nth-child(2)",
         "[data-testid='developerBuiltCardContainer'] > div:nth-child(2)",
         "[data-testid='card.layoutLarge.detail'] > div:nth-child(2)",
@@ -6285,17 +6282,21 @@
         "[data-testid='HoverCard'] [role='dialog'] div[dir=ltr]",
         "[data-testid='birdwatch-pivot'] div[dir=ltr]",
         "[data-testid='twitterArticleReadView']",
+        "[data-testid='UserCell'] [class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3']",
+        "[data-testid='inlinePrompt']",
+        "[data-testid=primaryColumn] [class='css-175oi2r r-kzbkwu r-3pj75a'] > div > span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3']",
+        "[style*='-webkit-line-clamp']",
+        ".tweet-text",
+        ".js-quoted-tweet-text",
         "[aria-label='Grok']",
         "[role=dialog]",
         "[class='css-175oi2r r-1awozwy r-13awgt0 r-1rnoaur r-13qz1uu']",
         "[class='css-175oi2r r-kemksi r-1kqtdi0 r-1q9bdsx r-1phboty r-rs99b7 r-1udh08x r-13qz1uu']",
         "[class='css-175oi2r r-uef6q5 r-dnmrzs r-97e31f r-13qz1uu r-13awgt0 r-dgnwoc r-1me0s30 r-t3sqpr r-1dqxon3']",
         "[class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0']",
-        "[data-testid='UserCell'] [class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3']",
-        "[data-testid='inlinePrompt']",
         "span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-n6v787 r-1cwl3u0']",
-        "[data-testid=primaryColumn] [class='css-175oi2r r-kzbkwu r-3pj75a'] > div > span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3']",
-        ".font-chirp.text-body.font-normal"
+        ".font-chirp.text-body.font-normal",
+        "article h1,article .x-article-body"
       ],
       "additionalExcludeSelectors.add": [
         "[aria-describedby][role=button]",
@@ -22341,6 +22342,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-14T09:52:04.000Z",
+  "buildinConfigUpdatedAt": "2026-08-16T13:01:09.954Z",
   "latestVersion": "1.32.5"
 }
