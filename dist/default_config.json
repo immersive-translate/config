@@ -13346,7 +13346,11 @@
         "18comic.vip",
         "www.wn09.shop",
         "nyraxmanga.com",
-        "tiamanhwa.net"
+        "tiamanhwa.net",
+        "www.yinmh.com",
+        "www.manhwas.men",
+        "*.uzakichanmanga.com",
+        "book18.fans"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13454,7 +13458,11 @@
           "img.lazy_img",
           "#v-container img",
           "img.ts-main-image",
-          "img.wp-manga-chapter-img"
+          "img.wp-manga-chapter-img",
+          ".left .image img",
+          "#chapter_imgs img",
+          "img.aligncenter",
+          "#post-hentai img"
         ],
         "credentialUrlMatches": [
           "https://images.jcomic.net/*"
@@ -13467,7 +13475,8 @@
           "preloader.gif",
           "ajax-loader.gif",
           "readerarea.svg",
-          "image/gif"
+          "image/gif",
+          "/static/loading.gif"
         ],
         "platforms": [
           "other",
@@ -19757,17 +19766,27 @@
       }
     },
     {
-      "id": "imhentai",
+      "id": "img-ob-src",
       "matches": [
-        "imhentai.xxx"
+        "imhentai.xxx",
+        "www.webtoons.com",
+        "m.webtoons.com",
+        "about.webtoon.com"
+      ],
+      "injectedCss.add": [
+        ".immersive-translate-target-wrapper {font-size: initial;}"
       ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          ".next_img img"
+          ".next_img img",
+          ".viewer_img img"
         ],
         "enableImageSrcObserver": true,
+        "inValidSrcRegex": [
+          "bg_transparency.png"
+        ],
         "platforms": [
           "other",
           "chrome",
@@ -19775,26 +19794,6 @@
           "imtIOSNew",
           "safari",
           "imtAndroid"
-        ]
-      }
-    },
-    {
-      "id": "book18",
-      "matches": [
-        "book18.fans"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "#post-hentai img"
-        ],
-        "platforms": [
-          "other",
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
         ]
       }
     },
@@ -19821,96 +19820,6 @@
           "firefox",
           "imtIOSNew",
           "safari"
-        ]
-      }
-    },
-    {
-      "id": "uzakichanmanga",
-      "matches": [
-        "*.uzakichanmanga.com"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "img.aligncenter"
-        ],
-        "platforms": [
-          "other",
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
-      "id": "manhwas",
-      "matches": [
-        "www.manhwas.men"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          "#chapter_imgs img"
-        ],
-        "platforms": [
-          "other",
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari"
-        ]
-      }
-    },
-    {
-      "id": "yinmh",
-      "matches": [
-        "www.yinmh.com"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".left .image img"
-        ],
-        "inValidSrcRegex": [
-          "/static/loading.gif"
-        ],
-        "platforms": [
-          "other",
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
-        ]
-      }
-    },
-    {
-      "id": "webtoons",
-      "matches": [
-        "www.webtoons.com",
-        "m.webtoons.com"
-      ],
-      "imageRule.add": {
-        "enable": true,
-        "enableImageSrcObserver": true,
-        "type": "manga",
-        "imageSelectors": [
-          ".viewer_img img"
-        ],
-        "inValidSrcRegex": [
-          "bg_transparency.png"
-        ],
-        "platforms": [
-          "other",
-          "chrome",
-          "firefox",
-          "imtIOSNew",
-          "safari",
-          "imtAndroid"
         ]
       }
     },
@@ -22343,6 +22252,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-19T06:44:14.814Z",
+  "buildinConfigUpdatedAt": "2026-08-19T07:56:59.092Z",
   "latestVersion": "1.32.5"
 }
