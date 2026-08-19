@@ -1165,6 +1165,33 @@
       }
     },
     {
+      "condition": "versionNumber>13205 && abTagNumber>2 && abTagNumber<6",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "totalLimit": {
+            "soft": 40,
+            "hard": 40
+          }
+        }
+      }
+    },
+    {
+      "condition": "versionNumber>13205 && abTagNumber>5 && abTagNumber<8 && installedDays<7",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "totalLimit": {}
+        }
+      }
+    },
+    {
+      "condition": "versionNumber>13205 && abTagNumber>7 && installedDays<14",
+      "advanceConfig": {
+        "translationUsageLimit.add": {
+          "totalLimit": {}
+        }
+      }
+    },
+    {
       "condition": "imtAndroidVersionNumber>10107",
       "advanceConfig": {
         "monkeyH5FloatBall.add": {
@@ -22252,6 +22279,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-19T07:56:59.092Z",
-  "latestVersion": "1.32.5"
+  "buildinConfigUpdatedAt": "2026-08-19T08:46:04.819Z",
+  "latestVersion": "1.32.6"
 }
