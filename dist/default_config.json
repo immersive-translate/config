@@ -19896,6 +19896,7 @@
       ],
       "imageRule.add": {
         "enable": true,
+        "enableImageSrcObserver": true,
         "type": "manga",
         "imageSelectors": [
           ".viewer_img img"
@@ -22342,6 +22343,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-16T13:01:09.954Z",
+  "buildinConfigUpdatedAt": "2026-08-19T06:44:14.814Z",
   "latestVersion": "1.32.5"
 }
