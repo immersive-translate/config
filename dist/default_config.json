@@ -3659,13 +3659,13 @@
       ]
     },
     "claude-max": {
-      "name": "Claude Sonnet 4.6",
+      "name": "Claude Sonnet 5",
       "type": "claude",
       "group": "max",
       "extends": "claude",
       "limit": 6,
       "provider": "pro",
-      "proModel": "claude-sonnet-4-6",
+      "proModel": "claude-sonnet-5",
       "concurrencyLimit": 50,
       "visible": true,
       "supportFeatures": [
@@ -3736,13 +3736,13 @@
     },
     "zhipu-max": {
       "extends": "zhipu-base",
-      "name": "GLM-5",
+      "name": "GLM-5.2",
       "group": "max",
       "type": "zhipu-pro",
       "provider": "pro",
       "visible": true,
-      "model": "GLM-5",
-      "proModel": "GLM-5",
+      "model": "glm-5.2",
+      "proModel": "glm-5.2",
       "concurrencyLimit": 50,
       "proLimit": 20,
       "defaultVisible": true,
@@ -3753,6 +3753,7 @@
         "aiWriting",
         "selectionTranslation"
       ],
+      "modelsOverrides": [],
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequestForSubtitle": 5
@@ -22279,6 +22280,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-19T08:45:01.000Z",
+  "buildinConfigUpdatedAt": "2026-08-20T03:02:19.864Z",
   "latestVersion": "1.32.6"
 }
