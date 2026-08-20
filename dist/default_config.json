@@ -8585,6 +8585,7 @@
         "placeholderType": "dom",
         "enableMutationObserver": true,
         "autoLanguageSelectors": [
+          ".message-date-group .Message .text-content",
           ".bubble-content .message .translatable-message"
         ]
       }
@@ -22280,6 +22281,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-20T03:02:19.864Z",
+  "buildinConfigUpdatedAt": "2026-08-20T10:28:08.159Z",
   "latestVersion": "1.32.6"
 }
