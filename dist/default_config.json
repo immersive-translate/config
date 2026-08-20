@@ -10722,7 +10722,8 @@
         ".topNav2_art > span",
         ".topNav_art2 > .dropdown",
         ".dibu-three",
-        ".topBar"
+        ".topBar",
+        "#div_currpage"
       ]
     },
     {
@@ -22281,6 +22282,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-20T10:28:08.159Z",
+  "buildinConfigUpdatedAt": "2026-08-20T15:40:04.011Z",
   "latestVersion": "1.32.6"
 }
