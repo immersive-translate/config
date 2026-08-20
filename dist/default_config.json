@@ -21331,7 +21331,18 @@
     },
     {
       "id": "read.amazon",
-      "matches": "read.amazon.com",
+      "matches": [
+        "read.amazon.com",
+        "read.amazon.co.jp"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".kg-full-page-img img"
+        ],
+        "enableImageSrcObserver": true
+      },
       "extraInlineSelectors.add": [
         "span.kg-a11y-rel[role=text]"
       ],
@@ -22282,6 +22293,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-20T15:40:04.011Z",
+  "buildinConfigUpdatedAt": "2026-08-20T16:17:42.248Z",
   "latestVersion": "1.32.6"
 }
