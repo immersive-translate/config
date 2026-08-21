@@ -188,7 +188,7 @@
     }
   },
   "powerUser": {
-    "enabled": true,
+    "enabled": false,
     "globalCooldownDays": 3,
     "sceneCooldownDays": 14,
     "silentModeCloseCount": 2,
@@ -1074,7 +1074,7 @@
       "https://*.immersivetranslate.*/*/tutorial/step-2",
       "https://*.immersivetranslate.*/*/new-guide/step-3"
     ],
-    "defaultShowGuideNums": 4,
+    "defaultShowGuideNums": 2,
     "clickType": "translate",
     "afterInstalledAt": "2023-10-28",
     "fixedPosition": "right",
@@ -1828,7 +1828,7 @@
   "sameLangTranslationTheme": "background",
   "serviceRecommendation": {
     "enabled": true,
-    "enableGuide": true,
+    "enableGuide": false,
     "defaultService": "qwen-pro",
     "langMap": {
       "auto2ja": "plamo-pro"
@@ -22293,6 +22293,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-20T16:17:42.248Z",
+  "buildinConfigUpdatedAt": "2026-08-21T06:27:31.491Z",
   "latestVersion": "1.32.6"
 }
