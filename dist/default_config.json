@@ -2180,7 +2180,7 @@
         "%%"
       ],
       "translationTextSeparator": "\n\n%%\n\n",
-      "proRequestTimeout": 45000,
+      "proRequestTimeout": 101000,
       "requestTimeout": 101000,
       "maxTokensRatio": 8,
       "minTokensRatio": 0.21,
@@ -22298,6 +22298,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-21T11:56:40.000Z",
+  "buildinConfigUpdatedAt": "2026-08-24T06:17:18.647Z",
   "latestVersion": "1.32.7"
 }
