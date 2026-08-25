@@ -2643,6 +2643,13 @@
       "model": "gpt-5.4-mini",
       "models": "gpt-5.6|gpt-5.6-sol|gpt-5.6-terra|gpt-5.6-luna|gpt-5.5|gpt-5.4|gpt-5.4-mini|gpt-5.4-nano|gpt-5.4-pro|gpt-5.3-codex|gpt-5.2|gpt-5.1|gpt-5-chat-latest|gpt-5|gpt-5-mini|gpt-5-nano|gpt-4.1-mini|gpt-4.1|gpt-4.1-nano",
       "proModel": "gpt-5.6-luna",
+      "langOverrides.add": [
+        {
+          "id": "auto2zh-CN",
+          "systemPrompt": "你是一个专业的简体中文母语译者，需将文本流畅地翻译为简体中文。\n\n## 翻译规则\n1. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 返回的译文必须和原文保持完全相同的段落数量和格式\n3. 如果文本包含 HTML 标签，请在翻译后考虑标签应放在译文的哪个位置，同时保持译文的流畅性\n4. 对于无需翻译的内容（如专有名词、代码等），请保留原文\n5. 禁止输出与原文无关或无意义的内容{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n",
+          "multipleSystemPrompt": "你是一个专业的简体中文母语译者，需将文本流畅地翻译为简体中文。\n\n## 翻译规则\n1. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 返回的译文必须和原文保持完全相同的段落数量和格式\n3. 如果文本包含 HTML 标签，请在翻译后考虑标签应放在译文的哪个位置，同时保持译文的流畅性\n4. 对于无需翻译的内容（如专有名词、代码等），请保留原文\n5. 禁止输出与原文无关或无意义的内容\n{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 输入输出格式示例\n\n### 输入示例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 输出示例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D"
+        }
+      ],
       "visible": true,
       "placeholderDelimiters": [
         "{",
@@ -22298,6 +22305,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-24T06:17:18.647Z",
+  "buildinConfigUpdatedAt": "2026-08-25T07:34:11.173Z",
   "latestVersion": "1.32.7"
 }
