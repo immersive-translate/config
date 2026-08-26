@@ -3283,13 +3283,6 @@
           "preferredProvider": "glm",
           "homepage": "https://open.bigmodel.cn/",
           "sponsorIconId": "2"
-        },
-        {
-          "serviceType": "babel-lite",
-          "legacyServiceId": "babel-lite-free",
-          "preferredProvider": "babellite",
-          "homepage": "https://immersivetranslate.com/",
-          "sponsorIconId": "1"
         }
       ],
       "transitionalFreeServiceOrder": [
@@ -3317,7 +3310,9 @@
         "翻译成中文，不要解释任何句子，只需翻译或保留原文。"
       ],
       "concurrencyLimit": 20,
-      "hidden": true
+      "hidden": true,
+      "disabledAt": "2026-08-25",
+      "migrateToService": "free-model"
     },
     "babel-lite-free.add_v.[1.23.9]": {
       "type": "babel-lite",
@@ -22305,6 +22300,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-25T07:34:11.173Z",
+  "buildinConfigUpdatedAt": "2026-08-26T07:09:16.312Z",
   "latestVersion": "1.32.7"
 }
