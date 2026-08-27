@@ -863,6 +863,7 @@
     "https://master.dev[Master.dev]",
     "https://whop.com[Whop.com]",
     "https://lennysnewsletter.com[Lennysnewsletter.com]",
+    "https://epicreact.dev[Epic React]",
     "https://www.billboard.com[Billboard]",
     "https://app.tonebase.co[App.tonebase.co]",
     "https://app.acilearning.com[App.acilearning.com]",
@@ -21681,6 +21682,25 @@
       }
     },
     {
+      "id": "epicreact-dev",
+      "matches": [
+        "www.epicreact.dev"
+      ],
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
+        "videoPlayerSelector": "mux-player -> mux-video -> video",
+        "quickButtonRule": {
+          "appendSelector": "mux-player -> media-theme -> media-control-bar[part='control-bar bottom']",
+          "insertBeforeSelector": "mux-player -> media-theme -> media-captions-menu-button[aria-label='closed captions']",
+          "ccEnableSelector": "mux-player -> media-theme -> media-captions-menu-button[aria-label='closed captions']",
+          "injectCSS": ".imt-quick-subtitle-pop-content {right: 92px !important; min-height: 75px} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
+        }
+      }
+    },
+    {
       "id": "app-acilearning",
       "matches": [
         "app.acilearning.com"
@@ -22328,6 +22348,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-27T09:33:49.277Z",
+  "buildinConfigUpdatedAt": "2026-08-27T09:48:31.943Z",
   "latestVersion": "1.32.7"
 }
