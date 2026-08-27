@@ -3987,6 +3987,14 @@
             "enable": false
           }
         }
+      },
+      {
+        "condition": "versionNumber==13207 && cache==false",
+        "advanceConfig": {
+          "generalRule": {
+            "isTranslateTitle": false
+          }
+        }
       }
     ],
     "parseImmediateTypes": [
@@ -22348,6 +22356,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-27T10:00:39.506Z",
+  "buildinConfigUpdatedAt": "2026-08-27T18:22:33.540Z",
   "latestVersion": "1.32.7"
 }
