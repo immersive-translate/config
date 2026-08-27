@@ -17596,7 +17596,7 @@
           "startAttr": "begin",
           "endAttr": "end",
           "timeDivisor": 1000,
-          "timePartCount": 4
+          "timePartCount": 3
         }
       }
     },
@@ -22328,6 +22328,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-27T02:34:30.299Z",
+  "buildinConfigUpdatedAt": "2026-08-27T09:33:49.277Z",
   "latestVersion": "1.32.7"
 }
