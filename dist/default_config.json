@@ -21692,10 +21692,10 @@
         "hookType": "xhr",
         "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
         "videoPlayerSelector": "mux-player -> mux-video -> video",
+        "loadingContainerSelector": "mux-player#mux-player",
         "quickButtonRule": {
           "appendSelector": "mux-player -> media-theme -> media-control-bar[part='control-bar bottom']",
           "insertBeforeSelector": "mux-player -> media-theme -> media-captions-menu-button[aria-label='closed captions']",
-          "ccEnableSelector": "mux-player -> media-theme -> media-captions-menu-button[aria-label='closed captions']",
           "injectCSS": ".imt-quick-subtitle-pop-content {right: 92px !important; min-height: 75px} .logo,.logo svg { height: 18px !important; width: 18px !important;}"
         }
       }
@@ -22348,6 +22348,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-27T09:48:31.943Z",
+  "buildinConfigUpdatedAt": "2026-08-27T10:00:39.506Z",
   "latestVersion": "1.32.7"
 }
