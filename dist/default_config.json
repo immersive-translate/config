@@ -13067,7 +13067,10 @@
     },
     {
       "id": "pixhentai.com",
-      "matches": "pixhentai.com",
+      "matches": [
+        "pixhentai.com",
+        "kaynscan.org"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
@@ -22340,6 +22343,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-28T09:24:36.638Z",
+  "buildinConfigUpdatedAt": "2026-08-28T09:34:22.955Z",
   "latestVersion": "1.32.7"
 }
