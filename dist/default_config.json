@@ -22132,7 +22132,7 @@
         "https://docs.amd.com/v/u/*/*",
         "https://arxiv.org/pdf/*",
         "https://sci-hub.kvnp.top/*",
-        "https://sci-hub.mobi/*"
+        "https://sci-hub.*/*"
       ],
       "selectorMatches": [
         "embed[type='application/pdf']",
@@ -22343,6 +22343,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-28T09:34:22.955Z",
+  "buildinConfigUpdatedAt": "2026-08-28T09:53:41.650Z",
   "latestVersion": "1.32.7"
 }
