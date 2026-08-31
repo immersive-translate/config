@@ -22472,6 +22472,7 @@
       "id": "NoTranslate",
       "matches": [
         "prepful.ai",
+        "playit.gg",
         "*.tiktok.com",
         "altis.world",
         "*.newthingsunderthesun.com",
@@ -22551,6 +22552,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-31T15:38:20.601Z",
+  "buildinConfigUpdatedAt": "2026-08-31T15:46:19.010Z",
   "latestVersion": "1.32.8"
 }
