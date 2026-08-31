@@ -18,6 +18,7 @@
   "disableOpenUpgradePage": false,
   "forceAutoTranslate": false,
   "popupVariant": "modern",
+  "useInlinePopupMembershipPrompt": false,
   "activeCampaignTags": {
     "enabled": false,
     "cacheTtlMinutes": 1440,
@@ -1101,6 +1102,7 @@
   "h5FloatBallMainBtnTooltipShownCount": 0,
   "translationUsageLimit": {
     "enable": true,
+    "enableBasicTranslationFallback": true,
     "usageScenes": [
       "web_page",
       "subtitle_video",
@@ -1147,6 +1149,12 @@
   "forceApplyFreeModel": null,
   "enableFreeModelMode": false,
   "advanceMergeConfig": [
+    {
+      "condition": "abTagNumber<5",
+      "advanceConfig": {
+        "useInlinePopupMembershipPrompt": true
+      }
+    },
     {
       "condition": "abTagNumber<2",
       "advanceConfig": {
@@ -2028,8 +2036,26 @@
     },
     "ai": {
       "baseUrlApiPath": "/chat/completions",
+      "aiBatch": {
+        "mode": "recommended",
+        "taskSystemPrompt": "You are a professional {{to}} native translator. Translate each source item accurately and fluently into {{to}}.\n\n## Translation Requirements\n- Preserve its meaning, tone, paragraph structure, and meaningful formatting.\n- Keep code, placeholders, and content that must not be translated unchanged.\n- Use supplied document context and terminology consistently.\n\n{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+        "userPrompt": "Translate to {{to}}:\n\n{{text}}",
+        "protocolSystemPrompt": "## Multi-item processing protocol\nThe input contains source items. Each item starts with its exact request id on one title line, followed by that item's source text. The source list ends with exactly one [[source_end]] line. Process every item independently according to the active task instructions, using the other items only as context. Return every supplied id exactly once in any order and preserve each id title byte-for-byte. Processed text may span multiple lines.\n\nWhen a native response schema is supplied, follow it exactly. Otherwise, return each id title followed by only its processed text.\n\n{{ai_batch_terminology_prompt}}\n\nDo not wrap the entire response or protocol envelope in a Markdown fence. Fenced code blocks that belong to an item's processed content may be preserved. Do not include explanations outside processed text.",
+        "itemsPerRequest": 16,
+        "itemsPerRequestForSubtitle": 12,
+        "itemsPerRequestLimit": 32,
+        "textLengthPerItem": 200,
+        "recoveryPolicy": "budgeted_fallback",
+        "maxRecoveryNodeRequests": 2,
+        "recoveryFallbackService": {
+          "pro": "babelfast-pro",
+          "nonPro": "bing-free"
+        }
+      },
       "env": {
         "html_only": "\n\nPs. if the text contains html tags, please consider after translate, where the tags should be in translated result, meanwhile keep the result fluently.",
+        "ai_batch_terminology_enabled_prompt": "When a native response schema is supplied, populate its newTerms array. Otherwise, after all translation blocks, always return exactly one [[terms]] line.\n\nIn the [[terms]] section, inspect every source/translation pair. Only report terminology whose translation could reasonably vary across later batches and whose consistent treatment would materially help the article. Prioritize personal names and reliable shorter forms; organizations, places, titles, and abbreviations; work-specific proper names and fictional concepts; professional or domain-specific terms; and recurring entities with multiple plausible transliterations or translations. Exclude ordinary dictionary words, common nouns, verbs, or adjectives, obvious literal translations, one-off descriptions, generic phrases, and complete sentences.\n\nReport at most 12 such candidates, only when the source term was not supplied in this request and the reported target was actually used in the same translation. A candidate may be translated, transliterated, localized, or intentionally preserved; for an intentionally preserved term, source and target may be identical. For a proper name that may later appear in a reliable shorter form, report both the full name and each independently usable shorter form as separate term blocks. For example, \"Satoshi Hongo\" translated as \"本乡聪\" may also yield \"Satoshi\" -> \"聪\" and \"Hongo\" -> \"本乡\". Only split a name when each mapping is reliable from the same source/translation pair; do not split ordinary terms. Each term block must contain exactly these three single lines: [[term]], a non-empty source term, and the non-empty target term actually used in the translation. Do not report terms supplied in this request. Omit term blocks when there are no qualifying new candidates after checking all source/translation pairs. Finish the entire response with exactly one [[end]] line. Do not return content after it.\n\nRequired marker response grammar:\n[[p0]]\ntranslated text\n[[p1]]\ntranslated text\n[[terms]]\n[[term]]\nnew source term\ntarget term used in a translation\n[[end]]\n\nRequired marker response grammar when there are no reliable new terms:\n[[p0]]\ntranslated text\n[[terms]]\n[[end]]",
+        "ai_batch_terminology_disabled_prompt": "",
         "imt_source_field": "text",
         "imt_trans_field": "text",
         "imt_sub_source_field": "text",
@@ -2354,7 +2380,7 @@
           "temperature": 0,
           "topK": 1,
           "topP": 1,
-          "maxOutputTokens": 2048,
+          "maxOutputTokens": 4096,
           "stopSequences": []
         },
         "safetySettings": [
@@ -2390,7 +2416,7 @@
               "temperature": 0,
               "topK": 1,
               "topP": 1,
-              "maxOutputTokens": 2048,
+              "maxOutputTokens": 4096,
               "stopSequences": [],
               "thinkingConfig": {
                 "thinkingBudget": 0
@@ -2425,7 +2451,7 @@
               "temperature": 0,
               "topK": 1,
               "topP": 1,
-              "maxOutputTokens": 2048,
+              "maxOutputTokens": 4096,
               "stopSequences": [],
               "thinkingConfig": {
                 "thinkingBudget": 128
@@ -2464,7 +2490,7 @@
               "temperature": 0,
               "topK": 1,
               "topP": 1,
-              "maxOutputTokens": 2048,
+              "maxOutputTokens": 4096,
               "stopSequences": [],
               "thinkingConfig": {
                 "thinkingLevel": "minimal"
@@ -2500,7 +2526,7 @@
               "temperature": 1,
               "topK": 1,
               "topP": 1,
-              "maxOutputTokens": 2048,
+              "maxOutputTokens": 4096,
               "stopSequences": [],
               "thinkingConfig": {
                 "thinkingLevel": "low"
@@ -2570,7 +2596,7 @@
       "maxTextLengthPerRequest": 2000,
       "maxTextGroupLengthPerRequestForSubtitle": 4,
       "bodyConfigs": {
-        "max_tokens": 2048
+        "max_tokens": 4096
       },
       "headerConfigs": {
         "anthropic-version": "2023-06-01",
@@ -2594,6 +2620,7 @@
           ],
           "temperature": null,
           "bodyConfigs": {
+            "max_tokens": 4096,
             "temperature.remove": "",
             "top_p.remove": "",
             "top_k.remove": ""
@@ -2606,6 +2633,7 @@
           ],
           "apiUrl": "^https://api\\.anthropic\\.com(?:/|$)",
           "bodyConfigs": {
+            "max_tokens": 4096,
             "thinking": {
               "type": "disabled"
             }
@@ -2731,7 +2759,7 @@
       "maxTextLengthPerRequest": 1200,
       "maxTextGroupLengthPerRequestForSubtitle": 4,
       "bodyConfigs": {
-        "max_tokens": 2048
+        "max_tokens": 4096
       },
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
@@ -2893,7 +2921,22 @@
       "models": "hunyuan-lite|hunyuan-standard|hunyuan-standard-256K|hunyuan-pro|DeepSeek-V3",
       "limit": 2,
       "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true
+      "translationEnableRichTranslate": true,
+      "disabledAt": "2026-09-30T00:00:00+08:00"
+    },
+    "tokenhub": {
+      "extends": "ai",
+      "name": "Tencent Cloud TokenHub",
+      "model": "hy3",
+      "models": "hy3|hy-mt2-pro|hy-mt2-plus|hy-mt2-lite",
+      "provider": "custom",
+      "limit": 10,
+      "apiUrl": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+      "enableRichTranslate": true,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
+      "defaultMaxTextGroupLengthPerRequest": 4,
+      "maxTextGroupLengthPerRequest": 4
     },
     "siliconcloud": {
       "extends": "ai",
@@ -2991,6 +3034,9 @@
       "translationEnableRichTranslate": true,
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4,
+      "aiBatch": {
+        "mode": "custom"
+      },
       "bodyConfigs": {
         "temperature": 0
       }
@@ -3084,7 +3130,7 @@
       "bodyConfigs": {
         "temperature": 0.01,
         "top_p": 0.1,
-        "max_tokens": 2048
+        "max_tokens": 4096
       },
       "ignoreResRegexs": [
         "^系统检测到输入或生成内容可能包含不安全或敏感内容",
@@ -3116,6 +3162,9 @@
             "GLM-5-Turbo"
           ],
           "bodyConfigs": {
+            "temperature": 0.01,
+            "top_p": 0.1,
+            "max_tokens": 4096,
             "thinking": {
               "type": "disabled"
             }
@@ -3129,6 +3178,9 @@
             "^GLM-5\\.3-Flash$"
           ],
           "bodyConfigs": {
+            "temperature": 0.01,
+            "top_p": 0.1,
+            "max_tokens": 4096,
             "thinking": {
               "type": "enabled"
             },
@@ -3158,7 +3210,7 @@
       "bodyConfigs": {
         "temperature": 0.01,
         "top_p": 0.1,
-        "max_tokens": 2048
+        "max_tokens": 4096
       },
       "ignoreResRegexs": [
         "^系统检测到输入或生成内容可能包含不安全或敏感内容"
@@ -3183,6 +3235,9 @@
             "GLM-5-Turbo"
           ],
           "bodyConfigs": {
+            "temperature": 0.01,
+            "top_p": 0.1,
+            "max_tokens": 4096,
             "thinking": {
               "type": "disabled"
             }
@@ -3196,6 +3251,9 @@
             "^GLM-5\\.3-Flash$"
           ],
           "bodyConfigs": {
+            "temperature": 0.01,
+            "top_p": 0.1,
+            "max_tokens": 4096,
             "thinking": {
               "type": "enabled"
             },
@@ -4335,9 +4393,15 @@
               "GLM-4.6",
               "GLM-4.6.*",
               "GLM-4.7",
-              "GLM-5"
+              "GLM-5",
+              "GLM-5.1",
+              "GLM-5.2",
+              "GLM-5-Turbo"
             ],
             "bodyConfigs": {
+              "temperature": 0.01,
+              "top_p": 0.1,
+              "max_tokens": 2048,
               "thinking": {
                 "type": "disabled"
               }
@@ -4376,6 +4440,44 @@
             ],
             "bodyConfigs": {
               "temperature.remove": ""
+            }
+          },
+          {
+            "models": [
+              "^claude-.*$",
+              "^ernie[_-].*$"
+            ],
+            "bodyConfigs": {
+              "max_tokens": 2048
+            }
+          },
+          {
+            "models": [
+              "^glm-4$",
+              "^glm-4-flash$",
+              "^glm-4-flash-250414$"
+            ],
+            "bodyConfigs": {
+              "temperature": 0.01,
+              "top_p": 0.1,
+              "max_tokens": 2048
+            }
+          },
+          {
+            "models": [
+              "^glm-5\\.3$",
+              "^glm-5\\.3-flash$",
+              "^GLM-5\\.3$",
+              "^GLM-5\\.3-Flash$"
+            ],
+            "bodyConfigs": {
+              "temperature": 0.01,
+              "top_p": 0.1,
+              "max_tokens": 2048,
+              "thinking": {
+                "type": "enabled"
+              },
+              "reasoning_effort": "low"
             }
           }
         ]
@@ -4654,6 +4756,65 @@
             ],
             "bodyConfigs": {
               "temperature.remove": ""
+            }
+          },
+          {
+            "models": [
+              "^claude-.*$",
+              "^ernie[_-].*$"
+            ],
+            "bodyConfigs": {
+              "max_tokens": 2048
+            }
+          },
+          {
+            "models": [
+              "^glm-4$",
+              "^glm-4-flash$",
+              "^glm-4-flash-250414$"
+            ],
+            "bodyConfigs": {
+              "temperature": 0.01,
+              "top_p": 0.1,
+              "max_tokens": 2048
+            }
+          },
+          {
+            "models": [
+              "glm-4.5",
+              "glm-4.5.*",
+              "GLM-4.6",
+              "GLM-4.6.*",
+              "GLM-4.7",
+              "GLM-5",
+              "GLM-5.1",
+              "GLM-5.2",
+              "GLM-5-Turbo"
+            ],
+            "bodyConfigs": {
+              "temperature": 0.01,
+              "top_p": 0.1,
+              "max_tokens": 2048,
+              "thinking": {
+                "type": "disabled"
+              }
+            }
+          },
+          {
+            "models": [
+              "^glm-5\\.3$",
+              "^glm-5\\.3-flash$",
+              "^GLM-5\\.3$",
+              "^GLM-5\\.3-Flash$"
+            ],
+            "bodyConfigs": {
+              "temperature": 0.01,
+              "top_p": 0.1,
+              "max_tokens": 2048,
+              "thinking": {
+                "type": "enabled"
+              },
+              "reasoning_effort": "low"
             }
           }
         ]
@@ -6345,6 +6506,8 @@
         "[class='css-175oi2r r-kemksi r-1kqtdi0 r-1q9bdsx r-1phboty r-rs99b7 r-1udh08x r-13qz1uu']",
         "[class='css-175oi2r r-uef6q5 r-dnmrzs r-97e31f r-13qz1uu r-13awgt0 r-dgnwoc r-1me0s30 r-t3sqpr r-1dqxon3']",
         "[class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0']",
+        "[class='css-g5y9jx r-16y2uox r-1wbh5a2 r-1habvwh'] .css-g5y9jx [data-testid=primaryColumn] [aria-label*='Grok'] [class='css-g5y9jx r-1awozwy r-16lk18l r-13qz1uu'] [class='css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-37j5jr r-rjixqe r-16dba41 r-imh66m']",
+        "[class='css-g5y9jx r-16y2uox r-1wbh5a2 r-1habvwh'] .css-g5y9jx [data-testid=primaryColumn] [aria-label*='Grok'] [class='css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-37j5jr r-16dba41 r-imh66m r-1kt6imw r-dnmrzs']",
         "span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-n6v787 r-1cwl3u0']",
         ".font-chirp.text-body.font-normal",
         "article h1,article .x-article-body"
@@ -9617,7 +9780,8 @@
       ],
       "urlChangeDelay": 2000,
       "stayOriginalSelectors": [
-        "span.display",
+        "span.display figure",
+        "span.formula",
         "span.math"
       ],
       "extraBlockSelectors.add": [
@@ -9642,15 +9806,7 @@
         ".u-clamp-2-lines {-webkit-line-clamp:unset!important;}",
         ".immersive-translate-target-wrapper {content-visibility:auto;}"
       ],
-      "enableRichTranslate": true,
-      "preTranslateLimiter.add": {
-        "side.selectors": [
-          "nav",
-          "aside",
-          ".PreviewTableOfContents",
-          ".accessbar-sticky"
-        ]
-      }
+      "enableRichTranslate": true
     },
     {
       "id": "thehighestofthemountains",
@@ -13230,7 +13386,7 @@
     },
     {
       "id": "bookwalker",
-      "matches": "viewer.bookwalker.jp",
+      "matches": "*.bookwalker.jp",
       "imageRule.add_v.[1.32.3]": {
         "enable": true,
         "type": "manga",
@@ -22343,6 +22499,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-28T09:53:41.650Z",
+  "buildinConfigUpdatedAt": "2026-08-31T03:07:09.224Z",
   "latestVersion": "1.32.7"
 }
