@@ -2036,6 +2036,7 @@
     },
     "ai": {
       "baseUrlApiPath": "/chat/completions",
+      "maxOutputTokens": 4096,
       "aiBatch": {
         "mode": "recommended",
         "taskSystemPrompt": "You are a professional {{to}} native translator. Translate each source item accurately and fluently into {{to}}.\n\n## Translation Requirements\n- Preserve its meaning, tone, paragraph structure, and meaningful formatting.\n- Keep code, placeholders, and content that must not be translated unchanged.\n- Use supplied document context and terminology consistently.\n\n{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
@@ -4015,6 +4016,16 @@
   ],
   "generalRule": {
     "_comment": "",
+    "aiBatchPolicy": {
+      "sameTextFallback": false,
+      "sameTextMinCharacters": 4,
+      "sameTextIgnoredLanguagePairs": [
+        "en2auto",
+        "zh-CN2zh-TW",
+        "zh-TW2zh-CN"
+      ],
+      "enableArticleTerminology": false
+    },
     "siteParagraphCacheFallback": {
       "enable": false,
       "maxEntries": 3000,
@@ -5779,7 +5790,12 @@
         {
           "condition": "true",
           "advanceConfig": {
-            "domReadyDetectTimeout": 0
+            "domReadyDetectTimeout": 0,
+            "generalRule": {
+              "aiBatchPolicy.add": {
+                "sameTextFallback": true
+              }
+            }
           }
         }
       ],
@@ -5817,7 +5833,12 @@
             "translationLanguagePattern.add": {
               "matches": []
             },
-            "domReadyDetectTimeout": 0
+            "domReadyDetectTimeout": 0,
+            "generalRule": {
+              "aiBatchPolicy.add": {
+                "sameTextFallback": true
+              }
+            }
           }
         }
       ],
@@ -5934,7 +5955,12 @@
           "advanceConfig": {
             "defaultTranslationServicesOrder.remove": [
               "babelfast-pro"
-            ]
+            ],
+            "generalRule": {
+              "aiBatchPolicy.add": {
+                "sameTextFallback": true
+              }
+            }
           }
         }
       ],
@@ -6002,7 +6028,12 @@
           "advanceConfig": {
             "defaultTranslationServicesOrder.remove": [
               "babelfast-pro"
-            ]
+            ],
+            "generalRule": {
+              "aiBatchPolicy.add": {
+                "sameTextFallback": true
+              }
+            }
           }
         }
       ],
@@ -6103,6 +6134,11 @@
                 "limit": 5,
                 "concurrencyLimit": 5,
                 "maxTextGroupLengthPerRequest": 10
+              }
+            },
+            "generalRule": {
+              "aiBatchPolicy.add": {
+                "sameTextFallback": true
               }
             }
           }
@@ -6719,12 +6755,14 @@
         "quickButtonRules": [
           {
             "appendSelector": "button[data-testid=\"captions\"]<-parent<-parent",
+            "dismissOtherPlayerMenus": false,
             "injectCSS": ".imt-quick-subtitle-pop-content { transform: translateX(17px) !important; } .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} ",
             "injectCSS.add_v.[1.32.3]": ".logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} ",
             "injectedGlobalCSS": "[data-testid=\"videoComponent\"] [style*=\"will-change: opacity\"]:has(#immersive-translatequick-button), [data-testid=\"videoComponent\"] [style*=\"will-change:opacity\"]:has(#immersive-translatequick-button) { will-change: auto !important; }"
           },
           {
             "appendSelector": "button[role=\"button\"]>div>svg<-parent<-parent<-parent<-parent",
+            "dismissOtherPlayerMenus": false,
             "injectCSS": ".imt-quick-subtitle-pop-content { transform: unset !important;  bottom: 28px; !important;} .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} ",
             "injectCSS.add_v.[1.32.3]": ".logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} ",
             "injectedGlobalCSS": "[data-testid=\"videoComponent\"] [style*=\"will-change: opacity\"]:has(#immersive-translatequick-button), [data-testid=\"videoComponent\"] [style*=\"will-change:opacity\"]:has(#immersive-translatequick-button) { will-change: auto !important; }"
@@ -6732,6 +6770,7 @@
           {
             "appendSelector": "div<-[data-testid*=\"cellInnerDiv-tweet\"]->[data-testid*=\"immersive-tweet-ui-content-container\"] button[role=\"button\"]<-parent",
             "insertBeforeSelector": "div<-[data-testid*=\"cellInnerDiv-tweet\"]->[data-testid*=\"immersive-tweet-ui-content-container\"] button[role=\"button\"]",
+            "dismissOtherPlayerMenus": false,
             "injectCSS": ".imt-quick-subtitle-button { margin: 0 6px !important; } .imt-quick-subtitle-pop-content { transform: translateY(calc(65%)) !important; right: 35px;  } .logo,.logo svg { height: 24px !important; width: 24px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important; right: 35px; top: 0} ",
             "injectCSS.add_v.[1.32.3]": ".imt-quick-subtitle-button { margin: 0 6px !important; } .logo,.logo svg { height: 24px !important; width: 24px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important; right: 35px; top: 0} ",
             "injectedGlobalCSS": "[data-testid=\"videoComponent\"] [style*=\"will-change: opacity\"]:has(#immersive-translatequick-button), [data-testid=\"videoComponent\"] [style*=\"will-change:opacity\"]:has(#immersive-translatequick-button) { will-change: auto !important; }"
@@ -19240,6 +19279,18 @@
         "archiveofourown.org",
         "ao3-cn.top"
       ],
+      "advanceMergeConfig": [
+        {
+          "condition": "true",
+          "advanceConfig": {
+            "generalRule": {
+              "aiBatchPolicy.add": {
+                "sameTextFallback": true
+              }
+            }
+          }
+        }
+      ],
       "excludeSelectors.add": [
         ".meta,.navigation,.byline,.pagination,.datetime,.stats",
         "#add_comment",
@@ -22499,6 +22550,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-31T03:27:56.447Z",
+  "buildinConfigUpdatedAt": "2026-08-31T10:55:18.714Z",
   "latestVersion": "1.32.7"
 }
