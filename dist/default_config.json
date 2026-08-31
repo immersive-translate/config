@@ -22191,6 +22191,7 @@
       "matches": [
         "mail.163.com",
         "mail.jabber.org",
+        "mailarchive.ietf.org",
         "antirez.com",
         "patchwork.kernel.org",
         "lists.apache.org",
@@ -22550,6 +22551,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-08-31T11:00:11.000Z",
+  "buildinConfigUpdatedAt": "2026-08-31T15:38:20.601Z",
   "latestVersion": "1.32.8"
 }
