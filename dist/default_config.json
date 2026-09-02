@@ -18360,6 +18360,10 @@
         "hookType": "xhr",
         "loadingContainerSelector": "#mvHero .verticals-player-stage__sdk",
         "videoSelector": "#mvHero video",
+        "quickButtonRule": {
+          "appendSelector": "#mvHero .verticals-player-controls__meta-row",
+          "insertBeforeSelector": "#mvHero .verticals-player-controls__settings-trigger"
+        },
         "attachRule": {
           "appendSelector": "#mvHero .verticals-player-stage__sdk",
           "injectedGlobalCSS": [
@@ -22581,6 +22585,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-02T08:04:36.846Z",
+  "buildinConfigUpdatedAt": "2026-09-02T08:14:39.565Z",
   "latestVersion": "1.32.9"
 }
