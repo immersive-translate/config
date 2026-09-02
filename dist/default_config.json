@@ -2042,8 +2042,8 @@
         "taskSystemPrompt": "You are a professional {{to}} native translator. Translate each source item accurately and fluently into {{to}}.\n\n## Translation Requirements\n- Preserve its meaning, tone, paragraph structure, and meaningful formatting.\n- Keep code, placeholders, and content that must not be translated unchanged.\n- Use supplied document context and terminology consistently.\n\n{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
         "userPrompt": "Translate to {{to}}:\n\n{{text}}",
         "protocolSystemPrompt": "## Multi-item processing protocol\nThe input contains source items. Each item starts with its exact request id on one title line, followed by that item's source text. The source list ends with exactly one [[source_end]] line. Process every item independently according to the active task instructions, using the other items only as context. Return every supplied id exactly once in any order and preserve each id title byte-for-byte. Processed text may span multiple lines.\n\nWhen a native response schema is supplied, follow it exactly. Otherwise, return each id title followed by only its processed text.\n\n{{ai_batch_terminology_prompt}}\n\nDo not wrap the entire response or protocol envelope in a Markdown fence. Fenced code blocks that belong to an item's processed content may be preserved. Do not include explanations outside processed text.",
-        "itemsPerRequest": 16,
-        "itemsPerRequestForSubtitle": 12,
+        "itemsPerRequest": 8,
+        "itemsPerRequestForSubtitle": 8,
         "itemsPerRequestLimit": 32,
         "textLengthPerItem": 200,
         "recoveryPolicy": "budgeted_fallback",
@@ -22585,6 +22585,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-02T08:14:39.565Z",
+  "buildinConfigUpdatedAt": "2026-09-02T11:32:50.939Z",
   "latestVersion": "1.32.9"
 }
