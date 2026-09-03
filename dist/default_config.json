@@ -1077,7 +1077,7 @@
       "https://*.immersivetranslate.*/*/tutorial/step-2",
       "https://*.immersivetranslate.*/*/new-guide/step-3"
     ],
-    "defaultShowGuideNums": 2,
+    "defaultShowGuideNums": 4,
     "clickType": "translate",
     "afterInstalledAt": "2023-10-28",
     "fixedPosition": "right",
@@ -22601,6 +22601,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-02T13:02:36.417Z",
+  "buildinConfigUpdatedAt": "2026-09-03T03:30:07.162Z",
   "latestVersion": "1.32.9"
 }
