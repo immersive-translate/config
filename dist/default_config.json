@@ -3795,13 +3795,13 @@
     },
     "kimi-max": {
       "extends": "kimi",
-      "name": "Kimi K2.5",
+      "name": "Kimi K2.6",
       "provider": "pro",
       "type": "custom-ai",
       "limit": 10,
       "visible": true,
-      "model": "kimi-k2.5",
-      "proModel": "kimi-k2.5",
+      "model": "kimi-k2.6",
+      "proModel": "kimi-k2.6",
       "aiBatch": {
         "itemsPerRequest": 4,
         "itemsPerRequestForSubtitle": 4
@@ -22601,6 +22601,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-03T03:30:07.162Z",
+  "buildinConfigUpdatedAt": "2026-09-03T10:01:41.516Z",
   "latestVersion": "1.32.9"
 }
