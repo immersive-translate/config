@@ -4057,7 +4057,7 @@
         }
       },
       {
-        "condition": "versionNumber==13207 && cache==false",
+        "condition": "versionNumber==13207",
         "advanceConfig": {
           "generalRule": {
             "isTranslateTitle": false
@@ -22601,6 +22601,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-03T10:01:41.516Z",
+  "buildinConfigUpdatedAt": "2026-09-04T06:17:28.840Z",
   "latestVersion": "1.32.9"
 }
