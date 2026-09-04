@@ -1273,7 +1273,7 @@
           "imageRule.add": {
             "supportPlatform": {
               "firefox_pc": "all",
-              "safari_pc": "all"
+              "safari_pc": "pro"
             }
           }
         }
@@ -5969,9 +5969,6 @@
         {
           "condition": "true",
           "advanceConfig": {
-            "defaultTranslationServicesOrder.remove": [
-              "babelfast-pro"
-            ],
             "generalRule": {
               "aiBatchPolicy.add": {
                 "sameTextFallback": true
@@ -6042,12 +6039,29 @@
         {
           "condition": "true",
           "advanceConfig": {
-            "defaultTranslationServicesOrder.remove": [
-              "babelfast-pro"
-            ],
             "generalRule": {
               "aiBatchPolicy.add": {
                 "sameTextFallback": true
+              }
+            }
+          }
+        },
+        {
+          "condition": "versionNumber<13101",
+          "advanceConfig": {
+            "defaultTranslationServicesOrder.remove": [
+              "babelfast-pro"
+            ]
+          }
+        },
+        {
+          "condition": "versionNumber>13100",
+          "advanceConfig": {
+            "translationServices": {
+              "babelfast-pro.add": {
+                "limit": 5,
+                "concurrencyLimit": 5,
+                "maxTextGroupLengthPerRequest": 10
               }
             }
           }
@@ -22601,6 +22615,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-04T06:17:28.840Z",
-  "latestVersion": "1.32.9"
+  "buildinConfigUpdatedAt": "2026-09-04T09:55:08.436Z",
+  "latestVersion": "1.32.10"
 }
