@@ -21232,7 +21232,8 @@
         "cgcookie.com",
         "academy.yoast.com",
         "courses.mavenanalytics.io",
-        "apclassroom.collegeboard.org"
+        "apclassroom.collegeboard.org",
+        "learn.getdbt.com"
       ],
       "selectorMatches": [
         ".wistia_embed"
@@ -22616,6 +22617,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-05T15:31:22.099Z",
+  "buildinConfigUpdatedAt": "2026-09-05T16:16:51.578Z",
   "latestVersion": "1.32.10"
 }
