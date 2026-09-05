@@ -22584,7 +22584,8 @@
         "changewindows.org",
         "scispace.com",
         "ww2.mathworks.cn",
-        "paragon-eu.amazon.com"
+        "paragon-eu.amazon.com",
+        "academy.openai.com"
       ],
       "excludeMatches": [
         "eproofing.springer.com/*/journals/*"
@@ -22615,6 +22616,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-04T10:20:49.000Z",
+  "buildinConfigUpdatedAt": "2026-09-05T15:31:22.099Z",
   "latestVersion": "1.32.10"
 }
