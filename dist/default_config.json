@@ -2036,7 +2036,6 @@
     },
     "ai": {
       "baseUrlApiPath": "/chat/completions",
-      "maxOutputTokens": 4096,
       "aiBatch": {
         "mode": "recommended",
         "taskSystemPrompt": "You are a professional {{to}} native translator. Translate each source item accurately and fluently into {{to}}.\n\n## Translation Requirements\n- Preserve its meaning, tone, paragraph structure, and meaningful formatting.\n- Keep code, placeholders, and content that must not be translated unchanged.\n- Use supplied document context and terminology consistently.\n\n{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
@@ -22617,6 +22616,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-05T16:16:51.578Z",
+  "buildinConfigUpdatedAt": "2026-09-07T03:57:37.047Z",
   "latestVersion": "1.32.10"
 }
