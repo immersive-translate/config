@@ -20170,9 +20170,6 @@
           "div[data-cut-index] canvas[data]",
           ".scroll-view > div > img:not(.imt-img)"
         ],
-        "inValidSrcRegex": [
-          "notice_contents"
-        ],
         "intersectionRootMargin": "0px",
         "platforms": [
           "other",
@@ -22620,6 +22617,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-07T04:26:27.971Z",
+  "buildinConfigUpdatedAt": "2026-09-07T04:30:47.493Z",
   "latestVersion": "1.32.10"
 }
