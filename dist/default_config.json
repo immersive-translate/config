@@ -20164,12 +20164,16 @@
         "opImageType": "append",
         "urlFetchType": "canvasArgs",
         "imageSelectors": [
-          "div[class*='scrollViewCut'] img",
+          "div[class*='scrollViewCut'] img:not(.imt-img)",
           "div[class*='scrollViewCut'] canvas[data]",
-          "div[data-cut-index] img",
+          "div[data-cut-index] img:not(.imt-img)",
           "div[data-cut-index] canvas[data]",
-          ".scroll-view > div >  img"
+          ".scroll-view > div > img:not(.imt-img)"
         ],
+        "inValidSrcRegex": [
+          "notice_contents"
+        ],
+        "intersectionRootMargin": "0px",
         "platforms": [
           "other",
           "chrome",
@@ -22616,6 +22620,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-07T03:57:37.047Z",
+  "buildinConfigUpdatedAt": "2026-09-07T04:26:27.971Z",
   "latestVersion": "1.32.10"
 }
