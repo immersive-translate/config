@@ -9262,7 +9262,7 @@
       "matches": "www.cnbc.com",
       "urlChangeDelay": 1000,
       "globalStyles": {
-        "div.Card-titleContainer > div": "-webkit-line-clamp: unset;max-height: unset;"
+        "[style*='-webkit-line-clamp']": "-webkit-line-clamp: unset!important;max-height: unset!important;"
       },
       "excludeSelectors.add": [
         "#GlobalNavigation",
@@ -22637,6 +22637,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-08T08:08:20.514Z",
+  "buildinConfigUpdatedAt": "2026-09-09T14:54:23.512Z",
   "latestVersion": "1.33.1"
 }
