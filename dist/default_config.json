@@ -12936,7 +12936,7 @@
       "imageRule.add": {
         "type": "manga",
         "imageSelectors": [
-          ".entry-inner img"
+          ".entry-inner > div > a > img"
         ],
         "loadingSelectors": [
           "div"
@@ -22659,6 +22659,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-10T07:41:26.737Z",
+  "buildinConfigUpdatedAt": "2026-09-10T08:13:04.611Z",
   "latestVersion": "1.33.1"
 }
