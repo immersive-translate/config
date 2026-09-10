@@ -20220,6 +20220,28 @@
       }
     },
     {
+      "id": "ridibooks-preview",
+      "matches": "ridibooks.com/books/*/preview*",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "div[role='region'] img[src^='blob:']"
+        ],
+        "mangaRefreshSelectors": [
+          ".page_num"
+        ],
+        "opImageType": "replace",
+        "platforms": [
+          "other",
+          "chrome",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
+        ]
+      }
+    },
+    {
       "id": "ridibooks.com",
       "matches": "ridibooks.com",
       "imageRule.add": {
@@ -22637,6 +22659,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-09T14:54:23.512Z",
+  "buildinConfigUpdatedAt": "2026-09-10T07:41:26.737Z",
   "latestVersion": "1.33.1"
 }
