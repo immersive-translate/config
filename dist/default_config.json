@@ -11811,10 +11811,10 @@
           "div[data-screen=full] #immersive-translate-quick-button-container,.immersive-translate-quick-button-container { margin-top: 4.5px !important;}"
         ],
         "quickButtonRule": {
-          "appendSelector": ".bpx-player-control-bottom-right",
+          "appendSelector": "#bilibili-player .bpx-player-control-bottom-right",
           "injectCSS": ".imt-quick-subtitle-button { height: 60%; } .label { display: none; } .logo,.logo svg { width: 70%; } .imt-quick-subtitle-button { margin: 0 8px;}",
-          "insertBeforeSelector": ".bpx-player-ctrl-quality",
-          "ccEnableSelector": ".bpx-player-ctrl-subtitle"
+          "insertBeforeSelector": "#bilibili-player .bpx-player-ctrl-quality",
+          "ccEnableSelector": "#bilibili-player .bpx-player-ctrl-subtitle"
         }
       }
     },
@@ -22659,6 +22659,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-10T08:13:04.611Z",
+  "buildinConfigUpdatedAt": "2026-09-10T10:19:37.964Z",
   "latestVersion": "1.33.1"
 }
