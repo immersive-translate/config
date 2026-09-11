@@ -16004,11 +16004,11 @@
       "subtitleRule.add": {
         "type": "subsrt",
         "hookType": "xhr",
-        "subtitleUrlRegExp": "https?://[^/]+\\.cloudfront\\.net/[^/]+/[^/]+$",
+        "subtitleUrlRegExp": "https?://(?:[^/]+\\.cloudfront\\.net/[^/]+/[^/]+|ott-resources\\.viu\\.com/[A-Za-z0-9]+)(?:[/?#]|$)",
         "loadingContainerSelector": ".bmpui-container-wrapper",
         "loadingStyle": "bottom: 20%;",
         "injectedCss": [
-          ".bmpui-controls-hidden #immersive-translate-quick-button-container,.immersive-translate-quick-button-container {display: none;}"
+          ".bmpui-controls-hidden #immersive-translate-quick-button-container { display: none; }"
         ],
         "quickButtonRule": {
           "appendSelector": ".bmpui-ui-container.bmpui-ui-viu-subtitle > .bmpui-container-wrapper",
@@ -22661,6 +22661,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-11T10:19:44.129Z",
+  "buildinConfigUpdatedAt": "2026-09-11T10:32:50.286Z",
   "latestVersion": "1.33.1"
 }
