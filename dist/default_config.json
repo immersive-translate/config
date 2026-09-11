@@ -3497,12 +3497,12 @@
       ]
     },
     "deepseek-pro": {
-      "name": "DeepSeek-V4-Flash",
+      "name": "DeepSeek-V4.1-Flash",
       "type": "deepseek",
       "group": "pro",
       "extends": "deepseek",
-      "model": "DeepSeek-V4-Flash-0731",
-      "proModel": "DeepSeek-V4-Flash-0731",
+      "model": "DeepSeek-V4.1-Flash",
+      "proModel": "DeepSeek-V4.1-Flash",
       "concurrencyLimit": 50,
       "provider": "pro",
       "visible": true,
@@ -22661,6 +22661,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-10T14:48:29.576Z",
+  "buildinConfigUpdatedAt": "2026-09-11T02:55:09.469Z",
   "latestVersion": "1.33.1"
 }
