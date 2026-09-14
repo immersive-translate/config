@@ -864,6 +864,7 @@
     "https://master.dev[Master.dev]",
     "https://whop.com[Whop.com]",
     "https://lennysnewsletter.com[Lennysnewsletter.com]",
+    "https://shibaristudy.com[Shibaristudy.com]",
     "https://epicreact.dev[Epic React]",
     "https://www.billboard.com[Billboard]",
     "https://app.tonebase.co[App.tonebase.co]",
@@ -17616,6 +17617,21 @@
       }
     },
     {
+      "id": "shibaristudy-com",
+      "matches": [
+        "shibaristudy.com"
+      ],
+      "subtitleRule.add": {
+        "allowHideModeTextTrack": true,
+        "quickButtonRule": {
+          "appendSelector": "video-player[data-test=\"player\"] video-controls",
+          "insertBeforeSelector": "video-player[data-test=\"player\"] video-subtitles-button"
+        },
+        "type": "text_track_dynamic",
+        "videoPlayerSelector": "video"
+      }
+    },
+    {
       "id": "codewithchris",
       "matches": [
         "learn.codewithchris.com",
@@ -22661,6 +22677,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-11T10:32:50.286Z",
+  "buildinConfigUpdatedAt": "2026-09-14T10:44:41.201Z",
   "latestVersion": "1.33.1"
 }
