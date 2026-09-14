@@ -12335,29 +12335,31 @@
     },
     {
       "id": "iview",
-      "matches": "iview.abc.net.au",
+      "matches": [
+        "iview.abc.net.au"
+      ],
       "excludeSelectors": [
-        ".jwplayer"
+        ".jwplayer",
+        ".shaka-text-container"
       ],
       "mutationExcludeSelectors.add": [
-        ".jwplayer *"
+        ".jwplayer *",
+        ".shaka-text-container *"
       ],
       "subtitleRule.add": {
-        "type": "webvtt",
-        "subtitleUrlRegExp": "/cc/.*\\.(vtt|webvtt)$",
-        "loadingContainerSelector": ".jwplayer",
+        "type": "live_attach",
+        "videoPlayerSelector": "[data-component=\"MediaPlayerContainer\"]",
+        "videoSelector": "video[data-component=\"MediaPlayerElement\"]",
+        "captionContainerSelector": ".shaka-text-container",
+        "loadingContainerSelector": "[data-component=\"MediaPlayerContainer\"]",
         "quickButtonRule": {
-          "appendSelector": ".jw-reset.jw-button-container",
-          "insertBeforeSelector": ".jw-settings-submenu-button",
-          "injectCSS": ".imt-quick-subtitle-pop-content {z-index: 999999;}"
+          "appendSelector": "[data-component=\"MediaPlayerContainer\"] [aria-label=\"Media Display Controls\"]",
+          "insertBeforeSelector": "[data-component=\"MediaPlayerContainer\"] [aria-label=\"Closed Captions\"]"
         },
         "attachRule": {
-          "appendSelector": ".jwplayer",
-          "injectedCSS": [
-            ".imt-caption-window {width: 90%;}"
-          ],
+          "appendSelector": "[data-component=\"MediaPlayerContainer\"]",
           "injectedGlobalCSS": [
-            ".jw-text-track-container {display:none!important;}"
+            ".shaka-text-container {opacity: 0 !important; pointer-events: none !important;}"
           ]
         }
       }
@@ -22677,6 +22679,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-14T10:44:41.201Z",
+  "buildinConfigUpdatedAt": "2026-09-14T15:32:58.219Z",
   "latestVersion": "1.33.1"
 }
