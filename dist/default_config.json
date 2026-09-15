@@ -5038,7 +5038,7 @@
       "translationFontWeight": "400",
       "translateGroupCount": 5,
       "filterAmbientSounds": true,
-      "filterAmbientSoundsRegex": "\\([^)]*\\)",
+      "filterAmbientSoundsRegex": "\\([^)]*\\)|\\[[^\\]]*\\]",
       "autoSwitchSubtitleWithSameLanguage": false,
       "enableIOSFullScreenTextTrack": true,
       "youtubeAutoEnableSubtitleAfterInstalledAt": "2024-04-25",
@@ -22679,6 +22679,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-14T15:32:58.219Z",
+  "buildinConfigUpdatedAt": "2026-09-15T09:31:19.792Z",
   "latestVersion": "1.33.1"
 }
