@@ -22144,7 +22144,8 @@
         "www.nikkei.com",
         "dolmods.net",
         "detail.1688.com",
-        "herdr.dev"
+        "herdr.dev",
+        "sysu.bohrium.com"
       ],
       "excludeMatches": [
         "https://followin.io/*"
@@ -22175,7 +22176,11 @@
         ".card-recommend-oneImg article h4 {max-height:unset;-webkit-line-clamp:unset;}",
         ".description__4cb8a {max-height:unset;-webkit-line-clamp:unset;}",
         ".link-container {height:unset!important;-webkit-line-clamp:unset!important;}",
-        ".plugin-desc {max-height:unset;-webkit-line-clamp:unset;}"
+        ".plugin-desc {max-height:unset;-webkit-line-clamp:unset;}",
+        "[style*='max-height'] {max-height:unset!important;}"
+      ],
+      "excludeSelectors.add": [
+        "[class*='paper-author'],[class*='paper-info']"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -22569,11 +22574,13 @@
         "societyforpsychotherapy.org",
         "cbtm.manifestlao.com",
         "notefolio.net",
-        "finance.sina.*"
+        "finance.sina.*",
+        "andymatuschak.org"
       ],
       "injectedCss.add": [
         "[class*='line-clamp-'] {-webkit-line-clamp: unset!important; max-height: unset!important;}",
-        ".top-bar {overflow:hidden;}"
+        ".top-bar {overflow:hidden;}",
+        ".PageContainer * {height:unset!important;}"
       ],
       "additionalExcludeSelectors.remove": [
         ".notranslate",
@@ -22679,6 +22686,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-16T05:21:40.908Z",
+  "buildinConfigUpdatedAt": "2026-09-16T10:38:43.195Z",
   "latestVersion": "1.33.1"
 }
