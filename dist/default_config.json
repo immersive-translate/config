@@ -1055,8 +1055,7 @@
     },
     "blockUrls": [
       "*immersivetranslate.*/preview",
-      "dash.immersivetranslate.*/*",
-      "https://steamloopback.host/index.html*"
+      "dash.immersivetranslate.*/*"
     ],
     "guideBlockUrls": [
       "https://immersivetranslate.*/accounts/login*",
@@ -1722,6 +1721,7 @@
     "http://localhost:8000/options/",
     "http://192.168.50.9:8000/options/",
     "https://silverbullet.md/",
+    "https://steamloopback.host/index.html*",
     "googleads.g.doubleclick.net",
     "s1.hdslb.com",
     "oapi.dingtalk.com",
@@ -3504,7 +3504,7 @@
       "extends": "deepseek",
       "model": "DeepSeek-V4.1-Flash",
       "proModel": "DeepSeek-V4.1-Flash",
-      "concurrencyLimit": 50,
+      "concurrencyLimit": 100,
       "provider": "pro",
       "visible": true,
       "limit": 20,
@@ -22679,6 +22679,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-15T09:31:19.792Z",
+  "buildinConfigUpdatedAt": "2026-09-16T05:21:40.908Z",
   "latestVersion": "1.33.1"
 }
