@@ -19708,7 +19708,10 @@
     },
     {
       "id": "manhuaus.com",
-      "matches": "manhuaus.com",
+      "matches": [
+        "manhuaus.com",
+        "manhuahot.com"
+      ],
       "imageRule.add": {
         "enable": true,
         "type": "manga",
@@ -22689,6 +22692,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-18T08:45:13.537Z",
+  "buildinConfigUpdatedAt": "2026-09-18T10:48:04.048Z",
   "latestVersion": "1.33.1"
 }
