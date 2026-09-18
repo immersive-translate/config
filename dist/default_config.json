@@ -720,7 +720,8 @@
     "https://www.manhwas.men[manhwas.men]",
     "https://ridibooks.com[ridibooks.com]",
     "https://www.sunday-webry.com[sunday-webry.com]",
-    "https://ynjn.jp[ynjn.jp]"
+    "https://ynjn.jp[ynjn.jp]",
+    "https://mangayun.com[mangayun.com]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -13639,7 +13640,8 @@
         "www.yinmh.com",
         "www.manhwas.men",
         "*.uzakichanmanga.com",
-        "book18.fans"
+        "book18.fans",
+        "mangayun.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -13751,7 +13753,8 @@
           ".left .image img",
           "#chapter_imgs img",
           "img.aligncenter",
-          "#post-hentai img"
+          "#post-hentai img",
+          ".reader-page-wrap > img"
         ],
         "credentialUrlMatches": [
           "https://images.jcomic.net/*"
@@ -22686,6 +22689,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-16T10:38:43.195Z",
+  "buildinConfigUpdatedAt": "2026-09-18T08:45:13.537Z",
   "latestVersion": "1.33.1"
 }
