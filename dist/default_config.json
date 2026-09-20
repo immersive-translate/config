@@ -7826,7 +7826,6 @@
       "subtitleRule.add": {
         "type": "youtube",
         "hookType": "xhr_response",
-        "quickMenuRenderMode": "playerPortal",
         "allowFreeUserLive": true,
         "subtitleUrlRegExp": "(/api/timedtext)",
         "translateSelectors": [
@@ -8134,7 +8133,6 @@
       "subtitleRule.add": {
         "type": "youtube",
         "hookType": "xhr_response",
-        "quickMenuRenderMode": "playerPortal",
         "allowFreeUserLive": true,
         "proLiveSubtitleTranslateService": "deepl-pro",
         "subtitleUrlRegExp": "(/api/timedtext)",
@@ -22692,6 +22690,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-18T10:48:04.048Z",
+  "buildinConfigUpdatedAt": "2026-09-20T06:58:12.799Z",
   "latestVersion": "1.33.1"
 }
