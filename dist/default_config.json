@@ -1522,7 +1522,7 @@
       }
     },
     {
-      "condition": "interfaceLanguage==zh-CN && versionNumber>12701",
+      "condition": "versionNumber>12701",
       "advanceConfig": {
         "defaultTranslationServicesOrder.remove": [
           "bing-free"
@@ -1614,12 +1614,9 @@
       "advanceConfig": {
         "enableFreeModelMode": true,
         "translationServices.add": {
-          "bing-free": {
-            "type": "bing",
-            "group": "free",
-            "extends": "bing",
-            "disabledAt": "2026-04-19",
-            "migrateToService": "free-model"
+          "bing.add": {
+            "defaultToService": "free-model",
+            "hidden": true
           }
         }
       }
@@ -22693,6 +22690,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-20T10:54:40.349Z",
+  "buildinConfigUpdatedAt": "2026-09-20T11:12:58.014Z",
   "latestVersion": "1.33.1"
 }
