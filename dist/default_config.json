@@ -6764,6 +6764,9 @@
         },
         "aiSubtitle": {
           "enable": true,
+          "urlRegex": [
+            "^https://(?:[^/]+\\.)?(?:x|twitter)\\.com/(?!i/broadcasts(?:/|$)).*$"
+          ],
           "maxDurationHours": 4,
           "quotedPostClosestSelector": "div[role=\"link\"]"
         },
@@ -22690,6 +22693,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-20T11:12:58.014Z",
+  "buildinConfigUpdatedAt": "2026-09-20T16:18:37.704Z",
   "latestVersion": "1.33.1"
 }
