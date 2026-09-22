@@ -865,6 +865,7 @@
     "https://master.dev[Master.dev]",
     "https://whop.com[Whop.com]",
     "https://lennysnewsletter.com[Lennysnewsletter.com]",
+    "https://slideslive.com[Slideslive.com]",
     "https://shibaristudy.com[Shibaristudy.com]",
     "https://epicreact.dev[Epic React]",
     "https://www.billboard.com[Billboard]",
@@ -15984,8 +15985,9 @@
         ".slp__video *"
       ],
       "subtitleRule.add": {
-        "type": "text_track_dynamic",
-        "videoPlayerSelector": "video",
+        "type": "text_track",
+        "videoPlayerSelector": ".slp__video video",
+        "allowHideModeTextTrack": true,
         "loadingContainerSelector": ".slp__videoPlayer__content",
         "quickButtonRule": {
           "appendSelector": ".slp__videoControls__right",
@@ -15994,7 +15996,16 @@
         },
         "injectedCss": [
           "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container { display: inline-block; height: 100%; }"
-        ]
+        ],
+        "attachRule": {
+          "appendSelector": ".slp__video",
+          "injectedCSS": [
+            ".imt-caption-window { width: 90%; }"
+          ],
+          "injectedGlobalCSS": [
+            ".slp__subtitles { display: none !important; }"
+          ]
+        }
       }
     },
     {
@@ -22693,6 +22704,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-20T16:18:37.704Z",
+  "buildinConfigUpdatedAt": "2026-09-22T06:08:29.824Z",
   "latestVersion": "1.33.1"
 }
