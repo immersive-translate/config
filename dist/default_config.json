@@ -155,6 +155,46 @@
       "disabledAt": ""
     }
   },
+  "loginAiQuotaGift": {
+    "enabled": false,
+    "taskKey": "user_login_1",
+    "trialServiceId": "trial-pro"
+  },
+  "mappedTranslationServices": {
+    "trial-pro": {
+      "iconType": "free-model",
+      "default": {
+        "serviceId": "deepseek-pro",
+        "serviceName": "DeepSeek"
+      },
+      "targetLanguages": {
+        "zh-CN": {
+          "serviceId": "babelfast-pro",
+          "serviceName": "Pro"
+        },
+        "zh-HK": {
+          "serviceId": "gemini-pro",
+          "serviceName": "Gemini"
+        },
+        "zh-TW": {
+          "serviceId": "gemini-pro",
+          "serviceName": "Gemini"
+        },
+        "ko": {
+          "serviceId": "deepl-pro",
+          "serviceName": "DeepL"
+        },
+        "ja": {
+          "serviceId": "deepl-pro",
+          "serviceName": "DeepL"
+        }
+      },
+      "nameKey": "translationServices.trial.named",
+      "hidden": true,
+      "hiddenPro": true,
+      "defaultVisible": false
+    }
+  },
   "aiAssistantIds": [
     "paraphrase",
     "plain-english",
@@ -721,7 +761,8 @@
     "https://ridibooks.com[ridibooks.com]",
     "https://www.sunday-webry.com[sunday-webry.com]",
     "https://ynjn.jp[ynjn.jp]",
-    "https://mangayun.com[mangayun.com]"
+    "https://mangayun.com[mangayun.com]",
+    "https://manhwaweb.com[manhwaweb.com][chrome]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -865,6 +906,8 @@
     "https://master.dev[Master.dev]",
     "https://whop.com[Whop.com]",
     "https://lennysnewsletter.com[Lennysnewsletter.com]",
+    "https://av.tib.eu[Av.tib.eu]",
+    "https://vod.sooplive.com[Vod.sooplive.com]",
     "https://slideslive.com[Slideslive.com]",
     "https://shibaristudy.com[Shibaristudy.com]",
     "https://epicreact.dev[Epic React]",
@@ -1151,6 +1194,18 @@
   "forceApplyFreeModel": null,
   "enableFreeModelMode": false,
   "advanceMergeConfig": [
+    {
+      "condition": "versionNumber>13301 && abTagNumber<4",
+      "advanceConfig": {
+        "translationServices": {
+          "ai": {
+            "aiBatch": {
+              "mode": "recommended"
+            }
+          }
+        }
+      }
+    },
     {
       "condition": "abTagNumber<5",
       "advanceConfig": {
@@ -1644,6 +1699,29 @@
           }
         }
       }
+    },
+    {
+      "condition": "versionNumber>13301 && abTagNumber>8",
+      "advanceConfig": {
+        "loginAiQuotaGift.add": {
+          "enabled": true
+        },
+        "translationService": "bing-free",
+        "translationUsageLimit.add": {
+          "enable": false
+        },
+        "translationServices": {
+          "bing-free.add": {
+            "defaultToService": null
+          },
+          "free-model.add": {
+            "hidden": true
+          }
+        },
+        "defaultTranslationServicesOrder.remove": [
+          "free-model"
+        ]
+      }
     }
   ],
   "inputLanguageCodeAlias": {
@@ -2041,7 +2119,7 @@
       "baseUrlApiPath": "/chat/completions",
       "aiBatch": {
         "mode": "custom",
-        "taskSystemPrompt": "You are a professional {{to}} native translator. Translate each source item accurately and fluently into {{to}}.\n\n## Translation Requirements\n- Preserve its meaning, tone, paragraph structure, and meaningful formatting.\n- Keep code, placeholders, and content that must not be translated unchanged.\n- Use supplied document context and terminology consistently.\n\n{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+        "taskSystemPrompt": "You are a professional {{to}} native translator. Translate each source item accurately and fluently into {{to}}.\n\n## Translation Requirements\n- Treat each source item as a complete translation unit, including a single word, short phrase, heading, label, or site name. Do not ask for more context, a full article, or additional text.\n- Return only the translated content for each item, following the required response format. Do not add explanations, apologies, greetings, or commentary. If an item should remain untranslated, return it unchanged.\n- Preserve its meaning, tone, paragraph structure, and meaningful formatting.\n- Keep code, placeholders, and content that must not be translated unchanged.\n- Use supplied document context and terminology consistently.\n\n{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
         "userPrompt": "Translate to {{to}}:\n\n{{text}}",
         "protocolSystemPrompt": "## Multi-item processing protocol\nThe input contains source items. Each item starts with its exact request id on one title line, followed by that item's source text. The source list ends with exactly one [[source_end]] line. Process every item independently according to the active task instructions, using the other items only as context. Return every supplied id exactly once in any order and preserve each id title byte-for-byte. Processed text may span multiple lines.\n\nWhen a native response schema is supplied, follow it exactly. Otherwise, return each id title followed by only its processed text.\n\n{{ai_batch_terminology_prompt}}\n\nDo not wrap the entire response or protocol envelope in a Markdown fence. Fenced code blocks that belong to an item's processed content may be preserved. Do not include explanations outside processed text.",
         "itemsPerRequest": 8,
@@ -2090,7 +2168,11 @@
           "multipleSystemPrompt": "你是一个专业的简体中文母语译者，需将文本流畅地翻译为简体中文。\n\n## 翻译规则\n1. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 返回的译文必须和原文保持完全相同的段落数量和格式\n3. 如果文本包含 HTML 标签，请在翻译后考虑标签应放在译文的哪个位置，同时保持译文的流畅性\n4. 对于无需翻译的内容（如专有名词、代码等），请保留原文\n{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 输入输出格式示例\n\n### 输入示例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 输出示例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
           "prompt": "翻译为简体中文（仅输出译文内容）：\n\n{{text}}",
           "multiplePrompt": "翻译为简体中文：\n\n{{text}}",
-          "subtitlePrompt": "翻译为简体中文：\n\n{{text}}"
+          "subtitlePrompt": "翻译为简体中文：\n\n{{text}}",
+          "aiBatch": {
+            "taskSystemPrompt": "你是专业的简体中文母语译者。请将每个 source item 分别准确、流畅地翻译为简体中文，保持原意、语气、段落、换行和格式；每一项只提供译文内容，不添加解释、前言或注释。若内容包含 HTML 标签，请根据译文语序正确放置并完整保留标签；完整保留 placeholder 和代码，专有名词及其他内容仅在无需翻译时保留。结合以下标题、摘要和术语上下文完成翻译：{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "翻译为简体中文：\n\n{{text}}"
+          }
         },
         {
           "id": "auto2zh-TW",
@@ -2098,7 +2180,11 @@
           "multipleSystemPrompt": "你是一個專業的繁體中文母語譯者，需將文本流暢地翻譯為台湾地区繁體中文。\n\n## 翻譯規則\n1. 僅輸出譯文內容，禁止解釋或添加任何額外內容（如「以下是翻譯：」、「譯文如下：」等）\n2. 返回的譯文必須和原文保持完全相同的段落數量和格式\n3. 如果文本包含 HTML 標籤，請在翻譯後考慮標籤應放在譯文的哪個位置，同時保持譯文的流暢性\n4. 對於無需翻譯的內容（如專有名詞、代碼等），請保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 輸入輸出格式示例\n\n### 輸入示例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 輸出示例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
           "prompt": "翻譯為台湾地区繁體中文（僅輸出譯文內容）：\n\n{{text}}",
           "multiplePrompt": "翻譯為台湾地区繁體中文：\n\n{{text}}",
-          "subtitlePrompt": "翻譯為台湾地区繁體中文：\n\n{{text}}"
+          "subtitlePrompt": "翻譯為台湾地区繁體中文：\n\n{{text}}",
+          "aiBatch": {
+            "taskSystemPrompt": "你是專業的臺灣繁體中文母語譯者。請將每個 source item 分別準確、流暢地翻譯為臺灣地區使用的繁體中文，保持原意、語氣、段落、換行與格式；每一項只提供譯文內容，不添加解釋、前言或註釋。若內容包含 HTML 標籤，請依譯文語序正確放置並完整保留標籤；完整保留 placeholder 與程式碼，專有名詞及其他內容僅在無需翻譯時保留。結合以下標題、摘要與術語脈絡完成翻譯：{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "翻譯為臺灣地區繁體中文：\n\n{{text}}"
+          }
         },
         {
           "id": "auto2en",
@@ -2106,7 +2192,11 @@
           "multipleSystemPrompt": "You are a professional English native translator who needs to fluently translate text into English.\n\n## Translation Rules\n1. Output only the translated content, without explanations or additional content (such as \"Here is the translation:\" or \"Translation as follows:\")\n2. The returned translation must maintain exactly the same number of paragraphs and format as the original text\n3. If the text contains HTML tags, consider where the tags should be placed in the translation while maintaining fluency\n4. For content that should not be translated (such as proper nouns, code, etc.), keep the original text{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## Input/Output Format Examples\n\n### Input Example:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Output Example:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
           "prompt": "Translate to English (output translation only):\n\n{{text}}",
           "multiplePrompt": "Translate to English:\n\n{{text}}",
-          "subtitlePrompt": "Translate to English:\n\n{{text}}"
+          "subtitlePrompt": "Translate to English:\n\n{{text}}",
+          "aiBatch": {
+            "taskSystemPrompt": "You are a professional native English translator. Translate each source item separately into accurate, fluent, natural English while preserving its meaning, tone, paragraphs, line breaks, and formatting. For each item, provide its translation without explanations, prefaces, or annotations. If the content contains HTML tags, retain every tag and place it correctly for the translated word order. Preserve placeholders and code; preserve proper nouns and other content only when they do not require translation. Use the following title, summary, and terminology context:{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "Translate to English:\n\n{{text}}"
+          }
         },
         {
           "id": "auto2ja",
@@ -2114,7 +2204,11 @@
           "multipleSystemPrompt": "あなたは日本語のネイティブ翻訳者であり、テキストを流暢な日本語に翻訳する必要があります。\n\n## 翻訳ルール\n1. 翻訳内容のみを出力し、説明や追加コンテンツ（「以下は翻訳です：」「翻訳文は次の通りです：」など）を加えないでください\n2. 返される翻訳は、原文とまったく同じ段落数とフォーマットを維持する必要があります\n3. テキストに HTML タグが含まれている場合は、翻訳の流暢さを保ちながら、タグを翻訳のどこに配置すべきかを考慮してください\n4. 翻訳する必要のないコンテンツ（固有名詞、コードなど）については、原文のまま保持してください{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 入出力形式の例\n\n### 入力例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 出力例:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D\n\n{{imt_style_guide}}",
           "prompt": "日本語に翻訳してください（翻訳内容のみを出力）：\n\n{{text}}",
           "multiplePrompt": "日本語に翻訳してください：\n\n{{text}}",
-          "subtitlePrompt": "日本語に翻訳してください：\n\n{{text}}"
+          "subtitlePrompt": "日本語に翻訳してください：\n\n{{text}}",
+          "aiBatch": {
+            "taskSystemPrompt": "あなたはプロの日本語ネイティブ翻訳者です。各 source item をそれぞれ正確で流暢かつ自然な日本語に翻訳し、原文の意味、語調、段落、改行、書式を維持してください。各項目には翻訳文だけを記載し、説明、前置き、注釈を加えないでください。HTML タグが含まれる場合は、すべてのタグを保持し、日本語の語順に合う正しい位置に配置してください。placeholder とコードはそのまま保持し、固有名詞などの内容は翻訳不要な場合にのみ保持してください。次のタイトル、要約、用語の文脈を踏まえて翻訳してください：{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "日本語に翻訳してください：\n\n{{text}}"
+          }
         },
         {
           "id": "auto2ko",
@@ -2122,7 +2216,11 @@
           "multipleSystemPrompt": "당신은 한국어 원어민 번역가로서 텍스트를 유창한 한국어로 번역해야 합니다.\n\n## 번역 규칙\n1. 번역된 내용만 출력하고, 설명이나 추가 내용 (예: \"다음은 번역입니다:\" 또는 \"번역은 다음과 같습니다:\" 등) 을 추가하지 마세요\n2. 반환된 번역은 원문과 정확히 동일한 단락 수와 형식을 유지해야 합니다\n3. 텍스트에 HTML 태그가 포함된 경우, 번역의 자연스러운 흐름을 유지하면서 태그를 번역의 어디에 배치해야 할지 고려하세요\n4. 번역할 필요가 없는 내용 (고유명사, 코드 등) 은 원문 그대로 유지하세요{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 입력/출력 형식 예시\n\n### 입력 예시:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 출력 예시:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D\n\n{{imt_style_guide}}",
           "prompt": "한국어로 번역하세요 (번역된 내용만 출력):\n\n{{text}}",
           "multiplePrompt": "한국어로 번역하세요:\n\n{{text}}",
-          "subtitlePrompt": "한국어로 번역하세요:\n\n{{text}}"
+          "subtitlePrompt": "한국어로 번역하세요:\n\n{{text}}",
+          "aiBatch": {
+            "taskSystemPrompt": "당신은 전문 한국어 원어민 번역가입니다. 각 source item을 각각 정확하고 유창하며 자연스러운 한국어로 번역하고 원문의 의미, 어조, 문단, 줄바꿈, 형식을 유지하세요. 각 항목에는 번역문만 제공하고 설명, 서문 또는 주석을 추가하지 마세요. HTML 태그가 포함되어 있다면 모든 태그를 보존하고 번역문의 어순에 맞는 올바른 위치에 배치하세요. placeholder와 코드는 그대로 보존하고, 고유명사와 기타 내용은 번역할 필요가 없을 때만 보존하세요. 다음 제목, 요약 및 용어 문맥을 반영해 번역하세요:{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "한국어로 번역하세요:\n\n{{text}}"
+          }
         },
         {
           "id": "auto2ru",
@@ -2130,7 +2228,11 @@
           "multipleSystemPrompt": "Вы профессиональный переводчик-носитель русского языка, который должен свободно переводить тексты на русский язык.\n\n## Правила перевода\n1. Выводите только переведенный контент, без пояснений или дополнительного содержания (например, \"Вот перевод:\" или \"Перевод следующий:\")\n2. Возвращаемый перевод должен сохранять точно такое же количество абзацев и формат, как в оригинальном тексте\n3. Если текст содержит HTML-теги, учитывайте, где теги должны быть размещены в переводе, сохраняя при этом естественность текста\n4. Для содержания, которое не требует перевода (например, имена собственные, код и т.д.), сохраняйте оригинальный текст{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## Примеры формата ввода/вывода\n\n### Пример ввода:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Пример вывода:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
           "prompt": "Переведите на русский язык (выведите только переведенный контент):\n\n{{text}}",
           "multiplePrompt": "Переведите на русский язык:\n\n{{text}}",
-          "subtitlePrompt": "Переведите на русский язык:\n\n{{text}}"
+          "subtitlePrompt": "Переведите на русский язык:\n\n{{text}}",
+          "aiBatch": {
+            "taskSystemPrompt": "Вы профессиональный переводчик — носитель русского языка. Переведите каждый source item отдельно на точный, свободный и естественный русский язык, сохраняя смысл, тон, абзацы, переносы строк и форматирование оригинала. Для каждого элемента приводите только его перевод, без объяснений, предисловий и примечаний. Если текст содержит HTML-теги, сохраните все теги и разместите их в соответствии с порядком слов в переводе. Сохраняйте без изменений placeholder и код; имена собственные и другой контент сохраняйте только тогда, когда они не требуют перевода. Учитывайте следующий контекст заголовка, краткого содержания и терминов:{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "Переведите на русский язык:\n\n{{text}}"
+          }
         },
         {
           "id": "auto2fr",
@@ -2138,7 +2240,11 @@
           "multipleSystemPrompt": "Vous êtes un traducteur professionnel de langue maternelle française qui doit traduire couramment des textes en français.\n\n## Règles de traduction\n1. Ne produisez que le contenu traduit, sans explications ni contenu supplémentaire (comme \"Voici la traduction :\" ou \"Traduction comme suit :\")\n2. La traduction retournée doit maintenir exactement le même nombre de paragraphes et le même format que le texte original\n3. Si le texte contient des balises HTML, considérez où les balises doivent être placées dans la traduction tout en maintenant la fluidité\n4. Pour le contenu qui ne doit pas être traduit (comme les noms propres, le code, etc.), conservez le texte original{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## Exemples de format d'entrée/sortie\n\n### Exemple d'entrée :\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Exemple de sortie :\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
           "prompt": "Traduisez en français (ne produisez que le contenu traduit) :\n\n{{text}}",
           "multiplePrompt": "Traduisez en français :\n\n{{text}}",
-          "subtitlePrompt": "Traduisez en français :\n\n{{text}}"
+          "subtitlePrompt": "Traduisez en français :\n\n{{text}}",
+          "aiBatch": {
+            "taskSystemPrompt": "Vous êtes un traducteur professionnel de langue maternelle française. Traduisez séparément chaque source item dans un français fidèle, fluide et naturel, en conservant le sens, le ton, les paragraphes, les retours à la ligne et la mise en forme du texte original. Pour chaque élément, fournissez uniquement sa traduction, sans explication, préambule ni annotation. Si le contenu comporte des balises HTML, conservez-les toutes et placez-les correctement selon l'ordre des mots de la traduction. Conservez les placeholder et le code ; ne conservez les noms propres et les autres contenus que lorsqu'ils ne nécessitent pas de traduction. Tenez compte du contexte de titre, de résumé et de terminologie suivant :{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "Traduisez en français :\n\n{{text}}"
+          }
         },
         {
           "id": "auto2es",
@@ -2146,7 +2252,11 @@
           "multipleSystemPrompt": "Eres un traductor profesional nativo de español que necesita traducir textos con fluidez al español.\n\n## Reglas de traducción\n1. Produce únicamente el contenido traducido, sin explicaciones ni contenido adicional (como \"Aquí está la traducción:\" o \"La traducción es la siguiente:\")\n2. La traducción devuelta debe mantener exactamente el mismo número de párrafos y formato que el texto original\n3. Si el texto contiene etiquetas HTML, considera dónde deben colocarse las etiquetas en la traducción mientras mantienes la fluidez\n4. Para contenido que no debe traducirse (como nombres propios, código, etc.), mantén el texto original{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## Ejemplos de formato de entrada/salida\n\n### Ejemplo de entrada:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Ejemplo de salida:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
           "prompt": "Traduce al español (produce únicamente el contenido traducido):\n\n{{text}}",
           "multiplePrompt": "Traduce al español:\n\n{{text}}",
-          "subtitlePrompt": "Traduce al español:\n\n{{text}}"
+          "subtitlePrompt": "Traduce al español:\n\n{{text}}",
+          "aiBatch": {
+            "taskSystemPrompt": "Eres un traductor profesional nativo de español. Traduce cada source item por separado a un español fiel, fluido y natural, conservando el significado, el tono, los párrafos, saltos de línea y el formato del original. Para cada elemento, proporciona únicamente su traducción, sin explicaciones, preámbulos ni anotaciones. Si el contenido incluye etiquetas HTML, consérvalas todas y colócalas correctamente según el orden de palabras de la traducción. Conserva los placeholder y el código; conserva los nombres propios y otros contenidos solo cuando no requieran traducción. Ten en cuenta el siguiente contexto de título, resumen y terminología:{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "Traduce al español:\n\n{{text}}"
+          }
         },
         {
           "id": "auto2pt",
@@ -2154,7 +2264,11 @@
           "multipleSystemPrompt": "Você é um tradutor profissional nativo de português que precisa traduzir textos fluentemente para o português.\n\n## Regras de tradução\n1. Produza apenas o conteúdo traduzido, sem explicações ou conteúdo adicional (como \"Aqui está a tradução:\" ou \"A tradução é a seguinte:\")\n2. A tradução retornada deve manter exatamente o mesmo número de parágrafos e formato do texto original\n3. Se o texto contiver tags HTML, considere onde as tags devem ser colocadas na tradução, mantendo a fluência\n4. Para conteúdo que não deve ser traduzido (como nomes próprios, código, etc.), mantenha o texto original{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## Exemplos de formato de entrada/saída\n\n### Exemplo de entrada:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### Exemplo de saída:\nTranslation A\n\n%%\n\nTranslation B\n\n%%\n\nTranslation C\n\n%%\n\nTranslation D",
           "prompt": "Traduza para português (produza apenas o conteúdo traduzido):\n\n{{text}}",
           "multiplePrompt": "Traduza para português:\n\n{{text}}",
-          "subtitlePrompt": "Traduza para português:\n\n{{text}}"
+          "subtitlePrompt": "Traduza para português:\n\n{{text}}",
+          "aiBatch": {
+            "taskSystemPrompt": "Você é um tradutor profissional nativo de português. Traduza cada source item separadamente para um português fiel, fluente e natural, preservando o significado, o tom, os parágrafos, as quebras de linha e a formatação do original. Para cada item, forneça somente a tradução correspondente, sem explicações, prefácios ou anotações. Se o conteúdo incluir tags HTML, preserve todas elas e posicione-as corretamente de acordo com a ordem das palavras na tradução. Preserve os placeholder e o código; preserve nomes próprios e outros conteúdos somente quando não precisarem de tradução. Considere o seguinte contexto de título, resumo e terminologia:{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "Traduza para português:\n\n{{text}}"
+          }
         },
         {
           "id": "auto2zh-CN-NE",
@@ -2163,7 +2277,11 @@
           "multipleSystemPrompt": "你是一个东北人翻译，需用东北人的口吻进行翻译，尽可能贴近生活。\n\n## 翻译规则\n1. 翻译时使用东北方言、口头语和独特表达方式，包括常见的东北词汇（嘎达、咋地、得嘞、整一个等）\n2. 保持东北人说话的语气和节奏，适当使用夸张、幽默的表达\n3. 仅输出译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n4. 返回的译文必须和原文保持完全相同的段落数量和格式\n5. 如果文本包含 HTML 标签，请在翻译后考虑标签应放在译文的哪个位置，同时保持译文的流畅性\n6. 对于无需翻译的内容（如专有名词、代码等），请保留原文{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 输入输出格式示例\n\n### 输入示例:\nParagraph A\n\n%%\n\nParagraph B\n\n%%\n\nParagraph C\n\n%%\n\nParagraph D\n\n### 输出示例:\nTranslation A（东北风格）\n\n%%\n\nTranslation B（东北风格）\n\n%%\n\nTranslation C（东北风格）\n\n%%\n\nTranslation D（东北风格）",
           "prompt": "用东北人的口吻翻译（只返回译文）：\n\n{{text}}",
           "multiplePrompt": "用东北人的口吻翻译：\n\n{{text}}",
-          "subtitlePrompt": "用东北人的口吻翻译：\n\n{{text}}"
+          "subtitlePrompt": "用东北人的口吻翻译：\n\n{{text}}",
+          "aiBatch": {
+            "taskSystemPrompt": "你是专业的东北话翻译。请将每个 source item 分别准确地翻译成贴近生活的东北人口吻，在不改变原意与语气的前提下使用自然的东北方言、口头语和独特表达，并可适度体现夸张和幽默；每一项只提供译文内容，不添加解释、前言或注释。保持原文的段落、换行和格式；若内容包含 HTML 标签，请根据译文语序正确放置并完整保留标签；完整保留 placeholder 和代码，专有名词及其他内容仅在无需翻译时保留。结合以下标题、摘要和术语上下文完成翻译：{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "用东北人的口吻翻译：\n\n{{text}}"
+          }
         },
         {
           "id": "wyw2zh-CN",
@@ -2171,7 +2289,11 @@
           "multipleSystemPrompt": "你是一个精通古文的学者，将古文流畅地翻译为现代白话文。\n\n## 翻译规则\n1. 仅输出白话文译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 返回的译文必须和原文保持完全相同的段落数量和格式\n3. 保持原文的意境和精神，但使用现代人易于理解的表达方式\n4. 翻译应准确传达原文的含义、典故和文化内涵\n5. 如果文本包含特殊格式或标记，请在翻译后考虑这些标记应放在译文的哪个位置，同时保持译文的流畅性\n6. 对于专有名词、人名、地名等，应使用现代通用的称呼{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 输入输出格式示例\n\n### 输入示例:\n古文段落 A\n\n%%\n\n古文段落 B\n\n%%\n\n古文段落 C\n\n%%\n\n古文段落 D\n\n### 输出示例:\n白话文翻译 A\n\n%%\n\n白话文翻译 B\n\n%%\n\n白话文翻译 C\n\n%%\n\n白话文翻译 D",
           "prompt": "将古文翻译为现代白话文（仅输出译文内容）：\n\n{{text}}",
           "multiplePrompt": "将古文翻译为现代白话文：\n\n{{text}}",
-          "subtitlePrompt": "将古文翻译为现代白话文：\n\n{{text}}"
+          "subtitlePrompt": "将古文翻译为现代白话文：\n\n{{text}}",
+          "aiBatch": {
+            "taskSystemPrompt": "你是精通古文的学者。请将每个 source item 分别准确、流畅地翻译为现代白话文，准确传达原文含义、语气、典故和文化内涵，保留原文意境与精神，并使用现代人易于理解的表达；每一项只提供白话文译文，不添加解释、前言或注释。保持原文的段落、换行和格式；若内容包含 HTML 标签或特殊标记，请根据译文语序正确放置并完整保留；完整保留 placeholder 和代码，专有名词、人名和地名使用现代通用称呼，其他无需翻译的内容保持原样。结合以下标题、摘要和术语上下文完成翻译：{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "将古文翻译为现代白话文：\n\n{{text}}"
+          }
         },
         {
           "id": "auto2wyw",
@@ -2179,7 +2301,11 @@
           "multipleSystemPrompt": "你是一个文言文翻译，请用文言文的方式进行翻译，尽可能贴近古风。\n\n## 翻译规则\n1. 仅输出文言文译文内容，禁止解释或添加任何额外内容（如\"以下是翻译：\"、\"译文如下：\"等）\n2. 返回的译文必须和原文保持完全相同的段落数量和格式\n3. 使用古雅的文言表达，包括虚词（如乎、焉、哉、也）、句式和古代常用词汇\n4. 根据语境选择恰当的文体风格，可参考不同朝代的文风特点（如汉魏简约、唐宋典雅等）\n5. 翻译时注重意境和韵律之美，体现古代文人的审美与思想\n6. 如遇现代概念，应寻找恰当的典故或文言表达进行替代\n7. 如果文本包含特殊格式或标记，请在翻译后考虑这些标记应放在译文的哪个位置，同时保持译文的流畅性{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n## 输入输出格式示例\n\n### 输入示例:\n现代文段落 A\n\n%%\n\n现代文段落 B\n\n%%\n\n现代文段落 C\n\n%%\n\n现代文段落 D\n\n### 输出示例:\n文言文翻译 A\n\n%%\n\n文言文翻译 B\n\n%%\n\n文言文翻译 C\n\n%%\n\n文言文翻译 D",
           "prompt": "将现代文翻译为文言文（仅输出文言文内容）：\n\n{{text}}",
           "multiplePrompt": "将现代文翻译为文言文：\n\n{{text}}",
-          "subtitlePrompt": "将现代文翻译为文言文：\n\n{{text}}"
+          "subtitlePrompt": "将现代文翻译为文言文：\n\n{{text}}",
+          "aiBatch": {
+            "taskSystemPrompt": "你是专业的文言文译者。请将每个 source item 分别准确地译为贴近古风的文言文，在不改变原意与语气的前提下使用古雅的虚词、句式和词汇，依语境选择恰当文体，注重意境与韵律；现代概念尽量采用恰当的典故或文言表达。每一项只提供文言文译文，不添加解释、前言或注释。保持原文的段落、换行和格式；若内容包含 HTML 标签或特殊标记，请根据译文语序正确放置并完整保留；完整保留 placeholder 和代码，专有名词及其他内容仅在无需翻译时保留。结合以下标题、摘要和术语上下文完成翻译：{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "将现代文翻译为文言文：\n\n{{text}}"
+          }
         }
       ],
       "removeResRegexs": [
@@ -2809,22 +2935,46 @@
       ],
       "langOverrides.add": [
         {
-          "id": "auto2ja"
+          "id": "auto2ja",
+          "aiBatch": {
+            "taskSystemPrompt": "あなたはプロの日本語ネイティブ翻訳者です。各 source item をそれぞれ正確で流暢かつ自然な日本語に翻訳し、原文の意味、語調、段落、改行、書式を維持してください。各項目には翻訳文だけを記載し、説明、前置き、注釈を加えないでください。HTML タグが含まれる場合は、すべてのタグを保持し、日本語の語順に合う正しい位置に配置してください。placeholder とコードはそのまま保持し、固有名詞などの内容は翻訳不要な場合にのみ保持してください。次のタイトル、要約、用語の文脈を踏まえて翻訳してください：{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "日本語に翻訳してください：\n\n{{text}}"
+          }
         },
         {
-          "id": "auto2ko"
+          "id": "auto2ko",
+          "aiBatch": {
+            "taskSystemPrompt": "당신은 전문 한국어 원어민 번역가입니다. 각 source item을 각각 정확하고 유창하며 자연스러운 한국어로 번역하고 원문의 의미, 어조, 문단, 줄바꿈, 형식을 유지하세요. 각 항목에는 번역문만 제공하고 설명, 서문 또는 주석을 추가하지 마세요. HTML 태그가 포함되어 있다면 모든 태그를 보존하고 번역문의 어순에 맞는 올바른 위치에 배치하세요. placeholder와 코드는 그대로 보존하고, 고유명사와 기타 내용은 번역할 필요가 없을 때만 보존하세요. 다음 제목, 요약 및 용어 문맥을 반영해 번역하세요:{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "한국어로 번역하세요:\n\n{{text}}"
+          }
         },
         {
-          "id": "auto2pt"
+          "id": "auto2pt",
+          "aiBatch": {
+            "taskSystemPrompt": "Você é um tradutor profissional nativo de português. Traduza cada source item separadamente para um português fiel, fluente e natural, preservando o significado, o tom, os parágrafos, as quebras de linha e a formatação do original. Para cada item, forneça somente a tradução correspondente, sem explicações, prefácios ou anotações. Se o conteúdo incluir tags HTML, preserve todas elas e posicione-as corretamente de acordo com a ordem das palavras na tradução. Preserve os placeholder e o código; preserve nomes próprios e outros conteúdos somente quando não precisarem de tradução. Considere o seguinte contexto de título, resumo e terminologia:{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "Traduza para português:\n\n{{text}}"
+          }
         },
         {
-          "id": "auto2ru"
+          "id": "auto2ru",
+          "aiBatch": {
+            "taskSystemPrompt": "Вы профессиональный переводчик — носитель русского языка. Переведите каждый source item отдельно на точный, свободный и естественный русский язык, сохраняя смысл, тон, абзацы, переносы строк и форматирование оригинала. Для каждого элемента приводите только его перевод, без объяснений, предисловий и примечаний. Если текст содержит HTML-теги, сохраните все теги и разместите их в соответствии с порядком слов в переводе. Сохраняйте без изменений placeholder и код; имена собственные и другой контент сохраняйте только тогда, когда они не требуют перевода. Учитывайте следующий контекст заголовка, краткого содержания и терминов:{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "Переведите на русский язык:\n\n{{text}}"
+          }
         },
         {
-          "id": "auto2fr"
+          "id": "auto2fr",
+          "aiBatch": {
+            "taskSystemPrompt": "Vous êtes un traducteur professionnel de langue maternelle française. Traduisez séparément chaque source item dans un français fidèle, fluide et naturel, en conservant le sens, le ton, les paragraphes, les retours à la ligne et la mise en forme du texte original. Pour chaque élément, fournissez uniquement sa traduction, sans explication, préambule ni annotation. Si le contenu comporte des balises HTML, conservez-les toutes et placez-les correctement selon l'ordre des mots de la traduction. Conservez les placeholder et le code ; ne conservez les noms propres et les autres contenus que lorsqu'ils ne nécessitent pas de traduction. Tenez compte du contexte de titre, de résumé et de terminologie suivant :{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "Traduisez en français :\n\n{{text}}"
+          }
         },
         {
-          "id": "auto2es"
+          "id": "auto2es",
+          "aiBatch": {
+            "taskSystemPrompt": "Eres un traductor profesional nativo de español. Traduce cada source item por separado a un español fiel, fluido y natural, conservando el significado, el tono, los párrafos, saltos de línea y el formato del original. Para cada elemento, proporciona únicamente su traducción, sin explicaciones, preámbulos ni anotaciones. Si el contenido incluye etiquetas HTML, consérvalas todas y colócalas correctamente según el orden de palabras de la traducción. Conserva los placeholder y el código; conserva los nombres propios y otros contenidos solo cuando no requieran traducción. Ten en cuenta el siguiente contexto de título, resumen y terminología:{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "userPrompt": "Traduce al español:\n\n{{text}}"
+          }
         }
       ],
       "defaultMaxTextGroupLengthPerRequest": 4,
@@ -2897,7 +3047,7 @@
     "doubao": {
       "extends": "ai",
       "model": "deepseek-v3-1-250821",
-      "models": "deepseek-v3-1-250821|deepseek-v3-250324|deepseek-r1-250528|doubao-seed-1-6-250615|doubao-seed-1-6-thinking-250715|doubao-seed-1-6-flash-250715|kimi-k2-250711",
+      "models": "deepseek-v3-1-250821|deepseek-v3-250324|deepseek-r1-250528|doubao-seed-1-6-250615|doubao-seed-1-6-thinking-250715|doubao-seed-1-6-flash-250715|doubao-seed-translation-250915|kimi-k2-250711",
       "provider": "custom",
       "limit": 10,
       "dualEnableRichTranslate": false,
@@ -2905,6 +3055,17 @@
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
       "modelsOverrides.add": [
+        {
+          "models": [
+            "^doubao-seed-translation-250915$"
+          ],
+          "apiProtocol": "doubao-seed-translation",
+          "baseUrlApiPath": "/responses",
+          "enableRichTranslate": false,
+          "translationEnableRichTranslate": false,
+          "maxTextGroupLengthPerRequest": 1,
+          "maxTextGroupLengthPerRequestForSubtitle": 1
+        },
         {
           "models": [
             "douba-seed-1.6"
@@ -3631,7 +3792,8 @@
       "context": "{{summary_context}}\n{{terms_prompt}}",
       "enableFallback": false,
       "unsupportedLanguages": [
-        "mn-Mong"
+        "mn-Mong",
+        "ckb"
       ]
     },
     "grok-pro": {
@@ -5023,7 +5185,6 @@
       "disabled": false,
       "hookType": "xhr",
       "showQuickButton": true,
-      "quickMenuRenderMode": "inline",
       "videoPlayerSelector": "video",
       "backgroundColor": "#080808",
       "backgroundOpacity": "75",
@@ -5040,6 +5201,7 @@
       "translationFontWeight": "400",
       "translateGroupCount": 5,
       "filterAmbientSounds": true,
+      "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[music\\]\\s*",
       "filterAmbientSoundsRegex": "\\([^)]*\\)|\\[[^\\]]*\\]",
       "autoSwitchSubtitleWithSameLanguage": false,
       "enableIOSFullScreenTextTrack": true,
@@ -7829,6 +7991,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
+        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "subtitleUrlRegExp": "(/api/timedtext)",
@@ -7857,6 +8020,15 @@
         ],
         "attachRule": {
           "appendSelector": "#player-container-id",
+          "positionRules": [
+            {
+              "urlPattern": [
+                "m.youtube.com/shorts*"
+              ],
+              "defaultPosition": "top",
+              "cacheKeySuffix": "shorts-full"
+            }
+          ],
           "showSupportTips": false,
           "injectedCSS": [
             ".imt-caption-container {z-index:1;}",
@@ -7866,6 +8038,12 @@
           "injectedGlobalCSS": [
             ".caption-window {display: none;} ",
             ".page-shorts #immersive-translate-caption-window { height: 180px;}",
+            ".prevent-controls-collision {z-index: 0 !important;}",
+            ".ytPlayerProgressBarDragContainer, .player-controls-middle, .player-controls-middle-core-buttons {z-index: 1000 !important;}"
+          ],
+          "injectedGlobalCSS.add_v.[1.33.2]": [
+            ".caption-window {display: none;} ",
+            ".page-shorts #immersive-translate-caption-window { height: 100%; top: 0; bottom: 0;}",
             ".prevent-controls-collision {z-index: 0 !important;}",
             ".ytPlayerProgressBarDragContainer, .player-controls-middle, .player-controls-middle-core-buttons {z-index: 1000 !important;}"
           ]
@@ -7958,6 +8136,7 @@
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "youtube",
+        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "proLiveSubtitleTranslateService": "deepl-pro",
@@ -8136,6 +8315,7 @@
       },
       "subtitleRule.add": {
         "type": "youtube",
+        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "proLiveSubtitleTranslateService": "deepl-pro",
@@ -8184,6 +8364,15 @@
         ],
         "attachRule": {
           "appendSelector": ".html5-video-player.playing-mode,.html5-video-player.paused-mode",
+          "positionRules": [
+            {
+              "urlPattern": [
+                "www.youtube.com/shorts*"
+              ],
+              "defaultPosition": "top",
+              "cacheKeySuffix": "shorts-full"
+            }
+          ],
           "showSupportTips": false,
           "injectedCSS": [
             ".imt-caption-container {z-index:40;}",
@@ -8193,6 +8382,11 @@
           "injectedGlobalCSS": [
             ".caption-window {display: none;} ",
             "#shorts-player #immersive-translate-caption-window { height: 20%;}",
+            ".html5-video-player:not(.ytp-autohide) #immersive-translate-caption-window {bottom: 60px;}"
+          ],
+          "injectedGlobalCSS.add_v.[1.33.2]": [
+            ".caption-window {display: none;} ",
+            "#shorts-player #immersive-translate-caption-window { height: 100%; top: 0; bottom: 0;}",
             ".html5-video-player:not(.ytp-autohide) #immersive-translate-caption-window {bottom: 60px;}"
           ]
         },
@@ -8227,6 +8421,7 @@
       },
       "subtitleRule.add": {
         "type": "youtube",
+        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "proLiveSubtitleTranslateService": "deepl-pro",
@@ -8284,6 +8479,7 @@
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "youtube",
+        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "proLiveSubtitleTranslateService": "deepl-pro",
@@ -8348,6 +8544,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
+        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "proLiveSubtitleTranslateService": "deepl-pro",
@@ -11796,6 +11993,10 @@
         ".bili-video-card__info--author, .bili-video-card__info--date",
         "#pictures,#note,#info,#footer,#expander-footer,.playinfo,.upname,#bilibili-player"
       ],
+      "mouseHoverExcludeSelectors.add": [
+        "#user-name",
+        ".view-more"
+      ],
       "enableInputDeepActive": true,
       "inputConfig.add": {
         "enableRangeDeleteContent": true
@@ -13518,6 +13719,23 @@
           "imtAndroid",
           "safari",
           "userscript"
+        ]
+      }
+    },
+    {
+      "id": "manhwaweb",
+      "matches": "manhwaweb.com/leer/*",
+      "imageRule.add_v.[1.33.2]": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "img[src^='https://img2mw.xyz/manhwas/']",
+          ".flex.flex-col.items-center.w-full img.w-full"
+        ],
+        "injectedCss": ".imt-image-status { top:20% !important; }",
+        "intersectionRootMargin": "0px 0px 200% 0px",
+        "platforms": [
+          "chrome"
         ]
       }
     },
@@ -16067,6 +16285,15 @@
           "appendSelector": ".classroom-layout__media .vjs-control-bar",
           "insertBeforeSelector": ".vjs-captions-menu-toggle"
         }
+      }
+    },
+    {
+      "id": "common-stable",
+      "matches": [
+        "isc2.learnzapp.com"
+      ],
+      "mutationConfig.add": {
+        "paragraphStableWindow": false
       }
     },
     {
@@ -19402,7 +19629,8 @@
           "advanceConfig": {
             "generalRule": {
               "aiBatchPolicy.add": {
-                "sameTextFallback": true
+                "sameTextFallback": true,
+                "enableArticleTerminology": true
               }
             }
           }
@@ -21375,6 +21603,29 @@
       }
     },
     {
+      "id": "sooplive",
+      "matches": [
+        "vod.sooplive.com"
+      ],
+      "subtitleRule.add": {
+        "type": "general",
+        "generalSetting": {
+          "itemsPath": "list",
+          "textKey": "msg"
+        },
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "^https://translate-api\\.sooplive\\.com/subtitle/vod/\\d+(?:[?]|$)",
+        "loadingContainerSelector": "#player",
+        "quickButtonRule": {
+          "appendSelector": "#player .right_ctrl",
+          "insertBeforeSelector": "#player .right_ctrl > .btn_caption"
+        },
+        "injectedCss": [
+          "#player .screen_subtitle { white-space: pre-line !important; }"
+        ]
+      }
+    },
+    {
       "id": "barotem",
       "matches": "www.barotem.com",
       "injectedCss.add": [
@@ -21982,6 +22233,10 @@
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "domCheckTimeout": 1,
+      "additionalExcludeSelectors.remove": [
+        ".notranslate",
+        "[translate=no]"
+      ],
       "subtitleRule.add": {
         "type": "text_track",
         "allowHideModeTextTrack": true,
@@ -22022,6 +22277,45 @@
           "injectedCSS": [
             ".jw-text-track-display { display: none!important; }",
             ".imt-caption-window {width: 90%;}"
+          ]
+        }
+      }
+    },
+    {
+      "id": "av-tib-eu",
+      "matches": [
+        "av.tib.eu"
+      ],
+      "excludeSelectors.add": [
+        ".video-js",
+        "#immersive-translate-caption-window"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".video-js *",
+        "#immersive-translate-caption-window *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 1,
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "subsrtFormat": "vtt",
+        "hookType": "xhr",
+        "subtitleUrlRegExp": "^(?:https://av\\.tib\\.eu)?/api/v0/videos/\\d+/transcription/\\d+/vtt(?:[?#]|$)",
+        "videoSelector": "video.vjs-tech",
+        "loadingContainerSelector": ".video-js",
+        "quickButtonRule": {
+          "appendSelector": ".controls",
+          "insertBeforeSelector": "button[aria-label$=\"subtitles\"]",
+          "ccEnableSelector": "button[aria-label$=\"subtitles\"]"
+        },
+        "attachRule": {
+          "appendSelector": ".video-js",
+          "injectedCSS": [
+            ".imt-caption-window { width: 90%; }"
+          ],
+          "injectedGlobalCSS": [
+            ".video-js .vjs-text-track-display { display: none !important; }"
           ]
         }
       }
@@ -22704,6 +22998,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-22T06:08:29.824Z",
-  "latestVersion": "1.33.1"
+  "buildinConfigUpdatedAt": "2026-09-22T09:47:26.667Z",
+  "latestVersion": "1.33.2"
 }
