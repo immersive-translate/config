@@ -762,7 +762,8 @@
     "https://www.sunday-webry.com[sunday-webry.com]",
     "https://ynjn.jp[ynjn.jp]",
     "https://mangayun.com[mangayun.com]",
-    "https://manhwaweb.com[manhwaweb.com][chrome]"
+    "https://manhwaweb.com[manhwaweb.com][chrome]",
+    "https://a-i-manga.com[a-i-manga.com]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -5242,7 +5243,7 @@
       "freeAiSubtitleCacheEndTime": "2025-09-30",
       "freeAiSubtitleCacheNewUserLimitDay": 10,
       "aiSubtitleMaxTextLength": 500,
-      "proLiveSubtitleTranslateService": "deepl-pro",
+      "proLiveSubtitleTranslateService": "babelfast-pro",
       "velocityGroup": [
         4,
         4,
@@ -8211,7 +8212,7 @@
         "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
-        "proLiveSubtitleTranslateService": "deepl-pro",
+        "proLiveSubtitleTranslateService": "babelfast-pro",
         "subtitleUrlRegExp": "(/api/timedtext)",
         "translateSelectors": [
           ".caption-window",
@@ -8390,7 +8391,7 @@
         "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
-        "proLiveSubtitleTranslateService": "deepl-pro",
+        "proLiveSubtitleTranslateService": "babelfast-pro",
         "subtitleUrlRegExp": "(/api/timedtext)",
         "translateSelectors": [
           ".caption-window",
@@ -8496,7 +8497,7 @@
         "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
-        "proLiveSubtitleTranslateService": "deepl-pro",
+        "proLiveSubtitleTranslateService": "babelfast-pro",
         "subtitleUrlRegExp": "(/api/timedtext)",
         "translateSelectors": [
           ".caption-window",
@@ -8554,7 +8555,7 @@
         "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
-        "proLiveSubtitleTranslateService": "deepl-pro",
+        "proLiveSubtitleTranslateService": "babelfast-pro",
         "humanPreferred": false,
         "subtitleUrlRegExp": "(/api/timedtext)",
         "translateSelectors": [
@@ -8619,7 +8620,7 @@
         "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
-        "proLiveSubtitleTranslateService": "deepl-pro",
+        "proLiveSubtitleTranslateService": "babelfast-pro",
         "subtitleUrlRegExp": "/api/timedtext",
         "translateSelectors": [
           ".caption-window",
@@ -20037,6 +20038,26 @@
       }
     },
     {
+      "id": "a-i-manga.com",
+      "matches": [
+        "a-i-manga.com"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "img.transition-opacity"
+        ],
+        "platforms": [
+          "other",
+          "chrome",
+          "firefox",
+          "imtIOSNew",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "manhuaus.com",
       "matches": [
         "manhuaus.com",
@@ -21546,7 +21567,8 @@
       "matches": [
         "agencysupremacy.io",
         "dynamous.ai",
-        "dynamous.wistia.com"
+        "dynamous.wistia.com",
+        "academy.klaviyo.com"
       ],
       "excludeSelectors.add": [
         "div[data-handle='captions']"
@@ -23091,6 +23113,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-23T06:30:51.667Z",
-  "latestVersion": "1.33.2"
+  "buildinConfigUpdatedAt": "2026-09-23T10:27:51.000Z",
+  "latestVersion": "1.33.3"
 }
