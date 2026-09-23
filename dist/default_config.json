@@ -2482,7 +2482,7 @@
       "keepGlossariesPrompt": "Translate the text but keep placeholders like {{xxx}} in their original positions. ",
       "proModel": "gemini-3-flash-preview",
       "model": "gemini-2.5-flash",
-      "models": "gemini-3.6-flash|gemini-3.5-flash|gemini-3.5-flash-lite|gemini-3.1-flash-lite|gemini-3.1-pro-preview|gemini-3-flash-preview|gemini-2.5-flash|gemini-2.5-flash-lite|gemini-2.5-pro",
+      "models": "gemini-3.8-flash|gemini-3.6-flash|gemini-3.5-flash|gemini-3.5-flash-lite|gemini-3.1-flash-lite|gemini-3.1-pro-preview|gemini-3-flash-preview|gemini-2.5-flash|gemini-2.5-flash-lite|gemini-2.5-pro",
       "visible": true,
       "placeholderDelimiters": [
         "{",
@@ -2680,6 +2680,37 @@
               }
             ]
           }
+        },
+        {
+          "models": [
+            "gemini-3.8-flash"
+          ],
+          "bodyConfigs": {
+            "generationConfig": {
+              "maxOutputTokens": 4096,
+              "thinkingConfig": {
+                "thinkingLevel": "low"
+              }
+            },
+            "safetySettings": [
+              {
+                "category": "HARM_CATEGORY_HARASSMENT",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_HATE_SPEECH",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                "threshold": "BLOCK_NONE"
+              },
+              {
+                "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                "threshold": "BLOCK_NONE"
+              }
+            ]
+          }
         }
       ],
       "defaultMaxTextGroupLengthPerRequest": 4,
@@ -2710,7 +2741,7 @@
       "extends": "ai",
       "baseUrlApiPath": "/messages",
       "model": "claude-haiku-4-5",
-      "models": "claude-fable-5|claude-opus-5|claude-opus-4-8|claude-sonnet-5|claude-opus-4-6|claude-sonnet-4-6|claude-opus-4-5|claude-sonnet-4-5|claude-haiku-4-5|claude-opus-4-1|claude-opus-4|claude-sonnet-4|claude-sonnet-3-7",
+      "models": "claude-fable-5-1|claude-fable-5|claude-opus-5|claude-opus-4-8|claude-sonnet-5|claude-opus-4-6|claude-sonnet-4-6|claude-opus-4-5|claude-sonnet-4-5|claude-haiku-4-5|claude-opus-4-1|claude-opus-4|claude-sonnet-4|claude-sonnet-3-7",
       "placeholderDelimiters": [
         "{{",
         "}}",
@@ -2741,6 +2772,7 @@
       "modelsOverrides": [
         {
           "models": [
+            "claude-fable-5-1",
             "claude-fable-5",
             "claude-opus-5",
             "claude-opus-4-7",
@@ -2914,8 +2946,8 @@
       "visible": true,
       "extends": "ai",
       "name": "Deepseek",
-      "model": "deepseek-v4-flash",
-      "models": "deepseek-v4-flash|deepseek-v4-pro|deepseek-chat|deepseek-reasoner",
+      "model": "deepseek-flash",
+      "models": "deepseek-flash|deepseek-v4-pro",
       "limit": 10,
       "apiUrl": "https://api.deepseek.com/chat/completions",
       "provider": "custom",
@@ -2982,7 +3014,7 @@
       "modelsOverrides": [
         {
           "models": [
-            "deepseek-v4-flash",
+            "deepseek-flash",
             "deepseek-v4-pro"
           ],
           "bodyConfigs": {
@@ -3011,7 +3043,7 @@
       "extends": "ai",
       "name": "Qwen",
       "model": "qwen-plus-latest",
-      "models": "qwen|qwen-flash|qwen-plus|qwen-plus-latest|qwen-turbo|qwen2.5|qwen3|qwen3-14b|qwen3-235b-a22b|qwen3-30b-a3b|qwen3-32b|qwen3-8b|qwen3-max|qwen3-max-preview|qwen3.5|qwen3.5-122b-a10b|qwen3.5-27b|qwen3.5-35b-a3b|qwen3.5-397b-a17b|qwen3.5-flash|qwen3.5-plus|qwen3.6|qwen3.6-35b-a3b|qwen3.6-flash|qwen3.6-max-preview|qwen3.6-plus|qwen3.7|qwen3.7-flash|qwen3.7-max|qwen3.7-plus|qwen3.8-max",
+      "models": "qwen|qwen-flash|qwen-plus|qwen-plus-latest|qwen-turbo|qwen2.5|qwen3|qwen3-14b|qwen3-235b-a22b|qwen3-30b-a3b|qwen3-32b|qwen3-8b|qwen3-max|qwen3-max-preview|qwen3.5|qwen3.5-122b-a10b|qwen3.5-27b|qwen3.5-35b-a3b|qwen3.5-397b-a17b|qwen3.5-flash|qwen3.5-plus|qwen3.6|qwen3.6-35b-a3b|qwen3.6-flash|qwen3.6-max-preview|qwen3.6-plus|qwen3.7|qwen3.7-flash|qwen3.7-max|qwen3.7-plus|qwen3.8-flash|qwen3.8-max",
       "provider": "custom",
       "limit": 10,
       "enableRichTranslate": false,
@@ -8129,6 +8161,46 @@
       ]
     },
     {
+      "id": "youtubeeducation",
+      "matches": "https://www.youtubeeducation.com/embed*",
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 1,
+      "subtitleRule.add": {
+        "type": "youtube",
+        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
+        "hookType": "xhr_response",
+        "subtitleUrlRegExp": "(/api/timedtext)",
+        "translateSelectors": [
+          ".caption-window",
+          ".caption-visual-line"
+        ],
+        "videoPlayerSelector": ".html5-video-player",
+        "loadingContainerSelector": ".ytp-caption-window-container",
+        "captionContainerSelector": "#ytp-caption-window-container",
+        "captionWindowSelector": ".caption-window",
+        "videoADSelector": ".ytp-ad-player-overlay",
+        "videoSelector": ".html5-video-player video",
+        "rtlInjectedCss": [
+          "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
+        ],
+        "attachRule": {
+          "appendSelector": ".html5-video-player",
+          "showSupportTips": false,
+          "injectedCSS": [
+            ".imt-caption-container {z-index:40;}",
+            ".imt-caption-window {margin-bottom: 0; bottom: 2%; user-select:text; -webkit-user-select:text;}",
+            ".imt-caption-window {width: 90%;}"
+          ],
+          "injectedGlobalCSS": [
+            ".caption-window {display: none;} ",
+            "#shorts-player #immersive-translate-caption-window { height: 20%;}",
+            ".html5-video-player:not(.ytp-autohide) #immersive-translate-caption-window {bottom: 60px;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "yotube-embed",
       "matches": "https://www.youtube.com/embed*",
       "mainFrameMinTextCount": 0,
@@ -9097,6 +9169,24 @@
         ".asset-caption"
       ],
       "detectParagraphLanguage": true
+    },
+    {
+      "id": "sydeny",
+      "domCheckTimeout": 1,
+      "matches": "sydney.instructuremedia.com",
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "type": "subsrt",
+        "hookType": "fetch",
+        "subtitleUrlRegExp": "caption_files",
+        "attachRule": {
+          "appendSelector": "[data-media-provider]",
+          "injectedGlobalCSS": [
+            "[data-part=captions] {display: none!important;}"
+          ]
+        }
+      }
     },
     {
       "id": "artstationLearning",
@@ -23001,6 +23091,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-22T10:16:14.149Z",
+  "buildinConfigUpdatedAt": "2026-09-23T06:30:51.667Z",
   "latestVersion": "1.33.2"
 }
