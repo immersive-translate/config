@@ -974,7 +974,8 @@
     "https://academy.dair.ai[DAIR.AI Academy]",
     "https://cloudnestra.com[CloudNestra]",
     "https://www.tagesschau.de[Tagesschau]",
-    "https://iframe.mediadelivery.net[MediaDelivery]"
+    "https://iframe.mediadelivery.net[MediaDelivery]",
+    "https://cdnapisec.kaltura.com[Cdnapisec.kaltura.com]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -22316,6 +22317,22 @@
       }
     },
     {
+      "id": "kaltura-embed",
+      "matches": [
+        "cdnapisec.kaltura.com"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track",
+        "videoPlayerSelector": "video",
+        "allowHideModeTextTrack": true,
+        "loadingContainerSelector": ".playkit-container",
+        "attachRule": {
+          "appendSelector": ".playkit-container",
+          "injectedGlobalCSS": ".playkit-container .playkit-subtitles {display:none!important;}"
+        }
+      }
+    },
+    {
       "id": "sbs",
       "matches": "www.sbs.com.au",
       "subtitleRule.add": {
@@ -23117,6 +23134,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-23T14:26:52.684Z",
+  "buildinConfigUpdatedAt": "2026-09-23T16:06:08.108Z",
   "latestVersion": "1.33.3"
 }
