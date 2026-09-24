@@ -976,7 +976,8 @@
     "https://www.tagesschau.de[Tagesschau]",
     "https://iframe.mediadelivery.net[MediaDelivery]",
     "https://cdnapisec.kaltura.com[Cdnapisec.kaltura.com]",
-    "https://www.peacocktv.com[peacocktv]"
+    "https://www.peacocktv.com[peacocktv]",
+    "https://abema.tv[Abema.tv]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -19214,6 +19215,29 @@
       }
     },
     {
+      "id": "abema-tv",
+      "matches": [
+        "abema.tv"
+      ],
+      "subtitleRule.add": {
+        "type": "live_attach",
+        "videoPlayerSelector": "#fluffy-video-view video",
+        "videoSelector": "#fluffy-video-view video",
+        "captionContainerSelector": "#fluffy-subtitle-texts-view",
+        "loadingContainerSelector": ".c-vod-EpisodePlayerContainer-wrapper",
+        "quickButtonRule": {
+          "appendSelector": ".com-vod-VideoControlBar__right",
+          "insertBeforeSelector": ".com-vod-VideoControlBar__right > .com-vod-VODScreen__button"
+        },
+        "attachRule": {
+          "appendSelector": ".c-vod-EpisodePlayerContainer-screen",
+          "injectedGlobalCSS": [
+            ".com-vod-VODScreen-subtitle-container {opacity: 0 !important; pointer-events: none !important;}"
+          ]
+        }
+      }
+    },
+    {
       "id": "whop-com",
       "matches": [
         "whop.com"
@@ -23137,6 +23161,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-24T09:40:02.471Z",
+  "buildinConfigUpdatedAt": "2026-09-24T10:38:00.855Z",
   "latestVersion": "1.33.3"
 }
