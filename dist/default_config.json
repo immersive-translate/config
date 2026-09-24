@@ -977,7 +977,9 @@
     "https://iframe.mediadelivery.net[MediaDelivery]",
     "https://cdnapisec.kaltura.com[Cdnapisec.kaltura.com]",
     "https://www.peacocktv.com[peacocktv]",
-    "https://abema.tv[Abema.tv]"
+    "https://abema.tv[Abema.tv]",
+    "https://keats.kcl.ac.uk[Kaltura]",
+    "https://www.peacocktv.com[peacocktv]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -22543,13 +22545,33 @@
       }
     },
     {
+      "id": "kaltura",
+      "matches": [
+        "kaf.keats.kcl.ac.uk"
+      ],
+      "excludeSelectors.add": [
+        ".playkit-subtitles, .playkit-subtitles *"
+      ],
+      "mutationExcludeSelectors.add": [
+        ".playkit-subtitles, .playkit-subtitles *"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "domCheckTimeout": 1,
+      "subtitleRule.add": {
+        "type": "text_track_dynamic",
+        "videoPlayerSelector": "video",
+        "hookType": "",
+        "subtitleUrlRegExp": ""
+      }
+    },
+    {
       "id": "common-vtt",
       "matches": [
         "academy.dair.ai",
         "cloudnestra.com",
         "maven.com",
-        "www.peacocktv.com",
-        "kaf.keats.kcl.ac.uk"
+        "www.peacocktv.com"
       ],
       "subtitleRule.add": {
         "type": "subsrt",
@@ -23161,6 +23183,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-24T10:38:00.855Z",
+  "buildinConfigUpdatedAt": "2026-09-24T11:23:05.910Z",
   "latestVersion": "1.33.3"
 }
