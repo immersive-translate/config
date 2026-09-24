@@ -975,7 +975,8 @@
     "https://cloudnestra.com[CloudNestra]",
     "https://www.tagesschau.de[Tagesschau]",
     "https://iframe.mediadelivery.net[MediaDelivery]",
-    "https://cdnapisec.kaltura.com[Cdnapisec.kaltura.com]"
+    "https://cdnapisec.kaltura.com[Cdnapisec.kaltura.com]",
+    "https://www.peacocktv.com[peacocktv]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -22522,7 +22523,9 @@
       "matches": [
         "academy.dair.ai",
         "cloudnestra.com",
-        "maven.com"
+        "maven.com",
+        "www.peacocktv.com",
+        "kaf.keats.kcl.ac.uk"
       ],
       "subtitleRule.add": {
         "type": "subsrt",
@@ -23134,6 +23137,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-24T03:23:55.237Z",
+  "buildinConfigUpdatedAt": "2026-09-24T09:40:02.471Z",
   "latestVersion": "1.33.3"
 }
