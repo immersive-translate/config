@@ -888,7 +888,6 @@
     "https://www.medbridge.com/[Medbridge]",
     "https://anix.com.co/[anix]",
     "https://ahrefs.com/[ahrefs]",
-    "https://www.domestika.org/[DOMESTIKA]",
     "https://www.angel.com/[ANGEL]",
     "https://shangpa-academy.mn.co/[Shangpa Academy]",
     "https://internetfundamentals.com/[Internetfundamentals]",
@@ -909,7 +908,6 @@
     "https://lennysnewsletter.com[Lennysnewsletter.com]",
     "https://av.tib.eu[Av.tib.eu]",
     "https://vod.sooplive.com[Vod.sooplive.com]",
-    "https://slideslive.com[Slideslive.com]",
     "https://shibaristudy.com[Shibaristudy.com]",
     "https://epicreact.dev[Epic React]",
     "https://www.billboard.com[Billboard]",
@@ -979,7 +977,7 @@
     "https://www.peacocktv.com[peacocktv]",
     "https://abema.tv[Abema.tv]",
     "https://keats.kcl.ac.uk[Kaltura]",
-    "https://www.peacocktv.com[peacocktv]"
+    "https://www.nvidia.com[Nvidia.com]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -22566,6 +22564,18 @@
       }
     },
     {
+      "id": "nvidia-on-demand",
+      "matches": [
+        "www.nvidia.com"
+      ],
+      "subtitleRule.add": {
+        "type": "text_track_dynamic",
+        "videoPlayerSelector": ".playkit-player video",
+        "allowHideModeTextTrack": true,
+        "loadingContainerSelector": ".playkit-container"
+      }
+    },
+    {
       "id": "common-vtt",
       "matches": [
         "academy.dair.ai",
@@ -23183,6 +23193,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-24T11:23:05.910Z",
+  "buildinConfigUpdatedAt": "2026-09-24T13:51:45.624Z",
   "latestVersion": "1.33.3"
 }
