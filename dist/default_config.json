@@ -3663,12 +3663,12 @@
       "visible": false
     },
     "openai-pro": {
-      "name": "GPT-5.6 Luna",
+      "name": "GPT-6 Luna",
       "type": "openai",
       "group": "pro",
-      "proModel": "gpt-5.6-luna",
+      "proModel": "gpt-6-luna",
       "concurrencyLimit": 50,
-      "model": "gpt-5.6-luna",
+      "model": "gpt-6-luna",
       "extends": "openai",
       "provider": "pro",
       "visible": true,
@@ -3927,14 +3927,14 @@
       "requestTimeout": 120000
     },
     "openai-max": {
-      "name": "GPT-5.6 Terra",
+      "name": "GPT-6 Sol",
       "type": "openai",
       "group": "max",
       "extends": "openai",
       "provider": "pro",
-      "proModel": "gpt-5.6-terra",
+      "proModel": "gpt-6-sol",
       "concurrencyLimit": 50,
-      "model": "gpt-5.6-terra",
+      "model": "gpt-6-sol",
       "limit": 10,
       "visible": true,
       "supportFeatures": [
@@ -23134,6 +23134,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-23T16:06:08.108Z",
+  "buildinConfigUpdatedAt": "2026-09-24T03:23:55.237Z",
   "latestVersion": "1.33.3"
 }
