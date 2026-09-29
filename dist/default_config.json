@@ -977,7 +977,8 @@
     "https://www.peacocktv.com[peacocktv]",
     "https://abema.tv[Abema.tv]",
     "https://keats.kcl.ac.uk[Kaltura]",
-    "https://www.nvidia.com[Nvidia.com]"
+    "https://www.nvidia.com[Nvidia.com]",
+    "https://gem.cbc.ca[Gem CBC]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -1717,13 +1718,10 @@
         "translationServices": {
           "bing-free.add": {
             "defaultToService": null
-          },
-          "free-model.add": {
-            "hidden": true
           }
         },
-        "defaultTranslationServicesOrder.remove": [
-          "free-model"
+        "defaultTranslationServicesOrder.add": [
+          "bing-free"
         ]
       }
     }
@@ -2222,7 +2220,7 @@
           "multiplePrompt": "한국어로 번역하세요:\n\n{{text}}",
           "subtitlePrompt": "한국어로 번역하세요:\n\n{{text}}",
           "aiBatch": {
-            "taskSystemPrompt": "당신은 전문 한국어 원어민 번역가입니다. 각 source item을 각각 정확하고 유창하며 자연스러운 한국어로 번역하고 원문의 의미, 어조, 문단, 줄바꿈, 형식을 유지하세요. 각 항목에는 번역문만 제공하고 설명, 서문 또는 주석을 추가하지 마세요. HTML 태그가 포함되어 있다면 모든 태그를 보존하고 번역문의 어순에 맞는 올바른 위치에 배치하세요. placeholder와 코드는 그대로 보존하고, 고유명사와 기타 내용은 번역할 필요가 없을 때만 보존하세요. 다음 제목, 요약 및 용어 문맥을 반영해 번역하세요:{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "taskSystemPrompt": "당신은 전문 한국어 원어민 번역가입니다. 각 source item 을 각각 정확하고 유창하며 자연스러운 한국어로 번역하고 원문의 의미, 어조, 문단, 줄바꿈, 형식을 유지하세요. 각 항목에는 번역문만 제공하고 설명, 서문 또는 주석을 추가하지 마세요. HTML 태그가 포함되어 있다면 모든 태그를 보존하고 번역문의 어순에 맞는 올바른 위치에 배치하세요. placeholder 와 코드는 그대로 보존하고, 고유명사와 기타 내용은 번역할 필요가 없을 때만 보존하세요. 다음 제목, 요약 및 용어 문맥을 반영해 번역하세요:{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
             "userPrompt": "한국어로 번역하세요:\n\n{{text}}"
           }
         },
@@ -2984,7 +2982,7 @@
         {
           "id": "auto2ko",
           "aiBatch": {
-            "taskSystemPrompt": "당신은 전문 한국어 원어민 번역가입니다. 각 source item을 각각 정확하고 유창하며 자연스러운 한국어로 번역하고 원문의 의미, 어조, 문단, 줄바꿈, 형식을 유지하세요. 각 항목에는 번역문만 제공하고 설명, 서문 또는 주석을 추가하지 마세요. HTML 태그가 포함되어 있다면 모든 태그를 보존하고 번역문의 어순에 맞는 올바른 위치에 배치하세요. placeholder와 코드는 그대로 보존하고, 고유명사와 기타 내용은 번역할 필요가 없을 때만 보존하세요. 다음 제목, 요약 및 용어 문맥을 반영해 번역하세요:{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
+            "taskSystemPrompt": "당신은 전문 한국어 원어민 번역가입니다. 각 source item 을 각각 정확하고 유창하며 자연스러운 한국어로 번역하고 원문의 의미, 어조, 문단, 줄바꿈, 형식을 유지하세요. 각 항목에는 번역문만 제공하고 설명, 서문 또는 주석을 추가하지 마세요. HTML 태그가 포함되어 있다면 모든 태그를 보존하고 번역문의 어순에 맞는 올바른 위치에 배치하세요. placeholder 와 코드는 그대로 보존하고, 고유명사와 기타 내용은 번역할 필요가 없을 때만 보존하세요. 다음 제목, 요약 및 용어 문맥을 반영해 번역하세요:{{title_prompt}}{{summary_prompt}}{{terms_prompt}}\n\n{{imt_style_guide}}",
             "userPrompt": "한국어로 번역하세요:\n\n{{text}}"
           }
         },
@@ -4365,7 +4363,7 @@
     "secretRegexps": [],
     "secretRegexpsV2": [
       {
-        "include": "(?:^|[\\s\\u00A0])((?:~|\\/(?:etc|var|usr|opt|home|Users|root|private|Library|System|Volumes|tmp|dev|proc|sys|run))(?:\\/[^\\s\\\"'<>`,;:!?，。！？；：、]+)*)"
+        "include": "(?:^|[\\s\\u00A0])((?:~|\\/(?:etc|var|usr|opt|home|Users|root|private|Library|System|Volumes|tmp|dev|proc|sys|run))(?:\\/[^\\s\\\"'<>`,;:!?,.!?.:,]+)*)"
       }
     ],
     "detectionServiceOrder": [
@@ -7254,6 +7252,19 @@
       ]
     },
     {
+      "id": "cbc-gem-text-track",
+      "matches": [
+        "gem.cbc.ca"
+      ],
+      "mainFrameMinTextCount": 0,
+      "mainFrameMinWordCount": 0,
+      "subtitleRule.add": {
+        "disabled": false,
+        "type": "text_track_dynamic",
+        "videoPlayerSelector": "video"
+      }
+    },
+    {
       "id": "tv.apple",
       "matches": "tv.apple.com",
       "subtitleRule.add": {
@@ -8166,6 +8177,16 @@
         ".chat-line__username-container",
         ".chat-line__no-background span[aria-hidden=true]",
         "[data-a-target=animated-channel-viewers-count],.live-time"
+      ]
+    },
+    {
+      "id": "kick",
+      "matches": [
+        "kick.com",
+        "www.kick.com"
+      ],
+      "injectedCss": [
+        "html[imt-state=dual] #predictions-panel > div > .opacity-0, html[imt-state=translation] #predictions-panel > div > .opacity-0 { display: none !important; }"
       ]
     },
     {
@@ -9350,6 +9371,7 @@
         ".promotion-3PDMAb {display: none!important;}",
         "div[data-content-feature='1'] > div {-webkit-line-clamp: unset!important;max-height: unset!important;}",
         "div[style='-webkit-line-clamp:*'] {-webkit-line-clamp: unset!important;max-height: unset!important;}",
+        "div[role='heading'][id^='news_title_tsuid_'][data-imt-p='1'] {-webkit-line-clamp: unset!important;height: auto!important;overflow: visible!important;}",
         ".Pw4Ldf.RsCEN {height:unset!important;}",
         ".related-question-pair {overflow:auto!important;}"
       ],
@@ -13876,6 +13898,7 @@
         "nyaa.fan",
         "www.mangago.me",
         "rinkocomics.com",
+        "rokaricomics.com",
         "hanimeone.me",
         "roliascan.com",
         "novelpia.com",
@@ -23193,6 +23216,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-28T02:27:13.637Z",
+  "buildinConfigUpdatedAt": "2026-09-29T03:25:56.918Z",
   "latestVersion": "1.33.3"
 }
