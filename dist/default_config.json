@@ -6960,8 +6960,9 @@
       "subtitleRule.add_v.[1.17.3]": {
         "multipleVideoContainerSelector": "[data-testid=\"videoComponent\"]",
         "quickButtonRule": {
-          "appendSelector": "button[role=\"button\"]>div>svg<-parent<-parent<-parent<-parent",
-          "injectCSS": ".imt-quick-subtitle-pop-content { transform: unset !important; } .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } ",
+          "appendSelector": "button[aria-label=\"Video Settings\"]<-parent<-parent<-parent",
+          "insertBeforeSelector": "button[aria-label=\"Video Settings\"]<-parent<-parent",
+          "injectCSS": ":host { display: flex !important; align-items: center !important; justify-content: center !important; width: 36px !important; height: 36px !important; } .imt-quick-subtitle-button { margin: 0 !important; justify-content: center; width: 36px; } .logo,.logo svg { height: 18px !important; width: 18px !important; }",
           "injectedGlobalCSS": "[data-testid=\"videoComponent\"] [style*=\"will-change: opacity\"]:has(#immersive-translatequick-button), [data-testid=\"videoComponent\"] [style*=\"will-change:opacity\"]:has(#immersive-translatequick-button) { will-change: auto !important; }"
         },
         "aiSubtitle": {
@@ -6997,10 +6998,10 @@
             "injectedGlobalCSS": "[data-testid=\"videoComponent\"] [style*=\"will-change: opacity\"]:has(#immersive-translatequick-button), [data-testid=\"videoComponent\"] [style*=\"will-change:opacity\"]:has(#immersive-translatequick-button) { will-change: auto !important; }"
           },
           {
-            "appendSelector": "button[role=\"button\"]>div>svg<-parent<-parent<-parent<-parent",
+            "appendSelector": "button[aria-label=\"Video Settings\"]<-parent<-parent<-parent",
+            "insertBeforeSelector": "button[aria-label=\"Video Settings\"]<-parent<-parent",
             "dismissOtherPlayerMenus": false,
-            "injectCSS": ".imt-quick-subtitle-pop-content { transform: unset !important;  bottom: 28px; !important;} .logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} ",
-            "injectCSS.add_v.[1.32.3]": ".logo,.logo svg { height: 18px !important; width: 18px !important;}, .logo svg { margin-top: 2px !important; } .imt-quick-subtitle-ai-subtitle-tip {transform: unset !important;} ",
+            "injectCSS": ":host { display: flex !important; align-items: center !important; justify-content: center !important; width: 36px !important; height: 36px !important; } .imt-quick-subtitle-button { margin: 0 !important; justify-content: center; width: 36px; } .logo,.logo svg { height: 18px !important; width: 18px !important; } .imt-quick-subtitle-ai-subtitle-tip { transform: unset !important; }",
             "injectedGlobalCSS": "[data-testid=\"videoComponent\"] [style*=\"will-change: opacity\"]:has(#immersive-translatequick-button), [data-testid=\"videoComponent\"] [style*=\"will-change:opacity\"]:has(#immersive-translatequick-button) { will-change: auto !important; }"
           },
           {
@@ -23218,6 +23219,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-29T03:28:22.982Z",
+  "buildinConfigUpdatedAt": "2026-09-29T03:57:25.280Z",
   "latestVersion": "1.33.3"
 }
