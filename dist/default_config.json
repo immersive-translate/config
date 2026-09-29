@@ -978,7 +978,8 @@
     "https://abema.tv[Abema.tv]",
     "https://keats.kcl.ac.uk[Kaltura]",
     "https://www.nvidia.com[Nvidia.com]",
-    "https://gem.cbc.ca[Gem CBC]"
+    "https://gem.cbc.ca[Gem CBC]",
+    "https://learn.learn.nvidia.com[Learn.learn.nvidia.com]"
   ],
   "isShowContextMenu": true,
   "enableInputTranslation": true,
@@ -18055,7 +18056,8 @@
       "matches": [
         "*.edx.org",
         "courses.mitxonline.mit.edu",
-        "courses.learn.mit.edu"
+        "courses.learn.mit.edu",
+        "learn.learn.nvidia.com"
       ],
       "additionalExcludeSelectors.add": [
         ".closed-captions",
@@ -23216,6 +23218,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-29T03:25:56.918Z",
+  "buildinConfigUpdatedAt": "2026-09-29T03:28:22.982Z",
   "latestVersion": "1.33.3"
 }
