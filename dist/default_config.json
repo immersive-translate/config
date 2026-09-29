@@ -530,6 +530,7 @@
     "https://www.pixiv.net/manga[Pixiv][chrome,firefox,imtAndroid]",
     "https://mangaplus.shueisha.co.jp[MANGA Plus by SHUEISHA][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://zebrack-comic.shueisha.co.jp/[Zebrack by SHUEISHA][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
+    "https://mangamillion.shueisha.co.jp/[MANGA Million by SHUEISHA][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
     "https://comic-fuz.com/[COMIC FUZ][chrome,firefox,safari,userscript,imtAndroid,imtIOS,imtIOSNew]",
     "https://mangadex.org/[MangaDex][chrome,firefox,safari,userscript,imtIOS,imtIOSNew]",
     "https://mangadna.com/[MangaDNA][chrome,safari,imtAndroid,imtIOSNew]",
@@ -13117,7 +13118,8 @@
     {
       "id": "zebrack-shueisha",
       "matches": [
-        "zebrack-comic.shueisha.*"
+        "zebrack-comic.shueisha.*",
+        "mangamillion.shueisha.co.jp"
       ],
       "excludeSelectors.add": [
         ".eAvsta_root"
@@ -23225,6 +23227,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-29T15:55:26.881Z",
+  "buildinConfigUpdatedAt": "2026-09-29T17:03:04.897Z",
   "latestVersion": "1.33.3"
 }
