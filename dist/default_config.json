@@ -6356,6 +6356,11 @@
             "translationLanguagePattern.add": {
               "matches": []
             },
+            "translationUrlPattern.add": {
+              "excludeMatches": [
+                "*"
+              ]
+            },
             "defaultTranslationServicesOrder.remove": [
               "babelfast-pro"
             ],
@@ -23219,6 +23224,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-29T03:57:25.280Z",
+  "buildinConfigUpdatedAt": "2026-09-29T12:12:43.895Z",
   "latestVersion": "1.33.3"
 }
