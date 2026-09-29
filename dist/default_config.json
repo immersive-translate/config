@@ -7741,6 +7741,7 @@
         ".js-feed-item-component h3 a[data-hovercard-type=pull_request]",
         "[aria-labelledby=outline-id] nav",
         "[data-testid='issue-pr-title-link']",
+        "[data-testid='issue-listitem-title-link']",
         "div.user-profile-bio",
         "div.news > div.js-notice",
         "#memex-project-view-root a [class^='prc-Text-Text']",
@@ -7811,7 +7812,7 @@
         ".review-thread-reply",
         ".codeRepository",
         "[title='Label: Private']",
-        "[aria-label*='language']",
+        "[aria-label*='language']:not(li:has([data-testid='issue-listitem-title-link']))",
         ".js-suggested-changes-blob.diff-view",
         "h1[data-component=PH_Title] span[class*='issueNumberText']",
         "[data-testid=list-row-repo-name-and-number]"
@@ -23224,6 +23225,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-29T12:12:43.895Z",
+  "buildinConfigUpdatedAt": "2026-09-29T15:55:26.881Z",
   "latestVersion": "1.33.3"
 }
