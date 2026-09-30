@@ -14019,6 +14019,7 @@
           ".reading-content .page-break img",
           "figure img[src*=nyxscans]",
           "#chapter-images-id img",
+          "#chapter-images img",
           ".comic-pic",
           ".chapter-img img",
           ".tiup_body div p img",
@@ -23254,6 +23255,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-30T04:27:13.181Z",
+  "buildinConfigUpdatedAt": "2026-09-30T06:33:16.629Z",
   "latestVersion": "1.33.3"
 }
