@@ -13992,7 +13992,8 @@
         "www.manhwas.men",
         "*.uzakichanmanga.com",
         "book18.fans",
-        "mangayun.com"
+        "mangayun.com",
+        "violetmanga.com"
       ],
       "imageRule.add": {
         "enable": true,
@@ -14106,7 +14107,8 @@
           "#chapter_imgs img",
           "img.aligncenter",
           "#post-hentai img",
-          ".reader-page-wrap > img"
+          ".reader-page-wrap > img",
+          "img.ts-main-image"
         ],
         "credentialUrlMatches": [
           "https://images.jcomic.net/*"
@@ -23255,6 +23257,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-30T06:33:16.629Z",
+  "buildinConfigUpdatedAt": "2026-09-30T06:59:02.234Z",
   "latestVersion": "1.33.3"
 }
