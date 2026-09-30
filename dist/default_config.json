@@ -6638,6 +6638,14 @@
       ]
     },
     {
+      "id": "shopee-webchat",
+      "matches": "seller.shopee.*/webchat/*",
+      "injectedCss.add": [
+        ".ReactVirtualized__Grid__innerScrollContainer:has(> div pre) { height: auto !important; max-height: none !important; overflow: visible !important; }",
+        ".ReactVirtualized__Grid__innerScrollContainer:has(> div pre) > div { position: relative !important; top: auto !important; height: auto !important; }"
+      ]
+    },
+    {
       "id": "fanbox",
       "matches": [
         "*.fanbox.cc"
@@ -23321,6 +23329,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-30T10:16:20.351Z",
+  "buildinConfigUpdatedAt": "2026-09-30T10:24:07.784Z",
   "latestVersion": "1.33.3"
 }
