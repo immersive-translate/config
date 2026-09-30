@@ -20508,8 +20508,7 @@
     {
       "id": "comic.pixiv.net",
       "matches": [
-        "comic.pixiv.net",
-        "comic-store-viewer.pixiv.net"
+        "comic.pixiv.net"
       ],
       "imageRule.add": {
         "enable": true,
@@ -20524,6 +20523,21 @@
         "type": "manga",
         "backgroundImgSelectors": [
           "div[id*='page-']"
+        ]
+      }
+    },
+    {
+      "id": "comic-store-viewer.pixiv.net",
+      "matches": "comic-store-viewer.pixiv.net",
+      "imageRule.add_v.[1.32.3]": {
+        "enable": true,
+        "type": "manga",
+        "opImageType": "append",
+        "imageSelectors": [
+          "#renderer .currentScreen canvas:not(.imt-img)"
+        ],
+        "mangaRefreshSelectors": [
+          "#pageSliderCounter"
         ]
       }
     },
@@ -23258,6 +23272,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-30T09:05:30.760Z",
+  "buildinConfigUpdatedAt": "2026-09-30T09:28:42.090Z",
   "latestVersion": "1.33.3"
 }
