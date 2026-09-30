@@ -3945,13 +3945,13 @@
       ]
     },
     "claude-max": {
-      "name": "Claude Sonnet 5",
+      "name": "Claude Sonnet 5.5",
       "type": "claude",
       "group": "max",
       "extends": "claude",
       "limit": 6,
       "provider": "pro",
-      "proModel": "claude-sonnet-5",
+      "proModel": "claude-sonnet-5-5",
       "concurrencyLimit": 50,
       "visible": true,
       "supportFeatures": [
@@ -23227,6 +23227,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-29T17:03:04.897Z",
+  "buildinConfigUpdatedAt": "2026-09-30T02:33:58.097Z",
   "latestVersion": "1.33.3"
 }
