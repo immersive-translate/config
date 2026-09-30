@@ -14268,9 +14268,11 @@
         "imageSelectors": [
           "#scroll-list img",
           "[class^='scrollView'] img",
-          "[class^='scrollView'] canvas[data]"
+          "[class^='scrollView'] canvas[data]",
+          "#banner-section .img-desktop"
         ],
         "opImageType": "append",
+        "injectedCss": "#banner-section .main-banner.img-desktop[style*='display: none']:not(.imt-img) {display: none !important;}",
         "intersectionRootMargin": "0px 0px 200% 0px"
       }
     },
@@ -23227,6 +23229,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-30T03:06:00.464Z",
+  "buildinConfigUpdatedAt": "2026-09-30T03:51:23.212Z",
   "latestVersion": "1.33.3"
 }
