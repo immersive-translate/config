@@ -5979,6 +5979,17 @@
   "downloadAppQrCode": "https://s.immersivetranslate.com/assets/r2-uploads/APPDownloadQRCode.svg",
   "rules": [
     {
+      "id": "windhawk",
+      "matches": "windhawk.net/mods",
+      "atomicBlockSelectors.add": [
+        "[data-testid=\"mod-card-title\"]",
+        "[data-testid=\"mod-card-title\"] > span"
+      ],
+      "injectedCss.add": [
+        "[data-testid=\"mod-card-title\"] + .immersive-translate-target-wrapper > br { display: none !important; }"
+      ]
+    },
+    {
       "id": "isSubtitleBuilder",
       "pageType": "subtitleBuilder",
       "selectorMatches": [
@@ -23272,6 +23283,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-30T09:28:42.090Z",
+  "buildinConfigUpdatedAt": "2026-09-30T09:43:08.651Z",
   "latestVersion": "1.33.3"
 }
