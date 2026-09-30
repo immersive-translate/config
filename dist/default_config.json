@@ -13882,6 +13882,24 @@
       }
     },
     {
+      "id": "kencomics.com",
+      "matches": "kencomics.com/series/*/chapter-*",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".comic-images-wrapper .image-container img"
+        ],
+        "platforms": [
+          "other",
+          "chrome",
+          "imtIOSNew",
+          "imtAndroid",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "v-comic",
       "matches": [
         "newmanhwa.com",
@@ -14680,6 +14698,26 @@
         "intersectionRootMargin": "0px 0px 200% 0px",
         "platforms": [
           "chrome"
+        ]
+      }
+    },
+    {
+      "id": "comic-earthstar.com",
+      "matches": "comic-earthstar.com/episode/*",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".js-page-area canvas.page-image.js-page-image"
+        ],
+        "urlFetchType": "canvasArgs",
+        "opImageType": "append",
+        "platforms": [
+          "other",
+          "chrome",
+          "imtIOSNew",
+          "safari",
+          "imtAndroid"
         ]
       }
     },
@@ -23283,6 +23321,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-30T09:43:08.651Z",
+  "buildinConfigUpdatedAt": "2026-09-30T10:16:20.351Z",
   "latestVersion": "1.33.3"
 }
