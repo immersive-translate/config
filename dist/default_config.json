@@ -1202,7 +1202,7 @@
   "enableFreeModelMode": false,
   "advanceMergeConfig": [
     {
-      "condition": "versionNumber>13301 && abTagNumber<4",
+      "condition": "versionNumber>13301 && abTagNumber<6",
       "advanceConfig": {
         "translationServices": {
           "ai": {
@@ -23227,6 +23227,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-30T02:33:58.097Z",
+  "buildinConfigUpdatedAt": "2026-09-30T03:06:00.464Z",
   "latestVersion": "1.33.3"
 }
