@@ -13044,6 +13044,7 @@
         "funbe*.com",
         "happytoon01.com",
         "tkor*.com",
+        "toonkor1.org",
         "m.블랙툰.co",
         "블랙툰.co",
         "www.twmanga.com",
@@ -23257,6 +23258,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-30T06:59:02.234Z",
+  "buildinConfigUpdatedAt": "2026-09-30T09:05:30.760Z",
   "latestVersion": "1.33.3"
 }
