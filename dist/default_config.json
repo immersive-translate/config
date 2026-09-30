@@ -14259,6 +14259,31 @@
       }
     },
     {
+      "id": "lezhinus-virtual-reader",
+      "matches": [
+        "https://www.lezhinus.com/*/comic/incomplete_combustion/*",
+        "https://www.lezhinus.com/comic/incomplete_combustion/*"
+      ],
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          ".scroll-view [data-cut-index] > img[src^='blob:']:not(.imt-img)"
+        ],
+        "opImageType": "replace",
+        "intersectionRootMargin": "0px",
+        "platforms": [
+          "other",
+          "chrome",
+          "safari",
+          "userscript",
+          "imtAndroid",
+          "imtIOS",
+          "imtIOSNew"
+        ]
+      }
+    },
+    {
       "id": "lezhinus",
       "matches": "www.lezhinus.com",
       "imageRule.add.[1.13.8]": {
@@ -23229,6 +23254,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-30T03:51:23.212Z",
+  "buildinConfigUpdatedAt": "2026-09-30T04:27:13.181Z",
   "latestVersion": "1.33.3"
 }
