@@ -22784,7 +22784,8 @@
         "dolmods.net",
         "detail.1688.com",
         "herdr.dev",
-        "sysu.bohrium.com"
+        "sysu.bohrium.com",
+        "impeccable.style"
       ],
       "excludeMatches": [
         "https://followin.io/*"
@@ -22816,7 +22817,9 @@
         ".description__4cb8a {max-height:unset;-webkit-line-clamp:unset;}",
         ".link-container {height:unset!important;-webkit-line-clamp:unset!important;}",
         ".plugin-desc {max-height:unset;-webkit-line-clamp:unset;}",
-        "[style*='max-height'] {max-height:unset!important;}"
+        "[style*='max-height'] {max-height:unset!important;}",
+        "[data-hero-proof] .hero-proof-stage,[data-hero-proof] .hero-proof-panel:not([hidden]){height:auto!important;display:grid!important;}[data-hero-proof] .hero-proof-panel,[data-hero-proof] .hero-proof-layer,[data-hero-proof] .hero-proof-canvas{position:relative!important;grid-area:1/1!important;}[data-hero-proof] .hero-proof-canvas>article{height:auto!important;min-height:var(--proof-card-h);}[data-hero-proof] .proof-polish footer{flex-wrap:wrap!important;}",
+        ".why-pm-lines > li > .immersive-translate-target-wrapper {grid-column:2;}"
       ],
       "excludeSelectors.add": [
         "[class*='paper-author'],[class*='paper-info']"
@@ -22851,6 +22854,15 @@
         ".slide_container [style*='position: absolute']"
       ],
       "_comment": "1.25.3 在这种情况下会导致脏段落重新翻译"
+    },
+    {
+      "id": "windhawk",
+      "matches": [
+        "windhawk.net"
+      ],
+      "mutationExcludeContainsSelectors.add": [
+        "[data-testid=\"mod-card-title\"] > .ant-typography > span:empty"
+      ]
     },
     {
       "id": "floatSites",
@@ -23328,6 +23340,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-02T07:48:56.684Z",
+  "buildinConfigUpdatedAt": "2026-10-02T13:57:05.673Z",
   "latestVersion": "1.33.3"
 }
