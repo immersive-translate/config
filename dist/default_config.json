@@ -4424,7 +4424,6 @@
       "markerow8",
       "span.highlighter--highlighted",
       "span.highlighter-ext",
-      "mark",
       "msreadoutspan",
       "rw-highlight",
       "web-highlight",
@@ -23329,6 +23328,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-09-30T10:24:07.784Z",
+  "buildinConfigUpdatedAt": "2026-10-02T07:48:56.684Z",
   "latestVersion": "1.33.3"
 }
