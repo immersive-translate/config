@@ -8084,7 +8084,7 @@
         "videoADSelector": ".ytp-ad-player-overlay",
         "injectedCss": [
           "#player-shorts-container .ytp-caption-window-bottom {top: 40px; bottom: unset!important;}",
-          ".ytwPlayerTopControlsHost {position: relative; z-index: 100;}"
+          ".ytwPlayerTopControlsHost {position: relative; z-index: 1001;}"
         ],
         "videoSelector": ".html5-video-player.playing-mode video,.html5-video-player.paused-mode video",
         "translationOnlyPattern": [
@@ -9501,6 +9501,7 @@
         "#main"
       ],
       "isTransformPreTagNewLine": true,
+      "forceFormatPre": true,
       "excludeSelectors": [
         ".notion-code-block"
       ],
@@ -23340,6 +23341,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-02T13:57:05.673Z",
+  "buildinConfigUpdatedAt": "2026-10-03T15:06:08.767Z",
   "latestVersion": "1.33.3"
 }
