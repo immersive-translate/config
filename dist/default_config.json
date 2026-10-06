@@ -8391,7 +8391,9 @@
         ".product-item-title",
         ".product-item-price",
         "#commentCanvas .cmt",
-        ".ytwTranscriptSegmentViewModelHost"
+        ".ytwTranscriptSegmentViewModelHost",
+        "ytd-shorts ytd-structured-description-content-renderer .ytVideoTitleHeaderViewModelTitle",
+        "ytd-shorts ytd-expandable-video-description-body-renderer #plain-snippet-text"
       ],
       "extraBlockSelectors.add": [
         "yt-formatted-string.ytd-transcript-segment-renderer",
@@ -23341,6 +23343,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-03T15:06:08.767Z",
+  "buildinConfigUpdatedAt": "2026-10-06T14:02:03.822Z",
   "latestVersion": "1.33.3"
 }
