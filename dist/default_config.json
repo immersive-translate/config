@@ -7748,6 +7748,7 @@
         "#repo-content-turbo-frame .markdown-title",
         "[app-name='blackbird-search'] [data-hpc='true']",
         ".topic-box > a > p:nth-of-type(2)",
+        "main a[href^='/topics/'] > p",
         "[data-testid=\"listitem-title-link\"]",
         "#repo-content-turbo-frame p",
         "#repo-content-turbo-frame h4",
@@ -23343,6 +23344,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-08T02:44:17.127Z",
+  "buildinConfigUpdatedAt": "2026-10-08T02:56:53.154Z",
   "latestVersion": "1.33.3"
 }
