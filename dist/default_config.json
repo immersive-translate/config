@@ -23012,7 +23012,8 @@
         "man.uex.se",
         "www.dove.com",
         "phrack.org",
-        "m.munpia.com"
+        "m.munpia.com",
+        "archive.cardbox.moe"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -23345,6 +23346,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-09T02:56:52.478Z",
+  "buildinConfigUpdatedAt": "2026-10-09T06:24:38.211Z",
   "latestVersion": "1.33.3"
 }
