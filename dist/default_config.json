@@ -2771,7 +2771,7 @@
         "anthropic-dangerous-direct-browser-access": "true"
       },
       "assistantId": "common",
-      "proModel": "claude-haiku-4.5-20251001",
+      "proModel": "claude-haiku-5-5",
       "proLimit": 10,
       "temperature": 0,
       "enableRichTranslate": true,
@@ -3685,12 +3685,12 @@
       ]
     },
     "claude-pro": {
-      "name": "Claude Haiku 4.5",
+      "name": "Claude Haiku 5.5",
       "type": "claude",
       "group": "pro",
       "extends": "claude",
-      "proModel": "claude-haiku-4.5-20251001",
-      "model": "claude-haiku-4.5-20251001",
+      "proModel": "claude-haiku-5-5",
+      "model": "claude-haiku-5-5",
       "concurrencyLimit": 50,
       "provider": "pro",
       "visible": true,
@@ -3929,14 +3929,14 @@
       "requestTimeout": 120000
     },
     "openai-max": {
-      "name": "GPT-6 Sol",
+      "name": "GPT-6.1 Sol",
       "type": "openai",
       "group": "max",
       "extends": "openai",
       "provider": "pro",
-      "proModel": "gpt-6-sol",
+      "proModel": "gpt-6.1-sol",
       "concurrencyLimit": 50,
-      "model": "gpt-6-sol",
+      "model": "gpt-6.1-sol",
       "limit": 10,
       "visible": true,
       "supportFeatures": [
@@ -23346,6 +23346,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-09T06:24:38.211Z",
+  "buildinConfigUpdatedAt": "2026-10-09T07:52:34.250Z",
   "latestVersion": "1.33.3"
 }
