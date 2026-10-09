@@ -274,6 +274,7 @@
   "beta": false,
   "cache": true,
   "enableBatchPatternDetection": true,
+  "showArticleTerminologyHighlights": false,
   "batchPatternMinCount": 3,
   "batchPatternConfidenceThreshold": 0.7,
   "enableAiAssistant": true,
@@ -1202,7 +1203,7 @@
   "enableFreeModelMode": false,
   "advanceMergeConfig": [
     {
-      "condition": "versionNumber>13301 && abTagNumber<7",
+      "condition": "versionNumber>13301 && abTagNumber<8",
       "advanceConfig": {
         "translationServices": {
           "ai": {
@@ -23346,6 +23347,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-09T07:52:34.250Z",
+  "buildinConfigUpdatedAt": "2026-10-09T10:20:55.215Z",
   "latestVersion": "1.33.3"
 }
