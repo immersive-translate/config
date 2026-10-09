@@ -6472,6 +6472,17 @@
       ]
     },
     {
+      "id": "picscheme",
+      "matches": [
+        "picscheme.org",
+        "www.picscheme.org"
+      ],
+      "excludeSelectors.add": [
+        "header nav",
+        "#mobile_menu"
+      ]
+    },
+    {
       "id": "immersive-word",
       "matches": [
         "https://*.immersivetranslate.*/word*",
@@ -23347,6 +23358,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-09T10:20:55.215Z",
+  "buildinConfigUpdatedAt": "2026-10-09T16:30:43.386Z",
   "latestVersion": "1.33.3"
 }
