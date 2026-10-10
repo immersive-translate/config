@@ -1232,41 +1232,6 @@
       }
     },
     {
-      "condition": "isPro==false && abTagNumber<2",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "useNewSoftUpgradeStyle": true
-        }
-      }
-    },
-    {
-      "condition": "versionNumber>13205 && abTagNumber>2 && abTagNumber<6",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "totalLimit": {
-            "soft": 40,
-            "hard": 40
-          }
-        }
-      }
-    },
-    {
-      "condition": "versionNumber>13205 && abTagNumber>5 && abTagNumber<8 && installedDays<7",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "totalLimit": {}
-        }
-      }
-    },
-    {
-      "condition": "versionNumber>13205 && abTagNumber>7 && installedDays<14",
-      "advanceConfig": {
-        "translationUsageLimit.add": {
-          "totalLimit": {}
-        }
-      }
-    },
-    {
       "condition": "imtAndroidVersionNumber>10107",
       "advanceConfig": {
         "monkeyH5FloatBall.add": {
@@ -1709,7 +1674,7 @@
       }
     },
     {
-      "condition": "versionNumber>13301 && abTagNumber>8",
+      "condition": "versionNumber>13301 && abTagNumber>4",
       "advanceConfig": {
         "loginAiQuotaGift.add": {
           "enabled": true
@@ -23358,6 +23323,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-09T16:30:43.386Z",
+  "buildinConfigUpdatedAt": "2026-10-10T03:03:04.555Z",
   "latestVersion": "1.33.3"
 }
