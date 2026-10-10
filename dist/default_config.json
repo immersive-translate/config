@@ -15097,7 +15097,8 @@
           ".manga-page img[src*=\"webp\"]",
           ".manga-page .c-relative img[src*=\"jpg\"]",
           ".zoomable-area img",
-          ".manga-page img"
+          ".manga-page img",
+          "[class*='style_manga-pages__'] > [class*='style_manga-page__'] > a > img[src]"
         ],
         "platforms": [
           "other",
@@ -23327,6 +23328,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-10T09:01:22.922Z",
+  "buildinConfigUpdatedAt": "2026-10-10T10:04:26.810Z",
   "latestVersion": "1.33.3"
 }
