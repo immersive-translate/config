@@ -22875,13 +22875,15 @@
         "macro.com",
         "silverbullet.md",
         "m.munpia.com",
-        "followin.io"
+        "followin.io",
+        "jobs.gem.com"
       ],
       "likePreSelectors.add": [
         "[data-block-type=md] [style^=scrollbar-gutter]",
         "#sb-main",
         ".content article",
-        "#article-content .whitespace-pre-wrap"
+        "#article-content .whitespace-pre-wrap",
+        "[class^='jobPostingContent-'] [class^='typography-']"
       ],
       "forceFormatPre": true,
       "isTransformPreTagNewLine": true,
@@ -23324,6 +23326,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-10T06:35:44.088Z",
+  "buildinConfigUpdatedAt": "2026-10-10T06:58:16.358Z",
   "latestVersion": "1.33.3"
 }
