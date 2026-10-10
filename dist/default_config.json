@@ -7121,7 +7121,8 @@
       "id": "team",
       "matches": [
         "teams.live.com",
-        "teams.microsoft.com"
+        "teams.microsoft.com",
+        "teams.cloud.microsoft"
       ],
       "excludeSelectors.add": [
         ".ui-box .ui-box[class='ui-box']",
@@ -23323,6 +23324,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-10T03:03:04.555Z",
+  "buildinConfigUpdatedAt": "2026-10-10T06:35:44.088Z",
   "latestVersion": "1.33.3"
 }
