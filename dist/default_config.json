@@ -14316,7 +14316,8 @@
           "#scroll-list img",
           "[class^='scrollView'] img",
           "[class^='scrollView'] canvas[data]",
-          "#banner-section .img-desktop"
+          "#banner-section .img-desktop",
+          ".scroll-view [data-cut-index] > img[src*='/contents/scrolls/']:not(.imt-img)"
         ],
         "opImageType": "append",
         "injectedCss": "#banner-section .main-banner.img-desktop[style*='display: none']:not(.imt-img) {display: none !important;}",
@@ -23326,6 +23327,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-10T06:58:16.358Z",
+  "buildinConfigUpdatedAt": "2026-10-10T08:24:14.712Z",
   "latestVersion": "1.33.3"
 }
