@@ -1992,7 +1992,7 @@
       "withTerms": false,
       "name": "Qwen MT",
       "model": "qwen-mt-plus",
-      "models": "qwen-mt-plus|qwen-mt-turbo",
+      "models": "qwen-mt-flash|qwen-mt-plus|qwen-mt-turbo",
       "limit": 10,
       "provider": "custom",
       "maxTextLengthPerRequest": 1200,
@@ -2415,6 +2415,29 @@
           "systemPrompt": "",
           "multipleSystemPrompt": "",
           "subtitlePrompt": ""
+        },
+        {
+          "models": [
+            "^gpt-6\\.1-sol$",
+            "^gpt-6-astra$"
+          ],
+          "bodyConfigs": {
+            "reasoning_effort": "low",
+            "temperature.remove": ""
+          }
+        },
+        {
+          "models": [
+            "^gpt-6\\.1-sol$",
+            "^gpt-6-astra$"
+          ],
+          "apiUrl": "/responses",
+          "bodyConfigs": {
+            "reasoning": {
+              "effort": "low"
+            },
+            "temperature.remove": ""
+          }
         }
       ],
       "modelsOverrides.add_v.[1.20.9]": [
@@ -2456,7 +2479,7 @@
       "keepGlossariesPrompt": "Translate the text but keep placeholders like {{xxx}} in their original positions. ",
       "proModel": "gemini-3-flash-preview",
       "model": "gemini-2.5-flash",
-      "models": "gemini-3.8-flash|gemini-3.6-flash|gemini-3.5-flash|gemini-3.5-flash-lite|gemini-3.1-flash-lite|gemini-3.1-pro-preview|gemini-3-flash-preview|gemini-2.5-flash|gemini-2.5-flash-lite|gemini-2.5-pro",
+      "models": "gemini-3.8-flash|gemini-3.6-flash|gemini-3.5-flash-lite|gemini-3.1-flash-lite|gemini-3.1-pro-preview|gemini-3-flash-preview|gemini-2.5-flash|gemini-2.5-flash-lite|gemini-2.5-pro",
       "visible": true,
       "placeholderDelimiters": [
         "{",
@@ -2715,7 +2738,7 @@
       "extends": "ai",
       "baseUrlApiPath": "/messages",
       "model": "claude-haiku-4-5",
-      "models": "claude-fable-5-1|claude-fable-5|claude-opus-5|claude-opus-4-8|claude-sonnet-5|claude-opus-4-6|claude-sonnet-4-6|claude-opus-4-5|claude-sonnet-4-5|claude-haiku-4-5|claude-opus-4-1|claude-opus-4|claude-sonnet-4|claude-sonnet-3-7",
+      "models": "claude-haiku-5-5|claude-sonnet-5-5|claude-opus-5-5|claude-fable-5-1|claude-fable-5|claude-opus-5|claude-opus-4-8|claude-sonnet-5|claude-opus-4-6|claude-sonnet-4-6|claude-opus-4-5|claude-sonnet-4-5|claude-haiku-4-5",
       "placeholderDelimiters": [
         "{{",
         "}}",
@@ -2773,6 +2796,30 @@
               "type": "disabled"
             }
           }
+        },
+        {
+          "models": [
+            "^claude-haiku-5-5$"
+          ],
+          "temperature": null,
+          "bodyConfigs": {
+            "max_tokens": 4096,
+            "thinking": {
+              "type": "disabled"
+            }
+          }
+        },
+        {
+          "models": [
+            "^claude-sonnet-5-5$"
+          ],
+          "temperature": null,
+          "bodyConfigs": {
+            "max_tokens": 4096,
+            "thinking": {
+              "type": "between_tools"
+            }
+          }
         }
       ],
       "defaultMaxTextGroupLengthPerRequest": 4
@@ -2788,7 +2835,7 @@
       "enableRichGlossaries": false,
       "provider": "pro",
       "model": "gpt-6-luna",
-      "models": "gpt-6-sol|gpt-6-luna|gpt-5.6|gpt-5.6-sol|gpt-5.6-terra|gpt-5.6-luna|gpt-5.5|gpt-5.4|gpt-5.4-mini|gpt-5.4-nano|gpt-5.4-pro|gpt-5.3-codex|gpt-5.2|gpt-5.1|gpt-5-chat-latest|gpt-5|gpt-5-mini|gpt-5-nano|gpt-4.1-mini|gpt-4.1|gpt-4.1-nano",
+      "models": "gpt-6-luna|gpt-6.1-sol|gpt-6-sol|gpt-6-astra|gpt-5.6|gpt-5.6-sol|gpt-5.6-terra|gpt-5.6-luna|gpt-5.5|gpt-5.4|gpt-5.4-mini|gpt-5.4-nano|gpt-5.4-pro|gpt-5.3-codex|gpt-5.2|gpt-5.1|gpt-5-chat-latest|gpt-5|gpt-5-mini|gpt-5-nano|gpt-4.1-mini|gpt-4.1|gpt-4.1-nano",
       "proModel": "gpt-5.6-luna",
       "langOverrides.add": [
         {
@@ -2907,7 +2954,7 @@
       "extends": "ai",
       "provider": "custom",
       "model": "ernie-speed-128k",
-      "models": "ernie-speed-128k|ernie-speed-pro-128k|ernie-4.5-turbo-128k|ernie-4.5-turbo-128k-preview|ernie-4.5-turbo-32k|ernie-4.5-8k-preview",
+      "models": "ernie-5.1|ernie-5.0|ernie-speed-128k|ernie-speed-pro-128k|ernie-4.5-turbo-128k|ernie-4.5-turbo-128k-preview|ernie-4.5-turbo-32k|ernie-4.5-8k-preview",
       "limit": 5,
       "apiUrl": "https://qianfan.baidubce.com/v2/chat/completions",
       "enableRichTranslate": true,
@@ -3004,7 +3051,7 @@
       "provider": "custom",
       "limit": 1.5,
       "model": "qwen-long",
-      "models": "qwen-long|qwen-long-latest|qwq-plus|qwq-plus-latest|qwen-max|qwen-max-latest|qwen-turbo|qwen-turbo-latest|qwen2.5-32b-instruct|qwen2.5-72b-instruct|qwen3-32b|qwen3-235b-a22b",
+      "models": "qwen3.8-flash|qwen3.7-plus|qwen3.8-max|qwen-long|qwen-long-latest|qwq-plus|qwq-plus-latest|qwen-max|qwen-max-latest|qwen-turbo|qwen-turbo-latest|qwen2.5-32b-instruct|qwen2.5-72b-instruct|qwen3-32b|qwen3-235b-a22b",
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "maxTextGroupLengthPerRequestForSubtitle": 1,
@@ -3021,7 +3068,7 @@
       "extends": "ai",
       "name": "Qwen",
       "model": "qwen-plus-latest",
-      "models": "qwen|qwen-flash|qwen-plus|qwen-plus-latest|qwen-turbo|qwen2.5|qwen3|qwen3-14b|qwen3-235b-a22b|qwen3-30b-a3b|qwen3-32b|qwen3-8b|qwen3-max|qwen3-max-preview|qwen3.5|qwen3.5-122b-a10b|qwen3.5-27b|qwen3.5-35b-a3b|qwen3.5-397b-a17b|qwen3.5-flash|qwen3.5-plus|qwen3.6|qwen3.6-35b-a3b|qwen3.6-flash|qwen3.6-max-preview|qwen3.6-plus|qwen3.7|qwen3.7-flash|qwen3.7-max|qwen3.7-plus|qwen3.8-flash|qwen3.8-max",
+      "models": "qwen3.8-flash|qwen3.7-plus|qwen3.8-max|qwen3.8-27b|qwen3.7-flash|qwen3.7-max|qwen3.7|qwen3.6|qwen3.6-35b-a3b|qwen3.6-flash|qwen3.6-max-preview|qwen3.6-plus|qwen3.5|qwen3.5-122b-a10b|qwen3.5-27b|qwen3.5-35b-a3b|qwen3.5-397b-a17b|qwen3.5-flash|qwen3.5-plus|qwen3|qwen3-14b|qwen3-235b-a22b|qwen3-30b-a3b|qwen3-32b|qwen3-8b|qwen3-max|qwen3-max-preview|qwen2.5|qwen|qwen-flash|qwen-plus|qwen-plus-latest|qwen-turbo",
       "provider": "custom",
       "limit": 10,
       "enableRichTranslate": false,
@@ -3041,7 +3088,7 @@
       "extends": "ai",
       "name": "Kimi",
       "model": "kimi-k2-0711-preview",
-      "models": "kimi-k2-0905-preview|kimi-k2-0711-preview|kimi-k2-turbo-preview",
+      "models": "kimi-k2.6|kimi-k3",
       "provider": "custom",
       "limit": 10,
       "enableRichTranslate": false,
@@ -3052,12 +3099,37 @@
       "requestTimeout": 200000,
       "defaultMaxTextGroupLengthPerRequest": 4,
       "maxTextGroupLengthPerRequest": 4,
-      "hidden": true
+      "hidden": true,
+      "modelsOverrides.add": [
+        {
+          "models": [
+            "^kimi\\-k2\\.6$"
+          ],
+          "bodyConfigs": {
+            "max_tokens": 4096,
+            "thinking": {
+              "type": "disabled"
+            },
+            "temperature.remove": ""
+          }
+        },
+        {
+          "models": [
+            "^kimi\\-k3$"
+          ],
+          "bodyConfigs": {
+            "reasoning_effort": "low",
+            "max_completion_tokens": 4096,
+            "temperature.remove": "",
+            "max_tokens.remove": ""
+          }
+        }
+      ]
     },
     "doubao": {
       "extends": "ai",
       "model": "deepseek-v3-1-250821",
-      "models": "deepseek-v3-1-250821|deepseek-v3-250324|deepseek-r1-250528|doubao-seed-1-6-250615|doubao-seed-1-6-thinking-250715|doubao-seed-1-6-flash-250715|doubao-seed-translation-250915|kimi-k2-250711",
+      "models": "doubao-seed-2-1-lite-260915|doubao-seed-2-1-pro-260915|doubao-seed-2-1-turbo-260628|deepseek-v3-1-250821|deepseek-v3-250324|deepseek-r1-250528|doubao-seed-1-6-250615|doubao-seed-1-6-thinking-250715|doubao-seed-1-6-flash-250715|doubao-seed-translation-250915|kimi-k2-250711",
       "provider": "custom",
       "limit": 10,
       "dualEnableRichTranslate": false,
@@ -3078,7 +3150,10 @@
         },
         {
           "models": [
-            "douba-seed-1.6"
+            "douba-seed-1.6",
+            "^doubao\\-seed\\-2\\-1\\-lite\\-260915$",
+            "^doubao\\-seed\\-2\\-1\\-pro\\-260915$",
+            "^doubao\\-seed\\-2\\-1\\-turbo\\-260628$"
           ],
           "bodyConfigs": {
             "thinking": {
@@ -3102,7 +3177,7 @@
       "extends": "ai",
       "name": "Tencent Cloud TokenHub",
       "model": "hy3",
-      "models": "hy3|hy-mt2-pro|hy-mt2-plus|hy-mt2-lite",
+      "models": "hy-mt2-plus|hy-mt2-pro|hy-mt2-lite|hy3|hy4-preview",
       "provider": "custom",
       "limit": 10,
       "apiUrl": "https://tokenhub.tencentmaas.com/v1/chat/completions",
@@ -3110,12 +3185,25 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "defaultMaxTextGroupLengthPerRequest": 4,
-      "maxTextGroupLengthPerRequest": 4
+      "maxTextGroupLengthPerRequest": 4,
+      "modelsOverrides.add": [
+        {
+          "models": [
+            "^hy3$",
+            "^hy4\\-preview$"
+          ],
+          "bodyConfigs": {
+            "thinking": {
+              "type": "disabled"
+            }
+          }
+        }
+      ]
     },
     "siliconcloud": {
       "extends": "ai",
       "model": "Qwen/Qwen3-8B",
-      "models": "Qwen/Qwen3-8B|Qwen/Qwen3-14B|Qwen/Qwen3-32B|Qwen/Qwen3.6-27B|Qwen/Qwen3.6-35B-A3B|Qwen/Qwen3.5-27B|Qwen/Qwen3.5-35B-A3B|Qwen/Qwen3.5-122B-A10B|Qwen/Qwen3.5-397B-A17B|Qwen/Qwen3-30B-A3B-Instruct-2507|Qwen/Qwen2.5-7B-Instruct|Qwen/Qwen2.5-14B-Instruct|Qwen/Qwen2.5-32B-Instruct|Qwen/Qwen2.5-72B-Instruct|THUDM/GLM-4-9B-0414|THUDM/GLM-4-32B-0414|zai-org/GLM-5.2|Pro/zai-org/GLM-5.1|deepseek-ai/DeepSeek-V4-Pro|deepseek-ai/DeepSeek-V4-Flash|deepseek-ai/DeepSeek-V3.2|Pro/deepseek-ai/DeepSeek-V3.2|deepseek-ai/DeepSeek-V3|Pro/deepseek-ai/DeepSeek-V3|deepseek-ai/DeepSeek-V3.1-Terminus|Pro/deepseek-ai/DeepSeek-V3.1-Terminus|deepseek-ai/DeepSeek-R1|Pro/deepseek-ai/DeepSeek-R1|MiniMaxAI/MiniMax-M2.5|Pro/MiniMaxAI/MiniMax-M2.5|tencent/Hunyuan-MT-7B|tencent/Hunyuan-A13B-Instruct|Pro/moonshotai/Kimi-K2.6|ByteDance-Seed/Seed-OSS-36B-Instruct|inclusionAI/Ling-flash-2.0|inclusionAI/Ling-mini-2.0|meituan-longcat/LongCat-2.0|nex-agi/Nex-N2-Pro|stepfun-ai/Step-3.5-Flash",
+      "models": "Qwen/Qwen3.8-27B|zai-org/GLM-5.3-Flash|deepseek-ai/DeepSeek-V4-Flash|zai-org/GLM-5.3|deepseek-ai/DeepSeek-V4-Pro|tencent/Hy4-preview|moonshotai/Kimi-K2.7-Code|Qwen/Qwen3-8B|Qwen/Qwen3-14B|Qwen/Qwen3-32B|Qwen/Qwen3.6-27B|Qwen/Qwen3.6-35B-A3B|Qwen/Qwen3.5-27B|Qwen/Qwen3.5-35B-A3B|Qwen/Qwen3.5-122B-A10B|Qwen/Qwen3.5-397B-A17B|Qwen/Qwen3-30B-A3B-Instruct-2507|Qwen/Qwen2.5-7B-Instruct|Qwen/Qwen2.5-14B-Instruct|Qwen/Qwen2.5-32B-Instruct|Qwen/Qwen2.5-72B-Instruct|THUDM/GLM-4-9B-0414|THUDM/GLM-4-32B-0414|zai-org/GLM-5.2|Pro/zai-org/GLM-5.1|deepseek-ai/DeepSeek-V3.2|Pro/deepseek-ai/DeepSeek-V3.2|deepseek-ai/DeepSeek-V3|Pro/deepseek-ai/DeepSeek-V3|deepseek-ai/DeepSeek-V3.1-Terminus|Pro/deepseek-ai/DeepSeek-V3.1-Terminus|deepseek-ai/DeepSeek-R1|Pro/deepseek-ai/DeepSeek-R1|MiniMaxAI/MiniMax-M2.5|Pro/MiniMaxAI/MiniMax-M2.5|tencent/Hunyuan-MT-7B|tencent/Hunyuan-A13B-Instruct|Pro/moonshotai/Kimi-K2.6|ByteDance-Seed/Seed-OSS-36B-Instruct|inclusionAI/Ling-flash-2.0|inclusionAI/Ling-mini-2.0|meituan-longcat/LongCat-2.0|nex-agi/Nex-N2-Pro|stepfun-ai/Step-3.5-Flash",
       "freeModels": [
         "THUDM/GLM-4-9B-0414",
         "Qwen/Qwen3-8B",
@@ -3158,7 +3246,8 @@
             "Qwen/Qwen3.5-35B-A3B",
             "Qwen/Qwen3.5-27B",
             "Qwen/Qwen3.5-9B",
-            "Qwen/Qwen3.5-4B"
+            "Qwen/Qwen3.5-4B",
+            "^Qwen/Qwen3\\.8-27B$"
           ],
           "bodyConfigs": {
             "enable_thinking": false
@@ -3183,7 +3272,7 @@
       "extends": "ai",
       "name": "Grok",
       "model": "grok-3-mini-fast",
-      "models": "grok-3-mini-fast|grok-3-fast|grok-3-mini|grok-3|grok-4-0709|grok-2-1212|grok-2-vision-1212",
+      "models": "grok-4.3|grok-4.7|grok-4.6|grok-4.5|grok-3-mini-fast|grok-3-fast|grok-3-mini|grok-2-1212|grok-2-vision-1212",
       "provider": "custom",
       "limit": 4,
       "maxTextGroupLengthPerRequestForSubtitle": 5,
@@ -3192,13 +3281,61 @@
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
       "defaultMaxTextGroupLengthPerRequest": 4,
-      "maxTextGroupLengthPerRequest": 4
+      "maxTextGroupLengthPerRequest": 4,
+      "modelsOverrides.add": [
+        {
+          "models": [
+            "^grok\\-4\\.3$"
+          ],
+          "bodyConfigs": {
+            "max_tokens": 4096,
+            "reasoning_effort": "none"
+          }
+        },
+        {
+          "models": [
+            "^grok\\-4\\.3$"
+          ],
+          "apiUrl": "/responses",
+          "bodyConfigs": {
+            "max_output_tokens": 4096,
+            "reasoning": {
+              "effort": "none"
+            }
+          }
+        },
+        {
+          "models": [
+            "^grok\\-4\\.7$",
+            "^grok\\-4\\.6$",
+            "^grok\\-4\\.5$"
+          ],
+          "bodyConfigs": {
+            "max_tokens": 4096,
+            "reasoning_effort": "low"
+          }
+        },
+        {
+          "models": [
+            "^grok\\-4\\.7$",
+            "^grok\\-4\\.6$",
+            "^grok\\-4\\.5$"
+          ],
+          "apiUrl": "/responses",
+          "bodyConfigs": {
+            "max_output_tokens": 4096,
+            "reasoning": {
+              "effort": "low"
+            }
+          }
+        }
+      ]
     },
     "plamo": {
       "extends": "ai",
       "name": "PLaMo",
       "model": "plamo-2.2-prime",
-      "models": "plamo-2.2-prime|plamo-3.0-prime-beta",
+      "models": "plamo-3.0-prime|plamo-2.2-prime|plamo-3.0-prime-beta",
       "provider": "custom",
       "limit": 4,
       "maxTextGroupLengthPerRequestForSubtitle": 4,
@@ -3246,14 +3383,25 @@
       "extends": "ai",
       "name": "Groq",
       "model": "llama-3.1-8b-instant",
-      "models": "gemma2-9b-it|llama-3.3-70b-versatile|llama-3.1-8b-instant|llama-guard-3-8b|llama3-70b-8192|llama3-8b-8192|mixtral-8x7b-32768",
+      "models": "openai/gpt-oss-20b|openai/gpt-oss-120b|llama-3.3-70b-versatile|llama-3.1-8b-instant",
       "provider": "custom",
       "limit": 4,
       "maxTextGroupLengthPerRequestForSubtitle": 1,
       "apiUrl": "https://api.groq.com/openai/v1/chat/completions",
       "enableRichTranslate": true,
       "dualEnableRichTranslate": false,
-      "translationEnableRichTranslate": true
+      "translationEnableRichTranslate": true,
+      "modelsOverrides.add": [
+        {
+          "models": [
+            "^openai/gpt-oss-20b$",
+            "^openai/gpt-oss-120b$"
+          ],
+          "bodyConfigs": {
+            "reasoning_effort": "low"
+          }
+        }
+      ]
     },
     "azure-openai": {
       "extends": "ai",
@@ -3273,7 +3421,7 @@
       "extends": "ai",
       "name": "OpenRouter",
       "model": "google/gemini-2.0-flash-001",
-      "models": "deepseek/deepseek-chat-v3-0324:free|google/gemini-2.0-flash-exp:free|qwen/qwq-32b:free|google/gemini-2.0-flash-001|openai/gpt-4o-mini|google/gemini-flash-1.5-8b|google/gemini-flash-1.5-8b|google/gemini-2.0-flash-lite-001|google/gemini-flash-1.5|google/gemma-3-27b-it:free|nvidia/llama-3.1-nemotron-ultra-253b-v1:free",
+      "models": "anthropic/claude-haiku-5.5|openai/gpt-6-luna|qwen/qwen3.8-flash|deepseek/deepseek-v4.1-flash|google/gemini-3.8-flash|openai/gpt-6.1-sol|anthropic/claude-sonnet-5.5|openai/gpt-4o-mini",
       "provider": "custom",
       "limit": 5,
       "apiUrl": "https://openrouter.ai/api/v1/chat/completions",
@@ -3290,7 +3438,7 @@
     "zhipu": {
       "extends": "ai",
       "model": "glm-4-flash",
-      "models": "glm-4|GLM-4.5|GLM-4.6|GLM-4.7|GLM-5|GLM-5.1|GLM-5.2|GLM-5.3|GLM-5.3-Flash|GLM-5-Turbo",
+      "models": "GLM-5.3-Flash|GLM-5.3-FlashX|GLM-5.3|GLM-5.2|GLM-5.1|GLM-5-Turbo|GLM-5|GLM-4.7|GLM-4.6|GLM-4.5|glm-4",
       "freeModels": [
         "glm-4-flash",
         "glm-4-flash-250414"
@@ -3349,7 +3497,9 @@
             "^glm-5\\.3$",
             "^glm-5\\.3-flash$",
             "^GLM-5\\.3$",
-            "^GLM-5\\.3-Flash$"
+            "^GLM-5\\.3-Flash$",
+            "^glm\\-5\\.3\\-flashx$",
+            "^GLM\\-5\\.3\\-FlashX$"
           ],
           "bodyConfigs": {
             "temperature": 0.01,
@@ -9567,6 +9717,9 @@
     },
     {
       "id": "mastodon",
+      "excludeMatches": [
+        "www.r-project.org"
+      ],
       "matches": [
         "mastodon.social",
         "mastodon.online",
@@ -15968,7 +16121,8 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          "div[data-testid*=\"placeholder\"] > img"
+          "div[data-testid*=\"placeholder\"] > img",
+          "div[class*=\"_placeholder_\"] > img[class*=\"_page_\"]"
         ],
         "loadingStyle": "z-index: 9999;",
         "platforms": [
@@ -23332,6 +23486,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-10T15:39:56.318Z",
+  "buildinConfigUpdatedAt": "2026-10-11T07:33:58.859Z",
   "latestVersion": "1.33.3"
 }
