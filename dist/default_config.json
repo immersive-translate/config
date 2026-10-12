@@ -14046,6 +14046,27 @@
       }
     },
     {
+      "id": "wmanhua",
+      "matches": "www.wmanhua.com/chapter/*",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "#comicContainer .images img.comic-image"
+        ],
+        "inValidSrcRegex": [
+          "/resource/image/loading\\.svg(?:[?#]|$)"
+        ],
+        "platforms": [
+          "other",
+          "chrome",
+          "imtIOSNew",
+          "imtAndroid",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "v-comic",
       "matches": [
         "newmanhwa.com",
@@ -23486,6 +23507,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-11T07:33:58.859Z",
+  "buildinConfigUpdatedAt": "2026-10-12T07:52:21.452Z",
   "latestVersion": "1.33.3"
 }
