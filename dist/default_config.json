@@ -765,7 +765,8 @@
     "https://ynjn.jp[ynjn.jp]",
     "https://mangayun.com[mangayun.com]",
     "https://manhwaweb.com[manhwaweb.com][chrome]",
-    "https://a-i-manga.com[a-i-manga.com]"
+    "https://a-i-manga.com[a-i-manga.com]",
+    "https://m.fanfox.net[Fanfox H5][chrome,safari,imtAndroid,imtIOSNew,other]"
   ],
   "supportedVideoSubtitleSites": [
     "https://www.youtube.com[YouTube]",
@@ -14191,7 +14192,8 @@
         "*.uzakichanmanga.com",
         "book18.fans",
         "mangayun.com",
-        "violetmanga.com"
+        "violetmanga.com",
+        "m.fanfox.net"
       ],
       "imageRule.add": {
         "enable": true,
@@ -23508,6 +23510,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-12T08:13:55.561Z",
+  "buildinConfigUpdatedAt": "2026-10-12T08:37:23.626Z",
   "latestVersion": "1.33.3"
 }
