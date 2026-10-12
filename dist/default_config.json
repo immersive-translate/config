@@ -13974,6 +13974,7 @@
         "piccoma.com",
         "jmcomic-zzz.one",
         "comix.to",
+        "comix.ws",
         "pocket.shonenmagazine.com",
         "youngchampion.jp",
         "manga-one.com",
@@ -23507,6 +23508,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-12T07:52:21.452Z",
+  "buildinConfigUpdatedAt": "2026-10-12T08:13:55.561Z",
   "latestVersion": "1.33.3"
 }
