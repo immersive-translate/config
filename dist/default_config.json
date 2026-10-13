@@ -8209,7 +8209,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
-        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
+        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*|\\s*>>\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "subtitleUrlRegExp": "(/api/timedtext)",
@@ -8364,7 +8364,7 @@
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "youtube",
-        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
+        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*|\\s*>>\\s*",
         "hookType": "xhr_response",
         "subtitleUrlRegExp": "(/api/timedtext)",
         "translateSelectors": [
@@ -8404,7 +8404,7 @@
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "youtube",
-        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
+        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*|\\s*>>\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "proLiveSubtitleTranslateService": "babelfast-pro",
@@ -8585,7 +8585,7 @@
       },
       "subtitleRule.add": {
         "type": "youtube",
-        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
+        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*|\\s*>>\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "proLiveSubtitleTranslateService": "babelfast-pro",
@@ -8691,7 +8691,7 @@
       },
       "subtitleRule.add": {
         "type": "youtube",
-        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
+        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*|\\s*>>\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "proLiveSubtitleTranslateService": "babelfast-pro",
@@ -8749,7 +8749,7 @@
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "youtube",
-        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
+        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*|\\s*>>\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "proLiveSubtitleTranslateService": "babelfast-pro",
@@ -8814,7 +8814,7 @@
       ],
       "subtitleRule.add": {
         "type": "youtube",
-        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*",
+        "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*|\\s*>>\\s*",
         "hookType": "xhr_response",
         "allowFreeUserLive": true,
         "proLiveSubtitleTranslateService": "babelfast-pro",
@@ -23516,6 +23516,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-13T05:28:12.758Z",
+  "buildinConfigUpdatedAt": "2026-10-13T10:21:55.220Z",
   "latestVersion": "1.33.3"
 }
