@@ -14075,6 +14075,27 @@
       }
     },
     {
+      "id": "18mh",
+      "matches": "18mh.net/comic/chapter/*",
+      "imageRule.add": {
+        "enable": true,
+        "type": "manga",
+        "imageSelectors": [
+          "main[data-comic-info] > section > img"
+        ],
+        "inValidSrcRegex": [
+          "/static/frontend/images/loading\\.svg(?:[?#]|$)"
+        ],
+        "platforms": [
+          "other",
+          "chrome",
+          "imtIOSNew",
+          "imtAndroid",
+          "safari"
+        ]
+      }
+    },
+    {
       "id": "v-comic",
       "matches": [
         "newmanhwa.com",
@@ -23516,6 +23537,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-13T10:21:55.220Z",
+  "buildinConfigUpdatedAt": "2026-10-14T02:36:10.842Z",
   "latestVersion": "1.33.3"
 }
