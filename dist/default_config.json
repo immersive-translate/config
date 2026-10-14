@@ -580,6 +580,7 @@
     "https://mangarawjp.me[Mangaraw][chrome,firefox,safari]",
     "https://manga.bilibili.com[Bilibili-Manga][chrome,firefox,safari]",
     "https://w9.kaijimanga.com[Kaijimanga][chrome,firefox,safari]",
+    "https://failurframe.com/[Failure Frame][chrome,safari,imtIOSNew]",
     "https://m.idmzj.com[Idmzj][chrome,firefox,safari]",
     "https://mn4u.net[Manga4u][chrome,firefox,safari]",
     "https://www.animatebookstore.com[Animatebookstore][chrome,firefox,safari]",
@@ -20512,7 +20513,8 @@
       "id": "kaijimanga",
       "matches": [
         "w9.kaijimanga.com",
-        "rawfree.*"
+        "rawfree.*",
+        "failurframe.com/comic/*"
       ],
       "imageRule.add": {
         "enable": true,
@@ -23537,6 +23539,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-14T02:36:10.842Z",
+  "buildinConfigUpdatedAt": "2026-10-14T02:42:05.085Z",
   "latestVersion": "1.33.3"
 }
