@@ -9772,6 +9772,9 @@
       "globalStyles": {
         "[style*='-webkit-line-clamp']": "-webkit-line-clamp: unset!important;max-height: unset!important;"
       },
+      "injectedCss.add": [
+        ".Card-titleContainer > div:has(.immersive-translate-target-wrapper) {-webkit-line-clamp: unset!important;max-height: unset!important;}"
+      ],
       "excludeSelectors.add": [
         "#GlobalNavigation",
         "#GlobalFooter",
@@ -23571,6 +23574,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-14T10:52:49.259Z",
+  "buildinConfigUpdatedAt": "2026-10-14T12:22:37.810Z",
   "latestVersion": "1.33.3"
 }
