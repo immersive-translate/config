@@ -23226,7 +23226,8 @@
         "www.dove.com",
         "phrack.org",
         "m.munpia.com",
-        "archive.cardbox.moe"
+        "archive.cardbox.moe",
+        "https://mods.factorio.com/mod/*/changelog"
       ],
       "selectorMatches": [
         "pre.changelog"
@@ -23559,6 +23560,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-14T10:07:08.379Z",
+  "buildinConfigUpdatedAt": "2026-10-14T10:16:11.905Z",
   "latestVersion": "1.33.3"
 }
