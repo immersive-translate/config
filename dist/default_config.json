@@ -1205,6 +1205,17 @@
   "enableFreeModelMode": false,
   "advanceMergeConfig": [
     {
+      "condition": "isCNPlugin==true",
+      "advanceConfig": {
+        "translationServices": {
+          "zhipu-pro.add": {
+            "name": "GLM-5.3-Flash",
+            "proModel": "GLM-5.3-Flash"
+          }
+        }
+      }
+    },
+    {
       "condition": "versionNumber>13301 && abTagNumber<10",
       "advanceConfig": {
         "translationServices": {
@@ -23560,6 +23571,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-14T10:16:11.905Z",
+  "buildinConfigUpdatedAt": "2026-10-14T10:52:49.259Z",
   "latestVersion": "1.33.3"
 }
