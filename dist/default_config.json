@@ -1922,7 +1922,7 @@
       "requestTimeout": 10000,
       "limit": 20,
       "concurrencyLimit": 50,
-      "retry": 1,
+      "retry": 2,
       "placeholderDelimiters": [
         "<code>",
         "</code>",
@@ -23549,6 +23549,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-14T07:35:48.866Z",
+  "buildinConfigUpdatedAt": "2026-10-14T07:51:51.294Z",
   "latestVersion": "1.33.3"
 }
