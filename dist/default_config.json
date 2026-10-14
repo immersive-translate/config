@@ -15503,6 +15503,10 @@
           ".img-box img",
           ".comic-pics img"
         ],
+        "inValidSrcRegex": [
+          "^data:image/gif;",
+          "/image/141224/90rfivtqc\\.jpg-t\\.w1280\\.jpg\\.h(?:\\?|$)"
+        ],
         "loadingSelectors": [
           "div"
         ],
@@ -23539,6 +23543,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-14T02:42:05.085Z",
+  "buildinConfigUpdatedAt": "2026-10-14T03:16:28.662Z",
   "latestVersion": "1.33.3"
 }
