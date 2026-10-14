@@ -17108,8 +17108,14 @@
     {
       "id": "anthropic-course",
       "matches": "anthropic.skilljar.com",
+      "excludeSelectors.add": [
+        ".section-container.tabs > section > .title"
+      ],
       "injectedCss.add": [
-        ".lesson-modular {height:unset;}"
+        ".lesson-modular {height:unset;}",
+        "#curriculum-list .lesson-modular {height:auto!important;}",
+        "#curriculum-list .lesson-modular .lesson-row {height:auto!important;width:100%;}",
+        "#curriculum-list .lesson-modular .title {position:static!important;height:auto!important;width:auto!important;white-space:normal!important;margin-left:44px;}"
       ],
       "subtitleRule.add": {
         "type": "multi_attach_vtt",
@@ -23549,6 +23555,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-14T07:51:51.294Z",
+  "buildinConfigUpdatedAt": "2026-10-14T08:41:24.848Z",
   "latestVersion": "1.33.3"
 }
