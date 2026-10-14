@@ -10180,9 +10180,13 @@
         },
         "injectedCss": [
           "#immersive-translate-quick-button-container,.immersive-translate-quick-button-container { display: inline-block; }"
-        ]
+        ],
+        "attachRule": {
+          "appendSelector": "#dv-web-player .atvwebplayersdk-video-surface",
+          "injectedGlobalCSS": "#dv-web-player .atvwebplayersdk-captions-overlay, #dv-web-player .atvwebplayersdk-captions-text { display: none !important; }"
+        }
       },
-      "_comment": "应该是有广告会破坏时间轴，所以暂时不加自托管"
+      "_comment": "自托管字幕；广告前后时间轴仍需实测"
     },
     {
       "id": "amazon",
@@ -23555,6 +23559,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-14T08:41:24.848Z",
+  "buildinConfigUpdatedAt": "2026-10-14T08:56:04.777Z",
   "latestVersion": "1.33.3"
 }
