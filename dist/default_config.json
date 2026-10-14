@@ -2294,7 +2294,7 @@
       "proRequestTimeout": 101000,
       "requestTimeout": 101000,
       "maxTokensRatio": 8,
-      "minTokensRatio": 0.1,
+      "minTokensRatio": 0.05,
       "modelsOverrides": [
         {
           "models": [
@@ -23559,6 +23559,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-14T09:58:11.265Z",
+  "buildinConfigUpdatedAt": "2026-10-14T10:07:08.379Z",
   "latestVersion": "1.33.3"
 }
