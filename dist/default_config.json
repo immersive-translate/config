@@ -11069,7 +11069,13 @@
       ],
       "excludeSelectors": [
         "#topic-nav"
-      ]
+      ],
+      "preTranslateLimiter.add": {
+        "header.selectors": [
+          "header:not(.river-article header)",
+          ".main-navbar"
+        ]
+      }
     },
     {
       "id": "jetbrains",
@@ -23543,6 +23549,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-14T03:16:28.662Z",
+  "buildinConfigUpdatedAt": "2026-10-14T07:35:48.866Z",
   "latestVersion": "1.33.3"
 }
