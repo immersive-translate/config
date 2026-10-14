@@ -3790,6 +3790,7 @@
       "name": "GPT-6 Luna",
       "type": "openai",
       "group": "pro",
+      "minTokensRatio": 0.1,
       "proModel": "gpt-6-luna",
       "concurrencyLimit": 50,
       "model": "gpt-6-luna",
@@ -23559,6 +23560,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-14T08:56:04.777Z",
+  "buildinConfigUpdatedAt": "2026-10-14T09:29:50.779Z",
   "latestVersion": "1.33.3"
 }
