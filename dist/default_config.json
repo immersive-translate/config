@@ -23059,6 +23059,16 @@
       ]
     },
     {
+      "id": "alphasquare",
+      "matches": "alphasquare.co.kr",
+      "preTranslateLimiter.add": {
+        "header.selectors": [
+          "header:not(#main-header)",
+          "#main-header > :not(.main-search)"
+        ]
+      }
+    },
+    {
       "id": "atcoder",
       "matches": "atcoder.jp",
       "excludeSelectors.add": [
@@ -23572,6 +23582,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-15T09:25:17.000Z",
+  "buildinConfigUpdatedAt": "2026-10-15T09:44:21.362Z",
   "latestVersion": "1.34.1"
 }
