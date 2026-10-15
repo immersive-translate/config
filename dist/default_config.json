@@ -18477,7 +18477,13 @@
         "hookType": "fetch",
         "subtitleUrlRegExp": "iplayer/subtitles/.*.xml",
         "loadingContainerSelector": ".player__container",
-        "appendSelector": "smp-toucan-player->smp-video-layout->smp-subtitles"
+        "appendSelector": "smp-toucan-player->smp-video-layout->smp-subtitles",
+        "enableHookDownload": true,
+        "quickButtonRule": {
+          "appendSelector": ".player__container",
+          "injectedGlobalCSS": ".player__container > .immersive-translate-quick-button-container { position: absolute; top: 16px; right: 16px; z-index: 2147483646; }",
+          "injectCSS": ".imt-quick-subtitle-pop-content { top: 40px; bottom: auto; }"
+        }
       }
     },
     {
@@ -23589,6 +23595,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-15T04:09:43.923Z",
+  "buildinConfigUpdatedAt": "2026-10-15T04:53:22.129Z",
   "latestVersion": "1.33.3"
 }
