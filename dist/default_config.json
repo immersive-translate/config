@@ -23068,10 +23068,18 @@
       ],
       "selectors.add": [
         ".chat__inbox_item_text_ordinary",
-        ".ivu-tooltip [title]"
+        ".ivu-tooltip [title]",
+        ".text-message__text"
       ],
       "injectedCss.add": [
         "._ss_2FLBr4_u {height:unset!important;}"
+      ]
+    },
+    {
+      "id": "qt-docs",
+      "matches": "doc.qt.io",
+      "stayOriginalSelectors.add": [
+        "article p i[translate=no]"
       ]
     },
     {
@@ -23574,6 +23582,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-14T12:22:37.810Z",
+  "buildinConfigUpdatedAt": "2026-10-15T02:53:19.790Z",
   "latestVersion": "1.33.3"
 }
