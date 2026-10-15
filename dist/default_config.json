@@ -18,6 +18,7 @@
   "disableOpenUpgradePage": false,
   "forceAutoTranslate": false,
   "popupVariant": "modern",
+  "popupMode": "full",
   "useInlinePopupMembershipPrompt": false,
   "activeCampaignTags": {
     "enabled": false,
@@ -157,6 +158,7 @@
   },
   "loginAiQuotaGift": {
     "enabled": false,
+    "maxDailyAutoClaimAttempts": 3,
     "taskKey": "user_login_1",
     "trialServiceId": "trial-pro"
   },
@@ -1199,7 +1201,8 @@
     "gemini-max",
     "qwen-max",
     "kimi-max",
-    "zhipu-max"
+    "zhipu-max",
+    "mimo"
   ],
   "forceApplyFreeModel": null,
   "enableFreeModelMode": false,
@@ -1383,45 +1386,6 @@
       }
     },
     {
-      "condition": "isPro==false && isMobile==false && hasOpenedRewardCenter==false && abTagNumber>0 && abTagNumber<2",
-      "advanceConfig": {
-        "notificationList.add": [
-          {
-            "enable": true,
-            "excludeMatches": [
-              "*.immersivetranslate.com"
-            ],
-            "displayPosition": "webpage",
-            "expireTime": "2025-08-15",
-            "id": "reward-center",
-            "content": {
-              "zh-CN": {
-                "bannerUrl": "https://s.immersivetranslate.com/assets/r2-uploads/notification_reward_center.png",
-                "title": "奖励中心已上线",
-                "updateDetail": "<b>包含以下超值奖励：</b><br/>200,000 高级模型 Token<br/>5 次 AI 字幕翻译<br/>100 页 PDF Pro 翻译额度",
-                "buttonText": "立即查看",
-                "buttonLink": "imt://sendToExt/openRewardCenter?trigger=notification"
-              },
-              "zh-TW": {
-                "bannerUrl": "https://s.immersivetranslate.com/assets/r2-uploads/notification_reward_center.png",
-                "title": "重寫更新通知",
-                "updateDetail": "<b>包含以下超值獎勵：</b><br/>200,000 高級模型 Token<br/>5 次 AI 字幕翻譯<br/>100 頁 PDF Pro 翻譯額度",
-                "buttonText": "立即查看",
-                "buttonLink": "imt://sendToExt/openRewardCenter?trigger=notification"
-              },
-              "en": {
-                "bannerUrl": "https://s.immersivetranslate.com/assets/r2-uploads/notification_reward_center.png",
-                "title": "Reward Center is now live",
-                "updateDetail": "<b>Includes the following valuable rewards:</b><br/>200,000 advanced model Tokens<br/>5 AI subtitle translations<br/>100 pages of PDF Pro translation quota",
-                "buttonText": "View Now",
-                "buttonLink": "imt://sendToExt/openRewardCenter?trigger=notification"
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
       "condition": "isPro==true",
       "advanceConfig": {
         "generalRule": {
@@ -1437,46 +1401,6 @@
             "provider": "pro"
           }
         }
-      }
-    },
-    {
-      "condition": "isPro==false && isMobile==false && hasOpenedRewardCenter==false && abTagNumber<1",
-      "advanceConfig": {
-        "notificationList.add": [
-          {
-            "enable": true,
-            "displayPosition": "sidePanel",
-            "forcePinSidePanel": true,
-            "expireTime": "2025-08-15",
-            "id": "reward-center",
-            "excludeMatches": [
-              "*.immersivetranslate.com"
-            ],
-            "content": {
-              "zh-CN": {
-                "bannerUrl": "https://s.immersivetranslate.com/assets/r2-uploads/notification_reward_center.png",
-                "title": "奖励中心已上线",
-                "updateDetail": "<b>包含以下超值奖励：</b><br/>200,000 高级模型 Token<br/>5 次 AI 字幕翻译<br/>100 页 PDF Pro 翻译额度",
-                "buttonText": "立即查看",
-                "buttonLink": "imt://sendToExt/openRewardCenter?trigger=notification"
-              },
-              "zh-TW": {
-                "bannerUrl": "https://s.immersivetranslate.com/assets/r2-uploads/notification_reward_center.png",
-                "title": "重寫更新通知",
-                "updateDetail": "<b>包含以下超值獎勵：</b><br/>200,000 高級模型 Token<br/>5 次 AI 字幕翻譯<br/>100 頁 PDF Pro 翻譯額度",
-                "buttonText": "立即查看",
-                "buttonLink": "imt://sendToExt/openRewardCenter?trigger=notification"
-              },
-              "en": {
-                "bannerUrl": "https://s.immersivetranslate.com/assets/r2-uploads/notification_reward_center.png",
-                "title": "Reward Center is now live",
-                "updateDetail": "<b>Includes the following valuable rewards:</b><br/>200,000 advanced model Tokens<br/>5 AI subtitle translations<br/>100 pages of PDF Pro translation quota",
-                "buttonText": "View Now",
-                "buttonLink": "imt://sendToExt/openRewardCenter?trigger=notification"
-              }
-            }
-          }
-        ]
       }
     },
     {
@@ -1699,6 +1623,15 @@
         "translationServices": {
           "bing-free.add": {
             "defaultToService": null
+          },
+          "free-model.add": {
+            "hiddenScenes": [
+              "webPage",
+              "input",
+              "hover",
+              "subtitle",
+              "textTranslate"
+            ]
           }
         },
         "defaultTranslationServicesOrder.add": [
@@ -3339,6 +3272,34 @@
             "max_output_tokens": 4096,
             "reasoning": {
               "effort": "low"
+            }
+          }
+        }
+      ]
+    },
+    "mimo": {
+      "extends": "ai",
+      "name": "MiMo",
+      "model": "mimo-v2.6-flash",
+      "models": "mimo-v2.6-flash|mimo-v2.6-pro",
+      "provider": "custom",
+      "limit": 4,
+      "apiUrl": "https://api.xiaomimimo.com/v1/chat/completions",
+      "enableRichTranslate": true,
+      "dualEnableRichTranslate": false,
+      "translationEnableRichTranslate": true,
+      "defaultMaxTextGroupLengthPerRequest": 4,
+      "maxTextGroupLengthPerRequest": 4,
+      "modelsOverrides": [
+        {
+          "models": [
+            "^mimo-v2\\.6-flash$",
+            "^mimo-v2\\.6-pro$"
+          ],
+          "apiUrl": "^https://api\\.xiaomimimo\\.com(?:/|$)",
+          "bodyConfigs": {
+            "thinking": {
+              "type": "disabled"
             }
           }
         }
@@ -5377,6 +5338,9 @@
       "filterAmbientSoundsRegex": "\\([^)]*\\)|\\[[^\\]]*\\]",
       "autoSwitchSubtitleWithSameLanguage": false,
       "enableIOSFullScreenTextTrack": true,
+      "youtubeSubtitleReadingSpeed": {
+        "ja": 7
+      },
       "youtubeAutoEnableSubtitleAfterInstalledAt": "2024-04-25",
       "isEnableAiSubtitleTip": true,
       "freeAiSubtitleCacheEndTime": "2025-09-30",
@@ -8464,6 +8428,9 @@
     {
       "id": "youtube",
       "matches": "www.youtube.com",
+      "excludeMatches": [
+        "https://www.youtube.com/t/terms_paidservice"
+      ],
       "enableDynamicIgnore": false,
       "blockMinTextCount": 0,
       "blockMinWordCount": 0,
@@ -10313,6 +10280,8 @@
       },
       "subtitleRule.add": {
         "type": "subsrt",
+        "contentTimeSource": "google_dai",
+        "videoPlayerSelector": ".video-js",
         "videoSelector": ".vjs-tech",
         "hookType": "fetch|xhr",
         "subtitleUrlRegExp": "vtt$",
@@ -18641,7 +18610,15 @@
       "subtitleRule.add": {
         "type": "disneyplus",
         "subtitleUrlRegExp": "\\.vtt",
-        "enableHookDownload": true
+        "enableHookDownload": false
+      },
+      "subtitleRule.add_v.[1.34.1]": {
+        "enableHookDownload": true,
+        "quickButtonRule": {
+          "appendSelector": ".mini-player-inner",
+          "injectedGlobalCSS": ".mini-player-inner > .immersive-translate-quick-button-container { position: absolute; right: 232px; bottom: 47px; z-index: 2147483646; pointer-events: auto; } .mini-player-inner > .btm-media-player-idle ~ .immersive-translate-quick-button-container:not(:hover):not(:focus-within) { visibility: hidden; pointer-events: none; } @media (max-width: 600px) { .mini-player-inner > .immersive-translate-quick-button-container { right: 16px; bottom: 96px; } }",
+          "retryCheckMs": 10000
+        }
       }
     },
     {
@@ -23595,6 +23572,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-15T04:53:22.129Z",
-  "latestVersion": "1.33.3"
+  "buildinConfigUpdatedAt": "2026-10-15T09:25:17.000Z",
+  "latestVersion": "1.34.1"
 }
