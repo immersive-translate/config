@@ -632,7 +632,6 @@
     "https://nyxscans.com[Nyx Scans]",
     "https://qimanga.com[Qi Manga]",
     "https://mgread.io[MG Read]",
-    "https://뉴토끼대피소.com[뉴토끼대피소.com]",
     "https://블랙툰.co[블랙툰.co]",
     "https://happytoon01.com[happytoon01.com]",
     "https://www.twmanga.com[twmanga.com]",
@@ -13196,9 +13195,6 @@
     {
       "id": "ko-commic",
       "matches": [
-        "*.xn--h10b90bbmq49b63sq4e.com",
-        "m.뉴토끼대피소.com",
-        "뉴토끼대피소.com",
         "funbe*.com",
         "happytoon01.com",
         "tkor*.com",
@@ -23582,6 +23578,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-15T09:44:21.362Z",
+  "buildinConfigUpdatedAt": "2026-10-16T06:13:22.064Z",
   "latestVersion": "1.34.1"
 }
