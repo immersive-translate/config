@@ -2919,7 +2919,7 @@
       "enableRichTranslate": false,
       "dualEnableRichTranslate": false,
       "translationEnableRichTranslate": true,
-      "proModel": "DeepSeek-V4-Flash",
+      "proModel": "deepseek-v4.1-flash-1017",
       "enableFallback": true,
       "proLimit": 10,
       "requestTimeout": 200000,
@@ -3794,12 +3794,12 @@
       ]
     },
     "deepseek-pro": {
-      "name": "DeepSeek-V4.1-Flash",
+      "name": "DeepSeek-V4.1-Flash-1017",
       "type": "deepseek",
       "group": "pro",
       "extends": "deepseek",
       "model": "DeepSeek-V4.1-Flash",
-      "proModel": "DeepSeek-V4.1-Flash",
+      "proModel": "deepseek-v4.1-flash-1017",
       "concurrencyLimit": 100,
       "provider": "pro",
       "visible": true,
@@ -10368,6 +10368,48 @@
       "extraBlockSelectors.add": "div"
     },
     {
+      "id": "extra-block-sites",
+      "matches": [
+        "coinmarketcap.com",
+        "www.whoscored.com",
+        "www.qidian.com",
+        "docs.pytorch.org"
+      ],
+      "extraBlockSelectors.add": [
+        "div[class='sc-3502f6cd-0 JxHqg']",
+        ".stat-info .stat-label",
+        ".type-list a",
+        ".tutorial-filter"
+      ]
+    },
+    {
+      "id": "ieee",
+      "matches": "spectrum.ieee.org",
+      "extraBlockSelectors.add": [
+        "small"
+      ]
+    },
+    {
+      "id": "bank",
+      "matches": [
+        "xfb.nbcb.com.cn"
+      ],
+      "extraBlockSelectors.add": [
+        ".ibm, .ibt",
+        ".cell-box",
+        "[role=tab]"
+      ]
+    },
+    {
+      "id": "notateslaapp",
+      "matches": [
+        "www.notateslaapp.com"
+      ],
+      "extraBlockSelectors.add": [
+        ".nav > *"
+      ]
+    },
+    {
       "id": "annasArchive",
       "matches": [
         "*.annas-archive.org",
@@ -11155,13 +11197,6 @@
       "id": "gatesnotes",
       "matches": "www.gatesnotes.com",
       "minZIndex": -1
-    },
-    {
-      "id": "coinmarketcap",
-      "matches": "coinmarketcap.com",
-      "extraBlockSelectors.add": [
-        "div[class='sc-3502f6cd-0 JxHqg']"
-      ]
     },
     {
       "id": "wandb",
@@ -12193,13 +12228,6 @@
         "[role=listitem] div {-webkit-line-clamp:unset;}",
         "[class*='km-listitem--medium'] {height:unset !important;}",
         ".MuiListItem-root a > div :nth-child(2) {height:unset !important;}"
-      ]
-    },
-    {
-      "id": "ieee",
-      "matches": "spectrum.ieee.org",
-      "extraBlockSelectors.add": [
-        "small"
       ]
     },
     {
@@ -17142,17 +17170,6 @@
       "injectedCss": ".immersive-translate-target-wrapper *, .immersive-translate-target-wrapper {font-size: inherit !important;}"
     },
     {
-      "id": "bank",
-      "matches": [
-        "xfb.nbcb.com.cn"
-      ],
-      "extraBlockSelectors.add": [
-        ".ibm, .ibt",
-        ".cell-box",
-        "[role=tab]"
-      ]
-    },
-    {
       "id": "fmoviesz",
       "matches": [
         "fmovies24.to",
@@ -19917,15 +19934,6 @@
       }
     },
     {
-      "id": "notateslaapp",
-      "matches": [
-        "www.notateslaapp.com"
-      ],
-      "extraBlockSelectors.add": [
-        ".nav > *"
-      ]
-    },
-    {
       "id": "eightfold",
       "matches": [
         "*.eightfold.ai"
@@ -21590,13 +21598,6 @@
       ]
     },
     {
-      "id": "qidian",
-      "matches": "www.qidian.com",
-      "extraBlockSelectors.add": [
-        ".type-list a"
-      ]
-    },
-    {
       "id": "alphaxiv",
       "matches": "www.alphaxiv.org",
       "likePreSelectors.add": [
@@ -21919,13 +21920,6 @@
       ],
       "extraBlockSelectors.add": [
         ".entry-card-title,.entry-card-snippet"
-      ]
-    },
-    {
-      "id": "docs-tutorials",
-      "matches": "docs.pytorch.org",
-      "extraBlockSelectors.add": [
-        ".tutorial-filter"
       ]
     },
     {
@@ -23609,6 +23603,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-20T08:20:53.158Z",
+  "buildinConfigUpdatedAt": "2026-10-20T10:17:01.396Z",
   "latestVersion": "1.34.2"
 }
