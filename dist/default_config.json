@@ -14244,7 +14244,8 @@
         "violetmanga.com",
         "m.fanfox.net",
         "comics.8muses.com",
-        "comicland.org"
+        "comicland.org",
+        "mangahub.io"
       ],
       "imageRule.add": {
         "enable": true,
@@ -14359,7 +14360,8 @@
           "img.aligncenter",
           "#post-hentai img",
           ".reader-page-wrap > img",
-          "img.ts-main-image"
+          "img.ts-main-image",
+          "#mangareader img"
         ],
         "credentialUrlMatches": [
           "https://images.jcomic.net/*"
@@ -16001,7 +16003,8 @@
     {
       "id": "speed-manga",
       "matches": [
-        "speed-manga.com"
+        "speed-manga.com",
+        "evascans.net"
       ],
       "imageRule.add": {
         "enable": true,
@@ -23624,6 +23627,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-21T03:42:11.000Z",
+  "buildinConfigUpdatedAt": "2026-10-21T08:26:38.054Z",
   "latestVersion": "1.34.3"
 }
