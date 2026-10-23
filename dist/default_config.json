@@ -158,7 +158,8 @@
   },
   "loginAiQuotaGift": {
     "enabled": false,
-    "maxDailyAutoClaimAttempts": 3,
+    "claimOnPageInit": true,
+    "maxDailyAutoClaimAttempts": 2,
     "taskKey": "user_login_1",
     "trialServiceId": "trial-pro"
   },
@@ -1761,6 +1762,9 @@
     "*://*/*/atom.xml",
     "file://*/*\\.xml",
     "file://*/*\\.svg"
+  ],
+  "blockUrls.remove_v.[1.34.4]": [
+    "https://steamloopback.host/index.html*"
   ],
   "userBlockUrls": [],
   "monkeyAddTimeStampHosts": [
@@ -23635,6 +23639,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-21T15:22:25.113Z",
-  "latestVersion": "1.34.3"
+  "buildinConfigUpdatedAt": "2026-10-23T11:54:41.156Z",
+  "latestVersion": "1.34.4"
 }
