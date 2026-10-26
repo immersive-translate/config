@@ -14131,33 +14131,6 @@
       }
     },
     {
-      "id": "iqiyi-mainland-vod",
-      "matches": "www.iqiyi.com/v_*",
-      "subtitleRule.add": {
-        "type": "xml",
-        "subtitleUrlRegExp": "^(?:https:)?//meta\\.video\\.iqiyi\\.com/[^?#]+\\.xml(?:\\?[^#]*)?$",
-        "loadingContainerSelector": "#videoContent",
-        "xmlTextSelector": "sub",
-        "xmlSetting": {
-          "subtitleItemSelector": "dia",
-          "textSelector": "sub",
-          "startSelector": "st",
-          "endSelector": "et",
-          "timeDivisor": 1000
-        },
-        "attachRule": {
-          "appendSelector": "#videoContent",
-          "injectedGlobalCSS": [
-            "#pcaSubtitleContainer .caption-main { opacity: 0 !important; }"
-          ]
-        },
-        "quickButtonRule": {
-          "appendSelector": "#xplayerCover [class*=\"defaultController_playCtrl__\"] #right",
-          "insertBeforeSelector": "#xplayerCover [class*=\"defaultController_playCtrl__\"] #right > div:first-child"
-        }
-      }
-    },
-    {
       "id": "v-comic",
       "matches": [
         "newmanhwa.com",
@@ -18939,6 +18912,33 @@
       }
     },
     {
+      "id": "iqiyi-mainland-vod",
+      "matches": "www.iqiyi.com/v_*",
+      "subtitleRule.add": {
+        "type": "xml",
+        "subtitleUrlRegExp": "^(?:https:)?//meta\\.video\\.iqiyi\\.com/[^?#]+\\.xml(?:\\?[^#]*)?$",
+        "loadingContainerSelector": "#videoContent",
+        "xmlTextSelector": "sub",
+        "xmlSetting": {
+          "subtitleItemSelector": "dia",
+          "textSelector": "sub",
+          "startSelector": "st",
+          "endSelector": "et",
+          "timeDivisor": 1000
+        },
+        "attachRule": {
+          "appendSelector": "#videoContent",
+          "injectedGlobalCSS": [
+            "#pcaSubtitleContainer .caption-main { opacity: 0 !important; }"
+          ]
+        },
+        "quickButtonRule": {
+          "appendSelector": "#xplayerCover [class*=\"defaultController_playCtrl__\"] #right",
+          "insertBeforeSelector": "#xplayerCover [class*=\"defaultController_playCtrl__\"] #right > div:first-child"
+        }
+      }
+    },
+    {
       "id": "cbsnews",
       "matches": "www.cbsnews.com",
       "excludeSelectors.add": [
@@ -23667,6 +23667,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-25T17:30:16.400Z",
+  "buildinConfigUpdatedAt": "2026-10-26T01:55:36.244Z",
   "latestVersion": "1.34.4"
 }
