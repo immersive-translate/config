@@ -6926,7 +6926,9 @@
         "[class='css-g5y9jx r-16y2uox r-1wbh5a2 r-1habvwh'] .css-g5y9jx [data-testid=primaryColumn] [aria-label*='Grok'] [class='css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-37j5jr r-16dba41 r-imh66m r-1kt6imw r-dnmrzs']",
         "span[class='css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-n6v787 r-1cwl3u0']",
         ".font-chirp.text-body.font-normal",
-        "article h1,article .x-article-body"
+        "article h1,article .x-article-body",
+        "[data-navigation-stop] > article > div > div > div[dir='auto'].text-lead.text-primary.whitespace-pre-wrap",
+        "[data-navigation-stop] > article > div > div > div > div[dir='auto'].text-body.text-primary.whitespace-pre-wrap"
       ],
       "additionalExcludeSelectors.add": [
         "[aria-describedby][role=button]",
@@ -23679,6 +23681,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-26T05:50:24.315Z",
+  "buildinConfigUpdatedAt": "2026-10-28T09:23:20.947Z",
   "latestVersion": "1.34.4"
 }
