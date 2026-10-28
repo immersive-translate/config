@@ -23168,10 +23168,20 @@
       }
     },
     {
+      "id": "luogu",
+      "matches": "www.luogu.com.cn",
+      "excludeSelectors.add": [
+        ".problem-block-actions"
+      ]
+    },
+    {
       "id": "atcoder",
       "matches": "atcoder.jp",
       "excludeSelectors.add": [
         ".navbar-right > li > a:has(.glyphicon-cog)"
+      ],
+      "stayOriginalSelectors.add": [
+        "#task-statement var"
       ]
     },
     {
@@ -23681,6 +23691,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-28T09:23:20.947Z",
+  "buildinConfigUpdatedAt": "2026-10-28T15:45:01.842Z",
   "latestVersion": "1.34.4"
 }
