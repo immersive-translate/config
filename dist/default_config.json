@@ -15637,11 +15637,13 @@
         "enable": true,
         "type": "manga",
         "imageSelectors": [
-          ".IllustItemThumb img"
+          ".IllustItemThumb img",
+          "img#HowToImage.HowToImage"
         ],
         "loadingSelectors": [
           ".IllustItemThumb"
         ],
+        "enableImageSrcObserver": true,
         "platforms": [
           "other",
           "chrome",
@@ -23691,6 +23693,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-28T15:45:01.842Z",
+  "buildinConfigUpdatedAt": "2026-10-29T04:13:09.264Z",
   "latestVersion": "1.34.4"
 }
