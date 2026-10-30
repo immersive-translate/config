@@ -7929,9 +7929,6 @@
         ".markdown-body",
         "article [class='f6 color-fg-muted mt-1']"
       ],
-      "excludeSelectors.add": [
-        "a[data-hovercard-type]"
-      ],
       "injectedCss.add": [
         ".bpDald,.discussion-title {-webkit-line-clamp:unset!important;}",
         "li>div[class*='Box-sc'],div[class*='Box-sc']>button[class*='prc-Token-TokenBase'],li[class*='card-label-module']>button[class*='prc-Token-TokenBase'] {height:unset!important;}",
@@ -7989,7 +7986,8 @@
       "enableRichTranslate": false,
       "enableRichTranslate.add_v.[1.12.1]": true,
       "stayOriginalSelectors.add": [
-        ".issue-link"
+        ".issue-link",
+        ".markdown-body a[data-hovercard-type]"
       ],
       "detectParagraphLanguage": true,
       "globalStyles": {
@@ -23693,6 +23691,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-10-29T10:50:14.601Z",
+  "buildinConfigUpdatedAt": "2026-10-30T08:03:30.884Z",
   "latestVersion": "1.34.4"
 }
