@@ -16525,7 +16525,8 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subtitleUrlRegExp": "\\.vtt$",
+        "subtitleUrlRegExp": "\\.(?:vtt|srt)$",
+        "hookType": "xhr|fetch",
         "videoPlayerSelector": "video",
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
@@ -23711,6 +23712,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-01T11:03:31.502Z",
+  "buildinConfigUpdatedAt": "2026-11-01T13:08:07.953Z",
   "latestVersion": "1.34.4"
 }
