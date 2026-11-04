@@ -8885,7 +8885,8 @@
               "www.youtube-nocookie.com/embed/*"
             ],
             "appendSelector": "#player-control-overlay .player-controls-top-right:has(> div > button.player-settings-icon)",
-            "injectCSS": ".imt-quick-subtitle-button { width: 48px; margin: 0; justify-content: center; }"
+            "retryCheckMs": 5000,
+            "injectCSS": ".imt-quick-subtitle-button { width: 48px; margin: 0; justify-content: center; } div:has(> .imt-quick-subtitle-button) + div:has(> [role=tooltip]) { inset: calc(100% - 4px) 0 auto auto !important; transform: none !important; padding: 0 !important; width: max-content; max-width: calc(100vw - 48px); white-space: normal !important; }"
           }
         ],
         "videoSelector": ".html5-video-player video",
@@ -23737,6 +23738,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-04T04:03:51.872Z",
+  "buildinConfigUpdatedAt": "2026-11-04T04:49:26.102Z",
   "latestVersion": "1.34.4"
 }
