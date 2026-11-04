@@ -8879,6 +8879,15 @@
           "appendSelector": ".ytp-chrome-controls",
           "insertBeforeSelector": ".ytp-right-controls"
         },
+        "quickButtonRules": [
+          {
+            "urlPattern": [
+              "www.youtube-nocookie.com/embed/*"
+            ],
+            "appendSelector": "#player-control-overlay .player-controls-top-right:has(> div > button.player-settings-icon)",
+            "injectCSS": ".imt-quick-subtitle-button { width: 48px; margin: 0; justify-content: center; }"
+          }
+        ],
         "videoSelector": ".html5-video-player video",
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
@@ -23728,6 +23737,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-03T03:10:42.209Z",
+  "buildinConfigUpdatedAt": "2026-11-04T04:03:51.872Z",
   "latestVersion": "1.34.4"
 }
