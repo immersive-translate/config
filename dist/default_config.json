@@ -13,6 +13,7 @@
   "aiTranslatedCheck": true,
   "isPreview": false,
   "useOnlineOptions": false,
+  "settingsPageVariant": "legacy",
   "enableMachineTranslateTerms": false,
   "termsDomainWithSelf": false,
   "disableOpenUpgradePage": false,
@@ -20,6 +21,17 @@
   "popupVariant": "modern",
   "popupMode": "full",
   "useInlinePopupMembershipPrompt": false,
+  "enableSubtitleAutoAdapt": true,
+  "enableSubtitleAutoAdaptCheck": true,
+  "subtitleAutoAdaptPromptBlockUrls": [
+    "youtube.com",
+    "*.youtube.com",
+    "youtu.be",
+    "x.com",
+    "*.x.com",
+    "twitter.com",
+    "*.twitter.com"
+  ],
   "activeCampaignTags": {
     "enabled": false,
     "cacheTtlMinutes": 1440,
@@ -61,6 +73,7 @@
   "accurateConfigs": {
     "AO3": {
       "enable": false,
+      "enableAIContext": true,
       "matches": [
         "https://archiveofourown.org/*",
         "https://isnull.info/*",
@@ -1182,6 +1195,7 @@
   },
   "defaultTranslationServicesOrder": [
     "free-model",
+    "browser-translator",
     "google-free",
     "bing-free",
     "siliconcloud-free",
@@ -1207,6 +1221,12 @@
   "forceApplyFreeModel": null,
   "enableFreeModelMode": false,
   "advanceMergeConfig": [
+    {
+      "condition": "abTagNumber<10 && isMobile==false",
+      "advanceConfig": {
+        "settingsPageVariant": "modern"
+      }
+    },
     {
       "condition": "isCNPlugin==true",
       "advanceConfig": {
@@ -1479,6 +1499,7 @@
       "advanceConfig": {
         "defaultTranslationServicesOrder": [
           "free-model",
+          "browser-translator",
           "google-free",
           "bing-free",
           "siliconcloud-free",
@@ -1519,6 +1540,7 @@
       "advanceConfig": {
         "defaultTranslationServicesOrder": [
           "free-model",
+          "browser-translator",
           "google-free",
           "bing-free",
           "babelfast-pro",
@@ -1536,6 +1558,7 @@
       "advanceConfig": {
         "defaultTranslationServicesOrder": [
           "free-model",
+          "browser-translator",
           "google-free",
           "bing-free",
           "siliconcloud-free",
@@ -1561,6 +1584,7 @@
       "advanceConfig": {
         "defaultTranslationServicesOrder": [
           "free-model",
+          "browser-translator",
           "google-free",
           "bing-free",
           "babelfast-pro",
@@ -1581,6 +1605,7 @@
       "advanceConfig": {
         "defaultTranslationServicesOrder": [
           "free-model",
+          "browser-translator",
           "google-free",
           "bing-free",
           "babelfast-pro",
@@ -3632,6 +3657,16 @@
     },
     "zhipu-air-pro.add_v.[1.20.12]": {
       "disabledAt": ""
+    },
+    "browser-translator": {
+      "type": "browser-translator",
+      "nameKey": "browserTranslator.name",
+      "group": "pro",
+      "supportFeatures": [],
+      "enableRichTranslate": false,
+      "concurrencyLimit": 4,
+      "maxTextGroupLengthPerRequest": 8,
+      "maxTextLengthPerRequest": 1800
     },
     "google-free": {
       "type": "google",
@@ -6003,6 +6038,7 @@
       "ruby *",
       "p button"
     ],
+    "paragraphGroupingRules": [],
     "extraBlockSelectors": [
       "turbo-frame",
       "readme-toc",
@@ -6627,6 +6663,26 @@
       ]
     },
     {
+      "id": "sordum",
+      "matches": [
+        "sordum.org",
+        "www.sordum.org"
+      ],
+      "paragraphGroupingRules": [
+        "nav,[role=navigation] => a[href],[role=link]"
+      ]
+    },
+    {
+      "id": "paragraph-grouping-local-fixture",
+      "matches": [
+        "http://127.0.0.1:48763/*"
+      ],
+      "paragraphGroupingRules": [
+        "tr,[role=row] => td,th,[role=cell],[role=gridcell]",
+        "nav,[role=navigation] => a[href],[role=link]"
+      ]
+    },
+    {
       "id": "immersive-word",
       "matches": [
         "https://*.immersivetranslate.*/word*",
@@ -7222,7 +7278,6 @@
       ],
       "subtitleRule.add": {
         "type": "webvtt",
-        "subsrtFormat": "vtt",
         "hookType": "xhr|fetch",
         "subtitleUrlRegExp": ".vtt"
       }
@@ -7240,7 +7295,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "hookType": "xhr",
         "injectedCss": [
           ".video-js .vjs-text-track-display .vjs-text-track-cue > div { white-space: unset !important; }"
@@ -7698,7 +7752,6 @@
       },
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": ".*\\.(vtt)",
         "hookType": "fetch",
         "deduplicateSubtitles": true,
@@ -7771,7 +7824,6 @@
       },
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": ".*\\.(vtt)",
         "hookType": "fetch",
         "deduplicateSubtitles": true,
@@ -8171,7 +8223,6 @@
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "hookType": "xhr",
         "subtitleUrlRegExp": "\\.srt",
         "quickButtonRule": {
@@ -8437,6 +8488,15 @@
       "mainFrameMinTextCount": 0,
       "mainFrameMinWordCount": 0,
       "domCheckTimeout": 1,
+      "subtitleRule.add_v.[1.35.1]": {
+        "aiSubtitle": {
+          "enable": true,
+          "urlRegex": [
+            "^https://www\\.youtube\\.com/watch\\?v=[A-Za-z0-9_-]{11}$"
+          ],
+          "maxDurationHours": 4
+        }
+      },
       "subtitleRule.add": {
         "type": "youtube",
         "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*|\\s*>>\\s*",
@@ -8463,6 +8523,16 @@
           "insertBeforeSelector": ".ytp-subtitles-button",
           "injectedGlobalCSS": ".immersive-translate-quick-button-container {display: inline-block; vertical-align: top; height: 42px;}"
         },
+        "quickButtonRules": [
+          {
+            "urlPattern": [
+              "www.youtube.com/embed/*"
+            ],
+            "appendSelector": "#player-control-overlay .player-controls-top-right:has(> div > button.player-settings-icon)",
+            "retryCheckMs": 5000,
+            "injectCSS": ".imt-quick-subtitle-button { width: 48px; margin: 0; justify-content: center; } .imt-quick-subtitle-ai-subtitle-tip { top: calc(100% - 4px); bottom: auto; transform: none; } div:has(> .imt-quick-subtitle-button) + div:has(> [role=tooltip]) { inset: calc(100% - 4px) 0 auto auto !important; transform: none !important; padding: 0 !important; width: max-content; max-width: calc(100vw - 48px); white-space: normal !important; }"
+          }
+        ],
         "videoSelector": ".html5-video-player.playing-mode video,.html5-video-player.paused-mode video",
         "rtlInjectedCss": [
           "[data-immersive-translate_rtl] #immersive-translate-caption-window {direction: rtl;}"
@@ -8850,6 +8920,15 @@
         ".captions-text",
         ".ytp-caption-segment"
       ],
+      "subtitleRule.add_v.[1.35.1]": {
+        "aiSubtitle": {
+          "enable": true,
+          "urlRegex": [
+            "^https://www\\.youtube\\.com/watch\\?v=[A-Za-z0-9_-]{11}$"
+          ],
+          "maxDurationHours": 4
+        }
+      },
       "subtitleRule.add": {
         "type": "youtube",
         "filterAmbientSoundsRegexForNormalSubtitle": "\\s*\\[[^\\]]*\\]\\s*|\\s*>>\\s*",
@@ -8886,7 +8965,7 @@
             ],
             "appendSelector": "#player-control-overlay .player-controls-top-right:has(> div > button.player-settings-icon)",
             "retryCheckMs": 5000,
-            "injectCSS": ".imt-quick-subtitle-button { width: 48px; margin: 0; justify-content: center; } div:has(> .imt-quick-subtitle-button) + div:has(> [role=tooltip]) { inset: calc(100% - 4px) 0 auto auto !important; transform: none !important; padding: 0 !important; width: max-content; max-width: calc(100vw - 48px); white-space: normal !important; }"
+            "injectCSS": ".imt-quick-subtitle-button { width: 48px; margin: 0; justify-content: center; } .imt-quick-subtitle-ai-subtitle-tip { top: calc(100% - 4px); bottom: auto; transform: none; } div:has(> .imt-quick-subtitle-button) + div:has(> [role=tooltip]) { inset: calc(100% - 4px) 0 auto auto !important; transform: none !important; padding: 0 !important; width: max-content; max-width: calc(100vw - 48px); white-space: normal !important; }"
           }
         ],
         "videoSelector": ".html5-video-player video",
@@ -12328,7 +12407,6 @@
       },
       "subtitleRule.add_v.[1.23.2]": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "formatAsrSubtitles": true,
         "subtitleUrlRegExp": "/global/(.*)/t/.*\\.vtt$",
         "urlRootSelector": "[data-bolt-id='$1']",
@@ -12410,6 +12488,27 @@
           "injectCSS": ".imt-quick-subtitle-button { height: 60%; } .label { display: none; } .logo,.logo svg { width: 70%; } .imt-quick-subtitle-button { margin: 0 8px;}",
           "insertBeforeSelector": "#bilibili-player .bpx-player-ctrl-quality",
           "ccEnableSelector": "#bilibili-player .bpx-player-ctrl-subtitle"
+        }
+      },
+      "subtitleRule.add_v.[1.35.1]": {
+        "type": "bilibili",
+        "videoSelector": "#bilibili-player video",
+        "aiSubtitle": {
+          "enable": false,
+          "urlRegex": [
+            "^https://www\\.bilibili\\.com/(?:[a-z]{2}(?:-[A-Za-z]+)?/)?video/(?:BV[0-9A-Za-z]+|av[0-9]+)(?:/|\\?|$)",
+            "^https://www\\.bilibili\\.com/(?:[a-z]{2}(?:-[A-Za-z]+)?/)?list/[^/?#]+(?:/|\\?|$)"
+          ],
+          "maxDurationHours": 4
+        },
+        "attachRule": {
+          "appendSelector": "#bilibili-player .bpx-player-video-area",
+          "injectedCSS": [
+            ":host { z-index: 1; }"
+          ],
+          "injectedGlobalCSS": [
+            "#bilibili-player .bpx-player-video-area:has(#immersive-translate-caption-window) .bpx-player-subtitle-wrap { visibility: hidden !important; }"
+          ]
         }
       }
     },
@@ -13048,7 +13147,6 @@
       "matches": "www.abc.net.au",
       "subtitleRule.add": {
         "type": "webvtt",
-        "subsrtFormat": "srt",
         "subtitleUrlRegExp": ".*\\.vtt",
         "hookType": "xhr",
         "quickButtonRule": {
@@ -13116,7 +13214,6 @@
       ],
       "subtitleRule.add": {
         "type": "webvtt",
-        "subsrtFormat": "srt",
         "subtitleUrlRegExp": ".*\\.vtt",
         "hookType": "xhr",
         "quickButtonRule": {
@@ -16550,12 +16647,14 @@
       "subtitleRule.add": {
         "type": "subsrt",
         "subtitleUrlRegExp": "\\.(?:vtt|srt)$",
-        "hookType": "xhr|fetch",
         "videoPlayerSelector": "video",
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
-          "insertBeforeSelector": "div.vjs-subs-caps-button"
-        }
+          "insertBeforeSelector": "div.vjs-subs-caps-button, div.vjs-subtitles-button",
+          "dismissOtherPlayerMenus": false
+        },
+        "hookType": "xhr|fetch",
+        "multipleVideoContainerSelector": ".video-js"
       }
     },
     {
@@ -16973,7 +17072,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": ".vtt$",
         "videoPlayerSelector": "[data-testid=video-wrapper] video",
         "quickButtonRule": {
@@ -17127,7 +17225,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "media/v1/text/vtt/.*/text\\.vtt(?:$|[?#])",
         "hookType": "fetch|xhr",
         "loadingContainerSelector": ".amp-captioning",
@@ -17341,7 +17438,6 @@
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "webvtt",
-        "subsrtFormat": "srt",
         "hookType": "xhr|fetch",
         "loadingContainerSelector": ".player",
         "subtitleUrlRegExp": "/video/.*\\.vtt",
@@ -17372,7 +17468,6 @@
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "hookType": "fetch",
         "loadingContainerSelector": "#vilos",
         "subtitleUrlRegExp": ".*\\.vtt",
@@ -17406,7 +17501,6 @@
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
         "hookType": "fetch|xhr",
         "loadingContainerSelector": "#video-player-container",
@@ -17643,7 +17737,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "loadingContainerSelector": "[data-layout=\"video\"]",
         "subtitleUrlRegExp": ".*\\.vtt",
         "quickButtonRule": {
@@ -17674,7 +17767,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": ".*\\.vtt",
         "quickButtonRule": {
           "appendSelector": ".pzp-pc__bottom-buttons-right",
@@ -17778,7 +17870,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": ".*\\.vtt",
         "quickButtonRule": {
           "appendSelector": ".vjs-control-bar",
@@ -18825,7 +18916,6 @@
           "[data-immersive-translate_rtl] #subtitle svg text:last-child {writing-mode: horizontal-tb !important;direction: rtl !important;unicode-bidi: bidi-override !important;text-anchor: end !important;}"
         ],
         "subtitleUrlRegExp": "\\.ass$",
-        "subsrtFormat": "ass",
         "loadingContainerSelector": "#youku-advertise",
         "loadingStyle": "bottom: 10%;",
         "enableHookDownload": true,
@@ -18847,7 +18937,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "\\.vtt$",
         "loadingContainerSelector": "starz-player",
         "loadingStyle": "bottom: 10%;",
@@ -18866,7 +18955,6 @@
       "matches": "app.jointherealworld.com",
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "hookType": "xhr",
         "subtitleUrlRegExp": "text/en.vtt",
         "quickButtonRule": {
@@ -18891,7 +18979,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "hookType": "fetch",
         "subtitleUrlRegExp": "\\.vtt$",
         "loadingContainerSelector": ".striplayer",
@@ -18919,7 +19006,6 @@
       "matches": "tv.dmm.com",
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "hookType": "fetch",
         "subtitleUrlRegExp": "\\.vtt$",
         "loadingContainerSelector": "#vodWrapper",
@@ -19054,7 +19140,6 @@
       ],
       "subtitleRule.add": {
         "type": "multi_attach_vtt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "xhr",
         "quickButtonRule": {
@@ -19097,7 +19182,6 @@
       ],
       "subtitleRule.add": {
         "type": "multi_attach_vtt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "xhr",
         "quickButtonRule": {
@@ -19133,7 +19217,6 @@
       ],
       "subtitleRule.add": {
         "type": "webvtt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "\\.vtt\\?",
         "hookType": "xhr",
         "quickButtonRule": {
@@ -19188,7 +19271,6 @@
       ],
       "subtitleRule.add": {
         "type": "webvtt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "xhr",
         "injectedCss": [
@@ -19222,7 +19304,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "img\\.gagaoolala\\.com\\/media\\/[^/?#]+\\.vtt(?:$|[?#])",
         "hookType": "xhr",
         "loadingContainerSelector": "#mvHero .verticals-player-stage__sdk",
@@ -19255,7 +19336,6 @@
       ],
       "subtitleRule.add": {
         "type": "webvtt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "xhr",
         "injectedCss": [],
@@ -19287,7 +19367,6 @@
       ],
       "subtitleRule.add": {
         "type": "webvtt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "xhr",
         "quickButtonRule": {
@@ -19317,7 +19396,6 @@
       ],
       "subtitleRule.add": {
         "type": "webvtt",
-        "subsrtFormat": "vtt",
         "loadingContainerSelector": ".mighty-video-player-container",
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "xhr",
@@ -19374,7 +19452,6 @@
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "webvtt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "\\.vtt",
         "hookType": "xhr",
         "loadingContainerSelector": ".playkit-subtitles",
@@ -19722,7 +19799,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "hookType": "xhr",
         "videoPlayerSelector": "mux-player -> mux-video -> video",
         "loadingContainerSelector": "mux-player",
@@ -22380,7 +22456,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
         "hookType": "fetch|xhr",
         "loadingContainerSelector": ".jw-wrapper.jw-reset",
@@ -22447,7 +22522,6 @@
       "skipTrailTextRegex": "\\.{3}",
       "subtitleRule.add_v.[1.20.7]": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "hookType": "xhr",
         "subtitleUrlRegExp": "(?:subtitle|captions)/.*\\.vtt"
       }
@@ -22459,7 +22533,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "hookType": "fetch|xhr",
         "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
         "quickButtonRule": {
@@ -22915,7 +22988,6 @@
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "hookType": "fetch|xhr",
         "subtitleUrlRegExp": "\\.vtt",
         "quickButtonRule": {
@@ -22950,7 +23022,6 @@
       "domCheckTimeout": 1,
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "hookType": "xhr",
         "subtitleUrlRegExp": "^(?:https://av\\.tib\\.eu)?/api/v0/videos/\\d+/transcription/\\d+/vtt(?:[?#]|$)",
         "videoSelector": "video.vjs-tech",
@@ -22978,7 +23049,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "hookType": "xhr",
         "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
         "videoPlayerSelector": "mux-player -> mux-video -> video",
@@ -22997,7 +23067,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "hookType": "xhr",
         "subtitleUrlRegExp": "\\/tracks\\/[^/?]+\\.vtt(?:$|[?#])",
         "loadingContainerSelector": "#itprotvPlayer",
@@ -23022,7 +23091,6 @@
       ],
       "subtitleRule.add": {
         "type": "subsrt",
-        "subsrtFormat": "vtt",
         "hookType": "xhr",
         "subtitleUrlRegExp": "\\.vtt(?:$|[?#])",
         "loadingContainerSelector": "div.jsx-1348039502.videoWrapper.--regular.--noScores",
@@ -23095,6 +23163,17 @@
         "hookType": "fetch",
         "enableHookDownload": true,
         "subtitleUrlRegExp": "\\.xml$"
+      }
+    },
+    {
+      "id": "mixed-mode-translation-only",
+      "matches": [
+        "www.cortellis.com"
+      ],
+      "mixedMode.add": {
+        "translationOnlySelectors": [
+          ".tab-nav__link--title"
+        ]
       }
     },
     {
@@ -23738,6 +23817,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-04T04:49:26.102Z",
-  "latestVersion": "1.34.4"
+  "buildinConfigUpdatedAt": "2026-11-06T11:23:33.919Z",
+  "latestVersion": "1.35.1"
 }
