@@ -12494,7 +12494,7 @@
         "type": "bilibili",
         "videoSelector": "#bilibili-player video",
         "aiSubtitle": {
-          "enable": false,
+          "enable": true,
           "urlRegex": [
             "^https://www\\.bilibili\\.com/(?:[a-z]{2}(?:-[A-Za-z]+)?/)?video/(?:BV[0-9A-Za-z]+|av[0-9]+)(?:/|\\?|$)",
             "^https://www\\.bilibili\\.com/(?:[a-z]{2}(?:-[A-Za-z]+)?/)?list/[^/?#]+(?:/|\\?|$)"
@@ -23817,6 +23817,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-09T09:19:29.000Z",
+  "buildinConfigUpdatedAt": "2026-11-10T02:42:47.599Z",
   "latestVersion": "1.35.1"
 }
