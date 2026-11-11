@@ -14682,10 +14682,8 @@
     {
       "id": "lezhinus-virtual-reader",
       "matches": [
-        "https://www.lezhinus.com/*/comic/incomplete_combustion/*",
-        "https://www.lezhinus.com/comic/incomplete_combustion/*",
-        "https://www.lezhinus.com/*/comic/maneater/*",
-        "https://www.lezhinus.com/comic/maneater/*"
+        "https://www.lezhinus.com/*/comic/*",
+        "https://www.lezhinus.com/comic/*"
       ],
       "imageRule.add": {
         "enable": true,
@@ -23817,6 +23815,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-11T09:39:42.109Z",
+  "buildinConfigUpdatedAt": "2026-11-11T09:55:45.012Z",
   "latestVersion": "1.35.1"
 }
