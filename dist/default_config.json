@@ -1655,7 +1655,7 @@
       }
     },
     {
-      "condition": "versionNumber>13402 && abTagNumber>4 && isCNPlugin==false",
+      "condition": "versionNumber>13402 && abTagNumber>3 && isCNPlugin==false",
       "advanceConfig": {
         "loginAiQuotaGift.add": {
           "enabled": true
@@ -23817,6 +23817,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-10T02:42:47.599Z",
+  "buildinConfigUpdatedAt": "2026-11-11T09:39:42.109Z",
   "latestVersion": "1.35.1"
 }
