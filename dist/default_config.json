@@ -1222,7 +1222,7 @@
   "enableFreeModelMode": false,
   "advanceMergeConfig": [
     {
-      "condition": "abTagNumber<10 && isMobile==false",
+      "condition": "abTagNumber<10",
       "advanceConfig": {
         "settingsPageVariant": "modern"
       }
@@ -7125,7 +7125,7 @@
         ],
         "liveSubtitleRule": {
           "containerSelector": ".r-13awgt0.r-1pi2tsx.r-13qz1uu > [role='listbox']",
-          "reportSelector": ".css-175oi2r.r-1awozwy.r-173mn98.r-1mf7evn.r-7e3msg",
+          "reportSelector": ".r-1awozwy.r-173mn98.r-1mf7evn.r-7e3msg, .r-1awozwy.r-173mn98.r-1y6u10y.r-1rtiivn",
           "textSelectors": [
             ".r-13awgt0.r-1pi2tsx.r-13qz1uu > [role='listbox'] .r-13awgt0.r-1lzbym2  > [dir=\"ltr\"] > span"
           ],
@@ -23815,6 +23815,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-11T09:55:45.012Z",
-  "latestVersion": "1.35.1"
+  "buildinConfigUpdatedAt": "2026-11-12T11:27:13.539Z",
+  "latestVersion": "1.35.2"
 }
