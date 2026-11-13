@@ -29,6 +29,8 @@ jobs:
           repository: immersive-translate/extension
           ref: ${{github.event.inputs.branch || 'main'}}
           token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          # 与发布仓库并列，避免 npm 向上解析扩展的 Deno 依赖。
+          path: extension
       - name: Clone repo
         run: git clone https://$PERSONAL_GITHUB_TOKEN@github.com/immersive-translate/config repo
         env:
@@ -38,19 +40,23 @@ jobs:
         with:
           deno-version: v2.8.1
       - name: test
+        working-directory: ./extension
         run: make test
       - id: set_var
+        working-directory: ./extension
         run: |
           content=`cat ./manifest.json`
           echo "::set-output name=version::$(echo $content | jq -r '.version')"
       - name: generate cn config
-        run: make generatecnconfig target=repo/dist/default_config.json
+        working-directory: ./extension
+        run: make generatecnconfig target=../repo/dist/default_config.json
       - name: Publish CN Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.IMMERSIVE_CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.IMMERSIVE_CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy ./repo/dist --project-name=cn-config
+          workingDirectory: ./repo/
+          command: pages deploy ./dist --project-name=cn-config
       - name: build worker
         run: cd repo && make build
       - name: update worker name
