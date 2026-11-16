@@ -11,6 +11,9 @@
   "mouseModifierKeyPressTimeout": 400,
   "sameLangCheck": false,
   "aiTranslatedCheck": true,
+  "runtimePressureToast": {
+    "enabled": false
+  },
   "isPreview": false,
   "useOnlineOptions": false,
   "settingsPageVariant": "legacy",
@@ -23815,6 +23818,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-16T02:36:46.317Z",
+  "buildinConfigUpdatedAt": "2026-11-16T03:06:16.921Z",
   "latestVersion": "1.35.2"
 }
