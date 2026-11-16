@@ -9,7 +9,7 @@
   "inputTranslationService": "inherit",
   "userTranslationServices": {},
   "mouseModifierKeyPressTimeout": 400,
-  "sameLangCheck": true,
+  "sameLangCheck": false,
   "aiTranslatedCheck": true,
   "isPreview": false,
   "useOnlineOptions": false,
@@ -23815,6 +23815,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-13T02:46:29.105Z",
+  "buildinConfigUpdatedAt": "2026-11-16T02:36:46.317Z",
   "latestVersion": "1.35.2"
 }
