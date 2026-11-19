@@ -1225,7 +1225,7 @@
   "enableFreeModelMode": false,
   "advanceMergeConfig": [
     {
-      "condition": "platform==userscript || abTagNumber<5",
+      "condition": "platform==userscript || abTagNumber<7",
       "advanceConfig": {
         "settingsPageVariant": "modern"
       }
@@ -23818,6 +23818,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-19T02:58:51.201Z",
+  "buildinConfigUpdatedAt": "2026-11-19T07:56:45.604Z",
   "latestVersion": "1.35.2"
 }
