@@ -1312,26 +1312,25 @@
       "advanceConfig": {
         "adBanner": {
           "enable": true,
-          "closedStorageKey": "adBanner_closed_reward_center_20261101",
+          "closedStorageKey": "adBanner_closed_reward_center_20261126",
           "items": [
             {
-              "id": "ad-banner-2026-1111-free",
+              "id": "ad-banner-2026-black-friday",
               "backgroundImage": {
-                "zh-CN": "https://s.immersivetranslate.com/assets/r2-uploads/assets/r2-uploads/2026-1111-banner/zh-CN.png",
-                "zh-TW": "https://s.immersivetranslate.com/assets/r2-uploads/assets/r2-uploads/2026-1111-banner/zh-TW.png",
-                "zh-HK": "https://s.immersivetranslate.com/assets/r2-uploads/assets/r2-uploads/2026-1111-banner/zh-TW.png",
-                "ja": "https://s.immersivetranslate.com/assets/r2-uploads/assets/r2-uploads/2026-1111-banner/ja.png",
-                "ko": "https://s.immersivetranslate.com/assets/r2-uploads/assets/r2-uploads/2026-1111-banner/ko.png",
-                "en": "https://s.immersivetranslate.com/assets/r2-uploads/assets/r2-uploads/2026-1111-banner/202611-en-rVhg5k51dizWq4QZ.png"
+                "en": "https://s.immersivetranslate.com/assets/r2-uploads/assets/r2-uploads/subscription-renewal/20261113/black_friday_en-zo_KeK6DDaeC08Yv.png",
+                "ja": "https://s.immersivetranslate.com/assets/r2-uploads/assets/r2-uploads/subscription-renewal/20261113/black_friday_ja-Ot2KQWJn1zeCCYyd.png",
+                "ko": "https://s.immersivetranslate.com/assets/r2-uploads/assets/r2-uploads/subscription-renewal/20261113/black_friday_ko-pUk_ON53707yWdi_.png",
+                "es": "https://s.immersivetranslate.com/assets/r2-uploads/assets/r2-uploads/subscription-renewal/20261113/black_friday_es-4LL16Xagw_s1yENH.png",
+                "de": "https://s.immersivetranslate.com/assets/r2-uploads/assets/r2-uploads/subscription-renewal/20261113/black_friday_de-xrynVWWmmcbgXxPJ.png",
+                "fr": "https://s.immersivetranslate.com/assets/r2-uploads/assets/r2-uploads/subscription-renewal/20261113/black_friday_fr-LWIqHIXWjIs7wqH8.png"
               },
               "action": {
                 "type": "openUrl",
-                "url": "http://immersivetranslate.com/pricing/?utm_source=extension&utm_medium=extension_banner&utm_campaign=ad_banner_2026_1111"
+                "url": "https://immersivetranslate.com/pricing?campaign=black_friday&utm_source=extension&utm_medium=extension_banner&utm_campaign=black_friday"
               },
-              "startTime": "2026-11-01T00:00:00+08:00",
-              "endTime": "2026-11-16T00:00:00+08:00",
-              "displayDurationSeconds": 259200,
-              "condition": "(isPro==false && isMax==false && isTeam==false) || banner-2026-1111-monthly==monthly"
+              "startTime": "2026-11-26T00:00:00+08:00",
+              "endTime": "2026-12-01T00:00:00+08:00",
+              "condition": "isPro==false && isMax==false && isTeam==false && interfaceLanguage!=zh-CN && interfaceLanguage!=zh-TW && interfaceLanguage!=zh-HK"
             },
             {
               "id": "reward-center-banner-20260701-guest",
@@ -23819,6 +23818,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-20T11:18:36.000Z",
+  "buildinConfigUpdatedAt": "2026-11-24T06:31:48.941Z",
   "latestVersion": "1.35.4"
 }
