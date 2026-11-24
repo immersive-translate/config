@@ -3821,6 +3821,7 @@
     },
     "openai-pro": {
       "name": "GPT-6 Luna",
+      "maxOutputTokens": 4096,
       "type": "openai",
       "group": "pro",
       "proModel": "gpt-6-luna",
@@ -3857,6 +3858,7 @@
     },
     "deepseek-pro": {
       "name": "DeepSeek V4.1 Flash",
+      "maxOutputTokens": 4096,
       "type": "deepseek",
       "group": "pro",
       "extends": "deepseek",
@@ -3879,6 +3881,7 @@
     },
     "hunyuan-pro": {
       "name": "HY 2.0 Instruct",
+      "maxOutputTokens": 4096,
       "type": "hunyuan",
       "group": "pro",
       "extends": "hunyuan",
@@ -3905,6 +3908,7 @@
     },
     "gemini-pro": {
       "name": "Gemini 3 Flash",
+      "maxOutputTokens": 4096,
       "type": "gemini",
       "group": "pro",
       "extends": "gemini",
@@ -3945,6 +3949,7 @@
     },
     "qwen-pro": {
       "extends": "qwen",
+      "maxOutputTokens": 4096,
       "name": "Qwen3.8-Flash",
       "provider": "pro",
       "type": "custom-ai",
@@ -3993,6 +3998,7 @@
     },
     "grok-pro": {
       "extends": "grok",
+      "maxOutputTokens": 4096,
       "name": "Grok 4.3",
       "provider": "pro",
       "type": "grok",
@@ -4014,6 +4020,7 @@
     },
     "plamo-pro": {
       "extends": "plamo",
+      "maxOutputTokens": 4096,
       "name": "PLaMo 3.0 Prime",
       "provider": "pro",
       "type": "custom-ai",
@@ -4055,6 +4062,7 @@
     },
     "pro-translate-trial": {
       "extends": "ai",
+      "maxOutputTokens": 4096,
       "type": "pro-translate-trial",
       "group": "pro",
       "provider": "pro",
@@ -4085,6 +4093,7 @@
     },
     "openai-max": {
       "name": "GPT-6.2 Sol",
+      "maxOutputTokens": 4096,
       "type": "openai",
       "group": "max",
       "extends": "openai",
@@ -4116,6 +4125,7 @@
     },
     "gemini-max": {
       "name": "Gemini 4 Neon",
+      "maxOutputTokens": 4096,
       "type": "gemini",
       "group": "max",
       "extends": "gemini",
@@ -4132,6 +4142,7 @@
     },
     "qwen-max": {
       "extends": "qwen",
+      "maxOutputTokens": 4096,
       "name": "Qwen Max",
       "provider": "pro",
       "type": "custom-ai",
@@ -23825,6 +23836,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-24T10:38:19.284Z",
+  "buildinConfigUpdatedAt": "2026-11-24T14:41:29.750Z",
   "latestVersion": "1.35.4"
 }
