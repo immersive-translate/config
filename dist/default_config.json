@@ -16915,13 +16915,20 @@
       },
       "subtitleRule.add": {
         "type": "webvtt",
-        "subtitleUrlRegExp": "/.*ambry/\\?x-li-ambry-ep=.*|.*video-captions-webvtt.*/",
+        "subtitleUrlRegExp": "/.*ambry/\\?x-li-ambry-ep=.*|.*video-captions-webvtt.*/|^https://dms\\.licdn\\.com/playlist/vid/v2/(?:[^/?#]+/)*video-auto-caption-webvtt-acs-singleton/",
         "hookType": "xhr",
         "loadingContainerSelector": ".video-player-container",
+        "multipleVideoContainerSelector": ".classroom-layout__media, div[data-color-scheme=\"dark\"]:has(> div > .video-js)",
         "quickButtonRule": {
           "appendSelector": ".classroom-layout__media .vjs-control-bar",
           "insertBeforeSelector": ".vjs-captions-menu-toggle"
-        }
+        },
+        "quickButtonRules": [
+          {
+            "appendSelector": "div:has(> button[data-testid=\"subtitle-toggle-btn\"])",
+            "insertBeforeSelector": "button[data-testid=\"subtitle-toggle-btn\"]"
+          }
+        ]
       }
     },
     {
@@ -23818,6 +23825,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-24T06:31:48.941Z",
+  "buildinConfigUpdatedAt": "2026-11-24T10:38:19.284Z",
   "latestVersion": "1.35.4"
 }
