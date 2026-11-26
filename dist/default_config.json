@@ -18938,6 +18938,13 @@
         "loadingContainerSelector": "#youku-advertise",
         "loadingStyle": "bottom: 10%;",
         "enableHookDownload": true,
+        "videoSelector": "#ykPlayer video",
+        "attachRule": {
+          "appendSelector": "#ykPlayer",
+          "injectedGlobalCSS": [
+            "#ykPlayer:has(> #immersive-translate-caption-window) > #subtitle { display: none !important; }"
+          ]
+        },
         "quickButtonRule": {
           "appendSelector": ".kui-dashboard-dashboard-panel .kui-dashboard-rear-ctn",
           "insertBeforeSelector": ".kui-rate-control-0",
@@ -23836,6 +23843,6 @@
       "isTransformPreTagNewLine": true
     }
   ],
-  "buildinConfigUpdatedAt": "2026-11-26T08:30:43.495Z",
+  "buildinConfigUpdatedAt": "2026-11-26T14:38:49.405Z",
   "latestVersion": "1.35.4"
 }
